@@ -14,6 +14,7 @@ Verdicts:
 import json
 import os
 import sys
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
@@ -21,10 +22,32 @@ from pathlib import Path
 CONFIG = json.loads((Path(__file__).parent / "config.json").read_text())
 
 
-def fetch_views(api_key: str, video_id: str) -> int:
-    url = ("https://www.googleapis.com/youtube/v3/videos"
-           f"?part=statistics&id={video_id}&key={api_key}")
-    with urllib.request.urlopen(url, timeout=30) as resp:
+def oauth_access_token() -> str:
+    body = urllib.parse.urlencode({
+        "client_id": os.environ["YT_CLIENT_ID"],
+        "client_secret": os.environ["YT_CLIENT_SECRET"],
+        "refresh_token": os.environ["YT_REFRESH_TOKEN"],
+        "grant_type": "refresh_token",
+    }).encode()
+    with urllib.request.urlopen("https://oauth2.googleapis.com/token",
+                                data=body, timeout=30) as r:
+        return json.load(r)["access_token"]
+
+
+def fetch_views(video_id: str) -> int:
+    url = f"https://www.googleapis.com/youtube/v3/videos?part=statistics&id={video_id}"
+    headers = {}
+    api_key = os.environ.get("YT_API_KEY")
+    if api_key:
+        url += f"&key={api_key}"
+    elif all(os.environ.get(v) for v in
+             ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN")):
+        headers["Authorization"] = f"Bearer {oauth_access_token()}"
+    else:
+        sys.exit("Need YT_API_KEY, or the YT_CLIENT_ID/YT_CLIENT_SECRET/YT_REFRESH_TOKEN "
+                 "trio (see SETUP.md).")
+    with urllib.request.urlopen(urllib.request.Request(url, headers=headers),
+                                timeout=30) as resp:
         data = json.load(resp)
     items = data.get("items", [])
     if not items:
@@ -34,15 +57,11 @@ def fetch_views(api_key: str, video_id: str) -> int:
 
 
 def main():
-    api_key = os.environ.get("YT_API_KEY")
-    if not api_key:
-        sys.exit("Missing env var YT_API_KEY — create a plain API key (SETUP.md step 2).")
-
     vid = CONFIG["video_id"]
     rule = CONFIG["decision_rule"]
     published = datetime.fromisoformat(CONFIG["published_at"].replace("Z", "+00:00"))
     hours = (datetime.now(timezone.utc) - published).total_seconds() / 3600
-    views = fetch_views(api_key, vid)
+    views = fetch_views(vid)
 
     if hours < rule["decision_hours"]:
         verdict = "WAIT"
