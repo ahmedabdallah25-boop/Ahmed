@@ -1,0 +1,19 @@
+name: Monitor Part 12 performance
+
+on:
+  schedule:
+    - cron: "30 */6 * * *"   # every 6 hours
+  workflow_dispatch:
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check views and apply decision rule
+        run: python automation/monitor.py
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
