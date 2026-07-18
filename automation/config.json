@@ -1,4 +1,26 @@
 {
+  "monitors": [
+    {
+      "label": "Part 12 (Takaful re-upload)",
+      "video_id": "ebIU6OHJ-jg",
+      "published_at": "2026-07-17T19:22:13Z",
+      "decision_rule": {
+        "decision_hours": 72,
+        "pass_views": 150,
+        "dead_views": 50
+      }
+    },
+    {
+      "label": "Part 13 (Ijara)",
+      "video_id": "ElD5gg-Q1wY",
+      "published_at": "2026-07-18T10:15:17Z",
+      "decision_rule": {
+        "decision_hours": 72,
+        "pass_views": 600,
+        "dead_views": 200
+      }
+    }
+  ],
   "video_id": "ebIU6OHJ-jg",
   "published_at": "2026-07-17T19:22:13Z",
   "new_title": "Your Insurance Keeps Every Dollar You Don't Claim (Takaful Explained) #takaful #islamicfinance",

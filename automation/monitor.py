@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Check Part 12's view count and apply the 72-hour decision rule.
+"""Check each monitored video's view count and apply the 72-hour decision rule.
+
+Videos come from the "monitors" list in config.json (falls back to the legacy
+top-level video_id/published_at/decision_rule keys if the list is absent).
 
 Uses a plain YouTube Data API key (YT_API_KEY env var) — public data only,
 no OAuth needed. Stdlib only, so CI needs no pip install.
@@ -56,10 +59,10 @@ def fetch_views(video_id: str) -> int:
     return int(items[0]["statistics"].get("viewCount", 0))
 
 
-def main():
-    vid = CONFIG["video_id"]
-    rule = CONFIG["decision_rule"]
-    published = datetime.fromisoformat(CONFIG["published_at"].replace("Z", "+00:00"))
+def evaluate(mon):
+    vid = mon["video_id"]
+    rule = mon["decision_rule"]
+    published = datetime.fromisoformat(mon["published_at"].replace("Z", "+00:00"))
     hours = (datetime.now(timezone.utc) - published).total_seconds() / 3600
     views = fetch_views(vid)
 
@@ -83,13 +86,19 @@ def main():
                   f"({rule['dead_views']}-{rule['pass_views']}). The metadata fix may still "
                   "catch; re-check in 48h before re-uploading.")
 
-    line = f"[{verdict}] https://youtube.com/shorts/{vid} — {detail}"
-    print(line)
+    label = mon.get("label", vid)
+    return f"[{verdict}] {label} https://youtube.com/shorts/{vid} — {detail}"
+
+
+def main():
+    monitors = CONFIG.get("monitors") or [CONFIG]
+    lines = [evaluate(m) for m in monitors]
+    print("\n".join(lines))
 
     summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary_path:
         with open(summary_path, "a") as f:
-            f.write(f"### Part 12 monitor\n\n{line}\n")
+            f.write("### Video monitor\n\n" + "\n\n".join(lines) + "\n")
 
 
 if __name__ == "__main__":

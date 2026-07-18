@@ -1,4 +1,4 @@
-name: Monitor Part 12 performance
+name: Monitor video performance
 
 on:
   schedule:
