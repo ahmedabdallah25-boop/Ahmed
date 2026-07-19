@@ -1,0 +1,96 @@
+EPISODE 1 — VOICEOVER TRANSCRIPT (timestamped)
+Source: ElevenLabs_20260719T05_41_52_Ahmed_new_1_gen_sp100_s50_sb86_v3.mp3
+Total length: 4:49.88  (289.9 s)
+Timestamps forced-aligned (espeak-synth duration weighting + pause snapping).
+================================================================
+
+[0:00.00 - 0:09.23]
+Right now, a complete stranger is drowning in debt, so that the money in your account can exist.
+
+[0:09.23 - 0:19.86]
+That's not a metaphor. If every debt on earth were paid off tonight, your savings would vanish with them...
+
+[0:19.86 - 0:34.59]
+...Because every dollar you've ever earned was born the same way: not printed, not saved, borrowed into existence.
+
+[0:34.59 - 0:39.18]
+Give me five minutes, and you'll see the trick with your own eyes.
+
+[0:39.18 - 0:45.83]
+Why prices never stop rising, why your savings never feel like enough...
+
+[0:45.83 - 0:50.97]
+...and why this machine needs you in debt, forever.
+
+[0:50.97 - 0:55.59]
+No jargon, just mechanisms.
+
+[0:55.59 - 1:12.24]
+Walk into a bank and borrow twenty thousand dollars. Most people think the bank takes twenty thousand from someone's savings and hands it to you.
+
+[1:12.24 - 1:22.16]
+That is not what happens. Nobody's account goes down. Not one.
+
+[1:22.16 - 1:31.67]
+The banker types 2-0-0-0-0 into a screen, and brand new money appears.
+
+[1:31.67 - 1:38.15]
+Money that did not exist one second earlier.
+
+[1:38.15 - 1:43.75]
+And if that sounds like a conspiracy theory, here's the fun part.
+
+[1:43.75 - 1:56.45]
+In 2014, the Bank of England, the world's oldest central bank, published a paper admitting it in plain English:
+
+[1:56.45 - 2:11.17]
+'When a bank lends, it creates the deposit.' Around 97% of all money in the economy was made exactly this way.
+
+[2:11.17 - 2:16.23]
+Not minted. Typed.
+
+[2:16.23 - 2:26.92]
+But here's the part they left out of the headline. The bank created your twenty thousand, but you owe back twenty-three.
+
+[2:26.92 - 2:31.21]
+So where do the extra three thousand come from?
+
+[2:31.21 - 2:34.13]
+The bank never created them. Nobody did.
+
+[2:34.13 - 2:43.45]
+The only place that money can exist is inside someone else's loan.
+
+[2:43.45 - 2:55.08]
+Think about what that means. System-wide, the debt is always bigger than the money. Always.
+
+[2:55.08 - 3:06.15]
+It's musical chairs with your livelihood. Millions of people scrambling for dollars that don't all exist...
+
+[3:06.15 - 3:13.37]
+...and the music only keeps playing if new borrowers keep joining the game.
+
+[3:13.37 - 3:26.72]
+More loans. More debt. Every single year. Not because we're greedy, because the machine stalls the moment we stop.
+
+[3:26.72 - 3:36.38]
+So who pays for all this new money? You do. Just never as a bill with your name on it.
+
+[3:36.38 - 3:44.91]
+Every fresh dollar typed into existence quietly shrinks the ones already in your pocket.
+
+[3:44.91 - 3:54.43]
+That's the inflation you feel at the grocery store. The tax you never voted for.
+
+[3:54.43 - 4:12.67]
+And watch where the new money lands first: Banks, funds, asset owners. They buy before prices rise. Your salary shows up last, after everything already costs more.
+
+[4:12.67 - 4:30.26]
+And when the machine finally choked in 2008, did it apologize? It sent the bill. 700 billion dollars, to the public that never got a vote.
+
+[4:30.26 - 4:33.63]
+You weren't bailed out. You were billed.
+
+[4:33.63 - 4:49.88]
+Now, what if I told you there's a rule set, 1400 years old, engineered to make this exact trick impossible?
+
