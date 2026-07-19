@@ -13,11 +13,13 @@ or raw ffmpeg output — the printed summaries contain everything you need.
 Entry point: `python3 .claude/skills/video-edit/scripts/ve.py <cmd> ...`
 (alias below: `ve`). Run `ve doctor` first on a new machine.
 
-**Offline fallback:** if Whisper's model can't be reached (no GPU, offline, or a blocked
-egress policy), the pipeline auto-degrades to **TIGHTEN mode** — it removes dead air using
-silence detection (cuts land inside silences, so words are never clipped) and still
-loudness-normalizes. Captions and transcript-anchored `gfx` are skipped in this mode; run on
-a machine that can fetch the model (e.g. your own laptop) for the full treatment.
+**No Whisper? Two fallbacks, in order of preference:**
+1. `ve words --srt captions.srt` — feed any caption file (YouTube Studio download, CapCut,
+   iPhone). Tolerant parser (BOM, dot-millis, overlaps, CRLF). Word times are interpolated
+   from cues: full captions + line-anchored gfx work, while cut boundaries automatically
+   fall back to real detected silences (interpolated gaps are never trusted for cuts).
+2. No transcript at all → **TIGHTEN mode**: silence-based dead-air removal (word-safe) +
+   loudness normalization. Captions/gfx skipped.
 
 ## The six pillars (what the scripts enforce for you)
 

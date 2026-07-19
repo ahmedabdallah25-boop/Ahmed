@@ -90,7 +90,14 @@ def probe(proj):
     j = json.loads(r.stdout)
     v = next(s for s in j["streams"] if s["codec_type"] == "video")
     num, den = v["r_frame_rate"].split("/")
-    m = {"src": src, "w": int(v["width"]), "h": int(v["height"]),
+    w, h = int(v["width"]), int(v["height"])
+    rot = int(float(v.get("tags", {}).get("rotate", 0)))
+    for sd in v.get("side_data_list", []):
+        if "rotation" in sd:
+            rot = int(float(sd["rotation"]))
+    if abs(rot) % 180 == 90:      # ffmpeg auto-rotates; use display dimensions
+        w, h = h, w
+    m = {"src": src, "w": w, "h": h,
          "fps": int(num) / max(1, int(den)), "dur": float(j["format"]["duration"])}
     m["vertical"] = m["h"] > m["w"]
     jsave(proj / "media.json", m)
@@ -122,6 +129,61 @@ def transcribe_words(src):
                 for s in r["segments"] for w in s.get("words", [])]
     except Exception:
         return None
+
+
+def parse_srt(path):
+    """Tolerant SRT → word list (BOM, dot-millis, overlaps, CRLF all handled).
+    Word times are interpolated inside each cue, so they are marked approx:
+    good for captions/line anchors, never trusted for cut boundaries."""
+    raw = Path(path).read_bytes()
+    text = None
+    for enc in ("utf-8-sig", "utf-8", "cp1256", "latin-1"):
+        try:
+            text = raw.decode(enc)
+            break
+        except UnicodeDecodeError:
+            continue
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+
+    def ts(t):
+        m = re.match(r"(?:(\d+):)?(\d{1,2}):(\d{1,2})[,.](\d{1,3})\s*$", t.strip())
+        return None if not m else (int(m.group(1) or 0) * 3600 + int(m.group(2)) * 60
+                                   + int(m.group(3)) + int(m.group(4).ljust(3, "0")) / 1000)
+    blocks, cur = [], []
+    for line in text.split("\n"):
+        if line.strip():
+            cur.append(line)
+        elif cur:
+            blocks.append(cur); cur = []
+    if cur:
+        blocks.append(cur)
+    arrow = re.compile(r"\s*-+\s*>\s*")
+    cues = []
+    for b in blocks:
+        lines = b[1:] if re.fullmatch(r"\d+", b[0].strip()) else b[:]
+        if not lines:
+            continue
+        parts = arrow.split(lines[0], maxsplit=1)
+        if len(parts) != 2:
+            continue
+        s, e = ts(parts[0]), ts(parts[1])
+        txt = " ".join(l.strip() for l in lines[1:] if l.strip())
+        if s is None or e is None or not txt:
+            continue
+        cues.append((s, max(e, s + 0.3), txt))
+    cues.sort()
+    words = []
+    for i, (s, e, txt) in enumerate(cues):
+        if i + 1 < len(cues):
+            e = min(e, cues[i + 1][0])          # clamp overlaps
+        ws = txt.split()
+        total = sum(len(w) for w in ws) or 1
+        t, dur = s, max(0.3, e - s)
+        for w in ws:
+            wd = dur * len(w) / total
+            words.append({"w": w, "s": round(t, 3), "e": round(t + wd * 0.85, 3)})
+            t += wd
+    return words
 
 
 def detect_silences(src, noise="-35dB", dmin=0.25):
@@ -158,13 +220,24 @@ def cmd_words(args):
     need_ffmpeg()
     proj = find_project(args)
     m = jload(proj / "media.json")
-    words = transcribe_words(m["src"])
+    approx = False
+    if getattr(args, "srt", None):
+        words = parse_srt(args.srt)
+        approx = True                  # cue-interpolated: never trust for cuts
+        if not words:
+            die(f"no cues parsed from {args.srt}")
+    else:
+        words = transcribe_words(m["src"])
     sil = detect_silences(m["src"])
-    jsave(proj / "words.json", {"words": words or [], "silences": sil})
+    jsave(proj / "words.json", {"words": words or [], "silences": sil,
+                                "approx": approx})
     if words is None:
         print("no whisper installed (pip install faster-whisper) — captions off, "
               f"cuts will snap to {len(sil)} detected silences")
         return
+    if approx:
+        print(f"SRT mode: {len(words)} words from cues (captions + line anchors); "
+              f"cuts snap to {len(sil)} real silences")
     lines = build_lines(words)
     jsave(proj / "lines.json", lines)
     print(f"{len(words)} words, {len(lines)} lines, "
@@ -206,7 +279,9 @@ def cmd_plan(args):
 # ---------------------------------------------------------------- cut
 def legal_gaps(proj, m):
     wj = jload(proj / "words.json")
-    words = wj["words"]
+    # approx (SRT-derived) word times must not define cut points — inter-word
+    # "gaps" there are interpolation artifacts, not silences
+    words = [] if wj.get("approx") else wj["words"]
     gaps = []
     if words:
         gaps.append((0.0, words[0]["s"]))
@@ -221,9 +296,13 @@ def legal_gaps(proj, m):
 
 
 def snap(t, gaps, kind):
-    """Place boundary t inside a legal silence gap. kind: 'start'|'end'."""
+    """Place boundary t inside a legal silence gap. kind: 'start'|'end'.
+    If no gap is anywhere near (loud clip / sparse silences), keep t as-is —
+    a cut at the planned time beats teleporting to a distant silence."""
     inside = next((g for g in gaps if g[0] - 1e-3 <= t <= g[1] + 1e-3), None)
     g = inside or min(gaps, key=lambda g: min(abs(t - g[0]), abs(t - g[1])))
+    if not inside and min(abs(t - g[0]), abs(t - g[1])) > 0.75:
+        return round(t, 3)
     lo, hi = g[0] + 0.02, max(g[0] + 0.02, g[1] - 0.02)
     # start: cut late in the gap (tight lead-in); end: keep a small tail
     want = hi - 0.03 if kind == "start" else lo + min(0.12, hi - lo)
@@ -341,7 +420,7 @@ def build_ass(proj, m, segs, cfg):
         "Format: Name, Fontname, Fontsize, PrimaryColour, OutlineColour, BackColour,"
         " Bold, Outline, Shadow, Alignment, MarginL, MarginR, MarginV\n"
         f"Style: Cap,{font},{fs},&H00FFFFFF,&H00000000,&H80000000,-1,3,0,2,60,60,{mv}\n\n"
-        "[Events]\nFormat: Layer, Start, End, Style, MarginL, MarginR, MarginV, Effect, Text\n"
+        "[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n"
         + "\n".join(ev) + "\n")
     return "cap.ass"
 
@@ -545,7 +624,8 @@ def run_check(proj, out):
     holes = [h for h in map(float, holes) if 1.0 < h < d - 2.0]
     if holes:
         issues.append(f"dead air >1.5s at {[round(h,1) for h in holes[:5]]}")
-    words = jload(proj / "words.json", default={"words": []})["words"]
+    wj = jload(proj / "words.json", default={"words": []})
+    words = [] if wj.get("approx") else wj["words"]
     for g in seg["segs"]:
         for b in g["src"]:
             for w in words:
@@ -698,6 +778,17 @@ def cmd_selftest(args):
     assert src2dst(9.0, segs) == 6.0 and src2dst(6.5, segs) is None
     assert jload("/no/such/file", default=None) is None  # sentinel != None default
     assert jload("/no/such/file", default=[]) == []
+    import tempfile
+    srt = ("﻿1\n00:00:01,000 --> 00:00:03.500\nBe honest you clicked\n\n"
+           "2\n0:00:04,000 -> 00:00:02,000\n\n"          # malformed: no text
+           "3\n00:00:05.000 --> 00:00:07,000\nAI edited this\n")
+    with tempfile.NamedTemporaryFile("w", suffix=".srt", delete=False) as f:
+        f.write(srt); tmp = f.name
+    ws = parse_srt(tmp)
+    os.unlink(tmp)
+    assert [w["w"] for w in ws] == "Be honest you clicked AI edited this".split(), ws
+    assert ws[0]["s"] == 1.0 and ws[4]["s"] == 5.0, ws
+    assert all(a["e"] <= b["s"] + 1e-6 for a, b in zip(ws, ws[1:])), ws
     print("selftest: PASS")
 
 
@@ -711,6 +802,9 @@ def main():
         sp = sub.add_parser(c)
         if c == "plan":
             sp.add_argument("--auto", action="store_true")
+        if c == "words":
+            sp.add_argument("--srt", default=None,
+                            help="use an .srt caption file instead of Whisper")
     r = sub.add_parser("review"); r.add_argument("--port", type=int, default=8765)
     a = p.parse_args()
     {"init": cmd_init, "words": cmd_words, "plan": cmd_plan, "cut": cmd_cut,
