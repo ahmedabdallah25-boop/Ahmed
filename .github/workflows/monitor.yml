@@ -20,3 +20,16 @@ jobs:
           YT_CLIENT_ID: ${{ secrets.new1 }}
           YT_CLIENT_SECRET: ${{ secrets.new2 }}
           YT_REFRESH_TOKEN: ${{ secrets.new3 }}
+      - name: Fetch comment threads
+        run: python automation/fetch_comments.py
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+          YT_CLIENT_ID: ${{ secrets.new1 }}
+          YT_CLIENT_SECRET: ${{ secrets.new2 }}
+          YT_REFRESH_TOKEN: ${{ secrets.new3 }}
+      - name: Keep series playlist in order
+        run: python automation/fix_playlist_order.py
+        env:
+          YT_CLIENT_ID: ${{ secrets.new1 }}
+          YT_CLIENT_SECRET: ${{ secrets.new2 }}
+          YT_REFRESH_TOKEN: ${{ secrets.new3 }}
