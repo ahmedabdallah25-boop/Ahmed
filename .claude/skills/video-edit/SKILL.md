@@ -13,6 +13,12 @@ or raw ffmpeg output — the printed summaries contain everything you need.
 Entry point: `python3 .claude/skills/video-edit/scripts/ve.py <cmd> ...`
 (alias below: `ve`). Run `ve doctor` first on a new machine.
 
+**Offline fallback:** if Whisper's model can't be reached (no GPU, offline, or a blocked
+egress policy), the pipeline auto-degrades to **TIGHTEN mode** — it removes dead air using
+silence detection (cuts land inside silences, so words are never clipped) and still
+loudness-normalizes. Captions and transcript-anchored `gfx` are skipped in this mode; run on
+a machine that can fetch the model (e.g. your own laptop) for the full treatment.
+
 ## The six pillars (what the scripts enforce for you)
 
 1. **Planning** — `ve words` gives beat-level lines with retake detection.

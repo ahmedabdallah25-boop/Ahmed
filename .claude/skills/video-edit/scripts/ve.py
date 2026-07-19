@@ -33,10 +33,13 @@ def need_ffmpeg():
             die(f"{t} not found. Install: brew install ffmpeg | apt-get install ffmpeg")
 
 
-def jload(p, default=None):
+_MISSING = object()
+
+
+def jload(p, default=_MISSING):
     p = Path(p)
     if not p.exists():
-        if default is not None:
+        if default is not _MISSING:
             return default
         die(f"missing {p} — run the earlier pipeline step first")
     return json.loads(p.read_text())
@@ -98,18 +101,26 @@ def probe(proj):
 def transcribe_words(src):
     try:
         from faster_whisper import WhisperModel
-        model = WhisperModel("small", compute_type="int8")
-        segs, _ = model.transcribe(src, word_timestamps=True)
-        return [{"w": w.word.strip(), "s": round(w.start, 3), "e": round(w.end, 3)}
-                for s in segs for w in s.words]
     except ImportError:
         pass
+    else:
+        try:
+            model = WhisperModel("small", compute_type="int8")
+            segs, _ = model.transcribe(src, word_timestamps=True)
+            return [{"w": w.word.strip(), "s": round(w.start, 3), "e": round(w.end, 3)}
+                    for s in segs for w in s.words]
+        except Exception as ex:  # model not cached + offline/blocked host, etc.
+            print(f"note: whisper model unavailable ({type(ex).__name__}) — "
+                  "using silence-based tighten instead", file=sys.stderr)
     try:
         import whisper
+    except ImportError:
+        return None
+    try:
         r = whisper.load_model("small").transcribe(src, word_timestamps=True)
         return [{"w": w["word"].strip(), "s": round(w["start"], 3), "e": round(w["end"], 3)}
                 for s in r["segments"] for w in s.get("words", [])]
-    except ImportError:
+    except Exception:
         return None
 
 
@@ -176,13 +187,19 @@ def cmd_plan(args):
     if lines:
         keep = [l["id"] for l in lines
                 if "retake_of" not in l and not filler_only(l["text"])]
-    else:
+        edit = {"keep_lines": keep, "zoom": "auto", "captions": True,
+                "music": "auto", "sfx": "auto", "gfx": []}
+    else:  # no transcript: offline dead-air-tighten mode (word-safe, no captions)
         keep = "all"
-    edit = {"keep_lines": keep, "zoom": "auto", "captions": True,
-            "music": "auto", "sfx": "auto", "gfx": []}
+        edit = {"keep_lines": keep, "tighten": True, "zoom": [], "captions": False,
+                "music": "auto", "sfx": "auto", "gfx": []}
     jsave(proj / "edit.json", edit)
-    drop = [l["id"] for l in lines if l["id"] not in keep] if lines else []
-    print(f"edit.json written — keeping {keep if keep == 'all' else len(keep)} lines"
+    if not lines:
+        print("no transcript — offline TIGHTEN mode: dead air removed (word-safe), "
+              "loudness normalized. Captions/gfx need Whisper. Then: ve cut && ve render")
+        return
+    drop = [l["id"] for l in lines if l["id"] not in keep]
+    print(f"edit.json written — keeping {len(keep)} lines"
           + (f", dropped {drop}" if drop else "") + ". Add gfx, then: ve cut && ve render")
 
 
@@ -213,9 +230,29 @@ def snap(t, gaps, kind):
     return round(min(hi, max(lo, want)), 3)
 
 
+def build_tighten_ranges(proj, m, pad=0.18, min_sil=0.45):
+    """Transcript-free dead-air removal. Cuts fall INSIDE silence, so words are
+    never clipped; short natural pauses (< min_sil) are kept intact."""
+    wj = jload(proj / "words.json", default=None)
+    sils = sorted(wj["silences"] if wj else detect_silences(m["src"]))
+    kept, cur = [], 0.0
+    for s, e in sils:
+        if e - s < max(min_sil, 2 * pad):
+            continue
+        end = round(s + pad, 3)
+        if end > cur + 0.15:
+            kept.append([cur, end])
+        cur = round(e - pad, 3)
+    if m["dur"] > cur + 0.15:
+        kept.append([cur, round(m["dur"], 3)])
+    return kept
+
+
 def resolve_ranges(proj, m, edit):
     lines = jload(proj / "lines.json", default=[])
     if edit["keep_lines"] == "all" or not lines:
+        if edit.get("tighten", True):
+            return build_tighten_ranges(proj, m) or [[0.0, m["dur"]]]
         return [[0.0, m["dur"]]]
     by_id = {l["id"]: l for l in lines}
     ids = sorted(set(edit["keep_lines"]))
@@ -659,6 +696,8 @@ def cmd_selftest(args):
     assert not any(w["s"] + 0.02 < b < w["e"] - 0.02 for w in words), b
     segs = [{"src": [0.0, 5.0], "dst": 0.0, "zoom": 1}, {"src": [8.0, 10.0], "dst": 5.0, "zoom": 1.06}]
     assert src2dst(9.0, segs) == 6.0 and src2dst(6.5, segs) is None
+    assert jload("/no/such/file", default=None) is None  # sentinel != None default
+    assert jload("/no/such/file", default=[]) == []
     print("selftest: PASS")
 
 
