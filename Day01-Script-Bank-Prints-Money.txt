@@ -1,0 +1,188 @@
+================================================================================
+  DAY 1 PRODUCTION SCRIPT  —  FINANCE % DECODED
+  "Your Bank Prints Money Every Time You Sign a Loan"
+  Format: YouTube Short | ~60s | Faceless | AI voiceover
+================================================================================
+
+
+--------------------------------------------------------------------------------
+  1. SELECTED YOUTUBE TITLE
+--------------------------------------------------------------------------------
+PRIMARY (use this):
+    Your Bank Prints Money Every Time You Sign a Loan
+
+BACKUP A:  The Money for Your Loan Didn't Exist Until You Signed
+BACKUP B:  How Banks Create Money From Nothing (You Won't Believe This)
+
+Note: keep #Shorts OUT of the title line if possible (cleaner) and put it in
+the description instead. If your CMS forces a hashtag, append " #shorts" only.
+
+
+--------------------------------------------------------------------------------
+  2. FIRST-FRAME / ON-SCREEN HOOK TEXT  (this is your "thumbnail")
+--------------------------------------------------------------------------------
+Big bold text on screen in second 1, readable with sound OFF:
+
+        YOUR BANK
+        *PRINTS* MONEY
+        WHEN YOU SIGN
+
+(White heavy sans-serif, gold accent on "PRINTS", dark background.)
+
+
+--------------------------------------------------------------------------------
+  3. VOICEOVER SCRIPT  (ElevenLabs v3 — audio tags + captions + timecodes)
+--------------------------------------------------------------------------------
+Legend:  [tag] = delivery/emotion tag   |   ...  = micro-pause
+         <break time="0.5s"/> = hard pause (most reliable in ElevenLabs)
+         CAPS = spoken emphasis
+
+--- 0:00–0:04  |  HOOK ---
+[whispers] So here's something they will never tell you.
+<break time="0.4s"/>
+[serious] The money for your loan... it didn't exist one second before you signed.
+  [ON-SCREEN: "It didn't exist yet."]
+
+--- 0:04–0:14  |  THE MECHANISM ---
+[calm] When the bank approves you, it doesn't reach into a vault.
+It just... [pause] types a number into your account.
+<break time="0.3s"/>
+[curious] Money that was never there before.
+  [ON-SCREEN: a number typing into an account]
+
+--- 0:14–0:26  |  THE SCALE ---
+[building] Your signature creates the asset. The bank creates the deposit.
+Over NINETY percent of all the money in the world was born exactly like this —
+<break time="0.3s"/>
+[emphatic] not printed by governments... typed by banks.
+  [ON-SCREEN: "90% of all money = typed, not printed"]
+
+--- 0:26–0:40  |  THE TRAP ---
+[serious] And here's the trap.
+The loan creates the money you borrow... [pause] but never the interest.
+<break time="0.3s"/>
+So to pay that interest, [emphasis] someone else has to borrow too.
+[slow] Which means the system needs endless debt... just to survive.
+  [ON-SCREEN: a chain of loans, one person sinking]
+
+--- 0:40–0:50  |  THE VANISH ---
+[whispers] And when you finally repay?
+<break time="0.4s"/>
+[normal] That money doesn't go back into a vault. It just... vanishes.
+[whispers] Deleted.
+  [ON-SCREEN: cash dissolving into pixels]
+
+--- 0:50–1:00  |  THE REVEAL + LOOP ---
+[serious] This is why riba was never just a fee.
+<break time="0.4s"/>
+[slow, emphatic] It's a machine... built on permanent debt.
+<break time="0.5s"/>
+[whispers] And once you see it... you can't unsee it.
+  [ON-SCREEN: "No jargon, just mechanisms." — channel sign-off]
+
+WORD COUNT: ~165 words (~58–62s at a calm, weighty pace).
+
+
+--------------------------------------------------------------------------------
+  4. ELEVENLABS VOICE SETTINGS (recommended)
+--------------------------------------------------------------------------------
+Model:        Eleven v3  (required — it's the one that reads [audio tags])
+Voice type:   Deep, calm, authoritative male narrator (documentary tone)
+Stability:    ~45%  (Natural) — low enough for the tags to shape emotion
+Similarity:   ~75%
+Style:        ~35%  (some expressiveness, not theatrical)
+Speed:        0.95x — slightly slow for gravitas; the pauses do the work
+Tip: If a [tag] ever gets read aloud as a word, delete it and rely on the
+     ellipses + <break> tags for that line.
+
+
+--------------------------------------------------------------------------------
+  5. IMAGE PROMPTS  (9:16 vertical B-roll — one per beat)
+--------------------------------------------------------------------------------
+STYLE ANCHOR (paste at the START of every prompt for a consistent look):
+"Cinematic 3D render, dark moody atmosphere, dramatic volumetric lighting,
+deep teal-and-gold color palette, hyper-detailed, subtle film grain, shallow
+depth of field, 9:16 vertical, no text, no watermark --ar 9:16"
+
+SCENE 1 (0:00 hook):
+  ...a single loan contract on a dark wooden desk, an expensive pen resting on
+  the signature line, warm gold light glowing up from where the ink meets paper,
+  cinematic close-up, mysterious.
+
+SCENE 2 (0:04 the vault myth):
+  ...a massive steel bank vault door slowly opening to reveal it is completely
+  EMPTY and hollow inside, cold blue light spilling out, echoing emptiness,
+  wide dramatic shot.
+
+SCENE 3 (0:07 typing money):
+  ...an extreme close-up of a banker's dark computer screen, glowing gold digits
+  of a large dollar amount being typed into a bank account field, reflection in
+  glasses, cinematic.
+
+SCENE 4 (0:14 the scale — 90%):
+  ...a vast endless ocean made of glowing floating numbers and currency symbols
+  stretching to the horizon, and beside it a single tiny old-fashioned printing
+  press, dramatic scale contrast, aerial cinematic view.
+
+SCENE 5 (0:26 the trap):
+  ...an infinite chain of glowing loan contracts linked like dominoes curving
+  into darkness, a lone human silhouette sinking into the paper, oppressive,
+  cinematic wide shot.
+
+SCENE 6 (0:40 the vanish):
+  ...a hand placing a stack of cash onto a glowing surface where the money
+  instantly dissolves into golden pixels and dust, disappearing into black,
+  slow-motion cinematic macro.
+
+SCENE 7 (0:50 the machine — reveal):
+  ...a colossal dark industrial machine built entirely from grinding gears and
+  loan paperwork, endlessly turning, a tiny human figure trapped as one of the
+  cogs, epic ominous cinematic scale.
+
+SCENE 8 (0:57 can't unsee it — sign-off):
+  ...a single human eye reflecting the glowing machine of gears and money, pupil
+  wide with realization, extreme cinematic close-up, gold light, dark.
+
+
+--------------------------------------------------------------------------------
+  6. YOUTUBE DESCRIPTION  (paste as-is)
+--------------------------------------------------------------------------------
+Your bank doesn't lend you money from a vault. It types it into existence the
+moment you sign — and over 90% of all money in the world was created exactly
+this way. Here's the mechanism nobody explained to you... and why Islam called
+it riba 1,400 years ago.
+
+This is the money machine, decoded — no jargon, just mechanisms.
+
+▶ Watch the full Money Machine series: https://www.youtube.com/playlist?list=PLKLKzR1QgFHE
+▶ Daily money takes on X: https://x.com/financedecode
+
+New mechanism decoded every day. Subscribe so you never get played by a system
+you were never taught.
+
+#IslamicFinance #Riba #HalalMoney #Banking #Inflation #Shorts
+
+
+--------------------------------------------------------------------------------
+  7. TAGS  (comma-separated — paste into the Tags field)
+--------------------------------------------------------------------------------
+islamic finance, riba explained, how banks create money, money printing,
+fractional reserve banking, halal money, halal finance, banking explained,
+where money comes from, how banks work, debt, interest explained, sound money,
+inflation, financial literacy, money machine, faceless finance, personal finance,
+haram interest, deen and dinar, finance decoded, islamic economics, fiat money
+
+
+--------------------------------------------------------------------------------
+  8. PRODUCTION NOTES
+--------------------------------------------------------------------------------
+- HOOK IS EVERYTHING: the on-screen text must hit in frame 1, before the VO.
+- STANDALONE: zero references to "last video / part one." This works cold.
+- CAPTIONS: burn word-by-word subtitles (most Shorts are watched muted).
+- MUSIC: low, tense, sub-bass drone; duck it -6dB under the voice.
+- CUT ON EVERY LINE: new image each beat above = ~8 cuts = high retention.
+- LOOP: end frame (the eye) can hard-cut back to the Scene 1 pen — seamless
+  rewatch = more watch time = more reach.
+- LENGTH: keep it UNDER 60s so it stays eligible as a Short.
+
+================================================================================
