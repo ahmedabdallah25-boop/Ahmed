@@ -1,0 +1,115 @@
+================================================================================
+  DAY 1 — EDIT TIMELINE / CUT SHEET  (synced to the real voiceover)
+  "Your Bank Prints Money Every Time You Sign a Loan"
+================================================================================
+
+VOICEOVER FILE: 20833c7c-ElevenLabs_...v3.mp3
+MEASURED LENGTH: 74.87 sec (1:14.9)
+  -> Valid as a YouTube Short (Shorts allow up to 3 min). If you want the
+     tighter <60s cut for max distribution, see "TRIM OPTIONS" at the bottom.
+
+HOW THIS WAS BUILT: ffmpeg silencedetect found the narrator's real pauses.
+Every SCENE CUT below lands on a detected pause (speech-resume point), so the
+visual changes on the beat, not mid-word.
+
+Detected major pauses (cut-friendly): 6.54s, 10.40s, 15.25s, 18.06s, 21.07s,
+26.36s, 37.03s, 53.62s, 60.51s, 62.64s, 64.19s, 71.71s.
+
+
+--------------------------------------------------------------------------------
+  8-SCENE CUT SHEET  (drop images on these exact timecodes)
+--------------------------------------------------------------------------------
+
+SCENE 1  |  00.00 - 06.54  |  IMG #4  Loan contract + gold pen
+  VO: "So here's something they'll never tell you. The money for your loan..."
+  ON-SCREEN: [0-3s] "YOUR BANK *PRINTS* MONEY WHEN YOU SIGN"  ->  [3-6.5s] "It didn't exist yet."
+  MOTION: slow push-in on the signature line.
+
+SCENE 2  |  06.54 - 15.25  |  IMG #3  Empty vault door
+  VO: "...it didn't exist one second before you signed. When the bank approves
+       you, it doesn't reach into a vault."
+  ON-SCREEN: "Not from a vault."
+  MOTION: slow dolly toward the open (empty) door; the emptiness is the point.
+
+SCENE 3  |  15.25 - 23.58  |  IMG #5  Monitor, $1,250,000 balance
+  VO: "It just types a number into your account. Money that was never there
+       before."
+  ON-SCREEN: [~17s] "Just... typed in."  ->  [~21s] "Money that didn't exist."
+  MOTION: subtle zoom on the glowing number; flicker the digits once.
+
+SCENE 4  |  23.58 - 37.03  |  IMG #2  Ocean of currency + printing press
+  VO: "Your signature creates the asset. The bank creates the deposit. Over
+       NINETY percent of all the money in the world was born exactly like this
+       — not printed by governments... typed by banks."
+  ON-SCREEN: [~30s big text] "90% OF ALL MONEY"  ->  [~35s] "typed, not printed."
+  MOTION: slow aerial drift across the number-ocean.
+  OPTIONAL: flash IMG #4 (pen) for ~0.5s on the word "signature" (~24s).
+
+SCENE 5  |  37.03 - 53.62  |  IMG #1  Spiral of contracts + sinking person
+  VO: "And here's the trap. The loan creates the money you borrow... but never
+       the interest. So to pay that interest, someone else has to borrow too.
+       Which means the system needs endless debt... just to survive."
+  ON-SCREEN: [~37s] "The trap."  ->  [~43s] "It never creates the interest."
+             ->  [~51s] "Endless debt to survive."
+  MOTION: slow push-in following the spiral down toward the sinking figure.
+  (Longest scene ~16s — the parallax on this image carries it. If it feels
+   long, hold on the sinking figure for the last 4s.)
+
+SCENE 6  |  53.62 - 64.19  |  IMG #6 [INCOMING]  Money dissolving into dust
+  VO: "And when you finally repay? That money doesn't go back into a vault. It
+       just... vanishes. Deleted."
+  ON-SCREEN: [~54s] "You repay..."  ->  [~60s] "It vanishes."  ->  [~63s] "Deleted."
+  MOTION: the dissolve should play across the 59-64s pauses; time the particles
+          to hit "Deleted" at ~63s.
+
+SCENE 7  |  64.19 - 71.71  |  IMG #7 [INCOMING]  The debt machine
+  VO: "This is why riba was never just a fee. It's a machine... built on
+       permanent debt."
+  ON-SCREEN: [~65s] "Riba isn't a fee."  ->  [~68s] "It's a MACHINE."
+  MOTION: slow tilt up the giant machine; gears grinding.
+
+SCENE 8  |  71.71 - 74.87 (END)  |  IMG #8 [INCOMING]  The eye
+  VO: "And once you see it... you can't unsee it."
+  ON-SCREEN: "You can't unsee it."  +  small sign-off "No jargon, just mechanisms."
+  MOTION: slow push-in to the pupil reflecting the machine.
+  LOOP: hard-cut from the eye straight back to SCENE 1 (pen) at 74.87 so the
+        Short loops seamlessly = more replays = more reach.
+
+
+--------------------------------------------------------------------------------
+  CAPTIONS  (do this or the video underperforms)
+--------------------------------------------------------------------------------
+- Burn WORD-BY-WORD subtitles the whole way through (most Shorts watched muted).
+- The big ON-SCREEN lines above are separate, larger "punch" text on top of the
+  running subtitles — keep them to 2-4 words, bold, center-frame.
+- Frame 1 hook text MUST be visible before the first word is heard.
+
+
+--------------------------------------------------------------------------------
+  TRANSITIONS & SOUND
+--------------------------------------------------------------------------------
+- Between scenes: hard cut on the pause (default). Exceptions:
+    * Scene 5 -> 6 (repay/vanish): quick 3-frame white flash.
+    * Scene 6 "Deleted": a short glitch/stutter works well.
+- Music: low tense sub-bass drone, ducked -6 dB under the VO.
+- SFX: soft "type" click in Scene 3; a low boom on "90%" (Scene 4); a metallic
+  clank on "MACHINE" (Scene 7).
+
+
+--------------------------------------------------------------------------------
+  TRIM OPTIONS (only if you want it under 60s)
+--------------------------------------------------------------------------------
+The VO is 74.87s. To reach ~58s you'd re-record trimming ~17s. Cheapest cuts:
+  - Scene 4: drop "was born exactly like this" (saves ~2s).
+  - Scene 5: drop "So to pay that interest, someone else has to borrow too"
+    (saves ~4s) OR tighten to "The loan creates the money... never the interest.
+    The system needs endless debt to survive." (saves ~6s).
+  - Shorten the inter-line breaks in ElevenLabs from 0.5s to 0.3s (saves ~5s).
+Recommendation: LEAVE IT AT 75s for v1. It's a valid Short and the pacing is
+strong. Only trim if the retention graph shows a mid-video drop.
+
+================================================================================
+  NEXT: send the 3 remaining images (vanish / machine / eye) and I can
+  auto-assemble a synced draft MP4 (images on these timecodes + your audio +
+  push-in motion) with ffmpeg, right here.
+================================================================================
