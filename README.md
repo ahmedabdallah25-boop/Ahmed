@@ -9,6 +9,7 @@ Data pulled 2026-07-17 from public YouTube data via Nexlev.
 |---|---|
 | [`channel-study.md`](channel-study.md) | Full channel performance study: what the winners share, why the insurance arc is slumping |
 | [`last-video-fix.md`](last-video-fix.md) | Copy-paste fix pack for the latest Short (Part 12 — Takaful): new title, description, tags, pinned comment, re-cut hook script, and a 72-hour decision rule |
+| [`vo-script-money-creation.md`](vo-script-money-creation.md) | Voiceover script for the money-creation / riba episode with a dynamic ElevenLabs v3 performance-tag pass (valid audio tags, emotional arc, and voice settings) — paste-ready |
 | [`automation/`](automation/) | **The pipeline that applies all of it automatically** — scripts + GitHub Actions. One-time key setup in [`automation/SETUP.md`](automation/SETUP.md) (~10 min), then: metadata fix, comment posting, playlist-link repair across all 12 videos, and a 6-hourly monitor that applies the 72-hour decision rule |
 
 ## TL;DR
