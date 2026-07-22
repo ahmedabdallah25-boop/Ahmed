@@ -1,0 +1,41 @@
+name: Rebrand channel (Deen & Dinar)
+
+on:
+  workflow_dispatch:
+    inputs:
+      upload_banner:
+        description: "Regenerate brand assets and upload the banner"
+        type: boolean
+        default: true
+      trailer_video_id:
+        description: "Video ID to set as channel trailer (leave empty to skip)"
+        type: string
+        default: ""
+
+jobs:
+  rebrand:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-dejavu-core
+      - run: pip install -r automation/requirements.txt
+      - name: Generate brand assets
+        run: python automation/generate_branding.py
+      - name: Apply rebrand to the channel
+        run: |
+          ARGS=""
+          if [ "${{ inputs.upload_banner }}" = "true" ]; then ARGS="$ARGS --banner media/branding/banner.png"; fi
+          if [ -n "${{ inputs.trailer_video_id }}" ]; then ARGS="$ARGS --trailer ${{ inputs.trailer_video_id }}"; fi
+          python automation/rebrand_channel.py $ARGS
+        env:
+          YT_CLIENT_ID: ${{ secrets.new1 }}
+          YT_CLIENT_SECRET: ${{ secrets.new2 }}
+          YT_REFRESH_TOKEN: ${{ secrets.DEEN_HEART_REFRESH_TOKEN }}
+      - name: Save assets (avatar for the manual Studio upload)
+        uses: actions/upload-artifact@v4
+        with:
+          name: branding
+          path: media/branding/
