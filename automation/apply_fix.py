@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Apply the Part 12 fix pack (title / description / tags) to the live video.
+"""Apply a fix pack (title / description / tags) to the live video.
+
+Usage: apply_fix.py [config-file]
+  config-file defaults to config.json (the current Short). Pass longform.json
+  to apply the long-form episode's fix pack instead.
 
 Needs the channel owner's OAuth credentials in env vars (one-time setup, see SETUP.md):
   YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN
@@ -14,7 +18,8 @@ from pathlib import Path
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 
-CONFIG = json.loads((Path(__file__).parent / "config.json").read_text())
+CONFIG_NAME = sys.argv[1] if len(sys.argv) > 1 else "config.json"
+CONFIG = json.loads((Path(__file__).parent / CONFIG_NAME).read_text())
 SCOPES = ["https://www.googleapis.com/auth/youtube.force-ssl"]
 
 
@@ -62,7 +67,7 @@ def main():
     snippet["description"] = target_description
     snippet["tags"] = new_tags
     yt.videos().update(part="snippet", body={"id": vid, "snippet": snippet}).execute()
-    print(f"Updated https://youtube.com/shorts/{vid}")
+    print(f"Updated {CONFIG.get('watch_url') or f'https://youtube.com/shorts/{vid}'}")
     print(f"  title: {target_title}")
     if not CONFIG["playlist_url"].strip():
         print("  note: playlist_url is empty in config.json — the series-playlist line was "

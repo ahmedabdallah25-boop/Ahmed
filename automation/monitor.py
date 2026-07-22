@@ -1,14 +1,19 @@
 #!/usr/bin/env python3
-"""Check Part 12's view count and apply the 72-hour decision rule.
+"""Check a tracked video's view count and apply its decision rule.
+
+Usage: monitor.py [config-file]
+  config-file defaults to config.json (the current Short, 72h rule). Pass
+  longform.json for the long-form episode (7-day rule — long-form ramps via
+  search/suggested over days, and is repackaged rather than deleted).
 
 Uses a plain YouTube Data API key (YT_API_KEY env var) — public data only,
 no OAuth needed. Stdlib only, so CI needs no pip install.
 
 Verdicts:
-  WAIT  — under 72h since publish; report pace and time remaining
-  PASS  — >= pass_views at decision time; the feed picked it up, leave it alone
-  DEAD  — <= dead_views at decision time; re-upload with the re-cut hook
-          (see last-video-fix.md) and delete the original
+  WAIT  — under decision_hours since publish; report pace and time remaining
+  PASS  — >= pass_views at decision time; distribution picked it up, leave it alone
+  DEAD  — <= dead_views at decision time; Shorts: re-upload with the re-cut hook
+          and delete the original. Long-form: repackage (thumbnail/title), never delete
   GRAY  — in between; give it another 48h before deciding
 """
 import json
@@ -19,7 +24,8 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-CONFIG = json.loads((Path(__file__).parent / "config.json").read_text())
+CONFIG_NAME = sys.argv[1] if len(sys.argv) > 1 else "config.json"
+CONFIG = json.loads((Path(__file__).parent / CONFIG_NAME).read_text())
 
 
 def oauth_access_token() -> str:
@@ -59,37 +65,62 @@ def fetch_views(video_id: str) -> int:
 def main():
     vid = CONFIG["video_id"]
     rule = CONFIG["decision_rule"]
+    longform = CONFIG.get("mode") == "longform"
+    url = CONFIG.get("watch_url") or f"https://youtube.com/shorts/{vid}"
+    label = CONFIG.get("label", "Part 12")
     published = datetime.fromisoformat(CONFIG["published_at"].replace("Z", "+00:00"))
     hours = (datetime.now(timezone.utc) - published).total_seconds() / 3600
     views = fetch_views(vid)
 
     if hours < rule["decision_hours"]:
         verdict = "WAIT"
-        detail = (f"{hours:.0f}h since publish ({rule['decision_hours'] - hours:.0f}h until "
-                  f"decision). Views: {views}. Winners on this channel ran ~200-300 views/day "
-                  "once the feed picked them up — a near-zero count before pickup is normal.")
+        if longform:
+            detail = (f"{hours:.0f}h since publish ({rule['decision_hours'] - hours:.0f}h until "
+                      f"the day-{rule['decision_hours'] // 24} decision). Views: {views}. "
+                      "Long-form on a Shorts-built channel ramps through search + suggested "
+                      "over days, not hours — near-zero early is normal. Keep the funnel "
+                      "Shorts posting daily (see longform-fix.md).")
+        else:
+            detail = (f"{hours:.0f}h since publish ({rule['decision_hours'] - hours:.0f}h until "
+                      f"decision). Views: {views}. Winners on this channel ran ~200-300 views/day "
+                      "once the feed picked them up — a near-zero count before pickup is normal.")
     elif views >= rule["pass_views"]:
         verdict = "PASS"
-        detail = (f"{views} views at {hours:.0f}h — the feed picked it up. "
-                  "Leave the video alone.")
+        if longform:
+            detail = (f"{views} views at {hours:.0f}h — search/suggested picked it up. Leave the "
+                      "packaging alone and keep the funnel Shorts running.")
+        else:
+            detail = (f"{views} views at {hours:.0f}h — the feed picked it up. "
+                      "Leave the video alone.")
     elif views <= rule["dead_views"]:
         verdict = "DEAD"
-        detail = (f"{views} views at {hours:.0f}h — the feed test failed. Re-upload with the "
-                  "re-cut hook from last-video-fix.md, then delete this upload and update "
-                  "video_id/published_at in config.json.")
+        if longform:
+            detail = (f"{views} views at {hours:.0f}h — impressions never arrived. Do NOT delete: "
+                      "long-form accrues search views for years. Repackage instead — swap the "
+                      "thumbnail, apply the alternate title from longform-fix.md, and keep the "
+                      "daily funnel Shorts going.")
+        else:
+            detail = (f"{views} views at {hours:.0f}h — the feed test failed. Re-upload with the "
+                      "re-cut hook from last-video-fix.md, then delete this upload and update "
+                      "video_id/published_at in config.json.")
     else:
         verdict = "GRAY"
-        detail = (f"{views} views at {hours:.0f}h — between thresholds "
-                  f"({rule['dead_views']}-{rule['pass_views']}). The metadata fix may still "
-                  "catch; re-check in 48h before re-uploading.")
+        if longform:
+            detail = (f"{views} views at {hours:.0f}h — between thresholds "
+                      f"({rule['dead_views']}-{rule['pass_views']}). Search-driven growth is a "
+                      "slow burn; keep the funnel cadence and re-check in 48h.")
+        else:
+            detail = (f"{views} views at {hours:.0f}h — between thresholds "
+                      f"({rule['dead_views']}-{rule['pass_views']}). The metadata fix may still "
+                      "catch; re-check in 48h before re-uploading.")
 
-    line = f"[{verdict}] https://youtube.com/shorts/{vid} — {detail}"
+    line = f"[{verdict}] {url} — {detail}"
     print(line)
 
     summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary_path:
         with open(summary_path, "a") as f:
-            f.write(f"### Part 12 monitor\n\n{line}\n")
+            f.write(f"### {label} monitor\n\n{line}\n")
 
 
 if __name__ == "__main__":

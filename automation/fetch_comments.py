@@ -20,6 +20,7 @@ VIDEOS = {
     "Part 11 (Gharar)": "BMSmgBJ82JU",
     "Part 12 (Takaful)": "ebIU6OHJ-jg",
     "Part 13 (Ijara)": "ElD5gg-Q1wY",
+    "Long-form Ep. 1 (Money Creation)": "7TWUwpbl83U",
 }
 
 
@@ -63,7 +64,7 @@ def comment_line(snippet: dict, owner_channel_id: str, indent: str = "") -> str:
 def main():
     lines = []
     for label, vid in VIDEOS.items():
-        lines.append(f"\n=== {label} — https://youtube.com/shorts/{vid} ===")
+        lines.append(f"\n=== {label} — https://youtu.be/{vid} ===")
         try:
             data = api_get("commentThreads", {
                 "part": "snippet,replies", "videoId": vid,

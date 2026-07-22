@@ -1,41 +1,37 @@
-name: Monitor video performance
+name: Boost long-form Ep. 1
 
 on:
-  schedule:
-    - cron: "30 */6 * * *"   # every 6 hours
   workflow_dispatch:
 
 jobs:
-  monitor:
+  boost:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Check views and apply decision rule
-        run: python automation/monitor.py
+      - run: pip install -r automation/requirements.txt
+      - name: Update description, chapters, tags
+        run: python automation/apply_fix.py longform.json
         env:
-          YT_API_KEY: ${{ secrets.YT_API_KEY }}
           YT_CLIENT_ID: ${{ secrets.new1 }}
           YT_CLIENT_SECRET: ${{ secrets.new2 }}
           YT_REFRESH_TOKEN: ${{ secrets.new3 }}
-      - name: Check long-form Ep. 1 (7-day rule)
-        run: python automation/monitor.py longform.json
+      - name: Upload corrected captions
+        run: python automation/upload_captions.py longform.json
         env:
-          YT_API_KEY: ${{ secrets.YT_API_KEY }}
           YT_CLIENT_ID: ${{ secrets.new1 }}
           YT_CLIENT_SECRET: ${{ secrets.new2 }}
           YT_REFRESH_TOKEN: ${{ secrets.new3 }}
-      - name: Fetch comment threads
-        run: python automation/fetch_comments.py
+      - name: Post engagement comment
+        run: python automation/post_comment.py longform.json
         env:
-          YT_API_KEY: ${{ secrets.YT_API_KEY }}
           YT_CLIENT_ID: ${{ secrets.new1 }}
           YT_CLIENT_SECRET: ${{ secrets.new2 }}
           YT_REFRESH_TOKEN: ${{ secrets.new3 }}
-      - name: Keep series playlist in order
-        run: python automation/fix_playlist_order.py
+      - name: Ensure playlists carry the episode
+        run: python automation/ensure_longform_playlist.py longform.json
         env:
           YT_CLIENT_ID: ${{ secrets.new1 }}
           YT_CLIENT_SECRET: ${{ secrets.new2 }}
