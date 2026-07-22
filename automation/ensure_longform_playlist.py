@@ -16,6 +16,8 @@ so CI needs no pip install. Idempotent.
 import json
 import os
 import sys
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -65,18 +67,31 @@ def list_all(endpoint: str, params: dict, token: str) -> list:
 
 
 def ensure_in_playlist(playlist_id: str, playlist_label: str, vid: str,
-                       token: str, report: list):
-    items = list_all("playlistItems", {"part": "snippet",
-                                       "playlistId": playlist_id}, token)
-    if any(it["snippet"]["resourceId"].get("videoId") == vid for it in items):
-        report.append(f'already in {playlist_label}')
-        return
-    api_call("POST", "playlistItems", {"part": "snippet"}, token, body={
+                       token: str, report: list, assume_empty: bool = False):
+    # A just-created playlist can 404 for a few seconds while it propagates —
+    # skip the membership check for those (they can't contain the video yet)
+    # and retry the insert on 404.
+    if not assume_empty:
+        items = list_all("playlistItems", {"part": "snippet",
+                                           "playlistId": playlist_id}, token)
+        if any(it["snippet"]["resourceId"].get("videoId") == vid for it in items):
+            report.append(f'already in {playlist_label}')
+            return
+    body = {
         "snippet": {
             "playlistId": playlist_id,
             "resourceId": {"kind": "youtube#video", "videoId": vid},
         },
-    })
+    }
+    for attempt in range(5):
+        try:
+            api_call("POST", "playlistItems", {"part": "snippet"}, token, body=body)
+            break
+        except urllib.error.HTTPError as e:
+            if e.code == 404 and attempt < 4:
+                time.sleep(5 * (attempt + 1))
+                continue
+            raise
     report.append(f'added to {playlist_label}')
 
 
@@ -91,14 +106,16 @@ def main():
     wanted = cfg["title"].strip().lower()
     target = next((p for p in playlists
                    if p["snippet"]["title"].strip().lower() == wanted), None)
-    if target is None:
+    created = target is None
+    if created:
         target = api_call("POST", "playlists", {"part": "snippet,status"}, token, body={
             "snippet": {"title": cfg["title"],
                         "description": cfg.get("description", "")},
             "status": {"privacyStatus": "public"},
         })
         report.append(f'created playlist "{cfg["title"]}"')
-    ensure_in_playlist(target["id"], f'"{cfg["title"]}"', vid, token, report)
+    ensure_in_playlist(target["id"], f'"{cfg["title"]}"', vid, token, report,
+                       assume_empty=created)
     playlist_url = f"https://www.youtube.com/playlist?list={target['id']}"
     report.append(f"full-episodes playlist: {playlist_url}")
 
