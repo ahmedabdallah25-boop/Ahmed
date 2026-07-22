@@ -23,7 +23,7 @@ video at this stage: **search packaging**, **funneling the audience the channel 
 wins (Shorts)**, and **external distribution**. No shortcuts exist that don't destroy
 the channel; this is the push that compounds.
 
-## What the automation now does (`Actions → "Boost long-form Ep. 1" → Run workflow`)
+## What the automation now does (`Actions → "Apply video fix pack" → Run workflow → config: longform.json`)
 
 | Step | What it fixes |
 |---|---|
@@ -116,7 +116,7 @@ is a fresh 900+ impression test that carries a door into the long-form.
 
 | When | Action |
 |---|---|
-| Now | Run **Boost long-form Ep. 1** workflow → then pin comment, end screen, cards (3 min in Studio) |
+| Now | Run **Apply video fix pack** (config: `longform.json`) → then pin comment, end screen, cards (3 min in Studio) |
 | Today | Post Cut A Short (related video → Ep. 1) · Community poll · X thread |
 | Tomorrow | Cut C Short · WhatsApp/Telegram drops |
 | Day 3 | Cut B Short · Reddit post |

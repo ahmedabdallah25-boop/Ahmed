@@ -3,6 +3,13 @@ name: Apply video fix pack
 on:
   workflow_dispatch:
     inputs:
+      config:
+        description: "Which fix pack to apply (file in automation/)"
+        type: choice
+        options:
+          - config.json
+          - longform.json
+        default: config.json
       fix_playlists:
         description: "Also fix the playlist link across all 12 videos (requires playlist_url in config.json)"
         type: boolean
@@ -18,13 +25,27 @@ jobs:
           python-version: "3.12"
       - run: pip install -r automation/requirements.txt
       - name: Update title, description, tags
-        run: python automation/apply_fix.py
+        run: python automation/apply_fix.py ${{ inputs.config }}
+        env:
+          YT_CLIENT_ID: ${{ secrets.new1 }}
+          YT_CLIENT_SECRET: ${{ secrets.new2 }}
+          YT_REFRESH_TOKEN: ${{ secrets.new3 }}
+      - name: Upload corrected captions (long-form only)
+        if: ${{ inputs.config == 'longform.json' }}
+        run: python automation/upload_captions.py ${{ inputs.config }}
         env:
           YT_CLIENT_ID: ${{ secrets.new1 }}
           YT_CLIENT_SECRET: ${{ secrets.new2 }}
           YT_REFRESH_TOKEN: ${{ secrets.new3 }}
       - name: Post engagement comment
-        run: python automation/post_comment.py
+        run: python automation/post_comment.py ${{ inputs.config }}
+        env:
+          YT_CLIENT_ID: ${{ secrets.new1 }}
+          YT_CLIENT_SECRET: ${{ secrets.new2 }}
+          YT_REFRESH_TOKEN: ${{ secrets.new3 }}
+      - name: Ensure playlists carry the episode (long-form only)
+        if: ${{ inputs.config == 'longform.json' }}
+        run: python automation/ensure_longform_playlist.py ${{ inputs.config }}
         env:
           YT_CLIENT_ID: ${{ secrets.new1 }}
           YT_CLIENT_SECRET: ${{ secrets.new2 }}

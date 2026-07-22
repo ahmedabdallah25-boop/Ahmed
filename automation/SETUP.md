@@ -53,9 +53,9 @@ Repo → **Settings → Secrets and variables → Actions → New repository sec
 3. **Actions → "Monitor video performance"** runs every 6 hours automatically and prints a
    WAIT / PASS / GRAY / DEAD verdict per video — the 72-hour rule for the tracked Short and
    the 7-day rule for long-form Ep. 1.
-4. **Actions → "Boost long-form Ep. 1" → Run workflow** applies the long-form breakthrough
-   pack: corrected chapters + search tags, clean caption upload, engagement comment, and
-   playlist injection (see `longform-fix.md`).
+4. **Actions → "Apply video fix pack" → Run workflow → config: `longform.json`** applies the
+   long-form breakthrough pack: corrected chapters + search tags, clean caption upload,
+   engagement comment, and playlist injection (see `longform-fix.md`).
 
 ## The clicks the API cannot do
 
