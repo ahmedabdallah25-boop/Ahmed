@@ -30,11 +30,52 @@ YT_CLIENT_ID=… YT_CLIENT_SECRET=… YT_REFRESH_TOKEN=…(deen token) \
 
 The script **refuses to run** if the token belongs to any channel other than Deen @ Heart, so it can never accidentally rebrand Finance % Decoded. Re-run any time after editing `rebrand.json` — it's idempotent.
 
-## 2. Identity (already in rebrand.json)
+## 2. Identity — paste-ready for YouTube Studio (Customization → Profile)
 
-- **Name:** Deen & Dinar · **Handle:** @DeenAndDinar
-- **Tagline:** How money really works — without interest.
-- **About & keywords:** see `automation/rebrand.json`
+Manual path: **studio.youtube.com → Customization** (make sure you're switched into the Deen @ Heart channel). Same values live in `automation/rebrand.json`; if you adjust them here, mirror them there so the automation stays in sync.
+
+**Channel name**
+```
+Deen & Dinar
+```
+
+**Handle**
+```
+DeenAndDinar
+```
+
+**Tagline / banner text** (also used as the one-liner anywhere short)
+```
+How money really works — without interest.
+```
+
+**Description (About)**
+```
+Money runs your life whether you understand it or not. Here, you will.
+
+Deen & Dinar breaks down how money actually works — banks, debt, investing, inflation, the systems behind your paycheck — in plain English, with one twist no other finance channel has: every video also shows you the interest-free route. Practical, screened, halal-conscious strategies that anyone (Muslim or not) can use to build wealth without the debt treadmill.
+
+What you'll get:
+• How-it-really-works breakdowns of banks, credit, mortgages, and markets
+• "What happens if you invest $X/month" projections you can copy
+• Interest-free alternatives for every major money decision
+• Zero jargon, zero guru hype — just mechanisms
+
+New videos every week.
+
+This is financial education, not financial advice.
+```
+
+**Channel keywords** (Settings → Channel → Basic info, comma-separated)
+```
+personal finance, finance explained, money explained, investing for beginners, halal investing, islamic finance, interest free, debt free, wealth building, financial education, how banks work, passive income, money mechanisms, budgeting, financial literacy
+```
+
+**Country of residence:** United States · **Video language:** English
+
+**Links panel** (Customization → Links): Shorts channel `youtube.com/@Financeundoubtlydecoded` · X `x.com/financedecode` · business email
+
+**Images:** profile picture `media/branding/avatar.png` · banner `media/branding/banner.png` (banner is also uploaded automatically by the workflow)
 
 ## 3. Channel trailer — 60-second script (record when ready, then `--trailer VIDEO_ID`)
 
