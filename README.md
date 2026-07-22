@@ -10,6 +10,7 @@ Data pulled 2026-07-17 from public YouTube data via Nexlev.
 | [`channel-study.md`](channel-study.md) | Full channel performance study: what the winners share, why the insurance arc is slumping |
 | [`last-video-fix.md`](last-video-fix.md) | Copy-paste fix pack for the latest Short (Part 12 — Takaful): new title, description, tags, pinned comment, re-cut hook script, and a 72-hour decision rule |
 | [`automation/`](automation/) | **The pipeline that applies all of it automatically** — scripts + GitHub Actions. One-time key setup in [`automation/SETUP.md`](automation/SETUP.md) (~10 min), then: metadata fix, comment posting, playlist-link repair across all 12 videos, and a 6-hourly monitor that applies the 72-hour decision rule |
+| [`storyboards/`](storyboards/) | **Long-form video storyboards** for *The Money Machine, Decoded* (the weekly 5-min series). [`style-guide.md`](storyboards/style-guide.md) locks the 2D art style, palette, and character bible reverse-engineered from Episode 1; [`episode-02-the-mortgage-that-owns-you.md`](storyboards/episode-02-the-mortgage-that-owns-you.md) is the full Episode 2 storyboard — script in ElevenLabs emotion tags + paste-ready 2D image prompts per scene |
 
 ## TL;DR
 
