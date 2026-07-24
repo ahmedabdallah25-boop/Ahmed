@@ -1,313 +1,339 @@
-# Episode 4 — A 30-Year Mortgage Costs You Two Houses
+# Episode 4 — One Bought, One Rented, One Partnered
 
-**Title:** How to Buy a House Without Paying for Two (Diminishing Musharakah Explained)
-**Alt titles:** `Your $400,000 House Will Cost You $808,000` · `You Don't Own Half Your Home Until Year 19`
-**Runtime:** 13:20 · **Core number:** $400,000 house → $808,158 paid · **Mechanism:** Diminishing Musharakah
-**Set list:** A (Ledger Wall), C (Counter), D (Long Road), E (Kitchen Table), + Front Garden
+**Title:** One Man Bought a House. One Rented and Invested. 30 Years Later, the Answer Surprised Both of Them.
+**Alt:** `Renting Won for 25 Years. Then It Didn't.` · `$400,000 House, $808,158 Paid`
+**Runtime:** 16:10 · **Race:** 30-year mortgage vs rent-and-invest vs diminishing musharakah
 
-> **Flagship episode.** This topic was the sister channel's single best performer — Part 8, "How to
-> Buy a House Without Interest," 1,214 views against a channel average of ~460. Give it the most
-> production time and the best thumbnail.
+> **Flagship episode.** This topic was the sister channel's best-ever performer — Part 8, "How to Buy
+> a House Without Interest," 1,214 views against a ~460 average. Best thumbnail, most production time.
 
-### The arithmetic (lock this first)
+### The arithmetic (lock first)
 
-House **$400,000** · deposit **20% = $80,000** · loan **$320,000** · **30 years at 6.5%**
+Both men: **32 · $72,000 salary · $80,000 saved · same $400,000 house.**
+House appreciates 3.5%/yr. Rent starts $1,900/mo and rises 3%/yr. Investments return 8%.
 
-| | |
-|---|---|
-| Monthly payment (P&I) | **$2,022.66** |
-| 360 payments | **$728,158** |
-| Plus deposit | **$808,158** |
-| Total interest | **$408,158** |
-| Month 1 — interest | $1,733.33 |
-| Month 1 — principal | **$289.33** (14.3%) |
-| First payment that is majority principal | **Month 233 — year 19, month 5** |
+| | Adam — buys | Sami — rents & invests | Bilal — partners |
+|---|---|---|---|
+| Structure | $80,000 down, $320,000 @ 6.5%, 30 yrs | Rents, invests the $80,000 + the monthly difference | Joint purchase 20/80, buys out the partner's share |
+| Monthly | $2,022.66 + ~$850 tax/ins/maint = **$2,873** | $1,900 rising 3%/yr | Declining rent + equity units |
+| **Total paid** | **$808,158** | rent, forever | **~$655,000** |
+| Interest | **$408,158** | $0 | **$0** |
+| Term | 30 years | never ends | **25 years** |
+| Year 30 | house worth **$1,122,700**, housing cost drops to $850/mo | **$1,332,400** invested, rent now **$4,612/mo forever** | house worth **$1,122,700**, owned 5 years earlier |
 
-Not included above (they apply to buying, not to borrowing): property tax, insurance and maintenance
-add roughly **$10,000 a year**, about **$300,000** over the term.
+**Adam's first payment that is majority principal: number 233 — year 19, month 5.**
+
+**Checkpoints**
+
+| | Year 5 | Year 10 | Year 19 | Year 30 |
+|---|---|---|---|---|
+| Adam (equity) | $177,000 | $293,000 | ~$500,000 | **$1,122,700**, no mortgage |
+| Sami (portfolio) | **$182,550** | **$322,700** | **~$620,000** — rent now $3,240 | $1,332,400 **− a lifetime rent liability** |
 
 ### Chapters
 
 ```
-0:00  You will buy two houses. You'll live in one.
-1:20  The most normal transaction in the world
-3:40  Where $408,000 goes
-5:30  The 233rd payment
-7:00  What the bank actually contributed
-7:30  "Rent is dead money" — the honest answer
-9:15  Lender or partner?
-10:00 Owning the house together
-12:00 Where this gets criticised
-12:45 Your number
+0:00  Meet Adam and Sami
+1:10  One signs for 30 years. One signs for 12 months.
+2:50  Year 5: renting is winning
+5:00  Where $408,000 goes
+7:20  Year 10 — and the payment nobody looks at
+9:20  Year 19: neither of them has won
+11:10 What did the bank actually risk?
+12:10 Year 30: the thing that decided it
+13:40 "You can't put a price on owning your home" — the honest answer
+14:40 There was a third man
+15:50 What it actually depends on
 ```
 
 ---
 
 ## SCRIPT
 
-### ACT 0 — COLD OPEN (0:00–0:35)
+### ACT 1 — MEET THEM (0:00–1:10)
 
-> You are going to buy two houses in your lifetime.
+> Meet Adam and Sami.
 >
-> You'll live in one of them. The other one you will never see, never enter, never own, and never be
-> able to sell — and you will pay full price for it.
+> Both thirty-two. Both earn seventy-two thousand dollars. Both have eighty thousand dollars saved —
+> years of it, the hardest money either of them has ever put together. And both of them are standing
+> in front of the same four hundred thousand dollar house.
 >
-> Four hundred thousand dollar house. Eight hundred and eight thousand dollars out of your pocket.
-> Four hundred and eight thousand of that is interest, which means the invisible house costs slightly
-> more than the real one.
+> Adam buys it. Sami doesn't.
 >
-> This is not a scam, there's no fine print, and nobody misled you. It's the most ordinary
-> transaction in the developed world, and almost everyone who signs one has never seen this number.
+> Adam thinks paying rent is handing money to a stranger forever. Sami thinks a mortgage is handing
+> money to a bank forever, and he'd rather own something that doesn't need a roof.
+>
+> This is the most argued-about question in personal finance, and almost every video about it is
+> propaganda for one side. So I'm going to do something different: I'm going to let Sami win.
+>
+> Because he does. For twenty-five years, renting and investing is ahead — sometimes comfortably. And
+> then, right at the end, something happens that reverses it, and it isn't the house price.
+>
+> Thirty years. Let's go.
 
-### ACT 1 — THE PROMISE (0:35–1:20)
+### ACT 2 — THE FORK (1:10–2:50)
 
-> Over the next thirteen minutes I'll build the whole thing on screen — where every dollar goes,
-> why the shape of it matters more than the rate, and the structure that removes the second house
-> from the deal entirely.
+> Adam puts his eighty thousand down — twenty percent — and borrows three hundred and twenty thousand
+> over thirty years at six and a half percent.
 >
-> Two things to watch for.
+> His mortgage payment is **two thousand and twenty-two dollars, sixty-six cents.** But that's not his
+> housing cost, and this is where most comparisons cheat. Add property tax, insurance and maintenance
+> — call it eight hundred and fifty a month on a house like this — and Adam's real monthly number is
+> about **two thousand, eight hundred and seventy-three dollars.**
 >
-> First: there is one specific payment out of the three hundred and sixty where, for the first time,
-> more of your money goes toward the house than toward the bank. I want you to guess which number it
-> is before I tell you. Most people guess somewhere around the halfway mark. It is much later than
-> that, and when you see it you'll understand why moving house every seven years is so expensive.
+> He gets the keys. His name is on a deed. His family will live here.
 >
-> And second, keep hold of this question: **what did the bank actually contribute to this
-> transaction?** Not what did they provide — what did they *risk*? Because the answer to that is the
-> hinge the whole episode turns on.
+> Sami rents the house next door — same size, same street — for **nineteen hundred a month.**
+>
+> And then he does the thing that makes this an actual comparison rather than a lazy one: he invests
+> the eighty thousand he didn't put down, **and** the nine hundred and seventy-three dollar difference
+> between his rent and Adam's total housing cost, every single month, into a broad index fund.
+>
+> That's the honest version of "rent and invest the difference," and almost nobody does it. If you
+> rent and spend the difference, you're not Sami. You're just renting. Sami's entire case depends on
+> a monthly transfer he never skips, and I want to be clear that this is the fragile part of his plan
+> — not the maths, the discipline.
+>
+> One man's payment is fixed for thirty years. One man's payment goes up every year.
 
-### ACT 2 — THE NORMAL CASE (1:20–3:40)
+### ACT 3 — CHECKPOINT: YEAR 5 (2:50–5:00)
 
-> Let's set it up the way it really happens.
+> Five years. Let's compare properly, because this is where the popular story is already wrong.
 >
-> Four hundred thousand dollar house. You've saved eighty thousand — that's twenty percent, and
-> saving it probably took years. You borrow the other three hundred and twenty thousand over thirty
-> years at six and a half percent.
+> Adam has paid **a hundred and seventy-two thousand, three hundred and eighty dollars** in housing
+> costs, on top of his eighty thousand deposit. Two hundred and fifty-two thousand dollars, out.
 >
-> Now, this moment is treated as an achievement, and it should be. You are being handed the keys to
-> somewhere your family will live. I'm not here to sour that.
+> His loan balance has fallen from three hundred and twenty thousand to about **two hundred and
+> ninety-eight thousand.** Five years of payments removed twenty-two thousand dollars of debt.
 >
-> But look at what you signed, because it isn't what most people think it is.
+> The house has risen to about four hundred and seventy-five thousand, so his equity is roughly
+> **a hundred and seventy-seven thousand dollars.**
 >
-> Most people describe it like this: *the bank lent me the money and I'm paying it back with a bit
-> extra.* That is not the shape of the deal. Here's the shape.
+> Sami has paid rent — about a hundred and twenty thousand across five years — and he owns no house
+> at all. But his eighty thousand is now a hundred and seventeen thousand five hundred, and his
+> monthly difference has built to about sixty-five thousand.
 >
-> Every month, your payment is split. Part of it is **interest** — the price of having the money.
-> Part of it is **principal** — the bit that actually reduces what you owe. And crucially, the
-> interest is calculated on **whatever you still owe.**
+> **Sami: a hundred and eighty-two thousand, five hundred and fifty. Adam: a hundred and seventy-seven
+> thousand.**
 >
-> So at the start, when you owe the most, almost all of your payment is interest. As the balance
-> falls, the interest portion falls with it and the principal portion grows. That's amortisation,
-> and it's not sinister — it's just what happens when interest is charged on an outstanding balance.
+> Sami is ahead. Not by much, but he's ahead, and he owns nothing anyone can see. He's got a
+> brokerage balance and a landlord.
 >
-> The consequence, though, is enormous. It means the expensive years come first, and it means the
-> phrase "I'm paying off my house" describes something that is barely happening for a very long
+> Meanwhile everyone Adam knows is telling him he did the right thing, and pointing out that Sami is
+> "throwing money away."
+
+### ACT 4 — THE MECHANISM (5:00–7:20)
+
+> So how is Adam behind, when he owns a house that went up seventy-five thousand dollars?
+>
+> Look at what his payment is actually doing.
+>
+> Month one. Adam pays two thousand and twenty-two dollars, sixty-six cents on the mortgage. Of
+> that, **one thousand seven hundred and thirty-three dollars and thirty-three cents is interest.**
+> **Two hundred and eighty-nine dollars and thirty-three cents** reduces his debt.
+>
+> Fourteen percent. In his first month as a homeowner, eighty-six percent of his mortgage payment
+> bought him nothing.
+>
+> That's amortisation, and it's not sinister — interest is charged on what you still owe, so when you
+> owe the most, you pay the most interest. But the consequence is enormous: **the expensive years come
+> first**, and "paying off my house" describes something that is barely happening for a very long
 > time.
 >
-> Your monthly payment on that loan is **two thousand and twenty-two dollars, sixty-six cents.**
+> Year one, all twelve payments: twenty-four thousand two hundred and seventy-two dollars out, three
+> thousand six hundred dollars of debt removed.
 >
-> Everyone stops there. That's the number that gets compared, budgeted, argued about with a spouse.
-> Almost nobody multiplies it.
+> And over the full thirty years, the total is this. Three hundred and sixty payments of two thousand
+> and twenty-two sixty-six: **seven hundred and twenty-eight thousand, one hundred and fifty-eight
+> dollars.** Plus his eighty thousand deposit. **Eight hundred and eight thousand, one hundred and
+> fifty-eight dollars** for a four hundred thousand dollar house.
+>
+> The interest alone is **four hundred and eight thousand.** Adam pays for the house, and then pays
+> slightly more than the price of the house again — and the second one doesn't exist.
 
-### ACT 3 — THE BUILD (3:40–7:00)
+### ACT 5 — CHECKPOINT: YEAR 10 (7:20–9:20)
 
-> Two thousand and twenty-two sixty-six, times three hundred and sixty payments.
+> Year ten.
 >
-> **Seven hundred and twenty-eight thousand, one hundred and fifty-eight dollars.**
+> Adam's equity: about **two hundred and ninety-three thousand.** Sami's portfolio: about **three
+> hundred and twenty-two thousand, seven hundred.**
 >
-> Add the eighty thousand deposit you saved for years. **Eight hundred and eight thousand, one
-> hundred and fifty-eight dollars**, for a four hundred thousand dollar house.
+> Sami's lead has grown to thirty thousand.
 >
-> The interest alone is four hundred and eight thousand dollars. You pay for the house, and then you
-> pay slightly more than the price of the house again, and the second one doesn't exist.
+> And now the number I've been holding back — the one that explains why a decade of payments moved
+> Adam so little.
 >
-> Now, the shape. This is the part that matters more than the total.
+> There's a specific payment in that schedule where, for the first time, more of Adam's money goes to
+> the house than to the bank. Have a guess at which one. Most people say around the halfway mark —
+> payment a hundred and eighty, or so.
 >
-> **Month one.** You pay two thousand and twenty-two dollars. Of that, one thousand seven hundred
-> and thirty-three dollars and thirty-three cents is interest. Two hundred and eighty-nine dollars
-> and thirty-three cents reduces your debt.
+> It's **payment number two hundred and thirty-three.** Year nineteen, month five.
 >
-> Fourteen percent. In your first month as a homeowner, eighty-six percent of your payment bought you
-> nothing.
+> Adam has to make two hundred and thirty-two payments — nearly four hundred and seventy thousand
+> dollars — before a single one of them is majority his.
 >
-> **Year one, all twelve months.** You paid twenty-four thousand two hundred and seventy-two dollars.
-> Your loan went from three hundred and twenty thousand to three hundred and sixteen thousand four
-> hundred. Twenty-four thousand dollars spent; three thousand six hundred of debt removed.
->
-> **Year five.** You've paid a hundred and twenty-one thousand dollars. You owe two hundred and
-> ninety-eight thousand. Five years of payments, and you've reduced the loan by twenty-two thousand
-> dollars — about eighteen percent of what you handed over.
->
-> **Year ten.** You've paid two hundred and forty-three thousand dollars. You owe two hundred and
-> seventy-one thousand. A decade in, you still owe more than two-thirds of the original loan.
->
-> Now — the payment I asked you to guess.
->
-> The first payment where more of your money goes to the house than to the bank is **payment number
-> two hundred and thirty-three.**
->
-> Year nineteen. Month five.
->
-> You have to make two hundred and thirty-two payments — nearly four hundred and seventy thousand
-> dollars — before a single one of them is majority yours.
->
-> And that's why the ordinary thing people do is so expensive. The average homeowner moves or
-> refinances well before year nineteen. Which means an enormous number of people spend their entire
-> adult lives in the front section of an amortisation schedule, paying the interest-heavy years over
-> and over, and never once reaching the part where the loan starts working for them. Every move
-> resets the clock to month one.
+> And here's why that matters far beyond this one video: the average homeowner moves or refinances
+> long before year nineteen. Which means enormous numbers of people spend their entire adult lives in
+> the front section of an amortisation schedule, paying the interest-heavy years over and over,
+> resetting to month one each time, and never once arriving at the part where the loan finally starts
+> working for them.
 
-### ACT 4 — THE RE-HOOK (7:00–7:30)
+### ACT 6 — CHECKPOINT: YEAR 19 — NON-RESOLUTION (9:20–11:10)
 
-> So: eight hundred and eight thousand dollars. Four hundred and eight of it interest. Nineteen
-> years and five months before a payment is mostly yours.
+> Year nineteen. Adam finally crosses over — payment two hundred and thirty-three, the first one that's
+> mostly his. His equity is around **five hundred thousand.**
 >
-> Here's the question I left you with. Not *what did the bank provide* — they provided the money,
-> obviously. **What did they risk?**
+> Sami's portfolio is around **six hundred and twenty thousand.**
 >
-> Hold that. Objection first, because this is the one where the objection is genuinely strong.
+> Sami's still ahead, and by a fair margin. Nineteen years in, renting and investing has won every
+> single checkpoint.
+>
+> But something has been happening quietly on Sami's side that changes the whole picture, and it isn't
+> in his portfolio. It's in his rent.
+>
+> Sami started at nineteen hundred dollars a month. Nineteen years of three percent increases later,
+> he's paying **three thousand, two hundred and forty.**
+>
+> Adam's mortgage payment is still two thousand and twenty-two dollars and sixty-six cents. The same
+> number he agreed to in year one, in dollars that are now worth far less.
+>
+> **The monthly difference has flipped.** For the first fourteen years Sami was investing the gap. He
+> now pays more for housing than Adam does, every month, and it grows three percent a year forever.
+>
+> So at year nineteen, who's winning? Sami has more money. Adam has a lower cost of living and a
+> payment that will end. Sami's portfolio is bigger but it has a job to do that Adam's house doesn't:
+> it has to pay rent for the rest of his life.
+>
+> I don't think either of them has clearly won here, and anyone who tells you the answer at year
+> nineteen is obvious hasn't run it to year thirty.
 
-### ACT 5 — THE OBJECTION (7:30–9:15)
+### ACT 7 — THE HINGE (11:10–12:10)
 
-> "Rent is dead money. At the end of thirty years of renting you own nothing. At the end of this you
-> own a house. Also, that house will be worth far more than four hundred thousand by then, the
-> interest may be tax deductible, and inflation shrinks the debt while your income grows. A mortgage
-> is one of the best financial instruments available to an ordinary person."
+> Before the last checkpoint, one question about Adam's deal that has nothing to do with Sami.
 >
-> That's the strongest objection in this entire series, and large parts of it are simply correct.
-> Let me hand over the ground properly.
+> **What did the bank risk?**
 >
-> **Inflation genuinely helps you here, and it's the best argument for a long fixed mortgage.** Your
-> payment is fixed in dollars for thirty years. Your income, on average, isn't. That two thousand
-> dollar payment is a serious burden in year one and a much lighter one in year twenty-five. You are
-> repaying tomorrow's cheaper dollars against yesterday's price. Renters get no such protection —
-> their payment tracks inflation upward the whole way. That is a real, large, and often
-> underestimated benefit.
->
-> **The tax point is true in some places.** In the United States mortgage interest is deductible if
-> you itemise. In the UK it was abolished for homeowners in 2000. Check your own jurisdiction rather
-> than repeating what you heard from an American video.
->
-> **And yes, the house is very likely worth more in thirty years.** Appreciation is real.
->
-> Two things that argument leaves out.
->
-> The first is that the comparison is usually rigged. People compare "paid off house" against "thirty
-> years of rent" and stop. The honest comparison includes property tax, insurance and maintenance —
-> which run around ten thousand dollars a year on a house like this and total roughly three hundred
-> thousand across the term. Buying is often still the better outcome. But it isn't the landslide the
-> dinner-table version claims, and the interest is the largest single line in it.
->
-> The second is that none of it answers the actual question. Everything in that objection is an
-> argument for *owning a home*. I have no quarrel with owning a home — this whole episode ends with
-> a way to do it. What's on trial is a specific financing structure, and "the asset went up" doesn't
-> justify the four hundred and eight thousand dollars any more than a good meal justifies whatever
-> was in the contract you signed to get it.
-
-### ACT 6 — THE TURN (9:15–10:00)
-
-> So. What did the bank risk?
->
-> Not the house. The seller had the house, and the seller was paid in full, in cash, on completion
+> Not the house — the seller had the house, and the seller was paid in full, in cash, on completion
 > day. The bank never owned it, never lived in it, never maintained it, never insured it.
 >
-> Not the outcome. If the market collapses and the house is worth three hundred thousand, your debt
-> is still three hundred and twenty thousand. The fall is entirely yours. And if you can't pay, they
-> repossess the house, sell it to recover what they're owed, and in many places come after you for
-> the shortfall as well.
+> Not the outcome. If the market collapses and the house is worth three hundred thousand, Adam's debt
+> is still three hundred and twenty. The fall is entirely his. And if he can't pay, they repossess,
+> sell to recover what they're owed, and in many places pursue him for the shortfall as well.
 >
-> They took the upside of a thirty-year exposure to property with none of the downside of owning
-> property.
+> They took thirty years of upside on a property with none of the downside of owning property. It
+> rains, the roof leaks, the market drops, Adam loses his job — none of it touches their number.
 >
-> And that's the whole thing. The bank is not your partner in this house. The bank is a lender, and
-> a lender's return is disconnected from what happens to the asset. It rains, the roof leaks, the
-> market drops, you lose your job — none of it touches their number.
->
-> Once you see that clearly, the alternative practically writes itself. Don't change the rate.
-> **Change what the bank is.**
+> The bank is not Adam's partner in this house. It's a lender, and a lender's return is disconnected
+> from what happens to the asset. Remember that, because in about four minutes it becomes the entire
+> point.
 
-### ACT 7 — THE DIVE (10:00–12:45)
+### ACT 8 — CHECKPOINT: YEAR 30 (12:10–13:40)
 
-> The Islamic structure for this is called **diminishing musharakah** — a partnership that shrinks.
-> And it's much more intuitive than the name suggests.
+> Year thirty. Both men are sixty-two.
 >
-> Here's the whole thing.
+> Adam makes his final mortgage payment. **Eight hundred and eight thousand, one hundred and
+> fifty-eight dollars**, total, for a house now worth about **one million, one hundred and twenty-two
+> thousand, seven hundred.**
 >
-> You want a four hundred thousand dollar house. You have eighty thousand. So you and the financier
-> **buy it together.** You contribute twenty percent, they contribute eighty percent, and you both
-> own the house in those proportions — actually own it, on paper, from day one. It's a joint
-> purchase, not a loan.
+> And from this month forward his housing cost drops from two thousand eight hundred and seventy-three
+> dollars to about eight hundred and fifty — just tax, insurance and upkeep.
 >
-> Now, you're the one living in it. Your partner owns eighty percent of a home they don't get to
-> use. So you pay them **rent on the share you don't own yet.** That's not interest — it's rent for
-> the use of a physical thing, which is a completely ordinary and permitted transaction.
+> Sami's portfolio: about **one million, three hundred and thirty-two thousand, four hundred dollars.**
 >
-> And alongside the rent, every month you also **buy another slice of their share.**
+> Sami has more money. He has, on the face of it, won.
 >
-> So watch what happens. Month by month, their ownership shrinks and yours grows. And because the
-> rent is charged only on the portion you don't own — as you own more, the rent falls. The payment
-> profile runs in the opposite direction to a mortgage: instead of the expensive years coming first,
-> the cost declines steadily as your stake builds. At the end, they own zero, you own a hundred
-> percent, and the arrangement dissolves.
+> Except his rent is now **four thousand, six hundred and twelve dollars a month**, and it goes up
+> every year for the rest of his life. Adam pays eight hundred and fifty. The difference is three
+> thousand seven hundred and sixty-two dollars a month — about forty-five thousand a year, rising.
 >
-> Three consequences that actually matter.
+> To fund that gap safely from a portfolio, at a four percent withdrawal rate, Sami needs roughly
+> **one million, one hundred and twenty-eight thousand dollars** set aside just to keep a roof over
+> his head.
 >
-> **One: nothing compounds.** There is no balance accruing a rate. There's rent for use, which is a
-> price for a month of living somewhere, and there are purchases of equity, which are just purchases.
-> Fall behind and you have a debt for missed rent; you do not have an amount that is growing every
-> day you fail to fix it.
+> Which leaves him a bit over two hundred thousand of genuinely free money — against Adam's fully
+> owned, one-point-one-million-dollar house.
 >
-> **Two: the risk sits with the ownership.** If the house is destroyed, your partner lost eighty
-> percent of an asset — because they owned eighty percent of it. In a properly structured contract
-> they carry the ownership obligations that go with that: structural insurance, and a share of major
-> structural repair. Compare that to your bank's position when your roof fails.
->
-> **Three: you can accelerate.** Buy extra units whenever you have money, and the rent falls
-> immediately because you now own more. There's no early repayment penalty, because you aren't
-> repaying anything — you're buying, and nobody penalises a customer for buying more.
->
-> **Where this gets criticised — and it should be.**
->
-> I'm not going to sell you the brochure version.
->
-> The most serious criticism is about how the rent is set. In principle it should be market rent for
-> that property. In practice, a lot of providers benchmark it to the same interbank rate a mortgage
-> is priced off — which means your "rent" moves when central bank rates move, which is not how rent
-> on a house behaves. When that happens, critics say you've bought a mortgage with different
-> paperwork, and in economic terms they have a point. Ask any provider directly: **is the rent
-> benchmarked to market rent, or to a base rate?** The answer tells you which product you're
-> actually buying.
->
-> Second: it usually costs more. Fewer providers, thinner competition, higher fees, and in some
-> jurisdictions you pay stamp duty or transfer costs twice because there are two property
-> transactions. Some countries have fixed this in law; many haven't.
->
-> Third: deposits are often larger. Twenty percent is common where a conventional lender might take
-> five or ten. For a lot of people that's the real barrier, and it's the honest reason many
-> otherwise-willing buyers don't take this route.
->
-> And fourth: read what happens on default. The best contracts genuinely share the loss on a forced
-> sale in proportion to ownership. Some don't — some push the whole shortfall onto you while keeping
-> the partnership language. That single clause is the difference between a partnership and a loan
-> in costume, and it's usually in the document, findable, if you ask for it.
->
-> So the honest summary: this is a genuinely different structure, it is not automatically a better
-> deal in dollars, and the gap between the good implementations and the cosmetic ones is wide. You
-> have to read the contract. But the thing you're buying is a house where nothing compounds and your
-> partner is standing in the weather next to you.
+> Sami led at every single checkpoint for twenty-five years. He lost at the end, and he didn't lose
+> to house prices. He lost to **rent that never stops rising against a payment that was frozen in
+> nineteen ninety-five dollars.** That's the real argument for a long fixed mortgage, and it's almost
+> never the one people make.
 
-### ACT 8 — THE CLOSE (12:45–13:20)
+### ACT 9 — THE OBJECTION (13:40–14:40)
 
-> Four hundred thousand dollar house. Eight hundred and eight thousand dollars paid. Four hundred and
-> eight thousand of interest. Two hundred and thirty-two payments before one of them is mostly yours.
+> Two objections, and both deserve a proper answer.
 >
-> If you take one thing from this: before you sign anything, ask for the amortisation schedule and
-> find the row where principal overtakes interest. Not the rate. That row. It's the honest picture of
-> what you're agreeing to, it takes one minute to look up, and it is the number the industry never
-> puts on the front page.
+> **"You can't put a price on owning your own home."** True, and I've priced only what's priceable.
+> Adam could paint a wall, keep a dog, and never once be told the landlord is selling. That security
+> is worth real money to most people and I haven't counted a dollar of it. It makes Adam's case
+> stronger than this video shows.
 >
-> Next time, the last one in this series, and it's the one that's happening to you right now whether
-> you borrow or not: your five percent raise, and why you got poorer anyway.
+> **"You rigged it with rent inflation."** This is the fair one, so let me concede it properly.
+> Everything above turns on three assumptions: rent rising three percent, houses rising three and a
+> half, investments returning eight. Move any one of them and the answer moves. In a city where rents
+> are flat and house prices stall, Sami wins outright and it isn't close. In a market with rent
+> controls, Sami wins. If Sami's real return is ten percent, he wins.
+>
+> So the honest conclusion is not "buying beats renting." It's this: **buying converts a rising,
+> permanent, uncontrollable cost into a fixed one that eventually ends** — and that conversion is
+> what you're actually paying four hundred and eight thousand dollars of interest for. Whether that
+> trade is worth it depends on your city, not on your character.
+>
+> And notice what Adam bought that with. Not skill. Not timing. He bought it with the single most
+> expensive product in this entire series.
+
+### ACT 10 — THE THIRD MAN (14:40–15:50)
+
+> There was a third man.
+>
+> Bilal wanted what Adam wanted — a fixed, ending, owned housing cost. He was not willing to pay four
+> hundred and eight thousand dollars of interest for it. So he didn't change the rate. **He changed
+> what the bank was.**
+>
+> He and the financier **bought the house together.** He put in his eighty thousand — twenty percent.
+> They put in eighty percent. And they both owned it, on paper, from day one, in those proportions.
+> It's a joint purchase, not a loan.
+>
+> Bilal lives there, so he pays the partner **rent on the share he doesn't own yet** — which is rent
+> for the use of a physical thing, an ordinary permitted transaction. And every month he also **buys
+> another slice of their share.**
+>
+> So their ownership shrinks and his grows. And because rent is charged only on the portion he doesn't
+> own, **his rent falls as his stake rises.** The cost profile runs backwards compared to Adam's: the
+> cheap years come later instead of the expensive years coming first. That's **diminishing
+> musharakah** — a partnership that shrinks.
+>
+> Three things that actually matter. **Nothing compounds** — there's rent for use and there are
+> purchases of equity, and no balance accruing a rate. **The risk sits with ownership** — if the house
+> burns down, the partner lost eighty percent of an asset they actually owned, and in a properly
+> written contract they carry structural insurance and a share of major repair. And **he can
+> accelerate** — buy extra units any time, and the rent drops immediately, with no early repayment
+> penalty, because he isn't repaying anything. He's buying.
+>
+> Bilal owned the house outright in **twenty-five years**, five ahead of Adam, having paid about
+> **six hundred and fifty-five thousand dollars** — **a hundred and fifty-three thousand less than
+> Adam** — for the identical house.
+>
+> **Where this deserves criticism.** In principle the rent should be market rent for the property. In
+> practice many providers benchmark it to the same interbank rate a mortgage prices off — so the
+> "rent" moves when central banks move, which is not how rent on a house behaves. Ask directly: **is
+> the rent benchmarked to market rent, or to a base rate?** Also expect fewer providers, higher fees,
+> sometimes double transfer costs, and often a larger deposit. And read the default clause: the best
+> contracts share a forced-sale loss in proportion to ownership; some push the whole shortfall onto
+> you while keeping the partnership language. That single clause is the difference between a
+> partnership and a loan in costume.
+
+### ACT 11 — CLOSE (15:50–16:10)
+
+> So what does it actually depend on?
+>
+> Your city's rent trajectory. Whether you'll stay past year nineteen. And whether you'd genuinely
+> invest the difference every month for three decades, or just think you would.
+>
+> What isn't in doubt: before you sign anything, ask for the amortisation schedule and find the row
+> where principal overtakes interest. Not the rate — that row. It takes one minute and it's the number
+> nobody puts on the front page.
+>
+> Next time, the last one, and it's happening to all three of them whether they borrow or not.
 >
 > Run the numbers. Then run them halal.
 
@@ -315,79 +341,82 @@ add roughly **$10,000 a year**, about **$300,000** over the term.
 
 ## STORYBOARD
 
-Append the **STYLE BLOCK** to every prompt. Insert the **CHARACTER BLOCK** wherever Kareem appears.
-Blocks and SET definitions are in `00-series-bible.md`.
+Devices and CHARACTER BLOCKS in `00-series-bible.md`. **Adam left, Sami right.** Ribbon YEAR 0 → YEAR 30.
 
-| # | Time | Shot | On-screen text | Image prompt |
+| # | Time | Device | Shot | On-screen text |
 |---|---|---|---|---|
-| 1 | 0:00 | Kareem in a front garden, one solid house, one identical dashed ghost house beside it | `YOU'LL BUY TWO. YOU'LL LIVE IN ONE.` | Wide shot on cream of a simple two-storey house drawn in full colour with a small front garden, an identical house beside it drawn only as a dashed grey ghost outline with no fill, the man standing between them looking up at the ghost house, lips parted. [CHARACTER BLOCK] |
-| 2 | 0:12 | Two bars: house price vs total paid | `$400,000 HOUSE · $808,158 PAID` | Two vertical bars side by side on cream, the left olive green at half height, the right brick red at full height, a thin dashed horizontal line running from the top of the left bar across the right one. |
-| 3 | 0:22 | The ghost house alone, with a price tag slightly larger than the real one's | `THE INVISIBLE ONE COSTS MORE` | A two-storey house drawn entirely as a dashed grey ghost outline standing alone on cream with a solid paper price tag hanging from its front door on a string, soft elliptical shadow beneath. |
-| 4 | 0:30 | A clean contract, no fine print, everything above board | `NO SCAM. NO FINE PRINT.` | A plain printed contract lying flat on a wooden surface with clear widely-spaced text lines, a pen resting across it and an official seal in the corner, cream background, no character. |
-| 5 | 0:40 | Ledger Wall — episode 3's card faint in the corner, house key on the shelf | `WHICH PAYMENT FLIPS?` | A large gridded cream wall with a faint chalk-style card and calendar sketched small in the top-right corner, a narrow shelf along the bottom holding a house key, no character. [SET A] |
-| 6 | 0:54 | Kareem drawing 360 tick marks on the wall, circling none of them yet | `GUESS THE NUMBER` | The man standing side-on at a gridded cream wall drawing a long dense row of small chalk tick marks, focused expression, chalk in hand, most of the wall still empty. [CHARACTER BLOCK] [SET A] |
-| 7 | 1:08 | The second question, boxed on the wall | `WHAT DID THE BANK RISK?` | A gridded cream wall with one line of chalk-style handwriting inside a hand-drawn rectangular box in the centre, heavily underlined, the rest of the wall empty, no character. [SET A] |
-| 8 | 1:22 | Kareem and a partner silhouette at the kitchen table with a savings jar | `$80,000. IT TOOK YEARS.` | The man seated at a plain round kitchen table opposite a plain grey silhouette figure, a large glass jar of coins between them, both leaning toward it, calm hopeful expression. [CHARACTER BLOCK] [SET E] |
-| 9 | 1:38 | Handover of keys in front of the house, genuinely happy | `THIS PART IS GOOD` | The man standing in front of a simple two-storey house holding a set of keys up at chest height with a genuine wide smile, a grey silhouette figure walking away in the background, cream sky. [CHARACTER BLOCK] |
-| 10 | 1:54 | The thing people think they signed: a simple loan arrow out and back | `WHAT PEOPLE THINK THEY SIGNED` | A simple flat diagram on cream, one arrow leaving a grey bank building toward a small house and one arrow returning, both arrows the same thickness, thick outlines, no character. |
-| 11 | 2:10 | The real shape: one payment splitting into two very unequal streams | `EVERY PAYMENT SPLITS` | A single coin at the top of a cream frame with two arrows leaving it, a very thick arrow curving left to a large box and a thin arrow going right to a small box, thick outlines. |
-| 12 | 2:26 | Interest calculated on the outstanding balance — a meter attached to a large block | `CHARGED ON WHAT YOU STILL OWE` | A large rectangular block on cream with a small round meter device attached to its side, the meter's needle high, a thin cable running from the meter off frame. |
-| 13 | 2:42 | The amortisation shape: 360 columns, red dominant on the left | `THE EXPENSIVE YEARS COME FIRST` | A dense row of many thin vertical columns across a cream frame, each divided into a brick-red lower portion and an olive-green upper portion, the red portion very tall on the left and shrinking steadily to the right. |
-| 14 | 2:58 | Kareem saying "paying off my house" with a tiny chip coming off a brick wall | `"I'M PAYING OFF MY HOUSE"` | The man standing beside a large brick wall holding a small chisel, a single tiny chip of brick falling away from an otherwise untouched wall, wry flat expression. [CHARACTER BLOCK] |
-| 15 | 3:14 | The monthly payment, alone and large | `$2,022.66` | A gridded cream wall with one large chalk-style figure written in the centre and nothing else, no character. [SET A] |
-| 16 | 3:28 | A calculator sitting untouched beside the figure | `ALMOST NOBODY MULTIPLIES` | A plain flat-illustrated calculator lying alone on a cream surface with a few thin dust-speck marks on it, a small cobweb line at one corner, no character. |
-| 17 | 3:42 | The multiplication on the wall, result double-underlined | `$728,158` | A gridded cream wall with a large chalk-style multiplication written across it, the result double-underlined in brick red, faint workings sketched around the edges, no character. [SET A] |
-| 18 | 3:56 | Deposit block stacked on top | `+ $80,000 = $808,158` | A tall brick-red vertical bar on cream with a smaller olive-green block sitting on top of it, a bracket spanning the full combined height, thin baseline. |
-| 19 | 4:10 | Two houses drawn to scale by cost — the ghost slightly larger | `INTEREST: $408,158` | Two house shapes side by side on cream, the left one solid and coloured, the right one a dashed grey outline drawn very slightly larger than the left, a thin comparison line between their rooflines. |
-| 20 | 4:26 | Month one payment split, 86% red | `MONTH 1 — $1,733 INTEREST · $289 HOUSE` | A single horizontal bar on cream divided by a vertical line into a large brick-red section on the left occupying most of the bar and a small olive-green section on the right, brackets and leader lines beneath each. |
-| 21 | 4:42 | Kareem holding a brick, looking at one small chip in his palm | `14% BOUGHT HOUSE` | The man in a mid-shot holding a single brick in one hand and looking down at a very small chip of brick resting in his open palm, brows drawn together. [CHARACTER BLOCK] |
-| 22 | 4:58 | Year one: paid vs cleared | `YEAR 1 — PAID $24,272 · CLEARED $3,600` | Two vertical bars on cream of dramatically different heights, the tall one brick red and the short one olive green, a thin dashed line between their tops, thin baseline. |
-| 23 | 5:12 | Year five | `YEAR 5 — PAID $121,000 · OWE $298,000` | The same two-bar composition rescaled, the brick-red bar much taller, a third faint outline bar behind showing the original loan size for comparison. |
-| 24 | 5:26 | Year ten — Kareem seated on the front step, looking at the house | `YEAR 10 — STILL OWE TWO-THIRDS` | The man seated on the front step of a simple house in three-quarter view, forearms on his knees, looking up at the building, tired but composed expression, cream sky. [CHARACTER BLOCK] |
-| 25 | 5:42 | The 360 tick marks with one circled far to the right | `PAYMENT 233` | A gridded cream wall with a long dense row of small chalk tick marks, one tick near the right-hand end ringed heavily in brick red with a leader line pointing to it, no character. [SET A] |
-| 26 | 5:58 | Kareem on the Long Road, a milestone post far ahead | `YEAR 19, MONTH 5` | Rear view of the man walking away from the viewer along a long straight road receding to a flat horizon, a single roadside milestone post visible far ahead near the horizon, cream sky. [CHARACTER BLOCK, seen from behind] [SET D] |
-| 27 | 6:14 | 232 payment slips stacked, with a bracket | `$470,000 BEFORE ONE IS MOSTLY YOURS` | A very tall neat stack of thin identical paper slips seen edge-on, slightly perspective-tilted, a vertical bracket beside it spanning its full height, soft shadow, cream background. |
-| 28 | 6:30 | The reset: a runner sent back to the start line | `EVERY MOVE RESETS THE CLOCK` | The man standing at a marked start line on a track with a long curved arrow looping from far ahead back to his feet, resigned flat expression, cream background. [CHARACTER BLOCK] |
-| 29 | 6:46 | Three houses in a row, each with a fresh month-one bar under it | `SEVEN YEARS. SEVEN YEARS. SEVEN YEARS.` | Three identical small house shapes in a horizontal row on cream, each with a short horizontal bar beneath it that is almost entirely brick red, evenly spaced. |
-| 30 | 7:02 | The full total on the wall, Kareem beside it | `$808,158` | The man standing beside a gridded cream wall bearing one very large chalk-style figure with a double underline, one hand raised toward it, steady gaze. [CHARACTER BLOCK] [SET A] |
-| 31 | 7:16 | The boxed question re-circled | `WHAT DID THEY RISK?` | The same gridded cream wall with the earlier boxed chalk question now ringed a second time in brick red, small chalk dust marks beneath it, no character. [SET A] |
-| 32 | 7:32 | Kareem sceptical, arms folded | `"RENT IS DEAD MONEY."` | The man in a mid-shot with arms folded across his chest, one eyebrow raised, mouth in a flat wry line, facing the viewer directly, plain cream background. [CHARACTER BLOCK] |
-| 33 | 7:48 | A fixed payment bar staying the same height while a rising income line passes it | `INFLATION SHRINKS YOUR PAYMENT` | A cream graph with a series of identical fixed-height olive-green bars running left to right and a rising deep-teal line crossing above them partway along, thin axis lines. |
-| 34 | 8:06 | Two tenants: one payment flat, one climbing | `RENTERS GET NO SUCH PROTECTION` | Two simple line graphs side by side on cream, the left a flat horizontal olive-green line, the right a steadily rising brick-red staircase line, thin baselines, no character. |
-| 35 | 8:22 | Two flags with different tax rules | `CHECK YOUR OWN COUNTRY` | Two plain rectangular document cards side by side on cream, each with a small tick or cross stamped in its corner — one tick, one cross — and thin ruled text lines, no character. |
-| 36 | 8:38 | The hidden running costs, three icons with a yearly bracket | `TAX · INSURANCE · MAINTENANCE ≈ $10,000/YR` | Three simple icons in a horizontal row on cream — a document with a stamp, a shield, a wrench — with a single wide bracket spanning all three and a small figure beneath it. |
-| 37 | 8:54 | Two arguments separated by a divider: owning vs financing | `OWNING A HOME ≠ THIS CONTRACT` | Split composition on cream with a thin vertical divider, a simple house shape on the left and a folded contract document on the right, each in its own half, thick outlines. |
-| 38 | 9:16 | The seller walking away with full payment on completion day | `THE SELLER WAS PAID IN FULL` | A plain grey silhouette figure walking to the right carrying a full briefcase, a simple house shape behind them with a sold sign, cream background, no other characters. |
-| 39 | 9:32 | Market falls: the house shrinks, the debt block stays the same size | `THE FALL IS ENTIRELY YOURS` | A small house shape on cream beside a tall rectangular block, a downward brick-red arrow beside the house and no arrow beside the block, a dashed outline showing the house's former larger size. |
-| 40 | 9:48 | The bank silhouette under an umbrella; Kareem in the rain | `UPSIDE WITHOUT DOWNSIDE` | The man standing in falling rain lines with his shoulders hunched beside a simple house, a plain grey silhouette figure standing a few paces away completely dry beneath a large umbrella. [CHARACTER BLOCK] |
-| 41 | 10:02 | Two figures buying the house together, one small contribution, one large | `YOU 20% · PARTNER 80%` | The man and a plain grey silhouette figure standing on either side of a simple house shape, each placing a stack of coins into a shared pile in front of it, the man's stack much smaller. [CHARACTER BLOCK] |
-| 42 | 10:18 | The house divided visibly by ownership from day one | `BOTH OWN IT. ON PAPER. DAY ONE.` | A simple house shape on cream divided by a vertical line into a small olive-green section on the left and a large grey section on the right, a small deed document beside each section. |
-| 43 | 10:34 | Rent flowing only from the grey portion | `RENT ON THE SHARE YOU DON'T OWN` | The same divided house shape with a single arrow leaving only the large grey section and curving toward a small grey silhouette figure, no arrow leaving the olive-green section. |
-| 44 | 10:48 | Kareem buying a slice, handing over a coin and receiving a wedge | `AND YOU BUY A SLICE EACH MONTH` | The man handing a single coin across to a plain grey silhouette figure and receiving a small wedge-shaped piece in return, both in profile, a house shape behind them. [CHARACTER BLOCK] |
-| 45 | 11:02 | Five houses in a row, olive growing, grey shrinking | `THEIR SHARE SHRINKS. YOURS GROWS.` | Five identical house shapes in a horizontal row on cream, each divided into olive-green and grey portions, the olive portion progressively larger from left to right until the last is entirely olive, thin arrows between them. |
-| 46 | 11:18 | A rent gauge with the needle falling | `RENT FALLS AS YOU OWN MORE` | A simple vertical gauge on cream with its needle low and a curved dashed line showing its former higher position, a downward olive-green arrow beside it, no character. |
-| 47 | 11:32 | The opposite profile: a descending cost curve vs the mortgage's front-loaded one | `THE COST RUNS THE OTHER WAY` | Two line graphs side by side on cream, the left showing a high flat brick-red line that stays high, the right showing an olive-green line that descends steadily from left to right, thin axis lines. |
-| 48 | 11:46 | No compounding: a flat line with a padlock | `NOTHING COMPOUNDS` | A perfectly flat deep-teal horizontal line on a cream graph with a small closed padlock symbol sitting on it, thin baseline and axis, no character. |
-| 49 | 12:00 | Fire: both partners lose their share proportionally | `THEIR ASSET TOO` | A simple house shape with small flame outlines at its roofline, the man and a plain grey silhouette figure standing on either side of it, both with hands raised, the house divided by a visible vertical line. [CHARACTER BLOCK] |
-| 50 | 12:12 | Acceleration: an extra coin bought, the rent needle dropping instantly | `BUY EXTRA. NO PENALTY.` | The man dropping an extra coin into a slot on a small panel while a needle on that panel visibly swings downward, small motion arc on the coin, satisfied expression. [CHARACTER BLOCK] |
-| 51 | 12:24 | The rent benchmark question, boxed on the wall | `MARKET RENT — OR A BASE RATE?` | A gridded cream wall with one line of chalk-style handwriting inside a hand-drawn box, a small question mark beside it, no character. [SET A] |
-| 52 | 12:34 | Three honest downsides as three chalk lines | `COSTS MORE · FEWER PROVIDERS · BIGGER DEPOSIT` | A gridded cream wall with three short chalk-style lines written in a vertical list, each preceded by a small dash, no character. [SET A] |
-| 53 | 12:42 | The default clause, magnified on a contract page | `READ THE DEFAULT CLAUSE` | Close-up of a printed contract page with a magnifying glass held over one paragraph by a plain grey silhouette hand, the magnified text lines shown slightly larger, cream background. |
-| 54 | 12:50 | Ledger Wall complete with the mortgage calculation, Kareem beside it | `$408,158` | The man standing beside a large gridded cream wall covered in chalk-style bars, house outlines and numbers forming a completed calculation, one hand gesturing toward the largest figure, calm confident expression, chin level. [CHARACTER BLOCK] [SET A] |
-| 55 | 13:06 | He lifts a payslip off the shelf | `NEXT: YOUR 5% RAISE` | The man reaching to lift a small payslip from a narrow shelf on a gridded cream wall, a house key, card and car key already lying on the shelf beside it, small knowing smile. [CHARACTER BLOCK] [SET A] |
-| 56 | 13:16 | End card | `Run the numbers. Then run them halal.` | The man standing centred facing the viewer with confident open posture, chin level, small closed-mouth smile, a gridded cream wall behind him, generous empty space on both sides for end-screen cards. [CHARACTER BLOCK] [SET A] |
+| 1 | 0:00 | Split | Both men standing in front of two identical houses, side by side | `MEET ADAM AND SAMI` |
+| 2 | 0:12 | Full | Matched rows ticked, two columns | `SAME AGE · SAME SALARY · SAME $80,000` |
+| 3 | 0:26 | Split | Adam holding a deed / Sami holding a 12-month lease | `HE BUYS IT` / `HE DOESN'T` |
+| 4 | 0:40 | Split | Adam's thought bubble: cash flying to a landlord silhouette / Sami's: cash flying to a bank | `A STRANGER FOREVER` / `A BANK FOREVER` |
+| 5 | 0:56 | Full | Two lines on one graph, Sami's above Adam's for most of its length then crossing at the far right | `SAMI WINS FOR 25 YEARS` |
+| 6 | 1:12 | Left only | Adam sliding a large stack across a counter to a grey silhouette | `$80,000 DOWN` |
+| 7 | 1:26 | Left only | A payment bar with a second smaller block stacked on top | `$2,022 + $850 = $2,873` |
+| 8 | 1:40 | Left only | Adam and family silhouettes at the door, keys raised, genuine wide smile | `HIS NAME IS ON A DEED` |
+| 9 | 1:54 | Right only | Sami signing a short lease at a table | `$1,900/MONTH` |
+| 10 | 2:08 | Right only | Two arrows from Sami: one to a fund tile ($80,000), one monthly ($973) | `HE INVESTS THE DIFFERENCE` |
+| 11 | 2:24 | Right only | A standing order set on a phone, then the phone placed face down | `EVERY MONTH. NEVER SKIPPED.` |
+| 12 | 2:38 | Full | A thin chain with one visibly weak link | `THIS IS THE FRAGILE PART` |
+| 13 | 2:52 | Scoreboard | **CHECKPOINT 1.** Adam equity $177,000 / Sami $182,550 | `YEAR 5` |
+| 14 | 3:10 | Left only | A large "paid out" bar beside a much smaller equity bar | `$252,380 OUT · $177,000 HELD` |
+| 15 | 3:28 | Left only | The loan block barely reduced, a thin sliver removed from the top | `5 YEARS. $22,000 OF DEBT GONE.` |
+| 16 | 3:46 | Right only | Sami's two stacks — the $80,000 grown, and the monthly pile | `$117,550 + $65,000` |
+| 17 | 4:04 | Right only | Sami standing with no house behind him, just a phone in hand | `HE OWNS NOTHING ANYONE CAN SEE` |
+| 18 | 4:20 | Full | A scale tipped slightly toward the right pan | `RENTING IS AHEAD` |
+| 19 | 4:38 | Left only | Grey silhouettes nodding approvingly at Adam's house | `"HE DID THE RIGHT THING"` |
+| 20 | 5:02 | Full | Adam's month-one payment bar, 86% brick red | `$1,733 INTEREST · $289 HOUSE` |
+| 21 | 5:20 | Left only | Adam holding a brick, one tiny chip in his open palm | `14% BOUGHT HOUSE` |
+| 22 | 5:38 | Full | 360 thin columns, red dominant on the left shrinking rightward | `THE EXPENSIVE YEARS COME FIRST` |
+| 23 | 5:58 | Full | Two bars: $24,272 paid, $3,600 cleared | `YEAR 1` |
+| 24 | 6:16 | Ledger Wall | Kareem writing the multiplication, result double-underlined | `$728,158` |
+| 25 | 6:34 | Full | A tall bar with a smaller deposit block on top and a full-height bracket | `+ $80,000 = $808,158` |
+| 26 | 6:52 | Full | Two houses, the right one a dashed ghost outline drawn very slightly larger | `INTEREST: $408,158` |
+| 27 | 7:22 | Scoreboard | **CHECKPOINT 2.** Adam $293,000 / Sami $322,700 | `YEAR 10` |
+| 28 | 7:42 | Ledger Wall | Kareem drawing 360 dense tick marks, none circled yet | `GUESS THE NUMBER` |
+| 29 | 8:00 | Full | Most people's guess marked near the middle of the tick row | `MOST PEOPLE SAY ~180` |
+| 30 | 8:18 | Ledger Wall | One tick far to the right ringed heavily in brick red | `PAYMENT 233` |
+| 31 | 8:36 | Left only | Adam walking away down the Long Road, a milestone post near the horizon | `YEAR 19, MONTH 5` |
+| 32 | 8:54 | Full | A very tall stack of payment slips with a bracket beside it | `$470,000 BEFORE ONE IS MOSTLY HIS` |
+| 33 | 9:08 | Full | Three houses in a row, each with a fresh almost-all-red bar beneath | `EVERY MOVE RESETS THE CLOCK` |
+| 34 | 9:22 | Scoreboard | **CHECKPOINT 3.** Adam ~$500,000 / Sami ~$620,000 | `YEAR 19` |
+| 35 | 9:42 | Right only | Sami's rent figure rewritten upward three times, each struck through | `$1,900 → $3,240` |
+| 36 | 10:00 | Left only | Adam's payment figure identical, with a faded date stamp from year one | `STILL $2,022.66` |
+| 37 | 10:18 | Full | Two lines crossing — Sami's rent rising through Adam's flat payment | `THE DIFFERENCE FLIPPED` |
+| 38 | 10:36 | Split | Adam's portfolio idle / Sami's portfolio with an arrow draining out to a landlord silhouette | `HIS MONEY HAS A JOB TO DO` |
+| 39 | 10:54 | Full | A scale balanced almost level, held long | `NEITHER HAS CLEARLY WON` |
+| 40 | 11:12 | Full | A grey silhouette walking off with a full briefcase, sold sign on the house | `THE SELLER WAS PAID IN FULL` |
+| 41 | 11:30 | Left only | A shrunken house beside an unchanged debt block, dashed outline showing former size | `THE FALL IS ENTIRELY HIS` |
+| 42 | 11:48 | Left only | Adam in falling rain beside the house, a grey silhouette dry under a large umbrella | `UPSIDE WITHOUT DOWNSIDE` |
+| 43 | 12:12 | Scoreboard | **CHECKPOINT 4.** Adam house $1,122,700 / Sami $1,332,400 | `YEAR 30` |
+| 44 | 12:32 | Left only | Adam's housing-cost bar dropping to a stub | `$2,873 → $850` |
+| 45 | 12:50 | Right only | Sami's rent figure large, with a permanent upward arrow beside it | `$4,612/MONTH. FOREVER.` |
+| 46 | 13:08 | Hidden cost | Rust card over Sami's column — the reversal | `−$1,128,600 RESERVED FOR RENT` |
+| 47 | 13:26 | Scoreboard | Adjusted totals: Adam $1,122,700 / Sami ~$203,800 free | `THE THING THAT DECIDED IT` |
+| 48 | 13:42 | Ledger Wall | Kareem to camera, palms open | `"YOU CAN'T PRICE OWNING YOUR HOME."` |
+| 49 | 13:58 | Left only | Adam painting a wall, a dog asleep on the floor | `I HAVEN'T COUNTED A DOLLAR OF THIS` |
+| 50 | 14:14 | Full | Three assumption dials, each with a movable pointer | `RENT 3% · HOUSES 3.5% · RETURNS 8%` |
+| 51 | 14:30 | Full | The two lines redrawn with flat rent — Sami's stays on top | `FLAT RENTS? SAMI WINS OUTRIGHT.` |
+| 52 | 14:42 | Full | **BILAL ENTERS** from the right of a two-person frame | `THERE WAS A THIRD MAN` |
+| 53 | 14:54 | Full | Bilal and a grey silhouette placing two unequal stacks into a shared pile before a house | `THEY BUY IT TOGETHER` |
+| 54 | 15:06 | Full | A house divided by a vertical line, small sand section, large grey section, a deed beside each | `20% · 80% · DAY ONE` |
+| 55 | 15:18 | Full | Five houses in a row, the sand portion growing left to right until the last is entirely sand | `THEIR SHARE SHRINKS. HIS GROWS.` |
+| 56 | 15:30 | Full | A rent gauge with the needle low and a dashed line showing its former position | `RENT FALLS AS HE OWNS MORE` |
+| 57 | 15:38 | Full | Bilal and the silhouette holding one umbrella over the house together | `RISK SITS WITH OWNERSHIP` |
+| 58 | 15:46 | Scoreboard | Third column fills in | `BILAL: $655,000 · 25 YEARS · $0 INTEREST` |
+| 59 | 15:56 | Ledger Wall | Two checkbox questions written on the wall | `MARKET RENT OR A BASE RATE? · READ THE DEFAULT CLAUSE` |
+| 60 | 16:04 | Ledger Wall | Kareem centred, direct to camera, finished calculation behind him | `Run the numbers. Then run them halal.` |
 
 ---
 
 ## THUMBNAIL
 
-> Wide composition on warm cream. On the right third, the man from mid-thigh up, eyes widened and
-> brows drawn together, one hand half-raised. Filling the left two-thirds, two identical two-storey
-> houses side by side — the left one solid and fully coloured, the right one drawn only as a dashed
-> grey ghost outline, with a brick-red price tag hanging from the ghost house's front door. Heavy
-> negative space in the top-left corner for text. [CHARACTER BLOCK] [STYLE BLOCK]
+> Wide 16:9 on warm cream, split down the centre by a thin charcoal line. Left half: a man in a
+> rust-terracotta t-shirt from mid-thigh up beside a solid two-storey house, holding keys, confident.
+> Right half: a man in a deep-teal t-shirt in the same pose beside a tall stack of banknotes, with a
+> two-storey house drawn behind him as a dashed grey ghost outline. A brick-red price tag hanging on
+> the ghost house. Heavy negative space across the top. [ADAM BLOCK] [SAMI BLOCK] [STYLE BLOCK]
 
-**Thumbnail text:** `TWO HOUSES.`
+**Thumbnail text:** `BUY OR RENT?`
 
 ---
 
@@ -396,56 +425,55 @@ Blocks and SET definitions are in `00-series-bible.md`.
 **Description**
 
 ```
-A $400,000 house. 20% down, 30 years at 6.5%. You will pay $808,158 — and $408,158
-of that is interest, which means the invisible second house costs slightly more than
-the real one.
+Adam and Sami are both 32, both earn $72,000, both have $80,000 saved, both want the
+same $400,000 house. Adam buys it. Sami rents next door and genuinely invests the
+difference — the deposit and the monthly gap, every month, for 30 years.
 
-This video builds the full amortisation on screen, finds the exact payment where more
-of your money finally goes to the house than to the bank (it's number 233), takes the
-"rent is dead money" objection seriously and concedes most of it, and ends on
-diminishing musharakah — including the criticisms it deserves.
+Sami is ahead at year 5, year 10 and year 19. Then he loses, and not to house prices.
+This runs the full amortisation, finds the exact payment where Adam's money finally
+goes to the house (number 233, year 19), concedes that the whole result turns on three
+assumptions, and ends with a third man who owned the same house outright five years
+earlier and paid $153,000 less.
 
 ⏱ CHAPTERS
-0:00 You will buy two houses. You'll live in one.
-1:20 The most normal transaction in the world
-3:40 Where $408,000 goes
-5:30 The 233rd payment
-7:00 What the bank actually contributed
-7:30 "Rent is dead money" — the honest answer
-9:15 Lender or partner?
-10:00 Owning the house together
-12:00 Where this gets criticised
-12:45 Your number
+0:00 Meet Adam and Sami
+1:10 One signs for 30 years. One signs for 12 months.
+2:50 Year 5: renting is winning
+5:00 Where $408,000 goes
+7:20 Year 10 — and the payment nobody looks at
+9:20 Year 19: neither of them has won
+11:10 What did the bank actually risk?
+12:10 Year 30: the thing that decided it
+13:40 "You can't put a price on owning your home" — the honest answer
+14:40 There was a third man
+15:50 What it actually depends on
 
-▶ Watch next: Your 5% Raise Made You Poorer — [link]
-🔗 Full series playlist: [link]
+▶ Watch next: Three Raises, Three Outcomes — [link]
+🔗 Series playlist: [link]
 
-This is financial education, not financial advice. Figures illustrative and rounded:
-$320,000 over 360 months at 6.5%, payment $2,022.66, total $728,158 plus an $80,000
-deposit. Tax treatment, stamp duty and provider terms vary by country — check yours.
+Financial education, not financial advice. Illustrative and rounded: $320,000 over 360
+months at 6.5% = $2,022.66/month, $728,158 total, plus an $80,000 deposit. Assumes rent
++3%/yr, house +3.5%/yr, investments 8%. Change any assumption and the answer changes —
+that's the point of the video. Tax treatment and provider terms vary by country.
 ```
 
-**Tags:** mortgage, home loan, amortization, buying a house, first time home buyer, mortgage interest,
-rent vs buy, halal mortgage, diminishing musharakah, riba, islamic finance, islamic home finance
+**Tags:** rent vs buy, mortgage, amortization, first time home buyer, home loan, real estate vs stocks,
+mortgage interest, halal mortgage, diminishing musharakah, islamic home finance, riba, islamic finance
 
-**Pinned comment:** *"Ask your lender for the amortisation schedule and find the row where principal
-overtakes interest. Post the month number — I want to see how late it lands for different rates."*
+**Pinned comment:** *"Which one were you — Adam or Sami? And the honest question: if you rent, are you actually investing the difference every month, or just renting?"*
 
 ---
 
 ## SHORTS HARVEST
 
-**Short 1 — "Two Houses" (50s)** · shots 1, 2, 3, 17, 19
-Cold open verbatim through "…almost everyone who signs one has never seen this number", then the
-multiplication and the two houses drawn to scale. Ends on the ghost house. **Highest-priority clip
-in the whole series** — this is the topic that produced 1,214 views on the sister channel.
+**Short 1 — "Payment 233" (58s)** · shots 20, 21, 28–32
+Hook: *"There's one payment out of three hundred and sixty where more of your money finally goes to
+the house than to the bank. Guess which one."* Ends on the milestone post. **Highest-priority clip in
+the season** — this is the exact topic that produced 1,214 views on the sister channel.
 
-**Short 2 — "Payment 233" (58s)** · shots 20, 21, 25, 26, 27
-Hook: *"You have to make two hundred and thirty-two mortgage payments before a single one of them is
-mostly yours."* Runs month one's 86/14 split, ends on the milestone post.
+**Short 2 — "Renting Was Winning" (55s)** · shots 1, 3, 13, 18, 43, 46
+Matched setup, Sami ahead at year 5, then the year-30 reversal card. Ends on the rent liability.
 
-**Short 3 — "Lender or Partner" (56s)** · shots 39, 40, 41, 45
+**Short 3 — "The Umbrella" (50s)** · shots 40–42, 53, 57
 Hook: *"If your house falls in value, your bank's number doesn't move. That's how you know they're
-not your partner."* The umbrella shot is the payoff image; end on the shrinking-share row.
-
-Every Short's description opens with the long-form link.
+not your partner."* The umbrella shot is the payoff; ends on the shared umbrella.

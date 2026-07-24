@@ -1,302 +1,349 @@
-# Episode 5 — Your 5% Raise Made You Poorer
+# Episode 5 — Three Raises, Three Outcomes
 
-**Title:** Your 5% Raise Made You Poorer. Here's the Arithmetic.
-**Alt titles:** `The Pay Cut Everyone Celebrates` · `Why You're Always Last in the Queue for New Money`
-**Runtime:** 11:50 · **Core number:** $63,000 → $58,064 real · **Mechanism:** Money as a measure / Zakat
-**Set list:** A (Ledger Wall), D (Long Road), E (Kitchen Table), + Supermarket, + The Queue
+**Title:** Two Men Got the Same 5% Raise. One of Them Got Poorer.
+**Alt:** `The Pay Cut Everyone Celebrates` · `His Balance Never Went Down. He Still Lost 60%.`
+**Runtime:** 14:30 · **Race:** cash vs repricing assets vs zakat-disciplined deployment
+**Season finale** — Act 11 recaps all five races and names the question underneath them.
 
-> **Season finale.** This episode closes the season, so Act 8 recaps all five numbers and names the
-> single question that has been running underneath every episode.
+### The arithmetic (lock first)
 
-### The arithmetic (lock this first)
+Both men: **$60,000 salary · 5% raise → $63,000 · inflation 8.5% that year · $500/month saved · 30 years.**
 
-| | |
-|---|---|
-| Salary | $60,000 |
-| Raise | 5% → **$63,000** |
-| Inflation that year | 8.5% |
-| $63,000 in last year's prices | **$58,064** |
-| Real change | **−$1,936** |
+**The raise, in real terms:** $63,000 ÷ 1.085 = **$58,064.** Against $60,000 last year, that is a
+**$1,936 pay cut.** To stand still required 8.5% — $65,100. The 5% raise was 60% of standing still.
 
-**Compounding, at "normal" rates:** 3% inflation for 30 years turns $1 into 41¢ — a 59% loss.
-Even at the 2% central banks aim for, $1 becomes 55¢ over 30 years.
+| | Adam — cash | Sami — repricing assets | Bilal — deployed, zakat-disciplined |
+|---|---|---|---|
+| Return | 1.5% | 8.0% | 8.0% less zakat on the idle portion |
+| 30-year nominal | **$227,100** | **$745,200** | **~$700,000** |
+| **30-year real** *(÷1.03³⁰)* | **$93,560** | **$307,000** | **~$288,000** |
+| Own money in | $180,000 | $180,000 | $180,000 |
+
+**Adam deposited $180,000 over 30 years and ended with $93,560 of buying power.** He never had a
+single down month.
+
+**Compounding at "normal" rates:** 3% for 30 years turns $1 into 41¢ — a 59% loss. Even at the 2%
+central banks aim for, $1 becomes 55¢.
 
 ### Chapters
 
 ```
-0:00  Two true things at once
-1:10  The number they celebrate
-3:10  What $63,000 actually buys
-4:40  It happens with or without a raise
-5:50  This isn't weather
-6:20  "Some inflation is good" — the honest answer
-7:55  Why you're last in the queue
-8:40  Money is a measure, not a product
-10:10 What you can actually do about it
-11:15 The one question in all five episodes
+0:00  Two men, the same raise
+1:00  The ruler that shrinks
+2:30  Year 1: what $63,000 actually bought
+4:00  Year 4 — and Adam is right
+6:00  Year 10: the loss with no chart
+8:00  Where does it actually go?
+9:30  You're last in the queue
+10:40 Year 30
+11:40 "Some inflation is good" — the honest answer
+12:40 There was a third man
+13:50 Five races, one question
 ```
 
 ---
 
 ## SCRIPT
 
-### ACT 0 — COLD OPEN (0:00–0:35)
+### ACT 1 — MEET THEM (0:00–1:00)
 
-> You got a five percent raise this year. Congratulations — genuinely.
+> Meet Adam and Sami. One last time.
 >
-> You are also poorer than you were last year. Not "it doesn't feel like much." Measurably, in
-> dollars, worse off than the day before they gave it to you.
+> Both earn sixty thousand dollars. Both just got the same email — a five percent raise, which in a
+> year when half their colleagues got two percent or nothing is a genuinely good result. Both of them
+> told someone. Both worked out what it meant per month.
 >
-> Both of those things are true at the same time, and only one of them showed up in an email.
+> Both can put aside five hundred dollars a month.
 >
-> On sixty thousand dollars, a five percent raise takes you to sixty-three. Against eight and a half
-> percent inflation, that sixty-three thousand buys what fifty-eight thousand bought a year ago.
-> You didn't get a three thousand dollar raise. You took a **nineteen hundred dollar pay cut**, and
-> you were thanked for it.
+> Same salary. Same raise. Same savings capacity. The only difference is what they do with it — and
+> whether they understand what happened to the raise itself.
+>
+> Because here's the thing neither email mentioned. Inflation that year was eight and a half percent.
+> Sixty-three thousand dollars, at those prices, buys what **fifty-eight thousand and sixty-four
+> dollars** bought twelve months ago.
+>
+> Neither of them got a three thousand dollar raise. They both took a **nineteen hundred and
+> thirty-six dollar pay cut** and were thanked for it.
+>
+> Thirty years from now, one of them will have about ninety-four thousand dollars of real buying
+> power. The other will have three hundred and seven thousand. Same salary, same raise, same five
+> hundred a month.
 
-### ACT 1 — THE PROMISE (0:35–1:10)
+### ACT 2 — THE RULER (1:00–2:30)
 
-> Two things to watch for in the next twelve minutes.
+> First, why the raise wasn't a raise. And it's not a trick of accounting — it's a measurement problem.
 >
-> First, I'm going to show you where new money actually enters the economy — because it does not
-> arrive everywhere at once, and the order matters enormously. There's a specific position in that
-> sequence that almost everyone watching this occupies, and it's not a good one.
+> Money isn't the thing you want. Nobody wants dollars. You want what dollars get you: rent, food,
+> fuel, a repair, a flight home. Dollars are a **measuring device** for those things.
 >
-> And second, hold this question: **is inflation something that happens, or something someone does?**
-> Because the answer changes what you're supposed to do about it. This is the last episode of the
-> series, and it's the one that's affecting you right now whether or not you've borrowed a single
-> dollar.
+> And the trap is that we measure our lives with the one instrument that's quietly changing length.
+>
+> Imagine a ruler that gets two percent shorter every year. Now measure the same table with it,
+> annually. The table gets longer every single year. You'd be delighted. Nothing happened to the
+> table.
+>
+> That's the raise. Adam's salary number went up. The thing measuring it got shorter.
+>
+> One warning about which inflation figure to use. The headline number is an average across a basket
+> of goods, and you don't buy the basket — you buy the specific things you buy. Rent, groceries, fuel
+> and insurance ran well above the headline that year, and if your spending is concentrated in those
+> categories, which for most working households it is, the official number *understates* what
+> happened to you. I'm using eight and a half percent for what a normal household actually buys.
+>
+> So: same money, two responses.
+>
+> **Adam banks it.** Five hundred a month into a savings account. Safe, visible, instantly available.
+>
+> **Sami deploys it.** Five hundred a month into things whose prices are *in* the price level —
+> ownership of businesses that can raise their own prices when costs rise.
 
-### ACT 2 — THE NORMAL CASE (1:10–3:10)
+### ACT 3 — CHECKPOINT: YEAR 1 (2:30–4:00)
 
-> Let's start with the moment itself, because it's a good moment and I don't want to be cynical
-> about it.
+> One year.
 >
-> The email arrives. Five percent. Your manager fought for it, and in a year when plenty of people
-> got two percent or nothing, five is a real result. You told someone. You probably worked out what
-> it meant per month — about two hundred and fifty dollars — and thought about what that covers.
+> Adam has six thousand and forty dollars in his savings account, and he can see all of it. Every
+> month it was higher than the month before.
 >
-> Here's the problem with that calculation. It's in the wrong units.
+> Sami has about six thousand two hundred, and it moved around a lot getting there, and twice it was
+> below what he'd put in.
 >
-> Money isn't the thing you want. Nobody wants dollars; you want what dollars get you — rent, food,
-> fuel, a repair, a flight home. Dollars are a **measuring device** for those things. And the trap
-> is that we measure our lives with the one instrument that is quietly changing length.
+> Almost nothing separates them. That's the first thing to notice about this race: at year one, the
+> decision that will eventually be worth two hundred thousand dollars is worth about a hundred and
+> sixty.
 >
-> Imagine a ruler that shrinks two percent a year. Now measure a table with it every year. The table
-> gets "longer" every single year. You'd be delighted. Nothing happened to the table.
+> But watch what's happening to the raise itself, because it happens to both of them and neither can
+> avoid it.
 >
-> That's your salary. It's the measurement that changed.
+> To have merely stood still — not gained anything, just not gone backwards — they'd have needed
+> eight and a half percent. **Sixty-five thousand, one hundred dollars.** The five percent raise was
+> about sixty percent of standing still.
 >
-> So: the number that matters is not five percent. It's five percent *against what.*
->
-> And be careful which inflation figure you use, because the headline number is an average across a
-> basket of goods, and you don't buy the basket — you buy the specific things you buy. In the year
-> we're describing, the headline was one figure; rent, groceries, fuel and insurance were all
-> running higher. If your spending is concentrated in exactly the categories that rose fastest —
-> and for most working households it is — then the headline number understates what happened to you.
->
-> I'll use eight and a half percent for the things a normal household actually buys.
+> And here's the part that makes this the most important episode in the series: **this happens whether
+> or not anyone gives you a raise.** The raise is a distraction. The underlying event is that the
+> measuring device shortened, and that happens to *everything* measured in it — the salary, the
+> savings account, the current account, the emergency fund, the cash in the drawer.
 
-### ACT 3 — THE BUILD (3:10–5:50)
+### ACT 4 — CHECKPOINT: YEAR 4 — WHERE ADAM IS RIGHT (4:00–6:00)
 
-> Sixty-three thousand dollars, at prices that are eight and a half percent higher.
+> Year four. And this is the checkpoint where Adam wins, properly, and I'm not going to skate past it.
 >
-> To compare it fairly, put it back into last year's money. Sixty-three thousand divided by one
-> point zero eight five.
+> Both men lose their jobs in the same quarter. Same industry, same round of cuts.
 >
-> **Fifty-eight thousand and sixty-four dollars.**
+> Adam has about twenty-five thousand dollars in cash. He covers seven months of expenses without
+> selling anything, without borrowing anything, and without a single decision made under pressure. He
+> takes the time to find the right job rather than the first one.
 >
-> You started the year able to buy sixty thousand dollars' worth of things. You ended it able to buy
-> fifty-eight thousand and sixty-four dollars' worth of things.
+> Sami has about twenty-eight thousand in assets — and the market is down nineteen percent, because
+> the reason they both lost their jobs and the reason the market fell are the same reason. That's not
+> bad luck; that's how recessions work. The moment you most need your money is the moment it's worth
+> least.
 >
-> **You are one thousand, nine hundred and thirty-six dollars worse off, after a raise.**
+> He sells anyway. He has to. He crystallises a loss of roughly four thousand dollars, and those
+> shares never come back to him.
 >
-> To have stood perfectly still — not gained anything, just not gone backwards — you'd have needed
-> eight and a half percent. Sixty-five thousand, one hundred dollars. Your five percent raise was
-> about sixty percent of what standing still required.
+> **At year four, Adam's approach was straightforwardly better**, and anyone who tells you cash is
+> always a mistake has never been unemployed.
 >
-> Now here's the part that makes this the most important episode in this series.
+> So let me be precise about what I'm actually criticising, because it isn't holding cash. It's
+> holding *only* cash, permanently, past the point where it's doing a job.
 >
-> **This happens whether or not anyone gives you a raise.** The raise is a distraction. The
-> underlying event is that the measuring device shortened, and that happens to everything measured
-> in it — your salary, your savings account, the cash in your current account, the emergency fund
-> you're proud of, the money in the drawer.
+> Cash has exactly one function and it performs it perfectly: being available on the worst day of
+> your life. Three to six months of expenses, instantly reachable. For that money, the erosion is the
+> premium you pay for an insurance policy that genuinely pays out. Adam's twenty-five thousand did
+> its job.
 >
-> And it compounds.
->
-> Forget the crisis year. Take a completely ordinary three percent — the kind nobody writes news
-> stories about. Over thirty years, three percent turns one dollar into forty-one cents. Your money
-> loses **fifty-nine percent** of its purchasing power in a single working lifetime, at a rate
-> considered so normal it's the definition of things going well.
->
-> Even at two percent — the number central banks explicitly *aim* for, the number that means the
-> system is functioning exactly as designed — a dollar becomes fifty-five cents over thirty years.
->
-> Read that again. Working as intended means your savings lose about half.
->
-> Which brings us to the thing I said in episode one and I want to close the series with. The
-> savings account that "never goes down" — the one everyone calls safe — is losing value every
-> single year with total reliability. It's the only asset most people own where the loss is
-> guaranteed rather than possible. It just never appears on a chart, because the number on the screen
-> stays the same and only the ruler moves.
+> The problem is everything above the buffer. Adam doesn't stop at twenty-five thousand. He keeps
+> going, for twenty-six more years, treating a transaction account as a store of value — and that is
+> a completely different decision that happens to feel like the same one.
 
-### ACT 4 — THE RE-HOOK (5:50–6:20)
+### ACT 5 — CHECKPOINT: YEAR 10 (6:00–8:00)
 
-> So we've established the loss. Now the question that actually matters, and the one almost nobody
-> asks.
+> Year ten.
 >
-> **Where does it go?**
+> Adam has about **sixty-four thousand, eight hundred dollars.** He has never once had a down month.
+> Not one, in a hundred and twenty months.
 >
-> Because purchasing power isn't destroyed by a natural process. Your ability to buy things didn't
-> evaporate — it moved. Somebody has it. And the mechanism by which it moves is the most important
+> Sami has about **ninety-one thousand, five hundred**, and he has had thirty-one down months and two
+> genuinely frightening years.
+>
+> Now the hidden cost, and it's the only one in this series that has been running in every single
+> episode without ever appearing on a statement.
+>
+> At three percent inflation, Adam's sixty-four thousand eight hundred buys what about **forty-eight
+> thousand two hundred** would have bought when he started.
+>
+> He deposited sixty thousand dollars of his own money. He has forty-eight thousand of buying power.
+>
+> **Adam's account has never gone down. Adam's money has gone down every single year**, reliably, with
+> no chart, no crash, no notification, and no moment where anyone told him it happened.
+>
+> That's the asymmetry the whole episode turns on. Sami's losses were loud, visible, and temporary.
+> Adam's are silent, invisible, and permanent.
+>
+> And it compounds. Forget the crisis year — take a completely ordinary three percent, the kind
+> nobody writes news stories about. Over thirty years, three percent turns a dollar into forty-one
+> cents. **A fifty-nine percent loss**, at a rate considered so normal it's the definition of things
+> going well. Even at two percent — the number central banks explicitly *aim* for, the number that
+> means the system is working exactly as designed — a dollar becomes fifty-five cents.
+>
+> Working as intended means your savings lose about half.
+
+### ACT 6 — THE HINGE (8:00–9:30)
+
+> So the loss is real. Now the question almost nobody asks: **where does it go?**
+>
+> Purchasing power isn't destroyed by a natural process. Adam's ability to buy things didn't
+> evaporate. It **moved.** Somebody has it. And the mechanism by which it moves is the most important
 > thing in this video.
 >
-> Objection first.
+> New money doesn't arrive in an economy evenly, like rain. It enters at specific points — through
+> financial institutions, government spending, asset markets — and then it travels outward, person by
+> person, transaction by transaction.
+>
+> Whoever gets it **first** spends it at the old prices, because prices haven't moved yet. They get
+> full value.
+>
+> Whoever gets it **last** receives it after prices have already adjusted. They get the number without
+> the value.
+>
+> This is the Cantillon effect, described three hundred years ago, and it isn't a conspiracy theory —
+> it's an observation about sequence. Money enters somewhere. It takes time to spread. Your position
+> in that queue determines whether you gain or lose.
+>
+> And wage earners are at the back of it. Structurally and permanently, by the design of the plumbing
+> rather than anyone's malice. Your paycheck is one of the slowest-adjusting prices in the entire
+> economy — it changes once a year, by negotiation, at somebody else's discretion. Asset prices change
+> every second.
+>
+> Which tells you what Sami actually did. He didn't beat inflation by being clever. He moved forward
+> in the queue by owning the things whose prices adjust immediately, instead of holding the unit those
+> prices are quoted in.
 
-### ACT 5 — THE OBJECTION (6:20–7:55)
+### ACT 7 — CHECKPOINT: YEAR 30 (9:30–10:40)
 
-> "A bit of inflation is *good*. Deflation is far worse — when prices fall, people stop spending,
-> businesses stop hiring, and you get a depression. Two percent is a deliberate target for good
-> reasons. And wages do catch up; over the long run real incomes have risen. You're describing one
-> bad year and treating it as a permanent condition."
+> Year thirty. Both men deposited exactly a hundred and eighty thousand dollars of their own money.
+> Five hundred a month, three hundred and sixty months, not a dollar of difference.
 >
-> Serious objection, and I'll concede most of it.
+> **Adam, nominal: two hundred and twenty-seven thousand, one hundred dollars.** In real terms —
+> what it will actually buy — **ninety-three thousand, five hundred and sixty.**
 >
-> **Deflation genuinely is dangerous.** A falling price level makes debt heavier in real terms and
-> gives everyone a reason to postpone spending — which reduces demand, which lowers prices further.
-> That spiral is a real part of what made the 1930s as bad as they were. Anyone telling you falling
-> prices would be straightforwardly great is skipping the hard part.
+> He put in a hundred and eighty thousand. He ended with ninety-four thousand of buying power. Thirty
+> years of never missing a deposit and never having a down month, and he finished with roughly half
+> the purchasing power he handed over.
 >
-> **The two percent target has a rationale.** It leaves room to cut interest rates in a downturn and
-> allows relative wages to adjust without anyone taking a nominal pay cut, which people resist far
-> more than they resist a quiet real one.
+> **Sami, nominal: seven hundred and forty-five thousand, two hundred.** Real: **three hundred and
+> seven thousand.**
 >
-> **And real wages have risen over the long run.** A median household today consumes things no
-> amount of 1950s income could buy. That's true and it's important.
->
-> Here's what all of that leaves untouched.
->
-> Every one of those arguments is about the *rate*. Whether two percent is the right target, whether
-> eight is a temporary shock — all rate questions. None of them address the *mechanism*: who gets the
-> new money first, and who gets it last. That distribution is identical whether inflation is two
-> percent or twenty. Twenty percent just makes it visible.
->
-> And "wages catch up eventually" is doing a lot of work in that sentence. Eventually is not a
-> timeframe you can pay rent with. If prices move now and wages move in eighteen months, that gap
-> was paid for by someone — and it was paid by the person who couldn't defer buying food for a year
-> and a half.
+> Adam didn't lose to bad luck. He didn't lose to a crash, a scam, or a mistake. He lost to a
+> completely ordinary rate of inflation, applied patiently, to a decision that felt responsible every
+> single day for three decades.
 
-### ACT 6 — THE TURN (7:55–8:40)
+### ACT 8 — THE OBJECTION (10:40–11:40)
 
-> So: where does it go?
+> "A bit of inflation is good. Deflation is far worse. Two percent is a deliberate target with real
+> reasons behind it. And wages do catch up — real incomes have risen over the long run. You're taking
+> one bad year and treating it as a permanent condition."
 >
-> New money does not arrive in the economy evenly, like rain. It enters at specific points — through
-> financial institutions, government spending, asset markets — and then it travels outward, person
-> by person, transaction by transaction.
+> Serious objection. I'll concede most of it.
 >
-> And whoever gets it **first** spends it at the old prices. Prices haven't moved yet, because the
-> new money hasn't reached the shops yet. They get full value.
+> **Deflation genuinely is dangerous.** Falling prices make debts heavier in real terms and give
+> everyone a reason to postpone spending, which reduces demand, which lowers prices further. That
+> spiral is a real part of why the 1930s were as bad as they were.
 >
-> Whoever gets it **last** receives it after prices have already adjusted. They get the number
-> without the value.
+> **The two percent target has a rationale** — it leaves room to cut rates in a downturn, and lets
+> relative wages adjust without anyone taking a nominal pay cut, which people resist far more than a
+> quiet real one.
 >
-> This has a name — economists call it the Cantillon effect, after the man who described it three
-> hundred years ago — and it is not a conspiracy or a fringe idea. It's a straightforward observation
-> about sequence. Money enters somewhere. It takes time to spread. Position in that queue determines
-> whether you gain or lose.
+> **And real incomes have risen.** A median household today consumes things no amount of 1950s income
+> could buy.
 >
-> Wage earners are at the back of that queue. Structurally, permanently, by design of the plumbing
-> rather than by anyone's malice. Your paycheck is one of the slowest-adjusting prices in the entire
-> economy — it changes once a year, by negotiation, at your employer's discretion. Asset prices
-> change every second.
+> Here's what none of that touches. Every one of those arguments is about the **rate**. Whether two
+> percent is right, whether eight was temporary — rate questions. None of them address the
+> **mechanism**: who gets the new money first and who gets it last. That distribution is identical at
+> two percent and at twenty. Twenty just makes it visible.
 >
-> That's the answer to my question. Inflation is not weather. It is an outcome with a sequence, and
-> you are standing at the end of it.
+> And "wages catch up eventually" is carrying a lot of weight. Eventually is not a timeframe you can
+> pay rent with. If prices move now and wages move in eighteen months, somebody paid for that gap —
+> and it was the person who couldn't defer buying food for a year and a half.
 
-### ACT 7 — THE DIVE (8:40–11:15)
+### ACT 9 — THE THIRD MAN (11:40–13:00)
 
-> Which brings us to a rule that sounds abstract until you've watched what we just watched:
-> **in Islamic finance, money is not a commodity. It's a measure.**
+> There was a third man. And for once, he doesn't win.
 >
-> You don't trade the ruler. You don't rent out the ruler. You don't make a profit on the ruler
-> itself, because its entire job is to be a stable thing you can measure other things against. The
-> moment the measuring device becomes a product that someone can create, price, and profit from,
-> every measurement taken with it is compromised.
+> Bilal did roughly what Sami did — he owned things that reprice. He finishes at about **two hundred
+> and eighty-eight thousand** in real terms, **nineteen thousand behind Sami**, and the reason is that
+> every year he paid **zakat**: two and a half percent on qualifying wealth he was holding.
 >
-> That's why the classical Islamic monetary unit was defined as a **weight of a physical substance**.
-> The dinar was a specific weight of gold; the dirham a specific weight of silver. And the crucial
-> property there isn't gold — it's this: **a weight cannot be issued.** Nobody can decide that there
-> will be more grams this year. You can mine more, slowly and expensively, but you cannot announce
-> more into existence. The supply is constrained by physical reality rather than by decision.
+> So why include him? Because of what zakat is structurally built to do, and it's the most
+> underappreciated idea in this entire series.
 >
-> Which means the queue doesn't exist. If nobody can create new units, nobody can be first to spend
-> them.
+> Zakat applies to wealth you are **holding**: cash, gold and silver, trade goods, money owed to you —
+> above a threshold, held for a full lunar year. And look at what it does *not* touch. Not your home.
+> Not the tools you work with. Not the machinery in your workshop or the premises of your business.
+> Productive assets, in use, are outside it.
 >
-> Now — I have to be careful here, and I'm going to say something that will annoy some viewers.
+> Now run the incentive. **Hoard money and it's assessed every year. Deploy it into something that
+> produces and the wealth itself isn't.** The system taxes stagnation and leaves deployment alone. It
+> applies continuous, annual, unavoidable pressure in exactly the direction that protects you from the
+> queue — and it was doing that fourteen hundred years before anyone wrote the word "inflation."
 >
-> **This is not a video telling you to buy gold.** The Islamic point is about what money *is*, not
-> about gold as an investment, and those get conflated constantly, usually by people selling gold.
-> Gold produces nothing. It pays no dividend, builds no product, employs nobody. It costs money to
-> store and it's more volatile than people expect. Over long periods, ownership of productive
-> businesses has substantially outperformed it. If you take "money should be sound" and turn it into
-> "put your savings in metal," you've made a different mistake with the same confidence.
+> And here's the point. **Bilal could not have become Adam.** Not because he's more disciplined —
+> because the structure wouldn't let him. Every single year, holding a large idle cash pile would have
+> cost him something visible, in a way that inflation never does. Zakat makes the invisible loss
+> visible and puts a number on it annually.
 >
-> So what do you actually do? You can't reissue the currency by yourself. Three things are within
-> your control.
+> Adam's mistake was that nothing in his life ever priced the cost of doing nothing. Bilal's system
+> prices it every year, on purpose.
 >
-> **One: stop treating cash as a store of value.** Cash is for transactions and for a genuine
-> emergency buffer — three to six months of expenses, where instant access is worth the erosion.
-> Beyond that buffer, every month a large balance sits idle is a month it is reliably shrinking.
-> That's not a reason to gamble. It's a reason to be deliberate.
->
-> **Two: own things that reprice.** Inflation raises the price level — and things whose prices are
-> *in* that level rise with it. Businesses that can raise their prices, property that commands rent,
-> and yes, some allocation to metals if you want it. Assets reprice; cash doesn't. That's the entire
-> distinction, and it's the same lesson as episode one wearing different clothes: be an owner, not
-> a creditor.
->
-> **Three — and this is the one people never expect — look at what zakat is actually built to do.**
->
-> Zakat is two and a half percent a year on qualifying wealth you're *holding*: cash, gold and
-> silver, trade goods, money owed to you. Held above a threshold, for a full lunar year.
->
-> Now look at what it does **not** touch. Not your home. Not the tools you work with. Not the
-> machinery in your workshop or the premises of your business. Productive assets, in use, are
-> outside it.
->
-> So run the incentive. Hoard money and it's assessed every year. Deploy it into something that
-> produces — a business, equipment, property in use — and the wealth itself isn't. The system
-> **taxes stagnation and leaves deployment alone.** It applies continuous pressure in exactly the
-> direction that protects you from the queue, and it was doing that fourteen hundred years before
-> anyone wrote the word "inflation."
->
-> And it goes to people, not to a treasury — which means it also moves purchasing power toward the
-> back of the queue rather than the front. Which, if you've been following the argument, is the
-> exact opposite of what the money-creation mechanism does.
->
-> Sitting in cash isn't safe. It's just a loss with no chart.
+> Two honest notes. The scholars differ on exactly how zakat applies to long-term shareholdings —
+> whether on market value or on the zakatable assets underneath — so treat my figure as one reasonable
+> model, not a ruling; ask someone qualified about your own position. And zakat goes **to people**,
+> not to a treasury — which means it also moves purchasing power toward the back of the queue rather
+> than the front. Which, if you've followed the argument, is the exact opposite of what money creation
+> does.
 
-### ACT 8 — THE CLOSE, AND THE SEASON (11:15–11:50)
+### ACT 10 — WHAT IT DEPENDS ON (13:00–13:50)
 
-> Sixty thousand. A five percent raise. Nineteen hundred dollars poorer.
+> So: cash isn't safe. But it isn't useless either.
 >
-> And that's the season. Five episodes, five numbers:
+> Three to six months of expenses, instantly reachable — that money is doing a job and the erosion is
+> the premium. Everything above the buffer is a different decision, and it's the one Adam never made
+> consciously.
 >
-> Two hundred and thirty-nine thousand dollars between a saver and an owner. Eight thousand three
-> hundred and forty for a car that was never built. Eight thousand one hundred to borrow five
-> thousand for nineteen years. Four hundred and eight thousand for a second house nobody delivers.
-> And nineteen hundred dollars, taken from a raise, by a ruler that shrank.
+> Own things that reprice: businesses that can raise their prices, property that commands rent, some
+> allocation to metals if you want it. And be clear that this is the same lesson as episode one in
+> different clothes — **be an owner, not a creditor.**
 >
-> They look like five different subjects. They're one question, asked five times.
+> One thing I'm not doing is telling you to buy gold. The Islamic point is about what money *is* — a
+> measure, not a product; you don't trade the ruler — and that gets conflated constantly with gold as
+> an investment, usually by people selling gold. Gold produces nothing. It pays no dividend, employs
+> nobody, costs money to store. "Money should be sound" and "put your savings in metal" are different
+> claims and only one of them is in the tradition.
+
+### ACT 11 — FIVE RACES, ONE QUESTION (13:50–14:30)
+
+> And that's the season.
+>
+> Five races. Same two men every time.
+>
+> **Three hundred and fifty-nine thousand dollars** between the saver and the owner. **Twenty-five
+> thousand** between the man who financed a car and the man who waited two years. **Seventy-four
+> thousand** between the minimum payment and fifty dollars more. **A hundred and fifty-three thousand**
+> between a mortgage and a partnership. And a raise that was a pay cut.
+>
+> Five different subjects. One question, asked five times:
 >
 > **Are you being paid for owning something and carrying its risk — or is someone being paid by you
 > for the passage of time?**
 >
-> That's it. That's the whole series. Every product in this video, every contract, every structure —
-> conventional or Islamic — sorts into one of those two answers. And once you can tell which one
-> you're looking at, you don't need anyone to tell you whether a deal is good. You'll just see it.
+> That's it. That's the whole series. Every product in every episode — conventional or Islamic —
+> sorts into one of those two answers. And once you can tell which one you're looking at, you don't
+> need anyone to tell you whether a deal is good. You'll just see it.
 >
-> Season two, we do the same thing to business, salaries, and building something of your own.
+> Adam wasn't stupid in any of these. He took the option that felt safe, felt normal, and felt like
+> what responsible people do. That's the whole trap. It never once felt like a mistake.
+>
+> Season two: three men start a business.
 >
 > Run the numbers. Then run them halal.
 
@@ -304,74 +351,78 @@ Even at the 2% central banks aim for, $1 becomes 55¢ over 30 years.
 
 ## STORYBOARD
 
-Append the **STYLE BLOCK** to every prompt. Insert the **CHARACTER BLOCK** wherever Kareem appears.
-Blocks and SET definitions are in `00-series-bible.md`.
+Devices and CHARACTER BLOCKS in `00-series-bible.md`. **Adam left, Sami right.** Ribbon YEAR 0 → YEAR 30.
 
-| # | Time | Shot | On-screen text | Image prompt |
+| # | Time | Device | Shot | On-screen text |
 |---|---|---|---|---|
-| 1 | 0:00 | Kareem holding a payslip, pleased — cradling a nearly empty grocery bag | `+5% RAISE. POORER.` | The man standing in a mid-shot holding a small payslip up in one hand with a pleased smile, cradling a paper grocery bag in the other arm with only two small items visible inside it, cream background. [CHARACTER BLOCK] |
-| 2 | 0:12 | Two facts written side by side, both ticked | `BOTH TRUE AT ONCE` | Two short chalk-style lines written side by side on a gridded cream wall, each with a small tick beside it, a thin vertical divider between them, no character. [SET A] |
-| 3 | 0:22 | $60,000 → $63,000 → $58,064, three cards, the last one red | `$60,000 → $63,000 → $58,064` | Three plain rectangular cards in a horizontal row on cream, each with a large blank number field, arrows between them, the third card outlined in brick red, no character. |
-| 4 | 0:30 | A thank-you card resting on a stack with a slice missing | `A PAY CUT AND A THANK-YOU NOTE` | A small folded greeting card standing upright beside a stack of banknotes with a visible gap where a slice has been removed, thick outlines, cream background, no character. |
-| 5 | 0:38 | Ledger Wall — all four previous episode icons faint in the corner | `WHERE DOES NEW MONEY ENTER?` | A large gridded cream wall with four faint chalk-style icons sketched small in the top-right corner — a coin stack, a car, a card, a house — and a narrow shelf along the bottom holding a payslip, no character. [SET A] |
-| 6 | 0:52 | The season's second loop, boxed | `IS INFLATION SOMETHING THAT HAPPENS — OR SOMETHING SOMEONE DOES?` | A gridded cream wall with two lines of chalk-style handwriting inside a hand-drawn rectangular box, heavily underlined, the rest of the wall empty, no character. [SET A] |
-| 7 | 1:12 | Kareem at the kitchen table reading a phone, smiling | `THE EMAIL ARRIVES` | The man seated at a plain round kitchen table in three-quarter view holding a phone in both hands and reading it, genuine pleased smile, a mug beside him. [CHARACTER BLOCK] [SET E] |
-| 8 | 1:26 | $250/month written out with a small list of what it covers | `+$250 A MONTH` | A plain notepad on a cream surface with one figure written large at the top and three short ruled lines beneath it, a pen resting beside it, no character. |
-| 9 | 1:42 | A ruler with a price tag — the measuring device itself | `MONEY IS A MEASURING DEVICE` | A simple wooden ruler lying flat on cream with clear evenly spaced markings along its edge and a small paper price tag tied to one end, thick outlines, no character. |
-| 10 | 1:58 | The shrinking ruler: three rulers, progressively shorter, same markings | `A RULER THAT SHRINKS 2% A YEAR` | Three wooden rulers stacked in a vertical row on cream, each progressively shorter than the one above it but with the same number of markings, thin dashed alignment lines at the left ends. |
-| 11 | 2:14 | Kareem measuring an unchanged table with the shortest ruler, delighted | `THE TABLE GOT "LONGER"` | The man crouched beside a plain rectangular table holding a short ruler against its edge, looking up with a delighted surprised expression, eyebrows raised, cream background. [CHARACTER BLOCK] |
-| 12 | 2:30 | The table alone, unchanged, with a dashed outline identical to itself | `NOTHING HAPPENED TO THE TABLE` | A plain rectangular table standing alone on cream with a dashed grey outline drawn exactly over its own edges, perfectly matching, no character. |
-| 13 | 2:46 | The basket vs the actual trolley — different contents | `YOU DON'T BUY THE BASKET` | Two shopping containers side by side on cream, a small neat basket on the left with evenly assorted simple items and a trolley on the right holding a different, heavier set of items, thick outlines. |
-| 14 | 3:00 | Four categories with steep individual arrows | `RENT · FOOD · FUEL · INSURANCE` | Four simple icons in a horizontal row on cream — a small house, a loaf, a fuel pump, a shield — each with a steep brick-red upward arrow above it of differing lengths. |
-| 15 | 3:14 | The division written on the wall | `$63,000 ÷ 1.085` | A gridded cream wall with a single large chalk-style division written across the centre, no character. [SET A] |
-| 16 | 3:28 | The result, double underlined | `$58,064` | The same gridded cream wall with a large chalk-style figure written beneath the division and double-underlined in brick red, small workings faintly around it, no character. [SET A] |
-| 17 | 3:42 | Two shopping baskets: last year's full, this year's lighter | `SAME LIFE. LESS OF IT.` | Two identical shopping baskets side by side on cream seen from the side, the left one filled with six simple items, the right one holding four, thin baseline, no character. |
-| 18 | 3:56 | The gap as a block lifted out and set aside | `−$1,936` | A single rectangular block floating slightly above a gap in a taller bar from which it has been lifted, brick-red fill, thin motion lines beneath it, cream background. |
-| 19 | 4:12 | The standing-still bar, taller than the raise bar | `STANDING STILL NEEDED $65,100` | Two vertical bars side by side on cream, the left olive green and the right slightly taller and drawn as a dashed outline, a small bracket marking the difference between their tops. |
-| 20 | 4:26 | Kareem running on the spot with a marker line ahead of him | `YOUR RAISE WAS 60% OF STANDING STILL` | The man running on the spot with visible motion lines at his heels, a marked line on the ground a short distance ahead of him that he has not reached, determined but strained expression. [CHARACTER BLOCK] |
-| 21 | 4:42 | The raise crossed out — it happens anyway | `IT HAPPENS WITHOUT A RAISE` | A plain payslip on cream with a thin brick-red diagonal line struck through it, and beside it a savings jar, a wallet and a bank card each with a small downward arrow above them. |
-| 22 | 4:58 | Everything measured in the ruler, all shrinking together | `SALARY · SAVINGS · EMERGENCY FUND` | Three vertical olive-green bars in a row on cream, each with a dashed outline above its top showing a former greater height, small downward arrows beside each. |
-| 23 | 5:12 | A dollar splitting into 41 cents across a 30-year line | `3% FOR 30 YEARS = 41¢` | A large coin on the left of a cream frame and a much smaller coin on the right, a long horizontal arrow running between them with tick marks along it, thick outlines, no character. |
-| 24 | 5:28 | The 2% version — barely better | `EVEN AT 2%: 55¢` | The same composition with the right-hand coin drawn slightly larger than in the previous frame, a faint dashed outline showing the earlier smaller size, cream background. |
-| 25 | 5:40 | "Working as intended" stamp over the shrinking coin | `WORKING AS DESIGNED` | A small coin on cream with a rectangular stamp shape overlapping it bearing thin ruled text lines, the stamp tilted slightly, thick outlines, no character. |
-| 26 | 5:52 | The savings account bar — flat, unchanged, but faded | `THE ONLY GUARANTEED LOSS` | A single olive-green vertical bar on cream drawn with a faded semi-transparent fill and a solid outline, standing alone with generous empty space around it, thin baseline. |
-| 27 | 6:04 | Purchasing power leaving one hand and arriving in another | `IT DIDN'T EVAPORATE. IT MOVED.` | Two open hands on cream at different heights, a stream of small coin shapes flowing in an arc from the lower hand up to the higher one, no faces, thick outlines. |
-| 28 | 6:22 | Kareem sceptical, arms folded | `"A BIT OF INFLATION IS GOOD."` | The man in a mid-shot with arms folded across his chest, one eyebrow raised, mouth in a flat wry line, facing the viewer directly, plain cream background. [CHARACTER BLOCK] |
-| 29 | 6:38 | The deflation spiral: a descending staircase with figures stopping | `DEFLATION IS GENUINELY WORSE` | A descending staircase shape on cream with three plain grey silhouette figures standing still on different steps, none moving, small downward arrows beside each step. |
-| 30 | 6:54 | The 2% target as a dial with room to move | `THE TARGET HAS A RATIONALE` | A simple round dial on a cream panel with the pointer set near the low end of its range and a small marked zone of movement to either side, thick outlines, no character. |
-| 31 | 7:10 | Long-run real wages: a rising line over decades | `REAL WAGES HAVE RISEN` | A single steadily rising olive-green line on a cream graph running from lower-left to upper-right with mild fluctuations, thin axis lines, no character. |
-| 32 | 7:26 | Two questions separated: rate vs mechanism | `THOSE ARE ALL RATE QUESTIONS` | Split composition on cream with a thin vertical divider, a round dial on the left and a length of pipework with a junction on the right, each in its own half, thick outlines. |
-| 33 | 7:42 | An 18-month gap drawn between a price line and a wage line | `"EVENTUALLY" IS PAID FOR BY SOMEBODY` | Two lines on a cream graph, a brick-red line stepping up early and an olive-green line stepping up noticeably later, the horizontal gap between the two steps shaded with light hatching. |
-| 34 | 7:58 | Money entering at one point, not raining evenly | `IT DOESN'T ARRIVE LIKE RAIN` | Split composition on cream, the left half showing evenly spaced falling raindrops over a flat ground line, the right half showing a single pipe outlet at one point with flow spreading outward from it. |
-| 35 | 8:12 | The queue: silhouettes at a tap, Kareem last | `YOU'RE LAST IN THE QUEUE` | A long line of plain grey silhouette figures queuing toward a large wall-mounted tap on the far left, the man standing last at the right-hand end of the line, hands in pockets, patient expression. [CHARACTER BLOCK, at end of line] |
-| 36 | 8:26 | First in line pays old prices — a price tag unchanged | `FIRST: OLD PRICES` | A plain grey silhouette figure at a shop counter handing over coins, a price tag on the counter showing a single unaltered number field, cream background. |
-| 37 | 8:38 | Last in line: the same tag now overwritten twice | `LAST: NEW PRICES` | The man at the same shop counter, the price tag beside him now showing three stacked crossed-out lines with only the lowest visible, brows drawn together, lips parted. [CHARACTER BLOCK] |
-| 38 | 8:52 | Speed comparison: asset prices ticking fast, one payslip stamped yearly | `ASSETS: EVERY SECOND. WAGES: ONCE A YEAR.` | Split composition on cream, the left half a dense ticker board of many small changing number blocks, the right half a single payslip with one date stamp on it, thin divider between. |
-| 39 | 9:06 | The wall answer to the boxed question | `NOT WEATHER. A SEQUENCE.` | The gridded cream wall with the earlier boxed chalk question now answered beneath it in a second line of handwriting, the answer underlined in brick red, no character. [SET A] |
-| 40 | 9:20 | A ruler with a "not for sale" red diagonal | `YOU DON'T TRADE THE RULER` | A simple wooden ruler lying flat on cream with a thin brick-red diagonal line crossing it and a small blank price tag beside it lying face down, thick outlines, no character. |
-| 41 | 9:34 | A balance scale with a metal weight vs a printing press | `A WEIGHT CANNOT BE ISSUED` | Split composition on cream, the left half a classic two-pan balance scale with a solid metal weight on one pan, the right half a simple printing press with a fan of banknotes flying out, thin divider. |
-| 42 | 9:48 | The queue erased — no tap, figures standing evenly apart | `NO ISSUANCE, NO QUEUE` | Several plain grey silhouette figures standing evenly spaced across a cream frame with no line and no tap present, the man among them standing at the same distance as the others. [CHARACTER BLOCK] |
-| 43 | 10:00 | Kareem holding up a hand, pushing back a gold-bar sales pitch | `THIS IS NOT A "BUY GOLD" VIDEO` | The man in a mid-shot holding one palm up in a firm stop gesture, a plain grey silhouette figure at the edge of frame offering a small stack of metal bars, flat wry expression. [CHARACTER BLOCK] |
-| 44 | 10:14 | A gold bar with no output arrows beside a small factory with many | `METAL PRODUCES NOTHING` | Two items side by side on cream, a plain metal bar on the left with no arrows around it and a small factory with a chimney on the right with three arrows leaving it, thin divider. |
-| 45 | 10:28 | The buffer: a small sealed jar labelled with 3–6 | `CASH: TRANSACTIONS + 3–6 MONTHS` | A small sealed glass jar of coins on cream with a narrow bracket beside it marking a short height, a much larger empty jar beside it drawn as a dashed outline, no character. |
-| 46 | 10:42 | Things that reprice: business, property, some metal | `OWN THINGS THAT REPRICE` | Three simple icons in a horizontal row on cream — a small shopfront, a house with a rent tag, a small metal bar — each with a modest upward olive-green arrow above it, the metal bar's arrow shortest. |
-| 47 | 10:54 | Zakat: a hoarded pile assessed, a working workshop untouched | `2.5% ON IDLE · 0% ON PRODUCTIVE` | Two scenes side by side on cream, the left a large pile of coins with a thin brick-red slice separated from its top, the right a small workshop with a workbench and tools with no slice and no mark. |
-| 48 | 11:04 | The flow: from the front of the queue toward the back | `IT MOVES VALUE BACKWARD DOWN THE LINE` | A line of plain grey silhouette figures across a cream frame with a large curved arrow running from the front of the line over their heads and down to the figure at the far back. |
-| 49 | 11:14 | Kareem walking away from a cash pile left on a bench | `CASH ISN'T SAFE. IT'S A LOSS WITH NO CHART.` | The man walking toward the viewer with a calm confident stride, a small stack of banknotes left sitting on a plain bench in the background behind him, cream background. [CHARACTER BLOCK] |
-| 50 | 11:24 | The five numbers written across the Ledger Wall | `$239,200 · $8,340 · $8,100 · $408,158 · $1,936` | A large gridded cream wall covered edge to edge with five large chalk-style figures arranged in a row, each with a small icon sketched above it — a coin stack, a car, a card, a house, a payslip — no character. [SET A] |
-| 51 | 11:34 | The one question, written beneath all five and boxed | `PAID FOR OWNING — OR PAID FOR TIME?` | The same gridded cream wall with a single line of chalk-style handwriting written large beneath the row of figures inside a hand-drawn box, heavily underlined in brick red, no character. [SET A] |
-| 52 | 11:42 | Kareem beside the completed wall, whole season visible | — | The man standing beside the fully covered gridded cream wall with one hand resting on the shelf, looking toward the viewer with a calm confident gaze and a small closed-mouth smile, chin level. [CHARACTER BLOCK] [SET A] |
-| 53 | 11:48 | End card | `Run the numbers. Then run them halal.` | The man standing centred facing the viewer with confident open posture, chin level, small closed-mouth smile, the fully covered gridded cream wall behind him, generous empty space on both sides for end-screen cards. [CHARACTER BLOCK] [SET A] |
+| 1 | 0:00 | Split | Both men reading identical phones, identical pleased smiles | `MEET ADAM AND SAMI` |
+| 2 | 0:12 | Full | One email card, two arrows to two identical figures | `THE SAME 5% RAISE` |
+| 3 | 0:24 | Split | Both holding a payslip in one hand and a nearly empty grocery bag in the other | `+5%` |
+| 4 | 0:38 | Full | Three cards in a row, the third outlined brick red | `$60,000 → $63,000 → $58,064` |
+| 5 | 0:52 | Full | A folded thank-you card beside a stack with a visible slice missing | `−$1,936` |
+| 6 | 1:04 | Full | A wooden ruler lying flat, clear markings, a price tag on one end | `MONEY IS A MEASURING DEVICE` |
+| 7 | 1:18 | Full | Three rulers stacked, each shorter than the one above, same markings, aligned left | `A RULER THAT SHRINKS` |
+| 8 | 1:34 | Left only | Adam crouched measuring an unchanged table with the shortest ruler, delighted | `THE TABLE GOT "LONGER"` |
+| 9 | 1:50 | Full | The table alone with a dashed outline exactly matching its own edges | `NOTHING HAPPENED TO THE TABLE` |
+| 10 | 2:04 | Full | A neat basket and a heavier trolley side by side, different contents | `YOU DON'T BUY THE BASKET` |
+| 11 | 2:18 | Full | Four icons with steep arrows of differing lengths | `RENT · FOOD · FUEL · INSURANCE` |
+| 12 | 2:32 | Split | Adam's $500 into a labelled box / Sami's $500 into a shopfront-and-factory tile | `BANKS IT` / `DEPLOYS IT` |
+| 13 | 2:48 | Scoreboard | **CHECKPOINT 1.** Adam $6,040 / Sami $6,200 | `YEAR 1` |
+| 14 | 3:06 | Full | Two bars almost identical in height, a hairline bracket between | `$160 APART` |
+| 15 | 3:22 | Full | Two bars: the raise, and a taller dashed bar marked as what was needed | `STANDING STILL NEEDED $65,100` |
+| 16 | 3:38 | Split | Both men running on the spot, a marked line just ahead of both | `60% OF STANDING STILL` |
+| 17 | 3:52 | Full | A payslip struck through, and beside it a savings jar, a wallet and a card each with a small downward arrow | `IT HAPPENS WITHOUT A RAISE` |
+| 18 | 4:06 | Split | Both men receiving identical letters, both faces falling | `YEAR 4 — BOTH LOSE THEIR JOBS` |
+| 19 | 4:24 | Left only | Adam at the kitchen table with a solid cash block beside him, calm | `7 MONTHS COVERED` |
+| 20 | 4:42 | Left only | Adam shaking hands at a new desk, unhurried | `HE WAITED FOR THE RIGHT JOB` |
+| 21 | 5:00 | Right only | Sami's asset bar with its top fifth struck off, a red downward arrow | `THE MARKET IS DOWN 19%` |
+| 22 | 5:18 | Right only | Sami selling — a coin leaving at a low point marked on a trough in the line | `HE SELLS ANYWAY. −$4,000.` |
+| 23 | 5:36 | Full | A scale tipped clearly toward Adam's side, held long | `AT YEAR 4, ADAM WAS RIGHT` |
+| 24 | 5:52 | Full | A small sealed jar labelled 3–6, beside a much larger jar drawn as a dashed outline | `CASH HAS ONE JOB` |
+| 25 | 6:02 | Scoreboard | **CHECKPOINT 2.** Adam $64,800 / Sami $91,500 | `YEAR 10` |
+| 26 | 6:20 | Left only | Adam's line graph — 120 steps, never once down | `120 MONTHS. NEVER DOWN.` |
+| 27 | 6:38 | Right only | Sami's jagged line with 31 visible dips | `31 DOWN MONTHS` |
+| 28 | 6:56 | Hidden cost | Rust card over Adam's half — the only one he ever gets | `$64,800 BUYS $48,200` |
+| 29 | 7:14 | Left only | Adam beside two identical baskets, the second holding noticeably less | `HE PUT IN $60,000` |
+| 30 | 7:32 | Split | Sami's dips drawn loud with jagged edges / Adam's decline drawn as a smooth faint fade | `LOUD AND TEMPORARY` / `SILENT AND PERMANENT` |
+| 31 | 7:50 | Full | A large coin and a much smaller coin joined by a long arrow with tick marks | `3% FOR 30 YEARS = 41¢` |
+| 32 | 8:04 | Full | The same pair with the right coin slightly larger, a dashed outline showing the earlier size | `EVEN AT 2%: 55¢` |
+| 33 | 8:16 | Full | Two open hands at different heights, coins arcing from the lower to the higher | `IT DIDN'T EVAPORATE. IT MOVED.` |
+| 34 | 8:34 | Full | Split composition: even raindrops over flat ground / one pipe outlet with flow spreading | `IT DOESN'T ARRIVE LIKE RAIN` |
+| 35 | 8:54 | Full | A long queue of grey silhouettes toward a tap, Adam and Sami last | `YOU'RE LAST IN THE QUEUE` |
+| 36 | 9:12 | Full | A silhouette at a counter with a price tag showing one clean unaltered number | `FIRST: OLD PRICES` |
+| 37 | 9:26 | Left only | Adam at the same counter, the tag now showing three struck-through lines | `LAST: NEW PRICES` |
+| 38 | 9:40 | Full | A dense ticker board of changing numbers beside a single payslip with one date stamp | `ASSETS: EVERY SECOND · WAGES: ONCE A YEAR` |
+| 39 | 9:56 | Right only | Sami stepping forward past three silhouettes in the queue | `HE MOVED FORWARD IN THE LINE` |
+| 40 | 10:12 | Scoreboard | **CHECKPOINT 3.** Adam $227,100 nominal / Sami $745,200 nominal | `YEAR 30 — NOMINAL` |
+| 41 | 10:30 | Scoreboard | The same card with both figures struck through and rewritten smaller | `REAL: $93,560 / $307,000` |
+| 42 | 10:48 | Left only | Two bars: $180,000 deposited beside $93,560 of buying power | `HE PUT IN $180,000` |
+| 43 | 11:04 | Ledger Wall | Kareem writing one line and boxing it | `NO CRASH. NO SCAM. NO MISTAKE.` |
+| 44 | 11:22 | Ledger Wall | Kareem to camera, arms folded, eyebrow raised | `"SOME INFLATION IS GOOD."` |
+| 45 | 11:38 | Full | A descending staircase with three grey silhouettes standing still on different steps | `DEFLATION IS GENUINELY WORSE` |
+| 46 | 11:54 | Full | A round dial set near the low end with a marked zone either side | `THE TARGET HAS A RATIONALE` |
+| 47 | 12:06 | Full | A dial on the left, a length of pipework with a junction on the right, thin divider | `THOSE ARE RATE QUESTIONS` |
+| 48 | 12:20 | Full | Two step-lines, red stepping up early, olive stepping up much later, gap hatched | `"EVENTUALLY" IS PAID FOR BY SOMEBODY` |
+| 49 | 12:42 | Full | **BILAL ENTERS** from the right of a two-person frame | `THERE WAS A THIRD MAN` |
+| 50 | 12:54 | Scoreboard | Third column fills in, visibly below Sami's | `BILAL: $288,000 — HE LOSES` |
+| 51 | 13:06 | Full | Left: a coin pile with a thin slice separated. Right: a workshop with tools, unmarked | `2.5% ON IDLE · 0% ON PRODUCTIVE` |
+| 52 | 13:20 | Full | A scale where the "do nothing" pan visibly carries a weight | `IT PRICES DOING NOTHING` |
+| 53 | 13:34 | Split | Adam's idle pile with no marking / Bilal's idle pile with an annual slice removed | `BILAL COULD NOT HAVE BECOME ADAM` |
+| 54 | 13:48 | Full | A curved arrow from the front of a silhouette queue back over their heads to the last figure | `IT MOVES VALUE BACKWARD` |
+| 55 | 14:00 | Ledger Wall | The wall carrying five large figures in a row, each with a small icon above | `$359,300 · $24,941 · $74,342 · $153,000 · $1,936` |
+| 56 | 14:12 | Ledger Wall | One line written large beneath the row, boxed and underlined red | `PAID FOR OWNING — OR PAID FOR TIME?` |
+| 57 | 14:20 | Full | Adam, Sami and Bilal standing evenly spaced, facing the viewer, Kareem beside the wall | `IT NEVER FELT LIKE A MISTAKE` |
+| 58 | 14:26 | Ledger Wall | Kareem centred, direct to camera, full season on the wall behind him | `Run the numbers. Then run them halal.` |
 
 ---
 
 ## THUMBNAIL
 
-> Wide composition on warm cream. On the right third, the man from mid-thigh up, holding a small
-> payslip up in one hand with a pleased smile while cradling a nearly empty paper grocery bag in the
-> other arm. Filling the left two-thirds, two shopping baskets side by side — the left one full of
-> simple items, the right one holding barely two — with a large brick-red downward arrow between
-> them. Heavy negative space in the top-left corner for text. [CHARACTER BLOCK] [STYLE BLOCK]
+> Wide 16:9 on warm cream, split down the centre by a thin charcoal line. Left half: a man in a
+> rust-terracotta t-shirt from mid-thigh up holding a payslip and smiling, beside a shopping basket
+> holding two items. Right half: a man in a deep-teal t-shirt in the same pose beside a basket full
+> of items, with a tall stack of banknotes behind him. A large brick-red downward arrow over the left
+> basket. Heavy negative space across the top. [ADAM BLOCK] [SAMI BLOCK] [STYLE BLOCK]
 
 **Thumbnail text:** `+5% = POORER`
 
@@ -382,62 +433,61 @@ Blocks and SET definitions are in `00-series-bible.md`.
 **Description**
 
 ```
-A 5% raise on $60,000 takes you to $63,000. Against 8.5% inflation, that buys what
-$58,064 bought a year ago. You didn't get a $3,000 raise — you took a $1,936 pay cut
-and were thanked for it.
+Adam and Sami both earn $60,000 and both just got the same 5% raise. Against 8.5%
+inflation, that $63,000 buys what $58,064 bought a year ago — a $1,936 pay cut with a
+thank-you note attached.
 
-This video builds the real-terms calculation on screen, shows why the same thing
-happens with or without a raise, concedes the honest case for a 2% inflation target,
-explains where new money actually enters the economy and why wage earners are last in
-that queue, and ends on money as a measure rather than a product — including why this
-is emphatically not a "buy gold" video.
+Thirty years later, on the same $500 a month, one has $93,560 of real buying power and
+the other has $307,000. Includes the year Adam's approach was straightforwardly better
+(and why), the honest case for a 2% inflation target, where new money actually enters
+an economy, and a third man who finishes $19,000 behind on purpose — for a reason worth
+more than the money.
 
 Season 1 finale.
 
 ⏱ CHAPTERS
-0:00 Two true things at once
-1:10 The number they celebrate
-3:10 What $63,000 actually buys
-4:40 It happens with or without a raise
-5:50 This isn't weather
-6:20 "Some inflation is good" — the honest answer
-7:55 Why you're last in the queue
-8:40 Money is a measure, not a product
-10:10 What you can actually do about it
-11:15 The one question in all five episodes
+0:00 Two men, the same raise
+1:00 The ruler that shrinks
+2:30 Year 1: what $63,000 actually bought
+4:00 Year 4 — and Adam is right
+6:00 Year 10: the loss with no chart
+8:00 Where does it actually go?
+9:30 You're last in the queue
+10:40 Year 30
+11:40 "Some inflation is good" — the honest answer
+12:40 There was a third man
+13:50 Five races, one question
 
-🔗 Full series playlist: [link]
+🔗 Series playlist: [link]
 
-This is financial education, not financial advice. Figures illustrative and rounded:
-$60,000 raised 5% to $63,000, deflated by 8.5%, gives $58,064 in prior-year terms.
-Your personal inflation rate depends on what you actually buy. Run your own numbers.
+Financial education, not financial advice. Illustrative and rounded: $63,000 deflated
+by 8.5% = $58,064; $500/month over 360 months at 1.5% and 8.0%, deflated at 3%. Zakat
+treatment of long-term shareholdings varies between scholars — the figure here is one
+reasonable model, not a ruling. Run your own numbers.
 ```
 
 **Tags:** inflation, cost of living, real wages, purchasing power, pay rise, cantillon effect,
-personal finance, sound money, gold dinar, zakat, riba, islamic finance
+emergency fund, personal finance, sound money, zakat, riba, islamic finance
 
-**Pinned comment:** *"Two numbers: your last raise as a percentage, and your rent increase as a
-percentage. Post both. The gap between them is your actual pay change — and I'll work out the dollar
-figure for anyone who wants it."*
+**Pinned comment:** *"Two numbers: your last raise as a percentage, and your rent increase as a percentage. Post both — the gap is your actual pay change."*
 
 ---
 
 ## SHORTS HARVEST
 
-**Short 1 — "The Shrinking Ruler" (52s)** · shots 9–12, 16
-Hook: *"Imagine a ruler that gets two percent shorter every year, and you measure the same table with
-it every year. The table keeps getting longer. That's your salary."* Ends on `$58,064`, unresolved.
+**Short 1 — "The Shrinking Ruler" (50s)** · shots 6–9, 4
+Hook: *"Imagine a ruler that gets shorter every year, and you measure the same table with it
+annually. The table keeps getting longer. That's your salary."* Ends on $58,064. Unresolved.
 
-**Short 2 — "Last in the Queue" (58s)** · shots 34–38
-Hook: *"New money doesn't fall like rain. It enters at one point and travels outward — and where you
-stand in that line decides whether you gain or lose."* Ends on the overwritten price tag.
+**Short 2 — "The Year Cash Won" (58s)** · shots 18–23
+Hook: *"Year four, they both lost their jobs — and the man with cash in a savings account was
+straightforwardly right."* Honest, counterintuitive, and the best hook on the channel for a sceptical
+viewer. **Schedule first.**
 
-**Short 3 — "The Only Guaranteed Loss" (48s)** · shots 23–26
-Hook: *"Your savings account is the only thing you own where the loss is guaranteed instead of
-possible."* The 3%-over-30-years arithmetic. Strongest hook of the three — schedule it first.
+**Short 3 — "Bilal Loses" (55s)** · shots 49–53
+Hook: *"The third man finished nineteen thousand dollars behind. He also couldn't have made the
+mistake that cost the first man half his savings."* The zakat incentive structure.
 
-**Season bonus Short — "One Question" (45s)** · shots 50, 51, 53
-The five numbers and the closing question. Publish this one a week after the finale as the series
-trailer, and pin it to the channel homepage. It is the best single advertisement for the whole season.
-
-Every Short's description opens with the long-form link.
+**Season bonus Short — "One Question" (45s)** · shots 55–57
+The five numbers and the closing question. Publish a week after the finale as the series trailer and
+pin it to the channel homepage. Best single advertisement for the whole season.

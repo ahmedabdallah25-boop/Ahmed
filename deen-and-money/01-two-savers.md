@@ -1,270 +1,335 @@
-# Episode 1 — Two People Saved the Same $200 a Month for 30 Years
+# Episode 1 — The Saver, the Owner, and the 30-Year Gap
 
-**Title:** Two People Saved the Same $200 a Month. One Ended Up With 4x More.
-**Alt titles:** `Your Savings Account Is Costing You $239,000` · `The $200 Difference That Becomes $239,000`
-**Runtime:** 12:40 · **Core number:** $90,800 vs $330,000 · **Mechanism:** Mudarabah / Shariah-screened ownership
-**Set list:** A (Ledger Wall), B (Desk), C (Counter), E (Kitchen Table)
+**Title:** Two Men Saved the Same $200 a Month. 30 Years Later They Were $359,000 Apart.
+**Alt:** `One Never Lost a Dollar. He Still Finished Last.` · `Same Savings, Same Discipline, Different Ending`
+**Runtime:** 15:20 · **Race:** savings account vs total-market equity vs Shariah-screened equity
 
-### The arithmetic (lock this first)
+### The arithmetic (lock first)
 
-| | Person A — Saver | Person B — Owner |
-|---|---|---|
-| Deposit | $200/month | $200/month |
-| Term | 30 years (360 deposits) | 30 years (360 deposits) |
-| Total deposited | $72,000 | $72,000 |
-| Assumed return | 1.5% savings account | 8.5% screened equity |
-| Ending balance | **$90,800** | **$330,000** |
-| Growth on own money | $18,800 | $258,000 |
+Both men: **30 years old · $58,000 salary · $12,000 already saved · $200/month added · 30 years.**
 
-**Gap: $239,200.** Same deposits, same discipline, same 30 years.
+| | Adam — savings | Sami — total market | Bilal — screened |
+|---|---|---|---|
+| Assumed return | 1.5% | 8.5% | 8.0% |
+| Lump sum grows to | $18,757 | $138,708 | $120,752 |
+| $200/mo grows to | $90,800 | $330,180 | $298,080 |
+| **30-year total** | **$109,600** | **$468,900** | **$418,800** |
+| Own money in | $84,000 | $84,000 | $84,000 |
+
+**Adam → Sami gap: $359,300.** **Bilal → Sami gap: −$50,100** (the honest price of screening).
+**Bilal → Adam gap: +$309,200.**
+
+**Checkpoints** *(the path, not the average — year 3 sits inside a 35% drawdown)*
+
+| | Year 3 | Year 7 | Year 10 (trough) | Year 30 |
+|---|---|---|---|---|
+| Adam | **$19,900** | $31,000 | **$39,800** | $109,600 |
+| Sami | $14,600 | **$40,000** | $52,000 → $78,000 | **$468,900** |
 
 ### Chapters
 
 ```
-0:00  Same money, different ending
-1:20  What a savings account actually is
-3:30  Building the gap, year by year
-6:45  The part that isn't about returns
-7:00  "But that's just risk" — the honest answer
-8:30  It was never a law of nature
-9:15  Renting money vs. owning things
-11:00 What this looks like on a Monday morning
-12:00 Your number
+0:00  Meet Adam and Sami
+1:00  Two ways to hold the same money
+2:45  Day one: one of them looks smart
+3:45  Year 3 — Adam is winning
+6:00  Year 7 — the line crosses
+8:15  Year 10 — neither of them has won
+10:15 The question underneath the whole race
+11:15 Year 30
+12:30 "Sami just got lucky" — the honest answer
+13:30 There was a third man
+15:00 What it actually depends on
 ```
 
 ---
 
 ## SCRIPT
 
-### ACT 0 — COLD OPEN (0:00–0:35)
+### ACT 1 — MEET THEM (0:00–1:00)
 
-> Two people saved the exact same two hundred dollars a month. Same amount, same day of the month,
-> for thirty years. Neither of them missed a single deposit. Neither of them earned more than the
-> other. Neither of them took a bigger gamble.
+> Meet Adam and Sami.
 >
-> One of them finished with about ninety thousand dollars. The other finished with three hundred and
-> thirty thousand.
+> They're both thirty years old. They both earn fifty-eight thousand dollars a year. They've both
+> got twelve thousand dollars saved — the first real money either of them has ever had — and they can
+> both put aside two hundred dollars a month, every month, without fail.
 >
-> Two hundred and thirty-nine thousand dollars apart — on identical behaviour. And the thing that
-> separated them wasn't discipline, wasn't income, and wasn't luck. It was one sentence in a
-> contract that neither of them read.
+> Same age. Same income. Same savings. Same discipline. There is nothing separating these two men
+> except one thing: what they believe money is *for*.
+>
+> Adam believes money should be **safe**. He watched his parents lose a chunk of theirs and he has
+> no interest in repeating it. Sami believes money should be **working** — that anything sitting
+> still is quietly going backwards.
+>
+> Thirty years from now, one of them will have about a hundred and ten thousand dollars. The other
+> will have around four hundred and sixty-nine thousand.
+>
+> Neither of them saved more than the other. Not one dollar. Let's follow them.
 
-### ACT 1 — THE PROMISE (0:35–1:20)
+### ACT 2 — THE FORK (1:00–2:45)
 
-> In the next twelve minutes I'm going to build that gap in front of you, dollar by dollar, so you
-> can check the arithmetic yourself. No guru talk, no "just invest bro" — the actual mechanism.
+> Adam opens a savings account.
 >
-> Two things to watch for. First, there's a specific point in those thirty years where the two
-> lines stop being close and never come near each other again — and it's much earlier than you'd
-> guess. I'll show you the exact year.
+> He gets a rate of about one and a half percent, and he does everything the responsible way: the
+> twelve thousand goes in, and two hundred dollars is set up to move across automatically on payday
+> so he never has to think about it. When his balance ticks over a round number he notices, and it
+> feels good.
 >
-> And second, the reason for the whole gap comes down to which side of a very old question you're
-> standing on: are you *lending* your money, or are you *owning* something with it? Because those
-> are not two flavours of the same thing. They're opposites. And by the end I'll show you a system
-> that's been built entirely on that distinction for fourteen hundred years — and what it says you
-> should do this month.
+> The thing Adam likes most about this account — and he'd tell you this himself — is that the number
+> only ever goes up. It has never once been lower than the day before. For a man whose family lost
+> money, that is not a small feature. That's the whole product.
+>
+> Sami puts his twelve thousand into a total stock market index fund. Then he sets up the same two
+> hundred a month, automatically, into the same fund. Then he closes the app.
+>
+> He owns a fractional slice of several thousand businesses — factories, shops, software firms,
+> logistics companies. He can't visit any of them. He can't point at anything. There's nothing to
+> show anyone.
+>
+> And crucially, he has no idea what it'll be worth next year, and he has accepted that. His view is
+> that over thirty years the businesses will earn money and he'll get a share, and everything in
+> between is noise he's not going to look at.
+>
+> Two men. Same money. One chose certainty. One chose ownership.
 
-### ACT 2 — THE NORMAL CASE (1:20–3:30)
+### ACT 3 — DAY ONE (2:45–3:45)
 
-> Start with Person A, because Person A is almost everyone.
+> On day one, Adam looks like the sensible one, and it isn't close.
 >
-> Person A does the responsible thing. Every payday, two hundred dollars goes into a savings account.
-> Not spent, not gambled — saved. This is the behaviour every parent, every school, every bank
-> advertisement tells you is correct. And it *is* correct compared to spending it. That's not what
-> we're comparing.
+> His money is there. All of it. He can log in and see twelve thousand dollars, and tomorrow he'll
+> see twelve thousand and a bit more. If he needs it on Thursday, it's there on Thursday. There is
+> no scenario in which Adam wakes up with less than he went to sleep with.
 >
-> Here's what most people never think about for even one second: what is a savings account?
+> Sami logs in a week later and his twelve thousand is worth eleven thousand six hundred. Nothing
+> happened. No news, no crisis. It just moved, the way it moves every week, and he's four hundred
+> dollars down for no reason he could explain to anyone.
 >
-> It feels like a box. You picture your money sitting in it. A container with your name on it that
-> you can open when you need it.
+> When their friends talk about money, Adam has a straightforward answer — he's saving, he's got a
+> plan, he's being careful. People nod. Sami says he's "in the market" and the conversation moves on,
+> because there's nothing to ask him about.
 >
-> It isn't a box. The moment your two hundred dollars lands in that account, it stops being yours in
-> any meaningful sense and becomes the bank's. Legally, you are not a depositor. You are a
-> **creditor**. You have lent the bank two hundred dollars. The balance on your screen is not your
-> money sitting somewhere — it's an IOU. It's the bank's promise to give you that much back when
-> you ask.
+> One of these men is doing something that feels like control. The other is doing something that
+> feels like waiting.
 >
-> And the bank does what anyone who borrows money does: it lends it out again. At a much higher
-> price. Your two hundred dollars leaves and becomes part of somebody's car loan at nine percent,
-> somebody's mortgage at six and a half, somebody's credit card at twenty-two.
->
-> For the use of your money, the bank pays you one and a half percent. It charges other people
-> anywhere from six to twenty-two percent for the exact same dollars.
->
-> That difference is the entire business. It's called the spread, and it is the oldest and most
-> profitable arrangement in the developed world. You supplied the raw material. You get one and a
-> half percent of what it produced.
->
-> So let's see what one and a half percent does over thirty years.
+> Three years in, the feeling and the facts still agree.
 
-### ACT 3 — THE BUILD (3:30–6:30)
+### ACT 4 — CHECKPOINT: YEAR 3 (3:45–6:00)
 
-> Two hundred dollars a month for thirty years. That's three hundred and sixty deposits. Out of your
-> own pocket: seventy-two thousand dollars.
+> Let's stop and compare.
 >
-> At one and a half percent, compounded monthly, you finish with about **ninety thousand, eight
-> hundred dollars.**
+> Adam's twelve thousand has grown to about twelve and a half. He's added seven thousand two hundred
+> in monthly deposits. **Total: nineteen thousand, nine hundred dollars.**
 >
-> Look at what that actually means. Seventy-two thousand of that is your money — money you already
-> had, that you simply didn't spend. The account contributed eighteen thousand, eight hundred dollars.
+> Every single month of those three years, the number was higher than the month before. Thirty-six
+> months, thirty-six small wins.
 >
-> Thirty years. Three decades of discipline. Three hundred and sixty deposits you had to remember to
-> make. And the reward for all of it is eighteen thousand dollars. About fifty-two dollars a month
-> of growth, averaged out.
+> Sami has put in exactly the same nineteen thousand two hundred dollars of his own money. And in
+> year two the market fell thirty-five percent.
 >
-> Now Person B. Identical deposits — two hundred dollars, same day, same thirty years, seventy-two
-> thousand dollars total. The only difference is where it goes. Instead of lending it to a bank,
-> Person B buys ownership. Small fractions of real businesses — companies that make things, sell
-> things, employ people, and keep the profit.
+> **Sami's total: fourteen thousand, six hundred dollars.**
 >
-> Over long periods, broad ownership of productive businesses has returned something in the region of
-> eight to ten percent a year. I'll use eight and a half, and in a few minutes I'll deal properly
-> with everything that's wrong with that assumption — I'm not going to skip past it.
+> He is five thousand three hundred dollars behind Adam, and — this is the part that matters — he is
+> **four thousand six hundred dollars below what he actually put in.** Three years of discipline and
+> he has less than he deposited.
 >
-> Same seventy-two thousand in. Ending balance: **three hundred and thirty thousand dollars.**
+> This is the moment the entire outcome is decided, and it has nothing to do with arithmetic.
 >
-> And here's the thing I promised you — the year the lines separate.
+> Sami's friends have opinions now. His brother-in-law tells him he's been sold a story. His father
+> asks, kindly, whether he's thought about just putting it somewhere safe. And every one of them can
+> point at Adam, who has never lost a dollar, and who is currently five thousand ahead.
 >
-> At the end of year five, Person A has about twelve thousand five hundred. Person B has about
-> fifteen thousand. A gap of two and a half thousand. Barely worth mentioning. Person A would be
-> forgiven for feeling smug about the volatility they avoided.
+> Most people sell here. Not because they're stupid — because the evidence in front of them says
+> they were wrong, and the pain is real, and the exit is one tap away.
 >
-> Year ten: A has twenty-five thousand nine hundred. B has thirty-eight thousand. Now it's twelve
-> thousand.
+> Sami doesn't sell. He does something that sounds passive and is actually the hardest thing in this
+> video: he keeps sending two hundred dollars a month into an investment that has lost him money.
 >
-> Year twenty: A has fifty-six thousand. B has a hundred and thirty-two thousand. The gap has become
-> seventy-six thousand — bigger than everything Person A has saved in total.
->
-> Year thirty: ninety thousand against three hundred and thirty thousand.
->
-> Watch the shape of it. The gap doesn't grow steadily. For the first decade it's almost nothing —
-> which is exactly why most people quit, or never start, or decide it doesn't matter. Then it bends.
-> Nearly two hundred thousand dollars of that final gap appears in the last ten years alone.
->
-> Compounding does almost nothing for a long time and then does almost everything. And that means
-> the cost of choosing the wrong side of this isn't felt for years — which is precisely why the
-> choice is so easy to get wrong.
+> And here's what almost nobody sees at the time. Those thirty-six deposits Sami made while the
+> market was down bought him more shares than they would have bought at any other point in the whole
+> thirty years. He was buying the same businesses at a third off. It doesn't feel like an
+> opportunity. It feels like a mistake you're repeating monthly.
 
-### ACT 4 — THE RE-HOOK (6:30–7:00)
+### ACT 5 — CHECKPOINT: YEAR 7 (6:00–8:15)
 
-> So we've got the gap. Two hundred and thirty-nine thousand dollars.
+> Four more years.
 >
-> But I don't want you to walk away thinking the lesson here is "stocks beat savings accounts."
-> That's a fact you already knew, and it isn't the point of this video. The point is *why* they do,
-> because the why is the part that transfers to every other financial decision you'll make — your
-> car, your house, your credit card. All of it is the same question wearing different clothes.
+> Adam is at **thirty-one thousand dollars.** Steady. Predictable. Never once down.
 >
-> Before I get there, let's deal with the objection you're already forming.
+> Sami is at **forty thousand.**
+>
+> Somewhere in year five, quietly, the line crossed. There was no moment, no announcement. Sami
+> didn't notice for months.
+>
+> But look at what actually happened here, because it wasn't the recovery. The market got back to
+> where it started — that alone would have put Sami roughly level. What put him ahead were the
+> shares he bought while it was down. The crash didn't just cost him; it also handed him four years
+> of cheap buying, and he only collected on that because he didn't stop.
+>
+> Now, Adam's position. This is where I have to introduce the cost he can't see.
+>
+> Over those seven years, prices rose about three percent a year. Adam's thirty-one thousand dollars
+> buys what roughly **twenty-five thousand two hundred dollars** would have bought when he started.
+>
+> His account has never gone down. His money has. Every single year, reliably, with no chart, no
+> crash, and no moment where anyone told him it happened.
+>
+> Adam's protecting himself from the risk he can see. He's fully exposed to the one he can't.
+>
+> And it's worth being clear about what he actually bought with that one and a half percent. Adam
+> lent his money to a bank. The bank lent it out again at six, nine, twenty-two percent. Adam
+> supplied the raw material for that business, took the risk that the bank might fail, and received
+> one and a half percent of what it produced. He is not a customer of that bank. He's a supplier —
+> the cheapest one it has.
 
-### ACT 5 — THE OBJECTION (7:00–8:30)
+### ACT 6 — CHECKPOINT: YEAR 10 — NON-RESOLUTION (8:15–10:15)
 
-> "That's not a fair comparison. The savings account is safe. The other one is risk. You're being
-> paid for taking risk, and you might lose it all."
+> Year ten. And this is the checkpoint where I want to be honest with you, because the clean version
+> of this story isn't true.
 >
-> That's the right objection and most of it is true. Let me concede the real parts.
+> Adam is at **thirty-nine thousand, eight hundred dollars.**
 >
-> Person B's line is not smooth. Over those thirty years it fell more than twenty percent on at least
-> three separate occasions, and in one of them it fell by roughly half and took years to recover.
-> If Person B needed that money in the wrong year, they'd have taken a permanent loss. Person A never
-> would have. That's not a small thing — that's the whole reason the two returns are different.
+> Sami, on paper, is at about seventy-eight thousand. Nearly double. Story over, you'd think.
 >
-> Second concession: eight and a half percent is an assumption about the future based on the past,
-> and the future does not owe anyone an average. Run the same arithmetic at six percent and Person B
-> finishes near two hundred and one thousand instead of three hundred and thirty. Still nearly
-> double Person A — but it matters that the number moves.
+> Except year ten also contains the second crash. And at the bottom of it, Sami's account showed
+> **fifty-two thousand dollars.**
 >
-> So yes. Ownership carries risk. Here's what that objection misses.
+> So at that moment — and it lasted months, not days — Sami was twelve thousand ahead of a man who
+> had taken no risk at all, after ten years of accepting every bit of volatility the market had. Ten
+> years of stomach-turning for twelve thousand dollars.
 >
-> Person A also took a risk. They just weren't told about it, and it doesn't show up as a falling
-> line. Their ninety thousand dollars, thirty years from now, buys what roughly thirty-seven thousand
-> dollars buys today, at three percent inflation. Person A's account never went down — and Person A
-> still lost about sixty percent of their purchasing power. Slowly, quietly, and with no dramatic
-> chart to warn them.
+> And here is the honest question, the one most videos like this skip: **would you still be holding?**
 >
-> There is no option on the table called "no risk." There is a risk you can see and a risk you can't.
-> Person A chose the invisible one and was told it was safety.
+> Because at that trough Sami is being told, again, by people who love him, that he has spent a
+> decade proving nothing. The gap is small enough to look like noise. Selling would lock in a
+> perfectly respectable result. Every argument for getting out is available and several of them
+> sound extremely reasonable.
+>
+> At year ten, I don't think either of these men has clearly won. Adam has certainty and a slow
+> leak. Sami has a bigger number and no idea whether he'll keep it. The entire difference between
+> them is still, at this point, a bet on Sami's behaviour rather than on Sami's arithmetic.
+>
+> That is the real reason most people end up as Adam. Not ignorance — almost everyone knows stocks
+> beat savings accounts. They end up as Adam because being Sami at year three and year ten is
+> genuinely, physically unpleasant, and nobody warns you that the unpleasantness *is* the price.
+> That's what you're being paid for. Not cleverness. That.
 
-### ACT 6 — THE TURN (8:30–9:15)
+### ACT 7 — THE HINGE (10:15–11:15)
 
-> Now, the part that actually matters.
+> Now step back from both of them, because underneath this race there's one question, and it isn't
+> "stocks or savings."
 >
-> That two hundred and thirty-nine thousand dollar gap is not a reward for bravery. It is not a
-> mysterious feature of markets. It is the difference between two positions in a contract.
+> Adam is a **lender.** He handed his money to an institution, took a fixed, small, predetermined
+> payment, and owns nothing. Whatever his money went on to do, he gets the same one and a half
+> percent.
 >
-> Person A was a **lender**. They handed over money, took no share of what it produced, carried no
-> ownership, and in exchange got a fixed, small, predetermined payment. Person B was an **owner**.
-> They carried the ups and downs of a real business, and in exchange received what that business
-> actually earned.
+> Sami is an **owner.** He carries what real businesses actually do — the good years and the
+> catastrophes — and receives what they actually earn.
 >
-> That's it. That's the entire gap. One of them was paid for waiting. The other was paid for owning.
+> That's the entire gap. Not risk tolerance, not intelligence, not timing. One of them was paid for
+> **waiting**, and one of them was paid for **owning.**
 >
-> And once you see the distinction, you'll notice that an entire body of financial law has been built
-> on exactly this line — and it comes down hard on one side of it.
+> And once you see the distinction, you'll notice it's not a modern financial idea at all. There's a
+> body of law that spent about fourteen hundred years on exactly this line — and it comes down hard
+> on one side of it. Hold that thought for two minutes.
 
-### ACT 7 — THE DIVE (9:15–12:00)
+### ACT 8 — CHECKPOINT: YEAR 30 (11:15–12:30)
 
-> In Islamic finance there's a rule that sounds strange until you've watched what we just watched:
-> **you are not allowed to rent out money.**
+> Year thirty. Both men are sixty. Both have deposited exactly eighty-four thousand dollars of their
+> own money — twelve thousand at the start and two hundred a month for three hundred and sixty
+> months. Not a dollar of difference.
 >
-> You can rent out a house. You can rent out a truck, a tool, a shop. You can invest in a business
-> and take a share of what it earns. What you cannot do is hand somebody a thousand dollars and
-> require eleven hundred back purely because time passed. That's *riba*, and it's prohibited
-> completely — not discouraged, not capped, prohibited.
+> **Adam: one hundred and nine thousand, six hundred dollars.**
 >
-> The reasoning is the thing worth understanding, because it's an economic argument, not just a
-> ritual one. Money isn't productive by itself. A pile of cash sitting in a vault does not make
-> anything. Wealth is created when money is combined with work, risk, and time by somebody who
-> actually does something. So the return should attach to the *doing*, not to the *waiting*. And the
-> person putting up the capital should be exposed to the outcome of that doing — up and down.
+> Thirty years of saving turned eighty-four thousand into a hundred and nine. The account gave him
+> twenty-five thousand six hundred dollars — about seventy-one dollars a month, averaged across three
+> decades. And in real terms, after inflation, he has less buying power than the day he started.
 >
-> Detach the return from the risk, and you get a party who profits regardless of whether anything
-> productive happened. That's the arrangement Person A was in — except Person A was on the losing
-> end of it, because the bank was the one collecting the spread.
+> **Sami: four hundred and sixty-eight thousand, nine hundred dollars.**
 >
-> So what does the permitted version look like? The classical structure is **mudarabah**. One side
-> brings the capital, the other side brings the work. They agree in advance on how to split the
-> *profit* — say sixty-forty. And critically: if the venture loses money, the capital provider bears
-> the financial loss, and the working partner loses their labour. Nobody is guaranteed a return for
-> showing up with money.
+> **Three hundred and fifty-nine thousand, three hundred dollars apart.**
 >
-> If both sides put in capital and both work, it's **musharakah** — a straight partnership. Same
-> principle: share the outcome, not just the upside.
->
-> Now look back at Person B. Buying shares in a business *is* this structure. You provide capital,
-> other people do the work, you take a proportional share of the profits, and you eat the losses when
-> there are losses. That is why the return is bigger. Not because it's exotic, not because someone
-> got clever — because you moved from the waiting side of the table to the owning side.
->
-> **What this looks like on a Monday morning.**
->
-> Person B's approach maps onto a Shariah-screened index fund, and there are several with normal
-> expense ratios that you can buy in about four taps. Screened means the fund filters out companies
-> whose business is prohibited — conventional banking and insurance, alcohol, gambling, tobacco,
-> weapons, adult content — and also filters on the balance sheet: companies carrying interest-bearing
-> debt above roughly a third of their value are excluded, because owning them means owning the riba.
->
-> Most of these funds also publish a **purification** figure each year — the small percentage of
-> income that came from incidental interest, which you're expected to give away rather than keep. It
-> is usually a fraction of a percent, and it is not optional if you want the position to be clean.
->
-> And the honest downside, because I said I wouldn't skip anything: screened funds usually cost a
-> little more than the cheapest conventional index fund, there are fewer of them, and excluding
-> financials means they behave differently from the broad market — sometimes better, sometimes worse.
-> In 2008 that exclusion was a gift. In a year when banks rally, it costs you. You are not getting a
-> free lunch. You are getting a different lunch, on a different set of terms, and the terms are the
-> point.
+> And notice where that gap came from. At year three it was five thousand — in Adam's favour. At year
+> ten it was arguably nothing. **More than half of Sami's final number arrived in the last eight
+> years.** Compounding does almost nothing for a very long time and then does almost everything,
+> which is exactly why the choice is so easy to get wrong: the cost of getting it wrong isn't
+> visible until it's far too late to fix.
 
-### ACT 8 — THE CLOSE (12:00–12:40)
+### ACT 9 — THE OBJECTION (12:30–13:30)
 
-> Two people. Same two hundred dollars. Same thirty years. Two hundred and thirty-nine thousand
-> dollars apart — because one of them lent and the other one owned.
+> "Sami got lucky. You picked thirty good years. Run it over a bad thirty and this video looks
+> different."
 >
-> Nothing here required more money, more risk tolerance, or more cleverness. It required knowing
-> which side of the contract you were standing on. Most people never find out.
+> Fair, and I'll concede properly.
 >
-> Next time, we do the same thing to a car loan — and I'll show you why you pay for two cars and
-> only ever get to drive one of them. That number is smaller than this one, but you'll feel it more,
-> because it's happening to you right now.
+> Eight and a half percent is a long-run historical average, not a promise. There are real thirty-year
+> stretches — Japan from 1990 is the obvious one — where that assumption would have been badly wrong.
+> Run Sami at six percent instead and he finishes around two hundred and sixty-eight thousand rather
+> than four hundred and sixty-nine. Still two and a half times Adam. But the number moves, and anyone
+> who tells you it can't is selling something.
+>
+> Second concession: Adam's certainty is worth real money. If you need your savings in four years,
+> Adam's approach is correct and Sami's is reckless. Nothing in this video applies to money you'll
+> need soon.
+>
+> What the objection doesn't touch: Adam's outcome required no bad luck at all. He didn't get an
+> unlucky thirty years. He got a *normal* one, and finished with less buying power than he started
+> with. Sami's downside needs a historic disaster to appear. Adam's downside is the base case.
+
+### ACT 10 — THE THIRD MAN (13:30–15:00)
+
+> There was a third man.
+>
+> Bilal. Same age, same fifty-eight thousand salary, same twelve thousand saved, same two hundred a
+> month. He didn't like Adam's answer and he had a problem with Sami's.
+>
+> His problem was this: Sami owns several thousand businesses, and he's never once looked at what
+> they are. A meaningful share of them are banks and insurers whose entire product is lending money
+> at a price — and Bilal thinks getting rich off the interest system while complaining about it is
+> incoherent.
+>
+> So Bilal bought ownership too, but screened. His fund excludes conventional banking and insurance,
+> alcohol, gambling, tobacco, weapons and adult content, and it also screens the balance sheet:
+> companies carrying interest-bearing debt above about a third of their value are out, because owning
+> them means owning the debt.
+>
+> This is the same principle Sami got right, made explicit. In Islamic finance you may not rent out
+> money — that's *riba*, and it's prohibited outright, because a return should attach to doing
+> something and carrying its risk, not to the passage of time. What you may do is **own**, and take a
+> share of what ownership genuinely produces, losses included. The classical form is *mudarabah*:
+> one side brings capital, the other brings work, they agree a profit split in advance, and if it
+> loses money the capital provider bears the loss. Sami's index fund is that structure, by accident.
+> Bilal's is that structure, on purpose.
+>
+> And now the number, because I'm not going to give you the brochure.
+>
+> **Bilal finished with four hundred and eighteen thousand, eight hundred dollars.**
+>
+> **Fifty thousand, one hundred dollars behind Sami.**
+>
+> Screening costs you. Fewer companies, slightly higher fees, and excluding financials means you sit
+> out the years when banks rally. In 2008 that exclusion was a gift; in other years it's a bill. Over
+> thirty years, on these assumptions, the bill was fifty thousand dollars, and there's also a
+> purification step — a small share of income that came from incidental interest, which you give
+> away rather than keep.
+>
+> So Bilal didn't win. He finished second, deliberately, and he'd tell you the fifty thousand was the
+> price of a portfolio he could actually explain. **He also finished three hundred and nine thousand
+> dollars ahead of Adam** — which is the number that matters, because the real choice most people face
+> isn't Sami versus Bilal. It's whether to be an owner at all.
+
+### ACT 11 — CLOSE (15:00–15:20)
+
+> So what does it actually depend on?
+>
+> Not intelligence. All three of these men understood the options. It depends on whether you can hold
+> a position through year three and year ten, when everyone you trust is telling you to stop — and on
+> whether you want the last fifty thousand or the clean conscience. Those are real trade-offs and
+> they don't have one right answer.
+>
+> What isn't a trade-off is Adam. Adam took a guaranteed slow loss and was told it was safety.
+>
+> Next time: two men buy the identical car, on the same day, for the same price. One of them pays
+> eight thousand dollars more.
 >
 > Run the numbers. Then run them halal.
 
@@ -272,79 +337,96 @@
 
 ## STORYBOARD
 
-Append the **STYLE BLOCK** to every prompt. Insert the **CHARACTER BLOCK** wherever Kareem appears.
-Insert the relevant **SET BLOCK** where indicated. Both blocks are in `00-series-bible.md`.
+Devices, templates and CHARACTER BLOCKS are in `00-series-bible.md`. **Adam always left, Sami always
+right.** Timeline ribbon present from shot 8 onward.
 
-| # | Time | Shot | On-screen text | Image prompt |
+| # | Time | Device | Shot | On-screen text |
 |---|---|---|---|---|
-| 1 | 0:00 | Ledger Wall, blank except one huge number sketched in the centre | `$239,200` | Wide shot of a large cream wall covered in a faint hand-drawn charcoal grid, completely empty except for one very large chalk-style number sketched in the centre, a narrow shelf along the bottom, no character. [SET A] |
-| 2 | 0:06 | Two identical Kareems, mirrored, each holding an identical small stack of notes | `SAME $200. SAME 30 YEARS.` | Symmetrical composition, a thin vertical divider down the centre of the frame, the same man mirrored on each half in an identical relaxed standing pose holding an identical small stack of banknotes, relaxed half-smile on both. [CHARACTER BLOCK] |
-| 3 | 0:14 | Same split — left figure's stack unchanged, right figure's stack now towering above his head | `ONE FINISHED WITH 4x MORE` | Same symmetrical split-screen composition, same man on both halves; on the left a small stack of banknotes at his knee, on the right an enormously tall stack of banknotes rising past his head and out of frame, exaggerated scale difference. [CHARACTER BLOCK] |
-| 4 | 0:22 | Close on two contract pages, one sentence highlighted in red on one of them | `ONE SENTENCE. NEITHER READ IT.` | Close-up of two plain printed contract pages lying side by side on a wooden surface, thin grey text lines, one single line on the right-hand page marked with a brick-red highlight bar, no character. |
-| 5 | 0:30 | Kareem seen from behind, facing the Ledger Wall, hands on hips | — | Rear three-quarter view of the man standing with hands on hips facing a large cream wall with a faint charcoal grid and one large number on it, seen from behind at a slight angle. [CHARACTER BLOCK] [SET A] |
-| 6 | 0:38 | Kareem at the wall, chalk in hand, drawing two lines that start together | `WATCH WHERE THEY SEPARATE` | The man standing side-on at a large gridded cream wall holding a piece of chalk, mid-motion drawing two lines that begin at the same point on the left, calm focused expression. [CHARACTER BLOCK] [SET A] |
-| 7 | 0:50 | Two loops drawn as literal open circles on the wall | `LOOP 1: WHICH YEAR?` `LOOP 2: LEND OR OWN?` | A gridded cream wall with two large hand-drawn open circles sketched on it, each circle broken with a visible gap, small chalk marks beside them, no character. [SET A] |
-| 8 | 1:02 | Kareem holding two objects: a padlock and a small seedling in a pot | `LENDING vs OWNING` | The man in a mid-shot holding a closed padlock in his left hand and a small potted seedling in his right, arms held apart at chest height, looking between them, slightly raised eyebrows. [CHARACTER BLOCK] |
-| 9 | 1:20 | Kareem at the kitchen table, calmly sliding two notes into an envelope | `PERSON A — THE RESPONSIBLE ONE` | The man seated at a plain round kitchen table in three-quarter view, sliding two banknotes into a paper envelope, relaxed content half-smile, a bowl and a folded newspaper on the table. [CHARACTER BLOCK] [SET E] |
-| 10 | 1:34 | Approving silhouettes — a parent figure, a teacher figure — nodding at him | `EVERYONE SAYS THIS IS CORRECT` | The man standing centre frame with a small satisfied smile, flanked by three featureless grey silhouette figures who are nodding toward him, thumbs raised, cream background. [CHARACTER BLOCK] |
-| 11 | 1:48 | The imagined savings account: a sturdy wooden box with his name plate on it | `WHAT YOU PICTURE` | A sturdy closed wooden box with thick outlines, a small blank brass name plate on its front and a keyhole, sitting alone on a cream background, soft elliptical shadow, no character. |
-| 12 | 2:02 | The box dissolves into a dashed ghost outline; the money is gone | `IT ISN'T A BOX` | The same wooden box, now drawn only as a dashed grey ghost outline with nothing inside it, thin motion lines suggesting it has just vanished, cream background. |
-| 13 | 2:12 | Kareem at the Counter handing notes across to the grey silhouette teller | `YOU ARE A CREDITOR, NOT A DEPOSITOR` | The man standing at a plain institutional counter with a simple grille, passing a small stack of banknotes through the gap to a featureless grey silhouette figure behind it, both in profile. [CHARACTER BLOCK] [SET C] |
-| 14 | 2:26 | The teller hands back a single slip of paper, not money | `AN IOU` | Close-up over the man's shoulder of a grey silhouette hand passing a single small printed slip of paper back through a counter grille, the slip catching the light, no cash visible. [CHARACTER BLOCK, partial from behind] [SET C] |
-| 15 | 2:40 | Diagram: his coin enters the bank, three larger arrows exit toward a car, a house, a credit card | `9% · 6.5% · 22%` | Flat side-view diagram, one small coin entering the left side of a plain grey bank building and three thicker arrows exiting the right side toward a simple car shape, a simple house shape and a rectangular card shape, cream background. |
-| 16 | 2:56 | A tiny trickle returning to Kareem, drawn as one dripping tap | `1.5% COMES BACK` | A simple wall-mounted tap with a single small drop falling from it into a very small cup held by the man standing below, his expression neutral, generous empty space around. [CHARACTER BLOCK] |
-| 17 | 3:10 | The spread, drawn as a wide bracket between two heights | `THE SPREAD` | Two vertical bars of very different heights on cream, a wide brick-red bracket spanning the vertical distance between their tops, thin baseline, no character. |
-| 18 | 3:24 | Kareem holding raw material — a sack — while a silhouette walks off with the finished product | `YOU SUPPLIED THE RAW MATERIAL` | The man standing holding a plain sack at his side while a grey silhouette figure walks away to the right carrying a large finished crate, the man watching them go, cream background. [CHARACTER BLOCK] |
-| 19 | 3:36 | 360 small coins arranged in a dense grid | `360 DEPOSITS · $72,000` | A dense evenly spaced grid of many small identical coins filling the lower two-thirds of a cream frame, flat top-down view, thick outlines, no character. |
-| 20 | 3:52 | One short olive bar, counter above it ticking | `$90,800` | A single short olive-green vertical bar with a rounded top standing on a thin baseline at the bottom of a mostly empty cream frame, large negative space above it, no character. |
-| 21 | 4:08 | The bar splits: a large lower section (his own money) and a thin top slice (growth) | `YOURS: $72,000 · THE BANK'S GIFT: $18,800` | The same olive-green bar divided by a horizontal line into a large lower section and a thin upper slice coloured warm tan, a small bracket labelling the thin slice, cream background. |
-| 22 | 4:22 | Kareem holding a single small note, looking at it flatly | `$52 A MONTH` | The man in a mid-shot holding a single banknote up between finger and thumb at eye level, examining it with a flat unimpressed expression, one eyebrow slightly raised. [CHARACTER BLOCK] |
-| 23 | 4:36 | Person B: Kareem at the desk, laptop open, buying fractions of businesses | `PERSON B — SAME $200` | The man seated at a plain wooden desk in three-quarter view with an open laptop, one hand on the trackpad, a simple lamp and a mug beside him, focused calm expression. [CHARACTER BLOCK] [SET B] |
-| 24 | 4:50 | What he bought: small slices of factory, shop, delivery van | `OWNERSHIP OF REAL BUSINESSES` | Three simple flat icons arranged in a horizontal row on cream — a small factory with a chimney, a small shopfront with an awning, a delivery van — each with a thin pie-slice wedge highlighted on it in olive green. |
-| 25 | 5:04 | The tall teal bar next to the short olive one | `$330,000` | Two vertical bars on cream, a short olive-green bar on the left and a deep-teal bar four times its height on the right running near the top of the frame, thin baseline, no character. |
-| 26 | 5:18 | Line graph, year 5 — the two lines almost touching | `YEAR 5: $2,500 APART` | A simple line graph on cream with two lines running very close together and nearly overlapping from left to centre, one olive green and one deep teal, thin axis lines, no character. |
-| 27 | 5:34 | Same graph, year 10 — a visible fork | `YEAR 10: $12,000 APART` | The same simple line graph, the two lines now visibly separating into a shallow fork, the teal line above the olive one, cream background. |
-| 28 | 5:50 | Year 20 — the teal line curving sharply upward | `YEAR 20: $76,000 APART` | The same line graph, the deep-teal line now curving steeply upward while the olive-green line stays nearly flat, a widening white gap between them. |
-| 29 | 6:04 | Year 30 — teal exits the top of frame, Kareem small at the base | `YEAR 30: $239,200 APART` | The same line graph with the deep-teal line running off the top edge of the frame, the olive line low and flat, the small figure of the man standing at the bottom-left of the axes looking up. [CHARACTER BLOCK, drawn small] |
-| 30 | 6:18 | The curve shaded: the final decade's contribution highlighted | `$200,000 OF IT ARRIVES IN THE LAST 10 YEARS` | A rising curve on cream with only its final right-hand third filled in solid brick red beneath the line, the earlier portion left unfilled, a thin bracket under the filled section. |
-| 31 | 6:32 | Kareem at the Ledger Wall, closing the first drawn loop with a chalk stroke | `LOOP 1: CLOSED` | The man at a gridded cream wall drawing a single chalk stroke to close a large hand-drawn circle that was previously broken open, small satisfied smile. [CHARACTER BLOCK] [SET A] |
-| 32 | 6:48 | Three objects lined up on the wall shelf: a car key, a house key, a credit card | `SAME QUESTION. DIFFERENT CLOTHES.` | Three objects arranged in a neat row on a narrow shelf against a gridded cream wall — a car key, a house key and a rectangular card — evenly spaced, thick outlines, no character. [SET A] |
-| 33 | 7:00 | Kareem sceptical, arms folded, speaking to camera | `"BUT THAT'S JUST RISK."` | The man in a mid-shot with arms folded across his chest, one eyebrow raised, mouth in a flat wry line, facing the viewer directly. [CHARACTER BLOCK] |
-| 34 | 7:16 | The teal line redrawn honestly — with three deep crashes in it | `IT FELL 50% ONCE` | A jagged deep-teal line graph on cream rising overall but with three pronounced sharp dips, the deepest dip dropping to half the surrounding height, thin axis lines, no character. |
-| 35 | 7:34 | Two ending bars redrawn at 6% instead of 8.5% | `AT 6%: $201,000` | Two vertical bars on cream, a short olive-green bar and a deep-teal bar roughly twice its height, noticeably shorter than the earlier version, a small dashed line marking where the taller version had reached. |
-| 36 | 7:52 | Person A's bar, unchanged in height, but visibly translucent/faded | `NEVER WENT DOWN` | A single olive-green vertical bar on cream drawn with a faded, semi-transparent fill and a solid outline, standing alone with generous empty space around it. |
-| 37 | 8:08 | The same bar with a shopping basket beside it, mostly empty | `BUYS WHAT $37,000 BUYS TODAY` | A shopping basket viewed from the side containing only two small items, standing beside a vertical olive-green bar, thin baseline, cream background, no character. |
-| 38 | 8:22 | Two doors, one marked with a visible warning triangle, one blank | `A RISK YOU SEE. A RISK YOU DON'T.` | Two identical plain doors side by side on a cream wall, the left door with a small warning triangle sign on it, the right door completely blank, thick outlines, no character. |
-| 39 | 8:34 | Kareem at the Counter, then at the Desk — same figure, two chairs, split frame | `PAID FOR WAITING · PAID FOR OWNING` | Split composition with a thin vertical divider, on the left the man seated waiting on a plain bench with hands in his lap, on the right the same man seated at a desk with an open laptop, both in three-quarter view. [CHARACTER BLOCK] |
-| 40 | 8:52 | Close on two contract signature lines, one labelled LENDER, one OWNER | `TWO POSITIONS. ONE CONTRACT.` | Close-up of two printed signature lines on a plain document, each with a small empty box beside it, thin grey text lines above, brick-red underline on the lower line, no character. |
-| 41 | 9:15 | A banknote with a "NOT FOR RENT" tag hanging off it | `YOU CANNOT RENT OUT MONEY` | A single rectangular banknote lying flat with a small paper tag attached to its corner by a string, the tag blank, a thin brick-red diagonal line crossing the note, cream background. |
-| 42 | 9:30 | Three things that CAN be rented, lined up: a house, a van, a drill | `THESE, YES` | Three simple flat icons in a horizontal row on cream — a small house, a delivery van and a power drill — each with a small tag hanging from it, evenly spaced, thick outlines. |
-| 43 | 9:46 | A vault full of cash, drawn with cobwebs and no output | `CASH ALONE MAKES NOTHING` | A plain grey vault door standing open to reveal neat stacks of banknotes inside, thin cobweb lines in the upper corners, nothing emerging from it, cream background, no character. |
-| 44 | 10:02 | Money + tools + a person = output | `MONEY + WORK + RISK = WEALTH` | A simple flat equation composed of icons arranged left to right on cream — a coin, a plus sign, a hammer and wrench crossed, a plus sign, a small silhouette figure, an equals sign, a stack of crates. |
-| 45 | 10:18 | Mudarabah: two hands over one divided bowl | `MUDARABAH — CAPITAL + WORK` | Overhead flat view of two open hands reaching toward a single round bowl divided down the middle by a thin line, coins in one half and a small crossed tool icon in the other, cream background, no faces. |
-| 46 | 10:34 | The loss case — the bowl empty, one hand withdrawing coins, the other empty | `LOSS FALLS ON CAPITAL` | The same overhead composition with the round bowl now empty, the coins on one side reduced to a single coin, both hands still present, a small downward brick-red arrow beside the coin side. |
-| 47 | 10:48 | Kareem stepping around the table from the waiting chair to the owner's chair | `YOU CHANGED SIDES OF THE TABLE` | The man mid-stride walking around the end of a plain rectangular table toward the far chair, one hand resting on the chair back, confident open posture, an empty chair behind him. [CHARACTER BLOCK] |
-| 48 | 11:04 | Phone in hand, a simple screen with a fund tile and a buy button | `FOUR TAPS` | The man holding a smartphone at chest height in both hands, thumb poised over the screen, the screen showing one simple rectangular tile and a rounded button below it, calm focused expression. [CHARACTER BLOCK] |
-| 49 | 11:20 | The screen filter: icons being struck through | `SCREENED OUT` | A vertical list of six simple icons on a cream panel — a bank building, a wine glass, playing cards, a cigarette, a missile, a masked face — each crossed through with a thin brick-red diagonal line. |
-| 50 | 11:34 | The debt screen: a company shape with a debt bar over one third | `DEBT ABOVE ~1/3 = EXCLUDED` | A simple building shape on cream with a horizontal bar across its lower third filled brick red and the remainder unfilled, a thin dashed line marking the one-third mark, a small cross beside it. |
-| 51 | 11:46 | Purification: a tiny sliver being removed from a coin stack and passed on | `PURIFICATION — GIVE THE SLIVER AWAY` | A stack of coins with one very thin top slice separated and floating slightly above it, a small open hand to the right receiving that slice, cream background, no faces. |
-| 52 | 11:56 | Two lunch plates side by side, different food, same size | `NOT A FREE LUNCH. A DIFFERENT ONE.` | Two identical plain round plates side by side on a cream surface seen from above, each holding a different simple arrangement of shapes, equal in size, thick outlines, no character. |
-| 53 | 12:06 | Ledger Wall, now covered in the completed calculation, Kareem beside it | `$239,200` | The man standing beside a large gridded cream wall now covered with chalk-style bars, lines and numbers forming a completed calculation, one hand gesturing toward it, calm confident expression, chin level. [CHARACTER BLOCK] [SET A] |
-| 54 | 12:22 | Next-episode tease: he picks a car key off the shelf | `NEXT: YOU PAY FOR TWO CARS` | The man reaching up to lift a single car key from a narrow shelf on a gridded cream wall, looking at it with a small knowing smile, the other two objects still on the shelf. [CHARACTER BLOCK] [SET A] |
-| 55 | 12:34 | End card: Kareem centred, direct to camera | `Run the numbers. Then run them halal.` | The man standing centred in frame facing the viewer directly with a confident open posture and a small closed-mouth smile, arms relaxed at his sides, a large gridded cream wall behind him, generous empty space on both sides for end-screen cards. [CHARACTER BLOCK] [SET A] |
+| 1 | 0:00 | Split | Adam left and Sami right, both standing neutral, facing viewer, identical poses | `MEET ADAM AND SAMI` |
+| 2 | 0:08 | Split | Both hold an identical small stack of notes at the same height | `SAME AGE · SAME SALARY · SAME SAVINGS` |
+| 3 | 0:20 | Full | Four matched-variable rows ticked, two columns, no characters | `NOTHING SEPARATES THEM` |
+| 4 | 0:30 | Split | Adam clutching a closed lockbox to his chest / Sami watching a small seedling | `SAFE` / `WORKING` |
+| 5 | 0:42 | Scoreboard | Two columns, both totals blanked out with question marks | `30 YEARS FROM NOW` |
+| 6 | 0:52 | Split | Both drop an identical coin into their own container simultaneously | `NOT ONE DOLLAR OF DIFFERENCE` |
+| 7 | 1:02 | Left only | Adam at the Counter sliding notes through the grille to a grey silhouette | `1.5%` |
+| 8 | 1:16 | Left only | Close on Adam's phone showing a simple rising staircase line, his face lit, small smile | `IT ONLY EVER GOES UP` |
+| 9 | 1:32 | Left only | Adam standing beside a bar that has never dipped, hand resting on top of it | `NEVER LOWER THAN YESTERDAY` |
+| 10 | 1:46 | Right only | Sami at a desk, laptop open, one hand on the trackpad, calm | `TOTAL MARKET INDEX FUND` |
+| 11 | 2:00 | Right only | Thousands of tiny business icons in a dense grid filling frame, Sami small at the base | `SEVERAL THOUSAND BUSINESSES` |
+| 12 | 2:14 | Right only | Sami closing the laptop and walking out of frame | `THEN HE CLOSED THE APP` |
+| 13 | 2:30 | Split | Adam holding a padlock / Sami holding a seedling, both looking at the viewer | `CERTAINTY` / `OWNERSHIP` |
+| 14 | 2:46 | Split | Adam's balance bar solid and labelled / Sami's bar drawn as a wobbling dashed outline | `DAY ONE` |
+| 15 | 3:00 | Right only | Sami's phone showing a small red downward figure, his expression flat and unbothered | `−$400. NO REASON.` |
+| 16 | 3:14 | Split | Adam surrounded by three nodding grey silhouettes / Sami alone, silhouettes facing away | `PEOPLE NOD` |
+| 17 | 3:30 | Split | Adam gripping a steering wheel / Sami seated on a bench doing nothing | `CONTROL` / `WAITING` |
+| 18 | 3:46 | Scoreboard | **CHECKPOINT 1.** Adam $19,900 / Sami $14,600. Adam's box outlined teal | `YEAR 3` |
+| 19 | 4:00 | Left only | Adam's line graph — 36 small steps, never once down | `36 MONTHS. 36 SMALL WINS.` |
+| 20 | 4:14 | Right only | Sami's line graph plunging, with a horizontal dashed line marking what he deposited, the line below it | `BELOW WHAT HE PUT IN` |
+| 21 | 4:28 | Hidden cost | Rust card over Sami's half, figure struck through and rewritten lower | `−$4,600` |
+| 22 | 4:42 | Right only | Sami at the kitchen table, three grey silhouettes leaning in, one pointing off-frame left | `EVERYONE HAS AN OPINION` |
+| 23 | 4:58 | Right only | Close on Sami's phone, thumb hovering over a large button | `MOST PEOPLE SELL HERE` |
+| 24 | 5:14 | Right only | Sami sets the phone face-down on the table instead | `HE DIDN'T` |
+| 25 | 5:28 | Right only | Same coin buying a visibly larger wedge of a discounted business icon | `SAME $200. MORE SHARES.` |
+| 26 | 5:44 | Right only | Sami placing coins into a bin marked with a discount tag, expression grim not triumphant | `IT FEELS LIKE A MISTAKE` |
+| 27 | 6:02 | Scoreboard | **CHECKPOINT 2.** Adam $31,000 / Sami $40,000. Sami's box now teal | `YEAR 7` |
+| 28 | 6:16 | Full | Two lines on one graph crossing, the crossing point circled, no fanfare | `THE LINE CROSSED IN YEAR 5` |
+| 29 | 6:30 | Right only | The recovery line reaching its old level, plus a separate shaded block above it | `RECOVERY` + `CHEAP SHARES` |
+| 30 | 6:46 | Left only | Adam's bar unchanged in height but drawn faded and semi-transparent | `NEVER WENT DOWN` |
+| 31 | 7:00 | Hidden cost | Rust card over Adam's half — the first one he gets | `$31,000 BUYS $25,200` |
+| 32 | 7:16 | Left only | Adam beside a full shopping basket and a second identical basket holding less | `HIS ACCOUNT DIDN'T. HIS MONEY DID.` |
+| 33 | 7:32 | Full | Two doors, one with a warning triangle, one blank | `A RISK YOU SEE · A RISK YOU DON'T` |
+| 34 | 7:48 | Left only | Adam handing a sack of raw material to a grey silhouette who walks off with a finished crate | `HE'S NOT A CUSTOMER. HE'S A SUPPLIER.` |
+| 35 | 8:02 | Full | One coin into a bank building, three thick arrows out toward a car, a house, a card | `1.5% IN · 6–22% OUT` |
+| 36 | 8:17 | Scoreboard | **CHECKPOINT 3.** Adam $39,800 / Sami $78,000 — then Sami's figure struck through and rewritten $52,000 | `YEAR 10` |
+| 37 | 8:34 | Right only | Sami's graph at a deep trough, the drop shaded, held long | `AT THE BOTTOM: $52,000` |
+| 38 | 8:50 | Scoreboard | Both totals close together, neither box outlined | `$12,000 APART` |
+| 39 | 9:06 | Right only | Sami seated, phone in hand, no expression, held longer than any other shot | `WOULD YOU STILL BE HOLDING?` |
+| 40 | 9:24 | Split | Adam calm and level / Sami mid-stride on uneven ground, arms out for balance | `CERTAINTY + A SLOW LEAK` / `A BIGGER NUMBER, NO GUARANTEE` |
+| 41 | 9:42 | Full | A scale balanced almost level, both pans nearly equal | `NEITHER HAS CLEARLY WON` |
+| 42 | 10:00 | Ledger Wall | Kareem writing "BEHAVIOUR, NOT ARITHMETIC" and underlining it | `THE UNPLEASANTNESS IS THE PRICE` |
+| 43 | 10:18 | Split | Adam seated on a bench waiting / Sami standing holding a deed | `PAID FOR WAITING` / `PAID FOR OWNING` |
+| 44 | 10:34 | Full | Two contract signature lines, one labelled LENDER, one OWNER, the lower underlined red | `TWO POSITIONS. ONE QUESTION.` |
+| 45 | 10:52 | Ledger Wall | Kareem boxing the question on the wall | `LENDER OR OWNER?` |
+| 46 | 11:17 | Scoreboard | **CHECKPOINT 4.** Adam $109,600 / Sami $468,900 | `YEAR 30` |
+| 47 | 11:34 | Full | Two bars, one short olive, one deep teal running off the top edge, Kareem small at the base | `$359,300 APART` |
+| 48 | 11:50 | Left only | Adam's bar split — a large "his own money" section and a thin growth sliver | `$84,000 IN · $25,600 EARNED` |
+| 49 | 12:04 | Left only | Adam holding a single note, flat expression | `$71 A MONTH, ACROSS 30 YEARS` |
+| 50 | 12:18 | Full | The gap curve, with only the final right-hand third filled solid | `HALF OF IT ARRIVED IN THE LAST 8 YEARS` |
+| 51 | 12:32 | Ledger Wall | Kareem to camera, arms folded, one eyebrow raised | `"SAMI GOT LUCKY."` |
+| 52 | 12:48 | Full | The same two bars redrawn shorter, a dashed line marking the old height | `AT 6%: $268,000` |
+| 53 | 13:04 | Left only | Adam handing money to a grey silhouette at a short counter, a clock showing 4 years | `NEED IT IN 4 YEARS? ADAM IS RIGHT.` |
+| 54 | 13:18 | Full | Two probability shapes: Sami's downside a thin sliver, Adam's a wide block | `ADAM'S DOWNSIDE IS THE BASE CASE` |
+| 55 | 13:32 | Full | **BILAL ENTERS.** A third figure walking in from the right edge of an otherwise two-person frame | `THERE WAS A THIRD MAN` |
+| 56 | 13:46 | Scoreboard | The card slides a narrow **third column** in from the right, total still blank | `BILAL` |
+| 57 | 14:00 | Right of split | Bilal examining a list, striking through six icons — bank, glass, cards, cigarette, missile, mask | `SCREENED OUT` |
+| 58 | 14:14 | Full | A company shape with its lower third filled red and a dashed one-third line, marked with a cross | `DEBT ABOVE ⅓ = EXCLUDED` |
+| 59 | 14:28 | Full | Two hands over one bowl divided into coins and a tool icon | `MUDARABAH — CAPITAL + WORK` |
+| 60 | 14:38 | Scoreboard | Third column fills in | `BILAL: $418,800` |
+| 61 | 14:48 | Hidden cost | Rust card over Bilal's column — the honest one | `−$50,100. THE PRICE OF SCREENING.` |
+| 62 | 14:58 | Scoreboard | All three totals, Bilal's column highlighted against Adam's | `+$309,200 AHEAD OF ADAM` |
+| 63 | 15:06 | Split→three | All three men standing in one frame, evenly spaced, facing viewer | `THE REAL CHOICE ISN'T SAMI vs BILAL` |
+| 64 | 15:14 | Ledger Wall | Kareem centred, direct to camera, wall carrying the finished calculation | `Run the numbers. Then run them halal.` |
+
+**Image prompt construction:** every prompt = `[DEVICE TEMPLATE] + [scene description from the Shot
+column] + [CHARACTER BLOCK for each character present] + [STYLE BLOCK]`. Example for shot 18:
+
+> [SCOREBOARD TEMPLATE] Heading strip reads YEAR 3. Left column headed with a small circular portrait
+> of a man in a rust-terracotta t-shirt, right column with a man in a deep-teal t-shirt. Four line-item
+> rows per column. Left total box outlined in deep teal, right total box outlined in brick red.
+> [ADAM BLOCK] [SAMI BLOCK] [STYLE BLOCK]
 
 ---
 
 ## THUMBNAIL
 
-> Wide composition on warm cream. On the right third, the man from mid-thigh up, eyes widened and
-> brows drawn together in shock, one hand half-raised. Filling the left two-thirds, two stacks of
-> banknotes side by side — the left stack small and solid olive green, the right stack four times
-> taller and rendered as a solid deep-teal shape running off the top edge. A brick-red upward arrow
-> beside the tall stack. Heavy negative space in the top-left corner for three words of text.
-> [CHARACTER BLOCK] [STYLE BLOCK]
+> Wide 16:9 on warm cream, split down the centre by a thin charcoal line. Left half: a man in a
+> rust-terracotta t-shirt from mid-thigh up, arms folded, confident, beside a short solid olive-green
+> stack of banknotes at knee height. Right half: a man in a deep-teal t-shirt in the same pose, calm,
+> beside an enormous deep-teal stack of banknotes running off the top edge of the frame. A brick-red
+> upward arrow beside the tall stack. Heavy negative space across the top for three words.
+> [ADAM BLOCK] [SAMI BLOCK] [STYLE BLOCK]
 
-**Thumbnail text:** `SAME $200.` (three words max, charcoal, heavy sans-serif, top-left)
+**Thumbnail text:** `SAME $200.` (charcoal, heavy sans, top centre, spanning the divide)
 
 ---
 
@@ -353,54 +435,54 @@ Insert the relevant **SET BLOCK** where indicated. Both blocks are in `00-series
 **Description**
 
 ```
-Two people saved the exact same $200 a month for 30 years. One finished with about
-$90,800. The other finished with about $330,000.
+Adam and Sami are both 30. Same salary, same $12,000 saved, same $200 a month, same
+30 years. Adam finishes with $109,600. Sami finishes with $468,900.
 
-Same deposits. Same discipline. A $239,200 gap — and it comes down to whether you
-were lending your money or owning something with it. This video builds the whole
-calculation on screen, deals honestly with the risk objection, and ends on the
-interest-free structure that produces the difference.
+Neither saved more than the other. This follows both of them through year 3 (when
+Adam is winning), year 7 (when the line crosses), year 10 (when honestly neither of
+them has won), and year 30 — then introduces a third man who did it a different way,
+and finished $50,100 behind on purpose.
 
 ⏱ CHAPTERS
-0:00 Same money, different ending
-1:20 What a savings account actually is
-3:30 Building the gap, year by year
-6:45 The part that isn't about returns
-7:00 "But that's just risk" — the honest answer
-8:30 It was never a law of nature
-9:15 Renting money vs. owning things
-11:00 What this looks like on a Monday morning
-12:00 Your number
+0:00 Meet Adam and Sami
+1:00 Two ways to hold the same money
+2:45 Day one: one of them looks smart
+3:45 Year 3 — Adam is winning
+6:00 Year 7 — the line crosses
+8:15 Year 10 — neither of them has won
+10:15 The question underneath the whole race
+11:15 Year 30
+12:30 "Sami just got lucky" — the honest answer
+13:30 There was a third man
+15:00 What it actually depends on
 
-▶ Watch next: You Pay for Your Car Twice — [link]
-🔗 Full series playlist: [link]
+▶ Watch next: Two Men Bought the Same Car — [link]
+🔗 Series playlist: [link]
 
-This is financial education, not financial advice. All figures are illustrative and
-rounded: $200/month over 360 months at 1.5% and 8.5% compounded monthly, before tax
-and fees. Run your own numbers before making any decision.
+Financial education, not financial advice. Illustrative and rounded: $12,000 lump sum
+plus $200/month over 360 months at 1.5%, 8.5% and 8.0% compounded monthly, before tax.
+Checkpoint figures model a drawdown path, not a smooth average. Run your own numbers.
 ```
 
-**Tags:** compound interest, savings account, investing for beginners, index funds, 30 year investing,
-personal finance, halal investing, shariah compliant investing, mudarabah, riba, islamic finance
+**Tags:** compound interest, savings account, index funds, investing for beginners, stock market crash,
+dollar cost averaging, halal investing, shariah compliant investing, mudarabah, riba, islamic finance
 
-**Pinned comment:** *"Run yours: how much do you put away each month, and where does it sit? Drop the
-two numbers and I'll do the 30-year arithmetic on it in the next video."*
+**Pinned comment:** *"Which one were you — Adam or Sami? And be honest: at year 3, would you have sold?"*
 
 ---
 
-## SHORTS HARVEST (publish one per day for three days after)
+## SHORTS HARVEST
 
-**Short 1 — "The Gap" (52s)** · shots 2, 3, 26–29, 55
-Cold open lines verbatim through "…neither of them read", then straight to the year-by-year fork,
-ending on `$239,200` and "the full breakdown is on the channel". Re-render shots 2–3 and 29 in 9:16.
+**Short 1 — "Year 3" (52s)** · shots 1–3, 18, 20, 21
+Opens on the matched setup verbatim, jumps straight to the year-3 scoreboard with Adam winning, ends
+on Sami being below what he deposited. **No resolution.** The strongest cold-open in the season.
 
-**Short 2 — "It Isn't a Box" (48s)** · shots 11–17
-Hook: *"Your savings account is not a box with your money in it. You are a creditor and the balance
-is an IOU."* Runs the spread diagram, ends on the 1.5%-vs-22% contrast.
+**Short 2 — "The Trough" (58s)** · shots 36–39, 41
+Hook: *"Ten years in, the patient one was twelve thousand ahead. That's all. Would you still be
+holding?"* Ends on the level scale.
 
-**Short 3 — "The Risk You Can't See" (58s)** · shots 33, 36–38
-Hook: *"Person A's account never went down. Person A still lost sixty percent."* The invisible-risk
-argument, ending on the two doors.
+**Short 3 — "The Third Man" (55s)** · shots 55–57, 60, 61
+Hook: *"There was a third man. He finished fifty thousand dollars behind — on purpose."* The screening
+reveal and the honest cost. Best for a warm audience; schedule it last.
 
-Each Short's description opens with the long-form link. Each ends on the open question, never on a
-summary — a resolved Short has no reason to click through.
+Each Short's description opens with the long-form link. Each ends on the open question, never a summary.
