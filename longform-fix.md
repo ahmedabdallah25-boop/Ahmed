@@ -7,8 +7,8 @@ is the only long-form upload.
 ## Diagnosis — why it's at 2 views
 
 Ranked by how much each one actually costs you. Public data only (Nexlev analytics tools
-are locked on the free plan), so 1–4 are verified facts about the upload, 5–6 are the
-structural read.
+are locked on the free plan), so 1 and 3–5 are verified facts about the
+upload; 2 is the structural read. Applied 2026-07-24 by the *Promote long-form* workflow.
 
 **1. The channel's entire audience is a Shorts audience, and nothing points them here.**
 Thirteen Shorts have pulled ~6,000 views. Not one of them mentions this video. Long-form
@@ -19,19 +19,7 @@ browse test measured in dozens of impressions, not thousands. **2 views is the e
 outcome of publishing long-form into a Shorts-only channel with no internal funnel.**
 This is the whole ballgame; everything below is secondary.
 
-**2. Its playlist home is a 1-video playlist.** The channel has two: "The Money Machine,
-Decoded — Full Episodes" (`PLFvKaPuEiceY`, **1 video** — this one) and "The Money Machine,
-Decoded (Full Series)" (`PLKLKzR1QgFHE`, 14 videos), which is what every description links.
-A one-item playlist gives no autoplay-next, so anyone arriving through it dead-ends.
-
-*Correction to the earlier study:* `channel-study.md` flagged `PLKLKzR1QgFHE` as a broken,
-truncated link because it is 13 characters. That was wrong — legacy YouTube playlist IDs
-are `PL` + 11 characters, and this one resolves to a live 14-video playlist. The link works
-everywhere it appears; there is nothing to repair. (The first automation run tried to
-"fix" it and would have repointed all 14 descriptions at the 1-video playlist — it failed
-on an unrelated error first, and the step has since been removed.)
-
-**3. The topic is the channel's own worst-performing Short, scaled up 3x.**
+**2. The topic is the channel's own worst-performing Short, scaled up 3x.**
 Part 2, "How Banks Create Money Out of Thin Air," got **88 views** — the floor of the
 whole series. The five 900+ view winners were all *your money, your problem* framings
 (mortgage, savings, inflation, passive income). Episode 1 of the long-form series
@@ -39,16 +27,16 @@ launched on the one topic the audience already declined, in the most saturated
 explainer category on YouTube (fractional reserve / money creation), where a 191-sub
 channel has no chance of ranking against the incumbents.
 
-**4. The title abandons the formula that produced every win.** Winners were viewer-first
+**3. The title abandons the formula that produced every win.** Winners were viewer-first
 and second person: "How to Buy a House Without Interest," "How Banks Quietly Trap *Your*
 Savings." This one is institution-first and generic; "(And Why You Stay Poor)" is the
 only viewer-facing beat and it's in the parenthetical.
 
-**5. No captions.** `hasCaption: false`. A 5-minute talking-explainer with no caption
+**4. No captions.** `hasCaption: false`. A 5-minute talking-explainer with no caption
 track loses silent-autoplay retention and gives search nothing to index — and search is
 one of only two discovery surfaces this video can currently reach.
 
-**6. Published outside the channel's proven window.** Shorts go out 3:00–4:30 AM PT and
+**5. Published outside the channel's proven window.** Shorts go out 3:00–4:30 AM PT and
 that's when the subscriber base is active; this went out 11:00 AM PT Tuesday. The
 description also promises the next episode "next Friday," which doesn't match a Tuesday
 cadence.
@@ -63,12 +51,11 @@ Every step is idempotent — re-running changes nothing that's already correct.
 
 | # | Action | Fixes |
 |---|---|---|
-| 1 | Verify the series playlist still resolves; re-resolve by title and write back if it ever breaks | — |
-| 2 | Add the long-form to the 14-video **Full Series** playlist | 2, 7 |
-| 3 | Retitle to the proven viewer-first formula + rewrite the description with the funnel line first | 4 |
-| 4 | **Inject `▶ Full 5-minute breakdown: <link>` into all 13 Shorts descriptions** | 1 |
-| 5 | Post the engagement/seed comment on the long-form | — |
-| 6 | Report views daily against a 7-day decision rule | — |
+| 1 | Verify the series playlist resolves and the video is in it; re-resolve by title if it ever breaks | — |
+| 2 | Retitle to the proven viewer-first formula + rewrite the description with the funnel line first | 4 |
+| 3 | **Inject `▶ Full 5-minute breakdown: <link>` into all 13 Shorts descriptions** | 1 |
+| 4 | Post the engagement/seed comment on the long-form | — |
+| 5 | Report views daily against a 7-day decision rule | — |
 
 New title:
 
@@ -79,7 +66,7 @@ of the five hooks that broke 900 views.
 
 ### Still manual (can't be done through the Data API)
 
-- **Pin** the comment from step 5, and pin the long-form link comment on your top Shorts
+- **Pin** the comment from step 4, and pin the long-form link comment on your top Shorts
   (Parts 8, 3, 9, 10, 4). API can post comments; it cannot pin them. Two minutes of work,
   and it's the highest-leverage two minutes available.
 - **End screens / Shorts "related video" link** on the five winners → this video.
