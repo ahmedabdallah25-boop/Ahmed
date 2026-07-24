@@ -3,14 +3,13 @@
 
 Steps, all idempotent — re-running changes nothing that is already correct:
 
-  1. resolve the real series-playlist ID from the channel and write it back to
-     longform.json + config.json (replaces the truncated PLKLKzR1QgFHE link)
+  1. verify the configured series playlist still exists, re-resolving it from the
+     channel (by title) and writing it back to longform.json if it ever breaks
   2. repackage the long-form: viewer-first title, description, tags
-  3. replace the dead playlist URL everywhere it still appears
-  4. inject the long-form funnel link into every Short's description  <- the fix that matters
-  5. add the long-form to the series playlist
-  6. post the seed/engagement comment once
-  7. report views against the 7-day decision rule
+  3. inject the long-form funnel link into every Short's description  <- the fix that matters
+  4. add the long-form to the series playlist
+  5. post the seed/engagement comment once
+  6. report views against the 7-day decision rule
 
 Needs the channel owner's OAuth credentials (see SETUP.md):
   YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN
@@ -25,7 +24,6 @@ from apply_fix import yt_client
 
 HERE = Path(__file__).parent
 LONGFORM_PATH = HERE / "longform.json"
-CONFIG_PATH = HERE / "config.json"
 CFG = json.loads(LONGFORM_PATH.read_text())
 VIDEO_ID = CFG["video_id"]
 DRY = False
@@ -49,11 +47,18 @@ def put_snippet(yt, video_id: str, snippet: dict) -> None:
 # --- 1. playlist self-heal -------------------------------------------------
 
 def resolve_playlist(yt):
-    """Find the series playlist on the channel; return (playlist_id, url)."""
-    good = CFG.get("playlist_url", "").strip()
-    bad = CFG["bad_playlist_url"].strip()
-    if good and good != bad and len(good.split("list=")[-1]) >= 30:
-        return good.split("list=")[-1], good
+    """Find the series playlist on the channel; return (playlist_id, url).
+
+    Note: legacy playlist IDs are only 13 characters (PL + 11), which is valid —
+    never judge an ID by its length. Validity is confirmed by an API lookup.
+    """
+    configured = CFG.get("playlist_url", "").strip()
+    if configured:
+        pid = configured.split("list=")[-1]
+        if yt.playlists().list(part="id", id=pid).execute().get("items"):
+            print(f"  playlist: {pid} (from config, verified)")
+            return pid, configured
+        print(f"  ! configured playlist {pid} does not exist — re-resolving")
 
     match = CFG.get("playlist_title_match", "").lower()
     req = yt.playlists().list(part="snippet", mine=True, maxResults=50)
@@ -79,14 +84,28 @@ def resolve_playlist(yt):
     CFG["playlist_url"] = url
     if not DRY:
         save(LONGFORM_PATH, CFG)
-        cfg2 = json.loads(CONFIG_PATH.read_text())
-        if cfg2.get("playlist_url", "").strip() in ("", bad):
-            cfg2["playlist_url"] = url
-            save(CONFIG_PATH, cfg2)
     return pid, url
 
 
 # --- 2. repackage the long-form -------------------------------------------
+
+TAG_BUDGET = 480  # YouTube rejects a snippet whose tags total over ~500 chars
+
+
+def fit_tags(new: list, existing: list) -> list:
+    """New tags first, then as many existing ones as the 500-char budget allows.
+
+    Quoted multi-word tags cost 2 extra characters each, plus a separator.
+    """
+    out, used = [], 0
+    for tag in list(new) + [t for t in existing if t not in new]:
+        cost = len(tag) + (2 if " " in tag else 0) + (1 if out else 0)
+        if used + cost > TAG_BUDGET:
+            continue
+        out.append(tag)
+        used += cost
+    return out
+
 
 def repackage(yt, playlist_url: str) -> None:
     snippet = get_snippet(yt, VIDEO_ID)
@@ -95,7 +114,7 @@ def repackage(yt, playlist_url: str) -> None:
 
     line = f"▶ Full series in order: {playlist_url}\n" if playlist_url else ""
     description = CFG["new_description"].replace("{PLAYLIST_LINE}", line)
-    tags = sorted(set(snippet.get("tags", [])) | set(CFG["add_tags"]))
+    tags = fit_tags(CFG["add_tags"], snippet.get("tags", []))
 
     if (snippet.get("title") == CFG["new_title"]
             and snippet.get("description") == description
@@ -110,25 +129,7 @@ def repackage(yt, playlist_url: str) -> None:
     print(f"  repackaged: {CFG['new_title']}")
 
 
-# --- 3. dead playlist link ------------------------------------------------
-
-def fix_playlist_links(yt, playlist_url: str) -> None:
-    bad = CFG["bad_playlist_url"].strip()
-    if not playlist_url or playlist_url == bad:
-        print("  ! no good playlist URL — skipping link repair")
-        return
-    fixed = 0
-    for vid in CFG["shorts_video_ids"] + [VIDEO_ID]:
-        snippet = get_snippet(yt, vid)
-        if snippet is None or bad not in snippet.get("description", ""):
-            continue
-        snippet["description"] = snippet["description"].replace(bad, playlist_url)
-        put_snippet(yt, vid, snippet)
-        fixed += 1
-    print(f"  dead playlist link fixed on {fixed} video(s)")
-
-
-# --- 4. the funnel --------------------------------------------------------
+# --- 3. the funnel --------------------------------------------------------
 
 def inject_funnel(yt) -> None:
     """Put the long-form link at the top of every Short's description."""
@@ -150,7 +151,7 @@ def inject_funnel(yt) -> None:
           f"{' (all already linked)' if not added else ''}")
 
 
-# --- 5. playlist membership -----------------------------------------------
+# --- 4. playlist membership -----------------------------------------------
 
 def add_to_playlist(yt, playlist_id: str) -> None:
     if not playlist_id:
@@ -171,7 +172,7 @@ def add_to_playlist(yt, playlist_id: str) -> None:
     print("  added to the series playlist")
 
 
-# --- 6. seed comment ------------------------------------------------------
+# --- 5. seed comment ------------------------------------------------------
 
 def post_comment(yt) -> None:
     text = CFG["engagement_comment"].strip()
@@ -190,7 +191,7 @@ def post_comment(yt) -> None:
     print("  seed comment posted — pin it in YouTube Studio (the API cannot pin)")
 
 
-# --- 7. report ------------------------------------------------------------
+# --- 6. report ------------------------------------------------------------
 
 def report(yt) -> None:
     items = yt.videos().list(part="statistics", id=VIDEO_ID).execute().get("items", [])
@@ -231,10 +232,9 @@ def main() -> None:
 
     print("1. playlist");     pid, url = resolve_playlist(yt)
     print("2. repackage");    repackage(yt, url)
-    print("3. dead links");   fix_playlist_links(yt, url)
-    print("4. funnel");       inject_funnel(yt)
-    print("5. playlist add"); add_to_playlist(yt, pid)
-    print("6. comment");      post_comment(yt)
+    print("3. funnel");       inject_funnel(yt)
+    print("4. playlist add"); add_to_playlist(yt, pid)
+    print("5. comment");      post_comment(yt)
     report(yt)
 
 

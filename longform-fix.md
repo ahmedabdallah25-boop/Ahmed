@@ -7,7 +7,7 @@ is the only long-form upload.
 ## Diagnosis — why it's at 2 views
 
 Ranked by how much each one actually costs you. Public data only (Nexlev analytics tools
-are locked on the free plan), so 1–4 are verified facts about the upload, 5–7 are the
+are locked on the free plan), so 1–4 are verified facts about the upload, 5–6 are the
 structural read.
 
 **1. The channel's entire audience is a Shorts audience, and nothing points them here.**
@@ -19,10 +19,17 @@ browse test measured in dozens of impressions, not thousands. **2 views is the e
 outcome of publishing long-form into a Shorts-only channel with no internal funnel.**
 This is the whole ballgame; everything below is secondary.
 
-**2. The description still links the dead playlist.** `.../playlist?list=PLKLKzR1QgFHE`
-— 13 characters where a real playlist ID is 34. It has been copied into the long-form
-description too. Every "watch the series in order" click on the channel goes nowhere,
-which kills the one thing long-form is good at: session time.
+**2. Its playlist home is a 1-video playlist.** The channel has two: "The Money Machine,
+Decoded — Full Episodes" (`PLFvKaPuEiceY`, **1 video** — this one) and "The Money Machine,
+Decoded (Full Series)" (`PLKLKzR1QgFHE`, 14 videos), which is what every description links.
+A one-item playlist gives no autoplay-next, so anyone arriving through it dead-ends.
+
+*Correction to the earlier study:* `channel-study.md` flagged `PLKLKzR1QgFHE` as a broken,
+truncated link because it is 13 characters. That was wrong — legacy YouTube playlist IDs
+are `PL` + 11 characters, and this one resolves to a live 14-video playlist. The link works
+everywhere it appears; there is nothing to repair. (The first automation run tried to
+"fix" it and would have repointed all 14 descriptions at the 1-video playlist — it failed
+on an unrelated error first, and the step has since been removed.)
 
 **3. The topic is the channel's own worst-performing Short, scaled up 3x.**
 Part 2, "How Banks Create Money Out of Thin Air," got **88 views** — the floor of the
@@ -46,9 +53,6 @@ that's when the subscriber base is active; this went out 11:00 AM PT Tuesday. Th
 description also promises the next episode "next Friday," which doesn't match a Tuesday
 cadence.
 
-**7. It isn't in the series playlist.** No playlist membership means no autoplay-next,
-no playlist surface, and no session chain from the Shorts binge into the long video.
-
 **Not the problem:** the metadata quality. Chapters, keyword set, and description body
 are genuinely good. The video isn't failing on craft — it's failing on distribution.
 
@@ -59,13 +63,12 @@ Every step is idempotent — re-running changes nothing that's already correct.
 
 | # | Action | Fixes |
 |---|---|---|
-| 1 | Resolve the channel's real series-playlist ID via the API and write it back into `config.json` / `longform.json` | 2 |
-| 2 | Replace the truncated playlist URL in every video description on the channel | 2 |
-| 3 | Add the long-form video to the series playlist | 7 |
-| 4 | Retitle to the proven viewer-first formula + rewrite the description with the funnel line first | 4 |
-| 5 | **Inject `▶ Full 5-minute breakdown: <link>` into all 13 Shorts descriptions** | 1 |
-| 6 | Post the engagement/seed comment on the long-form | — |
-| 7 | Report views daily against a 7-day decision rule | — |
+| 1 | Verify the series playlist still resolves; re-resolve by title and write back if it ever breaks | — |
+| 2 | Add the long-form to the 14-video **Full Series** playlist | 2, 7 |
+| 3 | Retitle to the proven viewer-first formula + rewrite the description with the funnel line first | 4 |
+| 4 | **Inject `▶ Full 5-minute breakdown: <link>` into all 13 Shorts descriptions** | 1 |
+| 5 | Post the engagement/seed comment on the long-form | — |
+| 6 | Report views daily against a 7-day decision rule | — |
 
 New title:
 
@@ -76,7 +79,7 @@ of the five hooks that broke 900 views.
 
 ### Still manual (can't be done through the Data API)
 
-- **Pin** the comment from step 6, and pin the long-form link comment on your top Shorts
+- **Pin** the comment from step 5, and pin the long-form link comment on your top Shorts
   (Parts 8, 3, 9, 10, 4). API can post comments; it cannot pin them. Two minutes of work,
   and it's the highest-leverage two minutes available.
 - **End screens / Shorts "related video" link** on the five winners → this video.
