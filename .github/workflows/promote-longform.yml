@@ -1,0 +1,28 @@
+name: Promote long-form
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Report what would change, write nothing"
+        type: boolean
+        default: false
+  schedule:
+    - cron: "0 12 * * *"   # daily 12:00 UTC — re-heals links and reports the verdict
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r automation/requirements.txt
+      - name: Fix, funnel and report
+        working-directory: automation
+        run: python promote_longform.py ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          YT_CLIENT_ID: ${{ secrets.new1 }}
+          YT_CLIENT_SECRET: ${{ secrets.new2 }}
+          YT_REFRESH_TOKEN: ${{ secrets.new3 }}
