@@ -1,0 +1,26 @@
+{
+  "name": "finance-decoded-remotion",
+  "version": "1.0.0",
+  "description": "Remotion video pipeline for the Finance % Decoded Shorts",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render Short out/short.mp4",
+    "still": "remotion still Short out/cover.png",
+    "typecheck": "tsc --noEmit",
+    "upgrade": "remotion upgrade"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.499",
+    "@remotion/fonts": "^4.0.499",
+    "@remotion/player": "^4.0.499",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "remotion": "^4.0.499"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.1",
+    "typescript": "^5.9.3"
+  }
+}

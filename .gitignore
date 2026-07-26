@@ -1,2 +1,7 @@
 __pycache__/
 *.pyc
+
+# Remotion / node
+node_modules/
+remotion/out/
+.remotion/
