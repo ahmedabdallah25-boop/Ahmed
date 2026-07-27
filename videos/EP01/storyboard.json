@@ -1,0 +1,406 @@
+{
+  "schemaVersion": 3,
+  "composition": {
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "durationSeconds": 1071.0,
+    "layout": "landscape",
+    "themeId": "craft",
+    "seed": 42
+  },
+  "videoTrack": {
+    "sourcePath": "input-video.mp4",
+    "startSec": 0,
+    "endSec": 1071.0,
+    "bounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "subtitles": {
+    "enabled": true,
+    "style": "word-synced rail",
+    "cues": 534,
+    "words": 2350,
+    "bounds": {
+      "left": 210,
+      "top": 952,
+      "width": 1500,
+      "height": 80
+    }
+  },
+  "cards": [
+    {
+      "id": "card-01",
+      "startSec": 3.0,
+      "endSec": 9.0,
+      "zone": "TOP",
+      "template": "setup",
+      "accent": "#2E6F6B",
+      "intent": "MEET ADAM & SAMMY"
+    },
+    {
+      "id": "card-02",
+      "startSec": 13.6,
+      "endSec": 18.0,
+      "zone": "TOP",
+      "template": "stat",
+      "accent": "#2E6F6B",
+      "intent": "EACH PUTS ASIDE"
+    },
+    {
+      "id": "card-03",
+      "startSec": 24.9,
+      "endSec": 29.9,
+      "zone": "TOP",
+      "template": "quote",
+      "accent": "#C0553C",
+      "intent": "Nothing separates these two men."
+    },
+    {
+      "id": "card-04",
+      "startSec": 30.4,
+      "endSec": 34.7,
+      "zone": "TOP",
+      "template": "quote",
+      "accent": "#C0553C",
+      "intent": "Except what they believe money is for."
+    },
+    {
+      "id": "card-05",
+      "startSec": 62.3,
+      "endSec": 68.3,
+      "zone": "TOP",
+      "template": "compare",
+      "accent": "#E8B54B",
+      "intent": "30 YEARS FROM NOW"
+    },
+    {
+      "id": "card-06",
+      "startSec": 68.4,
+      "endSec": 71.8,
+      "zone": "TOP",
+      "template": "stat",
+      "accent": "#C0553C",
+      "intent": "ADAM \u00b7 SAVINGS ACCOUNT"
+    },
+    {
+      "id": "card-07",
+      "startSec": 92.9,
+      "endSec": 97.9,
+      "zone": "LOWRIGHT",
+      "template": "quote",
+      "accent": "#C0553C",
+      "intent": "The number only ever goes up."
+    },
+    {
+      "id": "card-08",
+      "startSec": 107.5,
+      "endSec": 113.0,
+      "zone": "RIGHT",
+      "template": "stat",
+      "accent": "#7C8A4E",
+      "intent": "SAMMY \u00b7 INDEX FUND"
+    },
+    {
+      "id": "card-09",
+      "startSec": 120.8,
+      "endSec": 125.8,
+      "zone": "TOP",
+      "template": "quote",
+      "accent": "#7C8A4E",
+      "intent": "A fractional slice of several thousand businesses."
+    },
+    {
+      "id": "card-10",
+      "startSec": 156.3,
+      "endSec": 161.0,
+      "zone": "TOP",
+      "template": "versus",
+      "accent": "#E8B54B",
+      "intent": ""
+    },
+    {
+      "id": "card-11",
+      "startSec": 186.2,
+      "endSec": 191.2,
+      "zone": "LOWRIGHT",
+      "template": "stat",
+      "accent": "#C0553C",
+      "intent": "SAMMY \u00b7 WEEK ONE"
+    },
+    {
+      "id": "card-12",
+      "startSec": 250.4,
+      "endSec": 256.4,
+      "zone": "TOP",
+      "template": "compare",
+      "accent": "#E8B54B",
+      "intent": "YEAR 3  \u00b7  BOTH DEPOSITED $19,200"
+    },
+    {
+      "id": "card-13",
+      "startSec": 279.7,
+      "endSec": 285.2,
+      "zone": "TOP",
+      "template": "stat",
+      "accent": "#C0553C",
+      "intent": "SAMMY IS BEHIND BY"
+    },
+    {
+      "id": "card-14",
+      "startSec": 296.4,
+      "endSec": 301.4,
+      "zone": "RIGHT",
+      "template": "quote",
+      "accent": "#E8B54B",
+      "intent": "This is the moment the entire outcome is decided."
+    },
+    {
+      "id": "card-15",
+      "startSec": 322.9,
+      "endSec": 327.9,
+      "zone": "RIGHT",
+      "template": "quote",
+      "accent": "#C0553C",
+      "intent": "Most people sell here."
+    },
+    {
+      "id": "card-16",
+      "startSec": 340.0,
+      "endSec": 345.0,
+      "zone": "TOP",
+      "template": "quote",
+      "accent": "#7C8A4E",
+      "intent": "He keeps sending $200 a month into an investment that has lost him money."
+    },
+    {
+      "id": "card-17",
+      "startSec": 351.3,
+      "endSec": 356.8,
+      "zone": "TOP",
+      "template": "stat",
+      "accent": "#7C8A4E",
+      "intent": "THE 36 DEPOSITS MADE WHILE IT WAS DOWN"
+    },
+    {
+      "id": "card-18",
+      "startSec": 361.1,
+      "endSec": 365.6,
+      "zone": "TOP",
+      "template": "stat",
+      "accent": "#7C8A4E",
+      "intent": "THE SAME BUSINESSES"
+    },
+    {
+      "id": "card-19",
+      "startSec": 382.2,
+      "endSec": 387.7,
+      "zone": "TOP",
+      "template": "compare",
+      "accent": "#E8B54B",
+      "intent": "YEAR 7  \u00b7  THE CROSSOVER"
+    },
+    {
+      "id": "card-20",
+      "startSec": 420.0,
+      "endSec": 424.6,
+      "zone": "TOP",
+      "template": "quote",
+      "accent": "#7C8A4E",
+      "intent": "The crash handed him four years of cheap buying."
+    },
+    {
+      "id": "card-21",
+      "startSec": 432.4,
+      "endSec": 438.4,
+      "zone": "TOP",
+      "template": "stat",
+      "accent": "#C0553C",
+      "intent": "INFLATION  \u00b7  ~3% A YEAR"
+    },
+    {
+      "id": "card-22",
+      "startSec": 462.7,
+      "endSec": 468.2,
+      "zone": "TOP",
+      "template": "compare",
+      "accent": "#E8B54B",
+      "intent": "WHAT ADAM'S 1.5% REALLY IS"
+    },
+    {
+      "id": "card-23",
+      "startSec": 480.2,
+      "endSec": 485.2,
+      "zone": "LEFT",
+      "template": "quote",
+      "accent": "#C0553C",
+      "intent": "He is not a customer of that bank. He is a supplier."
+    },
+    {
+      "id": "card-24",
+      "startSec": 497.0,
+      "endSec": 503.0,
+      "zone": "TOP",
+      "template": "compare",
+      "accent": "#E8B54B",
+      "intent": "YEAR 10"
+    },
+    {
+      "id": "card-25",
+      "startSec": 516.0,
+      "endSec": 521.5,
+      "zone": "TOP",
+      "template": "stat",
+      "accent": "#C0553C",
+      "intent": "THEN THE SECOND CRASH"
+    },
+    {
+      "id": "card-26",
+      "startSec": 544.5,
+      "endSec": 549.5,
+      "zone": "TOP",
+      "template": "quote",
+      "accent": "#E8B54B",
+      "intent": "Would you still be holding?"
+    },
+    {
+      "id": "card-27",
+      "startSec": 603.7,
+      "endSec": 609.2,
+      "zone": "TOP",
+      "template": "quote",
+      "accent": "#E8B54B",
+      "intent": "Nobody warns you that the unpleasantness is the price."
+    },
+    {
+      "id": "card-28",
+      "startSec": 640.0,
+      "endSec": 646.0,
+      "zone": "TOP",
+      "template": "versus",
+      "accent": "#E8B54B",
+      "intent": ""
+    },
+    {
+      "id": "card-29",
+      "startSec": 665.3,
+      "endSec": 670.3,
+      "zone": "TOP",
+      "template": "stat",
+      "accent": "#2E6F6B",
+      "intent": "A BODY OF LAW THAT SPENT"
+    },
+    {
+      "id": "card-30",
+      "startSec": 693.1,
+      "endSec": 698.0,
+      "zone": "TOP",
+      "template": "stat",
+      "accent": "#C0553C",
+      "intent": "YEAR 30  \u00b7  ADAM  \u00b7  DEPOSITED $84,000"
+    },
+    {
+      "id": "card-31",
+      "startSec": 725.0,
+      "endSec": 731.0,
+      "zone": "TOP",
+      "template": "stat",
+      "accent": "#7C8A4E",
+      "intent": "YEAR 30  \u00b7  SAMMY  \u00b7  DEPOSITED $84,000"
+    },
+    {
+      "id": "card-32",
+      "startSec": 743.3,
+      "endSec": 749.3,
+      "zone": "TOP",
+      "template": "quote",
+      "accent": "#E8B54B",
+      "intent": "Compounding does almost nothing for a very long time \u2014 then almost everything."
+    },
+    {
+      "id": "card-33",
+      "startSec": 786.0,
+      "endSec": 791.5,
+      "zone": "TOP",
+      "template": "stat",
+      "accent": "#2E6F6B",
+      "intent": "RUN SAMMY AT 6% INSTEAD"
+    },
+    {
+      "id": "card-34",
+      "startSec": 860.0,
+      "endSec": 865.5,
+      "zone": "LEFT",
+      "template": "setup",
+      "accent": "#2E6F6B",
+      "intent": "MEET BILAL"
+    },
+    {
+      "id": "card-35",
+      "startSec": 883.2,
+      "endSec": 889.7,
+      "zone": "TOP",
+      "template": "list",
+      "accent": "#2E6F6B",
+      "intent": "BILAL'S FUND SCREENS OUT"
+    },
+    {
+      "id": "card-36",
+      "startSec": 907.1,
+      "endSec": 913.1,
+      "zone": "TOP",
+      "template": "quote",
+      "accent": "#2E6F6B",
+      "intent": "RIBA \u2014 you may not rent out money."
+    },
+    {
+      "id": "card-37",
+      "startSec": 929.7,
+      "endSec": 935.7,
+      "zone": "TOP",
+      "template": "stat",
+      "accent": "#2E6F6B",
+      "intent": "MUDARABA"
+    },
+    {
+      "id": "card-38",
+      "startSec": 953.3,
+      "endSec": 958.8,
+      "zone": "LOWRIGHT",
+      "template": "stat",
+      "accent": "#2E6F6B",
+      "intent": "YEAR 30  \u00b7  BILAL"
+    },
+    {
+      "id": "card-39",
+      "startSec": 1002.3,
+      "endSec": 1008.3,
+      "zone": "TOP",
+      "template": "stat",
+      "accent": "#E8B54B",
+      "intent": "BILAL FINISHED"
+    },
+    {
+      "id": "card-40",
+      "startSec": 1014.8,
+      "endSec": 1019.8,
+      "zone": "TOP",
+      "template": "quote",
+      "accent": "#E8B54B",
+      "intent": "The real choice isn't Sammy vs Bilal. It's whether to be an owner at all."
+    },
+    {
+      "id": "card-41",
+      "startSec": 1055.0,
+      "endSec": 1059.8,
+      "zone": "LOWRIGHT",
+      "template": "quote",
+      "accent": "#C0553C",
+      "intent": "Adam took a guaranteed slow loss \u2014 and was told it was safety."
+    }
+  ]
+}
