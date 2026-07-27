@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>Viral Captions — Kinetic Typography</title>
+    <script src="assets/js/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Anton";
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src: url("assets/fonts/anton.woff2") format("woff2");
+      }
+      @font-face {
+        font-family: "Archivo";
+        font-style: normal;
+        font-weight: 700;
+        font-display: block;
+        src: url("assets/fonts/archivo-700.woff2") format("woff2");
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background-color: #08090b;
+      }
+
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        font-family: "Archivo", sans-serif;
+        color: #ffffff;
+      }
+
+      /* full-bleed backdrop (never paint the root itself) */
+      #backdrop {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(120% 80% at 50% 18%, #16181d 0%, #08090b 62%);
+        z-index: 0;
+      }
+
+      .scene {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 90px;
+        z-index: 5;
+      }
+
+      .kicker {
+        font-family: "Archivo", sans-serif;
+        font-weight: 700;
+        font-size: 34px;
+        letter-spacing: 0.34em;
+        text-transform: uppercase;
+        color: #c6ff00;
+        opacity: 0;
+        margin-bottom: 44px;
+      }
+
+      .impact {
+        font-family: "Anton", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: -0.015em;
+        line-height: 1.0;
+        text-align: center;
+      }
+
+      /* one physical line — block-level + sized so transforms are safe */
+      .line {
+        display: block;
+        width: 100%;
+        text-align: center;
+        line-height: 1.06;
+      }
+      .line + .line {
+        margin-top: 24px;
+      }
+
+      .w {
+        display: inline-block;
+        position: relative;
+        opacity: 0;
+        padding: 0 14px;
+        line-height: 1.06;
+      }
+
+      .hl {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 4%;
+        bottom: 6%;
+        background: #c6ff00;
+        transform: scaleX(0);
+        transform-origin: left center;
+        z-index: 0;
+      }
+      .hl-pink {
+        background: #ff2d8a;
+      }
+      .w span.t {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+      }
+      .w.on span.t {
+        color: #08090b;
+      }
+
+      /* ---------- Scene 1 : STOP SCROLLING ---------- */
+      #s1 .impact {
+        font-size: 190px;
+      }
+      #s1-bar {
+        display: block;
+        width: 620px;
+        height: 22px;
+        background: #ff2d8a;
+        margin-top: 56px;
+        transform-origin: center;
+      }
+      #s1-flash {
+        position: absolute;
+        inset: 0;
+        background: #c6ff00;
+        opacity: 0;
+        z-index: 8;
+      }
+
+      /* ---------- Scene 2 : first 3 seconds ---------- */
+      #s2 .impact {
+        font-size: 112px;
+      }
+      #s2 .big {
+        font-size: 300px;
+        color: #c6ff00;
+        display: block;
+        width: 100%;
+        line-height: 1.0;
+        margin: 6px 0 18px;
+      }
+
+      /* ---------- Scene 3 : three cards ---------- */
+      .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+        width: 100%;
+      }
+      .card {
+        display: flex;
+        align-items: center;
+        gap: 34px;
+        width: 100%;
+        height: 220px;
+        padding: 0 48px;
+        border: 5px solid #24272e;
+        background: #0d0f13;
+        opacity: 0;
+      }
+      .card .num {
+        font-family: "Anton", sans-serif;
+        font-size: 96px;
+        color: #24272e;
+        display: block;
+        width: 120px;
+      }
+      .card .lbl {
+        font-family: "Anton", sans-serif;
+        font-size: 110px;
+        text-transform: uppercase;
+        display: block;
+      }
+      .card .rule {
+        display: block;
+        height: 10px;
+        flex: 1;
+        background: #c6ff00;
+        transform: scaleX(0);
+        transform-origin: right center;
+      }
+      #c2 .rule {
+        background: #ff2d8a;
+      }
+      #c3 .rule {
+        background: #ffffff;
+      }
+
+      /* ---------- Scene 4 : captions = retention ---------- */
+      #s4 .impact {
+        font-size: 108px;
+      }
+      #s4 .strike {
+        display: inline-block;
+        position: relative;
+        line-height: 1.06;
+        padding: 0 10px;
+      }
+      #s4-strike {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 43%;
+        height: 14px;
+        background: #ff2d8a;
+        transform: scaleX(0);
+        transform-origin: left center;
+        z-index: 2;
+      }
+
+      /* ---------- Scene 5 : post it again ---------- */
+      #s5 .impact {
+        font-size: 168px;
+      }
+      #s5-echo {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Anton", sans-serif;
+        font-size: 168px;
+        text-transform: uppercase;
+        color: rgba(198, 255, 0, 0.28);
+        opacity: 0;
+        z-index: 4;
+      }
+
+      /* ---------- Scene 6 : end card ---------- */
+      #s6 .impact {
+        font-size: 172px;
+      }
+      #s6-sub {
+        font-family: "Archivo", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+        color: #8b9099;
+        margin-top: 52px;
+        opacity: 0;
+      }
+      #s6-box {
+        position: absolute;
+        left: 90px;
+        right: 90px;
+        top: 640px;
+        bottom: 640px;
+        border: 6px solid #c6ff00;
+        opacity: 0;
+        z-index: 4;
+      }
+
+      /* ---------- transition wipes ---------- */
+      .wipe {
+        position: absolute;
+        inset: 0;
+        z-index: 20;
+        overflow: hidden;
+      }
+      .wipe .bar {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 33.4%;
+        transform: translateX(-102%);
+      }
+      .wipe .b1 {
+        top: 0;
+        background: #c6ff00;
+      }
+      .wipe .b2 {
+        top: 33.3%;
+        background: #ffffff;
+      }
+      .wipe .b3 {
+        top: 66.6%;
+        background: #ff2d8a;
+      }
+
+      /* ---------- persistent furniture ---------- */
+      #grain {
+        position: absolute;
+        inset: -6%;
+        z-index: 40;
+        opacity: 0.075;
+        pointer-events: none;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      }
+      #vignette {
+        position: absolute;
+        inset: 0;
+        z-index: 3;
+        pointer-events: none;
+        background: radial-gradient(78% 58% at 50% 50%, rgba(0, 0, 0, 0) 42%, rgba(0, 0, 0, 0.72) 100%);
+      }
+      #progress-track {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 14px;
+        background: #1b1e24;
+        z-index: 41;
+      }
+      #progress-fill {
+        position: absolute;
+        inset: 0;
+        background: #c6ff00;
+        transform: scaleX(0);
+        transform-origin: left center;
+      }
+      #ticker {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 46px;
+        text-align: center;
+        font-family: "Archivo", sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+        color: #7e858f;
+        z-index: 41;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="25"
+      data-width="1080"
+      data-height="1920"
+    >
+      <div id="backdrop" class="clip" data-start="0" data-duration="25" data-track-index="0"></div>
+
+      <!-- ============ SCENE 1 : STOP SCROLLING ============ -->
+      <section id="s1" class="scene clip" data-start="0" data-duration="4.2" data-track-index="1">
+        <div id="s1-kicker" class="kicker">Attention is a currency</div>
+        <div class="impact">
+          <span class="line" id="s1-l1">Stop</span>
+          <span class="line" id="s1-l2">Scrolling.</span>
+        </div>
+        <span id="s1-bar"></span>
+        <div id="s1-flash"></div>
+      </section>
+
+      <!-- ============ SCENE 2 : FIRST 3 SECONDS ============ -->
+      <section id="s2" class="scene clip" data-start="4.2" data-duration="4.4" data-track-index="1">
+        <div class="impact">
+          <span class="line" id="s2-l1">Your first</span>
+          <span class="line big" id="s2-big">3</span>
+          <span class="line" id="s2-l2">
+            <span class="w" id="w-sec"><span class="hl"></span><span class="t">Seconds</span></span>
+          </span>
+          <span class="line" id="s2-l3">
+            <span class="w"><span class="hl hl-pink"></span><span class="t">Decide</span></span>
+            <span class="w"><span class="hl hl-pink"></span><span class="t">Everything</span></span>
+          </span>
+        </div>
+      </section>
+
+      <!-- ============ SCENE 3 : HOOK / TENSION / PAYOFF ============ -->
+      <section id="s3" class="scene clip" data-start="8.6" data-duration="4" data-track-index="1">
+        <div class="cards">
+          <div class="card" id="c1">
+            <span class="num">01</span><span class="lbl">Hook</span><span class="rule"></span>
+          </div>
+          <div class="card" id="c2">
+            <span class="num">02</span><span class="lbl">Tension</span><span class="rule"></span>
+          </div>
+          <div class="card" id="c3">
+            <span class="num">03</span><span class="lbl">Payoff</span><span class="rule"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SCENE 4 : CAPTIONS = RETENTION ============ -->
+      <section id="s4" class="scene clip" data-start="12.6" data-duration="4.4" data-track-index="1">
+        <div id="s4-kicker" class="kicker">Read this twice</div>
+        <div class="impact">
+          <span class="line">Captions aren't</span>
+          <span class="line"
+            ><span class="strike">Decoration<span id="s4-strike"></span></span></span
+          >
+          <span class="line" id="s4-l3">
+            <span class="w"><span class="hl"></span><span class="t">They're</span></span>
+            <span class="w"><span class="hl"></span><span class="t">Retention</span></span>
+          </span>
+        </div>
+      </section>
+
+      <!-- ============ SCENE 5 : POST IT AGAIN ============ -->
+      <section id="s5" class="scene clip" data-start="17" data-duration="4" data-track-index="1">
+        <div id="s5-echo">Post it again</div>
+        <div class="impact">
+          <span class="line" id="s5-l1">Post it.</span>
+          <span class="line" id="s5-l2">Then post it</span>
+          <span class="line" id="s5-l3">Again.</span>
+        </div>
+      </section>
+
+      <!-- ============ SCENE 6 : END CARD ============ -->
+      <section id="s6" class="scene clip" data-start="21" data-duration="4" data-track-index="1">
+        <div id="s6-box"></div>
+        <div class="impact">
+          <span class="line" id="s6-l1">Made with</span>
+          <span class="line" id="s6-l2">Motion.</span>
+        </div>
+        <div id="s6-sub">Hyperframes</div>
+      </section>
+
+      <!-- ============ TRANSITION WIPES ============ -->
+      <div id="wipe1" class="wipe clip" data-layout-allow-overflow data-start="4" data-duration="0.5" data-track-index="6">
+        <div class="bar b1"></div>
+        <div class="bar b2"></div>
+        <div class="bar b3"></div>
+      </div>
+      <div id="wipe2" class="wipe clip" data-layout-allow-overflow data-start="8.4" data-duration="0.5" data-track-index="6">
+        <div class="bar b1"></div>
+        <div class="bar b2"></div>
+        <div class="bar b3"></div>
+      </div>
+      <div id="wipe3" class="wipe clip" data-layout-allow-overflow data-start="12.4" data-duration="0.5" data-track-index="6">
+        <div class="bar b1"></div>
+        <div class="bar b2"></div>
+        <div class="bar b3"></div>
+      </div>
+      <div id="wipe4" class="wipe clip" data-layout-allow-overflow data-start="16.8" data-duration="0.5" data-track-index="6">
+        <div class="bar b1"></div>
+        <div class="bar b2"></div>
+        <div class="bar b3"></div>
+      </div>
+      <div id="wipe5" class="wipe clip" data-layout-allow-overflow data-start="20.8" data-duration="0.5" data-track-index="6">
+        <div class="bar b1"></div>
+        <div class="bar b2"></div>
+        <div class="bar b3"></div>
+      </div>
+
+      <!-- ============ PERSISTENT FURNITURE ============ -->
+      <div id="vignette" class="clip" data-start="0" data-duration="25" data-track-index="2"></div>
+      <div id="grain" class="clip" data-layout-allow-occlusion data-layout-allow-overflow data-start="0" data-duration="25" data-track-index="9"></div>
+      <div id="progress-track" class="clip" data-start="0" data-duration="25" data-track-index="10">
+        <div id="progress-fill"></div>
+      </div>
+      <div id="ticker" class="clip" data-start="0" data-duration="25" data-track-index="11">
+        Swipe up · Save · Repost
+      </div>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      const POP = "back.out(2.4)";
+      const OUT = "expo.out";
+
+      /* ---------- helper: word pop-on with highlight sweep ---------- */
+      function popWord(sel, at) {
+        tl.fromTo(
+          sel,
+          { opacity: 0, yPercent: 42, scale: 0.72, rotation: -4 },
+          { opacity: 1, yPercent: 0, scale: 1, rotation: 0, duration: 0.34, ease: POP },
+          at,
+        );
+        tl.fromTo(sel + " .hl", { scaleX: 0 }, { scaleX: 1, duration: 0.2, ease: "power3.out" }, at + 0.06);
+        tl.to(sel + " .t", { color: "#08090b", duration: 0.01 }, at + 0.16);
+      }
+
+      /* ---------- helper: 3-bar wipe ---------- */
+      function wipe(id, at) {
+        tl.fromTo(
+          id + " .bar",
+          { xPercent: -102 },
+          { xPercent: 0, duration: 0.2, stagger: 0.035, ease: "power2.in" },
+          at,
+        );
+        tl.to(id + " .bar", { xPercent: 102, duration: 0.22, stagger: 0.035, ease: "power2.out" }, at + 0.24);
+      }
+
+      /* ================= SCENE 1 : 0 – 4.2 ================= */
+      tl.fromTo("#s1-kicker", { opacity: 0, y: -26 }, { opacity: 1, y: 0, duration: 0.4, ease: OUT }, 0.15);
+      tl.fromTo(
+        "#s1-l1",
+        { yPercent: 120, scale: 1.5, opacity: 0 },
+        { yPercent: 0, scale: 1, opacity: 1, duration: 0.4, ease: "expo.out" },
+        0.35,
+      );
+      tl.fromTo(
+        "#s1-l2",
+        { yPercent: -120, scale: 1.5, opacity: 0 },
+        { yPercent: 0, scale: 1, opacity: 1, duration: 0.4, ease: "expo.out" },
+        0.5,
+      );
+      tl.fromTo("#s1-flash", { opacity: 0.9 }, { opacity: 0, duration: 0.28, ease: "power2.out" }, 0.62);
+      tl.fromTo("#s1-bar", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power4.out" }, 0.78);
+      /* beat-pulse (finite) */
+      tl.to("#s1-l2", { scale: 1.06, duration: 0.12, yoyo: true, repeat: 5, ease: "power1.inOut" }, 1.3);
+      tl.to("#s1-bar", { scaleX: 0.2, duration: 0.16, yoyo: true, repeat: 3, ease: "power1.inOut" }, 2.3);
+      tl.to("#s1 .impact", { yPercent: -14, duration: 1.4, ease: "none" }, 2.6);
+
+      wipe("#wipe1", 4);
+
+      /* ================= SCENE 2 : 4.2 – 8.6 ================= */
+      tl.fromTo("#s2-l1", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.3, ease: OUT }, 4.35);
+      tl.fromTo(
+        "#s2-big",
+        { scale: 2.4, opacity: 0, rotation: 8 },
+        { scale: 1, opacity: 1, rotation: 0, duration: 0.5, ease: POP },
+        4.55,
+      );
+      tl.to("#s2-big", { scale: 1.05, duration: 0.18, yoyo: true, repeat: 5, ease: "power1.inOut" }, 5.1);
+      popWord("#w-sec", 5.05);
+      tl.fromTo(
+        "#s2-l3 .w",
+        { opacity: 0, yPercent: 40, scale: 0.7 },
+        { opacity: 1, yPercent: 0, scale: 1, duration: 0.3, stagger: 0.16, ease: POP },
+        5.5,
+      );
+      tl.fromTo(
+        "#s2-l3 .hl",
+        { scaleX: 0 },
+        { scaleX: 1, duration: 0.22, stagger: 0.16, ease: "power3.out" },
+        5.62,
+      );
+      tl.to("#s2-l3 .t", { color: "#08090b", duration: 0.01, stagger: 0.16 }, 5.72);
+      tl.to("#s2 .impact", { yPercent: -6, duration: 2, ease: "none" }, 6.2);
+      tl.to("#s2 .impact", { scale: 0.9, opacity: 0, duration: 0.3, ease: "power2.in" }, 8.25);
+      tl.set("#s2 .impact", { opacity: 0 }, 8.6);
+
+      wipe("#wipe2", 8.4);
+
+      /* ================= SCENE 3 : 8.6 – 12.6 ================= */
+      [
+        ["#c1", 8.75],
+        ["#c2", 9.15],
+        ["#c3", 9.55],
+      ].forEach(function (pair) {
+        var id = pair[0],
+          at = pair[1];
+        tl.fromTo(
+          id,
+          { opacity: 0, xPercent: -14, rotation: -1.4 },
+          { opacity: 1, xPercent: 0, rotation: 0, duration: 0.36, ease: POP },
+          at,
+        );
+        tl.fromTo(id + " .rule", { scaleX: 0 }, { scaleX: 1, duration: 0.4, ease: "power4.out" }, at + 0.14);
+        tl.to(id + " .num", { color: "#c6ff00", duration: 0.01 }, at + 0.2);
+      });
+      tl.to("#c1", { xPercent: 3, duration: 0.14, yoyo: true, repeat: 3, ease: "power1.inOut" }, 10.4);
+      tl.to("#c2", { xPercent: -3, duration: 0.14, yoyo: true, repeat: 3, ease: "power1.inOut" }, 10.7);
+      tl.to("#c3", { xPercent: 3, duration: 0.14, yoyo: true, repeat: 3, ease: "power1.inOut" }, 11.0);
+      tl.to(".cards", { yPercent: -4, duration: 1.2, ease: "none" }, 11.2);
+
+      wipe("#wipe3", 12.4);
+
+      /* ================= SCENE 4 : 12.6 – 17.0 ================= */
+      tl.fromTo("#s4-kicker", { opacity: 0, y: -22 }, { opacity: 1, y: 0, duration: 0.34, ease: OUT }, 12.75);
+      tl.fromTo(
+        "#s4 .impact .line",
+        { opacity: 0, yPercent: 50 },
+        { opacity: 1, yPercent: 0, duration: 0.34, stagger: 0.18, ease: POP },
+        12.9,
+      );
+      tl.fromTo("#s4-strike", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power4.out" }, 13.7);
+      tl.set("#s4-l3 .w", { opacity: 0 }, 12.6);
+      tl.fromTo(
+        "#s4-l3 .w",
+        { opacity: 0, yPercent: 46, scale: 0.7, rotation: -3 },
+        { opacity: 1, yPercent: 0, scale: 1, rotation: 0, duration: 0.32, stagger: 0.18, ease: POP },
+        14.1,
+      );
+      tl.fromTo(
+        "#s4-l3 .hl",
+        { scaleX: 0 },
+        { scaleX: 1, duration: 0.22, stagger: 0.18, ease: "power3.out" },
+        14.22,
+      );
+      tl.to("#s4-l3 .t", { color: "#08090b", duration: 0.01, stagger: 0.18 }, 14.32);
+      tl.to("#s4-l3", { scale: 1.05, duration: 0.16, yoyo: true, repeat: 3, ease: "power1.inOut" }, 15.1);
+      tl.to("#s4 .impact", { yPercent: -8, duration: 1.4, ease: "none" }, 15.4);
+
+      wipe("#wipe4", 16.8);
+
+      /* ================= SCENE 5 : 17.0 – 21.0 ================= */
+      tl.fromTo(
+        "#s5-l1",
+        { opacity: 0, xPercent: -60, skewX: 14 },
+        { opacity: 1, xPercent: 0, skewX: 0, duration: 0.36, ease: "expo.out" },
+        17.15,
+      );
+      tl.fromTo(
+        "#s5-l2",
+        { opacity: 0, xPercent: 60, skewX: -14 },
+        { opacity: 1, xPercent: 0, skewX: 0, duration: 0.36, ease: "expo.out" },
+        17.5,
+      );
+      tl.fromTo(
+        "#s5-l3",
+        { opacity: 0, scale: 2.2, rotation: -6 },
+        { opacity: 1, scale: 1, rotation: 0, duration: 0.44, ease: POP },
+        17.85,
+      );
+      tl.fromTo(
+        "#s5-echo",
+        { opacity: 0, scale: 1 },
+        { opacity: 1, scale: 1.5, duration: 0.6, ease: "power2.out" },
+        18.3,
+      );
+      tl.to("#s5-echo", { opacity: 0, scale: 2.1, duration: 0.6, ease: "power2.out", overwrite: "auto" }, 18.92);
+      tl.to("#s5-l3", { scale: 1.07, duration: 0.15, yoyo: true, repeat: 5, ease: "power1.inOut" }, 19.4);
+      tl.to("#s5 .impact", { yPercent: -6, duration: 1.2, ease: "none" }, 19.5);
+
+      wipe("#wipe5", 20.8);
+
+      /* ================= SCENE 6 : 21.0 – 25.0 ================= */
+      tl.fromTo(
+        "#s6-box",
+        { opacity: 0, scale: 0.86 },
+        { opacity: 1, scale: 1, duration: 0.5, ease: "expo.out" },
+        21.1,
+      );
+      tl.fromTo(
+        "#s6-l1",
+        { opacity: 0, yPercent: 60 },
+        { opacity: 1, yPercent: 0, duration: 0.36, ease: POP },
+        21.25,
+      );
+      tl.fromTo(
+        "#s6-l2",
+        { opacity: 0, yPercent: 60, scale: 1.4 },
+        { opacity: 1, yPercent: 0, scale: 1, duration: 0.4, ease: POP },
+        21.45,
+      );
+      tl.fromTo(
+        "#s6-sub",
+        { opacity: 0, scaleX: 1.35, y: 16 },
+        { opacity: 1, scaleX: 1, y: 0, duration: 0.6, ease: OUT },
+        21.9,
+      );
+      tl.to("#s6-box", { scale: 1.03, duration: 0.5, yoyo: true, repeat: 3, ease: "power1.inOut" }, 22.4);
+      tl.to("#s6 .impact", { yPercent: -3, duration: 1.6, ease: "none" }, 22.6);
+      tl.to(["#s6 .impact", "#s6-sub", "#s6-box"], { opacity: 0, duration: 0.35, ease: "power2.in" }, 24.5);
+
+      /* ================= PERSISTENT ================= */
+      tl.fromTo("#progress-fill", { scaleX: 0 }, { scaleX: 1, duration: 25, ease: "none" }, 0);
+      tl.to("#grain", { xPercent: 2.5, yPercent: -2.5, duration: 0.25, yoyo: true, repeat: 99, ease: "none" }, 0);
+      tl.to("#ticker", { opacity: 0.45, duration: 0.6, yoyo: true, repeat: 40, ease: "power1.inOut" }, 0);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

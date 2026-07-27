@@ -1,2 +1,5 @@
-__pycache__/
-*.pyc
+.agents/
+.claude/skills/
+node_modules/
+viral-captions/snapshots/
+viral-captions/out.mp4
