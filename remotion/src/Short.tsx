@@ -9,6 +9,7 @@ import {
   useVideoConfig,
 } from 'remotion';
 import {z} from 'zod';
+import {FONT_FAMILY} from './font';
 
 /** One caption card: 1-3 ALL-CAPS words, hard cut in and out. */
 export const cardSchema = z.object({
@@ -27,6 +28,7 @@ export const shortSchema = z.object({
 
 const Card: React.FC<z.infer<typeof cardSchema>> = ({text, band}) => {
   const frame = useCurrentFrame();
+  const {height} = useVideoConfig();
   // Punch-in on the first two frames only — a hard cut, never a fade.
   const scale = interpolate(frame, [0, 2], [1.06, 1], {extrapolateRight: 'clamp'});
 
@@ -35,13 +37,14 @@ const Card: React.FC<z.infer<typeof cardSchema>> = ({text, band}) => {
       style={{
         justifyContent: 'flex-start',
         alignItems: 'center',
-        paddingTop: `${band * 100}%`,
+        // In px, not %: percentage padding resolves against width, not height.
+        paddingTop: band * height,
       }}
     >
       <div
         style={{
           transform: `translateY(-50%) scale(${scale})`,
-          fontFamily: '"Bebas Neue", sans-serif',
+          fontFamily: FONT_FAMILY,
           fontSize: 150,
           lineHeight: 1,
           letterSpacing: 2,
