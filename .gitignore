@@ -1,2 +1,9 @@
 __pycache__/
 *.pyc
+
+# HyperFrames video work-dir artifacts — large binaries, regenerable from source
+videos/**/*.mp4
+videos/**/*.mp3
+videos/**/*.wav
+videos/**/snapshots/
+videos/**/preview/
