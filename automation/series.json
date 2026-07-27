@@ -1,0 +1,27 @@
+{
+  "_comment": "Single source of truth for the series link block. `npm run new:part` reads this to build the new part's description and appends the new entry once you fill in its video id.",
+  "hashtags": "#IslamicFinance #Riba #HalalMoney #MuslimMoney #FinanceDecoded #MoneyMechanisms",
+  "footer_links": [
+    "▶ Daily money takes on X: https://x.com/financedecode"
+  ],
+  "longform": {
+    "video_id": "7TWUwpbl83U",
+    "funnel_line": "▶ Full 5-minute breakdown — how the whole machine works: https://youtu.be/7TWUwpbl83U"
+  },
+  "parts": [
+
+    { "part": 1, "label": "How banks profit from your savings (Riba)", "url": "https://youtu.be/V8HYpTHy2aU" },
+    { "part": 2, "label": "Money created as debt", "url": "https://youtu.be/8DlJ28QnXj4" },
+    { "part": 3, "label": "Inflation, the tax you never voted for", "url": "https://youtu.be/a7xkXgTfCXs" },
+    { "part": 4, "label": "Sound money, the money that never needed a bailout", "url": "https://youtu.be/zY664YZPI6U" },
+    { "part": 5, "label": "The credit card minimum payment trap", "url": "https://youtu.be/scjEcnABEOo" },
+    { "part": 6, "label": "How banks collect a second house from you", "url": "https://youtu.be/fMQMZKPvK4c" },
+    { "part": 7, "label": "Murabaha, the fixed-price sale", "url": "https://youtu.be/c8uyMAIORkU" },
+    { "part": 8, "label": "How to buy a house without interest (Musharaka)", "url": "https://youtu.be/riQ7dLSnogo" },
+    { "part": 9, "label": "Passive income without interest (Sukuk)", "url": "https://youtu.be/J0TCD2u177k" },
+    { "part": 10, "label": "How banks quietly drain your savings", "url": "https://youtu.be/OXIP3EJROQk" },
+    { "part": 11, "label": "Is your insurance even halal? (Gharar)", "url": "https://youtube.com/shorts/BMSmgBJ82JU" },
+    { "part": 12, "label": "Insurance keeps the money you never claim (Takaful)", "url": "https://youtube.com/shorts/ebIU6OHJ-jg" },
+    { "part": 13, "label": "How to buy a car without interest (Ijara)", "url": "https://youtube.com/shorts/ElD5gg-Q1wY" }
+  ]
+}

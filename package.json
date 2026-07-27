@@ -1,0 +1,10 @@
+{
+  "name": "finance-decoded-automation",
+  "private": true,
+  "scripts": {
+    "new:part": "hygen part new"
+  },
+  "devDependencies": {
+    "hygen": "^6.2.11"
+  }
+}

@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Upload Part 13 with a scheduled publish time, or post its engagement comment.
+"""Upload a series part with a scheduled publish time, or post its engagement comment.
 
-  python upload_video.py                    uploads media/part13.mp4, schedules publish
-  python upload_video.py --comment VIDEO_ID posts the engagement comment (after publish)
+  python upload_video.py                              uploads media/part13.mp4, schedules publish
+  python upload_video.py --config automation/part14.json   uploads that part instead
+  python upload_video.py --comment VIDEO_ID           posts the engagement comment (after publish)
 
 Needs the same OAuth env vars as apply_fix.py (see SETUP.md).
 Note: if the Google Cloud project is unverified, YouTube may keep API uploads
@@ -16,7 +17,14 @@ from googleapiclient.http import MediaFileUpload
 
 from apply_fix import yt_client
 
-CONFIG = json.loads((Path(__file__).parent / "part13.json").read_text())
+def _config_path(argv):
+    """--config PATH selects the part manifest; defaults to part13.json."""
+    if "--config" in argv:
+        return Path(argv[argv.index("--config") + 1])
+    return Path(__file__).parent / "part13.json"
+
+
+CONFIG = json.loads(_config_path(sys.argv).read_text())
 
 
 def upload(yt):
@@ -58,7 +66,7 @@ def comment(yt, vid):
 
 if __name__ == "__main__":
     yt = yt_client()
-    if len(sys.argv) > 2 and sys.argv[1] == "--comment":
-        comment(yt, sys.argv[2])
+    if "--comment" in sys.argv:
+        comment(yt, sys.argv[sys.argv.index("--comment") + 1])
     else:
         upload(yt)
