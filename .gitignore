@@ -7,3 +7,5 @@ videos/**/*.mp3
 videos/**/*.wav
 videos/**/snapshots/
 videos/**/preview/
+videos/**/work-*/
+videos/**/output.mp4
