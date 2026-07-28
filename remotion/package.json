@@ -1,0 +1,27 @@
+{
+  "name": "finance-decoded-longform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kurtis-Conner-style 7-minute long-form editor for Finance % Decoded, built on Remotion.",
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion render Ep01 out/ep01.mp4 --concurrency=2",
+    "still": "remotion still Ep01 out/frame.png --frame=300",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.290",
+    "@remotion/fonts": "^4.0.290",
+    "@remotion/media-utils": "4.0.290",
+    "@remotion/transitions": "4.0.290",
+    "@remotion/zod-types": "4.0.290",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.290",
+    "zod": "3.22.3"
+  },
+  "devDependencies": {
+    "@types/react": "19.0.0",
+    "typescript": "5.8.2"
+  }
+}

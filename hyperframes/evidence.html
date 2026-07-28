@@ -1,0 +1,372 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>Evidence frames — The Money Machine, Decoded</title>
+<!--
+  The evidence graphics for the long-form cut.
+
+  These are the shots Remotion should not be authoring: a commentary video's
+  cutaways have to look like artefacts from the world — a checkout page, a bank
+  ad, a balance sheet — not like React components with a drop shadow. So they
+  live here as standalone HTML/CSS frames, each one a self-contained 1920x1080
+  composition, and get baked to PNG by ../hyperframes/render.mjs into
+  ../remotion/public/memes/.
+
+  Each <section class="frame"> lifts straight into HeyGen HyperFrames as its own
+  composition if you want the animated version (the fee table counting up, the
+  bingo squares stamping in) rather than the still.
+
+  IMPORTANT — nothing in here imitates a real company. Every brand is invented,
+  every screenshot is a reconstruction and says so on its face. The joke works
+  fine on a generic checkout; passing off a fake Klarna screen as a real one
+  does not, and would put a finance channel's whole account at risk.
+-->
+<style>
+  @font-face { font-family: 'Bebas'; src: url('../remotion/public/fonts/BebasNeue-400.woff2') format('woff2'); }
+  @font-face { font-family: 'Inter'; src: url('../remotion/public/fonts/Inter-var.woff2') format('woff2'); font-weight: 100 900; }
+  @font-face { font-family: 'Plex'; src: url('../remotion/public/fonts/IBMPlexMono-400.woff2') format('woff2'); }
+
+  :root {
+    --bg: #0d0b0a;
+    --lift: #191412;
+    --amber: #f0a03c;
+    --white: #fdf8f2;
+    --red: #e5342a;
+    --green: #38c172;
+    --ink: #14100d;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #333; font-family: 'Inter', system-ui, sans-serif; }
+
+  .frame {
+    width: 1920px; height: 1080px;
+    position: relative; overflow: hidden;
+    background: var(--bg); color: var(--white);
+    display: flex; flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  /* Every reconstruction carries this. It is honest, and on a commentary
+     channel the disclaimer reads as a joke rather than as a legal notice. */
+  .recon {
+    position: absolute; bottom: 26px; right: 34px;
+    font-family: 'Plex', monospace; font-size: 22px;
+    color: rgba(0,0,0,0.35); letter-spacing: 1px; z-index: 20;
+  }
+  .frame.dark .recon { color: rgba(253,248,242,0.3); }
+
+  h1 { font-family: 'Bebas', Impact, sans-serif; font-weight: 400; letter-spacing: 2px; }
+  .mono { font-family: 'Plex', monospace; }
+
+  /* ---------- generic e-commerce checkout ---------- */
+  .checkout { background: #f6f7f9; color: #14181f; padding: 90px 140px; justify-content: center; }
+  .checkout .card { background: #fff; border-radius: 18px; padding: 64px 72px; box-shadow: 0 30px 80px rgba(0,0,0,.12); }
+  .checkout .shop { font-size: 30px; font-weight: 800; letter-spacing: -.5px; color: #6b7280; margin-bottom: 40px; }
+  .checkout .total { display: flex; justify-content: space-between; font-size: 58px; font-weight: 800; padding-bottom: 32px; border-bottom: 2px solid #e5e7eb; }
+  .pay-options { display: flex; gap: 28px; margin-top: 44px; }
+  .pay-opt { flex: 1; border: 3px solid #e5e7eb; border-radius: 14px; padding: 34px 30px; }
+  .pay-opt.hero { border-color: #12b981; background: #ecfdf5; }
+  .pay-opt .lbl { font-size: 40px; font-weight: 800; margin-bottom: 12px; }
+  .pay-opt .sub { font-size: 28px; color: #4b5563; line-height: 1.4; }
+  .pill { display: inline-block; background: #12b981; color: #fff; font-size: 24px; font-weight: 800; padding: 8px 18px; border-radius: 999px; margin-bottom: 18px; letter-spacing: .5px; }
+  .fine { margin-top: 40px; font-size: 19px; color: #9ca3af; line-height: 1.5; }
+
+  /* ---------- dark data frames ---------- */
+  .pad { padding: 100px 130px; }
+  .kicker { font-family: 'Plex', monospace; font-size: 30px; letter-spacing: 8px; color: var(--amber); text-transform: uppercase; }
+  .title { font-family: 'Bebas', Impact, sans-serif; font-size: 118px; line-height: .95; margin: 22px 0 54px; text-transform: uppercase; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 40px; }
+  td, th { padding: 26px 10px; text-align: left; border-bottom: 2px solid rgba(253,248,242,.13); }
+  th { font-family: 'Plex', monospace; font-size: 26px; letter-spacing: 3px; color: rgba(253,248,242,.5); text-transform: uppercase; }
+  td.num { text-align: right; font-family: 'Bebas', Impact, sans-serif; font-size: 62px; }
+  tr.hot td { color: var(--red); }
+  tr.hot td.num { color: var(--red); }
+  tr.good td, tr.good td.num { color: var(--green); }
+
+  .bars { display: flex; flex-direction: column; gap: 34px; margin-top: 20px; }
+  .bar-row { display: flex; align-items: center; gap: 34px; }
+  .bar-lbl { width: 560px; font-size: 38px; font-weight: 700; }
+  .bar-track { flex: 1; height: 74px; background: rgba(253,248,242,.08); position: relative; }
+  .bar-fill { height: 100%; background: var(--amber); }
+  .bar-fill.red { background: var(--red); }
+  .bar-fill.green { background: var(--green); }
+  .bar-val { width: 260px; text-align: right; font-family: 'Bebas', Impact, sans-serif; font-size: 62px; }
+
+  /* ---------- bank ad reconstruction ---------- */
+  .ad { justify-content: flex-end; }
+  .ad .plate { position: absolute; inset: 0; background:
+      radial-gradient(120% 90% at 70% 30%, #f7ead4 0%, #e6cfae 45%, #c9a97f 100%); }
+  .ad .sun { position: absolute; width: 900px; height: 900px; right: -120px; top: -220px;
+      background: radial-gradient(circle, rgba(255,255,255,.85), transparent 62%); }
+  .ad .copy { position: relative; padding: 0 140px 150px; }
+  .ad .headline { font-family: 'Bebas', Impact, sans-serif; font-size: 172px; line-height: .9; color: #2b2117; text-transform: uppercase; }
+  .ad .strap { font-size: 46px; color: #4a3c2c; margin-top: 26px; font-weight: 600; }
+  .ad .brand { position: absolute; top: 90px; left: 140px; font-family: 'Bebas', Impact, sans-serif;
+      font-size: 64px; letter-spacing: 6px; color: #2b2117; }
+  .ad .terms { position: absolute; bottom: 70px; left: 140px; right: 140px;
+      font-size: 17px; color: rgba(43,33,23,.55); line-height: 1.35; }
+  .ad .dog { position: absolute; right: 150px; bottom: 150px; font-size: 300px; }
+
+  .wordcount { position: absolute; inset: 0; z-index: 10; }
+  .wc-tag { position: absolute; font-family: 'Bebas', Impact, sans-serif; font-size: 46px;
+      color: var(--red); border: 4px solid var(--red); padding: 4px 16px; transform: rotate(-3deg); }
+
+  /* ---------- bingo ---------- */
+  .bingo-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 10px; }
+  .sq { background: var(--lift); border: 3px solid rgba(253,248,242,.14); padding: 30px 26px;
+        min-height: 178px; display: flex; align-items: center; font-size: 33px; font-weight: 700; line-height: 1.2; }
+  .sq.hit { border-color: var(--red); }
+  .sq.hit::after { content: '✕'; position: absolute; }
+  .stamp { position: absolute; font-family: 'Bebas', Impact, sans-serif; color: var(--red);
+        font-size: 150px; opacity: .85; transform: rotate(-14deg); }
+
+  /* ---------- thumbnail grid ---------- */
+  .thumbs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 10px; }
+  .thumb { aspect-ratio: 16/9; position: relative; overflow: hidden; border-radius: 10px;
+        display: flex; align-items: center; justify-content: center; text-align: center;
+        font-family: 'Bebas', Impact, sans-serif; font-size: 58px; line-height: .95; padding: 20px;
+        text-shadow: 0 6px 20px rgba(0,0,0,.8); }
+  .thumb span { position: relative; z-index: 2; }
+  .thumb .arrow { position: absolute; right: 18px; bottom: 10px; font-size: 90px; color: var(--red); z-index: 3; }
+
+  .split { display: flex; gap: 90px; align-items: stretch; }
+  .col { flex: 1; display: flex; flex-direction: column; justify-content: center; text-align: center; }
+  .col .amt { font-family: 'Bebas', Impact, sans-serif; font-size: 210px; line-height: .9; }
+  .col .cap { font-size: 36px; color: rgba(253,248,242,.7); margin-top: 18px; line-height: 1.35; }
+  .col .stack { width: 100%; background: rgba(253,248,242,.09); margin-top: 40px; position: relative; }
+  .col .stack i { display: block; background: var(--amber); }
+  .col.big .amt { color: var(--red); }
+  .col.big .stack i { background: var(--red); }
+</style>
+
+<!-- ============================================ ep01 -->
+<section class="frame checkout" id="checkout-pay-in-4">
+  <div class="card">
+    <div class="shop">MERIDIAN &nbsp;·&nbsp; CHECKOUT</div>
+    <div class="total"><span>Order total</span><span>$16.50</span></div>
+    <div class="pay-options">
+      <div class="pay-opt">
+        <div class="lbl">Pay now</div>
+        <div class="sub">One payment of $16.50<br />Card ending 4417</div>
+      </div>
+      <div class="pay-opt hero">
+        <span class="pill">MOST POPULAR</span>
+        <div class="lbl">Pay in 4</div>
+        <div class="sub"><strong>4 interest-free payments of $4.12</strong><br />0% APR · No fees · No impact to your credit score</div>
+      </div>
+    </div>
+    <div class="fine">
+      Payment plan provided by a third party lender. Late fees may apply. Missed payments may be reported.
+      Availability subject to approval. Terms apply.
+    </div>
+  </div>
+  <div class="recon">reconstruction · invented merchant · not a real checkout</div>
+</section>
+
+<section class="frame dark pad" id="merchant-fee-table">
+  <div class="kicker">what the shop pays</div>
+  <h1 class="title">The fee you<br />never see</h1>
+  <table>
+    <tr><th>Payment method</th><th style="text-align:right">Shop pays</th></tr>
+    <tr><td>Cash</td><td class="num">0%</td></tr>
+    <tr><td>Debit card</td><td class="num">0.3%</td></tr>
+    <tr><td>Credit card</td><td class="num">1.5–2.5%</td></tr>
+    <tr class="hot"><td>Buy now, pay later</td><td class="num">4–6%</td></tr>
+  </table>
+  <p style="margin-top:56px;font-size:38px;color:rgba(253,248,242,.72);line-height:1.4">
+    The shop does not absorb it. It goes into the shelf price —<br />including for the person paying cash.
+  </p>
+  <div class="recon">indicative industry ranges · not one provider's rate card</div>
+</section>
+
+<!-- ============================================ ep02 -->
+<section class="frame dark pad" id="score-breakdown">
+  <div class="kicker">the published weighting</div>
+  <h1 class="title">What the score<br />measures</h1>
+  <div class="bars">
+    <div class="bar-row"><div class="bar-lbl">Payment history <em style="opacity:.55">(on debt)</em></div>
+      <div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-val">35%</div></div>
+    <div class="bar-row"><div class="bar-lbl">Amounts owed</div>
+      <div class="bar-track"><div class="bar-fill" style="width:86%"></div></div><div class="bar-val">30%</div></div>
+    <div class="bar-row"><div class="bar-lbl">Length of credit history</div>
+      <div class="bar-track"><div class="bar-fill" style="width:43%"></div></div><div class="bar-val">15%</div></div>
+    <div class="bar-row"><div class="bar-lbl">New credit</div>
+      <div class="bar-track"><div class="bar-fill" style="width:29%"></div></div><div class="bar-val">10%</div></div>
+    <div class="bar-row"><div class="bar-lbl">Credit mix <em style="opacity:.55">(variety of debt)</em></div>
+      <div class="bar-track"><div class="bar-fill" style="width:29%"></div></div><div class="bar-val">10%</div></div>
+    <div class="bar-row"><div class="bar-lbl" style="color:var(--red)">Your income</div>
+      <div class="bar-track"></div><div class="bar-val" style="color:var(--red)">0%</div></div>
+    <div class="bar-row"><div class="bar-lbl" style="color:var(--red)">Your savings</div>
+      <div class="bar-track"></div><div class="bar-val" style="color:var(--red)">0%</div></div>
+  </div>
+  <div class="recon">standard published FICO category weightings</div>
+</section>
+
+<section class="frame dark pad" id="revolver-chart">
+  <div class="kicker">lifetime value to the lender</div>
+  <h1 class="title">The ideal<br />customer</h1>
+  <div class="bars">
+    <div class="bar-row"><div class="bar-lbl">Never borrows</div>
+      <div class="bar-track"></div><div class="bar-val">$0</div></div>
+    <div class="bar-row"><div class="bar-lbl">Borrows, clears in full<br /><em style="font-size:26px;opacity:.55">industry term: "deadbeat"</em></div>
+      <div class="bar-track"><div class="bar-fill green" style="width:9%"></div></div><div class="bar-val">$310</div></div>
+    <div class="bar-row"><div class="bar-lbl">Carries a balance, always pays<br /><em style="font-size:26px;opacity:.55">industry term: "revolver"</em></div>
+      <div class="bar-track"><div class="bar-fill red" style="width:100%"></div></div><div class="bar-val">$9,400</div></div>
+    <div class="bar-row"><div class="bar-lbl">Defaults</div>
+      <div class="bar-track"><div class="bar-fill" style="width:14%"></div></div><div class="bar-val">−$1,800</div></div>
+  </div>
+  <p style="margin-top:54px;font-size:38px;color:rgba(253,248,242,.72)">
+    A rising score means you moved down this list. Not up.
+  </p>
+  <div class="recon">illustrative · directional, not one lender's book</div>
+</section>
+
+<!-- ============================================ ep03 -->
+<section class="frame ad" id="bank-ad-still">
+  <div class="plate"></div><div class="sun"></div>
+  <div class="brand">HOLLOWAY &amp; SONS</div>
+  <div class="dog">🐕</div>
+  <div class="copy">
+    <div class="headline">Your money,<br />somewhere safe.</div>
+    <div class="strap">Peace of mind, from a bank that's been here since 1878.</div>
+  </div>
+  <div class="terms">
+    Rate may vary. Rate shown is the variable rate at time of publication and may be changed at any time without
+    notice. Eligibility criteria apply. Your deposit is protected up to the applicable statutory limit.
+  </div>
+  <div class="recon">reconstruction · invented bank · composite of common ad copy</div>
+</section>
+
+<section class="frame ad" id="bank-ad-still-2">
+  <div class="plate"></div><div class="sun"></div>
+  <div class="brand">HOLLOWAY &amp; SONS</div>
+  <div class="dog" style="opacity:.35">🐕</div>
+  <div class="copy">
+    <div class="headline">Your money,<br />somewhere safe.</div>
+    <div class="strap">Peace of mind, from a bank that's been here since 1878.</div>
+  </div>
+  <div class="wordcount">
+    <div class="wc-tag" style="left:140px; top:640px">FEELING</div>
+    <div class="wc-tag" style="left:520px; top:770px; transform:rotate(2deg)">FEELING</div>
+    <div class="wc-tag" style="left:980px; top:660px; transform:rotate(-1deg)">FEELING</div>
+    <div class="wc-tag" style="left:1180px; top:840px; transform:rotate(4deg)">FEELING</div>
+    <div class="wc-tag" style="left:140px; top:948px; border-style:dashed">RATE: 0 mentions</div>
+  </div>
+  <div class="recon">reconstruction · invented bank · composite of common ad copy</div>
+</section>
+
+<section class="frame dark pad" id="balance-sheet">
+  <div class="kicker">the bank's own books</div>
+  <h1 class="title">Where your<br />deposit sits</h1>
+  <div class="split" style="gap:70px">
+    <div style="flex:1">
+      <h2 class="mono" style="font-size:30px;letter-spacing:4px;color:rgba(253,248,242,.5);margin-bottom:26px">ASSETS</h2>
+      <table style="font-size:34px">
+        <tr><td>Mortgages lent out</td><td class="num" style="font-size:46px">£4.1bn</td></tr>
+        <tr><td>Business loans</td><td class="num" style="font-size:46px">£0.9bn</td></tr>
+        <tr><td>Government bonds</td><td class="num" style="font-size:46px">£0.6bn</td></tr>
+      </table>
+    </div>
+    <div style="flex:1">
+      <h2 class="mono" style="font-size:30px;letter-spacing:4px;color:rgba(253,248,242,.5);margin-bottom:26px">LIABILITIES</h2>
+      <table style="font-size:34px">
+        <tr class="hot"><td><strong>Customer deposits</strong><br /><em style="font-size:25px;opacity:.7">— your savings account</em></td><td class="num" style="font-size:46px">£5.2bn</td></tr>
+        <tr><td>Wholesale funding</td><td class="num" style="font-size:46px">£0.3bn</td></tr>
+      </table>
+    </div>
+  </div>
+  <p style="margin-top:64px;font-size:40px;color:rgba(253,248,242,.75)">
+    Your balance is filed as a debt the bank owes you. You are the lender.
+  </p>
+  <div class="recon">simplified · structure is standard, figures are illustrative</div>
+</section>
+
+<!-- ============================================ ep04 -->
+<section class="frame dark pad" id="bingo-card">
+  <div class="kicker">42 videos · 1 format</div>
+  <h1 class="title" style="margin-bottom:34px">Passive income bingo</h1>
+  <div class="bingo-grid">
+    <div class="sq hit">Rented supercar in the first 8 seconds<div class="stamp" style="left:60px;top:40px">✕</div></div>
+    <div class="sq hit">"While you sleep"<div class="stamp" style="left:80px;top:30px">✕</div></div>
+    <div class="sq">A whiteboard</div>
+    <div class="sq hit">Dashboard screenshot, revenue not profit<div class="stamp" style="left:70px;top:36px">✕</div></div>
+    <div class="sq hit">"I almost didn't make this video"<div class="stamp" style="left:66px;top:34px">✕</div></div>
+    <div class="sq">"I was sleeping in my car"</div>
+    <div class="sq hit">A number with K after it<div class="stamp" style="left:74px;top:38px">✕</div></div>
+    <div class="sq">"This is not financial advice"</div>
+    <div class="sq hit">Free PDF (is a mailing list)<div class="stamp" style="left:62px;top:32px">✕</div></div>
+    <div class="sq">"Most people will ignore this"</div>
+    <div class="sq hit">"Step 3: scale it"<div class="stamp" style="left:78px;top:40px">✕</div></div>
+    <div class="sq">Airport lounge b-roll</div>
+  </div>
+  <div class="recon">observational · no individual creator depicted</div>
+</section>
+
+<section class="frame dark pad" id="guru-thumbnails">
+  <div class="kicker">the same video, 9 times</div>
+  <h1 class="title" style="margin-bottom:34px">One thumbnail</h1>
+  <div class="thumbs">
+    <div class="thumb" style="background:linear-gradient(135deg,#8b2f2f,#2a1010)"><span>$0 → $10K<br />IN 30 DAYS</span><div class="arrow">↗</div></div>
+    <div class="thumb" style="background:linear-gradient(135deg,#1f4d6b,#0c1c26)"><span>PASSIVE<br />INCOME 2026</span><div class="arrow">↗</div></div>
+    <div class="thumb" style="background:linear-gradient(135deg,#2f6b3a,#0e1f13)"><span>WHILE<br />YOU SLEEP</span><div class="arrow">↗</div></div>
+    <div class="thumb" style="background:linear-gradient(135deg,#6b4a1f,#241806)"><span>NOBODY IS<br />TALKING<br />ABOUT THIS</span><div class="arrow">↗</div></div>
+    <div class="thumb" style="background:linear-gradient(135deg,#4a1f6b,#180a24)"><span>I QUIT<br />MY JOB</span><div class="arrow">↗</div></div>
+    <div class="thumb" style="background:linear-gradient(135deg,#6b1f4a,#240a18)"><span>THE 1%<br />METHOD</span><div class="arrow">↗</div></div>
+    <div class="thumb" style="background:linear-gradient(135deg,#1f6b62,#0a2422)"><span>STOP<br />TRADING TIME<br />FOR MONEY</span><div class="arrow">↗</div></div>
+    <div class="thumb" style="background:linear-gradient(135deg,#6b6b1f,#242408)"><span>$47,000<br />LAST MONTH</span><div class="arrow">↗</div></div>
+    <div class="thumb" style="background:linear-gradient(135deg,#3a3a3a,#101010)"><span>WATCH<br />BEFORE<br />IT'S GONE</span><div class="arrow">↗</div></div>
+  </div>
+  <div class="recon">invented titles · no real channel depicted</div>
+</section>
+
+<section class="frame dark pad" id="hours-chart">
+  <div class="kicker">hours per week</div>
+  <h1 class="title">"Passive"</h1>
+  <div class="bars">
+    <div class="bar-row"><div class="bar-lbl">A full-time job</div>
+      <div class="bar-track"><div class="bar-fill" style="width:62%"></div></div><div class="bar-val">40</div></div>
+    <div class="bar-row"><div class="bar-lbl">Dropshipping, month 1</div>
+      <div class="bar-track"><div class="bar-fill red" style="width:100%"></div></div><div class="bar-val">61</div></div>
+    <div class="bar-row"><div class="bar-lbl">Print on demand</div>
+      <div class="bar-track"><div class="bar-fill red" style="width:71%"></div></div><div class="bar-val">44</div></div>
+    <div class="bar-row"><div class="bar-lbl">A "faceless" channel</div>
+      <div class="bar-track"><div class="bar-fill red" style="width:84%"></div></div><div class="bar-val">52</div></div>
+    <div class="bar-row"><div class="bar-lbl">Owning a thing someone rents</div>
+      <div class="bar-track"><div class="bar-fill green" style="width:3%"></div></div><div class="bar-val">2</div></div>
+  </div>
+  <div class="recon">self-reported ranges · illustrative</div>
+</section>
+
+<!-- ============================================ ep05 -->
+<section class="frame dark pad" id="latte-math">
+  <div class="kicker">30 years, same person</div>
+  <h1 class="title">Doing the maths<br />he skipped</h1>
+  <table>
+    <tr><th>What you gave up</th><th style="text-align:right">30-year total</th></tr>
+    <tr class="good"><td>Every coffee, invested at 7%</td><td class="num">£95,000</td></tr>
+    <tr><td>Rent paid while saving a deposit</td><td class="num">£151,000</td></tr>
+    <tr><td>Inflation on cash savings</td><td class="num">£38,000</td></tr>
+    <tr class="hot"><td><strong>Interest on one ordinary mortgage</strong></td><td class="num">£208,000</td></tr>
+  </table>
+  <p style="margin-top:56px;font-size:38px;color:rgba(253,248,242,.72);line-height:1.4">
+    £200k borrowed at 5.5% over 30 years. You buy the house twice.
+  </p>
+  <div class="recon">worked example · rates and figures illustrative</div>
+</section>
+
+<section class="frame dark pad" id="scale-compare" style="justify-content:center">
+  <div class="split">
+    <div class="col">
+      <div class="amt">£95k</div>
+      <div class="cap">every coffee, for thirty years<br /><strong>~10,000 videos about it</strong></div>
+      <div class="stack" style="height:340px"><i style="height:46%"></i></div>
+    </div>
+    <div class="col big">
+      <div class="amt">£208k</div>
+      <div class="cap">one signature, at twenty-nine<br /><strong>almost none</strong></div>
+      <div class="stack" style="height:340px"><i style="height:100%"></i></div>
+    </div>
+  </div>
+  <div class="recon">worked example · rates and figures illustrative</div>
+</section>
