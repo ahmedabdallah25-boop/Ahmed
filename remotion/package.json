@@ -1,0 +1,27 @@
+{
+  "name": "deen-dinar-short",
+  "version": "1.0.0",
+  "description": "Remotion re-treatment of the Deen & Dinar Episode 1 Short",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render Short out/EP01short-viral.mp4",
+    "still": "remotion still Short"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@remotion/cli": "^4.0.500",
+    "@remotion/google-fonts": "^4.0.500",
+    "@remotion/media-utils": "^4.0.500",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "remotion": "^4.0.500"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
+  }
+}

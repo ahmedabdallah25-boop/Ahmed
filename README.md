@@ -9,6 +9,7 @@ Data pulled 2026-07-17 from public YouTube data via Nexlev.
 |---|---|
 | [`channel-study.md`](channel-study.md) | Full channel performance study: what the winners share, why the insurance arc is slumping |
 | [`last-video-fix.md`](last-video-fix.md) | Copy-paste fix pack for the latest Short (Part 12 — Takaful): new title, description, tags, pinned comment, re-cut hook script, and a 72-hour decision rule |
+| [`remotion/`](remotion/) | **Remotion re-treatment of the Episode 1 Short** — the original spent 68% of the frame on a headline that never moved and burned its narration in at ~24px. Rebuilt as a scene-choreographed reel with film treatment and word-synced kinetic captions. Method in [`remotion/WORKFLOW.md`](remotion/WORKFLOW.md) |
 | [`automation/`](automation/) | **The pipeline that applies all of it automatically** — scripts + GitHub Actions. One-time key setup in [`automation/SETUP.md`](automation/SETUP.md) (~10 min), then: metadata fix, comment posting, playlist-link repair across all 12 videos, and a 6-hourly monitor that applies the 72-hour decision rule |
 
 ## TL;DR
