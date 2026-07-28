@@ -63,4 +63,7 @@ then blurs a full frame on top; on a small container that blows past the 28s
 default and the render dies mid-way with an error that looks like a code bug but
 isn't. On a bigger machine, raise concurrency.
 
-Expect ~30–45 min for a full 7-minute episode on 4 cores.
+Measured: 780 frames (the Ep01 cold open) in 7m18s at concurrency 1 on this
+container — 0.56 s/frame, so a full 12,600-frame episode is **~2 hours** here.
+Raise concurrency to match your cores and it scales close to linearly; on 8
+cores expect 15–25 minutes.
