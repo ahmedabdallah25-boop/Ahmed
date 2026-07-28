@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, staticFile, useCurrentFrame} from 'remotion';
 import {C, posterize, hashNoise, W, H} from './theme';
 
 /**
@@ -10,44 +10,44 @@ import {C, posterize, hashNoise, W, H} from './theme';
  * they are what turns a flat digital chart into something that reads as shot.
  */
 
-/** Animated grain, stepped at 10fps so it crawls like emulsion, not like noise. */
+/**
+ * Animated grain, stepped at 10fps so it crawls like emulsion, not like noise.
+ *
+ * This used to be an feTurbulence filter. Animating its seed regenerated the
+ * whole noise field every frame and made it, with the corner blur, most of the
+ * render cost — the full 1800 frames were tracking at nearly three hours. A
+ * pre-baked fractal tile that simply translates looks the same and costs
+ * essentially nothing, since the compositor just repeats one texture.
+ */
 const Grain: React.FC<{
   opacity: number;
-  scale: number;
+  size: number;
   blend: React.CSSProperties['mixBlendMode'];
   seed: number;
-}> = ({opacity, scale, blend, seed}) => {
+}> = ({opacity, size, blend, seed}) => {
   const frame = useCurrentFrame();
   const step = posterize(frame, 3);
-  const dx = hashNoise(step, seed) * 60;
-  const dy = hashNoise(step, seed + 13) * 60;
+  const dx = hashNoise(step, seed) * size;
+  const dy = hashNoise(step, seed + 13) * size;
 
   return (
-    <AbsoluteFill
+    <div
       style={{
+        position: 'absolute',
+        // Oversized so the per-frame jitter never exposes an edge.
+        left: -size,
+        top: -size,
+        width: W + size * 2,
+        height: H + size * 2,
         opacity,
         mixBlendMode: blend,
-        transform: `translate(${dx}px, ${dy}px) scale(1.3)`,
+        backgroundImage: `url(${staticFile('grain.png')})`,
+        backgroundRepeat: 'repeat',
+        backgroundSize: `${size}px ${size}px`,
+        transform: `translate(${dx}px, ${dy}px)`,
         pointerEvents: 'none',
       }}
-    >
-      {/* Rendered at half resolution and stretched: feTurbulence over a full
-          1080x1920 rect twice per frame dominates the render otherwise, and at
-          this grain size the upscale is invisible. */}
-      <svg width={W / 2} height={H / 2} style={{width: '100%', height: '100%'}}>
-        <filter id={`grain-${seed}`}>
-          <feTurbulence
-            type="fractalNoise"
-            baseFrequency={scale}
-            numOctaves={3}
-            stitchTiles="stitch"
-            seed={seed + (step % 7)}
-          />
-          <feColorMatrix type="saturate" values="0" />
-        </filter>
-        <rect width="100%" height="100%" filter={`url(#grain-${seed})`} />
-      </svg>
-    </AbsoluteFill>
+    />
   );
 };
 
@@ -69,15 +69,21 @@ const ScanLines: React.FC = () => (
   />
 );
 
-/** Lens falloff: corners go soft, so the eye is pinned to the middle third. */
-const CornerBlur: React.FC = () => (
+/**
+ * Lens falloff, so the eye is pinned to the middle third.
+ *
+ * A masked `backdrop-filter: blur()` gives a truer edge softening, but headless
+ * Chrome re-composites the whole frame through it every time and it was the
+ * single most expensive layer here. At this radius the difference between a
+ * blurred edge and a warm haze plus a slight lift is not visible at phone size.
+ */
+const EdgeHaze: React.FC = () => (
   <AbsoluteFill
     style={{
-      backdropFilter: 'blur(4px)',
-      WebkitMaskImage:
-        'radial-gradient(ellipse 80% 62% at 50% 46%, rgba(0,0,0,0) 72%, rgba(0,0,0,1) 100%)',
-      maskImage:
-        'radial-gradient(ellipse 80% 62% at 50% 46%, rgba(0,0,0,0) 72%, rgba(0,0,0,1) 100%)',
+      background: `radial-gradient(ellipse 76% 58% at 50% 46%,
+        rgba(0,0,0,0) 68%,
+        rgba(24,20,16,0.16) 86%,
+        rgba(24,20,16,0.30) 100%)`,
       pointerEvents: 'none',
     }}
   />
@@ -119,9 +125,9 @@ export const FilmTreatment: React.FC = () => (
   <AbsoluteFill style={{pointerEvents: 'none'}}>
     <Grade />
     <ScanLines />
-    <Grain opacity={0.16} scale={0.5} blend="overlay" seed={3} />
-    <Grain opacity={0.09} scale={0.2} blend="soft-light" seed={29} />
-    <CornerBlur />
+    <Grain opacity={0.17} size={420} blend="overlay" seed={3} />
+    <Grain opacity={0.10} size={900} blend="soft-light" seed={29} />
+    <EdgeHaze />
     <Vignette />
   </AbsoluteFill>
 );
