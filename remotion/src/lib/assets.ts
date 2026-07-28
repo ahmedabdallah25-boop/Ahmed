@@ -9,10 +9,23 @@
  * As `clone/build_takes.sh` produces real files, add their names here.
  */
 
-/** Cloned-presenter takes present in public/host. */
-export const TAKES: string[] = [
-  'placeholder.mp4',
-];
+/**
+ * Cloned-presenter takes present in public/host, mapped to their length in
+ * seconds.
+ *
+ * The length is not decoration. A beat can ask for a source frame past the end
+ * of its take — always, while the 10-second placeholder stands in for every
+ * take in every script, and occasionally with a real take that came back
+ * shorter than the beats assigned to it. An out-of-range request to the frame
+ * extractor is never answered and the render dies on a delayRender timeout that
+ * reads like a performance problem. Knowing the length lets `takeFrame()` wrap
+ * the request instead. `clone/build_takes.sh` measures and prints this map.
+ */
+export const TAKES: Record<string, number> = {
+  'placeholder.mp4': 10,
+};
+
+export const TAKE_NAMES = Object.keys(TAKES);
 
 /** Sound effects present in public/sfx (filenames without extension). */
 export const SFX: string[] = [];
@@ -55,7 +68,19 @@ export const NARRATION: Record<string, string | null> = {
  * one is rendered, so the whole 7 minutes previews end-to-end from day one.
  */
 export const resolveTake = (take: string): string =>
-  TAKES.includes(take) ? take : (TAKES[0] ?? 'placeholder.mp4');
+  take in TAKES ? take : (TAKE_NAMES[0] ?? 'placeholder.mp4');
+
+/**
+ * Wrap a source frame into a take's actual length, so no decode is ever asked
+ * for a frame that doesn't exist. `frame` is in composition frames, which is
+ * what OffthreadVideo's `startFrom` expects regardless of the take's own fps.
+ */
+export const takeFrame = (take: string, frame: number, fps: number): number => {
+  const seconds = TAKES[take];
+  if (!seconds) return Math.max(0, frame);
+  const length = Math.max(1, Math.floor(seconds * fps) - 1);
+  return ((Math.max(0, Math.round(frame)) % length) + length) % length;
+};
 
 export const hasSfx = (name?: string): name is string => !!name && SFX.includes(name);
 export const hasMusic = (name?: string | null): name is string => !!name && MUSIC.includes(name);

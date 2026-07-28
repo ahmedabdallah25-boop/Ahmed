@@ -24,7 +24,15 @@ const Visual: React.FC<{ beat: PlacedBeat }> = ({ beat }) => {
 
   switch (v.type) {
     case 'host':
-      return <Host take={resolveTake(v.take)} zoom={v.zoom} jumpCuts={v.jumpCuts} muted />;
+      return (
+        <Host
+          take={resolveTake(v.take)}
+          zoom={v.zoom}
+          jumpCuts={v.jumpCuts}
+          startFrom={beat.takeOffset}
+          muted
+        />
+      );
 
     case 'pip':
       return (
@@ -34,7 +42,12 @@ const Visual: React.FC<{ beat: PlacedBeat }> = ({ beat }) => {
           ) : (
             <AbsoluteFill style={{ backgroundColor: COLORS.bgLift }} />
           )}
-          <PictureInPicture take={resolveTake(v.take)} corner={v.corner} zoom={v.zoom} />
+          <PictureInPicture
+            take={resolveTake(v.take)}
+            corner={v.corner}
+            zoom={v.zoom}
+            startFrom={beat.takeOffset}
+          />
         </AbsoluteFill>
       );
 
@@ -44,7 +57,7 @@ const Visual: React.FC<{ beat: PlacedBeat }> = ({ beat }) => {
       ) : (
         // Evidence not dropped in yet: hold the host rather than cutting to black,
         // so a preview of an unfinished episode still plays as a video.
-        <Host take={resolveTake('')} zoom={1.18} muted />
+        <Host take={resolveTake('')} zoom={1.18} startFrom={beat.takeOffset} muted />
       );
 
     case 'freeze':

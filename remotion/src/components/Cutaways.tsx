@@ -21,6 +21,7 @@ import {
 } from 'remotion';
 import { COLORS, FONTS } from '../theme';
 import type { Annotation } from '../lib/timeline';
+import { takeFrame } from '../lib/assets';
 
 export const Cutaway: React.FC<{ src: string; kenBurns?: boolean; deepFried?: boolean }> = ({
   src,
@@ -66,8 +67,11 @@ export const PictureInPicture: React.FC<{
   take: string;
   corner?: 'br' | 'bl' | 'tr' | 'tl';
   zoom?: number;
-}> = ({ take, corner = 'br', zoom = 1.35 }) => {
+  /** Source frame to pick up on — keeps the corner performance in sync with the VO. */
+  startFrom?: number;
+}> = ({ take, corner = 'br', zoom = 1.35, startFrom = 0 }) => {
   const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
   const pop = interpolate(frame, [0, 5], [0.86, 1], { extrapolateRight: 'clamp' });
 
   const pos: React.CSSProperties = {
@@ -93,6 +97,8 @@ export const PictureInPicture: React.FC<{
     >
       <OffthreadVideo
         src={staticFile(`host/${take}`)}
+        startFrom={takeFrame(take, startFrom, fps)}
+        muted
         style={{
           width: '100%',
           height: '100%',
@@ -115,6 +121,7 @@ export const FreezeFrame: React.FC<{ take: string; frame: number; zoom?: number 
   zoom = 1.5,
 }) => {
   const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
   const shake = frame < 6 ? (random(`fz${frame}`) - 0.5) * 14 : 0;
 
   return (
@@ -123,7 +130,7 @@ export const FreezeFrame: React.FC<{ take: string; frame: number; zoom?: number 
         <div style={{ height: '100%', aspectRatio: '9 / 16', overflow: 'hidden' }}>
           <OffthreadVideo
             src={staticFile(`host/${take}`)}
-            startFrom={sourceFrame}
+            startFrom={takeFrame(take, sourceFrame, fps)}
             muted
             // Playback rate near zero holds the frame; Remotion still resolves a
             // real decoded frame, so the grade and grain match the moving shots.

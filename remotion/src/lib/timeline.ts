@@ -65,13 +65,41 @@ export type Script = {
   beats: Beat[];
 };
 
-export type PlacedBeat = Beat & { from: number; frames: number };
+export type PlacedBeat = Beat & {
+  from: number;
+  frames: number;
+  /**
+   * Source frame this beat starts at inside its take. Consecutive beats sharing
+   * a take are reading one continuous performance, so each one has to pick up
+   * where the last left off — otherwise every beat restarts the take at frame 0
+   * and the mouth stops matching the locked VO within a second.
+   */
+  takeOffset: number;
+};
+
+/** The take a beat reads from, if it reads from one at all. */
+const takeOf = (beat: Beat): string | null => {
+  const v = beat.visual;
+  return v.type === 'host' || v.type === 'pip' || v.type === 'freeze' ? v.take : null;
+};
 
 export const buildTimeline = (script: Script): PlacedBeat[] => {
   let cursor = 0;
+  // Per take, how much of it has already been consumed by earlier beats.
+  const consumed = new Map<string, number>();
+
   return script.beats.map((beat) => {
     const frames = Math.max(1, Math.round(beat.dur * FPS));
-    const placed: PlacedBeat = { ...beat, from: cursor, frames };
+    const take = takeOf(beat);
+    const takeOffset = take ? (consumed.get(take) ?? 0) : 0;
+
+    // A freeze holds one frame; it doesn't advance the performance, and the
+    // frame it holds is named explicitly in the beat.
+    if (take && beat.visual.type !== 'freeze') {
+      consumed.set(take, takeOffset + frames);
+    }
+
+    const placed: PlacedBeat = { ...beat, from: cursor, frames, takeOffset };
     cursor += frames;
     return placed;
   });

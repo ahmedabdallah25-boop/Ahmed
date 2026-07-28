@@ -11,11 +11,27 @@
  *
  * If a take is genuinely 16:9 (see clone/README.md — the avatar renderer can be
  * asked for wide), pass `plate="wide"` and it fills the frame instead.
+ *
+ * Source frames are wrapped through `takeFrame()` against the take's declared
+ * length. A beat can legitimately ask for a frame past the end of its take —
+ * always, while the 10-second placeholder stands in for every take in the
+ * script. An out-of-range request to the frame extractor is simply never
+ * answered, and the render dies on a delayRender timeout that reads like a
+ * performance problem rather than a bad seek.
  */
 
 import React from 'react';
-import { AbsoluteFill, Easing, OffthreadVideo, interpolate, staticFile, useCurrentFrame } from 'remotion';
+import {
+  AbsoluteFill,
+  Easing,
+  OffthreadVideo,
+  interpolate,
+  staticFile,
+  useCurrentFrame,
+  useVideoConfig,
+} from 'remotion';
 import { COLORS } from '../theme';
+import { takeFrame } from '../lib/assets';
 
 export type HostProps = {
   /** File in public/host, e.g. "ep01-a01.mp4". */
@@ -24,8 +40,9 @@ export type HostProps = {
   /** 1 = as shot. 1.25–1.45 is the punch-in. Applied instantly, no ramp. */
   zoom?: number;
   /**
-   * Number of jump cuts inside this beat. Each one silently drops ~10 source
-   * frames, which is what makes the delivery feel de-breathed and fast.
+   * Number of jump cuts inside this beat — the actual count, spaced evenly
+   * across the beat. Each one silently drops ~10 source frames, which is what
+   * makes the delivery feel de-breathed and fast.
    */
   jumpCuts?: number;
   /** Source frame the take starts on. */
@@ -37,6 +54,11 @@ export type HostProps = {
 
 const JUMP_DROP = 10;
 
+/** The blurred set extension is painted at a quarter of frame size, then scaled up. */
+const BACKDROP_SCALE = 4;
+const BACKDROP_W = 1920 / BACKDROP_SCALE;
+const BACKDROP_H = 1080 / BACKDROP_SCALE;
+
 export const Host: React.FC<HostProps> = ({
   take,
   plate = 'vertical',
@@ -47,11 +69,15 @@ export const Host: React.FC<HostProps> = ({
   muted = false,
 }) => {
   const frame = useCurrentFrame();
+  // Inside a <Sequence>, this is the beat's own length — so the cuts are spaced
+  // across the beat rather than at a fixed cadence that ignores how long it is.
+  const { durationInFrames, fps } = useVideoConfig();
 
   // Every jump cut the playhead has already passed adds to the amount of
   // source we skip, so time is removed rather than repeated.
-  const cutsPassed = jumpCuts > 0 ? Math.floor(frame / Math.max(1, 90 / jumpCuts)) : 0;
-  const sourceStart = startFrom + cutsPassed * JUMP_DROP;
+  const spacing = jumpCuts > 0 ? durationInFrames / (jumpCuts + 1) : 0;
+  const cutsPassed = spacing > 0 ? Math.min(jumpCuts, Math.floor(frame / spacing)) : 0;
+  const sourceStart = takeFrame(take, startFrom + cutsPassed * JUMP_DROP, fps);
 
   const wobble = drift
     ? interpolate(frame, [0, 240], [0, 1.6], {
@@ -84,20 +110,34 @@ export const Host: React.FC<HostProps> = ({
   return (
     <AbsoluteFill style={{ backgroundColor: COLORS.bg, overflow: 'hidden' }}>
       {/* Set extension: the same take, blown out and blurred, so the wide frame
-          reads as the same room rather than as black bars. */}
-      <AbsoluteFill>
-        <OffthreadVideo
-          src={src}
-          startFrom={sourceStart}
-          muted
+          reads as the same room rather than as black bars.
+
+          Painted at quarter size and scaled up, rather than blurred at full
+          frame. Chromium's blur cost scales with painted area, and a full-frame
+          48px blur on a 1.9x-scaled 1080p layer is expensive enough to blow the
+          delayRender budget partway through a long render. At 1/4 scale the
+          same look costs ~16x less, and it is a blur — nothing is lost. */}
+      <AbsoluteFill style={{ alignItems: 'center', justifyContent: 'center' }}>
+        <div
           style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            transform: 'scale(1.9)',
-            filter: 'blur(48px) saturate(0.7) brightness(0.42)',
+            width: BACKDROP_W,
+            height: BACKDROP_H,
+            transform: `scale(${BACKDROP_SCALE * 1.9})`,
+            overflow: 'hidden',
           }}
-        />
+        >
+          <OffthreadVideo
+            src={src}
+            startFrom={sourceStart}
+            muted
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              filter: `blur(${48 / BACKDROP_SCALE}px) saturate(0.7) brightness(0.42)`,
+            }}
+          />
+        </div>
       </AbsoluteFill>
 
       {/* The plate itself. */}

@@ -74,6 +74,14 @@ takes `ep01-hook`, `ep01-a` … `ep01-g` for exactly this. Long unbroken avatar
 renders accumulate drift — the head slowly centres, the blink rate goes
 metronomic, the micro-movement decays. Keep each take under ~90 seconds.
 
+**A take is one continuous performance.** Every beat sharing a take name is
+reading a consecutive stretch of the VO, and `buildTimeline` gives each beat the
+source offset where the previous one left off. So `ep01-a.mp4` must contain the
+narration for `thesis-1`, `thesis-2` and `thesis-3` back to back, in that order,
+generated from that span of the locked VO track — not three separate renders and
+not the same 15 seconds three times. Get this wrong and the mouth stops matching
+the voice about a second into the second beat.
+
 **Vary the framing between takes, not just the zoom.** The `zoom` values in the
 scripts punch in on the *same* plate, which is a real editing move. But if
 every take is generated at identical framing, the punch-ins are the only

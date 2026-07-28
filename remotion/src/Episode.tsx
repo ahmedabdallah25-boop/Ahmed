@@ -9,6 +9,7 @@ import { buildTimeline, type Script } from './lib/timeline';
 import { NARRATION } from './lib/assets';
 import { BeatScene } from './components/Beat';
 import { Grade } from './components/Grade';
+import { FontFaces } from './components/FontFaces';
 import { COLORS } from './theme';
 
 export const Episode: React.FC<{ script: Script }> = ({ script }) => {
@@ -17,6 +18,8 @@ export const Episode: React.FC<{ script: Script }> = ({ script }) => {
 
   return (
     <AbsoluteFill style={{ backgroundColor: COLORS.bg }}>
+      <FontFaces />
+
       {beats.map((beat) => (
         <BeatScene key={beat.id} beat={beat} />
       ))}

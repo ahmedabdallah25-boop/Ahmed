@@ -38,8 +38,17 @@ for f in "${FILES[@]}"; do
 done
 
 echo
-echo "Now list them in remotion/src/lib/assets.ts so the compositions pick them up:"
+echo "Now list them in remotion/src/lib/assets.ts so the compositions pick them up."
+echo "The number is the take's length in seconds — the timeline needs it to keep"
+echo "any beat from seeking past the end of its take."
 echo
-echo "export const TAKES: string[] = ["
-for f in "${FILES[@]}"; do echo "  '$(basename "$f")',"; done
-echo "];"
+echo "export const TAKES: Record<string, number> = {"
+for f in "${FILES[@]}"; do
+  name="$(basename "$f")"
+  # Measure the conformed output, not the source: build_takes re-times to 30fps.
+  secs="$("$FF" -v error -i "$OUT/$name" -f null - 2>&1 |
+          grep -oE 'time=[0-9:.]+' | tail -1 | cut -d= -f2 |
+          awk -F: '{printf "%.1f", $1*3600+$2*60+$3}')"
+  echo "  '$name': ${secs:-0},"
+done
+echo "};"
