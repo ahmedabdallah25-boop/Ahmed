@@ -62,14 +62,23 @@ Global style suffix — append to every prompt for series consistency:
 
 ## 4. Motion graphics prompts
 
-### Demotion (shot-level motion from the stills above)
+**Pipeline:** Remotion owns the timeline and the final render (it's the compositor). HyperFrames produces the four typographic/data overlays as transparent WebMs, dropped into the Remotion timeline with `<Video>` inside the matching `<Sequence>`. The six stills from §3 are the plates in `public/plates/`.
 
-- **Beat 1–2 — `phone-balance.png`** — `Slow 8% push-in on the phone. The balance digits count down from 14,208.00 to 426.24 over 1.2s with a mechanical odometer roll, then hold. Screen glow dims 20% as the number falls. Micro camera handheld drift, 4s.`
-- **Beat 3 — `empty-vault.png`** — `Vault door swings open 90° over 1.5s with heavy inertia and a settle-bounce. Camera dollies through the doorway into the dark interior. The single coin catches a moving specular glint. Dust motes drift upward. 6s.`
-- **Beat 4 — `lending-cascade.png`** — `Coins fall continuously through the five tiers, each tier's stream visibly thinner than the one above. Loopable, 8s, constant downward motion, no camera move.`
-- **Beat 5 — `thirty-owners.png`** — `Phone screens illuminate one at a time in a rapid stagger across the grid, 30 in 2.5s, each with a soft bloom. The central coin stays perfectly still and sharp while the grid softens out of focus behind it. 8s.`
-- **Beat 6 — `bank-run.png`** — `Rain falls in sheets, crowd shifts and presses forward, steel shutter descends the final third and slams, all light cutting out on the impact. Camera locked off. 6s.`
-- **Beat 7 — `real-assets.png`** — `Gold particles stream from the vault into the three wireframe blueprints, which fill in solid from bottom to top in sequence — house, then panels, then truck — over 4s. Slow crane-up. 10s.`
+### Remotion (React/TSX — one `<Sequence>` per beat)
+
+Root spec: `<Composition id="Part15" width={1080} height={1920} fps={30} durationInFrames={1560} />`. All motion from `useCurrentFrame()` + `interpolate`/`spring` — no CSS transitions or `requestAnimationFrame`. Every `interpolate` call uses `extrapolateLeft: 'clamp', extrapolateRight: 'clamp'`. Plates render via `<Img src={staticFile(...)}/>` wrapped in an absolute-fill div with `transform: scale()` for Ken Burns.
+
+Prompt for each component (`src/beats/*.tsx`):
+
+- **`Beat1Balance.tsx` — frames 0–240 (beats 1–2)** — `Plate phone-balance.png, scale interpolated 1.00 → 1.08 across the full 240 frames for a slow push-in. Overlay the HyperFrames reserve-counter WebM in a Sequence at frame 0. Add a 4px-amplitude handheld drift: translateX/Y driven by Math.sin(frame / 17) and Math.sin(frame / 23). Screen-glow div (radial-gradient, mix-blend-mode: screen) opacity interpolated 1 → 0.8 over frames 120–156 so the light drops as the number falls.`
+- **`Beat3Vault.tsx` — frames 240–420** — `Plate empty-vault.png. Door layer as a separate transparent PNG with transformOrigin on the hinge edge, rotateY 0 → 90deg via spring({frame, fps, config: {damping: 12, mass: 2}}) for heavy inertia and a settle-bounce. Camera dolly = parent scale 1.0 → 1.25 over frames 285–420. Twenty dust-mote divs, each position seeded from its index with a deterministic random(index) helper, drifting upward at index-varied speeds.`
+- **`Beat4Cascade.tsx` — frames 420–660** — `Plate lending-cascade.png held static, no camera move. Five tier layers, each emitting coins: coin i's Y = ((frame * speed + offset_i) % 1920), count per tier = [24, 18, 13, 9, 6] so each stream is visibly thinner than the one above. All positions are pure functions of frame — deterministic, so the render is frame-accurate and seekable. Layer the HyperFrames multiplier-chain WebM on top at frame 420.`
+- **`Beat5Owners.tsx` — frames 660–900** — `Plate thirty-owners.png. Thirty absolutely-positioned screen-glow divs on a 5x6 grid, each fading in over 9 frames starting at frame 660 + index * 2.5 — a 30-item stagger completing in 75 frames. Background grid blurs via filter: blur() interpolated 0 → 6px over frames 750–900 while the centre coin layer stays unblurred and un-animated. HyperFrames ownership-tally WebM on top.`
+- **`Beat6Run.tsx` — frames 900–1080** — `Plate bank-run.png, camera locked off — no scale, no translate. Rain as a tiling PNG strip scrolled by translateY(frame * 22 % tileHeight). Shutter layer translateY 0 → 33% of frame height, easing Easing.in(Easing.cubic), landing on frame 1050. On the slam, a full-frame black div goes opacity 0 → 1 over frames 1050–1056, and the light-leak layer cuts to 0 on the same frame.`
+- **`Beat7Assets.tsx` — frames 1080–1380** — `Plate real-assets.png. Slow crane-up: translateY 0 → -80px across the beat. Three blueprint layers fill bottom-to-top using clipPath: inset() interpolated 100% → 0%, staggered 30 frames apart — house at 1110, panels at 1140, truck at 1170, each filling over 40 frames. Gold particle stream from the vault to each blueprint: 40 divs on a quadratic bezier path, t = (frame + index * 3) % 90 / 90.`
+- **`Beat8Kicker.tsx` — frames 1380–1560** — `Holds the final frame of the Beat 7 plate at scale 1.25, darkened by a black overlay at opacity 0.55. HyperFrames kicker-card WebM on top from frame 1380. Logo lockup springs in at frame 1500, config {damping: 200}.`
+
+Audio: `<Audio src={staticFile('vo.mp3')}/>` at the root, and set the beat boundaries above from the actual VO waveform once recorded — the frame numbers here are the script's timings, not the recording's.
 
 ### HyperFrames (typographic + data overlays, transparent WebM/MOV over the plates)
 
