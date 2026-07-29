@@ -131,24 +131,45 @@ def repackage(yt, playlist_url: str) -> None:
 
 # --- 3. the funnel --------------------------------------------------------
 
+def is_funnel_line(line: str) -> bool:
+    """A funnel line is a ▶ bullet pointing at a youtu.be video.
+
+    Deliberately narrow, so the two other ▶ bullets survive: the playlist line
+    links youtube.com/playlist, and the X/social line links no video at all. The
+    numbered "Part N - ...: https://youtu.be/..." series links don't start with ▶.
+    """
+    stripped = line.strip()
+    return stripped.startswith("▶") and "youtu.be/" in stripped
+
+
 def inject_funnel(yt) -> None:
-    """Put the long-form link at the top of every Short's description."""
+    """Point every Short's description at the *current* long-form.
+
+    Retargeting to a new long-form must REPLACE the previous funnel line, not
+    stack on top of it — otherwise each Short accumulates links and keeps sending
+    its traffic to a retired video.
+    """
     funnel = CFG["shorts_funnel_line"].strip()
-    added = 0
+    changed = 0
     for vid in CFG["shorts_video_ids"]:
         snippet = get_snippet(yt, vid)
         if snippet is None:
             print(f"  skip {vid}: not found")
             continue
+
         desc = snippet.get("description", "")
-        if VIDEO_ID in desc:
+        kept = [ln for ln in desc.splitlines() if not is_funnel_line(ln)]
+        stale = len(desc.splitlines()) - len(kept)
+        rebuilt = f"{funnel}\n\n{chr(10).join(kept).lstrip()}"
+
+        if rebuilt == desc:
             continue
-        snippet["description"] = f"{funnel}\n\n{desc}"
+        snippet["description"] = rebuilt
         put_snippet(yt, vid, snippet)
-        added += 1
-        print(f"  funnel -> {vid}")
-    print(f"  funnel line on {added} Short(s)"
-          f"{' (all already linked)' if not added else ''}")
+        changed += 1
+        print(f"  funnel -> {vid}" + (f" (replaced {stale} stale line(s))" if stale else ""))
+    print(f"  funnel line current on {len(CFG['shorts_video_ids'])} Short(s); "
+          f"{changed} updated this run")
 
 
 # --- 4. playlist membership -----------------------------------------------
@@ -206,11 +227,12 @@ def report(yt) -> None:
     if hours < rule["decision_hours"]:
         verdict = f"WAIT ({rule['decision_hours'] - hours:.0f}h to the call)"
     elif views >= rule["pass_views"]:
-        verdict = "PASS — funnel works, ship Episode 2 on the Part 8 topic"
+        verdict = "PASS — funnel works, ship Episode 2 (the car / $8,000 episode)"
     elif views <= rule["dead_views"]:
-        verdict = "DEAD — stop long-form until ~1k subs, put the effort back into Shorts"
+        verdict = ("DEAD — the Shorts audience will not cross over yet. Keep long-form to one "
+                   "episode a month and put the effort back into the Shorts series")
     else:
-        verdict = "GRAY — funnel works, packaging doesn't: retitle + new thumbnail"
+        verdict = "GRAY — funnel works, packaging doesn't: swap to the A/B title + new thumbnail"
 
     print(f"\n{views} views · {int(stats.get('likeCount', 0))} likes · "
           f"{int(stats.get('commentCount', 0))} comments · {hours:.0f}h old\n"

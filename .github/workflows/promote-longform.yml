@@ -26,3 +26,13 @@ jobs:
           YT_CLIENT_ID: ${{ secrets.new1 }}
           YT_CLIENT_SECRET: ${{ secrets.new2 }}
           YT_REFRESH_TOKEN: ${{ secrets.new3 }}
+
+      # Search is one of only three surfaces long-form can reach on this channel,
+      # and an uncaptioned 18-minute explainer gives it nothing to index.
+      - name: Upload caption track
+        working-directory: automation
+        run: python upload_captions.py ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          YT_CLIENT_ID: ${{ secrets.new1 }}
+          YT_CLIENT_SECRET: ${{ secrets.new2 }}
+          YT_REFRESH_TOKEN: ${{ secrets.new3 }}
