@@ -1,0 +1,396 @@
+===============================================================================
+DEEN & DINAR - EPISODE 2
+"How to Buy a House Without Ever Paying Interest"
+VOICEOVER SCRIPT - TTS / RECORDING READY
+Runtime 13:20 | ~1,850 words | target pace ~145 wpm
+===============================================================================
+
+TAG LEGEND
+-------------------------------------------------------------------------------
+[flat]          deadpan, no lift - lets the number do the work
+[cold]          clipped, unsentimental, slightly detached
+[measured]      steady explainer pace, the default voice of this channel
+[leaning in]    quieter, closer to mic, conspiratorial
+[weight]        slower, heavier, land every word
+[grave]         lowest register, full seriousness
+[plain]         no performance at all - deliberate restraint
+[warm]          softer, human, on the viewer's side
+[building]      pace and pitch climbing across the line
+[sharp]         crisp attack, hard consonants
+[knowing]       slight edge, almost a half-smile
+[level]         honest, unguarded, dropping the presenter voice
+[lift]          brighter, forward-moving, resolves the tension
+[pause]         full beat of silence - do not trim in the edit
+[beat]          half-beat, breath only
+-------------------------------------------------------------------------------
+NOTE: Tags are delivery direction. If routing through ElevenLabs v3 or similar,
+they can be read as audio tags directly. If recording human VO, treat them as
+margin notes. Do not read tags aloud.
+===============================================================================
+
+
+-------------------------------------------------------------------------------
+SCENE 1 - COLD OPEN                                              0:00 - 0:18
+-------------------------------------------------------------------------------
+
+[flat] Your mortgage payment this month is one thousand, four hundred and
+sixty-one pounds.
+
+[beat]
+
+[cold] Four hundred and twenty pounds of that buys your house.
+
+[pause]
+
+[leaning in] The other one thousand and forty-two is rent. [beat] On money.
+[beat] Not on the property. [weight] On the money.
+
+
+-------------------------------------------------------------------------------
+SCENE 2 - THE STAKE                                              0:18 - 0:52
+-------------------------------------------------------------------------------
+
+[measured] Run that forward.
+
+[building] Ten years in. A hundred and twenty payments, never missed. You have
+handed over a hundred and seventy-five thousand pounds.
+
+[pause]
+
+[weight] And you still owe a hundred and eighty-four thousand.
+
+[pause]
+
+[grave] You have paid more than you have cleared.
+
+[pause]
+
+[measured] Over the full twenty-five years the interest alone comes to a
+hundred and eighty-eight thousand pounds.
+
+[flat] That is a second house.
+
+[knowing] You just don't get to live in it.
+
+
+-------------------------------------------------------------------------------
+SCENE 3 - THE PROMISE                                            0:52 - 1:20
+-------------------------------------------------------------------------------
+
+[measured] Most people assume that's just what a mortgage is.
+
+[sharp] It isn't.
+
+[measured] It's one specific structure, and there are three others that are
+used every day by Islamic banks in Britain, America and the Gulf.
+
+[building] In the next twelve minutes: why the conventional mortgage is shaped
+the way it is. What the three halal alternatives actually do differently -
+Murabaha, Ijara, and Diminishing Musharaka.
+
+[leaning in] And the four questions that separate a genuine Islamic mortgage
+from a conventional loan wearing Arabic vocabulary.
+
+
+-------------------------------------------------------------------------------
+SCENE 4 - WHAT A MORTGAGE ACTUALLY IS                            1:20 - 2:50
+-------------------------------------------------------------------------------
+
+[leaning in] Here's the part that gets skipped.
+
+[measured] When you take a conventional mortgage, the bank does not buy you a
+house. The bank lends you cash. You buy the house. The bank takes a legal
+charge over it as security.
+
+[weight] That distinction is everything.
+
+[measured] The bank never owns the property. It never carries the risk of
+owning it.
+
+[sharp] If the roof fails, that's yours. If the market collapses, that's yours.
+
+[grave] If the building burns down uninsured, you still owe every penny.
+
+[pause]
+
+[measured] What the bank owns is a claim on you. And that claim grows at a
+fixed percentage, guaranteed, regardless of what happens to the asset - or to
+you.
+
+[cold] Money lent. More money back. No ownership and no risk taken in between.
+
+[pause]
+
+[weight] That is the definition.
+
+[flat] Not the marketing. The mechanism.
+
+
+-------------------------------------------------------------------------------
+SCENE 5 - WHY THE EARLY YEARS ARE BRUTAL                         2:50 - 4:20
+-------------------------------------------------------------------------------
+
+[measured] Now watch how it's sequenced.
+
+[measured] Interest is charged on what you still owe. At the start you owe
+almost everything - so almost everything you pay is interest.
+
+[building] In year one, seventeen and a half thousand pounds leaves your
+account. Twelve thousand three hundred of it is interest.
+
+[sharp] Seventy-one percent.
+
+[pause]
+
+[weight] You are not really buying a house in year one. You are renting the
+money to buy it later.
+
+[measured] The crossover - the first month where more of your payment goes to
+the house than to the bank - doesn't arrive until year thirteen.
+
+[flat] Half the term.
+
+[measured] And that's if rates never move and you never remortgage.
+
+[knowing] Every time you remortgage, the clock resets. And you walk straight
+back into the front-loaded years again.
+
+
+-------------------------------------------------------------------------------
+SCENE 6 - THE PRINCIPLE                                          4:20 - 5:20
+-------------------------------------------------------------------------------
+*** DELIVER THIS SCENE PLAIN. NO MUSIC. NO REVERB. NO LIFT. ***
+*** The restraint is the point - it is what separates this channel. ***
+
+[plain] This is where the Qur'anic ruling stops being abstract.
+
+[plain] The verse doesn't forbid profit. It permits trade and forbids riba - in
+the same breath, in the same sentence.
+
+[pause]
+
+[plain] So the line isn't between making money and not making money. It's
+between two ways of making it.
+
+[measured] In trade, you own something, you carry the risk of owning it, and
+you profit if it goes well.
+
+[measured] In riba, you part with money, you carry no risk at all, and your
+return is guaranteed in advance.
+
+[pause]
+
+[weight] Ownership. And risk.
+
+[measured] Hold onto those two words - because every structure in the next half
+of this video is an attempt to put them back into the transaction.
+
+
+-------------------------------------------------------------------------------
+SCENE 7 - STRUCTURE 1: MURABAHA                                  5:20 - 7:00
+-------------------------------------------------------------------------------
+
+[lift] Structure one. Murabaha. Cost-plus sale.
+
+[measured] The bank buys the property outright. It actually owns it - title,
+risk, the lot. Then it sells that property on to you at a price that's stated
+openly: the cost, plus an agreed markup. You pay that total in instalments over
+an agreed term.
+
+[measured] Two things follow from that.
+
+[sharp] The bank took ownership - however briefly - and with it, the risk.
+
+[building] And your price is fixed at signature. Two hundred and ninety
+thousand pounds is two hundred and ninety thousand pounds.
+
+[weight] It cannot grow.
+
+[measured] There is no compounding, because there's no outstanding loan to
+compound. There's a sale price, and a balance remaining on it.
+
+[level] The trade-off is rigidity. Fixed price cuts both ways - settle early
+and you may not save much, because you owe a price, not an interest-bearing
+balance.
+
+
+-------------------------------------------------------------------------------
+SCENE 8 - STRUCTURE 2: IJARA WA IQTINA                           7:00 - 8:45
+-------------------------------------------------------------------------------
+
+[lift] Structure two. Ijara wa Iqtina - a lease that ends in ownership.
+
+[measured] Again the bank buys the property and holds the title. But this time
+it doesn't sell it to you up front. It leases it to you.
+
+[measured] You pay rent for the use of an asset that someone else owns - which
+is an ordinary, permitted transaction. At the end of the term, or progressively
+along the way, ownership transfers to you.
+
+[leaning in] And because the bank holds the title, it holds the obligations
+that come with it.
+
+[measured] Structural insurance. Major repairs. The loss if the building is
+destroyed. Those sit with the owner - not the tenant.
+
+[weight] That's not a technicality. That's the risk the whole ruling turns on,
+sitting exactly where it should.
+
+[pause]
+
+[level] The trade-off is that rent can be reviewed. A poorly written Ijara lets
+the bank reprice the rent against a market benchmark.
+
+[knowing] And if that benchmark is just the base rate under a different name -
+you have re-created the thing you were avoiding.
+
+[building] Which brings us to the structure most British and American Islamic
+banks actually use.
+
+
+-------------------------------------------------------------------------------
+SCENE 9 - STRUCTURE 3: DIMINISHING MUSHARAKA                     8:45 - 10:30
+-------------------------------------------------------------------------------
+
+[lift] Structure three. Diminishing Musharaka. Shared, shrinking partnership.
+
+[measured] This is what Al Rayan, Gatehouse and Guidance Residential are built
+on.
+
+[measured] You and the bank buy the property together. You put in ten percent,
+the bank puts in ninety. You are co-owners. On the title. In those proportions.
+
+[measured] Each month you make two payments that are deliberately kept
+separate. The first is rent - but only on the share you don't own yet. The
+second buys a slice of the bank's share, and moves it to your side permanently.
+
+[leaning in] And here's the part worth sitting with.
+
+[building] As your share grows, the bank's share shrinks. So the rent you owe
+on it falls. Every single month. Automatically.
+
+[weight] Your position improves as time passes - rather than in spite of it.
+
+[pause]
+
+[cold] Compare that to the chart from earlier. Where you were still underwater
+at year ten.
+
+[measured] Ownership is real, it's on the register, and the risk is shared in
+proportion to it.
+
+
+-------------------------------------------------------------------------------
+SCENE 10 - SIDE BY SIDE                                         10:30 - 11:15
+-------------------------------------------------------------------------------
+
+[measured] All three, side by side.
+
+[measured] Murabaha gives you certainty - a fixed price you can plan around.
+
+[measured] Ijara gives you flexibility, and puts the ownership burden squarely
+on the bank.
+
+[measured] Musharaka gives you a cost that falls as you go - and it's the one
+most widely available in the West.
+
+[level] None of them is automatically the best. They answer different
+questions.
+
+
+-------------------------------------------------------------------------------
+SCENE 11 - THE FOUR QUESTIONS                                   11:15 - 12:30
+-------------------------------------------------------------------------------
+
+[leaning in] Now the part that matters most. Because not every product marketed
+as Islamic survives contact with these four questions.
+
+[sharp] One. Does the bank actually take legal title - even for a moment?
+
+[cold] If it never appears on the register, you have a loan with a different
+name on the paperwork.
+
+[sharp] Two. Is the profit disclosed and agreed at signing - or does it float
+against a benchmark?
+
+[level] Floating isn't automatically fatal. But if it tracks the base rate
+exactly, ask what the structure is really doing.
+
+[sharp] Three. If the property is destroyed and uninsured - who takes the loss?
+
+[cold] If the answer is "you, entirely," then the bank never took ownership
+risk. Whatever the contract is called.
+
+[pause]
+
+[leaning in] Four. [beat] The one almost nobody asks.
+
+[measured] What happens if you pay late?
+
+[weight] In a genuine Islamic contract, a late charge cannot become profit for
+the bank - because profit on delay is exactly riba. It must go to charity. And
+the bank must be able to show you that it does.
+
+[sharp] Ask them.
+
+[knowing] The answer will tell you more than the brochure ever will.
+
+[pause]
+
+[level] And I'll be honest with you. There are serious scholars who argue some
+of these products are conventional lending with extra steps.
+
+[level] That criticism isn't unreasonable.
+
+[measured] These four questions are how you check a specific offer - instead of
+trusting a label.
+
+
+-------------------------------------------------------------------------------
+SCENE 12 - RECAP                                                12:30 - 13:00
+-------------------------------------------------------------------------------
+
+[measured] So. A conventional mortgage is a loan secured on a house, priced so
+that ten years in, you've paid a hundred and seventy-five thousand - and still
+owe a hundred and eighty-four.
+
+[building] Murabaha replaces it with a sale. Ijara replaces it with a lease.
+Musharaka replaces it with a partnership that shrinks.
+
+[weight] All three put ownership and risk back where the ruling requires them.
+
+[pause]
+
+[warm] You don't have to accept the hundred and eighty-eight thousand.
+
+[measured] You have to know which of the three fits your situation. And then
+ask the four questions.
+
+
+-------------------------------------------------------------------------------
+SCENE 13 - CLOSE & NEXT                                         13:00 - 13:20
+-------------------------------------------------------------------------------
+
+[warm] If this changed how you read your own mortgage statement - subscribe. A
+new mechanism decoded every week.
+
+[lift] Next episode: whether the savings account you were told was the safe
+option is quietly doing the same thing to you.
+
+
+===============================================================================
+DELIVERY NOTES
+-------------------------------------------------------------------------------
+1. No music for the first 18 seconds. Music enters on "On the money."
+2. Kill the music bed entirely for Scene 6. Bring it back on "Structure one."
+3. The [pause] after "you still owe a hundred and eighty-four thousand" is the
+   most important silence in the video. Give it a full beat. Do not trim it.
+4. Scene 6 has no [building] and no [lift] anywhere in it. That is deliberate.
+   Every competitor scores this moment with reverb - not scoring it is the
+   differentiator.
+5. Numbers are spoken in full ("a hundred and eighty-four thousand"), never as
+   digits. Written out here so TTS reads them correctly.
+6. Pace ~145 wpm. If the render lands under 12:40, slow down - do not add words.
+7. Verify current product terms with Al Rayan, Gatehouse and Guidance
+   Residential before publishing. Structures are stable; provider terms change.
+===============================================================================
