@@ -1,0 +1,41 @@
+{
+  "file": "media/ep2-halal-mortgage.mp4",
+  "title": "How to Buy a House Without Ever Paying Interest",
+  "description": "The three halal home-finance structures explained — Murabaha, Ijara, and Diminishing Musharaka — and the four questions that tell you whether yours is real.\n\nTen years into a £250,000 mortgage at 5% you have paid £175,377 and you still owe £184,811. Over the full term the interest alone comes to £188,443 — a second house you don't get to live in. This episode shows why the schedule is built that way, what the three halal alternatives actually do differently, and how to check a specific product instead of trusting a label.\n\nCHAPTERS\n0:00 The £420 that actually buys your house\n0:20 Ten years in: paid £175,377, still owe £184,811\n0:51 What this episode covers\n1:26 What a mortgage actually is\n2:18 Why the early years are brutal\n3:10 The principle: trade vs riba\n4:02 Structure 1 — Murabaha\n4:53 Structure 2 — Ijara wa Iqtina\n6:17 Structure 3 — Diminishing Musharaka\n7:24 All three side by side\n7:52 The four questions\n9:23 Recap\n10:00 Next episode\n\nWorked example throughout: £250,000 · 5% · 25 years · £1,461/month.\n\nStructure descriptions follow standard AAOIFI-style definitions. Some scholars argue certain retail products are conventional lending with extra steps — that criticism is in the video, not hidden. Verify current terms with the provider before signing anything. This is education, not financial advice.\n\nPart of Deen & Dinar — no jargon, just mechanisms.",
+  "add_tags": [
+    "halal mortgage",
+    "islamic mortgage explained",
+    "buy a house without interest",
+    "diminishing musharaka",
+    "ijara wa iqtina",
+    "murabaha explained",
+    "riba explained",
+    "islamic finance explained",
+    "mortgage interest explained",
+    "amortisation explained"
+  ],
+  "engagement_comment": "Question 4 is the one I'd ask first — what happens if you pay late, and where does that money go? A late charge that becomes profit for the bank is riba by another name. What did your bank say?",
+  "chapters": [
+    [0, "The £420 that actually buys your house"],
+    [20, "Ten years in: paid £175,377, still owe £184,811"],
+    [51, "What this episode covers"],
+    [86, "What a mortgage actually is"],
+    [138, "Why the early years are brutal"],
+    [190, "The principle: trade vs riba"],
+    [242, "Structure 1 — Murabaha"],
+    [293, "Structure 2 — Ijara wa Iqtina"],
+    [377, "Structure 3 — Diminishing Musharaka"],
+    [444, "All three side by side"],
+    [472, "The four questions"],
+    [563, "Recap"],
+    [600, "Next episode"]
+  ],
+  "shorts_funnel_line": "Full breakdown — the three halal mortgage structures and the four questions: [LINK]",
+  "shorts_video_ids": ["riQ7dLSnogo"],
+  "decision_rule": {
+    "window_days": 7,
+    "ship_next_at_views": 150,
+    "repackage_below": 150,
+    "pause_longform_below": 40
+  }
+}

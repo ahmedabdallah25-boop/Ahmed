@@ -1,0 +1,51 @@
+{
+  "film": "part14-raise-trap",
+  "current": "left",
+  "seams": [
+    {
+      "cut": 4.0,
+      "from": "s1-hook",
+      "to": "s2-receipt",
+      "exit": {"axis": "x", "dir": -1},
+      "entry": {"axis": "x", "dir": -1},
+      "technique": "cut-the-curve",
+      "carrier": "#hf-progress"
+    },
+    {
+      "cut": 11.0,
+      "from": "s2-receipt",
+      "to": "s3-mechanism",
+      "exit": {"axis": "x", "dir": -1},
+      "entry": {"axis": "x", "dir": -1},
+      "technique": "cut-the-curve",
+      "carrier": "#hf-progress"
+    },
+    {
+      "cut": 18.0,
+      "from": "s3-mechanism",
+      "to": "s4-cause",
+      "exit": {"axis": "x", "dir": -1},
+      "entry": {"axis": "x", "dir": -1},
+      "technique": "cut-the-curve",
+      "carrier": "#hf-progress"
+    },
+    {
+      "cut": 25.0,
+      "from": "s4-cause",
+      "to": "s5-fix",
+      "exit": {"axis": "z", "dir": -1, "scaleSign": "-"},
+      "entry": {"axis": "z", "dir": -1, "scaleSign": "-"},
+      "technique": "inverse-zoom",
+      "note": "Reserved vector spent on meaning: chapter boundary problem -> fix. ARRIVAL."
+    },
+    {
+      "cut": 32.0,
+      "from": "s5-fix",
+      "to": "s6-cta",
+      "exit": {"axis": "z", "dir": -1, "scaleSign": "-"},
+      "entry": {"axis": "z", "dir": -1, "scaleSign": "-"},
+      "technique": "inverse-zoom",
+      "note": "Same Z sign both sides — conclusion rises out of the fix."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+import {Config} from '@remotion/cli/config';
+
+Config.setVideoImageFormat('jpeg');
+Config.setCodec('h264');
+Config.setChromiumOpenGlRenderer('angle');
+Config.setDelayRenderTimeoutInMilliseconds(60000);

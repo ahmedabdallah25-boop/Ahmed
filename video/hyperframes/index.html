@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Part 14 — The Raise Trap</title>
+    <script src="./gsap.min.js"></script>
+    <style>
+      :root {
+        --bg: #05070a;
+        --ink: #f7f3ea;
+        --dim: #8a8f98;
+        --gold: #e9b949;
+        --green: #12b981;
+        --red: #ff4b4b;
+        --panel: #0e1217;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { background: #000; }
+      #stage {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        font-family: Inter, sans-serif;
+        color: var(--ink);
+      }
+      /* Full-bleed child carries the fill — never the composition root. */
+      #hf-bed {
+        position: absolute;
+        inset: 0;
+        background: var(--bg);
+        background-image:
+          linear-gradient(#f7f3ea0a 1px, transparent 1px),
+          linear-gradient(90deg, #f7f3ea0a 1px, transparent 1px);
+        background-size: 90px 90px;
+      }
+      #hf-vignette {
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(120% 70% at 50% 22%, transparent 30%, var(--bg) 100%);
+      }
+      .scene { position: absolute; inset: 0; }
+      .inner {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 88px;
+      }
+      .l { display: block; font-weight: 700; line-height: 0.98; }
+      .xl { font-size: 150px; letter-spacing: -5px; }
+      .lg { font-size: 104px; letter-spacing: -4px; }
+      .md { font-size: 92px; letter-spacing: -3px; }
+      .sm { font-size: 54px; letter-spacing: -1px; }
+      .xs { font-size: 34px; letter-spacing: 1px; }
+      .gold { color: var(--gold); }
+      .red { color: var(--red); }
+      .green { color: var(--green); }
+      .dim { color: var(--dim); }
+      .tag {
+        align-self: flex-start;
+        background: var(--gold);
+        color: var(--bg);
+        font-size: 34px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        padding: 12px 22px;
+        border-radius: 8px;
+        margin-bottom: 34px;
+      }
+      .tag.ink { background: var(--ink); }
+      .tag.grn { background: var(--green); }
+      .num { font-size: 118px; font-weight: 700; letter-spacing: -4px; }
+      .bar { height: 16px; margin-top: 18px; border-radius: 8px; transform-origin: left center; }
+      .row { margin-bottom: 46px; }
+      .grid { display: flex; flex-wrap: wrap; gap: 14px; margin: 54px 0; max-width: 880px; }
+      .unit {
+        width: 96px; height: 96px; border-radius: 14px;
+        background: var(--panel); border: 4px solid #e9b94955;
+      }
+      .unit.old { background: var(--gold); border-color: var(--gold); }
+      .card {
+        background: var(--panel);
+        border-left: 10px solid var(--green);
+        border-radius: 12px;
+        padding: 26px 30px;
+        margin-bottom: 20px;
+      }
+      .card b { display: block; font-size: 58px; }
+      .card span { display: block; font-size: 34px; color: var(--dim); margin-top: 8px; }
+      .link { width: 8px; background: var(--gold); margin: 10px 0 10px 6px; border-radius: 4px; transform-origin: top center; }
+      .step { font-size: 62px; font-weight: 700; }
+      #hf-progress-track {
+        position: absolute; top: 0; left: 0; right: 0; height: 10px; background: #ffffff14;
+      }
+      #hf-progress { height: 10px; background: var(--gold); transform-origin: left center; transform: scaleX(0); width: 100%; }
+      #hf-flash { position: absolute; inset: 0; background: var(--red); opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <!-- Standalone root: sized box, no <template> wrapper. -->
+    <div
+      id="stage"
+      data-composition-id="part14-raise-trap"
+      data-start="0"
+      data-duration="36"
+      data-fps="30"
+      data-width="1080"
+      data-height="1920"
+    >
+      <div id="hf-bed"></div>
+      <div id="hf-vignette"></div>
+
+      <!-- S1 HOOK -->
+      <div class="scene clip" id="s1-hook" data-start="0" data-duration="4" data-track-index="0">
+        <div class="inner" id="s1-hook-in">
+          <div id="hf-flash"></div>
+          <div class="l xl s1w">YOUR RAISE</div>
+          <div class="l xl gold s1w">WAS 5%.</div>
+          <div class="l md red s1b" style="margin-top: 56px">YOU STILL GOT POORER.</div>
+        </div>
+      </div>
+
+      <!-- S2 THE RECEIPT -->
+      <div class="scene clip" id="s2-receipt" data-start="4" data-duration="7" data-track-index="0">
+        <div class="inner" id="s2-receipt-in">
+          <div class="tag s2r">THE RECEIPT</div>
+          <div class="row s2r">
+            <div class="xs dim">YOUR PAY</div>
+            <div class="num gold" id="s2-pay">$52,000</div>
+            <div class="bar" id="s2-bar-a" style="background: var(--gold); width: 62%"></div>
+          </div>
+          <div class="row s2r">
+            <div class="xs dim">THE SAME BASKET OF STUFF</div>
+            <div class="num red" id="s2-basket">$52,000</div>
+            <div class="bar" id="s2-bar-b" style="background: var(--red); width: 72%"></div>
+          </div>
+          <div class="l md s2r">YOUR MONEY BUYS 2% LESS.</div>
+          <div class="l sm dim s2r" style="margin-top: 26px">THE RAISE WAS A PAY CUT WITH BETTER NEWS.</div>
+        </div>
+      </div>
+
+      <!-- S3 THE MECHANISM -->
+      <div class="scene clip" id="s3-mechanism" data-start="11" data-duration="7" data-track-index="0">
+        <div class="inner" id="s3-mechanism-in">
+          <div class="tag ink s3r">THE MECHANISM</div>
+          <div class="l lg s3r">NOBODY TOOK IT</div>
+          <div class="l lg s3r">OUT OF YOUR ACCOUNT.</div>
+          <div class="grid" id="s3-grid"></div>
+          <div class="l md red s3r">THEY TOOK IT OUT OF WHAT EACH ONE IS WORTH.</div>
+        </div>
+      </div>
+
+      <!-- S4 WHY IT HAPPENS -->
+      <div class="scene clip" id="s4-cause" data-start="18" data-duration="7" data-track-index="0">
+        <div class="inner" id="s4-cause-in">
+          <div class="tag s4r">WHY IT HAPPENS</div>
+          <div class="l lg s4r">BANKS DON'T LEND</div>
+          <div class="l lg gold s4r">SAVED MONEY.</div>
+          <div class="l lg gold s4r">THEY TYPE IT.</div>
+          <div style="margin-top: 60px">
+            <div class="step s4c">A LOAN IS WRITTEN</div>
+            <div class="link s4l" style="height: 46px"></div>
+            <div class="step s4c">NEW MONEY EXISTS</div>
+            <div class="link s4l" style="height: 46px"></div>
+            <div class="step red s4c">YOURS IS WORTH LESS</div>
+          </div>
+          <div class="l sm dim s4r" style="margin-top: 46px">YOUR RAISE WAS CHASING MONEY THAT WAS ALREADY PRINTED.</div>
+        </div>
+      </div>
+
+      <!-- S5 THE FIX — reserved Z vector: arrival -->
+      <div class="scene clip" id="s5-fix" data-start="25" data-duration="7" data-track-index="0">
+        <div class="inner" id="s5-fix-in">
+          <div class="tag grn s5r">THE FIX</div>
+          <div class="l lg s5r">STOP GETTING PAID</div>
+          <div class="l lg green s5r">IN SOMETHING THEY CAN PRINT.</div>
+          <div style="margin-top: 56px">
+            <div class="card s5c"><b>OWN THE ASSET</b><span>Equity, property, a share of a real business</span></div>
+            <div class="card s5c"><b>GET PAID IN RISK</b><span>Profit-share (mudarabah) reprices with the economy</span></div>
+            <div class="card s5c"><b>HOLD SOUND MONEY</b><span>Something no one can type into existence</span></div>
+          </div>
+          <div class="l sm gold s5r" style="margin-top: 30px">1,400 YEARS OLD. STILL THE ONLY EXIT.</div>
+        </div>
+      </div>
+
+      <!-- S6 CTA -->
+      <div class="scene clip" id="s6-cta" data-start="32" data-duration="4" data-track-index="0">
+        <div class="inner" id="s6-cta-in">
+          <div class="l sm gold s6r" style="font-size: 72px">PART 14</div>
+          <div class="l md s6r" style="margin-top: 10px">THE MONEY MACHINE, DECODED</div>
+          <div class="l sm dim s6r" style="margin-top: 34px">No jargon, just mechanisms.</div>
+          <div class="l sm green s6r" style="margin-top: 44px">FOLLOW — PART 15: STUDENT LOANS</div>
+        </div>
+      </div>
+
+      <!-- Carrier that survives every cut. -->
+      <div id="hf-progress-track"><div id="hf-progress"></div></div>
+    </div>
+
+    <script>
+      (function () {
+        // 24 money units; the first 6 are the money that already existed.
+        var grid = document.getElementById('s3-grid');
+        for (var i = 0; i < 24; i++) {
+          var u = document.createElement('div');
+          u.className = 'unit' + (i < 6 ? ' old' : '');
+          u.id = 'part14-unit-' + i;
+          grid.appendChild(u);
+        }
+
+        var tl = gsap.timeline({ paused: true });
+        var IN = { duration: 0.36, ease: 'back.out(1.5)' };
+        // Cut-the-curve: every ordinary seam rides the current (LEFT).
+        var EXIT_X = -300, ENTRY_X = 165; // entry picks up mid-flight, ~55% through
+        var enter = function (sel, at) {
+          tl.from(sel, { x: ENTRY_X, autoAlpha: 0, duration: 0.3, ease: 'power4.out' }, at);
+        };
+        var leave = function (sel, at, cut) {
+          tl.to(sel, { x: EXIT_X, autoAlpha: 0, duration: 0.26, ease: 'power4.in' }, at)
+            .set(sel, { autoAlpha: 0 }, cut);
+        };
+
+        // ── S1 HOOK (0–4) ──
+        enter('#s1-hook-in', 0);
+        tl.from('.s1w', { y: 46, autoAlpha: 0, scale: 0.86, stagger: 0.1, ...IN }, 0.05);
+        tl.from('.s1b', { y: 46, autoAlpha: 0, scale: 0.86, ...IN }, 1.85);
+        tl.to('#hf-flash', {
+          keyframes: [{ opacity: 0.16, duration: 0.1 }, { opacity: 0, duration: 0.5 }],
+        }, 1.85);
+        leave('#s1-hook-in', 3.74, 4);
+
+        // ── S2 RECEIPT (4–11) — staged reveals, counters tick ──
+        enter('#s2-receipt-in', 4);
+        tl.from('.s2r', { y: 46, autoAlpha: 0, stagger: 0.14, ...IN }, 4.05);
+        var pay = { v: 52000 }, basket = { v: 52000 };
+        var fmt = function (n) { return '$' + Math.round(n).toLocaleString('en-US'); };
+        tl.to(pay, {
+          v: 54600, duration: 0.9, ease: 'power3.out',
+          onUpdate: function () { document.getElementById('s2-pay').textContent = fmt(pay.v); },
+        }, 4.8);
+        tl.from('#s2-bar-a', { scaleX: 0, duration: 0.9, ease: 'power3.out' }, 4.8);
+        tl.to(basket, {
+          v: 55692, duration: 0.9, ease: 'power3.out',
+          onUpdate: function () { document.getElementById('s2-basket').textContent = fmt(basket.v); },
+        }, 6.5);
+        tl.from('#s2-bar-b', { scaleX: 0, duration: 0.9, ease: 'power3.out' }, 6.5);
+        leave('#s2-receipt-in', 10.74, 11);
+
+        // ── S3 MECHANISM (11–18) — the supply keeps growing on screen ──
+        enter('#s3-mechanism-in', 11);
+        tl.from('.s3r', { y: 46, autoAlpha: 0, stagger: 0.12, ...IN }, 11.05);
+        tl.from('#s3-grid .unit:not(.old)', {
+          scale: 0.4, autoAlpha: 0, stagger: 0.055, duration: 0.3, ease: 'back.out(1.5)',
+        }, 13.1);
+        leave('#s3-mechanism-in', 17.74, 18);
+
+        // ── S4 CAUSE (18–25) — causal chain, each link launches the next ──
+        enter('#s4-cause-in', 18);
+        tl.from('.s4r', { y: 46, autoAlpha: 0, stagger: 0.12, ...IN }, 18.05);
+        tl.from('.s4c', { y: 40, autoAlpha: 0, stagger: 0.6, ...IN }, 20.6);
+        tl.from('.s4l', { scaleY: 0, stagger: 0.6, duration: 0.28, ease: 'power3.out' }, 20.9);
+        // Stillness before the climax line — the dramatic comma.
+        leave('#s4-cause-in', 24.74, 25);
+
+        // ── S5 FIX (25–32) — ARRIVAL: reserved Z vector, inverse zoom ──
+        tl.from('#s5-fix-in', { scale: 1.28, autoAlpha: 0, duration: 0.34, ease: 'power4.out' }, 25);
+        tl.from('.s5r', { y: 46, autoAlpha: 0, stagger: 0.12, ...IN }, 25.1);
+        tl.from('.s5c', { y: 46, autoAlpha: 0, stagger: 0.5, ...IN }, 26.6);
+        tl.to('#s5-fix-in', { scale: 0.82, autoAlpha: 0, duration: 0.26, ease: 'power4.in' }, 31.74)
+          .set('#s5-fix-in', { autoAlpha: 0 }, 32);
+
+        // ── S6 CTA (32–36) — same Z sign, the conclusion settles in ──
+        tl.from('#s6-cta-in', { scale: 1.06, autoAlpha: 0, duration: 0.3, ease: 'power4.out' }, 32);
+        tl.from('.s6r', { y: 40, autoAlpha: 0, stagger: 0.14, ...IN }, 32.1);
+
+        // Retention bar spans the whole film.
+        tl.fromTo('#hf-progress', { scaleX: 0 }, { scaleX: 1, duration: 36, ease: 'none' }, 0);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines['part14-raise-trap'] = tl;
+      })();
+    </script>
+  </body>
+</html>
