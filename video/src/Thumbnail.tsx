@@ -12,13 +12,13 @@ const H = 720;
 const MID = W / 2;
 
 const HOUSE =
-  'M640 90 L1120 400 L1040 400 L1040 660 L240 660 L240 400 L160 400 Z';
+  'M640 60 L1120 370 L1040 370 L1040 560 L240 560 L240 370 L160 370 Z';
 
 export const Thumbnail: React.FC = () => {
   // Debt curve: outstanding balance over the term — visibly still high at year 10.
   const debt = ROWS.filter((_, i) => i % 6 === 0).map((r, i, arr) => {
     const x = 170 + (i / (arr.length - 1)) * (MID - 200);
-    const y = 200 + (1 - r.balance / ROWS[0].balance) * 380;
+    const y = 160 + (1 - r.balance / ROWS[0].balance) * 340;
     return `${x},${y}`;
   });
 
@@ -56,9 +56,9 @@ export const Thumbnail: React.FC = () => {
               <rect
                 key={i}
                 x={MID + 40 + i * 78}
-                y={600 - (i + 1) * 62}
+                y={550 - (i + 1) * 52}
                 width={58}
-                height={(i + 1) * 62}
+                height={(i + 1) * 52}
                 fill={L.green}
                 rx={6}
               />
@@ -67,15 +67,15 @@ export const Thumbnail: React.FC = () => {
         </g>
 
         <path d={HOUSE} fill="none" stroke="#FFFFFF22" strokeWidth={6} />
-        <line x1={MID} y1={60} x2={MID} y2={680} stroke="#04060A" strokeWidth={12} />
+        <line x1={MID} y1={40} x2={MID} y2={580} stroke="#04060A" strokeWidth={12} />
       </svg>
 
-      <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 24}}>
+      <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 34}}>
         <div
           style={{
             background: L.gold,
             color: '#04060A',
-            fontSize: 168,
+            fontSize: 152,
             fontWeight: 900,
             letterSpacing: -6,
             padding: '0 42px',
