@@ -6,9 +6,12 @@ master — so this closes the "no captions" gap that both long-form uploads have
 shipped with. An owner-uploaded track outranks the ASR one, is indexed by
 search, and drives silent-autoplay retention on browse surfaces.
 
-Idempotent: an existing owner-uploaded track for the same language is updated in
-place rather than duplicated. YouTube's own ASR track (trackKind "ASR") is left
-alone — it cannot be modified and is superseded automatically.
+Idempotent: the track this script created is updated in place rather than
+duplicated. It is identified by TRACK_NAME, not just by language, because
+`captions.update` returns 403 for any track the calling API client did not
+create — including YouTube's own ASR track and anything added through Studio.
+Those are left alone; a separate named track is inserted alongside them and
+takes precedence for viewers and for search.
 
 Needs YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN (see SETUP.md).
 
@@ -20,6 +23,7 @@ import json
 import sys
 from pathlib import Path
 
+from googleapiclient.errors import HttpError
 from googleapiclient.http import MediaFileUpload
 
 from apply_fix import yt_client
@@ -27,19 +31,45 @@ from apply_fix import yt_client
 HERE = Path(__file__).parent
 CFG = json.loads((HERE / "longform.json").read_text())
 LANGUAGE = "en"
-TRACK_NAME = "English"
+TRACK_NAME = "English (Finance Decoded)"   # our marker — see module docstring
 
 
-def existing_track(yt, video_id):
-    """Return the owner-uploaded track for LANGUAGE, or None. ASR is ignored."""
+def own_track(yt, video_id):
+    """Return the track this script previously created, or None.
+
+    Matched on name as well as language: a track with the right language but a
+    different name belongs to Studio or to ASR, and updating it 403s.
+    """
     resp = yt.captions().list(part="snippet", videoId=video_id).execute()
-    for item in resp.get("items", []):
+    items = resp.get("items", [])
+    print(f"  {len(items)} existing track(s) on {video_id}:")
+    for item in items:
         snip = item["snippet"]
-        if snip.get("trackKind") == "ASR":
-            continue
-        if snip.get("language") == LANGUAGE:
+        print(f"    - {snip.get('language')} / {snip.get('name')!r} "
+              f"kind={snip.get('trackKind')} draft={snip.get('isDraft')}")
+
+    for item in items:
+        snip = item["snippet"]
+        if (snip.get("trackKind") != "ASR"
+                and snip.get("language") == LANGUAGE
+                and snip.get("name") == TRACK_NAME):
             return item
     return None
+
+
+def insert(yt, video_id, srt):
+    yt.captions().insert(
+        part="snippet",
+        body={"snippet": {
+            "videoId": video_id,
+            "language": LANGUAGE,
+            "name": TRACK_NAME,
+            "isDraft": False,
+        }},
+        media_body=MediaFileUpload(str(srt), mimetype="application/octet-stream",
+                                   resumable=False),
+    ).execute()
+    print(f"  captions uploaded to {video_id} ({srt.name})")
 
 
 def main():
@@ -53,34 +83,32 @@ def main():
         sys.exit(f"Caption file missing: {srt}\nRegenerate it with make_captions.py.")
 
     yt = yt_client()
-    track = existing_track(yt, video_id)
+    track = own_track(yt, video_id)
 
     if args.dry_run:
-        state = f"update track {track['id']}" if track else "insert a new track"
+        state = f"update our track {track['id']}" if track else "insert a new track"
         print(f"dry-run: would {state} for {video_id} from {srt.name}")
         return
 
-    media = MediaFileUpload(str(srt), mimetype="application/octet-stream", resumable=False)
+    if not track:
+        insert(yt, video_id, srt)
+        return
 
-    if track:
+    try:
         yt.captions().update(
             part="snippet",
             body={"id": track["id"], "snippet": {"isDraft": False}},
-            media_body=media,
+            media_body=MediaFileUpload(str(srt), mimetype="application/octet-stream",
+                                       resumable=False),
         ).execute()
         print(f"  captions updated on {video_id} ({srt.name})")
-    else:
-        yt.captions().insert(
-            part="snippet",
-            body={"snippet": {
-                "videoId": video_id,
-                "language": LANGUAGE,
-                "name": TRACK_NAME,
-                "isDraft": False,
-            }},
-            media_body=media,
-        ).execute()
-        print(f"  captions uploaded to {video_id} ({srt.name})")
+    except HttpError as err:
+        # 403 here means the track is no longer ours to edit (re-created in
+        # Studio, or a different API project). Insert a fresh one instead.
+        if err.resp.status != 403:
+            raise
+        print(f"  ! cannot update track {track['id']} (403) — inserting a new one")
+        insert(yt, video_id, srt)
 
 
 if __name__ == "__main__":
