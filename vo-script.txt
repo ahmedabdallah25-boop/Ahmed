@@ -1,0 +1,47 @@
+PART 15 — "Your Bank Only Has 3 Cents of Every Dollar You Own"
+Read straight through. Target 52s. Beat the pauses, don't rush the first line.
+
+[0:00]
+Right now your bank is holding about three cents of every dollar you think you own.
+
+[0:04]
+Not three percent of the bank's money. Three cents of YOURS.
+
+[0:08]
+The rest isn't in a vault. It isn't anywhere. It's a promise, typed into a screen.
+
+[0:14]
+You deposited a hundred. The bank kept three and lent out ninety-seven.
+That ninety-seven got deposited somewhere else — and lent again.
+
+[0:22]
+One deposit. Thirty different people now believe they own it.
+And every one of them is right, as long as nobody asks.
+
+[0:30]
+That's why a healthy bank dies in a single afternoon.
+Nothing was stolen. Everyone just showed up on the same day.
+
+[0:36]
+The alternative already exists. Your deposit stays YOUR deposit — held, not lent.
+Money only multiplies when something real was actually built.
+
+[0:46]
+Same money. One system needs you not to look.
+Tomorrow: where the ninety-seven actually goes.
+No jargon, just mechanisms.
+
+
+DELIVERY NOTES
+- Line 1 is the whole video. Flat, certain, no upspeak. Land on "own."
+- "Three cents of YOURS" — punch "yours," then a full beat of silence.
+- "It isn't anywhere." — slow down. This is the shock.
+- The cascade (0:14) is the only fast section. Let it run together.
+- "as long as nobody asks" — drop to almost a whisper.
+- "held, not lent" — separate the two words with a hard stop.
+- Signature line: even, unhurried, same read every episode.
+
+AFTER RECORDING
+Save as automation/../public/vo.mp3, then reset the Remotion beat boundaries
+from the actual waveform — the frame numbers in the storyboard are the
+script's timings, not the recording's.
