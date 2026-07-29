@@ -50,7 +50,10 @@ def own_track(yt, video_id):
 
     for item in items:
         snip = item["snippet"]
-        if (snip.get("trackKind") != "ASR"
+        # trackKind comes back lowercase ("asr"), not "ASR" as the docs imply —
+        # the case-sensitive check is what made the first run try to overwrite
+        # YouTube's own auto-caption track, which 403s.
+        if (snip.get("trackKind", "").upper() != "ASR"
                 and snip.get("language") == LANGUAGE
                 and snip.get("name") == TRACK_NAME):
             return item
