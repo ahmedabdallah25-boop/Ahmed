@@ -8,68 +8,189 @@ import {
   PaidVsOwed,
   SharedOwnership,
 } from './charts';
+import {FPS} from '../theme';
 import {Body, Counter, H1, Kicker, L, Panel, Scene, Tick, ease, rise} from './ui';
 
 type S = {dur: number};
 /** Beat helper — scene-relative fraction, so re-timing to the VO is one number. */
 const b = (dur: number, f: number) => Math.round(dur * f);
 
-// ── 1 · COLD OPEN ────────────────────────────────────────────────────────────
+// ── 1 · OPEN (greeting → premise → the number) ───────────────────────────────
+// Beats are anchored to the VO's own pauses, measured with silencedetect:
+// greeting 0–5.4s · long beat · premise 6.9–9.7s · long beat · the numbers 11.1s+.
+const F = (sec: number) => Math.round(sec * FPS);
+
 export const S1: React.FC<S> = ({dur}) => {
   const frame = useCurrentFrame();
-  const push = interpolate(frame, [0, dur], [1, 1.08], {extrapolateRight: 'clamp'});
-  const r0 = ROWS[0];
+
+  // Beat A — the brand open, over the greeting.
+  const brandOut = ease(frame, F(5.4), 12);
+  const wipe = ease(frame, F(0.5), 20);
+
+  // Beat B — the premise question.
+  const B = F(6.9);
+  const premiseOut = ease(frame, F(10.4), 12);
+
+  // Beat C — the payment splits: 71% rent on money, 29% buys the house.
+  const C = F(11.1);
+  const split = ease(frame, C + 26, 30);
+  const stamp = ease(frame, C + 70, 16);
+  const BAR = 1400;
+  const RENT = 0.713; // £1,042 of £1,461
+
+  const words = 'HOW MUCH OF THIS MONTH&rsquo;S PAYMENT ACTUALLY BUYS YOUR HOUSE?'.split(' ');
+
   return (
     <Scene dur={dur}>
+      {/* A — brand */}
       <AbsoluteFill
         style={{
           justifyContent: 'center',
           alignItems: 'center',
-          transform: `scale(${push})`,
+          opacity: 1 - brandOut,
+          transform: `scale(${1 - brandOut * 0.06})`,
         }}
       >
-        <div style={{fontFamily: 'monospace', width: 1200}}>
-          <div
-            style={{
-              ...rise(frame, b(dur, 0.02), 24),
-              display: 'flex',
-              justifyContent: 'space-between',
-              fontSize: 30,
-              letterSpacing: 4,
-              color: L.dim,
-              borderBottom: `2px solid ${L.line}`,
-              paddingBottom: 18,
-            }}
-          >
-            <span>MONTH</span>
-            <span>INTEREST</span>
-            <span>BUYS THE HOUSE</span>
+        <div style={{...rise(frame, F(0.2), 16), fontSize: 34, letterSpacing: 12, color: L.gold, fontWeight: 700}}>
+          DEEN &amp; DINAR · EPISODE 2
+        </div>
+        <div
+          style={{
+            ...rise(frame, F(0.9), 18),
+            fontSize: 116,
+            fontWeight: 700,
+            letterSpacing: -4,
+            marginTop: 26,
+            textAlign: 'center',
+            lineHeight: 1.05,
+          }}
+        >
+          THE MONEY MACHINE,
+          <br />
+          DECODED
+        </div>
+        <div
+          style={{
+            height: 8,
+            width: 760 * wipe,
+            background: L.gold,
+            marginTop: 40,
+            borderRadius: 4,
+          }}
+        />
+        <div style={{...rise(frame, F(2.6), 16), fontSize: 40, color: L.dim, marginTop: 34}}>
+          No jargon, just mechanisms.
+        </div>
+      </AbsoluteFill>
+
+      {/* B — the premise, one word at a time */}
+      <AbsoluteFill
+        style={{
+          justifyContent: 'center',
+          padding: '0 40px',
+          opacity: (1 - premiseOut) * ease(frame, B, 8),
+        }}
+      >
+        <div
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: '10px 22px',
+            fontSize: 96,
+            fontWeight: 700,
+            letterSpacing: -3,
+            lineHeight: 1.05,
+          }}
+        >
+          {words.map((w, i) => {
+            const r = rise(frame, B + 6 + i * 3, 10);
+            const hot = w.startsWith('BUYS') || w.startsWith('HOUSE');
+            return (
+              <span
+                key={i}
+                style={{...r, display: 'block', color: hot ? L.gold : L.ink}}
+                dangerouslySetInnerHTML={{__html: w}}
+              />
+            );
+          })}
+        </div>
+      </AbsoluteFill>
+
+      {/* C — the split */}
+      <AbsoluteFill
+        style={{justifyContent: 'center', alignItems: 'center', opacity: ease(frame, C, 10)}}
+      >
+        <div style={{width: BAR}}>
+          <div style={{display: 'flex', alignItems: 'baseline', gap: 26, marginBottom: 22}}>
+            <span style={{fontSize: 32, letterSpacing: 5, color: L.dim, fontWeight: 700}}>
+              MONTH 1 · YOUR PAYMENT
+            </span>
+            <span style={{fontSize: 72, fontWeight: 700, color: L.ink}}>
+              {gbp(CANON.payment)}
+            </span>
           </div>
+
+          {/* one bar that splits in two — the payment being divided */}
+          <div style={{position: 'relative', height: 96}}>
+            <div
+              style={{
+                position: 'absolute',
+                left: 0,
+                width: BAR * RENT - split * 26,
+                height: 96,
+                background: L.red,
+                borderRadius: 12,
+                transform: `translateX(${-split * 26}px)`,
+              }}
+            />
+            <div
+              style={{
+                position: 'absolute',
+                left: BAR * RENT,
+                width: BAR * (1 - RENT),
+                height: 96,
+                background: L.green,
+                borderRadius: 12,
+                transform: `translateX(${split * 26}px) scaleY(${1 + stamp * 0.16})`,
+              }}
+            />
+          </div>
+
+          <div style={{display: 'flex', justifyContent: 'space-between', marginTop: 26}}>
+            <div style={{...rise(frame, C + 34, 12)}}>
+              <div style={{fontSize: 66, fontWeight: 700, color: L.red}}>
+                {gbp(CANON.m1Interest)}
+              </div>
+              <div style={{fontSize: 34, color: L.dim, letterSpacing: 3, marginTop: 6}}>
+                RENT — ON MONEY, NOT ON THE HOUSE
+              </div>
+            </div>
+            <div style={{...rise(frame, C + 52, 12), textAlign: 'right'}}>
+              <div
+                style={{
+                  fontSize: 66 + stamp * 26,
+                  fontWeight: 700,
+                  color: L.green,
+                }}
+              >
+                {gbp(CANON.m1Principal)}
+              </div>
+              <div style={{fontSize: 34, color: L.dim, letterSpacing: 3, marginTop: 6}}>
+                BUYS YOUR HOUSE
+              </div>
+            </div>
+          </div>
+
           <div
             style={{
-              ...rise(frame, b(dur, 0.12), 24),
-              display: 'flex',
-              justifyContent: 'space-between',
-              alignItems: 'baseline',
-              fontSize: 76,
+              ...rise(frame, C + 88, 14),
+              marginTop: 54,
+              fontSize: 44,
               fontWeight: 700,
-              marginTop: 34,
+              color: L.gold,
             }}
           >
-            <span style={{color: L.dim}}>1</span>
-            <span style={{color: L.red}}>{gbp(CANON.m1Interest)}</span>
-            <span style={{color: L.ink}}>{gbp(CANON.m1Principal)}</span>
-          </div>
-          <div
-            style={{
-              ...rise(frame, b(dur, 0.45), 20),
-              marginTop: 40,
-              fontSize: 38,
-              color: L.dim,
-              letterSpacing: 2,
-            }}
-          >
-            PAYMENT {gbp(CANON.payment)} · 71% OF IT IS RENT ON MONEY
+            71% of it never touches the property.
           </div>
         </div>
       </AbsoluteFill>

@@ -11,7 +11,7 @@
 export const VO_DURATION = 617.12;
 
 export const CUTS = [
-  0, // 1  Cold open
+  0, // 1  Open — greeting (0–5.4s), premise (6.9s), the split (11.1s)
   20.03, // 2  The stake
   51.21, // 3  The promise
   86.04, // 4  What a mortgage actually is
@@ -28,7 +28,7 @@ export const CUTS = [
 ];
 
 export const CHAPTERS = [
-  'Cold open',
+  'Open',
   'The stake',
   'The promise',
   'What a mortgage actually is',
