@@ -1,8 +1,9 @@
 # Episode 1 Short — Remotion rebuild
 
-A ground-up motion-graphics rebuild of the Episode 1 Short. The original clip's
-**audio is kept exactly as it was**; every pixel is new — kinetic typography,
-boxed captions and data animations drawn in Remotion at 1080×1920 / 30fps / 60s.
+A ground-up rebuild of the Episode 1 Short. The original clip's **audio is kept
+exactly as it was**; everything you see is new. No frame, crop, or export from
+the source video appears anywhere in the output — every pixel is drawn from
+code at 1080×1920 / 30fps / 60s.
 
 ```
 npm install
@@ -17,28 +18,43 @@ network access to Remotion's browser download, point it at a local one:
 REMOTION_BROWSER=/path/to/headless_shell npm run build
 ```
 
+## Visual identity — "After Hours"
+
+A dark market terminal at night. The film has its own look, deliberately
+unrelated to the source clip's warm editorial styling:
+
+- **Field** — blue-black well, a chart grid that breathes, two slow colour
+  blooms, film grain, and a scan line that sweeps once every few seconds.
+- **Type** — Archivo Black for captions and headline words, JetBrains Mono for
+  every label, readout and figure. Data is always mono; speech is always
+  Archivo.
+- **Colour** — `loss` red, `gain` mint, `cool` blue, and an electric `live`
+  yellow reserved for the word currently being spoken.
+- **Chrome** — viewfinder corner ticks, a chapter tag that re-pops on each act,
+  a running clock, and a progress rail that takes the current act's accent.
+
 ## What's in here
 
 | Path | What it does |
 |---|---|
-| `src/Ep01Short.tsx` | Composition root: paper, six act layers, captions, chrome, audio |
+| `src/Ep01Short.tsx` | Composition root: field, six act layers, captions, HUD, audio |
 | `src/data/script.ts` | The transcript with per-word frame timings (see below) |
-| `src/components/Kinetic.tsx` | The caption engine — one phrase at a time, each word landing on the frame it is spoken |
-| `src/components/Paper.tsx` | Warm paper stock: ledger rules, ink washes, grain, vignette |
-| `src/components/Chrome.tsx` | Chapter chip, standing headline, brand bar, progress rule |
-| `src/components/Ui.tsx` | Shared primitives: `Card`, `Figure` (count-up), `Bar`, `Stamp` |
+| `src/components/Kinetic.tsx` | The caption engine — each word lands on the frame it is spoken, the live word painted into a solid block |
+| `src/components/Field.tsx` | The backdrop |
+| `src/components/Hud.tsx` | Corner ticks, chapter tag, clock, progress rail, wordmark |
+| `src/components/Ui.tsx` | Shared primitives: `Panel`, `Readout`, `Figure` (count-up), `Bar`, `Slam` |
 | `src/scenes/Act*.tsx` | The six data scenes |
 | `public/audio.wav` | The original audio (see the sync note) |
-| `public/fonts/` | Anton + Inter, bundled so renders never need the network |
+| `public/fonts/` | Archivo Black + JetBrains Mono, bundled so renders never need the network |
 
 ## The six acts
 
 | Frames | Chapter | Graphics |
 |---|---|---|
-| 0–405 | Year 2 · The Crash | Book-value line climbs, plunges; `−35%` stamp; Sammy vs Adam totals; `BEHIND BY $5,300` |
-| 405–776 | The Real Gap | Paid-in vs worth-today bars with a `−$4,600` shortfall, then 36 deposit tiles struck through |
-| 776–960 | The Moment | The sell/hold fork with a pulsing decision node; arithmetic glyphs crossed out |
-| 960–1312 | The Noise | Friends / brother-in-law / father speech cards stacking under a reddening field |
+| 0–405 | The Crash | Book value climbs in mint, plunges in red under a glowing area fill; `−35%` slams in; Sammy vs Adam panels; `BEHIND BY $5,300` |
+| 405–776 | The Real Gap | Paid-in vs worth-today bars with a `−$4,600` shortfall, then 36 deposit cells struck through |
+| 776–960 | The Moment | The sell/hold fork with a pulsing decision node; arithmetic glyphs struck out |
+| 960–1312 | The Noise | Friends / brother-in-law / father cards stacking, each on its own accent |
 | 1312–1566 | Adam Is Ahead | Adam's flat cash line over Sammy's ghosted ride; `ZERO` losses; `AHEAD BY $5,300` |
 | 1566–1800 | The Sell Button | The whole ride with `MOST PEOPLE SELL HERE` at the trough and the dashed recovery nobody waits for |
 

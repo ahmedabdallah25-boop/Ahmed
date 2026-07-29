@@ -1,14 +1,14 @@
 import React from 'react';
 import {interpolate, useCurrentFrame} from 'remotion';
 import {C, FONT, STAGE} from '../theme';
-import {Label, useRise} from '../components/Ui';
+import {Readout, useRise} from '../components/Ui';
 
 const W = STAGE.width;
-const H = 330;
+const H = 400;
 const NODE_X = 280;
-const NODE_Y = 214;
-const UP = -176;
-const DOWN = 104;
+const NODE_Y = 236;
+const UP = -196;
+const DOWN = 118;
 
 const GLYPHS = ['+', '−', '×', '÷', '%', '='];
 
@@ -24,22 +24,22 @@ export const Act3Fork: React.FC = () => {
   const stem = draw(782, 22);
   const sell = draw(812, 26);
   const hold = draw(824, 30);
-  const pulse = 1 + Math.sin(frame / 4.5) * 0.09;
+  const pulse = 1 + Math.sin(frame / 4.5) * 0.12;
   const mathIn = useRise(890, 22);
   const strike = draw(922, 24);
 
   return (
     <div style={{width: W, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
       <div style={{width: '100%'}}>
-        <Label size={26}>The fork · month 30</Label>
+        <Readout>The fork · month 30</Readout>
       </div>
 
-      <div style={{width: W, height: H, position: 'relative', marginTop: 22}}>
+      <div style={{width: W, height: H, position: 'relative', marginTop: 24}}>
         <svg width={W} height={H} style={{overflow: 'visible'}}>
           <path
             d={`M0,${NODE_Y} L${NODE_X},${NODE_Y}`}
-            stroke={C.ink}
-            strokeWidth={11}
+            stroke={C.textDim}
+            strokeWidth={9}
             strokeLinecap="round"
             fill="none"
             pathLength={1}
@@ -50,38 +50,46 @@ export const Act3Fork: React.FC = () => {
             d={`M${NODE_X},${NODE_Y} C${NODE_X + 190},${NODE_Y} ${NODE_X + 250},${
               NODE_Y + DOWN - 10
             } ${W},${NODE_Y + DOWN}`}
-            stroke={C.rust}
-            strokeWidth={13}
+            stroke={C.loss}
+            strokeWidth={11}
             strokeLinecap="round"
             fill="none"
             pathLength={1}
             strokeDasharray={1}
             strokeDashoffset={1 - sell}
+            style={{filter: `drop-shadow(0 0 14px ${C.loss}AA)`}}
           />
           <path
             d={`M${NODE_X},${NODE_Y} C${NODE_X + 200},${NODE_Y} ${NODE_X + 260},${
               NODE_Y + UP + 12
             } ${W},${NODE_Y + UP}`}
-            stroke={C.olive}
-            strokeWidth={13}
+            stroke={C.gain}
+            strokeWidth={11}
             strokeLinecap="round"
             fill="none"
             pathLength={1}
             strokeDasharray={1}
             strokeDashoffset={1 - hold}
+            style={{filter: `drop-shadow(0 0 14px ${C.gain}AA)`}}
           />
           {stem > 0.9 ? (
             <>
               <circle
                 cx={NODE_X}
                 cy={NODE_Y}
-                r={32 * pulse}
+                r={30 * pulse}
                 fill="none"
-                stroke={C.gold}
-                strokeWidth={5}
-                opacity={0.75}
+                stroke={C.live}
+                strokeWidth={4}
+                opacity={0.8}
               />
-              <circle cx={NODE_X} cy={NODE_Y} r={18} fill={C.ink} />
+              <circle
+                cx={NODE_X}
+                cy={NODE_Y}
+                r={15}
+                fill={C.live}
+                style={{filter: `drop-shadow(0 0 20px ${C.live})`}}
+              />
             </>
           ) : null}
         </svg>
@@ -89,14 +97,14 @@ export const Act3Fork: React.FC = () => {
         <div
           style={{
             position: 'absolute',
-            top: NODE_Y + UP - 84,
+            top: NODE_Y + UP - 80,
             right: 0,
             opacity: hold,
             transform: `translateX(${interpolate(hold, [0, 1], [40, 0])}px)`,
             fontFamily: FONT.display,
-            fontSize: 70,
-            color: C.olive,
-            letterSpacing: 2,
+            fontSize: 62,
+            color: C.gain,
+            textShadow: `0 0 26px ${C.gain}88`,
           }}
         >
           HOLD
@@ -104,14 +112,14 @@ export const Act3Fork: React.FC = () => {
         <div
           style={{
             position: 'absolute',
-            top: NODE_Y + DOWN + 12,
+            top: NODE_Y + DOWN + 14,
             right: 0,
             opacity: sell,
             transform: `translateX(${interpolate(sell, [0, 1], [40, 0])}px)`,
             fontFamily: FONT.display,
-            fontSize: 70,
-            color: C.rust,
-            letterSpacing: 2,
+            fontSize: 62,
+            color: C.loss,
+            textShadow: `0 0 26px ${C.loss}88`,
           }}
         >
           SELL
@@ -135,20 +143,19 @@ export const Act3Fork: React.FC = () => {
           <div
             key={g}
             style={{
-              width: 118,
-              height: 118,
-              borderRadius: 24,
-              border: `3px solid ${C.ink}`,
-              background: C.paperLift,
+              width: 114,
+              height: 114,
+              border: `2px solid ${C.textDim}77`,
+              background: `${C.surfaceLift}F0`,
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              fontFamily: FONT.display,
-              fontSize: 68,
-              color: C.ink,
-              boxShadow: '0 10px 0 -3px rgba(23,21,15,0.28)',
-              opacity: 1 - strike * 0.55,
-              transform: `rotate(${(i % 2 ? 1 : -1) * strike * 7}deg) translateY(${strike * 14}px)`,
+              fontFamily: FONT.mono,
+              fontWeight: 800,
+              fontSize: 62,
+              color: C.text,
+              opacity: 1 - strike * 0.6,
+              transform: `rotate(${(i % 2 ? 1 : -1) * strike * 8}deg) translateY(${strike * 16}px)`,
             }}
           >
             {g}
@@ -161,11 +168,10 @@ export const Act3Fork: React.FC = () => {
               top: 52,
               left: 0,
               width: W * strike,
-              height: 14,
-              background: C.ink,
-              borderRadius: 999,
-              transform: 'rotate(-2.5deg)',
-              boxShadow: '0 5px 0 -1px rgba(23,21,15,0.32)',
+              height: 8,
+              background: C.live,
+              boxShadow: `0 0 22px ${C.live}`,
+              transform: 'rotate(-2deg)',
             }}
           />
         ) : null}

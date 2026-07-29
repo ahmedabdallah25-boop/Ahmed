@@ -1,10 +1,10 @@
 import React from 'react';
 import {interpolate, useCurrentFrame} from 'remotion';
 import {C, FONT, STAGE} from '../theme';
-import {Label, useRise} from '../components/Ui';
+import {Readout, useRise} from '../components/Ui';
 
 const W = STAGE.width;
-const H = 420;
+const H = 472;
 
 /** t -> height fraction: the climb, the crash, and the recovery nobody waits for. */
 const curve = (t: number) => {
@@ -20,6 +20,7 @@ const seg = (a: number, b: number, n = 34) =>
   }).join(' ');
 
 const BEFORE = seg(0, 0.66);
+const BEFORE_FILL = `${BEFORE} L${(0.66 * W).toFixed(1)},${H} L0,${H} Z`;
 const AFTER = seg(0.66, 1);
 const TROUGH_X = 0.66 * W;
 const TROUGH_Y = H - curve(0.66) * H;
@@ -30,62 +31,85 @@ export const Act6SellHere: React.FC = () => {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });
-  const mark = useRise(1596, 20, 11);
+  const mark = useRise(1596, 20, 12);
   const after = interpolate(frame, [1694, 1756], [0, 1], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });
-  const pain = useRise(1770, 22);
+  const close = useRise(1770, 22);
 
   return (
     <div style={{width: W, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
       <div style={{width: '100%'}}>
-        <Label size={26}>The whole ride</Label>
+        <Readout>The whole ride</Readout>
       </div>
 
-      <div style={{width: W, height: H + 20, position: 'relative', marginTop: 20}}>
-        <svg width={W} height={H + 20} style={{overflow: 'visible'}}>
-          <line x1={0} y1={H} x2={W} y2={H} stroke={C.ink} strokeWidth={3} opacity={0.4} />
-          <path
-            d={BEFORE}
-            fill="none"
-            stroke={C.rust}
-            strokeWidth={14}
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            pathLength={1}
-            strokeDasharray={1}
-            strokeDashoffset={1 - drawn}
-          />
+      <div style={{width: W, height: H + 24, position: 'relative', marginTop: 24}}>
+        <svg width={W} height={H + 24} style={{overflow: 'visible'}}>
+          <defs>
+            <linearGradient id="rideFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor={C.loss} stopOpacity={0.32} />
+              <stop offset="100%" stopColor={C.loss} stopOpacity={0} />
+            </linearGradient>
+            <clipPath id="rideClip">
+              <rect x={-10} y={-40} width={(W + 20) * drawn} height={H + 70} />
+            </clipPath>
+          </defs>
+
+          <line x1={0} y1={H} x2={W} y2={H} stroke={C.hairLit} strokeWidth={2} />
+
+          <g clipPath="url(#rideClip)">
+            <path d={BEFORE_FILL} fill="url(#rideFill)" />
+            <path
+              d={BEFORE}
+              fill="none"
+              stroke={C.loss}
+              strokeWidth={12}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              style={{filter: `drop-shadow(0 0 16px ${C.loss}AA)`}}
+            />
+          </g>
+
           {/* what happens after the sell button — dashed, because they never see it */}
           <path
             d={AFTER}
             fill="none"
-            stroke={C.olive}
-            strokeWidth={14}
+            stroke={C.gain}
+            strokeWidth={12}
             strokeLinecap="round"
-            strokeDasharray="22 18"
+            strokeDasharray="20 18"
             opacity={after}
-            style={{strokeDashoffset: -frame * 0.9}}
+            style={{
+              strokeDashoffset: -frame * 0.9,
+              filter: `drop-shadow(0 0 14px ${C.gain}88)`,
+            }}
           />
+
           {mark > 0 ? (
             <>
               <circle
                 cx={TROUGH_X}
                 cy={TROUGH_Y}
-                r={(28 + Math.sin(frame / 4) * 5) * Math.min(1, mark * 1.4)}
+                r={(26 + Math.sin(frame / 4) * 6) * Math.min(1, mark * 1.4)}
                 fill="none"
-                stroke={C.rust}
-                strokeWidth={6}
+                stroke={C.loss}
+                strokeWidth={4}
               />
-              <circle cx={TROUGH_X} cy={TROUGH_Y} r={16} fill={C.rust} />
+              <circle
+                cx={TROUGH_X}
+                cy={TROUGH_Y}
+                r={14}
+                fill={C.loss}
+                style={{filter: `drop-shadow(0 0 18px ${C.loss})`}}
+              />
               <line
                 x1={TROUGH_X}
-                y1={TROUGH_Y - 36}
+                y1={TROUGH_Y - 34}
                 x2={TROUGH_X}
-                y2={TROUGH_Y - 92}
-                stroke={C.rust}
-                strokeWidth={5}
+                y2={TROUGH_Y - 88}
+                stroke={C.loss}
+                strokeWidth={4}
                 opacity={mark}
               />
             </>
@@ -96,30 +120,31 @@ export const Act6SellHere: React.FC = () => {
           <div
             style={{
               position: 'absolute',
-              top: TROUGH_Y - 168,
-              left: TROUGH_X - 230,
-              width: 460,
+              top: TROUGH_Y - 164,
+              left: TROUGH_X - 240,
+              width: 480,
               display: 'flex',
               justifyContent: 'center',
               opacity: Math.min(1, mark * 1.7),
               transform: `translateY(${interpolate(mark, [0, 1], [26, 0])}px) scale(${interpolate(
                 mark,
                 [0, 1],
-                [0.8, 1],
+                [0.82, 1],
               )})`,
             }}
           >
             <div
               style={{
-                padding: '13px 28px 16px',
-                borderRadius: 18,
-                background: C.rust,
-                color: '#FFF3E2',
-                fontFamily: FONT.display,
-                fontSize: 50,
-                letterSpacing: 2,
-                boxShadow: `0 11px 0 -3px ${C.rustDeep}`,
+                padding: '12px 26px 16px',
+                border: `3px solid ${C.loss}`,
+                background: `${C.void}D8`,
+                color: C.loss,
+                fontFamily: FONT.mono,
+                fontWeight: 800,
+                fontSize: 40,
+                letterSpacing: 1,
                 whiteSpace: 'nowrap',
+                boxShadow: `0 0 32px ${C.loss}55`,
               }}
             >
               MOST PEOPLE SELL HERE
@@ -131,16 +156,17 @@ export const Act6SellHere: React.FC = () => {
           <div
             style={{
               position: 'absolute',
-              top: H - curve(1) * H - 66,
+              top: H - curve(1) * H - 62,
               right: -6,
               opacity: after,
               transform: `translateX(${interpolate(after, [0, 1], [40, 0])}px)`,
-              fontFamily: FONT.ui,
-              fontWeight: 800,
-              fontSize: 28,
+              fontFamily: FONT.mono,
+              fontWeight: 700,
+              fontSize: 26,
               letterSpacing: 3,
               textTransform: 'uppercase',
-              color: C.olive,
+              color: C.gain,
+              textShadow: `0 0 20px ${C.gain}66`,
             }}
           >
             The part they never see
@@ -148,22 +174,21 @@ export const Act6SellHere: React.FC = () => {
         ) : null}
       </div>
 
-      {/* final beat */}
+      {/* closing beat */}
       <div
         style={{
-          marginTop: 54,
-          padding: '18px 44px 22px',
-          borderRadius: 24,
-          background: C.ink,
-          fontFamily: FONT.ui,
-          fontWeight: 900,
-          fontSize: 44,
-          letterSpacing: 2,
-          color: C.goldSoft,
+          marginTop: 58,
+          padding: '18px 42px 22px',
+          border: `2px solid ${C.live}55`,
+          borderTop: `5px solid ${C.live}`,
+          background: `${C.surface}F0`,
+          fontFamily: FONT.display,
+          fontSize: 40,
+          letterSpacing: -0.5,
+          color: C.text,
           textTransform: 'uppercase',
-          boxShadow: '0 14px 0 -4px rgba(23,21,15,0.35)',
-          opacity: Math.min(1, pain * 1.8),
-          transform: `scale(${interpolate(pain, [0, 1], [0.86, 1])})`,
+          opacity: Math.min(1, close * 1.8),
+          transform: `scale(${interpolate(close, [0, 1], [0.88, 1])})`,
         }}
       >
         Selling is not the safe choice

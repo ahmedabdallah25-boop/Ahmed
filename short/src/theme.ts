@@ -1,41 +1,47 @@
 import {staticFile} from 'remotion';
 
 /**
- * Palette lifted from the Episode 1 source frames so the Short reads as the
- * same publication: warm paper stock, near-black ink, rust for danger,
- * gold for the word being spoken, olive/teal for the data.
+ * "After Hours" — the Short's own identity: a dark market terminal at night.
+ * Nothing here is inherited from the source clip; the only thing that carries
+ * over from it is the audio track.
  */
 export const C = {
-  paper: '#F4ECD9',
-  paperDeep: '#E7DBC0',
-  paperLift: '#FBF6EA',
-  ink: '#17150F',
-  inkSoft: '#57503F',
-  inkFaint: 'rgba(23, 21, 15, 0.085)',
-  rust: '#C0442E',
-  rustDeep: '#8E2F1F',
-  gold: '#D9A441',
-  goldSoft: '#F0CE84',
-  olive: '#8A9A5B',
-  teal: '#2E6F6A',
+  void: '#06080B',
+  base: '#0C1016',
+  surface: '#161D27',
+  surfaceLift: '#212B37',
+  hair: 'rgba(238, 243, 248, 0.09)',
+  hairLit: 'rgba(238, 243, 248, 0.2)',
+
+  text: '#EFF4F9',
+  textDim: '#8A97A6',
+
+  loss: '#FF4D4D',
+  lossDeep: '#8E1F1F',
+  gain: '#2BE08C',
+  gainDeep: '#0E6B45',
+  live: '#FFE14D',
+  cool: '#4DA6FF',
 } as const;
 
 export const FONT = {
-  display: 'AntonDD',
-  ui: 'InterDD',
+  /** wide heavy grotesque — captions and headline numbers */
+  display: 'ArchivoDD',
+  /** terminal mono — labels, readouts, figures */
+  mono: 'MonoDD',
 } as const;
 
 const faces = `
 @font-face {
   font-family: '${FONT.display}';
-  src: url('${staticFile('fonts/Anton-Regular.ttf')}') format('truetype');
+  src: url('${staticFile('fonts/ArchivoBlack.ttf')}') format('truetype');
   font-weight: 400;
   font-display: block;
 }
 @font-face {
-  font-family: '${FONT.ui}';
-  src: url('${staticFile('fonts/Inter-Variable.ttf')}') format('truetype');
-  font-weight: 100 900;
+  font-family: '${FONT.mono}';
+  src: url('${staticFile('fonts/JetBrainsMono.ttf')}') format('truetype');
+  font-weight: 100 800;
   font-display: block;
 }
 `;
@@ -61,9 +67,20 @@ export const VIDEO = {
   fps: 30,
 } as const;
 
-/** The band the motion graphics live in, between the headline and the captions. */
+/** The band the motion graphics live in, between the HUD and the captions. */
 export const STAGE = {
-  top: 384,
-  height: 692,
+  top: 236,
+  height: 862,
   width: 940,
+  left: 70,
 } as const;
+
+/** Where the caption block sits. */
+export const CAPTIONS = {
+  top: 1136,
+  height: 400,
+} as const;
+
+/** A neon glow for a given accent. */
+export const glow = (color: string, strength = 1) =>
+  `drop-shadow(0 0 ${10 * strength}px ${color}) drop-shadow(0 0 ${28 * strength}px ${color}66)`;

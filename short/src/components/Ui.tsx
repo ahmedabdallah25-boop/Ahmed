@@ -3,59 +3,29 @@ import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {C, FONT} from '../theme';
 
 /** Springs 0 -> 1 starting at `at`, with the house bounce. */
-export const useRise = (at: number, duration = 22, damping = 14) => {
+export const useRise = (at: number, duration = 22, damping = 15) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   return spring({
     frame: frame - at,
     fps,
-    config: {damping, stiffness: 150, mass: 0.8},
+    config: {damping, stiffness: 160, mass: 0.8},
     durationInFrames: duration,
   });
 };
 
-/** The house card: paper stock, ink rule, hard drop shadow. */
-export const Card: React.FC<{
-  at: number;
+/** Mono label — every piece of data on screen is introduced by one of these. */
+export const Readout: React.FC<{
   children: React.ReactNode;
-  accent?: string;
-  style?: React.CSSProperties;
-}> = ({at, children, accent = C.ink, style}) => {
-  // never unmounts — the card holds its slot so the layout does not jump
-  const r = useRise(at);
-  return (
-    <div
-      style={{
-        background: C.paperLift,
-        border: `3px solid ${C.ink}`,
-        borderRadius: 26,
-        boxShadow: `0 14px 0 -4px ${accent}, 0 26px 44px rgba(23,21,15,0.18)`,
-        padding: '26px 32px',
-        opacity: Math.min(1, r * 1.6),
-        transform: `translateY(${interpolate(r, [0, 1], [46, 0])}px) scale(${interpolate(
-          r,
-          [0, 1],
-          [0.9, 1],
-        )})`,
-        ...style,
-      }}
-    >
-      {children}
-    </div>
-  );
-};
-
-export const Label: React.FC<{children: React.ReactNode; color?: string; size?: number}> = ({
-  children,
-  color = C.inkSoft,
-  size = 26,
-}) => (
+  color?: string;
+  size?: number;
+}> = ({children, color = C.textDim, size = 26}) => (
   <div
     style={{
-      fontFamily: FONT.ui,
-      fontWeight: 800,
+      fontFamily: FONT.mono,
+      fontWeight: 600,
       fontSize: size,
-      letterSpacing: 4,
+      letterSpacing: 3,
       textTransform: 'uppercase',
       color,
     }}
@@ -64,7 +34,34 @@ export const Label: React.FC<{children: React.ReactNode; color?: string; size?: 
   </div>
 );
 
-/** Big money figure that counts up into place. */
+/** A terminal panel: dark surface, hairline border, accent rule on top. */
+export const Panel: React.FC<{
+  at: number;
+  accent?: string;
+  children: React.ReactNode;
+  style?: React.CSSProperties;
+}> = ({at, accent = C.cool, children, style}) => {
+  const r = useRise(at);
+  return (
+    <div
+      style={{
+        position: 'relative',
+        background: `${C.surface}F0`,
+        border: `2px solid ${accent}44`,
+        borderTop: `5px solid ${accent}`,
+        padding: '26px 30px 30px',
+        opacity: Math.min(1, r * 1.7),
+        transform: `translateY(${interpolate(r, [0, 1], [44, 0])}px)`,
+        boxShadow: `0 22px 60px rgba(0,0,0,0.5)`,
+        ...style,
+      }}
+    >
+      {children}
+    </div>
+  );
+};
+
+/** Big money figure that counts up into place, set in mono. */
 export const Figure: React.FC<{
   at: number;
   value: number;
@@ -72,8 +69,8 @@ export const Figure: React.FC<{
   size?: number;
   color?: string;
   duration?: number;
-  signed?: boolean;
-}> = ({at, value, prefix = '$', size = 96, color = C.ink, duration = 26, signed = false}) => {
+  lit?: boolean;
+}> = ({at, value, prefix = '$', size = 92, color = C.text, duration = 26, lit = true}) => {
   const frame = useCurrentFrame();
   const t = interpolate(frame, [at, at + duration], [0, 1], {
     extrapolateLeft: 'clamp',
@@ -85,54 +82,55 @@ export const Figure: React.FC<{
   return (
     <div
       style={{
-        fontFamily: FONT.display,
+        fontFamily: FONT.mono,
+        fontWeight: 800,
         fontSize: size,
         lineHeight: 1,
-        letterSpacing: 1,
+        letterSpacing: -2,
         color,
-        transform: `scale(${interpolate(r, [0, 1], [0.82, 1])})`,
+        textShadow: lit ? `0 0 26px ${color}55` : 'none',
+        transform: `scale(${interpolate(r, [0, 1], [0.86, 1])})`,
         opacity: Math.min(1, r * 2),
       }}
     >
-      {signed && value < 0 ? '−' : ''}
       {prefix}
-      {Math.abs(shown).toLocaleString('en-US')}
+      {shown.toLocaleString('en-US')}
     </div>
   );
 };
 
-/** Rust stamp that slams in at an angle — used for the crash beats. */
-export const Stamp: React.FC<{at: number; text: string; rotate?: number}> = ({
+/** The hard beat: an outlined accent box that slams in at an angle. */
+export const Slam: React.FC<{at: number; text: string; color?: string; rotate?: number}> = ({
   at,
   text,
-  rotate = -8,
+  color = C.loss,
+  rotate = -6,
 }) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const r = spring({
     frame: frame - at,
     fps,
-    config: {damping: 11, stiffness: 220, mass: 0.9},
-    durationInFrames: 20,
+    config: {damping: 11, stiffness: 240, mass: 0.9},
+    durationInFrames: 18,
   });
   if (r <= 0) {
     return null;
   }
-  const shake = frame < at + 10 ? Math.sin((frame - at) * 2.4) * (1 - r) * 10 : 0;
+  const shake = frame < at + 10 ? Math.sin((frame - at) * 2.6) * (1 - r) * 12 : 0;
   return (
     <div
       style={{
         fontFamily: FONT.display,
-        fontSize: 108,
-        letterSpacing: 3,
-        color: C.rust,
-        border: `9px solid ${C.rust}`,
-        borderRadius: 20,
-        padding: '10px 30px 16px',
-        background: 'rgba(244,236,217,0.55)',
-        transform: `rotate(${rotate + shake}deg) scale(${interpolate(r, [0, 1], [2.6, 1])})`,
+        fontSize: 104,
+        letterSpacing: -1,
+        color,
+        border: `6px solid ${color}`,
+        padding: '14px 30px 20px',
+        background: `${C.void}D0`,
+        boxShadow: `0 0 40px ${color}55, inset 0 0 30px ${color}22`,
+        transform: `rotate(${rotate + shake}deg) scale(${interpolate(r, [0, 1], [2.4, 1])})`,
         opacity: Math.min(1, r * 2.2),
-        textShadow: `0 6px 0 rgba(142,47,31,0.25)`,
       }}
     >
       {text}
@@ -140,14 +138,14 @@ export const Stamp: React.FC<{at: number; text: string; rotate?: number}> = ({
   );
 };
 
-/** Horizontal magnitude bar that wipes open. */
+/** Horizontal magnitude bar that wipes open, lit from within. */
 export const Bar: React.FC<{
   at: number;
   width: number;
   color: string;
   height?: number;
   duration?: number;
-}> = ({at, width, color, height = 64, duration = 24}) => {
+}> = ({at, width, color, height = 66, duration = 24}) => {
   const frame = useCurrentFrame();
   const t = interpolate(frame, [at, at + duration], [0, 1], {
     extrapolateLeft: 'clamp',
@@ -159,10 +157,9 @@ export const Bar: React.FC<{
       style={{
         width: width * eased,
         height,
-        background: color,
-        border: `3px solid ${C.ink}`,
-        borderRadius: 12,
-        boxShadow: `0 8px 0 -2px rgba(23,21,15,0.30)`,
+        background: `linear-gradient(90deg, ${color}55, ${color})`,
+        borderRight: `4px solid ${color}`,
+        boxShadow: `0 0 26px ${color}66`,
       }}
     />
   );

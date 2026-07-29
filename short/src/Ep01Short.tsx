@@ -1,8 +1,8 @@
 import React from 'react';
 import {AbsoluteFill, Audio, interpolate, staticFile, useCurrentFrame} from 'remotion';
-import {C, STAGE, loadFonts} from './theme';
-import {Paper} from './components/Paper';
-import {Chrome, type Chapter} from './components/Chrome';
+import {C, CAPTIONS, STAGE, loadFonts} from './theme';
+import {Field} from './components/Field';
+import {Hud, type Chapter} from './components/Hud';
 import {Kinetic} from './components/Kinetic';
 import {SCRIPT} from './data/script';
 import {Act1Crash} from './scenes/Act1Crash';
@@ -24,17 +24,17 @@ const ACTS = [
 ];
 
 const CHAPTERS: Chapter[] = [
-  {from: 0, label: 'Year 2 · The Crash'},
-  {from: 405, label: 'The Real Gap'},
-  {from: 776, label: 'The Moment'},
-  {from: 960, label: 'The Noise'},
-  {from: 1312, label: 'Adam Is Ahead'},
-  {from: 1566, label: 'The Sell Button'},
+  {from: 0, label: 'The Crash', accent: C.loss},
+  {from: 405, label: 'The Real Gap', accent: C.loss},
+  {from: 776, label: 'The Moment', accent: C.live},
+  {from: 960, label: 'The Noise', accent: C.live},
+  {from: 1312, label: 'Adam Is Ahead', accent: C.cool},
+  {from: 1566, label: 'The Sell Button', accent: C.loss},
 ];
 
 const FADE = 11;
 
-/** Cross-fades the act's graphics in and out at its boundaries. */
+/** Cross-fades an act's graphics in and out at its boundaries. */
 const ActLayer: React.FC<{from: number; to: number; children: React.ReactNode}> = ({
   from,
   to,
@@ -75,16 +75,23 @@ const ActLayer: React.FC<{from: number; to: number; children: React.ReactNode}> 
   );
 };
 
-/** A one-frame-ish paper flash on the hardest beats. */
-const BeatFlash: React.FC = () => {
+/** A short red bloom on the hardest beats. */
+const BeatBloom: React.FC = () => {
   const frame = useCurrentFrame();
   const beats = SCRIPT.filter((p) => p.style === 'alarm').map((p) => p.s);
-  const near = beats.find((b) => frame >= b && frame < b + 7);
-  if (near === undefined) {
+  const hit = beats.find((b) => frame >= b && frame < b + 9);
+  if (hit === undefined) {
     return null;
   }
-  const o = interpolate(frame, [near, near + 6], [0.3, 0], {extrapolateRight: 'clamp'});
-  return <AbsoluteFill style={{background: C.paperLift, opacity: o}} />;
+  const o = interpolate(frame, [hit, hit + 8], [0.5, 0], {extrapolateRight: 'clamp'});
+  return (
+    <AbsoluteFill
+      style={{
+        background: `radial-gradient(70% 44% at 50% 62%, ${C.loss}55 0%, transparent 74%)`,
+        opacity: o,
+      }}
+    />
+  );
 };
 
 export const Ep01Short: React.FC = () => {
@@ -92,10 +99,10 @@ export const Ep01Short: React.FC = () => {
   const phrase = SCRIPT.find((p) => frame >= p.s && frame <= p.e);
 
   return (
-    <AbsoluteFill style={{backgroundColor: C.paper}}>
+    <AbsoluteFill style={{backgroundColor: C.base}}>
       <Audio src={staticFile('audio.wav')} />
 
-      <Paper />
+      <Field />
 
       {ACTS.map(({from, to, Comp}) => (
         <ActLayer key={from} from={from} to={to}>
@@ -103,13 +110,13 @@ export const Ep01Short: React.FC = () => {
         </ActLayer>
       ))}
 
-      <BeatFlash />
+      <BeatBloom />
 
-      {/* the kinetic caption block owns the lower third */}
+      {/* the caption block owns the lower third */}
       <AbsoluteFill
         style={{
-          top: 1110,
-          height: 400,
+          top: CAPTIONS.top,
+          height: CAPTIONS.height,
           alignItems: 'center',
           justifyContent: 'center',
         }}
@@ -117,7 +124,7 @@ export const Ep01Short: React.FC = () => {
         {phrase ? <Kinetic key={phrase.s} phrase={phrase} /> : null}
       </AbsoluteFill>
 
-      <Chrome chapters={CHAPTERS} />
+      <Hud chapters={CHAPTERS} />
     </AbsoluteFill>
   );
 };

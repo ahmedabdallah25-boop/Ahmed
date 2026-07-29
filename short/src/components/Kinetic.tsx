@@ -3,122 +3,139 @@ import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {C, FONT} from '../theme';
 import type {Phrase, PhraseStyle, Word} from '../data/script';
 
-const BLOCK_WIDTH = 960;
+const BLOCK = 940;
 
-/** Long phrases step down in size so a line never runs off the safe area. */
-const fontSizeFor = (chars: number, style: PhraseStyle) => {
-  const base = chars <= 12 ? 128 : chars <= 20 ? 112 : chars <= 28 ? 98 : chars <= 38 ? 86 : 74;
-  return style === 'number' ? base * 1.06 : base;
+/** Archivo Black is wide, so long phrases step down hard to stay on one screen. */
+const sizeFor = (chars: number, style: PhraseStyle) => {
+  const base = chars <= 12 ? 112 : chars <= 20 ? 96 : chars <= 28 ? 82 : chars <= 38 ? 70 : 60;
+  return style === 'number' ? base * 0.94 : base;
 };
 
 type Skin = {
-  /** one slab behind the whole phrase, or a chip per word */
-  slab: boolean;
-  bg: string;
-  fg: string;
-  activeBg: string;
-  activeFg: string;
-  shadow: string;
   font: string;
+  weight: number;
   caps: boolean;
   track: number;
+  /** colour of a word that has landed but is not being spoken */
+  base: string;
+  /** block painted behind the word currently being spoken */
+  liveBg: string;
+  liveFg: string;
+  /** colour a key word keeps once it has been spoken */
+  keep: string;
+  panel: boolean;
+  accent: string;
+  shake: boolean;
 };
 
 const SKINS: Record<PhraseStyle, Skin> = {
   chip: {
-    slab: false,
-    bg: C.paperLift,
-    fg: C.ink,
-    activeBg: C.ink,
-    activeFg: C.goldSoft,
-    shadow: 'rgba(23,21,15,0.30)',
-    font: FONT.ui,
-    caps: false,
-    track: -1,
+    font: FONT.display,
+    weight: 400,
+    caps: true,
+    track: -0.5,
+    base: C.text,
+    liveBg: C.live,
+    liveFg: C.void,
+    keep: C.live,
+    panel: false,
+    accent: C.live,
+    shake: false,
   },
   slab: {
-    slab: true,
-    bg: C.ink,
-    fg: '#FBF4E4',
-    activeBg: C.gold,
-    activeFg: C.ink,
-    shadow: 'rgba(23,21,15,0.38)',
-    font: FONT.ui,
-    caps: false,
-    track: -1.5,
+    font: FONT.display,
+    weight: 400,
+    caps: true,
+    track: -0.5,
+    base: C.text,
+    liveBg: C.cool,
+    liveFg: C.void,
+    keep: C.cool,
+    panel: true,
+    accent: C.cool,
+    shake: false,
   },
   alarm: {
-    slab: true,
-    bg: C.rust,
-    fg: '#FFF3E2',
-    activeBg: C.goldSoft,
-    activeFg: C.rustDeep,
-    shadow: 'rgba(142,47,31,0.42)',
-    font: FONT.ui,
+    font: FONT.display,
+    weight: 400,
     caps: true,
-    track: 1,
+    track: 0,
+    base: '#FFD9D9',
+    liveBg: C.loss,
+    liveFg: '#FFFFFF',
+    keep: C.loss,
+    panel: false,
+    accent: C.loss,
+    shake: true,
   },
   number: {
-    slab: true,
-    bg: C.ink,
-    fg: C.goldSoft,
-    activeBg: C.gold,
-    activeFg: C.ink,
-    shadow: 'rgba(23,21,15,0.40)',
-    font: FONT.display,
+    font: FONT.mono,
+    weight: 800,
     caps: true,
-    track: 2,
+    track: -1,
+    base: C.text,
+    liveBg: C.gain,
+    liveFg: C.void,
+    keep: C.gain,
+    panel: false,
+    accent: C.gain,
+    shake: false,
   },
 };
 
-const WordChip: React.FC<{
-  word: Word;
-  active: boolean;
-  skin: Skin;
-  size: number;
-}> = ({word, active, skin, size}) => {
+const WordCell: React.FC<{word: Word; live: boolean; skin: Skin; size: number}> = ({
+  word,
+  live,
+  skin,
+  size,
+}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
 
   const inn = spring({
     frame: frame - word.s,
     fps,
-    config: {damping: 13, stiffness: 190, mass: 0.7},
-    durationInFrames: 20,
+    config: {damping: 12, stiffness: 220, mass: 0.6},
+    durationInFrames: 18,
   });
   if (inn <= 0) {
     return null;
   }
 
-  // the pop that lands exactly on the syllable
-  const hit = spring({
-    frame: frame - word.s,
-    fps,
-    config: {damping: 9, stiffness: 260, mass: 0.5},
-    durationInFrames: 16,
-  });
-  const punch = active ? interpolate(hit, [0, 1], [1.14, 1], {extrapolateRight: 'clamp'}) : 1;
+  const pop = live
+    ? interpolate(
+        spring({
+          frame: frame - word.s,
+          fps,
+          config: {damping: 8, stiffness: 300, mass: 0.45},
+          durationInFrames: 14,
+        }),
+        [0, 1],
+        [1.16, 1],
+        {extrapolateRight: 'clamp'},
+      )
+    : 1;
 
-  // a word stays lit once it has been spoken if it is one of the key words
-  const lit = active || (word.hi && frame >= word.s);
+  const spoken = frame >= word.s;
+  const color = live ? skin.liveFg : word.hi && spoken ? skin.keep : skin.base;
 
   return (
     <span
       style={{
         display: 'inline-block',
-        transform: `translateY(${interpolate(inn, [0, 1], [34, 0])}px) scale(${
-          interpolate(inn, [0, 1], [0.66, 1]) * punch
-        }) rotate(${interpolate(inn, [0, 1], [-3.5, 0])}deg)`,
-        opacity: Math.min(1, inn * 1.6),
-        padding: skin.slab ? '0 2px' : '6px 20px 9px',
-        borderRadius: skin.slab ? 0 : 18,
-        background: skin.slab ? 'transparent' : lit ? skin.activeBg : skin.bg,
-        color: skin.slab ? (lit ? skin.activeBg : skin.fg) : lit ? skin.activeFg : skin.fg,
-        boxShadow: skin.slab ? 'none' : `0 9px 0 -2px ${lit ? 'rgba(23,21,15,0.55)' : skin.shadow}`,
-        transformOrigin: 'center bottom',
+        padding: '4px 14px 8px',
+        background: live ? skin.liveBg : 'transparent',
+        color,
         fontSize: size,
-        lineHeight: 1.02,
+        lineHeight: 1.0,
         whiteSpace: 'pre',
+        transformOrigin: 'center bottom',
+        transform: `translateY(${interpolate(inn, [0, 1], [40, 0])}px) scale(${
+          interpolate(inn, [0, 1], [0.6, 1]) * pop
+        })`,
+        opacity: Math.min(1, inn * 1.7),
+        boxShadow: live ? `0 0 34px ${skin.liveBg}70` : 'none',
+        textShadow: live ? 'none' : `0 4px 18px rgba(0,0,0,0.6)`,
       }}
     >
       {skin.caps ? word.t.toUpperCase() : word.t}
@@ -127,8 +144,8 @@ const WordChip: React.FC<{
 };
 
 /**
- * The kinetic caption block: one phrase at a time, each word landing on the
- * frame it is spoken, the live word lit up.
+ * The caption engine: one phrase at a time, each word landing on the frame it
+ * is spoken, the live word painted into a solid block.
  */
 export const Kinetic: React.FC<{phrase: Phrase}> = ({phrase}) => {
   const frame = useCurrentFrame();
@@ -136,49 +153,41 @@ export const Kinetic: React.FC<{phrase: Phrase}> = ({phrase}) => {
   const skin = SKINS[phrase.style];
 
   const chars = phrase.words.reduce((n, w) => n + w.t.length + 1, 0);
-  const size = fontSizeFor(chars, phrase.style);
+  const size = sizeFor(chars, phrase.style);
 
-  const activeIndex = (() => {
-    let idx = -1;
-    phrase.words.forEach((w, i) => {
-      if (frame >= w.s) {
-        idx = i;
-      }
-    });
-    return idx;
-  })();
+  let liveIndex = -1;
+  phrase.words.forEach((w, i) => {
+    if (frame >= w.s) {
+      liveIndex = i;
+    }
+  });
 
   const enter = spring({
     frame: frame - phrase.s,
     fps,
     config: {damping: 200},
-    durationInFrames: 12,
+    durationInFrames: 10,
   });
   const outAt = phrase.e - 6;
   const exit =
     frame > outAt
-      ? interpolate(frame, [outAt, phrase.e], [0, 1], {
-          extrapolateRight: 'clamp',
-        })
+      ? interpolate(frame, [outAt, phrase.e], [0, 1], {extrapolateRight: 'clamp'})
       : 0;
 
-  // the slab grows as words land, so the box always hugs the phrase
-  const revealed = phrase.words.filter((w) => frame >= w.s).length;
-  const slabGrow = spring({
-    frame: frame - (phrase.words[Math.max(0, revealed - 1)]?.s ?? phrase.s),
-    fps,
-    config: {damping: 15, stiffness: 150},
-    durationInFrames: 18,
-  });
+  // alarm phrases get a short kick on entry
+  const age = frame - phrase.s;
+  const kick = skin.shake && age < 9 ? Math.sin(age * 2.6) * (1 - age / 9) * 9 : 0;
 
   return (
     <div
       style={{
-        width: BLOCK_WIDTH,
+        width: BLOCK,
         display: 'flex',
         justifyContent: 'center',
         opacity: (1 - exit) * Math.min(1, enter * 2),
-        transform: `translateY(${interpolate(exit, [0, 1], [0, -26])}px) scale(${1 - exit * 0.06})`,
+        transform: `translate(${kick}px, ${interpolate(exit, [0, 1], [0, -30])}px) scale(${
+          1 - exit * 0.05
+        })`,
       }}
     >
       <div
@@ -187,28 +196,20 @@ export const Kinetic: React.FC<{phrase: Phrase}> = ({phrase}) => {
           flexWrap: 'wrap',
           justifyContent: 'center',
           alignItems: 'flex-end',
-          gap: skin.slab ? `${size * 0.14}px ${size * 0.24}px` : '18px 14px',
-          padding: skin.slab ? `${size * 0.26}px ${size * 0.34}px ${size * 0.3}px` : 0,
-          borderRadius: skin.slab ? 34 : 0,
-          background: skin.slab ? skin.bg : 'transparent',
-          boxShadow: skin.slab
-            ? `0 16px 0 -6px ${skin.shadow}, 0 34px 60px rgba(23,21,15,0.20)`
-            : 'none',
+          gap: `${size * 0.1}px ${size * 0.08}px`,
+          padding: skin.panel ? `${size * 0.34}px ${size * 0.3}px ${size * 0.3}px` : 0,
+          background: skin.panel ? `${C.surface}E8` : 'transparent',
+          border: skin.panel ? `2px solid ${skin.accent}55` : 'none',
+          borderTop: skin.panel ? `5px solid ${skin.accent}` : 'none',
+          boxShadow: skin.panel ? `0 24px 70px rgba(0,0,0,0.55)` : 'none',
           fontFamily: skin.font,
-          fontWeight: skin.font === FONT.display ? 400 : 800,
+          fontWeight: skin.weight,
           letterSpacing: skin.track,
-          transform: `scale(${interpolate(slabGrow, [0, 1], [0.985, 1])})`,
-          maxWidth: BLOCK_WIDTH,
+          maxWidth: BLOCK,
         }}
       >
         {phrase.words.map((w, i) => (
-          <WordChip
-            key={`${phrase.s}-${i}`}
-            word={w}
-            active={i === activeIndex}
-            skin={skin}
-            size={size}
-          />
+          <WordCell key={`${phrase.s}-${i}`} word={w} live={i === liveIndex} skin={skin} size={size} />
         ))}
       </div>
     </div>
