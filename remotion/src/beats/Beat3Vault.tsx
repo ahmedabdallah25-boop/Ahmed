@@ -2,13 +2,14 @@ import React from 'react';
 import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
 import { Camera, Plate } from '../lib/Plate';
 import { noise } from '../lib/rng';
-import { LAYOUT } from '../theme';
+import { BEATS, LAYOUT } from '../theme';
 
 /**
- * Beat 3, 0:08–0:14. "The rest isn't in a vault. It isn't anywhere. It's a promise,
+ * Beat 3, 0:10–0:16. "The rest isn't in a vault. It isn't anywhere. It's a promise,
  * typed into a screen."
  *
- * Local frames: door opens 0–45, camera dollies 45–180 (absolute 285–420).
+ * Local frames: door opens 0–45, then the camera dollies for the rest of the beat.
+ * Reading the end off BEATS keeps the move complete when the VO retimes the beat.
  */
 
 // vault-door.png is full-frame with the 780px door centred, so its hinge is its left
@@ -26,7 +27,7 @@ export const Beat3Vault: React.FC = () => {
   const swing = spring({ frame, fps, config: { damping: 12, mass: 2 }, durationInFrames: 45 });
   const angle = swing * 90;
 
-  const scale = interpolate(frame, [45, 180], [1, 1.25], {
+  const scale = interpolate(frame, [45, BEATS.vault.durationInFrames], [1, 1.25], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });

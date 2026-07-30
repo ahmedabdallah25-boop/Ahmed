@@ -2,14 +2,15 @@ import React from 'react';
 import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from 'remotion';
 import { Camera, Plate } from '../lib/Plate';
 import { noise } from '../lib/rng';
-import { GOLD, H, W } from '../theme';
+import { BEATS, GOLD, H, W } from '../theme';
 
 /**
- * Beat 7, 0:36–0:46. "The alternative already exists. Your deposit stays YOUR deposit —
+ * Beat 7, 0:43–0:54. "The alternative already exists. Your deposit stays YOUR deposit —
  * held, not lent. Money only multiplies when something real was actually built."
  *
- * Local frames: house fills at 30, panels at 60, truck at 90 (absolute 1110/1140/1170),
- * each over 40 frames. Crane-up runs the whole beat.
+ * The three things fill while the VO says they get built — "money only multiplies when
+ * something real was actually built" lands around local frame 210, so they start at
+ * 150 / 195 / 240 rather than in the first second. Crane-up runs the whole beat.
  */
 
 /**
@@ -24,9 +25,9 @@ import { GOLD, H, W } from '../theme';
  * of three would collide with the vault.
  */
 const BLUEPRINTS = [
-  { name: 'blueprint-house', cx: 960, cy: 620, bbox: [450, 340], to: [1480, 250], at: 30 },
-  { name: 'blueprint-panels', cx: 960, cy: 660, bbox: [560, 200], to: [1480, 540], at: 60 },
-  { name: 'blueprint-truck', cx: 960, cy: 640, bbox: [545, 190], to: [1480, 830], at: 90 },
+  { name: 'blueprint-house', cx: 960, cy: 620, bbox: [450, 340], to: [1480, 250], at: 150 },
+  { name: 'blueprint-panels', cx: 960, cy: 660, bbox: [560, 200], to: [1480, 540], at: 195 },
+  { name: 'blueprint-truck', cx: 960, cy: 640, bbox: [545, 190], to: [1480, 830], at: 240 },
 ] as const;
 
 const SCALE = 0.62;
@@ -55,7 +56,9 @@ const N = noise(53, 120);
 export const Beat7Assets: React.FC = () => {
   const frame = useCurrentFrame();
 
-  const craneY = interpolate(frame, [0, 300], [0, -80], { extrapolateRight: 'clamp' });
+  const craneY = interpolate(frame, [0, BEATS.assets.durationInFrames], [0, -80], {
+    extrapolateRight: 'clamp',
+  });
 
   return (
     <AbsoluteFill style={{ backgroundColor: '#000' }}>

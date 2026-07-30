@@ -5,7 +5,7 @@ import { OwnershipTally } from '../overlays/OwnershipTally';
 import { H, LAYOUT, W } from '../theme';
 
 /**
- * Beat 5, 0:22–0:30. "One deposit. Thirty different people now believe they own it.
+ * Beat 5, 0:26–0:35. "One deposit. Thirty different people now believe they own it.
  * And every one of them is right, as long as nobody asks."
  *
  * Local frames: 30 screens light in a stagger over 0–75; the grid blurs 90–240 while

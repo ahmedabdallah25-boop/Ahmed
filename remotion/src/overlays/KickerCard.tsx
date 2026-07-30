@@ -5,8 +5,9 @@ import { GOLD, SANS } from '../theme';
 const LINES = [['SAME', 'MONEY.'], ['ONE', 'SYSTEM', 'NEEDS', 'YOU', 'NOT', 'TO', 'LOOK.']];
 
 const WORD_STAGGER = 2; // 60ms @ 30fps
-const HOLD = 45;
-const WIPE = 90;
+// "Same money. One system needs you not to look." runs to about local frame 130, so the
+// wipe waits for it rather than pulling the line before it is said.
+const WIPE = 130;
 
 export const KickerCard: React.FC = () => {
   const frame = useCurrentFrame();

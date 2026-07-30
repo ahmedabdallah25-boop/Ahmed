@@ -17,7 +17,10 @@ const chain = (() => {
 
 const money = (n: number) => `$${n.toFixed(2)}`;
 
-const STAGGER = 9; // 300ms @ 30fps
+// Row 1 waits for "You deposited a hundred" to land, then one row per ~0.9s so the
+// chain builds across the line instead of finishing before the sentence does.
+const START = 40;
+const STAGGER = 26;
 
 export const MultiplierChain: React.FC = () => {
   const frame = useCurrentFrame();
@@ -40,7 +43,7 @@ export const MultiplierChain: React.FC = () => {
       }}
     >
       {chain.map((row, i) => {
-        const start = i * STAGGER;
+        const start = START + i * STAGGER;
         const appear = interpolate(frame, [start, start + 10], [0, 1], {
           easing: Easing.out(Easing.quad),
           extrapolateLeft: 'clamp',

@@ -1,10 +1,14 @@
 import React from 'react';
 import { Easing, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
-import { GOLD, MONO } from '../theme';
+import { CUES, GOLD, MONO } from '../theme';
 
-/** The roll is VO-synced to "three cents of YOURS" at 0:04, i.e. local frame 120. */
-const ROLL_START = 120;
-const ROLL_END = 156;
+/**
+ * The roll fires the instant line 2 begins ("Not three percent of the bank's money.
+ * Three cents of YOURS"). CUES.rollStart is measured from the voiceover, so it tracks
+ * the recording rather than the script's estimate.
+ */
+const ROLL_START = CUES.rollStart;
+const ROLL_END = ROLL_START + 36;
 const FROM = 14208;
 const TO = 426.24;
 

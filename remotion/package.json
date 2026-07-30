@@ -2,13 +2,14 @@
   "name": "finance-decoded-part15",
   "version": "1.0.0",
   "private": true,
-  "description": "Part 15 — Your Bank Only Has 3 Cents of Every Dollar You Own",
+  "description": "Part 15 \u2014 Your Bank Only Has 3 Cents of Every Dollar You Own",
   "scripts": {
     "dev": "remotion studio",
     "plates": "node scripts/make-plates.mjs",
     "render": "remotion render Part15 out/part15.mp4",
     "still": "remotion still Part15 out/still.png",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "vo": "node scripts/make-vo.mjs"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.0",

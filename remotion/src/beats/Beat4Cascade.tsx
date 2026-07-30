@@ -6,7 +6,7 @@ import { MultiplierChain } from '../overlays/MultiplierChain';
 import { LAYOUT } from '../theme';
 
 /**
- * Beat 4, 0:14–0:22. "You deposited a hundred. The bank kept three and lent out
+ * Beat 4, 0:16–0:26. "You deposited a hundred. The bank kept three and lent out
  * ninety-seven. That ninety-seven got deposited somewhere else — and lent again."
  *
  * Camera is locked off; all the motion is the coins. Counts thin out per tier so the

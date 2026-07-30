@@ -1,14 +1,15 @@
 import React from 'react';
 import { AbsoluteFill, Easing, Img, interpolate, staticFile, useCurrentFrame } from 'remotion';
 import { Plate } from '../lib/Plate';
-import { LAYOUT } from '../theme';
+import { CUES, LAYOUT } from '../theme';
 
 /**
- * Beat 6, 0:30–0:36. "That's why a healthy bank dies in a single afternoon. Nothing was
+ * Beat 6, 0:35–0:43. "That's why a healthy bank dies in a single afternoon. Nothing was
  * stolen. Everyone just showed up on the same day."
  *
  * Camera locked off — no scale, no translate. The only moves are rain, and the shutter.
- * Local frames: shutter descends 60–150, slams at 150, blackout 150–156.
+ * The slam is VO-synced to the end of the line, on "the same day" (CUES.slam); the
+ * shutter takes the 90 frames before it to come down.
  */
 
 // The arched doorway in bank-run.png. shutter.png is rendered to exactly these
@@ -16,14 +17,15 @@ import { LAYOUT } from '../theme';
 const ARCH = LAYOUT.arch;
 
 const RAIN_PERIOD = LAYOUT.rainPeriod;
-const SLAM = 150;
+const SLAM = CUES.slam;
+const DESCENT = 90;
 
 export const Beat6Run: React.FC = () => {
   const frame = useCurrentFrame();
 
   const rainY = (frame * 22) % RAIN_PERIOD;
 
-  const shutterY = interpolate(frame, [60, SLAM], [-ARCH.height, 0], {
+  const shutterY = interpolate(frame, [SLAM - DESCENT, SLAM], [-ARCH.height, 0], {
     easing: Easing.in(Easing.cubic),
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',

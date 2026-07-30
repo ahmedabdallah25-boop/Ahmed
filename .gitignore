@@ -1,3 +1,6 @@
 __pycache__/
 *.pyc
 node_modules/
+.agents/
+remotion/.vo-work/
+.claude/skills/

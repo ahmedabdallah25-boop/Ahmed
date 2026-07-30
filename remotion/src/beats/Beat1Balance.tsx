@@ -2,12 +2,12 @@ import React from 'react';
 import { AbsoluteFill, interpolate, useCurrentFrame } from 'remotion';
 import { Camera, Plate } from '../lib/Plate';
 import { ReserveCounter } from '../overlays/ReserveCounter';
-import { BEATS } from '../theme';
+import { BEATS, CUES } from '../theme';
 
-const LEN = BEATS.balance.durationInFrames; // 240
+const LEN = BEATS.balance.durationInFrames;
 
 /**
- * Beats 1-2, 0:00–0:08. "Right now your bank is holding about three cents of every
+ * Beats 1-2, 0:00–0:10. "Right now your bank is holding about three cents of every
  * dollar you think you own." / "Not three percent of the bank's money. Three cents of
  * YOURS."
  *
@@ -25,8 +25,8 @@ export const Beat1Balance: React.FC = () => {
   const driftX = Math.sin(frame / 17) * 4;
   const driftY = Math.sin(frame / 23) * 4;
 
-  // Screen light drops as the number falls (same window as the odometer roll)
-  const glow = interpolate(frame, [120, 156], [1, 0.8], {
+  // Screen light drops as the number falls — same window as the odometer roll
+  const glow = interpolate(frame, [CUES.rollStart, CUES.rollStart + 36], [1, 0.8], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });

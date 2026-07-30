@@ -5,7 +5,7 @@ import { KickerCard } from '../overlays/KickerCard';
 import { GOLD, SANS } from '../theme';
 
 /**
- * Beat 8, 0:46–0:52. "Same money. One system needs you not to look. Tomorrow: where the
+ * Beat 8, 0:54–1:04. "Same money. One system needs you not to look. Tomorrow: where the
  * ninety-seven actually goes. No jargon, just mechanisms."
  *
  * Holds Beat 7's last camera position (scale 1.2, x -180, y -80) so the cut is
