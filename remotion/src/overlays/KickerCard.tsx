@@ -94,7 +94,7 @@ export const KickerCard: React.FC = () => {
           background: 'rgba(11,26,46,.55)',
         }}
       >
-        PART 15 · NO JARGON, JUST MECHANISMS
+        PART 14 · NO JARGON, JUST MECHANISMS
       </div>
     </>
   );
