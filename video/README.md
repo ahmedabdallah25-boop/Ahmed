@@ -9,6 +9,7 @@ port of the vertical Short.
 | `Ep2-Thumbnail` | 1280×720 still | same storyboard | `../media/ep2-thumbnail.png` |
 | `Part14-RaiseTrap` | 1080×1920 · 30fps · 36s | kinetic-typography Short | `../media/part14-kinetic.mp4` |
 | `Part15-StudentLoans` | 1080×1920 · 30fps · 20s | `../script-part15-student-loans.md` | `../media/part15-student-loans.mp4` |
+| `Part15-Dossier` | 1080×1920 · 30fps · 20s | `../script-part15-dossier.md` | `../media/part15-dossier.mp4` |
 
 ## Episode 2 — how it's built
 
@@ -48,6 +49,7 @@ npm run preview                      # Remotion Studio
 npm run render                       # Episode 2 → ../media/ep2-halal-mortgage.mp4
 npx remotion render src/index.ts Part14-RaiseTrap ../media/part14-kinetic.mp4
 npx remotion render src/index.ts Part15-StudentLoans ../media/part15-student-loans.mp4
+npx remotion render src/index.ts Part15-Dossier ../media/part15-dossier.mp4
 npx remotion still src/index.ts Ep2-Thumbnail ../media/ep2-thumbnail.png
 ```
 
@@ -64,6 +66,26 @@ never block on one. Regenerate after replacing `public/fonts/inter-var.woff2`:
 ```bash
 node scripts/inline-fonts.mjs
 ```
+
+## src/doc/ — the 3D-mannequin documentary lane
+
+`Part15-Dossier` is the same Part 15 script told in the faceless-mannequin
+documentary format (see `../script-part15-dossier.md` for the read, the shot
+list and the AI prompt pack).
+
+- **`src/doc/scene-kit.tsx`** — the look: `Figure` (a featureless matte
+  mannequin, three poses), `Shaft` (hard key through haze), `Dust`, `Sheet`,
+  `Grade` (teal shadows, amber bloom, vignette, grain, letterbox), `Cam` (slow
+  push plus handheld drift), and the type furniture — `Slug`, `Caption`,
+  `Readout`.
+- **`src/doc/Dossier.tsx`** — eight shots, each a *pair*: the footage layer
+  renders under `Grade`, the narration layer over it, so the grade never
+  crushes the type. Shot lengths live in the `SHOTS` table and sum to 600
+  frames; retime by editing that table alone.
+
+Nothing here loads an asset or a model — every frame is drawn procedurally, so
+the render is reproducible offline. Swapping in AI-generated clips means
+replacing each `SceneN` with a `<Video>` and leaving the text layer as is.
 
 ## hyperframes/
 

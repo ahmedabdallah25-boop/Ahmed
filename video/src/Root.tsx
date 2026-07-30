@@ -3,6 +3,7 @@ import {Composition} from 'remotion';
 import './fonts';
 import {Longform} from './longform/Longform';
 import {VO_DURATION} from './longform/timing';
+import {DOSSIER_FRAMES, Dossier} from './doc/Dossier';
 import {PART15_FRAMES, Part15} from './Part15';
 import {Short} from './Short';
 import {SHORTS} from './ShortsCuts';
@@ -48,6 +49,15 @@ export const RemotionRoot: React.FC = () => (
       id="Part14-RaiseTrap"
       component={Short}
       durationInFrames={1080} // 36s
+      fps={FPS}
+      width={W}
+      height={H}
+    />
+    {/* Part 15, documentary cut — 3D-mannequin lane. 20s. */}
+    <Composition
+      id="Part15-Dossier"
+      component={Dossier}
+      durationInFrames={DOSSIER_FRAMES} // 600 = 20s
       fps={FPS}
       width={W}
       height={H}
