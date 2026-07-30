@@ -10,6 +10,7 @@ import {
 } from 'remotion';
 import {FONT} from '../theme';
 import {S1, S10, S11, S12, S13, S2, S3, S4, S5, S6, S7, S8, S9} from './scenes';
+import {BRoll} from './BRoll';
 import {CHAPTERS, CUTS} from './timing';
 import {L, ease} from './ui';
 
@@ -67,6 +68,9 @@ export const Longform: React.FC = () => {
           background: `radial-gradient(110% 75% at 50% 40%, transparent 40%, ${L.bg} 100%)`,
         }}
       />
+
+      {/* Photographic b-roll — above the ground plane, under every scene's type. */}
+      <BRoll />
 
       {SCENES.map((S, i) => {
         const from = Math.round(CUTS[i] * fps);
