@@ -2,23 +2,25 @@ import React from 'react';
 import { AbsoluteFill, Img, interpolate, useCurrentFrame } from 'remotion';
 import { Plate, usePlate } from '../lib/Plate';
 import { OwnershipTally } from '../overlays/OwnershipTally';
-import { useLayout } from '../theme';
+import { at, useBeats, useLayout } from '../theme';
 
 /**
  * Beat 5, 0:26–0:35. "One deposit. Thirty different people now believe they own it.
  * And every one of them is right, as long as nobody asks."
  *
- * Local frames: 30 screens light in a stagger over 0–75; the grid blurs 90–240 while
- * the single coin stays sharp. The coin not moving is the point — one dollar, thirty
- * claims on it. Grid is 10 x 3 wide, 5 x 6 tall.
+ * Local frames: 30 screens light in a stagger over 0–75; the grid then blurs across the
+ * back half of the beat while the single coin stays sharp. The coin not moving is the
+ * point — one dollar, thirty claims on it. Grid is 10 x 3 wide, 5 x 6 tall.
  */
 export const Beat5Owners: React.FC = () => {
   const frame = useCurrentFrame();
   const L = useLayout();
   const coin = usePlate('owners-coin');
   const { cols, cellW, cellH, gap, inset } = L.grid;
+  const len = useBeats().owners.durationInFrames;
 
-  const blur = interpolate(frame, [90, 240], [0, 6], {
+  // Fractions of the beat, not fixed frames — the short read compresses this beat.
+  const blur = interpolate(frame, [at(0.45, len), len], [0, 6], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });

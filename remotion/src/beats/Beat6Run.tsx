@@ -1,7 +1,7 @@
 import React from 'react';
 import { AbsoluteFill, Easing, Img, interpolate, useCurrentFrame } from 'remotion';
 import { Plate, usePlate } from '../lib/Plate';
-import { CUES, useLayout } from '../theme';
+import { useCues, useLayout } from '../theme';
 
 /**
  * Beat 6, 0:35–0:43. "That's why a healthy bank dies in a single afternoon. Nothing was
@@ -12,12 +12,12 @@ import { CUES, useLayout } from '../theme';
  * shutter takes the 90 frames before it to come down.
  */
 
-const SLAM = CUES.slam;
 const DESCENT = 90;
 
 export const Beat6Run: React.FC = () => {
   const frame = useCurrentFrame();
   const L = useLayout();
+  const SLAM = useCues().slam;
   const shutter = usePlate('shutter');
   const rain = usePlate('rain-tile');
 

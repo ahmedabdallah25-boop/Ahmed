@@ -1,6 +1,32 @@
+import { createContext, useContext } from 'react';
 import { useVideoConfig } from 'remotion';
 import { LAYOUTS, type Layout, type Orientation } from './layouts';
-import { VO } from './vo-timing';
+import { VO, type Cut } from './vo-timing';
+
+export type { Cut };
+
+/**
+ * Which read this composition uses. Set once per <Composition> and provided by Part15;
+ * every timing hook below reads it, so a beat component never has to know.
+ */
+export const CutContext = createContext<Cut>('full');
+export const useCut = () => useContext(CutContext);
+export const useVO = () => VO[useCut()];
+
+/** Measured beat boundaries for the current cut. */
+export const useBeats = () => useVO().beats;
+/** In-beat cues that must land on a word, measured for the current cut. */
+export const useCues = () => useVO().cues;
+
+/**
+ * Frames at a fraction of a beat.
+ *
+ * Cues that are NOT locked to a word go through this rather than a literal frame number.
+ * The short read compresses every beat, and a hardcoded "fires at frame 240" silently
+ * stops firing when the beat is only 209 frames long — which is how three separate moves
+ * broke the first time the timeline was retimed.
+ */
+export const at = (fraction: number, length: number) => Math.round(fraction * length);
 
 /** Series constants. Palette matches scripts/make-plates.mjs — change both together. */
 export const FPS = 30;
@@ -29,27 +55,5 @@ export const NAVY = '#0B1A2E';
 export const SANS = '"Helvetica Neue", Helvetica, Arial, ui-sans-serif, system-ui, sans-serif';
 export const MONO = 'ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace';
 
-/**
- * Beat boundaries, MEASURED from the voiceover by scripts/make-vo.mjs.
- *
- * Do not hand-edit these — change a line or a pause in that script and re-run
- * `npm run vo`. Every beat component reads its length from here, so the whole timeline
- * follows the recording. The script's own estimate was 52s; the read is 64s.
- *
- * Note each component's internal frame numbers are Sequence-LOCAL (useCurrentFrame
- * restarts at 0 inside a Sequence), so a cue 30 frames into a beat starting at 1080 is
- * local frame 30, not 1110. VO.cues holds the two that must land on a word.
- */
-export const BEATS = VO.beats;
-export const CUES = VO.cues;
-
-export const TOTAL_FRAMES = VO.totalFrames;
-
 /** The reserve ratio the whole script hangs on. */
 export const RESERVE = 0.03;
-
-/**
- * public/vo.mp3 is committed, so this is on. If you delete the file, turn this off too —
- * Remotion throws on a missing staticFile, it does not warn.
- */
-export const HAS_VO = true;

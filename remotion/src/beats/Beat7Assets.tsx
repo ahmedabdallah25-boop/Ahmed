@@ -2,15 +2,16 @@ import React from 'react';
 import { AbsoluteFill, Img, interpolate, useCurrentFrame } from 'remotion';
 import { Camera, Plate, usePlateResolver } from '../lib/Plate';
 import { noise } from '../lib/rng';
-import { BEATS, GOLD, useLayout } from '../theme';
+import { at, GOLD, useBeats, useLayout } from '../theme';
 
 /**
  * Beat 7, 0:43–0:54. "The alternative already exists. Your deposit stays YOUR deposit —
  * held, not lent. Money only multiplies when something real was actually built."
  *
- * The three things fill while the VO says they get built — "money only multiplies when
- * something real was actually built" lands around local frame 210, so they start at
- * 150 / 195 / 240 rather than in the first second.
+ * The three things fill while the VO says they get built — the "something real was
+ * actually built" clause sits about two thirds through the line, so they start at 42 / 55
+ * / 68 percent of the beat rather than in the first second. Fractions, not frames: the
+ * short read compresses this beat to 209 and a literal 240 would never fire.
  *
  * 16:9 pushes the vault LEFT and stacks the blueprints down the right. 9:16 pushes it UP
  * and lays them in a row along the bottom. Slots come from the layout.
@@ -23,9 +24,9 @@ import { BEATS, GOLD, useLayout } from '../theme';
  * empty space above the drawing.
  */
 const BLUEPRINTS = [
-  { name: 'blueprint-house', originY: 80, bboxTop: -90, bboxH: 340, at: 150 },
-  { name: 'blueprint-panels', originY: 120, bboxTop: 20, bboxH: 200, at: 195 },
-  { name: 'blueprint-truck', originY: 100, bboxTop: 0, bboxH: 200, at: 240 },
+  { name: 'blueprint-house', originY: 80, bboxTop: -90, bboxH: 340, fill: 0.42 },
+  { name: 'blueprint-panels', originY: 120, bboxTop: 20, bboxH: 200, fill: 0.55 },
+  { name: 'blueprint-truck', originY: 100, bboxTop: 0, bboxH: 200, fill: 0.68 },
 ] as const;
 
 const FILL = 40;
@@ -36,8 +37,9 @@ export const Beat7Assets: React.FC = () => {
   const L = useLayout();
   const cam = L.vaultCam;
   const plate = usePlateResolver();
+  const len = useBeats().assets.durationInFrames;
 
-  const craneY = interpolate(frame, [0, BEATS.assets.durationInFrames], [0, L.crane], {
+  const craneY = interpolate(frame, [0, len], [0, L.crane], {
     extrapolateRight: 'clamp',
   });
 
@@ -63,10 +65,11 @@ export const Beat7Assets: React.FC = () => {
         <Plate name="real-assets" />
       </Camera>
 
-      {BLUEPRINTS.map(({ name, originY, bboxTop, bboxH, at }, bi) => {
+      {BLUEPRINTS.map(({ name, originY, bboxTop, bboxH, fill }, bi) => {
         const src = plate(name);
         const [tx, ty] = L.blueprints.slots[bi];
-        const p = interpolate(frame, [at, at + FILL], [0, 1], {
+        const start = at(fill, len);
+        const p = interpolate(frame, [start, start + FILL], [0, 1], {
           extrapolateLeft: 'clamp',
           extrapolateRight: 'clamp',
         });

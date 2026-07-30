@@ -28,7 +28,7 @@
 
 **Title:** `Your Bank Only Has 3 Cents of Every Dollar You Own`
 **Alt title (A/B):** `Try Withdrawing All Your Money`
-**Length:** 64.3s as read (the table below is the script's 52s estimate) · **Formats:** 16:9 and 9:16, both rendered · **Tags:** `banking, money, islamic finance`
+**Lengths:** 64.3s long-form / 46.7s Shorts read (the table below is the script's 52s estimate; both reads live in `remotion/scripts/vo-cuts.mjs`) · **Formats:** 16:9 and 9:16 · **Tags:** `banking, money, islamic finance`
 **Signature close:** "No jargon, just mechanisms."
 
 | # | t | VO (record verbatim) | On-screen |
@@ -76,9 +76,10 @@ Global style suffix — append to every prompt for series consistency:
 
 ### Remotion (React/TSX — one `<Sequence>` per beat)
 
-**Built, voiced and rendering in both orientations:** `remotion/` — `npm install && npm
-run vo && npm run render:both` produces `out/part15-landscape.mp4` (1920×1080) and
-`out/part15-vertical.mp4` (1080×1920), both 64.3s with voiceover.
+**Built, voiced and rendering in three cuts:** `remotion/` — `npm install && npm run vo &&
+npm run render:all` produces `part15-landscape.mp4` (1920×1080, 64.3s),
+`part15-vertical.mp4` (1080×1920, 64.3s) and `part15-short.mp4` (1080×1920, **46.7s** —
+the Shorts read, tightened against the outlier profile in §1).
 
 Beat boundaries are **measured from the voice track**, not from the timings in §2 — the
 script estimated 52s and the read is 64.3s. See `remotion/README.md` for the retime
@@ -123,5 +124,5 @@ run-time and CTA advice was written for the Shorts feed.
 - Title carries **zero** Arabic terms. Put "Wadiah / 100% reserve" in the description only.
 - Description leads with the full 15-part series list **plus** the playlist URL.
 - End CTA points **forward** (Part 16 tease), never back at a weak video.
-- Sting in line 1, mechanism by 0:14, resolution by 0:36. (The "under 55s" rule came from
-  the Shorts feed — revisit it if this becomes a genuinely long-form cut.)
+- Sting in line 1, mechanism by 0:14, resolution by 0:36. The Shorts cut honours the
+  "under 55s" rule at 46.7s; the 16:9 long-form cut deliberately does not.

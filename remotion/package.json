@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit",
     "vo": "node scripts/make-vo.mjs",
     "render:vertical": "remotion render Part15Vertical out/part15-vertical.mp4",
-    "render:both": "npm run render && npm run render:vertical"
+    "render:short": "remotion render Part15Short out/part15-short.mp4",
+    "render:all": "npm run render && npm run render:vertical && npm run render:short"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.0",

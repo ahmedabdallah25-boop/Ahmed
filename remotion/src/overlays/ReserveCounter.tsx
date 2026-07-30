@@ -1,14 +1,8 @@
 import React from 'react';
 import { Easing, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
-import { CUES, GOLD, MONO, useLayout } from '../theme';
+import { GOLD, MONO, useCues, useLayout } from '../theme';
 
-/**
- * The roll fires the instant line 2 begins ("Not three percent of the bank's money.
- * Three cents of YOURS"). CUES.rollStart is measured from the voiceover, so it tracks
- * the recording rather than the script's estimate.
- */
-const ROLL_START = CUES.rollStart;
-const ROLL_END = ROLL_START + 36;
+const ROLL = 36; // frames the figure takes to fall
 const FROM = 14208;
 const TO = 426.24;
 
@@ -96,6 +90,14 @@ export const ReserveCounter: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const C = useLayout().counter;
+
+  /**
+   * The roll fires the instant line 2 begins ("Not three percent of the bank's money.
+   * Three cents of YOURS"). Measured from the voiceover per cut, so it tracks the
+   * recording rather than the script's estimate.
+   */
+  const ROLL_START = useCues().rollStart;
+  const ROLL_END = ROLL_START + ROLL;
 
   const value = interpolate(frame, [ROLL_START, ROLL_END], [FROM, TO], {
     easing: Easing.out(Easing.cubic),

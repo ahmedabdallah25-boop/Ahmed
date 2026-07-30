@@ -2,7 +2,7 @@ import React from 'react';
 import { AbsoluteFill, interpolate, useCurrentFrame } from 'remotion';
 import { Camera, Plate } from '../lib/Plate';
 import { ReserveCounter } from '../overlays/ReserveCounter';
-import { BEATS, CUES, useLayout } from '../theme';
+import { useBeats, useCues, useLayout } from '../theme';
 
 /**
  * Beats 1-2, 0:00–0:10. "Right now your bank is holding about three cents of every
@@ -16,7 +16,8 @@ import { BEATS, CUES, useLayout } from '../theme';
 export const Beat1Balance: React.FC = () => {
   const frame = useCurrentFrame();
   const L = useLayout();
-  const LEN = BEATS.balance.durationInFrames;
+  const LEN = useBeats().balance.durationInFrames;
+  const cues = useCues();
 
   // The wide frame shows scale artefacts sooner, so it pushes in less than the tall one.
   const scale = interpolate(frame, [0, LEN], [1, L.push], { extrapolateRight: 'clamp' });
@@ -26,7 +27,7 @@ export const Beat1Balance: React.FC = () => {
   const driftY = Math.sin(frame / 23) * 4;
 
   // Screen light drops as the number falls — same window as the odometer roll
-  const glow = interpolate(frame, [CUES.rollStart, CUES.rollStart + 36], [1, 0.8], {
+  const glow = interpolate(frame, [cues.rollStart, cues.rollStart + 36], [1, 0.8], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });

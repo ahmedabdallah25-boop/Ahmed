@@ -2,7 +2,7 @@ import React from 'react';
 import { AbsoluteFill, Img, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import { Camera, Plate, usePlate } from '../lib/Plate';
 import { noise } from '../lib/rng';
-import { BEATS, useLayout } from '../theme';
+import { useBeats, useLayout } from '../theme';
 
 /**
  * Beat 3, 0:10–0:16. "The rest isn't in a vault. It isn't anywhere. It's a promise,
@@ -19,12 +19,13 @@ export const Beat3Vault: React.FC = () => {
   const { fps } = useVideoConfig();
   const L = useLayout();
   const door = usePlate('vault-door');
+  const len = useBeats().vault.durationInFrames;
 
   // Heavy inertia + settle-bounce: damping 12 / mass 2 overshoots ~4deg and returns.
   const swing = spring({ frame, fps, config: { damping: 12, mass: 2 }, durationInFrames: 45 });
   const angle = swing * 90;
 
-  const scale = interpolate(frame, [45, BEATS.vault.durationInFrames], [1, 1.25], {
+  const scale = interpolate(frame, [45, len], [1, 1.25], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });

@@ -1,17 +1,17 @@
 import React from 'react';
 import { Easing, interpolate, useCurrentFrame } from 'remotion';
-import { GOLD, SANS, useLayout } from '../theme';
+import { at, GOLD, SANS, useBeats, useLayout } from '../theme';
 
 const LINES = [['SAME', 'MONEY.'], ['ONE', 'SYSTEM', 'NEEDS', 'YOU', 'NOT', 'TO', 'LOOK.']];
 
 const WORD_STAGGER = 2; // 60ms @ 30fps
-// "Same money. One system needs you not to look." runs to about local frame 130, so the
-// wipe waits for it rather than pulling the line before it is said.
-const WIPE = 130;
 
 export const KickerCard: React.FC = () => {
   const frame = useCurrentFrame();
   const K = useLayout().kicker;
+  // "Same money. One system needs you not to look." runs to roughly 43% of the beat in
+  // both reads, so the wipe waits for it rather than pulling the line before it is said.
+  const WIPE = at(0.43, useBeats().kicker.durationInFrames);
 
   let wordIndex = 0;
   const wipe = interpolate(frame, [WIPE, WIPE + 12], [0, 1], {

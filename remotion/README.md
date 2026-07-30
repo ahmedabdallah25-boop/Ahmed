@@ -1,22 +1,28 @@
 # Part 15 — Remotion composition
 
-`Your Bank Only Has 3 Cents of Every Dollar You Own` · 30fps · 1927 frames (64.3s) · voiced
+`Your Bank Only Has 3 Cents of Every Dollar You Own` · 30fps · voiced
 
-Two deliverables from one component tree:
+Three deliverables from one component tree:
 
-| Composition | Size | Output |
-|---|---|---|
-| `Part15` | 1920×1080 | `out/part15-landscape.mp4` |
-| `Part15Vertical` | 1080×1920 | `out/part15-vertical.mp4` |
+| Composition | Size | Read | Length | Output |
+|---|---|---|---|---|
+| `Part15` | 1920×1080 | `full` | 64.3s | `out/part15-landscape.mp4` |
+| `Part15Vertical` | 1080×1920 | `full` | 64.3s | `out/part15-vertical.mp4` |
+| `Part15Short` | 1080×1920 | `short` | **46.7s** | `out/part15-short.mp4` |
+
+Two independent axes: **orientation** comes from each composition's own dimensions
+(`useLayout`), **read** comes from its `cut` prop (`useBeats` / `useCues`). Neither is a
+global, which is why the same seven beats serve 16:9 long-form and a 46.7s Short.
 
 ```bash
 npm install
 npm run plates      # regenerate public/plates (deterministic, only needed if you edit the generator)
 npm run vo          # synthesise the VO and RETIME the composition to it
 npm run dev         # Remotion Studio — scrub either composition
-npm run render      # 16:9
+npm run render      # 16:9 long-form
 npm run render:vertical
-npm run render:both
+npm run render:short
+npm run render:all
 npm run typecheck
 ```
 
@@ -25,7 +31,8 @@ npm run typecheck
 ```
 scripts/layouts.mjs      SOURCE OF TRUTH for geometry, both orientations
 scripts/make-plates.mjs  builds both plate sets AND generates src/layouts.ts
-scripts/make-vo.mjs      synthesises public/vo.mp3 and generates src/vo-timing.ts
+scripts/vo-cuts.mjs      SOURCE OF TRUTH for both reads — lines, pauses, speed
+scripts/make-vo.mjs      synthesises both vo-*.mp3 and generates src/vo-timing.ts
 src/layouts.ts           GENERATED — geometry, typed
 src/vo-timing.ts         GENERATED — measured beat boundaries and cues
 src/theme.ts             palette; useLayout()/useOrientation(); re-exports BEATS/CUES
@@ -87,26 +94,47 @@ frame-to-frame. `i * k % n` is also avoided: it bands into visible diagonal stri
 
 ## The voiceover drives the timeline
 
-`npm run vo` does three things: synthesises one audio file per script line, measures each
-one, and writes `src/vo-timing.ts` with the resulting beat boundaries. `theme.ts` re-exports
-those, so **the composition is cut to the recording, not to the script's estimates.** The
-script guessed 52s; the read is 64.3s, and every beat absorbed its share.
+`npm run vo` synthesises one audio file per line **per cut**, measures each, and writes
+`src/vo-timing.ts` with the resulting beat boundaries. Components read those through
+`useBeats()`, so **each composition is cut to its own recording, not to the script's
+estimates.** The script guessed 52s; the full read is 64.3s and the Shorts read 46.7s, and
+in both cases every beat absorbed its share.
 
-Voice: Kokoro-82M `am_michael` at 0.96x, via `npx hyperframes tts` — a local model, no
-account needed. `pip install kokoro-onnx soundfile` is a prerequisite.
+Voice: Kokoro-82M `am_michael` via `npx hyperframes tts` — a local model, no account
+needed. `pip install kokoro-onnx soundfile` is a prerequisite. The full read runs at 0.96x
+so the hook lands unhurried; the Shorts read runs at 1.0x.
 
-Two cues have to land on a word rather than at a proportion of a beat, so they are measured
-too and exported as `VO.cues`:
+### The two reads
+
+`scripts/vo-cuts.mjs` holds both. The short one is cut against the channel's own outlier
+profile — its best Short is 46s, and the shared trait is a tight read with the sting inside
+three seconds:
+
+- the **hook is untouched** (lines 1–2), because it is the whole video;
+- every line after it loses its second clause;
+- the lending chain drops to **two rows** — "kept three, lent ninety-seven, lent it again"
+  is the mechanism, rows 3–5 were reinforcement (`chainRows` in the cut, read by
+  `MultiplierChain`);
+- pauses tighten, except the one after "yours", which is doing work.
+
+### Word-locked vs proportional cues
+
+Two cues must land on a *word*, so they are measured per cut and exported as `VO.cues`:
 
 | Cue | Lands on | Used by |
 |---|---|---|
 | `rollStart` | the first frame of line 2, "Three cents of **yours**" | `ReserveCounter`, and Beat 1's glow dip |
 | `slam` | 4 frames before line 6 ends, on "the same **day**" | `Beat6Run`'s shutter |
 
-**To swap in a human read:** record one file per line, drop them in `public/vo-lines/` as
-`01.wav` … `08.wav`, and run `npm run vo -- --from-recordings`. Same measurement, same
-retime — no frame numbers to edit by hand. The pauses between lines live in `LINES[].pad`
-in the script and are the ones from `vo-script.txt`'s delivery notes.
+Everything else that used to be a literal frame number now goes through `at(fraction,
+beatLength)` — the blueprint fills, the kicker wipe, the owner-grid blur, the wordmark
+spring. **This is not tidiness.** The short read compresses beat 7 from 335 frames to 209;
+a hardcoded "fires at 240" silently stops firing, which is exactly how three moves broke
+the first time this timeline was retimed.
+
+**To swap in a human read:** record one file per line into `public/vo-lines/<cut>/` as
+`01.wav` … `08.wav` and run `npm run vo -- --from-recordings`. Same measurement, same
+retime — no frame numbers to edit by hand.
 
 ## One thing is stubbed, on purpose
 
@@ -156,13 +184,9 @@ The config points at the Chromium headless shell that ships in this image. Overr
   the window. At the landscape figure's size an unmasked partial digit reads as a stray
   glyph rather than as a drum turning.
 
-## The vertical cut is 64.3s, and that is worth a decision
+## Which vertical file to post
 
-Both cuts share one voiceover, so the Short inherits the long-form runtime. The channel's
-own data argues against that: the best-performing Short on it is 46s, and the trait the
-outliers share is a tight read with the sting in the first three seconds. 64.3s is not
-disqualifying — Shorts allows up to three minutes — but it is not what the outliers did.
-
-Cutting it properly means a shorter script, not a faster render: drop beat 4's chain to
-two rows and compress beats 6–7. That changes `LINES` in `scripts/make-vo.mjs`, then
-`npm run vo` retimes everything automatically.
+`Part15Short` (46.7s) is the one to post as a Short — it matches the channel's own
+outlier profile. `Part15Vertical` (64.3s) is the full read in a tall frame, useful if you
+want the complete argument vertically without recutting; it is not the Shorts-optimised
+deliverable.

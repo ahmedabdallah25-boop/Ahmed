@@ -2,21 +2,23 @@ import React from 'react';
 import { AbsoluteFill, spring, useCurrentFrame, useVideoConfig } from 'remotion';
 import { Camera, Plate } from '../lib/Plate';
 import { KickerCard } from '../overlays/KickerCard';
-import { BEATS, GOLD, SANS, useLayout } from '../theme';
+import { at, GOLD, SANS, useBeats, useLayout } from '../theme';
 
 /**
  * Beat 8, 0:54–1:04. "Same money. One system needs you not to look. Tomorrow: where the
  * ninety-seven actually goes. No jargon, just mechanisms."
  *
  * Holds Beat 7's final camera position so the cut is invisible, then darkens under the
- * kicker type. Wordmark springs in at local 120.
+ * kicker type.
  */
 export const Beat8Kicker: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const L = useLayout();
+  const len = useBeats().kicker.durationInFrames;
 
-  const logo = spring({ frame: frame - 120, fps, config: { damping: 200 } });
+  // 40% into the beat, so it lands after the kicker type in either read.
+  const logo = spring({ frame: frame - at(0.4, len), fps, config: { damping: 200 } });
 
   return (
     <AbsoluteFill style={{ backgroundColor: '#000' }}>

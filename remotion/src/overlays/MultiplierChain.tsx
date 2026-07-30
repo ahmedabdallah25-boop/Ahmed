@@ -1,6 +1,6 @@
 import React from 'react';
 import { Easing, interpolate, useCurrentFrame } from 'remotion';
-import { GOLD, MONO, RESERVE, TEAL, useLayout } from '../theme';
+import { GOLD, MONO, RESERVE, TEAL, useLayout, useVO } from '../theme';
 
 /** The chain the VO narrates: keep 3%, lend the rest, the rest gets deposited again. */
 const chain = (() => {
@@ -20,6 +20,9 @@ const money = (n: number) => `$${n.toFixed(2)}`;
 export const MultiplierChain: React.FC = () => {
   const frame = useCurrentFrame();
   const C = useLayout().chain;
+  // The short read only narrates two rounds of lending, so it only shows two rows —
+  // rows three to five were reinforcement, not new information.
+  const rows = chain.slice(0, useVO().chainRows);
   // Row 1 waits for "You deposited a hundred" to land, then one row per ~0.9s so the
   // chain builds across the line instead of finishing before the sentence does.
   const { start: START, stagger: STAGGER } = C;
@@ -44,7 +47,7 @@ export const MultiplierChain: React.FC = () => {
         alignItems: C.align,
       }}
     >
-      {chain.map((row, i) => {
+      {rows.map((row, i) => {
         const start = START + i * STAGGER;
         const appear = interpolate(frame, [start, start + 10], [0, 1], {
           easing: Easing.out(Easing.quad),
