@@ -1,0 +1,49 @@
+name: Monitor Episode 2
+
+# Daily from publish. Reports pace while inside the 7-day window, then applies
+# the decision rule once the window closes — including swapping the thumbnail
+# and title itself when the verdict is REPACKAGE.
+on:
+  schedule:
+    - cron: "0 17 * * *"
+  workflow_dispatch:
+    inputs:
+      dry:
+        description: "dry = report only, never change the video"
+        type: choice
+        options: ["no", "dry"]
+        default: "no"
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r automation/requirements.txt
+      - name: Apply the 7-day rule
+        run: |
+          if [ "${{ inputs.dry }}" = "dry" ]; then
+            python automation/monitor_ep2.py --dry
+          else
+            python automation/monitor_ep2.py
+          fi
+        env:
+          YT_CLIENT_ID: ${{ secrets.new1 }}
+          YT_CLIENT_SECRET: ${{ secrets.new2 }}
+          YT_REFRESH_TOKEN: ${{ secrets.new3 }}
+      - name: Record a repackage if one happened
+        run: |
+          if ! git diff --quiet automation/ep2.json; then
+            git config user.name "Claude"
+            git config user.email "noreply@anthropic.com"
+            git add automation/ep2.json
+            git commit -m "Record Episode 2 repackage from the monitor run"
+            git push
+          else
+            echo "No change to record."
+          fi
