@@ -132,6 +132,20 @@ export const Body: React.FC<{
   );
 };
 
+/** Interpolate a value up to its target, then hold — for inline figures. */
+export const count = (
+  frame: number,
+  at: number,
+  dur: number,
+  from: number,
+  to: number,
+) =>
+  interpolate(frame, [at, at + dur], [from, to], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+    easing: Easing.out(Easing.cubic),
+  });
+
 /** A number that counts up to its value, then holds. */
 export const Counter: React.FC<{
   to: number;

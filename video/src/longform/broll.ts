@@ -15,7 +15,7 @@ export type BRollShot = {
 };
 
 export const SHOTS: BRollShot[] = [
-  {file: '01.jpg', at: 5.4, dur: 4.2, opacity: 0.38, note: 'key on the mortgage offer letter — behind the premise question'},
+  {file: '01.jpg', at: 5.4, dur: 4.2, opacity: 0.38, note: 'key on the mortgage offer letter — behind the £420 beat'},
   {file: '02.jpg', at: 86.5, dur: 3.2, opacity: 0.34, note: 'cheque book, pen, keys — loan, not sale'},
   {file: '03.jpg', at: 100, dur: 3.2, opacity: 0.3, note: 'sealed title register — a charge, not ownership'},
   {file: '04.jpg', at: 115, dur: 3.4, opacity: 0.28, note: 'water-stained ceiling — the risk stays with you'},
