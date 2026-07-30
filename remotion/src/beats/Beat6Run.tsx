@@ -1,6 +1,7 @@
 import React from 'react';
 import { AbsoluteFill, Easing, Img, interpolate, staticFile, useCurrentFrame } from 'remotion';
 import { Plate } from '../lib/Plate';
+import { LAYOUT } from '../theme';
 
 /**
  * Beat 6, 0:30–0:36. "That's why a healthy bank dies in a single afternoon. Nothing was
@@ -10,11 +11,11 @@ import { Plate } from '../lib/Plate';
  * Local frames: shutter descends 60–150, slams at 150, blackout 150–156.
  */
 
-// The arched doorway in bank-run.png: 440x460 at x=320, y=430. shutter.png is rendered
-// to exactly those dimensions so it can be clipped to the arch.
-const ARCH = { left: 320, top: 430, width: 440, height: 460 };
+// The arched doorway in bank-run.png. shutter.png is rendered to exactly these
+// dimensions so it can be clipped to the arch.
+const ARCH = LAYOUT.arch;
 
-const RAIN_PERIOD = 960; // rain-tile.png repeats every 960px
+const RAIN_PERIOD = LAYOUT.rainPeriod;
 const SLAM = 150;
 
 export const Beat6Run: React.FC = () => {
@@ -63,7 +64,7 @@ export const Beat6Run: React.FC = () => {
         />
       </div>
 
-      {/* two copies 960px apart so the tile loops with no seam */}
+      {/* two copies one period apart so the tile loops with no seam */}
       {[0, -RAIN_PERIOD].map((offset) => (
         <Img
           key={offset}

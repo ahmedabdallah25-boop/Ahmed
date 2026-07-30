@@ -11,13 +11,15 @@ const LEN = BEATS.balance.durationInFrames; // 240
  * dollar you think you own." / "Not three percent of the bank's money. Three cents of
  * YOURS."
  *
- * The counter lives inside <Camera> so it scales with the push-in and stays welded to
- * the phone screen. Pulling it out drifts it off the glass by the end of the beat.
+ * Landscape split: the phone holds the left third (it's the plate), the balance figure
+ * gets the right two thirds. The counter is inside <Camera> so it pushes in with the
+ * frame rather than sliding against it.
  */
 export const Beat1Balance: React.FC = () => {
   const frame = useCurrentFrame();
 
-  const scale = interpolate(frame, [0, LEN], [1, 1.08], { extrapolateRight: 'clamp' });
+  // Gentler than the portrait cut — a wide frame shows scale artefacts sooner.
+  const scale = interpolate(frame, [0, LEN], [1, 1.06], { extrapolateRight: 'clamp' });
 
   // 4px handheld drift on two incommensurate periods so it never visibly repeats
   const driftX = Math.sin(frame / 17) * 4;
@@ -35,7 +37,8 @@ export const Beat1Balance: React.FC = () => {
         <Plate name="phone-balance" />
         <AbsoluteFill
           style={{
-            background: 'radial-gradient(38% 26% at 50% 44%, rgba(150,190,255,.28), transparent 70%)',
+            background:
+              'radial-gradient(22% 38% at 22% 50%, rgba(150,190,255,.28), transparent 70%)',
             mixBlendMode: 'screen',
             opacity: glow,
           }}

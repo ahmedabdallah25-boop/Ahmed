@@ -1,6 +1,6 @@
 # Part 15 — Remotion composition
 
-`Your Bank Only Has 3 Cents of Every Dollar You Own` · 1080×1920 · 30fps · 1560 frames (52s)
+`Your Bank Only Has 3 Cents of Every Dollar You Own` · **1920×1080 landscape** · 30fps · 1560 frames (52s)
 
 ```bash
 npm install
@@ -13,7 +13,7 @@ npm run typecheck
 ## Layout
 
 ```
-src/theme.ts             palette, BEAT boundaries, HAS_VO flag  <- edit timings here
+src/theme.ts             palette, BEAT boundaries, LAYOUT geometry, HAS_VO flag
 src/Root.tsx             the <Composition>
 src/Part15.tsx           timeline: one <Sequence> per beat, hard cuts
 src/lib/rng.ts           seeded mulberry32 (see "Determinism")
@@ -26,7 +26,24 @@ scripts/make-plates.mjs  regenerates the plates via Chromium
 
 Beat components are numbered for their **script** beat, so beats 1–2 share
 `Beat1Balance.tsx` and there is no `Beat2`. `BEATS` in `theme.ts` is the single source of
-truth for every boundary.
+truth for every boundary, and `LAYOUT` there mirrors the plate generator's geometry —
+move something in one and you must move it in the other, nothing checks them.
+
+## Landscape
+
+The compositions are laid out for a wide frame, not scaled from a vertical original.
+Several beats use the width structurally, so the orientation is not a config flip:
+
+| Beat | Portrait was | Landscape is |
+|---|---|---|
+| 1–2 | counter locked to the phone screen | phone left third, balance figure right two thirds |
+| 4 | chain overlaid on the coins behind a scrim | cascade left half, chain right half, no scrim |
+| 5 | 5 × 6 screen grid, tally in a top band | 10 × 3 grid, tally in a bottom band, all 30 squares on one row |
+| 7 | blueprints in a row below the vault | vault pushed left, blueprints stacked down the right |
+
+When translating a plate off-centre (Beat 7 pushes the vault left), it only still covers
+the frame if `scale >= 1 + 2 * |x| / W`. Violating that shows as a black strip at the
+frame edge, which is easy to miss on a dark plate.
 
 ## Frame numbers are Sequence-local
 
@@ -91,3 +108,6 @@ The config points at the Chromium headless shell that ships in this image. Overr
   the first 8 seconds. Dollars read as a hard countdown instead.
 - **Overlay timings are VO-synced, not as specced.** The reserve counter was specced to
   hold 1.5s then roll; it now rolls at local 120–156 to land on "three cents of *yours*".
+- **The odometer wheels carry a gradient mask** so digits fade as they enter and leave
+  the window. At the landscape figure's size an unmasked partial digit reads as a stray
+  glyph rather than as a drum turning.

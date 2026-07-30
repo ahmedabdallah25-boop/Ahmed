@@ -1,7 +1,31 @@
 /** Series constants. Palette matches scripts/make-plates.mjs — change both together. */
-export const W = 1080;
-export const H = 1920;
+export const W = 1920;
+export const H = 1080;
 export const FPS = 30;
+
+/**
+ * Geometry the beats share with the plate generator. These mirror the constants at the
+ * top of scripts/make-plates.mjs; nothing checks them against each other, so if you move
+ * something in the generator, move it here too.
+ */
+export const LAYOUT = {
+  /** vault-door.png: the door is centred, so its hinge (left edge) is here. */
+  doorHinge: { x: (W - 780) / 2, y: H / 2 },
+  /** The arched doorway in bank-run.png, and the size shutter.png is rendered at. */
+  arch: { left: (W - 380) / 2, top: 200, width: 380, height: 380 },
+  /** thirty-owners.png: 10 x 3 in landscape. */
+  grid: { cols: 10, rows: 3, cellW: 150, cellH: 250, gap: 22, inset: 10 },
+  /** lending-cascade.png: five tiers down the left half. */
+  tiers: [0, 1, 2, 3, 4].map((i) => ({
+    width: 620 - i * 95,
+    top: 110 + i * 190,
+    centerX: 620,
+  })),
+  tierPitch: 190,
+  tierBar: 28,
+  /** rain-tile.png repeats every this many px vertically. */
+  rainPeriod: 540,
+} as const;
 
 export const GOLD = '#D4A24C';
 export const TEAL = '#3E8E8C';

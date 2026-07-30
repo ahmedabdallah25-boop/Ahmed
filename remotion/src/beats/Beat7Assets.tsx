@@ -2,7 +2,7 @@ import React from 'react';
 import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from 'remotion';
 import { Camera, Plate } from '../lib/Plate';
 import { noise } from '../lib/rng';
-import { GOLD } from '../theme';
+import { GOLD, H, W } from '../theme';
 
 /**
  * Beat 7, 0:36–0:46. "The alternative already exists. Your deposit stays YOUR deposit —
@@ -13,22 +13,43 @@ import { GOLD } from '../theme';
  */
 
 /**
- * The generator draws all three blueprints in the same bottom region, overlapping. They
- * get laid out side by side here: transformOrigin is the art's own centre in full-frame
- * coordinates, so translate+scale place it without shearing. `bbox` is the art's real
- * vertical extent — the clip has to sit on it, because clipping the full 1920 frame
- * would spend 80% of the reveal on empty space above the drawing.
+ * The generator draws each blueprint centred in the frame. They get placed into their
+ * own slots here: transformOrigin is the art's own centre in full-frame coordinates, so
+ * translate+scale position it without shearing. `bbox` is the art's real vertical extent
+ * — the clip has to sit on it, because clipping the full frame would spend most of the
+ * reveal on empty space above the drawing.
+ *
+ * Landscape layout: the vault is pushed left and the three blueprints stack down the
+ * right. Stacking reads better than a row here — the frame is wide but short, and a row
+ * of three would collide with the vault.
  */
 const BLUEPRINTS = [
-  { name: 'blueprint-house', cx: 540, cy: 1535, bbox: [1290, 500], to: [250, 1560], at: 30 },
-  { name: 'blueprint-panels', cx: 540, cy: 1675, bbox: [1540, 280], to: [540, 1560], at: 60 },
-  { name: 'blueprint-truck', cx: 530, cy: 1694, bbox: [1560, 280], to: [830, 1560], at: 90 },
+  { name: 'blueprint-house', cx: 960, cy: 620, bbox: [450, 340], to: [1480, 250], at: 30 },
+  { name: 'blueprint-panels', cx: 960, cy: 660, bbox: [560, 200], to: [1480, 540], at: 60 },
+  { name: 'blueprint-truck', cx: 960, cy: 640, bbox: [545, 190], to: [1480, 830], at: 90 },
 ] as const;
 
-const SCALE = 0.55;
+const SCALE = 0.62;
 const FILL = 40;
 
-const VAULT_MOUTH = [540, 1150] as const;
+/**
+ * Camera move on the vault plate: pushed left to clear the right-hand column.
+ *
+ * A translated plate only covers the frame if it is scaled up enough to absorb the
+ * shift: `scale >= 1 + 2 * |x| / W`. At 1.18/-330 the requirement is 1.34, so the right
+ * edge of the frame showed through as a black strip. 1.20/-180 needs 1.1875.
+ */
+const VAULT_CAM = { scale: 1.2, x: -180 };
+
+/**
+ * Where the gold leaves the vault, in FRAME coordinates. The plate is inside <Camera>
+ * but the particles and blueprints are not, so this is the pre-transform mouth (960,800)
+ * mapped through VAULT_CAM.
+ */
+const VAULT_MOUTH = [
+  (960 - W / 2) * VAULT_CAM.scale + W / 2 + VAULT_CAM.x,
+  (800 - H / 2) * VAULT_CAM.scale + H / 2,
+] as const;
 const N = noise(53, 120);
 
 export const Beat7Assets: React.FC = () => {
@@ -38,10 +59,14 @@ export const Beat7Assets: React.FC = () => {
 
   return (
     <AbsoluteFill style={{ backgroundColor: '#000' }}>
-      <Camera y={craneY}>
+      {/* Only the plate rides the camera — the blueprints and particles are positioned in
+          frame coordinates, so shifting them too would undo the layout. Scaling past 1
+          also keeps the pushed-left plate from exposing the frame edge. */}
+      <Camera scale={VAULT_CAM.scale} x={VAULT_CAM.x} y={craneY}>
         <Plate name="real-assets" />
+      </Camera>
 
-        {BLUEPRINTS.map(({ name, cx, cy, bbox, to, at }) => {
+      {BLUEPRINTS.map(({ name, cx, cy, bbox, to, at }) => {
           const p = interpolate(frame, [at, at + FILL], [0, 1], {
             extrapolateLeft: 'clamp',
             extrapolateRight: 'clamp',
@@ -63,7 +88,7 @@ export const Beat7Assets: React.FC = () => {
                   position: 'absolute',
                   left: 0,
                   top: bTop,
-                  width: 1080,
+                  width: W,
                   height: bHeight,
                   // fills bottom-to-top: top inset 100% -> 0%
                   clipPath: `inset(${(1 - p) * 100}% 0 0 0)`,
@@ -71,7 +96,7 @@ export const Beat7Assets: React.FC = () => {
               >
                 <Img
                   src={staticFile(`plates/${name}.png`)}
-                  style={{ position: 'absolute', left: 0, top: -bTop, width: 1080, height: 1920 }}
+                  style={{ position: 'absolute', left: 0, top: -bTop, width: W, height: H }}
                 />
               </div>
             </div>
@@ -87,7 +112,7 @@ export const Beat7Assets: React.FC = () => {
             const [x1, y1] = to;
             // quadratic bezier, control point lifted so the stream arcs rather than cuts
             const cxp = (x0 + x1) / 2 + (N[idx] - 0.5) * 120;
-            const cyp = Math.min(y0, y1) - 180;
+            const cyp = Math.min(y0, y1) - 140;
             const u = 1 - t;
             const x = u * u * x0 + 2 * u * t * cxp + t * t * x1;
             const y = u * u * y0 + 2 * u * t * cyp + t * t * y1;
@@ -109,9 +134,8 @@ export const Beat7Assets: React.FC = () => {
                 }}
               />
             );
-          }),
-        )}
-      </Camera>
+        }),
+      )}
     </AbsoluteFill>
   );
 };

@@ -40,11 +40,11 @@ export const KickerCard: React.FC = () => {
               justifyContent: 'center',
               fontFamily: SANS,
               fontWeight: 800,
-              fontSize: li === 0 ? 118 : 84,
+              fontSize: li === 0 ? 128 : 78,
               lineHeight: 1.06,
               letterSpacing: '-.02em',
               color: li === 0 ? '#fff' : GOLD,
-              marginBottom: li === 0 ? 34 : 0,
+              marginBottom: li === 0 ? 30 : 0,
             }}
           >
             {line.map((word) => {
@@ -78,7 +78,7 @@ export const KickerCard: React.FC = () => {
           position: 'absolute',
           left: 0,
           right: 0,
-          bottom: 300,
+          bottom: 210,
           opacity: wipe,
           transform: `translateY(${(1 - wipe) * 40}px)`,
           textAlign: 'center',

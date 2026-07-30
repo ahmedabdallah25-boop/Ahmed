@@ -8,8 +8,9 @@ const ROLL_END = 156;
 const FROM = 14208;
 const TO = 426.24;
 
-const SIZE = 72; // font size
-const ROW = 78; // wheel row height in px — geometry is all px, see Wheel
+const SIZE = 124; // font size
+const ROW = 136; // wheel row height in px — geometry is all px, see Wheel
+const WHEEL_W = 78;
 const ROWS = 11; // 0-9 plus a repeated 0 so the 9 -> 0 wrap rolls forward
 
 /**
@@ -47,10 +48,17 @@ const Wheel: React.FC<{ place: number; value: number; settled: boolean }> = ({
     <span
       style={{
         display: 'inline-block',
-        width: 44,
+        width: WHEEL_W,
         height: ROW,
         overflow: 'hidden',
         position: 'relative',
+        // Fades the digits entering and leaving the window. Without it the neighbouring
+        // digit reads as a stray glyph rather than as a drum turning — much more obvious
+        // at this size than it was in the portrait cut.
+        WebkitMaskImage:
+          'linear-gradient(180deg, transparent 0%, #000 26%, #000 74%, transparent 100%)',
+        maskImage:
+          'linear-gradient(180deg, transparent 0%, #000 26%, #000 74%, transparent 100%)',
       }}
     >
       <span
@@ -67,7 +75,7 @@ const Wheel: React.FC<{ place: number; value: number; settled: boolean }> = ({
             key={i}
             style={{
               display: 'block',
-              width: 44,
+              width: WHEEL_W,
               height: ROW,
               lineHeight: `${ROW}px`,
               textAlign: 'center',
@@ -117,19 +125,32 @@ export const ReserveCounter: React.FC = () => {
   const places = [4, 3, 2, 1, 0].filter((p) => value >= 10 ** p || p === 0);
 
   return (
-    // Locked to the blank balance field left deliberately empty in phone-balance.png
-    <div style={{ position: 'absolute', left: 340, top: 548, width: 420 }}>
+    // Landscape: the figure owns the right two thirds, beside the phone in the plate.
+    <div style={{ position: 'absolute', left: 900, top: 330, width: 900 }}>
+      <div
+        style={{
+          fontFamily: MONO,
+          fontSize: 32,
+          letterSpacing: '.22em',
+          color: 'rgba(232,238,247,.55)',
+          marginBottom: 18,
+        }}
+      >
+        BALANCE
+      </div>
       <div
         style={{
           fontFamily: MONO,
           fontSize: SIZE,
-          color: '#0f1826',
+          // On the dark right half now, not on the phone's white screen.
+          color: '#fff',
           fontVariantNumeric: 'tabular-nums',
           transform: `scale(${pop})`,
           transformOrigin: 'left center',
           display: 'flex',
           alignItems: 'center',
           height: ROW,
+          textShadow: '0 0 60px rgba(150,190,255,.25)',
         }}
       >
         <span style={{ lineHeight: `${ROW}px`, marginRight: 4 }}>$</span>
@@ -144,23 +165,31 @@ export const ReserveCounter: React.FC = () => {
         <Wheel place={-2} value={value} settled={settled} />
       </div>
 
-      <div style={{ marginTop: 14, height: 6, background: 'rgba(15,24,38,.12)', borderRadius: 3 }}>
+      <div
+        style={{
+          marginTop: 34,
+          width: 760,
+          height: 10,
+          background: 'rgba(232,238,247,.14)',
+          borderRadius: 5,
+        }}
+      >
         <div
           style={{
             width: `${barWidth}%`,
             height: '100%',
-            borderRadius: 3,
+            borderRadius: 5,
             background: GOLD,
-            boxShadow: `0 0 18px ${GOLD}`,
+            boxShadow: `0 0 24px ${GOLD}`,
           }}
         />
       </div>
       <div
         style={{
-          marginTop: 10,
+          marginTop: 18,
           fontFamily: MONO,
-          fontSize: 28,
-          letterSpacing: '.10em',
+          fontSize: 38,
+          letterSpacing: '.12em',
           color: GOLD,
           opacity: labelOpacity,
         }}

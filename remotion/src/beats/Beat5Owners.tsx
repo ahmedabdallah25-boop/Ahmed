@@ -2,6 +2,7 @@ import React from 'react';
 import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from 'remotion';
 import { Plate } from '../lib/Plate';
 import { OwnershipTally } from '../overlays/OwnershipTally';
+import { H, LAYOUT, W } from '../theme';
 
 /**
  * Beat 5, 0:22–0:30. "One deposit. Thirty different people now believe they own it.
@@ -12,16 +13,12 @@ import { OwnershipTally } from '../overlays/OwnershipTally';
  * claims on it.
  */
 
-// Grid geometry mirrors scripts/make-plates.mjs: 5 x 150px cols, 6 x 250px rows, 22 gap.
-const COLS = 5;
-const CELL_W = 150;
-const CELL_H = 250;
-const GAP = 22;
-const GRID_W = COLS * CELL_W + (COLS - 1) * GAP; // 838
-const GRID_H = 6 * CELL_H + 5 * GAP; // 1610
-const LEFT = (1080 - GRID_W) / 2; // 121
-const TOP = (1920 - GRID_H) / 2; // 155
-const INSET = 10; // inner screen inset inside each phone body
+// Grid geometry comes from LAYOUT — 10 x 3 in landscape.
+const { cols: COLS, rows: ROWS, cellW: CELL_W, cellH: CELL_H, gap: GAP, inset: INSET } = LAYOUT.grid;
+const GRID_W = COLS * CELL_W + (COLS - 1) * GAP; // 1698
+const GRID_H = ROWS * CELL_H + (ROWS - 1) * GAP; // 794
+const LEFT = (W - GRID_W) / 2; // 111
+const TOP = (H - GRID_H) / 2; // 143
 
 export const Beat5Owners: React.FC = () => {
   const frame = useCurrentFrame();

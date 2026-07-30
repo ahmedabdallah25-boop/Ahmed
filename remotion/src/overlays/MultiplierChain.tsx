@@ -25,20 +25,18 @@ export const MultiplierChain: React.FC = () => {
   return (
     <div
       style={{
+        // Landscape: the chain gets the right half, clear of the cascade in the left.
+        // No scrim needed — the portrait cut had to overlay the coins and fight them.
         position: 'absolute',
-        left: 0,
-        right: 0,
-        bottom: 300,
-        // Above the falling coins, with a scrim: coins pass straight through this band
-        // and shred the numbers without it.
-        zIndex: 10,
-        padding: '34px 0',
-        background:
-          'linear-gradient(180deg, transparent, rgba(4,8,15,.90) 16%, rgba(4,8,15,.90) 84%, transparent)',
+        left: 1010,
+        right: 50,
+        top: 0,
+        bottom: 0,
         display: 'flex',
         // Rows arrive bottom-up, so the newest (smallest) loan is always at the bottom.
         flexDirection: 'column-reverse',
-        alignItems: 'center',
+        justifyContent: 'center',
+        alignItems: 'flex-start',
       }}
     >
       {chain.map((row, i) => {
@@ -49,18 +47,25 @@ export const MultiplierChain: React.FC = () => {
           extrapolateRight: 'clamp',
         });
         // Each row 12% smaller and 15% more transparent than the one below it.
-        const scale = 0.88 ** i;
+        const scale = 0.90 ** i;
         const fade = 0.85 ** i;
 
         return (
-          <div key={i} style={{ opacity: appear * fade, transform: `scale(${scale})` }}>
+          <div
+            key={i}
+            style={{
+              opacity: appear * fade,
+              transform: `scale(${scale})`,
+              transformOrigin: 'left center',
+            }}
+          >
             {/* connector drawn as the row lands */}
             {i > 0 ? (
               <div
                 style={{
                   width: 2,
-                  height: 26 * appear,
-                  margin: '0 auto',
+                  height: 22 * appear,
+                  marginLeft: 100,
                   background: `linear-gradient(180deg, transparent, ${TEAL})`,
                 }}
               />
@@ -68,15 +73,15 @@ export const MultiplierChain: React.FC = () => {
             <div
               style={{
                 display: 'flex',
-                gap: 18,
+                gap: 14,
                 alignItems: 'baseline',
                 fontFamily: MONO,
-                fontSize: 46,
+                fontSize: 38,
                 letterSpacing: '-.01em',
                 transform: `translateY(${(1 - appear) * 10}px)`,
               }}
             >
-              <span style={{ color: '#e8eef7', minWidth: 200, textAlign: 'right' }}>
+              <span style={{ color: '#e8eef7', minWidth: 168, textAlign: 'right' }}>
                 {money(row.deposit)}
               </span>
               <span style={{ color: 'rgba(232,238,247,.45)' }}>→</span>

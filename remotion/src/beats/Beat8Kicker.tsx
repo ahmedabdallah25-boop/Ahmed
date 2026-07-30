@@ -8,8 +8,9 @@ import { GOLD, SANS } from '../theme';
  * Beat 8, 0:46–0:52. "Same money. One system needs you not to look. Tomorrow: where the
  * ninety-seven actually goes. No jargon, just mechanisms."
  *
- * Holds Beat 7's last camera position (scale 1.25, y -80) so the cut is invisible, then
- * darkens under the kicker type. Wordmark springs in at local 120 (absolute 1500).
+ * Holds Beat 7's last camera position (scale 1.2, x -180, y -80) so the cut is
+ * invisible, then darkens under the kicker type. Wordmark springs in at local 120
+ * (absolute 1500).
  */
 export const Beat8Kicker: React.FC = () => {
   const frame = useCurrentFrame();
@@ -19,7 +20,8 @@ export const Beat8Kicker: React.FC = () => {
 
   return (
     <AbsoluteFill style={{ backgroundColor: '#000' }}>
-      <Camera scale={1.25} y={-80}>
+      {/* holds Beat 7's last camera position exactly, so the cut is invisible */}
+      <Camera scale={1.2} x={-180} y={-80}>
         <Plate name="real-assets" />
       </Camera>
       <AbsoluteFill style={{ backgroundColor: '#000', opacity: 0.55 }} />
@@ -31,7 +33,7 @@ export const Beat8Kicker: React.FC = () => {
           position: 'absolute',
           left: 0,
           right: 0,
-          bottom: 150,
+          bottom: 130,
           textAlign: 'center',
           opacity: logo,
           transform: `translateY(${(1 - logo) * 24}px)`,
