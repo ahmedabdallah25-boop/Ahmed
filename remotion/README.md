@@ -94,15 +94,47 @@ frame-to-frame. `i * k % n` is also avoided: it bands into visible diagonal stri
 
 ## The voiceover drives the timeline
 
-`npm run vo` synthesises one audio file per line **per cut**, measures each, and writes
-`src/vo-timing.ts` with the resulting beat boundaries. Components read those through
-`useBeats()`, so **each composition is cut to its own recording, not to the script's
-estimates.** The script guessed 52s; the full read is 64.3s and the Shorts read 46.7s, and
-in both cases every beat absorbed its share.
+`npm run vo` measures the audio for each cut and writes `src/vo-timing.ts` with the
+resulting beat boundaries. Components read those through `useBeats()`, so **each
+composition is cut to its own recording, not to the script's estimates.** The script
+guessed 52s; the full read is 64.3s and the Shorts read 46.7s, and in both cases every beat
+absorbed its share.
 
-Voice: Kokoro-82M `am_michael` via `npx hyperframes tts` — a local model, no account
-needed. `pip install kokoro-onnx soundfile` is a prerequisite. The full read runs at 0.96x
-so the hook lands unhurried; the Shorts read runs at 1.0x.
+### Three sources, per cut
+
+`npm run vo` takes whichever of these exists, in priority order:
+
+| # | Source | Where | How boundaries are found |
+|---|---|---|---|
+| 1 | **Master take** | `public/vo-source/<cut>.mp3` | detected in the audio (below) |
+| 2 | Per-line files | `public/vo-lines/<cut>/01–08.wav`, with `--from-recordings` | measured directly |
+| 3 | Synth fallback | Kokoro-82M via `npx hyperframes tts` | measured directly |
+
+**Currently: `full` is a real ElevenLabs master take; `short` is still the Kokoro synth.**
+Drop `public/vo-source/short.mp3` in and re-run to replace it.
+
+### Finding line boundaries in a single take
+
+A master take is one continuous file, so the eight line boundaries have to be located.
+Whisper alignment is unavailable offline here (its model download is blocked), so
+`findBoundaries` uses silence detection plus **two independent checks that must agree**:
+
+- the seven longest internal gaps should be the boundaries — a reader pauses longer between
+  paragraphs than between sentences inside one;
+- each should land where the script's own length proportions predict, measured in
+  cumulative **speech** rather than wall time, which the pauses distort.
+
+On the current take both agree on the same seven gaps (0.62–0.91s, against 0.27–0.55s for
+intra-sentence pauses), within 2.3 percentage points. If they ever disagree by more than
+five points it throws, on the assumption the take no longer matches the script — a silent
+mis-timing would be far worse than a failed build.
+
+Two details that bit during implementation and are guarded now: `silencedetect` writes to
+**stderr**, not stdout; and the **trailing** silence was the longest gap in the whole file
+(1.2s), so it displaced a real boundary until head and tail were excluded.
+
+Cuts land on the **midpoint** of each boundary pause, so the outgoing shot keeps a tail and
+the incoming one gets a little pre-roll before the voice arrives.
 
 ### The two reads
 

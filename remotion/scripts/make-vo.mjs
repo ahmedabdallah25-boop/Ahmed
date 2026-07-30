@@ -1,22 +1,24 @@
 /**
- * Synthesises both voiceover cuts and retimes the compositions to them.
+ * Measures the voiceover for each cut and retimes the compositions to it.
  *
  *   npm run vo
  *
- * Writes:
- *   public/vo-full.mp3   the long-form read
- *   public/vo-short.mp3  the ~45s Shorts read
- *   src/vo-timing.ts     measured beat boundaries + in-beat cues, for BOTH cuts
+ * Writes src/vo-timing.ts — beat boundaries and in-beat cues per cut. Every frame number
+ * in the composition that has to land on a word comes from there, so the timeline follows
+ * the recording rather than the script's estimates.
  *
- * The point is the last file. Every frame number in the composition that has to land on a
- * word comes from here, so the timeline follows the recording instead of the script's
- * estimates. Re-run after changing a line, a pause, or the voice in scripts/vo-cuts.mjs.
+ * Three sources, in priority order, per cut:
  *
- * To use a human recording instead: drop one .wav per line in public/vo-lines/<cut>/
- * named 01.wav … 08.wav and run with --from-recordings. Durations are measured the same
- * way, so the retime is identical.
+ * 1. MASTER — `public/vo-source/<cut>.mp3`, one continuous take (e.g. ElevenLabs, or a
+ *    real recording). Line boundaries are FOUND in the audio; see findBoundaries.
+ * 2. PER-LINE — `public/vo-lines/<cut>/01.wav … 08.wav`, with `--from-recordings`.
+ *    Durations are measured directly, which needs no detection at all.
+ * 3. SYNTH — Kokoro-82M via `npx hyperframes tts`, the fallback so a clean checkout can
+ *    always produce something.
+ *
+ * A master take is the normal path once real audio exists: drop the file in and re-run.
  */
-import { execFileSync } from 'node:child_process';
+import { execFileSync, spawnSync } from 'node:child_process';
 import { mkdirSync, existsSync, writeFileSync, rmSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
@@ -37,6 +39,85 @@ const duration = (file) =>
 
 const fromRecordings = process.argv.includes('--from-recordings');
 const f = (seconds) => Math.round(seconds * FPS);
+
+/**
+ * Locates the line boundaries inside one continuous take.
+ *
+ * Whisper alignment is not available offline here (the model download is blocked), so
+ * this uses silence detection plus TWO independent checks that must agree:
+ *
+ *  a) the N-1 longest gaps should be the line boundaries — a reader pauses longer between
+ *     paragraphs than between sentences within one;
+ *  b) each of those gaps should fall where the script's own length proportions predict,
+ *     measured in cumulative SPEECH (not wall time, which the pauses distort).
+ *
+ * If the two disagree the take probably does not match the script, so it throws rather
+ * than silently mis-timing the whole video.
+ */
+const findBoundaries = (file, cut) => {
+  const total = duration(file);
+
+  // ffmpeg logs silencedetect to stderr, not stdout.
+  const probe = spawnSync(
+    'ffmpeg',
+    ['-hide_banner', '-nostats', '-i', file, '-af', 'silencedetect=noise=-35dB:d=0.25', '-f', 'null', '-'],
+    { encoding: 'utf8' },
+  );
+  const nums = `${probe.stdout ?? ''}${probe.stderr ?? ''}`.match(/silence_(?:start|end): [0-9.]+/g) ?? [];
+  const marks = nums.map((m) => parseFloat(m.split(': ')[1]));
+  const gaps = [];
+  for (let i = 0; i + 1 < marks.length; i += 2) gaps.push({ start: marks[i], end: marks[i + 1] });
+  if (gaps.length < cut.lines.length) {
+    throw new Error(`${file}: only ${gaps.length} pauses found, need ${cut.lines.length - 1} boundaries`);
+  }
+
+  // speech = the complement of the detected silences
+  const speech = [];
+  let t = 0;
+  for (const g of gaps) {
+    if (g.start > t) speech.push([t, g.start]);
+    t = Math.max(t, g.end);
+  }
+  if (t < total) speech.push([t, total]);
+  const speechTotal = speech.reduce((a, [x, y]) => a + (y - x), 0);
+  const speechBefore = (x) => speech.reduce((a, [s0, e0]) => a + Math.max(0, Math.min(e0, x) - s0), 0);
+
+  // (a) the longest gaps, back in time order.
+  //
+  // Lead-in and trailing silence are excluded first: the tail on this take is 1.2s, longer
+  // than any pause inside it, so leaving it in displaces a real boundary from the list.
+  const need = cut.lines.length - 1;
+  const internal = gaps.filter((g) => g.start > 0.01 && total - g.end > 0.05);
+  if (internal.length < need) {
+    throw new Error(`${file}: only ${internal.length} internal pauses, need ${need}`);
+  }
+  const longest = [...internal]
+    .sort((p, q) => q.end - q.start - (p.end - p.start))
+    .slice(0, need)
+    .sort((p, q) => p.start - q.start);
+
+  // (b) where the script's proportions say each boundary should be
+  const weights = cut.lines.map((l) => l.text.length);
+  const wTotal = weights.reduce((a, b) => a + b, 0);
+
+  longest.forEach((g, i) => {
+    const expected = weights.slice(0, i + 1).reduce((a, b) => a + b, 0) / wTotal;
+    const actual = speechBefore(g.start) / speechTotal;
+    const err = Math.abs(actual - expected);
+    if (err > 0.05) {
+      throw new Error(
+        `${file}: boundary ${i + 1} at ${g.start.toFixed(2)}s sits at ${(actual * 100).toFixed(1)}% ` +
+          `of the speech but the script predicts ${(expected * 100).toFixed(1)}% — does this take match the script?`,
+      );
+    }
+    console.log(
+      `  boundary ${i + 1}: ${g.start.toFixed(2)}-${g.end.toFixed(2)}s ` +
+        `(gap ${(g.end - g.start).toFixed(2)}s, ${(actual * 100).toFixed(1)}% vs ${(expected * 100).toFixed(1)}% expected)`,
+    );
+  });
+
+  return { total, gaps: longest, leadIn: gaps[0].start === 0 ? gaps[0].end : 0 };
+};
 
 rmSync(WORK, { recursive: true, force: true });
 
@@ -109,14 +190,78 @@ const buildCut = (name, cut) => {
   };
 
   console.log(`  -> ${totalSeconds.toFixed(2)}s / ${totalFrames} frames`);
-  return { name, totalSeconds, totalFrames, beats, order, cues, parts, chainRows: cut.chainRows };
+  return {
+    name,
+    source: fromRecordings ? 'per-line recordings' : `Kokoro ${VOICE} @ ${cut.speed}x`,
+    audio: `vo-${name}.mp3`,
+    totalSeconds,
+    totalFrames,
+    beats,
+    order,
+    cues,
+    parts,
+    chainRows: cut.chainRows,
+  };
 };
 
-const built = Object.entries(CUTS).map(([name, cut]) => buildCut(name, cut));
+/**
+ * Derives the timing block from a single continuous take.
+ *
+ * Cuts land on the MIDPOINT of each boundary pause, so the outgoing shot keeps a little
+ * tail and the incoming one gets a little pre-roll before the voice arrives.
+ */
+const measureMaster = (name, cut, file) => {
+  console.log(`\n== ${name} (master take)`);
+  const { total, gaps } = findBoundaries(file, cut);
+  const totalFrames = Math.round(total * FPS);
+  const mid = (g) => (g.start + g.end) / 2;
+
+  // One boundary per line gap; beats group lines, so `balance` spans the first two.
+  const lineStarts = [0, ...gaps.map(mid)];
+  const beats = {};
+  const order = [];
+  cut.lines.forEach((line, i) => {
+    if (!beats[line.beat]) {
+      beats[line.beat] = { from: f(lineStarts[i]), durationInFrames: 0 };
+      order.push(line.beat);
+    }
+  });
+  order.forEach((k, i) => {
+    const end = i + 1 < order.length ? beats[order[i + 1]].from : totalFrames;
+    beats[k].durationInFrames = end - beats[k].from;
+  });
+
+  const cues = {
+    // the frame line 2's speech actually starts
+    rollStart: f(gaps[0].end) - beats.balance.from,
+    // 4 frames before line 6's speech ends
+    slam: f(gaps[5].start) - 4 - beats.run.from,
+  };
+
+  console.log(`  -> ${total.toFixed(2)}s / ${totalFrames} frames`);
+  return {
+    name,
+    source: `master (${path.basename(file)})`,
+    audio: `vo-source/${name}.mp3`,
+    totalSeconds: total,
+    totalFrames,
+    beats,
+    order,
+    cues,
+    parts: cut.lines.map((l, i) => ({ ...l, spoken: 0, n: i + 1 })),
+    chainRows: cut.chainRows,
+  };
+};
+
+const built = Object.entries(CUTS).map(([name, cut]) => {
+  const master = path.join(ROOT, 'public', 'vo-source', `${name}.mp3`);
+  return existsSync(master) ? measureMaster(name, cut, master) : buildCut(name, cut);
+});
 
 // ---- generate src/vo-timing.ts ----------------------------------------------------
 const block = (b) => `  ${b.name}: {
-    audio: 'vo-${b.name}.mp3',
+    /** ${b.source} */
+    audio: '${b.audio}',
     totalFrames: ${b.totalFrames},
     /** How many rows of the lending chain this read actually narrates. */
     chainRows: ${b.chainRows},
@@ -130,15 +275,15 @@ ${b.order.map((k) => `      ${k}: { from: ${b.beats[k].from}, durationInFrames: 
       slam: ${b.cues.slam},
     },
     lines: [
-${b.parts.map((p, i) => `      { n: ${i + 1}, beat: '${p.beat}', spoken: ${p.spoken.toFixed(3)}, pad: ${p.pad} },`).join('\n')}
+${b.parts.map((p, i) => `      { n: ${i + 1}, beat: '${p.beat}' },`).join('\n')}
     ],
   },`;
 
 const ts = `/**
  * GENERATED by scripts/make-vo.mjs — do not edit by hand.
  *
- * Measured from the audio in public/ (${fromRecordings ? 'human recordings' : `Kokoro ${VOICE}`}).
-${built.map((b) => ` * ${b.name}: ${b.totalSeconds.toFixed(2)}s / ${b.totalFrames} frames @ ${CUTS[b.name].speed}x`).join('\n')}
+ * Measured from the audio in public/.
+${built.map((b) => ` * ${b.name}: ${b.totalSeconds.toFixed(2)}s / ${b.totalFrames} frames — ${b.source}`).join('\n')}
  *
  * Re-run \`npm run vo\` after any change to scripts/vo-cuts.mjs.
  */
