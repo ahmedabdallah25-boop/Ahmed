@@ -16,26 +16,69 @@
   ],
   "engagement_comment": "Question 4 is the one I'd ask first — what happens if you pay late, and where does that money go? A late charge that becomes profit for the bank is riba by another name. What did your bank say?",
   "chapters": [
-    [0, "The £420 that actually buys your house"],
-    [20, "Ten years in: paid £175,377, still owe £184,811"],
-    [51, "What this episode covers"],
-    [86, "What a mortgage actually is"],
-    [138, "Why the early years are brutal"],
-    [190, "The principle: trade vs riba"],
-    [242, "Structure 1 — Murabaha"],
-    [293, "Structure 2 — Ijara wa Iqtina"],
-    [377, "Structure 3 — Diminishing Musharaka"],
-    [444, "All three side by side"],
-    [472, "The four questions"],
-    [563, "Recap"],
-    [600, "Next episode"]
+    [
+      0,
+      "The £420 that actually buys your house"
+    ],
+    [
+      20,
+      "Ten years in: paid £175,377, still owe £184,811"
+    ],
+    [
+      51,
+      "What this episode covers"
+    ],
+    [
+      86,
+      "What a mortgage actually is"
+    ],
+    [
+      138,
+      "Why the early years are brutal"
+    ],
+    [
+      190,
+      "The principle: trade vs riba"
+    ],
+    [
+      242,
+      "Structure 1 — Murabaha"
+    ],
+    [
+      293,
+      "Structure 2 — Ijara wa Iqtina"
+    ],
+    [
+      377,
+      "Structure 3 — Diminishing Musharaka"
+    ],
+    [
+      444,
+      "All three side by side"
+    ],
+    [
+      472,
+      "The four questions"
+    ],
+    [
+      563,
+      "Recap"
+    ],
+    [
+      600,
+      "Next episode"
+    ]
   ],
   "shorts_funnel_line": "Full breakdown — the three halal mortgage structures and the four questions: [LINK]",
-  "shorts_video_ids": ["riQ7dLSnogo"],
+  "shorts_video_ids": [
+    "riQ7dLSnogo"
+  ],
   "decision_rule": {
     "window_days": 7,
     "ship_next_at_views": 150,
     "repackage_below": 150,
     "pause_longform_below": 40
-  }
+  },
+  "caption_file": "media/ep2-halal-mortgage.srt",
+  "caption_language": "en"
 }
