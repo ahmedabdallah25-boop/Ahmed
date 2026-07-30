@@ -6,10 +6,12 @@
   "scripts": {
     "dev": "remotion studio",
     "plates": "node scripts/make-plates.mjs",
-    "render": "remotion render Part15 out/part15.mp4",
+    "render": "remotion render Part15 out/part15-landscape.mp4",
     "still": "remotion still Part15 out/still.png",
     "typecheck": "tsc --noEmit",
-    "vo": "node scripts/make-vo.mjs"
+    "vo": "node scripts/make-vo.mjs",
+    "render:vertical": "remotion render Part15Vertical out/part15-vertical.mp4",
+    "render:both": "npm run render && npm run render:vertical"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.0",

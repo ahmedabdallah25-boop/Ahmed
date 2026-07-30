@@ -1,8 +1,8 @@
 import React from 'react';
-import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from 'remotion';
-import { Plate } from '../lib/Plate';
+import { AbsoluteFill, Img, interpolate, useCurrentFrame } from 'remotion';
+import { Plate, usePlate } from '../lib/Plate';
 import { OwnershipTally } from '../overlays/OwnershipTally';
-import { H, LAYOUT, W } from '../theme';
+import { useLayout } from '../theme';
 
 /**
  * Beat 5, 0:26–0:35. "One deposit. Thirty different people now believe they own it.
@@ -10,18 +10,13 @@ import { H, LAYOUT, W } from '../theme';
  *
  * Local frames: 30 screens light in a stagger over 0–75; the grid blurs 90–240 while
  * the single coin stays sharp. The coin not moving is the point — one dollar, thirty
- * claims on it.
+ * claims on it. Grid is 10 x 3 wide, 5 x 6 tall.
  */
-
-// Grid geometry comes from LAYOUT — 10 x 3 in landscape.
-const { cols: COLS, rows: ROWS, cellW: CELL_W, cellH: CELL_H, gap: GAP, inset: INSET } = LAYOUT.grid;
-const GRID_W = COLS * CELL_W + (COLS - 1) * GAP; // 1698
-const GRID_H = ROWS * CELL_H + (ROWS - 1) * GAP; // 794
-const LEFT = (W - GRID_W) / 2; // 111
-const TOP = (H - GRID_H) / 2; // 143
-
 export const Beat5Owners: React.FC = () => {
   const frame = useCurrentFrame();
+  const L = useLayout();
+  const coin = usePlate('owners-coin');
+  const { cols, cellW, cellH, gap, inset } = L.grid;
 
   const blur = interpolate(frame, [90, 240], [0, 6], {
     extrapolateLeft: 'clamp',
@@ -35,11 +30,10 @@ export const Beat5Owners: React.FC = () => {
         <Plate name="thirty-owners" />
 
         {Array.from({ length: 30 }, (_, i) => {
-          const col = i % COLS;
-          const row = Math.floor(i / COLS);
+          const col = i % cols;
+          const row = Math.floor(i / cols);
           // 2.5 frames apart -> all 30 lit in 75 frames (2.5s)
-          const start = i * 2.5;
-          const on = interpolate(frame, [start, start + 9], [0, 1], {
+          const on = interpolate(frame, [i * 2.5, i * 2.5 + 9], [0, 1], {
             extrapolateLeft: 'clamp',
             extrapolateRight: 'clamp',
           });
@@ -49,10 +43,10 @@ export const Beat5Owners: React.FC = () => {
               key={i}
               style={{
                 position: 'absolute',
-                left: LEFT + col * (CELL_W + GAP) + INSET,
-                top: TOP + row * (CELL_H + GAP) + INSET,
-                width: CELL_W - INSET * 2,
-                height: CELL_H - INSET * 2,
+                left: L.gridOrigin.left + col * (cellW + gap) + inset,
+                top: L.gridOrigin.top + row * (cellH + gap) + inset,
+                width: cellW - inset * 2,
+                height: cellH - inset * 2,
                 borderRadius: 13,
                 background: 'linear-gradient(180deg, #cfe0f5, #8fb2dc)',
                 opacity: on * 0.9,
@@ -64,10 +58,7 @@ export const Beat5Owners: React.FC = () => {
       </AbsoluteFill>
 
       {/* the one actual dollar — never animates, never blurs */}
-      <Img
-        src={staticFile('plates/owners-coin.png')}
-        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}
-      />
+      <Img src={coin} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }} />
 
       <OwnershipTally />
     </AbsoluteFill>

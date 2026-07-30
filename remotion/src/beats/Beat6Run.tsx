@@ -1,7 +1,7 @@
 import React from 'react';
-import { AbsoluteFill, Easing, Img, interpolate, staticFile, useCurrentFrame } from 'remotion';
-import { Plate } from '../lib/Plate';
-import { CUES, LAYOUT } from '../theme';
+import { AbsoluteFill, Easing, Img, interpolate, useCurrentFrame } from 'remotion';
+import { Plate, usePlate } from '../lib/Plate';
+import { CUES, useLayout } from '../theme';
 
 /**
  * Beat 6, 0:35–0:43. "That's why a healthy bank dies in a single afternoon. Nothing was
@@ -12,20 +12,18 @@ import { CUES, LAYOUT } from '../theme';
  * shutter takes the 90 frames before it to come down.
  */
 
-// The arched doorway in bank-run.png. shutter.png is rendered to exactly these
-// dimensions so it can be clipped to the arch.
-const ARCH = LAYOUT.arch;
-
-const RAIN_PERIOD = LAYOUT.rainPeriod;
 const SLAM = CUES.slam;
 const DESCENT = 90;
 
 export const Beat6Run: React.FC = () => {
   const frame = useCurrentFrame();
+  const L = useLayout();
+  const shutter = usePlate('shutter');
+  const rain = usePlate('rain-tile');
 
-  const rainY = (frame * 22) % RAIN_PERIOD;
+  const rainY = (frame * 22) % L.rainPeriod;
 
-  const shutterY = interpolate(frame, [SLAM - DESCENT, SLAM], [-ARCH.height, 0], {
+  const shutterY = interpolate(frame, [SLAM - DESCENT, SLAM], [-L.arch.height, 0], {
     easing: Easing.in(Easing.cubic),
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
@@ -42,35 +40,36 @@ export const Beat6Run: React.FC = () => {
     <AbsoluteFill style={{ backgroundColor: '#000' }}>
       <Plate name="bank-run" />
 
+      {/* shutter.png is rendered at exactly the arch's dimensions, so it clips to it */}
       <div
         style={{
           position: 'absolute',
-          left: ARCH.left,
-          top: ARCH.top,
-          width: ARCH.width,
-          height: ARCH.height,
-          borderRadius: `${ARCH.width / 2}px ${ARCH.width / 2}px 0 0`,
+          left: L.arch.left,
+          top: L.arch.top,
+          width: L.arch.width,
+          height: L.arch.height,
+          borderRadius: `${L.arch.width / 2}px ${L.arch.width / 2}px 0 0`,
           overflow: 'hidden',
         }}
       >
         <Img
-          src={staticFile('plates/shutter.png')}
+          src={shutter}
           style={{
             position: 'absolute',
             left: 0,
             top: 0,
-            width: ARCH.width,
-            height: ARCH.height,
+            width: L.arch.width,
+            height: L.arch.height,
             transform: `translateY(${shutterY}px)`,
           }}
         />
       </div>
 
       {/* two copies one period apart so the tile loops with no seam */}
-      {[0, -RAIN_PERIOD].map((offset) => (
+      {[0, -L.rainPeriod].map((offset) => (
         <Img
           key={offset}
-          src={staticFile('plates/rain-tile.png')}
+          src={rain}
           style={{
             position: 'absolute',
             inset: 0,

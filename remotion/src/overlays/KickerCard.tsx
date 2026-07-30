@@ -1,6 +1,6 @@
 import React from 'react';
 import { Easing, interpolate, useCurrentFrame } from 'remotion';
-import { GOLD, SANS } from '../theme';
+import { GOLD, SANS, useLayout } from '../theme';
 
 const LINES = [['SAME', 'MONEY.'], ['ONE', 'SYSTEM', 'NEEDS', 'YOU', 'NOT', 'TO', 'LOOK.']];
 
@@ -11,6 +11,7 @@ const WIPE = 130;
 
 export const KickerCard: React.FC = () => {
   const frame = useCurrentFrame();
+  const K = useLayout().kicker;
 
   let wordIndex = 0;
   const wipe = interpolate(frame, [WIPE, WIPE + 12], [0, 1], {
@@ -41,11 +42,11 @@ export const KickerCard: React.FC = () => {
               justifyContent: 'center',
               fontFamily: SANS,
               fontWeight: 800,
-              fontSize: li === 0 ? 128 : 78,
+              fontSize: li === 0 ? K.size0 : K.size1,
               lineHeight: 1.06,
               letterSpacing: '-.02em',
               color: li === 0 ? '#fff' : GOLD,
-              marginBottom: li === 0 ? 30 : 0,
+              marginBottom: li === 0 ? K.gap : 0,
             }}
           >
             {line.map((word) => {
@@ -79,7 +80,7 @@ export const KickerCard: React.FC = () => {
           position: 'absolute',
           left: 0,
           right: 0,
-          bottom: 210,
+          bottom: K.lowerThird,
           opacity: wipe,
           transform: `translateY(${(1 - wipe) * 40}px)`,
           textAlign: 'center',

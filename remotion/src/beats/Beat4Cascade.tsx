@@ -1,9 +1,9 @@
 import React from 'react';
-import { AbsoluteFill, Img, staticFile, useCurrentFrame } from 'remotion';
-import { Plate } from '../lib/Plate';
+import { AbsoluteFill, Img, useCurrentFrame } from 'remotion';
+import { Plate, usePlate } from '../lib/Plate';
 import { noise } from '../lib/rng';
 import { MultiplierChain } from '../overlays/MultiplierChain';
-import { LAYOUT } from '../theme';
+import { useLayout } from '../theme';
 
 /**
  * Beat 4, 0:16–0:26. "You deposited a hundred. The bank kept three and lent out
@@ -13,8 +13,6 @@ import { LAYOUT } from '../theme';
  * cascade visibly loses volume on the way down — that IS the argument of the beat.
  */
 
-// Tier geometry comes from LAYOUT so it can't drift from the plate generator.
-const TIERS = LAYOUT.tiers;
 const COUNTS = [24, 18, 13, 9, 6];
 const COIN = 96; // coin.png is a tight 96x96 (48px coin + glow margin)
 
@@ -22,16 +20,18 @@ const N = noise(11, 200);
 
 export const Beat4Cascade: React.FC = () => {
   const frame = useCurrentFrame();
+  const L = useLayout();
+  const coin = usePlate('coin');
 
   let k = 0;
   return (
     <AbsoluteFill style={{ backgroundColor: '#000' }}>
       <Plate name="lending-cascade" />
 
-      {TIERS.map((tier, ti) => {
+      {L.tiers.map((tier, ti) => {
         // fall from just under this tier to the top of the next one
-        const fallTop = tier.top + LAYOUT.tierBar;
-        const fallLen = LAYOUT.tierPitch - LAYOUT.tierBar;
+        const fallTop = tier.top + L.tierBar;
+        const fallLen = L.tierPitch - L.tierBar;
         const left = tier.centerX - tier.width / 2;
 
         return Array.from({ length: COUNTS[ti] }, (_, ci) => {
@@ -48,15 +48,8 @@ export const Beat4Cascade: React.FC = () => {
           return (
             <Img
               key={`${ti}-${ci}`}
-              src={staticFile('plates/coin.png')}
-              style={{
-                position: 'absolute',
-                left: x,
-                top: y,
-                width: COIN,
-                height: COIN,
-                opacity: 0.92,
-              }}
+              src={coin}
+              style={{ position: 'absolute', left: x, top: y, width: COIN, height: COIN, opacity: 0.92 }}
             />
           );
         });

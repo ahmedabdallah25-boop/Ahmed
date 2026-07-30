@@ -1,8 +1,8 @@
 import React from 'react';
-import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from 'remotion';
-import { Camera, Plate } from '../lib/Plate';
+import { AbsoluteFill, Img, interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { Camera, Plate, usePlate } from '../lib/Plate';
 import { noise } from '../lib/rng';
-import { BEATS, LAYOUT } from '../theme';
+import { BEATS, useLayout } from '../theme';
 
 /**
  * Beat 3, 0:10–0:16. "The rest isn't in a vault. It isn't anywhere. It's a promise,
@@ -12,16 +12,13 @@ import { BEATS, LAYOUT } from '../theme';
  * Reading the end off BEATS keeps the move complete when the VO retimes the beat.
  */
 
-// vault-door.png is full-frame with the 780px door centred, so its hinge is its left
-// edge. Rotating about anything else swings the door off its hinge. LAYOUT.doorHinge
-// tracks the generator's geometry.
-const HINGE = `${LAYOUT.doorHinge.x}px ${LAYOUT.doorHinge.y}px`;
-
 const MOTES = noise(31, 60); // 20 motes x 3 values
 
 export const Beat3Vault: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
+  const L = useLayout();
+  const door = usePlate('vault-door');
 
   // Heavy inertia + settle-bounce: damping 12 / mass 2 overshoots ~4deg and returns.
   const swing = spring({ frame, fps, config: { damping: 12, mass: 2 }, durationInFrames: 45 });
@@ -32,6 +29,11 @@ export const Beat3Vault: React.FC = () => {
     extrapolateRight: 'clamp',
   });
 
+  // Motes stay inside the vault interior, expressed against its radius so the field
+  // lands correctly in both orientations.
+  const r = L.vault.size / 2;
+  const span = r * 1.7;
+
   return (
     <AbsoluteFill style={{ backgroundColor: '#000' }}>
       <Camera scale={scale}>
@@ -39,10 +41,10 @@ export const Beat3Vault: React.FC = () => {
 
         {/* dust motes drifting up through the shaft of light inside the vault */}
         {Array.from({ length: 20 }, (_, i) => {
-          const x = 570 + MOTES[i * 3] * 780;
+          const x = L.w / 2 - r * 0.85 + MOTES[i * 3] * span;
           const speed = 0.35 + MOTES[i * 3 + 1] * 0.5;
           const size = 3 + MOTES[i * 3 + 2] * 4;
-          const y = 930 - ((frame * speed + i * 47) % 700);
+          const y = L.h / 2 + r * 0.85 - ((frame * speed + i * 47) % span);
           return (
             <div
               key={i}
@@ -62,13 +64,15 @@ export const Beat3Vault: React.FC = () => {
 
         <AbsoluteFill style={{ perspective: 1600 }}>
           <Img
-            src={staticFile('plates/vault-door.png')}
+            src={door}
             style={{
               position: 'absolute',
               inset: 0,
               width: '100%',
               height: '100%',
-              transformOrigin: HINGE,
+              // The door is centred in the plate, so its hinge is its left edge.
+              // Rotating about anything else swings it off the hinge.
+              transformOrigin: `${L.doorHinge.x}px ${L.doorHinge.y}px`,
               transform: `rotateY(${-angle}deg)`,
             }}
           />

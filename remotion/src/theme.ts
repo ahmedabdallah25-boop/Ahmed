@@ -1,33 +1,26 @@
+import { useVideoConfig } from 'remotion';
+import { LAYOUTS, type Layout, type Orientation } from './layouts';
 import { VO } from './vo-timing';
 
 /** Series constants. Palette matches scripts/make-plates.mjs — change both together. */
-export const W = 1920;
-export const H = 1080;
 export const FPS = 30;
 
 /**
- * Geometry the beats share with the plate generator. These mirror the constants at the
- * top of scripts/make-plates.mjs; nothing checks them against each other, so if you move
- * something in the generator, move it here too.
+ * Which orientation this composition is. Derived from the frame the component is
+ * actually rendering into, so one component tree serves both <Composition>s and there is
+ * no prop to thread or forget.
  */
-export const LAYOUT = {
-  /** vault-door.png: the door is centred, so its hinge (left edge) is here. */
-  doorHinge: { x: (W - 780) / 2, y: H / 2 },
-  /** The arched doorway in bank-run.png, and the size shutter.png is rendered at. */
-  arch: { left: (W - 380) / 2, top: 200, width: 380, height: 380 },
-  /** thirty-owners.png: 10 x 3 in landscape. */
-  grid: { cols: 10, rows: 3, cellW: 150, cellH: 250, gap: 22, inset: 10 },
-  /** lending-cascade.png: five tiers down the left half. */
-  tiers: [0, 1, 2, 3, 4].map((i) => ({
-    width: 620 - i * 95,
-    top: 110 + i * 190,
-    centerX: 620,
-  })),
-  tierPitch: 190,
-  tierBar: 28,
-  /** rain-tile.png repeats every this many px vertically. */
-  rainPeriod: 540,
-} as const;
+export const useOrientation = (): Orientation => {
+  const { width, height } = useVideoConfig();
+  return width >= height ? 'landscape' : 'vertical';
+};
+
+/**
+ * Geometry for the current orientation, generated from scripts/layouts.mjs alongside the
+ * plates. Beats call this instead of holding module-level constants — the numbers differ
+ * per composition, so they cannot be resolved at import time.
+ */
+export const useLayout = (): Layout => LAYOUTS[useOrientation()];
 
 export const GOLD = '#D4A24C';
 export const TEAL = '#3E8E8C';

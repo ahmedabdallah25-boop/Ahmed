@@ -1,6 +1,6 @@
 import React from 'react';
 import { Easing, interpolate, useCurrentFrame } from 'remotion';
-import { GOLD, MONO, RESERVE, TEAL } from '../theme';
+import { GOLD, MONO, RESERVE, TEAL, useLayout } from '../theme';
 
 /** The chain the VO narrates: keep 3%, lend the rest, the rest gets deposited again. */
 const chain = (() => {
@@ -17,29 +17,31 @@ const chain = (() => {
 
 const money = (n: number) => `$${n.toFixed(2)}`;
 
-// Row 1 waits for "You deposited a hundred" to land, then one row per ~0.9s so the
-// chain builds across the line instead of finishing before the sentence does.
-const START = 40;
-const STAGGER = 26;
-
 export const MultiplierChain: React.FC = () => {
   const frame = useCurrentFrame();
+  const C = useLayout().chain;
+  // Row 1 waits for "You deposited a hundred" to land, then one row per ~0.9s so the
+  // chain builds across the line instead of finishing before the sentence does.
+  const { start: START, stagger: STAGGER } = C;
 
   return (
     <div
       style={{
-        // Landscape: the chain gets the right half, clear of the cascade in the left.
-        // No scrim needed — the portrait cut had to overlay the coins and fight them.
+        // 16:9 gives the chain the right half, clear of the cascade, so it needs no scrim.
+        // 9:16 has nowhere to put it but over the coins, so the layout supplies one.
         position: 'absolute',
-        left: 1010,
-        right: 50,
-        top: 0,
-        bottom: 0,
+        left: C.left,
+        right: C.right,
+        top: C.top === 'auto' ? undefined : C.top,
+        bottom: C.bottom,
+        zIndex: 10,
+        padding: C.scrim ? '34px 0' : undefined,
+        background: C.scrim ?? undefined,
         display: 'flex',
         // Rows arrive bottom-up, so the newest (smallest) loan is always at the bottom.
         flexDirection: 'column-reverse',
-        justifyContent: 'center',
-        alignItems: 'flex-start',
+        justifyContent: C.justify,
+        alignItems: C.align,
       }}
     >
       {chain.map((row, i) => {
@@ -50,7 +52,7 @@ export const MultiplierChain: React.FC = () => {
           extrapolateRight: 'clamp',
         });
         // Each row 12% smaller and 15% more transparent than the one below it.
-        const scale = 0.90 ** i;
+        const scale = C.scaleStep ** i;
         const fade = 0.85 ** i;
 
         return (
@@ -59,7 +61,7 @@ export const MultiplierChain: React.FC = () => {
             style={{
               opacity: appear * fade,
               transform: `scale(${scale})`,
-              transformOrigin: 'left center',
+              transformOrigin: C.align === 'center' ? 'center' : 'left center',
             }}
           >
             {/* connector drawn as the row lands */}
@@ -68,7 +70,8 @@ export const MultiplierChain: React.FC = () => {
                 style={{
                   width: 2,
                   height: 22 * appear,
-                  marginLeft: 100,
+                  marginLeft: C.connectorIndent,
+                  marginRight: C.connectorIndent ? undefined : 'auto',
                   background: `linear-gradient(180deg, transparent, ${TEAL})`,
                 }}
               />
@@ -76,15 +79,15 @@ export const MultiplierChain: React.FC = () => {
             <div
               style={{
                 display: 'flex',
-                gap: 14,
+                gap: C.gap,
                 alignItems: 'baseline',
                 fontFamily: MONO,
-                fontSize: 38,
+                fontSize: C.fontSize,
                 letterSpacing: '-.01em',
                 transform: `translateY(${(1 - appear) * 10}px)`,
               }}
             >
-              <span style={{ color: '#e8eef7', minWidth: 168, textAlign: 'right' }}>
+              <span style={{ color: '#e8eef7', minWidth: C.depositWidth, textAlign: 'right' }}>
                 {money(row.deposit)}
               </span>
               <span style={{ color: 'rgba(232,238,247,.45)' }}>→</span>
