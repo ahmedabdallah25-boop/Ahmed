@@ -1,0 +1,48 @@
+name: Upload Episode 2 Shorts
+
+# Uploads the three funnel cuts, each private with its own publishAt
+# (Sun/Mon/Tue 10:00 UTC). Run once — the script records each video_id back into
+# ep2.json and skips anything already uploaded, so re-runs are safe.
+on:
+  workflow_dispatch:
+    inputs:
+      cut:
+        description: "Which cut to upload — all, or 1/2/3"
+        type: choice
+        options: [all, "1", "2", "3"]
+        default: all
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r automation/requirements.txt
+      - name: Upload cuts
+        run: |
+          if [ "${{ inputs.cut }}" = "all" ] || [ -z "${{ inputs.cut }}" ]; then
+            python automation/upload_ep2_shorts.py
+          else
+            python automation/upload_ep2_shorts.py "${{ inputs.cut }}"
+          fi
+        env:
+          YT_CLIENT_ID: ${{ secrets.new1 }}
+          YT_CLIENT_SECRET: ${{ secrets.new2 }}
+          YT_REFRESH_TOKEN: ${{ secrets.new3 }}
+      # The script writes each new video_id into ep2.json; keep it.
+      - name: Commit recorded video ids
+        run: |
+          if ! git diff --quiet automation/ep2.json; then
+            git config user.name "Claude"
+            git config user.email "noreply@anthropic.com"
+            git add automation/ep2.json
+            git commit -m "Record Episode 2 Shorts video ids from the upload run"
+            git push
+          else
+            echo "No id changes to commit."
+          fi
