@@ -4,7 +4,7 @@ import './fonts';
 import {Longform} from './longform/Longform';
 import {VO_DURATION} from './longform/timing';
 import {Short} from './Short';
-import {Thumbnail} from './Thumbnail';
+import {THUMBS, THUMB_SIZE} from './Thumbnails';
 import {FPS, H, W} from './theme';
 
 export const RemotionRoot: React.FC = () => (
@@ -18,15 +18,17 @@ export const RemotionRoot: React.FC = () => (
       width={1920}
       height={1080}
     />
-    {/* Thumbnail still for Episode 2. */}
-    <Composition
-      id="Ep2-Thumbnail"
-      component={Thumbnail}
-      durationInFrames={1}
-      fps={FPS}
-      width={1280}
-      height={720}
-    />
+    {/* Five thumbnail options for Episode 2. */}
+    {Object.entries(THUMBS).map(([id, component]) => (
+      <Composition
+        key={id}
+        id={id}
+        component={component}
+        durationInFrames={1}
+        fps={FPS}
+        {...THUMB_SIZE}
+      />
+    ))}
     {/* Vertical Short, kept for the Shorts lane. */}
     <Composition
       id="Part14-RaiseTrap"

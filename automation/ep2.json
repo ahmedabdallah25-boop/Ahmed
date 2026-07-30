@@ -80,5 +80,13 @@
     "pause_longform_below": 40
   },
   "caption_file": "media/ep2-halal-mortgage.srt",
-  "caption_language": "en"
+  "caption_language": "en",
+  "thumbnail_options": {
+    "A": "media/thumbs/ep2-A-Riba.png",
+    "B": "media/thumbs/ep2-B-SecondHouse.png",
+    "C": "media/thumbs/ep2-C-TenYears.png",
+    "D": "media/thumbs/ep2-D-420.png",
+    "E": "media/thumbs/ep2-E-ThreeWays.png"
+  },
+  "thumbnail": "media/thumbs/ep2-C-TenYears.png"
 }
