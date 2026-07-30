@@ -1,0 +1,36 @@
+name: Promote Episode 2
+
+# Fires itself 5 minutes after Episode 2 goes live (2026-08-01 16:00 UTC), so the
+# funnel is in place while the video is in its first-hour test — not the next day.
+# Also dispatchable by hand.
+on:
+  schedule:
+    - cron: "5 16 1 8 *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "all = links + seed comment; links = descriptions only; comment = seed comment only"
+        type: choice
+        options: [all, links, comment]
+        default: all
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r automation/requirements.txt
+      - name: Promote
+        run: |
+          case "${{ inputs.mode || 'all' }}" in
+            links)   python automation/promote_ep2.py --links ;;
+            comment) python automation/promote_ep2.py --comment ;;
+            *)       python automation/promote_ep2.py ;;
+          esac
+        env:
+          YT_CLIENT_ID: ${{ secrets.new1 }}
+          YT_CLIENT_SECRET: ${{ secrets.new2 }}
+          YT_REFRESH_TOKEN: ${{ secrets.new3 }}

@@ -4,6 +4,7 @@ import './fonts';
 import {Longform} from './longform/Longform';
 import {VO_DURATION} from './longform/timing';
 import {Short} from './Short';
+import {SHORTS} from './ShortsCuts';
 import {THUMBS, THUMB_SIZE} from './Thumbnails';
 import {FPS, H, W} from './theme';
 
@@ -27,6 +28,18 @@ export const RemotionRoot: React.FC = () => (
         durationInFrames={1}
         fps={FPS}
         {...THUMB_SIZE}
+      />
+    ))}
+    {/* Vertical cuts of Episode 2 for the Shorts feed. */}
+    {Object.entries(SHORTS).map(([id, {c, sec}]) => (
+      <Composition
+        key={id}
+        id={id}
+        component={c}
+        durationInFrames={Math.round(sec * FPS)}
+        fps={FPS}
+        width={W}
+        height={H}
       />
     ))}
     {/* Vertical Short, kept for the Shorts lane. */}
