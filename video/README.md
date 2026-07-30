@@ -8,6 +8,7 @@ port of the vertical Short.
 | `Ep2-HalalMortgage` | 1920×1080 · 30fps · 10:17 | `../storyboard-ep2-halal-mortgage.md` + `public/vo-ep2.mp3` | `../media/ep2-halal-mortgage.mp4` |
 | `Ep2-Thumbnail` | 1280×720 still | same storyboard | `../media/ep2-thumbnail.png` |
 | `Part14-RaiseTrap` | 1080×1920 · 30fps · 36s | kinetic-typography Short | `../media/part14-kinetic.mp4` |
+| `Part15-StudentLoans` | 1080×1920 · 30fps · 20s | `../script-part15-student-loans.md` | `../media/part15-student-loans.mp4` |
 
 ## Episode 2 — how it's built
 
@@ -46,6 +47,7 @@ re-render — nothing else needs to change.
 npm run preview                      # Remotion Studio
 npm run render                       # Episode 2 → ../media/ep2-halal-mortgage.mp4
 npx remotion render src/index.ts Part14-RaiseTrap ../media/part14-kinetic.mp4
+npx remotion render src/index.ts Part15-StudentLoans ../media/part15-student-loans.mp4
 npx remotion still src/index.ts Ep2-Thumbnail ../media/ep2-thumbnail.png
 ```
 

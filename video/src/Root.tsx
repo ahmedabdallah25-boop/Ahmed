@@ -3,6 +3,7 @@ import {Composition} from 'remotion';
 import './fonts';
 import {Longform} from './longform/Longform';
 import {VO_DURATION} from './longform/timing';
+import {PART15_FRAMES, Part15} from './Part15';
 import {Short} from './Short';
 import {SHORTS} from './ShortsCuts';
 import {THUMBS, THUMB_SIZE} from './Thumbnails';
@@ -47,6 +48,15 @@ export const RemotionRoot: React.FC = () => (
       id="Part14-RaiseTrap"
       component={Short}
       durationInFrames={1080} // 36s
+      fps={FPS}
+      width={W}
+      height={H}
+    />
+    {/* Part 15 — student loans → Qard Hasan. 20s. */}
+    <Composition
+      id="Part15-StudentLoans"
+      component={Part15}
+      durationInFrames={PART15_FRAMES} // 600 = 20s
       fps={FPS}
       width={W}
       height={H}
