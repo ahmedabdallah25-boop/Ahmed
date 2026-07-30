@@ -1,10 +1,17 @@
-name: Apply video fix pack
+# NOTE: on this branch this workflow runs the PART 14 promotion, not the old Part 12/13
+# fix pack. The steps that re-applied apply_fix.py / post_comment.py were removed on
+# purpose — they are pinned to config.json's video_id (Part 13) and would overwrite that
+# video's metadata.
+#
+# The file name is unchanged because workflow_dispatch only exposes workflows that exist
+# on the default branch.
+name: Promote episode
 
 on:
   workflow_dispatch:
     inputs:
       fix_playlists:
-        description: "Also fix the playlist link across all 12 videos (requires playlist_url in config.json)"
+        description: "(unused on this branch — kept so the dispatch schema still matches)"
         type: boolean
         default: false
 
@@ -17,21 +24,15 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r automation/requirements.txt
-      - name: Update title, description, tags
-        run: python automation/apply_fix.py
+      # Dry run first so the log records exactly what the real pass is about to change.
+      - name: Preview
+        run: python automation/promote_part14.py --dry-run
         env:
           YT_CLIENT_ID: ${{ secrets.new1 }}
           YT_CLIENT_SECRET: ${{ secrets.new2 }}
           YT_REFRESH_TOKEN: ${{ secrets.new3 }}
-      - name: Post engagement comment
-        run: python automation/post_comment.py
-        env:
-          YT_CLIENT_ID: ${{ secrets.new1 }}
-          YT_CLIENT_SECRET: ${{ secrets.new2 }}
-          YT_REFRESH_TOKEN: ${{ secrets.new3 }}
-      - name: Fix playlist links across the series
-        if: ${{ inputs.fix_playlists }}
-        run: python automation/fix_playlist_links.py
+      - name: Thumbnail, playlist and funnel
+        run: python automation/promote_part14.py
         env:
           YT_CLIENT_ID: ${{ secrets.new1 }}
           YT_CLIENT_SECRET: ${{ secrets.new2 }}
