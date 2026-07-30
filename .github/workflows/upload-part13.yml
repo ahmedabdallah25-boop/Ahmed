@@ -1,4 +1,8 @@
-name: Upload Part 13
+# Uploads whichever episode automation/upload_video.py defaults to (DEFAULT_CONFIG),
+# from the ref you dispatch against. The file name is kept as upload-part13.yml because
+# workflow_dispatch only exposes workflows that exist on the default branch — renaming
+# the file would make it undispatchable until that rename is merged.
+name: Upload episode (scheduled publish)
 
 on:
   workflow_dispatch:
