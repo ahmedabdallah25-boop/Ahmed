@@ -75,9 +75,14 @@ Global style suffix — append to every prompt for series consistency:
 
 ### Remotion (React/TSX — one `<Sequence>` per beat)
 
+**Built and rendering:** `remotion/` — `npm install && npm run render` produces
+`out/part15.mp4` (52s, ~2min). See `remotion/README.md` for the layout, the
+Sequence-local frame-numbering trap, and the three documented deviations from the specs
+below. Beat boundaries live in `remotion/src/theme.ts`.
+
 Root spec: `<Composition id="Part15" width={1080} height={1920} fps={30} durationInFrames={1560} />`. All motion from `useCurrentFrame()` + `interpolate`/`spring` — no CSS transitions or `requestAnimationFrame`. Every `interpolate` call uses `extrapolateLeft: 'clamp', extrapolateRight: 'clamp'`. Plates render via `<Img src={staticFile(...)}/>` wrapped in an absolute-fill div with `transform: scale()` for Ken Burns.
 
-Prompt for each component (`src/beats/*.tsx`):
+Prompt for each component (`src/beats/*.tsx`) — note these read in **absolute** frames; the components convert to Sequence-local:
 
 - **`Beat1Balance.tsx` — frames 0–240 (beats 1–2)** — `Plate phone-balance.png, scale interpolated 1.00 → 1.08 across the full 240 frames for a slow push-in. Overlay the HyperFrames reserve-counter WebM in a Sequence at frame 0. Add a 4px-amplitude handheld drift: translateX/Y driven by Math.sin(frame / 17) and Math.sin(frame / 23). Screen-glow div (radial-gradient, mix-blend-mode: screen) opacity interpolated 1 → 0.8 over frames 120–156 so the light drops as the number falls.`
 - **`Beat3Vault.tsx` — frames 240–420** — `Plate empty-vault.png. Door layer as a separate transparent PNG with transformOrigin on the hinge edge, rotateY 0 → 90deg via spring({frame, fps, config: {damping: 12, mass: 2}}) for heavy inertia and a settle-bounce. Camera dolly = parent scale 1.0 → 1.25 over frames 285–420. Twenty dust-mote divs, each position seeded from its index with a deterministic random(index) helper, drifting upward at index-varied speeds.`
@@ -90,6 +95,10 @@ Prompt for each component (`src/beats/*.tsx`):
 Audio: `<Audio src={staticFile('vo.mp3')}/>` at the root, and set the beat boundaries above from the actual VO waveform once recorded — the frame numbers here are the script's timings, not the recording's.
 
 ### HyperFrames (typographic + data overlays, transparent WebM/MOV over the plates)
+
+These four are currently implemented as native React components in
+`remotion/src/overlays/` so the composition renders end-to-end today. Generate the WebMs
+from the prompts below and swap them in per `remotion/README.md`.
 
 - **Reserve counter (0:00–0:08)** — `1080x1920 transparent. Large tabular-nums monospace figure locked to the phone screen area: "$14,208.00" holds 1.5s, then odometer-rolls digit-by-digit to "$426.24" over 1.2s with a 400ms overshoot settle. Below it, a 3px gold horizontal bar shrinks left-to-right from 100% to 3% width on the same timing, with a label "3%" fading in at the end. Gold #D4A24C on transparent, subtle drop shadow.`
 - **Multiplier chain (0:14–0:22)** — `1080x1920 transparent. Five stacked rows animate in bottom-up, 300ms stagger: "$100 → keep $3 · lend $97", "$97 → keep $2.91 · lend $94.09", and so on for five rows, each row 12% smaller and 15% more transparent than the one above. Monospace, right-aligned numbers, gold for kept and muted teal for lent, thin connecting lines drawn between rows as each appears.`

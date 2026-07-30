@@ -25,7 +25,7 @@ const NAVY = '#0B1A2E';
 
 const base = `
   * { margin:0; padding:0; box-sizing:border-box; }
-  body { width:${W}px; height:${H}px; overflow:hidden; font-family:ui-sans-serif,system-ui,sans-serif; }
+  body { width:100vw; height:100vh; overflow:hidden; font-family:ui-sans-serif,system-ui,sans-serif; }
   .stage { position:absolute; inset:0; }
   .void {
     background:
@@ -157,7 +157,8 @@ const plates = {
         background:linear-gradient(180deg,rgba(212,162,76,.16),transparent);filter:blur(10px);"></div>`;
   }).join('')}`),
 
-  coin: scene(`<div style="position:absolute;left:0;top:0;">${coin(48)}</div>`, { alpha: true }),
+  // tight 96x96 canvas so Remotion can drop it in at natural size (glow needs the margin)
+  coin: scene(`<div style="position:absolute;left:24px;top:24px;">${coin(48)}</div>`, { alpha: true }),
 
   // ---- Beat 5 ------------------------------------------------------------
   // Screens are DARK here; Remotion staggers 30 glow divs on top.
@@ -226,12 +227,14 @@ const plates = {
         mix-blend-mode:screen;"></div>
     <div class="stage" style="background:linear-gradient(180deg,transparent 62%,rgba(0,0,0,.45));"></div>`),
 
+  // 440x460 = exactly the arched doorway in bank-run.png, so Beat6 can clip it to the arch
   shutter: scene(`
-    <div style="position:absolute;left:50%;top:0;transform:translateX(-50%);
-        width:520px;height:660px;
+    <div style="position:absolute;inset:0;
         background:repeating-linear-gradient(180deg,#4e555f 0 16px,#2b3037 16px 32px);
         box-shadow:0 24px 60px rgba(0,0,0,.8), inset 0 0 40px rgba(0,0,0,.5);
-        border-left:4px solid #1a1e24;border-right:4px solid #1a1e24;"></div>`, { alpha: true }),
+        border-left:4px solid #1a1e24;border-right:4px solid #1a1e24;"></div>
+    <div style="position:absolute;left:0;right:0;bottom:0;height:14px;background:#12161b;"></div>`,
+    { alpha: true }),
 
   // seamless vertical tile -> translateY(frame * 22 % tileHeight)
   'rain-tile': scene(`
@@ -298,6 +301,12 @@ const plates = {
     <path d="M640 1650 L710 1650 L750 1692 L640 1692 Z"/>`),
 };
 
+/** Plates that are not full-frame. Keyed by plate name -> [width, height]. */
+const sizes = {
+  coin: [96, 96],
+  shutter: [440, 460],
+};
+
 const browser = await chromium.launch({
   executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome',
   args: ['--no-sandbox', '--force-color-profile=srgb'],
@@ -310,6 +319,8 @@ const page = await browser.newPage({
 
 for (const [name, html] of Object.entries(plates)) {
   const alpha = html.includes('class="stage void"') === false;
+  const [w, h] = sizes[name] ?? [W, H];
+  await page.setViewportSize({ width: w, height: h });
   await page.setContent(
     `<body style="background:${alpha ? 'transparent' : '#000'}">${html}</body>`,
     { waitUntil: 'load' },
