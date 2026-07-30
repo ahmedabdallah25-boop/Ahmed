@@ -41,17 +41,33 @@ const Stage: React.FC<{children: React.ReactNode}> = ({children}) => (
   </AbsoluteFill>
 );
 
-/** The end card every cut shares — one instruction, nothing else. */
+/**
+ * The end card every cut shares. Its whole job is the handoff to the long-form,
+ * so it has to say what to DO — naming the payoff without an instruction is how
+ * Episode 1 ended up at 2 views. The arrow points down at the description link.
+ */
 const EndCard: React.FC<{at: number}> = ({at}) => {
   const frame = useCurrentFrame();
   const r = rise(frame, at, 14);
   return (
-    <div style={{...r, marginTop: 70}}>
-      <div style={{fontSize: 46, fontWeight: 700, color: L.gold, letterSpacing: 3}}>
-        FULL BREAKDOWN
+    <div
+      style={{
+        ...r,
+        marginTop: 60,
+        background: L.panel,
+        border: `3px solid ${L.gold}`,
+        borderRadius: 18,
+        padding: '30px 34px',
+      }}
+    >
+      <div style={{fontSize: 44, fontWeight: 700, color: L.gold, letterSpacing: 2}}>
+        WATCH THE FULL BREAKDOWN
       </div>
-      <div style={{fontSize: 62, fontWeight: 700, color: L.ink, marginTop: 12, lineHeight: 1.1}}>
-        The 3 halal structures — and the 4 questions
+      <div style={{fontSize: 52, fontWeight: 700, color: L.ink, marginTop: 10, lineHeight: 1.1}}>
+        3 halal structures · 4 questions
+      </div>
+      <div style={{fontSize: 46, fontWeight: 700, color: L.ink, marginTop: 18}}>
+        ↓ Link in the description
       </div>
     </div>
   );
