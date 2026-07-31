@@ -25,8 +25,8 @@ support links rather than a solid reporting line).
 
 **Shared:** Transguard covers all teams on both reporting lines. Other contractors as per SOW.
 
-\* Pest Free sits with Shah, who reports to Inam, but the source allocation lists Winnie as the
-manager alongside it. Flagged on every slide — confirm which is intended.
+\* Pest Free is a confirmed cross-line arrangement: owned day to day by Shah (Inam's team), with
+Winnie holding manager oversight. Marked on every slide and tagged "cross-line" on the provider card.
 
 ## Regenerating
 

@@ -65,14 +65,14 @@ const PROVIDERS = [
   { sp: "Marblelife", owner: "Ahmed", mgr: "Winnie" },
   { sp: "Rezaroma", owner: "Ahmed", mgr: "Winnie" },
   { sp: "Stores", owner: "Yadab", mgr: "Winnie" },
-  { sp: "Pest Free *", owner: "Shah", mgr: "Winnie" },
+  { sp: "Pest Free *", owner: "Shah", mgr: "Winnie", cross: true },
 ];
 
 const mgrColor = (m) => (m === "Winnie" ? TEAL : m === "Inam" ? TERRA : SLATE);
 const mgrTint = (m) => (m === "Winnie" ? TEAL_TINT : m === "Inam" ? TERRA_TINT : "EEF1F6");
 
 const FOOTNOTE =
-  "*  Pest Free sits with Shah (Inam's team) but is listed under Winnie for manager oversight in the source allocation — confirm if this is intended.";
+  "*  Cross-line by design: Pest Free is owned day to day by Shah (Inam's team), with Winnie holding manager oversight.";
 
 /* ---------------- deck ---------------- */
 const pres = new pptxgen();
@@ -468,9 +468,19 @@ function spChip(slide, text, x, y, w) {
       x: x + 0.22, y: y + 0.26, w: 0.16, h: 0.16, fill: { color: GOLD }, line: { width: 0 },
     });
     s.addText(p.sp, {
-      x: x + 0.48, y: y + 0.16, w: GW - 0.7, h: 0.36, fontFace: HEAD, fontSize: 14, bold: true,
-      color: NAVY, valign: "middle", margin: 0,
+      x: x + 0.48, y: y + 0.16, w: GW - (p.cross ? 1.55 : 0.7), h: 0.36, fontFace: HEAD,
+      fontSize: 14, bold: true, color: NAVY, valign: "middle", margin: 0,
     });
+    if (p.cross) {
+      s.addShape(pres.ShapeType.roundRect, {
+        x: x + GW - 1.07, y: y + 0.22, w: 0.85, h: 0.24, rectRadius: 0.05,
+        fill: { color: GOLD_FILL }, line: { color: GOLD, width: 0.75 },
+      });
+      s.addText("CROSS-LINE", {
+        x: x + GW - 1.07, y: y + 0.22, w: 0.85, h: 0.24, fontFace: BODY, fontSize: 6,
+        bold: true, color: GOLD_TEXT, charSpacing: 0.4, align: "center", valign: "middle", margin: 0,
+      });
+    }
     s.addShape(pres.ShapeType.line, {
       x: x + 0.22, y: y + 0.6, w: GW - 0.44, h: 0, line: { color: BORDER, width: 0.75 },
     });
@@ -478,6 +488,7 @@ function spChip(slide, text, x, y, w) {
       [
         { text: "Owner   ", options: { color: MUTED, fontSize: 8.5 } },
         { text: p.owner, options: { color: NAVY, fontSize: 11, bold: true } },
+        ...(p.cross ? [{ text: "   (Inam's team)", options: { color: MUTED, fontSize: 8.5 } }] : []),
       ],
       { x: x + 0.22, y: y + 0.66, w: GW - 0.44, h: 0.28, fontFace: BODY, valign: "middle", margin: 0 }
     );
