@@ -1,10 +1,10 @@
 {
-  "video_id": "7TWUwpbl83U",
-  "published_at": "2026-07-21T18:00:09Z",
+  "video_id": "WJ_UhugwA9U",
+  "published_at": "2026-07-28T18:00:05Z",
   "channel_id": "UCVOoFJkRiOdJsWnewt8HJkw",
-  "playlist_title_match": "full series",
-  "playlist_url": "https://www.youtube.com/playlist?list=PLKLKzR1QgFHE",
-  "new_title": "Your Money Only Exists Because Someone Else Is In Debt",
+  "playlist_title_match": "full episodes",
+  "playlist_url": "https://www.youtube.com/playlist?list=PLFvKaPuEiceY",
+  "new_title": "Your Savings Account Is Costing You $359,000 (Is Investing Halal?)",
   "new_description": "A complete stranger is drowning in debt right now — so that the money in your\naccount can exist. That's not a metaphor. In the next 5 minutes you'll see the\nexact trick behind modern money: how it's borrowed into existence, why 97% of it\nis debt a central bank openly admitted to, and why the system needs you in debt\nforever. No jargon. Just mechanisms.\n\n⏱️ Chapters\n0:00  A stranger is drowning in debt\n0:45  Walk into a bank — where money really comes from\n1:18  The 2014 admission: \"banks create the deposit\"\n1:41  The debt is always bigger than the money\n2:37  The tax you never voted for (inflation)\n3:15  2008: you weren't bailed out — you were billed\n3:33  The 1,400-year-old rule set that makes this impossible\n4:30  How to stop feeding the machine\n4:54  Next episode: the mortgage that owns you\n\nWas any of this new to you? Say so in the comments — and subscribe: Episode 2\nbreaks down the mortgage that owns you, and the contract that flips it.\n\nTHE MONEY MACHINE, DECODED — the 2-minute series:\nPart 1 - How banks profit from your savings (Riba): https://youtu.be/V8HYpTHy2aU\nPart 2 - Money created as debt: https://youtu.be/8DlJ28QnXj4\nPart 3 - Inflation, the tax you never voted for: https://youtu.be/a7xkXgTfCXs\nPart 4 - Sound money, the money that never needed a bailout: https://youtu.be/zY664YZPI6U\nPart 5 - The credit card minimum payment trap: https://youtu.be/scjEcnABEOo\nPart 6 - How banks collect a second house from you: https://youtu.be/fMQMZKPvK4c\nPart 7 - Murabaha, the fixed-price sale: https://youtu.be/c8uyMAIORkU\nPart 8 - How to buy a house without interest (Musharaka): https://youtu.be/riQ7dLSnogo\nPart 9 - Passive income without interest (Sukuk): https://youtu.be/J0TCD2u177k\nPart 10 - How banks quietly drain your savings: https://youtu.be/OXIP3EJROQk\nPart 11 - Is your insurance even halal? (Gharar): https://youtube.com/shorts/BMSmgBJ82JU\nPart 12 - Your insurance keeps every dollar you don't claim (Takaful): https://youtube.com/shorts/ebIU6OHJ-jg\nPart 13 - How to buy a car without interest (Ijara): https://youtube.com/shorts/ElD5gg-Q1wY\n{PLAYLIST_LINE}▶ Daily money takes on X: https://x.com/financedecode\n\nNo jargon. Just mechanisms.\nThis is financial education, not financial advice.\n\n#money #debt #inflation #finance #economics #federalreserve #financialliteracy #islamicfinance",
   "add_tags": [
     "why you never get ahead financially",
@@ -13,26 +13,56 @@
     "islamic finance explained",
     "debt based money system"
   ],
-  "engagement_comment": "The part that gets people: your bank balance only exists because someone else took on a debt bigger than the money created. Which minute made you stop and rewind? 👇",
-  "shorts_funnel_line": "▶ Full 5-minute breakdown — how the whole machine works: https://youtu.be/7TWUwpbl83U",
+  "engagement_comment": "Adam and Sammy earn the same, save the same, and finish thirty years $359,000 apart. One decision, made at 30 and never revisited. Which one were you before this video?",
+  "shorts_funnel_line": "▶ FULL BREAKDOWN — the $359,000 gap between saving and owning, and whether it's halal: https://youtu.be/WJ_UhugwA9U",
   "shorts_video_ids": [
-    "V8HYpTHy2aU",
-    "8DlJ28QnXj4",
-    "a7xkXgTfCXs",
-    "zY664YZPI6U",
-    "scjEcnABEOo",
-    "fMQMZKPvK4c",
-    "c8uyMAIORkU",
-    "riQ7dLSnogo",
-    "J0TCD2u177k",
-    "OXIP3EJROQk",
-    "BMSmgBJ82JU",
+    "P3DxNgGFah0",
+    "UpCMyfIOftA",
+    "ElD5gg-Q1wY",
     "ebIU6OHJ-jg",
-    "ElD5gg-Q1wY"
+    "BMSmgBJ82JU",
+    "zY664YZPI6U",
+    "OXIP3EJROQk",
+    "J0TCD2u177k",
+    "a7xkXgTfCXs",
+    "riQ7dLSnogo",
+    "c8uyMAIORkU",
+    "fMQMZKPvK4c",
+    "scjEcnABEOo",
+    "8DlJ28QnXj4",
+    "V8HYpTHy2aU"
   ],
   "decision_rule": {
     "decision_hours": 168,
     "pass_views": 150,
     "dead_views": 40
+  },
+  "repackage": false,
+  "supersedes": [
+    "7TWUwpbl83U"
+  ],
+  "retire_line": "▶ UPDATED & EXPANDED — this is now Episode 1 of Deen & Dinar: https://youtu.be/WJ_UhugwA9U",
+  "text_replacements": [
+    [
+      "full 5-minute breakdown",
+      "full breakdown"
+    ],
+    [
+      "the full 5-minute breakdown",
+      "the full breakdown"
+    ],
+    [
+      "▶ Full 5-minute breakdown — how the whole machine works: ",
+      "▶ FULL BREAKDOWN — "
+    ]
+  ],
+  "private_assets": {
+    "note": "Uploaded but never made public — checked 2026-07-31. Publish from Studio if intended.",
+    "episode_2": "bvZ3NdPKsus",
+    "episode_2_shorts": [
+      "kOkfpCHeURw",
+      "sbor6eyJQKc",
+      "4gRoTTZNnFE"
+    ]
   }
 }
