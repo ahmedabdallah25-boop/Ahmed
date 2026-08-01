@@ -7,6 +7,7 @@ Data pulled 2026-07-17 from public YouTube data via Nexlev.
 
 | File | Contents |
 |---|---|
+| [`performance-check-2026-07-31.md`](performance-check-2026-07-31.md) | **Latest check.** Shorts are healthy (~8,100 views); long-form has 5 views total — the funnel points at a superseded video, and Episode 2 is still private |
 | [`channel-study.md`](channel-study.md) | Full channel performance study: what the winners share, why the insurance arc is slumping |
 | [`last-video-fix.md`](last-video-fix.md) | Copy-paste fix pack for the latest Short (Part 12 — Takaful): new title, description, tags, pinned comment, re-cut hook script, and a 72-hour decision rule |
 | [`automation/`](automation/) | **The pipeline that applies all of it automatically** — scripts + GitHub Actions. One-time key setup in [`automation/SETUP.md`](automation/SETUP.md) (~10 min), then: metadata fix, comment posting, playlist-link repair across all 12 videos, and a 6-hourly monitor that applies the 72-hour decision rule |

@@ -6,16 +6,22 @@ Steps, all idempotent — re-running changes nothing that is already correct:
   1. verify the configured series playlist still exists, re-resolving it from the
      channel (by title) and writing it back to longform.json if it ever breaks
   2. repackage the long-form: viewer-first title, description, tags
-  3. inject the long-form funnel link into every Short's description  <- the fix that matters
-  4. add the long-form to the series playlist
-  5. post the seed/engagement comment once
-  6. report views against the 7-day decision rule
+     (skipped when the config sets "repackage": false — for a video whose copy is
+     already written and shouldn't be overwritten)
+  3. point every Short's description at the *current* long-form  <- the fix that matters.
+     Links to superseded long-forms are rewritten, not stacked, so a Short never
+     offers the viewer two competing "full breakdown" links.
+  4. retire each superseded long-form: a line at the top sending viewers to the current one
+  5. add the long-form to the series playlist
+  6. post the seed/engagement comment once
+  7. report views against the 7-day decision rule, and flag any uploaded-but-private assets
 
 Needs the channel owner's OAuth credentials (see SETUP.md):
   YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN
 """
 import argparse
 import json
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -108,6 +114,9 @@ def fit_tags(new: list, existing: list) -> list:
 
 
 def repackage(yt, playlist_url: str) -> None:
+    if not CFG.get("repackage", True):
+        print("  repackage disabled in config — leaving title/description/tags alone")
+        return
     snippet = get_snippet(yt, VIDEO_ID)
     if snippet is None:
         sys.exit(f"Video {VIDEO_ID} not found — deleted, or the OAuth account isn't the owner.")
@@ -131,24 +140,70 @@ def repackage(yt, playlist_url: str) -> None:
 
 # --- 3. the funnel --------------------------------------------------------
 
-def inject_funnel(yt) -> None:
-    """Put the long-form link at the top of every Short's description."""
+def stale_url_pattern(video_id: str) -> re.Pattern:
+    """Any watch/short/youtu.be URL for `video_id`, including a []-wrapped one.
+
+    Square brackets around a URL stop YouTube from turning it into a link, so a
+    bracketed funnel link is dead on arrival — strip the brackets with the match.
+    """
+    url = (r"https?://(?:www\.)?(?:youtu\.be/|youtube\.com/(?:watch\?v=|shorts/))"
+           + re.escape(video_id) + r"(?:\?[^\s\]]*)?")
+    # bracketed form first, so its brackets are consumed rather than left behind;
+    # spaces are only eaten inside the brackets, never the ones around the link
+    return re.compile(r"\[\s*" + url + r"\s*\]|" + url)
+
+
+def rewrite_links(desc: str) -> str:
+    """Repoint superseded long-form links at the current one, and fix stale copy."""
+    current = f"https://youtu.be/{VIDEO_ID}"
+    for old_id in CFG.get("supersedes", []):
+        desc = stale_url_pattern(old_id).sub(current, desc)
+    for old, new in CFG.get("text_replacements", []):
+        desc = desc.replace(old, new)
+    return desc
+
+
+def repoint_funnel(yt) -> None:
+    """Make every Short point at the current long-form, and only at that one."""
     funnel = CFG["shorts_funnel_line"].strip()
-    added = 0
+    changed = 0
     for vid in CFG["shorts_video_ids"]:
         snippet = get_snippet(yt, vid)
         if snippet is None:
             print(f"  skip {vid}: not found")
             continue
+        desc = rewrite_links(snippet.get("description", ""))
+        if VIDEO_ID not in desc:
+            desc = f"{funnel}\n\n{desc}"
+        if desc == snippet.get("description", ""):
+            continue
+        snippet["description"] = desc
+        put_snippet(yt, vid, snippet)
+        changed += 1
+        print(f"  funnel -> {vid}")
+    print(f"  updated {changed} Short(s)"
+          f"{' (all already pointing at the current long-form)' if not changed else ''}")
+
+
+# --- 3b. retire the superseded long-form ----------------------------------
+
+def retire_superseded(yt) -> None:
+    """Send the old long-form's viewers to the current one instead of competing with it."""
+    line = CFG.get("retire_line", "").strip()
+    if not line:
+        return
+    for old_id in CFG.get("supersedes", []):
+        snippet = get_snippet(yt, old_id)
+        if snippet is None:
+            print(f"  skip {old_id}: not found")
+            continue
         desc = snippet.get("description", "")
         if VIDEO_ID in desc:
+            print(f"  {old_id} already retired")
             continue
-        snippet["description"] = f"{funnel}\n\n{desc}"
-        put_snippet(yt, vid, snippet)
-        added += 1
-        print(f"  funnel -> {vid}")
-    print(f"  funnel line on {added} Short(s)"
-          f"{' (all already linked)' if not added else ''}")
+        snippet["description"] = f"{line}\n\n{desc}"
+        put_snippet(yt, old_id, snippet)
+        print(f"  retired {old_id} -> {VIDEO_ID}")
 
 
 # --- 4. playlist membership -----------------------------------------------
@@ -215,6 +270,25 @@ def report(yt) -> None:
     print(f"\n{views} views · {int(stats.get('likeCount', 0))} likes · "
           f"{int(stats.get('commentCount', 0))} comments · {hours:.0f}h old\n"
           f"verdict: {verdict}")
+    report_private(yt)
+
+
+def report_private(yt) -> None:
+    """Uploaded but never made public is invisible, not underperforming — say which."""
+    assets = CFG.get("private_assets") or {}
+    ids = [v for k, v in assets.items() if k != "note"]
+    ids = [i for group in ids for i in ([group] if isinstance(group, str) else group)]
+    if not ids:
+        return
+    resp = yt.videos().list(part="status,snippet", id=",".join(ids)).execute()
+    hidden = [(i["id"], i["status"]["privacyStatus"], i["snippet"]["title"])
+              for i in resp.get("items", []) if i["status"]["privacyStatus"] != "public"]
+    if not hidden:
+        print("all tracked assets are public")
+        return
+    print(f"\n{len(hidden)} uploaded asset(s) still not public — no views are possible:")
+    for vid, status, title in hidden:
+        print(f"  {status:9} {vid}  {title[:60]}")
 
 
 def main() -> None:
@@ -232,9 +306,10 @@ def main() -> None:
 
     print("1. playlist");     pid, url = resolve_playlist(yt)
     print("2. repackage");    repackage(yt, url)
-    print("3. funnel");       inject_funnel(yt)
-    print("4. playlist add"); add_to_playlist(yt, pid)
-    print("5. comment");      post_comment(yt)
+    print("3. funnel");       repoint_funnel(yt)
+    print("4. retire old");   retire_superseded(yt)
+    print("5. playlist add"); add_to_playlist(yt, pid)
+    print("6. comment");      post_comment(yt)
     report(yt)
 
 
