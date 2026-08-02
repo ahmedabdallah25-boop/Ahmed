@@ -9,32 +9,37 @@ import {CAPTION_MAX_WIDTH, ZONE_Y, zoneForScene} from './placement';
 // ─────────────────────────────────────────────────────────────────────────────
 // Captions.
 //
-// Cue-level, not word-level: see the note in ./captions.ts for why a karaoke
-// sweep would be a guess here. Each cue arrives whole on a measured pause, one
-// keyword carries the gold accent, and the block is placed into whichever third
-// of the frame that scene actually leaves empty (./placement.ts).
+// Content and hierarchy come from the scene pack: CAPTION 1 carries the point,
+// CAPTION 2 is the quieter qualifier under it. Treatment is this project's —
+// a centred block on a soft scrim with a short pop, rather than the pack's
+// solid black boxes.
+//
+// Two deliberate departures from the pack's burn-in spec, both settled with the
+// author:
+//
+//   * Position. The spec says "lower third", but all 37 image prompts end with
+//     "subject in the lower two-thirds, clean headroom above for captions" —
+//     the footage was composed with the space reserved at the TOP and the
+//     subject placed low. Lower-third captions would sit on the character in
+//     most shots, so captions go where the pictures actually left room. The
+//     per-scene exceptions live in ./placement.ts.
+//   * The spec's 20px left offset on line 2 is dropped. It belongs to a
+//     left-aligned two-box layout; on a centred block it reads as a mistake.
+//     Line 2 stays distinct through colour, italic and size instead.
+//
+// Timing is not interpolated: every cue begins and ends on a cut in the
+// footage. See ./captions.ts.
 // ─────────────────────────────────────────────────────────────────────────────
 
-const IN = 6;
-const OUT = 4;
+const IN = 5;
 const backOut = Easing.bezier(0.34, 1.56, 0.64, 1);
 
-/** Splits a line so the keyword can be accented without losing the spacing. */
-const parts = (text: string, keyword?: string) => {
-  if (!keyword) return [{text, hit: false}];
-  const i = text.toLowerCase().indexOf(keyword.toLowerCase());
-  if (i === -1) return [{text, hit: false}];
-  return [
-    {text: text.slice(0, i), hit: false},
-    {text: text.slice(i, i + keyword.length), hit: true},
-    {text: text.slice(i + keyword.length), hit: false},
-  ].filter((p) => p.text.length > 0);
-};
+/** Soft gold for line 2, from the pack's burn-in spec. */
+const GOLD_2 = '#F5D76E';
 
-const CaptionBlock: React.FC<{cue: Cue; local: number; dur: number; zoneY: number}> = ({
+const CaptionBlock: React.FC<{cue: Cue; local: number; zoneY: number}> = ({
   cue,
   local,
-  dur,
   zoneY,
 }) => {
   const p = interpolate(local, [0, IN], [0, 1], {
@@ -42,15 +47,11 @@ const CaptionBlock: React.FC<{cue: Cue; local: number; dur: number; zoneY: numbe
     extrapolateRight: 'clamp',
     easing: backOut,
   });
-  const fade = interpolate(local, [dur - OUT, dur], [1, 0], {
+  const opacity = interpolate(local, [0, IN * 0.6], [0, 1], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });
-  const opacity = Math.min(
-    interpolate(local, [0, IN * 0.6], [0, 1], {extrapolateRight: 'clamp'}),
-    fade,
-  );
-  const blur = (1 - p) * 8;
+  const blur = (1 - p) * 7;
 
   return (
     <div
@@ -59,15 +60,18 @@ const CaptionBlock: React.FC<{cue: Cue; local: number; dur: number; zoneY: numbe
         left: '50%',
         top: `${zoneY * 100}%`,
         width: `${CAPTION_MAX_WIDTH * 100}%`,
-        transform: `translate(-50%, -50%) translateY(${(1 - p) * 10}px) scale(${(
-          0.94 +
-          p * 0.06
+        transform: `translate(-50%, -50%) translateY(${(1 - p) * 9}px) scale(${(
+          0.95 +
+          p * 0.05
         ).toFixed(4)})`,
         opacity,
         filter: blur > 0.05 ? `blur(${blur.toFixed(2)}px)` : undefined,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        gap: 14,
+        fontFamily: FONT,
+        textAlign: 'center',
       }}
     >
       {/* Scrim: sized to the block, not the frame, so the photograph stays
@@ -76,8 +80,8 @@ const CaptionBlock: React.FC<{cue: Cue; local: number; dur: number; zoneY: numbe
           Deliberately weak, with a long falloff. A denser scrim reads fine over
           a busy supermarket shelf but shows up as a dark smudge on the flat
           skies this footage keeps cutting to. Legibility over the busy shots is
-          carried by the text shadow below instead, which costs nothing on a
-          clean background. */}
+          carried by the text shadows instead, which cost nothing on a clean
+          background. */}
       <div
         style={{
           position: 'absolute',
@@ -87,33 +91,39 @@ const CaptionBlock: React.FC<{cue: Cue; local: number; dur: number; zoneY: numbe
           pointerEvents: 'none',
         }}
       />
+
       <div
         style={{
           position: 'relative',
-          fontFamily: FONT,
-          fontSize: 78,
+          fontSize: 64,
           fontWeight: 800,
-          lineHeight: 1.16,
-          letterSpacing: -1.6,
-          textAlign: 'center',
+          lineHeight: 1.14,
+          letterSpacing: -1.4,
           color: L.ink,
-          // Two shadows: a tight one for edge definition against mid-tones, and
-          // a wide soft one that does the work the scrim used to.
-          textShadow:
-            '0 3px 10px rgba(0,0,0,0.72), 0 0 42px rgba(0,0,0,0.55)',
+          textShadow: '0 3px 10px rgba(0,0,0,0.72), 0 0 42px rgba(0,0,0,0.55)',
           textWrap: 'balance',
         }}
       >
-        {cue.text.split('\n').map((line, i) => (
-          <div key={i}>
-            {parts(line, cue.keyword).map((seg, j) => (
-              <span key={j} style={seg.hit ? {color: L.gold} : undefined}>
-                {seg.text}
-              </span>
-            ))}
-          </div>
-        ))}
+        {cue.line1}
       </div>
+
+      {cue.line2 ? (
+        <div
+          style={{
+            position: 'relative',
+            fontSize: 41,
+            fontWeight: 600,
+            fontStyle: 'italic',
+            lineHeight: 1.2,
+            letterSpacing: -0.3,
+            color: GOLD_2,
+            textShadow: '0 3px 10px rgba(0,0,0,0.78), 0 0 36px rgba(0,0,0,0.6)',
+            textWrap: 'balance',
+          }}
+        >
+          {cue.line2}
+        </div>
+      ) : null}
     </div>
   );
 };
@@ -123,16 +133,10 @@ export const Captions: React.FC = () => {
   const cue = CUES.find((c) => frame >= c.from && frame < c.to);
   if (!cue) return null;
 
-  // The zone is chosen by the scene the cue *starts* in, so a caption never
-  // jumps across the frame partway through its own life.
+  // Cues are contiguous and every boundary is a cut, so there is no exit fade:
+  // one caption is replaced by the next at the same instant the picture
+  // changes. Fading out would soften a cut the footage makes hard.
   const zone = zoneForScene(sceneAt(cue.from));
 
-  return (
-    <CaptionBlock
-      cue={cue}
-      local={frame - cue.from}
-      dur={cue.to - cue.from}
-      zoneY={ZONE_Y[zone]}
-    />
-  );
+  return <CaptionBlock cue={cue} local={frame - cue.from} zoneY={ZONE_Y[zone]} />;
 };

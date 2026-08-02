@@ -5,7 +5,7 @@ port of the vertical Short.
 
 | Composition | Format | Source of truth | Output |
 |---|---|---|---|
-| `Inflation-Short` | 1080×1920 · 24fps · 1:40 | `public/inflation.mp4` (supplied footage) + `../inflation-script.md` | `../media/inflation-edited.mp4` |
+| `Inflation-Short` | 1080×1920 · 24fps · 1:40 | `public/inflation.mp4` (supplied footage) + `../inflation-scene-pack.txt` | `../media/inflation-edited.mp4` |
 | `Ep2-HalalMortgage` | 1920×1080 · 30fps · 10:17 | `../storyboard-ep2-halal-mortgage.md` + `public/vo-ep2.mp3` | `../media/ep2-halal-mortgage.mp4` |
 | `Ep2-Thumbnail` | 1280×720 still | same storyboard | `../media/ep2-thumbnail.png` |
 | `Part14-RaiseTrap` | 1080×1920 · 30fps · 36s | kinetic-typography Short | `../media/part14-kinetic.mp4` |
@@ -23,7 +23,7 @@ Build it in four steps:
 ```bash
 npm run prep:inflation      # HEVC -> H.264 (Chromium cannot decode H.265)
 npm run cuts:inflation      # find the footage's own cuts -> src/inflation/cuts.ts
-npm run captions:inflation  # time the script -> captions.ts + ../media/inflation.srt
+npm run captions:inflation  # scene pack -> captions.ts + ../media/inflation.srt
 npm run render:inflation
 ```
 
@@ -55,18 +55,46 @@ npm run render:inflation
   power bars, draw-on callouts. Callouts are anchored by their *dot*, so you
   position the thing being pointed at and express the label as an offset.
 
-### Caption timing, and how far to trust it
+### Captions come from the scene pack, and the timing is exact
 
-No speech-recognition model host is reachable from this environment, so the
-words are not recognised — they are placed. `silencedetect` measures where
-speech actually starts and stops, the script's words are laid across those runs
-in proportion to their length, and each cue boundary is then snapped to the
-nearest real pause and, where one is within 8 frames, to a cut in the footage.
+`../inflation-scene-pack.txt` writes `CAPTION 1` and `CAPTION 2` for every
+scene, and the footage cuts between those same scenes. So
+`scripts/make-inflation-captions.mjs` does not estimate anything: each cue's
+start and end **is** a cut frame. That is what the pack's own spec asks for —
+"the caption change and the picture cut land together" — and it means no speech
+recognition is needed (none is reachable here anyway).
 
-So **cue boundaries are measured; word positions inside a cue are interpolated.**
-That is exactly why captions show a whole cue at a time with one gold keyword,
-rather than sweeping a karaoke playhead across words nothing here can actually
-locate. If a cue drifts against the read, edit the script and re-run.
+**The scene offset.** The pack describes 37 scenes; the delivered footage has
+36. Pack scene 35, the brass balance scale, was never generated. Its voiceover
+is still in the recording, so its caption rides the house-frontage shot that
+follows the vault — which the pack marks as a silent beat with no caption of its
+own, so nothing is displaced. Pack scenes 1–34 map one to one; see
+`PACK_TO_CUT` in the generator.
+
+### Two departures from the pack's burn-in spec
+
+Both settled with the author rather than assumed:
+
+1. **Position.** The spec says "lower third". All 37 image prompts say "subject
+   in the lower two-thirds, clean headroom above for captions" — the footage was
+   generated from the prompts, so the subject really is low and the room really
+   is up top. Lower-third captions would sit on the character in most shots.
+   Captions go where the pictures left room; exceptions are in `placement.ts`.
+2. **Treatment.** The spec asks for solid black boxes and no animation. This
+   uses the project's own language instead — a centred block on a soft scrim
+   with a short pop. The pack's two-line hierarchy is kept exactly, including
+   line 2's gold italic; its 20px left offset is dropped, because that belongs
+   to a left-aligned layout and reads as a mistake on a centred one.
+
+### What a graphic beat is allowed to say
+
+Captions carry every line of the voiceover, so a graphic that restates the line
+beneath it is the same sentence twice in two type sizes. `beats.ts` therefore
+splits the work: **tags** name the film's four movements (the symptom, the
+mechanism, the cost, the fix) and never quote the narration; **cards, bars and
+callouts** carry a figure or a mechanic the narration does not state outright.
+A beat that can only repeat its caption is cut — which is why the hero frame
+(pack 20) and the empty vault (pack 16) deliberately carry no graphic at all.
 
 ## Episode 2 — how it's built
 

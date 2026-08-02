@@ -1,17 +1,27 @@
 // Where a caption may sit in each scene, so it never covers the subject.
 //
-// This is hand-authored, not generated. scripts/analyse-frames.py scores the
-// three candidate bands of every scene for busy-ness and produces a draft, but
-// the score is a proxy — it cannot tell a face from a texture. Every entry
-// below was set by looking at the contact sheet that script builds, and the
-// comment names what is actually in the shot so the next person can re-judge it
-// without re-deriving anything.
+// Hand-authored, not generated. scripts/analyse-frames.py scores the three
+// candidate bands of every scene for busy-ness and builds a labelled contact
+// sheet, but the score is a proxy — it cannot tell a subject from a texture.
+// Every entry below was set by looking at that sheet, then checked against the
+// scene pack's own image prompt for the shot.
+//
+// ── WHY TOP IS THE DEFAULT ──────────────────────────────────────────────────
+// The pack's burn-in spec says "POSITION: lower third". Its image prompts say
+// the opposite, all 37 of them: "subject in the lower two-thirds, clean
+// headroom above for captions". The footage was generated from the prompts, so
+// the subject really is low in frame and the room really is up top — a
+// lower-third caption would sit on the character in most shots. Captions
+// therefore go where the pictures actually left room. Settled with the author.
+//
+// The exceptions below are the shots where the top is genuinely occupied:
+// the banker's bucket hat sits high, a few close-ups fill the upper frame.
 //
 // There is no true "behind the subject" compositing here. That needs a subject
 // matte, and no segmentation model is reachable from the build environment. The
 // substitute is honest: put the type in the part of the frame that is genuinely
-// empty, and lay a soft radial scrim under it so it reads as part of the image
-// rather than stuck on top.
+// empty, and lay a soft scrim under it so it reads as part of the image rather
+// than stuck on top.
 
 export type Zone = 'top' | 'middle' | 'bottom';
 
@@ -19,11 +29,11 @@ export type Zone = 'top' | 'middle' | 'bottom';
  * Vertical anchor of each zone, as a fraction of frame height, measured to the
  * caption block's centre.
  *
- * These are pulled in from the frame edges further than the analysis bands
- * because this is a Short: YouTube's own UI eats roughly the bottom 14% (title,
- * channel, description) and the right 16% (like/comment/share rail). `bottom`
- * therefore sits higher than a 16:9 lower-third would, and no caption runs the
- * full width — see CAPTION_MAX_WIDTH.
+ * Pulled in from the frame edges further than the analysis bands because this
+ * is a Short: YouTube's UI eats roughly the bottom 14% (title, channel,
+ * description) and the right 16% (like/comment/share rail). `bottom` therefore
+ * sits higher than a 16:9 lower-third would, and no caption runs the full
+ * width — see CAPTION_MAX_WIDTH.
  */
 export const ZONE_Y: Record<Zone, number> = {
   top: 0.19,
@@ -35,49 +45,47 @@ export const ZONE_Y: Record<Zone, number> = {
 export const CAPTION_MAX_WIDTH = 0.82;
 
 /**
- * One zone per detected scene, indexed to CUTS in ./cuts.ts.
- *
- * The footage is a faceless 3D character moving through money scenarios, so
- * "the subject" is usually either the character or the one object the shot is
- * about (a receipt, a price, a coin). Both are protected.
+ * One zone per detected scene, indexed to CUTS in ./cuts.ts. The comment gives
+ * the scene pack's number for that cut — they run 1:1 until pack scene 35, the
+ * balance scale, which was never generated (see make-inflation-captions.mjs).
  */
 export const PLACEMENT: Zone[] = [
-  'top', // 0  supermarket aisle, character at the checkout — ceiling is clear
-  'top', // 1  receipt curling through frame, blurred store behind
-  'top', // 2  mailbox on a cream wall, letters — plain wall above
-  'bottom', // 3  man in hat at a desk; his hat is high in frame, so go low
-  'top', // 4  crumpled paper on dark wood — top is near-black
-  'top', // 5  supermarket aisle again, character reading a receipt
-  'top', // 6  dark room, character at a desk under a hanging lamp
-  'top', // 7  papers pinned to a dark board
-  'top', // 8  banknote and document on a dark table
-  'top', // 9  wide dark office, small figure at a desk
-  'top', // 10 extreme close-up of a $100 bill — keep off Franklin's face
-  'top', // 11 endless grid of money stacks receding to a horizon; sky above
-  'bottom', // 12 character at an office desk, hat sits in the top band
-  'top', // 13 hand signing a document, warm pool of light; top is dark
-  'bottom', // 14 money stack in a light beam — floor below is empty
-  'bottom', // 15 blue-lit vault corridor, clean reflective floor
-  'top', // 16 monitor reading 4,512.67 — the number must stay uncovered
-  'top', // 17 aerial suburb, busy everywhere; top is marginally calmest
-  'top', // 18 removal truck, two characters lifting a box; open sky above
-  'bottom', // 19 tall money stack beside a small loaf — bare concrete below
-  'top', // 20 supermarket, character reaching a shelf; price tag stays clear
-  'top', // 21 character on a dark teal street at night
-  'top', // 22 cream wall, small meter box, hard shadow — very clean above
-  'top', // 23 petrol station at night, character refuelling a red car
-  'middle', // 24 tiny figure under an enormous empty sky — type floats in it
-  'top', // 25 dark office, chair and documents on a desk
-  'top', // 26 concrete wall with a circular sculpture
-  'bottom', // 27 character sitting on steps with a phone; roof and tree above
-  'bottom', // 28 gold coins close-up on black — the area below them is empty
-  'top', // 29 extreme close-up of a coin edge; top is pure black
-  'top', // 30 two characters carrying a crate through orange haze
-  'bottom', // 31 hands placing coins into a wooden box; table below is clear
-  'top', // 32 character walking past a brick house at sunset
-  'top', // 33 vault door, dark blue — top is deep shadow
-  'top', // 34 two houses at sunset, open sky above the rooflines
-  'bottom', // 35 blurred house at golden hour — soft grass below
+  'top', // 0  pack 01 · supermarket checkout, character reading a receipt
+  'top', // 1  pack 02 · extreme close-up, hands holding the receipt
+  'top', // 2  pack 03 · empty letterbox on a cream wall
+  'bottom', // 3  pack 04 · banker at his desk — the navy bucket hat sits high
+  'top', // 4  pack 05 · macro of a worn banknote, near-black above
+  'top', // 5  pack 06 · supermarket aisle, character holding a payslip
+  'top', // 6  pack 07 · kitchen table at night, bills under a pendant lamp
+  'top', // 7  pack 08 · overhead scatter of unpaid bills
+  'top', // 8  pack 09 · one crisp banknote alone on a table
+  'top', // 9  pack 10 · the same note beside a half-full grocery bag
+  'top', // 10 pack 11 · extreme macro of the banknote surface
+  'top', // 11 pack 12 · endless grid of notes to the horizon; open sky above
+  'bottom', // 12 pack 13 · banker at the desk again — hat high in frame
+  'top', // 13 pack 14 · macro, pen nib on the signature line
+  'bottom', // 14 pack 15 · stack of notes on the desk, empty surface below
+  'bottom', // 15 pack 16 · open vault, clean reflective floor
+  'top', // 16 pack 17 · monitor showing the rising numeral — keep it uncovered
+  'top', // 17 pack 18 · aerial suburb; busy everywhere, sky at the very top
+  'top', // 18 pack 19 · two workers lifting a box at the truck; open sky
+  'bottom', // 19 pack 20 · HERO — the stack rises out of frame, so type goes low
+  'top', // 20 pack 21 · supermarket shelf; the price tag stays clear
+  'top', // 21 pack 22 · night bus stop, dark space above
+  'top', // 22 pack 23 · letterbox callback, plain cream wall
+  'top', // 23 pack 24 · petrol station at night
+  'top', // 24 pack 25 · THUMBNAIL — lone figure under an enormous sky
+  'top', // 25 pack 26 · the signed loan document, alone on the desk
+  'top', // 26 pack 27 · banknotes in a closed ring on concrete
+  'bottom', // 27 pack 28 · character on the doorstep — roof and tree fill the top
+  'bottom', // 28 pack 29 · gold and silver coins; the tag beat takes the top
+  'top', // 29 pack 30 · macro of the coin's milled edge
+  'top', // 30 pack 31 · two workers lifting a crate at dusk
+  'bottom', // 31 pack 32 · a coin going into the wooden box; the bar takes the top
+  'top', // 32 pack 33 · character at his own front gate, golden hour
+  'top', // 33 pack 34 · the vault door swinging closed
+  'top', // 34 pack 36 · empty house frontage (also carries pack 35's caption)
+  'middle', // 35 pack 37 · END CARD — blurred plate, nothing to avoid
 ];
 
 /** Zone for the scene containing a frame; falls back to bottom past the end. */

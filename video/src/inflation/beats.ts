@@ -5,23 +5,28 @@ import {CUTS, SOURCE_FRAMES} from './cuts';
 // Graphic beats.
 //
 // Every beat is anchored to a scene index — that is, to a cut the footage
-// already makes — so a graphic never lands in the middle of a shot. The brief
-// was "punctuated": the photography leads, and a graphic arrives on roughly
-// every second or third cut to hit a mechanism beat.
+// already makes — so a graphic never lands mid-shot. The brief was
+// "punctuated": the photography leads, and a graphic arrives on roughly every
+// second or third cut to hit a mechanism beat.
 //
-// Each beat's `anchor` is chosen against two things: what is in that shot (see
-// the contact sheet from scripts/analyse-frames.py) and where that scene's
-// caption sits (./placement.ts). A beat and a caption are never put in the same
-// third of the frame.
+// ── WHAT A BEAT IS ALLOWED TO SAY ───────────────────────────────────────────
+// Captions now carry every line of the voiceover, so a graphic that restates
+// the line under it is just the same sentence twice in two type sizes. The
+// first pass did exactly that — a "Same bread" card sitting under a "More
+// money. Same bread." caption — and it read as a bug.
 //
-// ── ON THE WORDING AND THE FIGURES ──────────────────────────────────────────
-// The recording's script has not been supplied yet, so the copy below is drawn
-// from the channel's own Part 14 inflation script in src/Short.tsx — same
-// topic, same voice, already written by hand. It is deliberately the nearest
-// true source rather than invented filler, but it is still PROVISIONAL: every
-// figure must be checked against what the voiceover actually says before this
-// ships, because a number on screen that contradicts the narration is worse
-// than no number at all. Changing them is a one-line edit each.
+// So the division is strict:
+//   * TAGS name the film's STRUCTURE — the symptom, the mechanism, the cost,
+//     the fix. Four of them, one per movement. They are chapter markers, and
+//     they never quote the narration.
+//   * CARDS, BARS and CALLOUTS carry a figure or a mechanic the narration does
+//     not state outright — a price, a supply curve, a thing to point at.
+// If a beat can only repeat its caption, it is cut. The hero frame (pack 20)
+// and the emotional peak (pack 25) are deliberately left to the caption alone.
+//
+// Placement rule: a beat and its scene's caption are never in the same third of
+// the frame. Captions default to the top (see ./placement.ts), so most beats sit
+// low; where a caption is pushed low, its beat goes up.
 // ─────────────────────────────────────────────────────────────────────────────
 
 export type Anchor = {
@@ -82,107 +87,90 @@ export type Beat = Common &
   );
 
 export const BEATS: Beat[] = [
-  // ── the receipt ───────────────────────────────────────────────────────────
+  // ── I · the symptom ───────────────────────────────────────────────────────
   {
     kind: 'tag',
-    scene: 2, // mailbox and letters — caption is up top, so this sits low
-    text: 'The receipt',
-    anchor: {x: 0.09, y: 0.79, align: 'left'},
-  },
-  {
-    kind: 'stat',
-    scene: 4, // crumpled paper on dark wood
-    label: 'What your money now buys',
-    value: '−2%',
-    sub: 'Same wage. Smaller basket.',
-    accent: L.red,
-    anchor: {x: 0.5, y: 0.75},
+    // pack 06 · the character reading his payslip in the aisle. First movement:
+    // something is wrong and it shows up at the till.
+    scene: 5,
+    text: 'The symptom',
+    anchor: {x: 0.5, y: 0.8},
   },
 
-  // ── the mechanism ─────────────────────────────────────────────────────────
-  {
-    kind: 'tag',
-    scene: 10, // extreme close-up of a banknote
-    text: 'The mechanism',
-    anchor: {x: 0.09, y: 0.8, align: 'left'},
-  },
+  // ── II · the mechanism ────────────────────────────────────────────────────
   {
     kind: 'bar',
-    scene: 11, // endless grid of money stacks — the bar belongs over this
-    label: 'Purchasing power',
+    // pack 12 · the endless grid of notes. The grid is the supply; the bar is
+    // what the supply does to each note. This is the film's central mechanic
+    // and it is mirrored in green at scene 31.
+    scene: 11,
+    label: 'What each note buys',
     from: 1,
-    to: 0.82,
+    to: 0.66,
     accent: L.red,
-    caption: 'Nobody took it out of your account.',
-    anchor: {x: 0.5, y: 0.74},
+    caption: 'Supply up. Value down.',
+    anchor: {x: 0.5, y: 0.75},
   },
   {
+    kind: 'tag',
+    // pack 13 · the banker, "Money isn't printed. It is LENT into existence."
+    // Caption sits low in this shot (his hat is high), so the tag takes the top.
+    scene: 12,
+    text: 'The mechanism',
+    anchor: {x: 0.5, y: 0.16},
+  },
+  // pack 16, the empty vault, deliberately carries no graphic. A callout
+  // pointing into it can only say "nothing in here", and that scene's own
+  // caption already reads "there was nothing in there". The shot makes the
+  // point on its own; the beat that followed it makes the sharper one.
+  {
     kind: 'callout',
-    // Monitor reading 4,512.67. The dot lands just left of the figure and the
-    // elbow drops into the dark desk below it — routing the label to the right
-    // would lay it straight across the number the callout is pointing at.
+    // pack 17 · the monitor. The dot lands left of the numeral and the elbow
+    // drops into the dark desk; routing right would lay the label across the
+    // number it is pointing at.
     scene: 16,
-    text: 'Still the same number',
+    text: 'One keystroke',
     dir: 'right',
     run: 150,
     drop: 250,
     anchor: {x: 0.2, y: 0.45, align: 'anchor'},
   },
 
-  // ── what it costs ─────────────────────────────────────────────────────────
+  // ── III · the cost ────────────────────────────────────────────────────────
+  // Note the gap here: pack 20, the hero frame the pack says "has to be
+  // understood", carries no graphic at all. Its caption already says "More
+  // money. Same bread." — anything else on that frame is noise.
   {
     kind: 'stat',
-    // Tall money stack beside a small loaf. The stack IS the shot, so the card
-    // goes right, over the bare wall, rather than centred across the stack.
-    scene: 19,
-    label: 'Ten years',
-    value: '−34%',
-    sub: 'The stack grew.\nThe basket shrank.',
-    accent: L.red,
-    anchor: {x: 0.96, y: 0.2, align: 'right'},
-  },
-  {
-    kind: 'stat',
-    // Supermarket shelf. Everything in this frame is busy — shelves left, the
-    // character reaching on the right, the price tag low-centre — so a callout
-    // has nowhere clean to route its label. A card on its own backing holds up
-    // over the clutter; it sits left to leave the price tag readable.
+    // pack 21 · the shelf price is legible in the shot and reads $3.49, so the
+    // card matches it. A card that disagrees with the thing beside it costs
+    // more credibility than the currency choice is worth.
     scene: 20,
     label: 'The shelf',
-    // The price tag is legible in this shot and reads $3.49, so the card says
-    // dollars too. A card that disagrees with the thing it is sitting next to
-    // costs more credibility than the currency choice is worth.
     value: '$3.49',
-    sub: 'Was $2.60.',
+    sub: 'Your wage did not move.',
     accent: L.red,
     anchor: {x: 0.06, y: 0.72, align: 'left'},
   },
   {
-    kind: 'count',
-    scene: 24, // tiny figure under an enormous sky; caption sits mid-frame
-    label: 'Printed since 2020',
-    from: 0,
-    to: 9.2,
-    format: 'plain',
-    sub: 'trillion, out of nothing',
-    accent: L.red,
-    anchor: {x: 0.5, y: 0.2},
-  },
-  {
     kind: 'tag',
-    scene: 26, // concrete wall and sculpture
-    text: 'Why it happens',
-    anchor: {x: 0.09, y: 0.8, align: 'left'},
+    // pack 25 · THUMBNAIL CANDIDATE, the lone figure under the sky. The caption
+    // names the tax; the tag only marks the movement.
+    scene: 24,
+    text: 'The cost',
+    color: L.red,
+    anchor: {x: 0.5, y: 0.46},
   },
 
-  // ── the fix ───────────────────────────────────────────────────────────────
+  // ── IV · the fix ──────────────────────────────────────────────────────────
   // The one place the reserved Z vector is spent: the film turns here, from
   // what is being done to you to what you can do about it. Matching entry and
-  // exit signs mean the conclusion rises out of the problem rather than
-  // sliding in beside it. See hyperframes/inflation-ledger.json.
+  // exit signs mean the conclusion rises out of the problem rather than sliding
+  // in beside it. See hyperframes/inflation-ledger.json.
   {
     kind: 'tag',
-    scene: 28, // gold coins emerging from black
+    // pack 29 · the cut to gold and silver. The footage turns here too.
+    scene: 28,
     text: 'The fix',
     color: L.green,
     anchor: {x: 0.5, y: 0.2},
@@ -191,28 +179,26 @@ export const BEATS: Beat[] = [
   },
   {
     kind: 'stat',
-    scene: 29, // extreme close-up of a coin edge
-    label: 'Money they cannot print',
-    value: '0%',
-    sub: 'No issuer. No dilution.',
+    // pack 30 · the coin's milled edge. The narration says you cannot type gold
+    // into existence; the card gives the reason underneath it.
+    scene: 29,
+    label: 'Issuer',
+    value: 'None',
+    sub: 'Nobody can add to it.',
     accent: L.gold,
-    anchor: {x: 0.5, y: 0.74},
+    anchor: {x: 0.5, y: 0.76},
   },
   {
     kind: 'bar',
-    scene: 31, // hands placing coins into a box
-    label: 'Purchasing power',
-    from: 0.55,
+    // pack 32 · the coin going into the box. Deliberately the same label and
+    // shape as the red bar at scene 11 — the rhyme is the argument.
+    scene: 31,
+    label: 'What each coin buys',
+    from: 0.62,
     to: 1,
     accent: L.green,
-    caption: '1,400 years old. Still the only exit.',
+    caption: 'Supply fixed. Value held.',
     anchor: {x: 0.5, y: 0.24},
-  },
-  {
-    kind: 'tag',
-    scene: 34, // two houses at sunset — the close
-    text: 'No jargon. Just mechanisms.',
-    anchor: {x: 0.09, y: 0.8, align: 'left'},
   },
 ];
 

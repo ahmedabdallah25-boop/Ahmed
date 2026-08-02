@@ -17,7 +17,7 @@
 //
 // The AAC track is stream-copied into the same file, so <OffthreadVideo> in
 // the composition carries the voiceover and there is no second asset to keep
-// in sync. make-inflation-srt.mjs runs silencedetect against this same file.
+// in sync.
 //
 // Usage: node scripts/prep-source.mjs [path to .MOV]
 

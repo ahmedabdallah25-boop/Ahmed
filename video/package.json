@@ -8,7 +8,7 @@
     "render": "remotion render src/index.ts Part14-RaiseTrap ../media/part14-kinetic.mp4",
     "prep:inflation": "node scripts/prep-source.mjs",
     "cuts:inflation": "node scripts/detect-cuts.mjs --write",
-    "captions:inflation": "node scripts/make-inflation-srt.mjs",
+    "captions:inflation": "node scripts/make-inflation-captions.mjs",
     "render:inflation": "remotion render src/index.ts Inflation-Short ../media/inflation-edited.mp4",
     "still": "remotion still src/index.ts Part14-RaiseTrap out/frame.png"
   },
