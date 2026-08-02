@@ -51,8 +51,14 @@ fresh session can pick up without re-deriving anything.
 - **Captions**: line 1 white Inter/Montserrat Bold on solid black box; line 2 soft gold
   `#F5D76E` italic on its own black box, offset ~20px left. Static per phrase — no karaoke,
   no bouncing. Lower third, clear of the bottom 250px.
-- **Hook**: personal-stakes paradox in the first 3 seconds. **Close**: a promise that sets up
-  the next part, plus "follow".
+- **Hook**: personal-stakes paradox in the first 3 seconds — name a cost the viewer is already
+  paying, deliver it flat and certain. Two scenes, ~6s.
+- **Recap** (when the short continues a previous part): straight after the hook, 15–20s of the
+  previous episode's mechanism, cut ~15% faster than the rest, re-staging that episode's actual
+  shots rather than lookalikes. Terracotta chip top-left ("PART N, IN X SECONDS") plus a thin
+  progress bar across the top for the span — a finite recap is what stops the swipe. End it on a
+  pivot scene with a beat of silence: "That was the problem. This is the fix."
+- **Close**: a promise that sets up the next part, plus "follow".
 - **Titles**: "How to X Without Y" / "How Banks X Your Y" + parenthetical topic + 2 hashtags.
 - **Description**: hook paragraph → mechanism → next-video promise → part number →
   full series link list → playlist `PLKLKzR1QgFHE` (legacy 13-char id, valid — do not "fix" it)
