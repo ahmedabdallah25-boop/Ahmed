@@ -1,6 +1,7 @@
 import React from 'react';
 import {Composition} from 'remotion';
 import './fonts';
+import {INFLATION_DURATION, Inflation} from './inflation/Inflation';
 import {Longform} from './longform/Longform';
 import {VO_DURATION} from './longform/timing';
 import {Short} from './Short';
@@ -10,6 +11,17 @@ import {FPS, H, W} from './theme';
 
 export const RemotionRoot: React.FC = () => (
   <>
+    {/* Inflation — motion graphics and captions over the supplied 3D footage.
+        24fps and 2400 frames because that is exactly what the source is; the
+        footage is never resampled. */}
+    <Composition
+      id="Inflation-Short"
+      component={Inflation}
+      durationInFrames={INFLATION_DURATION}
+      fps={24}
+      width={1080}
+      height={1920}
+    />
     {/* Episode 2 — long-form, cut to the recorded VO. */}
     <Composition
       id="Ep2-HalalMortgage"

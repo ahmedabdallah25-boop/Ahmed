@@ -5,9 +5,68 @@ port of the vertical Short.
 
 | Composition | Format | Source of truth | Output |
 |---|---|---|---|
+| `Inflation-Short` | 1080×1920 · 24fps · 1:40 | `public/inflation.mp4` (supplied footage) + `../inflation-script.md` | `../media/inflation-edited.mp4` |
 | `Ep2-HalalMortgage` | 1920×1080 · 30fps · 10:17 | `../storyboard-ep2-halal-mortgage.md` + `public/vo-ep2.mp3` | `../media/ep2-halal-mortgage.mp4` |
 | `Ep2-Thumbnail` | 1280×720 still | same storyboard | `../media/ep2-thumbnail.png` |
 | `Part14-RaiseTrap` | 1080×1920 · 30fps · 36s | kinetic-typography Short | `../media/part14-kinetic.mp4` |
+
+## Inflation short — how it's built
+
+Unlike everything else here, this composition does not *generate* its picture —
+it overlays supplied footage. The footage arrived as a finished 1:40 run of 36
+AI-generated 3–5s scenes with its own hard cuts, and the overlay's whole job is
+to land *with* those cuts rather than across them. Nothing re-times, re-cuts,
+dissolves or pushes in on the source.
+
+Build it in four steps:
+
+```bash
+npm run prep:inflation      # HEVC -> H.264 (Chromium cannot decode H.265)
+npm run cuts:inflation      # find the footage's own cuts -> src/inflation/cuts.ts
+npm run captions:inflation  # time the script -> captions.ts + ../media/inflation.srt
+npm run render:inflation
+```
+
+- **`scripts/prep-source.mjs`** — the supplied `.MOV` is HEVC, which neither
+  Chromium nor Remotion's preview can decode, so it is transcoded once to H.264
+  at CRF 17. No scaling: the source is 1072×1920 against a 1080×1920 canvas, so
+  the composition covers with `objectFit: cover` rather than stretching it 0.75%
+  wide. The AAC voiceover is stream-copied in, so `<OffthreadVideo>` carries it.
+- **`scripts/detect-cuts.mjs`** — Remotion's bundled ffmpeg is built with
+  `--disable-filters` and no `select`, `showinfo` or `rawvideo` muxer, so
+  ffmpeg's own scene detector is unavailable. Instead the video is decoded once
+  to a 64×114 greyscale stream through `image2pipe` and the frame-to-frame luma
+  delta is computed directly. Run it without `--write` to see the whole
+  difference curve and every scene's length before committing to a threshold.
+- **`scripts/analyse-frames.py`** — builds a labelled contact sheet, one still
+  per scene with the candidate caption bands drawn on, plus a busy-ness score
+  per band. It produces a *draft* placement; the scores cannot tell a face from
+  a texture, so the sheet is what you actually judge from.
+- **`src/inflation/placement.ts`** — hand-authored from that sheet: which third
+  of the frame each scene's caption may occupy, with a comment naming what is in
+  the shot. This is what keeps type off the subject. Note that captions cannot
+  sit genuinely *behind* a subject — that needs a matte, and no segmentation
+  model is reachable from this environment — so they go where the frame is empty
+  instead, under a soft scrim.
+- **`src/inflation/beats.ts`** — which graphic fires on which cut, and where it
+  sits. Every beat is anchored to a scene index, never a raw frame, and is
+  positioned clear of that scene's caption zone.
+- **`src/inflation/graphics.tsx`** — the shape language: glass cards, tag pills,
+  power bars, draw-on callouts. Callouts are anchored by their *dot*, so you
+  position the thing being pointed at and express the label as an offset.
+
+### Caption timing, and how far to trust it
+
+No speech-recognition model host is reachable from this environment, so the
+words are not recognised — they are placed. `silencedetect` measures where
+speech actually starts and stops, the script's words are laid across those runs
+in proportion to their length, and each cue boundary is then snapped to the
+nearest real pause and, where one is within 8 frames, to a cut in the footage.
+
+So **cue boundaries are measured; word positions inside a cue are interpolated.**
+That is exactly why captions show a whole cue at a time with one gold keyword,
+rather than sweeping a karaoke playhead across words nothing here can actually
+locate. If a cue drifts against the read, edit the script and re-run.
 
 ## Episode 2 — how it's built
 
@@ -70,3 +129,9 @@ A HyperFrames (HTML + GSAP) port of the vertical Short — one seekable timeline
 `npx hyperframes preview` to edit it on a timeline, or render it in the cloud.
 `ledger.json` is the seam vector ledger: the film runs one current (left), and
 spends the reserved Z vector only on the problem → fix chapter boundary.
+
+`inflation-ledger.json` applies the same doctrine to the Inflation short, with
+one difference worth stating: the footage there is not ours to re-cut, so the
+ledger governs the **graphics layer only**. The picture cuts hard on its own 36
+cuts; the overlay flows left across them, and the reserved Z vector is spent
+once, on the cut to the gold coins where the film turns from problem to fix.

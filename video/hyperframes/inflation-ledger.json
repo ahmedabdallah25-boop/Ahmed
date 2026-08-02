@@ -1,0 +1,67 @@
+{
+  "film": "inflation-short",
+  "current": "left",
+  "note": "The footage is not ours to re-cut. It arrived as a finished run of 36 AI-generated scenes with its own hard cuts, and nothing is laid across them — no dissolves, no wipes, no push-in fighting its own motion. So the seam doctrine governs the GRAPHICS layer only: every card, tag, bar and callout enters from the right already in flight and leaves to the left, on the film's one current. The picture cuts hard; the overlay flows. Cut frames below are from src/inflation/cuts.ts and are the footage's own, not ours.",
+  "seams": [
+    {
+      "cut": 179,
+      "seconds": 7.46,
+      "from": "s2-mailbox",
+      "to": "beat-the-receipt",
+      "exit": {"axis": "x", "dir": -1},
+      "entry": {"axis": "x", "dir": -1},
+      "technique": "cut-the-curve",
+      "carrier": "#hf-progress"
+    },
+    {
+      "cut": 721,
+      "seconds": 30.04,
+      "from": "s10-banknote",
+      "to": "beat-the-mechanism",
+      "exit": {"axis": "x", "dir": -1},
+      "entry": {"axis": "x", "dir": -1},
+      "technique": "cut-the-curve",
+      "carrier": "#hf-progress"
+    },
+    {
+      "cut": 778,
+      "seconds": 32.42,
+      "from": "beat-the-mechanism",
+      "to": "beat-purchasing-power",
+      "exit": {"axis": "x", "dir": -1},
+      "entry": {"axis": "x", "dir": -1},
+      "technique": "cut-the-curve",
+      "carrier": "#hf-progress"
+    },
+    {
+      "cut": 1655,
+      "seconds": 68.96,
+      "from": "s26-wall",
+      "to": "beat-why-it-happens",
+      "exit": {"axis": "x", "dir": -1},
+      "entry": {"axis": "x", "dir": -1},
+      "technique": "cut-the-curve",
+      "carrier": "#hf-progress"
+    },
+    {
+      "cut": 1851,
+      "seconds": 77.13,
+      "from": "beat-why-it-happens",
+      "to": "beat-the-fix",
+      "exit": {"axis": "z", "dir": -1, "scaleSign": "-"},
+      "entry": {"axis": "z", "dir": -1, "scaleSign": "-"},
+      "technique": "inverse-zoom",
+      "note": "The reserved vector, spent once and only here. This is the film's turn: everything before it is what is being done to you, everything after is what you can do about it. Same Z sign both sides, so the fix rises out of the problem instead of sliding in beside it. It lands on the cut to the gold coins, which is where the footage turns too."
+    },
+    {
+      "cut": 2062,
+      "seconds": 85.92,
+      "from": "beat-the-fix",
+      "to": "beat-power-held",
+      "exit": {"axis": "x", "dir": -1},
+      "entry": {"axis": "x", "dir": -1},
+      "technique": "cut-the-curve",
+      "carrier": "#hf-progress"
+    }
+  ]
+}
