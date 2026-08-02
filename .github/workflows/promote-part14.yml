@@ -13,7 +13,7 @@ on:
       mode:
         description: "all = playlist + comments + stats; or run one step"
         type: choice
-        options: [all, playlist, comments, stats]
+        options: [all, playlist, description, comments, stats]
         default: all
 
 jobs:
@@ -30,6 +30,7 @@ jobs:
           case "${{ inputs.mode }}" in
             all)      python automation/promote_part14.py ;;
             playlist) python automation/promote_part14.py --playlist ;;
+            description) python automation/promote_part14.py --description ;;
             comments) python automation/promote_part14.py --comments ;;
             stats)    python automation/promote_part14.py --stats ;;
           esac

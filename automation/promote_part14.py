@@ -17,10 +17,15 @@ needs it to the thing that does not would lose more than it gains.
 
 So this uses the surfaces that are currently empty instead:
 
-  1. The series playlist. longform.json's playlist_id is blank and the configured
-     PLKLKzR1QgFHE 404s, which means every "full series" link on the channel is
-     dead. Re-resolving it by title fixes that channel-wide, and Part 14 gets
-     added to it — playlists feed the suggested rail and keep a binge going.
+  1. The series playlist. Part 14 gets added to it — playlists feed the
+     suggested rail and keep a binge going.
+
+     Note for anyone reading channel-study.md: PLKLKzR1QgFHE is NOT broken.
+     It was assumed dead because longform.json's playlist_id is blank and the
+     id looks truncated, but an API lookup confirms it is live with 17 videos.
+     Legacy playlist IDs really are only 13 characters (PL + 11) — never judge
+     one by its length. resolve_playlist() below verifies rather than assumes,
+     and only re-resolves by title if the lookup actually fails.
   2. The comment sections of the five 900+ view Shorts. Those videos still take
      impressions daily and their comment threads carry nothing from the channel.
      A creator comment there is a real surface and competes with nothing.
@@ -193,6 +198,29 @@ def seed_comments(yt):
         print("and an unpinned creator comment sinks as the thread grows.")
 
 
+# ── 4. push the description (playlist link) ──────────────────────────────────
+def update_description(yt):
+    """Re-push Part 14's snippet from part14.json.
+
+    Used after editing the config — the playlist link was added once the
+    playlist was confirmed live, and this is how that reaches the video.
+    """
+    _require_video()
+    items = yt.videos().list(part="snippet", id=VIDEO_ID).execute().get("items", [])
+    if not items:
+        print("! Part 14 not found")
+        return
+    snippet = items[0]["snippet"]
+    if snippet.get("description", "") == CFG["description"]:
+        print("= description already matches part14.json — left alone")
+        return
+    snippet["description"] = CFG["description"]
+    snippet["title"] = CFG["title"]
+    snippet["tags"] = CFG.get("tags") or CFG.get("add_tags", [])
+    yt.videos().update(part="snippet", body={"id": VIDEO_ID, "snippet": snippet}).execute()
+    print("+ description updated from part14.json")
+
+
 # ── 3. stats ─────────────────────────────────────────────────────────────────
 def stats(yt):
     _require_video()
@@ -221,11 +249,15 @@ if __name__ == "__main__":
         add_to_playlist(yt)
     elif arg == "--comments":
         seed_comments(yt)
+    elif arg == "--description":
+        update_description(yt)
     elif arg == "--stats":
         stats(yt)
     else:
         print("── playlist ──")
         add_to_playlist(yt)
+        print("\n── description ──")
+        update_description(yt)
         print("\n── seed comments ──")
         seed_comments(yt)
         print("\n── stats ──")
