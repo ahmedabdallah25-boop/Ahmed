@@ -2,6 +2,7 @@ import React from 'react';
 import {Composition} from 'remotion';
 import './fonts';
 import {INFLATION_DURATION, Inflation} from './inflation/Inflation';
+import {INFLATION_THUMBS, THUMB_H, THUMB_W} from './inflation/Thumbnail';
 import {Longform} from './longform/Longform';
 import {VO_DURATION} from './longform/timing';
 import {Short} from './Short';
@@ -22,6 +23,18 @@ export const RemotionRoot: React.FC = () => (
       width={1080}
       height={1920}
     />
+    {/* Three thumbnail options for the Short, 9:16 for the Shorts grid. */}
+    {INFLATION_THUMBS.map(({id, component}) => (
+      <Composition
+        key={id}
+        id={id}
+        component={component}
+        durationInFrames={1}
+        fps={FPS}
+        width={THUMB_W}
+        height={THUMB_H}
+      />
+    ))}
     {/* Episode 2 — long-form, cut to the recorded VO. */}
     <Composition
       id="Ep2-HalalMortgage"
