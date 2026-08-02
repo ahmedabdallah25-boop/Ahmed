@@ -22,7 +22,7 @@ mangles lettering):
 | Option | Line 1 (white) | Line 2 (accent) | Accent |
 |---|---|---|---|
 | A | Money they | cannot print | gold `#E9B949` |
-| B | Saving harder | won't save you | red `#E5484D` |
+| B | Saved 10 years. | Poorer anyway. | red `#E5484D` |
 | C | Hold what | can't be diluted | gold `#E9B949` |
 
 Set in Inter / Montserrat Bold 800, uppercase, ~130px on a 1920-tall frame,

@@ -2,7 +2,7 @@
 FINANCE % DECODED — SCENE PACK
 "HOLD WHAT CANNOT BE DILUTED" (SOUND MONEY)
 Part 15 — the fix promised at the end of Part 14 (Inflation)
-Render style: 3D faceless low-poly | 9:16 1080x1920 | ~102s | 32 scenes
+Render style: 3D faceless low-poly | 9:16 1080x1920 | ~103s | 32 scenes
 ================================================================================
 
 HOW TO USE THIS FILE
@@ -19,13 +19,13 @@ HOW TO USE THIS FILE
 STRUCTURE — read this before anything else
 ================================================================================
 
-  0:00-0:06  HOOK      Two lines. A cost the viewer is already paying.
-  0:06-0:26  RECAP     "If you're new here..." — episode 14, then the pivot.
-  0:26-0:42  CONTRAST  Two kinds of money: created vs earned.
-  0:42-0:57  THE SWAP  How the weight was quietly removed from the paper.
-  0:57-1:13  THE TESTS Three tests that identify money which holds.
-  1:13-1:31  THE FIX   What you actually hold, in order.
-  1:31-1:42  THE TRAP  The one move that undoes all of it, then the close.
+  0:00-0:07  HOOK      A loss the viewer has already taken, and why it was invisible.
+  0:07-0:27  RECAP     "If you're new here..." — episode 14, then the pivot.
+  0:27-0:43  CONTRAST  Two kinds of money: created vs earned.
+  0:43-0:58  THE SWAP  How the weight was quietly removed from the paper.
+  0:58-1:14  THE TESTS Three tests that identify money which holds.
+  1:14-1:32  THE FIX   What you actually hold, in order.
+  1:32-1:43  THE TRAP  The one move that undoes all of it, then the close.
 
 The recap is not a summary — it is a second hook. It opens by naming the person
 it is for — "If you're new here" — which does three things at once: it tells a new
@@ -73,8 +73,8 @@ CONSISTENCY WORKFLOW — do this before generating scene 2
 VOICEOVER — full script, ElevenLabs v3 tags, copy as one block
 ================================================================================
 
-[serious] You can do everything right for ten years... and still end up poorer.
-[whispers] You didn't spend it. It shrank in your hand.
+[serious] You saved for ten years... and you're poorer than when you started.
+[whispers] The number in your account never moved. That is how they got away with it.
 [calm] If you're new here — in episode fourteen, we said someone takes money from you every single day.
 We said money isn't printed. It is LENT into existence.
 A bank types a number... and the money simply exists.
@@ -111,8 +111,13 @@ create natural breath pauses. CAPS carry emphasis without a tag. Do not stack
 two tags on one line.
 
 DELIVERY NOTES:
-- Line 1 is the whole video's fate. Deliver it flat and certain, not dramatic.
-  The pause before "and still end up poorer" is the hook, not the volume.
+- Line 1 is the whole video's fate. Deliver it flat and certain, like a fact being
+  read out, not an accusation. The pause before "and you're poorer" is the hook —
+  the volume never rises.
+- Line 2 is the turn: it explains why the loss in line 1 left no evidence, and it
+  puts a "they" in the room without naming anyone. Drop to almost nothing on "the
+  number in your account never moved", then land "that is how they got away with
+  it" flat. Never punch it — the calm is what makes it sound true.
 - Line 3 is warm and direct, spoken to one person — the "if you're new here" is an
   invitation, not an apology. Do not rush it; it is the line that earns the next
   fifteen seconds.
@@ -127,11 +132,11 @@ THE 32 SCENES
 ================================================================================
 
 --------------------------------------------------------------------------------
-SCENE 01 | 0:00-0:03 | THE HOOK
+SCENE 01 | 0:00-0:04 | THE HOOK
 --------------------------------------------------------------------------------
-VO: [serious] You can do everything right for ten years... and still end up poorer.
-CAPTION 1: Do everything right for 10 years
-CAPTION 2: and still end up poorer
+VO: [serious] You saved for ten years... and you're poorer than when you started.
+CAPTION 1: You saved for 10 years
+CAPTION 2: and you're poorer than when you started
 
 IMAGE PROMPT:
 Near-photorealistic macro shot of a glass savings jar packed tight with folded
@@ -143,23 +148,29 @@ matte cinematic grade, extremely shallow depth of field. 9:16 vertical
 composition, jar in the lower two-thirds, clean dark headroom above for captions.
 
 --------------------------------------------------------------------------------
-SCENE 02 | 0:03-0:06
+SCENE 02 | 0:04-0:07
 --------------------------------------------------------------------------------
-VO: [whispers] You didn't spend it. It shrank in your hand.
-CAPTION 1: You didn't spend it
-CAPTION 2: it shrank in your hand
+VO: [whispers] The number in your account never moved. That is how they got away with it.
+CAPTION 1: The number never moved
+CAPTION 2: that's how they got away with it
 
 IMAGE PROMPT:
-Extreme close-up, stylized low-poly 3D render, of one open palm with matte
-clay-like shading, terracotta #E85F42 sleeve cuff at the frame edge, holding a
-single banknote that is visibly smaller than it should be — curled at the edges,
-thinned, almost weightless. Near-photorealistic paper fibre texture. Hard
-directional light from the left, deep real shadow to the right. Very shallow
-depth of field, dark neutral background falling to black. 9:16 vertical, hand in
-the lower two-thirds, clean headroom above.
+Near-photorealistic close-up of a phone held in one hand at a kitchen table, the
+screen facing camera and glowing pale, its centre deliberately clean and empty
+where a balance figure will be added in post. The hand is stylized low-poly with
+matte clay-like shading, terracotta #E85F42 sleeve cuff at the frame edge. Dim
+early-morning kitchen behind, one hard shaft of window light from the left, deep
+real shadow to the right, a cold cup of tea softly out of focus. Stylized matte
+cinematic grade, extremely shallow depth of field. 9:16 vertical, phone in the
+lower two-thirds, clean dark headroom above.
+
+[POST] Comp the balance figure onto the screen and hold it PERFECTLY still —
+identical digits, no counter, no animation. The stillness is the whole point of
+the shot. Optionally stamp a date that ticks forward ten years while the number
+refuses to change.
 
 --------------------------------------------------------------------------------
-SCENE 03 | 0:06-0:10 | RECAP OPENS
+SCENE 03 | 0:07-0:11 | RECAP OPENS
 --------------------------------------------------------------------------------
 VO: [calm] If you're new here — in episode fourteen, we said someone takes money from you every single day.
 CAPTION 1: If you're new here
@@ -178,7 +189,7 @@ Very shallow depth of field, background dissolved into soft supermarket bokeh.
 [POST] If the Part 14 master has this shot, cut the frame straight from it.
 
 --------------------------------------------------------------------------------
-SCENE 04 | 0:10-0:13
+SCENE 04 | 0:11-0:14
 --------------------------------------------------------------------------------
 VO: We said money isn't printed. It is LENT into existence.
 CAPTION 1: We said money isn't printed
@@ -196,7 +207,7 @@ slightly up at him. Shallow cinematic depth of field. 9:16 vertical, subject in
 the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 05 | 0:13-0:16
+SCENE 05 | 0:14-0:17
 --------------------------------------------------------------------------------
 VO: A bank types a number... and the money simply exists.
 CAPTION 1: A bank types a number
@@ -215,7 +226,7 @@ above.
 the generator for numbers.
 
 --------------------------------------------------------------------------------
-SCENE 06 | 0:16-0:19
+SCENE 06 | 0:17-0:20
 --------------------------------------------------------------------------------
 VO: More money. Same bread. So bread costs more.
 CAPTION 1: More money. Same bread.
@@ -231,7 +242,7 @@ Stylized matte cinematic grade, shallow depth of field. 9:16 vertical, subjects
 in the lower two-thirds, clean dark space above.
 
 --------------------------------------------------------------------------------
-SCENE 07 | 0:19-0:23
+SCENE 07 | 0:20-0:24
 --------------------------------------------------------------------------------
 VO: [serious] We called it the tax nobody voted for. No bill ever came. You paid it anyway.
 CAPTION 1: The tax nobody voted for
@@ -248,7 +259,7 @@ finish on the metal, cinematic shallow depth of field, quiet and still.
 [POST] Recap chip off at the end of this scene.
 
 --------------------------------------------------------------------------------
-SCENE 08 | 0:23-0:26 | THE PIVOT
+SCENE 08 | 0:24-0:27 | THE PIVOT
 --------------------------------------------------------------------------------
 VO: [calm] And we promised you the fix. This is it.
 CAPTION 1: We promised you the fix
@@ -267,7 +278,7 @@ clean dark space above.
 is what sells the turn.
 
 --------------------------------------------------------------------------------
-SCENE 09 | 0:26-0:28
+SCENE 09 | 0:27-0:29
 --------------------------------------------------------------------------------
 VO: Not all money is the same money.
 CAPTION 1: Not all money is the same money
@@ -283,7 +294,7 @@ grade, shallow depth of field. 9:16 vertical, objects in the lower two-thirds,
 clean dark space above.
 
 --------------------------------------------------------------------------------
-SCENE 10 | 0:28-0:31
+SCENE 10 | 0:29-0:32
 --------------------------------------------------------------------------------
 VO: [serious] One kind can be created. The other has to be earned.
 CAPTION 1: One kind can be created
@@ -299,7 +310,7 @@ Stylized matte cinematic grade. 9:16 vertical, coin in the lower two-thirds,
 clean space above.
 
 --------------------------------------------------------------------------------
-SCENE 11 | 0:31-0:35
+SCENE 11 | 0:32-0:36
 --------------------------------------------------------------------------------
 VO: For five thousand years, money was a weight. Gold. Silver. Salt. Cattle.
 CAPTION 1: For 5,000 years money was a weight
@@ -315,7 +326,7 @@ shallow depth of field. 9:16 vertical, objects in the lower two-thirds, clean
 dark space above.
 
 --------------------------------------------------------------------------------
-SCENE 12 | 0:35-0:39
+SCENE 12 | 0:36-0:40
 --------------------------------------------------------------------------------
 VO: Nobody could type it into existence. You had to dig it. Weigh it. Carry it.
 CAPTION 1: Nobody could type it into existence
@@ -330,7 +341,7 @@ of field, background dissolved into soft earth tones. 9:16 vertical, hands in th
 lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 13 | 0:39-0:42 | AMIR REFERENCE SHOT — GENERATE FIRST
+SCENE 13 | 0:40-0:43 | AMIR REFERENCE SHOT — GENERATE FIRST
 --------------------------------------------------------------------------------
 VO: [calm] The effort was the honesty.
 CAPTION 1: The effort was the honesty
@@ -350,7 +361,7 @@ centre-frame in the lower two-thirds, clean headroom above for captions. 9:16
 vertical composition.
 
 --------------------------------------------------------------------------------
-SCENE 14 | 0:42-0:46
+SCENE 14 | 0:43-0:47
 --------------------------------------------------------------------------------
 VO: Then paper arrived. A receipt for the gold. Light. Convenient. Trusted.
 CAPTION 1: Then paper arrived
@@ -365,7 +376,7 @@ cinematic grade, extremely shallow depth of field. 9:16 vertical, subject in the
 lower two-thirds, clean dark space above.
 
 --------------------------------------------------------------------------------
-SCENE 15 | 0:46-0:49
+SCENE 15 | 0:47-0:50
 --------------------------------------------------------------------------------
 VO: Then the receipts quietly stopped being backed.
 CAPTION 1: Then the receipts stopped being backed
@@ -380,7 +391,7 @@ grade, shallow depth of field. 9:16 vertical, vault door in the lower two-thirds
 clean dim space above.
 
 --------------------------------------------------------------------------------
-SCENE 16 | 0:49-0:52
+SCENE 16 | 0:50-0:53
 --------------------------------------------------------------------------------
 VO: [serious] Same paper. No gold behind it.
 CAPTION 1: Same paper. No gold behind it.
@@ -395,7 +406,7 @@ grade, extremely shallow depth of field. 9:16 vertical, note in the lower
 two-thirds, clean dark space above.
 
 --------------------------------------------------------------------------------
-SCENE 17 | 0:52-0:54
+SCENE 17 | 0:53-0:55
 --------------------------------------------------------------------------------
 VO: Nothing changed on the note.
 CAPTION 1: Nothing changed on the note
@@ -410,7 +421,7 @@ of field. 9:16 vertical, texture running through the lower two-thirds, softer
 darker area above for captions.
 
 --------------------------------------------------------------------------------
-SCENE 18 | 0:54-0:57 | MECHANISM PAYOFF
+SCENE 18 | 0:55-0:58 | MECHANISM PAYOFF
 --------------------------------------------------------------------------------
 VO: [emphatic] Everything changed underneath it.
 CAPTION 1: Everything changed underneath it
@@ -425,7 +436,7 @@ Stylized matte cinematic grade, shallow depth of field. 9:16 vertical, note in
 the lower two-thirds, clean dark space above.
 
 --------------------------------------------------------------------------------
-SCENE 19 | 0:57-1:00
+SCENE 19 | 0:58-1:01
 --------------------------------------------------------------------------------
 VO: So how do you spot money that holds? Three tests.
 CAPTION 1: So how do you spot money that holds?
@@ -440,7 +451,7 @@ grade, shallow depth of field. 9:16 vertical, tokens in the lower two-thirds,
 clean dark space above.
 
 --------------------------------------------------------------------------------
-SCENE 20 | 1:00-1:03
+SCENE 20 | 1:01-1:04
 --------------------------------------------------------------------------------
 VO: One. It is scarce. Nobody can make more on demand.
 CAPTION 1: One — it's scarce
@@ -455,7 +466,7 @@ grade, shallow depth of field. 9:16 vertical, coin in the lower two-thirds,
 clean dark space above.
 
 --------------------------------------------------------------------------------
-SCENE 21 | 1:03-1:06
+SCENE 21 | 1:04-1:07
 --------------------------------------------------------------------------------
 VO: Two. It is durable. It survives time.
 CAPTION 1: Two — it's durable
@@ -470,7 +481,7 @@ matte cinematic grade, extremely shallow depth of field. 9:16 vertical, coin in
 the lower two-thirds, clean space above.
 
 --------------------------------------------------------------------------------
-SCENE 22 | 1:06-1:10
+SCENE 22 | 1:07-1:11
 --------------------------------------------------------------------------------
 VO: Three. It is yours. You hold it — not a promise to pay you.
 CAPTION 1: Three — it's yours
@@ -485,7 +496,7 @@ Shallow cinematic depth of field. 9:16 vertical, fist in the lower two-thirds,
 clean dark headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 23 | 1:10-1:13
+SCENE 23 | 1:11-1:14
 --------------------------------------------------------------------------------
 VO: [emphatic] If someone else can print it, it was never yours.
 CAPTION 1: If someone else can print it
@@ -502,7 +513,7 @@ Low camera angle looking slightly up at him. Shallow cinematic depth of field.
 9:16 vertical, subject in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 24 | 1:13-1:15
+SCENE 24 | 1:14-1:16
 --------------------------------------------------------------------------------
 VO: So what do you actually hold?
 CAPTION 1: So what do you actually hold?
@@ -519,7 +530,7 @@ right, real cast shadows across the counter. Shallow cinematic depth of field.
 9:16 vertical, subject in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 25 | 1:15-1:18 | EMOTIONAL PEAK — THUMBNAIL CANDIDATE
+SCENE 25 | 1:16-1:19 | EMOTIONAL PEAK — THUMBNAIL CANDIDATE
 --------------------------------------------------------------------------------
 VO: Hold what cannot be diluted.
 CAPTION 1: Hold what cannot be diluted
@@ -535,7 +546,7 @@ shallow depth of field. 9:16 vertical, scale in the lower two-thirds, clean dark
 space above.
 
 --------------------------------------------------------------------------------
-SCENE 26 | 1:18-1:21
+SCENE 26 | 1:19-1:22
 --------------------------------------------------------------------------------
 VO: Weight you control. Gold. Silver. In your hand.
 CAPTION 1: Weight you control
@@ -551,7 +562,7 @@ highlights. Very shallow depth of field, dark neutral background. 9:16 vertical,
 hand in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 27 | 1:21-1:24
+SCENE 27 | 1:22-1:25
 --------------------------------------------------------------------------------
 VO: Ownership that earns. A business. A skill. A tool.
 CAPTION 1: Ownership that earns
@@ -567,7 +578,7 @@ left, real cast shadows and floating sawdust in the beam. Shallow cinematic dept
 of field. 9:16 vertical, subject in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 28 | 1:24-1:27
+SCENE 28 | 1:25-1:28
 --------------------------------------------------------------------------------
 VO: A home you live in — not one that owns you.
 CAPTION 1: A home you live in
@@ -582,7 +593,7 @@ Stylized matte cinematic grade, shallow depth of field. 9:16 vertical, house in
 the lower two-thirds, clean sky above.
 
 --------------------------------------------------------------------------------
-SCENE 29 | 1:27-1:31
+SCENE 29 | 1:28-1:32
 --------------------------------------------------------------------------------
 VO: [calm] Keep a few months of cash for life. Turn the rest into weight, ownership and skill.
 CAPTION 1: Keep a few months of cash for life
@@ -598,7 +609,7 @@ cinematic grade, shallow depth of field. 9:16 vertical, objects in the lower
 two-thirds, clean space above.
 
 --------------------------------------------------------------------------------
-SCENE 30 | 1:31-1:35 | THE TRAP
+SCENE 30 | 1:32-1:36 | THE TRAP
 --------------------------------------------------------------------------------
 VO: [serious] And never borrow at interest to escape it. That feeds the very thing you're running from.
 CAPTION 1: Never borrow at interest to escape it
@@ -613,7 +624,7 @@ extremely shallow depth of field. 9:16 vertical, trap in the lower two-thirds,
 clean dark space above.
 
 --------------------------------------------------------------------------------
-SCENE 31 | 1:35-1:38
+SCENE 31 | 1:36-1:39
 --------------------------------------------------------------------------------
 VO: Interest is the engine that shrank the money to begin with.
 CAPTION 1: Interest is the engine
@@ -628,7 +639,7 @@ with one warm highlight. Stylized matte cinematic grade, shallow depth of field.
 9:16 vertical, machine in the lower two-thirds, clean dark space above.
 
 --------------------------------------------------------------------------------
-SCENE 32 | 1:38-1:42 | END CARD
+SCENE 32 | 1:39-1:43 | END CARD
 --------------------------------------------------------------------------------
 VO: [warmly] Your money should hold its weight. Next: how to hold it without losing it. Follow.
 CAPTION 1: Your money should hold its weight
@@ -711,8 +722,10 @@ IF THE MASTER RUNS LONG
    Never cut from the hook or the recap. They are what buy the rest of the video.
 
 RETENTION CHECKPOINTS
-  Scenes 01-02  the hook. It must name a cost the viewer is already paying,
+  Scene 01      the loss. It must name something the viewer has already lost
                 inside 3 seconds. If this doesn't land, nothing else matters.
+  Scene 02      the reason they never noticed it. This is the line that converts
+                a nod into a watch — it turns a fact into an unsolved crime.
   Scene 08      the pivot. The promise that the rest of the video pays off.
   Scene 18      the mechanism payoff. The one frame that has to be understood.
   Scene 25      emotional peak and best thumbnail candidate.
