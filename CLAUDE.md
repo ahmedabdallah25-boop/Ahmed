@@ -55,9 +55,12 @@ fresh session can pick up without re-deriving anything.
   paying, deliver it flat and certain. Two scenes, ~6s.
 - **Recap** (when the short continues a previous part): straight after the hook, 15–20s of the
   previous episode's mechanism, cut ~15% faster than the rest, re-staging that episode's actual
-  shots rather than lookalikes. Terracotta chip top-left ("PART N, IN X SECONDS") plus a thin
-  progress bar across the top for the span — a finite recap is what stops the swipe. End it on a
-  pivot scene with a beat of silence: "That was the problem. This is the fix."
+  shots rather than lookalikes. Open it by naming who it's for — *"If you're new here — in
+  episode N, we said…"* — then carry every beat in that voice ("we said", "we called it",
+  "we promised"), so it reads as the channel keeping its word. Terracotta chip top-left
+  ("EPISODE N, IN X SECONDS") plus a thin progress bar across the top for the span — a finite
+  recap is what stops the swipe, and it must always end early, never late. Close on a pivot
+  scene with a beat of silence: *"And we promised you the fix. This is it."*
 - **Close**: a promise that sets up the next part, plus "follow".
 - **Titles**: "How to X Without Y" / "How Banks X Your Y" + parenthetical topic + 2 hashtags.
 - **Description**: hook paragraph → mechanism → next-video promise → part number →
