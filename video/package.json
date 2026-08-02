@@ -10,7 +10,9 @@
     "cuts:inflation": "node scripts/detect-cuts.mjs --write",
     "captions:inflation": "node scripts/make-inflation-captions.mjs",
     "render:inflation": "remotion render src/index.ts Inflation-Short ../media/inflation-edited.mp4",
-    "still": "remotion still src/index.ts Part14-RaiseTrap out/frame.png"
+    "still": "remotion still src/index.ts Part14-RaiseTrap out/frame.png",
+    "flow:login": "node scripts/flow-download.mjs --login",
+    "flow:pull": "node scripts/flow-download.mjs"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +28,7 @@
   "devDependencies": {
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
+    "playwright": "^1.56.1",
     "typescript": "^5.7.3"
   }
 }

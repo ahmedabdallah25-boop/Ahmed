@@ -1,2 +1,8 @@
 __pycache__/
 *.pyc
+node_modules/
+
+# The signed-in Chrome profile the Flow downloader reuses. It holds live Google
+# session cookies — never commit it.
+.flow-profile/
+video/.flow-profile/

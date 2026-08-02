@@ -150,6 +150,54 @@ never block on one. Regenerate after replacing `public/fonts/inter-var.woff2`:
 node scripts/inline-fonts.mjs
 ```
 
+## Pulling clips out of Google Flow
+
+`scripts/flow-download.mjs` takes a Flow project and lands its generated clips in
+this repo as a numbered run, so a film like the Inflation short — 36 scenes,
+generated a handful at a time — arrives as `01.mp4 … 36.mp4` instead of 36 trips
+through the download button.
+
+```bash
+npm install                     # first time only, for playwright
+npm run flow:login              # opens a window; sign in by hand, once
+npm run flow:pull -- "https://labs.google/fx/tools/flow/project/<id>"
+```
+
+Clips land in `public/flow/` by default; pass `--out public/broll` when they are
+the b-roll for an episode. Re-running only fetches what is new — every download
+is recorded in `<out>/flow-manifest.json` with its source URL and a hash of its
+bytes, so generating five more scenes and pulling again appends `37.mp4 …`
+rather than starting over.
+
+**Sign-in is manual and stays manual.** Google refuses scripted sign-in, so
+`flow:login` opens a real browser, waits for you, and keeps the session in
+`.flow-profile/` (gitignored — it holds live Google cookies). It prefers your
+installed Chrome over Playwright's bundled Chromium, because Google serves the
+"this browser may not be secure" wall to the latter. After that, runs can go
+`--headless`.
+
+Useful flags — `--dry-run` lists what it would fetch, `--limit N` caps a run,
+`--reverse` numbers oldest-first (Flow lists newest-first), `--prefix`/`--pad`
+change the naming, `--from urls.txt` skips the browser and just downloads a list.
+
+### Two ways of finding the clips
+
+Default `--mode net` reads the media the page is actually playing: `<video>`
+sources, `video/*` responses, and any video URL still sitting in the serialised
+DOM. It touches nothing Flow could rename, so it survives redesigns, and it
+handles `blob:` sources by reading them back out of the tab.
+
+`--mode ui` clicks Flow's own per-clip download control and catches the file the
+browser saves. Use it if `net` comes back with a streaming manifest instead of
+whole files, or if Flow starts serving a higher-quality file only through that
+button. It is the mode that will break when the UI changes, which is why both
+selectors are flags: `--ui-open` (the button or kebab to click) and `--ui-item`
+(the menu entry, default `Download`).
+
+Both modes were exercised against a local fixture that mimics Flow's virtualised
+grid — lazy `<video>` srcs, a card whose URL only exists in page state, a
+`blob:` source, and real download buttons.
+
 ## hyperframes/
 
 A HyperFrames (HTML + GSAP) port of the vertical Short — one seekable timeline,
