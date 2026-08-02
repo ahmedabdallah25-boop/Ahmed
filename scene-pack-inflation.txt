@@ -1,0 +1,722 @@
+================================================================================
+FINANCE % DECODED — SCENE PACK
+"THE TAX NOBODY VOTED FOR" (INFLATION)
+Render style: 3D faceless low-poly | 9:16 1080x1920 | ~65s | 37 scenes
+================================================================================
+
+HOW TO USE THIS FILE
+- Every IMAGE PROMPT below is complete and self-contained. Copy, paste, generate.
+  Character identity, wardrobe, style and camera are already baked into each one.
+- The NEGATIVE PROMPT is identical for all scenes. Paste it once into your tool's
+  negative field and leave it there.
+- VO lines use ElevenLabs v3 audio tags. Paste the line exactly as written,
+  brackets included.
+- CAPTION lines are what you burn into the video. See CAPTION SPEC at the bottom.
+
+
+================================================================================
+NEGATIVE PROMPT — paste into the negative field, applies to ALL 37 scenes
+================================================================================
+
+facial features, eyes, mouth, nose, lips, eyebrows, face, portrait, cartoon
+outlines, cel shading, flat vector, anime, 2D illustration, text, watermark,
+logo, signature, distorted hands, extra limbs, extra fingers, blurry, low
+resolution, oversaturated, plastic sheen, uncanny
+
+
+================================================================================
+CONSISTENCY WORKFLOW — do this before generating scene 2
+================================================================================
+
+1. Generate SCENE 07 first. It is the cleanest full-body view of AMIR.
+2. Approve the character design. Regenerate until the head is fully blank.
+3. LOCK THE SEED. Reuse that exact seed for all 37 scenes.
+4. Feed the approved Scene 07 image back as an image reference for every other
+   shot containing AMIR.
+   Character drift between scenes is the #1 failure mode of this format.
+
+
+================================================================================
+VOICEOVER — full script, ElevenLabs v3 tags, copy as one block
+================================================================================
+
+[serious] Someone takes money out of your pocket... every single day.
+[whispers] You never see it happen.
+No receipt. No alert. Nothing.
+[serious] And it is completely legal.
+It's called inflation... and almost everyone explains it wrong.
+You got a raise this year.
+You're still short at the end of the month.
+That is not bad budgeting.
+Ten years ago, this filled a cart.
+Today it fills half a bag.
+The note didn't change.
+[emphatic] How many of them exist did.
+Money isn't printed. It is LENT into existence.
+A bank approves a loan...
+...and the money simply appears.
+It didn't come out of a vault.
+It was typed into a screen.
+Every loan creates new money.
+[serious] But the world's bread didn't multiply.
+More money. Same bread.
+So bread costs more.
+Nobody voted for this.
+Nobody sent you a bill.
+[serious] But you paid it.
+This is the tax nobody voted for.
+And the engine behind it... is interest.
+Debt creates money. Money loses value.
+[sad] Value the saver never agreed to lose.
+[calm] Which is why sound money mattered.
+You cannot type gold into existence.
+It has to be dug. Weighed. Earned.
+So hold what cannot be diluted.
+Real assets. Real ownership.
+Not promises that quietly shrink.
+[warmly] Your money should hold its weight.
+[warmly] Follow — part two is the fix.
+
+TAG NOTES: keep tags sparse, they are strongest at emotional turns. Ellipses
+create natural breath pauses. CAPS carry emphasis without a tag. Do not stack
+two tags on one line.
+
+
+================================================================================
+THE 37 SCENES
+================================================================================
+
+--------------------------------------------------------------------------------
+SCENE 01 | 0:00-0:03 | THE HOOK
+--------------------------------------------------------------------------------
+VO: [serious] Someone takes money out of your pocket... every single day.
+CAPTION 1: Someone takes money from you every day
+CAPTION 2: and you never see it
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of a male character standing frozen at a supermarket
+checkout, holding a long paper receipt in both hands, head tilted down toward it,
+shoulders slightly dropped. The character has a COMPLETELY BLANK featureless head
+with no eyes, no nose, no mouth, no face at all — a smooth matte tan block.
+Simplified geometric anatomy, matte clay-like shading, soft subsurface material.
+He wears a terracotta #E85F42 t-shirt, cream #E8DCC8 trousers, white sneakers and
+a cream beanie. Near-photorealistic supermarket interior behind him, stacked
+shelves, bright fluorescent overhead light, real cast shadows on the floor.
+Shallow cinematic depth of field, subject centre-frame in the lower two-thirds,
+clean headroom above for captions. 9:16 vertical composition.
+
+--------------------------------------------------------------------------------
+SCENE 02 | 0:03-0:05
+--------------------------------------------------------------------------------
+VO: [whispers] You never see it happen.
+CAPTION 1: You never see it happen
+CAPTION 2: no alert, no warning
+
+IMAGE PROMPT:
+Extreme close-up, stylized low-poly 3D render, of two simplified geometric hands
+holding a long white grocery receipt that unspools downward out of frame. Matte
+clay-like shading on the hands, terracotta #E85F42 sleeve cuffs visible at the
+edge of frame. Near-photorealistic paper texture on the receipt with faint print.
+Hard directional light from the left, deep real shadow falling to the right.
+Very shallow depth of field, background dissolved into soft supermarket bokeh.
+9:16 vertical composition, subject in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 03 | 0:05-0:07
+--------------------------------------------------------------------------------
+VO: No receipt. No alert. Nothing.
+CAPTION 1: No receipt. No alert. Nothing.
+CAPTION 2: it leaves no trace
+
+IMAGE PROMPT:
+Near-photorealistic close-up of an empty metal letterbox mounted on a suburban
+front gate, small hinged door hanging open, completely empty inside. Warm cream
+painted wall behind, tiled rooftop edge visible above. Hard low morning sunlight
+throwing a long sharp shadow of the letterbox across the wall. Stylized matte
+finish on the metal, cinematic shallow depth of field, quiet and still.
+9:16 vertical composition, subject in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 04 | 0:07-0:09
+--------------------------------------------------------------------------------
+VO: [serious] And it is completely legal.
+CAPTION 1: And it's completely legal
+CAPTION 2: that's the part nobody explains
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of a banker seated behind a polished dark wood desk,
+sliding a single sheet of paper forward across it. The character has a COMPLETELY
+BLANK featureless head with no eyes, no nose, no mouth — a smooth matte tan block.
+He wears a deep navy #1E3A5F suit with no tie and a navy bucket hat. Matte
+clay-like shading, simplified geometric anatomy. Near-photorealistic office
+interior, tall window behind him flooding cool daylight forward, real cast
+shadows across the desk surface. Low camera angle looking slightly up at him.
+Shallow cinematic depth of field. 9:16 vertical, subject lower two-thirds,
+clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 05 | 0:09-0:12
+--------------------------------------------------------------------------------
+VO: It's called inflation... and almost everyone explains it wrong.
+CAPTION 1: It's called inflation
+CAPTION 2: and almost everyone explains it wrong
+
+IMAGE PROMPT:
+Near-photorealistic macro shot of a single worn banknote lying flat on a scarred
+wooden table. Hard raking side light from the right revealing deep paper fibre
+texture and a long shadow to the left. Dust motes suspended in the light beam.
+Muted desaturated background falling into darkness, extremely shallow depth of
+field. Stylized matte cinematic grade. 9:16 vertical composition, subject in the
+lower two-thirds, clean headroom above for captions.
+
+--------------------------------------------------------------------------------
+SCENE 06 | 0:12-0:14
+--------------------------------------------------------------------------------
+VO: You got a raise this year.
+CAPTION 1: You got a raise this year
+CAPTION 2: on paper, you earn more
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of a male character standing in a supermarket aisle
+holding a folded payslip up at chest height, head angled toward it. COMPLETELY
+BLANK featureless head, no eyes, no nose, no mouth — smooth matte tan block.
+Terracotta #E85F42 t-shirt, cream #E8DCC8 trousers, white sneakers, cream beanie.
+Matte clay-like shading, simplified geometric anatomy. Near-photorealistic
+supermarket aisle receding behind him, bright fluorescent tube lighting, real
+cast shadows. Shallow cinematic depth of field. 9:16 vertical, subject lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 07 | 0:14-0:17 | *** GENERATE THIS ONE FIRST — CHARACTER LOCK ***
+--------------------------------------------------------------------------------
+VO: You're still short at the end of the month.
+CAPTION 1: You're still short at month end
+CAPTION 2: every single month
+
+IMAGE PROMPT:
+Stylized low-poly 3D render, full body, of a male character sitting at a wooden
+kitchen table at night, leaning forward on his elbows, unpaid bills fanned out
+across the table in front of him. COMPLETELY BLANK featureless head with no eyes,
+no nose, no mouth, no face at all — a smooth matte tan block. Simplified
+geometric anatomy, matte clay-like shading, soft subsurface material. He wears a
+terracotta #E85F42 t-shirt, cream #E8DCC8 trousers, white sneakers and a cream
+beanie. Near-photorealistic modest kitchen interior, single warm pendant lamp
+hanging low overhead casting a tight pool of light and long real shadows, deep
+blue-black night beyond the window. Shallow cinematic depth of field. 9:16
+vertical composition, subject in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 08 | 0:17-0:19
+--------------------------------------------------------------------------------
+VO: That is not bad budgeting.
+CAPTION 1: That's not bad budgeting
+CAPTION 2: it's arithmetic
+
+IMAGE PROMPT:
+Near-photorealistic overhead top-down shot of a scatter of unpaid bills and
+receipts across a dark wooden kitchen table, one pen resting diagonally across
+them. Warm pendant lamp light from directly above creating a bright centre
+falloff into darkness at the frame edges. Stylized matte cinematic grade, paper
+texture crisp and detailed. Shallow depth of field on the outer papers.
+9:16 vertical composition, subject in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 09 | 0:19-0:21
+--------------------------------------------------------------------------------
+VO: Ten years ago, this filled a cart.
+CAPTION 1: Ten years ago this filled a cart
+CAPTION 2: same note, same value printed
+
+IMAGE PROMPT:
+Near-photorealistic still life of one crisp banknote lying flat and alone on a
+worn wooden table, shot slightly from above. Hard directional side light from the
+left, sharp defined shadow to the right, warm neutral palette. Empty negative
+space around the note emphasising isolation. Stylized matte cinematic grade,
+shallow depth of field. 9:16 vertical composition, subject in the lower
+two-thirds, clean headroom above for captions.
+
+--------------------------------------------------------------------------------
+SCENE 10 | 0:21-0:23
+--------------------------------------------------------------------------------
+VO: Today it fills half a bag.
+CAPTION 1: Today it fills half a bag
+CAPTION 2: identical note, half the goods
+
+IMAGE PROMPT:
+Near-photorealistic still life on the same worn wooden table, identical lighting
+and camera angle as before: the same single banknote lying flat, now beside one
+small half-full brown paper grocery bag. Hard directional side light from the
+left, sharp shadow to the right, warm neutral palette. Direct visual match to the
+previous frame for a hard-cut comparison. Stylized matte cinematic grade, shallow
+depth of field. 9:16 vertical, subject lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 11 | 0:23-0:25
+--------------------------------------------------------------------------------
+VO: The note didn't change.
+CAPTION 1: The note didn't change
+CAPTION 2: it's the same paper
+
+IMAGE PROMPT:
+Extreme macro near-photorealistic shot of the surface of a banknote filling the
+entire frame, revealing intricate engraved line-work, paper fibre and fine
+texture. A single hard beam of light rakes across from the right with visible
+dust motes suspended in it. Razor-thin depth of field, edges falling out of
+focus. Stylized matte cinematic grade, warm neutral tones. 9:16 vertical
+composition, clean upper area for captions.
+
+--------------------------------------------------------------------------------
+SCENE 12 | 0:25-0:28
+--------------------------------------------------------------------------------
+VO: [emphatic] How many of them exist did.
+CAPTION 1: How MANY of them exist did
+CAPTION 2: that's the whole trick
+
+IMAGE PROMPT:
+Wide near-photorealistic shot of an endless flat grid of identical banknotes
+tiling a vast grey concrete floor and receding to a distant horizon under an open
+sky. Overwhelming repetition, perfect rows, slightly overcast diffuse daylight
+with soft real shadows. Slight wide-angle lens distortion, deep focus into the
+distance. Cool desaturated palette with warm note tones. Stylized matte cinematic
+grade. 9:16 vertical composition, horizon low, clean sky above for captions.
+
+--------------------------------------------------------------------------------
+SCENE 13 | 0:28-0:31
+--------------------------------------------------------------------------------
+VO: Money isn't printed. It is LENT into existence.
+CAPTION 1: Money isn't printed
+CAPTION 2: it's LENT into existence
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of a banker seated behind a polished dark wood desk,
+one hand resting flat on a single document, body angled toward camera. COMPLETELY
+BLANK featureless head with no eyes, no nose, no mouth — a smooth matte tan block.
+Deep navy #1E3A5F suit, no tie, navy bucket hat. Matte clay-like shading,
+simplified geometric anatomy. Near-photorealistic office, tall window behind
+throwing cool directional daylight across the desk, real cast shadows. Medium
+shot, slightly low angle. Shallow cinematic depth of field. 9:16 vertical,
+subject lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 14 | 0:31-0:33
+--------------------------------------------------------------------------------
+VO: A bank approves a loan...
+CAPTION 1: A bank approves a loan
+CAPTION 2: one signature
+
+IMAGE PROMPT:
+Near-photorealistic macro shot of a simplified low-poly 3D hand holding a pen,
+the nib just touching the signature line of a printed document on a dark polished
+wood desk. Matte clay-like shading on the hand, deep navy #1E3A5F cuff visible.
+Hard warm directional light from a window off-frame right, crisp real shadow of
+the pen across the paper. Razor-thin depth of field focused on the nib.
+9:16 vertical composition, subject lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 15 | 0:33-0:35
+--------------------------------------------------------------------------------
+VO: ...and the money simply appears.
+CAPTION 1: and the money appears
+CAPTION 2: out of nothing
+
+IMAGE PROMPT:
+Near-photorealistic shot of a neat stack of banknotes resting on a dark polished
+wood desk, faint fine dust displaced in the air around its base catching the
+light. Same warm directional window light and camera position as the previous
+frame for a hard-cut match. Stylized matte cinematic grade, shallow depth of
+field, quiet and understated. 9:16 vertical composition, subject in the lower
+two-thirds, clean headroom above for captions.
+
+--------------------------------------------------------------------------------
+SCENE 16 | 0:35-0:37
+--------------------------------------------------------------------------------
+VO: It didn't come out of a vault.
+CAPTION 1: It didn't come from a vault
+CAPTION 2: there was nothing in there
+
+IMAGE PROMPT:
+Near-photorealistic wide shot looking directly into a massive open bank vault
+door, thick steel with visible locking bolts, standing wide open to reveal a
+completely empty concrete interior. Cold overhead fluorescent light, hard real
+shadows, echoing emptiness. Desaturated steel-grey and cool blue palette.
+Symmetrical centred composition, slight wide-angle. Stylized matte cinematic
+grade. 9:16 vertical, vault opening in the lower two-thirds, clean space above.
+
+--------------------------------------------------------------------------------
+SCENE 17 | 0:37-0:39
+--------------------------------------------------------------------------------
+VO: It was typed into a screen.
+CAPTION 1: It was typed into a screen
+CAPTION 2: that's the entire act
+
+IMAGE PROMPT:
+Near-photorealistic close-up of a computer monitor on a dark polished wood desk,
+screen displaying a large plain rising numeral, cool blue screen-glow spilling
+onto the matte surfaces around it. Darkened office interior behind, deep shadow.
+Shallow depth of field with the screen edge falling out of focus. Cold blue key
+light against warm ambient falloff. Stylized matte cinematic grade. 9:16
+vertical, subject lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 18 | 0:39-0:41
+--------------------------------------------------------------------------------
+VO: Every loan creates new money.
+CAPTION 1: Every loan creates new money
+CAPTION 2: multiplied across millions
+
+IMAGE PROMPT:
+Near-photorealistic high aerial drone shot looking down over a dense suburban
+housing development, rows of identical tile-roofed houses repeating into the
+distance, narrow concrete roads between them. Bright midday sun, hard real
+shadows from every rooftop, saturated blue #4BA3D3 sky at the top of frame.
+Slight wide-angle, deep focus. Stylized matte cinematic grade. 9:16 vertical
+composition, clean sky area at the top for captions.
+
+--------------------------------------------------------------------------------
+SCENE 19 | 0:41-0:43
+--------------------------------------------------------------------------------
+VO: [serious] But the world's bread didn't multiply.
+CAPTION 1: But the world's bread didn't multiply
+CAPTION 2: the goods stayed the same
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of two workers crouched together lifting one single
+cardboard box at the open rear of a white delivery truck parked on an empty road.
+Both characters have COMPLETELY BLANK featureless heads with no eyes, no nose, no
+mouth — smooth matte tan blocks. One wears a sand #C9A97E polo and dark trousers,
+the other a grey tee and cream trousers, both in caps. Matte clay-like shading,
+simplified geometric anatomy. Near-photorealistic truck and asphalt, bright
+midday sun, saturated blue #4BA3D3 sky, hard real cast shadows. 9:16 vertical,
+subject lower two-thirds, clean sky above.
+
+--------------------------------------------------------------------------------
+SCENE 20 | 0:43-0:46 | *** HERO FRAME — THE MECHANISM PAYOFF ***
+--------------------------------------------------------------------------------
+VO: More money. Same bread.
+CAPTION 1: More money. Same bread.
+CAPTION 2: that's all inflation is
+
+IMAGE PROMPT:
+Near-photorealistic symmetrical split composition on a plain concrete surface: on
+the left, a tall towering stack of banknotes rising out of the top of frame; on
+the right, one single loaf of rustic bread. Equal visual weight, stark and
+deliberate. Hard directional side light casting two long parallel real shadows
+across the concrete. Muted concrete grey against warm note and crust tones.
+Stylized matte cinematic grade, medium depth of field, both subjects sharp.
+9:16 vertical composition, subjects in the lower two-thirds, clean space above.
+
+--------------------------------------------------------------------------------
+SCENE 21 | 0:46-0:48
+--------------------------------------------------------------------------------
+VO: So bread costs more.
+CAPTION 1: So bread costs more
+CAPTION 2: and your wage doesn't move
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of a male character reaching up toward a loaf of
+bread on a supermarket shelf, arm extended, body angled away from camera. A price
+tag on the shelf edge sits in sharp focus in the immediate foreground. COMPLETELY
+BLANK featureless head, no eyes, no nose, no mouth — smooth matte tan block.
+Terracotta #E85F42 t-shirt, cream #E8DCC8 trousers, white sneakers, cream beanie.
+Matte clay-like shading. Near-photorealistic supermarket shelving, bright
+fluorescent light, real cast shadows. Foreground price tag sharp, character
+slightly soft. 9:16 vertical, subject lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 22 | 0:48-0:50
+--------------------------------------------------------------------------------
+VO: Nobody voted for this.
+CAPTION 1: Nobody voted for this
+CAPTION 2: no ballot, no debate
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of a lone male character standing at an empty night
+bus stop, hands in pockets, shoulders low, facing an empty road. COMPLETELY BLANK
+featureless head with no eyes, no nose, no mouth — smooth matte tan block.
+Terracotta #E85F42 t-shirt, cream #E8DCC8 trousers, white sneakers, cream beanie.
+Matte clay-like shading, simplified geometric anatomy. Near-photorealistic street
+at night, deep teal-navy #0F2C3F darkness, a single overhead streetlight pooling
+cold light down onto him, distant streetlight bokeh receding. Real cast shadow
+beneath. Shallow cinematic depth of field. 9:16 vertical, subject lower
+two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 23 | 0:50-0:52
+--------------------------------------------------------------------------------
+VO: Nobody sent you a bill.
+CAPTION 1: Nobody sent you a bill
+CAPTION 2: it doesn't arrive by post
+
+IMAGE PROMPT:
+Near-photorealistic tight shot of an empty metal letterbox on a suburban gate,
+small door hanging open, nothing inside. Warm cream wall behind. Hard low
+sunlight throwing a long sharp diagonal shadow across the wall. Direct visual
+callback to scene 03, slightly tighter framing. Stylized matte cinematic grade,
+shallow depth of field. 9:16 vertical composition, subject in the lower
+two-thirds, clean headroom above for captions.
+
+--------------------------------------------------------------------------------
+SCENE 24 | 0:52-0:55
+--------------------------------------------------------------------------------
+VO: [serious] But you paid it.
+CAPTION 1: But you paid it
+CAPTION 2: every day, without noticing
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of a male character standing at a petrol pump at
+night, refuelling a simplified terracotta #E85F42 saloon car, nozzle in hand,
+head lowered. COMPLETELY BLANK featureless head with no eyes, no nose, no mouth —
+smooth matte tan block. Cream #E8DCC8 trousers, white sneakers, cream beanie.
+Matte clay-like shading. Near-photorealistic petrol station forecourt, wet
+reflective concrete throwing light back up, cool overhead canopy lighting, deep
+teal-navy #0F2C3F night sky, warm streetlight bokeh in the far distance.
+Real cast shadows and reflections. 9:16 vertical, subject lower two-thirds,
+clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 25 | 0:55-0:58 | *** THUMBNAIL CANDIDATE ***
+--------------------------------------------------------------------------------
+VO: This is the tax nobody voted for.
+CAPTION 1: This is the tax nobody voted for
+CAPTION 2: and it never stops
+
+IMAGE PROMPT:
+Near-photorealistic wide low-angle shot of a lone stylized low-poly 3D male
+character standing small and centred on an empty concrete expanse beneath a vast
+open saturated blue #4BA3D3 sky filling most of the frame. COMPLETELY BLANK
+featureless head with no eyes, no nose, no mouth — smooth matte tan block.
+Terracotta #E85F42 t-shirt, cream #E8DCC8 trousers, white sneakers, cream beanie.
+Matte clay-like shading. Hard midday sun casting one long dramatic real shadow
+stretching behind him. Scale and isolation emphasised, wide-angle lens.
+9:16 vertical, character low in frame, enormous clean sky above for captions.
+
+--------------------------------------------------------------------------------
+SCENE 26 | 0:58-1:00
+--------------------------------------------------------------------------------
+VO: And the engine behind it... is interest.
+CAPTION 1: The engine behind it is interest
+CAPTION 2: riba
+
+IMAGE PROMPT:
+Near-photorealistic slow orbital shot around a polished dark wood desk, the
+signed loan document lying centred and alone on its surface, pen resting beside
+it. Empty chair behind. Cool directional window light raking across the wood
+grain, long real shadows. Darkened office interior, deep falloff to shadow at
+frame edges. Shallow cinematic depth of field on the document. Stylized matte
+cinematic grade. 9:16 vertical, subject lower two-thirds, clean space above.
+
+--------------------------------------------------------------------------------
+SCENE 27 | 1:00-1:02
+--------------------------------------------------------------------------------
+VO: Debt creates money. Money loses value.
+CAPTION 1: Debt creates money
+CAPTION 2: money loses value
+
+IMAGE PROMPT:
+Near-photorealistic top-down overhead shot of banknotes arranged in a perfect
+closed circular ring on a grey concrete floor, forming an unbroken loop. Hard
+directional light from one side casting real shadows from each note edge inward.
+Cool concrete grey against warm note tones. Symmetrical, deliberate, slightly
+unsettling. Stylized matte cinematic grade, deep focus. 9:16 vertical
+composition, ring in the lower two-thirds, clean space above for captions.
+
+--------------------------------------------------------------------------------
+SCENE 28 | 1:02-1:05
+--------------------------------------------------------------------------------
+VO: [sad] Value the saver never agreed to lose.
+CAPTION 1: Value the saver never agreed to lose
+CAPTION 2: no consent was ever asked
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of a male character sitting alone on his front
+doorstep, forearms on knees, holding a small dented metal savings tin in both
+hands, head lowered toward it. COMPLETELY BLANK featureless head with no eyes, no
+nose, no mouth — smooth matte tan block. Terracotta #E85F42 t-shirt, cream
+#E8DCC8 trousers, white sneakers, cream beanie. Matte clay-like shading.
+Near-photorealistic modest house frontage, soft low early-morning sunlight from
+the side, long gentle real shadows, quiet empty street beyond. Shallow cinematic
+depth of field. 9:16 vertical, subject lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 29 | 1:05-1:07
+--------------------------------------------------------------------------------
+VO: [calm] Which is why sound money mattered.
+CAPTION 1: Which is why sound money mattered
+CAPTION 2: gold and silver
+
+IMAGE PROMPT:
+Near-photorealistic still life of one gold coin and one silver coin resting
+together on dark textured cloth. Hard raking light from the left picking out the
+milled edges and metallic lustre, deep rich shadow to the right. Warm gold
+#F2B01E and cool silver against near-black fabric. Extremely shallow depth of
+field, background falling to darkness. Stylized matte cinematic grade. 9:16
+vertical composition, coins in the lower two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 30 | 1:07-1:09
+--------------------------------------------------------------------------------
+VO: You cannot type gold into existence.
+CAPTION 1: You cannot type gold into existence
+CAPTION 2: no screen can create it
+
+IMAGE PROMPT:
+Extreme macro near-photorealistic shot of the milled edge of a single gold coin
+filling the frame, every ridge and micro-scratch visible, warm #F2B01E metallic
+lustre catching a hard narrow light source. Razor-thin depth of field, both ends
+of the coin falling instantly out of focus. Near-black background. Stylized matte
+cinematic grade. 9:16 vertical composition, coin edge across the lower
+two-thirds, clean dark space above for captions.
+
+--------------------------------------------------------------------------------
+SCENE 31 | 1:09-1:12
+--------------------------------------------------------------------------------
+VO: It has to be dug. Weighed. Earned.
+CAPTION 1: It has to be dug, weighed, earned
+CAPTION 2: real work, real cost
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of two workers lifting one heavy wooden crate
+together, bodies braced and leaning under real effort, knees bent. Both have
+COMPLETELY BLANK featureless heads with no eyes, no nose, no mouth — smooth matte
+tan blocks. One in a sand #C9A97E work shirt, one in a grey tee, both in caps.
+Matte clay-like shading, simplified geometric anatomy. Near-photorealistic dusty
+outdoor yard at dusk, warm low golden sidelight, long real cast shadows across
+the ground, deep amber sky. Shallow cinematic depth of field. 9:16 vertical,
+subjects lower two-thirds, clean sky above.
+
+--------------------------------------------------------------------------------
+SCENE 32 | 1:12-1:14
+--------------------------------------------------------------------------------
+VO: So hold what cannot be diluted.
+CAPTION 1: Hold what cannot be diluted
+CAPTION 2: things with real weight
+
+IMAGE PROMPT:
+Near-photorealistic close-up of a simplified low-poly 3D hand placing a single
+gold coin into a small open wooden box on a shelf. Matte clay-like shading on the
+hand, terracotta #E85F42 sleeve at frame edge. Warm domestic interior, soft
+low-angle lamplight from the right, gentle real shadows, quiet and intimate.
+Warm #F2B01E gold accent against cream and dark wood tones. Shallow cinematic
+depth of field focused on the coin. 9:16 vertical, subject lower two-thirds,
+clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 33 | 1:14-1:16
+--------------------------------------------------------------------------------
+VO: Real assets. Real ownership.
+CAPTION 1: Real assets. Real ownership.
+CAPTION 2: things you actually hold
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of a male character standing at his own front gate,
+one hand resting on the latch, body turned slightly toward the house, relaxed and
+settled. COMPLETELY BLANK featureless head with no eyes, no nose, no mouth —
+smooth matte tan block. Terracotta #E85F42 t-shirt, cream #E8DCC8 trousers, white
+sneakers, cream beanie. Matte clay-like shading. Near-photorealistic modest
+suburban house with tiled roof behind him, warm golden-hour sunlight from low
+right, long soft real shadows, saturated warm sky. Shallow cinematic depth of
+field. 9:16 vertical, subject lower two-thirds, clean sky above.
+
+--------------------------------------------------------------------------------
+SCENE 34 | 1:16-1:18
+--------------------------------------------------------------------------------
+VO: Not promises that quietly shrink.
+CAPTION 1: Not promises that quietly shrink
+CAPTION 2: not paper claims
+
+IMAGE PROMPT:
+Near-photorealistic shot of the massive steel bank vault door slowly swinging
+closed, the cold interior light narrowing to a thin vertical sliver between door
+and frame. Heavy locking bolts catching hard highlights. Desaturated steel-grey
+and cool blue palette, deep shadow dominating the frame. Symmetrical composition,
+slight wide-angle. Stylized matte cinematic grade. 9:16 vertical, door in the
+lower two-thirds, clean dark space above for captions.
+
+--------------------------------------------------------------------------------
+SCENE 35 | 1:18-1:21
+--------------------------------------------------------------------------------
+VO: [warmly] Your money should hold its weight.
+CAPTION 1: Your money should hold its weight
+CAPTION 2: literally
+
+IMAGE PROMPT:
+Near-photorealistic still life of a small brass balance scale resting perfectly
+level, one gold coin sitting in each pan. Hard warm directional side light from
+the right, deep real shadows falling left, warm #F2B01E metallic highlights.
+Dark neutral background falling to black. Symmetrical, calm, resolved. Shallow
+cinematic depth of field. Stylized matte cinematic grade. 9:16 vertical
+composition, scale in the lower two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 36 | 1:21-1:23
+--------------------------------------------------------------------------------
+VO: (silent beat — no VO, let scene 35 land)
+CAPTION 1: (none)
+CAPTION 2: (none)
+
+IMAGE PROMPT:
+Near-photorealistic wide shot of the same modest suburban house frontage at
+golden hour, now empty of characters, front gate closed, warm low sunlight
+raking across the tiled roof and cream wall, long soft real shadows across the
+path. Quiet, still, resolved. Saturated warm sky #4BA3D3 fading to gold at the
+horizon. Stylized matte cinematic grade, shallow depth of field. 9:16 vertical,
+house in the lower two-thirds, clean sky above.
+
+--------------------------------------------------------------------------------
+SCENE 37 | 1:23-1:25 | END CARD
+--------------------------------------------------------------------------------
+VO: [warmly] Follow — part two is the fix.
+CAPTION 1: Part two: the fix
+CAPTION 2: follow so you don't miss it
+
+IMAGE PROMPT:
+Heavily blurred near-photorealistic golden-hour suburban house frontage as a soft
+background plate, warm amber and cream tones, strong bokeh, no sharp detail
+anywhere. Clean empty centre of frame reserved for a logo overlay to be added in
+post. Warm, calm, inviting. Stylized matte cinematic grade. 9:16 vertical
+composition, even blur across the full frame.
+
+[POST] Composite the channel logo centred, plus handle and series title beneath.
+
+
+================================================================================
+CAPTION BURN-IN SPEC
+================================================================================
+
+LINE 1 (top)    : white #FFFFFF, Montserrat or Inter Bold 700, sentence case,
+                  on a solid #000000 box, tight padding, box sized to the text
+                  (not full width)
+LINE 2 (below)  : soft gold #F5D76E, ITALIC, own solid #000000 box, offset
+                  approximately 20px to the left of line 1
+POSITION        : lower third, above the YouTube UI band — keep clear of the
+                  bottom 250px of a 1920px tall frame
+BEHAVIOUR       : STATIC per phrase. No karaoke. No word-by-word pop. No colour
+                  highlighting. No scaling or bouncing.
+EMPHASIS        : italics only
+TIMING          : swap on the speaker's natural clause break — the caption change
+                  and the picture cut land together
+
+Enable a multi-language audio track on upload. That is what produces YouTube's
+"Auto-dubbed" chip, and it is free additional reach.
+
+
+================================================================================
+EDIT & ASSEMBLY
+================================================================================
+
+1. Record the VO first. The cut follows speech cadence, so scene timings will
+   shift to match the actual delivery. Treat the timecodes above as a guide.
+2. Generate scene 07, approve AMIR, lock the seed, then generate everything else.
+3. HARD CUTS ONLY. No dissolves, no whip pans, no zoom transitions, no glitch.
+4. Slow push-in or lateral drift on every scene. Nothing fully static.
+5. Film grain overlay across the master.
+6. Burn in captions per the spec above.
+7. Link the source long-form video in the description.
+
+RETENTION CHECKPOINTS
+  Scenes 01-04  the hook. Must create the mystery inside 3 seconds. If this
+                doesn't land, nothing else matters.
+  Scene 20      the mechanism payoff. The one frame that has to be understood.
+  Scene 25      emotional peak and best thumbnail candidate.
+
+================================================================================
