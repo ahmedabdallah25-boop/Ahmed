@@ -35,7 +35,7 @@ the player; the thumbnail should add a second idea, not repeat the first.
 
 ---
 
-## NEGATIVE PROMPT — applies to all three
+## NEGATIVE PROMPT — applies to all four
 
 ```
 facial features, eyes, mouth, nose, lips, eyebrows, face, portrait, cartoon
@@ -51,9 +51,9 @@ cryptocurrency, bitcoin, crypto coin, digital currency symbol
 
 ---
 
-## OPTION A — THE MECHANISM *(recommended)*
+## OPTION A — THE MECHANISM *(the A/B partner for D)*
 
-The strongest of the three at grid size: a tower of notes against one loaf reads
+The purest read at grid size: a tower of notes against one loaf reads
 instantly at any scale, and it is the film's hero frame, so the thumbnail and
 the video agree.
 
@@ -111,7 +111,7 @@ coins sitting in the upper two-thirds, lower third left as clean near-black
 fabric and shadow for a text overlay.
 ```
 
-## OPTION D — THE WALL *(recommended, plates already generated)*
+## OPTION D — THE WALL *(recommended — approved plate rendered)*
 
 Option A's argument with a human in it. The character supplies the scale the
 still life cannot — a wall of cash that runs out of frame only reads as absurd
@@ -130,7 +130,8 @@ its open top, shoulders dropped. COMPLETELY BLANK featureless head with no eyes,
 no nose, no mouth, no brow, no nose ridge, no face at all — a perfectly smooth
 matte tan block, turned slightly toward camera. Simplified geometric anatomy,
 matte clay-like shading, soft subsurface material. He wears a terracotta #E85F42
-t-shirt, cream #E8DCC8 trousers, WHITE sneakers and a cream beanie. Directly
+t-shirt and a cream beanie. His trousers are warm oatmeal cream #E8DCC8, clearly
+darker and warmer than his footwear. His sneakers are bright white. Directly
 behind him a colossal wall of banded paper banknote bundles rising far out of the
 top of the frame and receding to the right, dwarfing him in scale, the individual
 bundles clearly reading as stacked banded cash. Bare pale concrete ground, hard
@@ -167,6 +168,33 @@ survived the squint test and banding it out to vertical did not: banding shrinks
 the character to a speck and gives half the frame to dead colour. Use the crop if
 you need something today; regenerate native vertical for the real thing.
 
+### The approved plate
+
+Plate 3 is the one. `media/thumbs/inflation-D-plate.png` — generated native
+vertical, and every QC item above clears: blank head, white sneakers, banded
+dollar bundles unmistakable at grid size, and a large kraft bag with a baguette
+out of the top that finally does its half of the work. Clean blue sky across the
+top quarter takes the type without touching the character.
+
+Two finished thumbnails are cut from it:
+
+| File | Text | Accent |
+|---|---|---|
+| `media/thumbs/inflation-D-MoreMoney.png` | More money. / Less food. | gold `#E9B949` |
+| `media/thumbs/inflation-D-YouPaidThis.png` | You paid this / today. | red `#E5484D` |
+
+Both are 1080×1920 with type at 118px Inter ExtraBold. Proof and squint rows:
+`media/thumbs/inflation-D-final-sheet.png`.
+
+**One thing still off, worth fixing on the next pass, not a blocker:** the
+trousers came back white rather than cream `#E8DCC8`, so they merge with the
+white sneakers and the legs read as a single bright column — at 86px the shoes
+disappear and that column competes with the type for attention. Cream trousers
+are what the Scene 07 lock calls for and they would separate the two. Note the
+generator will drift here precisely because "white sneakers" sits next to
+"cream trousers" in the prompt; putting the trouser colour in its own sentence,
+away from the word *white*, holds it better.
+
 <a id="thumbnail-spec"></a>
 
 ---
@@ -183,11 +211,17 @@ you need something today; regenerate native vertical for the real thing.
 | Bottom 400px | reserved — Shorts prints title, handle and UI over it |
 | Middle 60% vertically | keep the subject and the key prop here; some surfaces crop toward centre |
 
-**Type.** Inter or Montserrat, weight 800–900, uppercase, two lines maximum and
-three words per line. Cap height 120–150px on a 1920-tall frame, tight leading.
-Line 1 white `#FFFFFF`; line 2 in the option's accent. Each line sits on its own
-solid `#000000` box sized to the text with tight padding — not a full-width bar —
-and line 2 is offset ~30px left of line 1.
+**Type.** Inter ExtraBold (bundled at `video/public/fonts/inter-var.woff2`),
+uppercase, two lines maximum and three words per line. Line 1 white `#FFFFFF`;
+line 2 in the option's accent. Each line sits on its own solid `#000000` box
+sized to the text with tight padding — not a full-width bar — and line 2 is
+offset ~30px left of line 1.
+
+Size the type by **width, not height**: the longest line plus its box should fill
+85–90% of the 1080 width. Height follows from that, and it lands lower than you
+would guess — `MORE MONEY.` fills the frame at 118px Inter, about 86px of cap
+height. Setting a cap height of 120px+ first, as an earlier draft of this spec
+did, pushes an eleven-character line straight off the edge of the frame.
 
 That box treatment is deliberately the same as the burned-in caption spec in
 `inflation-scene-pack.txt`, so the thumbnail and the film read as one product.
