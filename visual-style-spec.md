@@ -10,7 +10,7 @@ Analysed 2026-08-01.
 | Video | Title | Length | Views | Likes | Published | Depth of analysis |
 |---|---|---|---|---|---|---|
 | [F1jvrNlxMPE](https://youtube.com/shorts/F1jvrNlxMPE) | Efek Salah Gaul Jadi Bikin Gak Produktif | 86s | 5,553 | 683 | Jul 30 | **Full frame-by-frame visual analysis** |
-| [yC7O3mITIs4](https://youtube.com/shorts/yC7O3mITIs4) | Etika Tidak Tertulis Saat Pinjam Barang | 60s | 13,181 | 1,081 | Jul 23 | Metadata only |
+| [yC7O3mITIs4](https://youtube.com/shorts/yC7O3mITIs4) | Etika Tidak Tertulis Saat Pinjam Barang | 60s | 13,181 | 1,081 | Jul 23 | **Direct frame analysis** (5 user-supplied stills) |
 | [id7bRTS7zeI](https://youtube.com/shorts/id7bRTS7zeI) | Membangun Rutinitas Adalah Awal Perubahan | 68s | 13,353 | 1,437 | Jul 16 | Metadata only |
 | [hgkYDnW5j_w](https://youtube.com/shorts/hgkYDnW5j_w) | Yang Satu Galau, Yang Satu Tenang | 75s | 37,177 | 4,280 | Jun 25 | Metadata only |
 
@@ -41,23 +41,40 @@ shortest cuts win. Target **55–70 seconds**, not 90.
 
 ## Replicable visual spec
 
-### 1. Format
-- 9:16 vertical, 1080×1920.
-- AI-generated **stylized flat-vector illustrations** — not stock footage, not live action.
-- Flat design with soft gradients and **2.5D depth** (foreground/background separated into layers).
-- Faceless throughout. No talking head, no presenter on screen.
+### 1. Format — CORRECTED from direct frames
+
+The single-call tool described this series as "flat-vector illustration with 2.5D parallax." Direct
+frames show that is **wrong**. The actual look is:
+
+- 9:16 vertical, full-bleed, 1080×1920.
+- **Stylized low-poly 3D CGI characters** — soft matte shading, simplified geometry, plastic/clay
+  material feel. Rendered 3D, not 2D vector, not flat design.
+- **Characters have no faces.** Heads are blank tan blocks — no eyes, nose or mouth, ever. This is
+  deliberate (aniconism), not a stylistic shortcut, and it is the single most recognisable element
+  of the template.
+- **Environments are near-photoreal** — real-looking suburban housing, wet asphalt, a night petrol
+  station with bokeh streetlights, a delivery truck. AI-generated realistic backdrops.
+- The signature is that **hybrid**: stylized faceless 3D figures composited into photographic-grade
+  environments. That contrast is what makes it read as premium rather than as generic AI output.
+- Scenes are **ordinary daily-life situations** — borrowing a motorbike, refuelling a car, moving
+  boxes — used as literal staging of the lecture's example, not abstract metaphor.
 
 ### 2. Colour palette
 
+Sampled from actual frames. The forest-green palette reported by the tool belongs to F1jvrNlxMPE's
+outdoor subject matter — it is **not** the series palette. The real system is sky-and-terracotta:
+
 | Role | Hex | Use |
 |---|---|---|
-| Primary | `#4A7C44` forest green | Dominant scene tone, calm/positive beats |
-| Primary | `#1A3A5F` deep navy | Shadow, night scenes, tension beats |
-| Accent | `#E65C34` burnt orange | Focal subject, the thing the eye must land on |
-| Accent | `#F9D423` golden yellow | Highlights, warm light sources, payoff moments |
+| Environment | `#4BA3D3` → `#1E6FA8` sky blue | Dominant daytime backdrop, big open skies |
+| Environment | `#0F2C3F` deep teal-navy | Night scenes, contrast beat |
+| Character | `#E85F42` terracotta / coral | Primary character shirt — the eye-anchor in frame |
+| Character | `#E8DCC8` cream · `#C9A97E` sand | Hats, trousers, cardboard — the neutral base |
+| Prop accent | `#F2B01E` golden yellow | The object under discussion (motorbike, signage) |
+| Caption | `#FFFFFF` white · `#F5D76E` soft gold | Subtitle lines (see §4) |
 
-High saturation, warm directional lighting. Never a flat white or pure black background — every
-frame has an illustrated environment.
+High saturation, hard natural sunlight with real cast shadows. Every frame is a full environment —
+no flat colour fields, no empty backgrounds.
 
 *For Finance % Decoded:* keep this palette as-is. Green/gold reads as both money and the channel's
 "Deen & Dinar" positioning, and it is unlike the blue-grey fintech look everyone else uses.
@@ -70,10 +87,27 @@ frame has an illustrated environment.
   highlight, no bouncing.** This is a deliberate calm-authority choice and it is a big part of why
   the channel doesn't read as generic AI slop.
 
-### 4. Captions
-- **Dual-language stacked**: source language on top, English below.
-- White text, no outline, subtle drop shadow only.
-- One phrase on screen at a time, changing with the speaker's natural clause breaks.
+### 4. Captions — CORRECTED from direct frames
+
+Not "white text with a drop shadow." The real treatment is a **two-line burned-in block**:
+
+- **Line 1 (top):** source language, **white**, regular weight, on a **solid black box** with tight
+  padding. Box is sized to the text, not full-width.
+- **Line 2 (below):** English translation, **soft gold `#F5D76E`**, *italic*, on its own solid black
+  box, slightly offset left of the top line.
+- Sits in the **lower third**, above the YouTube UI band — not vertically centred.
+- Emphasis is carried by *italics* on key words (`kinclong`, `gue deh`), never by colour changes,
+  scaling or bouncing.
+- Still confirmed: **static per phrase, no karaoke, no word-by-word pop.** One clause on screen at a
+  time, swapping on the speaker's natural breaks.
+
+The solid black box is doing real work: it guarantees legibility over both a bright sky and a dark
+night scene without any per-shot adjustment. That is why the template survives wildly varying
+backdrops.
+
+Note: the grey "Auto-dubbed" chip visible in the stills is **YouTube's own UI**, not part of the
+video — the channel uploads a multi-language audio track. That is a separate (and free) reach lever
+worth enabling on your uploads.
 
 *For Finance % Decoded:* this is the highest-leverage element to copy. Stacking English on top with
 Arabic transliteration or Urdu/Bahasa below (or English + the Arabic finance term — *Riba*,
@@ -113,6 +147,24 @@ study already identified as the winning pattern goes in the audio over that scen
 - Lo-fi ambient bed, mixed well under the voice.
 - Clear rhythmic voiceover carries everything — the music is texture, not a driver.
 - Visuals sync to **speech cadence**, never to a beat drop.
+
+## Two aesthetics — do not blend them
+
+A written brief circulated alongside these frames described "minimalist 2D/3D illustration, stylized
+anime, cozy rooms, starry skies, clocks, karaoke captions highlighting words in yellow/cyan." That
+is a **different genre** — the stoic/discipline motivational Shorts look. It is not what this
+reference channel does, and the two are actively incompatible:
+
+| | Nuzul Dzikri (the frames) | Stoic/motivational brief |
+|---|---|---|
+| Subject | Ordinary life, literally staged | Abstract metaphor, lone silhouettes |
+| Render | Faceless low-poly 3D in photoreal sets | 2D illustration / anime / digital painting |
+| Captions | Static two-line, black box, no highlight | Karaoke word-by-word, colour highlights |
+| Feel | Warm daylight, grounded, calm | Moody, night, dramatic |
+
+The motivational look is far more saturated as a category. The reference channel's is rarer and
+reads as more trustworthy — which matters more for finance, where the viewer is deciding whether to
+believe you. **Pick one.** Recommendation below builds the reference-channel look.
 
 ## Production pipeline for Finance % Decoded
 
