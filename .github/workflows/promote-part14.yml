@@ -1,0 +1,39 @@
+name: Promote Part 14 (Inflation)
+
+# Pushes Part 14's reach using the channel's own surfaces: fixes the broken
+# series playlist and adds Part 14 to it, then seeds creator comments on the
+# five 900+ view Shorts. Deliberately does NOT touch the Shorts' descriptions —
+# that slot belongs to the Episode 2 long-form funnel. See promote_part14.py.
+#
+# Idempotent: re-running skips anything already done.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "all = playlist + comments + stats; or run one step"
+        type: choice
+        options: [all, playlist, comments, stats]
+        default: all
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r automation/requirements.txt
+      - name: Promote
+        run: |
+          case "${{ inputs.mode }}" in
+            all)      python automation/promote_part14.py ;;
+            playlist) python automation/promote_part14.py --playlist ;;
+            comments) python automation/promote_part14.py --comments ;;
+            stats)    python automation/promote_part14.py --stats ;;
+          esac
+        env:
+          YT_CLIENT_ID: ${{ secrets.new1 }}
+          YT_CLIENT_SECRET: ${{ secrets.new2 }}
+          YT_REFRESH_TOKEN: ${{ secrets.new3 }}
