@@ -24,7 +24,6 @@
     "finance decoded",
     "money mechanisms"
   ],
-  "publish_at": "2026-08-03T10:00:00Z",
   "engagement_comment": "Your wage went up this year. Did it actually go further? And if you had to hold one thing for ten years — cash, gold, or property — which one and why? 👇",
   "decision_rule": {
     "decision_hours": 72,
@@ -35,8 +34,10 @@
   "caption_language": "en",
   "notes": [
     "Supersedes the unpublished part14-kinetic.mp4 (same raise/inflation topic, better production).",
-    "Thumbnail is uploaded manually - see inflation-thumbnail-prompts.md.",
+    "Publishes immediately on upload (no publish_at key).",
+    "Thumbnail: author-generated from inflation-thumbnail-prompts.md, dropped at media/thumbs/inflation-final.png.",
     "Known issue shipped knowingly: the 'gold and silver' shot at 77.1-80.1s renders as Bitcoin coins.",
     "Playlist link deliberately omitted - PLKLKzR1QgFHE is truncated and 404s (see channel-study.md)."
-  ]
+  ],
+  "thumbnail": "media/thumbs/inflation-final.png"
 }
