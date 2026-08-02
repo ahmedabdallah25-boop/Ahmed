@@ -1,14 +1,20 @@
 #!/usr/bin/env python3
-"""Upload Part 13 with a scheduled publish time, or post its engagement comment.
+"""Upload a Short with a scheduled publish time, or post its engagement comment.
 
-  python upload_video.py                    uploads media/part13.mp4, schedules publish
+  python upload_video.py                    uploads the config's file, schedules publish
   python upload_video.py --comment VIDEO_ID posts the engagement comment (after publish)
+
+Which config it reads is set by UPLOAD_CONFIG, defaulting to part13.json so the
+existing Part 13 workflow keeps working untouched:
+
+  UPLOAD_CONFIG=part14.json python automation/upload_video.py
 
 Needs the same OAuth env vars as apply_fix.py (see SETUP.md).
 Note: if the Google Cloud project is unverified, YouTube may keep API uploads
 locked private past publish_at — check Studio if the video doesn't go live.
 """
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -16,7 +22,8 @@ from googleapiclient.http import MediaFileUpload
 
 from apply_fix import yt_client
 
-CONFIG = json.loads((Path(__file__).parent / "part13.json").read_text())
+CONFIG_NAME = os.environ.get("UPLOAD_CONFIG", "part13.json")
+CONFIG = json.loads((Path(__file__).parent / CONFIG_NAME).read_text())
 
 
 def upload(yt):
@@ -41,7 +48,8 @@ def upload(yt):
     while resp is None:
         _, resp = req.next_chunk()
     print(f"VIDEO_ID={resp['id']}")
-    print(f"Uploaded, publishing at {CONFIG['publish_at']}: https://youtube.com/shorts/{resp['id']}")
+    print(f"Uploaded from {CONFIG_NAME}, publishing at {CONFIG['publish_at']}: "
+          f"https://youtube.com/shorts/{resp['id']}")
 
 
 def comment(yt, vid):
