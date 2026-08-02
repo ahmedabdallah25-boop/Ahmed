@@ -1,0 +1,636 @@
+================================================================================
+FINANCE % DECODED — SCENE PACK
+"HOLD WHAT CANNOT BE DILUTED" (SOUND MONEY)
+Part 15 — the fix promised at the end of Part 14 (Inflation)
+Render style: 3D faceless low-poly | 9:16 1080x1920 | ~80s | 32 scenes
+================================================================================
+
+HOW TO USE THIS FILE
+- Every IMAGE PROMPT below is complete and self-contained. Copy, paste, generate.
+  Character identity, wardrobe, style and camera are already baked into each one.
+- The NEGATIVE PROMPT is identical for all scenes. Paste it once into your tool's
+  negative field and leave it there.
+- VO lines use ElevenLabs v3 audio tags. Paste the line exactly as written,
+  brackets included.
+- CAPTION lines are what you burn into the video. See CAPTION SPEC at the bottom.
+
+
+================================================================================
+NEGATIVE PROMPT — paste into the negative field, applies to ALL 32 scenes
+================================================================================
+
+facial features, eyes, mouth, nose, lips, eyebrows, face, portrait, cartoon
+outlines, cel shading, flat vector, anime, 2D illustration, text, watermark,
+logo, signature, distorted hands, extra limbs, extra fingers, blurry, low
+resolution, oversaturated, plastic sheen, uncanny, bitcoin, crypto coin, cryptocurrency,
+digital coin symbol, letter B on coin
+
+
+================================================================================
+CONSISTENCY WORKFLOW — do this before generating scene 2
+================================================================================
+
+1. Generate SCENE 09 first. It is the cleanest full-body view of AMIR.
+2. Approve the character design. Regenerate until the head is fully blank.
+3. LOCK THE SEED. Reuse that exact seed for all 32 scenes.
+4. Feed the approved Scene 09 image back as an image reference for every other
+   shot containing AMIR. Character drift between scenes is the #1 failure mode.
+5. GOLD SHOTS: Part 14 shipped with the gold shot rendering as Bitcoin coins.
+   Generate every coin scene here twice and check for a stamped "B" or any
+   digital-coin motif before approving. Plain milled edges, blank or classical
+   faces only.
+
+
+================================================================================
+VOICEOVER — full script, ElevenLabs v3 tags, copy as one block
+================================================================================
+
+[serious] You cannot out-save money that is designed to shrink.
+[whispers] So stop saving in it.
+Not all money is the same money.
+[serious] Some of it can be created. Some of it has to be earned.
+For five thousand years, money was a weight.
+Gold. Silver. Salt. Cattle.
+Nobody could type it into existence.
+You had to dig it. Weigh it. Carry it.
+[calm] That is what made it honest.
+Then paper arrived. A receipt for the gold.
+Light. Convenient. Trusted.
+Then one day the receipts stopped being backed.
+[serious] Same paper. No gold behind it.
+Nothing changed on the note.
+[emphatic] Everything changed underneath it.
+So sound money has three tests.
+One. It is scarce. Nobody can make more on demand.
+Two. It is durable. It survives time.
+Three. It is yours. You hold it — not a promise to pay you.
+[emphatic] If someone else can print it, it was never yours.
+So what do you actually hold?
+Hold the rule, not the hype.
+Hold what cannot be diluted.
+Weight you control. Gold. Silver. In your hand.
+Ownership that earns. A business. A skill. A tool.
+A home you live in — not one that owns you.
+[serious] And avoid the trap.
+Borrowing at interest to escape inflation... feeds inflation.
+Interest is the engine that shrank the money in the first place.
+[calm] Keep a few months of cash for life. No more.
+Turn the rest into weight, ownership, and skill.
+[warmly] Your money should hold its weight. Now it can.
+[warmly] Follow — the series continues.
+
+TAG NOTES: keep tags sparse, they are strongest at emotional turns. Ellipses
+create natural breath pauses. CAPS carry emphasis without a tag. Do not stack
+two tags on one line.
+
+
+================================================================================
+THE 32 SCENES
+================================================================================
+
+--------------------------------------------------------------------------------
+SCENE 01 | 0:00-0:03 | THE HOOK
+--------------------------------------------------------------------------------
+VO: [serious] You cannot out-save money that is designed to shrink.
+CAPTION 1: You can't out-save money built to shrink
+CAPTION 2: saving harder won't fix it
+
+IMAGE PROMPT:
+Near-photorealistic macro shot of a glass savings jar packed with folded
+banknotes, sitting on a scarred wooden table, the notes visibly shrunken and
+curled as if drying out. Hard raking side light from the right, deep real shadow
+falling left, dust motes suspended in the beam. Muted desaturated background
+falling into darkness. Stylized matte cinematic grade, extremely shallow depth of
+field. 9:16 vertical composition, jar in the lower two-thirds, clean dark
+headroom above for captions.
+
+--------------------------------------------------------------------------------
+SCENE 02 | 0:03-0:05
+--------------------------------------------------------------------------------
+VO: [whispers] So stop saving in it.
+CAPTION 1: So stop saving in it
+CAPTION 2: save in something else
+
+IMAGE PROMPT:
+Extreme close-up, stylized low-poly 3D render, of two simplified geometric hands
+lifting the lid off a glass savings jar and setting it aside. Matte clay-like
+shading on the hands, terracotta #E85F42 sleeve cuffs visible at the frame edge.
+Near-photorealistic glass and paper texture. Hard directional light from the
+left, deep real shadow to the right. Very shallow depth of field, background
+dissolved into warm kitchen bokeh. 9:16 vertical, subject in the lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 03 | 0:05-0:07
+--------------------------------------------------------------------------------
+VO: Not all money is the same money.
+CAPTION 1: Not all money is the same money
+CAPTION 2: this is the part school skipped
+
+IMAGE PROMPT:
+Near-photorealistic overhead still life of two objects side by side on dark slate:
+on the left a worn paper banknote, on the right a thick gold coin with plain
+milled edges and a blank classical face. Hard directional light from the top
+right, two distinct real shadows falling toward the viewer, warm #F2B01E metallic
+highlight on the coin. Symmetrical, clinical, calm. Stylized matte cinematic
+grade, shallow depth of field. 9:16 vertical, objects in the lower two-thirds,
+clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 04 | 0:07-0:10
+--------------------------------------------------------------------------------
+VO: [serious] Some of it can be created. Some of it has to be earned.
+CAPTION 1: One can be created
+CAPTION 2: the other has to be earned
+
+IMAGE PROMPT:
+Split-depth near-photorealistic composition: in the sharp foreground a single
+gold coin rests on rough dark stone; far behind it, softly out of focus, a stack
+of fresh identical banknotes rises past the top of frame like a printed tower.
+Cool blue #4BA3D3 light on the distant paper stack, warm #F2B01E light on the
+coin. Deep real shadows, heavy contrast, extremely shallow depth of field.
+Stylized matte cinematic grade. 9:16 vertical, coin in the lower two-thirds,
+clean space above.
+
+--------------------------------------------------------------------------------
+SCENE 05 | 0:10-0:13
+--------------------------------------------------------------------------------
+VO: For five thousand years, money was a weight.
+CAPTION 1: For 5,000 years money was a weight
+CAPTION 2: not a number on a screen
+
+IMAGE PROMPT:
+Near-photorealistic still life of an antique brass balance scale on a weathered
+merchant's table, a small heap of gold grains in one pan and a cast iron weight
+in the other, tipping slowly. Warm hard side light from the right, long deep real
+shadows to the left, floating dust. Dark neutral background falling to black.
+Stylized matte cinematic grade, shallow depth of field. 9:16 vertical, scale in
+the lower two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 06 | 0:13-0:16
+--------------------------------------------------------------------------------
+VO: Gold. Silver. Salt. Cattle.
+CAPTION 1: Gold. Silver. Salt. Cattle.
+CAPTION 2: money was always a real thing
+
+IMAGE PROMPT:
+Near-photorealistic overhead flat-lay on dark aged wood: a small pile of gold
+coins with plain milled edges, a row of silver bars, a shallow bowl of coarse
+white salt, and a carved wooden ox figurine, arranged in a clean line. Hard warm
+directional light from the upper right, four distinct real shadows. Warm #F2B01E
+and cool silver highlights against deep shadow. Stylized matte cinematic grade,
+shallow depth of field. 9:16 vertical, objects in the lower two-thirds, clean
+dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 07 | 0:16-0:18
+--------------------------------------------------------------------------------
+VO: Nobody could type it into existence.
+CAPTION 1: Nobody could type it into existence
+CAPTION 2: no screen, no shortcut
+
+IMAGE PROMPT:
+Near-photorealistic close-up of an old mechanical typewriter on a dark desk, its
+carriage empty, no paper loaded, keys still. Cool daylight from a tall window at
+the left, hard real shadows raking right across the keys. Muted desaturated
+palette, dust in the air. Stylized matte cinematic grade, extremely shallow depth
+of field. 9:16 vertical, typewriter in the lower two-thirds, clean dim space
+above.
+
+--------------------------------------------------------------------------------
+SCENE 08 | 0:18-0:21
+--------------------------------------------------------------------------------
+VO: You had to dig it. Weigh it. Carry it.
+CAPTION 1: You had to dig it, weigh it, carry it
+CAPTION 2: it cost something to make
+
+IMAGE PROMPT:
+Near-photorealistic close-up of two simplified geometric hands, matte clay-like
+shading, dust and grit on the knuckles, cupping a small pile of raw unrefined
+gold nuggets over dark earth. Hard low warm sunlight from the left, deep real
+shadow under the hands, warm #F2B01E highlights on the metal. Very shallow depth
+of field, background dissolved into soft earth tones. 9:16 vertical, hands in the
+lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 09 | 0:21-0:23 | AMIR REFERENCE SHOT — GENERATE FIRST
+--------------------------------------------------------------------------------
+VO: [calm] That is what made it honest.
+CAPTION 1: That's what made it honest
+CAPTION 2: effort was built into the money
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of a male character standing full-body in a quiet
+workshop, holding a single gold coin up between thumb and forefinger at chest
+height, head tilted slightly toward it. The character has a COMPLETELY BLANK
+featureless head with no eyes, no nose, no mouth, no face at all — a smooth matte
+tan block. Simplified geometric anatomy, matte clay-like shading, soft
+subsurface material. He wears a terracotta #E85F42 t-shirt, cream #E8DCC8
+trousers, white sneakers and a cream beanie. Near-photorealistic workshop behind
+him — timber bench, hand tools on a wall rack, warm window light from the left
+casting real shadows across the floor. Shallow cinematic depth of field, subject
+centre-frame in the lower two-thirds, clean headroom above for captions. 9:16
+vertical composition.
+
+--------------------------------------------------------------------------------
+SCENE 10 | 0:23-0:26
+--------------------------------------------------------------------------------
+VO: Then paper arrived. A receipt for the gold.
+CAPTION 1: Then paper arrived
+CAPTION 2: a receipt for the gold
+
+IMAGE PROMPT:
+Near-photorealistic macro of an aged handwritten paper certificate lying on a
+polished dark wood counter, one corner curled, a small stack of gold coins
+resting on top of it as a paperweight. Hard warm side light from the right, deep
+real shadows falling left, visible paper fibre and ink texture. Stylized matte
+cinematic grade, extremely shallow depth of field. 9:16 vertical, subject in the
+lower two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 11 | 0:26-0:28
+--------------------------------------------------------------------------------
+VO: Light. Convenient. Trusted.
+CAPTION 1: Light. Convenient. Trusted.
+CAPTION 2: and everyone accepted it
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of a hand with matte clay-like shading, terracotta
+#E85F42 sleeve cuff at the frame edge, sliding a single paper certificate across
+a polished counter toward the viewer. Near-photorealistic marble counter surface
+with real reflections, bright cool daylight from above, crisp hard shadow beneath
+the paper. Shallow cinematic depth of field, background dissolved into pale bank
+interior bokeh. 9:16 vertical, hand and paper in the lower two-thirds, clean
+headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 12 | 0:28-0:31
+--------------------------------------------------------------------------------
+VO: Then one day the receipts stopped being backed.
+CAPTION 1: Then the receipts stopped being backed
+CAPTION 2: nobody announced it to you
+
+IMAGE PROMPT:
+Near-photorealistic interior of an empty bank vault, heavy circular steel door
+swung wide open, shelves completely bare, cold blue-grey #4BA3D3 light spilling
+in from outside and throwing one long hard shadow across the polished floor.
+Wide static composition, dust suspended in the light. Stylized matte cinematic
+grade, shallow depth of field. 9:16 vertical, vault door in the lower two-thirds,
+clean dim space above.
+
+--------------------------------------------------------------------------------
+SCENE 13 | 0:31-0:34
+--------------------------------------------------------------------------------
+VO: [serious] Same paper. No gold behind it.
+CAPTION 1: Same paper. No gold behind it.
+CAPTION 2: the promise quietly expired
+
+IMAGE PROMPT:
+Near-photorealistic macro of a single modern banknote lying flat on dark slate,
+lit hard from the right, with the empty space beside it where a coin's shadow
+should fall — nothing there, just bare stone. Deep raking shadow from the note
+itself, heavy contrast, muted desaturated palette. Stylized matte cinematic
+grade, extremely shallow depth of field. 9:16 vertical, note in the lower
+two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 14 | 0:34-0:36
+--------------------------------------------------------------------------------
+VO: Nothing changed on the note.
+CAPTION 1: Nothing changed on the note
+CAPTION 2: it looks identical
+
+IMAGE PROMPT:
+Near-photorealistic extreme macro of the printed surface of a banknote, filling
+the frame with engraved line-work texture, crisp and unchanged. Hard raking side
+light from the left revealing every fibre and ridge, deep micro-shadows. Muted
+neutral grade, no colour cast. Stylized matte cinematic finish, razor-thin depth
+of field. 9:16 vertical, texture running through the lower two-thirds, softer
+darker area above for captions.
+
+--------------------------------------------------------------------------------
+SCENE 15 | 0:36-0:39 | MECHANISM PAYOFF
+--------------------------------------------------------------------------------
+VO: [emphatic] Everything changed underneath it.
+CAPTION 1: Everything changed underneath it
+CAPTION 2: the backing was removed
+
+IMAGE PROMPT:
+Near-photorealistic cross-section composition: a single banknote resting on a
+sheet of glass, and directly beneath the glass a deep empty void falling away
+into blackness. Hard warm light on the note from above, cold void below, strong
+real shadow projected down into nothing. Dramatic vertical depth, heavy contrast.
+Stylized matte cinematic grade, shallow depth of field. 9:16 vertical, note in
+the lower two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 16 | 0:39-0:42
+--------------------------------------------------------------------------------
+VO: So sound money has three tests.
+CAPTION 1: Sound money has three tests
+CAPTION 2: score anything you hold against them
+
+IMAGE PROMPT:
+Near-photorealistic overhead still life of three identical blank brass tokens
+laid in a clean row on dark slate, evenly spaced. Hard directional light from
+the upper right, three crisp parallel real shadows. Warm #F2B01E metallic
+highlights against deep shadow, minimal and graphic. Stylized matte cinematic
+grade, shallow depth of field. 9:16 vertical, tokens in the lower two-thirds,
+clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 17 | 0:42-0:45
+--------------------------------------------------------------------------------
+VO: One. It is scarce. Nobody can make more on demand.
+CAPTION 1: One — it's scarce
+CAPTION 2: nobody can make more on demand
+
+IMAGE PROMPT:
+Near-photorealistic close-up of a single gold coin with plain milled edges
+sitting alone at the centre of a wide empty dark stone surface, vast bare space
+around it. Hard warm light from the right, one long deep real shadow. Warm
+#F2B01E highlight, everything else falling to black. Stylized matte cinematic
+grade, shallow depth of field. 9:16 vertical, coin in the lower two-thirds,
+clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 18 | 0:45-0:48
+--------------------------------------------------------------------------------
+VO: Two. It is durable. It survives time.
+CAPTION 1: Two — it's durable
+CAPTION 2: it survives time
+
+IMAGE PROMPT:
+Near-photorealistic macro of an ancient gold coin, edges worn smooth by
+centuries, half-buried in dry cracked earth, still bright where the light hits
+it. Hard low warm sunlight from the left, deep real shadow in the crack beside
+it, fine dust. Muted earth tones with a single warm #F2B01E highlight. Stylized
+matte cinematic grade, extremely shallow depth of field. 9:16 vertical, coin in
+the lower two-thirds, clean space above.
+
+--------------------------------------------------------------------------------
+SCENE 19 | 0:48-0:52
+--------------------------------------------------------------------------------
+VO: Three. It is yours. You hold it — not a promise to pay you.
+CAPTION 1: Three — it's yours
+CAPTION 2: you hold it, not a promise
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of a closed fist, matte clay-like shading, terracotta
+#E85F42 sleeve cuff at the frame edge, gripping something unseen, with the warm
+glint of gold escaping between the fingers. Near-photorealistic lighting, hard
+key from the right, deep real shadow to the left, dark neutral background.
+Shallow cinematic depth of field. 9:16 vertical, fist in the lower two-thirds,
+clean dark headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 20 | 0:52-0:55
+--------------------------------------------------------------------------------
+VO: [emphatic] If someone else can print it, it was never yours.
+CAPTION 1: If someone else can print it
+CAPTION 2: it was never really yours
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of a banker seated behind a polished dark wood desk,
+one hand resting on the lever of a small printing press beside him. The character
+has a COMPLETELY BLANK featureless head with no eyes, no nose, no mouth — a
+smooth matte tan block. He wears a deep navy #1E3A5F suit with no tie and a navy
+bucket hat. Matte clay-like shading, simplified geometric anatomy.
+Near-photorealistic office interior, tall window behind flooding cool daylight
+forward, real cast shadows across the desk. Low camera angle looking slightly up
+at him. Shallow cinematic depth of field. 9:16 vertical, subject in the lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 21 | 0:55-0:57
+--------------------------------------------------------------------------------
+VO: So what do you actually hold?
+CAPTION 1: So what do you actually hold?
+CAPTION 2: here's the practical part
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of AMIR standing at a kitchen counter, both empty
+palms turned up in front of him at waist height, head tilted slightly down toward
+them. COMPLETELY BLANK featureless head, no eyes, no nose, no mouth — smooth
+matte tan block. Terracotta #E85F42 t-shirt, cream #E8DCC8 trousers, cream
+beanie. Matte clay-like shading, simplified geometric anatomy.
+Near-photorealistic warm kitchen interior, morning light from a window at the
+right, real cast shadows across the counter. Shallow cinematic depth of field.
+9:16 vertical, subject in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 22 | 0:57-0:59
+--------------------------------------------------------------------------------
+VO: Hold the rule, not the hype.
+CAPTION 1: Hold the rule, not the hype
+CAPTION 2: assets change, the rule doesn't
+
+IMAGE PROMPT:
+Near-photorealistic still life of a heavy stone tablet resting flat on dark
+slate, its surface deliberately blank and smooth, reserved for a text overlay to
+be added in post. Hard directional light from the upper left, deep real shadow
+falling right, visible stone grain. Muted neutral grade with a single warm
+accent. Stylized matte cinematic finish, shallow depth of field. 9:16 vertical,
+tablet in the lower two-thirds, clean dark space above.
+
+[POST] Overlay the rule text on the tablet face.
+
+--------------------------------------------------------------------------------
+SCENE 23 | 0:59-1:02 | EMOTIONAL PEAK — THUMBNAIL CANDIDATE
+--------------------------------------------------------------------------------
+VO: Hold what cannot be diluted.
+CAPTION 1: Hold what cannot be diluted
+CAPTION 2: that's the whole strategy
+
+IMAGE PROMPT:
+Near-photorealistic still life of a small brass balance scale resting perfectly
+level, a plain gold coin in one pan and a folded banknote in the other, the gold
+side holding steady. Hard warm directional side light from the right, deep real
+shadows falling left, warm #F2B01E metallic highlights. Dark neutral background
+falling to black. Calm, resolved, symmetrical. Stylized matte cinematic grade,
+shallow depth of field. 9:16 vertical, scale in the lower two-thirds, clean dark
+space above.
+
+--------------------------------------------------------------------------------
+SCENE 24 | 1:02-1:05
+--------------------------------------------------------------------------------
+VO: Weight you control. Gold. Silver. In your hand.
+CAPTION 1: Weight you control
+CAPTION 2: gold and silver, in your hand
+
+IMAGE PROMPT:
+Near-photorealistic close-up of an open palm, stylized low-poly geometry with
+matte clay-like shading, holding two plain gold coins and one small silver bar,
+terracotta #E85F42 sleeve cuff at the frame edge. Milled edges, blank classical
+faces, absolutely no stamped letters or symbols. Hard warm key light from the
+right, deep real shadow beneath the hand, warm #F2B01E and cool silver
+highlights. Very shallow depth of field, dark neutral background. 9:16 vertical,
+hand in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 25 | 1:05-1:08
+--------------------------------------------------------------------------------
+VO: Ownership that earns. A business. A skill. A tool.
+CAPTION 1: Ownership that earns
+CAPTION 2: a business, a skill, a tool
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of AMIR working at a timber workbench, both hands on
+a hand plane mid-stroke, shavings curling off the wood. COMPLETELY BLANK
+featureless head, no eyes, no nose, no mouth — smooth matte tan block. Terracotta
+#E85F42 t-shirt, cream #E8DCC8 trousers, cream beanie. Matte clay-like shading.
+Near-photorealistic workshop, warm afternoon light from a high window at the
+left, real cast shadows and floating sawdust in the beam. Shallow cinematic depth
+of field. 9:16 vertical, subject in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 26 | 1:08-1:11
+--------------------------------------------------------------------------------
+VO: A home you live in — not one that owns you.
+CAPTION 1: A home you live in
+CAPTION 2: not one that owns you
+
+IMAGE PROMPT:
+Near-photorealistic wide shot of a modest suburban house frontage at golden hour,
+front door open, warm light spilling from inside, a pair of shoes on the step.
+Cream painted walls, tiled roof, low warm sunlight raking across the path casting
+long soft real shadows. Saturated warm sky #4BA3D3 fading to gold at the horizon.
+Stylized matte cinematic grade, shallow depth of field. 9:16 vertical, house in
+the lower two-thirds, clean sky above.
+
+--------------------------------------------------------------------------------
+SCENE 27 | 1:11-1:13
+--------------------------------------------------------------------------------
+VO: [serious] And avoid the trap.
+CAPTION 1: And avoid the trap
+CAPTION 2: most people walk straight into it
+
+IMAGE PROMPT:
+Near-photorealistic close-up of a gold coin resting on the trigger plate of an
+old steel spring trap, set and waiting, on dark weathered timber. Hard cold light
+from the left, deep hard real shadow to the right, cool #4BA3D3 rim on the steel
+against the warm #F2B01E coin. Tense, still. Stylized matte cinematic grade,
+extremely shallow depth of field. 9:16 vertical, trap in the lower two-thirds,
+clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 28 | 1:13-1:17
+--------------------------------------------------------------------------------
+VO: Borrowing at interest to escape inflation... feeds inflation.
+CAPTION 1: Borrowing at interest to escape inflation
+CAPTION 2: only feeds inflation
+
+IMAGE PROMPT:
+Near-photorealistic composition of a closed loop of heavy chain lying on dark
+slate, each link identical, forming a perfect circle with no beginning and no
+end. Hard directional light from the upper right, deep real shadows inside every
+link, cold steel tones against black. Graphic, symmetrical, oppressive. Stylized
+matte cinematic grade, shallow depth of field. 9:16 vertical, chain in the lower
+two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 29 | 1:17-1:21
+--------------------------------------------------------------------------------
+VO: Interest is the engine that shrank the money in the first place.
+CAPTION 1: Interest is the engine
+CAPTION 2: it shrank the money to begin with
+
+IMAGE PROMPT:
+Near-photorealistic close-up of heavy industrial gears turning inside a dark
+machine housing, banknotes feeding in at one side and coming out visibly thinner
+and smaller at the other. Hard cool light from a single overhead source, deep
+real shadows in the machinery, oil sheen on the metal. Muted desaturated palette
+with one warm highlight. Stylized matte cinematic grade, shallow depth of field.
+9:16 vertical, machine in the lower two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 30 | 1:21-1:25
+--------------------------------------------------------------------------------
+VO: [calm] Keep a few months of cash for life. No more.
+CAPTION 1: Keep a few months of cash for life
+CAPTION 2: no more than that
+
+IMAGE PROMPT:
+Near-photorealistic overhead still life of a small neat stack of banknotes inside
+a plain envelope on a kitchen table, deliberately modest, beside a set of house
+keys. Warm morning light from the right, soft real shadows, cream #E8DCC8 table
+runner beneath. Calm, domestic, ordered. Stylized matte cinematic grade, shallow
+depth of field. 9:16 vertical, subject in the lower two-thirds, clean space
+above.
+
+--------------------------------------------------------------------------------
+SCENE 31 | 1:25-1:29
+--------------------------------------------------------------------------------
+VO: Turn the rest into weight, ownership, and skill.
+CAPTION 1: Turn the rest into weight
+CAPTION 2: ownership, and skill
+
+IMAGE PROMPT:
+Near-photorealistic overhead flat-lay on warm timber: a small stack of plain gold
+coins, a set of house keys, and a well-used hand tool arranged in a clean
+triangle. Hard warm directional light from the upper right, three distinct real
+shadows. Warm #F2B01E highlights, cream #E8DCC8 cloth beneath. Ordered,
+purposeful. Stylized matte cinematic grade, shallow depth of field. 9:16
+vertical, objects in the lower two-thirds, clean space above.
+
+--------------------------------------------------------------------------------
+SCENE 32 | 1:29-1:33 | END CARD
+--------------------------------------------------------------------------------
+VO: [warmly] Your money should hold its weight. Now it can. Follow — the series continues.
+CAPTION 1: Your money should hold its weight
+CAPTION 2: follow — the series continues
+
+IMAGE PROMPT:
+Heavily blurred near-photorealistic golden-hour suburban house frontage as a soft
+background plate, warm amber and cream tones, strong bokeh, no sharp detail
+anywhere. Clean empty centre of frame reserved for a logo overlay to be added in
+post. Warm, calm, inviting. Stylized matte cinematic grade. 9:16 vertical
+composition, even blur across the full frame.
+
+[POST] Composite the channel logo centred, plus handle and series title beneath.
+
+
+================================================================================
+CAPTION BURN-IN SPEC
+================================================================================
+
+LINE 1 (top)    : white #FFFFFF, Montserrat or Inter Bold 700, sentence case,
+                  on a solid #000000 box, tight padding, box sized to the text
+                  (not full width)
+LINE 2 (below)  : soft gold #F5D76E, ITALIC, own solid #000000 box, offset
+                  approximately 20px to the left of line 1
+POSITION        : lower third, above the YouTube UI band — keep clear of the
+                  bottom 250px of a 1920px tall frame
+BEHAVIOUR       : STATIC per phrase. No karaoke. No word-by-word pop. No colour
+                  highlighting. No scaling or bouncing.
+EMPHASIS        : italics only
+TIMING          : swap on the speaker's natural clause break — the caption change
+                  and the picture cut land together
+
+Enable a multi-language audio track on upload. That is what produces YouTube's
+"Auto-dubbed" chip, and it is free additional reach.
+
+
+================================================================================
+EDIT & ASSEMBLY
+================================================================================
+
+1. Record the VO first. The cut follows speech cadence, so scene timings will
+   shift to match the actual delivery. Treat the timecodes above as a guide.
+2. Generate scene 09, approve AMIR, lock the seed, then generate everything else.
+3. HARD CUTS ONLY. No dissolves, no whip pans, no zoom transitions, no glitch.
+4. Slow push-in or lateral drift on every scene. Nothing fully static.
+5. Film grain overlay across the master.
+6. Burn in captions per the spec above.
+7. Open with a one-second callback beat to Part 14 if the hook allows — but the
+   short must still work standalone for a viewer who never saw Part 14.
+8. Master to media/sound-money-edited.mp4, captions to media/sound-money.srt.
+
+RETENTION CHECKPOINTS
+  Scenes 01-04  the hook. Must create the mystery inside 3 seconds. If this
+                doesn't land, nothing else matters.
+  Scene 15      the mechanism payoff. The one frame that has to be understood.
+  Scene 23      emotional peak and best thumbnail candidate.
+
+================================================================================

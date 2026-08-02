@@ -1,0 +1,46 @@
+---
+name: Upload Part 15 (Sound Money)
+
+# Same shape as upload-part14.yml, but points upload_video.py at part15.json
+# via UPLOAD_CONFIG. part15.json carries no publish_at, so the video goes live
+# immediately on upload — Part 15 is the payoff to Part 14 and wants to land
+# while Part 14 is still circulating.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "upload = upload & publish; comment = post engagement comment"
+        type: choice
+        options: [upload, comment]
+        default: upload
+      video_id:
+        description: "Video ID (comment mode only)"
+        required: false
+        default: ""
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r automation/requirements.txt
+      - name: Upload video
+        if: ${{ inputs.mode == 'upload' }}
+        run: python automation/upload_video.py
+        env:
+          UPLOAD_CONFIG: part15.json
+          YT_CLIENT_ID: ${{ secrets.new1 }}
+          YT_CLIENT_SECRET: ${{ secrets.new2 }}
+          YT_REFRESH_TOKEN: ${{ secrets.new3 }}
+      - name: Post engagement comment
+        if: ${{ inputs.mode == 'comment' }}
+        run: python automation/upload_video.py --comment "${{ inputs.video_id }}"
+        env:
+          UPLOAD_CONFIG: part15.json
+          YT_CLIENT_ID: ${{ secrets.new1 }}
+          YT_CLIENT_SECRET: ${{ secrets.new2 }}
+          YT_REFRESH_TOKEN: ${{ secrets.new3 }}
