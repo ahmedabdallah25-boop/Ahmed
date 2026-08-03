@@ -8,7 +8,7 @@ out = []
 i = 0
 RULE = re.compile(r'^[=-]{20,}$')
 SCENE = re.compile(r'^SCENE (\d\d) \| (\d:\d\d)-(\d:\d\d) \| (.+)$')
-FIELD = re.compile(r'^(VO|CAPTION 1|CAPTION 2|ACTION|IMAGE PROMPT|\[POST\]):?\s*(.*)$')
+FIELD = re.compile(r'^(VO|CAPTION 1|CAPTION 2|ACTION|IMAGE PROMPT|NEGATIVE|\[POST\]):?\s*(.*)$')
 
 def esc(t):
     return html.escape(t)
@@ -65,6 +65,8 @@ while k < n:
             elif key.startswith('CAPTION'):
                 cls = 'cap1' if key.endswith('1') else 'cap2'
                 rows.append('<div class="%s"><span>%s</span></div>' % (cls, esc(val)))
+            elif key == 'NEGATIVE':
+                rows.append('<div class="neg"><span class="lbl">NEGATIVE</span>%s</div>' % esc(val))
             elif key in ('ACTION', 'IMAGE PROMPT'):
                 rows.append('<div class="action"><span class="lbl">PROMPT</span>%s</div>' % esc(val))
             else:
@@ -132,6 +134,8 @@ pre.body { font-family: "DejaVu Sans Mono", monospace; font-size: 8.6pt; line-he
 .cap2 { margin-left: -3mm; margin-top: .8mm; }
 .cap2 span { color: #f5d76e; font-style: italic; }
 .action { margin-top: 2.5mm; font-size: 9pt; color: #44444c; }
+.neg { margin-top: 2mm; font-size: 7.6pt; color: #8a8a94; line-height: 1.4;
+     border-top: .5pt dotted #d8d8de; padding-top: 1.6mm; }
 .post { margin-top: 2mm; font-size: 8.6pt; color: #44444c; }
 .lbl { display: inline-block; font-size: 7pt; letter-spacing: .14em; font-weight: 700;
      color: #9a9aa4; margin-right: 2mm; vertical-align: 1pt; }

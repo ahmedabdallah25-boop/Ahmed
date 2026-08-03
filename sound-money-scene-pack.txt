@@ -32,7 +32,7 @@ illumination, gentle rim light, matte cinematic grade, shallow depth of field,
 ACTION:
 
 --------------------------------------------------------------------------------
-NEGATIVE PROMPT — paste once into the negative field, applies to ALL 26 scenes
+NEGATIVE PROMPT — now carried on every scene below; this is the master copy
 --------------------------------------------------------------------------------
 facial features, eyes, mouth, nose, lips, eyebrows, face, portrait, cartoon
 outlines, cel shading, flat vector, anime, 2D illustration, text, watermark,
@@ -41,8 +41,12 @@ resolution, oversaturated, plastic sheen, uncanny
 
 Unchanged from Part 14 — same character, same look, same negative field.
 
-ONE EXCEPTION: Scene 26, the end card, is deliberately a heavily blurred plate.
-Remove "blurry" from the negative field for that shot only, then put it back.
+Every scene below carries its own NEGATIVE line, so each block is a complete
+job: paste the IMAGE PROMPT, paste the NEGATIVE, generate. Nothing to assemble.
+
+ONE EXCEPTION, already applied: Scene 26, the end card, is deliberately a
+heavily blurred plate, so "blurry" is dropped from that scene's negative line.
+It is the only scene whose negative differs.
 
 --------------------------------------------------------------------------------
 WHY THIS IS THE NEXT VIDEO
@@ -132,6 +136,11 @@ tan block — and simple modern wardrobe. Muted charcoal and warm tan palette,
 soft global illumination, gentle rim light, matte cinematic grade, shallow depth
 of field, 9:16 vertical composition, subtle film grain.
 
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
+
 --------------------------------------------------------------------------------
 SCENE 02 | 0:03-0:06 | THE PARADOX
 --------------------------------------------------------------------------------
@@ -147,6 +156,11 @@ and simple modern wardrobe. Muted charcoal and warm tan palette, soft global
 illumination, gentle rim light, matte cinematic grade, shallow depth of field,
 9:16 vertical composition, subtle film grain.
 
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
+
 --------------------------------------------------------------------------------
 SCENE 03 | 0:06-0:09 | THE THREAT
 --------------------------------------------------------------------------------
@@ -158,6 +172,11 @@ lying flat on a dark table where a gold bar should be, curling and shrinking in
 on itself, the space around it darkening. Muted charcoal and warm tan palette,
 soft global illumination, gentle rim light, matte cinematic grade, shallow depth
 of field, 9:16 vertical composition, subtle film grain.
+
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
 
 --------------------------------------------------------------------------------
 SCENE 04 | 0:09-0:13 | QUICK RECAP — DIRECT ADDRESS
@@ -173,6 +192,11 @@ matte tan block — and simple modern wardrobe. Muted charcoal and warm tan
 palette, soft global illumination, gentle rim light, matte cinematic grade,
 shallow depth of field, 9:16 vertical composition, subtle film grain.
 
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
+
 --------------------------------------------------------------------------------
 SCENE 05 | 0:13-0:15 | RECAP PAYOFF + THE TURN
 --------------------------------------------------------------------------------
@@ -186,6 +210,11 @@ Muted charcoal and warm tan palette, soft global illumination, gentle rim light,
 matte cinematic grade, shallow depth of field, 9:16 vertical composition, subtle
 film grain.
 
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
+
 --------------------------------------------------------------------------------
 SCENE 06 | 0:15-0:18 | KILL THE WRONG FIX
 --------------------------------------------------------------------------------
@@ -196,6 +225,11 @@ on it, the paper visibly thinning and going translucent at the edges as the
 arrow climbs. Muted charcoal and warm tan palette, soft global illumination,
 gentle rim light, matte cinematic grade, shallow depth of field, 9:16 vertical
 composition, subtle film grain.
+
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
 
 --------------------------------------------------------------------------------
 SCENE 07 | 0:18-0:21 | WHY
@@ -208,6 +242,11 @@ with clear water pouring in from above, the colour draining pale as the level
 rises. Muted charcoal and warm tan palette, soft global illumination, gentle rim
 light, matte cinematic grade, shallow depth of field, 9:16 vertical composition,
 subtle film grain.
+
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
 
 --------------------------------------------------------------------------------
 SCENE 08 | 0:21-0:24 | THE THESIS
@@ -222,6 +261,11 @@ charcoal and warm tan palette, soft global illumination, gentle rim light, matte
 cinematic grade, shallow depth of field, 9:16 vertical composition, subtle film
 grain.
 
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
+
 --------------------------------------------------------------------------------
 SCENE 09 | 0:24-0:26 | THE FRAME
 --------------------------------------------------------------------------------
@@ -232,6 +276,11 @@ IMAGE PROMPT: Stylized low-poly 3D render. Two blank low-poly plinths side by
 side in an empty warm-grey space, both tops empty, waiting. Muted charcoal and
 warm tan palette, soft global illumination, gentle rim light, matte cinematic
 grade, shallow depth of field, 9:16 vertical composition, subtle film grain.
+
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
 
 --------------------------------------------------------------------------------
 SCENE 10 | 0:26-0:29 | RULE ONE
@@ -244,6 +293,11 @@ Muted charcoal and warm tan palette, soft global illumination, gentle rim light,
 matte cinematic grade, shallow depth of field, 9:16 vertical composition, subtle
 film grain.
 
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
+
 --------------------------------------------------------------------------------
 SCENE 11 | 0:29-0:32 | SCARCE, PROVEN
 --------------------------------------------------------------------------------
@@ -254,6 +308,11 @@ hard on a document and passing straight through it, striking bare stone beneath,
 leaving no mark. Muted charcoal and warm tan palette, soft global illumination,
 gentle rim light, matte cinematic grade, shallow depth of field, 9:16 vertical
 composition, subtle film grain.
+
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
 
 --------------------------------------------------------------------------------
 SCENE 12 | 0:32-0:35 | THE COST
@@ -266,6 +325,11 @@ it. Muted charcoal and warm tan palette, soft global illumination, gentle rim
 light, matte cinematic grade, shallow depth of field, 9:16 vertical composition,
 subtle film grain.
 
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
+
 --------------------------------------------------------------------------------
 SCENE 13 | 0:35-0:38 | RULE TWO
 --------------------------------------------------------------------------------
@@ -275,6 +339,11 @@ IMAGE PROMPT: Stylized low-poly 3D render. The right plinth lights up and holds
 a small locked strongbox; both plinths now lit, symmetrical. Muted charcoal and
 warm tan palette, soft global illumination, gentle rim light, matte cinematic
 grade, shallow depth of field, 9:16 vertical composition, subtle film grain.
+
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
 
 --------------------------------------------------------------------------------
 SCENE 14 | 0:38-0:40 | THE TRAP OPENS
@@ -290,6 +359,11 @@ charcoal and warm tan palette, soft global illumination, gentle rim light, matte
 cinematic grade, shallow depth of field, 9:16 vertical composition, subtle film
 grain.
 
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
+
 --------------------------------------------------------------------------------
 SCENE 15 | 0:40-0:43 | THE TRAP NAMED
 --------------------------------------------------------------------------------
@@ -303,6 +377,11 @@ a smooth matte tan block — and simple modern wardrobe. Muted charcoal and warm
 tan palette, soft global illumination, gentle rim light, matte cinematic grade,
 shallow depth of field, 9:16 vertical composition, subtle film grain.
 
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
+
 --------------------------------------------------------------------------------
 SCENE 16 | 0:43-0:46 | THE THREE WRAPPERS
 --------------------------------------------------------------------------------
@@ -315,6 +394,11 @@ number. No metal anywhere in frame. Muted charcoal and warm tan palette, soft
 global illumination, gentle rim light, matte cinematic grade, shallow depth of
 field, 9:16 vertical composition, subtle film grain.
 
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
+
 --------------------------------------------------------------------------------
 SCENE 17 | 0:46-0:49 | *** MECHANISM PAYOFF ***
 --------------------------------------------------------------------------------
@@ -326,6 +410,11 @@ by side on the same table; the bar casts a heavy solid shadow, the certificate
 casts none at all. Muted charcoal and warm tan palette, soft global
 illumination, gentle rim light, matte cinematic grade, shallow depth of field,
 9:16 vertical composition, subtle film grain.
+
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
 
 --------------------------------------------------------------------------------
 SCENE 18 | 0:49-0:52 | WHO HOLDS IT
@@ -341,6 +430,11 @@ tan block — and simple modern wardrobe. Muted charcoal and warm tan palette,
 soft global illumination, gentle rim light, matte cinematic grade, shallow depth
 of field, 9:16 vertical composition, subtle film grain.
 
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
+
 --------------------------------------------------------------------------------
 SCENE 19 | 0:52-0:55 | THE LOOP CLOSES
 --------------------------------------------------------------------------------
@@ -354,6 +448,11 @@ wardrobe. Muted charcoal and warm tan palette, soft global illumination, gentle
 rim light, matte cinematic grade, shallow depth of field, 9:16 vertical
 composition, subtle film grain.
 
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
+
 --------------------------------------------------------------------------------
 SCENE 20 | 0:55-0:58 | THE PRINCIPLE
 --------------------------------------------------------------------------------
@@ -365,6 +464,11 @@ pale dust in still air beside a gold bar that does not change at all. Muted
 charcoal and warm tan palette, soft global illumination, gentle rim light, matte
 cinematic grade, shallow depth of field, 9:16 vertical composition, subtle film
 grain.
+
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
 
 --------------------------------------------------------------------------------
 SCENE 21 | 0:58-1:03 | THE RULE (EMOTIONAL PEAK — THUMBNAIL CANDIDATE)
@@ -379,6 +483,11 @@ Muted charcoal and warm tan palette, soft global illumination, gentle rim light,
 matte cinematic grade, shallow depth of field, 9:16 vertical composition, subtle
 film grain.
 
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
+
 --------------------------------------------------------------------------------
 SCENE 22 | 1:03-1:07 | THE RULE, SHARPENED
 --------------------------------------------------------------------------------
@@ -391,6 +500,11 @@ gap. Muted charcoal and warm tan palette, soft global illumination, gentle rim
 light, matte cinematic grade, shallow depth of field, 9:16 vertical composition,
 subtle film grain.
 
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
+
 --------------------------------------------------------------------------------
 SCENE 23 | 1:07-1:10 | THE AGE OF IT
 --------------------------------------------------------------------------------
@@ -402,6 +516,11 @@ stone, a single gold coin holding it flat, warm side light raking across the
 surface. Muted charcoal and warm tan palette, soft global illumination, gentle
 rim light, matte cinematic grade, shallow depth of field, 9:16 vertical
 composition, subtle film grain.
+
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
 
 --------------------------------------------------------------------------------
 SCENE 24 | 1:10-1:15 | THE INSTRUCTION
@@ -417,6 +536,11 @@ simple modern wardrobe. Muted charcoal and warm tan palette, soft global
 illumination, gentle rim light, matte cinematic grade, shallow depth of field,
 9:16 vertical composition, subtle film grain.
 
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
+
 --------------------------------------------------------------------------------
 SCENE 25 | 1:15-1:23 | BEYOND METAL
 --------------------------------------------------------------------------------
@@ -431,6 +555,11 @@ tan block — and simple modern wardrobe. Muted charcoal and warm tan palette,
 soft global illumination, gentle rim light, matte cinematic grade, shallow depth
 of field, 9:16 vertical composition, subtle film grain.
 
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, blurry,
+low resolution, oversaturated, plastic sheen, uncanny
+
 --------------------------------------------------------------------------------
 SCENE 26 | 1:23-1:31 | CLOSE + END CARD
 --------------------------------------------------------------------------------
@@ -442,6 +571,11 @@ interior as a soft background plate, strong bokeh, no sharp detail, clean empty
 centre of frame reserved for the logo overlay added in post. Muted charcoal and
 warm tan palette, soft global illumination, gentle rim light, matte cinematic
 grade, shallow depth of field, 9:16 vertical composition, subtle film grain.
+
+NEGATIVE: facial features, eyes, mouth, nose, lips, eyebrows, face, portrait,
+cartoon outlines, cel shading, flat vector, anime, 2D illustration, text,
+watermark, logo, signature, distorted hands, extra limbs, extra fingers, low
+resolution, oversaturated, plastic sheen, uncanny
 
 [POST] Composite the channel logo centred, plus handle and series title beneath —
 identical placement to Part 14 Scene 37.
