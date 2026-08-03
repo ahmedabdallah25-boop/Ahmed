@@ -18,6 +18,7 @@ Data pulled 2026-07-17 from public YouTube data via Nexlev.
 | [`next-slate.md`](next-slate.md) | The next 10 uploads, pitched title-first — title, frame one, line one and payoff locked before anything is produced |
 | [`channel-study.md`](channel-study.md) | Full channel performance study: what the winners share, why the insurance arc is slumping |
 | [`last-video-fix.md`](last-video-fix.md) | Copy-paste fix pack for the latest Short (Part 12 — Takaful): new title, description, tags, pinned comment, re-cut hook script, and a 72-hour decision rule |
+| [`.github/QWEN.md`](.github/QWEN.md) | Image and video generation with Qwen-Image and Wan — the b-roll and thumbnail prompts in this repo, turned into files from the Actions tab |
 | [`automation/`](automation/) | **The pipeline that applies all of it automatically** — scripts + GitHub Actions. One-time key setup in [`automation/SETUP.md`](automation/SETUP.md) (~10 min), then: metadata fix, comment posting, playlist-link repair across all 12 videos, and a 6-hourly monitor that applies the 72-hour decision rule |
 
 ## TL;DR

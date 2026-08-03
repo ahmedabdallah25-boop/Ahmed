@@ -1,0 +1,126 @@
+{
+  "_comment": "Jobs for automation/qwen_media.py. Model names and sizes are Alibaba Model Studio's, and they change between releases — if a run returns InvalidParameter, check the current names in the Model Studio model list and edit them here. Nothing else in the script hardcodes them.",
+
+  "endpoint": "https://dashscope-intl.aliyuncs.com",
+  "out_dir": "media/qwen",
+  "poll_seconds": 10,
+  "timeout_seconds": 900,
+
+  "image": {
+    "model": "qwen-image",
+    "size": "1664*928",
+    "n": 1,
+    "prompt_extend": false,
+    "watermark": false
+  },
+
+  "video": {
+    "model": "wan2.6-t2v",
+    "resolution": "1080P",
+    "duration": 5,
+    "prompt_extend": true,
+    "watermark": false
+  },
+
+  "house_style": "Cinematic still, single soft key light from the left, deep near-black background (#06080B), muted desaturated palette with one warm amber accent, shallow depth of field, 50mm, subtle film grain, cool neutral grade, editorial product-photography feel, 16:9",
+
+  "negative_prompt": "text, lettering, logos, watermarks, brand names, faces, people looking at camera, hands with distorted fingers, currency symbols, stock-photo smiles, HDR glow, oversaturation, clutter, tilted horizon, cartoon, illustration",
+
+  "jobs": [
+    {
+      "name": "ep2-broll-01",
+      "kind": "image",
+      "prompt": "A single house key resting on a folded mortgage offer letter, blurred paperwork behind, one amber highlight along the key's edge"
+    },
+    {
+      "name": "ep2-broll-02",
+      "kind": "image",
+      "prompt": "A bank cheque book and a fountain pen on a dark desk beside a set of house keys, the keys slightly out of focus and further away"
+    },
+    {
+      "name": "ep2-broll-03",
+      "kind": "image",
+      "prompt": "Close macro of an official land-title register page under raking light, a red wax-style seal at the edge, most of the page falling into shadow"
+    },
+    {
+      "name": "ep2-broll-04",
+      "kind": "image",
+      "prompt": "A cracked ceiling corner with a water stain, rain visible through a window behind it, cold blue light, no people"
+    },
+    {
+      "name": "ep2-broll-05",
+      "kind": "image",
+      "prompt": "An antique brass balance scale in perfect equilibrium on a dark surface, two empty pans, one amber rim light, nothing else in frame"
+    },
+    {
+      "name": "ep2-broll-06",
+      "kind": "image",
+      "prompt": "A merchant's hardbound ledger open to a blank column of ruled lines, a small brass price tag lying on the page"
+    },
+    {
+      "name": "ep2-broll-07",
+      "kind": "image",
+      "prompt": "Two hands mid-exchange of a single key over a signed contract, cropped at the wrists, warm amber key light, dark background"
+    },
+    {
+      "name": "ep2-broll-08",
+      "kind": "image",
+      "prompt": "A tenancy agreement in a document wallet on a windowsill, a bunch of keys sitting on top, rain-blurred window behind"
+    },
+    {
+      "name": "ep2-broll-09",
+      "kind": "image",
+      "prompt": "A boiler access panel open with a spanner resting against it in a dim utility cupboard, dust in the light beam"
+    },
+    {
+      "name": "ep2-broll-10",
+      "kind": "image",
+      "prompt": "Two identical sets of house keys side by side on a dark slate surface, equal light on both, one amber accent between them"
+    },
+    {
+      "name": "ep2-broll-11",
+      "kind": "image",
+      "prompt": "A fountain pen hovering over a signature line on a thick contract, the page shot at a low angle so most of it is dark"
+    },
+    {
+      "name": "ep2-broll-12",
+      "kind": "image",
+      "prompt": "Row of modest British terraced houses at blue hour, lit windows, damp pavement reflecting amber street light, shot from across the road"
+    },
+
+    {
+      "_comment": "Part 14 thumbnails. Self-contained prompts from inflation-thumbnail-prompts.md, so they opt out of the house style and carry that file's negative prompt. 9:16 for the Shorts grid. A is the recommended one.",
+      "name": "part14-thumb-A",
+      "kind": "image",
+      "no_style": true,
+      "parameters": { "size": "928*1664" },
+      "negative_prompt": "facial features, eyes, mouth, nose, lips, eyebrows, face, portrait, cartoon outlines, cel shading, flat vector, anime, 2D illustration, text, watermark, logo, signature, lettering, numbers, distorted hands, extra limbs, extra fingers, blurry, low resolution, oversaturated, plastic sheen, uncanny, cryptocurrency, bitcoin, crypto coin, digital currency symbol",
+      "prompt": "Near-photorealistic symmetrical split composition on a plain pale concrete surface: on the left, a tall towering stack of banded paper banknotes rising up and out of the top of the frame; on the right, one single round rustic sourdough loaf sitting alone. Equal visual weight, stark and deliberate, a large empty gap of bare concrete between them. Hard directional side light from the left casting two long parallel real shadows across the concrete to the right. Muted cool concrete grey against warm banknote and golden crust tones. Stylized matte cinematic grade, medium depth of field, both subjects sharp. Shot from a low three-quarter angle. 9:16 vertical composition, both subjects sitting in the lower two-thirds, upper third left as clean empty concrete and soft shadow for a text overlay."
+    },
+    {
+      "name": "part14-thumb-B",
+      "kind": "image",
+      "no_style": true,
+      "parameters": { "size": "928*1664" },
+      "negative_prompt": "facial features, eyes, mouth, nose, lips, eyebrows, face, portrait, cartoon outlines, cel shading, flat vector, anime, 2D illustration, text, watermark, logo, signature, lettering, numbers, distorted hands, extra limbs, extra fingers, blurry, low resolution, oversaturated, plastic sheen, uncanny, cryptocurrency, bitcoin, crypto coin, digital currency symbol",
+      "prompt": "Near-photorealistic wide low-angle shot of a lone stylized low-poly 3D male character standing small and centred on a vast empty pale concrete expanse beneath an enormous saturated blue sky that fills most of the frame. The character has a COMPLETELY BLANK featureless head with no eyes, no nose, no mouth, no face at all — a smooth matte tan block. Simplified geometric anatomy, matte clay-like shading, soft subsurface material. He wears a terracotta #E85F42 t-shirt, cream #E8DCC8 trousers, white sneakers and a cream beanie. Hard midday sun casting one long dramatic real shadow stretching behind him across the concrete. Scale and isolation emphasised, slight wide-angle lens. Stylized matte cinematic grade. 9:16 vertical composition, character positioned in the lower third and rendered large enough to read clearly at thumbnail size, enormous clean unbroken sky above for a text overlay."
+    },
+    {
+      "name": "part14-thumb-C",
+      "kind": "image",
+      "no_style": true,
+      "parameters": { "size": "928*1664" },
+      "negative_prompt": "facial features, eyes, mouth, nose, lips, eyebrows, face, portrait, cartoon outlines, cel shading, flat vector, anime, 2D illustration, text, watermark, logo, signature, lettering, numbers, distorted hands, extra limbs, extra fingers, blurry, low resolution, oversaturated, plastic sheen, uncanny, cryptocurrency, bitcoin, crypto coin, digital currency symbol",
+      "prompt": "Near-photorealistic still life of one plain gold bullion coin and one plain silver bullion coin resting together on dark textured cloth, both coins blank and unmarked with only a finely milled reeded edge and a smooth polished face — absolutely no symbols, no emblems, no letters, no numbers stamped on either coin. Hard raking light from the left picking out the milled edges and deep metallic lustre, rich shadow falling to the right. Warm gold and cool silver against near-black fabric. Extremely shallow depth of field, background falling away to darkness. Stylized matte cinematic grade. 9:16 vertical composition, coins sitting in the upper two-thirds, lower third left as clean near-black fabric and shadow for a text overlay."
+    },
+
+    {
+      "_comment": "One moving b-roll plate, to test whether Wan clips beat stills under the type. 9:16 so it drops straight into a Short.",
+      "name": "ep2-motion-scale",
+      "kind": "video",
+      "parameters": { "ratio": "9:16", "duration": 5 },
+      "style": "Cinematic, single soft key light from the left, deep near-black background (#06080B), muted desaturated palette with one warm amber accent, shallow depth of field, 50mm, subtle film grain, cool neutral grade, 9:16 vertical",
+      "prompt": "Slow 5% push in on an antique brass balance scale settling into perfect equilibrium on a dark surface, two empty pans, dust drifting through one amber rim light, camera locked off, nothing else in frame"
+    }
+  ]
+}

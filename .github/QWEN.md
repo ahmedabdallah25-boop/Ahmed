@@ -1,46 +1,85 @@
-# Qwen in GitHub
+# Qwen for images and video
 
-[`workflows/qwen.yml`](workflows/qwen.yml) runs [Qwen Code](https://github.com/QwenLM/qwen-code-action)
-inside this repository. Mention **`@qwen`** in an issue, an issue comment, or a pull-request
-review comment and it reads the checked-out repo and answers in the same thread.
+Alibaba's media models, wired into this repo: **Qwen-Image** for stills (b-roll plates,
+thumbnail plates) and **Wan** for short clips. The prompt docs in this repo were already
+written for a generator — this turns them into files without anyone pasting prompts by hand.
+
+| Piece | What it is |
+|---|---|
+| [`automation/qwen-media.json`](../automation/qwen-media.json) | The job list — every prompt, plus the house style, negative prompt, models and sizes |
+| [`automation/qwen_media.py`](../automation/qwen_media.py) | Submits the batch to Model Studio, polls, downloads into `media/qwen/` |
+| [`workflows/qwen-media.yml`](workflows/qwen-media.yml) | Runs it from the Actions tab and commits the results |
+
+Seeded with the 12 Episode 2 b-roll stills from [`broll-prompts.md`](../broll-prompts.md),
+the 3 Part 14 thumbnail plates from
+[`inflation-thumbnail-prompts.md`](../inflation-thumbnail-prompts.md), and one Wan clip to
+test whether motion under the type beats a still.
 
 ## Setup (one secret)
 
-1. Get an API key from [DashScope](https://dashscope.console.aliyun.com/) (Alibaba Cloud's
-   model platform — the same key works for the international `dashscope-intl` endpoint).
+1. Get an API key from [Alibaba Cloud Model Studio](https://modelstudio.console.alibabacloud.com/)
+   (the international console — the config points at the `dashscope-intl` endpoint).
 2. Repo → **Settings → Secrets and variables → Actions → New repository secret**:
 
    | Secret | Value |
    |---|---|
-   | `QWEN_API_KEY` | the DashScope key from step 1 |
+   | `DASHSCOPE_API_KEY` | the key from step 1 |
 
-3. The workflow has to live on the repo's **default branch** to be dispatchable —
-   same rule as every other workflow here (see `CLAUDE.md`).
+3. The workflow must sit on the default branch to be dispatchable — same rule as every other
+   workflow here (see `CLAUDE.md`).
 
-That's it. No other secret is needed: the job authenticates to GitHub with the built-in
-`GITHUB_TOKEN`.
+It is a paid API, billed per image and per second of video. Generate a batch, don't leave it
+on a schedule.
 
-## Using it
+## Running it
 
-- **In a thread** — comment `@qwen which script posts the pinned comment?` on any issue or PR.
-  Qwen replies as a new comment in that thread.
-- **Manually** — Actions → **Qwen** → *Run workflow*, and type the request into the `prompt`
-  box. The answer lands in the run summary rather than a comment.
+**From the Actions tab** — *Generate media with Qwen* → *Run workflow*:
 
-## Guard rails
+| Input | Effect |
+|---|---|
+| `jobs` | `part14-thumb-A,part14-thumb-B` — blank runs every job |
+| `kind` | `image` or `video` to run only one kind |
+| `commit` | on by default: the files land in `media/qwen/` on the branch |
 
-- Only `OWNER` / `MEMBER` / `COLLABORATOR` comments trigger a run, so a drive-by comment on a
-  public issue can't spend your API quota.
-- Comments authored by bots are ignored, so Qwen can't reply to itself in a loop.
-- The job holds `contents: read` — Qwen reads the repo and comments, it does not push.
-- The comment text is passed to the model as data, below a header that tells it to treat the
-  text as a question rather than as instructions.
+Results are also uploaded as a run artifact, so a failed commit never loses them.
 
-## Knobs
+**Locally**, with the key exported:
 
-Both are optional inputs on the `Run Qwen Code` step:
+```bash
+python automation/qwen_media.py --list                    # what's defined
+python automation/qwen_media.py --dry-run                 # request bodies, no API calls
+python automation/qwen_media.py --only part14-thumb-A     # one job
+python automation/qwen_media.py --kind image --out media/thumbs
+```
 
-| Input | Default | Use |
-|---|---|---|
-| `openai_model` | `qwen-coder-plus-latest` | pin a different model |
-| `openai_base_url` | `https://dashscope.aliyuncs.com/compatible-mode/v1` | point at the international endpoint or a self-hosted OpenAI-compatible one |
+Stdlib only — no `pip install`.
+
+## Adding a job
+
+Append to `jobs` in `automation/qwen-media.json`:
+
+```json
+{ "name": "part16-thumb-A", "kind": "image", "prompt": "…", "parameters": { "size": "928*1664" } }
+```
+
+- The house style and negative prompt are appended automatically. `"no_style": true` opts out,
+  for prompts that are already self-contained (the thumbnail plates are).
+- `"style"` and `"negative_prompt"` override per job; `"parameters"` merges over the defaults
+  for that kind; `"model"` overrides the model.
+- Sizes are `width*height` with an asterisk. `1664*928` is the 16:9 default, `928*1664` is 9:16
+  for anything going in the Shorts grid.
+
+## Known sharp edges
+
+- **The batch is submitted before it is polled**, so twelve stills cost one task's wall-clock
+  rather than twelve. A run is green only if *every* selected job produced a file; a partial
+  batch exits 1 rather than reporting success.
+- **Model names drift between Model Studio releases.** If a run comes back
+  `InvalidParameter`, check the current names in the Model Studio model list and edit
+  `qwen-media.json` — the script hardcodes none of them. The error body from DashScope is
+  printed in full, which is where the real reason lives.
+- **Check the coins.** `inflation-thumbnail-prompts.md` records a generator returning Bitcoin
+  symbols for a "gold and silver coin" prompt. Option C bans crypto explicitly, but look at the
+  output before you publish it.
+- **The models render text badly.** Every prompt here reserves a clean band and bans lettering;
+  the type goes on afterwards in the editor.

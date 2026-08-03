@@ -1,0 +1,72 @@
+name: Generate media with Qwen
+
+# Runs automation/qwen_media.py against Alibaba Model Studio (Qwen-Image for
+# stills, Wan for clips). Setup: .github/QWEN.md.
+
+on:
+  workflow_dispatch:
+    inputs:
+      jobs:
+        description: "Job names from automation/qwen-media.json, comma-separated (blank = all)"
+        required: false
+        type: string
+      kind:
+        description: "Limit to one kind"
+        required: false
+        default: all
+        type: choice
+        options: [all, image, video]
+      commit:
+        description: "Commit the generated files back to this branch"
+        required: false
+        default: true
+        type: boolean
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate
+        env:
+          DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
+          JOBS: ${{ inputs.jobs }}
+          KIND: ${{ inputs.kind }}
+        run: |
+          args=()
+          if [ -n "$JOBS" ]; then
+            args+=(--only "$JOBS")
+          fi
+          if [ "$KIND" != "all" ]; then
+            args+=(--kind "$KIND")
+          fi
+          python automation/qwen_media.py "${args[@]}"
+
+      - name: Upload the files
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qwen-media
+          path: media/qwen/
+          if-no-files-found: warn
+
+      - name: Commit them
+        if: inputs.commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add media/qwen
+          if git diff --cached --quiet; then
+            echo "Nothing new to commit."
+            exit 0
+          fi
+          git commit -m "Add Qwen-generated media from run ${{ github.run_number }}"
+          git push origin HEAD:${{ github.ref_name }}
