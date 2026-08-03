@@ -7,8 +7,10 @@ on:
         description: "Report what would change, write nothing"
         type: boolean
         default: false
-  schedule:
-    - cron: "0 12 * * *"   # daily 12:00 UTC — re-heals links and reports the verdict
+  # DISABLED 2026-08-03 — the long-form programme was stopped; this cron prepends an Episode-1 funnel to 13 Shorts daily.
+  # Re-enable only if long-form resumes (~1k subs, or a Short past 5k).
+  # schedule:
+    #   - cron: "0 12 * * *"   # daily 12:00 UTC — re-heals links and reports the verdict
 
 jobs:
   promote:

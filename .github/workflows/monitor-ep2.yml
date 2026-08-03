@@ -4,8 +4,10 @@ name: Monitor Episode 2
 # the decision rule once the window closes — including swapping the thumbnail
 # and title itself when the verdict is REPACKAGE.
 on:
-  schedule:
-    - cron: "0 17 * * *"
+  # DISABLED 2026-08-03 — the long-form programme was stopped; this cron monitors the stopped long-form programme.
+  # Re-enable only if long-form resumes (~1k subs, or a Short past 5k).
+  # schedule:
+    #   - cron: "0 17 * * *"
   workflow_dispatch:
     inputs:
       dry:
