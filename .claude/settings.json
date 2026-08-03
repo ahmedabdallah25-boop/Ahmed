@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "mcp__Higgsfield__balance",
+      "mcp__Higgsfield__models_explore",
+      "mcp__Higgsfield__show_plans_and_credits",
+      "mcp__295faaf3-096a-4b68-827f-fc6e96f5df8d__balance",
+      "mcp__295faaf3-096a-4b68-827f-fc6e96f5df8d__models_explore",
+      "mcp__295faaf3-096a-4b68-827f-fc6e96f5df8d__show_plans_and_credits"
+    ]
+  }
+}
