@@ -1,10 +1,12 @@
 """Edit the training attendance sheet scan:
-  - Training Date:  01/08/2026 -> 30/06/2026
-  - Trainer Name:   clear the handwritten names, write "Ahmed"
+  - Training Date:  cleared, left blank
+  - Trainer Name:   cleared, left blank
 
 Erased areas are rebuilt from clean reference columns of the same form, each
 column aligned on its own rule line and tone-matched to the local paper, so the
 scan's texture, yellow gradient and slightly bowed rules are preserved.
+
+Set DATE_TEXT / TRAINER_TEXT to fill either field back in with pen strokes.
 """
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
@@ -14,6 +16,8 @@ OUT = 'training-attendance-sheet-edited.jpg'
 FONT = 'caveat-latin-600-normal.ttf'
 SS = 6            # supersampling factor used when drawing pen strokes
 INK = (42, 42, 46)
+DATE_TEXT = ''    # e.g. '30/06/2026'
+TRAINER_TEXT = ''  # e.g. 'Ahmed'
 
 img = Image.open(SRC).convert('RGB')
 arr = np.array(img).astype(np.float64)
@@ -125,7 +129,8 @@ belw = paper_tone(600, 731, lambda x: range(251, 255)) - \
        paper_tone(800, 881, lambda x: range(int(band_line(x, *D_WIN)) + 3,
                                             int(band_line(x, *D_WIN)) + 7))
 erase(593, 737, date_line, -20.5, 5.0, REF_D, D_WIN, (yell, belw))
-write_ink('30/06/2026', 605, 246.5, fit_size('30/06/2026', 1.2, 112, 'w'), 1.2)
+if DATE_TEXT:
+    write_ink(DATE_TEXT, 605, 246.5, fit_size(DATE_TEXT, 1.2, 112, 'w'), 1.2)
 
 # ============================================================ Trainer Name ===
 # value cell x 131..442; bottom rule of the header block sits at ~321 here.
@@ -142,7 +147,8 @@ whit_t = paper_tone(140, 396, lambda x: range(325, 334)) - \
          paper_tone(620, 791, lambda x: range(int(band_line(x, *T_WIN)) + 5,
                                               int(band_line(x, *T_WIN)) + 13))
 erase(132, 402, trainer_line, t_top, 13.5, REF_T, T_WIN, (yell_t, whit_t))
-write_ink('Ahmed', 137, 321.0, fit_size('Ahmed', 0.8, 20, 'h'), 0.8)
+if TRAINER_TEXT:
+    write_ink(TRAINER_TEXT, 137, 321.0, fit_size(TRAINER_TEXT, 0.8, 20, 'h'), 0.8)
 
 Image.fromarray(arr.round().astype(np.uint8)).save(OUT, quality=95, subsampling=0)
 print('wrote', OUT)
