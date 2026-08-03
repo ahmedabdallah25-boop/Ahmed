@@ -3,6 +3,8 @@ import {Composition} from 'remotion';
 import './fonts';
 import {INFLATION_DURATION, Inflation} from './inflation/Inflation';
 import {INFLATION_THUMBS, THUMB_H, THUMB_W} from './inflation/Thumbnail';
+import {KLARNA_DURATION} from './klarna/beats';
+import {Klarna} from './klarna/Klarna';
 import {Longform} from './longform/Longform';
 import {VO_DURATION} from './longform/timing';
 import {Short} from './Short';
@@ -67,6 +69,16 @@ export const RemotionRoot: React.FC = () => (
         height={H}
       />
     ))}
+    {/* "Is Klarna Halal?" — cut to the ElevenLabs VO in public/klarna-vo.mp3.
+        1661 frames is that recording exactly; see klarna/beats.ts. */}
+    <Composition
+      id="Klarna-Halal"
+      component={Klarna}
+      durationInFrames={KLARNA_DURATION}
+      fps={FPS}
+      width={W}
+      height={H}
+    />
     {/* Vertical Short, kept for the Shorts lane. */}
     <Composition
       id="Part14-RaiseTrap"

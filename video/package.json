@@ -10,6 +10,8 @@
     "cuts:inflation": "node scripts/detect-cuts.mjs --write",
     "captions:inflation": "node scripts/make-inflation-captions.mjs",
     "render:inflation": "remotion render src/index.ts Inflation-Short ../media/inflation-edited.mp4",
+    "render:klarna": "remotion render src/index.ts Klarna-Halal ../media/klarna.mp4",
+    "still:klarna": "remotion still src/index.ts Klarna-Halal out/klarna-frame.png",
     "still": "remotion still src/index.ts Part14-RaiseTrap out/frame.png"
   },
   "keywords": [],
