@@ -1,32 +1,40 @@
 {
   "_comment": "Packaging reset, 2026-08-03. Driven by reset_packaging.py. Every target below is a video that failed or has not published yet. The channel's seven 700+ view Shorts are deliberately absent — never repackage a winner.",
-
   "playlist_url": "https://www.youtube.com/playlist?list=PLKLKzR1QgFHE",
-
-  "scheduled": {
-    "video_id": "4gRoTTZNnFE",
-    "_why": "Publishes 2026-08-04 03:00 PT, still private. This is the only video on the channel whose packaging can still be fixed BEFORE the feed tests it. Current title 'Four questions that tell you if your Islamic mortgage is real' is a trailer for the long-form. Retitled to stand alone, and the description no longer opens with a link to a video nobody watches.",
-    "title": "How to Tell If Your \"Islamic\" Mortgage Is Actually Fake #halalmortgage #islamicfinance",
-    "description": "Four questions. If your provider fails any of them, you are paying interest with an Arabic label on it.\n\n1. Who legally owns the house while you pay?\n2. Is the price fixed at signing, or does it track a rate?\n3. Who pays if the property is destroyed?\n4. What happens if you pay late — and where does that money go?\n\nA late fee that becomes the bank's profit is riba by another name. That question alone rules out most of the market.\n\nThe Money Machine, Decoded.\n\nMORE IN THE SERIES:\nHow to buy a house without interest (Musharaka): https://youtu.be/riQ7dLSnogo\nHow your mortgage costs you two houses: https://youtu.be/fMQMZKPvK4c\nMurabaha, the fixed-price sale: https://youtu.be/c8uyMAIORkU\nHow banks quietly trap your savings: https://youtu.be/OXIP3EJROQk\n{PLAYLIST_LINE}\nNo jargon. Just mechanisms.\nEducation, not financial advice — verify current terms with any provider before signing.\n\n#HalalMortgage #IslamicFinance #Riba #Musharaka #Ijara #HalalMoney #MuslimMoney #FinanceDecoded",
-    "add_tags": [
-      "is my islamic mortgage real",
-      "fake islamic mortgage",
-      "halal mortgage explained",
-      "islamic mortgage questions",
-      "diminishing musharaka",
-      "ijara wa iqtina",
-      "riba explained",
-      "islamic finance explained",
-      "halal home finance",
-      "sharia compliant mortgage"
-    ]
-  },
-
+  "scheduled": [
+    {
+      "video_id": "4gRoTTZNnFE",
+      "_why": "Publishes 2026-08-04 03:00 PT, still private. Retitled to stand alone instead of trailing the long-form, and the description delivers all four questions inline. Verified 'already up to date' on runs 3 and 4.",
+      "title": "How to Tell If Your \"Islamic\" Mortgage Is Actually Fake #halalmortgage #islamicfinance",
+      "description": "Four questions. If your provider fails any of them, you are paying interest with an Arabic label on it.\n\n1. Who legally owns the house while you pay?\n2. Is the price fixed at signing, or does it track a rate?\n3. Who pays if the property is destroyed?\n4. What happens if you pay late — and where does that money go?\n\nA late fee that becomes the bank's profit is riba by another name. That question alone rules out most of the market.\n\nThe Money Machine, Decoded.\n\nMORE IN THE SERIES:\nHow to buy a house without interest (Musharaka): https://youtu.be/riQ7dLSnogo\nHow your mortgage costs you two houses: https://youtu.be/fMQMZKPvK4c\nMurabaha, the fixed-price sale: https://youtu.be/c8uyMAIORkU\nHow banks quietly trap your savings: https://youtu.be/OXIP3EJROQk\n{PLAYLIST_LINE}\nNo jargon. Just mechanisms.\nEducation, not financial advice — verify current terms with any provider before signing.\n\n#HalalMortgage #IslamicFinance #Riba #Musharaka #Ijara #HalalMoney #MuslimMoney #FinanceDecoded",
+      "add_tags": [
+        "is my islamic mortgage real",
+        "fake islamic mortgage",
+        "halal mortgage explained",
+        "islamic mortgage questions",
+        "diminishing musharaka",
+        "ijara wa iqtina",
+        "riba explained",
+        "islamic finance explained",
+        "halal home finance",
+        "sharia compliant mortgage"
+      ]
+    },
+    {
+      "video_id": "JB6Q_7IE9Jo",
+      "_why": "Part 15, uploaded 2026-08-03 15:39Z — two hours after the last pass ran, so that pass never saw it. Publishes 2026-08-05 03:00 PT. Title switched to the niche_search_format already drafted and vetted in part15.json. The rejected reasoning in that file's _why_chosen argues from the shape of 'Why You're Born Into Debt' (1,208 views) — but channel-reset.md ruled the title-formula hypothesis out on exactly that kind of within-channel analogy: a formula-perfect inflation Short did 43 views against a bare-fragment title at 200. The cross-channel evidence is cleaner because it holds channel size constant: on one 71.8K-sub channel 'Is Forex Halal?' did 158K while 'What do we really mean by Halal Investing?' did 6.4K. This channel has never once tested the niche's dominant format, which makes it the largest untested variable available. Description and tags are byte-identical to the upload — title only, so the variable stays readable.",
+      "title": "Is Paper Gold Halal? (Most People Own a Promise) #gold #islamicfinance",
+      "description": "Last video: money isn't printed, it's lent into existence. More money, same bread, so bread costs more. This is the fix — and the trap almost everyone falls into on the way to it.\n\nScarce is only half of it. It also has to actually be yours. Most people \"holding gold\" hold a certificate, an app, or a balance on a screen — a promise that someone else will deliver metal they are holding. That is not gold. That is a claim, and a claim can be diluted.\n\nGold for gold, hand to hand, same sitting, no delay. Settle now, or it isn't a sale. Physical, allocated, in your possession. No margin, no leverage, no IOU dressed as metal. And metal isn't the only answer — a share of something real that produces works too.\n\nOwn the thing, not the claim on the thing.\n\nPart 15 of The Money Machine, Decoded.\n\nTHE SERIES SO FAR:\nPart 1 - How banks profit from your savings (Riba): https://youtu.be/V8HYpTHy2aU\nPart 2 - Money created as debt: https://youtu.be/8DlJ28QnXj4\nPart 3 - Inflation, the tax you never voted for: https://youtu.be/a7xkXgTfCXs\nPart 4 - Sound money, the money that never needed a bailout: https://youtu.be/zY664YZPI6U\nPart 5 - The credit card minimum payment trap: https://youtu.be/scjEcnABEOo\nPart 6 - How banks collect a second house from you: https://youtu.be/fMQMZKPvK4c\nPart 7 - Murabaha, the fixed-price sale: https://youtu.be/c8uyMAIORkU\nPart 8 - How to buy a house without interest (Musharaka): https://youtu.be/riQ7dLSnogo\nPart 9 - Passive income without interest (Sukuk): https://youtu.be/J0TCD2u177k\nPart 10 - How banks quietly drain your savings: https://youtu.be/OXIP3EJROQk\nPart 11 - Is your insurance even halal? (Gharar): https://youtube.com/shorts/BMSmgBJ82JU\nPart 12 - Insurance keeps what you don't claim (Takaful): https://youtube.com/shorts/ebIU6OHJ-jg\nPart 13 - How to buy a car without interest (Ijara): https://youtube.com/shorts/ElD5gg-Q1wY\nPart 14 - The tax nobody voted for: https://youtube.com/shorts/OHVnm5R0o5E\nPart 15 - You are here\n▶ Full series in order: https://www.youtube.com/playlist?list=PLKLKzR1QgFHE\n▶ Daily money takes on X: https://x.com/financedecode\n\nNo jargon. Just mechanisms.\nThis is financial education, not financial advice.\n\n#Gold #PaperGold #SoundMoney #IslamicFinance #HalalMoney #MuslimMoney #RealAssets #FinanceDecoded",
+      "add_tags": []
+    }
+  ],
   "hold": {
     "_why": "Published within the last ~36 hours and still inside their feed test. Changing packaging mid-test destroys the only clean read available and can disrupt an active test. Revisit 2026-08-06. sbor6eyJQKc: published 2026-08-03 03:00 PT, 8 views at a few hours old — nowhere near judgeable. kOkfpCHeURw: published 2026-08-02 03:00 PT, 200 views in ~1.4 days (~145/day) — that is mid-table, not a failure, and it is the best-performing recent upload.",
-    "video_ids": ["sbor6eyJQKc", "kOkfpCHeURw"]
+    "video_ids": [
+      "sbor6eyJQKc",
+      "kOkfpCHeURw"
+    ]
   },
-
   "repackage": [
     {
       "video_id": "P3DxNgGFah0",
@@ -43,7 +51,6 @@
       ]
     }
   ],
-
   "link_fixes": {
     "_why": "Part 12 (Takaful) is referenced by two different video ids across the channel's descriptions. ebIU6OHJ-jg is live on the Shorts tab right now with the correct title and 124 views. EQT91HgOH78 is the pre-re-upload original referenced in last-video-fix.md, whose step 5 fallback was 're-upload, then delete the original' — so it is very likely a dead link sitting in live descriptions. Normalising every reference to the id that is provably live is correct either way. Applied by scanning all owned videos, so it catches copies not listed here.",
     "replacements": [
@@ -54,7 +61,6 @@
       }
     ]
   },
-
   "protected": {
     "_why": "Guard rail. reset_packaging.py refuses to touch any id in this list. These are the channel's proven winners; their packaging is the reference, not the problem.",
     "video_ids": [

@@ -7,13 +7,14 @@
 
 Two jobs, in priority order:
 
-  1. The scheduled Short (4gRoTTZNnFE, publishes 2026-08-04 03:00 PT) is the only
-     video on this channel whose packaging can still be fixed BEFORE the feed
-     decides on it. That is where nearly all the value is.
-  2. Three published Shorts that failed get their titles moved back onto the
-     formula that produced every 700+ view video. Expect little from this — a
-     Short that already failed its feed test is rarely revived by a retitle. It
-     is done because it costs nothing, not because it is likely to work.
+  1. The scheduled Shorts still sitting private are the only videos on this
+     channel whose packaging can still be fixed BEFORE the feed decides on them.
+     That is where nearly all the value is. Run --inventory to find them; a new
+     upload can appear between passes and no public listing tool will show it.
+  2. Published Shorts that failed get their titles moved back onto the formula
+     that produced every 700+ view video. Expect little from this — measured on
+     2026-08-03, P3DxNgGFah0 took exactly zero extra views in the six hours after
+     its retitle. It is done because it costs nothing, not because it works.
 
 Refuses to touch any id in reset.json's `protected` list.
 
@@ -143,7 +144,7 @@ def inventory(yt):
     object on the channel (its packaging can still be fixed before the feed tests
     it), so it needs naming, not counting. Read-only.
     """
-    managed = {CFG["scheduled"]["video_id"]}
+    managed = {t["video_id"] for t in CFG["scheduled"]}
     managed |= {t["video_id"] for t in CFG["repackage"]}
     managed |= PROTECTED | HELD
 
@@ -257,8 +258,9 @@ def main():
 
     written = 0
 
-    print("\n== Scheduled Short (fix before it publishes) ==")
-    written += apply_target(yt, CFG["scheduled"], args.dry_run)
+    print("\n== Scheduled Shorts (fix before they publish) ==")
+    for target in CFG["scheduled"]:
+        written += apply_target(yt, target, args.dry_run)
 
     if not args.scheduled:
         print("\n== Published Shorts that underperformed ==")
