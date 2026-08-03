@@ -7,115 +7,168 @@ made**, and if the packaging isn't compelling the video doesn't get produced. Th
 justify the title, never the other way round.
 
 Shorts have no thumbnail in the feed, so the doctrine has to be translated rather than copied.
-The equivalent gate is **frame one and line one** — the first ~3 seconds, which is where the swipe
-decision actually happens. So every pitch below is locked on four things before a single asset
-gets made:
+The equivalent gate is **frame one and line one** — the first ~3 seconds, where the swipe decision
+actually happens. Every pitch below locks four things before an asset is made:
 
 1. **Title** — final, not a placeholder
 2. **Frame one** — what is on screen at t=0, before a word is spoken
 3. **Line one** — the first sentence, verbatim
 4. **The payoff** — what the viewer leaves knowing
 
-If those four don't work on the page, the video doesn't get made. That is the whole discipline.
-
-**The one rule that governs this slate: all ten are subjects this channel has never covered.**
-The evidence in `channel-reset.md` is that inflation, banking, insurance and mortgage have each
-been mined to the point where even a formula-perfect title underperforms — the third inflation
-video did 43 views with textbook packaging. New subject is the variable worth changing.
-
-Ship in this order. It is sorted by hook strength, so the strongest goes first while the reset is
-being measured.
+If those four don't work on the page, the video doesn't get made.
 
 ---
 
-## 1 · Why Having No Debt Destroys Your Credit Score
+## What the competitive data says
 
-- **Frame one** — a credit-score dial pinned at the bottom of the range, `£0 BORROWED` stamped beside it.
-- **Line one** — *"You've never borrowed a penny in your life. That's exactly why the bank says no."*
-- **Why they stay** — because the explanation inverts what they assumed: the score does not measure whether you are good with money. It measures how reliably you have paid interest. Debt-free looks identical to unknown.
-- **Payoff** — the system scores you on participation in riba, not on financial health. What to build instead: documented income, savings history, providers that assess affordability directly.
-- **Why it wins** — near-universal, genuinely surprising, and the injustice is felt immediately. The strongest untouched subject on the list.
+Pulled 2026-08-03 across the halal-money niche. Three findings drive this slate.
 
-## 2 · How Banks Make Billions From People Who Have No Money
+### 1. The winning format in this niche is `Is [specific named thing] Halal?`
 
-- **Frame one** — a balance reading `−£3.20`, then a `£35.00` fee drops onto it.
-- **Line one** — *"You went three pounds overdrawn. They charged you thirty-five. That's a 1,100% fee for being poor."*
-- **Why they stay** — the deliberate part: transactions reordered largest-first so one shortfall triggers several fees, and the disclosure that most overdraft revenue comes from a small minority of the poorest account holders.
-- **Payoff** — riba is not only interest on money lent. It is also a charge levied on money you do not have. Qard hasan is the exact inverse: lending that cannot profit from hardship.
-- **Why it wins** — visceral, morally clear, and it lands on anyone who has ever been short before payday.
+Not "how does X work". The binary question, aimed at a *named product*:
 
-## 3 · Why Your Student Loan Grows While You Pay It
+| Verbatim title | Views | Channel (subs) |
+|---|---|---|
+| `Why is FOREX TRADING considered HARAM? \| IFG #shorts` | 221K | IFG (246K) |
+| `Is CRYPTO Investing HALAL? \| IFG #shorts` | 173K | IFG |
+| `Is leverage or margin trading halal?` | 159K | Practical Islamic Finance (71.8K) |
+| `Is Forex Halal?` | 158K | PIF |
+| `Is Dropshipping Halal?` | 151K | PIF |
+| `Is the S&P500 Halal? \| IFG #shorts` | 51K | IFG |
 
-- **Frame one** — split screen: `BORROWED £42,000` / `PAID 6 YEARS` / `STILL OWE £51,300`.
-- **Line one** — *"Six years of payments. You owe nine thousand more than you borrowed."*
-- **Why they stay** — the mechanism: interest accrues on the whole balance while repayments are capped at a share of income above a threshold. Below the crossover point the balance mathematically cannot fall.
-- **Payoff** — a debt that grows while you service it is the textbook definition of what riba does. Then the alternatives: qard hasan funds, income-share agreements, and why the distinction is structural rather than cosmetic.
-- **Why it wins** — enormous affected audience, and most of them have never been shown the arithmetic.
+**The specificity of the noun is the whole game.** On the same channel, `Is Forex Halal?` did 158K
+while the vaguer `What do we really mean by Halal Investing?` did 6.4K. This channel's titles are
+currently mechanism-first ("How Banks Take Your Money Without Touching It"). The niche rewards
+product-first.
 
-## 4 · Why Klarna Costs More Than A Credit Card
+### 2. The realistic next rung is 3x your sub count, not 1.2K
 
-- **Frame one** — a checkout with `4 payments of £22.50` and `£0 interest` — then `£0` circled in red.
+**nisba** — 5.38K subs, plainly shot, low production — lands Shorts at 16K views, **3x its
+subscriber count**. At 191 subs your two best did 1.2K, roughly 6x. The ceiling isn't the problem;
+consistency on the right subjects is.
+
+### 3. Nobody in halal money runs a faceless Shorts-first channel
+
+Across the 65-channel competitor map, *every* halal-finance channel is face-led and
+long-form-first — average durations 7 to 40 minutes. Nexlev's curated faceless databases contain
+**zero** halal-money operators. That intersection is unoccupied, and it is the one you already
+sit in.
+
+### 4. Confirmation that stopping long-form is right *for now* — but not forever
+
+RPM measured on real competitor videos: a Short returns **$2.18 RPM**; an 8-minute long-form
+returns **$7.01**. Long-form is worth ~3x per view and holds the absolute ceiling (383K–916K vs a
+221K best Short). That is the argument for coming back to it at ~5K subs — not at 191, where it
+gets 1 view.
+
+---
+
+## The slate
+
+Ordered by (proven format × size of the gap). All ten are subjects this channel has never
+covered — the reason is in `channel-reset.md`: every topic family here peaks then falls hard on
+the next entry, and the formula-perfect third inflation video did 43 views.
+
+### 1 · Is Klarna Halal?
+
+- **Frame one** — a checkout showing `4 payments of £22.50` and `0% interest`, with `0%` circled.
 - **Line one** — *"Klarna is interest-free. That's the most expensive word in finance."*
-- **Why they stay** — where the money actually is: the merchant fee is priced into the sticker, so the cash buyer subsidises it too; then late fees; then the basket-size uplift the whole model is built to produce.
-- **Payoff** — the 1,400-year-old rule is that a sale has one price, fixed at the moment of sale. Murabaha does exactly this and is not a loan. Klarna is the same shape done wrong.
-- **Why it wins** — current, ubiquitous, and the "interest-free so it must be fine" assumption is very widely held.
+- **Why they stay** — where the money actually is: the merchant fee is priced into the sticker, so even the cash buyer pays it; then late fees; then the basket-size uplift the model exists to produce.
+- **Payoff** — a sale has one price, fixed at the moment of sale. Murabaha does exactly that and is not a loan. Klarna is the same shape done wrong.
+- **The gap** — mainstream BNPL explainers pull **5,716,409** views. The best Islamic-framed video on it is **8,111 views and two years old**, and YouTube estimates only ~828 results for the whole query. Enormous demand, no supply. **This is the biggest opening found.**
 
-## 5 · Your Pension Is Invested In Things You'd Never Buy
+### 2 · Is Your Pension Halal?
 
-- **Frame one** — a pension statement, then the holdings breakdown fanning out beneath it.
+- **Frame one** — a pension statement, holdings fanning out beneath it.
 - **Line one** — *"Your pension owns things you would never buy with your own money."*
-- **Why they stay** — the default fund is an index tracker, the index contains conventional banks, alcohol, gambling and arms, and nobody ever asked you. You were opted in.
-- **Payoff** — how to actually check your fund in two minutes, and what a screened alternative changes.
-- **Why it wins** — auto-enrolment means almost every working viewer has one, and almost none have looked inside it.
+- **Why they stay** — the default fund is an index tracker; the index holds conventional banks, alcohol, gambling and arms. Nobody asked you. You were opted in.
+- **Payoff** — how to check your own fund in two minutes, and what switching actually changes.
+- **The gap** — only ~3,220 results exist for the whole query. The top performer is a **nine-year-old** clip; the two IFG entries are **five years old**. Auto-enrolment means every working viewer has one.
 
-## 6 · How To Check If A Stock Is Halal In 60 Seconds
+### 3 · Is a Credit Card Halal?
 
-- **Frame one** — three empty checkboxes, filling in as the line is spoken.
+- **Frame one** — a card, and a statement line reading `Interest this month: £0.00`.
+- **Line one** — *"You pay it off every month. You've never paid a penny of interest. So is it halal?"*
+- **Why they stay** — the genuine disagreement: the contract you signed permits interest even if you never trigger it, versus the fee-only and cashback structures that don't. Both positions given honestly.
+- **Payoff** — the ruling turns on the contract, not on your behaviour — and what that implies for building a credit history.
+- **The gap** — every top result is a **3–8 year old** talking-head fatwa. IFG's Short on it does 41K. No modern faceless explainer covers cashback, credit-building, or 2026 products.
+
+### 4 · Is Revolut Halal?
+
+- **Frame one** — the app's home screen with the savings-interest toggle visible.
+- **Line one** — *"Forty million people use it. Almost none of them checked this one setting."*
+- **Why they stay** — the specific features that matter: interest-paying savings vaults, the crypto desk, the paid tiers — which are avoidable and which aren't.
+- **Payoff** — a walkthrough of exactly what to switch off to use it cleanly.
+- **The gap** — the "Is X Halal?" library in this niche stops at ~2023 products. Nothing covers Revolut, Monzo, Cash App, crypto ETFs or prediction markets. **This title is a template you can re-run indefinitely on new nouns** — it is the single most repeatable item on the slate.
+
+### 5 · Is Your Student Loan Halal?
+
+- **Frame one** — `BORROWED £42,000` / `PAID 6 YEARS` / `STILL OWE £51,300`.
+- **Line one** — *"Six years of payments. You owe nine thousand more than you borrowed."*
+- **Why they stay** — interest accrues on the whole balance while repayments are capped at a share of income above a threshold. Below the crossover the balance mathematically cannot fall.
+- **Payoff** — a debt that grows while you service it is what the prohibition is actually about; then qard hasan funds and income-share alternatives.
+- **The gap** — top results are 5 to 10 years old. IFG's is **five years old** and UK Plan 5 rules have changed since. Nothing current exists.
+
+### 6 · How To Check If A Stock Is Halal In 60 Seconds
+
+- **Frame one** — three empty checkboxes, filling as the line is spoken.
 - **Line one** — *"Three numbers. Sixty seconds. That's the whole check."*
-- **Why they stay** — it is a procedure, not an argument: what the business actually sells, debt against market cap under a third, interest income under a twentieth. Worked live on one recognisable company.
+- **Why they stay** — it's a procedure, not an argument: what the business sells, debt against market cap under a third, interest income under a twentieth. Worked live on one recognisable company.
 - **Payoff** — the viewer can do it themselves before the video ends.
-- **Why it wins** — the only *actionable* video on the slate. Actionable Shorts get saved and sent to a friend, which are the two strongest signals a small channel can earn.
+- **Why it's here** — the only *actionable* item on the slate, and actionable Shorts get saved and forwarded, the two strongest signals a small channel can earn. PIF's `Screen for Halal Stocks in 1 Minute!` proves the format travels.
 
-## 7 · The 2.5% Rule That Ran Out Of Poor People
+### 7 · Why Having No Debt Destroys Your Credit Score
 
-- **Frame one** — two tax forms side by side: one headed `WHAT YOU EARN`, the other `WHAT YOU HOARD`.
-- **Line one** — *"One system taxes what you earn. The other taxes what you sit on. Only one of them ever ran out of poor people."*
-- **Why they stay** — the mechanism difference: zakat falls on idle wealth held for a year, so hoarding is the taxed behaviour and productive deployment is not. Then the historical claim under Umar ibn Abdul Aziz, given honestly with its sourcing.
-- **Payoff** — a wealth floor funded by stagnant capital rather than by labour.
-- **Why it wins** — reframes a subject Muslim viewers think they already know, and is genuinely interesting to a non-Muslim economics audience.
+- **Frame one** — a credit-score dial pinned at the bottom, `£0 BORROWED` stamped beside it.
+- **Line one** — *"You've never borrowed a penny in your life. That's exactly why the bank says no."*
+- **Why they stay** — the inversion: the score doesn't measure whether you're good with money, it measures how reliably you've paid interest. Debt-free is indistinguishable from unknown.
+- **Payoff** — the system scores participation in riba, not financial health. What to build instead.
+- **Why it's here** — the contrarian "you're doing it wrong" formula is the highest-outlier shape in this niche (`Muslims Are Building The WRONG Businesses` — 199K, 10.4x). This is the strongest untouched subject the channel owns.
 
-## 8 · Your Savings Are Only Protected Up To £85,000
+### 8 · How Banks Make Billions From People Who Have No Money
 
-- **Frame one** — a balance of `£140,000`, with everything above £85,000 greying out.
-- **Line one** — *"If your bank failed tomorrow, you'd get eighty-five thousand back. Not a penny more."*
-- **Why they stay** — the part nobody is told: a deposit is legally a loan to the bank. You are an unsecured creditor of a business that lent your money onward.
-- **Payoff** — wadiah and amanah are safekeeping, where the money stays yours. That is a different legal relationship, not a different marketing label.
-- **Why it wins** — real fear, verifiable in one search.
-- ⚠️ **Overlap flag** — closest neighbour to the "3 cents" Short (39 views). The angle is new but the topic family is not. If the first four uploads show topic exhaustion is real, move this one down the list.
+- **Frame one** — a balance reading `−£3.20`, then a `£35.00` fee lands on it.
+- **Line one** — *"You went three pounds overdrawn. They charged you thirty-five. That's an 1,100% fee for being poor."*
+- **Why they stay** — the deliberate part: transactions reordered largest-first so one shortfall triggers several fees.
+- **Payoff** — the prohibition isn't only about interest on loans; it covers charging for money you don't have. Qard hasan is the exact inverse.
+- **Why it's here** — mechanism-reveal (`Why is FOREX considered HARAM?` = 221K, IFG's single best) applied to a universally felt injury.
 
-## 9 · Why Betting Apps Are Built So You Almost Win
+### 9 · Why Betting Apps Are Built So You Almost Win
 
 - **Frame one** — a bet slip settling one leg short, `CASH OUT £4.12` pulsing.
 - **Line one** — *"The app doesn't want you to lose. It wants you to almost win."*
-- **Why they stay** — near-miss design, variable-ratio reward, and cash-out as a mechanism for keeping a losing player in the game.
-- **Payoff** — maysir is not banned for being fun. It is banned because the gain exists only as someone else's identical loss — nothing is produced.
-- **Why it wins** — a real and under-served harm in the target demographic, and the design detail is fascinating on its own.
+- **Why they stay** — near-miss design, variable-ratio reward, cash-out as a device for keeping a losing player in the game.
+- **Payoff** — maysir isn't banned for being fun. It's banned because the gain exists only as someone else's identical loss. Nothing is produced.
 
-## 10 · The Inheritance Rule That Stops Families Tearing Apart
+### 10 · The Inheritance Rule That Stops Families Tearing Apart
 
 - **Frame one** — an estate block splitting into fixed fractional shares.
 - **Line one** — *"Most family money is gone within three generations. There's a 1,400-year-old rule built to stop exactly that."*
-- **Why they stay** — fixed shares rather than a will's discretion: no disinheriting, no single heir taking everything, mandatory division every generation.
+- **Why they stay** — fixed shares instead of a will's discretion: no disinheriting, no single heir taking everything, mandatory division every generation.
 - **Payoff** — forced distribution is an anti-dynastic mechanism. It breaks concentration by design.
-- **Why it wins** — high emotional stakes and almost no good short-form explainer exists.
+- **Why it's here** — the authority formula (`Wealthy Muslims Have Been Doing This For Over 1400 Years` — 193K, 10.1x) on a subject with high emotional stakes and almost no good short-form explainer.
+
+---
+
+## ⚠️ Keyword warning: stop using "riba" in English titles
+
+The English SERP for "riba explained" is **polluted by the Royal Institute of British Architects** —
+`RIBA Plan Of Work Explained` (25,757) and `An introduction to the RIBA Plan of Work 2020`
+(10,266) rank alongside Islamic content. This channel currently uses `#riba` in titles and
+`riba explained` as a tag on many videos.
+
+Use **"interest"** or **"haram"** framing in the title instead, and keep *riba* for the
+description and the spoken script where the context is unambiguous. The one competitor title that
+works with it (`War on RIBA, Building Wealth and Halal Mortgages`) only does so because "Halal
+Mortgages" disambiguates it.
 
 ---
 
 ## Production rules for this slate
 
-1. **Self-contained.** No Short ends by telling the viewer to go watch something else. The payoff is *in* this video. A "next" tease is fine; a homework assignment is not.
-2. **Custom thumbnail on every upload.** Two recent clips shipped on YouTube's auto-selected frame. It costs minutes and it is the frame that represents the video everywhere outside the feed.
-3. **Real description on every upload.** The two auto-frame clips also carried a 197-character boilerplate; every winner carries 600–2,300 characters. Tags matter less than assumed — the 1,208-view winner has none — but the description is where the actual claim gets restated.
-4. **One variable per upload.** Publish at 03:00–04:30 PT and hold everything else steady. That window is not proven superior (the 1,208-view winner went out at noon), but holding it constant is what makes the *topic* variable readable.
-5. **60–90 seconds.** Long enough to land a mechanism, short enough to complete. The 16-second clip out-performed the 100-second one on views/day — completion rate is doing real work — but 16 seconds cannot carry a payoff worth subscribing for.
-6. **Do not judge an upload before 72 hours.** A Short at 8 views on its first morning is not a failure; it has not been tested yet. Treating it as one is how a working channel gets torn up mid-flight.
+1. **Self-contained.** No Short ends by telling the viewer to go watch something else. A "next" tease is fine; homework is not.
+2. **Custom thumbnail on every upload.** Two recent clips shipped on YouTube's auto-selected frame.
+3. **Real description on every upload.** Those same two carried a 197-character boilerplate; every winner carries 600–2,300. Tags matter less than assumed — the 1,208-view winner has none — but keep the total under **500 characters**, which is a hard YouTube limit that silently rejects the whole update.
+4. **One variable per upload.** Hold publish time at 03:00–04:30 PT. That window is *not* proven superior (the 1,208-view winner went out at noon), but holding it constant is what makes the topic variable readable.
+5. **30–60 seconds.** Shorter than the current 100s average. The 16-second clip out-performed the 100-second one on views/day, and the winning `Is X Halal?` format in this niche runs 30–45s.
+6. **Do not judge an upload before 72 hours.** A Short at 8 views on its first morning has not been tested yet. Treating it as a failure is how a working channel gets torn up mid-flight.

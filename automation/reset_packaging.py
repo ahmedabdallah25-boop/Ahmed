@@ -28,6 +28,11 @@ from googleapiclient.errors import HttpError
 
 from apply_fix import yt_client
 
+# Any per-video failure lands here. main() exits non-zero if it is non-empty, so
+# a partial run shows red in Actions instead of the green "success" that a caught
+# HttpError used to produce.
+ERRORS = []
+
 HERE = Path(__file__).parent
 CFG = json.loads((HERE / "reset.json").read_text())
 PROTECTED = set(CFG["protected"]["video_ids"])
@@ -39,6 +44,29 @@ def build_description(raw: str) -> str:
     """Substitute the series-playlist line, matching apply_fix.py's convention."""
     line = f"▶ Full series in order: {PLAYLIST_URL}\n" if PLAYLIST_URL else ""
     return raw.replace("{PLAYLIST_LINE}", line)
+
+
+# YouTube caps the whole tags field at 500 characters and rejects the entire
+# update with `invalidTags` if you exceed it — which is exactly what happened on
+# P3DxNgGFah0 (20 existing tags + 5 new = over the cap). Budget conservatively:
+# a tag containing a space is sent quoted, so it costs two extra characters.
+TAG_BUDGET = 450
+
+
+def tag_cost(tag: str) -> int:
+    return len(tag) + (2 if " " in tag else 0) + 1  # +1 for the separator
+
+
+def fit_tags(existing, additions):
+    """Existing tags first (already indexed), then as many additions as fit."""
+    kept, used = [], 0
+    for tag in list(existing) + [t for t in additions if t not in existing]:
+        cost = tag_cost(tag)
+        if used + cost > TAG_BUDGET:
+            continue
+        kept.append(tag)
+        used += cost
+    return kept
 
 
 def apply_target(yt, target, dry_run):
@@ -55,10 +83,12 @@ def apply_target(yt, target, dry_run):
         items = yt.videos().list(part="snippet,status", id=vid).execute().get("items", [])
     except HttpError as e:
         print(f"  ERROR {vid}: {e}")
+        ERRORS.append(f"{vid}: fetch failed: {e}")
         return False
 
     if not items:
         print(f"  SKIP {vid}: not found (deleted, or OAuth account is not the owner).")
+        ERRORS.append(f"{vid}: not found")
         return False
 
     snippet = items[0]["snippet"]
@@ -67,12 +97,14 @@ def apply_target(yt, target, dry_run):
 
     new_title = target["title"]
     new_description = build_description(target["description"])
-    new_tags = sorted(set(snippet.get("tags", [])) | set(target.get("add_tags", [])))
+    old_tags = snippet.get("tags", [])
+    new_tags = fit_tags(old_tags, target.get("add_tags", []))
+    dropped = len(old_tags) + len([t for t in target.get("add_tags", []) if t not in old_tags]) - len(new_tags)
 
     unchanged = (
         old_title == new_title
         and snippet.get("description") == new_description
-        and set(snippet.get("tags", [])) == set(new_tags)
+        and set(old_tags) == set(new_tags)
     )
     if unchanged:
         print(f"  = {vid} ({privacy}) already up to date.")
@@ -81,6 +113,8 @@ def apply_target(yt, target, dry_run):
     print(f"  {vid} ({privacy})")
     print(f"      was: {old_title}")
     print(f"      now: {new_title}")
+    print(f"      tags: {len(new_tags)} kept"
+          + (f", {dropped} dropped to stay under YouTube's 500-char cap" if dropped > 0 else ""))
 
     if dry_run:
         print("      [dry-run] not written")
@@ -94,6 +128,7 @@ def apply_target(yt, target, dry_run):
         yt.videos().update(part="snippet", body={"id": vid, "snippet": snippet}).execute()
     except HttpError as e:
         print(f"      ERROR writing: {e}")
+        ERRORS.append(f"{vid}: write failed: {e}")
         return False
     print("      written")
     return True
@@ -151,6 +186,7 @@ def fix_links(yt, dry_run):
                                    body={"id": vid, "snippet": snippet}).execute()
             except HttpError as e:
                 print(f"      ERROR writing: {e}")
+                ERRORS.append(f"{vid}: link fix failed: {e}")
                 continue
             print("      written")
             written += 1
@@ -188,6 +224,12 @@ def main():
     print(f"\n{written} video(s) updated.")
     if args.dry_run:
         print("Dry run — nothing was written.")
+
+    if ERRORS:
+        print(f"\n{len(ERRORS)} failure(s) — this run is NOT complete:")
+        for err in ERRORS:
+            print(f"  - {err}")
+        return 1
     return 0
 
 
