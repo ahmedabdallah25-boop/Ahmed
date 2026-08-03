@@ -6,8 +6,9 @@ Direct sequel to Part 14 (inflation-scene-pack.txt). Same character, same seed.
 ================================================================================
 
 HOW TO USE THIS FILE
-- Reuse UNCHANGED from inflation-scene-pack.txt: the NEGATIVE PROMPT, the
-  CONSISTENCY WORKFLOW, the CAPTION BURN-IN SPEC, and the EDIT & ASSEMBLY rules.
+- Reuse UNCHANGED from inflation-scene-pack.txt: the CONSISTENCY WORKFLOW, the
+  CAPTION BURN-IN SPEC, and the EDIT & ASSEMBLY rules. The negative prompt is
+  reproduced below so this file stands alone on set.
   Nothing about the look changes between Part 14 and Part 15 — that continuity
   is the format.
 - AMIR is the same character. Do not regenerate him. Reuse the locked Part 14
@@ -29,6 +30,19 @@ illumination, gentle rim light, matte cinematic grade, shallow depth of field,
 9:16 vertical composition, subtle film grain.
 
 ACTION:
+
+--------------------------------------------------------------------------------
+NEGATIVE PROMPT — paste once into the negative field, applies to ALL 26 scenes
+--------------------------------------------------------------------------------
+facial features, eyes, mouth, nose, lips, eyebrows, face, portrait, cartoon
+outlines, cel shading, flat vector, anime, 2D illustration, text, watermark,
+logo, signature, distorted hands, extra limbs, extra fingers, blurry, low
+resolution, oversaturated, plastic sheen, uncanny
+
+Unchanged from Part 14 — same character, same look, same negative field.
+
+ONE EXCEPTION: Scene 26, the end card, is deliberately a heavily blurred plate.
+Remove "blurry" from the negative field for that shot only, then put it back.
 
 --------------------------------------------------------------------------------
 WHY THIS IS THE NEXT VIDEO
