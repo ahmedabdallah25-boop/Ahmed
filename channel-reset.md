@@ -288,3 +288,47 @@ If Aug 5 clears ~150 views/day and Aug 4 does not, the format is the lever and t
 go all-in on `Is [named product] Halal?` — `next-slate.md` is already ordered that way. If both
 land under ~50, topic and format are both exhausted as explanations and the honest next step is
 one month of private analytics rather than another guess from view counts.
+
+---
+
+## Length, measured — and a rule that was backwards
+
+Length was the one production variable nobody had tested against this channel's own numbers.
+Rule 5 of `next-slate.md` asked for 30–60s Shorts, citing a single 16s-vs-100s comparison and
+the niche's 30–45s norm. Measured across every public Short past its 72-hour test, normalised
+to views/day:
+
+| Bucket | n | Median v/day | Range |
+|---|---|---|---|
+| 31–60s | 1 | 92.5 | — |
+| 61–90s | 3 | **6.9** | 4–11 |
+| >90s | 11 | **43.4** | 3–52 |
+
+**Four of the five best videos on the channel run 133–180 seconds.** `riQ7dLSnogo` is 180s and
+did 1,225. The 31–60s bucket's 92.5 is a single video (`UpCMyfIOftA`, 46s) — one data point, not
+a pattern.
+
+Acting on the old rule would have meant cutting Part 15 from 140s to 60s. **140s is squarely
+inside the band that produced four of the five best videos.** That cut would have destroyed the
+format, and it was about to be made on the strength of a rule nobody had checked.
+
+The honest limit: the >90s bucket spans 3 to 52 v/day and contains two of the three *worst*
+videos as well. Length does not discriminate inside it. What the winners share is the July 11–14
+daily-cadence streak. **Length is noise; cadence is the signal.**
+
+### Part 15 needs no re-cut
+
+Reviewing the burned-in caption track end to end: the hook (0.0–14.5s) is the strongest asset —
+*"your money loses value while you sleep / so you buy gold / but most people who buy gold never
+own any / they own a promise."* Complete and self-contained.
+
+The closing card `PART THREE: WHAT YOU OWE` (130.8–140.3s) reads as a trailer ending, but slate
+rule 1 permits it explicitly — *"a 'next' tease is fine; homework is not."* It is a tease, not
+homework. No violation, and no defect worth a delete-and-re-upload, which would mint a new video
+id and put the Aug 5 slot at risk for no measured gain.
+
+**Ship it as it is.** The remaining open question on it is the recap block at 14.6–32.3s
+(*"quick recap if you're new here"*), which spends 18 seconds re-explaining a video that did 43
+views. That is a reasonable hypothesis about a retention cost and nothing more — the retention
+curve that would settle it is behind the paywall, and no public number touches it. Not worth
+acting on blind.

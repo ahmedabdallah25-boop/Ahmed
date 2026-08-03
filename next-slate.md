@@ -190,5 +190,25 @@ Mortgages" disambiguates it.
 2. **Custom thumbnail on every upload.** Two recent clips shipped on YouTube's auto-selected frame.
 3. **Real description on every upload.** Those same two carried a 197-character boilerplate; every winner carries 600–2,300. Tags matter less than assumed — the 1,208-view winner has none — but keep the total under **500 characters**, which is a hard YouTube limit that silently rejects the whole update.
 4. **One variable per upload.** Hold publish time at 03:00–04:30 PT. That window is *not* proven superior (the 1,208-view winner went out at noon), but holding it constant is what makes the topic variable readable.
-5. **30–60 seconds.** Shorter than the current 100s average. The 16-second clip out-performed the 100-second one on views/day, and the winning `Is X Halal?` format in this niche runs 30–45s.
+5. **~~30–60 seconds.~~ Length is not the lever — do not cut for length.** Measured across
+   every public Short past its 72-hour test, 2026-08-03, normalised to views/day:
+
+   | Bucket | n | Median v/day |
+   |---|---|---|
+   | 31–60s | 1 | 92.5 |
+   | 61–90s | 3 | **6.9** |
+   | >90s | 11 | **43.4** |
+
+   **Four of the five best videos on this channel are 133–180 seconds** — `riQ7dLSnogo`
+   180s/1,225, `J0TCD2u177k` 144s/1,040, `a7xkXgTfCXs` 133s/1,038, `OXIP3EJROQk` 140s/965.
+   The old rule cited a single 16s-vs-100s comparison and the niche's 30–45s norm; against
+   this channel's own catalogue it was backwards, and following it would have cut the exact
+   format that produced its best work.
+
+   Read it carefully, though: the >90s bucket spans **3 to 52 v/day**, and two of the three
+   worst videos are also >90s. So length does not discriminate *within* that band either.
+   What separates the winners from the losers is when they went out — every one of those
+   four sits inside the July 11–14 daily-cadence streak. **Length is noise; cadence is the
+   signal.** That is rule 0, and it is the only production rule here with real evidence
+   behind it.
 6. **Do not judge an upload before 72 hours.** A Short at 8 views on its first morning has not been tested yet. Treating it as a failure is how a working channel gets torn up mid-flight.
