@@ -245,9 +245,9 @@ def parse_ts(t: str):
 def fix_channel_meta(yt, dry_run):
     """Set channel-level keywords. Fetch-then-mutate so other branding survives."""
     cfg = CFG.get("channel")
-    if not cfg or not cfg.get("keywords"):
+    if not cfg:
         return 0
-    want = " ".join(f'"{k}"' if " " in k else k for k in cfg["keywords"])
+    want = " ".join(f'"{k}"' if " " in k else k for k in cfg.get("keywords", []))
 
     items = yt.channels().list(part="brandingSettings", mine=True).execute().get("items", [])
     if not items:
@@ -255,15 +255,26 @@ def fix_channel_meta(yt, dry_run):
         return 0
     branding = items[0]["brandingSettings"]
     have = branding.get("channel", {}).get("keywords", "")
-    if have == want:
-        print("  = channel keywords already up to date.")
+    have_country = branding.get("channel", {}).get("country", "")
+    want_country = cfg.get("country", have_country)
+
+    changes = []
+    if want and have != want:
+        changes.append(f"keywords: {len(have)} chars -> {len(want)} chars")
+    if want_country != have_country:
+        changes.append(f"country: {have_country or '(unset)'} -> {want_country}")
+    if not changes:
+        print("  = channel metadata already up to date.")
         return 0
 
-    print(f"  channel keywords: {len(have)} chars -> {len(want)} chars")
+    for c in changes:
+        print(f"  channel {c}")
     if dry_run:
         print("      [dry-run] not written")
         return 0
-    branding.setdefault("channel", {})["keywords"] = want
+    if want:
+        branding.setdefault("channel", {})["keywords"] = want
+    branding.setdefault("channel", {})["country"] = want_country
     try:
         yt.channels().update(part="brandingSettings",
                              body={"id": items[0]["id"], "brandingSettings": branding}).execute()

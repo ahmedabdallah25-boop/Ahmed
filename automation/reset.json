@@ -97,6 +97,8 @@
       "faceless finance",
       "personal finance"
     ],
-    "_chars": 290
+    "_chars": 290,
+    "country": "AE",
+    "_country_why": "Channel is based in the UAE; target audience is UK and US. brandingSettings.country states where the channel is based - it is not an audience-targeting lever and does not gate who gets served the Shorts feed, so an accurate AE costs nothing in UK/US reach. It was empty before, which is the only real defect. Reach to UK/US is carried by defaultLanguage=en (already set on every upload) and watch signals, not by this field."
   }
 }
