@@ -1,7 +1,11 @@
 # Channel Reset — Finance % Decoded, 2026-08-03
 
-**Channel:** @Financeundoubtlydecoded · 191 subscribers · 20 videos · 8,212 lifetime views
+**Channel:** @Financeundoubtlydecoded · 191 subscribers · 21 public videos (+2 scheduled) · 8,212 lifetime views
 **Since the last study (2026-07-17):** +19 subs, +8 videos, +2,223 views.
+
+> **Second pass, 19:20 UTC.** The morning pass is below and still stands. What the
+> afternoon added is at the end, under *Second pass*: two Shorts stopped accruing views
+> entirely, and Part 15 was found sitting unmanaged behind the feed.
 
 Public data only, pulled 2026-08-03. The Nexlev account is still on the free plan, so CTR,
 retention curves and traffic sources remain unavailable. Every number below is a view count, a
@@ -186,3 +190,101 @@ looking like a catastrophe.
 **Change one variable per upload.** The Part 14 launch moved publish time, production style, title
 style and cross-posting all at once — which is why its 43 views tell us nothing about any of them.
 That is the expensive kind of mistake: it costs a whole upload's worth of information.
+
+---
+
+# Second pass — 2026-08-03, 19:20 UTC (12:20 PT)
+
+Six hours after the morning pass. Same public-data-only constraint.
+
+## The ledger, ages attached
+
+| Video | Published (PT) | Age | Views | ≈views/day | Added in the last 6 h |
+|---|---|---|---|---|---|
+| `sbor6eyJQKc` 10 years of payments | Aug 3, 03:00 | 0.39 d | 18 | *too new* | +10 |
+| `OHVnm5R0o5E` Banks take your money (inflation) | Aug 2, 07:02 | 1.22 d | 43 | ~35 | **+0** |
+| `kOkfpCHeURw` £1,461 a month | Aug 2, 03:00 | 1.39 d | 227 | ~164 | **+27** |
+| `P3DxNgGFah0` Everyone asks at once | Jul 31, 04:00 | 3.35 d | 39 | ~12 | **+0** |
+
+Long-form moved from 7 views to 9 (`WJ_UhugwA9U` 4 → 6). Subscribers flat at 191. The
+channel-level 8,212 total is a lagging aggregate and has not moved; ignore it.
+
+## Two things the six hours settled
+
+**1. Retitling a Short that already failed does nothing — now measured, not predicted.**
+`P3DxNgGFah0` was retitled at 13:19 UTC and took **exactly zero** additional views in the six
+hours after. The morning pass predicted this ("done because it is free, not because it is likely
+to work"). It is now evidence. *Stop spending passes retitling dead Shorts.* The only packaging
+lever with a real expected return is the pre-publish one.
+
+**2. Topic exhaustion is about the repeated claim, not the topic label.**
+The morning pass read mortgage as "genuinely unresolved". Six more hours say it is the strongest
+family on the channel, and it is now four entries deep without collapsing:
+
+| Family | Views, in publish order | 4th entry? |
+|---|---|---|
+| Inflation | 1K → 925 → 43 *(+0/6 h — dead)* | — |
+| Banks & deposits | 112 → 105 → 965 → 39 *(+0/6 h — dead)* | collapsed |
+| Mortgage / housing | 106 → 1,225 → 227 *(~164/day)* → 18 *(too new)* | **holding** |
+
+Inflation and banking each *restated* an earlier entry's claim. The four mortgage entries each
+make a different one — how to avoid interest, the two-houses total, the payment split,
+amortisation front-loading. That distinction predicts the data better than the topic label does,
+and it is the refinement that matters for the slate: a fourth entry in a family is fine when the
+claim is new.
+
+Still correlational, and still unresolvable on public data — impressions and swipe-away rate
+would settle it in an afternoon.
+
+## What the pass found that no listing tool shows
+
+The stale-link scan reported **23 owned videos, up from 22** six hours earlier. That number was
+the only visible trace of a new upload, and it names nothing. Private videos appear in no public
+listing tool, which is the entire surface the free Nexlev plan leaves.
+
+Adding a read-only `--inventory` mode to `reset_packaging.py` identified it:
+
+> `JB6Q_7IE9Jo` (private, publishes **2026-08-05 03:00 PT**) — *Part 15, Paper Gold*
+> Uploaded 2026-08-03 15:39 UTC — **2 h 20 m after the morning pass finished**, which is why
+> that pass never saw it.
+
+It was absent from `reset.json` entirely: produced, scheduled, and outside the guard rails.
+This is the failure mode the pass exists to prevent — a video reaching the feed without its
+packaging reviewed — and it was one upload away from happening silently.
+
+## What was changed
+
+| # | Change | Where |
+|---|---|---|
+| 1 | **Part 15 retitled before it publishes** — `Your Gold Isn't Yours (Paper Gold Explained)` → **`Is Paper Gold Halal? (Most People Own a Promise)`**. Description and tags copied byte-identical from the upload, so title is the only variable moving | `automation/reset.json` |
+| 2 | `--inventory`: lists every owned video with privacy status and scheduled `publishAt`, flags any non-public one no config line covers | `reset_packaging.py`, `reset-packaging.yml` |
+| 3 | `scheduled` became a list — two videos are now queued behind the feed at once | `automation/reset.json` |
+
+### Why Part 15's title was overridden
+
+`part15.json` had already drafted `Is Paper Gold Halal?` as its `niche_search_format` and
+rejected it, arguing for the original from the shape of *Why You're Born Into Debt* (1,208 views).
+
+That reasoning is the exact kind this document ruled out one section above: within-channel title
+analogy, where a formula-perfect inflation Short did 43 views against a bare-fragment title at
+200. The cross-channel comparison is cleaner because it holds channel size constant — on a single
+71.8K-sub channel, `Is Forex Halal?` did **158K** and `What do we really mean by Halal Investing?`
+did **6.4K**.
+
+**This channel has never once shipped the niche's dominant format.** That makes it the largest
+untested variable available, and Part 15 is the last upload where testing it is free.
+
+## What to watch
+
+`kOkfpCHeURw` clears 72 h on **Aug 5, 03:00 PT** and `sbor6eyJQKc` on **Aug 6, 03:00 PT** — move
+both out of `hold` then, and read them as views/day, not raw counts.
+
+The two scheduled Shorts are a clean back-to-back test if nothing else moves:
+
+- **Aug 4** — `4gRoTTZNnFE`, mortgage, curiosity-gap title. Fifth entry in the strongest family.
+- **Aug 5** — `JB6Q_7IE9Jo`, paper gold, `Is [X] Halal?` format. New claim, proven format.
+
+If Aug 5 clears ~150 views/day and Aug 4 does not, the format is the lever and the slate should
+go all-in on `Is [named product] Halal?` — `next-slate.md` is already ordered that way. If both
+land under ~50, topic and format are both exhausted as explanations and the honest next step is
+one month of private analytics rather than another guess from view counts.
