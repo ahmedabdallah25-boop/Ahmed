@@ -1,0 +1,58 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,DejaVu Sans,82,&H00FFFFFF,&H000000FF,&H00101010,&HA0000000,-1,0,0,0,78,100,1,0,1,4,3,5,70,70,60,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.65,Cap,,0,0,0,,{\an5\move(540,1429,540,1405,0,2650)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}YOUR MONEY LOSES VALUE WHILE YOU {\c&H34A8E8&\fs90}SLEEP{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:00:02.73,0:00:04.82,Cap,,0,0,0,,{\an5\move(540,1434,540,1410,0,2090)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}SO YOU BUY {\c&H34A8E8&\fs90}GOLD{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:00:04.90,0:00:07.08,Cap,,0,0,0,,{\an5\move(540,1429,540,1405,0,2184)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}BUT MOST PEOPLE WHO BUY {\c&H34A8E8&\fs90}GOLD{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:00:07.17,0:00:08.82,Cap,,0,0,0,,{\an5\move(540,1434,540,1410,0,1655)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}NEVER OWN {\c&H34A8E8&\fs90}ANY{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:00:08.90,0:00:10.50,Cap,,0,0,0,,{\an5\move(540,1166,540,1142,0,1599)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}THEY OWN A {\c&H34A8E8&\fs90}PROMISE{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:00:10.58,0:00:14.52,Cap,,0,0,0,,{\an5\move(540,1166,540,1142,0,3939)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}AND A {\c&H34A8E8&\fs90}PROMISE{\c&HFFFFFF&\fs82} IS WHAT'S {\c&H34A8E8&\fs90}STEALING{\c&HFFFFFF&\fs82} FROM YOU
+Dialogue: 0,0:00:14.60,0:00:16.08,Cap,,0,0,0,,{\an5\move(540,820,540,796,0,1475)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}QUICK RECAP IF YOU'RE NEW HERE
+Dialogue: 0,0:00:16.16,0:00:22.22,Cap,,0,0,0,,{\an5\move(540,820,540,796,0,6065)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}MONEY ISN'T PRINTED, IT'S {\c&H34A8E8&\fs90}LENT{\c&HFFFFFF&\fs82} INTO EXISTENCE
+Dialogue: 0,0:00:22.30,0:00:29.67,Cap,,0,0,0,,{\an5\move(540,1429,540,1405,0,7370)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}{\c&H34A8E8&\fs90}MORE{\c&HFFFFFF&\fs82} MONEY, SAME BREAD — BREAD COSTS {\c&H34A8E8&\fs90}MORE{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:00:29.75,0:00:32.32,Cap,,0,0,0,,{\an5\move(540,1434,540,1410,0,2570)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}THIS EPISODE IS THE {\c&H34A8E8&\fs90}FIX{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:00:32.40,0:00:34.92,Cap,,0,0,0,,{\an5\move(540,1429,540,1405,0,2520)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}THE {\c&H34A8E8&\fs90}FIX{\c&HFFFFFF&\fs82} IS NOT EARNING {\c&H34A8E8&\fs90}MORE{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:00:35.00,0:00:36.02,Cap,,0,0,0,,{\an5\move(540,820,540,796,0,1017)\fad(223,203)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}A RAISE IS PAID
+Dialogue: 0,0:00:36.10,0:00:37.92,Cap,,0,0,0,,{\an5\move(540,820,540,796,0,1822)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}IN THE THING BEING {\c&H34A8E8&\fs90}DILUTED{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:00:38.00,0:00:41.42,Cap,,0,0,0,,{\an5\move(540,1429,540,1405,0,3420)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}HOLD WHAT CANNOT BE {\c&H34A8E8&\fs90}DILUTED{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:00:41.50,0:00:43.17,Cap,,0,0,0,,{\an5\move(540,820,540,796,0,1674)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}IT TAKES {\c&H34A8E8&\fs90}TWO{\c&HFFFFFF&\fs82} THINGS
+Dialogue: 0,0:00:43.25,0:00:44.72,Cap,,0,0,0,,{\an5\move(540,820,540,796,0,1465)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}ONLY {\c&H34A8E8&\fs90}TWO{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:00:44.80,0:00:47.02,Cap,,0,0,0,,{\an5\move(540,1429,540,1405,0,2220)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}ONE: IT HAS TO BE {\c&H34A8E8&\fs90}SCARCE{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:00:47.10,0:00:49.92,Cap,,0,0,0,,{\an5\move(540,1429,540,1405,0,2820)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}{\c&H34A8E8&\fs90}GOLD{\c&HFFFFFF&\fs82} CAN'T BE {\c&H34A8E8&\fs90}APPROVED{\c&HFFFFFF&\fs82} INTO EXISTENCE
+Dialogue: 0,0:00:50.00,0:00:53.72,Cap,,0,0,0,,{\an5\move(540,820,540,796,0,3719)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}DUG, WEIGHED, {\c&H34A8E8&\fs90}EARNED{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:00:53.80,0:00:57.52,Cap,,0,0,0,,{\an5\move(540,820,540,796,0,3720)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}{\c&H34A8E8&\fs90}TWO:{\c&HFFFFFF&\fs82} IT HAS TO ACTUALLY BE {\c&H34A8E8&\fs90}YOURS{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:00:57.60,0:00:59.70,Cap,,0,0,0,,{\an5\move(540,1166,540,1142,0,2094)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}THIS IS WHERE ALMOST EVERYONE
+Dialogue: 0,0:00:59.77,0:01:00.52,Cap,,0,0,0,,{\an5\move(540,1166,540,1142,0,745)\fad(163,149)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}GETS {\c&H34A8E8&\fs90}CAUGHT{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:01:00.60,0:01:02.73,Cap,,0,0,0,,{\an5\move(540,1166,540,1142,0,2134)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}MOST PEOPLE {\c&H34A8E8&\fs90}HOLDING{\c&HFFFFFF&\fs82} {\c&H34A8E8&\fs90}GOLD{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:01:02.81,0:01:04.12,Cap,,0,0,0,,{\an5\move(540,1166,540,1142,0,1305)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}ARE {\c&H34A8E8&\fs90}HOLDING{\c&HFFFFFF&\fs82} {\c&H34A8E8&\fs90}PAPER{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:01:04.20,0:01:04.98,Cap,,0,0,0,,{\an5\move(540,1434,540,1410,0,775)\fad(170,155)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}A CERTIFICATE, AN APP
+Dialogue: 0,0:01:05.06,0:01:07.92,Cap,,0,0,0,,{\an5\move(540,1434,540,1410,0,2864)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}A BALANCE ON A {\c&H34A8E8&\fs90}SCREEN{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:01:08.00,0:01:09.36,Cap,,0,0,0,,{\an5\move(540,1434,540,1410,0,1355)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\bord5\shad4\fs93}THAT IS NOT {\c&H34A8E8&\fs107}GOLD{\c&HFFFFFF&\fs93}
+Dialogue: 0,0:01:09.44,0:01:11.62,Cap,,0,0,0,,{\an5\move(540,1434,540,1410,0,2185)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\bord5\shad4\fs93}THAT IS A {\c&H34A8E8&\fs107}PROMISE{\c&HFFFFFF&\fs93}
+Dialogue: 0,0:01:11.70,0:01:13.72,Cap,,0,0,0,,{\an5\move(540,1434,540,1410,0,2019)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}SOMEONE OWES YOU {\c&H34A8E8&\fs90}GOLD{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:01:13.80,0:01:15.92,Cap,,0,0,0,,{\an5\move(540,1429,540,1405,0,2120)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}AND THEY'RE THE ONE {\c&H34A8E8&\fs90}HOLDING{\c&HFFFFFF&\fs82} IT
+Dialogue: 0,0:01:16.00,0:01:18.32,Cap,,0,0,0,,{\an5\move(540,1429,540,1405,0,2320)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}YOU'RE BACK INSIDE THE SAME {\c&H34A8E8&\fs90}MACHINE{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:01:18.40,0:01:20.13,Cap,,0,0,0,,{\an5\move(540,820,540,796,0,1730)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}A {\c&H34A8E8&\fs90}PROMISE{\c&HFFFFFF&\fs82} CAN BE {\c&H34A8E8&\fs90}DILUTED{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:01:20.21,0:01:22.12,Cap,,0,0,0,,{\an5\move(540,820,540,796,0,1909)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}{\c&H34A8E8&\fs90}METAL{\c&HFFFFFF&\fs82} CANNOT
+Dialogue: 0,0:01:22.20,0:01:24.54,Cap,,0,0,0,,{\an5\move(540,1416,540,1392,0,2340)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\bord5\shad4\fs93}THE OLD RULE WAS {\c&H34A8E8&\fs107}STRICT{\c&HFFFFFF&\fs93}
+Dialogue: 0,0:01:24.62,0:01:27.62,Cap,,0,0,0,,{\an5\move(540,1416,540,1392,0,3000)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\bord5\shad4\fs93}{\c&H34A8E8&\fs107}GOLD{\c&HFFFFFF&\fs93} FOR {\c&H34A8E8&\fs107}GOLD,{\c&HFFFFFF&\fs93} {\c&H34A8E8&\fs107}HAND{\c&HFFFFFF&\fs93} TO {\c&H34A8E8&\fs107}HAND{\c&HFFFFFF&\fs93}
+Dialogue: 0,0:01:27.70,0:01:30.89,Cap,,0,0,0,,{\an5\move(540,820,540,796,0,3194)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}SAME SITTING, NO {\c&H34A8E8&\fs90}DELAY{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:01:30.97,0:01:33.92,Cap,,0,0,0,,{\an5\move(540,820,540,796,0,2945)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}SETTLE NOW, OR IT ISN'T A {\c&H34A8E8&\fs90}SALE{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:01:34.00,0:01:36.26,Cap,,0,0,0,,{\an5\move(540,1429,540,1405,0,2264)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}FOURTEEN {\c&H34A8E8&\fs90}HUNDRED{\c&HFFFFFF&\fs82} YEARS OLD
+Dialogue: 0,0:01:36.34,0:01:39.42,Cap,,0,0,0,,{\an5\move(540,1429,540,1405,0,3075)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}AND IT {\c&H34A8E8&\fs90}KILLS{\c&HFFFFFF&\fs82} {\c&H34A8E8&\fs90}PAPER{\c&HFFFFFF&\fs82} {\c&H34A8E8&\fs90}GOLD{\c&HFFFFFF&\fs82} IN ONE LINE
+Dialogue: 0,0:01:39.50,0:01:44.75,Cap,,0,0,0,,{\an5\move(540,1166,540,1142,0,5250)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}PHYSICAL, ALLOCATED, IN YOUR {\c&H34A8E8&\fs90}HANDS{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:01:44.83,0:01:50.42,Cap,,0,0,0,,{\an5\move(540,1166,540,1142,0,5590)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}NO MARGIN, NO LEVERAGE, NO IOU
+Dialogue: 0,0:01:50.50,0:01:55.98,Cap,,0,0,0,,{\an5\move(540,1429,540,1405,0,5480)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}{\c&H34A8E8&\fs90}METAL{\c&HFFFFFF&\fs82} ISN'T THE ONLY ANSWER
+Dialogue: 0,0:01:56.06,0:02:00.92,Cap,,0,0,0,,{\an5\move(540,1429,540,1405,0,4859)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}OWN A SHARE OF SOMETHING {\c&H34A8E8&\fs90}REAL{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:02:01.00,0:02:10.68,Cap,,0,0,0,,{\an5\move(540,1166,540,1142,0,9679)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}OWN THE THING, NOT THE {\c&H34A8E8&\fs90}CLAIM{\c&HFFFFFF&\fs82}
+Dialogue: 0,0:02:10.76,0:02:20.34,Cap,,0,0,0,,{\an5\move(540,1166,540,1142,0,9579)\fad(260,240)\fscx82\fscy82\t(0,190,\fscx104\fscy104)\t(190,300,\fscx100\fscy100)\fs82}PART THREE: WHAT YOU {\c&H34A8E8&\fs90}OWE{\c&HFFFFFF&\fs82}
