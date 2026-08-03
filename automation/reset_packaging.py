@@ -22,7 +22,9 @@ Needs the same OAuth env vars as apply_fix.py (see SETUP.md).
 """
 import argparse
 import json
+import re
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 from googleapiclient.errors import HttpError
@@ -149,17 +151,19 @@ def inventory(yt):
     managed |= PROTECTED | HELD
 
     ids = owned_video_ids(yt)
-    rows, unmanaged = [], []
+    rows, unmanaged, shorts = [], [], []
     for start in range(0, len(ids), 50):
         batch = ids[start:start + 50]
         items = yt.videos().list(
-            part="snippet,status", id=",".join(batch)).execute().get("items", [])
+            part="snippet,status,contentDetails", id=",".join(batch)).execute().get("items", [])
         for item in items:
             status = item.get("status", {})
             privacy = status.get("privacyStatus", "?")
             # publishAt is only set on a private video with a scheduled release.
             when = status.get("publishAt") or item["snippet"].get("publishedAt", "")
             rows.append((when, privacy, item["id"], item["snippet"].get("title", "")))
+            if iso8601_seconds(item["contentDetails"].get("duration", "")) <= 180:
+                shorts.append((when, item["id"]))
             if privacy != "public" and item["id"] not in managed:
                 unmanaged.append((when, privacy, item["id"], item["snippet"].get("title", "")))
 
@@ -175,7 +179,100 @@ def inventory(yt):
         print("  Package these before they publish — that is the whole window.")
     else:
         print("\n  Every non-public video is covered by reset.json.")
+
+    cadence(shorts)
     return unmanaged
+
+
+def iso8601_seconds(dur: str) -> int:
+    """PT1M40S -> 100. Anything unparseable counts as long-form."""
+    m = re.fullmatch(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", dur or "")
+    if not m:
+        return 10 ** 6
+    h, mi, s = (int(g or 0) for g in m.groups())
+    return h * 3600 + mi * 60 + s
+
+
+# The Shorts feed rewards an unbroken daily cadence and withdraws distribution when
+# a channel goes dark. Measured on this channel 2026-08-03: every 700+ view Short
+# sits inside a run of sub-1.5-day gaps, the first Short after a 9.7-day blackout
+# did 39 views, and the recovery upload two days later did 227. Two Shorts inside
+# the same 12 hours split one audience test — the second of the 2026-08-02 pair
+# took 43 against the first's 227.
+MAX_GAP_DAYS = 1.5
+MIN_GAP_HOURS = 12
+MIN_QUEUE_DAYS = 3
+
+
+def cadence(shorts):
+    """Report Shorts upload rhythm — blackouts behind, and a drying queue ahead."""
+    if not shorts:
+        return
+    seq = sorted(shorts)
+    now = datetime.now(timezone.utc)
+    print("\n== Shorts cadence ==")
+
+    problems = []
+    for (t0, a), (t1, b) in zip(seq, seq[1:]):
+        gap = (parse_ts(t1) - parse_ts(t0)).total_seconds()
+        if gap / 86400 > MAX_GAP_DAYS:
+            problems.append(f"BLACKOUT {gap / 86400:.1f}d before {b} ({t1[:10]})")
+        elif gap / 3600 < MIN_GAP_HOURS:
+            problems.append(f"DOUBLE {gap / 3600:.1f}h between {a} and {b} ({t1[:10]})")
+
+    for p in problems[-6:]:
+        print(f"  {p}")
+
+    published = [t for t, _ in seq if parse_ts(t) <= now]
+    queued = [t for t, _ in seq if parse_ts(t) > now]
+    if published:
+        since = (now - parse_ts(published[-1])).total_seconds() / 86400
+        print(f"  last published {since:.1f}d ago")
+    if queued:
+        runway = (parse_ts(queued[-1]) - now).total_seconds() / 86400
+        print(f"  {len(queued)} queued, runway {runway:.1f}d")
+        if runway < MIN_QUEUE_DAYS:
+            print(f"  ! QUEUE DRIES UP in {runway:.1f}d — the next blackout starts there.")
+    else:
+        print("  ! NOTHING QUEUED — the channel is dark from now on.")
+    return problems
+
+
+def parse_ts(t: str):
+    return datetime.fromisoformat(t.replace("Z", "+00:00"))
+
+
+def fix_channel_meta(yt, dry_run):
+    """Set channel-level keywords. Fetch-then-mutate so other branding survives."""
+    cfg = CFG.get("channel")
+    if not cfg or not cfg.get("keywords"):
+        return 0
+    want = " ".join(f'"{k}"' if " " in k else k for k in cfg["keywords"])
+
+    items = yt.channels().list(part="brandingSettings", mine=True).execute().get("items", [])
+    if not items:
+        ERRORS.append("channel: not found")
+        return 0
+    branding = items[0]["brandingSettings"]
+    have = branding.get("channel", {}).get("keywords", "")
+    if have == want:
+        print("  = channel keywords already up to date.")
+        return 0
+
+    print(f"  channel keywords: {len(have)} chars -> {len(want)} chars")
+    if dry_run:
+        print("      [dry-run] not written")
+        return 0
+    branding.setdefault("channel", {})["keywords"] = want
+    try:
+        yt.channels().update(part="brandingSettings",
+                             body={"id": items[0]["id"], "brandingSettings": branding}).execute()
+    except HttpError as e:
+        print(f"      ERROR writing: {e}")
+        ERRORS.append(f"channel keywords: {e}")
+        return 0
+    print("      written")
+    return 1
 
 
 def owned_video_ids(yt):
@@ -273,6 +370,9 @@ def main():
 
         print("\n== Stale link hygiene ==")
         written += fix_links(yt, args.dry_run)
+
+        print("\n== Channel metadata ==")
+        written += fix_channel_meta(yt, args.dry_run)
 
     print(f"\n{written} video(s) updated.")
     if args.dry_run:

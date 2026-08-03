@@ -72,5 +72,31 @@
       "zY664YZPI6U",
       "ElD5gg-Q1wY"
     ]
+  },
+  "channel": {
+    "_why": "youtube_channel_about returned keywords: [] — the channel had no channel-level keywords at all. These are a weak signal next to per-video metadata, but they are one of the few inputs YouTube uses to decide which topic cluster a channel belongs to, and an empty field gives it nothing. Costs nothing and cannot cannibalise anything. Written via brandingSettings, fetched-then-mutated so the rest of the branding survives.",
+    "keywords": [
+      "islamic finance",
+      "halal investing",
+      "halal money",
+      "muslim money",
+      "is it halal",
+      "halal mortgage",
+      "riba explained",
+      "sukuk",
+      "murabaha",
+      "takaful",
+      "ijara",
+      "musharaka",
+      "sound money",
+      "paper gold",
+      "how banks work",
+      "money explained",
+      "financial education",
+      "halal finance",
+      "faceless finance",
+      "personal finance"
+    ],
+    "_chars": 290
   }
 }
