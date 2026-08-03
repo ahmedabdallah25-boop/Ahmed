@@ -1,0 +1,60 @@
+name: Upload a Short
+
+# One workflow for every episode, replacing the per-episode upload-partNN.yml
+# files. Shipping the next Short is now: write automation/partNN.json, push, and
+# dispatch this with config=partNN.json.
+#
+# That matters more than it looks. Workflows only dispatch from the default
+# branch, so the old shape meant every upload needed a new YAML file authored,
+# pushed to the feature branch AND fast-forwarded to default before it could run
+# - five steps standing between a finished video and the feed. The channel's
+# 700+ view Shorts all sit inside runs of sub-1.5-day gaps, and the one 9.7-day
+# blackout produced its worst result. Friction on the daily action is the thing
+# that breaks cadence, so the daily action gets no friction.
+#
+# Uploads go up private with the publishAt from the config, so title, thumbnail
+# and publish time all stay editable until the moment it goes live.
+
+on:
+  workflow_dispatch:
+    inputs:
+      config:
+        description: "Config in automation/ (e.g. part16.json)"
+        required: true
+        type: string
+      mode:
+        description: "upload = upload & schedule publish; comment = post engagement comment"
+        type: choice
+        options: [upload, comment]
+        default: upload
+      video_id:
+        description: "Video ID (comment mode only)"
+        required: false
+        default: ""
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      UPLOAD_CONFIG: ${{ inputs.config }}
+      YT_CLIENT_ID: ${{ secrets.new1 }}
+      YT_CLIENT_SECRET: ${{ secrets.new2 }}
+      YT_REFRESH_TOKEN: ${{ secrets.new3 }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r automation/requirements.txt
+
+      # Fail before touching YouTube rather than halfway through an upload.
+      - name: Preflight the config
+        run: python automation/preflight.py "${{ inputs.config }}"
+
+      - name: Upload video (scheduled publish)
+        if: ${{ inputs.mode == 'upload' }}
+        run: python automation/upload_video.py
+
+      - name: Post engagement comment
+        if: ${{ inputs.mode == 'comment' }}
+        run: python automation/upload_video.py --comment "${{ inputs.video_id }}"
