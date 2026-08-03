@@ -1,5 +1,7 @@
 # Traffic Pack — Part 15, "Your Gold Isn't Yours"
 
+**Video:** https://youtube.com/shorts/JB6Q_7IE9Jo · uploaded private, publishes **2026-08-05 03:00 PT**
+
 Ready-to-paste distribution for the Paper Gold Short. Same structure as
 `traffic-pack-part14.md`. Everything here is organic — the warning at the top of
 `traffic-pack.md` stands: **never buy views or engagement.** On a 191-sub channel
@@ -165,3 +167,6 @@ this repo's history.
 emphasis) and the runtime (2:20 vs Part 14's 1:40). If it outperforms, the cause is
 ambiguous between those two and the topic. That is worth knowing before drawing a
 conclusion from the number.
+
+Link for the final X thread post and the TikTok bio:
+https://youtube.com/shorts/JB6Q_7IE9Jo
