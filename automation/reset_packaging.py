@@ -155,15 +155,20 @@ def inventory(yt):
     for start in range(0, len(ids), 50):
         batch = ids[start:start + 50]
         items = yt.videos().list(
-            part="snippet,status,contentDetails", id=",".join(batch)).execute().get("items", [])
+            part="snippet,status,contentDetails,statistics",
+            id=",".join(batch)).execute().get("items", [])
         for item in items:
             status = item.get("status", {})
             privacy = status.get("privacyStatus", "?")
             # publishAt is only set on a private video with a scheduled release.
             when = status.get("publishAt") or item["snippet"].get("publishedAt", "")
+            secs = iso8601_seconds(item["contentDetails"].get("duration", ""))
+            views = int(item.get("statistics", {}).get("viewCount", 0) or 0)
             rows.append((when, privacy, item["id"], item["snippet"].get("title", "")))
-            if iso8601_seconds(item["contentDetails"].get("duration", "")) <= 180:
+            if secs <= 180:
                 shorts.append((when, item["id"]))
+                if privacy == "public":
+                    LENGTHS.append((secs, views, when, item["id"]))
             if privacy != "public" and item["id"] not in managed:
                 unmanaged.append((when, privacy, item["id"], item["snippet"].get("title", "")))
 
@@ -181,7 +186,46 @@ def inventory(yt):
         print("\n  Every non-public video is covered by reset.json.")
 
     cadence(shorts)
+    length_vs_views()
     return unmanaged
+
+
+# Filled by inventory(); (seconds, views, published_at, video_id) per public Short.
+LENGTHS = []
+
+
+def length_vs_views():
+    """Does Short length predict performance here? Normalise to views/day, since a
+    3-day-old Short and a 30-day-old one are not comparable on raw counts."""
+    if not LENGTHS:
+        return
+    now = datetime.now(timezone.utc)
+    rated = []
+    for secs, views, when, vid in LENGTHS:
+        age = max((now - parse_ts(when)).total_seconds() / 86400, 0.5)
+        if age < 3:                      # still inside its feed test — not judgeable
+            continue
+        rated.append((secs, views / age, views, age, vid))
+    if not rated:
+        return
+
+    print("\n== Short length vs views/day (public, past 72h) ==")
+    buckets = {"<=30s": [], "31-60s": [], "61-90s": [], ">90s": []}
+    for secs, vpd, views, age, vid in rated:
+        key = ("<=30s" if secs <= 30 else "31-60s" if secs <= 60
+               else "61-90s" if secs <= 90 else ">90s")
+        buckets[key].append(vpd)
+    for name, vals in buckets.items():
+        if vals:
+            vals = sorted(vals)
+            median = vals[len(vals) // 2]
+            print(f"  {name:<8} n={len(vals):<3} median {median:7.1f} v/day"
+                  f"   range {min(vals):.0f}-{max(vals):.0f}")
+    print("  ---")
+    for secs, vpd, views, age, vid in sorted(rated, key=lambda r: -r[1])[:5]:
+        print(f"  BEST  {secs:>4}s  {vpd:7.1f} v/day  ({views} views / {age:.1f}d)  {vid}")
+    for secs, vpd, views, age, vid in sorted(rated, key=lambda r: r[1])[:3]:
+        print(f"  WORST {secs:>4}s  {vpd:7.1f} v/day  ({views} views / {age:.1f}d)  {vid}")
 
 
 def iso8601_seconds(dur: str) -> int:
