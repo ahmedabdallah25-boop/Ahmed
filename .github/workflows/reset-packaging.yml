@@ -11,6 +11,10 @@ on:
         description: "Only fix the unpublished Short (the high-value one)"
         type: boolean
         default: false
+      inventory:
+        description: "Read-only: list every owned video, flag unmanaged private/scheduled ones"
+        type: boolean
+        default: false
 
 jobs:
   reset:
@@ -24,6 +28,7 @@ jobs:
       - name: Apply packaging reset
         run: |
           python automation/reset_packaging.py \
+            ${{ inputs.inventory && '--inventory' || '' }} \
             ${{ inputs.dry_run && '--dry-run' || '' }} \
             ${{ inputs.scheduled_only && '--scheduled' || '' }}
         env:

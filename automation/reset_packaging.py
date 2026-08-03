@@ -134,6 +134,49 @@ def apply_target(yt, target, dry_run):
     return True
 
 
+def inventory(yt):
+    """List every owned video, flagging the ones no config line covers.
+
+    Step 3 of the channel pass — "find anything not yet feed-tested" — used to be
+    inferred from the owned-video count moving, which only says that *something*
+    appeared, not what. A private or scheduled upload is the highest-leverage
+    object on the channel (its packaging can still be fixed before the feed tests
+    it), so it needs naming, not counting. Read-only.
+    """
+    managed = {CFG["scheduled"]["video_id"]}
+    managed |= {t["video_id"] for t in CFG["repackage"]}
+    managed |= PROTECTED | HELD
+
+    ids = owned_video_ids(yt)
+    rows, unmanaged = [], []
+    for start in range(0, len(ids), 50):
+        batch = ids[start:start + 50]
+        items = yt.videos().list(
+            part="snippet,status", id=",".join(batch)).execute().get("items", [])
+        for item in items:
+            status = item.get("status", {})
+            privacy = status.get("privacyStatus", "?")
+            # publishAt is only set on a private video with a scheduled release.
+            when = status.get("publishAt") or item["snippet"].get("publishedAt", "")
+            rows.append((when, privacy, item["id"], item["snippet"].get("title", "")))
+            if privacy != "public" and item["id"] not in managed:
+                unmanaged.append((when, privacy, item["id"], item["snippet"].get("title", "")))
+
+    print(f"  {len(rows)} owned videos\n")
+    for when, privacy, vid, title in sorted(rows, reverse=True):
+        mark = " " if vid in managed else "!"
+        print(f"  {mark} {when:<26} {privacy:<8} {vid}  {title[:64]}")
+
+    if unmanaged:
+        print(f"\n  {len(unmanaged)} NOT-YET-FEED-TESTED and absent from reset.json:")
+        for when, privacy, vid, title in sorted(unmanaged, reverse=True):
+            print(f"    {vid} ({privacy}, {when}) {title}")
+        print("  Package these before they publish — that is the whole window.")
+    else:
+        print("\n  Every non-public video is covered by reset.json.")
+    return unmanaged
+
+
 def owned_video_ids(yt):
     """Every video id on the authenticated channel, via the uploads playlist."""
     chans = yt.channels().list(part="contentDetails", mine=True).execute().get("items", [])
@@ -201,9 +244,17 @@ def main():
     ap.add_argument("--dry-run", action="store_true", help="show changes without writing")
     ap.add_argument("--scheduled", action="store_true",
                     help="only fix the unpublished Short")
+    ap.add_argument("--inventory", action="store_true",
+                    help="list every owned video and flag unmanaged private/scheduled ones")
     args = ap.parse_args()
 
     yt = yt_client()
+
+    if args.inventory:
+        print("\n== Owned video inventory ==")
+        inventory(yt)
+        return 0
+
     written = 0
 
     print("\n== Scheduled Short (fix before it publishes) ==")
