@@ -166,6 +166,16 @@ Mortgages" disambiguates it.
 
 ## Production rules for this slate
 
+0. **Never let the Shorts gap exceed ~1 day, and never publish two inside 12 hours.**
+   This outranks every other rule here, including which subject you pick. Sorted by type
+   rather than by date, every 700+ view Short on this channel sits inside a run of
+   sub-1.5-day gaps. Then Shorts went dark for **9.7 days** while the three long-form
+   videos were made, and the first Short back did **39**. Cadence resumed two days later
+   and the next did **227** — a 5.8x recovery with no change of subject. Four hours after
+   that one, a second Short went out the same day and took **43**, splitting one audience
+   test in half. Long-form did not merely waste effort on 7 views; it took the upload slot
+   with it, and that is the expensive part. `--inventory` now reports blackouts, same-day
+   doubles, and how many days of runway are left in the queue.
 1. **Self-contained.** No Short ends by telling the viewer to go watch something else. A "next" tease is fine; homework is not.
 2. **Custom thumbnail on every upload.** Two recent clips shipped on YouTube's auto-selected frame.
 3. **Real description on every upload.** Those same two carried a 197-character boilerplate; every winner carries 600–2,300. Tags matter less than assumed — the 1,208-view winner has none — but keep the total under **500 characters**, which is a hard YouTube limit that silently rejects the whole update.
