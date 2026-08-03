@@ -1,0 +1,32 @@
+name: Reset packaging
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Show every change without writing anything"
+        type: boolean
+        default: true
+      scheduled_only:
+        description: "Only fix the unpublished Short (the high-value one)"
+        type: boolean
+        default: false
+
+jobs:
+  reset:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r automation/requirements.txt
+      - name: Apply packaging reset
+        run: |
+          python automation/reset_packaging.py \
+            ${{ inputs.dry_run && '--dry-run' || '' }} \
+            ${{ inputs.scheduled_only && '--scheduled' || '' }}
+        env:
+          YT_CLIENT_ID: ${{ secrets.new1 }}
+          YT_CLIENT_SECRET: ${{ secrets.new2 }}
+          YT_REFRESH_TOKEN: ${{ secrets.new3 }}

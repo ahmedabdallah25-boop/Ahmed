@@ -1,0 +1,195 @@
+#!/usr/bin/env python3
+"""Apply the 2026-08-03 packaging reset.
+
+  python reset_packaging.py --dry-run   show every change without writing
+  python reset_packaging.py --scheduled only the unpublished Short
+  python reset_packaging.py             everything in reset.json
+
+Two jobs, in priority order:
+
+  1. The scheduled Short (4gRoTTZNnFE, publishes 2026-08-04 03:00 PT) is the only
+     video on this channel whose packaging can still be fixed BEFORE the feed
+     decides on it. That is where nearly all the value is.
+  2. Three published Shorts that failed get their titles moved back onto the
+     formula that produced every 700+ view video. Expect little from this — a
+     Short that already failed its feed test is rarely revived by a retitle. It
+     is done because it costs nothing, not because it is likely to work.
+
+Refuses to touch any id in reset.json's `protected` list.
+
+Needs the same OAuth env vars as apply_fix.py (see SETUP.md).
+"""
+import argparse
+import json
+import sys
+from pathlib import Path
+
+from googleapiclient.errors import HttpError
+
+from apply_fix import yt_client
+
+HERE = Path(__file__).parent
+CFG = json.loads((HERE / "reset.json").read_text())
+PROTECTED = set(CFG["protected"]["video_ids"])
+HELD = set(CFG.get("hold", {}).get("video_ids", []))
+PLAYLIST_URL = CFG.get("playlist_url", "").strip()
+
+
+def build_description(raw: str) -> str:
+    """Substitute the series-playlist line, matching apply_fix.py's convention."""
+    line = f"▶ Full series in order: {PLAYLIST_URL}\n" if PLAYLIST_URL else ""
+    return raw.replace("{PLAYLIST_LINE}", line)
+
+
+def apply_target(yt, target, dry_run):
+    """Push title/description/tags onto one video. Idempotent."""
+    vid = target["video_id"]
+    if vid in PROTECTED:
+        print(f"  REFUSED {vid}: protected winner — not repackaging.")
+        return False
+    if vid in HELD:
+        print(f"  HELD {vid}: published in the last ~36h and still inside its feed test.")
+        return False
+
+    try:
+        items = yt.videos().list(part="snippet,status", id=vid).execute().get("items", [])
+    except HttpError as e:
+        print(f"  ERROR {vid}: {e}")
+        return False
+
+    if not items:
+        print(f"  SKIP {vid}: not found (deleted, or OAuth account is not the owner).")
+        return False
+
+    snippet = items[0]["snippet"]
+    privacy = items[0].get("status", {}).get("privacyStatus", "?")
+    old_title = snippet.get("title", "")
+
+    new_title = target["title"]
+    new_description = build_description(target["description"])
+    new_tags = sorted(set(snippet.get("tags", [])) | set(target.get("add_tags", [])))
+
+    unchanged = (
+        old_title == new_title
+        and snippet.get("description") == new_description
+        and set(snippet.get("tags", [])) == set(new_tags)
+    )
+    if unchanged:
+        print(f"  = {vid} ({privacy}) already up to date.")
+        return False
+
+    print(f"  {vid} ({privacy})")
+    print(f"      was: {old_title}")
+    print(f"      now: {new_title}")
+
+    if dry_run:
+        print("      [dry-run] not written")
+        return False
+
+    # Mutate the fetched snippet so categoryId / defaultLanguage survive the update.
+    snippet["title"] = new_title
+    snippet["description"] = new_description
+    snippet["tags"] = new_tags
+    try:
+        yt.videos().update(part="snippet", body={"id": vid, "snippet": snippet}).execute()
+    except HttpError as e:
+        print(f"      ERROR writing: {e}")
+        return False
+    print("      written")
+    return True
+
+
+def owned_video_ids(yt):
+    """Every video id on the authenticated channel, via the uploads playlist."""
+    chans = yt.channels().list(part="contentDetails", mine=True).execute().get("items", [])
+    if not chans:
+        return []
+    uploads = chans[0]["contentDetails"]["relatedPlaylists"]["uploads"]
+    ids, page = [], None
+    while True:
+        resp = yt.playlistItems().list(
+            part="contentDetails", playlistId=uploads, maxResults=50, pageToken=page
+        ).execute()
+        ids += [i["contentDetails"]["videoId"] for i in resp.get("items", [])]
+        page = resp.get("nextPageToken")
+        if not page:
+            return ids
+
+
+def fix_links(yt, dry_run):
+    """Replace stale video ids wherever they appear in this channel's descriptions."""
+    replacements = CFG.get("link_fixes", {}).get("replacements", [])
+    if not replacements:
+        return 0
+
+    ids = owned_video_ids(yt)
+    print(f"  scanning {len(ids)} owned videos")
+    written = 0
+
+    for start in range(0, len(ids), 50):
+        batch = ids[start:start + 50]
+        items = yt.videos().list(part="snippet", id=",".join(batch)).execute().get("items", [])
+        for item in items:
+            vid, snippet = item["id"], item["snippet"]
+            desc = snippet.get("description", "")
+            new_desc = desc
+            hits = []
+            for rep in replacements:
+                if rep["from"] in new_desc:
+                    hits.append(f"{rep['from']} -> {rep['to']}")
+                    new_desc = new_desc.replace(rep["from"], rep["to"])
+            if not hits:
+                continue
+
+            print(f"  {vid}: {', '.join(hits)}")
+            if dry_run:
+                print("      [dry-run] not written")
+                continue
+            snippet["description"] = new_desc
+            try:
+                yt.videos().update(part="snippet",
+                                   body={"id": vid, "snippet": snippet}).execute()
+            except HttpError as e:
+                print(f"      ERROR writing: {e}")
+                continue
+            print("      written")
+            written += 1
+
+    if not written and not dry_run:
+        print("  no stale links found — nothing to do.")
+    return written
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--dry-run", action="store_true", help="show changes without writing")
+    ap.add_argument("--scheduled", action="store_true",
+                    help="only fix the unpublished Short")
+    args = ap.parse_args()
+
+    yt = yt_client()
+    written = 0
+
+    print("\n== Scheduled Short (fix before it publishes) ==")
+    written += apply_target(yt, CFG["scheduled"], args.dry_run)
+
+    if not args.scheduled:
+        print("\n== Published Shorts that underperformed ==")
+        for target in CFG["repackage"]:
+            written += apply_target(yt, target, args.dry_run)
+
+        held = CFG.get("hold", {}).get("video_ids", [])
+        if held:
+            print(f"\n== Held (too new to judge) ==\n  {', '.join(held)}")
+
+        print("\n== Stale link hygiene ==")
+        written += fix_links(yt, args.dry_run)
+
+    print(f"\n{written} video(s) updated.")
+    if args.dry_run:
+        print("Dry run — nothing was written.")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
