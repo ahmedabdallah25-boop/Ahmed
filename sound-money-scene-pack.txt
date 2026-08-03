@@ -1,7 +1,7 @@
 ================================================================================
 FINANCE % DECODED — SCENE PACK
 "THEY CAN'T PRINT THIS" (PART 15 — THE FIX)
-Render style: 3D faceless low-poly | 9:16 1080x1920 | ~90s | 28 scenes
+Render style: 3D faceless low-poly | 9:16 1080x1920 | ~95s | 29 scenes
 Direct sequel to Part 14 (inflation-scene-pack.txt). Same character, same seed.
 ================================================================================
 
@@ -45,13 +45,15 @@ owns, and it is the reason this isn't a repeat of Part 4.
 VOICEOVER — full script, ElevenLabs v3 tags, copy as one block
 ================================================================================
 
-[serious] They can type money into existence.
-[whispers] They cannot type this.
-Last video: money isn't printed, it's LENT.
-A loan is approved, and new money appears.
+[serious] If your gold is on a screen... you don't own gold.
+[whispers] You own a promise.
+And a promise is exactly what has been stealing from you.
+[calm] If you're new here — in the previous episode, we said this.
+Money isn't printed. It is LENT into existence.
+A bank approves a loan... and new money appears.
 More money. Same bread. So bread costs more.
-[serious] That's the tax nobody voted for.
-So here's the part nobody tells you.
+[serious] That is the tax nobody voted for.
+This episode is the fix. And the trap sitting in front of it.
 The fix is not earning more.
 A raise is paid in the thing being diluted.
 The fix is holding what cannot be diluted.
@@ -88,46 +90,65 @@ ellipses for breath, CAPS for emphasis, never two tags on one line.
 
 
 ================================================================================
-THE 28 SCENES
+THE 29 SCENES
 ================================================================================
 
 --------------------------------------------------------------------------------
-SCENE 01 | 0:00-0:03 | THE HOOK
+SCENE 01 | 0:00-0:03 | THE HOOK — THE ACCUSATION
 --------------------------------------------------------------------------------
-VO: [serious] They can type money into existence.
-CAPTION 1: They can type money into existence
-CAPTION 2: they cannot type this
-ACTION: Extreme close-up of a hand typing on a glowing keyboard, digits streaming
-upward off the screen into the dark. Cold blue light. Nothing warm in frame.
+VO: [serious] If your gold is on a screen... you don't own gold.
+CAPTION 1: If your gold is on a screen
+CAPTION 2: you don't own gold
+ACTION: Extreme close-up of a phone in AMIR's hand showing a gold bar icon and a
+balance; his other hand reaches to grip the bar on the screen and closes on
+nothing but glass. Cold blue screen light, no metal anywhere in frame.
 
 --------------------------------------------------------------------------------
-SCENE 02 | 0:03-0:05 | THE COUNTER-IMAGE
+SCENE 02 | 0:03-0:05 | THE NAME FOR IT
 --------------------------------------------------------------------------------
-VO: [whispers] They cannot type this.
-CAPTION 1: They cannot type this
-ACTION: Hard cut to a single warm gold bar resting on a dark table, one strong
-edge highlight, no screens anywhere, deep shadow around it.
+VO: [whispers] You own a promise.
+CAPTION 1: You own a promise
+ACTION: Hard cut to a single folded paper certificate lying flat on a dark table
+where a gold bar should be, one cold edge highlight, deep shadow around it.
 
 --------------------------------------------------------------------------------
-SCENE 03 | 0:05-0:08 | RECAP 1
+SCENE 03 | 0:05-0:07 | THE THREAT
 --------------------------------------------------------------------------------
-VO: Last video: money isn't printed, it's LENT.
-CAPTION 1: Last video: money isn't printed
+VO: And a promise is exactly what has been stealing from you.
+CAPTION 1: And a promise is exactly
+CAPTION 2: what's been stealing from you
+ACTION: The certificate curling and shrinking in on itself on the same table
+while the frame slowly pushes in, the space around it going darker.
+
+--------------------------------------------------------------------------------
+SCENE 04 | 0:07-0:10 | DIRECT ADDRESS
+--------------------------------------------------------------------------------
+VO: [calm] If you're new here — in the previous episode, we said this.
+CAPTION 1: If you're new here
+CAPTION 2: here's the last episode in ten seconds
+ACTION: AMIR turning to face camera in a plain warm-grey space, one hand open in
+address, light shifting from cold to warm across him mid-turn.
+
+--------------------------------------------------------------------------------
+SCENE 05 | 0:10-0:12 | RECAP 1
+--------------------------------------------------------------------------------
+VO: Money isn't printed. It is LENT into existence.
+CAPTION 1: Money isn't printed
 CAPTION 2: it's lent into existence
 ACTION: AMIR at a bank desk, a banker figure sliding a document toward him;
 above the desk, faint numbers assembling out of nothing in mid-air.
 
 --------------------------------------------------------------------------------
-SCENE 04 | 0:08-0:10 | RECAP 2
+SCENE 06 | 0:12-0:15 | RECAP 2
 --------------------------------------------------------------------------------
-VO: A loan is approved, and new money appears.
+VO: A bank approves a loan... and new money appears.
 CAPTION 1: A loan is approved
 CAPTION 2: and the money simply appears
 ACTION: Close on a screen where a balance ticks from empty to a large number, the
 glow spilling onto an empty vault door standing open and bare behind it.
 
 --------------------------------------------------------------------------------
-SCENE 05 | 0:10-0:13 | RECAP 3
+SCENE 07 | 0:15-0:18 | RECAP 3
 --------------------------------------------------------------------------------
 VO: More money. Same bread. So bread costs more.
 CAPTION 1: More money, same bread
@@ -136,23 +157,16 @@ ACTION: Split composition: a growing stack of banknotes on the left, one single
 unchanging loaf of bread on the right, balance scale tipping under the notes.
 
 --------------------------------------------------------------------------------
-SCENE 06 | 0:13-0:16 | THE STAKE
+SCENE 08 | 0:18-0:21 | THE STAKE + THE TURN
 --------------------------------------------------------------------------------
-VO: [serious] That's the tax nobody voted for.
-CAPTION 1: The tax nobody voted for
-ACTION: AMIR alone in a supermarket aisle holding a half-empty bag, shelves
-towering, price tags glowing faintly red.
+VO: [serious] That is the tax nobody voted for. / This episode is the fix. And the trap sitting in front of it.
+CAPTION 1: That's the tax nobody voted for
+CAPTION 2: this episode is the fix
+ACTION: AMIR alone in a supermarket aisle holding a half-empty bag, price tags
+glowing faintly red, then a warm key light rising on him from frame left.
 
 --------------------------------------------------------------------------------
-SCENE 07 | 0:16-0:18 | THE TURN
---------------------------------------------------------------------------------
-VO: So here's the part nobody tells you.
-CAPTION 1: Here's the part nobody tells you
-ACTION: AMIR turning to face camera in the emptied aisle, light shifting from
-cold to warm across him mid-turn.
-
---------------------------------------------------------------------------------
-SCENE 08 | 0:18-0:21 | KILL THE WRONG FIX
+SCENE 09 | 0:21-0:24 | KILL THE WRONG FIX
 --------------------------------------------------------------------------------
 VO: The fix is not earning more.
 CAPTION 1: The fix is not earning more
@@ -160,7 +174,7 @@ ACTION: A payslip with a rising arrow printed on it, the paper visibly thinning
 and going translucent at the edges as the arrow climbs.
 
 --------------------------------------------------------------------------------
-SCENE 09 | 0:21-0:24 | WHY
+SCENE 10 | 0:24-0:27 | WHY
 --------------------------------------------------------------------------------
 VO: A raise is paid in the thing being diluted.
 CAPTION 1: A raise is paid
@@ -169,7 +183,7 @@ ACTION: A glass of dark liquid on a counter with clear water pouring in from
 above, the colour draining pale as the level rises.
 
 --------------------------------------------------------------------------------
-SCENE 10 | 0:24-0:27 | THE THESIS
+SCENE 11 | 0:27-0:30 | THE THESIS
 --------------------------------------------------------------------------------
 VO: The fix is holding what cannot be diluted.
 CAPTION 1: Hold what cannot be diluted
@@ -177,7 +191,7 @@ ACTION: AMIR's open palm, a single gold coin resting in it, everything beyond th
 hand falling into darkness.
 
 --------------------------------------------------------------------------------
-SCENE 11 | 0:27-0:29 | THE FRAME
+SCENE 12 | 0:30-0:32 | THE FRAME
 --------------------------------------------------------------------------------
 VO: And that needs two things. Only two.
 CAPTION 1: It takes two things
@@ -186,7 +200,7 @@ ACTION: Two blank low-poly plinths side by side in an empty warm-grey space, bot
 tops empty, waiting.
 
 --------------------------------------------------------------------------------
-SCENE 12 | 0:29-0:32 | RULE ONE
+SCENE 13 | 0:32-0:35 | RULE ONE
 --------------------------------------------------------------------------------
 VO: [emphatic] One. It has to be scarce.
 CAPTION 1: One: it has to be scarce
@@ -194,7 +208,7 @@ ACTION: The left plinth now holds a rough gold nugget; a single spotlight on it,
 the right plinth still empty in shadow.
 
 --------------------------------------------------------------------------------
-SCENE 13 | 0:32-0:35 | SCARCE, PROVEN
+SCENE 14 | 0:35-0:38 | SCARCE, PROVEN
 --------------------------------------------------------------------------------
 VO: Gold cannot be approved into existence.
 CAPTION 1: Gold can't be approved into existence
@@ -202,7 +216,7 @@ ACTION: A bank approval stamp coming down hard on a document and passing straigh
 through it, striking bare stone beneath, leaving no mark.
 
 --------------------------------------------------------------------------------
-SCENE 14 | 0:35-0:38 | THE COST
+SCENE 15 | 0:38-0:41 | THE COST
 --------------------------------------------------------------------------------
 VO: It has to be dug. Weighed. Earned.
 CAPTION 1: Dug, weighed, earned
@@ -210,7 +224,7 @@ ACTION: Three-beat composition in one frame: a pick in ore, a balance scale with
 a small ingot, a worn hand closing around it.
 
 --------------------------------------------------------------------------------
-SCENE 15 | 0:38-0:41 | RULE TWO
+SCENE 16 | 0:41-0:44 | RULE TWO
 --------------------------------------------------------------------------------
 VO: [emphatic] Two. It has to actually be yours.
 CAPTION 1: Two: it has to actually be yours
@@ -218,7 +232,7 @@ ACTION: The right plinth lights up and holds a small locked strongbox; both
 plinths now lit, symmetrical.
 
 --------------------------------------------------------------------------------
-SCENE 16 | 0:41-0:43 | THE TRAP OPENS
+SCENE 17 | 0:44-0:46 | THE TRAP OPENS
 --------------------------------------------------------------------------------
 VO: And this is where almost everyone gets caught.
 CAPTION 1: This is where almost everyone
@@ -227,7 +241,7 @@ ACTION: AMIR mid-stride toward the strongbox, floor beneath him rendered as a
 thin cracking sheet over darkness.
 
 --------------------------------------------------------------------------------
-SCENE 17 | 0:43-0:46 | THE TRAP NAMED
+SCENE 18 | 0:46-0:49 | THE TRAP NAMED
 --------------------------------------------------------------------------------
 VO: Most people "holding gold"... hold paper.
 CAPTION 1: Most people holding gold
@@ -236,7 +250,7 @@ ACTION: AMIR opening the strongbox; inside, no metal — a single folded
 certificate lying flat.
 
 --------------------------------------------------------------------------------
-SCENE 18 | 0:46-0:49 | THE THREE WRAPPERS
+SCENE 19 | 0:49-0:52 | THE THREE WRAPPERS
 --------------------------------------------------------------------------------
 VO: A certificate. An app. A balance on a screen.
 CAPTION 1: A certificate, an app
@@ -245,7 +259,7 @@ ACTION: Three objects in a row on the dark table: a paper certificate, a phone
 showing a gold icon, a monitor showing a number. No metal anywhere in frame.
 
 --------------------------------------------------------------------------------
-SCENE 19 | 0:49-0:52 | *** MECHANISM PAYOFF ***
+SCENE 20 | 0:52-0:55 | *** MECHANISM PAYOFF ***
 --------------------------------------------------------------------------------
 VO: [serious] That is not gold. That is a promise.
 CAPTION 1: That is not gold
@@ -254,7 +268,7 @@ ACTION: The gold bar and the certificate side by side on the same table; the bar
 casts a heavy solid shadow, the certificate casts none at all.
 
 --------------------------------------------------------------------------------
-SCENE 20 | 0:52-0:55 | WHO HOLDS IT
+SCENE 21 | 0:55-0:58 | WHO HOLDS IT
 --------------------------------------------------------------------------------
 VO: Someone owes you gold. They hold the gold.
 CAPTION 1: Someone owes you gold
@@ -263,15 +277,15 @@ ACTION: Wide shot: AMIR small in the foreground holding a slip of paper, a vast
 institutional vault behind him with the metal stacked inside, gate shut.
 
 --------------------------------------------------------------------------------
-SCENE 21 | 0:55-0:58 | THE LOOP CLOSES
+SCENE 22 | 0:58-1:01 | THE LOOP CLOSES
 --------------------------------------------------------------------------------
 VO: You are back inside the same machine.
 CAPTION 1: You're back inside the same machine
-ACTION: The bank desk from Scene 03 reassembling around AMIR, the same document
+ACTION: The bank desk from Scene 05 reassembling around AMIR, the same document
 sliding toward him, identical framing.
 
 --------------------------------------------------------------------------------
-SCENE 22 | 0:58-1:01 | THE PRINCIPLE
+SCENE 23 | 1:01-1:04 | THE PRINCIPLE
 --------------------------------------------------------------------------------
 VO: A promise can be diluted. Metal cannot.
 CAPTION 1: A promise can be diluted
@@ -280,7 +294,7 @@ ACTION: A paper certificate dissolving into pale dust in still air beside a gold
 bar that does not change at all.
 
 --------------------------------------------------------------------------------
-SCENE 23 | 1:01-1:06 | THE RULE (EMOTIONAL PEAK — THUMBNAIL CANDIDATE)
+SCENE 24 | 1:04-1:09 | THE RULE (EMOTIONAL PEAK — THUMBNAIL CANDIDATE)
 --------------------------------------------------------------------------------
 VO: Which is why the old rule was so strict. / Gold for gold. Hand to hand.
 CAPTION 1: The old rule was strict
@@ -290,7 +304,7 @@ passing a gold coin, the other passing a silver coin, both grips closed and
 firm, exchange completing in the same frame.
 
 --------------------------------------------------------------------------------
-SCENE 24 | 1:06-1:10 | THE RULE, SHARPENED
+SCENE 25 | 1:09-1:13 | THE RULE, SHARPENED
 --------------------------------------------------------------------------------
 VO: Same price. Same sitting. No delay. / [serious] Settle now, or it isn't a sale.
 CAPTION 1: Same sitting, no delay
@@ -299,7 +313,7 @@ ACTION: The same two hands, now frozen mid-exchange with a hard shadow line
 falling between them, one coin suspended in the gap.
 
 --------------------------------------------------------------------------------
-SCENE 25 | 1:10-1:13 | THE AGE OF IT
+SCENE 26 | 1:13-1:16 | THE AGE OF IT
 --------------------------------------------------------------------------------
 VO: Fourteen hundred years old, and it kills paper gold in one line.
 CAPTION 1: Fourteen hundred years old
@@ -308,7 +322,7 @@ ACTION: An aged parchment page resting on stone, a single gold coin holding it
 flat, warm side light raking across the surface.
 
 --------------------------------------------------------------------------------
-SCENE 26 | 1:13-1:18 | THE INSTRUCTION
+SCENE 27 | 1:16-1:21 | THE INSTRUCTION
 --------------------------------------------------------------------------------
 VO: So: physical. Allocated. In your possession. / No margin. No leverage. No IOU dressed as metal.
 CAPTION 1: Physical, allocated, in your hands
@@ -317,7 +331,7 @@ ACTION: AMIR placing a small gold bar into a plain home safe and closing it,
 warm domestic light, phone face-down and dark on the shelf beside him.
 
 --------------------------------------------------------------------------------
-SCENE 27 | 1:18-1:26 | BEYOND METAL
+SCENE 28 | 1:21-1:29 | BEYOND METAL
 --------------------------------------------------------------------------------
 VO: [calm] And metal isn't the only answer. / Ownership works. A share of something real. / A tool. A shop. A field. A stake that produces.
 CAPTION 1: Metal isn't the only answer
@@ -326,7 +340,7 @@ ACTION: Three low-poly vignettes in one wide frame — a workbench with tools, a
 small shopfront with its shutter up, a green field — AMIR standing between them.
 
 --------------------------------------------------------------------------------
-SCENE 28 | 1:26-1:34 | CLOSE + END CARD
+SCENE 29 | 1:29-1:37 | CLOSE + END CARD
 --------------------------------------------------------------------------------
 VO: [serious] Because a promise shrinks. A thing does not. / Cash is a claim. Debt is a claim. / Own the thing, not the claim on the thing. / [warmly] Your savings should be something. / [warmly] Follow — part three is what you owe.
 CAPTION 1: Own the thing, not the claim
@@ -342,14 +356,19 @@ identical placement to Part 14 Scene 37.
 ================================================================================
 RETENTION CHECKPOINTS
 ================================================================================
-  Scenes 01-02  the hook is a contrast cut, not a sentence. Cold screen, then
-                warm metal, inside 3 seconds. If the cut is soft, nothing else
-                matters.
-  Scenes 03-06  the recap. Hard ceiling of 8 seconds. It exists to re-arm the
-                stakes for returning viewers and to onboard new ones — the
-                moment it feels like a summary, they leave.
-  Scene 19      the mechanism payoff. The one frame that has to be understood.
-  Scene 23      emotional peak and best thumbnail candidate.
+  Scenes 01-03  the hook. An accusation aimed at the viewer, not a statement
+                about banks — "your gold" in the first two seconds, and the hand
+                closing on glass proves it before the line finishes. Then the
+                threat: the promise is the thing robbing you. If this doesn't
+                land inside 3 seconds, nothing else matters.
+  Scene 04      the "if you're new here" turn. Say it to camera. It gives
+                returning viewers permission to stay and new viewers a reason
+                to — but only if the promise of ten seconds is kept.
+  Scenes 05-08  the recap. Hard ceiling of 10 seconds, ending on the turn. The
+                moment it feels like a summary rather than a re-arming of the
+                stakes, they leave.
+  Scene 20      the mechanism payoff. The one frame that has to be understood.
+  Scene 24      emotional peak and best thumbnail candidate.
 
 
 ================================================================================
@@ -360,7 +379,7 @@ TITLE
 They Can Print Money. They Can't Print This. (Part 15) #soundmoney #islamicfinance
 
 THUMBNAIL DIRECTION
-Two hands mid-exchange from Scene 23, gold coin visible, hard warm key light.
+Two hands mid-exchange from Scene 24, gold coin visible, hard warm key light.
 Overlay text: PAPER GOLD ISN'T GOLD. Keep the text to the upper third, clear of
 the Shorts UI. Generate variants in the style of inflation-thumbnail-prompts.md.
 
