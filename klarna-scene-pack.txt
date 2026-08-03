@@ -1,0 +1,294 @@
+================================================================================
+FINANCE % DECODED — SEEDANCE SCENE PACK
+"IS KLARNA HALAL?"
+Seedance 2.0 | text-to-video | 9:16 1080x1920 | 11 clips x 5s | ~55s
+================================================================================
+
+HOW TO USE THIS FILE
+- Every VIDEO PROMPT is complete and self-contained. Copy one, paste into
+  Seedance, set 9:16 / 5s / 1080p, generate. Character, wardrobe, lighting,
+  camera move and style are already baked into each prompt.
+- The NEGATIVE PROMPT is identical for all 11 clips. Paste once, leave it.
+- Do NOT ask Seedance for on-screen numbers. Every price, fee and percentage
+  is burned in during the edit. Prompts request blank/blurred screens for
+  exactly this reason — generated text garbles and dates the frame.
+- VO lines carry ElevenLabs v3 tags. Paste exactly as written, brackets included.
+- CAPTION lines are what you burn on top.
+
+CONSISTENCY WORKFLOW (do this before generating clip 2)
+1. Generate CLIP 03 first — cleanest full-body view of AMIR.
+2. Regenerate until the head is fully blank. Then save that frame.
+3. Feed that frame back as the reference image on every clip containing AMIR
+   (03, 05, 06, 11). Character drift is the #1 failure mode of this format.
+4. On the free trial, generate in this order: 01 (the hook decides the video),
+   then 03, then the rest. If the trial runs out, 01-07 alone is a video.
+
+================================================================================
+NEGATIVE PROMPT — applies to ALL 11 clips
+================================================================================
+
+facial features, eyes, mouth, nose, lips, eyebrows, face, portrait, text,
+lettering, numbers, logos, brand names, watermark, signature, cartoon outlines,
+cel shading, flat vector, anime, 2D illustration, distorted hands, extra fingers,
+extra limbs, morphing objects, warping architecture, camera shake, whip pans,
+blurry, low resolution, oversaturated, plastic sheen, uncanny, stock-photo smiles
+
+================================================================================
+VOICEOVER — full script, ElevenLabs v3 tags, copy as one block
+================================================================================
+
+[serious] Klarna is interest-free. That's the most expensive word in finance.
+Four payments. Twenty-two fifty. Zero percent.
+[whispers] So who's actually paying for it?
+Klarna charges the shop up to six percent of every sale.
+[serious] No shop eats that. It goes on the price tag.
+So the price went up for everyone.
+Including the person paying cash.
+They never used Klarna. They're still funding it.
+Then the late fee.
+Then the basket you'd never have filled at full price.
+[emphatic] That's the actual product.
+[calm] A sale should have one price. Agreed once. Never moves again.
+That's murabaha. One markup, fixed at the moment of sale. Not a loan.
+[serious] Klarna is the same shape, built wrong.
+[warmly] Zero percent is never zero. Someone always pays.
+[warmly] Follow — the fix is next.
+
+VOICE NOTES: tags are strongest at the turns — keep them sparse. Full stops
+between the numbers ("Four payments. Twenty-two fifty.") are doing the pacing,
+don't smooth them into commas. Stability 45-55, similarity 75, speed 1.0.
+
+================================================================================
+SCENES
+================================================================================
+
+--------------------------------------------------------------------------------
+CLIP 01 | 0:00-0:05 | THE HOOK
+--------------------------------------------------------------------------------
+VO: [serious] Klarna is interest-free. That's the most expensive word in finance.
+CAPTION 1: "Interest-free"
+CAPTION 2: the most expensive word in finance
+BURN IN: 4 payments of £22.50 / 0% interest — 0% circled in terracotta
+
+VIDEO PROMPT:
+Extreme close-up of a phone held in two simplified geometric hands, stylised
+low-poly 3D, matte clay shading, terracotta #E85F42 sleeve cuffs at frame edge.
+The phone screen is a clean blank checkout card — pale grey panel, four small
+empty rounded boxes in a row, no text. The four boxes illuminate one after
+another, left to right, with a soft warm glow. Camera pushes in slowly on the
+screen, 8% over five seconds, locked and steady. Near-photorealistic shop
+interior dissolved into deep bokeh behind. Hard directional key light from the
+left, real shadow falling right. Shallow cinematic depth of field. 9:16 vertical,
+subject in the lower two-thirds, clean headroom above for captions.
+
+--------------------------------------------------------------------------------
+CLIP 02 | 0:05-0:10 | THE STRUCTURE
+--------------------------------------------------------------------------------
+VO: Four payments. Twenty-two fifty. Zero percent. [whispers] So who's actually paying for it?
+CAPTION 1: Four payments. Zero percent.
+CAPTION 2: so who pays for it?
+BURN IN: £22.50 × 4 stamping in over the four cards
+
+VIDEO PROMPT:
+Top-down macro shot of a dark matte charcoal surface. Four identical blank cream
+payment cards drop into frame one at a time in an even row, each landing with a
+small settle and casting a hard real shadow. After the fourth lands, the camera
+lifts and tilts back 15 degrees to reveal a fifth shadow on the surface with no
+card above it. Stylised low-poly 3D render, matte clay materials, near-
+photorealistic paper and metal texture. Single hard key light from upper left,
+deep near-black background, one warm amber accent. Slow deliberate motion, no
+camera shake. 9:16 vertical, action in the lower two-thirds.
+
+--------------------------------------------------------------------------------
+CLIP 03 | 0:10-0:15 | THE FEE  ** GENERATE THIS ONE FIRST **
+--------------------------------------------------------------------------------
+VO: Klarna charges the shop up to six percent of every sale.
+CAPTION 1: The shop pays up to 6%
+CAPTION 2: on every single sale
+BURN IN: −6% peeling off the stack
+
+VIDEO PROMPT:
+Stylised low-poly 3D render of a shop counter seen from the customer's side.
+Behind it stands a shopkeeper with a COMPLETELY BLANK featureless head — no eyes,
+no nose, no mouth, a smooth matte tan block — wearing a deep navy #1E3A5F apron
+and a navy bucket hat, arms resting on the counter. In front of him a short stack
+of banknotes sits on the counter; a thin top slice of the stack lifts away and
+drifts out of frame to the right while he stays perfectly still. Camera orbits
+slowly 12 degrees to the left, holding him centre-frame. Near-photorealistic shop
+interior behind, shelves in soft focus, warm overhead light. Matte clay-like
+shading, soft subsurface material, real cast shadows. Shallow depth of field.
+9:16 vertical, subject lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+CLIP 04 | 0:15-0:20 | WHERE IT GOES
+--------------------------------------------------------------------------------
+VO: [serious] No shop eats that. It goes on the price tag.
+CAPTION 1: No shop absorbs that
+CAPTION 2: it goes on the price tag
+BURN IN: £75 → £79.50 on the tag
+
+VIDEO PROMPT:
+Macro close-up of a blank cream cardboard price tag hanging on a string from the
+cuff of a folded jacket, stylised low-poly 3D, matte fabric, near-photorealistic
+card texture. The tag swings gently, then rises straight upward a short distance
+and holds, the string going taut. Camera tracks up with it and stops. Hard low
+key light from the left throwing a long sharp shadow across the fabric behind.
+Deep near-black background, one warm amber rim on the tag edge. Very shallow
+depth of field. Slow, quiet, no shake. 9:16 vertical, subject lower two-thirds.
+
+--------------------------------------------------------------------------------
+CLIP 05 | 0:20-0:25 | EVERYONE PAYS
+--------------------------------------------------------------------------------
+VO: So the price went up for everyone. Including the person paying cash.
+CAPTION 1: The price went up for everyone
+CAPTION 2: including the person paying cash
+BURN IN: none
+
+VIDEO PROMPT:
+Wide shot down a clothing shop aisle, rails of garments receding on both sides,
+dozens of small blank cream price tags hanging along them. Every tag lifts very
+slightly at the same moment, a synchronised rise of a few centimetres, then
+settles. Camera dollies forward slowly down the centre of the aisle, 10% push
+over five seconds, locked height, no shake. Near-photorealistic retail interior,
+stylised low-poly 3D garments and fittings, matte clay shading, cool overhead
+fluorescent light with one warm amber pool at the far end. Shallow cinematic
+depth of field, far end falling into soft bokeh. 9:16 vertical composition.
+
+--------------------------------------------------------------------------------
+CLIP 06 | 0:25-0:30 | THE CASH BUYER
+--------------------------------------------------------------------------------
+VO: They never used Klarna. They're still funding it. Then the late fee.
+CAPTION 1: They never used it
+CAPTION 2: they're still funding it
+BURN IN: LATE FEE £6.00 landing hard on the last beat
+
+VIDEO PROMPT:
+Medium close-up at a shop counter. A stylised low-poly 3D elderly customer with a
+COMPLETELY BLANK featureless head — no eyes, no nose, no mouth, a smooth matte
+tan block — in a muted olive coat and flat cap, slowly counts three banknotes
+from one hand into the other and lays them on the counter. Hands are simplified
+geometric forms, matte clay shading. Camera holds still, then pushes in 6% on the
+notes as the last one lands. Near-photorealistic counter surface and blurred
+shelving behind, warm side light from the left, deep shadow on the right.
+Shallow depth of field. Quiet, unhurried motion. 9:16 vertical, lower two-thirds.
+
+--------------------------------------------------------------------------------
+CLIP 07 | 0:30-0:35 | THE ACTUAL PRODUCT
+--------------------------------------------------------------------------------
+VO: Then the basket you'd never have filled at full price. [emphatic] That's the actual product.
+CAPTION 1: Then the bigger basket
+CAPTION 2: that's the actual product
+BURN IN: +41% average basket
+
+VIDEO PROMPT:
+Stylised low-poly 3D shopping basket on a dark matte floor, shot from slightly
+above. Items drop into it one after another in quick succession — folded
+clothing, a shoe box, a small carton — until it is overfull and one item balances
+on the rim. Matte clay materials, near-photorealistic fabric and cardboard
+texture, real cast shadows. Camera rises smoothly on a crane move from waist
+height to high angle as the basket fills. Deep near-black background, single hard
+key light from upper left, one warm amber accent. No shake. 9:16 vertical
+composition, subject centred in the lower two-thirds.
+
+--------------------------------------------------------------------------------
+CLIP 08 | 0:35-0:40 | THE RULE
+--------------------------------------------------------------------------------
+VO: [calm] A sale should have one price. Agreed once. Never moves again.
+CAPTION 1: One price
+CAPTION 2: agreed once, never moves
+BURN IN: £75.00 — locked
+
+VIDEO PROMPT:
+Tabletop shot, dark walnut surface. A single blank cream card lies flat in the
+centre. A simplified geometric hand in a terracotta #E85F42 sleeve enters from
+the right, presses a heavy brass stamp onto the card once, and withdraws. The
+card settles. Everything then holds completely still for two seconds. Stylised
+low-poly 3D, matte clay shading, near-photorealistic brass and paper texture.
+Camera locked off, no movement at all — the only motion in frame is the hand.
+Single hard key light from the left, long real shadow to the right, deep
+near-black surround, warm amber glint on the brass. 9:16 vertical, lower
+two-thirds, clean headroom.
+
+--------------------------------------------------------------------------------
+CLIP 09 | 0:40-0:45 | MURABAHA
+--------------------------------------------------------------------------------
+VO: That's murabaha. One markup, fixed at the moment of sale. Not a loan.
+CAPTION 1: That's murabaha
+CAPTION 2: one markup — fixed, not a loan
+BURN IN: COST £60 + MARKUP £15 = £75 FIXED
+
+VIDEO PROMPT:
+Stylised low-poly 3D still-life on a dark matte plinth. On the left, a folded
+jacket. On the right, an empty space. A pair of simplified geometric hands lifts
+the jacket, moves it across, and sets it down on the right side of the plinth,
+then withdraws from frame. A single heavy brass bar descends and rests beside it,
+settling with weight. Camera arcs slowly 15 degrees right during the move, then
+stops dead. Matte clay materials, near-photorealistic brass and wool texture,
+real cast shadows. Deep near-black background, one hard key light from upper
+left, warm amber rim. Deliberate, weighted, no shake. 9:16 vertical composition.
+
+--------------------------------------------------------------------------------
+CLIP 10 | 0:45-0:50 | SAME SHAPE, BUILT WRONG
+--------------------------------------------------------------------------------
+VO: [serious] Klarna is the same shape, built wrong.
+CAPTION 1: Same shape
+CAPTION 2: built wrong
+BURN IN: none
+
+VIDEO PROMPT:
+Macro close-up of a single cream payment card standing upright on a dark matte
+surface, identical in form to the card in the earlier stamped shot. A fine crack
+opens across its face from the bottom edge upward, slowly, and stops halfway. The
+card does not fall. Camera pushes in 10% on the crack over five seconds, locked
+and steady. Stylised low-poly 3D, matte clay shading, near-photorealistic card
+stock texture with visible fibre at the fracture. Deep near-black background,
+single hard raking light from the left picking out the crack edge, cool neutral
+grade with one warm amber accent. 9:16 vertical, subject lower two-thirds.
+
+--------------------------------------------------------------------------------
+CLIP 11 | 0:50-0:56 | THE CLOSE
+--------------------------------------------------------------------------------
+VO: [warmly] Zero percent is never zero. Someone always pays. [warmly] Follow — the fix is next.
+CAPTION 1: 0% is never zero
+CAPTION 2: someone always pays
+BURN IN: Follow — the fix is next
+
+VIDEO PROMPT:
+Stylised low-poly 3D character AMIR walking out through a shop doorway into warm
+low evening sun, carrying one small paper bag, seen from a low three-quarter
+angle. He has a COMPLETELY BLANK featureless head — no eyes, no nose, no mouth, a
+smooth matte tan block. He wears a terracotta #E85F42 t-shirt, cream #E8DCC8
+trousers, white sneakers and a cream beanie. Simplified geometric anatomy, matte
+clay-like shading, soft subsurface material. He walks three unhurried steps
+toward camera and stops. Camera tracks backward with him at the same speed, then
+settles. Near-photorealistic street behind, long golden hour shadows, warm amber
+key from behind him, cool fill from the front. Shallow cinematic depth of field.
+9:16 vertical, subject lower two-thirds, generous headroom above.
+
+================================================================================
+CAPTION SPEC
+================================================================================
+Font: heavy geometric sans, all caps for CAPTION 1, sentence case for CAPTION 2.
+Colour: #F5F0E6 with a 2px #0A0C10 outline. Accent word in #E85F42.
+Position: CAPTION 1 at 62% height, CAPTION 2 directly beneath at 70%.
+Timing: CAPTION 1 lands on the first stressed syllable of the line. CAPTION 2
+lands one beat later. Both clear 200ms before the cut.
+BURN IN numbers: same family, #F5F0E6, placed over the object they describe,
+scaling up 4% on entry. These carry the whole argument — never let a generated
+frame try to render them.
+
+================================================================================
+PACKAGING (locked before the assets, per the slate)
+================================================================================
+TITLE:      Is Klarna Halal?
+THUMBNAIL:  the checkout card, 0% circled in terracotta, nothing else
+FRAME ONE:  clip 01, the four boxes lighting in sequence
+LINE ONE:   "Klarna is interest-free. That's the most expensive word in finance."
+PAYOFF:     a sale has one price, fixed at the moment of sale — murabaha does
+            exactly that and is not a loan; Klarna is the same shape done wrong
+LENGTH:     ~55s (slate rule: 30-60s)
+DESCRIPTION: write 600+ chars. Do not ship the 197-char boilerplate.
+TAGS:       keep the total under 500 characters — hard YouTube limit.
+KEYWORDS:   do NOT put "riba" in the title. English SERP is polluted by the
+            Royal Institute of British Architects. Use it in the description
+            and the spoken script only.
