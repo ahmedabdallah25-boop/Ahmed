@@ -5,6 +5,7 @@ import {INFLATION_DURATION, Inflation} from './inflation/Inflation';
 import {INFLATION_THUMBS, THUMB_H, THUMB_W} from './inflation/Thumbnail';
 import {Longform} from './longform/Longform';
 import {VO_DURATION} from './longform/timing';
+import {SAMPLE_5S_SECONDS, Sample5s} from './samples/Sample5s';
 import {Short} from './Short';
 import {SHORTS} from './ShortsCuts';
 import {THUMBS, THUMB_SIZE} from './Thumbnails';
@@ -67,6 +68,15 @@ export const RemotionRoot: React.FC = () => (
         height={H}
       />
     ))}
+    {/* 5-second demo of the free local renderer — see docs/free-video.md. */}
+    <Composition
+      id="Sample-Free5s"
+      component={Sample5s}
+      durationInFrames={SAMPLE_5S_SECONDS * FPS}
+      fps={FPS}
+      width={W}
+      height={H}
+    />
     {/* Vertical Short, kept for the Shorts lane. */}
     <Composition
       id="Part14-RaiseTrap"
