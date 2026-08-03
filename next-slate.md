@@ -176,6 +176,16 @@ Mortgages" disambiguates it.
    test in half. Long-form did not merely waste effort on 7 views; it took the upload slot
    with it, and that is the expensive part. `--inventory` now reports blackouts, same-day
    doubles, and how many days of runway are left in the queue.
+0.5 **Pick one currency per Short, and default to $.** The audience is UK *and* US; the
+   channel is currently split between them mid-catalogue — `£1,461 a month` on one Short,
+   `$359,000` on another — and this slate is £-heavy in frame one (`£22.50`, `£42,000`,
+   `−£3.20`). A US viewer meeting `£` at t=0 has no felt reference for the number, and t=0
+   is the entire swipe decision. Use `$` for any mechanism that works in both markets, and
+   reserve `£` for the genuinely UK-only ones. Three items here are UK-shaped rather than
+   universal — **#2 pensions** (auto-enrolment has no US analogue; the 401(k) is a
+   different mechanism), **#4 Revolut** (thin US penetration), **#5 student loans** (Plan 5
+   and US federal loans behave differently). Either localise them explicitly in the title
+   or move them down the order behind the universal ones.
 1. **Self-contained.** No Short ends by telling the viewer to go watch something else. A "next" tease is fine; homework is not.
 2. **Custom thumbnail on every upload.** Two recent clips shipped on YouTube's auto-selected frame.
 3. **Real description on every upload.** Those same two carried a 197-character boilerplate; every winner carries 600–2,300. Tags matter less than assumed — the 1,208-view winner has none — but keep the total under **500 characters**, which is a hard YouTube limit that silently rejects the whole update.
