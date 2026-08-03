@@ -1,0 +1,481 @@
+================================================================================
+FINANCE % DECODED — "IS KLARNA HALAL?" — PROMPT PACK
+Two independent tracks: VIDEO (Seedance) and STILLS (any image model)
+9:16 · 1080x1920 · 11 scenes · 55.37s
+================================================================================
+
+WHAT THIS FILE IS
+
+Two complete, separate ways to shoot this Short. Pick one — do not mix them,
+the idioms don't cut together.
+
+  TRACK A — VIDEO.  11 generated clips. Highest production value, highest cost,
+                    most drift risk. Use while the Seedance trial is live.
+  TRACK B — STILLS. 11 generated images, moved in the edit. A quarter of the
+                    generations, no temporal artefacts, and the frames are
+                    reusable as thumbnails and as b-roll on later episodes.
+
+The image prompts are NOT the video prompts with the motion deleted. They are
+written as single decisive frames — tighter, more still-life, lit harder, with
+real lens language — because a still has to survive being looked at for four
+seconds without moving. Composition differs too: stills are framed with more
+negative space, since the edit push will crop into them.
+
+The timings below are the real cut. They come from the rendered composition
+(video/src/klarna/beats.ts), so they already match the VO in media/klarna-vo.mp3.
+
+
+================================================================================
+SCENE MAP — the spine both tracks hang off
+================================================================================
+
+ #  | IN     | OUT    | LEN   | SCENE            | VO LINE
+----|--------|--------|-------|------------------|----------------------------
+ 01 | 0:00.0 | 0:04.7 | 4.73s | hook             | Klarna is interest-free...
+ 02 | 0:04.7 | 0:11.1 | 6.40s | the structure    | Four payments... who's paying?
+ 03 | 0:11.1 | 0:15.2 | 4.10s | the fee          | ...up to six percent of every sale
+ 04 | 0:15.2 | 0:18.7 | 3.47s | where it goes    | No shop eats that...
+ 05 | 0:18.7 | 0:24.5 | 5.83s | everyone pays    | ...including the person paying cash
+ 06 | 0:24.5 | 0:30.4 | 5.83s | the cash buyer   | They never used Klarna...
+ 07 | 0:30.4 | 0:36.9 | 6.53s | actual product   | Then the basket...
+ 08 | 0:36.9 | 0:41.3 | 4.37s | the rule         | A sale should have one price...
+ 09 | 0:41.3 | 0:46.1 | 4.80s | murabaha         | That's murabaha...
+ 10 | 0:46.1 | 0:49.2 | 3.17s | built wrong      | Klarna is the same shape...
+ 11 | 0:49.2 | 0:55.4 | 6.13s | the close        | Zero percent is never zero...
+
+CLIP LENGTH NOTE (Track A). Seedance generates 5s or 10s. Scenes 02, 05, 06, 07
+and 11 run longer than 5s — generate those at 10s and trim to the OUT point.
+The rest generate at 5s and trim. Never stretch a 5s clip to cover 6.5s; the
+slow-down is visible.
+
+
+================================================================================
+NUMBERS — burn these in during the edit, never generate them
+================================================================================
+
+Both tracks. Generated text garbles, dates the frame, and gets the currency
+wrong. Every prompt below asks for blank cards, blank tags and blank screens on
+purpose. These are the numbers that go on top:
+
+  01  4 payments of £22.50   ·   0% interest   (circle the 0% in terracotta)
+  02  £22.50 x 4             ·   the fifth payment: ?
+  03  −6%                    ·   to Klarna
+  04  £75.00 → £79.50
+  05  (none — the arrows carry it)
+  06  LATE FEE £6.00
+  07  +41% average basket
+  08  £75.00 — LOCKED
+  09  COST £60 + MARKUP £15 = £75 FIXED
+  10  £75.00 (cracked)
+  11  0% is never zero
+
+
+================================================================================
+================================  TRACK A  =====================================
+                            VIDEO — 11 CLIPS
+================================================================================
+
+SETTINGS: 9:16 · 1080p · 5s or 10s per the scene map · text-to-video.
+
+CONSISTENCY: generate CLIP 03 first — it is the cleanest full view of the
+character. Regenerate until the head is completely blank, save that frame, then
+feed it as the reference image on clips 03, 05, 06 and 11. Character drift
+between clips is what kills this format.
+
+NEGATIVE PROMPT — paste once, applies to all 11 clips:
+
+facial features, eyes, mouth, nose, lips, eyebrows, face, portrait, text,
+lettering, numbers, logos, brand names, watermark, signature, cartoon outlines,
+cel shading, flat vector, anime, 2D illustration, distorted hands, extra fingers,
+extra limbs, morphing objects, warping architecture, camera shake, whip pans,
+blurry, low resolution, oversaturated, plastic sheen, uncanny, stock-photo smiles
+
+--------------------------------------------------------------------------------
+A01 · 0:00.0–0:04.7 · THE HOOK
+--------------------------------------------------------------------------------
+Extreme close-up of a phone held in two simplified geometric hands, stylised
+low-poly 3D, matte clay shading, terracotta #E85F42 sleeve cuffs at frame edge.
+The phone screen is a clean blank checkout card — pale grey panel, four small
+empty rounded boxes in a row, no text. The four boxes illuminate one after
+another, left to right, with a soft warm glow. Camera pushes in slowly on the
+screen, 8% over five seconds, locked and steady. Near-photorealistic shop
+interior dissolved into deep bokeh behind. Hard directional key light from the
+left, real shadow falling right. Shallow cinematic depth of field. 9:16 vertical,
+subject in the lower two-thirds, clean headroom above for captions.
+
+--------------------------------------------------------------------------------
+A02 · 0:04.7–0:11.1 · THE STRUCTURE   [generate 10s]
+--------------------------------------------------------------------------------
+Top-down macro shot of a dark matte charcoal surface. Four identical blank cream
+payment cards drop into frame one at a time in an even row, each landing with a
+small settle and casting a hard real shadow. After the fourth lands, the camera
+lifts and tilts back 15 degrees to reveal a fifth shadow on the surface with no
+card above it. Stylised low-poly 3D render, matte clay materials, near-
+photorealistic paper and metal texture. Single hard key light from upper left,
+deep near-black background, one warm amber accent. Slow deliberate motion, no
+camera shake. 9:16 vertical, action in the lower two-thirds.
+
+--------------------------------------------------------------------------------
+A03 · 0:11.1–0:15.2 · THE FEE   ** GENERATE FIRST **
+--------------------------------------------------------------------------------
+Stylised low-poly 3D render of a shop counter seen from the customer's side.
+Behind it stands a shopkeeper with a COMPLETELY BLANK featureless head — no eyes,
+no nose, no mouth, a smooth matte tan block — wearing a deep navy #1E3A5F apron
+and a navy bucket hat, arms resting on the counter. In front of him a short stack
+of banknotes sits on the counter; a thin top slice of the stack lifts away and
+drifts out of frame to the right while he stays perfectly still. Camera orbits
+slowly 12 degrees to the left, holding him centre-frame. Near-photorealistic shop
+interior behind, shelves in soft focus, warm overhead light. Matte clay-like
+shading, soft subsurface material, real cast shadows. Shallow depth of field.
+9:16 vertical, subject lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+A04 · 0:15.2–0:18.7 · WHERE IT GOES
+--------------------------------------------------------------------------------
+Macro close-up of a blank cream cardboard price tag hanging on a string from the
+cuff of a folded jacket, stylised low-poly 3D, matte fabric, near-photorealistic
+card texture. The tag swings gently, then rises straight upward a short distance
+and holds, the string going taut. Camera tracks up with it and stops. Hard low
+key light from the left throwing a long sharp shadow across the fabric behind.
+Deep near-black background, one warm amber rim on the tag edge. Very shallow
+depth of field. Slow, quiet, no shake. 9:16 vertical, subject lower two-thirds.
+
+--------------------------------------------------------------------------------
+A05 · 0:18.7–0:24.5 · EVERYONE PAYS   [generate 10s]
+--------------------------------------------------------------------------------
+Wide shot down a clothing shop aisle, rails of garments receding on both sides,
+dozens of small blank cream price tags hanging along them. Every tag lifts very
+slightly at the same moment, a synchronised rise of a few centimetres, then
+settles. Camera dollies forward slowly down the centre of the aisle, 10% push
+over five seconds, locked height, no shake. Near-photorealistic retail interior,
+stylised low-poly 3D garments and fittings, matte clay shading, cool overhead
+fluorescent light with one warm amber pool at the far end. Shallow cinematic
+depth of field, far end falling into soft bokeh. 9:16 vertical composition.
+
+--------------------------------------------------------------------------------
+A06 · 0:24.5–0:30.4 · THE CASH BUYER   [generate 10s]
+--------------------------------------------------------------------------------
+Medium close-up at a shop counter. A stylised low-poly 3D elderly customer with a
+COMPLETELY BLANK featureless head — no eyes, no nose, no mouth, a smooth matte
+tan block — in a muted olive coat and flat cap, slowly counts three banknotes
+from one hand into the other and lays them on the counter. Hands are simplified
+geometric forms, matte clay shading. Camera holds still, then pushes in 6% on the
+notes as the last one lands. Near-photorealistic counter surface and blurred
+shelving behind, warm side light from the left, deep shadow on the right.
+Shallow depth of field. Quiet, unhurried motion. 9:16 vertical, lower two-thirds.
+
+--------------------------------------------------------------------------------
+A07 · 0:30.4–0:36.9 · THE ACTUAL PRODUCT   [generate 10s]
+--------------------------------------------------------------------------------
+Stylised low-poly 3D shopping basket on a dark matte floor, shot from slightly
+above. Items drop into it one after another in quick succession — folded
+clothing, a shoe box, a small carton — until it is overfull and one item balances
+on the rim. Matte clay materials, near-photorealistic fabric and cardboard
+texture, real cast shadows. Camera rises smoothly on a crane move from waist
+height to high angle as the basket fills. Deep near-black background, single hard
+key light from upper left, one warm amber accent. No shake. 9:16 vertical
+composition, subject centred in the lower two-thirds.
+
+--------------------------------------------------------------------------------
+A08 · 0:36.9–0:41.3 · THE RULE
+--------------------------------------------------------------------------------
+Tabletop shot, dark walnut surface. A single blank cream card lies flat in the
+centre. A simplified geometric hand in a terracotta #E85F42 sleeve enters from
+the right, presses a heavy brass stamp onto the card once, and withdraws. The
+card settles. Everything then holds completely still for two seconds. Stylised
+low-poly 3D, matte clay shading, near-photorealistic brass and paper texture.
+Camera locked off, no movement at all — the only motion in frame is the hand.
+Single hard key light from the left, long real shadow to the right, deep
+near-black surround, warm amber glint on the brass. 9:16 vertical, lower
+two-thirds, clean headroom.
+
+--------------------------------------------------------------------------------
+A09 · 0:41.3–0:46.1 · MURABAHA
+--------------------------------------------------------------------------------
+Stylised low-poly 3D still-life on a dark matte plinth. On the left, a folded
+jacket. On the right, an empty space. A pair of simplified geometric hands lifts
+the jacket, moves it across, and sets it down on the right side of the plinth,
+then withdraws from frame. A single heavy brass bar descends and rests beside it,
+settling with weight. Camera arcs slowly 15 degrees right during the move, then
+stops dead. Matte clay materials, near-photorealistic brass and wool texture,
+real cast shadows. Deep near-black background, one hard key light from upper
+left, warm amber rim. Deliberate, weighted, no shake. 9:16 vertical composition.
+
+--------------------------------------------------------------------------------
+A10 · 0:46.1–0:49.2 · SAME SHAPE, BUILT WRONG
+--------------------------------------------------------------------------------
+Macro close-up of a single cream payment card standing upright on a dark matte
+surface, identical in form to the card in the earlier stamped shot. A fine crack
+opens across its face from the bottom edge upward, slowly, and stops halfway. The
+card does not fall. Camera pushes in 10% on the crack over five seconds, locked
+and steady. Stylised low-poly 3D, matte clay shading, near-photorealistic card
+stock texture with visible fibre at the fracture. Deep near-black background,
+single hard raking light from the left picking out the crack edge, cool neutral
+grade with one warm amber accent. 9:16 vertical, subject lower two-thirds.
+
+--------------------------------------------------------------------------------
+A11 · 0:49.2–0:55.4 · THE CLOSE   [generate 10s]
+--------------------------------------------------------------------------------
+Stylised low-poly 3D character AMIR walking out through a shop doorway into warm
+low evening sun, carrying one small paper bag, seen from a low three-quarter
+angle. He has a COMPLETELY BLANK featureless head — no eyes, no nose, no mouth, a
+smooth matte tan block. He wears a terracotta #E85F42 t-shirt, cream #E8DCC8
+trousers, white sneakers and a cream beanie. Simplified geometric anatomy, matte
+clay-like shading, soft subsurface material. He walks three unhurried steps
+toward camera and stops. Camera tracks backward with him at the same speed, then
+settles. Near-photorealistic street behind, long golden hour shadows, warm amber
+key from behind him, cool fill from the front. Shallow cinematic depth of field.
+9:16 vertical, subject lower two-thirds, generous headroom above.
+
+
+================================================================================
+================================  TRACK B  =====================================
+                        STILLS — 11 IMAGES + EDIT MOVES
+================================================================================
+
+SETTINGS: 9:16 · 1080x1920 (or 2048x3640 and downscale — you want the headroom
+for the push) · one image per scene.
+
+WHY THESE READ DIFFERENTLY. A still gets stared at. So these prompts trade the
+video track's staged action for things a frozen frame can carry: raking light,
+real surface texture, a decisive angle, and a single unambiguous subject. They
+are framed 10–15% wider than the video prompts, because every one gets a slow
+push in the edit and the push crops in.
+
+CONSISTENCY: generate B03 first for the shopkeeper and B11 for AMIR, approve
+both, lock the seed, and use them as image references everywhere the same figure
+appears. With only 11 images you can afford to regenerate until each is right —
+that is the main advantage of this track.
+
+HOW TO MOVE THEM. Each still gets the move listed under it. Hold each for the
+scene's full length from the map above. The channel's Remotion pipeline already
+does this — drop the files in video/public/broll/ and drive them the way
+src/inflation/ drives its stills. Push percentages are total travel across the
+scene, eased out, never linear.
+
+NEGATIVE PROMPT — paste once, applies to all 11 stills. Note this one differs
+from the video negative: no motion terms, but it adds the still-specific
+failures (HDR, tilted horizon, composite look):
+
+facial features, eyes, mouth, nose, lips, eyebrows, face, portrait, text,
+lettering, numbers, logos, brand names, watermark, signature, cartoon, anime,
+2D illustration, flat vector, cel shading, distorted hands, extra fingers,
+stock-photo smiles, HDR glow, oversaturation, blown highlights, tilted horizon,
+clutter, busy background, composite look, plastic sheen, uncanny, low resolution
+
+--------------------------------------------------------------------------------
+B01 · hold 4.73s · THE HOOK
+MOVE: push in 6%, centred on the card. Start wide, end on the four boxes.
+--------------------------------------------------------------------------------
+Still life, 85mm macro, f/2.8. A phone lies face up on a dark brushed-charcoal
+counter, screen showing a clean blank checkout panel — pale grey card, four small
+empty rounded boxes in a row, no text anywhere. Two simplified geometric hands in
+terracotta #E85F42 cuffs rest at the frame edge, one fingertip just touching the
+counter, stylised low-poly matte clay. Single hard key from camera-left at a low
+raking angle, one long defined shadow thrown right, deep near-black falloff.
+Fine dust and micro-scratches visible on the counter surface. Cool neutral grade,
+one warm amber highlight along the phone's edge. Composed low in a 9:16 vertical
+frame with two-fifths of the frame empty above the phone.
+
+--------------------------------------------------------------------------------
+B02 · hold 6.40s · THE STRUCTURE
+MOVE: pull back 8% and drift left 30px, revealing the gap where the fifth is.
+--------------------------------------------------------------------------------
+Overhead flat-lay, 50mm, f/4, shot perpendicular to the surface. Four identical
+blank cream cards laid in a precise even row on dark matte charcoal, generous
+equal spacing, each casting an identical hard shadow. To the right of the fourth,
+one empty space the same size as a card — nothing in it but the surface. Stylised
+low-poly matte clay materials, near-photorealistic paper grain and deckled edges.
+Single hard overhead key slightly off-axis so every shadow falls the same way.
+Deep near-black background, restrained palette, one warm amber accent. Perfectly
+square-on composition, generous margin all round, 9:16 vertical.
+
+--------------------------------------------------------------------------------
+B03 · hold 4.10s · THE FEE   ** GENERATE FIRST — shopkeeper reference **
+MOVE: push in 5% on the banknote stack.
+--------------------------------------------------------------------------------
+Environmental portrait from the customer's side of a shop counter, 35mm, f/2.
+A shopkeeper stands behind it with a COMPLETELY BLANK featureless head — no eyes,
+no nose, no mouth, a smooth matte tan block — in a deep navy #1E3A5F apron and
+navy bucket hat, both forearms flat on the counter, weight settled, still.
+A short stack of banknotes sits on the counter in front of him, the top note
+slightly offset from the rest. Stylised low-poly geometric anatomy, matte
+clay-like shading with soft subsurface scatter. Near-photorealistic shop behind,
+shelving falling into soft focus. Warm practical overhead light plus a cooler
+window fill from the left. Shallow depth of field, counter edge sharp, background
+soft. 9:16 vertical, figure in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+B04 · hold 3.47s · WHERE IT GOES
+MOVE: push in 9% — the shortest scene, so the move needs to be the most decisive.
+--------------------------------------------------------------------------------
+Tight macro, 100mm, f/2.8, focused on a blank cream cardboard price tag hanging
+by string from the cuff of a folded dark wool jacket. The tag is completely
+blank — no printing, no numbers. Heavy card stock, visible fibre at the punched
+hole, one soft crease. Hard low raking key from camera-left throwing a long
+angular shadow of the tag across the wool behind it. Deep near-black surround,
+warm amber rim tracing the tag's top edge. Extremely shallow focus: the tag face
+sharp, the wool dissolving within centimetres. 9:16 vertical, tag positioned
+low-centre with empty dark space filling the upper half.
+
+--------------------------------------------------------------------------------
+B05 · hold 5.83s · EVERYONE PAYS
+MOVE: slow dolly-in 10% down the aisle centre line.
+--------------------------------------------------------------------------------
+Deep one-point-perspective shot down a clothing shop aisle, 28mm, f/4, camera at
+chest height dead centre so the rails converge symmetrically. Rails of muted
+garments recede on both sides, dozens of small blank cream tags hanging along
+them at irregular heights, all unprinted. Stylised low-poly fittings and
+garments, matte finish, near-photorealistic fabric texture. Cool overhead
+fluorescent wash with a single warm amber pool at the far end of the aisle
+drawing the eye through. Deep focus in the foreground softening toward the back.
+Nothing human in frame. 9:16 vertical, vanishing point set low so the upper
+third stays open and dark.
+
+--------------------------------------------------------------------------------
+B06 · hold 5.83s · THE CASH BUYER
+MOVE: push in 7% onto the hands, drifting down 20px.
+--------------------------------------------------------------------------------
+Close three-quarter shot, 85mm, f/2, of an elderly customer's hands at a shop
+counter — simplified geometric low-poly forms, matte clay shading — holding three
+worn banknotes, mid-count, the top note lifted slightly clear of the others.
+The figure wears a muted olive coat cuff and is cropped at the chest, no head in
+frame. Counter surface scuffed and real, warm side light from camera-left, deep
+shadow filling the right of the frame. Near-photorealistic paper texture on the
+notes, soft folds and worn corners. Shallow focus on the notes, coat and
+background soft. Quiet, unhurried, slightly melancholy. 9:16 vertical, hands
+low-centre, dark headroom above.
+
+--------------------------------------------------------------------------------
+B07 · hold 6.53s · THE ACTUAL PRODUCT
+MOVE: rise 40px and push 6% — the only upward move in the film.
+--------------------------------------------------------------------------------
+Slightly high-angle still life, 50mm, f/4, of a wire shopping basket on a dark
+matte floor, overfull — folded clothing, a plain shoe box, a small carton stacked
+past the rim with one item balanced precariously on the edge, about to fall but
+not falling. Stylised low-poly forms, matte clay materials, near-photorealistic
+cardboard and fabric texture, one hard key from upper left throwing a defined
+basket-weave shadow across the floor. Deep near-black background, muted cream and
+sand palette, one warm amber accent. Composed with the basket low-centre and a
+clear diagonal of empty floor leading out of frame. 9:16 vertical, generous
+headroom above the stacked items.
+
+--------------------------------------------------------------------------------
+B08 · hold 4.37s · THE RULE
+MOVE: none. Hold it dead still — the scene is about a price that stops moving.
+--------------------------------------------------------------------------------
+Locked-off tabletop still life, 60mm, f/5.6, dark walnut surface with visible
+grain. A single blank cream card lies flat and perfectly square to frame in the
+centre. A heavy brass stamp rests beside it, its face down, weight evident.
+Nothing else in frame. Stylised low-poly matte clay card, near-photorealistic
+brass with real specular hits and fine patina. One hard key from camera-left,
+a single long unbroken shadow to the right, deep near-black surround. Absolute
+symmetry and stillness — the composition should feel settled and final. 9:16
+vertical, objects centred low, wide dark margin above.
+
+--------------------------------------------------------------------------------
+B09 · hold 4.80s · MURABAHA
+MOVE: drift right 30px, no scale — a lateral move, matching the transfer.
+--------------------------------------------------------------------------------
+Museum-style still life on a dark matte plinth, 50mm, f/5.6, shot square-on. A
+folded wool jacket sits on the right of the plinth; a single heavy brass bar
+rests beside it, both objects clearly separated with empty plinth to the left
+where the jacket used to be. Stylised low-poly forms, matte clay shading,
+near-photorealistic brass and wool texture, real contact shadows anchoring each
+object. Single hard key from upper left, deep near-black background, one warm
+amber rim on the brass. Deliberate, weighted, almost reverent staging. 9:16
+vertical, objects in the lower two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+B10 · hold 3.17s · SAME SHAPE, BUILT WRONG
+MOVE: push in 12% on the fracture. Fastest move in the film — it is the shortest
+scene and the crack has to become unmissable inside three seconds.
+--------------------------------------------------------------------------------
+Extreme macro, 100mm, f/4, of a single cream payment card standing upright on a
+dark matte surface, identical in form and colour to the stamped card. A fine
+fracture runs up its face from the bottom edge and stops halfway, the card
+otherwise intact and standing. Visible paper fibre and lifted burr along the
+break. Stylised low-poly matte clay, near-photorealistic card stock texture.
+Hard raking light from camera-left striking across the fracture so the split
+throws its own micro-shadow. Deep near-black background, cool neutral grade, one
+warm amber accent on the intact edge. 9:16 vertical, card low-centre, dark above.
+
+--------------------------------------------------------------------------------
+B11 · hold 6.13s · THE CLOSE   ** GENERATE EARLY — AMIR reference **
+MOVE: push in 4%, the gentlest in the film. Let it come to rest.
+--------------------------------------------------------------------------------
+Low three-quarter environmental shot, 35mm, f/2.8, of AMIR standing just outside
+a shop doorway in warm low evening sun, one small paper bag held at his side,
+mid-stride but weight settled. He has a COMPLETELY BLANK featureless head — no
+eyes, no nose, no mouth, a smooth matte tan block. He wears a terracotta #E85F42
+t-shirt, cream #E8DCC8 trousers, white sneakers and a cream beanie. Simplified
+geometric anatomy, matte clay-like shading, soft subsurface material.
+Near-photorealistic street behind him, quiet and empty, long golden-hour shadows
+stretching toward camera. Warm amber backlight rimming his shoulders, cool
+ambient fill on the front. Shallow depth of field, street soft behind. Calm,
+resolved, unhurried. 9:16 vertical, figure in the lower two-thirds, generous
+open sky above for the closing captions.
+
+
+================================================================================
+CAPTIONS — identical for both tracks
+================================================================================
+ #  | CAP 1                          | CAP 2
+----|--------------------------------|-------------------------------------------
+ 01 | INTEREST-FREE                  | the most expensive word in finance
+ 02 | FOUR PAYMENTS. ZERO PERCENT.   | so who's actually paying for it?
+ 03 | THE SHOP PAYS UP TO 6%         | on every single sale — not just the Klarna ones
+ 04 | NO SHOP ABSORBS THAT           | it goes straight on the price tag
+ 05 | THE PRICE WENT UP FOR EVERYONE | including the person paying cash
+ 06 | THEY NEVER USED IT             | they're still funding it — then comes the late fee
+ 07 | THEN THE BIGGER BASKET         | that's the actual product
+ 08 | ONE PRICE                      | agreed once. it never moves again.
+ 09 | THAT'S MURABAHA                | one markup, fixed at the moment of sale. not a loan.
+ 10 | SAME SHAPE                     | built wrong
+ 11 | SOMEONE ALWAYS PAYS            | Follow — the fix is next.
+
+CAPTION SPEC. Heavy condensed sans, uppercase for CAP 1, sentence case for
+CAP 2. #F5F0E6 with a 2px #0A0C10 outline, accent word in #E85F42. CAP 1 sits at
+62% height, CAP 2 at 76%. CAP 1 lands on the first stressed syllable of the line,
+CAP 2 one beat later, both clearing 200ms before the cut.
+
+
+================================================================================
+VOICEOVER — already recorded: media/klarna-vo.mp3 (55.353s)
+================================================================================
+Regenerate only if you change the script. ElevenLabs v3, stability 45–55,
+similarity 75, speed 1.0. Keep the tags sparse and the full stops between the
+numbers — they are doing the pacing.
+
+[serious] Klarna is interest-free. That's the most expensive word in finance.
+Four payments. Twenty-two fifty. Zero percent.
+[whispers] So who's actually paying for it?
+Klarna charges the shop up to six percent of every sale.
+[serious] No shop eats that. It goes on the price tag.
+So the price went up for everyone.
+Including the person paying cash.
+They never used Klarna. They're still funding it.
+Then the late fee.
+Then the basket you'd never have filled at full price.
+[emphatic] That's the actual product.
+[calm] A sale should have one price. Agreed once. Never moves again.
+That's murabaha. One markup, fixed at the moment of sale. Not a loan.
+[serious] Klarna is the same shape, built wrong.
+[warmly] Zero percent is never zero. Someone always pays.
+[warmly] Follow — the fix is next.
+
+
+================================================================================
+PACKAGING — locked before the assets, per the slate
+================================================================================
+TITLE        Is Klarna Halal?
+THUMBNAIL    the checkout card, 0% circled in terracotta, nothing else.
+             B01 and B04 both work as thumbnail frames on the stills track.
+LENGTH       55.4s (slate rule: 30–60s)
+DESCRIPTION  600+ characters. Do not ship the 197-char boilerplate.
+TAGS         total under 500 characters — hard YouTube limit, silently rejects.
+KEYWORDS     do NOT put "riba" in the title — the English SERP is polluted by
+             the Royal Institute of British Architects. Description and spoken
+             script only.
+
+Supersedes klarna-scene-pack.txt, which held an earlier version of Track A only.
