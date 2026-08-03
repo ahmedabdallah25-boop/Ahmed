@@ -13,11 +13,14 @@ HOW TO USE THIS FILE
 - AMIR is the same character. Do not regenerate him. Reuse the locked Part 14
   seed and feed the approved Part 14 Scene 07 image in as reference on every
   shot containing him.
-- To keep this file short, the style block is written once below as STYLE PREFIX.
-  Each scene prompt = STYLE PREFIX + the scene's ACTION line. Paste both.
+- Every IMAGE PROMPT below is complete and self-contained. Copy, paste, generate.
+  Style, character identity and framing are already baked into each one. The
+  STYLE PREFIX section is kept only as the reference the prompts were built from.
+- The AMIR blank-head clause appears only in the scenes he is actually in. Do not
+  add it to the object-only shots — it invites a stray figure into the frame.
 
 --------------------------------------------------------------------------------
-STYLE PREFIX — paste before every ACTION line
+STYLE PREFIX — reference only, already baked into every prompt below
 --------------------------------------------------------------------------------
 Stylized low-poly 3D render. The male character AMIR has a COMPLETELY BLANK
 featureless head — no eyes, no nose, no mouth, no face at all, a smooth matte tan
@@ -107,8 +110,13 @@ SCENE 01 | 0:00-0:03 | THE HOOK — PERSONAL STAKES
 VO: [serious] Your money is losing value while you sleep. So you buy gold.
 CAPTION 1: Your money loses value while you sleep
 CAPTION 2: so you buy gold
-ACTION: AMIR asleep in a dim bedroom, a bedside stack of banknotes visibly
-thinning and greying as the frame slowly pushes in. One cold window light.
+IMAGE PROMPT: Stylized low-poly 3D render. AMIR asleep in a dim bedroom, a
+bedside stack of banknotes visibly thinning and greying as the frame slowly
+pushes in. One cold window light. The character AMIR has a COMPLETELY BLANK
+featureless head — no eyes, no nose, no mouth, no face at all, a smooth matte
+tan block — and simple modern wardrobe. Muted charcoal and warm tan palette,
+soft global illumination, gentle rim light, matte cinematic grade, shallow depth
+of field, 9:16 vertical composition, subtle film grain.
 
 --------------------------------------------------------------------------------
 SCENE 02 | 0:03-0:06 | THE PARADOX
@@ -116,9 +124,14 @@ SCENE 02 | 0:03-0:06 | THE PARADOX
 VO: [whispers] Except most people who buy gold... never own any.
 CAPTION 1: But most people who buy gold
 CAPTION 2: never own any
-ACTION: Extreme close-up of a phone in AMIR's hand showing a gold bar icon and a
-balance; his other hand reaches to grip the bar on the screen and closes on
-nothing but glass. Cold blue screen light, no metal anywhere in frame.
+IMAGE PROMPT: Stylized low-poly 3D render. Extreme close-up of a phone in AMIR's
+hand showing a gold bar icon and a balance; his other hand reaches to grip the
+bar on the screen and closes on nothing but glass. Cold blue screen light, no
+metal anywhere in frame. The character AMIR has a COMPLETELY BLANK featureless
+head — no eyes, no nose, no mouth, no face at all, a smooth matte tan block —
+and simple modern wardrobe. Muted charcoal and warm tan palette, soft global
+illumination, gentle rim light, matte cinematic grade, shallow depth of field,
+9:16 vertical composition, subtle film grain.
 
 --------------------------------------------------------------------------------
 SCENE 03 | 0:06-0:09 | THE THREAT
@@ -126,8 +139,11 @@ SCENE 03 | 0:06-0:09 | THE THREAT
 VO: They own a promise. And a promise is exactly what has been stealing from you.
 CAPTION 1: They own a promise
 CAPTION 2: and a promise is what's stealing from you
-ACTION: A single folded paper certificate lying flat on a dark table where a gold
-bar should be, curling and shrinking in on itself, the space around it darkening.
+IMAGE PROMPT: Stylized low-poly 3D render. A single folded paper certificate
+lying flat on a dark table where a gold bar should be, curling and shrinking in
+on itself, the space around it darkening. Muted charcoal and warm tan palette,
+soft global illumination, gentle rim light, matte cinematic grade, shallow depth
+of field, 9:16 vertical composition, subtle film grain.
 
 --------------------------------------------------------------------------------
 SCENE 04 | 0:09-0:13 | QUICK RECAP — DIRECT ADDRESS
@@ -135,8 +151,13 @@ SCENE 04 | 0:09-0:13 | QUICK RECAP — DIRECT ADDRESS
 VO: [calm] Quick recap if you're new here. In the previous episode, we said money isn't printed. It is LENT into existence.
 CAPTION 1: Quick recap if you're new here
 CAPTION 2: money isn't printed, it's lent into existence
-ACTION: AMIR turning to face camera in a plain warm-grey space, one hand open in
-address; behind him, a bank desk with faint numbers assembling out of thin air.
+IMAGE PROMPT: Stylized low-poly 3D render. AMIR turning to face camera in a
+plain warm-grey space, one hand open in address; behind him, a bank desk with
+faint numbers assembling out of thin air. The character AMIR has a COMPLETELY
+BLANK featureless head — no eyes, no nose, no mouth, no face at all, a smooth
+matte tan block — and simple modern wardrobe. Muted charcoal and warm tan
+palette, soft global illumination, gentle rim light, matte cinematic grade,
+shallow depth of field, 9:16 vertical composition, subtle film grain.
 
 --------------------------------------------------------------------------------
 SCENE 05 | 0:13-0:15 | RECAP PAYOFF + THE TURN
@@ -144,17 +165,23 @@ SCENE 05 | 0:13-0:15 | RECAP PAYOFF + THE TURN
 VO: More money. Same bread. So bread costs more. / [serious] That is the tax nobody voted for. This episode is the fix.
 CAPTION 1: More money, same bread — bread costs more
 CAPTION 2: this episode is the fix
-ACTION: Split composition: a growing stack of banknotes on the left, one single
-unchanging loaf of bread on the right, scale tipping — then a warm key light
-rising from frame left across the whole shot.
+IMAGE PROMPT: Stylized low-poly 3D render. Split composition: a growing stack of
+banknotes on the left, one single unchanging loaf of bread on the right, scale
+tipping — then a warm key light rising from frame left across the whole shot.
+Muted charcoal and warm tan palette, soft global illumination, gentle rim light,
+matte cinematic grade, shallow depth of field, 9:16 vertical composition, subtle
+film grain.
 
 --------------------------------------------------------------------------------
 SCENE 06 | 0:15-0:18 | KILL THE WRONG FIX
 --------------------------------------------------------------------------------
 VO: The fix is not earning more.
 CAPTION 1: The fix is not earning more
-ACTION: A payslip with a rising arrow printed on it, the paper visibly thinning
-and going translucent at the edges as the arrow climbs.
+IMAGE PROMPT: Stylized low-poly 3D render. A payslip with a rising arrow printed
+on it, the paper visibly thinning and going translucent at the edges as the
+arrow climbs. Muted charcoal and warm tan palette, soft global illumination,
+gentle rim light, matte cinematic grade, shallow depth of field, 9:16 vertical
+composition, subtle film grain.
 
 --------------------------------------------------------------------------------
 SCENE 07 | 0:18-0:21 | WHY
@@ -162,16 +189,24 @@ SCENE 07 | 0:18-0:21 | WHY
 VO: A raise is paid in the thing being diluted.
 CAPTION 1: A raise is paid
 CAPTION 2: in the thing being diluted
-ACTION: A glass of dark liquid on a counter with clear water pouring in from
-above, the colour draining pale as the level rises.
+IMAGE PROMPT: Stylized low-poly 3D render. A glass of dark liquid on a counter
+with clear water pouring in from above, the colour draining pale as the level
+rises. Muted charcoal and warm tan palette, soft global illumination, gentle rim
+light, matte cinematic grade, shallow depth of field, 9:16 vertical composition,
+subtle film grain.
 
 --------------------------------------------------------------------------------
 SCENE 08 | 0:21-0:24 | THE THESIS
 --------------------------------------------------------------------------------
 VO: The fix is holding what cannot be diluted.
 CAPTION 1: Hold what cannot be diluted
-ACTION: AMIR's open palm, a single gold coin resting in it, everything beyond the
-hand falling into darkness.
+IMAGE PROMPT: Stylized low-poly 3D render. AMIR's open palm, a single gold coin
+resting in it, everything beyond the hand falling into darkness. The character
+AMIR has a COMPLETELY BLANK featureless head — no eyes, no nose, no mouth, no
+face at all, a smooth matte tan block — and simple modern wardrobe. Muted
+charcoal and warm tan palette, soft global illumination, gentle rim light, matte
+cinematic grade, shallow depth of field, 9:16 vertical composition, subtle film
+grain.
 
 --------------------------------------------------------------------------------
 SCENE 09 | 0:24-0:26 | THE FRAME
@@ -179,40 +214,53 @@ SCENE 09 | 0:24-0:26 | THE FRAME
 VO: And that needs two things. Only two.
 CAPTION 1: It takes two things
 CAPTION 2: only two
-ACTION: Two blank low-poly plinths side by side in an empty warm-grey space, both
-tops empty, waiting.
+IMAGE PROMPT: Stylized low-poly 3D render. Two blank low-poly plinths side by
+side in an empty warm-grey space, both tops empty, waiting. Muted charcoal and
+warm tan palette, soft global illumination, gentle rim light, matte cinematic
+grade, shallow depth of field, 9:16 vertical composition, subtle film grain.
 
 --------------------------------------------------------------------------------
 SCENE 10 | 0:26-0:29 | RULE ONE
 --------------------------------------------------------------------------------
 VO: [emphatic] One. It has to be scarce.
 CAPTION 1: One: it has to be scarce
-ACTION: The left plinth now holds a rough gold nugget; a single spotlight on it,
-the right plinth still empty in shadow.
+IMAGE PROMPT: Stylized low-poly 3D render. The left plinth now holds a rough
+gold nugget; a single spotlight on it, the right plinth still empty in shadow.
+Muted charcoal and warm tan palette, soft global illumination, gentle rim light,
+matte cinematic grade, shallow depth of field, 9:16 vertical composition, subtle
+film grain.
 
 --------------------------------------------------------------------------------
 SCENE 11 | 0:29-0:32 | SCARCE, PROVEN
 --------------------------------------------------------------------------------
 VO: Gold cannot be approved into existence.
 CAPTION 1: Gold can't be approved into existence
-ACTION: A bank approval stamp coming down hard on a document and passing straight
-through it, striking bare stone beneath, leaving no mark.
+IMAGE PROMPT: Stylized low-poly 3D render. A bank approval stamp coming down
+hard on a document and passing straight through it, striking bare stone beneath,
+leaving no mark. Muted charcoal and warm tan palette, soft global illumination,
+gentle rim light, matte cinematic grade, shallow depth of field, 9:16 vertical
+composition, subtle film grain.
 
 --------------------------------------------------------------------------------
 SCENE 12 | 0:32-0:35 | THE COST
 --------------------------------------------------------------------------------
 VO: It has to be dug. Weighed. Earned.
 CAPTION 1: Dug, weighed, earned
-ACTION: Three-beat composition in one frame: a pick in ore, a balance scale with
-a small ingot, a worn hand closing around it.
+IMAGE PROMPT: Stylized low-poly 3D render. Three-beat composition in one frame:
+a pick in ore, a balance scale with a small ingot, a worn hand closing around
+it. Muted charcoal and warm tan palette, soft global illumination, gentle rim
+light, matte cinematic grade, shallow depth of field, 9:16 vertical composition,
+subtle film grain.
 
 --------------------------------------------------------------------------------
 SCENE 13 | 0:35-0:38 | RULE TWO
 --------------------------------------------------------------------------------
 VO: [emphatic] Two. It has to actually be yours.
 CAPTION 1: Two: it has to actually be yours
-ACTION: The right plinth lights up and holds a small locked strongbox; both
-plinths now lit, symmetrical.
+IMAGE PROMPT: Stylized low-poly 3D render. The right plinth lights up and holds
+a small locked strongbox; both plinths now lit, symmetrical. Muted charcoal and
+warm tan palette, soft global illumination, gentle rim light, matte cinematic
+grade, shallow depth of field, 9:16 vertical composition, subtle film grain.
 
 --------------------------------------------------------------------------------
 SCENE 14 | 0:38-0:40 | THE TRAP OPENS
@@ -220,8 +268,13 @@ SCENE 14 | 0:38-0:40 | THE TRAP OPENS
 VO: And this is where almost everyone gets caught.
 CAPTION 1: This is where almost everyone
 CAPTION 2: gets caught
-ACTION: AMIR mid-stride toward the strongbox, floor beneath him rendered as a
-thin cracking sheet over darkness.
+IMAGE PROMPT: Stylized low-poly 3D render. AMIR mid-stride toward the strongbox,
+floor beneath him rendered as a thin cracking sheet over darkness. The character
+AMIR has a COMPLETELY BLANK featureless head — no eyes, no nose, no mouth, no
+face at all, a smooth matte tan block — and simple modern wardrobe. Muted
+charcoal and warm tan palette, soft global illumination, gentle rim light, matte
+cinematic grade, shallow depth of field, 9:16 vertical composition, subtle film
+grain.
 
 --------------------------------------------------------------------------------
 SCENE 15 | 0:40-0:43 | THE TRAP NAMED
@@ -229,8 +282,12 @@ SCENE 15 | 0:40-0:43 | THE TRAP NAMED
 VO: Most people "holding gold"... hold paper.
 CAPTION 1: Most people holding gold
 CAPTION 2: are holding paper
-ACTION: AMIR opening the strongbox; inside, no metal — a single folded
-certificate lying flat.
+IMAGE PROMPT: Stylized low-poly 3D render. AMIR opening the strongbox; inside,
+no metal — a single folded certificate lying flat. The character AMIR has a
+COMPLETELY BLANK featureless head — no eyes, no nose, no mouth, no face at all,
+a smooth matte tan block — and simple modern wardrobe. Muted charcoal and warm
+tan palette, soft global illumination, gentle rim light, matte cinematic grade,
+shallow depth of field, 9:16 vertical composition, subtle film grain.
 
 --------------------------------------------------------------------------------
 SCENE 16 | 0:43-0:46 | THE THREE WRAPPERS
@@ -238,8 +295,11 @@ SCENE 16 | 0:43-0:46 | THE THREE WRAPPERS
 VO: A certificate. An app. A balance on a screen.
 CAPTION 1: A certificate, an app
 CAPTION 2: a balance on a screen
-ACTION: Three objects in a row on the dark table: a paper certificate, a phone
-showing a gold icon, a monitor showing a number. No metal anywhere in frame.
+IMAGE PROMPT: Stylized low-poly 3D render. Three objects in a row on the dark
+table: a paper certificate, a phone showing a gold icon, a monitor showing a
+number. No metal anywhere in frame. Muted charcoal and warm tan palette, soft
+global illumination, gentle rim light, matte cinematic grade, shallow depth of
+field, 9:16 vertical composition, subtle film grain.
 
 --------------------------------------------------------------------------------
 SCENE 17 | 0:46-0:49 | *** MECHANISM PAYOFF ***
@@ -247,8 +307,11 @@ SCENE 17 | 0:46-0:49 | *** MECHANISM PAYOFF ***
 VO: [serious] That is not gold. That is a promise.
 CAPTION 1: That is not gold
 CAPTION 2: that is a promise
-ACTION: The gold bar and the certificate side by side on the same table; the bar
-casts a heavy solid shadow, the certificate casts none at all.
+IMAGE PROMPT: Stylized low-poly 3D render. The gold bar and the certificate side
+by side on the same table; the bar casts a heavy solid shadow, the certificate
+casts none at all. Muted charcoal and warm tan palette, soft global
+illumination, gentle rim light, matte cinematic grade, shallow depth of field,
+9:16 vertical composition, subtle film grain.
 
 --------------------------------------------------------------------------------
 SCENE 18 | 0:49-0:52 | WHO HOLDS IT
@@ -256,16 +319,26 @@ SCENE 18 | 0:49-0:52 | WHO HOLDS IT
 VO: Someone owes you gold. They hold the gold.
 CAPTION 1: Someone owes you gold
 CAPTION 2: and they're the one holding it
-ACTION: Wide shot: AMIR small in the foreground holding a slip of paper, a vast
-institutional vault behind him with the metal stacked inside, gate shut.
+IMAGE PROMPT: Stylized low-poly 3D render. Wide shot: AMIR small in the
+foreground holding a slip of paper, a vast institutional vault behind him with
+the metal stacked inside, gate shut. The character AMIR has a COMPLETELY BLANK
+featureless head — no eyes, no nose, no mouth, no face at all, a smooth matte
+tan block — and simple modern wardrobe. Muted charcoal and warm tan palette,
+soft global illumination, gentle rim light, matte cinematic grade, shallow depth
+of field, 9:16 vertical composition, subtle film grain.
 
 --------------------------------------------------------------------------------
 SCENE 19 | 0:52-0:55 | THE LOOP CLOSES
 --------------------------------------------------------------------------------
 VO: You are back inside the same machine.
 CAPTION 1: You're back inside the same machine
-ACTION: The bank desk from Scene 04 reassembling around AMIR, the same document
-sliding toward him, identical framing.
+IMAGE PROMPT: Stylized low-poly 3D render. The bank desk from Scene 04
+reassembling around AMIR, the same document sliding toward him, identical
+framing. The character AMIR has a COMPLETELY BLANK featureless head — no eyes,
+no nose, no mouth, no face at all, a smooth matte tan block — and simple modern
+wardrobe. Muted charcoal and warm tan palette, soft global illumination, gentle
+rim light, matte cinematic grade, shallow depth of field, 9:16 vertical
+composition, subtle film grain.
 
 --------------------------------------------------------------------------------
 SCENE 20 | 0:55-0:58 | THE PRINCIPLE
@@ -273,8 +346,11 @@ SCENE 20 | 0:55-0:58 | THE PRINCIPLE
 VO: A promise can be diluted. Metal cannot.
 CAPTION 1: A promise can be diluted
 CAPTION 2: metal cannot
-ACTION: A paper certificate dissolving into pale dust in still air beside a gold
-bar that does not change at all.
+IMAGE PROMPT: Stylized low-poly 3D render. A paper certificate dissolving into
+pale dust in still air beside a gold bar that does not change at all. Muted
+charcoal and warm tan palette, soft global illumination, gentle rim light, matte
+cinematic grade, shallow depth of field, 9:16 vertical composition, subtle film
+grain.
 
 --------------------------------------------------------------------------------
 SCENE 21 | 0:58-1:03 | THE RULE (EMOTIONAL PEAK — THUMBNAIL CANDIDATE)
@@ -282,9 +358,12 @@ SCENE 21 | 0:58-1:03 | THE RULE (EMOTIONAL PEAK — THUMBNAIL CANDIDATE)
 VO: Which is why the old rule was so strict. / Gold for gold. Hand to hand.
 CAPTION 1: The old rule was strict
 CAPTION 2: gold for gold, hand to hand
-ACTION: Two hands meeting across a plain wooden table in warm low light, one
-passing a gold coin, the other passing a silver coin, both grips closed and
-firm, exchange completing in the same frame.
+IMAGE PROMPT: Stylized low-poly 3D render. Two hands meeting across a plain
+wooden table in warm low light, one passing a gold coin, the other passing a
+silver coin, both grips closed and firm, exchange completing in the same frame.
+Muted charcoal and warm tan palette, soft global illumination, gentle rim light,
+matte cinematic grade, shallow depth of field, 9:16 vertical composition, subtle
+film grain.
 
 --------------------------------------------------------------------------------
 SCENE 22 | 1:03-1:07 | THE RULE, SHARPENED
@@ -292,8 +371,11 @@ SCENE 22 | 1:03-1:07 | THE RULE, SHARPENED
 VO: Same price. Same sitting. No delay. / [serious] Settle now, or it isn't a sale.
 CAPTION 1: Same sitting, no delay
 CAPTION 2: settle now, or it isn't a sale
-ACTION: The same two hands, now frozen mid-exchange with a hard shadow line
-falling between them, one coin suspended in the gap.
+IMAGE PROMPT: Stylized low-poly 3D render. The same two hands, now frozen mid-
+exchange with a hard shadow line falling between them, one coin suspended in the
+gap. Muted charcoal and warm tan palette, soft global illumination, gentle rim
+light, matte cinematic grade, shallow depth of field, 9:16 vertical composition,
+subtle film grain.
 
 --------------------------------------------------------------------------------
 SCENE 23 | 1:07-1:10 | THE AGE OF IT
@@ -301,8 +383,11 @@ SCENE 23 | 1:07-1:10 | THE AGE OF IT
 VO: Fourteen hundred years old, and it kills paper gold in one line.
 CAPTION 1: Fourteen hundred years old
 CAPTION 2: and it kills paper gold in one line
-ACTION: An aged parchment page resting on stone, a single gold coin holding it
-flat, warm side light raking across the surface.
+IMAGE PROMPT: Stylized low-poly 3D render. An aged parchment page resting on
+stone, a single gold coin holding it flat, warm side light raking across the
+surface. Muted charcoal and warm tan palette, soft global illumination, gentle
+rim light, matte cinematic grade, shallow depth of field, 9:16 vertical
+composition, subtle film grain.
 
 --------------------------------------------------------------------------------
 SCENE 24 | 1:10-1:15 | THE INSTRUCTION
@@ -310,8 +395,13 @@ SCENE 24 | 1:10-1:15 | THE INSTRUCTION
 VO: So: physical. Allocated. In your possession. / No margin. No leverage. No IOU dressed as metal.
 CAPTION 1: Physical, allocated, in your hands
 CAPTION 2: no margin, no leverage, no IOU
-ACTION: AMIR placing a small gold bar into a plain home safe and closing it,
-warm domestic light, phone face-down and dark on the shelf beside him.
+IMAGE PROMPT: Stylized low-poly 3D render. AMIR placing a small gold bar into a
+plain home safe and closing it, warm domestic light, phone face-down and dark on
+the shelf beside him. The character AMIR has a COMPLETELY BLANK featureless head
+— no eyes, no nose, no mouth, no face at all, a smooth matte tan block — and
+simple modern wardrobe. Muted charcoal and warm tan palette, soft global
+illumination, gentle rim light, matte cinematic grade, shallow depth of field,
+9:16 vertical composition, subtle film grain.
 
 --------------------------------------------------------------------------------
 SCENE 25 | 1:15-1:23 | BEYOND METAL
@@ -319,8 +409,13 @@ SCENE 25 | 1:15-1:23 | BEYOND METAL
 VO: [calm] And metal isn't the only answer. / Ownership works. A share of something real. / A tool. A shop. A field. A stake that produces.
 CAPTION 1: Metal isn't the only answer
 CAPTION 2: own a share of something real
-ACTION: Three low-poly vignettes in one wide frame — a workbench with tools, a
-small shopfront with its shutter up, a green field — AMIR standing between them.
+IMAGE PROMPT: Stylized low-poly 3D render. Three low-poly vignettes in one wide
+frame — a workbench with tools, a small shopfront with its shutter up, a green
+field — AMIR standing between them. The character AMIR has a COMPLETELY BLANK
+featureless head — no eyes, no nose, no mouth, no face at all, a smooth matte
+tan block — and simple modern wardrobe. Muted charcoal and warm tan palette,
+soft global illumination, gentle rim light, matte cinematic grade, shallow depth
+of field, 9:16 vertical composition, subtle film grain.
 
 --------------------------------------------------------------------------------
 SCENE 26 | 1:23-1:31 | CLOSE + END CARD
@@ -328,9 +423,11 @@ SCENE 26 | 1:23-1:31 | CLOSE + END CARD
 VO: [serious] Because a promise shrinks. A thing does not. / Cash is a claim. Debt is a claim. / Own the thing, not the claim on the thing. / [warmly] Your savings should be something. / [warmly] No jargon. Just mechanisms. / [warmly] Follow — part three is what you owe.
 CAPTION 1: Own the thing, not the claim
 CAPTION 2: part three: what you owe
-ACTION: Heavily blurred warm golden-hour interior as a soft background plate,
-strong bokeh, no sharp detail, clean empty centre of frame reserved for the logo
-overlay added in post.
+IMAGE PROMPT: Stylized low-poly 3D render. Heavily blurred warm golden-hour
+interior as a soft background plate, strong bokeh, no sharp detail, clean empty
+centre of frame reserved for the logo overlay added in post. Muted charcoal and
+warm tan palette, soft global illumination, gentle rim light, matte cinematic
+grade, shallow depth of field, 9:16 vertical composition, subtle film grain.
 
 [POST] Composite the channel logo centred, plus handle and series title beneath —
 identical placement to Part 14 Scene 37.

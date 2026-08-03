@@ -8,7 +8,7 @@ out = []
 i = 0
 RULE = re.compile(r'^[=-]{20,}$')
 SCENE = re.compile(r'^SCENE (\d\d) \| (\d:\d\d)-(\d:\d\d) \| (.+)$')
-FIELD = re.compile(r'^(VO|CAPTION 1|CAPTION 2|ACTION|\[POST\]):?\s*(.*)$')
+FIELD = re.compile(r'^(VO|CAPTION 1|CAPTION 2|ACTION|IMAGE PROMPT|\[POST\]):?\s*(.*)$')
 
 def esc(t):
     return html.escape(t)
@@ -65,8 +65,8 @@ while k < n:
             elif key.startswith('CAPTION'):
                 cls = 'cap1' if key.endswith('1') else 'cap2'
                 rows.append('<div class="%s"><span>%s</span></div>' % (cls, esc(val)))
-            elif key == 'ACTION':
-                rows.append('<div class="action"><span class="lbl">ACTION</span>%s</div>' % esc(val))
+            elif key in ('ACTION', 'IMAGE PROMPT'):
+                rows.append('<div class="action"><span class="lbl">PROMPT</span>%s</div>' % esc(val))
             else:
                 rows.append('<div class="post"><span class="lbl">POST</span>%s</div>' % esc(val))
         out.append(
