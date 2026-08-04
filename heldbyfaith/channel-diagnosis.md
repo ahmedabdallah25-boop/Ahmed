@@ -186,10 +186,62 @@ Worth knowing for whoever wires this up: a YouTube refresh token is bound to the
 at consent time, so the same Google login still needs a **separate** token per channel. One
 account owning both is not enough.
 
-Until that token exists and a workflow references it, these fixes are copy-paste.
-[`packaging-fix.json`](packaging-fix.json) holds them in the same shape
-`automation/reset_packaging.py` already consumes, so wiring it up later is a config change rather
-than new code.
+### What was added on 2026-08-04, and what it does not do
+
+An OAuth **client ID** and **client secret** were created and added. A second read-only run at
+14:00 UTC (`30916667377`) returned the same 23 Finance % Decoded videos, which confirms two
+things: those values went in under *new* secret names, and `new1`/`new2`/`new3` are untouched and
+still working. Finance % Decoded automation is intact — relevant because Part 15 publishes
+2026-08-05 03:00 PT off those same secrets.
+
+**A client ID and secret identify the application, not the channel. On their own they grant
+access to nothing.** The credential that names a channel is the **refresh token**, and it is
+bound to whichever channel is chosen at the Google consent screen. That is the missing piece.
+
+Two consequences worth knowing before minting one:
+
+- A refresh token is also bound to the **OAuth client that issued it**. Putting a new client ID
+  and secret alongside an old refresh token produces `invalid_grant`, not a wrong-channel write.
+- One Google account owning both channels is **not** enough. Each channel needs its own token,
+  from its own trip through the consent screen.
+
+### To finish the wiring
+
+1. **Rotate the client secret first.** It was pasted into a chat transcript on 2026-08-04.
+   Google Cloud Console → APIs & Services → Credentials → the OAuth client → **Reset secret**.
+2. OAuth consent screen → **Test users** → add the Google account that owns HELD BY FAITH.
+   Without this the flow refuses before it reaches the picker.
+3. On your own machine: `python automation/get_refresh_token.py`, paste the client ID and the
+   **rotated** secret. When the browser opens, sign in and — if a channel chooser appears —
+   **select HELD BY FAITH**, not Finance % Decoded. That choice is the entire point.
+4. Add three GitHub secrets under names that do **not** collide with the finance channel's:
+
+   | Secret | Value |
+   |---|---|
+   | `HBF_CLIENT_ID` | the client ID |
+   | `HBF_CLIENT_SECRET` | the rotated secret |
+   | `HBF_REFRESH_TOKEN` | printed by step 3 |
+
+   **Do not reuse `new1`/`new2`/`new3`.** Those drive every upload, monitor and packaging
+   workflow for Finance % Decoded. Overwriting them repoints all of it at this channel.
+
+### The code that does not exist yet
+
+An earlier draft of this file claimed `packaging-fix.json` was already in the shape
+`reset_packaging.py` consumes, so that wiring it up would be config rather than code. **That was
+wrong.** Three gaps, all real:
+
+- `reset_packaging.py` hardcodes `reset.json` at import. It needs a `--config` flag.
+- `apply_target()` reads `target["description"]` unconditionally, so it raises `KeyError` on a
+  title-only entry. Every change in `packaging-fix.json` is title-only, deliberately — the
+  descriptions and tags on this channel are good and must not be rewritten.
+- `retitle` and `unlist` are keys this file invented. The script reads `scheduled` and
+  `repackage`, and has no unlist path at all.
+
+None of that is built, because it cannot be tested without a token, and untested write code
+pointed at a channel carrying someone's cancer diary is not worth the risk of getting it wrong.
+It is maybe thirty minutes once `HBF_REFRESH_TOKEN` exists. Until then the fixes above are
+copy-paste in Studio, which is also the fastest path for five titles.
 
 **A guard now exists, because the same check exposed a real hazard.** Every write in
 `reset_packaging.py` resolves its target with `mine=True`, and `fix_channel_meta()` does a
