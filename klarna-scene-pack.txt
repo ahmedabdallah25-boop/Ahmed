@@ -1,0 +1,760 @@
+================================================================================
+FINANCE % DECODED — SCENE PACK
+"IS KLARNA HALAL?" — PART 16
+Render style: 3D faceless low-poly | 9:16 1080x1920 | ~128s | 38 scenes
+================================================================================
+
+HOW TO USE THIS FILE
+- Every IMAGE PROMPT below is complete and self-contained. Copy, paste, generate.
+  Character identity, wardrobe, style and camera are already baked into each one.
+- The NEGATIVE PROMPT is identical for all scenes. Paste it once into your tool's
+  negative field and leave it there.
+- VO lines use ElevenLabs v3 audio tags. Paste the line exactly as written,
+  brackets included.
+- CAPTION lines are what you burn into the video. See CAPTION SPEC at the bottom.
+- On-screen NUMBERS are added in post as motion graphics, never generated inside
+  the image. Prompts leave clean plates for them.
+
+
+================================================================================
+NEGATIVE PROMPT — paste into the negative field, applies to ALL 38 scenes
+================================================================================
+
+facial features, eyes, mouth, nose, lips, eyebrows, face, portrait, cartoon
+outlines, cel shading, flat vector, anime, 2D illustration, text, lettering,
+numbers, watermark, logo, brand names, signature, distorted hands, extra limbs,
+extra fingers, blurry, low resolution, oversaturated, plastic sheen, uncanny
+
+
+================================================================================
+CONSISTENCY WORKFLOW — do this before generating scene 2
+================================================================================
+
+1. Generate SCENE 09 first. It is the cleanest full-body view of AMIR.
+2. Approve the character design. Regenerate until the head is fully blank.
+3. LOCK THE SEED. Reuse that exact seed for all 38 scenes.
+4. Feed the approved Scene 09 image back as an image reference for every shot
+   containing AMIR.
+5. SECOND CHARACTER: generate SCENE 16 next and lock him too — he is the cash
+   buyer and appears in scenes 16, 17 and 24. Same blank head, slate-blue shirt,
+   no beanie. He must never be mistaken for AMIR.
+   Character drift between scenes is the #1 failure mode of this format.
+
+PALETTE LOCK — terracotta #E85F42 · cream #E8DCC8 · gold #F2B01E · sky #4BA3D3
+                slate-blue #4B6A8A · near-black #06080B
+
+
+================================================================================
+VOICEOVER — full script, ElevenLabs v3 tags, copy as one block
+================================================================================
+
+[serious] Klarna is interest-free.
+[whispers] That's the most expensive word in finance.
+You pay zero percent... and somebody still gets paid.
+[serious] Last time, your money shrank while you slept.
+Then the gold you "owned" turned out to be a promise on a screen.
+Same machine. New checkout.
+Ninety dollars. Four payments of twenty-two fifty.
+Nothing extra. Nothing hidden. That's the pitch.
+So follow the money.
+Klarna doesn't charge you. It charges the shop.
+Around six percent of every sale... plus a fee on top.
+A card costs the shop two.
+[serious] No shop absorbs that.
+It goes into the sticker price.
+Which means the price went up... for everyone.
+[emphatic] Even the man paying cash.
+He never opened the app. He's still paying for it.
+Then there's the part they don't advertise.
+Miss a payment... and ninety becomes ninety-seven.
+[serious] The price grew because time passed.
+That is the oldest definition of interest there is.
+And the last piece is the quietest.
+Split into four, the number stops feeling like money.
+Baskets get bigger. That's not a side effect.
+[emphatic] That IS the product.
+Four apps. Twelve payment dates. One salary.
+[sad] Nobody calls that debt. It behaves exactly like debt.
+[calm] So what does the honest version look like?
+A sale has one price. Agreed once. Written down.
+Pay in six months? Fine — but the number is fixed today.
+[emphatic] Late, early, never — the price cannot move.
+That's murabaha. A sale, not a loan.
+The markup is allowed because the risk is real...
+...and because it stops the moment the deal is signed.
+[serious] If a number can grow because you were late...
+...it was never a price. It was a loan wearing a receipt.
+[warmly] Zero percent isn't free. It's just quiet.
+[warmly] Follow — next, the card you pay off every month.
+
+TAG NOTES: keep tags sparse, they are strongest at emotional turns. Ellipses
+create natural breath pauses. CAPS carry emphasis without a tag. Do not stack
+two tags on one line.
+
+
+================================================================================
+THE 38 SCENES
+================================================================================
+
+--------------------------------------------------------------------------------
+SCENE 01 | 0:00-0:03 | THE HOOK
+--------------------------------------------------------------------------------
+VO: [serious] Klarna is interest-free.
+CAPTION 1: "Interest-free"
+CAPTION 2: the most expensive word in finance
+
+IMAGE PROMPT:
+Extreme close-up, stylized low-poly 3D render, of a phone held upright in two
+simplified geometric hands at a shop counter, the screen glowing clean and empty
+pale grey with no content on it. Matte clay-like shading on the hands, terracotta
+#E85F42 sleeve cuffs at the frame edge. Near-photorealistic retail counter behind,
+softly out of focus, bright overhead light. Hard directional key from the left,
+deep real shadow to the right. Shallow cinematic depth of field. 9:16 vertical,
+phone centred in the lower two-thirds, clean dark space above for captions.
+[POST] Composite the checkout UI: "$90.00", "4 payments of $22.50", "0% interest",
+with 0% circled in gold #F2B01E.
+
+--------------------------------------------------------------------------------
+SCENE 02 | 0:03-0:05
+--------------------------------------------------------------------------------
+VO: [whispers] That's the most expensive word in finance.
+CAPTION 1: Free is the expensive word
+CAPTION 2: it always is
+
+IMAGE PROMPT:
+Macro stylized low-poly 3D render of a single glowing pale phone screen lying
+face-up on a dark near-black #06080B surface, its light spilling across the
+surface in a soft cold pool. Nothing else in frame. Near-photorealistic glass
+reflection, faint dust. Cold blue-white key light, deep shadow filling the rest.
+Stylized matte cinematic grade. 9:16 vertical, phone in the lower two-thirds,
+empty dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 03 | 0:05-0:09
+--------------------------------------------------------------------------------
+VO: You pay zero percent... and somebody still gets paid.
+CAPTION 1: You pay 0%
+CAPTION 2: somebody still gets paid
+
+IMAGE PROMPT:
+Stylized low-poly 3D render, medium shot, of a male character standing at a shop
+counter mid-tap, phone extended toward a card terminal. The character has a
+COMPLETELY BLANK featureless head with no eyes, no nose, no mouth, no face at all
+— a smooth matte tan block. Simplified geometric anatomy, matte clay-like shading,
+soft subsurface material. He wears a terracotta #E85F42 t-shirt, cream #E8DCC8
+trousers, white sneakers and a cream beanie. Near-photorealistic clothing-store
+interior behind him, racks and bright fluorescent light. Shallow cinematic depth
+of field, subject centre-frame in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 04 | 0:09-0:12 | RECAP BEAT 1
+--------------------------------------------------------------------------------
+VO: [serious] Last time, your money shrank while you slept.
+CAPTION 1: Last time: your money shrank
+CAPTION 2: while you slept
+
+IMAGE PROMPT:
+Near-photorealistic still life of a single crumpled banknote lying on a dark
+bedside table beside a dim lamp, the note visibly smaller than its own shadow,
+edges curled. Warm low amber #F2B01E lamplight from the right, deep near-black
+#06080B falling across the left of frame. Quiet, nocturnal, still. Stylized matte
+cinematic grade, shallow depth of field. 9:16 vertical, note in the lower
+two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 05 | 0:12-0:16 | RECAP BEAT 2
+--------------------------------------------------------------------------------
+VO: Then the gold you "owned" turned out to be a promise on a screen.
+CAPTION 1: Then the gold wasn't gold
+CAPTION 2: just a promise on a screen
+
+IMAGE PROMPT:
+Macro near-photorealistic shot of a single gold coin resting on a dark surface,
+the coin rendered half solid and half dissolving into thin translucent glass, the
+dissolving half catching cold screen-blue #4BA3D3 light while the solid half holds
+warm gold #F2B01E. Hard directional light from the right, deep real shadow left.
+Stylized matte cinematic grade, shallow depth of field. 9:16 vertical, coin in the
+lower two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 06 | 0:16-0:18 | PIVOT
+--------------------------------------------------------------------------------
+VO: Same machine. New checkout.
+CAPTION 1: Same machine
+CAPTION 2: new checkout
+
+IMAGE PROMPT:
+Stylized low-poly 3D wide shot of a long empty retail checkout lane at night, dark
+polished floor, a single overhead strip light casting one hard cold pool of light
+onto the counter, everything else falling into near-black #06080B. No people. Cold
+industrial, faintly ominous. Near-photorealistic counter and floor materials.
+Stylized matte cinematic grade. 9:16 vertical, counter in the lower two-thirds,
+deep dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 07 | 0:18-0:22
+--------------------------------------------------------------------------------
+VO: Ninety dollars. Four payments of twenty-two fifty.
+CAPTION 1: $90. Four payments.
+CAPTION 2: $22.50 each
+
+IMAGE PROMPT:
+Near-photorealistic top-down flat-lay of a single pair of clean white sneakers on
+a dark near-black #06080B surface, positioned to the lower-left, with a wide clean
+empty area of surface to the right of them. Soft directional key from the upper
+left, real soft shadow to the lower right, one warm gold #F2B01E rim along the
+sole. Stylized matte cinematic grade. 9:16 vertical, product in the lower half,
+clean empty plate above and right.
+[POST] Composite the price "$90" then split it into four "$22.50" chips in the
+empty area.
+
+--------------------------------------------------------------------------------
+SCENE 08 | 0:22-0:26
+--------------------------------------------------------------------------------
+VO: Nothing extra. Nothing hidden. That's the pitch.
+CAPTION 1: Nothing extra, nothing hidden
+CAPTION 2: that's the pitch
+
+IMAGE PROMPT:
+Stylized low-poly 3D render, close on two simplified geometric hands holding a
+shopping bag by its rope handles against a dark near-black #06080B background,
+relaxed grip, bag hanging light. Terracotta #E85F42 sleeve cuffs visible. Matte
+clay-like shading, near-photorealistic paper texture on the bag. Soft warm key
+from the left, gentle real shadow to the right. Shallow cinematic depth of field.
+9:16 vertical, hands and bag in the lower two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 09 | 0:26-0:28 | ★ GENERATE THIS ONE FIRST — CHARACTER LOCK
+--------------------------------------------------------------------------------
+VO: So follow the money.
+CAPTION 1: So follow the money
+CAPTION 2: (none)
+
+IMAGE PROMPT:
+Stylized low-poly 3D render, full-body shot, of a male character standing alone in
+the centre of an empty shop aisle, arms at his sides, head turned slightly to
+follow something out of frame to the right. The character has a COMPLETELY BLANK
+featureless head with no eyes, no nose, no mouth, no face at all — a smooth matte
+tan block. Simplified geometric anatomy, matte clay-like shading, soft subsurface
+material. He wears a terracotta #E85F42 t-shirt, cream #E8DCC8 trousers, white
+sneakers and a cream beanie. Near-photorealistic shop interior, shelves receding
+into soft focus, bright overhead light, real cast shadow on the floor. Shallow
+cinematic depth of field. 9:16 vertical, character full-length in the lower
+three-quarters, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 10 | 0:28-0:32 | MECHANISM OPENS
+--------------------------------------------------------------------------------
+VO: Klarna doesn't charge you. It charges the shop.
+CAPTION 1: It doesn't charge you
+CAPTION 2: it charges the shop
+
+IMAGE PROMPT:
+Stylized low-poly 3D render from behind the counter, looking past a shopkeeper's
+shoulder toward the till. The shopkeeper has a COMPLETELY BLANK featureless head,
+no face at all, smooth matte tan, and wears a cream #E8DCC8 apron over a plain
+white shirt. Simplified geometric anatomy, matte clay-like shading.
+Near-photorealistic till and counter surface, bright overhead retail light,
+customer side of the counter softly out of focus. Shallow cinematic depth of
+field. 9:16 vertical, shopkeeper in the lower two-thirds, clean space above.
+
+--------------------------------------------------------------------------------
+SCENE 11 | 0:32-0:36
+--------------------------------------------------------------------------------
+VO: Around six percent of every sale... plus a fee on top.
+CAPTION 1: ~6% of every sale
+CAPTION 2: plus a flat fee
+
+IMAGE PROMPT:
+Near-photorealistic macro of a small neat stack of banknotes on a dark counter,
+with a thin slice lifted cleanly off the top of the stack and hovering slightly
+above it, a visible gap between slice and stack. Hard directional light from the
+right, deep real shadow to the left, warm gold #F2B01E highlight along the lifted
+slice. Stylized matte cinematic grade, shallow depth of field. 9:16 vertical,
+stack in the lower two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 12 | 0:36-0:39
+--------------------------------------------------------------------------------
+VO: A card costs the shop two.
+CAPTION 1: A card costs the shop 2%
+CAPTION 2: this costs three times more
+
+IMAGE PROMPT:
+Near-photorealistic macro of two identical small stacks of banknotes side by side
+on a dark near-black #06080B surface, the right-hand stack noticeably taller than
+the left, shot at a low angle so the height difference reads immediately. Even
+cool key light from above left, deep real shadows falling right. Stylized matte
+cinematic grade, shallow depth of field. 9:16 vertical, stacks in the lower
+two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 13 | 0:39-0:41
+--------------------------------------------------------------------------------
+VO: [serious] No shop absorbs that.
+CAPTION 1: No shop absorbs that
+CAPTION 2: (none)
+
+IMAGE PROMPT:
+Stylized low-poly 3D close-up of the shopkeeper character's hands flat on the
+counter, fingers spread, shoulders just visible at the top of frame, cream #E8DCC8
+apron edge in shot. COMPLETELY BLANK featureless head not in frame. Simplified
+geometric anatomy, matte clay-like shading. Near-photorealistic counter grain,
+hard overhead light, deep real shadow beneath the hands. Shallow cinematic depth
+of field. 9:16 vertical, hands in the lower two-thirds, clean space above.
+
+--------------------------------------------------------------------------------
+SCENE 14 | 0:41-0:44
+--------------------------------------------------------------------------------
+VO: It goes into the sticker price.
+CAPTION 1: It goes into the sticker price
+CAPTION 2: quietly
+
+IMAGE PROMPT:
+Near-photorealistic extreme macro of a blank cardboard price swing-tag tied with
+string to a garment, the tag face completely empty and clean with no printing at
+all. Soft directional key from the left, shallow real shadow to the right, fabric
+falling into darkness behind. Stylized matte cinematic grade, very shallow depth
+of field. 9:16 vertical, tag centred in the lower two-thirds, clean dark space
+above.
+[POST] Composite a price on the tag face that ticks upward.
+
+--------------------------------------------------------------------------------
+SCENE 15 | 0:44-0:47
+--------------------------------------------------------------------------------
+VO: Which means the price went up... for everyone.
+CAPTION 1: So the price went up
+CAPTION 2: for everyone in the shop
+
+IMAGE PROMPT:
+Stylized low-poly 3D wide shot of a full clothing rail, a long row of identical
+blank swing-tags hanging at the same height along it, receding into soft focus.
+Near-photorealistic fabric and card textures, bright even retail light from above,
+real shadows beneath the rail. Stylized matte cinematic grade, shallow cinematic
+depth of field. 9:16 vertical, rail in the lower two-thirds, clean space above.
+
+--------------------------------------------------------------------------------
+SCENE 16 | 0:47-0:50 | ★ SECOND CHARACTER LOCK — THE CASH BUYER
+--------------------------------------------------------------------------------
+VO: [emphatic] Even the man paying cash.
+CAPTION 1: Even the man paying cash
+CAPTION 2: (none)
+
+IMAGE PROMPT:
+Stylized low-poly 3D medium shot of a second male character at the counter,
+counting paper banknotes in both hands, head tilted down toward the money. He has
+a COMPLETELY BLANK featureless head with no eyes, no nose, no mouth, no face at
+all — a smooth matte tan block. Simplified geometric anatomy, matte clay-like
+shading. He wears a muted slate-blue #4B6A8A button shirt and cream #E8DCC8
+trousers, NO beanie, distinctly not the terracotta character.
+Near-photorealistic shop counter and interior behind, bright overhead light, real
+cast shadows. Shallow cinematic depth of field. 9:16 vertical, subject in the
+lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 17 | 0:50-0:54 | ★ THE ACT 2 PAYOFF FRAME
+--------------------------------------------------------------------------------
+VO: He never opened the app. He's still paying for it.
+CAPTION 1: He never opened the app
+CAPTION 2: he's still paying for it
+
+IMAGE PROMPT:
+Stylized low-poly 3D close-up of the slate-blue character's hand pushing folded
+banknotes across a dark counter toward camera, his phone lying face-down and dark
+beside his elbow, screen off. Muted slate-blue #4B6A8A cuff visible. Simplified
+geometric anatomy, matte clay-like shading, near-photorealistic counter and paper
+textures. Hard warm key from the right, deep real shadow left, one gold #F2B01E
+highlight on the note edge. Shallow cinematic depth of field. 9:16 vertical, hand
+and money in the lower two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 18 | 0:54-0:57 | TURN
+--------------------------------------------------------------------------------
+VO: Then there's the part they don't advertise.
+CAPTION 1: Then the part they don't advertise
+CAPTION 2: (none)
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of a phone lying face-up on a dark kitchen table at
+night, screen glowing hard cold blue-white #4BA3D3 and empty, the light throwing a
+sharp rectangle across the table surface. Everything beyond falls to near-black
+#06080B. Near-photorealistic wood grain and glass reflection. Cold, late, quiet.
+Stylized matte cinematic grade. 9:16 vertical, phone in the lower two-thirds,
+deep dark space above.
+[POST] Composite a notification bar sliding onto the screen.
+
+--------------------------------------------------------------------------------
+SCENE 19 | 0:57-1:01
+--------------------------------------------------------------------------------
+VO: Miss a payment... and ninety becomes ninety-seven.
+CAPTION 1: Miss one payment
+CAPTION 2: $90 becomes $97
+
+IMAGE PROMPT:
+Near-photorealistic macro of a paper calendar page pinned to a dark wall, one date
+square marked with a single hard red-orange #E85F42 cross, the rest of the grid
+empty and unmarked. Hard raking light from the left, deep real shadow to the
+right, most of the page falling into shadow. Stylized matte cinematic grade,
+shallow depth of field. 9:16 vertical, calendar in the lower two-thirds, clean
+dark space above.
+[POST] Composite "$90 → $97" beside the marked date.
+
+--------------------------------------------------------------------------------
+SCENE 20 | 1:01-1:04 | ★ MECHANISM PAYOFF — THE ONE FRAME THAT MUST LAND
+--------------------------------------------------------------------------------
+VO: [serious] The price grew because time passed.
+CAPTION 1: The price grew
+CAPTION 2: because time passed
+
+IMAGE PROMPT:
+Near-photorealistic macro of an old brass pocket watch lying open on a dark
+surface, and resting directly on its glass face a single small stack of coins, the
+stack taller than the watch is thick. Hard warm gold #F2B01E side light from the
+right, long deep real shadow stretching left, near-black #06080B background.
+Symbolic, still, weighty. Stylized matte cinematic grade, shallow depth of field.
+9:16 vertical, subject in the lower two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 21 | 1:04-1:08
+--------------------------------------------------------------------------------
+VO: That is the oldest definition of interest there is.
+CAPTION 1: That is interest
+CAPTION 2: the oldest definition there is
+
+IMAGE PROMPT:
+Near-photorealistic macro of a thick aged book open on a dark table, the visible
+pages completely blank and unprinted, warm cream paper texture, deckled edges. One
+narrow shaft of warm amber #F2B01E light falls across the gutter; the rest of the
+frame is near-black #06080B. Dust suspended in the beam. Stylized matte cinematic
+grade, very shallow depth of field. 9:16 vertical, book in the lower two-thirds,
+dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 22 | 1:08-1:11
+--------------------------------------------------------------------------------
+VO: And the last piece is the quietest.
+CAPTION 1: And the last piece
+CAPTION 2: is the quietest
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of the terracotta character seen from behind, sitting
+on the edge of a bed in a dim room, shoulders forward, phone glow lighting his
+hands from below. COMPLETELY BLANK featureless head, no face at all, smooth matte
+tan, cream beanie visible from behind, terracotta #E85F42 t-shirt. Simplified
+geometric anatomy, matte clay-like shading. Near-photorealistic dim bedroom, cold
+blue #4BA3D3 window light, deep real shadows. Shallow cinematic depth of field.
+9:16 vertical, figure in the lower two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 23 | 1:11-1:15
+--------------------------------------------------------------------------------
+VO: Split into four, the number stops feeling like money.
+CAPTION 1: Split into four
+CAPTION 2: it stops feeling like money
+
+IMAGE PROMPT:
+Near-photorealistic macro of a single banknote cleanly cut into four equal
+rectangles laid side by side with even gaps on a dark near-black #06080B surface.
+Soft even key light from above, four identical soft real shadows beneath the
+pieces. Clinical, orderly, slightly unsettling. Stylized matte cinematic grade,
+shallow depth of field. 9:16 vertical, pieces in the lower two-thirds, clean dark
+space above.
+
+--------------------------------------------------------------------------------
+SCENE 24 | 1:15-1:18
+--------------------------------------------------------------------------------
+VO: Baskets get bigger. That's not a side effect.
+CAPTION 1: So baskets get bigger
+CAPTION 2: that's not a side effect
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of the terracotta character walking toward camera out
+of a shop doorway, a shopping bag hanging from each hand, both bags visibly
+overfull. COMPLETELY BLANK featureless head with no eyes, no nose, no mouth, no
+face at all — smooth matte tan block. Terracotta #E85F42 t-shirt, cream #E8DCC8
+trousers, white sneakers, cream beanie. Simplified geometric anatomy, matte
+clay-like shading. Near-photorealistic shopfront and pavement, bright daylight
+behind him, real cast shadow ahead of him. Shallow cinematic depth of field. 9:16
+vertical, figure in the lower three-quarters, clean space above.
+
+--------------------------------------------------------------------------------
+SCENE 25 | 1:18-1:20
+--------------------------------------------------------------------------------
+VO: [emphatic] That IS the product.
+CAPTION 1: That IS the product
+CAPTION 2: (none)
+
+IMAGE PROMPT:
+Near-photorealistic extreme macro of a phone screen's glass surface reflecting a
+single warm gold #F2B01E glint, the display itself dark and empty, shot at a steep
+raking angle so the glass fills the frame diagonally. Deep near-black #06080B
+elsewhere, fine dust and fingerprint detail catching the light. Stylized matte
+cinematic grade, very shallow depth of field. 9:16 vertical, glass across the
+lower two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 26 | 1:20-1:24
+--------------------------------------------------------------------------------
+VO: Four apps. Twelve payment dates. One salary.
+CAPTION 1: Four apps. Twelve dates.
+CAPTION 2: One salary.
+
+IMAGE PROMPT:
+Near-photorealistic top-down of four identical phones laid in a neat row on a dark
+near-black #06080B surface, all four screens glowing the same cold pale blue
+#4BA3D3 and completely empty of content. Even overhead key light, four matching
+soft real shadows. Clinical, repetitive, oppressive. Stylized matte cinematic
+grade, shallow depth of field. 9:16 vertical, phones in the lower two-thirds,
+clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 27 | 1:24-1:29 | ★ EMOTIONAL PEAK — THUMBNAIL CANDIDATE
+--------------------------------------------------------------------------------
+VO: [sad] Nobody calls that debt. It behaves exactly like debt.
+CAPTION 1: Nobody calls it debt
+CAPTION 2: it behaves exactly like debt
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of the terracotta character sitting alone at a kitchen
+table at night, both hands flat on the table either side of a dark phone, head
+lowered, shoulders dropped. COMPLETELY BLANK featureless head, no face at all,
+smooth matte tan. Terracotta #E85F42 t-shirt, cream beanie. Simplified geometric
+anatomy, matte clay-like shading. Near-photorealistic kitchen falling into
+near-black #06080B behind him, one cold overhead light directly above, hard real
+shadow pooling under the table. Shallow cinematic depth of field. 9:16 vertical,
+figure in the lower two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 28 | 1:29-1:32 | THE TURN TO THE FIX
+--------------------------------------------------------------------------------
+VO: [calm] So what does the honest version look like?
+CAPTION 1: So what's the honest version?
+CAPTION 2: (none)
+
+IMAGE PROMPT:
+Near-photorealistic still life of a single sheet of clean cream paper and a
+fountain pen lying beside it on a warm wooden table, the paper entirely blank. Warm
+amber #F2B01E key light from the left, soft real shadow to the right, background
+falling gently to dark. Calm, ordered, hopeful — a deliberate tonal lift from the
+previous scene. Stylized matte cinematic grade, shallow depth of field. 9:16
+vertical, paper in the lower two-thirds, clean space above.
+
+--------------------------------------------------------------------------------
+SCENE 29 | 1:32-1:36
+--------------------------------------------------------------------------------
+VO: A sale has one price. Agreed once. Written down.
+CAPTION 1: A sale has ONE price
+CAPTION 2: agreed once, written down
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of two simplified geometric hands shaking firmly over
+a wooden table, cropped at the wrists, one cuff terracotta #E85F42 and the other
+cream #E8DCC8. Matte clay-like shading, warm amber key light from the left, deep
+real shadow to the right, near-black #06080B background. Steady, resolved,
+symmetrical. Shallow cinematic depth of field. 9:16 vertical, hands in the lower
+two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 30 | 1:36-1:40
+--------------------------------------------------------------------------------
+VO: Pay in six months? Fine — but the number is fixed today.
+CAPTION 1: Pay in six months? Fine.
+CAPTION 2: The number is fixed today.
+
+IMAGE PROMPT:
+Near-photorealistic macro of a brass price tag stamped and sealed with a drop of
+red wax on a dark slate surface, the tag face clean and unmarked. Hard warm gold
+#F2B01E side light from the right, deep real shadow left, near-black #06080B
+background. Solid, final, unmoving. Stylized matte cinematic grade, shallow depth
+of field. 9:16 vertical, tag in the lower two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 31 | 1:40-1:44
+--------------------------------------------------------------------------------
+VO: [emphatic] Late, early, never — the price cannot move.
+CAPTION 1: Late, early, never
+CAPTION 2: the price cannot move
+
+IMAGE PROMPT:
+Near-photorealistic macro of an antique brass balance scale locked in perfect
+equilibrium on a dark surface, a single identical weight sitting in each pan, the
+beam dead level. One warm gold #F2B01E rim light from the right, deep real shadows
+falling left, near-black #06080B background, nothing else in frame. Stylized matte
+cinematic grade, shallow depth of field. 9:16 vertical, scale in the lower
+two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 32 | 1:44-1:47
+--------------------------------------------------------------------------------
+VO: That's murabaha. A sale, not a loan.
+CAPTION 1: That's murabaha
+CAPTION 2: a sale, not a loan
+
+IMAGE PROMPT:
+Near-photorealistic macro of a merchant's hardbound ledger open on a dark desk,
+ruled columns visible but entirely unfilled, a small brass price tag resting on
+the open page. Warm amber #F2B01E raking light from the left, deep real shadow to
+the right, most of the spread falling into shadow. Stylized matte cinematic grade,
+shallow depth of field. 9:16 vertical, ledger in the lower two-thirds, clean dark
+space above.
+
+--------------------------------------------------------------------------------
+SCENE 33 | 1:47-1:50
+--------------------------------------------------------------------------------
+VO: The markup is allowed because the risk is real...
+CAPTION 1: The markup is allowed
+CAPTION 2: because the risk is real
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of a single cardboard crate sitting alone in a dim
+warehouse aisle, tall shelving receding into darkness on both sides, one shaft of
+cold light falling across the crate. Near-photorealistic cardboard and concrete
+textures, real cast shadows, near-black #06080B depths. Stylized matte cinematic
+grade, shallow cinematic depth of field. 9:16 vertical, crate in the lower
+two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 34 | 1:50-1:54
+--------------------------------------------------------------------------------
+VO: ...and because it stops the moment the deal is signed.
+CAPTION 1: and it stops
+CAPTION 2: the moment the deal is signed
+
+IMAGE PROMPT:
+Near-photorealistic macro of a fountain pen resting on a signed line at the foot
+of a thick contract, the page shot at a low raking angle so most of it falls into
+shadow, the signature area itself out of frame. Warm amber #F2B01E key from the
+left, deep real shadow right, near-black #06080B background. Final, still.
+Stylized matte cinematic grade, very shallow depth of field. 9:16 vertical,
+pen in the lower two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 35 | 1:54-1:57 | THE VERDICT
+--------------------------------------------------------------------------------
+VO: [serious] If a number can grow because you were late...
+CAPTION 1: If a number can grow
+CAPTION 2: because you were late...
+
+IMAGE PROMPT:
+Near-photorealistic macro of the same brass pocket watch from scene 20, closed
+now, lying alone on a dark surface with its chain coiled beside it. Hard cold
+directional light from the left, long deep real shadow stretching right,
+near-black #06080B background, no coins anywhere in frame. Stylized matte
+cinematic grade, shallow depth of field. 9:16 vertical, watch in the lower
+two-thirds, clean dark space above.
+
+--------------------------------------------------------------------------------
+SCENE 36 | 1:57-2:01 | ★ THE LINE
+--------------------------------------------------------------------------------
+VO: ...it was never a price. It was a loan wearing a receipt.
+CAPTION 1: It was never a price
+CAPTION 2: it was a loan wearing a receipt
+
+IMAGE PROMPT:
+Near-photorealistic macro of a long paper receipt lying on a dark surface, its
+lower half torn cleanly away to reveal a formal contract page underneath, the
+heavier paper stock and ruled clauses clearly a different document. Both surfaces
+entirely blank and unprinted. Hard directional light from the right, deep real
+shadow left, near-black #06080B background. Stylized matte cinematic grade, very
+shallow depth of field. 9:16 vertical, papers in the lower two-thirds, clean dark
+space above.
+
+--------------------------------------------------------------------------------
+SCENE 37 | 2:01-2:05
+--------------------------------------------------------------------------------
+VO: [warmly] Zero percent isn't free. It's just quiet.
+CAPTION 1: 0% isn't free
+CAPTION 2: it's just quiet
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of the terracotta character walking away from camera
+down a sunlit street, one modest shopping bag in one hand, shoulders level and
+relaxed. COMPLETELY BLANK featureless head, no face at all, smooth matte tan,
+cream beanie. Terracotta #E85F42 t-shirt, cream #E8DCC8 trousers, white sneakers.
+Simplified geometric anatomy, matte clay-like shading. Near-photorealistic street
+at golden hour, warm low sun, long soft real shadow behind him, sky #4BA3D3 fading
+to gold. Shallow cinematic depth of field. 9:16 vertical, figure in the lower
+three-quarters, clean warm sky above.
+
+--------------------------------------------------------------------------------
+SCENE 38 | 2:05-2:08 | END CARD
+--------------------------------------------------------------------------------
+VO: [warmly] Follow — next, the card you pay off every month.
+CAPTION 1: Next: the card you pay off in full
+CAPTION 2: follow so you don't miss it
+
+IMAGE PROMPT:
+Heavily blurred near-photorealistic golden-hour street scene as a soft background
+plate, warm amber #F2B01E and cream #E8DCC8 tones, strong bokeh, no sharp detail
+anywhere. Clean empty centre of frame reserved for a logo overlay to be added in
+post. Warm, calm, inviting. Stylized matte cinematic grade. 9:16 vertical, even
+blur across the full frame.
+[POST] Composite the channel logo centred, plus handle and series title beneath.
+
+
+================================================================================
+CAPTION BURN-IN SPEC
+================================================================================
+
+LINE 1 (top)    : white #FFFFFF, Montserrat or Inter Bold 700, sentence case,
+                  on a solid #000000 box, tight padding, box sized to the text
+                  (not full width)
+LINE 2 (below)  : soft gold #F5D76E, ITALIC, own solid #000000 box, offset
+                  approximately 20px to the left of line 1
+POSITION        : lower third, above the YouTube UI band — keep clear of the
+                  bottom 250px of a 1920px tall frame
+BEHAVIOUR       : STATIC per phrase. No karaoke. No word-by-word pop. No colour
+                  highlighting. No scaling or bouncing.
+EMPHASIS        : italics only
+TIMING          : swap on the speaker's natural clause break — the caption change
+                  and the picture cut land together
+
+Enable a multi-language audio track on upload. That is what produces YouTube's
+"Auto-dubbed" chip, and it is free additional reach.
+
+
+================================================================================
+NUMBER OVERLAYS — added in post, never generated in-image
+================================================================================
+
+0:00  scene 01  "$90.00 / 4 payments of $22.50 / 0% interest", 0% ringed in gold
+0:18  scene 07  "$90" splitting into four "$22.50" chips
+0:32  scene 11  "6% + fee" rising off the stack
+0:36  scene 12  "2%" on the short stack, "6%" on the tall one
+0:41  scene 14  price on the swing-tag ticking upward
+0:57  scene 19  "$90 → $97" beside the crossed date
+1:20  scene 26  four staggered due-date chips, one per phone
+
+Gold #F2B01E for the number that is being exposed; white for neutral figures.
+One overlay on screen at a time — two competing numbers is how a viewer stops
+reading both.
+
+
+================================================================================
+EDIT & ASSEMBLY
+================================================================================
+
+1. Record the VO first. The cut follows speech cadence, so scene timings will
+   shift to match the actual delivery. Treat the timecodes above as a guide.
+2. Generate scene 09, approve AMIR, lock the seed. Then scene 16 for the cash
+   buyer. Then everything else.
+3. HARD CUTS ONLY. No dissolves, no whip pans, no zoom transitions, no glitch.
+4. Slow push-in or lateral drift on every scene. Nothing fully static.
+5. Film grain overlay across the master.
+6. Burn in captions per the spec above.
+7. Custom thumbnail — do not ship on an auto-selected frame.
+
+RETENTION CHECKPOINTS
+  Scenes 01-03  the hook. "Interest-free" must read as a contradiction inside
+                three seconds. If this doesn't land, nothing else matters.
+  Scene 06      the recap has to be over by here. Any longer and it becomes
+                series bookkeeping, which is the failure logged in
+                channel-study.md.
+  Scene 17      the cash buyer. This is the frame that makes the video shareable
+                — it implicates the viewer who thought this didn't apply to them.
+  Scene 20      the mechanism payoff. Coins resting on a watch face. The one
+                frame that has to be understood.
+  Scene 27      emotional peak and best thumbnail candidate.
+  Scene 36      the line people will quote in the comments.
+
+================================================================================
