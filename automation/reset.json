@@ -1,5 +1,7 @@
 {
   "_comment": "Packaging reset, 2026-08-03. Driven by reset_packaging.py. Every target below is a video that failed or has not published yet. The channel's seven 700+ view Shorts are deliberately absent — never repackage a winner.",
+  "expect_channel_id": "UCVOoFJkRiOdJsWnewt8HJkw",
+  "_expect_channel_id_why": "Finance % Decoded. Checked by assert_channel() before any write. Every write in reset_packaging.py resolves its target with mine=True, so this file's contents land on whatever channel YT_REFRESH_TOKEN authenticates as — and fix_channel_meta() would overwrite that channel's keywords and country with the Islamic-finance list below. This repo now runs a second channel (HELD BY FAITH, UCh0tKIGR5Ns3Wvoai__txdg, config in heldbyfaith/), so a swapped secret is a real path to writing this config onto the wrong channel. Read-only runs warn; writes abort.",
   "playlist_url": "https://www.youtube.com/playlist?list=PLKLKzR1QgFHE",
   "scheduled": [
     {

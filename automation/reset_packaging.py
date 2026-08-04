@@ -286,6 +286,48 @@ def parse_ts(t: str):
     return datetime.fromisoformat(t.replace("Z", "+00:00"))
 
 
+def assert_channel(yt, read_only):
+    """Refuse to write to a channel this config was not written for.
+
+    Every write here resolves its target with `mine=True` — the authenticated
+    channel, never an id from the config. fix_channel_meta() in particular does a
+    fetch-then-mutate on brandingSettings, so pointing YT_REFRESH_TOKEN at a
+    different channel and running this would overwrite THAT channel's keywords
+    and country with reset.json's, silently and in one call.
+
+    That is not hypothetical: this repo now runs two channels. HELD BY FAITH
+    (UCh0tKIGR5Ns3Wvoai__txdg) has its own packaging config in heldbyfaith/, and
+    the day it gets its own refresh token is the day a swapped secret can point
+    this script at it.
+
+    Read-only paths (--inventory, --dry-run) warn and continue, because
+    discovering which channel a token actually owns is a legitimate diagnostic —
+    it is how the 2026-08-04 pass established that new1/new2/new3 still
+    authenticate as Finance % Decoded. Writes abort.
+    """
+    expect = CFG.get("expect_channel_id")
+    items = yt.channels().list(part="snippet", mine=True).execute().get("items", [])
+    if not items:
+        sys.exit("Authenticated, but the token owns no channel. Check YT_REFRESH_TOKEN.")
+    got = items[0]["id"]
+    title = items[0]["snippet"].get("title", "?")
+    print(f"  authenticated as: {title} ({got})")
+    if not expect:
+        print("  ! reset.json has no expect_channel_id — no guard active.")
+        return
+    if got == expect:
+        return
+    msg = (f"CHANNEL MISMATCH: reset.json is written for {expect}, but the token "
+           f"authenticates as {title} ({got}).")
+    if read_only:
+        print(f"  ! {msg}\n  ! Read-only run, continuing. Nothing will be written.")
+        return
+    sys.exit(f"\n{msg}\nRefusing to write. Every target in reset.json belongs to "
+             f"{expect}, and the channel-level branding write would land on the "
+             f"wrong channel. Fix YT_REFRESH_TOKEN, or use the config that matches "
+             f"this channel.")
+
+
 def fix_channel_meta(yt, dry_run):
     """Set channel-level keywords. Fetch-then-mutate so other branding survives."""
     cfg = CFG.get("channel")
@@ -402,6 +444,9 @@ def main():
     args = ap.parse_args()
 
     yt = yt_client()
+
+    print("\n== Channel guard ==")
+    assert_channel(yt, read_only=args.inventory or args.dry_run)
 
     if args.inventory:
         print("\n== Owned video inventory ==")
