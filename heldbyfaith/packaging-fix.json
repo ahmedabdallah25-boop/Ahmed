@@ -1,0 +1,90 @@
+{
+  "_comment": "HELD BY FAITH (@HeldByFaithJourney, UCh0tKIGR5Ns3Wvoai__txdg) packaging fix, 2026-08-04. Shaped to match automation/reset_packaging.py so it can be applied by that script once this channel has its own OAuth credentials. NOTHING HERE HAS BEEN APPLIED. The repo's GitHub Actions authenticate to Finance % Decoded via secrets new1/new2/new3 — a refresh token scoped to that channel only. This channel needs its own token before any automated write can touch it. Until then the human applies these by hand; see channel-diagnosis.md for the copy-paste versions.",
+  "channel_id": "UCh0tKIGR5Ns3Wvoai__txdg",
+  "handle": "@HeldByFaithJourney",
+  "playlist_url": "https://www.youtube.com/playlist?list=PLczfvNC3NVjo",
+
+  "_series_block": "The exact block that must appear in EVERY description once the renumbering below is applied. The current descriptions call the Ch. 3 video 'Episode 3' and the Ch. 4 video 'Episode 4', which contradicts their own titles. Titles and description links have to agree or the viewer cannot follow the story.",
+  "series_block": "▶ THE STORY IN ORDER:\nCh. 1 — The diagnosis: https://youtu.be/GFKRpV_mhWg\nCh. 2 — The surgery: https://youtu.be/xmCDlKXU694\nCh. 3 — Why I felt nothing: https://youtu.be/9hR1vXH5PVE\nCh. 4 — Telling my family: https://youtu.be/9CQZ-uS3nuY\nCh. 5 — The 7-day wait: https://youtu.be/1TGtRIpgwt4\nCh. 6 — The phone call: {CH6_URL}\n▶ Full playlist: https://www.youtube.com/playlist?list=PLczfvNC3NVjo",
+
+  "retitle": [
+    {
+      "video_id": "GFKRpV_mhWg",
+      "_why": "Series suffix only. 'Pancreatic Cancer Journey Ep. 1' -> 'Ch. 1'. The hook half of the title is strong and is NOT being touched — the Kaaba/four-days line is the best opening on the channel. Only the scheme changes, so the channel finally uses one word for one thing.",
+      "current_title": "I Asked Allah for a Long Life. 4 Days Later, Cancer. | Pancreatic Cancer Journey Ep. 1",
+      "title": "I Asked Allah for a Long Life. 4 Days Later, Cancer. | Ch. 1"
+    },
+    {
+      "video_id": "xmCDlKXU694",
+      "_why": "Series suffix only, same reason.",
+      "current_title": "10 Hours in Surgery, Awake by Allah's Will | Pancreatic Cancer Journey Ep. 2",
+      "title": "10 Hours in Surgery, Awake by Allah's Will | Ch. 2"
+    },
+    {
+      "video_id": "9hR1vXH5PVE",
+      "_why": "Drops the third series name ('Muslim Cancer Story'). Number is already correct.",
+      "current_title": "Why I Felt Nothing When They Said Cancer | Muslim Cancer Story Ch. 3",
+      "title": "Why I Felt Nothing When They Said Cancer | Ch. 3"
+    },
+    {
+      "video_id": "9CQZ-uS3nuY",
+      "_why": "This one is unnumbered entirely, which is why the sequence has a hole in it. It sits between Ch. 3 and the 7-day wait, so it becomes Ch. 4.",
+      "current_title": "How I Told My Family I Have Cancer | Muslim Cancer Journey",
+      "title": "How I Told My Family I Have Cancer | Ch. 4"
+    },
+    {
+      "video_id": "1TGtRIpgwt4",
+      "_why": "Currently labelled Ch. 4, which collides with 9CQZ_uS3nuY once that one is numbered. Moves to Ch. 5. This is the channel's best performer (12 views, 2 likes, ~17% like rate) — the HOOK half of the title is deliberately untouched, only the suffix moves.",
+      "current_title": "7 Days Waiting for Cancer Results | Muslim Cancer Journey Ch. 4",
+      "title": "7 Days Waiting for Cancer Results | Ch. 5"
+    }
+  ],
+
+  "unlist": [
+    {
+      "video_id": "14mGEhEieZY",
+      "_why": "'The Phone Call That Ended 7 Days of Waiting' — landscape, 2:52, 1 view. Covers the same beat as the new Ch. 6 and is listed in no description, so it is an orphan splitting the story. UNLIST, never delete: it keeps the footage and the original upload date and is fully reversible. Do this only AFTER the vertical Ch. 6 is live.",
+      "action": "unlist",
+      "blocked_until": "Ch. 6 published"
+    }
+  ],
+
+  "channel": {
+    "_why": "youtube_channel_about returned keywords: [] — the channel has no channel-level keywords at all. Weak signal next to per-video metadata, but it is one of the few inputs YouTube uses to place a channel in a topic cluster, and empty gives it nothing. Costs nothing, cannibalises nothing.",
+    "keywords": [
+      "cancer journey",
+      "muslim cancer story",
+      "pancreatic cancer",
+      "whipple surgery",
+      "faith through cancer",
+      "tawakkul",
+      "sabr",
+      "trust in Allah",
+      "cancer vlog",
+      "cancer diagnosis story",
+      "islamic motivation",
+      "held by faith",
+      "cancer support",
+      "chemotherapy journey",
+      "muslim health journey",
+      "dua for healing",
+      "cancer survivor story"
+    ],
+    "country": "AE"
+  },
+
+  "protected": {
+    "_why": "Guard rail, same principle as the other channel's reset.json: never repackage a proven winner. On a channel this small 'winner' is relative, but 1TGtRIpgwt4 carries 12 of the 33 lifetime views and the only likes on the channel. Its hook, description and tags are the reference — the retitle above touches its series suffix ONLY and nothing else on it may change.",
+    "video_ids": [
+      "1TGtRIpgwt4"
+    ]
+  },
+
+  "do_not_touch": {
+    "_why": "Tags and descriptions across this channel are genuinely good — 14 to 17 specific tags per video, chaptered and well-written descriptions with a proper medical disclaimer. They are not the problem and rewriting them would burn effort while risking a real asset. Format, cadence and series numbering are the whole fix.",
+    "fields": [
+      "tags",
+      "description_body"
+    ]
+  }
+}

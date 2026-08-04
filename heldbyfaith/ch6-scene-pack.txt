@@ -1,0 +1,570 @@
+================================================================================
+HELD BY FAITH — SCENE PACK
+CHAPTER 6: "THE PHONE CALL"
+Style: photographic, faceless by framing | 9:16 1080x1920 | ~90s | 21 scenes
+Target: this week — the channel has been dark 21 days
+================================================================================
+
+
+READ THIS FIRST — WHAT IS AND IS NOT WRITTEN HERE
+================================================================================
+
+This is your life, not a format. **I have not written what the results said**, what
+you felt when you heard it, or how it ended — I do not know any of that, and
+inventing it would put words in your mouth about your own diagnosis.
+
+So the script below locks everything that is craft — the hook, the structure, the
+pacing, the caption beats, the turn outward at the end — and marks the three
+places only you can fill as `[YOUR LINE]`. They are the emotional core. Everything
+around them is built to carry them.
+
+If a beat here is wrong for what actually happened, the beat is wrong. Change it.
+
+WHY THIS CHAPTER, AND WHY VERTICAL
+- Chapter 5 ("7 Days Waiting for Cancer Results") ends on the wait and its
+  description promises *"Chapter 5 is coming"*. This is the answer the existing
+  audience was told to expect.
+- You already shot this material. `14mGEhEieZY` "The Phone Call That Ended 7 Days
+  of Waiting" is 2:52, **landscape**, and has **1 view** — the format is the only
+  reason. Re-cut vertical, it is the strongest beat in the story.
+- Vertical Shorts on this channel average 4.8 views each. Landscape averages 1.3.
+  That is the whole argument.
+- ~90s matches `1TGtRIpgwt4` (95s), the channel's best performer.
+
+HOW TO USE THIS FILE
+- Every IMAGE PROMPT is complete and self-contained. Copy, paste, generate.
+- The NEGATIVE PROMPT is identical for all scenes. Paste it once and leave it.
+- Where you have your own footage of a beat, **use your footage.** These prompts
+  exist to fill gaps, not to replace what is real. Real beats a render every time
+  on a channel like this.
+- CAPTION lines are burned in. See CAPTION SPEC at the bottom.
+
+
+================================================================================
+NEGATIVE PROMPT — paste into the negative field, applies to ALL 21 scenes
+================================================================================
+
+face, facial features, eyes, mouth, portrait, identifiable person, recognisable
+likeness, blood, wounds, surgical incision, graphic medical imagery, medical
+gore, distressing imagery, text, watermark, logo, signature, hospital branding,
+distorted hands, extra fingers, extra limbs, cartoon, anime, 3D render, cel
+shading, oversaturated, HDR glow, plastic sheen, stock-photo smiling
+
+
+================================================================================
+VISUAL RULES — read once, they apply to every scene
+================================================================================
+
+FACELESS BY FRAMING, not by blur. Backs of heads, hands, over-the-shoulder,
+silhouette against a window, objects alone in a room. This protects your privacy,
+keeps generation consistent, and is the correct register for this story — the
+viewer should be inside the moment, not looking at someone else in it.
+
+NOTHING CLINICAL OR GRAPHIC. No wounds, no procedures, no equipment as spectacle.
+The weight of this chapter is a phone and a room, not a hospital.
+
+PALETTE
+  hospital neutral  #6E7F85   muted teal-grey, the daylight
+  warm sand         #D8C3A5   walls, paper, skin tones
+  deep charcoal     #2B2B2B   shadow, the phone, clothing
+  soft amber        #E8B87D   the turn — used ONLY from scene 16 onward
+  off-white         #F4F4F0   linen, page, window light
+
+The grade goes cold for the first two thirds and warms from scene 16. That shift
+is the story. Do not warm it early.
+
+
+================================================================================
+VOICEOVER — record this first, the cut follows your delivery
+================================================================================
+
+Day seven.
+[quiet] The phone rang at [TIME].
+I let it ring twice.
+
+For seven days I had rehearsed both answers.
+I had said Alhamdulillah out loud to an empty room. Practising.
+[quiet] You cannot practise this.
+
+I picked up.
+She said my name. Then she said: "Are you somewhere you can sit down?"
+[whispers] Nobody asks that before good news.
+
+And then she told me.
+
+>>> [YOUR LINE 1] — the result, one sentence, as close to how it was actually
+    said to you as you can bear. Plain. Do not soften it and do not dramatise it.
+
+>>> [YOUR LINE 2] — what you said back. If you said nothing, say that. "I said
+    nothing" is a stronger line than anything I could write here.
+
+>>> [YOUR LINE 3] — the first true feeling. Not the tidy one, the real one. If it
+    was numbness, or relief you felt guilty about, or anger — that is the line.
+    Chapter 3 of this channel is called "Why I Felt Nothing When They Said Cancer"
+    and it is the third-best video you have. Honesty is what works here.
+
+I had spent seven days asking for one specific answer.
+[quiet] I never once asked for the strength to hear a different one.
+
+"Allah does not burden a soul beyond what it can bear."
+I had read that verse a hundred times.
+[quiet] Day seven is when I understood it isn't a comfort. It's a measurement.
+
+If you are waiting on a call like that tonight —
+[warmly] you will be able to carry it. That is the promise. Not that it will be light.
+
+Chapter 7 soon.
+
+DELIVERY NOTES: slower than feels natural — this script is ~200 words across ~90
+seconds, so roughly half your runtime is silence and breath. Let the pauses sit.
+Do not perform the grief; report it. The channel's existing voice already does
+this well and it is why the like rate is 17%.
+
+
+================================================================================
+THE 21 SCENES
+================================================================================
+
+--------------------------------------------------------------------------------
+SCENE 01 | 0:00-0:04 | THE HOOK
+--------------------------------------------------------------------------------
+VO: Day seven.
+CAPTION 1: Day seven
+CAPTION 2: the results were due
+
+IMAGE PROMPT:
+Photographic close-up of a dark charcoal smartphone lying face-down on a pale
+sand-coloured wooden table, screen hidden, edge catching a thin line of cold
+window light. Muted teal-grey daylight from a window out of frame to the left,
+long soft real shadow falling right. Empty table surface around it, nothing else
+in frame. Desaturated cool grade, natural light only, shallow depth of field.
+9:16 vertical composition, phone in the lower two-thirds, clean headroom above
+for captions. No people, no face.
+
+--------------------------------------------------------------------------------
+SCENE 02 | 0:04-0:08
+--------------------------------------------------------------------------------
+VO: [quiet] The phone rang at [TIME].
+CAPTION 1: The phone rang at [TIME]
+CAPTION 2: —
+
+IMAGE PROMPT:
+Photographic extreme close-up of the same face-down charcoal phone on pale wood,
+shot from a low angle almost level with the table surface, a faint glow of screen
+light bleeding out around its edges onto the wood. Everything else falls into
+soft shadow. Cold muted teal-grey light, heavy shallow depth of field with only
+the phone's near edge sharp. Desaturated natural grade. 9:16 vertical
+composition, subject lower two-thirds, clean headroom above. No people.
+
+--------------------------------------------------------------------------------
+SCENE 03 | 0:08-0:12
+--------------------------------------------------------------------------------
+VO: I let it ring twice.
+CAPTION 1: I let it ring twice
+CAPTION 2: I don't know why
+
+IMAGE PROMPT:
+Photographic shot of an open human hand resting flat and still on a pale sand
+wooden table, fingers relaxed, NOT reaching, with a dark charcoal phone lying just
+beyond fingertip distance. Hand seen from above and slightly behind, no face, no
+arm past the wrist. Cold muted teal-grey window light from the left, soft real
+shadows. Desaturated natural grade, shallow depth of field. 9:16 vertical
+composition, hand and phone in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 04 | 0:12-0:17
+--------------------------------------------------------------------------------
+VO: For seven days I had rehearsed both answers.
+CAPTION 1: For 7 days I rehearsed both answers
+CAPTION 2: I had a version of me ready for each
+
+IMAGE PROMPT:
+Photographic close-up of a paper wall calendar on a warm sand plaster wall, seven
+consecutive date squares crossed off in hand-drawn red pen, the strokes uneven and
+pressed hard, the eighth square blank. Cold muted daylight raking from the right
+across the paper grain, long soft shadow of the calendar's edge on the wall.
+Desaturated grade with the red as the only saturated element. Shallow depth of
+field. 9:16 vertical composition, calendar in the lower two-thirds, clean headroom
+above. No people.
+
+--------------------------------------------------------------------------------
+SCENE 05 | 0:17-0:21
+--------------------------------------------------------------------------------
+VO: I had said Alhamdulillah out loud to an empty room. Practising.
+CAPTION 1: I said Alhamdulillah to an empty room
+CAPTION 2: practising
+
+IMAGE PROMPT:
+Photographic wide interior of a small quiet room, completely empty of people, a
+simple prayer mat laid out on the floor at the centre, walls in warm sand plaster.
+Cold muted teal-grey daylight entering from a window on the left, a long clean
+shadow stretching across the floor. Still, silent, uninhabited. Desaturated
+natural grade, shallow depth of field falling off at the edges. 9:16 vertical
+composition, mat in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 06 | 0:21-0:25
+--------------------------------------------------------------------------------
+VO: [quiet] You cannot practise this.
+CAPTION 1: You can't practise this
+CAPTION 2: —
+
+IMAGE PROMPT:
+Photographic close-up of an empty wooden chair beside a window, one thin cushion,
+nobody sitting in it, seen slightly from behind and to the side. Cold muted
+teal-grey light falling across the seat, deep soft shadow beneath. Warm sand wall
+behind, out of focus. Desaturated natural grade, very shallow depth of field.
+9:16 vertical composition, chair in the lower two-thirds, clean headroom above.
+No people.
+
+--------------------------------------------------------------------------------
+SCENE 07 | 0:25-0:29 | THE CALL
+--------------------------------------------------------------------------------
+VO: I picked up.
+CAPTION 1: I picked up
+CAPTION 2: —
+
+IMAGE PROMPT:
+Photographic close-up of a hand lifting a dark charcoal phone from a pale wooden
+table, caught mid-movement, phone just clear of the surface, fingers closed around
+it. Shot from the side, no face, no arm past the forearm. Cold muted teal-grey
+directional light from the left, motion held still and sharp. Desaturated natural
+grade, shallow depth of field. 9:16 vertical composition, hand in the lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 08 | 0:29-0:35
+--------------------------------------------------------------------------------
+VO: She said my name. Then she said: "Are you somewhere you can sit down?"
+CAPTION 1: "Are you somewhere you can sit down?"
+CAPTION 2: —
+
+IMAGE PROMPT:
+Photographic shot from directly behind a seated person's head and shoulders,
+silhouetted dark against a bright window, a phone held to one ear, the far side of
+the face completely hidden by the back of the head. No facial features visible at
+any angle. Cold muted teal-grey window light blowing out softly behind the
+silhouette. Warm sand room falling into shadow around the frame. Desaturated
+natural grade, shallow depth of field. 9:16 vertical composition, subject in the
+lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 09 | 0:35-0:40
+--------------------------------------------------------------------------------
+VO: [whispers] Nobody asks that before good news.
+CAPTION 1: Nobody asks that before good news
+CAPTION 2: —
+
+IMAGE PROMPT:
+Photographic macro of a hand gripping the edge of a wooden chair seat, knuckles
+pale with pressure, tendons visible, the rest of the body out of frame entirely.
+Cold muted teal-grey side light raking across the skin and the wood grain, deep
+soft shadow beneath the fingers. Desaturated natural grade, extremely shallow
+depth of field, background dissolved. 9:16 vertical composition, hand in the
+lower two-thirds, clean headroom above. No face.
+
+--------------------------------------------------------------------------------
+SCENE 10 | 0:40-0:45
+--------------------------------------------------------------------------------
+VO: And then she told me.
+CAPTION 1: And then she told me
+CAPTION 2: —
+
+IMAGE PROMPT:
+Photographic shot of a bare warm sand plaster wall with a single soft rectangle of
+cold window light falling across it, slightly angled, nothing else in the frame.
+Utterly still and empty. Fine plaster texture resolved in the raking light.
+Desaturated cool natural grade, shallow depth of field. 9:16 vertical composition,
+the light rectangle sitting in the lower two-thirds, clean headroom above. No
+people, no objects.
+
+--------------------------------------------------------------------------------
+SCENE 11 | 0:45-0:52 | ** [YOUR LINE 1] — THE RESULT **
+--------------------------------------------------------------------------------
+VO: >>> [YOUR LINE 1] — the result, one sentence, plain.
+CAPTION 1: [your words]
+CAPTION 2: —
+
+IMAGE PROMPT:
+Photographic shot of the same warm sand plaster wall as the rectangle of window
+light sits low and unmoving, dust motes suspended and clearly visible in the
+shaft of cold daylight. Nothing in the room but light and air. Absolutely still.
+Desaturated cool natural grade, very shallow depth of field. 9:16 vertical
+composition, subject in the lower two-thirds, clean headroom above.
+
+[EDIT NOTE] Hold this shot longer than feels comfortable. Whatever line 1 turns
+out to be, it needs air after it, and an empty frame is the only image that does
+not compete with it. If you have real footage from that day, this is the single
+place to use it instead.
+
+--------------------------------------------------------------------------------
+SCENE 12 | 0:52-1:00 | ** [YOUR LINE 2] — WHAT YOU SAID BACK **
+--------------------------------------------------------------------------------
+VO: >>> [YOUR LINE 2] — what you said back, or that you said nothing.
+CAPTION 1: [your words]
+CAPTION 2: —
+
+IMAGE PROMPT:
+Photographic close-up of a dark charcoal phone lying loose in an open palm resting
+on a lap, the call clearly over, fingers slack and not gripping. Shot from above,
+no face, no upper body above the forearm. Cold muted teal-grey light from a window
+to the left, soft shadow pooling in the palm. Desaturated natural grade, shallow
+depth of field. 9:16 vertical composition, hand in the lower two-thirds, clean
+headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 13 | 1:00-1:07 | ** [YOUR LINE 3] — THE FIRST TRUE FEELING **
+--------------------------------------------------------------------------------
+VO: >>> [YOUR LINE 3] — the first true feeling, not the tidy one.
+CAPTION 1: [your words]
+CAPTION 2: —
+
+IMAGE PROMPT:
+Photographic silhouette of a seated figure from behind, head bowed forward, both
+shoulders dropped, framed against a softly blown-out window. No face visible from
+any angle. Cold muted teal-grey light, the figure reading almost black against it.
+Warm sand room dissolving into shadow at the frame edges. Desaturated natural
+grade, shallow depth of field. 9:16 vertical composition, figure in the lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 14 | 1:07-1:13
+--------------------------------------------------------------------------------
+VO: I had spent seven days asking for one specific answer.
+CAPTION 1: I spent 7 days asking for one answer
+CAPTION 2: only one
+
+IMAGE PROMPT:
+Photographic still life of a glass of tea gone completely cold and untouched on a
+pale sand wooden table, a thin skin on the surface, no steam. Cold muted teal-grey
+window light from the left, long soft real shadow to the right. Quiet, abandoned,
+still. Desaturated natural grade, extremely shallow depth of field. 9:16 vertical
+composition, glass in the lower two-thirds, clean headroom above. No people.
+
+--------------------------------------------------------------------------------
+SCENE 15 | 1:13-1:20
+--------------------------------------------------------------------------------
+VO: [quiet] I never once asked for the strength to hear a different one.
+CAPTION 1: I never asked for the strength
+CAPTION 2: to hear a different one
+
+IMAGE PROMPT:
+Photographic close-up of a string of wooden prayer beads lying slack and unheld
+across an open palm, the loop spilling loosely over the side of the hand onto a
+pale wooden surface. Shot from above, no face, nothing above the wrist. Cold muted
+teal-grey light beginning to carry the faintest hint of warmth at the right edge
+of frame. Desaturated natural grade, shallow depth of field. 9:16 vertical
+composition, hand in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 16 | 1:20-1:27 | ** THE GRADE TURNS WARM FROM HERE **
+--------------------------------------------------------------------------------
+VO: "Allah does not burden a soul beyond what it can bear."
+CAPTION 1: "Allah does not burden a soul
+CAPTION 2: beyond what it can bear"
+
+IMAGE PROMPT:
+Photographic close-up of an open book on a wooden surface, pages lying flat, a
+band of soft amber late-afternoon light falling diagonally across the paper and
+lifting the fibre texture. Warm sand and off-white tones, the cold grey of earlier
+frames gone. Deep soft shadow at the gutter of the pages. Natural light only,
+gentle warm grade, extremely shallow depth of field with only the lit band sharp.
+9:16 vertical composition, book in the lower two-thirds, clean headroom above.
+No people, no legible text.
+
+--------------------------------------------------------------------------------
+SCENE 17 | 1:27-1:32
+--------------------------------------------------------------------------------
+VO: I had read that verse a hundred times.
+CAPTION 1: I'd read it a hundred times
+CAPTION 2: —
+
+IMAGE PROMPT:
+Photographic extreme macro of a single page edge and the fine grain of aged paper,
+soft amber light raking almost parallel to the surface so that the fibres and the
+faint impression of print stand out in relief. Everything beyond a few millimetres
+falls into warm blur. Warm natural grade, extremely shallow depth of field.
+9:16 vertical composition, page in the lower two-thirds, clean headroom above.
+No legible text, no people.
+
+--------------------------------------------------------------------------------
+SCENE 18 | 1:32-1:40
+--------------------------------------------------------------------------------
+VO: [quiet] Day seven is when I understood it isn't a comfort. It's a measurement.
+CAPTION 1: It isn't a comfort
+CAPTION 2: it's a measurement
+
+IMAGE PROMPT:
+Photographic shot of soft amber dawn light coming through half-open window blinds,
+throwing clean parallel bands of light and shadow across a warm sand wall and a
+plain linen surface. Dust suspended in the light. Quiet, ordered, still. Warm
+natural grade, shallow depth of field. 9:16 vertical composition, the banded light
+in the lower two-thirds, clean headroom above. No people.
+
+--------------------------------------------------------------------------------
+SCENE 19 | 1:40-1:47 | THE TURN OUTWARD
+--------------------------------------------------------------------------------
+VO: If you are waiting on a call like that tonight —
+CAPTION 1: If you're waiting on a call like that
+CAPTION 2: tonight
+
+IMAGE PROMPT:
+Photographic silhouette of a figure standing at a window seen from behind, head
+level, shoulders square, framed against soft amber early light. No face visible.
+The room around warm and softly shadowed in sand and off-white. Calm, upright,
+resolved — the opposite posture to scene 13. Warm natural grade, shallow depth of
+field. 9:16 vertical composition, figure in the lower two-thirds, clean headroom
+above.
+
+--------------------------------------------------------------------------------
+SCENE 20 | 1:47-1:54
+--------------------------------------------------------------------------------
+VO: [warmly] you will be able to carry it. That is the promise. Not that it will
+    be light.
+CAPTION 1: You'll be able to carry it
+CAPTION 2: that's the promise — not that it's light
+
+IMAGE PROMPT:
+Photographic close-up of two open hands raised together in dua, palms up and
+cupped, seen from the side and slightly behind so that no face and no chin enter
+the frame at all. Soft amber light falling into the palms from the front, warm
+shadow behind. Warm natural grade, extremely shallow depth of field, background
+dissolved to soft sand tones. 9:16 vertical composition, hands in the lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 21 | 1:54-2:00 | OUTRO CARD
+--------------------------------------------------------------------------------
+VO: Chapter 7 soon.
+CAPTION 1: Chapter 7 soon
+CAPTION 2: you are not alone in this
+
+IMAGE PROMPT:
+Heavily blurred photographic warm interior as a soft background plate — amber
+dawn light, sand and off-white tones, strong bokeh, no sharp detail anywhere and
+no discernible objects. Clean empty centre of frame reserved for a channel logo
+overlay to be added in post. Calm and warm. Warm natural grade. 9:16 vertical
+composition, even blur across the full frame.
+
+[POST] Composite the HELD BY FAITH logo centred, handle beneath, and a single
+line: "Chapter 7 soon."
+
+
+================================================================================
+CAPTION BURN-IN SPEC
+================================================================================
+
+Burned-in captions are not optional on this channel. `hasCaption: false` on every
+upload so far, and a large share of the Shorts feed watches muted — on a channel
+whose entire value is in the words, that is the cheapest fix available.
+
+LINE 1 (top)    : off-white #F4F4F0, Inter or Source Sans Semibold 600, sentence
+                  case, subtle dark drop shadow — NO solid box
+LINE 2 (below)  : soft amber #E8B87D, italic, smaller, same shadow treatment
+POSITION        : lower third, clear of the bottom 250px of a 1920px frame
+BEHAVIOUR       : STATIC per phrase. No karaoke, no word pop, no bounce.
+TIMING          : swap on your natural breath break, with the picture cut
+WHERE CAPTION 2 IS "—" : show line 1 alone. The dash means deliberate silence
+                  underneath; do not invent a second line to fill it.
+
+Different from the finance channel on purpose: no hard black boxes. Boxes read as
+"content"; this should read as someone talking to you.
+
+Also enable a multi-language audio track on upload — it produces YouTube's
+"Auto-dubbed" chip and is free reach.
+
+
+================================================================================
+EDIT & ASSEMBLY
+================================================================================
+
+1. Record the VO first, with the three [YOUR LINE] beats filled in your own words.
+   Everything else follows your delivery.
+2. Use your own footage wherever you have it — especially scene 11. Generated
+   images are the fallback, not the goal.
+3. SLOW CUTS. Hold each frame. This is the opposite of the finance channel's
+   rhythm; do not cut to the beat.
+4. Very slow push-in on scenes 8, 11, 13 and 19. Everything else static or nearly.
+5. The grade goes cold to scene 15, warm from scene 16. That shift carries the
+   whole chapter — grade it deliberately, not automatically.
+6. No music under scenes 10–13. Silence is the point. Bring a single sustained
+   low tone back in at scene 16.
+7. Burn in captions per the spec.
+8. End on the payoff. No "link in bio", no homework, no pointing at another video.
+
+RETENTION CHECKPOINTS
+  Scenes 01-03  "Day seven. The phone rang." must land in 4 seconds. If someone
+                swipes here, nothing else matters.
+  Scene 08      "Are you somewhere you can sit down?" — the strongest written line
+                in the chapter and the reason people stay to the end.
+  Scenes 11-13  your three lines. The chapter lives or dies here.
+  Scene 20      the turn outward. This is what earns the like and the comment.
+
+
+================================================================================
+UPLOAD METADATA — ready to paste
+================================================================================
+
+TITLE
+The Phone Call That Ended 7 Days of Waiting | Ch. 6
+
+  Assumes the renumbering in channel-diagnosis.md is applied first. If it is not,
+  this collides with the existing "Ch. 4" and the series breaks further — do the
+  renumber, then publish this.
+
+DESCRIPTION
+Seven days of waiting ended with one phone call.
+
+Chapter 6. In Chapter 5 I was crossing days off a calendar in red and checking my
+phone at 3 AM. This is the morning it finally rang — and what the person on the
+other end asked me before she said anything else.
+
+[ONE OR TWO SENTENCES ABOUT WHAT THE RESULT ACTUALLY WAS — in your words. Keep it
+plain; the plainness is what makes this channel work.]
+
+"Allah does not burden a soul beyond what it can bear." I had read that verse a
+hundred times. Day seven is when I understood it isn't a comfort — it's a
+measurement.
+
+If you're waiting on a call like that tonight: you will be able to carry it. That
+is the promise. Not that it will be light.
+
+▶ THE STORY IN ORDER:
+Ch. 1 — The diagnosis: https://youtu.be/GFKRpV_mhWg
+Ch. 2 — The surgery: https://youtu.be/xmCDlKXU694
+Ch. 3 — Why I felt nothing: https://youtu.be/9hR1vXH5PVE
+Ch. 4 — Telling my family: https://youtu.be/9CQZ-uS3nuY
+Ch. 5 — The 7-day wait: https://youtu.be/1TGtRIpgwt4
+Ch. 6 — You are here
+▶ Full playlist: https://www.youtube.com/playlist?list=PLczfvNC3NVjo
+
+🔔 New chapter every week: https://www.youtube.com/@HeldByFaithJourney
+
+DISCLAIMER: This is a personal story, not medical advice. Please consult
+healthcare professionals for any medical concerns.
+
+#CancerJourney #MuslimCancerStory #Tawakkul #Sabr #HeldByFaith #PancreaticCancer
+#FaithOverFear #Dua #CancerSupport #WaitingForResults
+
+TAGS
+  cancer results phone call
+  waiting for biopsy results
+  pathology results cancer
+  muslim cancer story
+  pancreatic cancer journey
+  cancer journey vlog
+  faith through cancer
+  tawakkul
+  sabr
+  trust in Allah
+  quran 2:286
+  cancer diagnosis story
+  whipple surgery recovery
+  held by faith
+  cancer support muslim
+
+WHY THESE TAGS: the first three are the literal thing people search at 2 AM while
+waiting on results, and they are the reason this chapter has search value long
+after it stops being served in the feed. Unlike the finance channel, this content
+gets found for years — someone gets diagnosed every day and goes looking for
+exactly this.
