@@ -1,27 +1,77 @@
 ================================================================================
-FINANCE % DECODED — "IS KLARNA HALAL?" — IMAGE PROMPTS
-16 stills · 9:16 · 1080x1920 · covers the full 55.37s script
+FINANCE % DECODED — "IS KLARNA HALAL?" — IMAGE PROMPTS  v2
+16 generated plates · 9:16 · 1080x1920 · covers the full 55.37s script
 Derived from the 11 video prompts in klarna-prompt-pack.txt (Track A).
-Supersedes Track B of that file.
+Supersedes Track B of that file, and v1 of this one.
 ================================================================================
 
-WHAT CHANGED, AND WHY
+WHY v2 EXISTS — three plates were test-generated and three things broke
 
-1. TOKEN COST. The Track A/B prompts repeat the same 60 words of style and
-   costume in every single prompt. Here that is hoisted into two blocks you
-   paste once. Each scene prompt is then ~45 words instead of ~115 — a little
-   over half the tokens per generation, and the look holds better because the
-   style string is byte-identical every time instead of paraphrased.
+Test: F01, F02A, F02B on Z Image, 9:16, 2026-08-04.
 
-2. FULL SCRIPT COVERAGE. Five scenes (02, 05, 06, 07, 11) run 5.8–6.5s and
-   carry TWO ideas each. One still could not cover both, so the late fee and
-   "that's the actual product" had no frame at all — they were captions over an
-   unrelated picture. Those five scenes now get two stills each, cut on the
-   scene's own CAP 2 in-point. 11 scenes, 16 frames, every VO line pictured.
+  ASKED                       GOT
+  4 empty boxes on a screen   3
+  4 cards in a row            6, reflowed into a 2x3 grid
+  4 cards + 1 gap             9, reflowed into a 3x3 grid, two hollow
 
-3. NO FRAME HOLDS PAST ~3.3s. A 6.53s static frame in a Short is a scroll.
-   Longest hold here is 4.73s (the hook, which has to breathe) and 4.37s (the
-   rule, deliberately locked). Everything else sits between 2.9s and 3.5s.
+1. COUNTING. Exact counts above about three are unreliable in every diffusion
+   model, and a horizontal row of four does not fit a 9:16 canvas — four cards
+   side by side in a 1152x2048 frame would be postage stamps, so the model
+   reflows them into a grid that fills the height. It did this twice,
+   independently. Paying for a better model does not fix this.
+
+   "Four payments" is the premise of the video. So the generator is now out of
+   the counting business: scenes 01 and 02 generate ONE object each and the
+   layout is built in Remotion, where four is exactly four.
+
+2. THE STYLE BLOCK WAS IN THE WRONG PLACE. v1 hoisted it to the END of every
+   prompt to save tokens. These models weight early tokens hardest, so it was
+   the last thing read and the first thing dropped: across three frames there
+   was no raking key, no long defined shadow, and the warm amber accent
+   appeared zero times. The saving was real, the position was wrong. The look
+   block now LEADS.
+
+   What did survive was the no-text ban — because it was stated three ways in
+   one prompt. Repetition beats position for hard constraints, so every prompt
+   below still repeats it inline.
+
+3. HEX CODES ARE IGNORED. `#E85F42` came back as grey sleeves. Prompts now use
+   plain colour names; the hex values live in the edit reference below, which
+   is the only place they were ever going to be honoured anyway.
+
+One thing the test got right, and it was the biggest risk in the pack: NOT ONE
+CHARACTER OF TEXT appeared in any of the three frames. The burn-in strategy is
+safe.
+
+And one accident worth keeping: asked for an empty gap, the model produced a
+hollow card outline with the dark surface showing through the middle. That
+reads as "missing" instantly — better than the dust impression v1 invented.
+It is now plate P3.
+
+--------------------------------------------------------------------------------
+WHAT ELSE CHANGED FROM v1
+--------------------------------------------------------------------------------
+FULL SCRIPT COVERAGE (kept from v1). Five scenes run 5.8-6.5s and carry two
+ideas each; one still could not cover both, so the late fee and "that's the
+actual product" had no frame at all. Those five split on their own CAP 2
+in-point, so the image change and the second line of type land together.
+11 scenes, 16 frames, every VO line pictured. Scene boundaries are untouched —
+the VO, the caption table and beats.ts all still line up.
+
+NO FRAME HOLDS PAST ~3.3s (kept from v1), except the hook at 4.73s and the rule
+at 4.37s, which are deliberate.
+
+SAFE AREA — CORRECTED. This one is a genuine conflict inherited from the source
+pack. Its stills are framed "subject in the lower two-thirds, clean headroom
+above", but its caption spec puts CAP 1 at 62% of frame height and CAP 2 at 76%.
+On a 1920-tall frame that is y1190-y1500 — the lower middle. The two
+instructions collide, and the F01 test render landed the phone at 32-68%,
+straight through the caption band.
+
+  Correct safe area: keep the lit subject inside the top 20-58% of the frame.
+  Hold 58-82% dark and quiet — that is where both caption lines sit. The bottom
+  18% stays empty. Every prompt below is framed to this, not to v1's "headroom
+  above", and the pushes are sized so the band stays clear at the end of the move.
 
 --------------------------------------------------------------------------------
 HARD CONSTRAINT — THE EDIT MUST FINISH UNDER 60 SECONDS
@@ -29,230 +79,320 @@ HARD CONSTRAINT — THE EDIT MUST FINISH UNDER 60 SECONDS
 Measured on this channel's own catalogue (inventory run 30883075618, 2026-08-04),
 every public Short past its 72-hour test, normalised to views/day:
 
-  31–60s   n=1    median 89.8 v/day
-  61–90s   n=3    median  6.9 v/day   <-- no survivors
+  31-60s   n=1    median 89.8 v/day
+  61-90s   n=3    median  6.9 v/day   <-- no survivors
   >90s     n=11   median 42.4 v/day
 
-61–90s is the only bucket on the channel with nothing in it that worked. The cut
-lands at 55.37s, which clears it by 4.63 seconds and no more. So: no end card, no
-extended hook, no breathing room at the tail. If the edit grows, it must be
-trimmed back under 60 — not allowed to drift to 62.
+61-90s is the only bucket on the channel with nothing in it that worked. The cut
+lands at 55.37s, clearing it by 4.63 seconds and no more. No end card, no
+extended hook, no breathing room at the tail.
 
-The prompt pack cites "slate rule: 30–60s" as the reason for this length. That
-rule was retired on 2026-08-03 as unevidenced (see next-slate.md rule 5). The
-length is right; the stated reason is stale. Do not re-derive anything from it.
+The source pack cites "slate rule: 30-60s" as the reason for this length. That
+rule was retired on 2026-08-03 as unevidenced (next-slate.md rule 5). The length
+is right; the stated reason is stale.
 
-The scene boundaries are untouched — beats.ts, the VO and the caption table all
-still line up. The five new cuts happen inside scenes, so nothing upstream moves.
 
---------------------------------------------------------------------------------
-BLOCK 1 — STYLE.  Append verbatim to every one of the 16 prompts.
---------------------------------------------------------------------------------
-Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture,
-real cast shadows. One hard key from camera-left, deep near-black background,
-cool neutral grade with a single warm amber accent. Shallow depth of field.
-9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom
-above for captions.
+================================================================================
+THE BLOCKS — paste these, do not retype them
+================================================================================
 
 --------------------------------------------------------------------------------
-BLOCK 2 — CAST.  Paste only into the prompts that name a figure (03, 05B, 06A,
-11A, 11B). Generate F03 and F11A first, approve them, lock the seed, and use
-them as image references everywhere the same figure returns.
+LOOK A — LEADS every prompt shot in perspective (P1, F03-F07, F10, F11).
 --------------------------------------------------------------------------------
-SHOPKEEPER — deep navy #1E3A5F apron, navy bucket hat. COMPLETELY BLANK
-featureless head: no eyes, no nose, no mouth, a smooth matte tan block.
-Simplified geometric anatomy.
-CASH BUYER — elderly, muted olive coat, flat cap. Same completely blank
-featureless head. Simplified geometric anatomy.
-AMIR — terracotta #E85F42 t-shirt, cream #E8DCC8 trousers, white sneakers,
-cream beanie. Same completely blank featureless head. Simplified geometric
+Hard directional key light from the left at a low raking angle, throwing one
+long defined shadow to the right. Deep near-black background falling off fast
+into shadow. Cool neutral grade with a single warm amber highlight. Stylised
+low-poly 3D forms, matte clay shading, near-photorealistic surface texture, real
+contact shadows. Shallow depth of field.
+
+--------------------------------------------------------------------------------
+LOOK B — LEADS every overhead flat-lay (P2, P3, F08, F09).
+--------------------------------------------------------------------------------
+Single hard overhead key light, slightly off-axis, so every shadow in frame
+falls the same way — crisp, offset down and to the right. Deep near-black matte
+surround. Cool neutral grade with a single warm amber highlight. Stylised
+low-poly 3D forms, matte clay shading, near-photorealistic surface texture, real
+contact shadows.
+
+--------------------------------------------------------------------------------
+CAST — paste only into the five prompts that name a figure.
+Generate F03 and F11A first, approve, lock the seed, use as image references.
+--------------------------------------------------------------------------------
+SHOPKEEPER — deep navy blue apron, navy bucket hat. COMPLETELY BLANK featureless
+head: no eyes, no nose, no mouth, a smooth matte tan block. Simplified geometric
 anatomy.
+CASH BUYER — elderly, muted olive green coat, flat cap. Same completely blank
+featureless head. Simplified geometric anatomy.
+AMIR — burnt orange t-shirt, warm cream trousers, white sneakers, cream beanie.
+Same completely blank featureless head. Simplified geometric anatomy.
 
 --------------------------------------------------------------------------------
-BLOCK 3 — NEGATIVE.  Paste once, applies to all 16.
+NEGATIVE — paste once where the model accepts one. Where it does not (Z Image,
+most fast models), the inline no-text repetition in each prompt is what carries
+it. Do not remove those inline repeats even when a negative field is available.
 --------------------------------------------------------------------------------
 facial features, eyes, mouth, nose, lips, eyebrows, face, portrait, text,
-lettering, numbers, logos, brand names, watermark, signature, cartoon, anime,
-2D illustration, flat vector, cel shading, distorted hands, extra fingers,
-stock-photo smiles, HDR glow, oversaturation, blown highlights, tilted horizon,
-clutter, busy background, composite look, plastic sheen, uncanny, low resolution
+lettering, numbers, digits, logos, brand names, watermark, signature, user
+interface, icons, cartoon, anime, 2D illustration, flat vector, cel shading,
+distorted hands, extra fingers, stock-photo smiles, HDR glow, oversaturation,
+blown highlights, tilted horizon, clutter, busy background, composite look,
+plastic sheen, uncanny, low resolution
+
+--------------------------------------------------------------------------------
+COLOUR — plain names go in the prompt, hex goes in the edit.
+--------------------------------------------------------------------------------
+  burnt orange      #E85F42     AMIR's shirt, sleeve cuffs, the circled 0%
+  deep navy blue    #1E3A5F     shopkeeper's apron
+  warm cream        #E8DCC8     AMIR's trousers, the cards, the tags
+  near-black        #0A0C10     background, caption outline
+  caption white     #F5F0E6     CAP 1 and CAP 2
 
 
 ================================================================================
-CUT TABLE — the sub-cuts land on CAP 2, not on a midpoint
+GENERATION LIST — 16 plates, none of which require the model to count
 ================================================================================
-Times in brackets are the arithmetic fallback. Cut on the caption instead where
-you can: for every split scene, CAP 2's in-point IS the image cut. The picture
-and the second line of type change together.
+  P1   phone, blank screen          -> composited into F01
+  P2   one blank cream card         -> duplicated x4 for F02A and F02B
+  P3   one hollow cream card frame  -> the missing fifth in F02B
+  F03  shopkeeper at the counter    ** generate first, reference **
+  F04  price tag on a jacket cuff
+  F05A the aisle of tags
+  F05B the cash buyer, wide
+  F06A hands counting notes
+  F06B the phone, late-fee notification
+  F07A the overfull basket
+  F07B the basket as product hero
+  F08  card and brass stamp
+  F09  jacket and brass bar
+  F10  the cracked card
+  F11A AMIR outside the doorway     ** generate early, reference **
+  F11B AMIR walking away
 
-  #   | IN     | OUT    | HOLD  | MOVE (total travel, eased out)
-------|--------|--------|-------|--------------------------------------------
- F01  | 0:00.0 | 0:04.7 | 4.73s | push in 6%, centred on the phone
- F02A | 0:04.7 | 0:07.9 | 3.20s | push in 4%
- F02B | 0:07.9 | 0:11.1 | 3.20s | pull back 8%, drift left 30px
- F03  | 0:11.1 | 0:15.2 | 4.10s | push in 5% onto the banknotes
- F04  | 0:15.2 | 0:18.7 | 3.47s | push in 9% — shortest single, most decisive
- F05A | 0:18.7 | 0:21.6 | 2.92s | dolly in 10% down the aisle centre line
- F05B | 0:21.6 | 0:24.5 | 2.91s | push in 6% onto the figure
- F06A | 0:24.5 | 0:27.5 | 2.92s | push in 7%, drift down 20px
- F06B | 0:27.5 | 0:30.4 | 2.92s | push in 8% onto the notification panel
- F07A | 0:30.4 | 0:33.6 | 3.27s | rise 40px + push 6% — the only upward move
- F07B | 0:33.6 | 0:36.9 | 3.26s | push in 5%
- F08  | 0:36.9 | 0:41.3 | 4.37s | NONE. Dead still — the price stops moving.
- F09  | 0:41.3 | 0:46.1 | 4.80s | drift right 30px, no scale
- F10  | 0:46.1 | 0:49.2 | 3.17s | push in 12% on the fracture — fastest move
- F11A | 0:49.2 | 0:52.3 | 3.07s | push in 4%
- F11B | 0:52.3 | 0:55.4 | 3.06s | push in 3%. Let it come to rest.
-
-Generate at 2048x3640 and downscale if the model allows it — every frame gets a
-push and the push crops in.
+Same sixteen generations as v1, but every one is a single unambiguous subject.
+The only counted objects left in the whole pack are 1 and 2.
 
 
 ================================================================================
-THE 16 PROMPTS
+CUT TABLE — sub-cuts land on CAP 2, not on a midpoint
+================================================================================
+Times in brackets are the arithmetic fallback. Cut on the caption where you can:
+for every split scene, CAP 2's in-point IS the image cut.
+
+  #    | IN     | OUT    | HOLD  | PLATE      | MOVE (total travel, eased out)
+-------|--------|--------|-------|------------|-------------------------------
+ F01   | 0:00.0 | 0:04.7 | 4.73s | P1 + vector| push in 6%, centred on the phone
+ F02A  | 0:04.7 | 0:07.9 | 3.20s | P2 x4      | push in 4%
+ F02B  | 0:07.9 | 0:11.1 | 3.20s | P2 x4 + P3 | pull back 8%, drift left 30px
+ F03   | 0:11.1 | 0:15.2 | 4.10s | F03        | push in 5% onto the banknotes
+ F04   | 0:15.2 | 0:18.7 | 3.47s | F04        | push in 9% — most decisive
+ F05A  | 0:18.7 | 0:21.6 | 2.92s | F05A       | dolly in 10% down the centre line
+ F05B  | 0:21.6 | 0:24.5 | 2.91s | F05B       | push in 6% onto the figure
+ F06A  | 0:24.5 | 0:27.5 | 2.92s | F06A       | push in 7%, drift down 20px
+ F06B  | 0:27.5 | 0:30.4 | 2.92s | F06B       | push in 8% onto the panel
+ F07A  | 0:30.4 | 0:33.6 | 3.27s | F07A       | rise 40px + push 6% — only rise
+ F07B  | 0:33.6 | 0:36.9 | 3.26s | F07B       | push in 5%
+ F08   | 0:36.9 | 0:41.3 | 4.37s | F08        | NONE. Dead still.
+ F09   | 0:41.3 | 0:46.1 | 4.80s | F09        | drift right 30px, no scale
+ F10   | 0:46.1 | 0:49.2 | 3.17s | F10        | push in 12% — fastest move
+ F11A  | 0:49.2 | 0:52.3 | 3.07s | F11A       | push in 4%
+ F11B  | 0:52.3 | 0:55.4 | 3.06s | F11B       | push in 3%. Let it rest.
+
+Generate at 2048x3640 and downscale where the model allows it — every frame
+gets a push and the push crops in.
+
+
+================================================================================
+THE PROMPTS — paste LOOK A or LOOK B first, then the text below it
 ================================================================================
 
---- F01 · 0:00.0 · THE HOOK ---------------------------------------------------
-85mm macro, f/2.8. A phone lies face up on a dark brushed-charcoal counter, its
-screen showing a blank checkout panel — pale grey card, four small empty rounded
-boxes in a row, nothing written anywhere. Two simplified geometric hands in
-terracotta #E85F42 cuffs rest at the frame edge, one fingertip touching the
-counter. Low raking key, one long defined shadow thrown right, fine dust and
-micro-scratches on the counter, warm amber highlight along the phone's edge.
-Phone composed low, the top two-fifths of the frame empty.
+--- P1 · PHONE PLATE · LOOK A -------------------------------------------------
+85mm macro, f/2.8. A modern smartphone lies face up and very slightly angled on
+a dark brushed-charcoal counter top. The screen is switched on and completely,
+entirely blank — a plain pale grey rectangle of even light, empty. No text, no
+lettering, no numbers, no icons, no user interface, no logos anywhere on the
+screen or in the frame. Two simplified geometric clay hands in burnt orange
+sleeve cuffs rest at the lower frame edge, one fingertip touching the counter.
+Fine dust and micro-scratches catch the raking light across the counter, warm
+amber highlight along the phone's metal edge. 9:16 vertical, the phone in the
+upper-middle of the frame, the lower two-fifths dark and empty counter.
+  [ The four checkout boxes are NOT generated. They are drawn in the edit —
+    see the compositing spec below. ]
 
---- F02A · 0:04.7 · FOUR PAYMENTS ---------------------------------------------
-50mm, f/4, shot perpendicular to the surface. Overhead flat-lay of four
-identical blank cream cards laid in a precise even row on dark matte charcoal,
-generous equal spacing, each casting an identical hard shadow. Near-
-photorealistic paper grain and deckled edges. Nothing else in frame. Square-on,
-generous margin all round.
+--- P2 · SINGLE CARD · LOOK B -------------------------------------------------
+50mm, f/4, shot perpendicular from directly overhead. One single blank cream
+payment card, alone and centred on dark matte charcoal. The card is completely
+blank — no text, no lettering, no numbers, no logos, no markings of any kind.
+Near-photorealistic paper grain, slightly deckled edges, one crisp hard shadow
+offset down and to the right. Nothing else in the frame at all. Card centred
+with a generous even dark margin on all four sides.
+  [ Shot on a clean margin on purpose so it can be cut out and tiled. ]
 
---- F02B · 0:07.9 · SO WHO PAYS THE FIFTH -------------------------------------
-50mm, f/4, overhead flat-lay pulled slightly wider. The same four blank cream
-cards sit to the left. To the right of the fourth, one empty card-sized gap
-holding only a clean rectangular impression in the dust where a fifth card
-should be — the surface bare, the outline unmistakable. Single hard overhead key
-slightly off-axis so all four shadows fall the same way. The empty gap sits dead
-centre of frame.
-  [ The video track revealed a fifth shadow with no card above it. A still can't
-    stage that — a shadow without an object reads as a render fault. The dust
-    impression says the same thing and is physically photographable. ]
+--- P3 · HOLLOW CARD · LOOK B -------------------------------------------------
+50mm, f/4, shot perpendicular from directly overhead. One single hollow cream
+card frame — a card-shaped outline with the centre completely open, the dark
+charcoal surface visible straight through the empty middle. Same size, colour,
+rounded corners and paper texture as a solid cream card, just empty. Completely
+blank: no text, no lettering, no numbers, no logos. One crisp hard shadow offset
+down and to the right. Nothing else in the frame. Centred with a generous even
+dark margin on all four sides.
 
---- F03 · 0:11.1 · THE FEE   ** GENERATE FIRST — shopkeeper reference ** -------
+--- F03 · THE FEE · LOOK A + CAST   ** GENERATE FIRST — shopkeeper ** ----------
 35mm, f/2. Environmental portrait from the customer's side of a shop counter.
 The SHOPKEEPER stands behind it, both forearms flat on the counter, weight
 settled, completely still. A short stack of banknotes sits on the counter in
-front of him, the top note slightly offset from the rest. Near-photorealistic
-shop behind, shelving falling into soft focus. Warm practical overhead light plus
-a cooler window fill from the left. Counter edge sharp, background soft.
+front of him, the top note slightly offset. No text, no lettering, no numbers
+anywhere — the banknotes are blank paper. Near-photorealistic shop behind,
+shelving falling into soft focus. Warm practical overhead light plus a cooler
+window fill from the left, counter edge sharp. 9:16 vertical, the figure's torso
+and hands in the upper-middle of the frame, the lower third dark and quiet.
 
---- F04 · 0:15.2 · WHERE IT GOES ----------------------------------------------
+--- F04 · WHERE IT GOES · LOOK A ----------------------------------------------
 100mm macro, f/2.8. A blank cream cardboard price tag hangs by string from the
-cuff of a folded dark wool jacket. The tag is completely blank — no printing.
-Heavy card stock, visible fibre at the punched hole, one soft crease. Hard low
-raking key throws a long angular shadow of the tag across the wool behind it,
-warm amber rim tracing its top edge. Extremely shallow focus: the tag face sharp,
-the wool dissolving within centimetres. Tag low-centre, empty dark space filling
-the upper half.
+cuff of a folded dark wool jacket. The tag is completely blank — no printing, no
+text, no numbers. Heavy card stock, visible fibre at the punched hole, one soft
+crease. The raking key throws a long angular shadow of the tag across the wool
+behind it, warm amber rim along the tag's top edge. Extremely shallow focus: the
+tag face sharp, the wool dissolving within centimetres. 9:16 vertical, tag in
+the upper-middle, the lower two-fifths dark and empty.
 
---- F05A · 0:18.7 · THE PRICE WENT UP FOR EVERYONE ----------------------------
-28mm, f/4, camera at chest height dead centre. Deep one-point-perspective shot
+--- F05A · EVERYONE PAYS · LOOK A ---------------------------------------------
+28mm, f/4, camera at chest height dead centre. Deep one-point-perspective view
 down a clothing shop aisle, rails of muted garments receding on both sides so
-they converge symmetrically, dozens of small blank cream tags hanging along them
-at irregular heights, all unprinted. Cool overhead fluorescent wash with a single
-warm amber pool at the far end drawing the eye through. Nothing human in frame.
-Vanishing point set low so the upper third stays open and dark.
+they converge symmetrically. Small blank cream tags hang along the rails at
+irregular heights, all unprinted — no text, no numbers on any of them. Cool
+overhead fluorescent wash with a single warm amber pool at the far end drawing
+the eye through. Nothing human in frame. 9:16 vertical, vanishing point placed
+high in the frame so the lower third stays dark and open.
 
---- F05B · 0:21.6 · INCLUDING THE PERSON PAYING CASH --------------------------
-35mm, f/2.8, same aisle from further back. At the far end, alone at the till,
-the CASH BUYER stands small in frame with folded banknotes held in one hand and
-no phone anywhere near them. The rest of the shop is empty. Foreground rails
-soft and dark, the warm amber pool falling on the figure so it is the only lit
-thing in the frame. Figure low and slightly off centre, deep dark above.
+--- F05B · THE CASH BUYER, WIDE · LOOK A + CAST -------------------------------
+35mm, f/2.8, the same aisle from further back. At the far end, alone at the
+till, the CASH BUYER stands small in frame with folded blank banknotes held in
+one hand and no phone anywhere near them. The rest of the shop is empty.
+Foreground rails soft and dark, the warm amber pool falling on the figure so it
+is the only lit thing in the frame. No text, no lettering, no signage anywhere.
+9:16 vertical, the figure in the upper-middle, slightly off centre, everything
+below it dark.
 
---- F06A · 0:24.5 · THEY NEVER USED IT ----------------------------------------
-85mm, f/2. Close three-quarter shot of the CASH BUYER's hands at the shop
-counter, cropped at the chest with no head in frame, holding three worn banknotes
-mid-count, the top note lifted slightly clear of the others. Counter surface
-scuffed and real, warm side light from camera-left, deep shadow filling the right
-of the frame. Near-photorealistic paper texture, soft folds and worn corners on
-the notes. Notes sharp, coat and background soft. Quiet, slightly melancholy.
+--- F06A · THEY NEVER USED IT · LOOK A + CAST ---------------------------------
+85mm, f/2. Close three-quarter shot of the CASH BUYER's hands at a shop counter,
+cropped at the chest with no head in frame, holding a small fan of worn
+banknotes mid-count, the top note lifted slightly clear of the others. The notes
+are blank paper — no text, no numbers, no printing at all. Counter surface
+scuffed and real, warm side light from camera-left, deep shadow filling frame
+right. Soft folds and worn corners, notes sharp, coat and background soft.
+Quiet, slightly melancholy. 9:16 vertical, hands in the upper-middle, dark below.
+  [ v1 asked for exactly three notes. Dropped — no number burns in on this
+    frame, so the count was carrying no meaning and only adding risk. ]
 
---- F06B · 0:27.5 · THEN THE LATE FEE -----------------------------------------
-85mm macro, f/2.8. A phone lies face up on the same scuffed counter, screen
-almost black and glass-clean except for one blank pale notification panel
-floating near the top — an empty rounded card, no text, no icons, no symbols.
-The cold screen light spills a small hard pool onto the counter and everything
-beyond it falls to near-black. Phone low-centre, dark space above.
-  [ The one deliberately cold frame in the film — no amber accent. It is the
-    sting, and the temperature break is what makes it land. Keep the rest warm. ]
+--- F06B · THEN THE LATE FEE · LOOK A -----------------------------------------
+85mm macro, f/2.8. A phone lies face up on a scuffed shop counter, its screen
+almost black and glass-clean except for one blank pale notification panel near
+the top — an empty rounded rectangle, no text, no lettering, no numbers, no
+icons, no logos. The cold screen light spills a small hard pool onto the counter
+and everything beyond it falls to near-black. 9:16 vertical, phone in the
+upper-middle, the lower half dark.
+  [ Override LOOK A's warm amber highlight on this one — this is the only cold
+    frame in the film, no amber at all. The temperature break is the sting.
+    Optional continuity win: reuse the P1 phone as an image reference so the
+    hook phone and the late-fee phone are visibly the same object. ]
 
---- F07A · 0:30.4 · THE BIGGER BASKET -----------------------------------------
+--- F07A · THE BIGGER BASKET · LOOK A -----------------------------------------
 50mm, f/4, slightly high angle. A wire shopping basket on a dark matte floor,
-overfull — folded clothing, a plain shoe box, a small carton stacked past the rim
-with one item balanced precariously on the edge, about to fall but not falling.
-Near-photorealistic cardboard and fabric texture, one hard key from upper left
-throwing a defined basket-weave shadow across the floor. Muted cream and sand
-palette. Basket low-centre with a clear diagonal of empty floor leading out of
-frame.
+overfull — folded clothing, a plain shoe box and a small carton stacked past the
+rim, one item balanced precariously on the edge, about to fall but not falling.
+Everything blank and unbranded: no text, no lettering, no logos on any packaging.
+Near-photorealistic cardboard and fabric texture, the key throwing a defined
+basket-weave shadow across the floor. Muted cream and sand palette. 9:16
+vertical, basket in the upper-middle with a clear diagonal of empty dark floor
+leading out of the bottom of frame.
 
---- F07B · 0:33.6 · THAT'S THE ACTUAL PRODUCT ---------------------------------
-50mm, f/5.6, square-on. The same overfull wire basket, restaged as a product
+--- F07B · THAT'S THE ACTUAL PRODUCT · LOOK A ---------------------------------
+50mm, f/5.6, square-on. The same overfull wire basket restaged as a product
 hero: centred on a low dark plinth, lit like a museum object in a single tight
 pool of light, everything beyond the plinth black. Deliberate, reverent,
-absolutely nothing else in frame. Basket centred low, wide dark margin above.
+absolutely nothing else in frame. No text, no lettering, no logos anywhere.
+9:16 vertical, basket centred in the upper-middle, wide dark margin below.
 
---- F08 · 0:36.9 · THE RULE ---------------------------------------------------
-60mm, f/5.6, locked-off tabletop still life on a dark walnut surface with visible
-grain. A single blank cream card lies flat and perfectly square to frame in the
-centre. A heavy brass stamp rests beside it, face down, weight evident. Nothing
-else in frame. Near-photorealistic brass with real specular hits and fine patina,
-one long unbroken shadow to the right. Absolute symmetry and stillness — the
-composition should feel settled and final. Objects centred low, wide dark margin
-above.
+--- F08 · THE RULE · LOOK B ---------------------------------------------------
+60mm, f/5.6, locked-off tabletop on a dark walnut surface with visible grain.
+One single blank cream card lies flat and perfectly square to frame. A heavy
+brass stamp rests beside it, face down, weight evident. Nothing else in frame.
+The card is completely blank — no text, no lettering, no numbers, no logos.
+Near-photorealistic brass with real specular hits and fine patina, one long
+unbroken shadow. Absolute symmetry and stillness, settled and final. 9:16
+vertical, both objects in the upper-middle, wide dark margin below.
 
---- F09 · 0:41.3 · MURABAHA ---------------------------------------------------
-50mm, f/5.6, shot square-on. Museum-style still life on a dark matte plinth: a
-folded wool jacket sits on the right, a single heavy brass bar resting beside it,
-the two objects clearly separated, with empty plinth to the left where the jacket
-used to be. Near-photorealistic brass and wool texture, real contact shadows
-anchoring each object, warm amber rim on the brass. Deliberate, weighted, almost
-reverent staging. Objects in the lower two-thirds.
+--- F09 · MURABAHA · LOOK B ---------------------------------------------------
+50mm, f/5.6, square-on. Museum-style still life on a dark matte plinth: a folded
+wool jacket sits on the right, one heavy brass bar resting beside it, the two
+objects clearly separated with empty plinth to the left where the jacket used to
+be. No text, no lettering, no numbers, no markings on anything. Near-
+photorealistic brass and wool texture, real contact shadows anchoring each
+object, warm amber rim on the brass. Deliberate, weighted, almost reverent.
+9:16 vertical, objects in the upper-middle, dark plinth and shadow below.
 
---- F10 · 0:46.1 · SAME SHAPE, BUILT WRONG ------------------------------------
-100mm extreme macro, f/4. A single cream payment card stands upright on a dark
+--- F10 · SAME SHAPE, BUILT WRONG · LOOK A ------------------------------------
+100mm extreme macro, f/4. One single cream payment card stands upright on a dark
 matte surface, identical in form and colour to the stamped card in F08. A fine
 fracture runs up its face from the bottom edge and stops halfway, the card
-otherwise intact and standing. Visible paper fibre and lifted burr along the
-break. Hard raking light strikes across the fracture so the split throws its own
-micro-shadow. Card low-centre, dark above.
+otherwise intact and standing. Visible paper fibre and a lifted burr along the
+break. Completely blank — no text, no lettering, no numbers. The raking light
+strikes across the fracture so the split throws its own micro-shadow. 9:16
+vertical, card in the upper-middle, dark below.
 
---- F11A · 0:49.2 · THE CLOSE   ** GENERATE EARLY — AMIR reference ** ----------
-35mm, f/2.8, low three-quarter. AMIR stands just outside a shop doorway in warm
-low evening sun, one small paper bag held at his side, mid-stride but weight
-settled. Near-photorealistic street behind him, quiet and empty, long golden-hour
-shadows stretching toward camera. Warm amber backlight rimming his shoulders,
-cool ambient fill on the front. Street soft behind. Calm, resolved, unhurried.
-Figure in the lower two-thirds, generous open sky above.
+--- F11A · THE CLOSE · LOOK A + CAST   ** GENERATE EARLY — AMIR ** -------------
+35mm, f/2.8, low three-quarter angle. AMIR stands just outside a shop doorway in
+warm low evening sun, one small blank paper bag held at his side, mid-stride but
+weight settled. Near-photorealistic street behind him, quiet and empty, long
+golden-hour shadows stretching toward camera. No text, no lettering, no signage,
+no shop name anywhere in frame. Warm amber backlight rimming his shoulders, cool
+ambient fill on the front, street soft behind. Calm, resolved, unhurried. 9:16
+vertical, figure in the upper-middle, the lower third empty pavement in shadow.
+  [ Override LOOK A's key direction here — the key is the low sun behind him.
+    Keep everything else from the block. ]
 
---- F11B · 0:52.3 · FOLLOW ----------------------------------------------------
+--- F11B · FOLLOW · LOOK A + CAST ---------------------------------------------
 35mm, f/2.8, low and wide, from behind. AMIR walks away down the same quiet
-street, small in frame, the paper bag at his side, his long shadow trailing back
-toward camera. Golden hour, the shop front soft behind him, the street empty.
-Figure small and low-centre, the upper half of the frame open sky held clear for
-the closing captions.
+street, small in frame, the blank paper bag at his side, his long shadow
+trailing back toward camera. Golden hour, the shop front soft behind him, the
+street empty. No text, no lettering, no signage anywhere. 9:16 vertical, figure
+small and placed in the upper-middle, the lower half open road and shadow held
+clear and dark.
+  [ Same key override as F11A: the sun is behind him. ]
+
+
+================================================================================
+COMPOSITING SPEC — scenes 01 and 02, built in Remotion, not generated
+================================================================================
+
+F01 · from P1
+  Draw four rounded rectangles as vector on the phone screen, matched to the
+  screen's perspective, evenly spaced in a single row across its width, in a
+  pale grey a shade darker than the screen. Illuminate them left to right across
+  the hold — one every ~0.9s, ~200ms ease each, all four lit by ~3.8s. Then the
+  `4 payments of £22.50` and `0% interest` burn-in, 0% circled in burnt orange.
+  This is a straight upgrade on v1: a still could never show the boxes lighting
+  in sequence, and the video track's whole hook was that they do.
+
+F02A · from P2
+  Four copies of the same card asset in a 2x2 block — a row of four does not fit
+  9:16, which is exactly what broke the test. Equal gaps, block centred at ~40%
+  frame height. Because every card is the same asset, the four shadows are
+  identical by construction, which is what the scene asked for and what a
+  generator cannot guarantee.
+
+F02B · from P2 + P3
+  The same 2x2 block, pulled back 8%. P3, the hollow card, sits alone and
+  centred below the block, in the fifth position. Four solid, one empty,
+  isolated. `the fifth payment: ?` burns onto the hollow one.
 
 
 ================================================================================
 NUMBERS — burn these in during the edit, never generate them
 ================================================================================
-Every prompt above asks for blank cards, blank tags and blank screens on purpose.
-Generated text garbles, gets the currency wrong and dates the frame.
-
-  F01   4 payments of £22.50 · 0% interest   (circle the 0% in terracotta)
+  F01   4 payments of £22.50 · 0% interest   (circle the 0% in burnt orange)
   F02A  £22.50 x 4
-  F02B  the fifth payment: ?
+  F02B  the fifth payment: ?                  (onto the hollow card)
   F03   −6%  ·  to Klarna
   F04   £75.00 → £79.50
   F05A  (none — the tags carry it)
@@ -269,23 +409,24 @@ Generated text garbles, gets the currency wrong and dates the frame.
 
 CHECK BEFORE BURN-IN: the +41% basket uplift on F07A is the only claim on screen
 sourced from marketing material rather than a filing. Cite it in the description
-or soften it to "bigger basket" on the frame. Everything else on this list is
-arithmetic off the £75 basket and is safe.
+or soften it to "bigger basket" on the frame. Everything else is arithmetic off
+the £75 basket.
 
 
 ================================================================================
 CAPTIONS, VO AND PACKAGING
 ================================================================================
 Unchanged — see klarna-prompt-pack.txt. The caption table is still keyed to the
-11 scenes, and that is deliberate: CAP 1 lands on the scene's first stressed
-syllable over the A frame, CAP 2 lands with the cut to the B frame. On the five
-split scenes the image change and the second line of type arrive together, which
-is the whole reason the splits sit where they do.
+11 scenes, deliberately: CAP 1 lands on the scene's first stressed syllable over
+the A frame, CAP 2 lands with the cut to the B frame. On the five split scenes
+the image change and the second line of type arrive together, which is why the
+splits sit where they do.
 
-Thumbnail candidates from this set: F01 (the blank checkout card — the slate's
-locked thumbnail), F04 (the price tag), F02B (the missing fifth). F01 is the one
-the slate specifies; the other two are alternates for the A/B.
+Thumbnail candidates: F01 (the checkout card — the slate's locked thumbnail),
+F04 (the price tag), F02B (the missing fifth). F01 is the one the slate
+specifies; the other two are alternates for an A/B.
 
-WIRING: drop the files in video/public/broll/ as klarna-01 … klarna-16 and drive
-them the way src/inflation/ drives its stills. Pushes are total travel across the
-hold, eased out, never linear.
+WIRING: drop the plates in video/public/broll/ as klarna-P1, klarna-P2,
+klarna-P3, klarna-F03 … klarna-F11B and drive them the way src/inflation/
+drives its stills. Pushes are total travel across the hold, eased out, never
+linear.
