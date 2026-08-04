@@ -1,0 +1,565 @@
+================================================================================
+FINANCE % DECODED — "IS KLARNA HALAL?" — IMAGE PROMPTS  ·  v2, NEGATIVES INLINED
+16 stills · 9:16 · 1080x1920 · covers the full 55.37s script
+Derived from the 11 video prompts in klarna-prompt-pack.txt (Track A).
+Supersedes Track B of that file, and supersedes the flat Block 3 of v1.
+================================================================================
+
+WHAT CHANGED, AND WHY
+
+1. TOKEN COST. The Track A/B prompts repeat the same 60 words of style and
+   costume in every single prompt. Here that is hoisted into two blocks you
+   paste once. Each scene prompt is then ~45 words instead of ~115 — a little
+   over half the tokens per generation, and the look holds better because the
+   style string is byte-identical every time instead of paraphrased.
+
+2. FULL SCRIPT COVERAGE. Five scenes (02, 05, 06, 07, 11) run 5.8–6.5s and
+   carry TWO ideas each. One still could not cover both, so the late fee and
+   "that's the actual product" had no frame at all — they were captions over an
+   unrelated picture. Those five scenes now get two stills each, cut on the
+   scene's own CAP 2 in-point. 11 scenes, 16 frames, every VO line pictured.
+
+3. NO FRAME HOLDS PAST ~3.3s. A 6.53s static frame in a Short is a scroll.
+   Longest hold here is 4.73s (the hook, which has to breathe) and 4.37s (the
+   rule, deliberately locked). Everything else sits between 2.9s and 3.5s.
+
+4. NEGATIVES ARE NOW PER FRAME.  v1 carried one 24-term negative block applied
+   identically to all 16 stills. Three of those terms were actively fighting
+   the shots they were pasted onto:
+
+     - "clutter, busy background" contradicts F05A (dozens of tags down
+       converging rails IS the composition) and F07A (the basket is specified
+       overfull, past the rim). Suppressing density there suppresses the shot.
+     - "facial features, eyes, mouth, nose, lips, eyebrows, face, portrait"
+       is load-bearing on the five cast frames and on F06A's cropped hands,
+       and is dead weight on the ten pure-object frames — where the useful
+       negative is the opposite one, "people, hands, figures", to stop a stray
+       human wandering into a still life.
+     - "text, lettering, numbers" does nothing for F02B, whose entire subject
+       is an absence pressed into dust. That frame needs object-level
+       negatives (no fifth card, no floating shadow), not typographic ones.
+
+   So the block is split: a universal spine that is genuinely true of all 16,
+   plus a NEGATIVE line appended to each prompt targeting that frame's own
+   failure mode. Net effect on tokens is roughly neutral — the spine got
+   shorter by the same amount the frame lines added.
+
+   Two additions worth calling out, because they protect decisions v1 made in
+   prose but never enforced in the prompt:
+     - F06B negates warm light, amber, golden grade explicitly. The doc says
+       it is the one cold frame and that the temperature break is the sting.
+       The style block asks for a warm amber accent on every frame. Without a
+       negative overriding it, the style block wins and the sting is lost.
+     - F10 negates full breakage, shatter and spiderweb cracking. "A fracture
+       that stops halfway" is a hard instruction for image models, which
+       default to dramatic destruction; the whole read of the frame is that
+       the card is still standing.
+
+--------------------------------------------------------------------------------
+HARD CONSTRAINT — THE EDIT MUST FINISH UNDER 60 SECONDS
+--------------------------------------------------------------------------------
+Measured on this channel's own catalogue (inventory run 30883075618, 2026-08-04),
+every public Short past its 72-hour test, normalised to views/day:
+
+  31–60s   n=1    median 89.8 v/day
+  61–90s   n=3    median  6.9 v/day   <-- no survivors
+  >90s     n=11   median 42.4 v/day
+
+61–90s is the only bucket on the channel with nothing in it that worked. The cut
+lands at 55.37s, which clears it by 4.63 seconds and no more. So: no end card, no
+extended hook, no breathing room at the tail. If the edit grows, it must be
+trimmed back under 60 — not allowed to drift to 62.
+
+The prompt pack cites "slate rule: 30–60s" as the reason for this length. That
+rule was retired on 2026-08-03 as unevidenced (see next-slate.md rule 5). The
+length is right; the stated reason is stale. Do not re-derive anything from it.
+
+The scene boundaries are untouched — beats.ts, the VO and the caption table all
+still line up. The five new cuts happen inside scenes, so nothing upstream moves.
+Nothing in this revision moves a boundary either: v2 changes negatives only.
+
+--------------------------------------------------------------------------------
+BLOCK 1 — STYLE.  Append verbatim to every one of the 16 prompts.
+--------------------------------------------------------------------------------
+Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture,
+real cast shadows. One hard key from camera-left, deep near-black background,
+cool neutral grade with a single warm amber accent. Shallow depth of field.
+9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom
+above for captions.
+
+  [ F06B is the one frame that overrides this block. Its own NEGATIVE line
+    cancels the warm amber accent — see the note on that prompt. ]
+
+--------------------------------------------------------------------------------
+BLOCK 2 — CAST.  Paste only into the prompts that name a figure (03, 05B, 06A,
+11A, 11B). Generate F03 and F11A first, approve them, lock the seed, and use
+them as image references everywhere the same figure returns.
+--------------------------------------------------------------------------------
+SHOPKEEPER — deep navy #1E3A5F apron, navy bucket hat. COMPLETELY BLANK
+featureless head: no eyes, no nose, no mouth, a smooth matte tan block.
+Simplified geometric anatomy.
+CASH BUYER — elderly, muted olive coat, flat cap. Same completely blank
+featureless head. Simplified geometric anatomy.
+AMIR — terracotta #E85F42 t-shirt, cream #E8DCC8 trousers, white sneakers,
+cream beanie. Same completely blank featureless head. Simplified geometric
+anatomy.
+
+--------------------------------------------------------------------------------
+BLOCK 3 — UNIVERSAL NEGATIVE.  Paste once, applies to all 16. Each prompt then
+appends its own NEGATIVE line on top of this.
+--------------------------------------------------------------------------------
+text, lettering, typography, numbers, digits, currency symbols, logos, brand
+names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel
+shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation,
+blown highlights, crushed blacks, tilted horizon, motion blur, lens flare,
+low resolution, jpeg artefacts, subject filling the upper third, obstructed
+headroom
+
+  [ Dropped from the v1 block, deliberately: "clutter, busy background" (kills
+    F05A and F07A) and the face cluster (now scoped to the six frames where a
+    head or a hand is actually in shot). Both reappear below, per frame, where
+    they belong. ]
+
+
+================================================================================
+CUT TABLE — the sub-cuts land on CAP 2, not on a midpoint
+================================================================================
+Times in brackets are the arithmetic fallback. Cut on the caption instead where
+you can: for every split scene, CAP 2's in-point IS the image cut. The picture
+and the second line of type change together.
+
+  #   | IN     | OUT    | HOLD  | MOVE (total travel, eased out)
+------|--------|--------|-------|--------------------------------------------
+ F01  | 0:00.0 | 0:04.7 | 4.73s | push in 6%, centred on the phone
+ F02A | 0:04.7 | 0:07.9 | 3.20s | push in 4%
+ F02B | 0:07.9 | 0:11.1 | 3.20s | pull back 8%, drift left 30px
+ F03  | 0:11.1 | 0:15.2 | 4.10s | push in 5% onto the banknotes
+ F04  | 0:15.2 | 0:18.7 | 3.47s | push in 9% — shortest single, most decisive
+ F05A | 0:18.7 | 0:21.6 | 2.92s | dolly in 10% down the aisle centre line
+ F05B | 0:21.6 | 0:24.5 | 2.91s | push in 6% onto the figure
+ F06A | 0:24.5 | 0:27.5 | 2.92s | push in 7%, drift down 20px
+ F06B | 0:27.5 | 0:30.4 | 2.92s | push in 8% onto the notification panel
+ F07A | 0:30.4 | 0:33.6 | 3.27s | rise 40px + push 6% — the only upward move
+ F07B | 0:33.6 | 0:36.9 | 3.26s | push in 5%
+ F08  | 0:36.9 | 0:41.3 | 4.37s | NONE. Dead still — the price stops moving.
+ F09  | 0:41.3 | 0:46.1 | 4.80s | drift right 30px, no scale
+ F10  | 0:46.1 | 0:49.2 | 3.17s | push in 12% on the fracture — fastest move
+ F11A | 0:49.2 | 0:52.3 | 3.07s | push in 4%
+ F11B | 0:52.3 | 0:55.4 | 3.06s | push in 3%. Let it come to rest.
+
+Generate at 2048x3640 and downscale if the model allows it — every frame gets a
+push and the push crops in.
+
+
+================================================================================
+THE 16 PROMPTS
+================================================================================
+Each prompt = the scene text below + BLOCK 1 + (BLOCK 2 where a figure is named)
++ BLOCK 3 + that frame's own NEGATIVE line. Appendix A carries the 16 negatives
+pre-merged into single paste-ready strings if your tool takes one field.
+
+--- F01 · 0:00.0 · THE HOOK ---------------------------------------------------
+85mm macro, f/2.8. A phone lies face up on a dark brushed-charcoal counter, its
+screen showing a blank checkout panel — pale grey card, four small empty rounded
+boxes in a row, nothing written anywhere. Two simplified geometric hands in
+terracotta #E85F42 cuffs rest at the frame edge, one fingertip touching the
+counter. Low raking key, one long defined shadow thrown right, fine dust and
+micro-scratches on the counter, warm amber highlight along the phone's edge.
+Phone composed low, the top two-fifths of the frame empty.
+
+NEGATIVE: app interface text, keyboard, status bar, battery icon, signal bars,
+clock, notification badges, app icons, colourful UI, screen bloom, halo around
+the screen, face reflected in the glass, extra fingers, six fingers, fused or
+malformed hands, fingernail detail, wristwatch, jewellery, phone case branding,
+second phone, arms entering from the top of frame, three or five checkout boxes
+
+--- F02A · 0:04.7 · FOUR PAYMENTS ---------------------------------------------
+50mm, f/4, shot perpendicular to the surface. Overhead flat-lay of four
+identical blank cream cards laid in a precise even row on dark matte charcoal,
+generous equal spacing, each casting an identical hard shadow. Near-
+photorealistic paper grain and deckled edges. Nothing else in frame. Square-on,
+generous margin all round.
+
+NEGATIVE: three cards, five cards, six cards, any count other than four,
+overlapping cards, uneven spacing, fanned or stacked arrangement, playing cards,
+card suits, credit card chip, magnetic stripe, embossed digits, hologram,
+angled or perspective camera, keystone distortion, soft diffuse shadows,
+multiple shadow directions, hands, people, background objects
+
+--- F02B · 0:07.9 · SO WHO PAYS THE FIFTH -------------------------------------
+50mm, f/4, overhead flat-lay pulled slightly wider. The same four blank cream
+cards sit to the left. To the right of the fourth, one empty card-sized gap
+holding only a clean rectangular impression in the dust where a fifth card
+should be — the surface bare, the outline unmistakable. Single hard overhead key
+slightly off-axis so all four shadows fall the same way. The empty gap sits dead
+centre of frame.
+  [ The video track revealed a fifth shadow with no card above it. A still can't
+    stage that — a shadow without an object reads as a render fault. The dust
+    impression says the same thing and is physically photographable. ]
+
+NEGATIVE: a fifth card, five physical cards, translucent or ghost card, faint
+card, floating shadow with no object above it, shadow cast by nothing, gap
+filled, no dust impression, blurred or indistinct outline, drawn outline,
+dotted line, ink marker, arrow, chalk mark, cards overlapping, uneven spacing,
+multiple shadow directions, hands, people
+
+--- F03 · 0:11.1 · THE FEE   ** GENERATE FIRST — shopkeeper reference ** -------
+35mm, f/2. Environmental portrait from the customer's side of a shop counter.
+The SHOPKEEPER stands behind it, both forearms flat on the counter, weight
+settled, completely still. A short stack of banknotes sits on the counter in
+front of him, the top note slightly offset from the rest. Near-photorealistic
+shop behind, shelving falling into soft focus. Warm practical overhead light plus
+a cooler window fill from the left. Counter edge sharp, background soft.
+
+NEGATIVE: facial features, eyes, nose, mouth, lips, eyebrows, ears, hair,
+stubble, skin pores on the head, mannequin seams, sculpted mask, helmet,
+portrait on the banknotes, printed currency detail, denomination numerals,
+banknote faces, till display, register screen, price signage, shelf labels,
+shop signage, second figure, customers, smiling, expressive or animated posture,
+gesturing hands, deep focus background
+
+--- F04 · 0:15.2 · WHERE IT GOES ----------------------------------------------
+100mm macro, f/2.8. A blank cream cardboard price tag hangs by string from the
+cuff of a folded dark wool jacket. The tag is completely blank — no printing.
+Heavy card stock, visible fibre at the punched hole, one soft crease. Hard low
+raking key throws a long angular shadow of the tag across the wool behind it,
+warm amber rim tracing its top edge. Extremely shallow focus: the tag face sharp,
+the wool dissolving within centimetres. Tag low-centre, empty dark space filling
+the upper half.
+
+NEGATIVE: printed price, barcode, QR code, RFID tag, security tag, retail
+sticker, red sale tag, handwriting, second tag, multiple tags, hanger, rail,
+hands, people, deep focus, everything in focus, flat frontal light, bright even
+exposure
+
+--- F05A · 0:18.7 · THE PRICE WENT UP FOR EVERYONE ----------------------------
+28mm, f/4, camera at chest height dead centre. Deep one-point-perspective shot
+down a clothing shop aisle, rails of muted garments receding on both sides so
+they converge symmetrically, dozens of small blank cream tags hanging along them
+at irregular heights, all unprinted. Cool overhead fluorescent wash with a single
+warm amber pool at the far end drawing the eye through. Nothing human in frame.
+Vanishing point set low so the upper third stays open and dark.
+
+NEGATIVE: people, shoppers, staff, mannequins, faces, printed tags, price text,
+barcodes, sale signage, promotional posters, POS displays, brand fixtures,
+asymmetric convergence, off-centre or high vanishing point, curved or fisheye
+perspective, garments strewn on the floor, fallen clothing, empty rails, warm
+overall grade, sunlight through windows
+  [ Density is the point here — do NOT negate clutter or a busy background on
+    this frame. The rails are meant to be full; only disorder is unwanted. ]
+
+--- F05B · 0:21.6 · INCLUDING THE PERSON PAYING CASH --------------------------
+35mm, f/2.8, same aisle from further back. At the far end, alone at the till,
+the CASH BUYER stands small in frame with folded banknotes held in one hand and
+no phone anywhere near them. The rest of the shop is empty. Foreground rails
+soft and dark, the warm amber pool falling on the figure so it is the only lit
+thing in the frame. Figure low and slightly off centre, deep dark above.
+
+NEGATIVE: facial features, eyes, nose, mouth, lips, eyebrows, hair, mannequin
+seams, phone, smartphone, screen glow in frame, card machine, contactless
+terminal, other people, crowd, staff behind the till, queue, figure large in
+frame, figure centred, figure in the upper half, spotlight halo, god rays,
+volumetric beams, evenly lit background, banknote portraits, denomination
+numerals
+
+--- F06A · 0:24.5 · THEY NEVER USED IT ----------------------------------------
+85mm, f/2. Close three-quarter shot of the CASH BUYER's hands at the shop
+counter, cropped at the chest with no head in frame, holding three worn banknotes
+mid-count, the top note lifted slightly clear of the others. Counter surface
+scuffed and real, warm side light from camera-left, deep shadow filling the right
+of the frame. Near-photorealistic paper texture, soft folds and worn corners on
+the notes. Notes sharp, coat and background soft. Quiet, slightly melancholy.
+
+NEGATIVE: head in frame, face, chin, neck, shoulders above the chest, any facial
+features, extra fingers, six fingers, fused fingers, malformed or twisted hands,
+extra hands, banknote portraits, printed currency detail, denomination numerals,
+crisp new notes, coins, wallet, purse, payment card, phone, till, bright cheerful
+mood, high-key lighting, evenly lit frame
+
+--- F06B · 0:27.5 · THEN THE LATE FEE -----------------------------------------
+85mm macro, f/2.8. A phone lies face up on the same scuffed counter, screen
+almost black and glass-clean except for one blank pale notification panel
+floating near the top — an empty rounded card, no text, no icons, no symbols.
+The cold screen light spills a small hard pool onto the counter and everything
+beyond it falls to near-black. Phone low-centre, dark space above.
+  [ The one deliberately cold frame in the film — no amber accent. It is the
+    sting, and the temperature break is what makes it land. Keep the rest warm. ]
+
+NEGATIVE: warm light, amber accent, amber rim, golden tone, warm colour grade,
+orange highlights, candlelight, sunlight, notification text, app icons, badge
+numbers, lock screen clock, status bar, signal bars, battery icon, multiple
+notifications, notification stack, colourful UI, alert red, screen bloom, halo,
+glow spill beyond the counter pool, face reflected in the glass, hands, people
+  [ The warm-light negatives are mandatory here. BLOCK 1 asks every frame for a
+    warm amber accent; this line is what overrides it. Drop these terms and the
+    style block re-warms the frame and the temperature break disappears. ]
+
+--- F07A · 0:30.4 · THE BIGGER BASKET -----------------------------------------
+50mm, f/4, slightly high angle. A wire shopping basket on a dark matte floor,
+overfull — folded clothing, a plain shoe box, a small carton stacked past the rim
+with one item balanced precariously on the edge, about to fall but not falling.
+Near-photorealistic cardboard and fabric texture, one hard key from upper left
+throwing a defined basket-weave shadow across the floor. Muted cream and sand
+palette. Basket low-centre with a clear diagonal of empty floor leading out of
+frame.
+
+NEGATIVE: item mid-fall, item in the air, item already on the floor, spilled
+contents, scattered debris, tidy basket, empty basket, half-full basket, contents
+level with the rim, product branding, packaging text, barcodes, labelled
+groceries, food packaging, shopping trolley, plastic bags, hands, people, flat
+overhead light, shadowless floor
+  [ Overfull is the subject — do NOT negate clutter or density on this frame.
+    Only a basket that has already spilled is wrong. ]
+
+--- F07B · 0:33.6 · THAT'S THE ACTUAL PRODUCT ---------------------------------
+50mm, f/5.6, square-on. The same overfull wire basket, restaged as a product
+hero: centred on a low dark plinth, lit like a museum object in a single tight
+pool of light, everything beyond the plinth black. Deliberate, reverent,
+absolutely nothing else in frame. Basket centred low, wide dark margin above.
+
+NEGATIVE: second object, props, background detail, visible room, gallery wall,
+skirting, floor line, pedestal label, museum plaque, display case, glass vitrine,
+stanchion, visible spotlights or fixtures, light stands, people, hands, off-centre
+framing, low or angled camera, spilled contents, contents rearranged from F07A
+
+--- F08 · 0:36.9 · THE RULE ---------------------------------------------------
+60mm, f/5.6, locked-off tabletop still life on a dark walnut surface with visible
+grain. A single blank cream card lies flat and perfectly square to frame in the
+centre. A heavy brass stamp rests beside it, face down, weight evident. Nothing
+else in frame. Near-photorealistic brass with real specular hits and fine patina,
+one long unbroken shadow to the right. Absolute symmetry and stillness — the
+composition should feel settled and final. Objects centred low, wide dark margin
+above.
+
+NEGATIVE: engraved text on the stamp, monogram, initials, crest, coat of arms,
+seal impression with lettering, wax seal, printed card, marked card, tilted or
+angled card, card askew, asymmetric composition, third object, ink pad, ink
+stains, paperwork, hands, people, shallow depth of field, bokeh, camera
+movement, handheld feel, broken or doubled shadow
+
+--- F09 · 0:41.3 · MURABAHA ---------------------------------------------------
+50mm, f/5.6, shot square-on. Museum-style still life on a dark matte plinth: a
+folded wool jacket sits on the right, a single heavy brass bar resting beside it,
+the two objects clearly separated, with empty plinth to the left where the jacket
+used to be. Near-photorealistic brass and wool texture, real contact shadows
+anchoring each object, warm amber rim on the brass. Deliberate, weighted, almost
+reverent staging. Objects in the lower two-thirds.
+
+NEGATIVE: objects touching, objects overlapping, bar resting on the jacket, bar
+on top, hallmark stamps, bullion markings, weight numerals, purity text, serial
+numbers, gold bar branding, third object, anything occupying the empty left side
+of the plinth, price tag, label, plaque, hands, people, cold or blue grade on the
+brass, floating objects, missing contact shadows
+
+--- F10 · 0:46.1 · SAME SHAPE, BUILT WRONG ------------------------------------
+100mm extreme macro, f/4. A single cream payment card stands upright on a dark
+matte surface, identical in form and colour to the stamped card in F08. A fine
+fracture runs up its face from the bottom edge and stops halfway, the card
+otherwise intact and standing. Visible paper fibre and lifted burr along the
+break. Hard raking light strikes across the fracture so the split throws its own
+micro-shadow. Card low-centre, dark above.
+
+NEGATIVE: card fully split, card in two pieces, card severed, fracture reaching
+the top edge, shattered card, glass shatter pattern, spiderweb cracking, multiple
+cracks, crumbling, missing fragments, debris or chips on the surface, card fallen
+flat, card lying down, card leaning or propped, card chip, magnetic stripe,
+printed card, embossed digits, hands, people, soft frontal light
+
+--- F11A · 0:49.2 · THE CLOSE   ** GENERATE EARLY — AMIR reference ** ----------
+35mm, f/2.8, low three-quarter. AMIR stands just outside a shop doorway in warm
+low evening sun, one small paper bag held at his side, mid-stride but weight
+settled. Near-photorealistic street behind him, quiet and empty, long golden-hour
+shadows stretching toward camera. Warm amber backlight rimming his shoulders,
+cool ambient fill on the front. Street soft behind. Calm, resolved, unhurried.
+Figure in the lower two-thirds, generous open sky above.
+
+NEGATIVE: facial features, eyes, nose, mouth, lips, eyebrows, ears, hair,
+stubble, mannequin seams, other pedestrians, crowd, traffic, moving cars, cyclists,
+shop signage text, storefront branding, street signs, number plates, logos on the
+t-shirt, sneaker branding, bag branding or print, busy street, midday overhead
+sun, flat light, cool or blue grade, figure filling the frame, figure in the upper
+half, low or cluttered sky
+
+--- F11B · 0:52.3 · FOLLOW ----------------------------------------------------
+35mm, f/2.8, low and wide, from behind. AMIR walks away down the same quiet
+street, small in frame, the paper bag at his side, his long shadow trailing back
+toward camera. Golden hour, the shop front soft behind him, the street empty.
+Figure small and low-centre, the upper half of the frame open sky held clear for
+the closing captions.
+
+NEGATIVE: face turned to camera, head turned back, any facial features, figure
+looking over the shoulder, front or three-quarter view, other pedestrians,
+vehicles, cyclists, signage text, storefront branding, number plates, figure
+large in frame, figure centred high, high horizon line, cluttered skyline,
+rooftops or buildings crossing the upper frame, power lines, cables, birds,
+dramatic clouds, shadow trailing away from camera
+
+
+================================================================================
+APPENDIX A — MERGED NEGATIVES, ONE STRING PER FRAME
+================================================================================
+Universal spine + frame line, pre-joined. Paste straight into a single negative
+field. Identical in content to BLOCK 3 plus each prompt's NEGATIVE line above —
+use whichever form your tool wants, not both.
+
+SPINE (repeated at the head of all 16 below):
+text, lettering, typography, numbers, digits, currency symbols, logos, brand
+names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel
+shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation,
+blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low
+resolution, jpeg artefacts, subject filling the upper third, obstructed headroom
+
+F01  → SPINE + app interface text, keyboard, status bar, battery icon, signal
+bars, clock, notification badges, app icons, colourful UI, screen bloom, halo
+around the screen, face reflected in the glass, extra fingers, six fingers, fused
+or malformed hands, fingernail detail, wristwatch, jewellery, phone case
+branding, second phone, arms entering from the top of frame, three or five
+checkout boxes
+
+F02A → SPINE + three cards, five cards, six cards, any count other than four,
+overlapping cards, uneven spacing, fanned or stacked arrangement, playing cards,
+card suits, credit card chip, magnetic stripe, embossed digits, hologram, angled
+or perspective camera, keystone distortion, soft diffuse shadows, multiple shadow
+directions, hands, people, background objects
+
+F02B → SPINE + a fifth card, five physical cards, translucent or ghost card,
+faint card, floating shadow with no object above it, shadow cast by nothing, gap
+filled, no dust impression, blurred or indistinct outline, drawn outline, dotted
+line, ink marker, arrow, chalk mark, cards overlapping, uneven spacing, multiple
+shadow directions, hands, people
+
+F03  → SPINE + facial features, eyes, nose, mouth, lips, eyebrows, ears, hair,
+stubble, skin pores on the head, mannequin seams, sculpted mask, helmet, portrait
+on the banknotes, printed currency detail, denomination numerals, banknote faces,
+till display, register screen, price signage, shelf labels, shop signage, second
+figure, customers, smiling, expressive or animated posture, gesturing hands, deep
+focus background
+
+F04  → SPINE + printed price, barcode, QR code, RFID tag, security tag, retail
+sticker, red sale tag, handwriting, second tag, multiple tags, hanger, rail,
+hands, people, deep focus, everything in focus, flat frontal light, bright even
+exposure
+
+F05A → SPINE + people, shoppers, staff, mannequins, faces, printed tags, price
+text, barcodes, sale signage, promotional posters, POS displays, brand fixtures,
+asymmetric convergence, off-centre or high vanishing point, curved or fisheye
+perspective, garments strewn on the floor, fallen clothing, empty rails, warm
+overall grade, sunlight through windows
+
+F05B → SPINE + facial features, eyes, nose, mouth, lips, eyebrows, hair,
+mannequin seams, phone, smartphone, screen glow in frame, card machine,
+contactless terminal, other people, crowd, staff behind the till, queue, figure
+large in frame, figure centred, figure in the upper half, spotlight halo, god
+rays, volumetric beams, evenly lit background, banknote portraits, denomination
+numerals
+
+F06A → SPINE + head in frame, face, chin, neck, shoulders above the chest, any
+facial features, extra fingers, six fingers, fused fingers, malformed or twisted
+hands, extra hands, banknote portraits, printed currency detail, denomination
+numerals, crisp new notes, coins, wallet, purse, payment card, phone, till,
+bright cheerful mood, high-key lighting, evenly lit frame
+
+F06B → SPINE + warm light, amber accent, amber rim, golden tone, warm colour
+grade, orange highlights, candlelight, sunlight, notification text, app icons,
+badge numbers, lock screen clock, status bar, signal bars, battery icon, multiple
+notifications, notification stack, colourful UI, alert red, screen bloom, halo,
+glow spill beyond the counter pool, face reflected in the glass, hands, people
+
+F07A → SPINE + item mid-fall, item in the air, item already on the floor, spilled
+contents, scattered debris, tidy basket, empty basket, half-full basket, contents
+level with the rim, product branding, packaging text, barcodes, labelled
+groceries, food packaging, shopping trolley, plastic bags, hands, people, flat
+overhead light, shadowless floor
+
+F07B → SPINE + second object, props, background detail, visible room, gallery
+wall, skirting, floor line, pedestal label, museum plaque, display case, glass
+vitrine, stanchion, visible spotlights or fixtures, light stands, people, hands,
+off-centre framing, low or angled camera, spilled contents, contents rearranged
+from F07A
+
+F08  → SPINE + engraved text on the stamp, monogram, initials, crest, coat of
+arms, seal impression with lettering, wax seal, printed card, marked card, tilted
+or angled card, card askew, asymmetric composition, third object, ink pad, ink
+stains, paperwork, hands, people, shallow depth of field, bokeh, camera movement,
+handheld feel, broken or doubled shadow
+
+F09  → SPINE + objects touching, objects overlapping, bar resting on the jacket,
+bar on top, hallmark stamps, bullion markings, weight numerals, purity text,
+serial numbers, gold bar branding, third object, anything occupying the empty
+left side of the plinth, price tag, label, plaque, hands, people, cold or blue
+grade on the brass, floating objects, missing contact shadows
+
+F10  → SPINE + card fully split, card in two pieces, card severed, fracture
+reaching the top edge, shattered card, glass shatter pattern, spiderweb cracking,
+multiple cracks, crumbling, missing fragments, debris or chips on the surface,
+card fallen flat, card lying down, card leaning or propped, card chip, magnetic
+stripe, printed card, embossed digits, hands, people, soft frontal light
+
+F11A → SPINE + facial features, eyes, nose, mouth, lips, eyebrows, ears, hair,
+stubble, mannequin seams, other pedestrians, crowd, traffic, moving cars,
+cyclists, shop signage text, storefront branding, street signs, number plates,
+logos on the t-shirt, sneaker branding, bag branding or print, busy street,
+midday overhead sun, flat light, cool or blue grade, figure filling the frame,
+figure in the upper half, low or cluttered sky
+
+F11B → SPINE + face turned to camera, head turned back, any facial features,
+figure looking over the shoulder, front or three-quarter view, other pedestrians,
+vehicles, cyclists, signage text, storefront branding, number plates, figure
+large in frame, figure centred high, high horizon line, cluttered skyline,
+rooftops or buildings crossing the upper frame, power lines, cables, birds,
+dramatic clouds, shadow trailing away from camera
+
+
+================================================================================
+NUMBERS — burn these in during the edit, never generate them
+================================================================================
+Every prompt above asks for blank cards, blank tags and blank screens on purpose.
+Generated text garbles, gets the currency wrong and dates the frame. The negative
+spine enforces this on all 16; the per-frame lines add the specific typography
+each shot is most likely to hallucinate (UI chrome on F01 and F06B, denomination
+numerals on the banknote frames, barcodes on the retail frames, hallmarks on F09).
+
+  F01   4 payments of £22.50 · 0% interest   (circle the 0% in terracotta)
+  F02A  £22.50 x 4
+  F02B  the fifth payment: ?
+  F03   −6%  ·  to Klarna
+  F04   £75.00 → £79.50
+  F05A  (none — the tags carry it)
+  F05B  (none — the figure carries it)
+  F06A  (none)
+  F06B  LATE FEE £6.00
+  F07A  +41% average basket
+  F07B  (none — the staging carries it)
+  F08   £75.00 — LOCKED
+  F09   COST £60 + MARKUP £15 = £75 FIXED
+  F10   £75.00 (cracked)
+  F11A  0% is never zero
+  F11B  (none — CAP 2 closes it)
+
+CHECK BEFORE BURN-IN: the +41% basket uplift on F07A is the only claim on screen
+sourced from marketing material rather than a filing. Cite it in the description
+or soften it to "bigger basket" on the frame. Everything else on this list is
+arithmetic off the £75 basket and is safe.
+
+
+================================================================================
+CAPTIONS, VO AND PACKAGING
+================================================================================
+Unchanged — see klarna-prompt-pack.txt. The caption table is still keyed to the
+11 scenes, and that is deliberate: CAP 1 lands on the scene's first stressed
+syllable over the A frame, CAP 2 lands with the cut to the B frame. On the five
+split scenes the image change and the second line of type arrive together, which
+is the whole reason the splits sit where they do.
+
+Thumbnail candidates from this set: F01 (the blank checkout card — the slate's
+locked thumbnail), F04 (the price tag), F02B (the missing fifth). F01 is the one
+the slate specifies; the other two are alternates for the A/B.
+
+WIRING: drop the files in video/public/broll/ as klarna-01 … klarna-16 and drive
+them the way src/inflation/ drives its stills. Pushes are total travel across the
+hold, eased out, never linear.
+
+GENERATION ORDER: F03 and F11A first for the cast lock, as before. Then F06B
+early as a second checkpoint — it is the only frame fighting the style block, so
+if the warm-light negatives are not biting you want to know before the other
+thirteen are through.
