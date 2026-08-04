@@ -6,6 +6,10 @@ Mints a refresh token and tells you WHICH CHANNEL it belongs to.
   pip install google-auth-oauthlib
   python get_refresh_token.py            # opens a browser on this machine
   python get_refresh_token.py --manual   # no browser here: print a URL, paste back
+  python get_refresh_token.py path/to/client_secret.json   # non-default location
+
+Credentials come from client_secret.json (repo root, or the path you pass). If
+there is no such file it falls back to asking you to paste the two values.
 
 This repo runs two channels, and a refresh token is bound to whichever channel is
 picked at Google's chooser. Pick the wrong one and you get a token that is
@@ -20,6 +24,7 @@ not collide: overwriting one channel's secrets silently repoints every workflow
 that channel owns.
 """
 import json
+import pathlib
 import sys
 import urllib.error
 import urllib.request
@@ -64,11 +69,50 @@ def whoami(access_token):
     return items[0]["id"], items[0]["snippet"].get("title", "?")
 
 
+def load_client(argv):
+    """Read the client id/secret from a Google client_secret.json, else prompt.
+
+    Only the two credential fields are taken from the file. The endpoint URLs
+    are NOT: a client_secret.json downloaded by hand is easy to hand-edit into
+    something that points at google.com rather than the OAuth endpoints, and a
+    wrong token_uri fails deep in the flow with an unhelpful error. main()
+    supplies the canonical URLs instead.
+    """
+    explicit = [a for a in argv[1:] if not a.startswith("--")]
+    if explicit:
+        candidates = [pathlib.Path(explicit[0])]
+    else:
+        here = pathlib.Path(__file__).resolve().parent
+        candidates = [pathlib.Path("client_secret.json"), here.parent / "client_secret.json"]
+
+    for path in candidates:
+        if not path.is_file():
+            continue
+        try:
+            blob = json.loads(path.read_text())
+        except (OSError, ValueError) as e:
+            sys.exit(f"Could not read {path}: {e}")
+        # Google writes the body under "installed" for desktop clients, "web" for
+        # web ones. Either is fine here; the loopback flow is the same.
+        body = blob.get("installed") or blob.get("web") or blob
+        cid, csec = body.get("client_id"), body.get("client_secret")
+        if not cid or not csec:
+            sys.exit(f"{path} has no client_id/client_secret — is it the file "
+                     "Google gave you?")
+        print(f"Using credentials from {path}")
+        return cid, csec
+
+    if explicit:
+        sys.exit(f"No such file: {explicit[0]}")
+    print("No client_secret.json found — paste the values instead.\n")
+    return (input("Paste your OAuth client ID: ").strip(),
+            input("Paste your OAuth client secret: ").strip())
+
+
 def main():
     manual = "--manual" in sys.argv
 
-    client_id = input("Paste your OAuth client ID: ").strip()
-    client_secret = input("Paste your OAuth client secret: ").strip()
+    client_id, client_secret = load_client(sys.argv)
 
     cfg = {
         "installed": {
