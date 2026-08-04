@@ -23,24 +23,47 @@ every fix and every monitor run is automatic.
 
 ## Step 4 — Mint your refresh token (2 min, on your own computer)
 
+**This step cannot be done from a Claude Code session** — it needs a browser, and the OAuth
+redirect goes to `localhost` on whatever machine runs the script. Run it on your own computer.
+
 ```bash
 pip install google-auth-oauthlib
 python automation/get_refresh_token.py
 ```
 
-A browser opens → sign in with the Google account that owns **Finance % Decoded** → approve.
-The script prints your `YT_REFRESH_TOKEN`.
+A browser opens → sign in → approve. **If Google shows a channel chooser, pick the channel you
+actually mean.** The token is bound to that choice and cannot be repointed afterwards.
 
-## Step 5 — Add the four GitHub secrets (1 min)
+If the machine you are on has no browser (SSH, a server), use the manual flow instead — it prints
+a URL you can open anywhere, and you paste back the address bar you land on:
 
-Repo → **Settings → Secrets and variables → Actions → New repository secret**, four times:
+```bash
+python automation/get_refresh_token.py --manual
+```
 
-| Secret | From |
-|---|---|
-| `YT_API_KEY` | Step 2 |
-| `YT_CLIENT_ID` | Step 3 |
-| `YT_CLIENT_SECRET` | Step 3 |
-| `YT_REFRESH_TOKEN` | Step 4 |
+The script then asks YouTube which channel you just authorised, prints it, and only then prints
+the secrets — naming the right ones for that channel. If it does not recognise the channel it
+refuses to print the token.
+
+## Step 5 — Add the GitHub secrets (1 min)
+
+Repo → **Settings → Secrets and variables → Actions → New repository secret**.
+
+`YT_API_KEY` (Step 2) is shared. The OAuth credentials are **per channel** and must not collide —
+overwriting one channel's set silently repoints every workflow that channel owns:
+
+| Channel | Client ID | Client secret | Refresh token |
+|---|---|---|---|
+| Finance % Decoded | `new1` | `new2` | `new3` |
+| HELD BY FAITH | `HBF_CLIENT_ID` | `HBF_CLIENT_SECRET` | `HBF_REFRESH_TOKEN` |
+
+The `new1`/`new2`/`new3` names are historical and deliberately left alone — every workflow in
+`.github/workflows/` already reads them, and Part 15 and the daily upload path depend on them.
+`get_refresh_token.py` prints whichever set matches the channel you authorised.
+
+> **A refresh token is bound to two things**: the channel picked at consent, *and* the OAuth
+> client that issued it. A new client ID paired with an old refresh token fails with
+> `invalid_grant`. One Google account owning both channels still needs two separate tokens.
 
 ## Step 6 — Fire it
 
