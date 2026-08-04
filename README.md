@@ -12,9 +12,18 @@ Data pulled 2026-07-17 from public YouTube data via Nexlev.
 > the long-form programme (the channel's own decision rule fired on 2026-07-24 and was overridden
 > twice), stop making trailer Shorts, and ship ten never-covered subjects — [`next-slate.md`](next-slate.md).
 
+> **2026-08-04 (third pass).** The mortgage family did *not* hold — yesterday's exception was a
+> measurement artifact of judging a 0.39-day-old video. All four topic families now collapse by
+> entry 3–4. `kOkfpCHeURw`'s marginal rate decayed 164 → ~40 views/day while its lifetime average
+> still read ~124, so **read marginal rate between passes, not the lifetime average.** Retitling a
+> dead Short is now measured at **+0 views over 21.7 hours**. The real risk is that the upload
+> queue is empty after Aug 5 — so the next Short is built:
+> [`klarna-scene-pack.txt`](klarna-scene-pack.txt).
+
 | File | Contents |
 |---|---|
-| [`channel-reset.md`](channel-reset.md) | **Current.** Full diagnosis of the long-form failure and the Shorts slowdown, what was ruled out and why, the decision, and how to read the next two weeks |
+| [`channel-reset.md`](channel-reset.md) | **Current.** Full diagnosis of the long-form failure and the Shorts slowdown, what was ruled out and why, the decision, and how to read the next two weeks. Three dated passes |
+| [`klarna-scene-pack.txt`](klarna-scene-pack.txt) | **The next upload, ready to produce.** "Is Klarna Halal?" — VO script, 47 scenes with complete image prompts, caption spec, edit notes, and paste-ready title/description/tags |
 | [`next-slate.md`](next-slate.md) | The next 10 uploads, pitched title-first — title, frame one, line one and payoff locked before anything is produced |
 | [`channel-study.md`](channel-study.md) | Full channel performance study: what the winners share, why the insurance arc is slumping |
 | [`last-video-fix.md`](last-video-fix.md) | Copy-paste fix pack for the latest Short (Part 12 — Takaful): new title, description, tags, pinned comment, re-cut hook script, and a 72-hour decision rule |

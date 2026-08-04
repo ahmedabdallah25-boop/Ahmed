@@ -3,24 +3,6 @@
   "playlist_url": "https://www.youtube.com/playlist?list=PLKLKzR1QgFHE",
   "scheduled": [
     {
-      "video_id": "4gRoTTZNnFE",
-      "_why": "Publishes 2026-08-04 03:00 PT, still private. Retitled to stand alone instead of trailing the long-form, and the description delivers all four questions inline. Verified 'already up to date' on runs 3 and 4.",
-      "title": "How to Tell If Your \"Islamic\" Mortgage Is Actually Fake #halalmortgage #islamicfinance",
-      "description": "Four questions. If your provider fails any of them, you are paying interest with an Arabic label on it.\n\n1. Who legally owns the house while you pay?\n2. Is the price fixed at signing, or does it track a rate?\n3. Who pays if the property is destroyed?\n4. What happens if you pay late — and where does that money go?\n\nA late fee that becomes the bank's profit is riba by another name. That question alone rules out most of the market.\n\nThe Money Machine, Decoded.\n\nMORE IN THE SERIES:\nHow to buy a house without interest (Musharaka): https://youtu.be/riQ7dLSnogo\nHow your mortgage costs you two houses: https://youtu.be/fMQMZKPvK4c\nMurabaha, the fixed-price sale: https://youtu.be/c8uyMAIORkU\nHow banks quietly trap your savings: https://youtu.be/OXIP3EJROQk\n{PLAYLIST_LINE}\nNo jargon. Just mechanisms.\nEducation, not financial advice — verify current terms with any provider before signing.\n\n#HalalMortgage #IslamicFinance #Riba #Musharaka #Ijara #HalalMoney #MuslimMoney #FinanceDecoded",
-      "add_tags": [
-        "is my islamic mortgage real",
-        "fake islamic mortgage",
-        "halal mortgage explained",
-        "islamic mortgage questions",
-        "diminishing musharaka",
-        "ijara wa iqtina",
-        "riba explained",
-        "islamic finance explained",
-        "halal home finance",
-        "sharia compliant mortgage"
-      ]
-    },
-    {
       "video_id": "JB6Q_7IE9Jo",
       "_why": "Part 15, uploaded 2026-08-03 15:39Z — two hours after the last pass ran, so that pass never saw it. Publishes 2026-08-05 03:00 PT. Title switched to the niche_search_format already drafted and vetted in part15.json. The rejected reasoning in that file's _why_chosen argues from the shape of 'Why You're Born Into Debt' (1,208 views) — but channel-reset.md ruled the title-formula hypothesis out on exactly that kind of within-channel analogy: a formula-perfect inflation Short did 43 views against a bare-fragment title at 200. The cross-channel evidence is cleaner because it holds channel size constant: on one 71.8K-sub channel 'Is Forex Halal?' did 158K while 'What do we really mean by Halal Investing?' did 6.4K. This channel has never once tested the niche's dominant format, which makes it the largest untested variable available. Description and tags are byte-identical to the upload — title only, so the variable stays readable.",
       "title": "Is Paper Gold Halal? (Most People Own a Promise) #gold #islamicfinance",
@@ -29,16 +11,17 @@
     }
   ],
   "hold": {
-    "_why": "Published within the last ~36 hours and still inside their feed test. Changing packaging mid-test destroys the only clean read available and can disrupt an active test. Revisit 2026-08-06. sbor6eyJQKc: published 2026-08-03 03:00 PT, 8 views at a few hours old — nowhere near judgeable. kOkfpCHeURw: published 2026-08-02 03:00 PT, 200 views in ~1.4 days (~145/day) — that is mid-table, not a failure, and it is the best-performing recent upload.",
+    "_why": "Inside their 72-hour feed test. Changing packaging mid-test destroys the only clean read available. Updated third pass, 2026-08-04 11:04Z. 4gRoTTZNnFE published 2026-08-04 03:00 PT and MOVED HERE FROM 'scheduled' — it is now public, so leaving it under 'scheduled' would let a later pass rewrite the packaging of a live video mid-test, which is exactly what this guard rail exists to prevent. Its test clears 2026-08-07 03:00 PT. kOkfpCHeURw clears 2026-08-05 03:00 PT: 253 views at 2.04 d, but its MARGINAL rate has decayed from ~164/day to ~40/day over the last 15.7 h, so the ~124/day lifetime average overstates it. sbor6eyJQKc clears 2026-08-06 03:00 PT: 23 views at 1.04 d (~22/day). Neither is recoverable by retitling — see P3DxNgGFah0, which took +0 views in the 21.7 h after its retitle.",
     "video_ids": [
       "sbor6eyJQKc",
-      "kOkfpCHeURw"
+      "kOkfpCHeURw",
+      "4gRoTTZNnFE"
     ]
   },
   "repackage": [
     {
       "video_id": "P3DxNgGFah0",
-      "_why": "39 views. The claim is strong but the title states the answer instead of opening a gap — there is nothing left to find out. Reframed as a question the viewer cannot answer.",
+      "_why": "APPLIED 2026-08-03 13:19Z, and now MEASURED DEAD — do not spend another pass on it. 39 views. The claim was strong but the title stated its own answer instead of opening a gap, so it was reframed as a question the viewer cannot answer. Result: +0 views in the 21.7 h after the retitle (39 -> 39 -> 39 across three passes). A Short that has already failed its feed test does not re-qualify, because Shorts get almost no ongoing search or suggested traffic to recover into. Kept here only as the applied record; the entry is idempotent and re-runs report 'already up to date'. The general rule this establishes: the ONLY packaging lever with a real expected return is the pre-publish one.",
       "current_title": "Your Bank Only Has 3 Cents of Every Dollar You Own",
       "title": "What Happens If Everyone Asks For Their Money At Once #banking #islamicfinance",
       "description": "Your bank does not hold your money. It holds about three cents of every dollar it owes you. The rest has been lent out.\n\nThat is not fraud — it is the licensed design of fractional reserve banking. It works right up until everyone asks at the same time, which is what a bank run is.\n\nYou did not agree to that risk. You were never asked.\n\nThe Money Machine, Decoded.\n\nMORE IN THE SERIES:\nHow banks create money out of thin air: https://youtu.be/8DlJ28QnXj4\nHow banks quietly trap your savings: https://youtu.be/OXIP3EJROQk\nHow banks secretly profit from your savings: https://youtu.be/V8HYpTHy2aU\n{PLAYLIST_LINE}\nNo jargon. Just mechanisms.\n\n#Banking #FractionalReserve #BankRun #Riba #IslamicFinance #HalalMoney #FinanceDecoded",

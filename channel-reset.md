@@ -332,3 +332,106 @@ id and put the Aug 5 slot at risk for no measured gain.
 views. That is a reasonable hypothesis about a retention cost and nothing more — the retention
 curve that would settle it is behind the paywall, and no public number touches it. Not worth
 acting on blind.
+
+---
+
+# Third pass — 2026-08-04, 11:04 UTC (04:04 PT)
+
+15.7 hours after the second pass. Same public-data-only constraint. One conclusion from
+yesterday does not survive the extra day.
+
+## The ledger
+
+| Video | Published (PT) | Age | Views | Δ since 19:20Z | Marginal v/day |
+|---|---|---|---|---|---|
+| `4gRoTTZNnFE` Fake Islamic mortgage | Aug 4, 03:00 | **1.1 h** | 4 | *published* | *unjudgeable* |
+| `sbor6eyJQKc` 10 years of payments | Aug 3, 03:00 | 1.04 d | 23 | +5 | **~22** |
+| `OHVnm5R0o5E` Banks take your money | Aug 2, 07:02 | 1.88 d | 49 | +6 | ~9 |
+| `kOkfpCHeURw` £1,461 a month | Aug 2, 03:00 | 2.04 d | 253 | +26 | **~40** |
+| `P3DxNgGFah0` Everyone asks at once | Jul 31, 04:00 | 4.00 d | 39 | **+0** | **0** |
+
+Long-form 9 → 12 views (`WJ_UhugwA9U` 6 → 9). Subscribers flat at 191, third pass running.
+
+## 1. The mortgage family did not hold. Yesterday's exception was a measurement artifact.
+
+The second pass read mortgage as "the strongest family on the channel, four entries deep
+without collapsing," on the strength of `kOkfpCHeURw` at ~164/day and `sbor6eyJQKc` at 18 views
+and 0.39 days old. Both of those numbers have now moved, and both moved down:
+
+| Family | Views, in publish order | Verdict |
+|---|---|---|
+| Inflation | 1K → 925 → 43 *(0/day)* | collapsed on 3 |
+| Banks & deposits | 112 → 105 → 965 → 39 *(0/day)* | collapsed on 4 |
+| Insurance | 260 → 124 | collapsed on 2 |
+| Mortgage / housing | 106 → 1,225 → 253 *(~40/day)* → 23 *(~22/day)* | **collapsed on 3–4** |
+
+`kOkfpCHeURw`'s **lifetime average of ~124/day hides a 4x decay in its marginal rate** — 145/day,
+then 164/day, now ~40/day. Lifetime average is a lagging statistic on a video still inside its
+test; it will keep reporting a healthy number long after the feed has stopped serving the video.
+**Read the marginal rate between passes, not the lifetime average.** That is a correction to how
+the previous two passes computed views/day.
+
+`sbor6eyJQKc` has now cleared 24 hours at ~22/day. Yesterday it was 0.39 days old, which is
+precisely the age this document warns against judging — and the caution was right, but it cut the
+other way from the one assumed: the video did not improve with age, it resolved downward.
+
+So all four topic families now collapse by entry 3 or 4, with no exception. The second pass's
+refinement — *"a fourth entry in a family is fine when the claim is new"* — was built entirely on
+mortgage being the outlier. Mortgage is not an outlier. **Retire that refinement.** The simpler
+statement fits every family on the channel: repeat the subject and the next entry falls hard.
+
+## 2. Retitling a dead Short is now measured at zero, twice
+
+`P3DxNgGFah0`: 39 views at the retitle, 39 at +6 h, 39 at +21.7 h. **Zero additional views across
+nearly a full day.** The second pass called this at six hours; a day of further data says the same
+thing with no ambiguity left. This is now a production rule, not an observation:
+
+> **Never spend a pass retitling a Short that has already failed its feed test.** The only
+> packaging lever with a real expected return is the pre-publish one.
+
+## 3. Cadence has been daily for four days and has not recovered anything
+
+Worth stating plainly, because it is the hypothesis most likely to be over-trusted next. Uploads
+ran Aug 2, Aug 2, Aug 3, Aug 4, and Aug 5 is queued — that is daily cadence restored. The results
+across those four days are 253 *(decaying)*, 49, 23, 4. Restoring cadence has not, by itself,
+restored anything within four days.
+
+That does not falsify the cadence thesis — the Jul 21 → Jul 31 Shorts blackout is still the single
+largest structural event on the channel, and momentum plausibly takes longer than four days to
+rebuild. It does mean **cadence is a precondition, not a cure**, and nobody should read a recovery
+into the next few days if one appears. Keep shipping daily; do not credit cadence alone for it.
+
+## 4. The actual open risk: the queue is empty after Aug 5
+
+`JB6Q_7IE9Jo` publishes Aug 5 03:00 PT. **Nothing exists behind it.** The slate in
+`next-slate.md` is ten pitches on paper with no assets produced against any of them.
+
+A second Shorts blackout is the one failure this channel has already run once, and it is what the
+last two weeks were spent recovering from. Producing the next Short is a higher-value action right
+now than any further analysis of the existing ones — every one of which is either inside a feed
+test that must not be touched, or measured dead.
+
+## What was changed
+
+| # | Change | Where |
+|---|---|---|
+| 1 | `4gRoTTZNnFE` moved `scheduled` → `hold`. It published this morning; leaving it under `scheduled` would let a later pass rewrite the packaging of a **live** video mid-test | `automation/reset.json` |
+| 2 | `hold._why` rewritten with per-video test-expiry dates and marginal rates | same |
+| 3 | `P3DxNgGFah0` annotated as applied-and-measured-dead so no future pass re-opens it | same |
+| 4 | Next Short produced end to end — script, 46 scenes, image prompts, upload metadata | `klarna-scene-pack.txt` |
+
+No live packaging was touched this pass. All three recent Shorts are inside their feed tests and
+`P3DxNgGFah0` is measured unrecoverable, so there was nothing left that a packaging write could
+legitimately improve.
+
+## What to watch
+
+- **Aug 5, 03:00 PT** — `kOkfpCHeURw` clears 72 h. Expect it to land near 280–300 lifetime. Move
+  it out of `hold`, but do **not** repackage it; rule 2 above applies.
+- **Aug 5** — `JB6Q_7IE9Jo` is the channel's first ever `Is [X] Halal?` title. This is the format
+  test. Read it at Aug 8, as marginal v/day.
+- **Aug 6** — Klarna ships. New format *and* a subject family the channel has never entered.
+- The decision rule from the first pass still stands: **still under ~50 v/day after five
+  new-subject uploads → buy one month of private analytics.** Public view counts have now produced
+  three passes of increasingly fine-grained inference and cannot separate topic from cadence from
+  retention. That separation costs one month of a paid plan and an afternoon.

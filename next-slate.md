@@ -69,7 +69,13 @@ Ordered by (proven format × size of the gap). All ten are subjects this channel
 covered — the reason is in `channel-reset.md`: every topic family here peaks then falls hard on
 the next entry, and the formula-perfect third inflation video did 43 views.
 
-### 1 · Is Klarna Halal?
+### 1 · Is Klarna Halal?  ✅ PRODUCED 2026-08-04 → [`klarna-scene-pack.txt`](klarna-scene-pack.txt)
+
+> Full VO script, 47 scenes with image prompts, caption spec, and upload metadata are written.
+> Final title: **`Is Klarna Halal? (Somebody Pays That 0%)`** — deliberately parallel to Part 15's
+> `Is Paper Gold Halal? (Most People Own a Promise)`, so the Aug 5 → Aug 6 pair moves exactly one
+> variable: the subject. Target publish **2026-08-06, 03:00 PT**.
+
 
 - **Frame one** — a checkout showing `4 payments of £22.50` and `0% interest`, with `0%` circled.
 - **Line one** — *"Klarna is interest-free. That's the most expensive word in finance."*
