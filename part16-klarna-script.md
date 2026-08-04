@@ -22,13 +22,16 @@
 
 ## The recap decision
 
-The ask was a recap at the top. It does **not** open the video. `channel-study.md` logged the
-failure mode explicitly: *"the hook flows straight into series bookkeeping — meaningless."*
+Order is **hook (0:00–0:09) → recap (0:09–0:18) → mechanism**. The recap opens on the callback —
+*"In the last episode, we said that…"* — but it sits after the hook, not before it, because
+`channel-study.md` logged that exact failure: *"the hook flows straight into series bookkeeping."*
+Three seconds of contradiction first, then the callback, and it costs nothing: the recap states
+its own content rather than referring to it, so a cold viewer hears two facts they can use and
+never feels sent elsewhere. It lands on `Same machine. New checkout.`, which converts the
+callback into a promise about *this* video.
 
-So the order is **hook (0:00–0:09) → recap (0:09–0:18) → mechanism**. The recap carries no part
-numbers and no titles. It replays the two previous *sensations* — money shrinking, gold that
-turned out to be a promise — and lands on `Same machine. New checkout.` A returning viewer gets
-continuity; a cold viewer gets escalation and never knows they missed anything.
+No part numbers and no titles in the spoken line — "the last episode" does the work that
+"in part fifteen" cannot, because nobody knows what part fifteen was.
 
 ---
 
@@ -38,22 +41,22 @@ continuity; a cold viewer gets escalation and never knows they missed anything.
 
 > [serious] Klarna is interest-free.
 > [whispers] That's the most expensive word in finance.
-> You pay zero percent... and somebody still gets paid.
+> [curious] You pay zero percent... and somebody still gets paid.
 
 The contradiction is complete inside three seconds and it cannot be resolved by guessing. The
 viewer either swipes or needs the answer.
 
 ### RECAP · 0:09–0:18
 
-> [serious] Last time, your money shrank while you slept.
-> Then the gold you "owned" turned out to be a promise on a screen.
-> Same machine. New checkout.
+> [serious] In the last episode, we said that your money shrinks while you sleep.
+> [whispers] And that the gold you "owned" was only a promise on a screen.
+> [dramatic] Same machine. New checkout.
 
 ### ACT 1 — The pitch, stated fairly · 0:18–0:28
 
-> Ninety dollars. Four payments of twenty-two fifty.
-> Nothing extra. Nothing hidden. That's the pitch.
-> So follow the money.
+> [calm] Ninety dollars. Four payments of twenty-two fifty.
+> [deadpan] Nothing extra. Nothing hidden. That's the pitch.
+> [curious] So follow the money.
 
 Steelman it first. The audience uses Klarna; calling it a scam in line one loses them.
 
@@ -61,42 +64,42 @@ Steelman it first. The audience uses Klarna; calling it a scam in line one loses
 
 **The merchant fee (the cash buyer pays it too)**
 
-> Klarna doesn't charge you. It charges the shop.
-> Around six percent of every sale... plus a fee on top.
-> A card costs the shop two.
+> [serious] Klarna doesn't charge you. It charges the shop.
+> [emphatic] Around six percent of every sale... plus a fee on top.
+> [calm] A card costs the shop two.
 > [serious] No shop absorbs that.
-> It goes into the sticker price.
-> Which means the price went up... for everyone.
+> [whispers] It goes into the sticker price.
+> [dramatic] Which means the price went up... for everyone.
 > [emphatic] Even the man paying cash.
-> He never opened the app. He's still paying for it.
+> [sad] He never opened the app. He's still paying for it.
 
 **The late fee (the ruling turns here)**
 
-> Then there's the part they don't advertise.
-> Miss a payment... and ninety becomes ninety-seven.
-> [serious] The price grew because time passed.
-> That is the oldest definition of interest there is.
+> [nervously] Then there's the part they don't advertise.
+> [serious] Miss a payment... and ninety becomes ninety-seven.
+> [dramatic] The price grew because time passed.
+> [emphatic] That is the oldest definition of interest there is.
 
 **The basket uplift (the actual product)**
 
-> And the last piece is the quietest.
-> Split into four, the number stops feeling like money.
-> Baskets get bigger. That's not a side effect.
+> [whispers] And the last piece is the quietest.
+> [curious] Split into four, the number stops feeling like money.
+> [serious] Baskets get bigger. That's not a side effect.
 > [emphatic] That IS the product.
-> Four apps. Twelve payment dates. One salary.
+> [rushed] Four apps. Twelve payment dates. One salary.
 > [sad] Nobody calls that debt. It behaves exactly like debt.
 
 ### ACT 3 — The payoff · 1:29–2:01
 
 > [calm] So what does the honest version look like?
-> A sale has one price. Agreed once. Written down.
-> Pay in six months? Fine — but the number is fixed today.
+> [warmly] A sale has one price. Agreed once. Written down.
+> [calm] Pay in six months? Fine — but the number is fixed today.
 > [emphatic] Late, early, never — the price cannot move.
-> That's murabaha. A sale, not a loan.
-> The markup is allowed because the risk is real...
-> ...and because it stops the moment the deal is signed.
+> [warmly] That's murabaha. A sale, not a loan.
+> [calm] The markup is allowed because the risk is real...
+> [serious] ...and because it stops the moment the deal is signed.
 > [serious] If a number can grow because you were late...
-> ...it was never a price. It was a loan wearing a receipt.
+> [dramatic] ...it was never a price. It was a loan wearing a receipt.
 
 The verdict is a **test the viewer can apply to any product**, not a fatwa. That is the channel's
 character: mechanisms, not rulings.

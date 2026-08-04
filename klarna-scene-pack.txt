@@ -50,46 +50,62 @@ VOICEOVER — full script, ElevenLabs v3 tags, copy as one block
 
 [serious] Klarna is interest-free.
 [whispers] That's the most expensive word in finance.
-You pay zero percent... and somebody still gets paid.
-[serious] Last time, your money shrank while you slept.
-Then the gold you "owned" turned out to be a promise on a screen.
-Same machine. New checkout.
-Ninety dollars. Four payments of twenty-two fifty.
-Nothing extra. Nothing hidden. That's the pitch.
-So follow the money.
-Klarna doesn't charge you. It charges the shop.
-Around six percent of every sale... plus a fee on top.
-A card costs the shop two.
+[curious] You pay zero percent... and somebody still gets paid.
+[serious] In the last episode, we said that your money shrinks while you sleep.
+[whispers] And that the gold you "owned" was only a promise on a screen.
+[dramatic] Same machine. New checkout.
+[calm] Ninety dollars. Four payments of twenty-two fifty.
+[deadpan] Nothing extra. Nothing hidden. That's the pitch.
+[curious] So follow the money.
+[serious] Klarna doesn't charge you. It charges the shop.
+[emphatic] Around six percent of every sale... plus a fee on top.
+[calm] A card costs the shop two.
 [serious] No shop absorbs that.
-It goes into the sticker price.
-Which means the price went up... for everyone.
+[whispers] It goes into the sticker price.
+[dramatic] Which means the price went up... for everyone.
 [emphatic] Even the man paying cash.
-He never opened the app. He's still paying for it.
-Then there's the part they don't advertise.
-Miss a payment... and ninety becomes ninety-seven.
-[serious] The price grew because time passed.
-That is the oldest definition of interest there is.
-And the last piece is the quietest.
-Split into four, the number stops feeling like money.
-Baskets get bigger. That's not a side effect.
+[sad] He never opened the app. He's still paying for it.
+[nervously] Then there's the part they don't advertise.
+[serious] Miss a payment... and ninety becomes ninety-seven.
+[dramatic] The price grew because time passed.
+[emphatic] That is the oldest definition of interest there is.
+[whispers] And the last piece is the quietest.
+[curious] Split into four, the number stops feeling like money.
+[serious] Baskets get bigger. That's not a side effect.
 [emphatic] That IS the product.
-Four apps. Twelve payment dates. One salary.
+[rushed] Four apps. Twelve payment dates. One salary.
 [sad] Nobody calls that debt. It behaves exactly like debt.
 [calm] So what does the honest version look like?
-A sale has one price. Agreed once. Written down.
-Pay in six months? Fine — but the number is fixed today.
+[warmly] A sale has one price. Agreed once. Written down.
+[calm] Pay in six months? Fine — but the number is fixed today.
 [emphatic] Late, early, never — the price cannot move.
-That's murabaha. A sale, not a loan.
-The markup is allowed because the risk is real...
-...and because it stops the moment the deal is signed.
+[warmly] That's murabaha. A sale, not a loan.
+[calm] The markup is allowed because the risk is real...
+[serious] ...and because it stops the moment the deal is signed.
 [serious] If a number can grow because you were late...
-...it was never a price. It was a loan wearing a receipt.
+[dramatic] ...it was never a price. It was a loan wearing a receipt.
 [warmly] Zero percent isn't free. It's just quiet.
 [warmly] Follow — next, the card you pay off every month.
 
-TAG NOTES: keep tags sparse, they are strongest at emotional turns. Ellipses
-create natural breath pauses. CAPS carry emphasis without a tag. Do not stack
-two tags on one line.
+ELEVENLABS v3 DELIVERY NOTES
+- Every line carries a tag. One tag per line, at the front. NEVER stack two tags
+  on one line — v3 blends them into mush or reads the second one aloud.
+- Model: Eleven v3. Stability: CREATIVE. On Robust the tags are largely ignored;
+  on Creative they actually move the performance, which is the entire point here.
+- TEST SCENES 01-03 BEFORE GENERATING THE REST. If any tag is spoken out loud
+  instead of performed, the voice or the stability setting is wrong — fix it
+  there, not by deleting tags from all 38 lines.
+- Ellipses are breath pauses and they carry the timing of this script. Keep them
+  exactly where they are. CAPS (scene 25, "That IS the product") carry emphasis
+  without needing a tag.
+- The emotional arc the tags are drawing, in order:
+    curiosity → suspicion → indictment → grief → calm → resolution
+  Scenes 01-09 pull the viewer in. 10-21 tighten and accuse. 22-27 drop into
+  sadness — that is the retention floor and it must feel heavy. 28-38 lift back
+  into warmth so the payoff lands as relief rather than a lecture.
+- FALLBACKS if a tag misfires on your voice: [deadpan] → [calm] · [rushed] →
+  [nervously] · [dramatic] → [emphatic] · [nervously] → [whispers].
+- Do not tag the two silent beats. Let the picture hold.
 
 
 ================================================================================
@@ -132,7 +148,7 @@ empty dark space above.
 --------------------------------------------------------------------------------
 SCENE 03 | 0:05-0:09
 --------------------------------------------------------------------------------
-VO: You pay zero percent... and somebody still gets paid.
+VO: [curious] You pay zero percent... and somebody still gets paid.
 CAPTION 1: You pay 0%
 CAPTION 2: somebody still gets paid
 
@@ -149,9 +165,9 @@ of field, subject centre-frame in the lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 04 | 0:09-0:12 | RECAP BEAT 1
 --------------------------------------------------------------------------------
-VO: [serious] Last time, your money shrank while you slept.
-CAPTION 1: Last time: your money shrank
-CAPTION 2: while you slept
+VO: [serious] In the last episode, we said that your money shrinks while you sleep.
+CAPTION 1: Last episode: your money shrinks
+CAPTION 2: while you sleep
 
 IMAGE PROMPT:
 Near-photorealistic still life of a single crumpled banknote lying on a dark
@@ -164,8 +180,8 @@ two-thirds, clean dark space above.
 --------------------------------------------------------------------------------
 SCENE 05 | 0:12-0:16 | RECAP BEAT 2
 --------------------------------------------------------------------------------
-VO: Then the gold you "owned" turned out to be a promise on a screen.
-CAPTION 1: Then the gold wasn't gold
+VO: [whispers] And that the gold you "owned" was only a promise on a screen.
+CAPTION 1: And the gold wasn't gold
 CAPTION 2: just a promise on a screen
 
 IMAGE PROMPT:
@@ -179,7 +195,7 @@ lower two-thirds, clean dark space above.
 --------------------------------------------------------------------------------
 SCENE 06 | 0:16-0:18 | PIVOT
 --------------------------------------------------------------------------------
-VO: Same machine. New checkout.
+VO: [dramatic] Same machine. New checkout.
 CAPTION 1: Same machine
 CAPTION 2: new checkout
 
@@ -194,7 +210,7 @@ deep dark space above.
 --------------------------------------------------------------------------------
 SCENE 07 | 0:18-0:22
 --------------------------------------------------------------------------------
-VO: Ninety dollars. Four payments of twenty-two fifty.
+VO: [calm] Ninety dollars. Four payments of twenty-two fifty.
 CAPTION 1: $90. Four payments.
 CAPTION 2: $22.50 each
 
@@ -211,7 +227,7 @@ empty area.
 --------------------------------------------------------------------------------
 SCENE 08 | 0:22-0:26
 --------------------------------------------------------------------------------
-VO: Nothing extra. Nothing hidden. That's the pitch.
+VO: [deadpan] Nothing extra. Nothing hidden. That's the pitch.
 CAPTION 1: Nothing extra, nothing hidden
 CAPTION 2: that's the pitch
 
@@ -226,7 +242,7 @@ from the left, gentle real shadow to the right. Shallow cinematic depth of field
 --------------------------------------------------------------------------------
 SCENE 09 | 0:26-0:28 | ★ GENERATE THIS ONE FIRST — CHARACTER LOCK
 --------------------------------------------------------------------------------
-VO: So follow the money.
+VO: [curious] So follow the money.
 CAPTION 1: So follow the money
 CAPTION 2: (none)
 
@@ -245,7 +261,7 @@ three-quarters, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 10 | 0:28-0:32 | MECHANISM OPENS
 --------------------------------------------------------------------------------
-VO: Klarna doesn't charge you. It charges the shop.
+VO: [serious] Klarna doesn't charge you. It charges the shop.
 CAPTION 1: It doesn't charge you
 CAPTION 2: it charges the shop
 
@@ -261,7 +277,7 @@ field. 9:16 vertical, shopkeeper in the lower two-thirds, clean space above.
 --------------------------------------------------------------------------------
 SCENE 11 | 0:32-0:36
 --------------------------------------------------------------------------------
-VO: Around six percent of every sale... plus a fee on top.
+VO: [emphatic] Around six percent of every sale... plus a fee on top.
 CAPTION 1: ~6% of every sale
 CAPTION 2: plus a flat fee
 
@@ -276,7 +292,7 @@ stack in the lower two-thirds, clean dark space above.
 --------------------------------------------------------------------------------
 SCENE 12 | 0:36-0:39
 --------------------------------------------------------------------------------
-VO: A card costs the shop two.
+VO: [calm] A card costs the shop two.
 CAPTION 1: A card costs the shop 2%
 CAPTION 2: this costs three times more
 
@@ -306,7 +322,7 @@ of field. 9:16 vertical, hands in the lower two-thirds, clean space above.
 --------------------------------------------------------------------------------
 SCENE 14 | 0:41-0:44
 --------------------------------------------------------------------------------
-VO: It goes into the sticker price.
+VO: [whispers] It goes into the sticker price.
 CAPTION 1: It goes into the sticker price
 CAPTION 2: quietly
 
@@ -322,7 +338,7 @@ above.
 --------------------------------------------------------------------------------
 SCENE 15 | 0:44-0:47
 --------------------------------------------------------------------------------
-VO: Which means the price went up... for everyone.
+VO: [dramatic] Which means the price went up... for everyone.
 CAPTION 1: So the price went up
 CAPTION 2: for everyone in the shop
 
@@ -354,7 +370,7 @@ lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 17 | 0:50-0:54 | ★ THE ACT 2 PAYOFF FRAME
 --------------------------------------------------------------------------------
-VO: He never opened the app. He's still paying for it.
+VO: [sad] He never opened the app. He's still paying for it.
 CAPTION 1: He never opened the app
 CAPTION 2: he's still paying for it
 
@@ -370,7 +386,7 @@ and money in the lower two-thirds, clean dark space above.
 --------------------------------------------------------------------------------
 SCENE 18 | 0:54-0:57 | TURN
 --------------------------------------------------------------------------------
-VO: Then there's the part they don't advertise.
+VO: [nervously] Then there's the part they don't advertise.
 CAPTION 1: Then the part they don't advertise
 CAPTION 2: (none)
 
@@ -386,7 +402,7 @@ deep dark space above.
 --------------------------------------------------------------------------------
 SCENE 19 | 0:57-1:01
 --------------------------------------------------------------------------------
-VO: Miss a payment... and ninety becomes ninety-seven.
+VO: [serious] Miss a payment... and ninety becomes ninety-seven.
 CAPTION 1: Miss one payment
 CAPTION 2: $90 becomes $97
 
@@ -402,7 +418,7 @@ dark space above.
 --------------------------------------------------------------------------------
 SCENE 20 | 1:01-1:04 | ★ MECHANISM PAYOFF — THE ONE FRAME THAT MUST LAND
 --------------------------------------------------------------------------------
-VO: [serious] The price grew because time passed.
+VO: [dramatic] The price grew because time passed.
 CAPTION 1: The price grew
 CAPTION 2: because time passed
 
@@ -417,7 +433,7 @@ Symbolic, still, weighty. Stylized matte cinematic grade, shallow depth of field
 --------------------------------------------------------------------------------
 SCENE 21 | 1:04-1:08
 --------------------------------------------------------------------------------
-VO: That is the oldest definition of interest there is.
+VO: [emphatic] That is the oldest definition of interest there is.
 CAPTION 1: That is interest
 CAPTION 2: the oldest definition there is
 
@@ -432,7 +448,7 @@ dark space above.
 --------------------------------------------------------------------------------
 SCENE 22 | 1:08-1:11
 --------------------------------------------------------------------------------
-VO: And the last piece is the quietest.
+VO: [whispers] And the last piece is the quietest.
 CAPTION 1: And the last piece
 CAPTION 2: is the quietest
 
@@ -448,7 +464,7 @@ blue #4BA3D3 window light, deep real shadows. Shallow cinematic depth of field.
 --------------------------------------------------------------------------------
 SCENE 23 | 1:11-1:15
 --------------------------------------------------------------------------------
-VO: Split into four, the number stops feeling like money.
+VO: [curious] Split into four, the number stops feeling like money.
 CAPTION 1: Split into four
 CAPTION 2: it stops feeling like money
 
@@ -463,7 +479,7 @@ space above.
 --------------------------------------------------------------------------------
 SCENE 24 | 1:15-1:18
 --------------------------------------------------------------------------------
-VO: Baskets get bigger. That's not a side effect.
+VO: [serious] Baskets get bigger. That's not a side effect.
 CAPTION 1: So baskets get bigger
 CAPTION 2: that's not a side effect
 
@@ -495,7 +511,7 @@ lower two-thirds, clean dark space above.
 --------------------------------------------------------------------------------
 SCENE 26 | 1:20-1:24
 --------------------------------------------------------------------------------
-VO: Four apps. Twelve payment dates. One salary.
+VO: [rushed] Four apps. Twelve payment dates. One salary.
 CAPTION 1: Four apps. Twelve dates.
 CAPTION 2: One salary.
 
@@ -542,7 +558,7 @@ vertical, paper in the lower two-thirds, clean space above.
 --------------------------------------------------------------------------------
 SCENE 29 | 1:32-1:36
 --------------------------------------------------------------------------------
-VO: A sale has one price. Agreed once. Written down.
+VO: [warmly] A sale has one price. Agreed once. Written down.
 CAPTION 1: A sale has ONE price
 CAPTION 2: agreed once, written down
 
@@ -557,7 +573,7 @@ two-thirds, clean dark space above.
 --------------------------------------------------------------------------------
 SCENE 30 | 1:36-1:40
 --------------------------------------------------------------------------------
-VO: Pay in six months? Fine — but the number is fixed today.
+VO: [calm] Pay in six months? Fine — but the number is fixed today.
 CAPTION 1: Pay in six months? Fine.
 CAPTION 2: The number is fixed today.
 
@@ -586,7 +602,7 @@ two-thirds, clean dark space above.
 --------------------------------------------------------------------------------
 SCENE 32 | 1:44-1:47
 --------------------------------------------------------------------------------
-VO: That's murabaha. A sale, not a loan.
+VO: [warmly] That's murabaha. A sale, not a loan.
 CAPTION 1: That's murabaha
 CAPTION 2: a sale, not a loan
 
@@ -601,7 +617,7 @@ space above.
 --------------------------------------------------------------------------------
 SCENE 33 | 1:47-1:50
 --------------------------------------------------------------------------------
-VO: The markup is allowed because the risk is real...
+VO: [calm] The markup is allowed because the risk is real...
 CAPTION 1: The markup is allowed
 CAPTION 2: because the risk is real
 
@@ -616,7 +632,7 @@ two-thirds, clean dark space above.
 --------------------------------------------------------------------------------
 SCENE 34 | 1:50-1:54
 --------------------------------------------------------------------------------
-VO: ...and because it stops the moment the deal is signed.
+VO: [serious] ...and because it stops the moment the deal is signed.
 CAPTION 1: and it stops
 CAPTION 2: the moment the deal is signed
 
@@ -646,7 +662,7 @@ two-thirds, clean dark space above.
 --------------------------------------------------------------------------------
 SCENE 36 | 1:57-2:01 | ★ THE LINE
 --------------------------------------------------------------------------------
-VO: ...it was never a price. It was a loan wearing a receipt.
+VO: [dramatic] ...it was never a price. It was a loan wearing a receipt.
 CAPTION 1: It was never a price
 CAPTION 2: it was a loan wearing a receipt
 
