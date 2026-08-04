@@ -9,6 +9,50 @@ port of the vertical Short.
 | `Ep2-HalalMortgage` | 1920×1080 · 30fps · 10:17 | `../storyboard-ep2-halal-mortgage.md` + `public/vo-ep2.mp3` | `../media/ep2-halal-mortgage.mp4` |
 | `Ep2-Thumbnail` | 1280×720 still | same storyboard | `../media/ep2-thumbnail.png` |
 | `Part14-RaiseTrap` | 1080×1920 · 30fps · 36s | kinetic-typography Short | `../media/part14-kinetic.mp4` |
+| `Klarna-Short` | 1080×1920 · 30fps · 2:53 | supplied `.mov` (16 stills + VO) + `../klarnaimageprompts.txt` | `../media/klarna-short.mp4` |
+
+## Klarna — stills that have to move, and 125 seconds with no picture
+
+The opposite problem to the inflation short. There the footage was a finished cut
+and the overlay's job was to keep out of its way. Here the supplied `.mov` is
+**sixteen static stills held a flat 3.00s each** — 48.0s of picture, then 125.2s
+of black — under the **full 173.28s long-form voiceover**. Measured, not assumed:
+sixteen hard cuts at exactly 3.0s intervals, `blackdetect` from 48.04s, and a mean
+intra-clip pixel delta of ~0.3/255, i.e. nothing moves.
+
+So the composition does two jobs that pull in different directions:
+
+1. **The stills move.** Nothing in the source does, which makes the image pack's
+   MOVE column load-bearing rather than decorative. Every push, drift and rise is
+   applied in `src/klarna/Klarna.tsx`, including F08's specified dead still.
+2. **The gap is filled.** Where there is no photograph — most of 86s–139s, the
+   "so is it halal / ask three questions" argument — a motion-graphic card carries
+   it. See `src/klarna/Cards.tsx`. Cards sit on a blurred, darkened still rather
+   than flat black, so the film never visibly changes medium halfway through.
+
+```bash
+node scripts/build-klarna.mjs <source.mov>   # stills, VO, timing.ts, srt
+npx remotion render src/index.ts Klarna-Short ../media/klarna-short.mp4
+```
+
+- **`scripts/klarna-edit.mjs`** — the only place timing is decided. 52 shots, each
+  pinned to the voiceover line it belongs to, from a forced alignment of the known
+  script against the audio's own speech/silence boundaries.
+- **Numbers are on £90, not the pack's £75.** The image pack's burn-in table
+  contradicts itself (4 × £22.50 = £90 in F01/F02A, a £75 basket from F04 on) and
+  the voiceover says "a ninety pound jacket" out loud. Type agrees with audio.
+- **Length.** The two packs disagree — `klarnaimageprompts.txt` demands under 60s,
+  `klarna-scene-pack.txt` says ~150s is the band that produced four of the five
+  best videos. The recorded read is the long-form one, which settles it. 173s is
+  inside YouTube's 180s Shorts limit with 6.7s to spare — don't spend it.
+
+### Chromium
+
+This box can't reach `remotion.media` to fetch Chrome Headless Shell (egress
+policy, 403), but it ships Playwright's Chromium. `remotion.config.ts` points at
+`chromium_headless_shell-*/chrome-linux/headless_shell` — the standalone build of
+old headless mode. The full `chrome` binary will not work: Remotion launches with
+`--headless`, which current Chrome has removed.
 
 ## Inflation short — how it's built
 

@@ -12,35 +12,37 @@ import {
   useVideoConfig,
 } from 'remotion';
 import {FONT} from '../theme';
+import {Card} from './Cards';
 import {Figure} from './Graphics';
 import {SHOTS, Shot, TOTAL_FRAMES} from './timing';
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Klarna — 1080x1920, 30fps, 51.0s.
+// Klarna — 1080x1920, 30fps, 2:53.
 //
-// This is the opposite job to src/inflation/. There the footage was a finished
-// cut and the overlay's whole task was to keep out of its way. Here the supplied
-// .mov is sixteen *static* stills held a flat 3.00s each — measured, mean
-// intra-clip pixel delta ~0.3/255 — so there is no cut to respect and no motion
-// to avoid fighting. All of the movement in this film is made here.
+// The supplied .mov is sixteen static stills held a flat 3.00s each — 48.0s of
+// picture, then 125.2s of black — under the full 173.28s long-form voiceover.
+// Measured: sixteen hard cuts at exactly 3.0s, blackdetect from 48.04s, mean
+// intra-clip pixel delta ~0.3/255.
 //
-// Which is exactly what the image pack assumes: it specifies 16 stills and gives
-// each one a MOVE (total travel, eased out), because "a 6.53s static frame in a
-// Short is a scroll". Those moves are implemented in Frame below, one per shot,
-// with the pack's own numbers.
+// So this composition does two jobs at once, and they are genuinely different:
+//
+//   1. THE STILLS MOVE. Nothing in the source moves, which makes the image pack's
+//      MOVE column load-bearing rather than decorative. Every push, drift and rise
+//      is applied here, including F08's specified dead still.
+//   2. THE GAP IS FILLED. Where the film has no photograph — most of 86s-139s, the
+//      "so is it halal / ask three questions" argument — a motion-graphic card
+//      carries it instead. See ./Cards.tsx for why those are type and not more
+//      still life.
 //
 // WHY REMOTION AND NOT HYPERFRAMES. Both are in this repo. HyperFrames renders
-// hosted HTML projects and is the right tool when the deliverable is a shareable
-// project someone edits in a browser; its MCP compose/render tools are also
-// disabled for local CLI agents, so a build here could not drive it end to end.
-// This deliverable is a file — a 1080x1920 mp4 that has to be frame-exact against
-// a re-cut voiceover, reproducible from a script, and diffable in git. That is
-// Remotion's job, it is what src/inflation/ already does with supplied footage,
-// and the pack's own WIRING note says to drive these stills "the way src/inflation/
-// drives its stills". So: Remotion.
+// hosted HTML projects and is right when the deliverable is a shareable project
+// edited in a browser; its MCP compose/render tools are also disabled for local
+// CLI agents, so a scripted build could not drive it end to end. This deliverable
+// is a file that has to stay frame-exact against a fixed voiceover, rebuild from a
+// script, and diff in git — and the pack's own WIRING note says to drive these
+// stills the way src/inflation/ drives its stills.
 //
-// Layer order, bottom to top: still, grade, legibility scrim, caption, figure,
-// progress hairline.
+// Layer order, bottom to top: still or card, grade, scrim, caption, figure, rail.
 // ─────────────────────────────────────────────────────────────────────────────
 
 const P = {
@@ -58,9 +60,9 @@ const ease = (frame: number, dur: number) =>
   });
 
 /**
- * The still, moving. Scale starts from a base that covers the canvas (the source
- * is 1072x1920 against 1080x1920) plus whatever margin this shot's drift needs,
- * so a drift never exposes an edge.
+ * A still, moving. The base scale covers the canvas (the source is 1072x1920
+ * against 1080x1920) plus whatever margin this shot's drift needs, so a drift
+ * never exposes an edge.
  */
 const Frame: React.FC<{shot: Shot}> = ({shot}) => {
   const frame = useCurrentFrame();
@@ -84,9 +86,9 @@ const Frame: React.FC<{shot: Shot}> = ({shot}) => {
           ).toFixed(2)}px)`,
         }}
       />
-      {/* Grade. Every frame carries a warm amber accent except F06B, which the
-          pack keeps deliberately cold — the temperature break is the sting, so
-          the warm pass is switched off there and a cold one takes its place. */}
+      {/* Grade. Warm amber on every frame except the late-fee pair, which the pack
+          keeps deliberately cold — the temperature break is the sting, so the warm
+          pass is switched off there and a cold one takes its place. */}
       <AbsoluteFill
         style={{
           background: shot.cold
@@ -99,49 +101,46 @@ const Frame: React.FC<{shot: Shot}> = ({shot}) => {
   );
 };
 
+const CaptionLine: React.FC<{line: string; at: number; size: number}> = ({line, at, size}) => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const s = spring({frame: frame - at, fps, config: {damping: 200, mass: 0.6}});
+  return (
+    <span
+      style={{
+        fontFamily: FONT,
+        fontSize: size,
+        lineHeight: 1.08,
+        fontWeight: 750,
+        letterSpacing: -1.6,
+        color: P.cream,
+        textAlign: 'center',
+        textWrap: 'balance',
+        textShadow: '0 4px 34px rgba(0,0,0,0.72), 0 2px 8px rgba(0,0,0,0.6)',
+        opacity: s,
+        transform: `translateY(${interpolate(s, [0, 1], [22, 0]).toFixed(2)}px)`,
+      }}
+    >
+      {line}
+    </span>
+  );
+};
+
 /**
  * Captions sit in the top third, in the dark headroom every prompt in the pack
  * reserved for them ("subject in the lower two-thirds, dark open headroom above
- * for captions"). Lines arrive one at a time across the shot's speech window, so
- * a long hold still has something changing on it — which is what stops the five
- * shots that run past 3.3s from reading as a frozen frame.
+ * for captions"). Lines arrive one at a time, so a long hold still has something
+ * changing on it.
  */
 const Caption: React.FC<{shot: Shot}> = ({shot}) => {
-  const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
-  const lines = shot.cap.split('\n');
-  const [sIn, sOut] = shot.speech;
-  const start = Math.max(0, sIn - shot.from - 4);
-  const window = Math.max(12, (sOut - sIn) * 0.55);
-  const step = lines.length > 1 ? window / lines.length : 0;
-
+  const lines = (shot.cap ?? '').split('\n');
+  const step = Math.min(11, (shot.durationInFrames * 0.42) / Math.max(1, lines.length));
   return (
     <AbsoluteFill style={{padding: '250px 76px 0', alignItems: 'center'}}>
       <div style={{display: 'flex', flexDirection: 'column', gap: 6, alignItems: 'center'}}>
-        {lines.map((line, i) => {
-          const at = start + i * step;
-          const s = spring({frame: frame - at, fps, config: {damping: 200, mass: 0.6}});
-          return (
-            <span
-              key={i}
-              style={{
-                fontFamily: FONT,
-                fontSize: lines.length > 2 ? 74 : 82,
-                lineHeight: 1.08,
-                fontWeight: 750,
-                letterSpacing: -1.6,
-                color: P.cream,
-                textAlign: 'center',
-                textWrap: 'balance',
-                textShadow: '0 4px 34px rgba(0,0,0,0.72), 0 2px 8px rgba(0,0,0,0.6)',
-                opacity: s,
-                transform: `translateY(${interpolate(s, [0, 1], [22, 0]).toFixed(2)}px)`,
-              }}
-            >
-              {line}
-            </span>
-          );
-        })}
+        {lines.map((line, i) => (
+          <CaptionLine key={i} line={line} at={3 + i * step} size={lines.length > 2 ? 74 : 82} />
+        ))}
       </div>
     </AbsoluteFill>
   );
@@ -157,7 +156,7 @@ const Scrim: React.FC = () => (
 );
 
 /** A hairline that fills across the film. Cheap, and it reads as "nearly done". */
-const Progress: React.FC = () => {
+const Rail: React.FC = () => {
   const frame = useCurrentFrame();
   return (
     <AbsoluteFill style={{justifyContent: 'flex-end'}}>
@@ -174,22 +173,34 @@ const Progress: React.FC = () => {
   );
 };
 
+const Shot: React.FC<{shot: Shot}> = ({shot}) => (
+  <>
+    {shot.card ? (
+      <Card c={shot.card} dur={shot.durationInFrames} />
+    ) : (
+      <>
+        <Frame shot={shot} />
+        <Scrim />
+      </>
+    )}
+    {shot.cap ? <Caption shot={shot} /> : null}
+    {shot.num ? (
+      <AbsoluteFill style={{paddingTop: shot.figureY, alignItems: 'center'}}>
+        <Figure num={shot.num} at={8} />
+      </AbsoluteFill>
+    ) : null}
+  </>
+);
+
 export const Klarna: React.FC = () => (
   <AbsoluteFill style={{backgroundColor: P.ink}}>
     <Audio src={staticFile('klarna-vo.m4a')} />
-    {SHOTS.map((shot) => (
-      <Sequence key={shot.id} from={shot.from} durationInFrames={shot.durationInFrames}>
-        <Frame shot={shot} />
-        <Scrim />
-        <Caption shot={shot} />
-        {shot.num ? (
-          <AbsoluteFill style={{paddingTop: shot.figureY, alignItems: 'center'}}>
-            <Figure num={shot.num} at={Math.max(0, shot.speech[0] - shot.from + 6)} />
-          </AbsoluteFill>
-        ) : null}
+    {SHOTS.map((shot, i) => (
+      <Sequence key={i} from={shot.from} durationInFrames={shot.durationInFrames}>
+        <Shot shot={shot} />
       </Sequence>
     ))}
-    <Progress />
+    <Rail />
   </AbsoluteFill>
 );
 

@@ -1,18 +1,13 @@
 {
-  "_comment": "Part 16 — Is Klarna Halal? Built 2026-08-04 from klarnaimageprompts.txt v2 (16 stills) and a voiceover re-cut from the supplied long-form read. Uploads private with a scheduled publishAt so title, thumbnail and publish time all stay editable until it goes live. Pairs with Part 15 (Aug 5) to move exactly one variable: the subject. Same title format, same description shape, same 03:00 PT slot.",
-
+  "_comment": "Part 16 — Is Klarna Halal? Built 2026-08-04 from the supplied .mov (16 stills + the full long-form voiceover), klarnaimageprompts.txt v2 and klarnapromptpack.txt. Runs the film at its supplied length; the 125s that arrived with no picture is covered by motion-graphic cards. Uploads private with a scheduled publishAt so title, thumbnail and publish time all stay editable until it goes live. Pairs with Part 15 (Aug 5) to move exactly one variable: the subject.",
   "file": "media/klarna-short.mp4",
-
   "title": "Is Klarna Halal? (Somebody Pays That 0%) #klarna #islamicfinance",
-
   "title_alternatives": {
     "_why_chosen": "Kept verbatim from next-slate.md, which locked it on 2026-08-03. Part 15 publishes 'Is Paper Gold Halal? (Most People Own a Promise)' on Aug 5 and this publishes Aug 6 in the same slot with the same format — so the pair changes exactly one variable, the subject, and the result is readable. Rewriting the title here would spend that test for nothing. It is also the niche's dominant Shorts format ('Is Forex Halal?' did 158K on a 71.8K-sub channel against 6.4K for 'What do we really mean by Halal Investing?'), and 'Klarna' is the specific named product the format wants.",
     "bare_fragment": "Nobody told you who pays for the 0% #klarna #islamicfinance",
     "mechanism_format": "How Klarna Really Makes Money (And Who Pays For It) #klarna #islamicfinance"
   },
-
   "description": "Four payments. Zero interest. Nothing extra to pay. So who is paying for it?\n\nKlarna does not lend you money — it pays the shop in full, today, and then you owe Klarna. That one fact decides everything that follows.\n\nThe shop does not receive the full price. On a £90 jacket it receives around £85; the rest is the merchant fee, often about 3-6%. No shop absorbs that. It goes into the sticker — which means the price rises for everyone in that shop, including the person paying cash who has never used the app.\n\nThree questions that settle it, whatever the brand:\n\n1. Is this a sale, or a loan? They paid the shop; you owe them. That is a loan.\n2. Does anyone profit from that loan? Not from you — from the merchant's fee. A loan that brings a benefit to the lender is the exact phrase scholars argue over.\n3. Would cash have been cheaper? If later costs more than now, you paid for time.\n\nScholars genuinely differ. Same price as cash, no late fee, no interest — and many permit it. Add a penalty that becomes the lender's profit, or a higher price for paying later, and the disagreement ends.\n\nAnd \"buy now, pay later\" was never the problem. Islam has had it for fourteen hundred years — murabaha. The seller buys the thing, actually owns it, and sells it to you at one disclosed price, fixed at signing, paid over time. Late? You owe the same. Not a penny more.\n\nOne price. One owner. No penalty.\n\nThe problem was never \"pay later\". It is who earns on the \"later\".\n\nMORE IN THE SERIES:\nMurabaha, the fixed-price sale: https://youtu.be/c8uyMAIORkU\nThe credit card minimum payment trap: https://youtu.be/scjEcnABEOo\nHow banks quietly trap your savings: https://youtu.be/OXIP3EJROQk\nHow to buy a house without interest: https://youtu.be/riQ7dLSnogo\nPart 15 - Is paper gold halal?: https://youtube.com/shorts/JB6Q_7IE9Jo\n▶ Full series in order: https://www.youtube.com/playlist?list=PLKLKzR1QgFHE\n▶ Daily money takes on X: https://x.com/financedecode\n\nNo jargon. Just mechanisms.\nThis is financial education, not financial advice. BNPL terms, merchant fees and late-fee policies differ by country and change often — check your own provider's current terms before you use them. Figures on screen are worked from a £90 basket to show the mechanism, not quoted from any provider's rate card.\n\n#Klarna #BuyNowPayLater #BNPL #IslamicFinance #HalalMoney #MuslimMoney #Murabaha #FinanceDecoded",
-
   "tags": [
     "is klarna halal",
     "is buy now pay later halal",
@@ -30,27 +25,24 @@
     "halal money"
   ],
   "_why_tags": "The first five are the literal queries with measured demand and almost no supply. 'is afterpay halal' and 'is clearpay halal' are the same question asked of the sibling products, and this video answers all three because the three-question test at its centre is product-agnostic. 'riba explained' was dropped from the scene pack's list: the English SERP for riba is contested by the Royal Institute of British Architects, so it is kept to the description and script and out of anything that competes for a search slot. Whole field is ~300 chars, inside YouTube's 500-char cap.",
-
   "engagement_comment": "The bit that surprises people: the price already went up for everyone in that shop — including the person paying cash who has never used the app. Which of the three questions would you have failed? 👇",
-
   "decision_rule": {
     "decision_hours": 72,
     "pass_views": 150,
     "dead_views": 50
   },
-
   "caption_file": "media/klarna.srt",
   "caption_language": "en",
   "thumbnail": "media/thumbs/klarna-final.jpg",
-
   "privacy": "private",
   "publish_at": "2026-08-06T10:00:00Z",
-
   "notes": [
-    "Runtime 51.0s. The supplied .mov was 16 static stills held a flat 3.00s each (48.0s of picture, then 125.2s of black) carrying the LONG-FORM 173.3s voiceover. The picture matched klarnaimageprompts.txt v2 frame for frame; the audio did not match its 55.37s script. The narration here is re-cut from that same read — same voice, same room tone, nothing re-synthesised — down to the eleven beats the 16 frames actually depict.",
-    "51.0s clears the channel's dead 61-90s bucket (n=3, median 6.9 v/day, no survivors) by 9 seconds. The 31-60s bucket is n=1 at 89.8 v/day.",
-    "Burn-in figures are on a £90 basket, not the pack's £75. The pack's own table is internally inconsistent (4 x £22.50 = £90 in F01/F02A, then a £75 basket from F04 on) and the voiceover says 'a ninety pound jacket' and 'the shop kept eighty-five' out loud. The audio cannot change without re-synthesising, so the type was moved to agree with it.",
-    "The pack's '+41% average basket' figure is NOT on screen. The pack flags it as sourced from marketing material rather than a filing and offers 'bigger basket' as the softening; that softening is what shipped. Nothing on screen is now sourced to anything but arithmetic off £90 and the stated 3-6% fee.",
-    "The close says 'three questions' without listing them — that is the pack's design (F11A/F11B are a CTA, not an enumeration). The description leads with all three and the pinned comment asks which one the viewer would fail, so the promise is answered where the click goes."
+    "Runtime 2:53.3 (173.28s) — the supplied voiceover's full length, untouched. 173s is inside YouTube's 180s Shorts limit, so it keeps Shorts-feed distribution, but with only 6.7s of headroom: do not let any future re-cut add time.",
+    "The supplied .mov was 16 static stills held a flat 3.00s each (48.0s of picture, then 125.2s of black) under the full 173.28s long-form read. Measured: 16 hard cuts at exactly 3.0s intervals, blackdetect from 48.04s, mean intra-clip pixel delta ~0.3/255. The stills match klarnaimageprompts.txt v2 frame for frame, F01 through F11B.",
+    "52 shots: 22 on the stills (each carrying the pack's own MOVE, since nothing in the source moves) and 30 motion-graphic cards covering the stretches with no photography — most of 86s-139s, which is the 'so is it halal / ask three questions' argument. Cards sit on a blurred, darkened still rather than flat black so the film never visibly changes medium.",
+    "The two packs disagree on length: klarnaimageprompts.txt demands under 60s, klarna-scene-pack.txt says '~150s sits inside the 133-180s band that produced four of this channel's five best videos. Do not cut it to 60s.' The recorded voiceover is the long-form script, which settles it. The channel's dead bucket is 61-90s (n=3, median 6.9 v/day, no survivors); >90s is n=11, median 42.4.",
+    "Burn-in figures are on a £90 basket, not the pack's £75. The pack's own table is internally inconsistent (4 x £22.50 = £90 in F01/F02A, then a £75 basket from F04 on) and the voiceover says 'a ninety pound jacket' and 'the shop kept eighty-five' out loud, so the type agrees with the audio.",
+    "The pack's '+41% average basket' figure is NOT on screen. The pack flags it as sourced from marketing material rather than a filing and offers 'bigger basket' as the softening; that shipped.",
+    "All three questions are now enumerated on screen (ONE/TWO/THREE cards with their verdicts), so the close pays off its own promise rather than deferring it to the description."
   ]
 }
