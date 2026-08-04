@@ -1,0 +1,308 @@
+G01
+
+PROMPT
+85mm macro, f/2.8. A single blank cream card stands upright on its long edge on dark brushed charcoal, entirely alone, balanced and still. One hard raking key from camera-left throws a single long defined shadow toward camera. Fine dust on the surface. Card low-centre, the top half of the frame empty and near-black. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, second card, multiple cards, cards lying flat, card fallen, propped or leaning card, support or stand, hands, people, printed card, chip, magnetic stripe, doubled or broken shadow, soft diffuse light
+
+--------------------------------------------------------------------------------
+
+G02
+
+PROMPT
+85mm, f/2.8. Two simplified geometric hands in terracotta #E85F42 cuffs rest open and empty on a dark counter, palms up, fingers relaxed. Between them, pressed into the fine dust on the counter, a clean rectangular card-shaped impression — the card itself gone. Low raking key from camera-left, deep shadow filling the right. HANDS — simplified geometric anatomy, matte clay, terracotta #E85F42 cuffs. No head, no face in frame. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, card present, object in the hands, coins, phone, extra fingers, six fingers, fused or malformed hands, fingernail detail, wristwatch, jewellery, head in frame, face, arms entering from the top of frame, drawn or dotted outline
+
+--------------------------------------------------------------------------------
+
+G03
+
+PROMPT
+50mm, f/4. A closed dark metal cash drawer sits shut on a shop counter, its face plain and unmarked. One blank cream card rests flat on top of it, square to frame. No money anywhere in shot. Hard key from camera-left, warm amber glint along the drawer's top edge, everything beyond falling to near-black. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, open drawer, visible money, banknotes, coins, cash trays, till display, register screen, keypad, buttons, receipt roll, printed card, branding, hands, people, second card, bright even exposure
+
+--------------------------------------------------------------------------------
+
+G04
+
+PROMPT
+100mm macro, f/2.8. A short stack of worn banknotes lies on a scuffed shop counter, and one blank cream card rests flat across the top of the stack like a lid, covering it. The card is square to frame, the notes visible only at the edges. Hard side light from camera-left, deep shadow right. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, banknote portraits, printed currency detail, denomination numerals, crisp new notes, coins, card floating above the stack, missing contact shadow, second card, wallet, purse, hands, people, till
+
+--------------------------------------------------------------------------------
+
+G05
+
+PROMPT
+60mm, f/5.6, locked-off tabletop still life on dark walnut with visible grain. A heavy brass counterweight rests squarely on top of a single blank cream card, pressing it flat. Nothing else in frame. Near-photorealistic brass with real specular hits and fine patina, one long unbroken shadow to the right. Absolute symmetry and stillness. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, engraved text, monogram, crest, hallmark, weight numerals, third object, tilted or askew card, asymmetric composition, hands, people, shallow depth of field, bokeh, handheld feel, broken or doubled shadow
+
+--------------------------------------------------------------------------------
+
+G06
+
+PROMPT
+100mm macro, f/2.8. A short stack of worn banknotes on a scuffed counter, with a thin top slice of the stack lifted clear and set down separately a little to the right — two piles now, one obviously larger. Hard side light from camera-left, worn corners and soft folds on the notes, deep shadow right. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, banknote portraits, printed currency detail, denomination numerals, crisp new notes, equal piles, slice in mid-air, floating notes, missing contact shadows, coins, wallet, payment card, hands, people, high-key lighting
+
+--------------------------------------------------------------------------------
+
+G07
+
+PROMPT
+100mm extreme macro, f/4. A single thin slice of banknotes lies alone on dark charcoal, cleanly separated from everything else, small in the frame. Its edge is sharp and its shadow is hard. Vast empty dark surface around and above it. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, banknote portraits, printed currency detail, denomination numerals, the main stack in frame, second pile, coins, subject large in frame, subject centred high, soft diffuse shadow, hands, people, bright even exposure
+
+--------------------------------------------------------------------------------
+
+G08
+
+PROMPT
+50mm, f/4, slightly high angle. Two neat piles of worn banknotes sit side by side on dark matte charcoal, clearly separated, one noticeably taller than the other, each casting an identical hard shadow in the same direction. Nothing else in frame. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, banknote portraits, printed currency detail, denomination numerals, equal piles, three piles, piles touching or overlapping, scattered notes, coins, multiple shadow directions, hands, people, background objects
+
+--------------------------------------------------------------------------------
+
+G09
+
+PROMPT
+100mm macro, f/2.8. A blank cream cardboard price tag lies half-buried in the folds of a dark wool jacket — only a corner and the punched hole showing, the rest swallowed by the fabric. Hard low raking key from camera-left, warm amber rim on the exposed corner. Extremely shallow focus: the visible corner sharp, the wool dissolving within centimetres. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, printed price, barcode, whole tag visible, tag on top of the fabric, tag clearly readable, second tag, string prominent, hanger, rail, hands, people, deep focus, flat frontal light, bright even exposure
+
+--------------------------------------------------------------------------------
+
+G10
+
+PROMPT
+85mm, f/2.8. The edge of a shop counter shot from low and close, its seam running across frame, with one blank cream card wedged tightly into the join and held there by the two surfaces. Near-photorealistic worn timber. Hard key from camera-left, warm amber along the counter's lip, everything below in shadow. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, card falling out, card loose, gap around the card, printed card, second card, receipts, paperwork, hands, people, shop signage, price signage, bright even exposure, flat frontal light
+
+--------------------------------------------------------------------------------
+
+G11
+
+PROMPT
+85mm macro, f/2.8. A phone lies face DOWN on the same scuffed counter, its screen hidden, and a hard cold pool of light leaks out from beneath one edge onto the counter surface. Everything beyond that pool falls to near-black. Phone low-centre, dark space above. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cold blue-white grade with no warm accent anywhere. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, warm light, amber accent, amber rim, golden tone, warm colour grade, orange highlights, candlelight, sunlight, screen visible, screen face up, notification text, app icons, colourful UI, screen bloom, halo, glow spill beyond the counter pool, face reflected in the glass, hands, people
+
+--------------------------------------------------------------------------------
+
+G12
+
+PROMPT
+50mm, f/5.6, square-on. A single empty brass scale pan hangs still on dark walnut, its chains slack, weathered and old, nothing in it. Near-photorealistic brass with deep patina and fine scratches. One hard key from upper left, long real shadow, deep near-black surround. Quiet, ancient, settled. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, engraved text, hallmarks, maker's marks, numerals, second pan, full balance apparatus, anything in the pan, coins, weights, swinging or tilted pan, motion, hands, people, bright polished new brass, cold or blue grade
+
+--------------------------------------------------------------------------------
+
+G13
+
+PROMPT
+85mm, f/4. A single blank cream card stands upright and dead centre in one tight pool of hard light on a dark matte surface, everything beyond the pool black. Isolated, deliberate, waiting. Card low in frame, wide dark margin above. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, second card, props, background detail, visible room, floor line, printed card, chip, magnetic stripe, card lying flat, card leaning or propped, hands, people, visible spotlights or fixtures, soft diffuse light, off-centre framing
+
+--------------------------------------------------------------------------------
+
+G14
+
+PROMPT
+50mm, f/5.6, square-on. Exactly three identical blank cream cards stand upright in a precise evenly spaced row on dark walnut, all the same height, each casting an identical hard shadow in the same direction. Nothing else in frame. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, two cards, four cards, five cards, any count other than three, uneven spacing, uneven heights, overlapping or fanned cards, cards lying flat, fallen card, printed cards, multiple shadow directions, hands, people, background objects
+
+--------------------------------------------------------------------------------
+
+G15
+
+PROMPT
+50mm, f/4, slightly high angle. A dark counter divided across the middle by one hard edge of light. On the lit side, a short stack of worn banknotes. On the dark side, a single blank cream card. The two are clearly separated, neither touching. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, banknote portraits, printed currency detail, denomination numerals, objects touching or overlapping, third object, both objects lit equally, even lighting, soft transition between light and shadow, hands, people, printed card
+
+--------------------------------------------------------------------------------
+
+G16
+
+PROMPT
+85mm, f/2.8. A short stack of worn banknotes sits on a shop counter in the middle distance. Behind and above it stands a single blank cream card, upright, and its long hard shadow reaches across the counter and falls over the notes. Hard key from camera-left. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, banknote portraits, printed currency detail, denomination numerals, card touching the notes, card lying flat, shadow falling away from the notes, missing shadow, second card, coins, hands, people, soft diffuse shadow
+
+--------------------------------------------------------------------------------
+
+G17
+
+PROMPT
+60mm, f/5.6, locked-off. A heavy brass stamp rests face down on dark walnut, beside a single blank cream card that is still completely unmarked. The stamp has not come down. Near-photorealistic brass, fine patina, one long unbroken shadow. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, stamped card, marked card, impression on the card, ink, ink pad, ink stains, engraved text on the stamp, monogram, crest, wax seal, third object, tilted or askew card, hands, people, broken or doubled shadow
+
+--------------------------------------------------------------------------------
+
+G18
+
+PROMPT
+50mm, f/5.6, square-on. Museum-style staging on a dark matte plinth: a single heavy brass bar on the left, a short stack of worn banknotes on the right, clearly separated with empty plinth between them. Warm amber rim on the brass, real contact shadows anchoring both. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, objects touching, objects overlapping, bar resting on the notes, hallmark stamps, bullion markings, weight numerals, purity text, serial numbers, banknote portraits, denomination numerals, third object, price tag, label, plaque, hands, people, floating objects, missing contact shadows
+
+--------------------------------------------------------------------------------
+
+G19
+
+PROMPT
+50mm, f/4, slightly high angle. Two stacks of worn banknotes on a dark plinth. The left stack is whole and untouched. The right stack has a thin slice lifted clear and set down beside it. The difference between them is the subject. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, banknote portraits, printed currency detail, denomination numerals, both stacks identical, both stacks untouched, slice in mid-air, floating notes, missing contact shadows, coins, third stack, hands, people, flat overhead light
+
+--------------------------------------------------------------------------------
+
+G20
+
+PROMPT
+50mm, f/5.6, square-on. A single heavy brass bar rests directly on top of a folded stack of worn banknotes on a dark plinth, its weight visibly compressing them. Warm amber rim on the brass, deep shadow beneath. Deliberate and weighted. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, objects separated, bar beside the notes, bar floating, missing contact shadow, hallmark stamps, bullion markings, weight numerals, banknote portraits, denomination numerals, third object, hands, people, cold or blue grade on the brass
+
+--------------------------------------------------------------------------------
+
+G21
+
+PROMPT
+60mm, f/5.6. A short stack of aged loose paper leaves rests on dark walnut, edges soft and worn, corners curled, the surfaces completely blank. One hard key from camera-left rakes across the edges so each leaf separates. Deep near-black around. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, text, script, calligraphy, writing, printing, ruled lines, margins, illustrations, book spine, binding, cover, second stack, crisp white paper, modern paper, hands, people, bright even exposure
+
+--------------------------------------------------------------------------------
+
+G22
+
+PROMPT
+85mm, f/2, close. A small folded bundle of worn banknotes rests alone on a scuffed counter in a single narrow shaft of hard light, everything around it dark. Nothing else in frame. Soft folds, worn corners, real paper texture. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, banknote portraits, printed currency detail, denomination numerals, crisp new notes, coins, payment card, phone, wallet, purse, second bundle, till, hands, people, high-key lighting, evenly lit frame
+
+--------------------------------------------------------------------------------
+
+G23
+
+PROMPT
+85mm, f/4. A heavy brass sand timer stands on dark walnut, its glass clean and its sand mid-fall, caught in a thin hard shaft of light. Near-photorealistic brass with fine patina, deep near-black surround, one long shadow to the right. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, numerals, engraved text, hallmarks, clock face, clock hands, watch, digital display, second timer, broken glass, spilled sand, motion blur on the sand, hands, people, bright even exposure, cold or blue grade
+
+--------------------------------------------------------------------------------
+
+G24
+
+PROMPT
+50mm, f/5.6, locked-off, square-on. Two identical blank cream cards lie flat side by side on dark charcoal, perfectly level with each other, evenly spaced, casting two identical hard shadows in the same direction. Absolute symmetry. Settled. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, cards at different heights, one card raised, uneven spacing, tilted or askew cards, overlapping cards, third card, printed cards, propping objects, multiple shadow directions, hands, people, shallow depth of field, camera movement
+
+--------------------------------------------------------------------------------
+
+G25
+
+PROMPT
+50mm, f/5.6, square-on. The same two blank cream cards on dark charcoal, but now one of them is propped up on a small brass weight so the pair sits visibly uneven, one clearly higher than the other. Their shadows are no longer the same length. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, cards level, cards at the same height, symmetrical composition, identical shadows, weight numerals, hallmarks, engraved text, third card, printed cards, cards fallen, hands, people, flat overhead light
+
+--------------------------------------------------------------------------------
+
+G26
+
+PROMPT
+35mm, f/2.8. A shop interior after closing, shot down its length: shelving and rails receding into near-black, everything unlit except one small warm practical lamp still burning at the far end. Nothing human in frame. Quiet and still. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, people, shoppers, staff, mannequins, faces, shop signage text, storefront branding, price signage, shelf labels, POS displays, overhead fluorescent light, evenly lit interior, daylight, windows, second light source, cluttered floor, fallen stock
+
+--------------------------------------------------------------------------------
+
+G27
+
+PROMPT
+50mm, f/5.6, square-on. A folded wool jacket and a single blank cream card sit side by side on a dark matte plinth, evenly spaced, both calmly and equally lit, neither dominant. Real contact shadows anchoring each. Balanced and unhurried. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, objects touching, objects overlapping, card on the jacket, one object dominant, uneven lighting, third object, price tag, label, plaque, printed card, hands, people, floating objects, missing contact shadows
+
+--------------------------------------------------------------------------------
+
+G28
+
+PROMPT
+50mm, f/4. An old brass merchant's balance and a worn wooden measuring scoop rest together on coarse sand-coloured cloth, both deeply aged, the metal dark with patina and the wood softened by handling. One hard key from camera-left, warm amber accent, deep near-black beyond the cloth. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, engraved text, numerals, hallmarks, maker's marks, dates, modern materials, plastic, chrome, polished new brass, third object, grain or produce spilled, coins, hands, people, bright even exposure, cold or blue grade
+
+--------------------------------------------------------------------------------
+
+G29
+
+PROMPT
+50mm, f/4. Two simplified geometric hands in deep navy #1E3A5F cuffs hold a folded wool jacket clear of a dark matte plinth, mid-transfer, weight visibly in the hands. The plinth below is empty. Matte clay anatomy, real cast shadows. HANDS — simplified geometric anatomy, matte clay, deep navy #1E3A5F cuffs. No head, no face in frame. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, extra fingers, six fingers, fused or malformed hands, extra hands, head in frame, face, jacket resting on the plinth, jacket floating without hands, second garment, price tag, label, hands empty, people, bright even exposure
+
+--------------------------------------------------------------------------------
+
+G30
+
+PROMPT
+60mm, f/5.6, locked-off tabletop still life on dark walnut. A heavy brass stamp is pressed down squarely onto a single blank cream card and held there, its full weight on the card, the impression happening. Near-photorealistic brass, one long unbroken shadow to the right. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, stamp lifted, stamp beside the card, stamp in mid-air, engraved text on the stamp, monogram, crest, coat of arms, lettering in the impression, wax seal, ink pad, ink stains, third object, tilted card, hands, people, broken shadow
+
+--------------------------------------------------------------------------------
+
+G31
+
+PROMPT
+60mm, f/5.6, locked-off, square-on. The stamped blank cream card lies flat and alone on dark walnut, exactly as it was left, with a small neat stack of worn banknotes resting beside it, unchanged and untouched. Absolute stillness. The composition should feel final and settled. Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture, real cast shadows. One hard key from camera-left, deep near-black background, cool neutral grade with a single warm amber accent. Shallow depth of field. 9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom above for captions.
+
+NEGATIVE
+text, lettering, typography, numbers, digits, currency symbols, logos, brand names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation, blown highlights, crushed blacks, tilted horizon, motion blur, lens flare, low resolution, jpeg artefacts, subject filling the upper third, obstructed headroom, banknote portraits, printed currency detail, denomination numerals, extra notes added, notes scattered, card marked with text or numerals, second card, brass stamp in frame, third object, tilted or askew card, asymmetric composition, hands, people, camera movement, shallow depth of field
+
