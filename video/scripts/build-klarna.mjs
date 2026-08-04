@@ -50,13 +50,23 @@ ff(['-i', SRC, '-map', '0:a', '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48
 copyFileSync(VO, path.resolve('public/klarna-vo.m4a'));
 
 // ── timing ───────────────────────────────────────────────────────────────────
+// Gap frames adopt themselves. A card whose gap-NN.jpg has been generated stops
+// being type-on-a-blurred-reuse and becomes a real shot: its own frame, sharp,
+// carrying the MOVE from klarna-gap-frames.txt, with the same type over it. Until
+// then it falls back to `bg`. So generation and wiring are decoupled — drop the
+// files in and rebuild, nothing else changes.
+const gapPath = (n) => `public/broll/klarna/gap-${String(n).padStart(2, '0')}.jpg`;
+const haveGap = (n) => (n ? existsSync(path.resolve(gapPath(n))) : false);
+const gapsFound = SHOTS.filter((s) => haveGap(s.gap)).length;
+
 const dur = durations();
 const shots = SHOTS.map((s, i) => ({
   from: Math.round(s.at * FPS),
   durationInFrames: Math.round((s.at + dur[i]) * FPS) - Math.round(s.at * FPS),
   still: s.still ?? null,
+  gap: haveGap(s.gap) ? s.gap : null,
   card: s.card ?? null,
-  move: s.move ?? {},
+  move: (haveGap(s.gap) ? s.gapMove : s.move) ?? {},
   cold: !!s.cold,
   figureY: s.figureY ?? 780,
   cap: s.cap ?? null,
@@ -82,7 +92,8 @@ writeFileSync(
     `  | {kind: 'sum'; text: string}\n` +
     `  | {kind: 'cracked'; text: string};\n\n` +
     `export type Shot = {\n  from: number;\n  durationInFrames: number;\n` +
-    `  still: number | null;\n  card: any | null;\n  move: Move;\n  cold: boolean;\n` +
+    `  still: number | null;\n  gap: number | null;\n  card: any | null;\n` +
+    `  move: Move;\n  cold: boolean;\n` +
     `  figureY: number;\n  cap: string | null;\n  num: Num | null;\n};\n\n` +
     `export const SHOTS: Shot[] = ${JSON.stringify(shots, null, 2)};\n`
 );
@@ -116,3 +127,7 @@ console.log(`stills     → public/broll/klarna/ (16)`);
 console.log(`voiceover  → ../media/klarna-vo.m4a (whole, ${TOTAL}s)`);
 console.log(`timing     → src/klarna/timing.ts (${shots.length} shots, ${totalFrames} frames)`);
 console.log(`captions   → ../media/klarna.srt (${align.length} cues)`);
+console.log(
+  `gap frames → ${gapsFound}/31 generated` +
+    (gapsFound < 31 ? ` — the rest still fall back to a blurred reuse` : ` — all wired`)
+);

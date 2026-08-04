@@ -41,6 +41,11 @@ export const TOTAL = 173.28;
 //  9 F06B cold phone  10 F07A basket      11 F07B plinth     12 F08 stamp+card
 // 13 F09 jacket+bar   14 F10 cracked      15 F11A Amir       16 F11B walking
 
+// GAP FRAMES. Every card also names a `gap` — its own generated still from
+// klarna-gap-frames.txt, with the MOVE from that file's placement table. Until
+// gap-NN.jpg exists in public/broll/klarna/, the build falls back to `bg` (one of
+// the 16 blurred behind the type). Once it exists the card's type sits on its own
+// purpose-shot frame instead, sharp and moving, and the film stops reusing.
 /**
  * `at` is the shot's in-point in seconds, taken from the forced alignment so the
  * picture changes on the line it belongs to. Each shot runs until the next one.
@@ -55,27 +60,27 @@ export const SHOTS = [
    num: {kind: 'hook', text: '4 payments of £22.50', sub: '0% interest'}, figureY: 545},
   {at: 2.60, still: 3, move: {push: -0.08, dx: -30}, cap: 'So who is paying\nfor it?',
    num: {kind: 'chip', text: 'the fifth payment: ?'}, figureY: 655},
-  {at: 6.00, card: {type: 'statement', text: 'Because somebody is.', bg: 3}, cap: null, num: null},
-  {at: 8.20, card: {type: 'statement', text: 'And it might be you.', sub: 'Just not where you’re looking.', bg: 3}, cap: null, num: null},
+  {at: 6.00, gap: 1, gapMove: {push: 0.05}, card: {type: 'statement', text: 'Because somebody is.', bg: 3}, cap: null, num: null},
+  {at: 8.20, gap: 2, gapMove: {push: 0.04, dx: -20}, card: {type: 'statement', text: 'And it might be you.', sub: 'Just not where you’re looking.', bg: 3}, cap: null, num: null},
 
   // ── the mechanism ──────────────────────────────────────────────────────────
-  {at: 11.30, card: {type: 'statement', text: 'Klarna does not\nlend you money.', accent: 'not', bg: 1}, cap: null, num: null},
+  {at: 11.30, gap: 3, gapMove: {push: 0.06}, card: {type: 'statement', text: 'Klarna does not\nlend you money.', accent: 'not', bg: 1}, cap: null, num: null},
   {at: 16.40, still: 4, move: {push: 0.05}, cap: 'It pays the shop.\nToday. In full.', num: null},
-  {at: 20.90, card: {type: 'flow', nodes: ['KLARNA', 'THE SHOP', 'YOU'], lit: 2, bg: 4}, cap: 'Then you owe Klarna.', num: null},
-  {at: 22.60, card: {type: 'statement', text: 'It decides everything.', bg: 4}, cap: null, num: null},
+  {at: 20.90, gap: 4, gapMove: {push: 0.07}, card: {type: 'flow', nodes: ['KLARNA', 'THE SHOP', 'YOU'], lit: 2, bg: 4}, cap: 'Then you owe Klarna.', num: null},
+  {at: 22.60, gap: 5, gapMove: {}, card: {type: 'statement', text: 'It decides everything.', bg: 4}, cap: null, num: null},
 
   // ── the arithmetic ─────────────────────────────────────────────────────────
   {at: 24.60, still: 5, move: {push: 0.09}, cap: 'A £90 jacket.', num: null},
   {at: 25.95, still: 2, move: {push: 0.04}, cap: 'Four payments\nof £22.50.',
    num: {kind: 'chip', text: '£22.50 × 4  =  £90'}, figureY: 655},
   {at: 28.40, still: 4, move: {push: 0.05, dx: 20}, cap: 'The shop does not\nreceive £90.', num: null},
-  {at: 31.30, card: {type: 'number', from: '£90', to: '£85', note: 'what the shop actually receives', bg: 4}, cap: null, num: null},
-  {at: 34.10, card: {type: 'pct', label: 'KLARNA KEEPS', from: 3, to: 6, bg: 2}, cap: 'Often 3 to 6%.', num: null},
+  {at: 31.30, gap: 6, gapMove: {push: 0.05, dx: 24}, card: {type: 'number', from: '£90', to: '£85', note: 'what the shop actually receives', bg: 4}, cap: null, num: null},
+  {at: 34.10, gap: 7, gapMove: {push: 0.08}, card: {type: 'pct', label: 'KLARNA KEEPS', from: 3, to: 6, bg: 2}, cap: 'Often 3 to 6%.', num: null},
   {at: 39.60, still: 3, move: {push: 0.06}, cap: 'So where did that\n£5 come from?',
    num: {kind: 'chip', text: 'the missing fifth'}, figureY: 655},
-  {at: 41.60, card: {type: 'ledger', rows: [['You paid', '£90'], ['The shop kept', '£85']], bg: 2}, cap: null, num: null},
-  {at: 44.20, card: {type: 'statement', text: 'It was already\ninside the price.', accent: 'already', bg: 5}, cap: null, num: null},
-  {at: 47.20, card: {type: 'statement', text: 'No shop absorbs\nthat fee.', bg: 5}, cap: null, num: null},
+  {at: 41.60, gap: 8, gapMove: {push: 0.04}, card: {type: 'ledger', rows: [['You paid', '£90'], ['The shop kept', '£85']], bg: 2}, cap: null, num: null},
+  {at: 44.20, gap: 9, gapMove: {push: 0.09}, card: {type: 'statement', text: 'It was already\ninside the price.', accent: 'already', bg: 5}, cap: null, num: null},
+  {at: 47.20, gap: 10, gapMove: {push: 0.05}, card: {type: 'statement', text: 'No shop absorbs\nthat fee.', bg: 5}, cap: null, num: null},
   {at: 51.40, still: 5, move: {push: 0.09}, cap: 'It builds it into\nthe sticker.',
    num: {kind: 'arrow', from: '£90.00', to: '£95.40'}, figureY: 800},
 
@@ -88,8 +93,8 @@ export const SHOTS = [
   {at: 64.05, still: 9, cold: true, move: {push: 0.05}, cap: 'Then there is\nbeing late.', num: null},
   {at: 67.40, still: 9, cold: true, move: {push: 0.08}, cap: 'Where late fees apply,\nthat is revenue.',
    num: {kind: 'alert', text: 'LATE FEE'}, figureY: 790},
-  {at: 70.40, card: {type: 'statement', text: 'A penalty that becomes\ntheir profit.', accent: 'profit', cold: true, bg: 9}, cap: null, num: null},
-  {at: 72.50, card: {type: 'statement', text: 'That is the oldest\nobjection there is.', bg: 9}, cap: null, num: null},
+  {at: 70.40, gap: 11, gapMove: {push: 0.07}, card: {type: 'statement', text: 'A penalty that becomes\ntheir profit.', accent: 'profit', cold: true, bg: 9}, cap: null, num: null},
+  {at: 72.50, gap: 12, gapMove: {dx: 26}, card: {type: 'statement', text: 'That is the oldest\nobjection there is.', bg: 9}, cap: null, num: null},
 
   // ── the actual product ─────────────────────────────────────────────────────
   {at: 76.60, still: 10, move: {push: 0.06, dy: -40}, cap: 'Split it in four,\nand people spend more.',
@@ -97,40 +102,41 @@ export const SHOTS = [
   {at: 81.50, still: 11, move: {push: 0.05}, cap: "That's not a side effect.\nThat's the product.", num: null},
 
   // ── the three questions ────────────────────────────────────────────────────
-  {at: 86.50, card: {type: 'statement', text: 'So is it halal?', big: true, bg: 11}, cap: null, num: null},
-  {at: 88.35, card: {type: 'statement', text: 'Don’t ask about the brand.', sub: 'Ask three questions.', accent: 'three', bg: 11}, cap: null, num: null},
+  {at: 86.50, gap: 13, gapMove: {push: 0.06}, card: {type: 'statement', text: 'So is it halal?', big: true, bg: 11}, cap: null, num: null},
+  {at: 88.35, gap: 14, gapMove: {push: 0.04}, card: {type: 'statement', text: 'Don’t ask about the brand.', sub: 'Ask three questions.', accent: 'three', bg: 11}, cap: null, num: null},
 
-  {at: 92.00, card: {type: 'question', n: 'ONE', q: 'Is this a sale,\nor a loan?', bg: 4}, cap: null, num: null},
-  {at: 95.80, card: {type: 'flow', nodes: ['KLARNA', 'THE SHOP', 'YOU'], lit: 2, caption: 'They paid the shop. You owe them.', bg: 4}, cap: null, num: null},
-  {at: 98.10, card: {type: 'verdict', text: 'THAT IS A LOAN', bg: 4}, cap: null, num: null},
+  {at: 92.00, gap: 15, gapMove: {push: 0.05}, card: {type: 'question', n: 'ONE', q: 'Is this a sale,\nor a loan?', bg: 4}, cap: null, num: null},
+  {at: 95.80, gap: 16, gapMove: {dx: -26}, card: {type: 'flow', nodes: ['KLARNA', 'THE SHOP', 'YOU'], lit: 2, caption: 'They paid the shop. You owe them.', bg: 4}, cap: null, num: null},
+  {at: 98.10, gap: 17, gapMove: {push: 0.09}, card: {type: 'verdict', text: 'THAT IS A LOAN', bg: 4}, cap: null, num: null},
 
-  {at: 100.00, card: {type: 'question', n: 'TWO', q: 'Does anybody profit\nfrom that loan?', bg: 13}, cap: null, num: null},
-  {at: 103.40, card: {type: 'ledger', rows: [['From you', 'NO'], ['From the merchant’s fee', 'YES']], bg: 13}, cap: null, num: null},
-  {at: 106.60, card: {type: 'statement', text: 'A loan that brings a benefit\nto the lender.', accent: 'benefit', bg: 13}, cap: null, num: null},
-  {at: 110.60, card: {type: 'statement', text: 'The exact phrase the\nscholars argue over.', bg: 13}, cap: null, num: null},
+  {at: 100.00, gap: 18, gapMove: {push: 0.05}, card: {type: 'question', n: 'TWO', q: 'Does anybody profit\nfrom that loan?', bg: 13}, cap: null, num: null},
+  {at: 103.40, gap: 19, gapMove: {push: 0.06}, card: {type: 'ledger', rows: [['From you', 'NO'], ['From the merchant’s fee', 'YES']], bg: 13}, cap: null, num: null},
+  {at: 106.60, gap: 20, gapMove: {push: 0.07}, card: {type: 'statement', text: 'A loan that brings a benefit\nto the lender.', accent: 'benefit', bg: 13}, cap: null, num: null},
+  {at: 110.60, gap: 21, gapMove: {dx: 22}, card: {type: 'statement', text: 'The exact phrase the\nscholars argue over.', bg: 13}, cap: null, num: null},
 
-  {at: 114.40, card: {type: 'question', n: 'THREE', q: 'Would cash have\nbeen cheaper?',
+  {at: 114.40, gap: 22, gapMove: {push: 0.05}, card: {type: 'question', n: 'THREE', q: 'Would cash have\nbeen cheaper?',
    sub: 'If later costs more than now, you paid for time.', bg: 8}, cap: null, num: null},
-  {at: 118.80, card: {type: 'verdict', text: 'TIME IS NOT THEIRS TO SELL', bg: 8}, cap: null, num: null},
+  {at: 118.80, gap: 23, gapMove: {push: 0.08}, card: {type: 'verdict', text: 'TIME IS NOT THEIRS TO SELL', bg: 8}, cap: null, num: null},
 
   // ── where scholars differ ──────────────────────────────────────────────────
-  {at: 121.00, card: {type: 'balance', head: 'Scholars genuinely differ here.',
+  {at: 121.00, gap: 24, gapMove: {}, card: {type: 'balance', head: 'Scholars genuinely differ here.',
    left: ['Same price as cash', 'No late fee', 'No interest'],
    right: ['A penalty', 'A higher price for waiting'], lit: 'left', verdict: 'MANY PERMIT IT', bg: 12}, cap: null, num: null},
-  {at: 126.45, card: {type: 'balance', head: 'Scholars genuinely differ here.', left: ['Same price as cash', 'No late fee', 'No interest'],
+  {at: 126.45, gap: 25, gapMove: {push: 0.06}, card: {type: 'balance', head: 'Scholars genuinely differ here.', left: ['Same price as cash', 'No late fee', 'No interest'],
    right: ['A penalty', 'A higher price for waiting'], lit: 'right', verdict: 'THE DISAGREEMENT ENDS', bg: 12}, cap: null, num: null},
 
   // ── the fix ────────────────────────────────────────────────────────────────
-  {at: 132.40, card: {type: 'statement', text: 'But here is the part\nnobody says.', bg: 13}, cap: null, num: null},
-  {at: 134.90, card: {type: 'statement', text: 'Buy now, pay later\nis not the problem.', accent: 'not', bg: 13}, cap: null, num: null},
-  {at: 137.10, card: {type: 'era', text: 'Islam has had it for', years: '1,400 years', bg: 13}, cap: null, num: null},
+  {at: 132.40, gap: 26, gapMove: {push: 0.04}, card: {type: 'statement', text: 'But here is the part\nnobody says.', bg: 13}, cap: null, num: null},
+  {at: 134.90, gap: 27, gapMove: {push: 0.05}, card: {type: 'statement', text: 'Buy now, pay later\nis not the problem.', accent: 'not', bg: 13}, cap: null, num: null},
+  {at: 137.10, gap: 28, gapMove: {push: 0.06}, card: {type: 'era', text: 'Islam has had it for', years: '1,400 years', bg: 13}, cap: null, num: null},
 
   {at: 139.00, still: 13, move: {dx: 30}, cap: "It's called murabaha.", num: null},
-  {at: 141.50, card: {type: 'steps', items: ['The seller buys it', 'Actually owns it', 'Then sells it to you'], bg: 13},
+  {at: 141.50, gap: 29, gapMove: {dx: 30}, card: {type: 'steps', items: ['The seller buys it', 'Actually owns it', 'Then sells it to you'], bg: 13},
    cap: null, num: null},
   {at: 146.20, still: 12, move: {}, cap: 'One disclosed price,\nfixed at signing.',
    num: {kind: 'sum', text: 'COST £75  +  MARKUP £15  =  £90 FIXED'}, figureY: 1330},
-  {at: 150.80, card: {type: 'statement', text: 'Paid over time.', sub: 'Late? You owe the same. Not a penny more.', bg: 12}, cap: null, num: null},
+  {at: 150.80, gap: 30, gapMove: {push: 0.05}, card: {type: 'statement', text: 'Paid over time.', bg: 12}, cap: null, num: null},
+  {at: 155.60, gap: 31, gapMove: {}, card: {type: 'statement', text: 'Late? You owe the same.', sub: 'Not a penny more.', accent: 'same', bg: 12}, cap: null, num: null},
   {at: 158.10, still: 12, move: {}, cap: 'One price.\nOne owner.\nNo penalty.',
    num: {kind: 'locked', text: '£90.00', sub: 'LOCKED'}, figureY: 1330},
 

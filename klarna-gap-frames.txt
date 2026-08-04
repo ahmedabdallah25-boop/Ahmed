@@ -1,0 +1,413 @@
+================================================================================
+FINANCE % DECODED — "IS KLARNA HALAL?" — GAP FRAMES
+31 stills · 9:16 · covers the 125.2s the supplied .mov left with no picture
+Companion to klarnaimageprompts.txt v2 (which covers 16 frames of the 55.37s cut)
+================================================================================
+
+WHY THIS FILE EXISTS
+
+The recorded voiceover is the long-form 47-scene script — 173.28s. The supplied
+.mov carries that whole read but only 48.0s of picture: sixteen static stills held
+a flat 3.00s each, then 125.2s of black. Those sixteen are exactly the frames in
+klarnaimageprompts.txt v2, F01 through F11B, and they are good. They just cover a
+55.37s cut that was never recorded.
+
+So 125 seconds of this film has narration and no photograph. This file is the
+missing picture: 31 frames, one per gap, placed on the voiceover line each belongs
+to. With the existing 16 that makes 47 — one per scene of the long-form script,
+which is what the scene pack always specified.
+
+HOW THESE DIFFER FROM THE 16
+
+The existing frames are the film's set pieces: the phone, the aisle, the basket,
+the plinth. These are the connective tissue between them, and they are written to
+a tighter rule:
+
+  * ONE OBJECT, OR TWO IN RELATION. Nothing here is a scene. Each frame states a
+    single fact — a slice taken off a stack, two cards that are not level, a stamp
+    that has not come down yet. If a frame needs a sentence to explain it, it is
+    the wrong frame.
+  * THEY REUSE THE FILM'S OWN PROPS. The cream card, the banknote stack, the brass
+    stamp, the brass bar, the wool jacket, the walnut and charcoal surfaces. No new
+    vocabulary — a viewer should feel these were shot the same afternoon.
+  * THEY LEAVE ROOM FOR TYPE. Most of these sit under kinetic typography, so the
+    subject stays low and small and the top half stays dark and quiet. They are
+    backgrounds that happen to be photographs, not competing hero frames.
+
+--------------------------------------------------------------------------------
+BLOCK 1 — STYLE. Append verbatim to every one of the 31. Identical to the v2 pack.
+--------------------------------------------------------------------------------
+Stylised low-poly 3D, matte clay shading, near-photorealistic surface texture,
+real cast shadows. One hard key from camera-left, deep near-black background,
+cool neutral grade with a single warm amber accent. Shallow depth of field.
+9:16 vertical 1080x1920, subject in the lower two-thirds, dark open headroom
+above for captions.
+
+  [ G11 is the one frame that overrides this block — see its NEGATIVE line. It
+    belongs to the late-fee run, which the v2 pack keeps deliberately cold. ]
+
+--------------------------------------------------------------------------------
+BLOCK 2 — CAST. Paste only into G02, G29. Use the approved F03 / F11A frames as
+image references so the hands match the ones already in the film.
+--------------------------------------------------------------------------------
+HANDS — simplified geometric anatomy, matte clay. Terracotta #E85F42 cuffs for
+the buyer, deep navy #1E3A5F for the shopkeeper. No head, no face in frame.
+
+--------------------------------------------------------------------------------
+BLOCK 3 — UNIVERSAL NEGATIVE. Same spine as the v2 pack. Each frame appends its
+own NEGATIVE line on top.
+--------------------------------------------------------------------------------
+text, lettering, typography, numbers, digits, currency symbols, logos, brand
+names, watermark, signature, cartoon, anime, 2D illustration, flat vector, cel
+shading, toy plastic sheen, composite cut-out look, HDR glow, oversaturation,
+blown highlights, crushed blacks, tilted horizon, motion blur, lens flare,
+low resolution, jpeg artefacts, subject filling the upper third, obstructed
+headroom
+
+  [ Banknote frames additionally need "banknote portraits, printed currency
+    detail, denomination numerals" every time. It is the single most common
+    failure in this set — there are eleven banknote frames here. ]
+
+
+================================================================================
+PLACEMENT — where each frame lands, and the line it carries
+================================================================================
+Times are seconds into the film, from the forced alignment in
+video/scripts/klarna-edit.mjs. HOLD is until the next shot.
+
+  ID  | AT      | HOLD  | VOICEOVER LINE                        | MOVE
+------|---------|-------|---------------------------------------|------------------
+ G01  |   6.00  | 2.20s | Because somebody is.                  | push 5%
+ G02  |   8.20  | 3.10s | And it might be you.                  | push 4%, drift L 20px
+ G03  |  11.30  | 5.10s | Klarna does not lend you money.       | push 6%
+ G04  |  20.90  | 1.70s | Then you owe Klarna.                  | push 7%
+ G05  |  22.60  | 2.00s | Hold onto that. It decides everything.| NONE — dead still
+ G06  |  31.30  | 2.80s | It receives about eighty-five.        | push 5%, drift R 24px
+ G07  |  34.10  | 5.50s | Often three to six percent.           | push 8%
+ G08  |  41.60  | 2.60s | You paid ninety. Shop kept eighty-five| push 4%
+ G09  |  44.20  | 3.00s | It was already inside the price.      | push 9%
+ G10  |  47.20  | 4.20s | A shop does not absorb that fee.      | push 5%
+ G11  |  70.40  | 2.10s | A penalty that becomes their profit.  | push 7%  [COLD]
+ G12  |  72.50  | 4.10s | The oldest objection there is.        | drift R 26px
+ G13  |  86.50  | 1.85s | So is it halal?                       | push 6%
+ G14  |  88.35  | 3.65s | Ask three questions.                  | push 4%
+ G15  |  92.00  | 3.80s | One. Is this a sale, or a loan?       | push 5%
+ G16  |  95.80  | 2.30s | Klarna paid the shop. You owe Klarna. | drift L 26px
+ G17  |  98.10  | 1.90s | That is a loan.                       | push 9%
+ G18  | 100.00  | 3.40s | Two. Does anybody profit?             | push 5%
+ G19  | 103.40  | 3.20s | Not from you. The merchant's fee.     | push 6%
+ G20  | 106.60  | 4.00s | A benefit to the lender.              | push 7%
+ G21  | 110.60  | 3.80s | The phrase the scholars argue over.   | drift R 22px
+ G22  | 114.40  | 4.40s | Three. Would cash have been cheaper?  | push 5%
+ G23  | 118.80  | 2.20s | Time is not theirs to sell.           | push 8%
+ G24  | 121.00  | 5.45s | Same price as cash, no late fee.      | NONE — dead still
+ G25  | 126.45  | 5.95s | Add a penalty, or a higher price.     | push 6%
+ G26  | 132.40  | 2.50s | Here is the part nobody says.         | push 4%
+ G27  | 134.90  | 2.20s | Pay later is not the problem.         | push 5%
+ G28  | 137.10  | 1.90s | Islam has had it 1,400 years.         | push 6%
+ G29  | 141.50  | 4.70s | The seller buys it. Actually owns it. | drift R 30px
+ G30  | 150.80  | 4.80s | Sells it at one disclosed price.      | push 5%
+ G31  | 155.60  | 2.50s | Late? You owe the same.               | NONE — dead still
+
+Two frames are deliberately locked off. G05 is the film's "hold onto that" beat and
+G24 is the price that does not move; in both cases a camera move would argue with
+the line. G31 is locked for the same reason as F08 — nothing about it changes.
+
+
+================================================================================
+THE 31 PROMPTS
+================================================================================
+Each = the scene text + BLOCK 1 + (BLOCK 2 where hands appear) + BLOCK 3 + that
+frame's own NEGATIVE line.
+
+--- G01 · 6.00 · SOMEBODY IS ---------------------------------------------------
+85mm macro, f/2.8. A single blank cream card stands upright on its long edge on
+dark brushed charcoal, entirely alone, balanced and still. One hard raking key
+from camera-left throws a single long defined shadow toward camera. Fine dust on
+the surface. Card low-centre, the top half of the frame empty and near-black.
+NEGATIVE: second card, multiple cards, cards lying flat, card fallen, propped or
+leaning card, support or stand, hands, people, printed card, chip, magnetic
+stripe, doubled or broken shadow, soft diffuse light
+
+--- G02 · 8.20 · IT MIGHT BE YOU -----------------------------------------------
+85mm, f/2.8. Two simplified geometric hands in terracotta #E85F42 cuffs rest open
+and empty on a dark counter, palms up, fingers relaxed. Between them, pressed into
+the fine dust on the counter, a clean rectangular card-shaped impression — the card
+itself gone. Low raking key from camera-left, deep shadow filling the right.
+NEGATIVE: card present, object in the hands, coins, phone, extra fingers, six
+fingers, fused or malformed hands, fingernail detail, wristwatch, jewellery, head
+in frame, face, arms entering from the top of frame, drawn or dotted outline
+
+--- G03 · 11.30 · IT DOES NOT LEND YOU MONEY -----------------------------------
+50mm, f/4. A closed dark metal cash drawer sits shut on a shop counter, its face
+plain and unmarked. One blank cream card rests flat on top of it, square to frame.
+No money anywhere in shot. Hard key from camera-left, warm amber glint along the
+drawer's top edge, everything beyond falling to near-black.
+NEGATIVE: open drawer, visible money, banknotes, coins, cash trays, till display,
+register screen, keypad, buttons, receipt roll, printed card, branding, hands,
+people, second card, bright even exposure
+
+--- G04 · 20.90 · THEN YOU OWE ------------------------------------------------
+100mm macro, f/2.8. A short stack of worn banknotes lies on a scuffed shop
+counter, and one blank cream card rests flat across the top of the stack like a
+lid, covering it. The card is square to frame, the notes visible only at the
+edges. Hard side light from camera-left, deep shadow right.
+NEGATIVE: banknote portraits, printed currency detail, denomination numerals,
+crisp new notes, coins, card floating above the stack, missing contact shadow,
+second card, wallet, purse, hands, people, till
+
+--- G05 · 22.60 · IT DECIDES EVERYTHING ---------------------------------------
+60mm, f/5.6, locked-off tabletop still life on dark walnut with visible grain. A
+heavy brass counterweight rests squarely on top of a single blank cream card,
+pressing it flat. Nothing else in frame. Near-photorealistic brass with real
+specular hits and fine patina, one long unbroken shadow to the right. Absolute
+symmetry and stillness.
+NEGATIVE: engraved text, monogram, crest, hallmark, weight numerals, third object,
+tilted or askew card, asymmetric composition, hands, people, shallow depth of
+field, bokeh, handheld feel, broken or doubled shadow
+
+--- G06 · 31.30 · IT RECEIVES ABOUT EIGHTY-FIVE --------------------------------
+100mm macro, f/2.8. A short stack of worn banknotes on a scuffed counter, with a
+thin top slice of the stack lifted clear and set down separately a little to the
+right — two piles now, one obviously larger. Hard side light from camera-left,
+worn corners and soft folds on the notes, deep shadow right.
+NEGATIVE: banknote portraits, printed currency detail, denomination numerals,
+crisp new notes, equal piles, slice in mid-air, floating notes, missing contact
+shadows, coins, wallet, payment card, hands, people, high-key lighting
+
+--- G07 · 34.10 · THREE TO SIX PERCENT ----------------------------------------
+100mm extreme macro, f/4. A single thin slice of banknotes lies alone on dark
+charcoal, cleanly separated from everything else, small in the frame. Its edge is
+sharp and its shadow is hard. Vast empty dark surface around and above it.
+NEGATIVE: banknote portraits, printed currency detail, denomination numerals, the
+main stack in frame, second pile, coins, subject large in frame, subject centred
+high, soft diffuse shadow, hands, people, bright even exposure
+
+--- G08 · 41.60 · YOU PAID NINETY, THE SHOP KEPT EIGHTY-FIVE -------------------
+50mm, f/4, slightly high angle. Two neat piles of worn banknotes sit side by side
+on dark matte charcoal, clearly separated, one noticeably taller than the other,
+each casting an identical hard shadow in the same direction. Nothing else in frame.
+NEGATIVE: banknote portraits, printed currency detail, denomination numerals,
+equal piles, three piles, piles touching or overlapping, scattered notes, coins,
+multiple shadow directions, hands, people, background objects
+
+--- G09 · 44.20 · ALREADY INSIDE THE PRICE ------------------------------------
+100mm macro, f/2.8. A blank cream cardboard price tag lies half-buried in the
+folds of a dark wool jacket — only a corner and the punched hole showing, the rest
+swallowed by the fabric. Hard low raking key from camera-left, warm amber rim on
+the exposed corner. Extremely shallow focus: the visible corner sharp, the wool
+dissolving within centimetres.
+NEGATIVE: printed price, barcode, whole tag visible, tag on top of the fabric, tag
+clearly readable, second tag, string prominent, hanger, rail, hands, people, deep
+focus, flat frontal light, bright even exposure
+
+--- G10 · 47.20 · NO SHOP ABSORBS IT ------------------------------------------
+85mm, f/2.8. The edge of a shop counter shot from low and close, its seam running
+across frame, with one blank cream card wedged tightly into the join and held
+there by the two surfaces. Near-photorealistic worn timber. Hard key from
+camera-left, warm amber along the counter's lip, everything below in shadow.
+NEGATIVE: card falling out, card loose, gap around the card, printed card, second
+card, receipts, paperwork, hands, people, shop signage, price signage, bright even
+exposure, flat frontal light
+
+--- G11 · 70.40 · A PENALTY THAT BECOMES PROFIT   ** COLD FRAME ** -------------
+85mm macro, f/2.8. A phone lies face DOWN on the same scuffed counter, its screen
+hidden, and a hard cold pool of light leaks out from beneath one edge onto the
+counter surface. Everything beyond that pool falls to near-black. Phone
+low-centre, dark space above.
+NEGATIVE: warm light, amber accent, amber rim, golden tone, warm colour grade,
+orange highlights, candlelight, sunlight, screen visible, screen face up,
+notification text, app icons, colourful UI, screen bloom, halo, glow spill beyond
+the counter pool, face reflected in the glass, hands, people
+  [ Mandatory, same as F06B: BLOCK 1 asks for a warm amber accent and this line is
+    what overrides it. This frame sits inside the late-fee run and the temperature
+    break is the whole point of that section. ]
+
+--- G12 · 72.50 · THE OLDEST OBJECTION ----------------------------------------
+50mm, f/5.6, square-on. A single empty brass scale pan hangs still on dark walnut,
+its chains slack, weathered and old, nothing in it. Near-photorealistic brass with
+deep patina and fine scratches. One hard key from upper left, long real shadow,
+deep near-black surround. Quiet, ancient, settled.
+NEGATIVE: engraved text, hallmarks, maker's marks, numerals, second pan, full
+balance apparatus, anything in the pan, coins, weights, swinging or tilted pan,
+motion, hands, people, bright polished new brass, cold or blue grade
+
+--- G13 · 86.50 · SO IS IT HALAL? ---------------------------------------------
+85mm, f/4. A single blank cream card stands upright and dead centre in one tight
+pool of hard light on a dark matte surface, everything beyond the pool black.
+Isolated, deliberate, waiting. Card low in frame, wide dark margin above.
+NEGATIVE: second card, props, background detail, visible room, floor line, printed
+card, chip, magnetic stripe, card lying flat, card leaning or propped, hands,
+people, visible spotlights or fixtures, soft diffuse light, off-centre framing
+
+--- G14 · 88.35 · ASK THREE QUESTIONS -----------------------------------------
+50mm, f/5.6, square-on. Exactly three identical blank cream cards stand upright in
+a precise evenly spaced row on dark walnut, all the same height, each casting an
+identical hard shadow in the same direction. Nothing else in frame.
+NEGATIVE: two cards, four cards, five cards, any count other than three, uneven
+spacing, uneven heights, overlapping or fanned cards, cards lying flat, fallen
+card, printed cards, multiple shadow directions, hands, people, background objects
+
+--- G15 · 92.00 · A SALE, OR A LOAN? ------------------------------------------
+50mm, f/4, slightly high angle. A dark counter divided across the middle by one
+hard edge of light. On the lit side, a short stack of worn banknotes. On the dark
+side, a single blank cream card. The two are clearly separated, neither touching.
+NEGATIVE: banknote portraits, printed currency detail, denomination numerals,
+objects touching or overlapping, third object, both objects lit equally, even
+lighting, soft transition between light and shadow, hands, people, printed card
+
+--- G16 · 95.80 · THEY PAID THE SHOP ------------------------------------------
+85mm, f/2.8. A short stack of worn banknotes sits on a shop counter in the middle
+distance. Behind and above it stands a single blank cream card, upright, and its
+long hard shadow reaches across the counter and falls over the notes. Hard key
+from camera-left.
+NEGATIVE: banknote portraits, printed currency detail, denomination numerals,
+card touching the notes, card lying flat, shadow falling away from the notes,
+missing shadow, second card, coins, hands, people, soft diffuse shadow
+
+--- G17 · 98.10 · THAT IS A LOAN ----------------------------------------------
+60mm, f/5.6, locked-off. A heavy brass stamp rests face down on dark walnut,
+beside a single blank cream card that is still completely unmarked. The stamp has
+not come down. Near-photorealistic brass, fine patina, one long unbroken shadow.
+NEGATIVE: stamped card, marked card, impression on the card, ink, ink pad, ink
+stains, engraved text on the stamp, monogram, crest, wax seal, third object,
+tilted or askew card, hands, people, broken or doubled shadow
+
+--- G18 · 100.00 · DOES ANYBODY PROFIT? ---------------------------------------
+50mm, f/5.6, square-on. Museum-style staging on a dark matte plinth: a single
+heavy brass bar on the left, a short stack of worn banknotes on the right, clearly
+separated with empty plinth between them. Warm amber rim on the brass, real
+contact shadows anchoring both.
+NEGATIVE: objects touching, objects overlapping, bar resting on the notes,
+hallmark stamps, bullion markings, weight numerals, purity text, serial numbers,
+banknote portraits, denomination numerals, third object, price tag, label, plaque,
+hands, people, floating objects, missing contact shadows
+
+--- G19 · 103.40 · FROM THE MERCHANT'S FEE ------------------------------------
+50mm, f/4, slightly high angle. Two stacks of worn banknotes on a dark plinth. The
+left stack is whole and untouched. The right stack has a thin slice lifted clear
+and set down beside it. The difference between them is the subject.
+NEGATIVE: banknote portraits, printed currency detail, denomination numerals, both
+stacks identical, both stacks untouched, slice in mid-air, floating notes, missing
+contact shadows, coins, third stack, hands, people, flat overhead light
+
+--- G20 · 106.60 · A BENEFIT TO THE LENDER ------------------------------------
+50mm, f/5.6, square-on. A single heavy brass bar rests directly on top of a folded
+stack of worn banknotes on a dark plinth, its weight visibly compressing them.
+Warm amber rim on the brass, deep shadow beneath. Deliberate and weighted.
+NEGATIVE: objects separated, bar beside the notes, bar floating, missing contact
+shadow, hallmark stamps, bullion markings, weight numerals, banknote portraits,
+denomination numerals, third object, hands, people, cold or blue grade on the brass
+
+--- G21 · 110.60 · THE PHRASE THEY ARGUE OVER ---------------------------------
+60mm, f/5.6. A short stack of aged loose paper leaves rests on dark walnut, edges
+soft and worn, corners curled, the surfaces completely blank. One hard key from
+camera-left rakes across the edges so each leaf separates. Deep near-black around.
+NEGATIVE: text, script, calligraphy, writing, printing, ruled lines, margins,
+illustrations, book spine, binding, cover, second stack, crisp white paper, modern
+paper, hands, people, bright even exposure
+
+--- G22 · 114.40 · WOULD CASH HAVE BEEN CHEAPER? ------------------------------
+85mm, f/2, close. A small folded bundle of worn banknotes rests alone on a scuffed
+counter in a single narrow shaft of hard light, everything around it dark. Nothing
+else in frame. Soft folds, worn corners, real paper texture.
+NEGATIVE: banknote portraits, printed currency detail, denomination numerals,
+crisp new notes, coins, payment card, phone, wallet, purse, second bundle, till,
+hands, people, high-key lighting, evenly lit frame
+
+--- G23 · 118.80 · TIME IS NOT THEIRS TO SELL ---------------------------------
+85mm, f/4. A heavy brass sand timer stands on dark walnut, its glass clean and its
+sand mid-fall, caught in a thin hard shaft of light. Near-photorealistic brass
+with fine patina, deep near-black surround, one long shadow to the right.
+NEGATIVE: numerals, engraved text, hallmarks, clock face, clock hands, watch,
+digital display, second timer, broken glass, spilled sand, motion blur on the
+sand, hands, people, bright even exposure, cold or blue grade
+
+--- G24 · 121.00 · SAME PRICE AS CASH -----------------------------------------
+50mm, f/5.6, locked-off, square-on. Two identical blank cream cards lie flat side
+by side on dark charcoal, perfectly level with each other, evenly spaced, casting
+two identical hard shadows in the same direction. Absolute symmetry. Settled.
+NEGATIVE: cards at different heights, one card raised, uneven spacing, tilted or
+askew cards, overlapping cards, third card, printed cards, propping objects,
+multiple shadow directions, hands, people, shallow depth of field, camera movement
+
+--- G25 · 126.45 · ADD A PENALTY ----------------------------------------------
+50mm, f/5.6, square-on. The same two blank cream cards on dark charcoal, but now
+one of them is propped up on a small brass weight so the pair sits visibly uneven,
+one clearly higher than the other. Their shadows are no longer the same length.
+NEGATIVE: cards level, cards at the same height, symmetrical composition,
+identical shadows, weight numerals, hallmarks, engraved text, third card, printed
+cards, cards fallen, hands, people, flat overhead light
+
+--- G26 · 132.40 · THE PART NOBODY SAYS ---------------------------------------
+35mm, f/2.8. A shop interior after closing, shot down its length: shelving and
+rails receding into near-black, everything unlit except one small warm practical
+lamp still burning at the far end. Nothing human in frame. Quiet and still.
+NEGATIVE: people, shoppers, staff, mannequins, faces, shop signage text,
+storefront branding, price signage, shelf labels, POS displays, overhead
+fluorescent light, evenly lit interior, daylight, windows, second light source,
+cluttered floor, fallen stock
+
+--- G27 · 134.90 · NOT THE PROBLEM --------------------------------------------
+50mm, f/5.6, square-on. A folded wool jacket and a single blank cream card sit
+side by side on a dark matte plinth, evenly spaced, both calmly and equally lit,
+neither dominant. Real contact shadows anchoring each. Balanced and unhurried.
+NEGATIVE: objects touching, objects overlapping, card on the jacket, one object
+dominant, uneven lighting, third object, price tag, label, plaque, printed card,
+hands, people, floating objects, missing contact shadows
+
+--- G28 · 137.10 · FOURTEEN HUNDRED YEARS -------------------------------------
+50mm, f/4. An old brass merchant's balance and a worn wooden measuring scoop rest
+together on coarse sand-coloured cloth, both deeply aged, the metal dark with
+patina and the wood softened by handling. One hard key from camera-left, warm
+amber accent, deep near-black beyond the cloth.
+NEGATIVE: engraved text, numerals, hallmarks, maker's marks, dates, modern
+materials, plastic, chrome, polished new brass, third object, grain or produce
+spilled, coins, hands, people, bright even exposure, cold or blue grade
+
+--- G29 · 141.50 · THE SELLER ACTUALLY OWNS IT --------------------------------
+50mm, f/4. Two simplified geometric hands in deep navy #1E3A5F cuffs hold a folded
+wool jacket clear of a dark matte plinth, mid-transfer, weight visibly in the
+hands. The plinth below is empty. Matte clay anatomy, real cast shadows.
+NEGATIVE: extra fingers, six fingers, fused or malformed hands, extra hands, head
+in frame, face, jacket resting on the plinth, jacket floating without hands,
+second garment, price tag, label, hands empty, people, bright even exposure
+
+--- G30 · 150.80 · ONE DISCLOSED PRICE ----------------------------------------
+60mm, f/5.6, locked-off tabletop still life on dark walnut. A heavy brass stamp is
+pressed down squarely onto a single blank cream card and held there, its full
+weight on the card, the impression happening. Near-photorealistic brass, one long
+unbroken shadow to the right.
+NEGATIVE: stamp lifted, stamp beside the card, stamp in mid-air, engraved text on
+the stamp, monogram, crest, coat of arms, lettering in the impression, wax seal,
+ink pad, ink stains, third object, tilted card, hands, people, broken shadow
+
+--- G31 · 155.60 · NOT A PENNY MORE -------------------------------------------
+60mm, f/5.6, locked-off, square-on. The stamped blank cream card lies flat and
+alone on dark walnut, exactly as it was left, with a small neat stack of worn
+banknotes resting beside it, unchanged and untouched. Absolute stillness. The
+composition should feel final and settled.
+NEGATIVE: banknote portraits, printed currency detail, denomination numerals,
+extra notes added, notes scattered, card marked with text or numerals, second
+card, brass stamp in frame, third object, tilted or askew card, asymmetric
+composition, hands, people, camera movement, shallow depth of field
+
+
+================================================================================
+GENERATION ORDER
+================================================================================
+1. G17 and G30 first — they are the same two props at the two ends of one action
+   (stamp up, stamp down), and if the brass and the card do not match between them
+   the murabaha section reads as two different objects. Approve both, lock the seed.
+2. G06, G07, G08, G19 next — the banknote-slice run. These four have to agree with
+   each other about what a "slice" looks like or the fee arithmetic stops tracking.
+3. G11 early, as a checkpoint. It is the only frame in this set fighting BLOCK 1's
+   warm accent, exactly like F06B in the v2 pack. If the cold negatives are not
+   biting, find out before the other twenty-eight are through.
+4. G24 and G25 as a pair — same two cards, level then uneven. Same seed.
+5. Everything else in any order.
+
+WIRING: drop the files in video/public/broll/klarna/ as gap-01 … gap-31 and add
+them to video/scripts/klarna-edit.mjs at the AT times in the placement table,
+replacing the motion-graphic card backgrounds. The kinetic type stays exactly as
+it is — these frames go behind it, they do not replace it.

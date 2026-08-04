@@ -19,6 +19,7 @@ export type Shot = {
   from: number;
   durationInFrames: number;
   still: number | null;
+  gap: number | null;
   card: any | null;
   move: Move;
   cold: boolean;
@@ -32,6 +33,7 @@ export const SHOTS: Shot[] = [
     "from": 0,
     "durationInFrames": 78,
     "still": 1,
+    "gap": null,
     "card": null,
     "move": {
       "push": 0.06
@@ -49,6 +51,7 @@ export const SHOTS: Shot[] = [
     "from": 78,
     "durationInFrames": 102,
     "still": 3,
+    "gap": null,
     "card": null,
     "move": {
       "push": -0.08,
@@ -66,6 +69,7 @@ export const SHOTS: Shot[] = [
     "from": 180,
     "durationInFrames": 66,
     "still": null,
+    "gap": null,
     "card": {
       "type": "statement",
       "text": "Because somebody is.",
@@ -81,6 +85,7 @@ export const SHOTS: Shot[] = [
     "from": 246,
     "durationInFrames": 93,
     "still": null,
+    "gap": null,
     "card": {
       "type": "statement",
       "text": "And it might be you.",
@@ -97,6 +102,7 @@ export const SHOTS: Shot[] = [
     "from": 339,
     "durationInFrames": 153,
     "still": null,
+    "gap": null,
     "card": {
       "type": "statement",
       "text": "Klarna does not\nlend you money.",
@@ -113,6 +119,7 @@ export const SHOTS: Shot[] = [
     "from": 492,
     "durationInFrames": 135,
     "still": 4,
+    "gap": null,
     "card": null,
     "move": {
       "push": 0.05
@@ -126,6 +133,7 @@ export const SHOTS: Shot[] = [
     "from": 627,
     "durationInFrames": 51,
     "still": null,
+    "gap": null,
     "card": {
       "type": "flow",
       "nodes": [
@@ -146,6 +154,7 @@ export const SHOTS: Shot[] = [
     "from": 678,
     "durationInFrames": 60,
     "still": null,
+    "gap": null,
     "card": {
       "type": "statement",
       "text": "It decides everything.",
@@ -161,6 +170,7 @@ export const SHOTS: Shot[] = [
     "from": 738,
     "durationInFrames": 41,
     "still": 5,
+    "gap": null,
     "card": null,
     "move": {
       "push": 0.09
@@ -174,6 +184,7 @@ export const SHOTS: Shot[] = [
     "from": 779,
     "durationInFrames": 73,
     "still": 2,
+    "gap": null,
     "card": null,
     "move": {
       "push": 0.04
@@ -190,6 +201,7 @@ export const SHOTS: Shot[] = [
     "from": 852,
     "durationInFrames": 87,
     "still": 4,
+    "gap": null,
     "card": null,
     "move": {
       "push": 0.05,
@@ -204,6 +216,7 @@ export const SHOTS: Shot[] = [
     "from": 939,
     "durationInFrames": 84,
     "still": null,
+    "gap": null,
     "card": {
       "type": "number",
       "from": "£90",
@@ -221,6 +234,7 @@ export const SHOTS: Shot[] = [
     "from": 1023,
     "durationInFrames": 165,
     "still": null,
+    "gap": null,
     "card": {
       "type": "pct",
       "label": "KLARNA KEEPS",
@@ -238,6 +252,7 @@ export const SHOTS: Shot[] = [
     "from": 1188,
     "durationInFrames": 60,
     "still": 3,
+    "gap": null,
     "card": null,
     "move": {
       "push": 0.06
@@ -254,6 +269,7 @@ export const SHOTS: Shot[] = [
     "from": 1248,
     "durationInFrames": 78,
     "still": null,
+    "gap": null,
     "card": {
       "type": "ledger",
       "rows": [
@@ -278,6 +294,7 @@ export const SHOTS: Shot[] = [
     "from": 1326,
     "durationInFrames": 90,
     "still": null,
+    "gap": null,
     "card": {
       "type": "statement",
       "text": "It was already\ninside the price.",
@@ -294,6 +311,7 @@ export const SHOTS: Shot[] = [
     "from": 1416,
     "durationInFrames": 126,
     "still": null,
+    "gap": null,
     "card": {
       "type": "statement",
       "text": "No shop absorbs\nthat fee.",
@@ -309,6 +327,7 @@ export const SHOTS: Shot[] = [
     "from": 1542,
     "durationInFrames": 105,
     "still": 5,
+    "gap": null,
     "card": null,
     "move": {
       "push": 0.09
@@ -326,6 +345,7 @@ export const SHOTS: Shot[] = [
     "from": 1647,
     "durationInFrames": 80,
     "still": 6,
+    "gap": null,
     "card": null,
     "move": {
       "push": 0.1
@@ -339,6 +359,7 @@ export const SHOTS: Shot[] = [
     "from": 1727,
     "durationInFrames": 49,
     "still": 7,
+    "gap": null,
     "card": null,
     "move": {
       "push": 0.06
@@ -352,6 +373,7 @@ export const SHOTS: Shot[] = [
     "from": 1776,
     "durationInFrames": 146,
     "still": 8,
+    "gap": null,
     "card": null,
     "move": {
       "push": 0.07,
@@ -366,6 +388,7 @@ export const SHOTS: Shot[] = [
     "from": 1922,
     "durationInFrames": 100,
     "still": 9,
+    "gap": null,
     "card": null,
     "move": {
       "push": 0.05
@@ -379,6 +402,7 @@ export const SHOTS: Shot[] = [
     "from": 2022,
     "durationInFrames": 90,
     "still": 9,
+    "gap": null,
     "card": null,
     "move": {
       "push": 0.08
@@ -395,6 +419,7 @@ export const SHOTS: Shot[] = [
     "from": 2112,
     "durationInFrames": 63,
     "still": null,
+    "gap": null,
     "card": {
       "type": "statement",
       "text": "A penalty that becomes\ntheir profit.",
@@ -412,6 +437,7 @@ export const SHOTS: Shot[] = [
     "from": 2175,
     "durationInFrames": 123,
     "still": null,
+    "gap": null,
     "card": {
       "type": "statement",
       "text": "That is the oldest\nobjection there is.",
@@ -427,6 +453,7 @@ export const SHOTS: Shot[] = [
     "from": 2298,
     "durationInFrames": 147,
     "still": 10,
+    "gap": null,
     "card": null,
     "move": {
       "push": 0.06,
@@ -444,6 +471,7 @@ export const SHOTS: Shot[] = [
     "from": 2445,
     "durationInFrames": 150,
     "still": 11,
+    "gap": null,
     "card": null,
     "move": {
       "push": 0.05
@@ -457,6 +485,7 @@ export const SHOTS: Shot[] = [
     "from": 2595,
     "durationInFrames": 56,
     "still": null,
+    "gap": null,
     "card": {
       "type": "statement",
       "text": "So is it halal?",
@@ -473,6 +502,7 @@ export const SHOTS: Shot[] = [
     "from": 2651,
     "durationInFrames": 109,
     "still": null,
+    "gap": null,
     "card": {
       "type": "statement",
       "text": "Don’t ask about the brand.",
@@ -490,6 +520,7 @@ export const SHOTS: Shot[] = [
     "from": 2760,
     "durationInFrames": 114,
     "still": null,
+    "gap": null,
     "card": {
       "type": "question",
       "n": "ONE",
@@ -506,6 +537,7 @@ export const SHOTS: Shot[] = [
     "from": 2874,
     "durationInFrames": 69,
     "still": null,
+    "gap": null,
     "card": {
       "type": "flow",
       "nodes": [
@@ -527,6 +559,7 @@ export const SHOTS: Shot[] = [
     "from": 2943,
     "durationInFrames": 57,
     "still": null,
+    "gap": null,
     "card": {
       "type": "verdict",
       "text": "THAT IS A LOAN",
@@ -542,6 +575,7 @@ export const SHOTS: Shot[] = [
     "from": 3000,
     "durationInFrames": 102,
     "still": null,
+    "gap": null,
     "card": {
       "type": "question",
       "n": "TWO",
@@ -558,6 +592,7 @@ export const SHOTS: Shot[] = [
     "from": 3102,
     "durationInFrames": 96,
     "still": null,
+    "gap": null,
     "card": {
       "type": "ledger",
       "rows": [
@@ -582,6 +617,7 @@ export const SHOTS: Shot[] = [
     "from": 3198,
     "durationInFrames": 120,
     "still": null,
+    "gap": null,
     "card": {
       "type": "statement",
       "text": "A loan that brings a benefit\nto the lender.",
@@ -598,6 +634,7 @@ export const SHOTS: Shot[] = [
     "from": 3318,
     "durationInFrames": 114,
     "still": null,
+    "gap": null,
     "card": {
       "type": "statement",
       "text": "The exact phrase the\nscholars argue over.",
@@ -613,6 +650,7 @@ export const SHOTS: Shot[] = [
     "from": 3432,
     "durationInFrames": 132,
     "still": null,
+    "gap": null,
     "card": {
       "type": "question",
       "n": "THREE",
@@ -630,6 +668,7 @@ export const SHOTS: Shot[] = [
     "from": 3564,
     "durationInFrames": 66,
     "still": null,
+    "gap": null,
     "card": {
       "type": "verdict",
       "text": "TIME IS NOT THEIRS TO SELL",
@@ -645,6 +684,7 @@ export const SHOTS: Shot[] = [
     "from": 3630,
     "durationInFrames": 164,
     "still": null,
+    "gap": null,
     "card": {
       "type": "balance",
       "head": "Scholars genuinely differ here.",
@@ -671,6 +711,7 @@ export const SHOTS: Shot[] = [
     "from": 3794,
     "durationInFrames": 178,
     "still": null,
+    "gap": null,
     "card": {
       "type": "balance",
       "head": "Scholars genuinely differ here.",
@@ -697,6 +738,7 @@ export const SHOTS: Shot[] = [
     "from": 3972,
     "durationInFrames": 75,
     "still": null,
+    "gap": null,
     "card": {
       "type": "statement",
       "text": "But here is the part\nnobody says.",
@@ -712,6 +754,7 @@ export const SHOTS: Shot[] = [
     "from": 4047,
     "durationInFrames": 66,
     "still": null,
+    "gap": null,
     "card": {
       "type": "statement",
       "text": "Buy now, pay later\nis not the problem.",
@@ -728,6 +771,7 @@ export const SHOTS: Shot[] = [
     "from": 4113,
     "durationInFrames": 57,
     "still": null,
+    "gap": null,
     "card": {
       "type": "era",
       "text": "Islam has had it for",
@@ -744,6 +788,7 @@ export const SHOTS: Shot[] = [
     "from": 4170,
     "durationInFrames": 75,
     "still": 13,
+    "gap": null,
     "card": null,
     "move": {
       "dx": 30
@@ -757,6 +802,7 @@ export const SHOTS: Shot[] = [
     "from": 4245,
     "durationInFrames": 141,
     "still": null,
+    "gap": null,
     "card": {
       "type": "steps",
       "items": [
@@ -776,6 +822,7 @@ export const SHOTS: Shot[] = [
     "from": 4386,
     "durationInFrames": 138,
     "still": 12,
+    "gap": null,
     "card": null,
     "move": {},
     "cold": false,
@@ -788,12 +835,30 @@ export const SHOTS: Shot[] = [
   },
   {
     "from": 4524,
-    "durationInFrames": 219,
+    "durationInFrames": 144,
     "still": null,
+    "gap": null,
     "card": {
       "type": "statement",
       "text": "Paid over time.",
-      "sub": "Late? You owe the same. Not a penny more.",
+      "bg": 12
+    },
+    "move": {},
+    "cold": false,
+    "figureY": 780,
+    "cap": null,
+    "num": null
+  },
+  {
+    "from": 4668,
+    "durationInFrames": 75,
+    "still": null,
+    "gap": null,
+    "card": {
+      "type": "statement",
+      "text": "Late? You owe the same.",
+      "sub": "Not a penny more.",
+      "accent": "same",
       "bg": 12
     },
     "move": {},
@@ -806,6 +871,7 @@ export const SHOTS: Shot[] = [
     "from": 4743,
     "durationInFrames": 105,
     "still": 12,
+    "gap": null,
     "card": null,
     "move": {},
     "cold": false,
@@ -821,6 +887,7 @@ export const SHOTS: Shot[] = [
     "from": 4848,
     "durationInFrames": 90,
     "still": 14,
+    "gap": null,
     "card": null,
     "move": {
       "push": 0.12
@@ -837,6 +904,7 @@ export const SHOTS: Shot[] = [
     "from": 4938,
     "durationInFrames": 102,
     "still": 14,
+    "gap": null,
     "card": null,
     "move": {
       "push": 0.06
@@ -850,6 +918,7 @@ export const SHOTS: Shot[] = [
     "from": 5040,
     "durationInFrames": 78,
     "still": 15,
+    "gap": null,
     "card": null,
     "move": {
       "push": 0.04
@@ -866,6 +935,7 @@ export const SHOTS: Shot[] = [
     "from": 5118,
     "durationInFrames": 80,
     "still": 16,
+    "gap": null,
     "card": null,
     "move": {
       "push": 0.03

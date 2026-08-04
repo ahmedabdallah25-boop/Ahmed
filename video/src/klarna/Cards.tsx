@@ -56,10 +56,11 @@ const useAt = (at: number, mass = 0.6) => {
  * klarna-edit.mjs — normally the one the section is about, so the background keeps
  * a thread back to the photography.
  */
-export const CardBg: React.FC<{still: number; dur: number; cold?: boolean}> = ({
+export const CardBg: React.FC<{still: number; dur: number; cold?: boolean; own?: boolean}> = ({
   still,
   dur,
   cold,
+  own,
 }) => {
   const frame = useCurrentFrame();
   const t = interpolate(frame, [0, dur], [0, 1], {extrapolateRight: 'clamp'});
@@ -71,15 +72,17 @@ export const CardBg: React.FC<{still: number; dur: number; cold?: boolean}> = ({
           width: '100%',
           height: '100%',
           objectFit: 'cover',
-          filter: `blur(26px) saturate(${cold ? 0.5 : 0.75}) brightness(0.42)`,
+          filter: own
+            ? `saturate(${cold ? 0.72 : 0.94}) brightness(0.82)`
+            : `blur(26px) saturate(${cold ? 0.5 : 0.75}) brightness(0.42)`,
           transform: `scale(${(1.14 + 0.04 * t).toFixed(4)}) translateX(${(t * -18).toFixed(1)}px)`,
         }}
       />
       <AbsoluteFill
         style={{
           background: cold
-            ? 'radial-gradient(70% 50% at 50% 46%, rgba(30,58,95,0.34), rgba(4,8,14,0.84) 76%)'
-            : 'radial-gradient(70% 50% at 50% 46%, rgba(232,140,66,0.12), rgba(5,7,10,0.84) 76%)',
+            ? `radial-gradient(70% 50% at 50% 46%, rgba(30,58,95,${own ? 0.16 : 0.34}), rgba(4,8,14,${own ? 0.52 : 0.84}) 76%)`
+            : `radial-gradient(70% 50% at 50% 46%, rgba(232,140,66,${own ? 0.07 : 0.12}), rgba(5,7,10,${own ? 0.5 : 0.84}) 76%)`,
         }}
       />
     </AbsoluteFill>
@@ -554,7 +557,7 @@ const Steps: React.FC<{c: any}> = ({c}) => (
   </Stage>
 );
 
-export const Card: React.FC<{c: any; dur: number}> = ({c, dur}) => {
+export const Card: React.FC<{c: any; dur: number; own?: boolean}> = ({c, dur, own}) => {
   const body = () => {
     switch (c.type) {
       case 'statement':
@@ -583,7 +586,7 @@ export const Card: React.FC<{c: any; dur: number}> = ({c, dur}) => {
   };
   return (
     <AbsoluteFill>
-      <CardBg still={c.bg} dur={dur} cold={c.cold} />
+      {own ? null : <CardBg still={c.bg} dur={dur} cold={c.cold} />}
       {body()}
     </AbsoluteFill>
   );

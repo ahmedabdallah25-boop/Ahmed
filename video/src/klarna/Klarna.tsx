@@ -76,7 +76,11 @@ const Frame: React.FC<{shot: Shot}> = ({shot}) => {
   return (
     <AbsoluteFill style={{overflow: 'hidden', backgroundColor: P.ink}}>
       <Img
-        src={staticFile(`broll/klarna/klarna-${String(shot.still).padStart(2, '0')}.jpg`)}
+        src={staticFile(
+          shot.gap
+            ? `broll/klarna/gap-${String(shot.gap).padStart(2, '0')}.jpg`
+            : `broll/klarna/klarna-${String(shot.still).padStart(2, '0')}.jpg`
+        )}
         style={{
           width: '100%',
           height: '100%',
@@ -173,9 +177,22 @@ const Rail: React.FC = () => {
   );
 };
 
+/**
+ * Three cases, not two. A shot is a still, or a card on a blurred reuse, or — once
+ * its gap frame has been generated — its own photograph with the card's type over
+ * it. The third is what the second is a placeholder for: same words, same timing,
+ * but on a frame shot for that line instead of on a blur of a frame shot for
+ * another one.
+ */
 const Shot: React.FC<{shot: Shot}> = ({shot}) => (
   <>
-    {shot.card ? (
+    {shot.gap ? (
+      <>
+        <Frame shot={shot} />
+        <Scrim />
+        <Card c={shot.card} dur={shot.durationInFrames} own />
+      </>
+    ) : shot.card ? (
       <Card c={shot.card} dur={shot.durationInFrames} />
     ) : (
       <>
