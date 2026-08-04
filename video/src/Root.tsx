@@ -3,6 +3,7 @@ import {Composition} from 'remotion';
 import './fonts';
 import {INFLATION_DURATION, Inflation} from './inflation/Inflation';
 import {INFLATION_THUMBS, THUMB_H, THUMB_W} from './inflation/Thumbnail';
+import {KLARNA_DURATION, Klarna} from './klarna/Klarna';
 import {Longform} from './longform/Longform';
 import {VO_DURATION} from './longform/timing';
 import {Short} from './Short';
@@ -35,6 +36,18 @@ export const RemotionRoot: React.FC = () => (
         height={THUMB_H}
       />
     ))}
+    {/* Klarna — the pack's 16 stills, moved and captioned here, against a
+        voiceover re-cut from the supplied long-form read. 30fps because nothing
+        is being resampled: the source stills are static, so the frame rate is a
+        free choice and 30 matches the rest of the Shorts lane. */}
+    <Composition
+      id="Klarna-Short"
+      component={Klarna}
+      durationInFrames={KLARNA_DURATION}
+      fps={30}
+      width={1080}
+      height={1920}
+    />
     {/* Episode 2 — long-form, cut to the recorded VO. */}
     <Composition
       id="Ep2-HalalMortgage"
