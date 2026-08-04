@@ -207,6 +207,10 @@ Mortgages" disambiguates it.
 
    Read it carefully, though: the >90s bucket spans **3 to 52 v/day**, and two of the three
    worst videos are also >90s. So length does not discriminate *within* that band either.
+
+   **The one length statement the data does support: avoid 61–90s.** Three videos, median
+   6.9 v/day, no exceptions — it is the channel's only bucket without a survivor. Anything
+   in production either finishes under 60s or goes past 90s; do not let a cut land between.
    What separates the winners from the losers is when they went out — every one of those
    four sits inside the July 11–14 daily-cadence streak. **Length is noise; cadence is the
    signal.** That is rule 0, and it is the only production rule here with real evidence

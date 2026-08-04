@@ -332,3 +332,151 @@ id and put the Aug 5 slot at risk for no measured gain.
 views. That is a reasonable hypothesis about a retention cost and nothing more — the retention
 curve that would settle it is behind the paywall, and no public number touches it. Not worth
 acting on blind.
+
+---
+
+# Third pass — 2026-08-04, 06:08 UTC (Aug 3, 23:08 PT)
+
+Ten hours and forty-eight minutes after the second pass, and **3 h 52 m before
+`4gRoTTZNnFE` publishes**. Public data only, same free-plan constraint.
+
+## The ledger, ages attached
+
+| Video | Published (PT) | Age | Views | ≈v/day (avg) | Δ over 10.8 h | marginal v/day |
+|---|---|---|---|---|---|---|
+| `sbor6eyJQKc` 10 years of payments | Aug 3, 03:00 | 0.84 d | 23 | ~27 | +5 | **~11** |
+| `OHVnm5R0o5E` Banks take your money (inflation) | Aug 2, 07:02 | 1.67 d | 46 | ~28 | +3 | ~7 |
+| `kOkfpCHeURw` £1,461 a month | Aug 2, 03:00 | 1.84 d | 251 | ~136 | +24 | **~53** |
+| `P3DxNgGFah0` Everyone asks at once | Jul 31, 04:00 | 3.80 d | 39 | ~10 | **+0** | **0** |
+
+Long-form flat at **9 views** across 33 minutes (`bvZ3NdPKsus` 1, `WJ_UhugwA9U` 6,
+`7TWUwpbl83U` 2). Subscribers flat at **191**. Channel aggregate reads 8,576 — it moved,
+but it is still a lagging number and still not worth reading.
+
+**The marginal column is the one that matters.** Average views/day flatters a video whose
+feed test has already closed; the last-10.8-hour rate says what is happening now.
+
+## Three things this pass settles
+
+**1. The retitle result is now hard.** `P3DxNgGFah0` has taken **+0 views in the 16.8 hours
+since it was retitled** — the second pass measured +0 over six hours and called it evidence.
+Two independent windows, both zero. Retitling a Short whose feed test has closed returns
+nothing on this channel. Stop spending passes on it; the only packaging lever with expected
+value is the pre-publish one.
+
+**2. The fourth mortgage entry is not holding — the second pass called this too early.**
+`sbor6eyJQKc` went 18 → 23 views in 10.8 hours: **~11 views/day marginal**, against
+`kOkfpCHeURw`'s ~53/day at a comparable point. It is still inside its 72-hour window and stays
+in `hold` until Aug 6, so this is a leading indicator and not yet a verdict. But it is not
+tracking like a video that is holding, and the second pass's "mortgage is holding at four
+entries deep" now rests on `kOkfpCHeURw` alone.
+
+The refinement the second pass drew from it — *a fourth entry is fine when the claim is new* —
+is the thing under pressure. `sbor6eyJQKc` does make a new claim (amortisation front-loading)
+and is dying anyway. If it lands under 50 v/day on Aug 6, claim-novelty does not rescue a
+fifth-deep family, and topic exhaustion is the plainer read after all.
+
+**3. `kOkfpCHeURw` is decaying, not compounding.** 164 v/day average at the second pass, ~136
+now, with a ~53/day marginal rate. It will settle mid-table — a good result for this channel,
+not a winner. Do not treat it as the mortgage family's proof of life on Aug 6 without noting
+the decay curve.
+
+## What was changed
+
+**Nothing.** No packaging fix was due, and this is the correct outcome rather than an empty one:
+
+- Both scheduled videos already have their packaging applied and verified `already up to date`
+  on runs 3 and 4 — the pre-publish lever is pulled on both.
+- Both `hold` entries are still inside 72 h. `kOkfpCHeURw` clears Aug 5 03:00 PT,
+  `sbor6eyJQKc` Aug 6 03:00 PT. Moving them now would destroy the only clean read available.
+- The `repackage` entry is now measured as worthless twice. Left in place because the script is
+  idempotent and reports `already up to date`; it costs nothing and reverting would mint churn.
+
+A read-only `--inventory` run was dispatched instead — the check that caught `JB6Q_7IE9Jo`
+sitting outside the guard rails last pass, run again because there are under four hours until a
+publish and no public tool can see a private upload.
+
+## What the inventory run returned
+
+Run `30883075618`, read-only, logs read in full rather than trusting the badge.
+
+**1. Guard rails intact.** `Every non-public video is covered by reset.json.` No repeat of last
+pass's near-miss — nothing is reaching the feed unreviewed in the next four hours.
+
+**2. The queue dries up in 1.2 days. This is the finding of the pass.**
+
+```
+last published 0.8d ago
+2 queued, runway 1.2d
+! QUEUE DRIES UP in 1.2d — the next blackout starts there.
+```
+
+After `JB6Q_7IE9Jo` publishes Aug 5 03:00 PT there is **nothing behind it**. The channel's own
+diagnosis is that *length is noise and cadence is the signal* — and the blackout ledger backs it:
+
+```
+BLACKOUT 3.3d before riQ7dLSnogo (2026-07-11)
+BLACKOUT 2.4d before ebIU6OHJ-jg (2026-07-17)
+BLACKOUT 3.4d before UpCMyfIOftA (2026-07-21)
+BLACKOUT 9.7d before P3DxNgGFah0 (2026-07-31)
+BLACKOUT 2.0d before kOkfpCHeURw (2026-08-02)
+DOUBLE  4.0h between kOkfpCHeURw and OHVnm5R0o5E (2026-08-02)
+```
+
+The 9.7-day blackout precedes `P3DxNgGFah0`, which never recovered and is the video sitting at
+0 v/day marginal today. **Producing the next Short matters more than any packaging decision
+available this pass**, and there is no packaging decision available this pass.
+
+That `DOUBLE` line also earns `OHVnm5R0o5E` a caveat: it went out four hours behind
+`kOkfpCHeURw` on the same day and was competing with it for the same feed slot. Its ~28 v/day
+is not clean evidence of inflation-topic exhaustion — it is confounded. Do not stack it on the
+inflation column without saying so.
+
+**3. Length, re-measured on fresh numbers.**
+
+| Bucket | n | Median v/day | Range |
+|---|---|---|---|
+| 31–60s | 1 | 89.8 | — |
+| 61–90s | 3 | **6.9** | 4–10 |
+| >90s | 11 | 42.4 | 3–52 |
+
+Best five: `UpCMyfIOftA` 46s / 89.8 · `riQ7dLSnogo` 180s / 51.5 · `J0TCD2u177k` 144s / 46.7 ·
+`a7xkXgTfCXs` 133s / 45.5 · `OXIP3EJROQk` 140s / 45.1. Worst three: 94s, 119s, 79s — all
+between 3.4 and 3.8 v/day.
+
+The second pass's conclusion holds — length does not discriminate inside the >90s bucket, and
+the 31–60s cell is one video. But **61–90s is the channel's dead zone**: three videos, median
+6.9 v/day, no exceptions. That is the one length statement the data actually supports, and it
+is a hard constraint on anything currently in production.
+
+## The Klarna asset, checked against this state
+
+`klarna-image-prompts.txt` — 16 stills covering the full 55.37s script — was written this pass.
+Validated against the channel, not just against itself:
+
+| Check | Result |
+|---|---|
+| Title format | `Is Klarna Halal?` is the niche's dominant format — the variable Part 15 tests on Aug 5. Consistent. |
+| `riba` in title | Absent. Kept to description and script per the RIBA/architects SERP collision. |
+| Length 55.4s | **Safe, and the margin is thin.** 55.4s clears the 61–90s dead zone by 4.6 seconds. |
+| Slate length rule | The pack cites "slate rule: 30–60s". That rule was retired last pass as unevidenced. The length is fine; the justification is stale — do not re-derive anything from it. |
+| Faceless / no faces | Every prompt specifies a completely blank featureless head; the negative prompt bans facial features. Consistent. |
+| Trailer rule | Closes on `Follow — the fix is next.` — a tease, not homework. Permitted. |
+
+**Hard constraint on the edit: this Short must not cross 60 seconds.** At 55.37s of VO plus
+captions there is under five seconds of headroom before it lands in the only length bucket on
+this channel with no survivors. No end card, no extended hook, no breathing room at the tail.
+
+Its real value is the cadence one. The queue empties Aug 5; **Klarna is the Aug 6 upload**, and
+it is the first slate item that tests the proven format on a subject the channel has never
+touched — against a 5.7M-view mainstream demand pool whose best Islamic-framed answer is
+8,111 views and two years old.
+
+## What to watch, unchanged from the second pass plus one
+
+- `kOkfpCHeURw` clears 72 h **Aug 5 03:00 PT**; `sbor6eyJQKc` **Aug 6 03:00 PT**. Move both out
+  of `hold` then and read them as views/day.
+- `4gRoTTZNnFE` publishes **Aug 4 03:00 PT** (mortgage, curiosity-gap title, fifth in family).
+- `JB6Q_7IE9Jo` publishes **Aug 5 03:00 PT** (paper gold, `Is [X] Halal?`, proven format).
+- **New: the Aug 6 slot is empty.** Filling it is now the highest-leverage action on the
+  channel, ahead of anything in `reset.json`.
