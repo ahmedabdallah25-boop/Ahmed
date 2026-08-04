@@ -1,2 +1,6 @@
 __pycache__/
 *.pyc
+
+# Local Claude Code permission grants. The MCP server IDs in here are session
+# specific, so this is a machine-local fix, not something to share.
+.claude/settings.local.json
