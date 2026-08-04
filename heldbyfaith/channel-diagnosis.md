@@ -163,12 +163,43 @@ has 1 view in a format that cannot travel. The footage is already made.
 
 ## Ready-to-apply fix pack
 
-**These cannot be applied from this session.** The repo's GitHub Actions write to *Finance %
-Decoded* using secrets `new1`/`new2`/`new3` — that is an OAuth refresh token scoped to that
-channel. HELD BY FAITH needs its own credentials before any automated write can touch it. Until
-then these are copy-paste, and [`packaging-fix.json`](packaging-fix.json) holds them in the same
-shape `automation/reset_packaging.py` already consumes, so wiring it up later is a config change
-rather than new code.
+**These cannot be applied from this session — verified, not assumed.**
+
+Re-checked 2026-08-04 13:49 UTC after credentials were reported added. A read-only
+`reset-packaging.yml` run (`inventory: true`, `dry_run: true`, run `30915672935`) authenticated
+with `new1`/`new2`/`new3` and returned:
+
+```
+23 owned videos
+  JB6Q_7IE9Jo  Is Paper Gold Halal? ...
+  4gRoTTZNnFE  How to Tell If Your "Islamic" Mortgage Is Actually Fake
+  ... 21 more ...
+  V8HYpTHy2aU  How Banks Secretly Profit From Your Savings
+```
+
+**All 23 are Finance % Decoded. Not one HELD BY FAITH video appeared.** So those three secrets
+still authenticate as the finance channel, and whatever was added for this channel is not
+reaching these workflows — most likely it is stored under different secret names, since nothing
+outside `new1`/`new2`/`new3` and `YT_API_KEY` is referenced by any workflow in `.github/workflows/`.
+
+Worth knowing for whoever wires this up: a YouTube refresh token is bound to the channel selected
+at consent time, so the same Google login still needs a **separate** token per channel. One
+account owning both is not enough.
+
+Until that token exists and a workflow references it, these fixes are copy-paste.
+[`packaging-fix.json`](packaging-fix.json) holds them in the same shape
+`automation/reset_packaging.py` already consumes, so wiring it up later is a config change rather
+than new code.
+
+**A guard now exists, because the same check exposed a real hazard.** Every write in
+`reset_packaging.py` resolves its target with `mine=True`, and `fix_channel_meta()` does a
+fetch-then-mutate on `brandingSettings`. Pointing `YT_REFRESH_TOKEN` at this channel and running
+without `--dry-run` would have overwritten HELD BY FAITH's keywords and country with the
+Islamic-finance list in a single silent call. `reset.json` now declares
+`expect_channel_id: UCVOoFJkRiOdJsWnewt8HJkw` and `assert_channel()` aborts any write when the
+authenticated channel does not match. Read-only runs warn and continue. **When this channel gets
+its own config, give it its own `expect_channel_id` of `UCh0tKIGR5Ns3Wvoai__txdg` before the
+first write.**
 
 ### Channel keywords (paste into Settings → Channel → Basic info → Keywords)
 
