@@ -24,7 +24,7 @@ Data pulled 2026-07-17 from public YouTube data via Nexlev.
 |---|---|
 | [`channel-reset.md`](channel-reset.md) | **Current.** Full diagnosis of the long-form failure and the Shorts slowdown, what was ruled out and why, the decision, and how to read the next two weeks. Three dated passes |
 | [`klarna-scene-pack.txt`](klarna-scene-pack.txt) | **The next upload.** "Is Klarna Halal?" — VO script, 47 scenes, caption spec, edit notes, and paste-ready title/description/tags. Its image prompts are superseded |
-| [`klarna-shot-list.md`](klarna-shot-list.md) | **The edit list.** All 51 visuals in the CapCut cut mapped onto the 47 scenes, with the order and duration each needs |
+| [`klarna-shot-list.md`](klarna-shot-list.md) | **The edit list.** All 47 scenes timed to the recorded voiceover (2:22.8) and matched to the visuals in the CapCut cut |
 | [`next-slate.md`](next-slate.md) | The next 10 uploads, pitched title-first — title, frame one, line one and payoff locked before anything is produced |
 | [`channel-study.md`](channel-study.md) | Full channel performance study: what the winners share, why the insurance arc is slumping |
 | [`last-video-fix.md`](last-video-fix.md) | Copy-paste fix pack for the latest Short (Part 12 — Takaful): new title, description, tags, pinned comment, re-cut hook script, and a 72-hour decision rule |

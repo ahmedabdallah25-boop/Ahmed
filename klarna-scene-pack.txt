@@ -10,8 +10,9 @@ Target publish: 2026-08-06, 03:00 PT
     shopkeeper and the shop environments are all shot, alongside cards, blank
     banknotes and brass on dark walnut. The shot list maps every visual in the
     CapCut cut onto the 47 scenes below, with the duration each one needs.
-    Everything else here — VO script, captions, timecodes, caption spec, edit
-    notes, upload metadata — still stands. The VO is not recorded yet.
+    Everything else here — VO script, captions, caption spec, edit
+    notes, upload metadata — still stands. THE TIMECODES BELOW ARE SUPERSEDED:
+    the VO is recorded and runs 2:22.8, not 3:02. Use the shot list.
 
 WHY THIS ONE, AND WHY NOW
 - It is the largest measured demand gap on the slate. Mainstream BNPL explainers
