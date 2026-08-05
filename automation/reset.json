@@ -13,7 +13,7 @@
     }
   ],
   "hold": {
-    "_why": "Inside their 72-hour feed test. Changing packaging mid-test destroys the only clean read available. Updated third pass, 2026-08-04 11:04Z. 4gRoTTZNnFE published 2026-08-04 03:00 PT and MOVED HERE FROM 'scheduled' — it is now public, so leaving it under 'scheduled' would let a later pass rewrite the packaging of a live video mid-test, which is exactly what this guard rail exists to prevent. Its test clears 2026-08-07 03:00 PT. kOkfpCHeURw clears 2026-08-05 03:00 PT: 253 views at 2.04 d, but its MARGINAL rate has decayed from ~164/day to ~40/day over the last 15.7 h, so the ~124/day lifetime average overstates it. sbor6eyJQKc clears 2026-08-06 03:00 PT: 23 views at 1.04 d (~22/day). Neither is recoverable by retitling — see P3DxNgGFah0, which took +0 views in the 21.7 h after its retitle.",
+    "_why": "Inside their 72-hour feed test. Changing packaging mid-test destroys the only clean read available. Updated fourth pass, 2026-08-05 03:10Z. kOkfpCHeURw clears TODAY 2026-08-05 10:00Z: 257 views at 2.7 d, marginal rate now ~6/day (164 -> 40 -> 6) — it will finish ~260 lifetime, under the 280-300 expected. When it clears, do NOT repackage it and do NOT remove this entry's lesson: a cleared test on a decayed Short is a record, not an invitation (P3DxNgGFah0 took +0 views in 21.7 h after its retitle). sbor6eyJQKc clears 2026-08-06 10:00Z: 32 views at 1.7 d, marginal ~13/day. 4gRoTTZNnFE clears 2026-08-07 10:00Z: 11 views at 0.7 d, marginal ~10/day — weak first day but inside the never-judge-before-72h window.",
     "video_ids": [
       "sbor6eyJQKc",
       "kOkfpCHeURw",

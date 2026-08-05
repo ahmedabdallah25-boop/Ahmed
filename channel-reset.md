@@ -435,3 +435,52 @@ legitimately improve.
   new-subject uploads → buy one month of private analytics.** Public view counts have now produced
   three passes of increasingly fine-grained inference and cannot separate topic from cadence from
   retention. That separation costs one month of a paid plan and an afternoon.
+
+---
+
+# Fourth pass — 2026-08-05, 03:10 UTC (Aug 4, 20:10 PT)
+
+16.1 hours after the third pass. Same public-data-only constraint. No packaging writes were
+needed or made this pass — verification and ledger only.
+
+## The ledger
+
+| Video | Age | Views | Δ since 11:04Z | Marginal v/day |
+|---|---|---|---|---|
+| `4gRoTTZNnFE` Fake Islamic mortgage | 0.7 d | 11 | +7 | ~10 *(in test)* |
+| `sbor6eyJQKc` 10 years of payments | 1.7 d | 32 | +9 | ~13 |
+| `OHVnm5R0o5E` Banks take your money | 2.5 d | 50 | +1 | ~1.5 — dead |
+| `kOkfpCHeURw` £1,461 a month | 2.7 d | 257 | +4 | **~6** (164 → 40 → 6) |
+| `P3DxNgGFah0` Everyone asks at once | 4.7 d | 39 | +0 | 0 — dead, third zero |
+
+Long-form 12 → 13. Subscribers flat at 191 across four passes. Channel lifetime 8,614.
+
+**Every post-blackout upload is resolving into the same 6–22 v/day band**, regardless of
+family, claim novelty, or title shape. `kOkfpCHeURw` — the one recent bright spot — decayed
+164 → 40 → 6 and clears its 72 h test today at 10:00 UTC finishing near ~260, under the
+280–300 the third pass projected. This is progressively less consistent with per-family topic
+exhaustion alone and more consistent with the feed having cooled on the channel generally —
+which is precisely the branch the first pass's decision rule was written for. The rule has not
+fired yet: the five new-subject/new-format uploads it counts have only just begun (Aug 5 is
+entry one). Do not fire it early; do not forget it either.
+
+## Verified this pass
+
+1. **Part 15's format-test packaging is confirmed live on the platform.** The Aug 4 14:00Z
+   inventory run shows `JB6Q_7IE9Jo` (private, publishes 2026-08-05 10:00Z) already titled
+   `Is Paper Gold Halal? (Most People Own a Promise)` on YouTube itself — not just in config.
+   The channel's first `Is [X] Halal?` test goes to the feed correctly packaged. Read it
+   **Aug 8, as marginal v/day**, against `4gRoTTZNnFE` (Aug 4, curiosity-gap) as the contrast.
+2. **A fresh dry-run pass at 03:11Z confirmed the whole platform state matches config**:
+   `JB6Q_7IE9Jo already up to date`, `P3DxNgGFah0 already up to date`, channel metadata up to
+   date, 23 owned videos — no unmanaged upload appeared since yesterday's 14:00Z inventory,
+   which is how the second pass caught Part 15. `0 video(s) updated` — nothing needed writing.
+
+## The single open risk, unchanged and now due
+
+**The queue is empty after today's 10:00 UTC publish.** The Aug 4 inventory said it plainly:
+`QUEUE DRIES UP in 0.8d — the next blackout starts there.` The Klarna Short exists only as
+`klarna-scene-pack.txt` — script, 46 scenes, prompts, upload metadata — with no video produced
+against it. The Jul 21 → Jul 31 blackout is the single largest structural event on the channel
+and the thing the whole reset has been recovering from. **Producing and scheduling Klarna for
+Aug 6 outranks every other action on this channel, including analysis.**
