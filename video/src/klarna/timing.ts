@@ -69,13 +69,15 @@ export const SHOTS: Shot[] = [
     "from": 180,
     "durationInFrames": 66,
     "still": null,
-    "gap": null,
+    "gap": 1,
     "card": {
       "type": "statement",
       "text": "Because somebody is.",
       "bg": 3
     },
-    "move": {},
+    "move": {
+      "push": 0.05
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -85,14 +87,17 @@ export const SHOTS: Shot[] = [
     "from": 246,
     "durationInFrames": 93,
     "still": null,
-    "gap": null,
+    "gap": 2,
     "card": {
       "type": "statement",
       "text": "And it might be you.",
       "sub": "Just not where you’re looking.",
       "bg": 3
     },
-    "move": {},
+    "move": {
+      "push": 0.04,
+      "dx": -20
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -102,14 +107,16 @@ export const SHOTS: Shot[] = [
     "from": 339,
     "durationInFrames": 153,
     "still": null,
-    "gap": null,
+    "gap": 3,
     "card": {
       "type": "statement",
       "text": "Klarna does not\nlend you money.",
       "accent": "not",
       "bg": 1
     },
-    "move": {},
+    "move": {
+      "push": 0.06
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -133,7 +140,7 @@ export const SHOTS: Shot[] = [
     "from": 627,
     "durationInFrames": 51,
     "still": null,
-    "gap": null,
+    "gap": 4,
     "card": {
       "type": "flow",
       "nodes": [
@@ -144,7 +151,9 @@ export const SHOTS: Shot[] = [
       "lit": 2,
       "bg": 4
     },
-    "move": {},
+    "move": {
+      "push": 0.07
+    },
     "cold": false,
     "figureY": 780,
     "cap": "Then you owe Klarna.",
@@ -154,7 +163,7 @@ export const SHOTS: Shot[] = [
     "from": 678,
     "durationInFrames": 60,
     "still": null,
-    "gap": null,
+    "gap": 5,
     "card": {
       "type": "statement",
       "text": "It decides everything.",
@@ -216,7 +225,7 @@ export const SHOTS: Shot[] = [
     "from": 939,
     "durationInFrames": 84,
     "still": null,
-    "gap": null,
+    "gap": 6,
     "card": {
       "type": "number",
       "from": "£90",
@@ -224,7 +233,10 @@ export const SHOTS: Shot[] = [
       "note": "what the shop actually receives",
       "bg": 4
     },
-    "move": {},
+    "move": {
+      "push": 0.05,
+      "dx": 24
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -234,7 +246,7 @@ export const SHOTS: Shot[] = [
     "from": 1023,
     "durationInFrames": 165,
     "still": null,
-    "gap": null,
+    "gap": 7,
     "card": {
       "type": "pct",
       "label": "KLARNA KEEPS",
@@ -242,7 +254,9 @@ export const SHOTS: Shot[] = [
       "to": 6,
       "bg": 2
     },
-    "move": {},
+    "move": {
+      "push": 0.08
+    },
     "cold": false,
     "figureY": 780,
     "cap": "Often 3 to 6%.",
@@ -269,7 +283,7 @@ export const SHOTS: Shot[] = [
     "from": 1248,
     "durationInFrames": 78,
     "still": null,
-    "gap": null,
+    "gap": 8,
     "card": {
       "type": "ledger",
       "rows": [
@@ -284,7 +298,9 @@ export const SHOTS: Shot[] = [
       ],
       "bg": 2
     },
-    "move": {},
+    "move": {
+      "push": 0.04
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -294,14 +310,16 @@ export const SHOTS: Shot[] = [
     "from": 1326,
     "durationInFrames": 90,
     "still": null,
-    "gap": null,
+    "gap": 9,
     "card": {
       "type": "statement",
       "text": "It was already\ninside the price.",
       "accent": "already",
       "bg": 5
     },
-    "move": {},
+    "move": {
+      "push": 0.09
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -311,13 +329,15 @@ export const SHOTS: Shot[] = [
     "from": 1416,
     "durationInFrames": 126,
     "still": null,
-    "gap": null,
+    "gap": 10,
     "card": {
       "type": "statement",
       "text": "No shop absorbs\nthat fee.",
       "bg": 5
     },
-    "move": {},
+    "move": {
+      "push": 0.05
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -419,7 +439,7 @@ export const SHOTS: Shot[] = [
     "from": 2112,
     "durationInFrames": 63,
     "still": null,
-    "gap": null,
+    "gap": 11,
     "card": {
       "type": "statement",
       "text": "A penalty that becomes\ntheir profit.",
@@ -427,7 +447,9 @@ export const SHOTS: Shot[] = [
       "cold": true,
       "bg": 9
     },
-    "move": {},
+    "move": {
+      "push": 0.07
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -437,13 +459,15 @@ export const SHOTS: Shot[] = [
     "from": 2175,
     "durationInFrames": 123,
     "still": null,
-    "gap": null,
+    "gap": 12,
     "card": {
       "type": "statement",
       "text": "That is the oldest\nobjection there is.",
       "bg": 9
     },
-    "move": {},
+    "move": {
+      "dx": 26
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -485,14 +509,16 @@ export const SHOTS: Shot[] = [
     "from": 2595,
     "durationInFrames": 56,
     "still": null,
-    "gap": null,
+    "gap": 13,
     "card": {
       "type": "statement",
       "text": "So is it halal?",
       "big": true,
       "bg": 11
     },
-    "move": {},
+    "move": {
+      "push": 0.06
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -502,7 +528,7 @@ export const SHOTS: Shot[] = [
     "from": 2651,
     "durationInFrames": 109,
     "still": null,
-    "gap": null,
+    "gap": 14,
     "card": {
       "type": "statement",
       "text": "Don’t ask about the brand.",
@@ -510,7 +536,9 @@ export const SHOTS: Shot[] = [
       "accent": "three",
       "bg": 11
     },
-    "move": {},
+    "move": {
+      "push": 0.04
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -520,14 +548,16 @@ export const SHOTS: Shot[] = [
     "from": 2760,
     "durationInFrames": 114,
     "still": null,
-    "gap": null,
+    "gap": 15,
     "card": {
       "type": "question",
       "n": "ONE",
       "q": "Is this a sale,\nor a loan?",
       "bg": 4
     },
-    "move": {},
+    "move": {
+      "push": 0.05
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -537,7 +567,7 @@ export const SHOTS: Shot[] = [
     "from": 2874,
     "durationInFrames": 69,
     "still": null,
-    "gap": null,
+    "gap": 16,
     "card": {
       "type": "flow",
       "nodes": [
@@ -549,7 +579,9 @@ export const SHOTS: Shot[] = [
       "caption": "They paid the shop. You owe them.",
       "bg": 4
     },
-    "move": {},
+    "move": {
+      "dx": -26
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -559,13 +591,15 @@ export const SHOTS: Shot[] = [
     "from": 2943,
     "durationInFrames": 57,
     "still": null,
-    "gap": null,
+    "gap": 17,
     "card": {
       "type": "verdict",
       "text": "THAT IS A LOAN",
       "bg": 4
     },
-    "move": {},
+    "move": {
+      "push": 0.09
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -575,14 +609,16 @@ export const SHOTS: Shot[] = [
     "from": 3000,
     "durationInFrames": 102,
     "still": null,
-    "gap": null,
+    "gap": 18,
     "card": {
       "type": "question",
       "n": "TWO",
       "q": "Does anybody profit\nfrom that loan?",
       "bg": 13
     },
-    "move": {},
+    "move": {
+      "push": 0.05
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -592,7 +628,7 @@ export const SHOTS: Shot[] = [
     "from": 3102,
     "durationInFrames": 96,
     "still": null,
-    "gap": null,
+    "gap": 19,
     "card": {
       "type": "ledger",
       "rows": [
@@ -607,7 +643,9 @@ export const SHOTS: Shot[] = [
       ],
       "bg": 13
     },
-    "move": {},
+    "move": {
+      "push": 0.06
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -617,14 +655,16 @@ export const SHOTS: Shot[] = [
     "from": 3198,
     "durationInFrames": 120,
     "still": null,
-    "gap": null,
+    "gap": 20,
     "card": {
       "type": "statement",
       "text": "A loan that brings a benefit\nto the lender.",
       "accent": "benefit",
       "bg": 13
     },
-    "move": {},
+    "move": {
+      "push": 0.07
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -634,13 +674,15 @@ export const SHOTS: Shot[] = [
     "from": 3318,
     "durationInFrames": 114,
     "still": null,
-    "gap": null,
+    "gap": 21,
     "card": {
       "type": "statement",
       "text": "The exact phrase the\nscholars argue over.",
       "bg": 13
     },
-    "move": {},
+    "move": {
+      "dx": 22
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -650,7 +692,7 @@ export const SHOTS: Shot[] = [
     "from": 3432,
     "durationInFrames": 132,
     "still": null,
-    "gap": null,
+    "gap": 22,
     "card": {
       "type": "question",
       "n": "THREE",
@@ -658,7 +700,9 @@ export const SHOTS: Shot[] = [
       "sub": "If later costs more than now, you paid for time.",
       "bg": 8
     },
-    "move": {},
+    "move": {
+      "push": 0.05
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -668,13 +712,15 @@ export const SHOTS: Shot[] = [
     "from": 3564,
     "durationInFrames": 66,
     "still": null,
-    "gap": null,
+    "gap": 23,
     "card": {
       "type": "verdict",
       "text": "TIME IS NOT THEIRS TO SELL",
       "bg": 8
     },
-    "move": {},
+    "move": {
+      "push": 0.08
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -684,7 +730,7 @@ export const SHOTS: Shot[] = [
     "from": 3630,
     "durationInFrames": 164,
     "still": null,
-    "gap": null,
+    "gap": 24,
     "card": {
       "type": "balance",
       "head": "Scholars genuinely differ here.",
@@ -711,7 +757,7 @@ export const SHOTS: Shot[] = [
     "from": 3794,
     "durationInFrames": 178,
     "still": null,
-    "gap": null,
+    "gap": 25,
     "card": {
       "type": "balance",
       "head": "Scholars genuinely differ here.",
@@ -728,7 +774,9 @@ export const SHOTS: Shot[] = [
       "verdict": "THE DISAGREEMENT ENDS",
       "bg": 12
     },
-    "move": {},
+    "move": {
+      "push": 0.06
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -738,13 +786,15 @@ export const SHOTS: Shot[] = [
     "from": 3972,
     "durationInFrames": 75,
     "still": null,
-    "gap": null,
+    "gap": 26,
     "card": {
       "type": "statement",
       "text": "But here is the part\nnobody says.",
       "bg": 13
     },
-    "move": {},
+    "move": {
+      "push": 0.04
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -754,14 +804,16 @@ export const SHOTS: Shot[] = [
     "from": 4047,
     "durationInFrames": 66,
     "still": null,
-    "gap": null,
+    "gap": 27,
     "card": {
       "type": "statement",
       "text": "Buy now, pay later\nis not the problem.",
       "accent": "not",
       "bg": 13
     },
-    "move": {},
+    "move": {
+      "push": 0.05
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -771,14 +823,16 @@ export const SHOTS: Shot[] = [
     "from": 4113,
     "durationInFrames": 57,
     "still": null,
-    "gap": null,
+    "gap": 28,
     "card": {
       "type": "era",
       "text": "Islam has had it for",
       "years": "1,400 years",
       "bg": 13
     },
-    "move": {},
+    "move": {
+      "push": 0.06
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -802,7 +856,7 @@ export const SHOTS: Shot[] = [
     "from": 4245,
     "durationInFrames": 141,
     "still": null,
-    "gap": null,
+    "gap": 29,
     "card": {
       "type": "steps",
       "items": [
@@ -812,7 +866,9 @@ export const SHOTS: Shot[] = [
       ],
       "bg": 13
     },
-    "move": {},
+    "move": {
+      "dx": 30
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -837,13 +893,15 @@ export const SHOTS: Shot[] = [
     "from": 4524,
     "durationInFrames": 144,
     "still": null,
-    "gap": null,
+    "gap": 30,
     "card": {
       "type": "statement",
       "text": "Paid over time.",
       "bg": 12
     },
-    "move": {},
+    "move": {
+      "push": 0.05
+    },
     "cold": false,
     "figureY": 780,
     "cap": null,
@@ -853,7 +911,7 @@ export const SHOTS: Shot[] = [
     "from": 4668,
     "durationInFrames": 75,
     "still": null,
-    "gap": null,
+    "gap": 31,
     "card": {
       "type": "statement",
       "text": "Late? You owe the same.",
