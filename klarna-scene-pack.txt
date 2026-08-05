@@ -5,12 +5,13 @@ Render style: 3D faceless low-poly | 9:16 1080x1920 | ~150s | 47 scenes
 Target publish: 2026-08-06, 03:00 PT
 ================================================================================
 
->>> THE IMAGE PROMPTS BELOW WERE NOT USED. See klarna-shot-list.md.
-    The stills generated on 2026-08-04/05 abandoned the cast (AMIR, THE MERCHANT,
-    THE OLD MERCHANT) for an object-only still life — cards, blank banknotes,
-    brass, dark walnut. The shot list maps what was actually shot onto all 47
-    scenes below. Everything else in this file — VO script, captions, timecodes,
-    caption spec, edit notes, upload metadata — still stands.
+>>> ALL 47 VISUALS ARE GENERATED AND CUT. See klarna-shot-list.md.
+    The look landed between this pack and an object-only still life: AMIR, the
+    shopkeeper and the shop environments are all shot, alongside cards, blank
+    banknotes and brass on dark walnut. The shot list maps every visual in the
+    CapCut cut onto the 47 scenes below, with the duration each one needs.
+    Everything else here — VO script, captions, timecodes, caption spec, edit
+    notes, upload metadata — still stands. The VO is not recorded yet.
 
 WHY THIS ONE, AND WHY NOW
 - It is the largest measured demand gap on the slate. Mainstream BNPL explainers
