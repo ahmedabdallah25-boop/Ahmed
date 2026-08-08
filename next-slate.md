@@ -102,7 +102,21 @@ the next entry, and the formula-perfect third inflation video did 43 views.
 > **The strongest asset in the pack is the glide path** (scene 34): the fund automatically
 > moves you *deeper* into interest the closer you get to retiring, as a feature. Almost no
 > competitor video says this, and it is the mechanism-reveal shape that produced IFG's single
-> best video (`Why is FOREX considered HARAM?`, 221K).
+> best video (`Why is FOREX considered HARAM?`, 221K). It is staged as **Bilal walking down
+> the glide path toward the faceless grey clerk** — the argument carried by the picture
+> rather than the voiceover.
+>
+> **Rewritten 2026-08-08 for the flat-vector house cast** (Kareem, Adam, Sami, Bilal, and the
+> Institution device set). The pack was first drafted for 3D faceless low-poly and its
+> negative prompt excluded faces, outlines and flat vector outright — it would have fought
+> the character sheets rather than used them. The style rules now live in
+> [`house-style.md`](house-style.md), which is the source of truth for every future pack.
+>
+> ⚠️ **Two variables move on this upload, not one.** Subject *and* render style. The style
+> change is justified — a recurring named cast compounds across every future upload, and
+> style was never a variable under test — but it means this Short's result cannot be
+> attributed to the subject alone. Say so when reading it. From the next upload onward the
+> style is locked and the readable one-variable series resumes.
 
 - **Frame one** — a pension statement, holdings fanning out beneath it.
 - **Line one** — *"Your pension owns things you would never buy with your own money."*

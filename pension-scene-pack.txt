@@ -1,9 +1,24 @@
 ================================================================================
 FINANCE % DECODED — SCENE PACK
 "IS YOUR PENSION HALAL?" (THE DEFAULT FUND)
-Render style: 3D faceless low-poly | 9:16 1080x1920 | ~165s | 46 scenes
+Render style: FLAT 2D VECTOR — house cast | 9:16 1080x1920 | ~165s | 46 scenes
 Target publish: 2026-08-09, 03:00 PT
 ================================================================================
+
+>>> STYLE CHANGE, 2026-08-08 — READ THIS FIRST <<<
+
+This pack was originally written for 3D faceless low-poly and has been REWRITTEN
+for the channel's flat-vector house cast (Kareem, Adam, Sami, Bilal, and the
+Institution device set).
+
+The two styles are mutually exclusive, not adjacent. The old negative prompt
+excluded "facial features, eyes, mouth, nose, cartoon outlines, flat vector,
+2D illustration" — every one of which is now REQUIRED. If any old prompt text is
+still in your generation history, discard it. Do not mix the two in one video.
+
+The character sheets are the source of truth. Every prompt below is written to
+match them, but where a prompt and a sheet disagree, THE SHEET WINS.
+
 
 WHY THIS ONE, AND WHY NOW
 - It reuses `Is [named thing] Halal?`, the ONLY packaging variable ever measured
@@ -28,17 +43,24 @@ WHY THIS ONE, AND WHY NOW
 WHAT MOVES, AND WHAT IS HELD CONSTANT
   MOVES : the subject only (retirement/pension — never covered).
   HELD  : the `Is [X] Halal? (compressed claim)` title shape, the 03:00 PT
-          publish slot, the render style, the cast, and the palette.
-  This is what makes the result readable. The Klarna upload broke exactly this
-  by shipping "You've Already Paid Klarna." instead of the locked
-  "Is Klarna Halal?" title, which moved subject AND format together and
-  destroyed the one clean pair the slate had designed.
+          publish slot, the cast, and the palette.
+  NOTE  : the render style itself is changing with this upload, from low-poly 3D
+          to the flat-vector cast. That is a second variable moving, and it is
+          worth saying out loud rather than pretending otherwise. It is
+          justified — a recurring named cast is a channel-identity asset that
+          compounds across every future upload, and style was never one of the
+          variables under test. But if this Short over- or under-performs, the
+          result cannot be attributed to the subject alone. From the NEXT upload
+          onward the style is locked and constant again, and the readable
+          one-variable series resumes.
 
 HOW TO USE THIS FILE
 - Every IMAGE PROMPT below is complete and self-contained. Copy, paste, generate.
-  Character identity, wardrobe, style and camera are already baked into each one.
+  Character identity, wardrobe, style and framing are already baked into each one.
 - The NEGATIVE PROMPT is identical for all scenes. Paste it once into your tool's
   negative field and leave it there.
+- ALWAYS attach the relevant character sheet as an image reference. The prompt
+  text alone will drift; the sheet is what holds the face steady.
 - VO lines use ElevenLabs v3 audio tags. Paste the line exactly as written,
   brackets included.
 - CAPTION lines are what you burn into the video. See CAPTION SPEC at the bottom.
@@ -48,54 +70,119 @@ HOW TO USE THIS FILE
 NEGATIVE PROMPT — paste into the negative field, applies to ALL 46 scenes
 ================================================================================
 
-facial features, eyes, mouth, nose, lips, eyebrows, face, portrait, cartoon
-outlines, cel shading, flat vector, anime, 2D illustration, text, watermark,
-logo, signature, brand marks, distorted hands, extra limbs, extra fingers,
-blurry, low resolution, oversaturated, plastic sheen, uncanny
+3D render, 3D model, photorealistic, photograph, realistic skin texture, clay
+render, low-poly, depth of field, bokeh, blurred background, gradient mesh,
+airbrushed shading, painterly brush strokes, watercolour, sketchy lines, variable
+line weight, hatching, film grain, gritty texture, harsh dramatic lighting, deep
+cast shadows, text, lettering, watermark, logo, signature, brand marks, extra
+fingers, distorted hands, extra limbs, cluttered background, busy detail, neon
+colours, oversaturated, blurry, low resolution
 
 
 ================================================================================
-BRAND-SAFETY NOTE — read before generating
+STYLE LOCK — the grammar every prompt below is written in
 ================================================================================
 
-No prompt in this pack names or depicts a real pension provider, fund manager,
-index, bank, or any real wordmark. Every statement, dashboard and fund list on
-screen is GENERIC and unbranded. The video names no product and recommends none.
+- Flat 2D vector illustration. Clean, EVEN-WEIGHT dark brown outlines on every
+  shape — the line never thickens or tapers.
+- Flat colour fills with only soft, minimal shading. No gradients, no glow.
+- Warm cream background, approximately #F7EFDD, kept plain and uncluttered.
+- Figures sit on a soft pale elliptical ground shadow. Nothing else beneath them.
+- Faces are simple: solid dot eyes, fine curved eyebrows, a small simple mouth,
+  a minimal nose line. Beards are flat shapes, not rendered hair.
+- Rounded, friendly proportions. Characters read at roughly 6 to 7 heads tall.
+- Props and environments are drawn in the SAME flat vector language as the
+  characters — never photographic, never 3D.
+- 9:16 vertical composition. Subject in the lower two-thirds, clean headroom
+  above for burned-in captions.
 
-This is deliberate and it is the channel's own editorial rule, set in the
-credit-card Short: "I'm deliberately not naming a product. Terms change,
-availability changes, and a video that names one is out of date the month it
-does. The test doesn't change." Same here. The video teaches the CHECK, not a
-fund. That is also what makes it a template you can re-run.
-
-A generated lookalike logo is both a trademark problem and an AI-artefact
-magnet. Keep every screen generic.
+PALETTE (taken from the sheets)
+  cream background #F7EFDD · outline dark brown #3D2B23 · sage green #7C8A5F
+  · rust red #B5603F · teal #2F6B72 · sand #D9C08D · camel #B8823C
+  · charcoal grey #5A5A5A · espresso #4A342A · institution grey #8A8A8A
 
 
 ================================================================================
-CONSISTENCY WORKFLOW — do this before generating scene 2
+CAST — the house characters, as drawn on the sheets
 ================================================================================
 
-1. Generate SCENE 07 first. It is the cleanest full-body view of AMIR.
-2. Approve the character design. Regenerate until the head is fully blank.
-3. LOCK THE SEED. Reuse that exact seed for all 46 scenes.
-4. Feed the approved Scene 07 image back as an image reference for every other
-   shot containing AMIR.
-5. Do the same for THE OLDER WORKER (first appears scene 29) and THE FINANCIER
-   (first appears scene 23) — generate, approve, lock, reference.
-   Character drift between scenes is the #1 failure mode of this format.
+KAREEM — THE HOST
+  Dark near-black tousled hair, full dark beard with grey speckling, fair skin.
+  Sage green henley shirt with a three-button placket, sleeves rolled to the
+  forearm. Charcoal grey trousers, dark brown shoes.
+  Sheet provides: FRONT / 3-4 / SIDE views + NEUTRAL, WARM, SERIOUS, QUESTIONING.
+  ROLE HERE: the presenter. He carries direct address and only direct address —
+  the hook, the reveal setup, the turn, and the close. He never appears inside
+  the mechanism scenes. Keeping him outside the diagram is what makes him read
+  as the person explaining it rather than a character in it.
 
-CAST — all reused from earlier packs, so the channel stays visually continuous
-  AMIR            — terracotta #E85F42 t-shirt, cream #E8DCC8 trousers, white
-                    sneakers, cream beanie. Blank matte tan head.
-  THE FINANCIER   — deep navy #1E3A5F suit, no tie, navy bucket hat. Blank matte
-                    tan head. (Same character as the banker in earlier packs.)
-  THE OLDER WORKER— older, navy #1E3A5F knitted cardigan, grey flat cap, slight
-                    stoop. Blank matte tan head. (Same design as THE CASH BUYER
-                    in the Klarna pack — reuse the locked seed.)
+ADAM — THE EVERYMAN  (sheet titles him "THE CARDHOLDER")
+  Short brown side-parted hair, clean-shaven, fair skin. Rust red short-sleeved
+  t-shirt, camel trousers, dark brown shoes.
+  Sheet provides: FRONT / 3-4 / SIDE views + NEUTRAL, PLEASED, WORRIED, RESOLVED.
+  ROLE HERE: the viewer's stand-in. It is HIS pension. He is the one who chose a
+  number and never chose a fund, and he is the one who fixes it at the end.
+  His four expressions map exactly onto this script's emotional arc, which is
+  why he carries it: NEUTRAL at the start, WORRIED through the reveal, RESOLVED
+  at the fix.
 
-PALETTE  terracotta #E85F42 · cream #E8DCC8 · navy #1E3A5F · soft gold #F5D76E
-         · olive #6B7A4F
+SAMI — THE COLLEAGUE
+  Short dark hair, dark beard with grey speckling, medium-tan skin. Teal
+  t-shirt, dark charcoal trousers, dark shoes.
+  ROLE HERE: crowd and comparison beats only — the "same machine" row and the
+  "most people never move" beat. No solo scenes, no expression work.
+
+BILAL — THE OLDER COLLEAGUE
+  Dark brown hair, full dark brown beard (the fullest of the four), medium-tan
+  skin. Sand button-up shirt with sleeves rolled, espresso trousers, dark shoes.
+  ROLE HERE: the one nearest retirement. He carries the glide-path reveal —
+  scenes 29 and 34, the strongest beat in the pack. He reads as the eldest of
+  the four, which is the only reason the reveal lands without a line of VO
+  explaining who he is.
+
+>>> GAP TO FILL: Sami and Bilal have full-body sheets but NO expression sheets.
+    Bilal carries scene 34, which is the emotional peak of the video and wants a
+    subdued, resigned face. Either generate a 4-expression sheet for Bilal first
+    (matching Kareem's and Adam's layout: NEUTRAL / WARM / SERIOUS / RESIGNED),
+    or shoot 34 from behind and over the shoulder as written below, which is the
+    safe option and is what the prompt specifies. Sami needs nothing — he is
+    never closer than mid-shot.
+
+THE INSTITUTION — device set, from the third sheet
+  THE CLERK   — a plain mid-grey featureless humanoid silhouette with the same
+                dark outline. No face, no clothing detail, no colour.
+  THE COUNTER — a teller window: dark vertical bars, rust red counter ledge,
+                olive lower panel, the grey clerk behind it.
+  THE PAPER   — blank cards and blank open documents, flat, seen from above.
+
+  WHY THIS DEVICE IS THE SPINE OF THIS PARTICULAR VIDEO. The whole argument is
+  that a decision was made for you by something you never met. Your own visual
+  grammar already says exactly that: named people have faces and colour, the
+  institution has neither. So the closing line — "somebody else just made it for
+  you" — is carried by the grey silhouette rather than by the words. Use THE
+  CLERK for every institutional beat. Do not give the institution a named face,
+  and do not let Kareem or Adam stand in for it.
+
+
+================================================================================
+CONSISTENCY WORKFLOW — do this before generating anything
+================================================================================
+
+1. This cast already has sheets. Do NOT redesign them and do not "improve" them.
+2. For EVERY scene containing a character, attach that character's sheet as an
+   image reference alongside the prompt. Text alone drifts within about five
+   generations — the beard shape and the eye spacing go first.
+3. Match the view to the sheet you attach: front-view prompts to the front-view
+   panel, 3/4 prompts to the 3/4 panel, side prompts to the side panel.
+4. For close-ups, attach the expression head from the sheet by name — the prompts
+   below call the expression explicitly (e.g. "Adam, WORRIED expression").
+5. Generate scene 02 first as a style test. If Kareem's outline weight or beard
+   shape drifts from the sheet, fix it there before generating anything else.
+6. Generate the four ADAM scenes (07, 16, 42, 44) as a block, back to back, so
+   his face stays consistent across his arc.
+7. Character drift between scenes is the #1 failure mode of this format. The
+   sheet reference is the fix. Use it every time, including for the props — the
+   Institution sheet keeps the grey silhouette from turning into a shadow.
 
 
 ================================================================================
@@ -152,7 +239,7 @@ Two minutes. Go and make it yourself.
 TAG NOTES: keep tags sparse, they are strongest at emotional turns. Ellipses
 create natural breath pauses. Do not stack two tags on one line. This script is
 ~350 words and needs ~165 seconds, so the pauses are doing real work. The
-glide-path section (scenes 27-35) is the reveal — slow down there, do not rush
+glide-path section (scenes 26-35) is the reveal — slow down there, do not rush
 into the checklist.
 
 
@@ -161,36 +248,38 @@ THE 46 SCENES
 ================================================================================
 
 --------------------------------------------------------------------------------
-SCENE 01 | 0:00-0:05 | THE HOOK
+SCENE 01 | 0:00-0:05 | THE HOOK — object, no character
 --------------------------------------------------------------------------------
 VO: [serious] Your pension owns things you would never buy.
 CAPTION 1: Your pension owns things
 CAPTION 2: you would never buy
 
 IMAGE PROMPT:
-Near-photorealistic macro shot of a plain unbranded pension statement lying on a
-pale oak table, thick cream paper, a single large currency figure printed near
-the top, no logos and no readable body text. Beneath it a fan of smaller cards
-spreads out like a dealt hand, each card blank. Hard directional light from the
-upper left throwing a crisp real shadow of the paper to the right. Extremely
-shallow depth of field, background dissolved to warm cream bokeh. Stylized matte
-cinematic grade. 9:16 vertical composition, subject in the lower two-thirds,
-clean headroom above for captions.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. Top-down
+view of a single blank cream document lying on a plain surface, one large empty
+rounded rectangle printed near its top where a figure would sit, no text
+anywhere. Beneath it a neat fan of five small blank cards spreads out like a
+dealt hand, each card plain cream with a dark outline. Simple flat drop shadows
+offset down-right beneath the paper and cards. Calm, uncluttered, no other props.
+9:16 vertical composition, subject in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 02 | 0:05-0:08
+SCENE 02 | 0:05-0:08 | ** GENERATE FIRST — STYLE TEST — attach KAREEM sheet **
 --------------------------------------------------------------------------------
 VO: [whispers] And nobody asked you.
 CAPTION 1: And nobody asked you
 CAPTION 2: not once
 
 IMAGE PROMPT:
-Extreme close-up, near-photorealistic, of a single blank signature line on cream
-paper with no signature on it, pen resting beside it untouched, cap still on.
-Hard raking light from the left, deep real shadow of the pen falling across the
-paper. Muted cream and warm grey palette, one soft gold #F5D76E highlight on the
-pen barrel. Extremely shallow depth of field, background dissolved into warm
-bokeh. Stylized matte cinematic grade. 9:16 vertical composition, subject lower
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. KAREEM,
+front view, waist-up, addressing the camera directly with a SERIOUS expression —
+level brows, straight small mouth. Dark near-black tousled hair, full dark beard
+with grey speckling, fair skin, simple solid dot eyes. He wears a sage green
+#7C8A5F henley shirt with a three-button placket, sleeves rolled to the forearm.
+Arms relaxed at his sides. Soft pale elliptical ground shadow beneath him.
+Plain empty background, no props. 9:16 vertical composition, figure in the lower
 two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
@@ -201,12 +290,13 @@ CAPTION 1: Not once
 CAPTION 2: not in twenty years
 
 IMAGE PROMPT:
-Near-photorealistic overhead flat-lay of a tall neat stack of identical unopened
-cream envelopes on a dark wood surface, edges perfectly aligned, all sealed, none
-opened. Cool side light from the left, long real shadows raking across the stack
-to the right. Desaturated cream and warm grey palette. Stylized matte cinematic
-grade, shallow depth of field. 9:16 vertical composition, stack in the lower
-two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A tall
+neat stack of identical blank cream envelopes seen from a low three-quarter
+angle, edges perfectly aligned, every one still sealed with a simple flat flap
+line, none opened. Simple flat drop shadow offset down-right beneath the stack.
+Muted cream and sand #D9C08D tones only. Plain uncluttered background. 9:16
+vertical composition, stack in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 04 | 0:10-0:14
@@ -216,29 +306,35 @@ CAPTION 1: You were opted in
 CAPTION 2: including into this
 
 IMAGE PROMPT:
-Near-photorealistic macro of a single pre-ticked checkbox on cream paper, the
-tick already printed rather than handwritten, crisp and mechanical. Everything
-around it dissolved into shallow focus. Hard directional light from the upper
-left, deep real shadow cast to the right. One terracotta #E85F42 accent on the
-tick itself as the only warm colour in an otherwise cream and grey frame.
-Stylized matte cinematic grade, extremely shallow depth of field. 9:16 vertical
-composition, subject lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. Large
+close-up of a single square checkbox on a blank cream form, already filled with a
+bold rust red #B5603F tick that is clearly printed rather than handwritten —
+crisp, geometric, machine-made. Two blank ruled lines sit beneath it. Simple flat
+drop shadow offset down-right beneath the form. The tick is the only saturated
+colour in the frame. 9:16 vertical composition, subject in the lower two-thirds,
+clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 05 | 0:14-0:18
+SCENE 05 | 0:14-0:18 | attach ADAM, SAMI and BILAL sheets
 --------------------------------------------------------------------------------
 VO: Pension. Four-oh-one-k. Workplace plan.
 CAPTION 1: Pension. 401(k). Workplace plan.
 CAPTION 2: same machine
 
 IMAGE PROMPT:
-Near-photorealistic still life of three identical plain cream folders standing
-upright side by side in a row on a pale oak surface, all the same size, same
-thickness, same blank cover, no text and no logos anywhere. Even diffused
-daylight from the left with soft real contact shadows beneath each folder.
-Muted cream, warm grey and one navy #1E3A5F folder spine as the single cool
-accent. Stylized matte cinematic grade, shallow depth of field. 9:16 vertical
-composition, folders in the lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. Three
+characters standing full-body in a row, evenly spaced, all front view, all in the
+exact same relaxed posture with arms at their sides and heads level, all with
+plain NEUTRAL expressions. LEFT: ADAM — short brown side-parted hair,
+clean-shaven, fair skin, rust red #B5603F t-shirt, camel #B8823C trousers.
+CENTRE: SAMI — short dark hair, dark beard with grey speckling, medium-tan skin,
+teal #2F6B72 t-shirt, dark charcoal #5A5A5A trousers. RIGHT: BILAL — dark brown
+hair, full dark brown beard, medium-tan skin, sand #D9C08D button-up shirt with
+rolled sleeves, espresso #4A342A trousers. All wear dark shoes. A soft pale
+elliptical ground shadow beneath each. Plain empty background. 9:16 vertical
+composition, figures in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 06 | 0:18-0:20
@@ -248,32 +344,30 @@ CAPTION 1: Same machine
 CAPTION 2: different name on the front
 
 IMAGE PROMPT:
-Near-photorealistic close-up of the interior of an old brass mechanism, three
-identical gears meshed together turning as one, worn metal with real machining
-marks, faint dust in the air. Warm hard light from the upper right, deep shadow
-pooling in the recesses. Soft gold #F5D76E and dark navy #1E3A5F tones. Stylized
-matte cinematic grade, extremely shallow depth of field with only the centre gear
-sharp. 9:16 vertical composition, mechanism lower two-thirds, clean headroom
-above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. Three
+identical flat cog wheels meshed together in a row, drawn as simple geometric
+circles with square teeth, all the same size, sand #D9C08D fills with dark brown
+outlines. Simple flat drop shadow offset down-right beneath the cluster. No
+machine housing, no background detail. 9:16 vertical composition, cogs in the
+lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 07 | 0:20-0:24 | ** GENERATE THIS ONE FIRST — AMIR REFERENCE **
+SCENE 07 | 0:20-0:24 | ** ADAM ANCHOR — attach ADAM front-view sheet **
 --------------------------------------------------------------------------------
 VO: When you joined, you chose a number.
 CAPTION 1: When you joined
 CAPTION 2: you chose one number
 
 IMAGE PROMPT:
-Full-body stylized low-poly 3D render of a male character standing squarely
-facing the camera in a plain modern office corridor, arms relaxed at his sides,
-weight even on both feet, head level. The character has a COMPLETELY BLANK
-featureless head with no eyes, no nose, no mouth, no face at all — a smooth matte
-tan block. Simplified geometric anatomy, matte clay-like shading, soft
-subsurface material. He wears a terracotta #E85F42 t-shirt, cream #E8DCC8
-trousers, white sneakers and a cream beanie. Near-photorealistic office interior
-behind him, softly out of focus, even diffused daylight, real contact shadow
-beneath his feet. Clean even lighting on the whole figure for reference purposes.
-Shallow cinematic depth of field. 9:16 vertical composition, full figure in the
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. ADAM,
+full body, front view, standing squarely facing the camera with arms relaxed at
+his sides and weight even on both feet, NEUTRAL expression — simple solid dot
+eyes, fine curved brows, small straight mouth. Short brown side-parted hair,
+clean-shaven, fair skin. Rust red #B5603F short-sleeved t-shirt, camel #B8823C
+trousers, dark brown shoes. Soft pale elliptical ground shadow beneath his feet.
+Plain empty background, no props. 9:16 vertical composition, full figure in the
 lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
@@ -284,14 +378,14 @@ CAPTION 1: How much goes in
 CAPTION 2: that was the whole decision
 
 IMAGE PROMPT:
-Extreme close-up, stylized low-poly 3D render, of a single simplified geometric
-finger sliding a physical dial slider along a narrow track, the slider pushed
-about a third of the way along. Matte clay-like shading on the hand, terracotta
-#E85F42 sleeve cuff at the edge of frame. Near-photorealistic brushed metal
-track with a soft specular highlight. Hard light from the left, deep real shadow
-of the hand falling across the track. Very shallow depth of field, background
-dissolved into soft office bokeh. 9:16 vertical composition, subject lower
-two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. Close-up
+of one simple cartoon hand with a rust red #B5603F sleeve cuff, pushing a round
+slider knob along a straight horizontal track, the knob stopped about one third
+along. The track is a plain rounded bar in sand #D9C08D with a charcoal #5A5A5A
+filled portion behind the knob. Simple flat drop shadow beneath the track. No
+numbers, no text, no scale markings. 9:16 vertical composition, subject in the
+lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 09 | 0:26-0:31
@@ -301,13 +395,13 @@ CAPTION 1: You never chose
 CAPTION 2: where it actually goes
 
 IMAGE PROMPT:
-Near-photorealistic shot of a long row of identical unlabelled switches on a pale
-control panel, every single one already set to the same position, none touched.
-One switch in the centre foreground sharp, the rest receding into shallow focus.
-Hard directional light from the upper left, crisp real shadows under each switch.
-Cream, warm grey and one navy #1E3A5F panel edge. Stylized matte cinematic grade,
-extremely shallow depth of field. 9:16 vertical composition, panel lower
-two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A row of
+eight identical simple toggle switches mounted on a plain sand #D9C08D panel,
+every single switch set to the same position, none of them touched. Drawn as
+plain rounded rectangles with a small charcoal #5A5A5A lever in each. Simple flat
+drop shadow beneath the panel. No labels, no text. 9:16 vertical composition,
+panel in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 10 | 0:31-0:34
@@ -317,46 +411,49 @@ CAPTION 1: That's the default fund
 CAPTION 2: the one you were put in
 
 IMAGE PROMPT:
-Near-photorealistic macro of a single plain cream card standing upright in a
-wooden card holder on a desk, blank face, no text, lit as though it were an
-exhibit label. Everything behind it dissolved into deep bokeh. Hard directional
-light from the upper left throwing a long real shadow to the right. Soft gold
-#F5D76E rim light along the top edge of the card. Stylized matte cinematic grade,
-extremely shallow depth of field. 9:16 vertical composition, card lower
-two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A single
+blank cream card standing upright in a small simple card holder on a plain
+surface, presented like an exhibit label, completely blank with no text. The card
+has a thin sand #D9C08D border. Simple flat drop shadow offset down-right.
+Nothing else in frame. 9:16 vertical composition, card in the lower two-thirds,
+clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 11 | 0:34-0:38
+SCENE 11 | 0:34-0:38 | attach ADAM, SAMI and BILAL sheets
 --------------------------------------------------------------------------------
 VO: Most people never move.
 CAPTION 1: Most people never move
 CAPTION 2: they stay there for decades
 
 IMAGE PROMPT:
-Near-photorealistic wide shot of a large open-plan office at dusk, dozens of
-identical empty desks in perfect rows receding into shallow focus, completely
-empty of people, monitors dark. Cool blue daylight falling from a window bank on
-the left, long real shadows stretching across the floor to the right. Muted
-desaturated navy #1E3A5F and grey palette with one terracotta #E85F42 chair in
-the near row as the only warm accent. Stylized matte cinematic grade, shallow
-depth of field. 9:16 vertical composition, subject lower two-thirds, clean
-headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. Wide shot
+of ADAM, SAMI and BILAL standing full-body in a row exactly as in scene 05, same
+spacing, same posture, same neutral expressions, completely still — but now each
+one stands inside his own simple outlined rectangle drawn on the ground, like a
+marked box he has not stepped out of. ADAM in rust red #B5603F and camel #B8823C,
+SAMI in teal #2F6B72 and charcoal #5A5A5A, BILAL in sand #D9C08D and espresso
+#4A342A. Soft pale elliptical ground shadow beneath each. Plain empty background.
+9:16 vertical composition, figures in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 12 | 0:38-0:42
+SCENE 12 | 0:38-0:42 | attach ADAM sheet
 --------------------------------------------------------------------------------
 VO: [serious] So what is actually in it?
 CAPTION 1: So what's actually in it?
 CAPTION 2: nobody ever shows you this
 
 IMAGE PROMPT:
-Near-photorealistic close-up of a plain cream box with the lid lifted just a few
-centimetres, interior in complete darkness, nothing visible inside. Two simplified
-geometric hands with matte clay-like shading gripping the lid edges, terracotta
-#E85F42 sleeve cuffs at the frame edge. Hard directional light from the upper
-left, deep real shadow thrown to the right, the gap between lid and box reading as
-pure black. Stylized matte cinematic grade, extremely shallow depth of field.
-9:16 vertical composition, box lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. ADAM seen
+from the waist up, three-quarter view, lifting the lid of a plain sand #D9C08D
+box just a few centimetres with both hands, looking down into it with a WORRIED
+expression — raised inner brows, small downturned mouth. The gap between lid and
+box is filled with flat solid dark brown #3D2B23, so nothing inside is visible.
+Short brown side-parted hair, clean-shaven, fair skin, rust red #B5603F t-shirt.
+Simple flat drop shadow beneath the box. Plain background. 9:16 vertical
+composition, subject in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 13 | 0:42-0:47
@@ -366,12 +463,14 @@ CAPTION 1: An index
 CAPTION 2: a basket of the biggest companies
 
 IMAGE PROMPT:
-Near-photorealistic overhead shot of a shallow woven basket on pale oak filled
-with plain unmarked wooden blocks of many different sizes, largest in the centre,
-smallest at the rim, all blank with no text or symbols. Hard directional light
-from the upper left, crisp real shadows between the blocks. Cream, olive #6B7A4F
-and soft gold #F5D76E tones. Stylized matte cinematic grade, shallow depth of
-field. 9:16 vertical composition, basket lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A shallow
+woven basket drawn as a simple flat trapezoid with a cross-hatch weave pattern in
+sand #D9C08D, filled with plain blank rectangular blocks of many different sizes,
+the largest blocks in the centre and the smallest at the rim. Blocks in muted
+cream, camel #B8823C and charcoal #5A5A5A fills, all completely blank with no
+text or symbols. Simple flat drop shadow beneath the basket. 9:16 vertical
+composition, basket in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 14 | 0:47-0:51
@@ -381,65 +480,66 @@ CAPTION 1: Bought automatically
 CAPTION 2: by size — no judgement
 
 IMAGE PROMPT:
-Near-photorealistic shot of a mechanical sorting chute dropping plain unmarked
-wooden blocks into a basket below, three blocks caught mid-fall, motion frozen
-crisply. Brushed steel chute, worn pale oak below. Hard directional light from
-the upper right, hard real shadows of the falling blocks on the surface beneath.
-Cream, steel grey and one soft gold #F5D76E highlight along the chute lip.
-Stylized matte cinematic grade, shallow depth of field. 9:16 vertical
-composition, subject lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A simple
+angled chute drawn as a plain charcoal #5A5A5A parallelogram dropping three blank
+rectangular blocks down into the woven basket below, the blocks caught mid-fall
+and evenly spaced apart in the air. Blocks in cream and camel #B8823C fills.
+Simple flat drop shadow beneath the basket. No machinery detail, no background
+clutter. 9:16 vertical composition, subject in the lower two-thirds, clean
+headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 15 | 0:51-0:56
+SCENE 15 | 0:51-0:56 | FIRST PAYOFF
 --------------------------------------------------------------------------------
 VO: [emphatic] Nobody screens it. That is the entire point of it.
 CAPTION 1: Nobody screens it
 CAPTION 2: that IS the point of it
 
 IMAGE PROMPT:
-Near-photorealistic close-up of an empty metal sieve mounted above a basket, the
-mesh completely absent from its frame so nothing can be caught, blocks passing
-straight through the open ring. Worn brushed steel frame, pale oak beneath. Hard
-directional light from the left, deep real shadow of the empty ring cast onto the
-surface below. Muted steel and cream palette with one terracotta #E85F42 block
-mid-fall as the single warm accent. Stylized matte cinematic grade, extremely
-shallow depth of field. 9:16 vertical composition, subject lower two-thirds,
-clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A round
+sieve frame mounted above the woven basket, drawn as a plain charcoal #5A5A5A
+ring — the mesh completely ABSENT from inside the ring, leaving it open and
+empty. Blank rectangular blocks pass straight through the open ring untouched,
+two caught mid-fall inside it. One block rendered in rust red #B5603F as the
+single accent, the rest cream. Simple flat drop shadow beneath the basket. 9:16
+vertical composition, subject in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 16 | 0:56-1:00
+SCENE 16 | 0:56-1:00 | attach ADAM sheet
 --------------------------------------------------------------------------------
 VO: So look at what the basket holds.
 CAPTION 1: So look at what it holds
 CAPTION 2: actually look
 
 IMAGE PROMPT:
-Stylized low-poly 3D render of a male character crouched beside a large woven
-basket on a plain floor, one hand resting on the rim, head tilted down toward the
-contents. The character has a COMPLETELY BLANK featureless head with no eyes, no
-nose, no mouth, no face at all — a smooth matte tan block. Simplified geometric
-anatomy, matte clay-like shading, soft subsurface material. He wears a terracotta
-#E85F42 t-shirt, cream #E8DCC8 trousers, white sneakers and a cream beanie.
-Near-photorealistic basket and floor, hard directional light from the upper left,
-real cast shadow of the figure stretching to the right. Shallow cinematic depth
-of field. 9:16 vertical composition, subject lower two-thirds, clean headroom
-above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. ADAM
+crouched down on one knee beside the woven basket, side-on to the camera, one
+hand resting on the basket rim, head tilted down toward the contents, WORRIED
+expression. Short brown side-parted hair, clean-shaven, fair skin, rust red
+#B5603F t-shirt, camel #B8823C trousers, dark brown shoes. The basket in sand
+#D9C08D with its cross-hatch weave. Soft pale elliptical ground shadow beneath
+him. Plain empty background. 9:16 vertical composition, subject in the lower
+two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 17 | 1:00-1:05
+SCENE 17 | 1:00-1:05 | THUMBNAIL CANDIDATE
 --------------------------------------------------------------------------------
 VO: Banks and insurers. One of the biggest slices in it.
 CAPTION 1: Banks and insurers
 CAPTION 2: one of the biggest slices
 
 IMAGE PROMPT:
-Near-photorealistic overhead shot of a plain cream pie-shaped wooden disc on pale
-oak, cut into unequal wedges, one large wedge lifted slightly clear of the others
-and separated by a visible gap. All wedges completely blank, no text or symbols.
-Hard directional light from the upper left, crisp real shadow in the gap and
-beneath the lifted wedge. The lifted wedge rendered in navy #1E3A5F against cream
-neighbours. Stylized matte cinematic grade, shallow depth of field. 9:16 vertical
-composition, disc lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. Top-down
+view of a plain circular pie divided into unequal wedges, every wedge blank with
+no text. One large wedge is pulled clear of the circle with a visible gap and is
+filled in deep teal #2F6B72, while all the remaining wedges stay pale cream and
+sand #D9C08D. Simple flat drop shadow offset down-right beneath the pulled wedge
+and the circle. Bold, simple, readable at small size. 9:16 vertical composition,
+pie in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 18 | 1:05-1:10
@@ -449,14 +549,14 @@ CAPTION 1: Alcohol. Gambling. Tobacco.
 CAPTION 2: and weapons
 
 IMAGE PROMPT:
-Near-photorealistic still life of four plain unmarked objects standing in a row on
-a dark wood surface: a stemmed glass, a stack of gaming chips, a cylindrical tin,
-and a blunt metal cylinder. All completely unbranded, no text or logos anywhere,
-rendered as neutral museum-style exhibits. Hard raking light from the left
-throwing four long parallel real shadows to the right. Desaturated palette, deep
-navy #1E3A5F background falling into shadow. Stylized matte cinematic grade,
-shallow depth of field. 9:16 vertical composition, objects lower two-thirds,
-clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. Four plain
+unbranded objects standing evenly spaced in a row on a simple ground line, drawn
+as clean flat silhouette shapes with no labels or markings of any kind: a stemmed
+glass, a short stack of round gaming chips, a small cylindrical tin, and a blunt
+featureless metal cylinder. All rendered in muted charcoal #5A5A5A and sand
+#D9C08D fills. Simple flat drop shadow beneath each. Plain background. 9:16
+vertical composition, objects in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 19 | 1:10-1:14
@@ -466,13 +566,14 @@ CAPTION 1: Not by accident
 CAPTION 2: by construction
 
 IMAGE PROMPT:
-Near-photorealistic macro of a precise architectural blueprint drawn on cream
-paper in fine navy #1E3A5F line work, showing an abstract geometric lattice with
-measured dimension lines, no readable text or numbers. A steel drafting compass
-rests across it. Hard directional light from the upper left, crisp real shadow of
-the compass falling across the drawing. Stylized matte cinematic grade, extremely
-shallow depth of field with only the compass point sharp. 9:16 vertical
-composition, subject lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A simple
+blueprint drawing on a pale sand #D9C08D sheet, showing an abstract geometric
+lattice of straight lines with plain dimension arrows at its edges, drawn in fine
+teal #2F6B72 line work, no readable text or numbers anywhere. A simple flat pair
+of drafting compasses rests diagonally across the sheet. Simple flat drop shadow
+offset down-right beneath the sheet. 9:16 vertical composition, sheet in the
+lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 20 | 1:14-1:18
@@ -482,27 +583,30 @@ CAPTION 1: And the banks
 CAPTION 2: are the sharp part
 
 IMAGE PROMPT:
-Near-photorealistic extreme close-up of a single navy #1E3A5F wooden wedge lying
-alone on pale oak, its edge honed to a blade-thin taper catching a hard specular
-highlight. Everything else dissolved into deep bokeh. Hard directional light from
-the left, long deep real shadow thrown to the right. Stylized matte cinematic
-grade, extremely shallow depth of field. 9:16 vertical composition, wedge lower
-two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. The single
+deep teal #2F6B72 pie wedge from scene 17, now alone in the centre of the frame
+and drawn larger, its point angled toward the lower left and tapered to a fine
+sharp tip. Nothing else in frame. Simple flat drop shadow offset down-right.
+Bold and graphic. 9:16 vertical composition, wedge in the lower two-thirds, clean
+headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 21 | 1:18-1:22
+SCENE 21 | 1:18-1:22 | attach INSTITUTION sheet
 --------------------------------------------------------------------------------
 VO: A bank's product is not a service.
 CAPTION 1: A bank's product
 CAPTION 2: is not a service
 
 IMAGE PROMPT:
-Near-photorealistic close-up of a polished dark stone counter, completely bare,
-with a small brass service bell sitting alone at one end, untouched. Cool light
-from the left, deep real shadow of the bell stretching across the empty stone.
-Muted navy #1E3A5F and steel palette with a single soft gold #F5D76E glint on
-the bell dome. Stylized matte cinematic grade, extremely shallow depth of field.
-9:16 vertical composition, counter lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. THE
+COUNTER, empty: a teller window with evenly spaced dark brown vertical bars, a
+rust red #B5603F counter ledge running across, and an olive #7C8A5F lower panel
+beneath it. Nobody behind the bars — the space behind is plain flat cream. A
+small simple service bell sits alone on the ledge, untouched. Simple flat drop
+shadow beneath the bell. 9:16 vertical composition, counter in the lower
+two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 22 | 1:22-1:25
@@ -512,33 +616,31 @@ CAPTION 1: It's interest
 CAPTION 2: that's the actual product
 
 IMAGE PROMPT:
-Near-photorealistic macro of a small brass clock mechanism with an escapement
-mid-tick, and a single coin balanced upright against the gear train. Worn brass
-with real machining marks and fine dust. Hard warm light from the upper right,
-deep shadow pooling behind the mechanism. Soft gold #F5D76E and deep navy
-#1E3A5F tones. Stylized matte cinematic grade, extremely shallow depth of field
-with only the escapement sharp. 9:16 vertical composition, subject lower
-two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A simple
+flat clock face with no numerals, only two plain hands, drawn in sand #D9C08D
+with a dark brown rim — and a single plain round coin standing upright leaning
+against its base, in camel #B8823C. Simple flat drop shadow offset down-right
+beneath both. Nothing else in frame. 9:16 vertical composition, subject in the
+lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 23 | 1:25-1:29 | ** THE FINANCIER REFERENCE **
+SCENE 23 | 1:25-1:29 | ** THE CLERK ANCHOR — attach INSTITUTION sheet **
 --------------------------------------------------------------------------------
 VO: Own the bank, own the income.
 CAPTION 1: Own the bank
 CAPTION 2: you own the income
 
 IMAGE PROMPT:
-Full-body stylized low-poly 3D render of a male character standing squarely facing
-the camera in a dim marble banking hall, hands clasped loosely in front, head
-level. The character has a COMPLETELY BLANK featureless head with no eyes, no
-nose, no mouth, no face at all — a smooth matte tan block. Simplified geometric
-anatomy, matte clay-like shading, soft subsurface material. He wears a deep navy
-#1E3A5F suit with no tie and a navy bucket hat. Near-photorealistic marble
-interior behind him, tall columns softly out of focus, hard directional light
-from the upper left, long real cast shadow stretching to the right. Clean even
-lighting on the figure for reference purposes. Shallow cinematic depth of field.
-9:16 vertical composition, full figure in the lower two-thirds, clean headroom
-above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. THE CLERK
+standing directly behind THE COUNTER, seen through the evenly spaced dark brown
+vertical bars: a plain mid-grey #8A8A8A featureless humanoid silhouette with a
+smooth blank head — no face, no eyes, no mouth, no clothing detail, no colour at
+all. Rust red #B5603F counter ledge across the foreground, olive #7C8A5F lower
+panel beneath. The clerk stands perfectly still and symmetrical, arms at its
+sides. Simple flat shading only. 9:16 vertical composition, counter and figure in
+the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 24 | 1:29-1:35
@@ -548,28 +650,32 @@ CAPTION 1: Not a technicality
 CAPTION 2: it's the whole business
 
 IMAGE PROMPT:
-Near-photorealistic wide interior of a vast marble banking hall shot from low
-down, columns rising out of frame, entirely empty of people, polished floor
-reflecting hard shafts of light from high windows. Cool daylight from the left,
-long real shadows raking across the floor to the right. Deep navy #1E3A5F and
-cold cream palette, one soft gold #F5D76E highlight along a distant brass rail.
-Stylized matte cinematic grade, shallow depth of field. 9:16 vertical
-composition, hall lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. Wide view
+of a long row of five identical teller counters receding across the frame, each
+with the same dark brown vertical bars, rust red #B5603F ledge and olive #7C8A5F
+lower panel, and an identical plain mid-grey #8A8A8A featureless silhouette
+standing behind every one of them, all in the same posture. Completely
+repetitive and impersonal. Plain flat cream background above. 9:16 vertical
+composition, counters in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 25 | 1:35-1:40
+SCENE 25 | 1:35-1:40 | attach KAREEM 3/4 sheet
 --------------------------------------------------------------------------------
 VO: [serious] But here is the part almost nobody knows.
 CAPTION 1: But here's the part
 CAPTION 2: almost nobody knows
 
 IMAGE PROMPT:
-Near-photorealistic macro of a thick cream document with one page lifted and
-turned back, revealing a second page beneath in complete shadow, contents
-unreadable. Hard directional light from the upper left striking only the lifted
-page, the page beneath falling into deep darkness. Extremely shallow depth of
-field, background dissolved into warm bokeh. Stylized matte cinematic grade.
-9:16 vertical composition, document lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. KAREEM,
+three-quarter view, waist-up, turned slightly toward the camera with a
+QUESTIONING expression — one brow raised, mouth set to one side. Dark near-black
+tousled hair, full dark beard with grey speckling, fair skin, simple solid dot
+eyes. Sage green #7C8A5F henley shirt with three-button placket, sleeves rolled
+to the forearm. Soft pale elliptical ground shadow beneath him. Plain empty
+background, no props. 9:16 vertical composition, figure in the lower two-thirds,
+clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 26 | 1:40-1:44
@@ -579,12 +685,13 @@ CAPTION 1: Your fund changes
 CAPTION 2: as you get older
 
 IMAGE PROMPT:
-Near-photorealistic side view of an old brass hourglass mid-flow on pale oak, the
-upper chamber noticeably fuller than the lower, fine sand streaming in a thin
-sharp line. Warm hard light from the upper right, long real shadow thrown to the
-left, individual grains catching the light. Soft gold #F5D76E and warm cream
-tones. Stylized matte cinematic grade, extremely shallow depth of field. 9:16
-vertical composition, hourglass lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A simple
+flat hourglass drawn as two stacked triangles in a plain sand #D9C08D frame, the
+upper chamber noticeably fuller than the lower, with a thin straight line of
+falling sand between them in camel #B8823C. Simple flat drop shadow offset
+down-right beneath it. Nothing else in frame. 9:16 vertical composition,
+hourglass in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 27 | 1:44-1:48
@@ -594,13 +701,13 @@ CAPTION 1: They call it "lifestyling"
 CAPTION 2: or a "glide path"
 
 IMAGE PROMPT:
-Near-photorealistic macro of a smooth curved brass rail descending gently from
-upper left to lower right across the frame, polished to a soft specular sheen,
-mounted on a plain cream wall. Hard directional light from the upper left casting
-a crisp parallel shadow of the rail onto the wall beneath it. Soft gold #F5D76E
-and cream palette. Stylized matte cinematic grade, extremely shallow depth of
-field with only the centre of the curve sharp. 9:16 vertical composition, rail
-lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A single
+smooth curved line sweeping gently down from the upper left of the frame to the
+lower right, drawn as a thick rounded band in sand #D9C08D with a dark brown
+outline, like a gentle ramp or slide seen side-on. Clean, calm, reassuring. No
+labels, no arrows, no text. Simple flat drop shadow beneath the curve. 9:16
+vertical composition, curve in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 28 | 1:48-1:51
@@ -610,31 +717,31 @@ CAPTION 1: It sounds like safety
 CAPTION 2: it's worth reading twice
 
 IMAGE PROMPT:
-Near-photorealistic close-up of a soft folded wool blanket in warm cream resting
-on a plain wooden chair, gently lit, comforting and domestic. Warm diffused light
-from the left with a soft real shadow beneath the chair seat. Cream and olive
-#6B7A4F tones, deliberately reassuring. Stylized matte cinematic grade, shallow
-depth of field. 9:16 vertical composition, chair lower two-thirds, clean headroom
-above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A soft
+folded blanket in warm sand #D9C08D draped over the back of a plain simple wooden
+chair in camel #B8823C, drawn side-on with rounded friendly shapes. Warm,
+domestic, deliberately reassuring. Simple flat drop shadow beneath the chair
+legs. Plain empty background. 9:16 vertical composition, chair in the lower
+two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 29 | 1:51-1:55 | ** THE OLDER WORKER REFERENCE **
+SCENE 29 | 1:51-1:55 | ** BILAL ANCHOR — attach BILAL sheet **
 --------------------------------------------------------------------------------
 VO: The closer you get to retiring...
 CAPTION 1: The closer you get
 CAPTION 2: to actually retiring
 
 IMAGE PROMPT:
-Full-body stylized low-poly 3D render of an older male character standing squarely
-facing the camera in a plain domestic hallway, arms relaxed at his sides, a slight
-stoop in the shoulders, head level. The character has a COMPLETELY BLANK
-featureless head with no eyes, no nose, no mouth, no face at all — a smooth matte
-tan block. Simplified geometric anatomy, matte clay-like shading, soft subsurface
-material. He wears a navy #1E3A5F knitted cardigan and a grey flat cap.
-Near-photorealistic hallway behind him, softly out of focus, warm diffused
-daylight, real contact shadow beneath his feet. Clean even lighting on the whole
-figure for reference purposes. Shallow cinematic depth of field. 9:16 vertical
-composition, full figure in the lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. BILAL,
+full body, front view, standing squarely facing the camera with arms relaxed at
+his sides, head level, calm neutral expression. Dark brown hair, full dark brown
+beard, medium-tan skin, simple solid dot eyes. Sand #D9C08D button-up shirt with
+sleeves rolled to the forearm, espresso #4A342A trousers, dark shoes. Soft pale
+elliptical ground shadow beneath his feet. Plain empty background, no props.
+9:16 vertical composition, full figure in the lower two-thirds, clean headroom
+above.
 
 --------------------------------------------------------------------------------
 SCENE 30 | 1:55-1:58
@@ -644,12 +751,13 @@ CAPTION 1: the more it sells shares
 CAPTION 2: quietly, on a schedule
 
 IMAGE PROMPT:
-Near-photorealistic shot of a mechanical arm lifting plain unmarked wooden blocks
-out of a woven basket and away to the right, two blocks caught mid-lift. Brushed
-steel arm, worn pale oak surface. Hard directional light from the upper left,
-crisp real shadows of the removed blocks left behind on the surface. Cream and
-steel palette. Stylized matte cinematic grade, shallow depth of field. 9:16
-vertical composition, subject lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A plain
+mid-grey #8A8A8A mechanical arm, drawn as two simple jointed rectangles, reaching
+into the woven sand #D9C08D basket and lifting two blank cream blocks up and out
+toward the right edge of frame. The basket is visibly emptier on one side. Simple
+flat drop shadow beneath the basket. No background detail. 9:16 vertical
+composition, subject in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 31 | 1:58-2:02
@@ -659,13 +767,13 @@ CAPTION 1: and buys bonds
 CAPTION 2: more of them every year
 
 IMAGE PROMPT:
-Near-photorealistic shot of the same woven basket now filling with plain cream
-paper certificates instead of wooden blocks, thick stacked paper edges visible,
-completely blank with no text or seals. Hard directional light from the upper
-left, crisp real shadows between the stacked sheets. Cream and warm grey palette
-with one navy #1E3A5F ribbon across the topmost sheet. Stylized matte cinematic
-grade, shallow depth of field. 9:16 vertical composition, basket lower
-two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. The same
+woven sand #D9C08D basket, now filled to the brim with a thick stack of plain
+blank cream certificates instead of blocks, their stacked edges drawn as simple
+parallel lines. One certificate on top carries a plain teal #2F6B72 ribbon band
+across it. No text or seals anywhere. Simple flat drop shadow beneath the basket.
+9:16 vertical composition, basket in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 32 | 2:02-2:06
@@ -675,12 +783,13 @@ CAPTION 1: And a bond is a loan
 CAPTION 2: that's all a bond is
 
 IMAGE PROMPT:
-Near-photorealistic macro of a single plain cream certificate on pale oak with a
-length of navy #1E3A5F cord tied across it in a tight double knot, the cord
-pulled taut. No text or seals anywhere on the paper. Hard directional light from
-the upper left, deep real shadow of the knot cast onto the certificate. Stylized
-matte cinematic grade, extremely shallow depth of field with only the knot sharp.
-9:16 vertical composition, subject lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A single
+plain blank cream certificate lying flat, with a teal #2F6B72 cord tied across it
+in a tight simple double knot, the cord drawn as a clean rounded band pulled taut
+over the paper. No text or seals on the paper. Simple flat drop shadow offset
+down-right. Nothing else in frame. 9:16 vertical composition, certificate in the
+lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 33 | 2:06-2:10
@@ -690,32 +799,34 @@ CAPTION 1: You are lending money
 CAPTION 2: at interest
 
 IMAGE PROMPT:
-Near-photorealistic close-up of two simplified geometric hands with matte
-clay-like shading, one passing a small stack of coins to the other across a dark
-wood surface, the receiving hand already closing around them. Navy #1E3A5F cuff
-on one arm, cream #E8DCC8 cuff on the other. Hard directional light from the left,
-deep real shadows of both hands cast across the wood. Soft gold #F5D76E highlight
-on the coin edges. Stylized matte cinematic grade, extremely shallow depth of
-field. 9:16 vertical composition, hands lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. Two simple
+cartoon hands meeting in the centre of frame: the left hand has a sand #D9C08D
+rolled sleeve cuff and is passing a small stack of plain round coins in camel
+#B8823C; the right hand is plain mid-grey #8A8A8A with no cuff and no detail,
+already closing around them. The contrast between the human hand and the grey
+institutional hand is the point. Simple flat drop shadow beneath. 9:16 vertical
+composition, hands in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 34 | 2:10-2:16
+SCENE 34 | 2:10-2:16 | ** THE REVEAL — HOLD — attach BILAL + INSTITUTION sheets **
 --------------------------------------------------------------------------------
 VO: [emphatic] The machine moves you deeper into it as you get older.
 CAPTION 1: It moves you deeper in
 CAPTION 2: the older you get
 
 IMAGE PROMPT:
-Stylized low-poly 3D render of an older male character standing on a slowly
-descending brass ramp that leads down into deep shadow at the lower right of
-frame, seen from behind and slightly above, shoulders slightly stooped. The
-character has a COMPLETELY BLANK featureless head with no eyes, no nose, no
-mouth, no face at all — a smooth matte tan block. Simplified geometric anatomy,
-matte clay-like shading. He wears a navy #1E3A5F knitted cardigan and a grey flat
-cap. Near-photorealistic brass ramp and surrounding darkness, hard directional
-light from the upper left, long real cast shadow stretching down the ramp ahead
-of him. Shallow cinematic depth of field. 9:16 vertical composition, figure in
-the lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. BILAL seen
+from BEHIND, full body, shoulders slightly lowered, walking away from the camera
+down the long sand #D9C08D curved ramp from scene 27, which descends from the
+foreground toward the lower right. Dark brown hair, sand #D9C08D button-up shirt
+with rolled sleeves, espresso #4A342A trousers, dark shoes — no face visible.
+Waiting at the bottom of the ramp stands THE CLERK, a plain mid-grey #8A8A8A
+featureless humanoid silhouette with a smooth blank head, arms at its sides,
+perfectly still. Soft pale elliptical ground shadows beneath both figures. Plain
+empty background. 9:16 vertical composition, both figures in the lower
+two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 35 | 2:16-2:21
@@ -725,29 +836,31 @@ CAPTION 1: Automatically. Quietly.
 CAPTION 2: as a feature, not a fault
 
 IMAGE PROMPT:
-Near-photorealistic macro of a brass clockwork mechanism turning behind a pane of
-dusty glass, the glass catching a hard reflection that partly obscures the gears
-beneath. Worn brass with real machining marks. Hard directional light from the
-upper right, deep shadow pooling behind the mechanism, dust visible in the beam.
-Soft gold #F5D76E and deep navy #1E3A5F tones. Stylized matte cinematic grade,
-extremely shallow depth of field. 9:16 vertical composition, mechanism lower
-two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. The three
+meshed cog wheels from scene 06 in sand #D9C08D, now shown behind a plain flat
+pane of glass drawn as a simple pale rectangle with a single diagonal highlight
+band across it, partly covering the cogs. The cogs are still turning, unattended,
+with nobody present. Simple flat drop shadow beneath. No text, no dials. 9:16
+vertical composition, subject in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 36 | 2:21-2:25 | THE TURN
+SCENE 36 | 2:21-2:25 | THE TURN — attach KAREEM sheet
 --------------------------------------------------------------------------------
 VO: [calm] So. Two minutes. Three steps.
 CAPTION 1: Two minutes. Three steps.
 CAPTION 2: do it today
 
 IMAGE PROMPT:
-Near-photorealistic overhead flat-lay of three plain cream cards laid out in a
-neat row on pale oak, evenly spaced, all completely blank with no text. Clean,
-calm, ordered. Even diffused daylight from the left with soft real contact
-shadows beneath each card. Warm cream palette with one soft gold #F5D76E edge
-highlight along the nearest card. Stylized matte cinematic grade, shallow depth
-of field. 9:16 vertical composition, cards lower two-thirds, clean headroom
-above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. KAREEM,
+front view, waist-up, addressing the camera directly with a WARM expression —
+gently raised brows, small friendly closed smile. Dark near-black tousled hair,
+full dark beard with grey speckling, fair skin, simple solid dot eyes. Sage green
+#7C8A5F henley shirt with three-button placket, sleeves rolled to the forearm.
+One hand raised slightly in a calm open gesture. Soft pale elliptical ground
+shadow beneath him. Plain empty background. 9:16 vertical composition, figure in
+the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 37 | 2:25-2:30
@@ -757,14 +870,14 @@ CAPTION 1: 1. Log in
 CAPTION 2: find your fund's name
 
 IMAGE PROMPT:
-Near-photorealistic macro shot of a smartphone lying on a pale oak table, screen
-facing up, showing a plain unbranded account dashboard: a simple header bar and
-one highlighted row set apart from the others. Clean neutral grey and white
-interface, no logos, no readable brand marks. Hard directional light from the
-upper left throwing a crisp real shadow of the phone to the right. Extremely
-shallow depth of field, background dissolved to warm cream bokeh. Stylized matte
-cinematic grade. 9:16 vertical composition, phone lower two-thirds, clean
-headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A simple
+flat smartphone drawn front-on with rounded corners, screen showing a plain
+unbranded account list: a sand #D9C08D header bar across the top and four evenly
+spaced blank rows beneath it, with the second row highlighted in a pale teal
+#2F6B72 tint. No text, no logos, no icons. Simple flat drop shadow offset
+down-right beneath the phone. 9:16 vertical composition, phone in the lower
+two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 38 | 2:30-2:36
@@ -774,12 +887,13 @@ CAPTION 1: "Default" · "Balanced" · a year
 CAPTION 2: that's the basket
 
 IMAGE PROMPT:
-Near-photorealistic macro of three plain cream label tags tied with fine string to
-a woven basket rim, all three blank with no text, hanging still. Hard directional
-light from the upper left, crisp real shadows of the tags falling on the basket
-weave. Cream, olive #6B7A4F and soft gold #F5D76E tones. Stylized matte cinematic
-grade, extremely shallow depth of field with only the nearest tag sharp. 9:16
-vertical composition, subject lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. Three
+plain blank cream label tags, each drawn as a simple rectangle with a clipped
+corner, tied by short lengths of fine string to the rim of the woven sand
+#D9C08D basket, hanging still and evenly spaced. All three tags completely blank
+with no text. Simple flat drop shadow beneath the basket. 9:16 vertical
+composition, subject in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 39 | 2:36-2:40
@@ -789,61 +903,64 @@ CAPTION 1: 2. Search its top holdings
 CAPTION 2: they're published
 
 IMAGE PROMPT:
-Near-photorealistic close-up of a magnifying glass held above a plain cream sheet
-listing evenly spaced blank rows, the lens enlarging the top few rows which remain
-blank. Brass rim on the glass, worn wooden handle. Hard directional light from
-the upper left, deep real shadow of the glass and a bright focused caustic spot
-on the paper beneath. Soft gold #F5D76E and cream tones. Stylized matte cinematic
-grade, extremely shallow depth of field. 9:16 vertical composition, subject lower
-two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A simple
+flat magnifying glass with a camel #B8823C rim and a plain handle, held over a
+blank cream list sheet showing evenly spaced empty rows. The rows visible through
+the lens are drawn slightly larger than those outside it, but remain blank. No
+text anywhere. Simple flat drop shadow offset down-right beneath the sheet and
+the glass. 9:16 vertical composition, subject in the lower two-thirds, clean
+headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 40 | 2:40-2:44
+SCENE 40 | 2:40-2:44 | THUMBNAIL CANDIDATE
 --------------------------------------------------------------------------------
 VO: [serious] You will recognise the banks immediately.
 CAPTION 1: You'll recognise the banks
 CAPTION 2: immediately
 
 IMAGE PROMPT:
-Near-photorealistic macro of a plain cream list sheet where the top three rows are
-rendered in deep navy #1E3A5F while every row beneath stays pale cream, all rows
-completely blank with no text. Hard directional light from the upper left, crisp
-real shadow along the sheet's raised edge. Stylized matte cinematic grade,
-extremely shallow depth of field with only the navy rows sharp. 9:16 vertical
-composition, sheet lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A plain
+blank list sheet with eight evenly spaced rows, where the top THREE rows are
+filled solid deep teal #2F6B72 and every row beneath stays pale cream. All rows
+completely blank with no text. Bold, graphic, immediately readable at small size.
+Simple flat drop shadow offset down-right beneath the sheet. 9:16 vertical
+composition, sheet in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 41 | 2:44-2:50
+SCENE 41 | 2:44-2:50 | THE ACTIONABLE TURN — HOLD
 --------------------------------------------------------------------------------
 VO: Three. Open the full fund list. Look for a sharia or Islamic option.
 CAPTION 1: 3. Open the full fund list
 CAPTION 2: look for the sharia option
 
 IMAGE PROMPT:
-Near-photorealistic shot of a long cream concertina document unfolding across a
-pale oak table toward the camera, many blank panels visible, one panel near the
-centre catching a distinctly warmer light than the rest. No text anywhere. Hard
-directional light from the upper left, crisp real shadows in every fold. Cream
-palette with one soft gold #F5D76E panel as the single warm accent. Stylized
-matte cinematic grade, shallow depth of field. 9:16 vertical composition,
-document lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A long
+concertina-folded document unfolding across the frame from left to right, drawn
+as a simple zigzag of connected blank cream panels seen at a slight angle. Every
+panel is blank except one near the centre, which is filled a warm olive #7C8A5F —
+the only saturated colour in the frame. No text anywhere. Simple flat drop shadow
+beneath the folds. 9:16 vertical composition, document in the lower two-thirds,
+clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 42 | 2:50-2:55
+SCENE 42 | 2:50-2:55 | attach ADAM sheet
 --------------------------------------------------------------------------------
 VO: Most workplace schemes have one now. Switching is usually free.
 CAPTION 1: Most schemes have one now
 CAPTION 2: switching is usually free
 
 IMAGE PROMPT:
-Extreme close-up, stylized low-poly 3D render, of a single simplified geometric
-finger pressing a physical toggle switch over from one position to the other, the
-switch caught mid-travel. Matte clay-like shading on the hand, terracotta #E85F42
-sleeve cuff at the edge of frame. Near-photorealistic brushed metal switch plate
-with a soft specular highlight. Hard light from the left, deep real shadow of the
-hand across the plate. Very shallow depth of field, background dissolved into
-warm bokeh. 9:16 vertical composition, subject lower two-thirds, clean headroom
-above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. Close-up
+of one simple cartoon hand with a rust red #B5603F sleeve cuff — ADAM's — pushing
+a single toggle switch over from one side to the other, the lever caught
+mid-travel. The switch is drawn as a plain rounded rectangle on a sand #D9C08D
+plate, its lever in olive #7C8A5F. This is the one switch in the row from scene
+09 that has now been moved. Simple flat drop shadow beneath the plate. 9:16
+vertical composition, subject in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 43 | 2:55-3:00
@@ -853,31 +970,36 @@ CAPTION 1: Same contributions. Same match.
 CAPTION 2: different basket
 
 IMAGE PROMPT:
-Near-photorealistic overhead shot of two woven baskets side by side on pale oak,
-identical in size and weave, the left holding mixed unmarked wooden blocks and the
-right holding only smooth olive #6B7A4F blocks, both filled to exactly the same
-level. Hard directional light from the upper left, matching crisp real shadows
-beneath both baskets. Cream and olive palette. Stylized matte cinematic grade,
-shallow depth of field. 9:16 vertical composition, baskets lower two-thirds,
-clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. Two woven
+sand #D9C08D baskets standing side by side, identical in size, shape and weave,
+filled to exactly the same level. The LEFT basket holds mixed blank blocks in
+cream, camel #B8823C and charcoal #5A5A5A. The RIGHT basket holds only smooth
+blank blocks in olive #7C8A5F. Simple flat drop shadow beneath each. Plain empty
+background. 9:16 vertical composition, baskets in the lower two-thirds, clean
+headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 44 | 3:00-3:04
+SCENE 44 | 3:00-3:04 | attach ADAM sheet — RESOLVED
 --------------------------------------------------------------------------------
 VO: [serious] You were opted in by default.
 CAPTION 1: You were opted in
 CAPTION 2: by default
 
 IMAGE PROMPT:
-Near-photorealistic macro return to the pre-ticked checkbox from scene 04 on cream
-paper, the printed tick still in place, shot from a slightly closer and lower
-angle. Hard directional light from the upper left, deep real shadow cast to the
-right. One terracotta #E85F42 accent on the tick as the only warm colour.
-Stylized matte cinematic grade, extremely shallow depth of field. 9:16 vertical
-composition, subject lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. ADAM seen
+from the waist up, three-quarter view, looking down at the blank cream form from
+scene 04, RESOLVED expression — level brows, firm small mouth, calm and settled.
+He holds a simple pen and is placing his own handwritten tick — loose and
+slightly uneven, clearly hand-drawn, in olive #7C8A5F — into a SECOND empty
+checkbox beside the original printed rust red #B5603F one. The contrast between
+the machine tick and the human tick is the point. Short brown side-parted hair,
+clean-shaven, rust red t-shirt. Simple flat drop shadow beneath the form. 9:16
+vertical composition, subject in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
-SCENE 45 | 3:04-3:12 | THE PAYOFF — HOLD THIS ONE
+SCENE 45 | 3:04-3:12 | THE PAYOFF — HOLD — attach KAREEM sheet
 --------------------------------------------------------------------------------
 VO: [warmly] Default is still a choice. Somebody else just made it for you.
     Two minutes. Go and make it yourself.
@@ -885,16 +1007,16 @@ CAPTION 1: Default is still a choice
 CAPTION 2: somebody else just made it
 
 IMAGE PROMPT:
-Stylized low-poly 3D render of a male character standing at a window in warm
-evening light, phone held in one hand at chest height, body turned three-quarters
-toward the camera, shoulders relaxed and settled. The character has a COMPLETELY
-BLANK featureless head with no eyes, no nose, no mouth, no face at all — a smooth
-matte tan block. Simplified geometric anatomy, matte clay-like shading, soft
-subsurface material. He wears a terracotta #E85F42 t-shirt, cream #E8DCC8
-trousers, white sneakers and a cream beanie. Near-photorealistic room interior,
-warm low sun through the window from the left, long real cast shadow stretching
-across the floor to the right. Calm and resolved. Shallow cinematic depth of
-field. 9:16 vertical composition, figure lower two-thirds, clean headroom above.
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. KAREEM,
+front view, waist-up, addressing the camera directly with a WARM expression —
+gently raised brows, small friendly closed smile, shoulders relaxed and settled.
+Dark near-black tousled hair, full dark beard with grey speckling, fair skin,
+simple solid dot eyes. Sage green #7C8A5F henley shirt with three-button
+placket, sleeves rolled to the forearm. Arms relaxed at his sides. Soft pale
+elliptical ground shadow beneath him. Plain empty background, calm and resolved,
+no props. 9:16 vertical composition, figure in the lower two-thirds, clean
+headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 46 | 3:12-3:16 | OUTRO CARD
@@ -904,17 +1026,38 @@ CAPTION 1: (none)
 CAPTION 2: (none)
 
 IMAGE PROMPT:
-Heavily blurred near-photorealistic warm interior as a soft background plate,
-cream, soft gold and terracotta tones, strong bokeh, no sharp detail anywhere.
-Clean empty centre of frame reserved for a logo overlay to be added in post.
-Warm, calm, resolved. Stylized matte cinematic grade. 9:16 vertical composition,
-even blur across the full frame.
+Flat 2D vector illustration, warm cream #F7EFDD background, completely plain and
+empty with a clean centre reserved for a logo overlay to be added in post. A
+single soft olive #7C8A5F horizontal band sits low in the frame as the only
+element. No characters, no props, no text. Calm and resolved. 9:16 vertical
+composition.
 
 [POST] Composite the channel logo centred, plus handle and series title beneath.
 
 NOTE: 46 scene blocks are listed, but scenes 34, 41 and 45 are long-held shots
 carrying more VO than their neighbours, which is why the pack runs ~165s rather
 than the ~46 x 3s the count implies. Hold them. The payoff needs air.
+
+
+================================================================================
+CHARACTER APPEARANCE MAP — check this before you generate
+================================================================================
+
+  KAREEM (host)   02, 25, 36, 45              — 4 scenes, direct address only
+  ADAM (everyman) 05, 07, 08*, 11, 12, 16,
+                  42*, 44                      — 8 scenes  (* hand only)
+  SAMI            05, 11                       — 2 scenes, crowd only
+  BILAL           05, 11, 29, 34               — 4 scenes, carries the reveal
+  THE CLERK       23, 24, 33*, 34              — 4 scenes  (* grey hand only)
+  THE COUNTER     21, 23, 24                   — 3 scenes
+  Objects only    01, 03, 04, 06, 09, 10, 13,
+                  14, 15, 17, 18, 19, 20, 22,
+                  26, 27, 28, 30, 31, 32, 35,
+                  37, 38, 39, 40, 41, 43, 46   — 28 scenes
+
+  The ratio is deliberate. Characters carry the emotional beats and the
+  institution; objects carry the mechanism. A mechanism explained by a talking
+  character becomes a lecture — the diagram is what makes it feel like a reveal.
 
 
 ================================================================================
@@ -934,6 +1077,11 @@ EMPHASIS        : italics only
 TIMING          : swap on the speaker's natural clause break — the caption change
                   and the picture cut land together
 
+NOTE ON CONTRAST: the black caption boxes are deliberately kept from the previous
+spec. Against this warm cream palette they are the highest-contrast element on
+screen, which is what keeps captions legible on a phone in daylight. Do not
+restyle them to match the illustration — captions are UI, not artwork.
+
 Enable a multi-language audio track on upload. That is what produces YouTube's
 "Auto-dubbed" chip, and it is free additional reach.
 
@@ -944,16 +1092,20 @@ EDIT & ASSEMBLY
 
 1. Record the VO first. The cut follows speech cadence, so scene timings will
    shift to match the actual delivery. Treat the timecodes above as a guide.
-2. Generate scene 07, approve AMIR, lock the seed, then generate everything else.
-   Do the same for THE FINANCIER (23) and THE OLDER WORKER (29).
-3. HARD CUTS ONLY. No dissolves, no whip pans, no zoom transitions, no glitch.
-4. Slow push-in or lateral drift on every scene. Nothing fully static.
-5. Film grain overlay across the master.
-6. Burn in captions per the spec above.
-7. CUSTOM THUMBNAIL — do not ship on YouTube's auto-selected frame. Two clips
-   already went out that way. Use the scene 17 lifted wedge or the scene 40 navy
-   rows; both read at thumbnail size without text.
-8. NO trailer ending. This Short ends on its own payoff. Do not append a "part
+2. Generate scene 02 as a style test and check it against Kareem's sheet before
+   generating anything else. Then generate Adam's eight scenes as one block.
+3. Attach the character sheet as an image reference on EVERY character scene.
+4. HARD CUTS ONLY. No dissolves, no whip pans, no zoom transitions, no glitch.
+5. Slow push-in or lateral drift on every scene. Nothing fully static.
+6. NO film grain on this style. Grain was right for the 3D low-poly look and is
+   wrong here — it fights flat vector and reads as compression artefact.
+7. Burn in captions per the spec above.
+8. CUSTOM THUMBNAIL — do not ship on YouTube's auto-selected frame. Two clips
+   already went out that way. Scene 17 (the pulled teal wedge) or scene 40 (the
+   three dark rows) both read at thumbnail size without text. Flat vector is
+   genuinely better than the old style here — big flat shapes survive being
+   shrunk to a phone-sized tile in a way soft 3D renders do not.
+9. NO trailer ending. This Short ends on its own payoff. Do not append a "part
    two" card pointing at a long-form video — the long-form programme is stopped
    and all three of those videos have 13 views between them and took +0 in the
    last three days.
@@ -964,9 +1116,10 @@ RETENTION CHECKPOINTS
                 nothing else matters.
   Scene 15      "Nobody screens it. That is the entire point of it." The first
                 payoff, and the one that earns the rest of the runtime.
-  Scene 34      the reveal, and the strongest asset in the pack — the glide path
-                moving you deeper into interest as you age. Almost no competitor
-                video says this. Best candidate for the channel-page cover frame.
+  Scene 34      the reveal, and the strongest asset in the pack — Bilal walking
+                down the glide path toward the faceless clerk. Almost no
+                competitor video makes this point at all. Best candidate for the
+                channel-page cover frame.
   Scene 41      the actionable turn. Must be understood, not just heard — this is
                 the beat that earns a save or a share.
 
@@ -995,6 +1148,22 @@ ACCURACY NOTES — read before recording, these are the claims that must hold
 
 
 ================================================================================
+BRAND-SAFETY NOTE
+================================================================================
+
+No prompt in this pack names or depicts a real pension provider, fund manager,
+index, bank, or any real wordmark. Every statement, dashboard, fund list and
+counter on screen is GENERIC and unbranded, and every prompt specifies "no text"
+so nothing legible can appear.
+
+This is the channel's own editorial rule, set in the credit-card Short: "I'm
+deliberately not naming a product. Terms change, availability changes, and a
+video that names one is out of date the month it does. The test doesn't change."
+The video teaches the CHECK, not a fund. That is also what makes it a template
+you can re-run on any scheme.
+
+
+================================================================================
 UPLOAD METADATA — ready to paste, or drop into automation/reset.json
 ================================================================================
 
@@ -1005,7 +1174,7 @@ Is Your Pension Halal? (You Never Picked What It Buys) #pension #islamicfinance
   the binary question aimed at a named thing, plus a compressed claim in the
   parenthetical. That format is the only packaging variable ever measured as
   working on this channel (~2.2x its control on 2026-08-08). The subject is the
-  only thing moving.
+  only thing moving in the packaging.
 
 DESCRIPTION
 Your pension owns things you would never buy with your own money. Nobody asked
