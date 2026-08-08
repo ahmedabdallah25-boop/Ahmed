@@ -1,13 +1,15 @@
 # Zone-by-zone report
 
-`Laundry-Room-Zone-Report.pdf` — 10 pages, A4 landscape. Seven zones, each pairing the room as
+`Laundry-Room-Zone-Report.pdf` — 12 pages, A4 landscape. Seven zones, each pairing the room as
 it is now against the specific interventions proposed for that area, with the matched concept
 render, the priority chip and the budget line.
 
 | File | What it is |
 |---|---|
 | `Laundry-Room-Zone-Report.pdf` | The report. |
-| `build_pdf.py` | Regenerates it. Paths point at the session scratchpad — repoint `SC` to `frames/` to rebuild here. |
+| `Laundry-Room-Proposed-Layout.pdf` | The proposed layout plan on its own sheet — page 3 of the report, for printing and marking up on site. |
+| `layout_page.py` / `render_layout.py` | Draw the layout. Geometry is in metres at the top of `layout_page.py`; correct `RW`, `RD` and `ALC` once the room is measured and everything rescales. |
+| `build_pdf.py` | Regenerates the report. Paths point at the session scratchpad — repoint `SC` to `frames/` to rebuild here. |
 | `frames/zone01–07.jpg` | The "current" photographs. Zones 01–04, 06, 07 are frames from `IMG_6722.mov`; zone 05 is an upright site photograph. None are retouched. |
 | `renders/*.webp` | The six concept renders, as embedded. |
 

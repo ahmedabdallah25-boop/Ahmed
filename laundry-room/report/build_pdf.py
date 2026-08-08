@@ -5,6 +5,7 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.colors import HexColor
 from reportlab.lib.utils import ImageReader
 import os
+import layout_page as LP
 
 SC = "/tmp/claude-0/-home-user-Ahmed/08523f79-6f2c-5892-b60a-e777b9ae91bb/scratchpad"
 OUT = SC + "/Laundry-Room-Zone-Report.pdf"
@@ -300,8 +301,8 @@ def cover(c):
         c.drawString(tx, sy - 10, "ZONE 0%d" % i)
 
     ty = 96
-    tiles = [("Zones", "7"), ("Renders matched", "5"), ("Tier 0 — free", "AED 0"),
-             ("Full build", "AED 11,660")]
+    tiles = [("Zones", "7"), ("Machines", "7 — all retained"), ("Tier 0 — free", "AED 0"),
+             ("Full build", "AED 11,910")]
     tw = (PW - 2 * M - 84) / 4
     for i, (k, v) in enumerate(tiles):
         tx = x + i * tw
@@ -315,7 +316,7 @@ def cover(c):
     c.setFillColor(INK_FAINT)
     c.setFont(MONO, 7.2)
     c.drawString(x, 74, "8 AUGUST 2026   ·   COSTS AED, ESTIMATED   ·   MAIN MACHINE ROOM")
-    footer(c, 1, 11, "Laundry room zone report")
+    footer(c, 1, 12, "Laundry room zone report")
     c.showPage()
 
 
@@ -385,7 +386,7 @@ def index_page(c):
             "themselves are supplied alongside this report.",
          M + 14, y - 22, PW - 2 * M - 28, size=9, lead=11.5)
 
-    footer(c, 2, 11, "Zone map")
+    footer(c, 2, 12, "Zone map")
     c.showPage()
 
 
@@ -511,7 +512,7 @@ def target_page(c, total):
         c.setFillColor(ACCENT); c.setFont(MONO, 6.6)
         c.drawString(cx, cy - 25, zref.upper())
 
-    footer(c, 3, total, "The target condition")
+    footer(c, 4, total, "The target condition")
     c.showPage()
 
 
@@ -537,9 +538,9 @@ def closing(c):
     c.line(M, y, PW / 2 + 260, y)
     y -= 16
     rows = [("0 — Housekeeping", "0", "0", "About 60% of the visual gain"),
-            ("1 — High leverage", "3,160", "3,160", "Reads as a well-run room"),
-            ("2 — Ceiling", "3,500", "6,660", "Duct fire risk removed"),
-            ("3 — Finishing", "5,000", "11,660", "Audit-ready back-of-house")]
+            ("1 — High leverage", "3,310", "3,310", "Reads as a well-run room"),
+            ("2 — Ceiling", "3,600", "6,910", "Duct fire risk removed"),
+            ("3 — Finishing", "5,000", "11,910", "Audit-ready back-of-house")]
     for t, s, cum, w in rows:
         c.setFillColor(INK)
         c.setFont(SERIF, 10)
@@ -608,7 +609,7 @@ def closing(c):
         c.line(M, min(yy, ys - 11.6) + 5, PW - M, min(yy, ys - 11.6) + 5)
         ys = min(yy, ys - 11.6) - 6
 
-    footer(c, 11, 11, "Budget and order of work")
+    footer(c, 12, 12, "Budget and order of work")
     c.showPage()
 
 
@@ -617,12 +618,13 @@ def main():
     c.setTitle("Laundry Room — Zone by Zone Enhancement Report")
     c.setAuthor("Back-of-house facilities brief")
     c.setSubject("Current condition matched to proposed enhancement, zone by zone")
-    TOT = 11
+    TOT = 12
     cover(c)
     index_page(c)
+    LP.draw_layout(c, PW, PH, M, footer, label, wrap, para, page_bg, 3, TOT)
     target_page(c, TOT)
     for i, z in enumerate(ZONES):
-        zone_page(c, z, i + 4, TOT)
+        zone_page(c, z, i + 5, TOT)
     closing(c)
     c.save()
     print("wrote", OUT, os.path.getsize(OUT), "bytes")

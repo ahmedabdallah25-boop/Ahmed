@@ -8,6 +8,8 @@
 |---|---|
 | [`upgrade-plan.md`](upgrade-plan.md) | Diagnosis of the current room, and a four-tier costed plan in AED — from a zero-cost tier through to a full ~AED 13k build. Includes UAE sourcing, what not to buy, and a four-week sequence. |
 | [`ai-visual-prompts.md`](ai-visual-prompts.md) | Copy-paste prompts for Google Flow / Whisk / ImageFX / Gemini. Three routes: retouch your own photos, text-to-image concepts, and video walkthroughs. |
+| [`proposal-7-machines.md`](proposal-7-machines.md) | **Current proposal.** Seven machines, all retained in place: the flow the layout sets, the one compromise the fixed positions force, and the costed schedule (0 / 3,310 / 6,910 / 11,910). |
+| [`report/Laundry-Room-Proposed-Layout.pdf`](report/Laundry-Room-Proposed-Layout.pdf) | The layout drawing. |
 | [`renders/LINKS.md`](renders/LINKS.md) | Five generated concept renders. Links only — save them locally, they expire. |
 
 **Start here:** Tier 0 in the plan (costs nothing, ~60% of the visual gain), and prompt 1A in
