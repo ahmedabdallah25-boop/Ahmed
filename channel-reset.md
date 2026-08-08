@@ -484,3 +484,148 @@ entry one). Do not fire it early; do not forget it either.
 against it. The Jul 21 → Jul 31 blackout is the single largest structural event on the channel
 and the thing the whole reset has been recovering from. **Producing and scheduling Klarna for
 Aug 6 outranks every other action on this channel, including analysis.**
+
+---
+
+# Fifth pass — 2026-08-08, 07:18 UTC (00:18 PT)
+
+3.17 days after the fourth pass. Same public-data-only constraint. **Four Shorts published in
+that window that no previous pass planned, scheduled or reviewed**, and the pass found a
+duplicate upload and an unattended playlist. Both are new failure modes for this document.
+
+## The ledger
+
+| Video | Published (PT) | Age | Views | Lifetime v/day | Marginal v/day |
+|---|---|---|---|---|---|
+| `BllkNdhDu-k` 3 Questions / credit card | Aug 7, 11:00 | 0.55 d | 19 | 34.3 | *far too new* |
+| `RpFWP1a7Huk` Bank Doesn't Want You Debt-Free | Aug 7, 02:29 | 0.91 d | 37 | **40.7** | *in test* |
+| `x2hdNP6fzAo` Deadbeat — **DUPLICATE** | Aug 6, 17:20 | 1.29 d | 6 | 4.7 | *in test* |
+| `ebPfkBjTbSA` You've Already Paid Klarna | Aug 5, 13:08 | 2.46 d | 18 | 7.3 | *in test* |
+| `JB6Q_7IE9Jo` Is Paper Gold Halal? | Aug 5, 03:00 | 2.89 d | 40 | **13.9** | *clears 10:00Z today* |
+| `4gRoTTZNnFE` Fake Islamic mortgage | Aug 4, 03:00 | 3.89 d | 24 | 6.2 | 4.1 |
+| `sbor6eyJQKc` 10 years of payments | Aug 3, 03:00 | 4.89 d | 35 | 7.2 | 0.9 — dead |
+| `OHVnm5R0o5E` Banks take your money | Aug 2, 07:02 | 5.72 d | 53 | 9.3 | 0.9 — dead |
+| `kOkfpCHeURw` £1,461 a month | Aug 2, 03:00 | 5.89 d | 261 | 44.3 | 1.3 — dead |
+| `P3DxNgGFah0` Everyone asks at once | Jul 31, 04:00 | 7.85 d | 39 | 5.0 | **0 — fourth zero** |
+
+Subscribers 191 → **193**. Channel lifetime 8,614 → **8,748**. Long-form **13 → 13: +0 views
+across all three videos in 3.17 days.** The long-form programme is not decaying, it is inert.
+
+## 1. The format test resolved. It won its head-to-head and it did not matter.
+
+`JB6Q_7IE9Jo` — the channel's first ever `Is [X] Halal?`, the largest untested variable
+available, read today at 2.89 days as planned — did **40 views, ~13.9/day**.
+
+Against its designed contrast `4gRoTTZNnFE` (Aug 4, curiosity-gap title) at ~6.2/day, the
+niche's dominant format is **~2.2x better**. That is a real directional result and it is the
+first time any packaging variable on this channel has produced a readable difference.
+
+It is also nowhere near mattering. The first pass set the bar at **~150 v/day within five
+new-subject uploads**; 13.9 is inside the same 6–22 band every post-blackout upload has landed
+in regardless of family, claim, or title shape. **The format is the better of two losing
+options.** Ship `Is [X] Halal?` because it wins on the margin, not because it is the lever.
+
+## 2. The Klarna experiment was contaminated before it ran
+
+`next-slate.md` locked the title `Is Klarna Halal? (Somebody Pays That 0%)`, explicitly
+parallel to Part 15 so the Aug 5 → Aug 6 pair would move **exactly one variable: the subject**.
+That was the most carefully designed test on this channel.
+
+What shipped was **`You've Already Paid Klarna.`** — a different format entirely. Subject *and*
+format both moved, so the pair is unreadable and the designed comparison is gone. 18 views,
+~7.3/day.
+
+This is the second time an upload has spent a designed experiment: the Part 14 launch moved
+publish time, production style, title style and cross-posting at once. The cost is not the 18
+views, it is that the slate's central question — *does the format travel?* — still has exactly
+one data point when it should have two.
+
+## 3. A duplicate is live, and it is splitting a test
+
+`x2hdNP6fzAo` and `RpFWP1a7Huk` are **the same video**. Same 59s/58s credit-card script,
+published **9 h 09 m apart**, both covering deadbeats/revolvers, the FCA transactor split, the
+unrequested limit rise, ~1% cashback against a mid-20s APR, and the same *"a real sale takes
+its profit once"* close.
+
+`RpFWP1a7Huk` is the better of the two — fuller description, hashtag block, explicit *"Part 2 of
+3"* — and has **37 views to the other's 6**.
+
+This is the exact failure already recorded in `link_fixes` for Part 12 (`EQT91HgOH78` vs
+`ebIU6OHJ-jg`): a re-upload shipped without the original being taken down. It is now recorded
+under `duplicates` in `reset.json` and **excluded from the series playlist**, but not deleted —
+deleting a video is irreversible and is the user's call.
+
+## 4. Every cadence rule was broken inside 48 hours
+
+Rule 0 is the only production rule in `next-slate.md` with real evidence behind it. All of it
+was violated:
+
+- **Never two Shorts inside 12 hours.** Three went out inside **17.7 hours**: `x2hdNP6fzAo`
+  (Aug 7 00:20Z) → `RpFWP1a7Huk` (+9 h 09 m) → `BllkNdhDu-k` (+8 h 31 m). The channel already
+  measured this cost once — the second of the Aug 2 pair took 43 against the first's 227.
+- **Hold publish at 03:00–04:30 PT.** All four published outside it: 13:08, 17:20, 02:29,
+  11:00 PT. The window is not proven superior; holding it constant is what made the topic
+  variable readable. It is no longer constant.
+- **New subject per upload.** Credit cards got **three entries in 42 hours** (`x2hdNP6fzAo`,
+  `RpFWP1a7Huk`, `BllkNdhDu-k`), with Klarna/BNPL adjacent immediately before. That is the
+  topic-exhaustion pattern every previous pass documented, compressed into two days.
+
+`RpFWP1a7Huk` at ~40.7 v/day is the best first-day rate since `kOkfpCHeURw` and is the one
+genuinely encouraging number in this ledger — but it is 0.91 days old, it is the exact age this
+document repeatedly warns against reading, and its own test is being split by the two uploads
+either side of it. **Do not judge it before Aug 10 09:29Z.**
+
+## 5. The playlist was the unattended surface — now fixed
+
+`youtube_channel_playlists` had never been part of a pass. It showed the real gap:
+
+- **`PLKLKzR1QgFHE` (Full Series)** — the playlist linked from the channel description *and*
+  the footer of every video description — held **17 of 24 public Shorts**. Eight were missing,
+  including **`UpCMyfIOftA`, the 1,208-view winner**. Every Short published since the reset had
+  no Browse or Suggested path at all once its 72-hour feed test ended.
+- **`PLFvKaPuEiceY` (Full Episodes)** held 2 of 3 long-form.
+
+This matters more than it looks. A Short gets its feed shot in ~72 hours and then goes almost
+completely dark — that is *why* retitling a failed Short is measured at zero. A series playlist
+is one of the few surfaces that keeps working afterwards, and eight videos had none.
+
+## What was changed
+
+| # | Change | Where |
+|---|---|---|
+| 1 | **`sync_playlists()`** — purely additive playlist sync, never removes or reorders, skips private/scheduled uploads. Ran live: **9 writes, 0 errors**. `PLKLKzR1QgFHE` 17 → **25**, `PLFvKaPuEiceY` 2 → **3**, both confirmed on the platform | `reset_packaging.py`, `reset.json` |
+| 2 | `scheduled` emptied and `JB6Q_7IE9Jo` archived — it published Aug 5, and leaving a live video under `scheduled` lets a later pass rewrite its packaging mid-test | `reset.json` |
+| 3 | `hold` refreshed to the five uploads from Aug 5–7 with per-video test-expiry timestamps; the three cleared entries removed, all resolved dead | `reset.json` |
+| 4 | `x2hdNP6fzAo` recorded under a new `duplicates` block and excluded from the playlist sync | `reset.json` |
+
+**No packaging was written to any live video.** All five recent uploads are inside their feed
+tests, and the three that cleared are measured dead — the rule from the third pass holds:
+*never spend a pass retitling a Short that has already failed its feed test.*
+
+## 6. The queue is empty, and this time it was confirmed
+
+The link scan and playlist scan both report **27 owned videos** against 27 public ones. There is
+no private or scheduled upload behind the feed — the surface where the second pass caught Part
+15 with 2 h 20 m to spare. `scheduled` is `[]`.
+
+Production has clearly not stopped — four Shorts shipped in three days. But it is running
+*outside* this repo's config, which is why three of them broke rule 0 and one of them shipped
+as a duplicate. **The gap is no longer production capacity. It is that nothing reviews an
+upload before it reaches the feed.** That review is the only packaging lever with a measured
+non-zero return, and it was bypassed on all four.
+
+## What to watch
+
+- **Aug 10, 09:29Z** — `RpFWP1a7Huk` clears 72 h. It is the one upload with a promising first
+  day (~40.7 v/day). Read it as marginal v/day, and read it knowing its test was split.
+- **Aug 10, 18:00Z** — `BllkNdhDu-k` clears.
+- **The five-upload decision rule has now effectively run.** Counting new-subject/new-format
+  uploads from Aug 5: Paper Gold, Klarna, Deadbeat, Debt-Free, 3 Questions — that is five, and
+  the median sits near **13 v/day against a ~50 v/day floor**. The first pass wrote the branch
+  plainly: *still under ~50 v/day after five → the feed has cooled on the channel generally,
+  topic is not the lever, buy one month of private analytics.*
+
+  Four passes of increasingly fine-grained inference from public view counts cannot separate
+  topic from cadence from retention, and the last two passes each had to retract a conclusion
+  the previous one drew from lifetime averages. **That separation costs one month of a paid
+  plan and an afternoon. It is now the highest-value action available on this channel.**
