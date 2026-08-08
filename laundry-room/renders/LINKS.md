@@ -23,3 +23,15 @@ section "Route 2".
 
 These are **text-to-image concepts** — an idealised target, not your room. For a true
 before/after of the actual space, use the Route 1 image-to-image prompts with your own photos.
+
+---
+
+## Evidence frames from the walkthrough video
+
+Stills pulled from `IMG_6722.mov`, kept because they document the two findings that carry the
+most weight. These are real photographs of the room, not renders.
+
+| File | Shows |
+|---|---|
+| `evidence-db-and-paper-wall.jpg` | The electrical distribution board with the taped paper wall directly beside it, and lint trays, a sack and a storage box on the floor beneath. No keep-clear zone. |
+| `evidence-dark-store-alcove.jpg` | The unlit store alcove — mop, squeegee, bucket and floor gully already there, no light fitting. One LED batten turns this into the cleaning and PPE store. |
