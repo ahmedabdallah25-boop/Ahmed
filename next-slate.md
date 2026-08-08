@@ -83,7 +83,26 @@ the next entry, and the formula-perfect third inflation video did 43 views.
 - **Payoff** — a sale has one price, fixed at the moment of sale. Murabaha does exactly that and is not a loan. Klarna is the same shape done wrong.
 - **The gap** — mainstream BNPL explainers pull **5,716,409** views. The best Islamic-framed video on it is **8,111 views and two years old**, and YouTube estimates only ~828 results for the whole query. Enormous demand, no supply. **This is the biggest opening found.**
 
-### 2 · Is Your Pension Halal?
+### 2 · Is Your Pension Halal?  ✅ PRODUCED 2026-08-08 → [`pension-scene-pack.txt`](pension-scene-pack.txt)
+
+> Full VO script, 46 scenes with image prompts, caption spec, accuracy notes and
+> upload metadata are written. Final title:
+> **`Is Your Pension Halal? (You Never Picked What It Buys)`** — same shape as Part 15's
+> `Is Paper Gold Halal? (Most People Own a Promise)`, so the only variable moving is the
+> subject. Target publish **2026-08-09, 03:00 PT**. ~165s, inside the 133–180s band.
+>
+> **The UK-shaped problem in rule 0.5 is resolved, not ignored.** The pack is built around
+> the **default fund**, not around auto-enrolment. The enrolment mechanism genuinely differs
+> between the UK and the US, but the defect does not: in both markets most people are sitting
+> in an unscreened index tracker they never chose, and in both markets the glide path sells
+> shares and buys bonds as they age. One line — *"Pension. Four-oh-one-k. Workplace plan.
+> Same machine."* — makes it universal without splitting the video, and `is 401k halal` is
+> carried in the tags. Currency is `$` per rule 0.5.
+>
+> **The strongest asset in the pack is the glide path** (scene 34): the fund automatically
+> moves you *deeper* into interest the closer you get to retiring, as a feature. Almost no
+> competitor video says this, and it is the mechanism-reveal shape that produced IFG's single
+> best video (`Why is FOREX considered HARAM?`, 221K).
 
 - **Frame one** — a pension statement, holdings fanning out beneath it.
 - **Line one** — *"Your pension owns things you would never buy with your own money."*

@@ -1,0 +1,1093 @@
+================================================================================
+FINANCE % DECODED — SCENE PACK
+"IS YOUR PENSION HALAL?" (THE DEFAULT FUND)
+Render style: 3D faceless low-poly | 9:16 1080x1920 | ~165s | 46 scenes
+Target publish: 2026-08-09, 03:00 PT
+================================================================================
+
+WHY THIS ONE, AND WHY NOW
+- It reuses `Is [named thing] Halal?`, the ONLY packaging variable ever measured
+  as working on this channel. Read 2026-08-08: JB6Q_7IE9Jo (Paper Gold, that
+  format) ran ~13.9 v/day against its designed control 4gRoTTZNnFE
+  (curiosity-gap) at ~6.2 — roughly 2.2x. Small, but it is the first readable
+  packaging difference the channel has produced.
+- It is a subject family this channel has NEVER entered. Every family it has
+  entered — inflation, banks, insurance, mortgage, and now credit cards — has
+  collapsed by entry 3 or 4. Credit cards took THREE entries in 42 hours on
+  Aug 6-7 and produced 6, 37 and 19 views.
+- The demand is old and unserved: ~3,220 total results for the whole query, the
+  top performer is NINE years old, and the two IFG entries are five. Every
+  working viewer has one of these and most have never opened it.
+- Length ~165s sits inside the 133-180s band that produced four of this
+  channel's five best videos. DO NOT cut it to 60s. That rule was tested and
+  found backwards — see next-slate.md rule 5.
+- It is the first upload since Aug 7 18:00Z. Rule 0 — never let the Shorts gap
+  exceed ~1 day — is the only production rule on this channel with real evidence
+  behind it, and it is the one currently at risk.
+
+WHAT MOVES, AND WHAT IS HELD CONSTANT
+  MOVES : the subject only (retirement/pension — never covered).
+  HELD  : the `Is [X] Halal? (compressed claim)` title shape, the 03:00 PT
+          publish slot, the render style, the cast, and the palette.
+  This is what makes the result readable. The Klarna upload broke exactly this
+  by shipping "You've Already Paid Klarna." instead of the locked
+  "Is Klarna Halal?" title, which moved subject AND format together and
+  destroyed the one clean pair the slate had designed.
+
+HOW TO USE THIS FILE
+- Every IMAGE PROMPT below is complete and self-contained. Copy, paste, generate.
+  Character identity, wardrobe, style and camera are already baked into each one.
+- The NEGATIVE PROMPT is identical for all scenes. Paste it once into your tool's
+  negative field and leave it there.
+- VO lines use ElevenLabs v3 audio tags. Paste the line exactly as written,
+  brackets included.
+- CAPTION lines are what you burn into the video. See CAPTION SPEC at the bottom.
+
+
+================================================================================
+NEGATIVE PROMPT — paste into the negative field, applies to ALL 46 scenes
+================================================================================
+
+facial features, eyes, mouth, nose, lips, eyebrows, face, portrait, cartoon
+outlines, cel shading, flat vector, anime, 2D illustration, text, watermark,
+logo, signature, brand marks, distorted hands, extra limbs, extra fingers,
+blurry, low resolution, oversaturated, plastic sheen, uncanny
+
+
+================================================================================
+BRAND-SAFETY NOTE — read before generating
+================================================================================
+
+No prompt in this pack names or depicts a real pension provider, fund manager,
+index, bank, or any real wordmark. Every statement, dashboard and fund list on
+screen is GENERIC and unbranded. The video names no product and recommends none.
+
+This is deliberate and it is the channel's own editorial rule, set in the
+credit-card Short: "I'm deliberately not naming a product. Terms change,
+availability changes, and a video that names one is out of date the month it
+does. The test doesn't change." Same here. The video teaches the CHECK, not a
+fund. That is also what makes it a template you can re-run.
+
+A generated lookalike logo is both a trademark problem and an AI-artefact
+magnet. Keep every screen generic.
+
+
+================================================================================
+CONSISTENCY WORKFLOW — do this before generating scene 2
+================================================================================
+
+1. Generate SCENE 07 first. It is the cleanest full-body view of AMIR.
+2. Approve the character design. Regenerate until the head is fully blank.
+3. LOCK THE SEED. Reuse that exact seed for all 46 scenes.
+4. Feed the approved Scene 07 image back as an image reference for every other
+   shot containing AMIR.
+5. Do the same for THE OLDER WORKER (first appears scene 29) and THE FINANCIER
+   (first appears scene 23) — generate, approve, lock, reference.
+   Character drift between scenes is the #1 failure mode of this format.
+
+CAST — all reused from earlier packs, so the channel stays visually continuous
+  AMIR            — terracotta #E85F42 t-shirt, cream #E8DCC8 trousers, white
+                    sneakers, cream beanie. Blank matte tan head.
+  THE FINANCIER   — deep navy #1E3A5F suit, no tie, navy bucket hat. Blank matte
+                    tan head. (Same character as the banker in earlier packs.)
+  THE OLDER WORKER— older, navy #1E3A5F knitted cardigan, grey flat cap, slight
+                    stoop. Blank matte tan head. (Same design as THE CASH BUYER
+                    in the Klarna pack — reuse the locked seed.)
+
+PALETTE  terracotta #E85F42 · cream #E8DCC8 · navy #1E3A5F · soft gold #F5D76E
+         · olive #6B7A4F
+
+
+================================================================================
+VOICEOVER — full script, ElevenLabs v3 tags, copy as one block
+================================================================================
+
+[serious] Your pension owns things you would never buy.
+[whispers] And nobody asked you.
+Not once.
+[serious] You were opted in. Including into this.
+Pension. Four-oh-one-k. Workplace plan.
+Same machine.
+When you joined, you chose a number.
+How much goes in.
+[emphatic] You almost certainly never chose where it goes.
+That is the default fund.
+Most people never move.
+[serious] So what is actually in it?
+An index. A basket of the largest listed companies.
+Bought automatically. By size. No judgement.
+[emphatic] Nobody screens it. That is the entire point of it.
+So look at what the basket holds.
+Banks and insurers. One of the biggest slices in it.
+Alcohol. Gambling. Tobacco. Weapons.
+[serious] Not by accident. By construction.
+And the banks are the sharp part.
+A bank's product is not a service.
+[serious] It is interest.
+Own the bank, own the income.
+That is not a technicality. That is the whole business.
+[serious] But here is the part almost nobody knows.
+Your fund is built to change as you age.
+They call it lifestyling. Or a glide path.
+It sounds like safety.
+The closer you get to retiring...
+...the more it sells shares...
+[emphatic] ...and buys bonds.
+[serious] And a bond is a loan.
+You are lending money. At interest.
+[emphatic] The machine moves you deeper into it as you get older.
+Automatically. Quietly. As a feature you were never shown.
+[calm] So. Two minutes. Three steps.
+One. Log in. Find the name of your fund.
+If it says default, balanced, or a retirement year — that is the basket.
+Two. Search that fund's largest holdings.
+[serious] You will recognise the banks immediately.
+Three. Open the full fund list. Look for a sharia or Islamic option.
+Most workplace schemes have one now. Switching is usually free.
+[calm] Same contributions. Same employer match. Different basket.
+[serious] You were opted in by default.
+[warmly] Default is still a choice. Somebody else just made it for you.
+Two minutes. Go and make it yourself.
+
+TAG NOTES: keep tags sparse, they are strongest at emotional turns. Ellipses
+create natural breath pauses. Do not stack two tags on one line. This script is
+~350 words and needs ~165 seconds, so the pauses are doing real work. The
+glide-path section (scenes 27-35) is the reveal — slow down there, do not rush
+into the checklist.
+
+
+================================================================================
+THE 46 SCENES
+================================================================================
+
+--------------------------------------------------------------------------------
+SCENE 01 | 0:00-0:05 | THE HOOK
+--------------------------------------------------------------------------------
+VO: [serious] Your pension owns things you would never buy.
+CAPTION 1: Your pension owns things
+CAPTION 2: you would never buy
+
+IMAGE PROMPT:
+Near-photorealistic macro shot of a plain unbranded pension statement lying on a
+pale oak table, thick cream paper, a single large currency figure printed near
+the top, no logos and no readable body text. Beneath it a fan of smaller cards
+spreads out like a dealt hand, each card blank. Hard directional light from the
+upper left throwing a crisp real shadow of the paper to the right. Extremely
+shallow depth of field, background dissolved to warm cream bokeh. Stylized matte
+cinematic grade. 9:16 vertical composition, subject in the lower two-thirds,
+clean headroom above for captions.
+
+--------------------------------------------------------------------------------
+SCENE 02 | 0:05-0:08
+--------------------------------------------------------------------------------
+VO: [whispers] And nobody asked you.
+CAPTION 1: And nobody asked you
+CAPTION 2: not once
+
+IMAGE PROMPT:
+Extreme close-up, near-photorealistic, of a single blank signature line on cream
+paper with no signature on it, pen resting beside it untouched, cap still on.
+Hard raking light from the left, deep real shadow of the pen falling across the
+paper. Muted cream and warm grey palette, one soft gold #F5D76E highlight on the
+pen barrel. Extremely shallow depth of field, background dissolved into warm
+bokeh. Stylized matte cinematic grade. 9:16 vertical composition, subject lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 03 | 0:08-0:10
+--------------------------------------------------------------------------------
+VO: Not once.
+CAPTION 1: Not once
+CAPTION 2: not in twenty years
+
+IMAGE PROMPT:
+Near-photorealistic overhead flat-lay of a tall neat stack of identical unopened
+cream envelopes on a dark wood surface, edges perfectly aligned, all sealed, none
+opened. Cool side light from the left, long real shadows raking across the stack
+to the right. Desaturated cream and warm grey palette. Stylized matte cinematic
+grade, shallow depth of field. 9:16 vertical composition, stack in the lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 04 | 0:10-0:14
+--------------------------------------------------------------------------------
+VO: [serious] You were opted in. Including into this.
+CAPTION 1: You were opted in
+CAPTION 2: including into this
+
+IMAGE PROMPT:
+Near-photorealistic macro of a single pre-ticked checkbox on cream paper, the
+tick already printed rather than handwritten, crisp and mechanical. Everything
+around it dissolved into shallow focus. Hard directional light from the upper
+left, deep real shadow cast to the right. One terracotta #E85F42 accent on the
+tick itself as the only warm colour in an otherwise cream and grey frame.
+Stylized matte cinematic grade, extremely shallow depth of field. 9:16 vertical
+composition, subject lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 05 | 0:14-0:18
+--------------------------------------------------------------------------------
+VO: Pension. Four-oh-one-k. Workplace plan.
+CAPTION 1: Pension. 401(k). Workplace plan.
+CAPTION 2: same machine
+
+IMAGE PROMPT:
+Near-photorealistic still life of three identical plain cream folders standing
+upright side by side in a row on a pale oak surface, all the same size, same
+thickness, same blank cover, no text and no logos anywhere. Even diffused
+daylight from the left with soft real contact shadows beneath each folder.
+Muted cream, warm grey and one navy #1E3A5F folder spine as the single cool
+accent. Stylized matte cinematic grade, shallow depth of field. 9:16 vertical
+composition, folders in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 06 | 0:18-0:20
+--------------------------------------------------------------------------------
+VO: Same machine.
+CAPTION 1: Same machine
+CAPTION 2: different name on the front
+
+IMAGE PROMPT:
+Near-photorealistic close-up of the interior of an old brass mechanism, three
+identical gears meshed together turning as one, worn metal with real machining
+marks, faint dust in the air. Warm hard light from the upper right, deep shadow
+pooling in the recesses. Soft gold #F5D76E and dark navy #1E3A5F tones. Stylized
+matte cinematic grade, extremely shallow depth of field with only the centre gear
+sharp. 9:16 vertical composition, mechanism lower two-thirds, clean headroom
+above.
+
+--------------------------------------------------------------------------------
+SCENE 07 | 0:20-0:24 | ** GENERATE THIS ONE FIRST — AMIR REFERENCE **
+--------------------------------------------------------------------------------
+VO: When you joined, you chose a number.
+CAPTION 1: When you joined
+CAPTION 2: you chose one number
+
+IMAGE PROMPT:
+Full-body stylized low-poly 3D render of a male character standing squarely
+facing the camera in a plain modern office corridor, arms relaxed at his sides,
+weight even on both feet, head level. The character has a COMPLETELY BLANK
+featureless head with no eyes, no nose, no mouth, no face at all — a smooth matte
+tan block. Simplified geometric anatomy, matte clay-like shading, soft
+subsurface material. He wears a terracotta #E85F42 t-shirt, cream #E8DCC8
+trousers, white sneakers and a cream beanie. Near-photorealistic office interior
+behind him, softly out of focus, even diffused daylight, real contact shadow
+beneath his feet. Clean even lighting on the whole figure for reference purposes.
+Shallow cinematic depth of field. 9:16 vertical composition, full figure in the
+lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 08 | 0:24-0:26
+--------------------------------------------------------------------------------
+VO: How much goes in.
+CAPTION 1: How much goes in
+CAPTION 2: that was the whole decision
+
+IMAGE PROMPT:
+Extreme close-up, stylized low-poly 3D render, of a single simplified geometric
+finger sliding a physical dial slider along a narrow track, the slider pushed
+about a third of the way along. Matte clay-like shading on the hand, terracotta
+#E85F42 sleeve cuff at the edge of frame. Near-photorealistic brushed metal
+track with a soft specular highlight. Hard light from the left, deep real shadow
+of the hand falling across the track. Very shallow depth of field, background
+dissolved into soft office bokeh. 9:16 vertical composition, subject lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 09 | 0:26-0:31
+--------------------------------------------------------------------------------
+VO: [emphatic] You almost certainly never chose where it goes.
+CAPTION 1: You never chose
+CAPTION 2: where it actually goes
+
+IMAGE PROMPT:
+Near-photorealistic shot of a long row of identical unlabelled switches on a pale
+control panel, every single one already set to the same position, none touched.
+One switch in the centre foreground sharp, the rest receding into shallow focus.
+Hard directional light from the upper left, crisp real shadows under each switch.
+Cream, warm grey and one navy #1E3A5F panel edge. Stylized matte cinematic grade,
+extremely shallow depth of field. 9:16 vertical composition, panel lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 10 | 0:31-0:34
+--------------------------------------------------------------------------------
+VO: That is the default fund.
+CAPTION 1: That's the default fund
+CAPTION 2: the one you were put in
+
+IMAGE PROMPT:
+Near-photorealistic macro of a single plain cream card standing upright in a
+wooden card holder on a desk, blank face, no text, lit as though it were an
+exhibit label. Everything behind it dissolved into deep bokeh. Hard directional
+light from the upper left throwing a long real shadow to the right. Soft gold
+#F5D76E rim light along the top edge of the card. Stylized matte cinematic grade,
+extremely shallow depth of field. 9:16 vertical composition, card lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 11 | 0:34-0:38
+--------------------------------------------------------------------------------
+VO: Most people never move.
+CAPTION 1: Most people never move
+CAPTION 2: they stay there for decades
+
+IMAGE PROMPT:
+Near-photorealistic wide shot of a large open-plan office at dusk, dozens of
+identical empty desks in perfect rows receding into shallow focus, completely
+empty of people, monitors dark. Cool blue daylight falling from a window bank on
+the left, long real shadows stretching across the floor to the right. Muted
+desaturated navy #1E3A5F and grey palette with one terracotta #E85F42 chair in
+the near row as the only warm accent. Stylized matte cinematic grade, shallow
+depth of field. 9:16 vertical composition, subject lower two-thirds, clean
+headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 12 | 0:38-0:42
+--------------------------------------------------------------------------------
+VO: [serious] So what is actually in it?
+CAPTION 1: So what's actually in it?
+CAPTION 2: nobody ever shows you this
+
+IMAGE PROMPT:
+Near-photorealistic close-up of a plain cream box with the lid lifted just a few
+centimetres, interior in complete darkness, nothing visible inside. Two simplified
+geometric hands with matte clay-like shading gripping the lid edges, terracotta
+#E85F42 sleeve cuffs at the frame edge. Hard directional light from the upper
+left, deep real shadow thrown to the right, the gap between lid and box reading as
+pure black. Stylized matte cinematic grade, extremely shallow depth of field.
+9:16 vertical composition, box lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 13 | 0:42-0:47
+--------------------------------------------------------------------------------
+VO: An index. A basket of the largest listed companies.
+CAPTION 1: An index
+CAPTION 2: a basket of the biggest companies
+
+IMAGE PROMPT:
+Near-photorealistic overhead shot of a shallow woven basket on pale oak filled
+with plain unmarked wooden blocks of many different sizes, largest in the centre,
+smallest at the rim, all blank with no text or symbols. Hard directional light
+from the upper left, crisp real shadows between the blocks. Cream, olive #6B7A4F
+and soft gold #F5D76E tones. Stylized matte cinematic grade, shallow depth of
+field. 9:16 vertical composition, basket lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 14 | 0:47-0:51
+--------------------------------------------------------------------------------
+VO: Bought automatically. By size. No judgement.
+CAPTION 1: Bought automatically
+CAPTION 2: by size — no judgement
+
+IMAGE PROMPT:
+Near-photorealistic shot of a mechanical sorting chute dropping plain unmarked
+wooden blocks into a basket below, three blocks caught mid-fall, motion frozen
+crisply. Brushed steel chute, worn pale oak below. Hard directional light from
+the upper right, hard real shadows of the falling blocks on the surface beneath.
+Cream, steel grey and one soft gold #F5D76E highlight along the chute lip.
+Stylized matte cinematic grade, shallow depth of field. 9:16 vertical
+composition, subject lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 15 | 0:51-0:56
+--------------------------------------------------------------------------------
+VO: [emphatic] Nobody screens it. That is the entire point of it.
+CAPTION 1: Nobody screens it
+CAPTION 2: that IS the point of it
+
+IMAGE PROMPT:
+Near-photorealistic close-up of an empty metal sieve mounted above a basket, the
+mesh completely absent from its frame so nothing can be caught, blocks passing
+straight through the open ring. Worn brushed steel frame, pale oak beneath. Hard
+directional light from the left, deep real shadow of the empty ring cast onto the
+surface below. Muted steel and cream palette with one terracotta #E85F42 block
+mid-fall as the single warm accent. Stylized matte cinematic grade, extremely
+shallow depth of field. 9:16 vertical composition, subject lower two-thirds,
+clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 16 | 0:56-1:00
+--------------------------------------------------------------------------------
+VO: So look at what the basket holds.
+CAPTION 1: So look at what it holds
+CAPTION 2: actually look
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of a male character crouched beside a large woven
+basket on a plain floor, one hand resting on the rim, head tilted down toward the
+contents. The character has a COMPLETELY BLANK featureless head with no eyes, no
+nose, no mouth, no face at all — a smooth matte tan block. Simplified geometric
+anatomy, matte clay-like shading, soft subsurface material. He wears a terracotta
+#E85F42 t-shirt, cream #E8DCC8 trousers, white sneakers and a cream beanie.
+Near-photorealistic basket and floor, hard directional light from the upper left,
+real cast shadow of the figure stretching to the right. Shallow cinematic depth
+of field. 9:16 vertical composition, subject lower two-thirds, clean headroom
+above.
+
+--------------------------------------------------------------------------------
+SCENE 17 | 1:00-1:05
+--------------------------------------------------------------------------------
+VO: Banks and insurers. One of the biggest slices in it.
+CAPTION 1: Banks and insurers
+CAPTION 2: one of the biggest slices
+
+IMAGE PROMPT:
+Near-photorealistic overhead shot of a plain cream pie-shaped wooden disc on pale
+oak, cut into unequal wedges, one large wedge lifted slightly clear of the others
+and separated by a visible gap. All wedges completely blank, no text or symbols.
+Hard directional light from the upper left, crisp real shadow in the gap and
+beneath the lifted wedge. The lifted wedge rendered in navy #1E3A5F against cream
+neighbours. Stylized matte cinematic grade, shallow depth of field. 9:16 vertical
+composition, disc lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 18 | 1:05-1:10
+--------------------------------------------------------------------------------
+VO: Alcohol. Gambling. Tobacco. Weapons.
+CAPTION 1: Alcohol. Gambling. Tobacco.
+CAPTION 2: and weapons
+
+IMAGE PROMPT:
+Near-photorealistic still life of four plain unmarked objects standing in a row on
+a dark wood surface: a stemmed glass, a stack of gaming chips, a cylindrical tin,
+and a blunt metal cylinder. All completely unbranded, no text or logos anywhere,
+rendered as neutral museum-style exhibits. Hard raking light from the left
+throwing four long parallel real shadows to the right. Desaturated palette, deep
+navy #1E3A5F background falling into shadow. Stylized matte cinematic grade,
+shallow depth of field. 9:16 vertical composition, objects lower two-thirds,
+clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 19 | 1:10-1:14
+--------------------------------------------------------------------------------
+VO: [serious] Not by accident. By construction.
+CAPTION 1: Not by accident
+CAPTION 2: by construction
+
+IMAGE PROMPT:
+Near-photorealistic macro of a precise architectural blueprint drawn on cream
+paper in fine navy #1E3A5F line work, showing an abstract geometric lattice with
+measured dimension lines, no readable text or numbers. A steel drafting compass
+rests across it. Hard directional light from the upper left, crisp real shadow of
+the compass falling across the drawing. Stylized matte cinematic grade, extremely
+shallow depth of field with only the compass point sharp. 9:16 vertical
+composition, subject lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 20 | 1:14-1:18
+--------------------------------------------------------------------------------
+VO: And the banks are the sharp part.
+CAPTION 1: And the banks
+CAPTION 2: are the sharp part
+
+IMAGE PROMPT:
+Near-photorealistic extreme close-up of a single navy #1E3A5F wooden wedge lying
+alone on pale oak, its edge honed to a blade-thin taper catching a hard specular
+highlight. Everything else dissolved into deep bokeh. Hard directional light from
+the left, long deep real shadow thrown to the right. Stylized matte cinematic
+grade, extremely shallow depth of field. 9:16 vertical composition, wedge lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 21 | 1:18-1:22
+--------------------------------------------------------------------------------
+VO: A bank's product is not a service.
+CAPTION 1: A bank's product
+CAPTION 2: is not a service
+
+IMAGE PROMPT:
+Near-photorealistic close-up of a polished dark stone counter, completely bare,
+with a small brass service bell sitting alone at one end, untouched. Cool light
+from the left, deep real shadow of the bell stretching across the empty stone.
+Muted navy #1E3A5F and steel palette with a single soft gold #F5D76E glint on
+the bell dome. Stylized matte cinematic grade, extremely shallow depth of field.
+9:16 vertical composition, counter lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 22 | 1:22-1:25
+--------------------------------------------------------------------------------
+VO: [serious] It is interest.
+CAPTION 1: It's interest
+CAPTION 2: that's the actual product
+
+IMAGE PROMPT:
+Near-photorealistic macro of a small brass clock mechanism with an escapement
+mid-tick, and a single coin balanced upright against the gear train. Worn brass
+with real machining marks and fine dust. Hard warm light from the upper right,
+deep shadow pooling behind the mechanism. Soft gold #F5D76E and deep navy
+#1E3A5F tones. Stylized matte cinematic grade, extremely shallow depth of field
+with only the escapement sharp. 9:16 vertical composition, subject lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 23 | 1:25-1:29 | ** THE FINANCIER REFERENCE **
+--------------------------------------------------------------------------------
+VO: Own the bank, own the income.
+CAPTION 1: Own the bank
+CAPTION 2: you own the income
+
+IMAGE PROMPT:
+Full-body stylized low-poly 3D render of a male character standing squarely facing
+the camera in a dim marble banking hall, hands clasped loosely in front, head
+level. The character has a COMPLETELY BLANK featureless head with no eyes, no
+nose, no mouth, no face at all — a smooth matte tan block. Simplified geometric
+anatomy, matte clay-like shading, soft subsurface material. He wears a deep navy
+#1E3A5F suit with no tie and a navy bucket hat. Near-photorealistic marble
+interior behind him, tall columns softly out of focus, hard directional light
+from the upper left, long real cast shadow stretching to the right. Clean even
+lighting on the figure for reference purposes. Shallow cinematic depth of field.
+9:16 vertical composition, full figure in the lower two-thirds, clean headroom
+above.
+
+--------------------------------------------------------------------------------
+SCENE 24 | 1:29-1:35
+--------------------------------------------------------------------------------
+VO: That is not a technicality. That is the whole business.
+CAPTION 1: Not a technicality
+CAPTION 2: it's the whole business
+
+IMAGE PROMPT:
+Near-photorealistic wide interior of a vast marble banking hall shot from low
+down, columns rising out of frame, entirely empty of people, polished floor
+reflecting hard shafts of light from high windows. Cool daylight from the left,
+long real shadows raking across the floor to the right. Deep navy #1E3A5F and
+cold cream palette, one soft gold #F5D76E highlight along a distant brass rail.
+Stylized matte cinematic grade, shallow depth of field. 9:16 vertical
+composition, hall lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 25 | 1:35-1:40
+--------------------------------------------------------------------------------
+VO: [serious] But here is the part almost nobody knows.
+CAPTION 1: But here's the part
+CAPTION 2: almost nobody knows
+
+IMAGE PROMPT:
+Near-photorealistic macro of a thick cream document with one page lifted and
+turned back, revealing a second page beneath in complete shadow, contents
+unreadable. Hard directional light from the upper left striking only the lifted
+page, the page beneath falling into deep darkness. Extremely shallow depth of
+field, background dissolved into warm bokeh. Stylized matte cinematic grade.
+9:16 vertical composition, document lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 26 | 1:40-1:44
+--------------------------------------------------------------------------------
+VO: Your fund is built to change as you age.
+CAPTION 1: Your fund changes
+CAPTION 2: as you get older
+
+IMAGE PROMPT:
+Near-photorealistic side view of an old brass hourglass mid-flow on pale oak, the
+upper chamber noticeably fuller than the lower, fine sand streaming in a thin
+sharp line. Warm hard light from the upper right, long real shadow thrown to the
+left, individual grains catching the light. Soft gold #F5D76E and warm cream
+tones. Stylized matte cinematic grade, extremely shallow depth of field. 9:16
+vertical composition, hourglass lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 27 | 1:44-1:48
+--------------------------------------------------------------------------------
+VO: They call it lifestyling. Or a glide path.
+CAPTION 1: They call it "lifestyling"
+CAPTION 2: or a "glide path"
+
+IMAGE PROMPT:
+Near-photorealistic macro of a smooth curved brass rail descending gently from
+upper left to lower right across the frame, polished to a soft specular sheen,
+mounted on a plain cream wall. Hard directional light from the upper left casting
+a crisp parallel shadow of the rail onto the wall beneath it. Soft gold #F5D76E
+and cream palette. Stylized matte cinematic grade, extremely shallow depth of
+field with only the centre of the curve sharp. 9:16 vertical composition, rail
+lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 28 | 1:48-1:51
+--------------------------------------------------------------------------------
+VO: It sounds like safety.
+CAPTION 1: It sounds like safety
+CAPTION 2: it's worth reading twice
+
+IMAGE PROMPT:
+Near-photorealistic close-up of a soft folded wool blanket in warm cream resting
+on a plain wooden chair, gently lit, comforting and domestic. Warm diffused light
+from the left with a soft real shadow beneath the chair seat. Cream and olive
+#6B7A4F tones, deliberately reassuring. Stylized matte cinematic grade, shallow
+depth of field. 9:16 vertical composition, chair lower two-thirds, clean headroom
+above.
+
+--------------------------------------------------------------------------------
+SCENE 29 | 1:51-1:55 | ** THE OLDER WORKER REFERENCE **
+--------------------------------------------------------------------------------
+VO: The closer you get to retiring...
+CAPTION 1: The closer you get
+CAPTION 2: to actually retiring
+
+IMAGE PROMPT:
+Full-body stylized low-poly 3D render of an older male character standing squarely
+facing the camera in a plain domestic hallway, arms relaxed at his sides, a slight
+stoop in the shoulders, head level. The character has a COMPLETELY BLANK
+featureless head with no eyes, no nose, no mouth, no face at all — a smooth matte
+tan block. Simplified geometric anatomy, matte clay-like shading, soft subsurface
+material. He wears a navy #1E3A5F knitted cardigan and a grey flat cap.
+Near-photorealistic hallway behind him, softly out of focus, warm diffused
+daylight, real contact shadow beneath his feet. Clean even lighting on the whole
+figure for reference purposes. Shallow cinematic depth of field. 9:16 vertical
+composition, full figure in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 30 | 1:55-1:58
+--------------------------------------------------------------------------------
+VO: ...the more it sells shares...
+CAPTION 1: the more it sells shares
+CAPTION 2: quietly, on a schedule
+
+IMAGE PROMPT:
+Near-photorealistic shot of a mechanical arm lifting plain unmarked wooden blocks
+out of a woven basket and away to the right, two blocks caught mid-lift. Brushed
+steel arm, worn pale oak surface. Hard directional light from the upper left,
+crisp real shadows of the removed blocks left behind on the surface. Cream and
+steel palette. Stylized matte cinematic grade, shallow depth of field. 9:16
+vertical composition, subject lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 31 | 1:58-2:02
+--------------------------------------------------------------------------------
+VO: [emphatic] ...and buys bonds.
+CAPTION 1: and buys bonds
+CAPTION 2: more of them every year
+
+IMAGE PROMPT:
+Near-photorealistic shot of the same woven basket now filling with plain cream
+paper certificates instead of wooden blocks, thick stacked paper edges visible,
+completely blank with no text or seals. Hard directional light from the upper
+left, crisp real shadows between the stacked sheets. Cream and warm grey palette
+with one navy #1E3A5F ribbon across the topmost sheet. Stylized matte cinematic
+grade, shallow depth of field. 9:16 vertical composition, basket lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 32 | 2:02-2:06
+--------------------------------------------------------------------------------
+VO: [serious] And a bond is a loan.
+CAPTION 1: And a bond is a loan
+CAPTION 2: that's all a bond is
+
+IMAGE PROMPT:
+Near-photorealistic macro of a single plain cream certificate on pale oak with a
+length of navy #1E3A5F cord tied across it in a tight double knot, the cord
+pulled taut. No text or seals anywhere on the paper. Hard directional light from
+the upper left, deep real shadow of the knot cast onto the certificate. Stylized
+matte cinematic grade, extremely shallow depth of field with only the knot sharp.
+9:16 vertical composition, subject lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 33 | 2:06-2:10
+--------------------------------------------------------------------------------
+VO: You are lending money. At interest.
+CAPTION 1: You are lending money
+CAPTION 2: at interest
+
+IMAGE PROMPT:
+Near-photorealistic close-up of two simplified geometric hands with matte
+clay-like shading, one passing a small stack of coins to the other across a dark
+wood surface, the receiving hand already closing around them. Navy #1E3A5F cuff
+on one arm, cream #E8DCC8 cuff on the other. Hard directional light from the left,
+deep real shadows of both hands cast across the wood. Soft gold #F5D76E highlight
+on the coin edges. Stylized matte cinematic grade, extremely shallow depth of
+field. 9:16 vertical composition, hands lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 34 | 2:10-2:16
+--------------------------------------------------------------------------------
+VO: [emphatic] The machine moves you deeper into it as you get older.
+CAPTION 1: It moves you deeper in
+CAPTION 2: the older you get
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of an older male character standing on a slowly
+descending brass ramp that leads down into deep shadow at the lower right of
+frame, seen from behind and slightly above, shoulders slightly stooped. The
+character has a COMPLETELY BLANK featureless head with no eyes, no nose, no
+mouth, no face at all — a smooth matte tan block. Simplified geometric anatomy,
+matte clay-like shading. He wears a navy #1E3A5F knitted cardigan and a grey flat
+cap. Near-photorealistic brass ramp and surrounding darkness, hard directional
+light from the upper left, long real cast shadow stretching down the ramp ahead
+of him. Shallow cinematic depth of field. 9:16 vertical composition, figure in
+the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 35 | 2:16-2:21
+--------------------------------------------------------------------------------
+VO: Automatically. Quietly. As a feature you were never shown.
+CAPTION 1: Automatically. Quietly.
+CAPTION 2: as a feature, not a fault
+
+IMAGE PROMPT:
+Near-photorealistic macro of a brass clockwork mechanism turning behind a pane of
+dusty glass, the glass catching a hard reflection that partly obscures the gears
+beneath. Worn brass with real machining marks. Hard directional light from the
+upper right, deep shadow pooling behind the mechanism, dust visible in the beam.
+Soft gold #F5D76E and deep navy #1E3A5F tones. Stylized matte cinematic grade,
+extremely shallow depth of field. 9:16 vertical composition, mechanism lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 36 | 2:21-2:25 | THE TURN
+--------------------------------------------------------------------------------
+VO: [calm] So. Two minutes. Three steps.
+CAPTION 1: Two minutes. Three steps.
+CAPTION 2: do it today
+
+IMAGE PROMPT:
+Near-photorealistic overhead flat-lay of three plain cream cards laid out in a
+neat row on pale oak, evenly spaced, all completely blank with no text. Clean,
+calm, ordered. Even diffused daylight from the left with soft real contact
+shadows beneath each card. Warm cream palette with one soft gold #F5D76E edge
+highlight along the nearest card. Stylized matte cinematic grade, shallow depth
+of field. 9:16 vertical composition, cards lower two-thirds, clean headroom
+above.
+
+--------------------------------------------------------------------------------
+SCENE 37 | 2:25-2:30
+--------------------------------------------------------------------------------
+VO: One. Log in. Find the name of your fund.
+CAPTION 1: 1. Log in
+CAPTION 2: find your fund's name
+
+IMAGE PROMPT:
+Near-photorealistic macro shot of a smartphone lying on a pale oak table, screen
+facing up, showing a plain unbranded account dashboard: a simple header bar and
+one highlighted row set apart from the others. Clean neutral grey and white
+interface, no logos, no readable brand marks. Hard directional light from the
+upper left throwing a crisp real shadow of the phone to the right. Extremely
+shallow depth of field, background dissolved to warm cream bokeh. Stylized matte
+cinematic grade. 9:16 vertical composition, phone lower two-thirds, clean
+headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 38 | 2:30-2:36
+--------------------------------------------------------------------------------
+VO: If it says default, balanced, or a retirement year — that is the basket.
+CAPTION 1: "Default" · "Balanced" · a year
+CAPTION 2: that's the basket
+
+IMAGE PROMPT:
+Near-photorealistic macro of three plain cream label tags tied with fine string to
+a woven basket rim, all three blank with no text, hanging still. Hard directional
+light from the upper left, crisp real shadows of the tags falling on the basket
+weave. Cream, olive #6B7A4F and soft gold #F5D76E tones. Stylized matte cinematic
+grade, extremely shallow depth of field with only the nearest tag sharp. 9:16
+vertical composition, subject lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 39 | 2:36-2:40
+--------------------------------------------------------------------------------
+VO: Two. Search that fund's largest holdings.
+CAPTION 1: 2. Search its top holdings
+CAPTION 2: they're published
+
+IMAGE PROMPT:
+Near-photorealistic close-up of a magnifying glass held above a plain cream sheet
+listing evenly spaced blank rows, the lens enlarging the top few rows which remain
+blank. Brass rim on the glass, worn wooden handle. Hard directional light from
+the upper left, deep real shadow of the glass and a bright focused caustic spot
+on the paper beneath. Soft gold #F5D76E and cream tones. Stylized matte cinematic
+grade, extremely shallow depth of field. 9:16 vertical composition, subject lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 40 | 2:40-2:44
+--------------------------------------------------------------------------------
+VO: [serious] You will recognise the banks immediately.
+CAPTION 1: You'll recognise the banks
+CAPTION 2: immediately
+
+IMAGE PROMPT:
+Near-photorealistic macro of a plain cream list sheet where the top three rows are
+rendered in deep navy #1E3A5F while every row beneath stays pale cream, all rows
+completely blank with no text. Hard directional light from the upper left, crisp
+real shadow along the sheet's raised edge. Stylized matte cinematic grade,
+extremely shallow depth of field with only the navy rows sharp. 9:16 vertical
+composition, sheet lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 41 | 2:44-2:50
+--------------------------------------------------------------------------------
+VO: Three. Open the full fund list. Look for a sharia or Islamic option.
+CAPTION 1: 3. Open the full fund list
+CAPTION 2: look for the sharia option
+
+IMAGE PROMPT:
+Near-photorealistic shot of a long cream concertina document unfolding across a
+pale oak table toward the camera, many blank panels visible, one panel near the
+centre catching a distinctly warmer light than the rest. No text anywhere. Hard
+directional light from the upper left, crisp real shadows in every fold. Cream
+palette with one soft gold #F5D76E panel as the single warm accent. Stylized
+matte cinematic grade, shallow depth of field. 9:16 vertical composition,
+document lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 42 | 2:50-2:55
+--------------------------------------------------------------------------------
+VO: Most workplace schemes have one now. Switching is usually free.
+CAPTION 1: Most schemes have one now
+CAPTION 2: switching is usually free
+
+IMAGE PROMPT:
+Extreme close-up, stylized low-poly 3D render, of a single simplified geometric
+finger pressing a physical toggle switch over from one position to the other, the
+switch caught mid-travel. Matte clay-like shading on the hand, terracotta #E85F42
+sleeve cuff at the edge of frame. Near-photorealistic brushed metal switch plate
+with a soft specular highlight. Hard light from the left, deep real shadow of the
+hand across the plate. Very shallow depth of field, background dissolved into
+warm bokeh. 9:16 vertical composition, subject lower two-thirds, clean headroom
+above.
+
+--------------------------------------------------------------------------------
+SCENE 43 | 2:55-3:00
+--------------------------------------------------------------------------------
+VO: [calm] Same contributions. Same employer match. Different basket.
+CAPTION 1: Same contributions. Same match.
+CAPTION 2: different basket
+
+IMAGE PROMPT:
+Near-photorealistic overhead shot of two woven baskets side by side on pale oak,
+identical in size and weave, the left holding mixed unmarked wooden blocks and the
+right holding only smooth olive #6B7A4F blocks, both filled to exactly the same
+level. Hard directional light from the upper left, matching crisp real shadows
+beneath both baskets. Cream and olive palette. Stylized matte cinematic grade,
+shallow depth of field. 9:16 vertical composition, baskets lower two-thirds,
+clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 44 | 3:00-3:04
+--------------------------------------------------------------------------------
+VO: [serious] You were opted in by default.
+CAPTION 1: You were opted in
+CAPTION 2: by default
+
+IMAGE PROMPT:
+Near-photorealistic macro return to the pre-ticked checkbox from scene 04 on cream
+paper, the printed tick still in place, shot from a slightly closer and lower
+angle. Hard directional light from the upper left, deep real shadow cast to the
+right. One terracotta #E85F42 accent on the tick as the only warm colour.
+Stylized matte cinematic grade, extremely shallow depth of field. 9:16 vertical
+composition, subject lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 45 | 3:04-3:12 | THE PAYOFF — HOLD THIS ONE
+--------------------------------------------------------------------------------
+VO: [warmly] Default is still a choice. Somebody else just made it for you.
+    Two minutes. Go and make it yourself.
+CAPTION 1: Default is still a choice
+CAPTION 2: somebody else just made it
+
+IMAGE PROMPT:
+Stylized low-poly 3D render of a male character standing at a window in warm
+evening light, phone held in one hand at chest height, body turned three-quarters
+toward the camera, shoulders relaxed and settled. The character has a COMPLETELY
+BLANK featureless head with no eyes, no nose, no mouth, no face at all — a smooth
+matte tan block. Simplified geometric anatomy, matte clay-like shading, soft
+subsurface material. He wears a terracotta #E85F42 t-shirt, cream #E8DCC8
+trousers, white sneakers and a cream beanie. Near-photorealistic room interior,
+warm low sun through the window from the left, long real cast shadow stretching
+across the floor to the right. Calm and resolved. Shallow cinematic depth of
+field. 9:16 vertical composition, figure lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 46 | 3:12-3:16 | OUTRO CARD
+--------------------------------------------------------------------------------
+VO: (no VO — hold on the last line's tail, then cut)
+CAPTION 1: (none)
+CAPTION 2: (none)
+
+IMAGE PROMPT:
+Heavily blurred near-photorealistic warm interior as a soft background plate,
+cream, soft gold and terracotta tones, strong bokeh, no sharp detail anywhere.
+Clean empty centre of frame reserved for a logo overlay to be added in post.
+Warm, calm, resolved. Stylized matte cinematic grade. 9:16 vertical composition,
+even blur across the full frame.
+
+[POST] Composite the channel logo centred, plus handle and series title beneath.
+
+NOTE: 46 scene blocks are listed, but scenes 34, 41 and 45 are long-held shots
+carrying more VO than their neighbours, which is why the pack runs ~165s rather
+than the ~46 x 3s the count implies. Hold them. The payoff needs air.
+
+
+================================================================================
+CAPTION BURN-IN SPEC
+================================================================================
+
+LINE 1 (top)    : white #FFFFFF, Montserrat or Inter Bold 700, sentence case,
+                  on a solid #000000 box, tight padding, box sized to the text
+                  (not full width)
+LINE 2 (below)  : soft gold #F5D76E, ITALIC, own solid #000000 box, offset
+                  approximately 20px to the left of line 1
+POSITION        : lower third, above the YouTube UI band — keep clear of the
+                  bottom 250px of a 1920px tall frame
+BEHAVIOUR       : STATIC per phrase. No karaoke. No word-by-word pop. No colour
+                  highlighting. No scaling or bouncing.
+EMPHASIS        : italics only
+TIMING          : swap on the speaker's natural clause break — the caption change
+                  and the picture cut land together
+
+Enable a multi-language audio track on upload. That is what produces YouTube's
+"Auto-dubbed" chip, and it is free additional reach.
+
+
+================================================================================
+EDIT & ASSEMBLY
+================================================================================
+
+1. Record the VO first. The cut follows speech cadence, so scene timings will
+   shift to match the actual delivery. Treat the timecodes above as a guide.
+2. Generate scene 07, approve AMIR, lock the seed, then generate everything else.
+   Do the same for THE FINANCIER (23) and THE OLDER WORKER (29).
+3. HARD CUTS ONLY. No dissolves, no whip pans, no zoom transitions, no glitch.
+4. Slow push-in or lateral drift on every scene. Nothing fully static.
+5. Film grain overlay across the master.
+6. Burn in captions per the spec above.
+7. CUSTOM THUMBNAIL — do not ship on YouTube's auto-selected frame. Two clips
+   already went out that way. Use the scene 17 lifted wedge or the scene 40 navy
+   rows; both read at thumbnail size without text.
+8. NO trailer ending. This Short ends on its own payoff. Do not append a "part
+   two" card pointing at a long-form video — the long-form programme is stopped
+   and all three of those videos have 13 views between them and took +0 in the
+   last three days.
+
+RETENTION CHECKPOINTS
+  Scenes 01-04  the hook. "Your pension owns things you'd never buy — and nobody
+                asked you" must land inside 5 seconds. If this doesn't work,
+                nothing else matters.
+  Scene 15      "Nobody screens it. That is the entire point of it." The first
+                payoff, and the one that earns the rest of the runtime.
+  Scene 34      the reveal, and the strongest asset in the pack — the glide path
+                moving you deeper into interest as you age. Almost no competitor
+                video says this. Best candidate for the channel-page cover frame.
+  Scene 41      the actionable turn. Must be understood, not just heard — this is
+                the beat that earns a save or a share.
+
+
+================================================================================
+ACCURACY NOTES — read before recording, these are the claims that must hold
+================================================================================
+
+- "Most people never move." Deliberately not a number. UK auto-enrolment default
+  retention is very high and widely cited above 90%, but US 401(k) behaviour
+  differs and target-date adoption is not the same statistic. The vaguer claim is
+  the one that is true in both markets. Do not tighten it to "nine in ten" on
+  camera.
+- "Banks and insurers. One of the biggest slices in it." NOT "the largest".
+  In broad cap-weighted indices technology is currently the largest sector;
+  financials are typically top-three. The weaker claim is the accurate one and
+  it costs the argument nothing.
+- "A bond is a loan. You are lending money. At interest." True of conventional
+  bonds, which is what a default glide path buys. Sukuk are the structural
+  alternative and the channel already has a Short on them — link it in the
+  description, do not detour into it in the VO.
+- The video names NO fund, provider or index, and recommends none. It teaches the
+  check. Availability of a sharia option genuinely varies by scheme, which is why
+  the VO says "most" and the description says to check your own.
+- This is education, not advice, and the description says so.
+
+
+================================================================================
+UPLOAD METADATA — ready to paste, or drop into automation/reset.json
+================================================================================
+
+TITLE
+Is Your Pension Halal? (You Never Picked What It Buys) #pension #islamicfinance
+
+  Same shape as Part 15's "Is Paper Gold Halal? (Most People Own a Promise)" —
+  the binary question aimed at a named thing, plus a compressed claim in the
+  parenthetical. That format is the only packaging variable ever measured as
+  working on this channel (~2.2x its control on 2026-08-08). The subject is the
+  only thing moving.
+
+DESCRIPTION
+Your pension owns things you would never buy with your own money. Nobody asked
+you — you were opted in, and that included what it buys.
+
+Pension, 401(k), workplace plan: same machine. When you joined you chose a
+number — how much goes in. You almost certainly never chose where it goes. That
+is the default fund, and most people never move out of it.
+
+What is in it? An index. A basket of the largest listed companies, bought
+automatically by size, with no screening at all. That is not a flaw in an index
+tracker — it is the definition of one. So the basket holds banks and insurers as
+one of its biggest slices, alongside alcohol, gambling, tobacco and weapons.
+
+The banks are the sharp part. A bank's product is not a service, it is interest.
+Own the bank and you own the income. That is not a technicality, it is the whole
+business.
+
+And here is the part almost nobody knows. Your fund is built to change as you
+age — "lifestyling", or a "glide path". It sounds like safety. What it actually
+does is sell shares and buy bonds as you approach retirement. A bond is a loan.
+You are lending money at interest. The machine moves you deeper into it the
+older you get, automatically, as a feature you were never shown.
+
+THE TWO-MINUTE CHECK:
+
+1. Log in and find the name of your fund. If it says "default", "balanced", or a
+   retirement year, that is the basket.
+2. Search that fund's largest holdings — they are published. You will recognise
+   the banks immediately.
+3. Open the full fund list and look for a sharia or Islamic option. Most
+   workplace schemes have one now, and switching is usually free.
+
+Same contributions. Same employer match. Different basket.
+
+You were opted in by default. Default is still a choice — somebody else just
+made it for you.
+
+The Money Machine, Decoded.
+
+MORE IN THE SERIES:
+Passive income without interest (Sukuk): https://youtu.be/J0TCD2u177k
+How banks secretly profit from your savings: https://youtu.be/V8HYpTHy2aU
+How banks quietly trap your savings: https://youtu.be/OXIP3EJROQk
+Is Paper Gold Halal? https://youtube.com/shorts/JB6Q_7IE9Jo
+{PLAYLIST_LINE}
+No jargon. Just mechanisms.
+
+I deliberately name no fund, provider or index. Availability, charges and fund
+ranges differ by scheme and country and change often — check your own plan's
+current fund list. Scholars differ on equity screening thresholds. This is
+financial education, not financial advice.
+
+#Pension #401k #IslamicFinance #HalalMoney #HalalInvesting #MuslimMoney #Riba
+#RetirementPlanning #FinanceDecoded
+
+TAGS
+  is my pension halal
+  is your pension halal
+  halal pension
+  pension islamic finance
+  is 401k halal
+  halal 401k
+  sharia pension fund
+  default fund pension
+  what is in my pension
+  halal investing uk
+  islamic pension fund
+  pension explained
+  riba explained
+  halal investing
+  islamic finance explained
+
+  Character budget: fit_tags() caps the field at 450 to stay under YouTube's
+  500-character hard limit, which silently rejects the whole update if exceeded.
+  The list above is ordered by value so anything trimmed is trimmed from the end.
+
+WHY THESE TAGS: the first six are the literal queries, and the whole SERP for
+them is stale — roughly 3,220 total results, the top performer nine years old,
+the two strongest competitor entries five years old. "is 401k halal" and
+"halal 401k" are the same question asked in the US market, which this video
+answers because it is built on the default fund rather than on UK
+auto-enrolment. Note the keyword warning in next-slate.md: "riba explained" is
+kept as a TAG only. It is not in the title, because the English SERP for riba is
+contested by the Royal Institute of British Architects.
