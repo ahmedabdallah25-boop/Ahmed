@@ -117,84 +117,41 @@ a picture you can actually deliver.
 
 ## Route 2 — Text-to-image concepts
 
-Adapted from the five that produced the renders in `renders/LINKS.md`. Those renders were
-generated *before* the room facts were corrected, so they show a tiled floor and a stainless
-splashback the room does not have. The prompts below are the corrected versions — regenerate
-from these if you want concepts that match the real space.
+These are the exact prompts that produced the current render set in
+[`renders/LINKS.md`](renders/LINKS.md), verbatim. They assume the corrected room facts and
+carry the walkthrough-video findings. Reusable as-is.
 
 ### 2A — Hero: the whole room
 
 ```
-Photorealistic wide-angle interior photograph of an upgraded hotel back-of-house commercial
-laundry room, five-star operational standard achieved on a low budget. Long narrow room about
-3 metres wide, viewed down its length. RIGHT SIDE: a neat row of light-grey and stainless steel
-commercial washer-extractors and tumble dryers, spotlessly clean, with a neat aluminium coved trim at the
-floor junction; zero lint or debris anywhere. Behind them a clean tiled dado to 1.3m, brilliant
-white washable wall above.
-CEILING: exposed services all painted uniform matt light grey; rigid galvanised spiral ducting
-running dead straight on evenly spaced threaded-rod hangers, no sagging flexible hose.
-LIGHTING: surface-mounted linear LED battens, 4000K neutral white, evenly spaced, bright and
-even, no dark corners. FLOOR: clean poured grey epoxy resin with a coved skirting, crisp painted
-yellow and blue lines defining a central walkway and labelled trolley bays. LEFT SIDE:
-matching wire linen trolleys with clean white liners parked precisely inside marked bays, tidy
-stainless shelving, and a uniform row of printed acrylic signs at one consistent height.
-Nothing loose on the floor. [+ universal style suffix]
+Photorealistic wide-angle interior photograph of an upgraded hotel back-of-house commercial laundry room, five-star operational standard achieved on a low budget. A TALL narrow room, roughly 4 metres floor to soffit and about 3 metres wide, viewed down its length. RIGHT SIDE: a neat row of light-grey and stainless steel commercial washer-extractors, spotlessly clean, with a neat aluminium coved trim where the machine bases meet the floor; zero lint or debris anywhere. Behind them a clean white tiled dado to 1.3 m with fresh pale grout, brilliant white washable painted wall above. CEILING ZONE: the exposed high-level services — galvanised cable trays, mesh, conduit, brackets, pipework and hangers — all deep cleaned with no settled lint and all painted one uniform matt light grey so the upper volume reads as a single clean plane; rigid galvanised spiral ducting running dead straight on evenly spaced threaded-rod hangers, no sagging foil flexible hose. LIGHTING: twelve surface-mounted linear LED batten fittings at 4000K neutral white, evenly spaced down the full length, bright and even, no dark corners and no dark far end. FLOOR: clean poured grey epoxy resin with a coved skirting, crisp painted yellow and blue lines defining a central walkway and labelled equipment bays. LEFT SIDE: closed lidded lint bins standing in marked positions, matching wire linen trolleys with clean white liners parked inside marked bays, and a uniform row of printed acrylic signs at one consistent height. A green running-man fire exit sign over a clear, completely unobstructed doorway. Nothing loose on the floor anywhere. Realistic architectural interior photography, natural available lighting, 24mm lens, no fisheye distortion, true-to-life materials, clean industrial hospitality standard. Restrained and functional, NOT a luxury showroom. No people. No decorative plants, no feature walls, no colour accents, no marble, no wood.
 ```
 
 ### 2B — Machine line detail
 
 ```
-Photorealistic close detail of the machine line in an upgraded commercial hotel laundry. Two
-light-grey industrial washer-extractors with blue LCD panels and red emergency-stop mushroom
-buttons on yellow backplates, immaculate stainless fascias. Aluminium coved trim where the
-machine bases meet a poured grey epoxy resin floor, sealed so no lint can collect. Clean tiled
-dado behind to 1.3m, brilliant white wall above. Wall-mounted slim
-stainless lidded lint bin with a printed sign reading LINT TRAP — CLEAN EVERY CYCLE, and
-machine ID plates reading W1 and W2 in bold black on white. Painted yellow floor lines running
-parallel to the machine line one metre out. Even 4000K LED light. Zero fluff or lint.
-[+ universal style suffix]
+Photorealistic close detail of the machine line in an upgraded commercial hotel laundry. Two light-grey industrial washer-extractors with blue LCD control panels and red emergency-stop mushroom buttons on yellow backplates, immaculate stainless fascias and stainless tops. Aluminium coved trim where the machine bases meet a poured grey epoxy resin floor, sealed so no lint can collect underneath. Clean white tiled dado behind to 1.3 m with fresh pale grout, brilliant white painted wall above. Mounted on the wall between the machines: a slim stainless lidded lint bin with a printed acrylic sign reading LINT TRAP - CLEAN EVERY CYCLE, and machine identification plates reading W1 and W2 in bold black on white. Painted yellow floor lines running parallel to the machine line one metre out, defining a walkway. Even bright 4000K neutral white LED lighting. Utterly spotless, zero fluff or lint. Realistic architectural detail photography, 35mm lens, true-to-life materials, clean industrial hospitality standard, restrained and functional, NOT a luxury showroom. No people, no plants, no marble, no wood.
 ```
 
 ### 2C — Trolley bays and linen staging
 
 ```
-Photorealistic interior view of the linen staging and trolley parking zone. Matching wire mesh
-linen trolleys with clean white canvas liners, all the same model and height, parked precisely
-inside floor bays outlined in crisp painted lines. Each bay has a bold printed floor label and a
-matching wall sign above reading SOILED, CLEAN or RETURN in clear black type on colour-coded
-panels — red for soiled, green for clean. Brilliant white walls above a clean tiled dado,
-poured grey epoxy resin floor, stainless shelving at the far end with neatly folded white towels in uniform
-stacks. Ceiling services painted uniform matt light grey, straight rigid ducting on even
-hangers. Bright even 4000K LED batten lighting. Everything squared up and labelled.
-[+ universal style suffix]
+Photorealistic interior view of the linen staging and trolley parking zone in an upgraded hotel back-of-house laundry. Matching wire mesh linen trolleys with clean white canvas liners, all the same model and height, parked precisely inside floor bays outlined in crisp painted lines on a poured grey epoxy resin floor with a coved skirting. Each bay has a bold printed floor label and a matching wall sign above it reading SOILED, CLEAN or RETURN in clear black type on colour-coded panels, red for soiled and green for clean. Brilliant white painted walls above a clean white tiled dado. Closed lidded lint bins standing in marked positions. Stainless shelving at the far end holding neatly folded white towels in uniform stacks. High-level cable trays and ceiling services deep cleaned and painted uniform matt light grey, straight rigid galvanised ducting on evenly spaced hangers. Bright even 4000K neutral white LED batten lighting throughout, no dark end. Everything squared up, labelled and orderly, nothing loose on the floor. Realistic architectural interior photography, 24mm lens, no fisheye distortion, true-to-life materials, clean industrial hospitality standard, restrained and functional, NOT a luxury showroom. No people, no plants, no marble, no wood.
 ```
 
-### 2D — Wall service station
+### 2D — The lit store alcove
+
+Note this is now set **inside the dark alcove**, because that is where the station should
+actually go once it has a light — not on the main-room wall.
 
 ```
-Photorealistic detail of an organised wall service station in a hotel laundry. On a brilliant
-white wall: a white shadow board with black tool silhouettes and printed labels holding broom,
-dustpan, squeegee and lint brush each in its marked place; a stainless PPE station with clear
-acrylic bins of gloves, aprons and eye protection under a PPE STATION sign; below it a
-stainless shelf with a raised spill-containment bund tray holding four uniform labelled white
-chemical containers with colour-coded caps, signed CHEMICAL STORE — NO DECANTING; a brushed
-aluminium framed noticeboard with laminated A4 sheets in a neat grid titled DAILY CHECKS; and a
-red fire extinguisher on a bracket with yellow keep-clear hatching marked on the floor beneath.
-Even 4000K LED light. Everything aligned and spotless. [+ universal style suffix]
+Photorealistic detail of a small back-of-house store alcove in a hotel laundry, newly fitted with a single bright LED batten fitting on the soffit so the space is properly lit for the first time. Brilliant white painted walls, poured grey epoxy resin floor with a coved skirting and a small floor gully. Mounted in one aligned run on the wall: a white shadow board with black tool silhouettes and printed labels holding a broom, dustpan, squeegee and lint brush each in its marked place; a stainless PPE station with clear acrylic bins of folded gloves, aprons and eye protection under a printed sign reading PPE STATION; below it a stainless shelf with a raised spill-containment bund tray holding four uniform labelled white chemical containers with colour-coded caps, under a sign reading CHEMICAL STORE - NO DECANTING; and a brushed aluminium framed noticeboard with laminated A4 sheets in a neat grid titled DAILY CHECKS. A mop bucket parked in a marked floor position. Even bright 4000K neutral white light, no dark corners. Everything aligned, labelled and spotless. Realistic architectural detail photography, 35mm lens, true-to-life materials, restrained and functional, NOT a luxury showroom. No people, no plants, no marble, no wood.
 ```
 
 ### 2E — Signage and standards kit (flat lay)
 
 ```
-Clean flat-lay presentation board on a soft neutral light grey background showing a signage and
-visual-standards kit for a hotel back-of-house laundry. In a neat aligned grid: a colour-coded
-linen flow key with swatches labelled SOILED in red, CLEAN in green, WALKWAY in yellow; three
-printed acrylic wall signs reading LINT TRAP — CLEAN EVERY CYCLE, CLEAN LINEN ONLY — NO SOILED,
-and WASH HANDS BEFORE HANDLING CLEAN LINEN; machine ID plates reading W1 and D1 in bold black
-on white; a portrait checklist card titled LAUNDRY DAILY CHECKS with ruled tick-box rows; and a
-floor-marking legend strip showing yellow walkway tape, blue equipment zone tape and red hatched
-keep-clear tape. Modern clean sans-serif typography, generous white space, strict alignment,
-palette of white, charcoal, red, green and yellow. Crisp legible text, top-down flat lay.
+Clean flat-lay graphic design presentation board on a soft neutral light grey background, showing a signage and visual-standards kit for a hotel back-of-house laundry room. Arranged in a neat aligned grid: a colour-coded linen flow key with three swatches labelled SOILED in red, CLEAN in green and WALKWAY in yellow; four rectangular printed acrylic wall signs reading LINT TRAP - CLEAN EVERY CYCLE, CLEAN LINEN ONLY - NO SOILED, KEEP CLEAR - ELECTRICAL PANEL, and FIRE EXIT - KEEP CLEAR AT ALL TIMES; two square machine identification plates reading W1 and D1 in bold black on white; a portrait checklist card titled LAUNDRY DAILY CHECKS with neat ruled tick-box rows; and a floor-marking legend strip showing painted yellow walkway lines, painted blue equipment bay outlines and red hatched keep-clear marking. Modern clean sans-serif typography, generous white space, strict alignment, restrained palette of white, charcoal, red, green and yellow. Professional brand-standards presentation board, crisp legible text, sharp studio lighting, top-down flat lay, high detail.
 ```
 
 *Take 2E to an Al Quoz print shop as your artwork brief. Models render text imperfectly — treat
