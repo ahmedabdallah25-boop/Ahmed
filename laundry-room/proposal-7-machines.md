@@ -1,148 +1,134 @@
-# Proposal — 7 machines, same room, no relocation
+# Proposal — measured. 8.96 × 4.28 m, 4 washers + 3 dryers, nothing moves
 
-Supersedes the tier costings in [`upgrade-plan.md`](upgrade-plan.md) for the machine schedule.
-The diagnosis in that document still stands; this revises the plan around a confirmed count of
-**seven machines, all retained in their present positions.**
+Supersedes the tier costings in [`upgrade-plan.md`](upgrade-plan.md). The diagnosis there still
+stands; this is the plan built on **measured dimensions and a confirmed machine schedule.**
 
 Drawing: [`report/Laundry-Room-Proposed-Layout.pdf`](report/Laundry-Room-Proposed-Layout.pdf),
 also page 3 of the zone report.
 
----
-
-## 1. What the constraint actually buys you
-
-Seven machines staying put is not a limitation on this plan — it is what makes it cheap.
-
-- **No mechanical or electrical alterations.** Every machine keeps its existing water, drain,
-  power and extract connections. That removes the single largest cost line any laundry
-  refit carries, and it removes the need for a contractor on the equipment side entirely.
-- **No downtime.** Painting, marking, signage and the alcove fit-out can all be done around
-  operations, in stages, on a low-occupancy week.
-- **Everything proposed is paint, signage, a bin or a light fitting.** Nothing structural.
-
-So the plan is **zoning**, not building work. The layout drawing shows that explicitly: every
-coloured element is something you paint on or screw to a wall.
+| | |
+|---|---|
+| Room | **8.96 m × 4.28 m** — 38.4 m² |
+| Machines | **4 washer-extractors** (south wall, plumbed) + **3 tumble dryers** (north wall, ducted) |
+| Access | **One door**, at the east end — entrance and fire exit in the same opening |
+| Walkway | **1.72 m clear** between the two machine runs |
 
 ---
 
-## 1a. Two corrections the reference photographs forced
+## 1. What the measurements changed
 
-Both were caught by going back through the site photographs after the first draft of the
-layout, and both change the drawing.
+The room is **shorter and wider** than the video suggested — 8.96 × 4.28 rather than the
+11.0 × 3.2 I had scaled. Three consequences, all of them in your favour:
 
-- **The machines are on both walls, not one.** Photo `IMG_6719` shows machines facing each
-  other across the walkway in the far half of the room. The layout now reads
-  **M1–M4 on the south wall, M5–M6 on the north wall, M7 the stacked column at the west end.**
-  The first draft put all five large machines in a single south-wall run, which the photographs
-  do not support.
-- **There are no linen trolleys in the room.** The tall wire mesh structures in `IMG_6723` are
-  **high-level mesh cable tray at ceiling height**, not floor-standing linen cages — I read them
-  as cages early on and that was wrong. Linen is currently moved in **sacks and a plastic
-  storage box**, which is what the video shows on the floor.
+- **Fewer light fittings.** Two rows of five, not two rows of six. **Saves AED 120.**
+- **Less floor paint.** An 8.45 m walkway rather than 10.7 m, and fewer bays.
+  **Saves AED 200.**
+- **The walkway is genuinely generous.** 1.72 m clear between machine fronts is comfortable
+  for loading from both sides at once, which is what makes the two-lane flow below workable.
 
-  That matters twice over. The staging bays on the drawing are sized for *whatever container
-  you adopt*, not for trolleys you already own. And **concept render 3 shows wire trolleys you
-  do not have** — treat it as the target condition, not a picture of your kit. If you want
-  trolleys they are a real cost, and are deliberately not buried in any tier below; if you keep
-  using what you have, the bays still work, they just hold sacks.
+And one finding from the top-view photograph that changes the biggest line in the plan:
+
+> **The rigid header duct already exists.** A galvanised header runs above the dryers with
+> three flexible drops connecting each machine to it. The whole extract system does not need
+> replacing — **only the three flexible drops.** That takes the most expensive item in the
+> brief from AED 1,500–2,500 down to roughly **AED 750–1,200.**
 
 ---
 
-## 2. The flow the layout sets
+## 2. The flow, and the constraint that shapes it
 
-One direction, west to east, with the walkway down the centre:
+**There is one door.** It is the entrance and the fire exit, at the east end. That single fact
+drives the whole layout:
 
-| Zone | Where | What happens |
+- Soiled linen and clean linen **use the same opening**. They cannot be separated by direction,
+  so they are separated **by side of the walkway** instead.
+- The walkway is **the only escape route**. Nothing may ever be stored in it. That is not a
+  housekeeping preference, it is the reason the room passes or fails an inspection.
+
+| Stage | Where | Note |
 |---|---|---|
-| **Soiled receiving** | West end, red | Soiled linen enters by the west door into two marked bays. It goes no further east than the machine line. |
-| **Wash / dry line** | M1–M4 south wall, M5–M6 north wall | Loading faces the walkway from both sides. Lint bins wall-mounted in the gaps between the south-wall machines. |
-| **Clean staging** | East end, green | Two marked staging bays on the north wall plus the existing shelving on the south. Clean linen leaves by the east door. |
-| **Walkway** | Centre, yellow | 0.95 m clear, unbroken end to end. It is also the escape route, so it stays clear permanently. |
-| **Store** | Alcove | Shadow board, PPE, chemical shelf, daily-checks board — everything that currently clutters the main room. |
+| **Soiled in** | North-east, immediately inside the door | Two marked bays, out of the door swing |
+| **Wash** | W1–W4, south wall | Loaded across the walkway from the receiving bays |
+| **Transfer** | West along the **north lane** of the walkway | Washed linen only — wet but clean |
+| **Dry** | D1–D3, north wall, west half | Lint bin at each dryer, since dryers are the lint source |
+| **Clean out** | East along the **south lane**, to staging and folding | Exits by the same door, opposite side |
 
-**Soiled and clean never share a bay and never cross.** That is the whole point of the
-direction, and it costs paint.
+**Two lanes in one walkway.** Soiled and in-progress runs the north lane; clean returns down
+the south. It is a rule and a painted line, not a wall.
 
-### The one compromise the fixed positions force
+### Be clear about the compromise
 
-**M7, the stacked column, sits at the soiled end of the room.** Staying where it is, it cannot
-serve the clean end of a west-to-east flow without linen doubling back across the soiled zone.
-
-The realistic answer is not to move it — it is to **designate it**: staff uniforms, rewash, or
-small batches, kept off the main linen flow and labelled as such. That is a sign and a rule,
-not a cost. It is marked on the drawing.
+A single-door room cannot achieve true one-directional segregation. What this layout achieves
+is **consistent side separation with one controlled crossing** — soiled crosses to the washers
+once, at the receiving point. Anyone claiming a perfect linear flow in a room with one opening
+is selling you something. If segregation to hotel standard is a hard requirement, the real
+answer is a second opening at the west end, and that is building work this plan deliberately
+does not include.
 
 ---
 
-## 3. Costed schedule for seven machines
+## 3. Costed schedule
 
 ### Tier 0 — AED 0
 
-Unchanged from the main plan, and still the first thing to do: clear the escape route, strip
-the paper wall off the distribution board, empty and line up the lint trays, strip the lint
-off the high-level steelwork, identify the overhead tank.
+Unchanged and still first: clear the walkway and the doorway, strip the paper wall off the
+distribution board, empty and line up the lint trays, strip the lint off the high-level
+steelwork, identify the overhead tank.
 
-### Tier 1 — about AED 3,310
+### Tier 1 — about AED 2,840
 
 | Item | Note | Qty | Est. AED |
 |---|---|---:|---:|
-| LED batten fittings, 4ft, 4000K, IP65 | Two rows of six down the length. The room is ~4 m tall; the far end is currently dark. | 12 | 720 |
-| Alcove LED batten | Unlocks the store. **The best value line in the document.** | 1 | 60 |
-| Epoxy floor line paint | Walkway both sides (~10.7 m), two soiled bays, three clean bays, keep-clear hatching at both boards and both exits. More paint than before because the layout marks more. | 2 × 2.5L | 500 |
-| Washable wall paint | Upper walls only, above the existing tiled dado. | 1 × 18L + primer | 400 |
-| Wall tile grout restoration | The dado is already there. Clean and re-colour it. | — | 250 |
-| Lidded lint bins | Wall-mounted in the gaps between machines, replacing the open floor trays. | 4 | 600 |
-| Printed signage | **Seven machine ID plates** (M1–M7), zone and segregation signs, keep-clear and fire-exit signs, lint-trap reminders, and a sign designating M7 for staff/rewash. | ~24 | 700 |
-| Cable P-clips and mini-trunking | Get the draped cable off the floor. | — | 80 |
+| LED batten fittings, 4ft, 4000K, IP65 | Two rows of five over a 38.4 m² floor, ~4 m high | 10 | 600 |
+| Alcove LED batten | Unlocks the store. **Still the best value line here.** | 1 | 60 |
+| Epoxy floor line paint | 8.45 m walkway both sides with the two-lane divider, 2 soiled bays, 1 clean bay, keep-clear hatching at the board and inside the door | 2.5L | 300 |
+| Washable wall paint | Upper walls above the existing tiled dado | 1 × 18L + primer | 400 |
+| Wall tile grout restoration | The dado is already there | — | 250 |
+| Lidded lint bins | **One per dryer** — dryers are the lint source, washers are not | 3 | 450 |
+| Printed signage | 7 machine ID plates (W1–W4, D1–D3), zone and segregation signs, keep-clear, fire-exit, lint-trap reminders | ~24 | 700 |
+| Cable P-clips and mini-trunking | Get the draped cable off the floor | — | 80 |
 
-**Subtotal ≈ AED 3,310.**
+**Subtotal ≈ AED 2,840.**
 
-### Tier 2 — about AED 3,600
+### Tier 2 — about AED 2,250
 
-- Rigid galvanised ducting replacing the flexible runs — **AED 1,500–2,500 installed.** Safety
-  item, not cosmetic.
-- Access equipment (podium or tower) for the high-level work — **AED 300–600/week.**
+- **Replace the three flexible dryer drops with rigid galvanised.** The header stays.
+  **AED 750–1,200 installed.** Still the highest-value safety line in the plan.
+- Access equipment for the high-level work — **AED 300–600.**
 - Deep clean all high-level steelwork, then paint every exposed service one matt light grey —
   **AED 400 in paint.**
-- Aluminium coved trim at the base of **all seven machines** — **AED 400.**
+- Aluminium coved trim at the base of all seven machines — **AED 400.**
 
 ### Tier 3 — about AED 5,000
 
-Shadow board, PPE station, bunded chemical shelf with eyewash, framed noticeboard, trolley
-liners, drum fan if the far end stagnates, handwash basin if there isn't one. All of it lands
-in the alcove or on the north wall, per the drawing.
+Shadow board, PPE station, bunded chemical shelf with eyewash, framed noticeboard, drum fan if
+the far end stagnates, handwash basin if there isn't one.
 
 ### Total
 
 | Tier | Spend | Cumulative |
 |---|---:|---:|
 | 0 | 0 | 0 |
-| 1 | 3,310 | 3,310 |
-| 2 | 3,600 | 6,910 |
-| 3 | 5,000 | 11,910 |
+| 1 | 2,840 | 2,840 |
+| 2 | 2,250 | 5,090 |
+| 3 | 5,000 | 10,090 |
 
-**On AED 3,000:** Tier 0 + the twelve battens + the alcove batten + floor lines + machine ID
-plates. Defer wall paint and grout.
+Down from AED 11,910 on the estimated dimensions — **the measurements saved about
+AED 1,800**, most of it on the ducting once the existing header was visible.
+
+**On AED 3,000: Tiers 0, 1 and 2 are within reach** except the coved trim. That gets you a lit,
+zoned, signed room with the duct fire risk removed — which is the whole of the safety case and
+most of the visual one.
 
 ---
 
-## 4. What I need to firm this up
+## 4. Still open
 
-The drawing is a **zoning plan scaled from the walkthrough footage**, not a measured survey.
-Three numbers make it exact:
-
-1. **Room length** — assumed ≈ 11.0 m.
-2. **Room width** — assumed ≈ 3.2 m.
-3. **Alcove opening and depth** — assumed 2.2 m × 1.8 m.
-
-With those, bay counts, walkway clearance and the batten spacing become real rather than
-indicative. A tape measure and five minutes covers it.
-
-Two more things worth confirming:
-
-- **Which of the seven are washers and which are dryers.** It does not change the layout,
-  because nothing moves — but it determines which machines need the rigid duct runs in Tier 2,
-  and that is the most expensive line in the plan.
-- **Whether you want linen trolleys at all.** You have none today. The plan works without them
-  — the bays simply hold what you already use — but if you want the room to look like render 3,
-  trolleys are roughly AED 400–900 each and are deliberately not buried in any tier above.
+- **Where the alcove store sits.** It is outside the 8.96 × 4.28 envelope and is not on the
+  drawing. One dimension and I will place it.
+- **Machine positions along each wall** are scaled from the top-view photograph and may be out
+  by a few hundred millimetres. Mark the floor from the machines themselves, not from the
+  drawing.
+- **Linen containers.** There are still no trolleys in the room. The bays are sized for
+  whatever you adopt; trolleys are roughly AED 400–900 each and are deliberately not in any
+  tier above.

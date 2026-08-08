@@ -301,8 +301,8 @@ def cover(c):
         c.drawString(tx, sy - 10, "ZONE 0%d" % i)
 
     ty = 96
-    tiles = [("Zones", "7"), ("Machines", "7 — all retained"), ("Tier 0 — free", "AED 0"),
-             ("Full build", "AED 11,910")]
+    tiles = [("Zones", "7"), ("Machines", "4 wash · 3 dry"), ("Tier 0 — free", "AED 0"),
+             ("Full build", "AED 10,090")]
     tw = (PW - 2 * M - 84) / 4
     for i, (k, v) in enumerate(tiles):
         tx = x + i * tw
@@ -538,9 +538,9 @@ def closing(c):
     c.line(M, y, PW / 2 + 260, y)
     y -= 16
     rows = [("0 — Housekeeping", "0", "0", "About 60% of the visual gain"),
-            ("1 — High leverage", "3,310", "3,310", "Reads as a well-run room"),
-            ("2 — Ceiling", "3,600", "6,910", "Duct fire risk removed"),
-            ("3 — Finishing", "5,000", "11,910", "Audit-ready back-of-house")]
+            ("1 — High leverage", "2,840", "2,840", "Reads as a well-run room"),
+            ("2 — Ceiling", "2,250", "5,090", "Duct fire risk removed"),
+            ("3 — Finishing", "5,000", "10,090", "Audit-ready back-of-house")]
     for t, s, cum, w in rows:
         c.setFillColor(INK)
         c.setFont(SERIF, 10)
