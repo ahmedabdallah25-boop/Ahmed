@@ -629,3 +629,34 @@ non-zero return, and it was bypassed on all four.
   topic from cadence from retention, and the last two passes each had to retract a conclusion
   the previous one drew from lifetime averages. **That separation costs one month of a paid
   plan and an afternoon. It is now the highest-value action available on this channel.**
+
+## Addendum — duplicate deleted, 2026-08-08 07:38 UTC
+
+`x2hdNP6fzAo` ("They Call You a Deadbeat for Paying in Full", 6 views) was deleted on the
+user's instruction. `RpFWP1a7Huk` — the same script, 37 views, better description — survives.
+
+Verified on the platform the same minute: channel Shorts **24 → 23**, `x2hdNP6fzAo` absent,
+`RpFWP1a7Huk` live at 37 views, all seven protected winners intact.
+
+**Two things were built to make this safe, and both should stay.**
+
+`delete_videos()` runs only under `--confirm-delete`, which no routine or scheduled pass sets.
+Five guards run before the API call: the flag is explicit, the id is not `protected`, the id is
+owned, **its live title still matches the title recorded in `reset.json`**, and the
+`duplicate_of` survivor exists, is public, and is a different id. Guard 4 is the one that
+earns its keep — a stale or mistyped id gives no signal that it is wrong, and a delete is
+permanent and does not return the id.
+
+Ordering matters as much as the guards. A `x2hdNP6fzAo → RpFWP1a7Huk` replacement was added to
+`link_fixes` **before** the delete, and `fix_links()` runs ahead of `delete_videos()` in
+`main()`, so any description referencing the duplicate was repointed at the survivor while the
+id still resolved. Deleting first is exactly how Part 12 left a dead link sitting in live
+descriptions — the defect this repo has been carrying a `link_fixes` entry for since the first
+pass. It was not repeated.
+
+**What this does not fix.** Removing the duplicate recovers nothing — 6 views is 6 views, and
+the credit-card family still took three entries in 42 hours. The value is that the channel no
+longer competes with itself on the same query, and that the failure is now recorded rather than
+rediscovered. The upstream cause is unchanged and is stated in section 6 above: uploads are
+reaching the feed without any pre-publish review, which is the only packaging lever on this
+channel with a measured non-zero return.

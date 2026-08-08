@@ -22,9 +22,10 @@
     }
   ],
   "duplicates": {
-    "_why": "NOT auto-applied. Deleting a video is irreversible and mints no new id, so it is always a human decision. Recorded here so a later pass does not rediscover it from scratch.",
+    "_why": "NOT auto-applied. Deleting a video is irreversible and mints no new id, so it is always a human decision — delete_videos() runs only under --confirm-delete. Recorded here so a later pass does not rediscover it from scratch. The entry below is DELETED and is kept as the applied record: a re-run reports 'skip: not an owned video' because guard 3 no longer finds it, so this is idempotent and safe to leave in place.",
     "candidates": [
       {
+        "_status": "DELETED 2026-08-08 07:38:55Z, run 31246613893, '1 video(s) updated'. Verified on the platform the same minute: channel Shorts 24 -> 23, x2hdNP6fzAo absent, survivor RpFWP1a7Huk live at 37 views, all seven protected winners intact. A x2hdNP6fzAo -> RpFWP1a7Huk link fix was applied first in the same run, while the id still resolved.",
         "video_id": "x2hdNP6fzAo",
         "title": "They Call You a Deadbeat for Paying in Full",
         "published": "2026-08-06T17:20:13-07:00",
@@ -50,7 +51,6 @@
     "video_ids": [
       "JB6Q_7IE9Jo",
       "ebPfkBjTbSA",
-      "x2hdNP6fzAo",
       "RpFWP1a7Huk",
       "BllkNdhDu-k"
     ]
