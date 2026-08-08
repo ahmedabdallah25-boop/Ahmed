@@ -11,6 +11,12 @@ services at high level.
 > Net effect: **Tier 2 got cheaper**, because the splashback you were going to buy already
 > exists.
 
+> **Second revision (walkthrough video).** The video shows things the stills did not, and three
+> of them change the priority order: the room sits on an **escape route** with green exit signs,
+> there are **two electrical distribution boards** with storage pushed up against them, and there
+> is a **bulk tank on a raised frame above head height**. It also found you a **free room** —
+> see §1a.
+
 > Costs are UAE market estimates in AED for a room of this size. Get three quotes before
 > committing to anything in Tier 3. Anything touching electrical supply, gas, or the extract
 > system goes to a licensed contractor — price it, don't DIY it.
@@ -47,6 +53,39 @@ Ranked by how much each one costs you in perceived standard:
 
 ---
 
+## 1a. What the walkthrough video added
+
+Five findings the photographs could not show. The first three are safety, not aesthetics.
+
+- **The room is on an escape route.** Green running-man exit signs appear over at least two
+  doors, one of them a fire-rated door. That reclassifies the floor clutter: the lint trays,
+  the sacks, the leaning panel and the draped cable are not merely untidy, they are an
+  **obstructed means of escape**. This is the finding most likely to fail an inspection, and
+  clearing it costs nothing.
+- **Two electrical distribution boards**, both labelled *Caution — Electrical Hazard*, with
+  heavy cabling entering. Around one of them: lint trays, a sack and a storage box on the floor,
+  and the **wall of taped paper directly beside it**. Combustible material against a DB, and no
+  maintained keep-clear zone at either. Clear a marked zone in front of both and move the paper
+  somewhere else entirely.
+- **A large white bulk tank on a raised frame, above head height**, at the far end over the
+  working area. If that is chemical, it needs verifying for secondary containment, for what is
+  underneath it, and for how it is filled. If it is water, it needs verifying for weight and
+  fixing. Either way, **find out what it is before anything else in Tier 3.**
+- **Loose cable draped down the wall and across the floor** in the corner behind the stacked
+  machines. Trip hazard on the same escape route. Clip it or conduit it — a bag of P-clips.
+- **A dark store alcove you are not using.** Mop, squeegee, bucket and a floor gully already
+  live there, but it has **no light at all**, so nothing else does. Put one LED batten in it and
+  it becomes the home for the shadow board, the cleaning kit and the PPE station — a room you
+  already own, for the price of one fitting. **This is the best value item in the entire
+  document.**
+
+**One scope question.** The video also shows a **second area with stacked Electrolux
+washer/dryer columns** against large-format grey tile — a different space at a different finish
+standard. Everything below covers the **main machine room only**. Say the word if the stacked
+area is in scope and I will price it separately.
+
+---
+
 ## 2. The principle to spend against
 
 A five-star back-of-house room is not a luxurious room. It is a **consistent** one.
@@ -67,8 +106,12 @@ Do not spend a dirham until this is done, because it changes what you actually n
   bins they can at least be emptied every shift and lined up in one consistent position.
 - **Strip the lint from the high-level steelwork.** Cable trays, mesh, duct exteriors, the tops
   of the machines. This is the fire-risk item and it costs only labour and safe access.
-- **Clear the floor.** The leaning grey panel, the wire frame, the bagged items between
-  machines. Nothing lives on the floor unless it has wheels.
+- **Clear the escape route first.** The leaning grey panel, the wire frame, the sacks, the
+  storage box, the bagged items. On a route with exit signage this is not a tidiness job, it is
+  a compliance one. Nothing lives on the floor unless it has wheels.
+- **Clear and mark a keep-clear zone at both electrical boards**, and take the taped paper off
+  the wall beside the DB.
+- **Lift the draped cable off the floor** behind the stacked machines and clip it to the wall.
 - **Take down the wall of taped A4** and reduce it to what is genuinely current. Even before
   you print anything, aligning what remains to a common top edge transforms it.
 - **Deep clean the epoxy floor** with an alkaline degreaser — resin floors come back well.
@@ -94,8 +137,10 @@ Photograph the room after this. You will be surprised how much of the problem wa
 | Wall tile grout restoration | Clean and re-colour the existing dado grout. Far cheaper than cladding, and the dado is already there. | — | 250 |
 | Lidded lint bins, stainless or heavy plastic | **Replaces the open floor trays.** One per two machines, in marked positions, lids closed. | 4 | 600 |
 | Printed acrylic/dibond signs | Uniform size and height. Machine IDs, lint-trap reminders, zone and segregation signs — replacing the taped paper entirely. | 20 | 700 |
+| **LED batten for the dark store alcove** | **The single best-value line here.** One fitting turns an unusable dark cupboard into your cleaning and PPE store, which then clears the main room. | 1 | 60 |
+| Cable P-clips and mini-trunking | Get the draped cable off the floor. | — | 80 |
 
-**Subtotal ≈ AED 3,020.**
+**Subtotal ≈ AED 3,160.**
 
 This tier, on top of Tier 0, gets you to "clearly well-run." Everything after this is polish
 and safety.
@@ -147,9 +192,9 @@ Cheaper than originally planned, because the wall cladding is no longer needed.
 | Tier | Spend | Cumulative | What you get |
 |---|---:|---:|---|
 | 0 | 0 | 0 | ~60% of the visual gain |
-| 1 | ~3,020 | ~3,020 | Reads as a well-run room |
-| 2 | ~3,500 | ~6,520 | Reads as a designed room; duct fire risk removed |
-| 3 | ~5,000 | ~11,520 | Audit-ready, five-star back-of-house |
+| 1 | ~3,160 | ~3,160 | Reads as a well-run room |
+| 2 | ~3,500 | ~6,660 | Reads as a designed room; duct fire risk removed |
+| 3 | ~5,000 | ~11,660 | Audit-ready, five-star back-of-house |
 
 **If you only have AED 3,000: do Tier 0 + Tier 1 + the rigid ducting.** Defer the ceiling paint.
 
@@ -188,6 +233,11 @@ Cheaper than originally planned, because the wall cladding is no longer needed.
 
 Separate these from the aesthetics budget — they get done regardless.
 
+- **Keep the escape route clear.** Green exit signage means the floor is not storage. This is
+  the first thing to fix and it is free.
+- **Maintained keep-clear zones at both distribution boards**, with nothing combustible against
+  them — including the taped paper.
+- **Identify the overhead bulk tank** and confirm containment, fixing and what sits beneath it.
 - Rigid, cleanable dryer ducting with access ports.
 - **Lint removed from the high-level steelwork on a schedule.** Settled lint on warm trays near
   electrical services is exactly how these rooms catch fire.
@@ -207,7 +257,7 @@ standard** — the above is good practice, not a compliance certificate.
 
 | Week | Do |
 |---|---|
-| 1 | Tier 0 in full, including the high-level lint strip. Photograph before and after. Order Tier 1 items. |
+| 1 | Escape route cleared and DB zones marked — before anything else. Then the rest of Tier 0, including the high-level lint strip. Identify the overhead tank. Photograph before and after. Order Tier 1 items. |
 | 2 | Lights, upper-wall paint, dado clean and re-grout, floor deep clean. Low-occupancy period. |
 | 3 | Floor line painting — after wall painting, never before. Signage installed at one common height. Lidded bins sited and marked. |
 | 4 | Access equipment on site: ceiling clean, then ceiling services painted grey. Ducting contractor. |
