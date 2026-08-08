@@ -14,7 +14,6 @@ also page 3 of the zone report.
 | Dryer | **1.05 m wide × ~1.15 m deep × ~1.85 m high** — depth to be confirmed |
 | **Walkway** | **2.11 m clear between machine fronts** |
 | Access | **One door**, at the east end — entrance and fire exit in the same opening |
-| Walkway | **1.72 m clear** between the two machine runs |
 
 ---
 
@@ -55,7 +54,7 @@ The room is **shorter and wider** than the video suggested — 8.96 × 4.28 rath
 - **Fewer light fittings.** Two rows of five, not two rows of six. **Saves AED 120.**
 - **Less floor paint.** An 8.45 m walkway rather than 10.7 m, and fewer bays.
   **Saves AED 200.**
-- **The walkway is genuinely generous.** 1.72 m clear between machine fronts is comfortable
+- **The walkway is genuinely generous.** 2.11 m clear between machine fronts is comfortable
   for loading from both sides at once, which is what makes the two-lane flow below workable.
 
 And one finding from the top-view photograph that changes the biggest line in the plan:
@@ -111,7 +110,7 @@ steelwork, identify the overhead tank.
 
 | Item | Note | Qty | Est. AED |
 |---|---|---:|---:|
-| LED batten fittings, 4ft, 4000K, IP65 | Two rows of five over a 38.4 m² floor, ~4 m high | 10 | 600 |
+| LED batten fittings, 4ft, 4000K, IP65 | Two rows of five over a 38.3 m² floor, ~4 m high | 10 | 600 |
 | Alcove LED batten | Unlocks the store. **Still the best value line here.** | 1 | 60 |
 | Epoxy floor line paint | 8.45 m walkway both sides with the two-lane divider, 2 soiled bays, 1 clean bay, keep-clear hatching at the board and inside the door | 2.5L | 300 |
 | Washable wall paint | Upper walls above the existing tiled dado | 1 × 18L + primer | 400 |
