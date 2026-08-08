@@ -16,5 +16,10 @@ repo. Save them locally from the links below — **they are not permanent.**
 Prompts that produced each one are in [`../ai-visual-prompts.md`](../ai-visual-prompts.md),
 section "Route 2".
 
+> **Superseded.** These were generated before the photo orientation was corrected, so they
+> assume a tiled floor and a stainless splashback. The real room has a poured grey epoxy resin
+> floor and an existing tiled wall dado. Regenerate from the corrected Route 2 prompts if you
+> need concepts that match.
+
 These are **text-to-image concepts** — an idealised target, not your room. For a true
 before/after of the actual space, use the Route 1 image-to-image prompts with your own photos.
