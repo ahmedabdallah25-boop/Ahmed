@@ -3,7 +3,40 @@
   "expect_channel_id": "UCVOoFJkRiOdJsWnewt8HJkw",
   "_expect_channel_id_why": "Finance % Decoded. Checked by assert_channel() before any write. Every write in reset_packaging.py resolves its target with mine=True, so this file's contents land on whatever channel YT_REFRESH_TOKEN authenticates as — and fix_channel_meta() would overwrite that channel's keywords and country with the Islamic-finance list below. This repo now runs a second channel (HELD BY FAITH, UCh0tKIGR5Ns3Wvoai__txdg, config in heldbyfaith/), so a swapped secret is a real path to writing this config onto the wrong channel. Read-only runs warn; writes abort.",
   "playlist_url": "https://www.youtube.com/playlist?list=PLKLKzR1QgFHE",
-  "scheduled": [
+  "playlists": [
+    {
+      "_name": "The Money Machine, Decoded (Full Series)",
+      "_why": "Fifth pass, 2026-08-08. This is the playlist linked from the channel description AND from the footer of every video description, so it is the channel's main non-feed surface. It held 17 of 24 public Shorts — the seven most recent uploads were never added, which means every Short published since the reset has had no Browse or Suggested path at all once its 72-hour feed test ended. Purely additive sync: nothing is removed or reordered, so this is safe to run against videos still inside their test. Membership is not packaging — it changes no title, description or tag the feed is measuring.",
+      "playlist_id": "PLKLKzR1QgFHE",
+      "max_seconds": 180,
+      "exclude": [
+        "x2hdNP6fzAo"
+      ],
+      "_exclude_why": "x2hdNP6fzAo is a duplicate of RpFWP1a7Huk — the same 59s credit-card script published twice, 9h apart, with a different title and description. Adding it would put the same episode in the series twice. Held out pending the delete decision; see duplicates below."
+    },
+    {
+      "_name": "The Money Machine, Decoded — Full Episodes",
+      "_why": "Held 2 of the 3 long-form videos. Long-form is paused per longform-fix.md, but the three that exist should at least be reachable as a set.",
+      "playlist_id": "PLFvKaPuEiceY",
+      "min_seconds": 181
+    }
+  ],
+  "duplicates": {
+    "_why": "NOT auto-applied. Deleting a video is irreversible and mints no new id, so it is always a human decision. Recorded here so a later pass does not rediscover it from scratch.",
+    "candidates": [
+      {
+        "video_id": "x2hdNP6fzAo",
+        "title": "They Call You a Deadbeat for Paying in Full",
+        "published": "2026-08-06T17:20:13-07:00",
+        "views_at_2026_08_08": 6,
+        "duplicate_of": "RpFWP1a7Huk",
+        "_why": "Same 59s script as RpFWP1a7Huk (58s), published 9h 9m earlier. Both cover deadbeats/revolvers/transactors, the FCA split, the unrequested limit rise, ~1% cashback against a mid-20s APR, and the same 'a real sale takes its profit once' close. RpFWP1a7Huk is the better packaged of the two — fuller description, hashtag block, an explicit 'Part 2 of 3' — and has 37 views to this one's 6. This is the same failure mode already recorded in link_fixes for Part 12 (EQT91HgOH78 vs ebIU6OHJ-jg): a re-upload shipped without the original being taken down."
+      }
+    ]
+  },
+  "scheduled": [],
+  "_scheduled_why": "EMPTY as of 2026-08-08 07:18Z. JB6Q_7IE9Jo published 2026-08-05 10:00Z and was moved to hold — leaving a live video under `scheduled` lets a later pass rewrite its packaging mid-test, which is the exact trap the third pass caught with 4gRoTTZNnFE. Nothing is queued behind it in this config; run --inventory to confirm whether anything private exists that no listing tool shows.",
+  "_published_scheduled_archive": [
     {
       "video_id": "JB6Q_7IE9Jo",
       "_why": "Part 15, uploaded 2026-08-03 15:39Z — two hours after the last pass ran, so that pass never saw it. Publishes 2026-08-05 03:00 PT. Title switched to the niche_search_format already drafted and vetted in part15.json. The rejected reasoning in that file's _why_chosen argues from the shape of 'Why You're Born Into Debt' (1,208 views) — but channel-reset.md ruled the title-formula hypothesis out on exactly that kind of within-channel analogy: a formula-perfect inflation Short did 43 views against a bare-fragment title at 200. The cross-channel evidence is cleaner because it holds channel size constant: on one 71.8K-sub channel 'Is Forex Halal?' did 158K while 'What do we really mean by Halal Investing?' did 6.4K. This channel has never once tested the niche's dominant format, which makes it the largest untested variable available. Description and tags are byte-identical to the upload — title only, so the variable stays readable.",
@@ -13,11 +46,13 @@
     }
   ],
   "hold": {
-    "_why": "Inside their 72-hour feed test. Changing packaging mid-test destroys the only clean read available. Updated fourth pass, 2026-08-05 03:10Z. kOkfpCHeURw clears TODAY 2026-08-05 10:00Z: 257 views at 2.7 d, marginal rate now ~6/day (164 -> 40 -> 6) — it will finish ~260 lifetime, under the 280-300 expected. When it clears, do NOT repackage it and do NOT remove this entry's lesson: a cleared test on a decayed Short is a record, not an invitation (P3DxNgGFah0 took +0 views in 21.7 h after its retitle). sbor6eyJQKc clears 2026-08-06 10:00Z: 32 views at 1.7 d, marginal ~13/day. 4gRoTTZNnFE clears 2026-08-07 10:00Z: 11 views at 0.7 d, marginal ~10/day — weak first day but inside the never-judge-before-72h window.",
+    "_why": "Inside their 72-hour feed test. Changing packaging mid-test destroys the only clean read available. Updated fifth pass, 2026-08-08 07:18Z. CLEARED and removed this pass — all three resolved dead, and per the measured rule none may be retitled: kOkfpCHeURw 261 (+4 in 3.2d, ~1.3/day), sbor6eyJQKc 35 (+3, ~0.9/day), 4gRoTTZNnFE 24 (+13, ~4/day). NOW HELD: JB6Q_7IE9Jo clears 2026-08-08 10:00Z (40 views at 2.9d, ~13.8/day — the channel's first Is [X] Halal? format test). ebPfkBjTbSA clears 2026-08-08 20:08Z (18 views at 2.5d, ~7.3/day). x2hdNP6fzAo clears 2026-08-10 00:20Z (6 views — but see duplicates, this one should probably not exist). RpFWP1a7Huk clears 2026-08-10 09:29Z (37 views at 0.9d, ~41/day — best first-day rate since kOkfpCHeURw). BllkNdhDu-k clears 2026-08-10 18:00Z (19 views at 0.6d — far too new to read).",
     "video_ids": [
-      "sbor6eyJQKc",
-      "kOkfpCHeURw",
-      "4gRoTTZNnFE"
+      "JB6Q_7IE9Jo",
+      "ebPfkBjTbSA",
+      "x2hdNP6fzAo",
+      "RpFWP1a7Huk",
+      "BllkNdhDu-k"
     ]
   },
   "repackage": [

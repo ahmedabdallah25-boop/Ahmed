@@ -434,6 +434,100 @@ def fix_links(yt, dry_run):
     return written
 
 
+def playlist_items(yt, playlist_id):
+    """Every video id currently in a playlist, in playlist order."""
+    ids, page = [], None
+    while True:
+        resp = yt.playlistItems().list(
+            part="contentDetails", playlistId=playlist_id, maxResults=50, pageToken=page
+        ).execute()
+        ids += [i["contentDetails"]["videoId"] for i in resp.get("items", [])]
+        page = resp.get("nextPageToken")
+        if not page:
+            return ids
+
+
+def sync_playlists(yt, dry_run):
+    """Add every owned video that belongs in a playlist and is not in it yet.
+
+    Purely additive — nothing is removed and nothing is reordered, so this is
+    safe to run against a video inside its feed test. Playlist membership is not
+    packaging: it does not change the title, description or tags the feed is
+    testing, it only adds a Browse and Suggested surface that did not exist.
+
+    That surface is the point. A Short gets its Shorts-feed shot in the first
+    72 hours and then goes almost completely dark — Shorts earn very little
+    ongoing search or suggested traffic to recover into, which is why retitling
+    a failed one is measured at exactly zero. A series playlist is one of the
+    few paths that keeps working afterwards, and a Short that was never added
+    to one has no such path at all.
+    """
+    specs = CFG.get("playlists", [])
+    if not specs:
+        return 0
+
+    ids = owned_video_ids(yt)
+    meta = {}
+    for start in range(0, len(ids), 50):
+        batch = ids[start:start + 50]
+        for item in yt.videos().list(
+            part="snippet,contentDetails,status", id=",".join(batch)
+        ).execute().get("items", []):
+            meta[item["id"]] = item
+    print(f"  scanning {len(meta)} owned videos")
+
+    written = 0
+    for spec in specs:
+        pid = spec["playlist_id"]
+        lo = spec.get("min_seconds", 0)
+        hi = spec.get("max_seconds", 10 ** 9)
+        skip = set(spec.get("exclude", []))
+
+        # Private and scheduled uploads are deliberately excluded: adding one
+        # publishes nothing but does leak an unlisted entry into a public
+        # playlist, and it would land out of order once it goes live.
+        want = [
+            v for v in meta.values()
+            if lo <= iso8601_seconds(v["contentDetails"]["duration"]) <= hi
+            and v["id"] not in skip
+            and v.get("status", {}).get("privacyStatus") == "public"
+        ]
+        want.sort(key=lambda v: v["snippet"]["publishedAt"])
+
+        try:
+            have = set(playlist_items(yt, pid))
+        except HttpError as e:
+            print(f"  {pid}: ERROR reading playlist: {e}")
+            ERRORS.append(f"{pid}: playlist read failed: {e}")
+            continue
+
+        missing = [v for v in want if v["id"] not in have]
+        print(f"  {pid} — {spec.get('_name', '')}")
+        print(f"      {len(have)} in playlist, {len(want)} eligible, "
+              f"{len(missing)} missing")
+        if not missing:
+            print("      already complete")
+            continue
+
+        for v in missing:
+            print(f"      + {v['id']}  {v['snippet']['title'][:58]}")
+            if dry_run:
+                continue
+            try:
+                yt.playlistItems().insert(part="snippet", body={"snippet": {
+                    "playlistId": pid,
+                    "resourceId": {"kind": "youtube#video", "videoId": v["id"]},
+                }}).execute()
+            except HttpError as e:
+                print(f"          ERROR adding: {e}")
+                ERRORS.append(f"{pid}/{v['id']}: playlist add failed: {e}")
+                continue
+            written += 1
+        if dry_run:
+            print("      [dry-run] not written")
+    return written
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true", help="show changes without writing")
@@ -470,6 +564,9 @@ def main():
 
         print("\n== Stale link hygiene ==")
         written += fix_links(yt, args.dry_run)
+
+        print("\n== Playlists ==")
+        written += sync_playlists(yt, args.dry_run)
 
         print("\n== Channel metadata ==")
         written += fix_channel_meta(yt, args.dry_run)
