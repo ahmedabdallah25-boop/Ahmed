@@ -9,15 +9,17 @@ render, the priority chip and the budget line.
 | `Laundry-Room-Zone-Report.pdf` | The report. |
 | `build_pdf.py` | Regenerates it. Paths point at the session scratchpad — repoint `SC` to `frames/` to rebuild here. |
 | `frames/zone01–07.jpg` | The "current" photographs. Zones 01–04, 06, 07 are frames from `IMG_6722.mov`; zone 05 is an upright site photograph. None are retouched. |
+| `renders/*.webp` | The six concept renders, as embedded. |
 
-## The five render panels are empty on purpose
+## Renders are embedded
 
-Each zone page carries a dashed panel naming its matched render and the exact PNG filename. The
-images could not be embedded: the session that produced this report had the image host blocked
-by network policy. Drop the five PNGs into those panels, or re-run `build_pdf.py` with the files
-present and an `ImageReader` call in place of the placeholder.
+Every zone page places its matched render beside the current photograph at the same height, so
+the two read as one comparison. Page 3 is a reference grid of all six. Zone 07 carries no
+render — it is out of scope and the panel says so.
 
-Render filenames and links are in [`../renders/LINKS.md`](../renders/LINKS.md).
+The render files live in [`renders/`](renders/) here and in
+[`../renders/img/`](../renders/img/). They are 640px on the long edge: fine on screen, soft if
+this report is printed large.
 
 ## Zone → render mapping
 
@@ -30,3 +32,6 @@ Render filenames and links are in [`../renders/LINKS.md`](../renders/LINKS.md).
 | 05 | Staging side | 3 — Trolley bays and linen staging |
 | 06 | Far end and the overhead bulk tank | 1 — Hero |
 | 07 | Stacked machines and rear corner | none — out of scope |
+
+A supporting render (wall station, close detail) appears on the page 3 reference grid and backs
+up Zone 03.

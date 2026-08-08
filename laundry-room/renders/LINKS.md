@@ -2,9 +2,20 @@
 
 Generated 2026-08-08 with Google Nano Banana 2 (via Higgsfield), 2K.
 
-The session's egress policy blocks the CDN host, so these could not be downloaded into the
-repo. Save them locally from the links below — **CDN links expire.** They also live permanently
-in the Higgsfield account's generation history, which is the more reliable route.
+**The images are now in this repo**, in [`img/`](img/) — supplied by hand after the session's
+egress policy blocked the CDN. Use those files; the CDN links below are kept only as provenance
+and will expire.
+
+| File | Render |
+|---|---|
+| `img/render1-hero.webp` | 1 — Hero, whole room |
+| `img/render2-machine-line.webp` | 2 — Machine line detail |
+| `img/render3-trolley-bays.webp` | 3 — Trolley bays and linen staging |
+| `img/render4-store-alcove.webp` | 4 — The lit store alcove |
+| `img/render5-signage-kit.webp` | 5 — Signage and standards kit |
+| `img/render-supporting-wall-station.webp` | Supporting — wall station close detail |
+
+All six are 640px on the long edge: fine on screen, soft if printed large.
 
 ## Current set — corrected room facts
 

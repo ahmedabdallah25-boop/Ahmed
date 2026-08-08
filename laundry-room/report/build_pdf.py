@@ -156,7 +156,9 @@ RENDERS = {
         "lint-trap and segregation signs, machine ID plates, floor-marking legend.",
         "hf_20260808_160100_5e948227-7d15-4316-a300-7c1b59b06905"),
 }
-CDN = ("https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/")
+RENDER_FILES = {1: "IMG_6774", 2: "IMG_6775", 3: "IMG_6773", 4: "IMG_6772", 5: "IMG_6776"}
+BONUS = "IMG_6777"
+RD = SC + "/rend/"
 
 ZONES = [
     dict(why='Paper against a live board is the cheapest fire risk in the room to remove — and the first thing an auditor photographs.', n="01", key="z1", title="Electrical board and the document wall",
@@ -313,7 +315,7 @@ def cover(c):
     c.setFillColor(INK_FAINT)
     c.setFont(MONO, 7.2)
     c.drawString(x, 74, "8 AUGUST 2026   ·   COSTS AED, ESTIMATED   ·   MAIN MACHINE ROOM")
-    footer(c, 1, 10, "Laundry room zone report")
+    footer(c, 1, 11, "Laundry room zone report")
     c.showPage()
 
 
@@ -383,118 +385,133 @@ def index_page(c):
             "themselves are supplied alongside this report.",
          M + 14, y - 22, PW - 2 * M - 28, size=9, lead=11.5)
 
-    footer(c, 2, 10, "Zone map")
+    footer(c, 2, 11, "Zone map")
     c.showPage()
 
 
-def zone_page(c, z, pageno):
+def zone_page(c, z, pageno, total):
     page_bg(c)
 
     # header
-    c.setFillColor(INK_FAINT)
-    c.setFont(MONO_B, 9)
+    c.setFillColor(INK_FAINT); c.setFont(MONO_B, 9)
     c.drawString(M, PH - 52, "ZONE " + z["n"])
-    c.setFillColor(INK)
-    c.setFont(SERIF_B, 20)
+    c.setFillColor(INK); c.setFont(SERIF_B, 19)
     c.drawString(M + 62, PH - 52, z["title"])
     if z["sev"]:
         col = ALERT if z["sev"] in ("SAFETY", "VERIFY FIRST") else (
             INK_FAINT if z["sev"] == "OUT OF SCOPE" else ACCENT)
-        w = c.stringWidth(z["title"], SERIF_B, 20)
+        w = c.stringWidth(z["title"], SERIF_B, 19)
         chip(c, z["sev"], M + 72 + w, PH - 51, col)
-    c.setStrokeColor(INK)
-    c.setLineWidth(1.4)
+    c.setStrokeColor(INK); c.setLineWidth(1.4)
     c.line(M, PH - 62, PW - M, PH - 62)
-    c.setFillColor(INK_FAINT)
-    c.setFont(SERIF_I, 9)
+    c.setFillColor(INK_FAINT); c.setFont(SERIF_I, 9)
     c.drawString(M, PH - 76, z["where"])
 
-    top = PH - 92
-    img_w, img_h = 232, top - 66
+    # ---------- image band ----------
+    band_top, band_h = PH - 96, 272
+    band_y = band_top - band_h
+    cur_x, cur_w = M, 148
+    pro_x, pro_w = M + 162, 402
+    sid_x, sid_w = M + 578, 188
 
-    # ---- left: current
-    label(c, "Current", M, top - 10, size=6.8, color=INK_FAINT)
-    img, w, h = fit_image(f"{SC}/zones/{z['key']}.jpg", img_w, img_h - 18)
-    ix, iy = M, top - 22 - h
-    c.drawImage(img, ix, iy, w, h)
-    c.setStrokeColor(RULE_STRONG)
-    c.setLineWidth(0.7)
-    c.rect(ix, iy, w, h, stroke=1, fill=0)
+    label(c, "Current", cur_x, band_top + 6, size=6.6)
+    img, w, h = fit_image(f"{SC}/zones/{z['key']}.jpg", cur_w, band_h)
+    c.drawImage(img, cur_x, band_y, w, h)
+    c.setStrokeColor(RULE_STRONG); c.setLineWidth(0.7)
+    c.rect(cur_x, band_y, w, h, stroke=1, fill=0)
 
-    # ---- right column
-    cx = M + img_w + 30
-    cw = PW - M - cx
-    y = top - 10
-
-    label(c, "What is there now", cx, y, size=6.8)
-    y -= 15
-    y = bullets(c, z["now"], cx, y, cw)
-
-    y -= 8
-    c.setStrokeColor(RULE)
-    c.setLineWidth(0.6)
-    c.line(cx, y + 4, PW - M, y + 4)
-    y -= 12
-
-    label(c, "What changes here", cx, y, size=6.8)
-    y -= 15
-    y = bullets(c, z["to"], cx, y, cw, marker_color=ACCENT)
-
-    # ---- why it matters
-    y -= 6
-    box_h = 46
-    c.setFillColor(SUNK)
-    c.rect(cx, y - box_h + 12, cw, box_h, stroke=0, fill=1)
-    c.setFillColor(ACCENT)
-    c.rect(cx, y - box_h + 12, 2.4, box_h, stroke=0, fill=1)
-    label(c, "Why it matters", cx + 14, y + 1, size=6.4)
-    para(c, z["why"], cx + 14, y - 14, cw - 28, font=SERIF_I, size=10, lead=12.4,
-         color=INK)
-
-    # ---- render panel (bottom right)
     r = z["render"]
-    panel_h = 86
-    py = 44
-    c.setFillColor(SURFACE)
-    c.rect(cx, py, cw, panel_h, stroke=0, fill=1)
-    c.setStrokeColor(ACCENT if r else RULE_STRONG)
-    c.setLineWidth(0.9)
-    c.setDash(3, 2)
-    c.rect(cx, py, cw, panel_h, stroke=1, fill=0)
-    c.setDash()
-
+    label(c, "Proposed" if r else "Not in scope", pro_x, band_top + 6, size=6.6,
+          color=ACCENT if r else INK_FAINT)
     if r:
+        img2, w2, h2 = fit_image(RD + RENDER_FILES[r] + ".png", pro_w, band_h)
+        iy2 = band_y + (band_h - h2) / 2
+        c.drawImage(img2, pro_x, iy2, w2, h2)
+        c.setStrokeColor(ACCENT); c.setLineWidth(1.0)
+        c.rect(pro_x, iy2, w2, h2, stroke=1, fill=0)
         name, subtitle, desc, fileref = RENDERS[r]
-        label(c, "Matched render — place image here", cx + 12, py + panel_h - 16, size=6.4,
-              color=ACCENT)
-        c.setFillColor(INK)
-        c.setFont(SERIF_B, 11)
-        c.drawString(cx + 12, py + panel_h - 34, f"{name} · {subtitle}")
-        yy = py + panel_h - 48
-        para(c, desc, cx + 12, yy, cw - 24, size=8.4, lead=10.4)
-        c.setFillColor(INK_FAINT)
-        c.setFont(MONO, 6.3)
-        c.drawString(cx + 12, py + 9, fileref + ".png")
+        c.setFillColor(INK); c.setFont(SERIF_B, 9.5)
+        c.drawString(pro_x, iy2 - 13, f"{name} · {subtitle}")
     else:
-        label(c, "No render — area not in scope", cx + 12, py + panel_h - 16, size=6.4,
-              color=INK_FAINT)
-        c.setFillColor(INK_SOFT)
-        c.setFont(SERIF_I, 10)
-        c.drawString(cx + 12, py + panel_h - 36,
-                     "This area was not surveyed or priced. Ask and it gets its own brief.")
+        c.setFillColor(SURFACE)
+        c.rect(pro_x, band_y, pro_w, band_h, stroke=0, fill=1)
+        c.setStrokeColor(RULE_STRONG); c.setLineWidth(0.9)
+        c.setDash(3, 2); c.rect(pro_x, band_y, pro_w, band_h, stroke=1, fill=0); c.setDash()
+        c.setFillColor(INK_SOFT); c.setFont(SERIF_I, 11)
+        c.drawCentredString(pro_x + pro_w / 2, band_y + band_h / 2 + 6,
+                            "This area was not surveyed or priced.")
+        c.drawCentredString(pro_x + pro_w / 2, band_y + band_h / 2 - 12,
+                            "Ask and it gets its own brief.")
 
-    # cost strip under image
+    # ---------- sidebar ----------
+    sy = band_top
     c.setFillColor(SUNK)
-    c.rect(M, py, img_w, panel_h, stroke=0, fill=1)
-    label(c, "Budget", M + 12, py + panel_h - 16, size=6.4)
-    c.setFillColor(INK)
-    c.setFont(SERIF_B, 10.5)
-    c.drawString(M + 12, py + panel_h - 34, z["cost"])
-    c.setFillColor(ACCENT)
-    c.setFont(MONO_B, 15)
-    c.drawString(M + 12, py + 12, "AED " + z["aed"])
+    c.rect(sid_x, sy - 74, sid_w, 74, stroke=0, fill=1)
+    label(c, "Budget", sid_x + 12, sy - 16, size=6.4)
+    c.setFillColor(INK); c.setFont(SERIF_B, 10.5)
+    c.drawString(sid_x + 12, sy - 34, z["cost"])
+    c.setFillColor(ACCENT); c.setFont(MONO_B, 15)
+    c.drawString(sid_x + 12, sy - 60, "AED " + z["aed"])
 
-    footer(c, pageno, 10, "Zone " + z["n"] + " · " + z["title"])
+    wy = sy - 92
+    c.setFillColor(ACCENT)
+    c.rect(sid_x, wy - 96, 2.4, 96, stroke=0, fill=1)
+    label(c, "Why it matters", sid_x + 12, wy - 8, size=6.4)
+    para(c, z["why"], sid_x + 12, wy - 24, sid_w - 20, font=SERIF_I, size=9.4,
+         lead=11.8, color=INK)
+
+    # ---------- text columns ----------
+    ty = band_y - 26
+    ca_x, ca_w = M, 352
+    cb_x, cb_w = M + 382, 384
+
+    label(c, "What is there now", ca_x, ty, size=6.8)
+    c.setStrokeColor(RULE); c.setLineWidth(0.6)
+    c.line(ca_x, ty - 7, ca_x + ca_w, ty - 7)
+    bullets(c, z["now"], ca_x, ty - 21, ca_w)
+
+    label(c, "What changes here", cb_x, ty, size=6.8, color=ACCENT)
+    c.setStrokeColor(RULE); c.setLineWidth(0.6)
+    c.line(cb_x, ty - 7, cb_x + cb_w, ty - 7)
+    bullets(c, z["to"], cb_x, ty - 21, cb_w)
+
+    footer(c, pageno, total, "Zone " + z["n"] + " · " + z["title"])
+    c.showPage()
+
+
+def target_page(c, total):
+    page_bg(c)
+    label(c, "Reference", M, PH - 52)
+    c.setFillColor(INK); c.setFont(SERIF_B, 22)
+    c.drawString(M, PH - 78, "The target condition")
+    c.setStrokeColor(INK); c.setLineWidth(1.4)
+    c.line(M, PH - 88, PW - M, PH - 88)
+    c.setFillColor(INK_SOFT); c.setFont(SERIF, 10)
+    c.drawString(M, PH - 104,
+                 "Concept renders, not photographs of this room. Each zone page carries the one that applies to it.")
+
+    items = [(1, "Zones 02 · 06"), (3, "Zone 05"), (2, "Zone 04"),
+             (4, "Zone 03"), (5, "Zone 01"), (None, "Zone 03 — detail")]
+    cols, cw_, ch_ = 3, 240, 150
+    gx, gy = 22, 44
+    x0, y0 = M, PH - 300
+    for i, (rn, zref) in enumerate(items):
+        cx = x0 + (i % cols) * (cw_ + gx)
+        cy = y0 - (i // cols) * (ch_ + gy)
+        f = RD + (RENDER_FILES[rn] if rn else BONUS) + ".png"
+        img, w, h = fit_image(f, cw_, ch_)
+        c.drawImage(img, cx, cy, w, h)
+        c.setStrokeColor(RULE_STRONG); c.setLineWidth(0.6)
+        c.rect(cx, cy, w, h, stroke=1, fill=0)
+        ttl = RENDERS[rn][1] if rn else "Wall station — close detail"
+        c.setFillColor(INK); c.setFont(SERIF_B, 9.5)
+        for ln in wrap(c, (f"Render {rn} · " if rn else "Supporting · ") + ttl,
+                       SERIF_B, 9.5, cw_)[:1]:
+            c.drawString(cx, cy - 13, ln)
+        c.setFillColor(ACCENT); c.setFont(MONO, 6.6)
+        c.drawString(cx, cy - 25, zref.upper())
+
+    footer(c, 3, total, "The target condition")
     c.showPage()
 
 
@@ -555,13 +572,13 @@ def closing(c):
     c.rect(M, y - 66, PW - 2 * M, 72, stroke=0, fill=1)
     c.setFillColor(INK)
     c.setFont(SERIF_B, 10.5)
-    c.drawString(M + 14, y - 12, "About the five renders")
-    para(c, "The concept renders referenced on each zone page are supplied separately — this "
-            "session could not embed them, because the image host is blocked by the network policy "
-            "the report was produced under. Each render panel carries the exact filename so the "
-            "images drop straight into place. They are idealised concepts, not photographs of this "
-            "room: use them to show intent. For evidence of what one shift of cleaning actually "
-            "buys, render the upright site photographs through the prompts supplied with this brief.",
+    c.drawString(M + 14, y - 12, "About the renders")
+    para(c, "The renders on each zone page are idealised concepts, not photographs of this room — "
+            "use them to show intent, and read them against the current photograph beside them. They "
+            "were supplied at 640px, which is fine on screen but soft if this report is printed "
+            "large. For evidence of what one shift of cleaning actually buys before any money is "
+            "committed, render the upright site photographs through the image-to-image prompts "
+            "supplied with this brief: that produces a before and after of this room, not a concept.",
          M + 14, y - 28, PW - 2 * M - 28, size=9, lead=11.4)
 
     # ---- four-week sequence
@@ -591,7 +608,7 @@ def closing(c):
         c.line(M, min(yy, ys - 11.6) + 5, PW - M, min(yy, ys - 11.6) + 5)
         ys = min(yy, ys - 11.6) - 6
 
-    footer(c, 10, 10, "Budget and order of work")
+    footer(c, 11, 11, "Budget and order of work")
     c.showPage()
 
 
@@ -600,10 +617,12 @@ def main():
     c.setTitle("Laundry Room — Zone by Zone Enhancement Report")
     c.setAuthor("Back-of-house facilities brief")
     c.setSubject("Current condition matched to proposed enhancement, zone by zone")
+    TOT = 11
     cover(c)
     index_page(c)
+    target_page(c, TOT)
     for i, z in enumerate(ZONES):
-        zone_page(c, z, i + 3)
+        zone_page(c, z, i + 4, TOT)
     closing(c)
     c.save()
     print("wrote", OUT, os.path.getsize(OUT), "bytes")
