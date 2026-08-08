@@ -8,10 +8,42 @@ also page 3 of the zone report.
 
 | | |
 |---|---|
-| Room | **8.96 m × 4.28 m** — 38.4 m² |
+| Room | **8.96 m × 4.28 m** — 38.3 m² |
 | Machines | **4 washer-extractors** (south wall, plumbed) + **3 tumble dryers** (north wall, ducted) |
+| Washer | **1.05 m wide × 1.02 m deep × ~1.45 m high** |
+| Dryer | **1.05 m wide × ~1.15 m deep × ~1.85 m high** — depth to be confirmed |
+| **Walkway** | **2.11 m clear between machine fronts** |
 | Access | **One door**, at the east end — entrance and fire exit in the same opening |
 | Walkway | **1.72 m clear** between the two machine runs |
+
+---
+
+## 0. What the machine sizes tell you about the space
+
+The tape photos answer the question that matters — **is there room to do any of this?** Yes,
+with margin:
+
+| | |
+|---|---|
+| Machines across the room | 1.02 (washer) + 1.15 (dryer) = **2.17 m** |
+| Room width | **4.28 m** |
+| **Clear walkway** | **2.11 m** — nearly half the room's width is circulation |
+| Washer run | 4 × 1.05 = 4.20 m → **4.76 m of south wall free** |
+| Dryer run | 3 × 1.05 = 3.15 m → **5.81 m of north wall free** |
+
+A circulation route that doubles as an escape route needs **1.20 m**. You have 2.11 m. The
+two-lane scheme — soiled up one side, clean back the other — is not a squeeze; it fits with
+almost a metre to spare.
+
+And the free wall is where the zones go: 4.76 m on the washer side takes the clean staging and
+folding, 5.81 m on the dryer side takes soiled receiving. **No zone has to encroach on the
+walkway**, which is the thing that would have killed the plan.
+
+> **One caveat on the tape photos.** One image was sent twice — it appears as both the washer
+> width and the dryer width — so one dryer dimension is missing. I have read 1.51 m off one
+> photo but cannot tell from the frame whether that is the dryer's depth or its height. If it
+> is the depth, the walkway becomes **1.75 m** instead of 2.11 m. Still comfortably workable,
+> so nothing in the plan changes either way — but worth closing out.
 
 ---
 
@@ -127,8 +159,10 @@ most of the visual one.
 - **Where the alcove store sits.** It is outside the 8.96 × 4.28 envelope and is not on the
   drawing. One dimension and I will place it.
 - **Machine positions along each wall** are scaled from the top-view photograph and may be out
-  by a few hundred millimetres. Mark the floor from the machines themselves, not from the
-  drawing.
+  by a few hundred millimetres. Machine *sizes* are now measured; their *positions* are not.
+  Mark the floor from the machines themselves, not from the drawing.
+- **One dryer dimension.** A photo was duplicated across the two sets. Send the missing one and
+  the drawing closes out completely.
 - **Linen containers.** There are still no trolleys in the room. The bays are sized for
   whatever you adopt; trolleys are roughly AED 400–900 each and are deliberately not in any
   tier above.

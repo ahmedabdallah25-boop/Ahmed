@@ -25,17 +25,17 @@ OX, OY = 116, 196  # plan origin
 RW, RD = 8.96, 4.28
 
 # 4 washer-extractors, south wall (the plumbed wall)
-WASHERS = [("W4", 2.90, 0.00, 0.95, 1.05), ("W3", 4.05, 0.00, 0.95, 1.05),
-           ("W2", 5.20, 0.00, 0.95, 1.05), ("W1", 6.35, 0.00, 0.95, 1.05)]
+WASHERS = [("W4", 2.70, 0.00, 1.05, 1.02), ("W3", 3.85, 0.00, 1.05, 1.02),
+           ("W2", 5.00, 0.00, 1.05, 1.02), ("W1", 6.15, 0.00, 1.05, 1.02)]
 # 3 tumble dryers, north wall (the ducted wall)
-DRYERS  = [("D1", 0.60, 3.13, 0.95, 1.15), ("D2", 1.75, 3.13, 0.95, 1.15),
-           ("D3", 2.90, 3.13, 0.95, 1.15)]
+DRYERS  = [("D1", 0.55, 3.13, 1.05, 1.15), ("D2", 1.70, 3.13, 1.05, 1.15),
+           ("D3", 2.85, 3.13, 1.05, 1.15)]
 
-SOIL_BAYS  = [(4.75, 3.20, 0.95, 1.00), (5.90, 3.20, 0.95, 1.00)]
-CLEAN_BAYS = [(7.60, 0.15, 0.95, 1.00)]
+SOIL_BAYS  = [(4.45, 3.20, 1.05, 1.00), (5.70, 3.20, 1.05, 1.00)]
+CLEAN_BAYS = [(7.55, 0.10, 1.15, 1.00)]
 
 DOOR = (RW, 1.60, 0.12, 1.20)          # single entrance, east wall
-WALKWAY = (0.25, 1.22, 8.45, 1.72)     # walkway rectangle
+WALKWAY = (0.25, 1.12, 8.45, 1.94)     # walkway rectangle (2.11 m true clear)
 TANK = (7.30, 3.25, 1.40, 0.95)        # bulk tank, overhead
 
 
@@ -106,7 +106,7 @@ def draw_layout(c, PW, PH, M, footer, label, wrap, para, page_bg, pageno, total)
 
     label(c, "Proposed layout — measured", M, PH - 52)
     c.setFillColor(INK); c.setFont(SERIF_B, 21)
-    c.drawString(M, PH - 78, "8.96 × 4.28 m · 4 washers, 3 dryers · nothing moves")
+    c.drawString(M, PH - 78, "8.96 × 4.28 m · washers 1.05 × 1.02 · dryers 1.05 wide · nothing moves")
     c.setStrokeColor(INK); c.setLineWidth(1.4); c.line(M, PH - 88, PW - M, PH - 88)
     c.setFillColor(INK_SOFT); c.setFont(SERIF, 9.4)
     c.drawString(M, PH - 103,
@@ -114,9 +114,9 @@ def draw_layout(c, PW, PH, M, footer, label, wrap, para, page_bg, pageno, total)
 
     # ---- floor + zones
     rect_m(c, 0, 0, RW, RD, fill=SURFACE)
-    rect_m(c, 4.55, 3.05, 4.25, 1.15, fill=tint(SOILED, 0.16))      # soiled receiving, NE
-    rect_m(c, 7.40, 0.10, 1.40, 1.05, fill=tint(CLEAN, 0.18))       # clean staging, SE
-    rect_m(c, 0.20, 0.10, 2.55, 1.05, fill=tint(CLEAN, 0.18))       # clean folding, SW
+    rect_m(c, 4.25, 3.05, 4.55, 1.18, fill=tint(SOILED, 0.16))      # soiled receiving, NE
+    rect_m(c, 7.40, 0.06, 1.45, 1.10, fill=tint(CLEAN, 0.18))       # clean staging, SE
+    rect_m(c, 0.16, 0.06, 2.40, 1.10, fill=tint(CLEAN, 0.18))       # clean folding, SW
     rect_m(c, *WALKWAY, fill=tint(WALK, 0.26))
 
     hatch_m(c, 8.20, 1.22, 0.55, 1.72, ALERT)                       # keep clear inside door
@@ -159,9 +159,9 @@ def draw_layout(c, PW, PH, M, footer, label, wrap, para, page_bg, pageno, total)
           font=SERIF_I, size=6.4, color=ACCENT, dy=9)
 
     # ---- lint bins between the dryers (dryers are the lint source)
-    for gx in (1.58, 2.73, 3.88):
+    for gx in (1.63, 2.78, 3.93):
         rect_m(c, gx, 3.30, 0.14, 0.38, fill=INK)
-    txt_m(c, "3 lidded lint bins — one per dryer", 0.60, 3.00, font=SERIF_I, size=6.6,
+    txt_m(c, "3 lidded lint bins — one per dryer", 0.40, 2.82, font=SERIF_I, size=6.6,
           color=INK_FAINT, anchor="l")
 
     # ---- bays
@@ -173,8 +173,8 @@ def draw_layout(c, PW, PH, M, footer, label, wrap, para, page_bg, pageno, total)
         rect_m(c, x, y, w, h, fill=SURFACE)
         rect_m(c, x, y, w, h, stroke=CLEAN, lw=1.5, dash=(2.5, 2))
         txt_m(c, "CLEAN", x + w / 2, y + h / 2, font=MONO_B, size=6, color=CLEAN, dy=-2.5)
-    rect_m(c, 0.25, 0.18, 2.45, 0.55, fill=SUNK, stroke=RULE_STRONG, lw=0.9)
-    txt_m(c, "clean linen shelving / folding", 1.47, 0.40, font=SERIF, size=6.6, color=INK_SOFT)
+    rect_m(c, 0.22, 0.14, 2.28, 0.55, fill=SUNK, stroke=RULE_STRONG, lw=0.9)
+    txt_m(c, "clean linen shelving / folding", 1.36, 0.36, font=SERIF, size=6.6, color=INK_SOFT)
 
     # ---- overhead tank
     rect_m(c, *TANK, stroke=INK_FAINT, lw=1.0, dash=(3, 2.5))
@@ -216,7 +216,7 @@ def draw_layout(c, PW, PH, M, footer, label, wrap, para, page_bg, pageno, total)
     c.drawCentredString((m2p(0, 0)[0] + m2p(RW, 0)[0]) / 2, m2p(0, 0)[1] - 19, "8.96 m")
     c.saveState(); c.translate(m2p(0, 0)[0] - 26, (m2p(0, 0)[1] + m2p(0, RD)[1]) / 2)
     c.rotate(90); c.drawCentredString(0, 0, "4.28 m"); c.restoreState()
-    txt_m(c, "walkway 1.72 m clear — soiled runs the north lane, clean returns the south", 4.48, 2.08, font=SERIF_I, size=6.4, color=INK_FAINT, dy=-3)
+    txt_m(c, "2.11 m clear — soiled runs the north lane, clean returns the south", 3.40, 2.10, font=SERIF_I, size=6.4, color=INK_FAINT, dy=-3)
 
     # ---- legend
     ly = 150
@@ -224,7 +224,7 @@ def draw_layout(c, PW, PH, M, footer, label, wrap, para, page_bg, pageno, total)
     label(c, "Legend — everything below is paint, signage or a bin", M, ly + 4, size=6.6)
     swatch(c, M, ly - 18, tint(SOILED, 0.16), "Soiled side", "receiving north-east, by the door", alpha=1.0)
     swatch(c, M, ly - 42, tint(CLEAN, 0.18), "Clean side", "staging south-east + folding south-west", alpha=1.0)
-    swatch(c, M + 205, ly - 18, tint(WALK, 0.26), "Walkway", "1.72 m clear, also the escape route", alpha=1.0)
+    swatch(c, M + 205, ly - 18, tint(WALK, 0.26), "Walkway", "2.11 m clear, also the escape route", alpha=1.0)
     swatch(c, M + 205, ly - 42, tint(ALERT, 0.22), "Keep clear", "board and inside the door", alpha=1.0)
     swatch(c, M + 410, ly - 18, WASH, "Washer W1–W4", "south wall, plumbed", alpha=1.0)
     swatch(c, M + 410, ly - 42, DRY, "Dryer D1–D3", "north wall, ducted", alpha=1.0)
@@ -245,11 +245,11 @@ def draw_layout(c, PW, PH, M, footer, label, wrap, para, page_bg, pageno, total)
     c.setFillColor(SUNK); c.rect(M, 44, PW - 2 * M, 42, stroke=0, fill=1)
     c.setFillColor(ACCENT); c.rect(M, 44, 2.4, 42, stroke=0, fill=1)
     c.setFillColor(INK); c.setFont(SERIF_B, 8.4)
-    c.drawString(M + 12, 72, "Overall dimensions are yours; machine positions are read from the photographs.")
-    para(c, "The 8.96 × 4.28 m envelope and the 4 / 3 machine split are as supplied. Where each machine sits along its "
-            "wall is scaled from the top-view photograph and may be out by a few hundred millimetres — mark the floor "
-            "from the machines themselves, not from this drawing. The alcove store is not shown: it sits outside this "
-            "envelope and needs its own dimension.",
+    c.drawString(M + 12, 72, "Machine sizes are from your tape photos; positions along each wall are still read from the top view.")
+    para(c, "Machines occupy 2.17 m of the 4.28 m width, leaving 2.11 m clear — comfortably above the 1.20 m a "
+            "circulation and escape route needs. Free wall: 4.76 m on the washer side, 5.81 m on the dryer side, which is "
+            "where the soiled and clean zones go. One tape photo was sent twice, so one dryer dimension is still missing; "
+            "if the dryer depth is 1.51 m rather than the 1.15 m drawn, the walkway becomes 1.75 m and still works.",
          M + 12, 61, PW - 2 * M - 24, size=7.9, lead=9.6)
 
     footer(c, pageno, total, "Proposed layout — measured")
