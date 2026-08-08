@@ -18,18 +18,20 @@ OX, OY = 128, 214 # plan origin on page
 RW, RD = 11.0, 3.2                 # main room: length x depth
 ALC = (3.2, 3.2, 2.2, 1.8)         # alcove x,y,w,h  (off north wall)
 
-MACHINES = [   # id, x, y, w, h, wall
+MACHINES = [                       # south wall run
     ("M1", 2.40, 0.00, 0.95, 0.90),
     ("M2", 3.50, 0.00, 0.95, 0.90),
     ("M3", 4.60, 0.00, 0.95, 0.90),
     ("M4", 5.70, 0.00, 0.95, 0.90),
-    ("M5", 6.80, 0.00, 0.95, 0.90),
+]
+NORTH_MACH = [                     # north wall, far half — facing the south run
+    ("M5", 6.55, 2.30, 0.95, 0.90),
+    ("M6", 7.65, 2.30, 0.95, 0.90),
 ]
 STACKED = [
-    ("M6", 0.60, 2.45, 0.72, 0.75),
-    ("M7", 1.45, 2.45, 0.72, 0.75),
+    ("M7", 0.60, 2.45, 0.72, 0.75),
 ]
-BAYS  = [(5.90, 2.30, 0.85, 0.90), (6.90, 2.30, 0.85, 0.90), (7.90, 2.30, 0.85, 0.90)]
+BAYS  = [(8.95, 2.30, 0.85, 0.90), (9.95, 2.30, 0.85, 0.90)]
 SOIL_BAYS = [(0.30, 0.15, 0.85, 0.90), (1.30, 0.15, 0.85, 0.90)]
 
 
@@ -158,6 +160,12 @@ def draw_layout(c, PW, PH, M, footer, label, wrap, para, page_bg, pageno, total)
         px, py = m2p(x + w / 2, y + h + 0.06)
         c.setStrokeColor(MACH_D); c.setLineWidth(0.6); c.setDash(1.5, 1.5)
         c.circle(px, py, 0.16 * S, stroke=1, fill=0); c.setDash()
+    for mid, x, y, w, h in NORTH_MACH:
+        rect_m(c, x, y, w, h, fill=MACH, stroke=MACH_D, lw=1.0)
+        txt_m(c, mid, x + w / 2, y + h / 2, font=MONO_B, size=9, color=WHITE, dy=-3)
+        px, py = m2p(x + w / 2, y - 0.06)
+        c.setStrokeColor(MACH_D); c.setLineWidth(0.6); c.setDash(1.5, 1.5)
+        c.circle(px, py, 0.16 * S, stroke=1, fill=0); c.setDash()
     for mid, x, y, w, h in STACKED:
         rect_m(c, x, y, w, h, fill=MACH, stroke=MACH_D, lw=1.0)
         txt_m(c, mid, x + w / 2, y + h / 2, font=MONO_B, size=8, color=WHITE, dy=-3)
@@ -179,13 +187,15 @@ def draw_layout(c, PW, PH, M, footer, label, wrap, para, page_bg, pageno, total)
         txt_m(c, "SOILED", x + w / 2, y + h / 2, font=MONO_B, size=5.4, color=SOILED, dy=-2.5)
 
     # clean shelving, east
-    rect_m(c, 9.10, 2.30, 1.70, 0.55, fill=SUNK, stroke=RULE_STRONG, lw=0.9)
-    txt_m(c, "clean linen shelving", 9.95, 2.51, font=SERIF, size=6.4, color=INK_SOFT)
+    rect_m(c, 8.95, 0.15, 1.85, 0.55, fill=SUNK, stroke=RULE_STRONG, lw=0.9)
+    txt_m(c, "clean linen shelving", 9.88, 0.36, font=SERIF, size=6.4, color=INK_SOFT)
+    txt_m(c, "Staging bays are sized for whatever container you adopt — there are no linen trolleys in the room today.",
+          5.50, 0.0, font=SERIF_I, size=6.8, color=ALERT, dy=-24)
 
     # the compromise the existing positions force
-    txt_m(c, "M6–M7 sit in the soiled end — designate them", 4.30, 2.86, font=SERIF_I,
+    txt_m(c, "M7 sits in the soiled end — designate it for", 4.30, 2.86, font=SERIF_I,
           size=6.6, color=ALERT)
-    txt_m(c, "for staff / rewash only, off the main linen flow", 4.30, 2.86, font=SERIF_I,
+    txt_m(c, "staff / rewash only, off the main linen flow", 4.30, 2.86, font=SERIF_I,
           size=6.6, color=ALERT, dy=-9)
 
     # ---------------- boards + alcove fit-out
@@ -207,20 +217,21 @@ def draw_layout(c, PW, PH, M, footer, label, wrap, para, page_bg, pageno, total)
     c.circle(px, py, 0.09 * S, stroke=1, fill=0)      # floor gully
 
     # overhead tank (dashed = above head height)
-    rect_m(c, 9.20, 0.30, 1.45, 1.55, stroke=INK_FAINT, lw=1.0, dash=(3, 2.5))
-    txt_m(c, "BULK TANK OVER", 9.93, 0.72, font=MONO_B, size=5.8, color=INK_FAINT)
-    txt_m(c, "verify contents", 9.93, 0.52, font=SERIF_I, size=6.2, color=INK_FAINT)
+    rect_m(c, 10.05, 1.20, 0.78, 0.85, stroke=INK_FAINT, lw=1.0, dash=(3, 2.5))
+    txt_m(c, "TANK", 10.44, 1.66, font=MONO_B, size=5.8, color=INK_FAINT)
+    txt_m(c, "OVER", 10.44, 1.66, font=MONO_B, size=5.8, color=INK_FAINT, dy=-8)
+    txt_m(c, "verify contents", 10.44, 1.66, font=SERIF_I, size=5.8, color=INK_FAINT, dy=-17)
 
     # ---------------- flow arrows
     c.setStrokeColor(INK); c.setLineWidth(1.3)
-    for xa, xb in ((2.45, 3.95), (4.45, 5.95), (6.45, 7.95), (8.45, 9.95)):
+    for xa, xb in ((2.45, 3.95), (4.45, 5.95), (6.45, 7.95), (8.30, 9.00)):
         a = m2p(xa, 1.62); b = m2p(xb, 1.62)
         c.line(a[0], a[1], b[0], b[1])
         c.setFillColor(INK)
         p = c.beginPath(); p.moveTo(b[0], b[1]); p.lineTo(b[0] - 6, b[1] + 3.2)
         p.lineTo(b[0] - 6, b[1] - 3.2); p.close(); c.drawPath(p, stroke=0, fill=1)
     txt_m(c, "SOILED IN", 1.22, 1.60, font=MONO_B, size=7.2, color=SOILED)
-    txt_m(c, "CLEAN OUT", 9.90, 1.60, font=MONO_B, size=7.2, color=CLEAN)
+    txt_m(c, "CLEAN OUT", 9.50, 1.60, font=MONO_B, size=7.2, color=CLEAN)
 
     # ---------------- lighting
     c.setStrokeColor(INK_FAINT); c.setLineWidth(1.6)
@@ -235,7 +246,7 @@ def draw_layout(c, PW, PH, M, footer, label, wrap, para, page_bg, pageno, total)
     # ---------------- dimensions
     c.setStrokeColor(INK_FAINT); c.setLineWidth(0.6)
     c.setFillColor(INK_FAINT); c.setFont(MONO, 7)
-    c.drawCentredString((m2p(0, 0)[0] + m2p(RW, 0)[0]) / 2, m2p(0, 0)[1] - 30,
+    c.drawCentredString((m2p(0, 0)[0] + m2p(RW, 0)[0]) / 2, m2p(0, 0)[1] - 44,
                         "≈ 11.0 m  (ESTIMATED)")
     dx = m2p(RW, 0)[0] + 40
     c.line(dx, m2p(0, 0)[1], dx, m2p(0, RD)[1])
@@ -265,10 +276,10 @@ def draw_layout(c, PW, PH, M, footer, label, wrap, para, page_bg, pageno, total)
     c.setFillColor(INK); c.setFont(SERIF_B, 8.6)
     c.drawString(col + 570, ly - 10, "Machine schedule")
     c.setFillColor(INK_SOFT); c.setFont(SERIF, 7.8)
-    c.drawString(col + 570, ly - 23, "M1–M5  main line, south wall")
-    c.drawString(col + 570, ly - 34, "M6–M7  stacked columns, north wall")
+    c.drawString(col + 570, ly - 23, "M1–M4 south wall · M5–M6 north wall")
+    c.drawString(col + 570, ly - 34, "M7  stacked column, west end")
     c.setFillColor(ALERT); c.setFont(SERIF_I, 7.6)
-    c.drawString(col + 570, ly - 47, "Confirm which are washers and which dryers.")
+    c.drawString(col + 570, ly - 47, "Confirm the split and which are dryers.")
 
     # caveat strip
     c.setFillColor(SUNK)

@@ -25,6 +25,29 @@ coloured element is something you paint on or screw to a wall.
 
 ---
 
+## 1a. Two corrections the reference photographs forced
+
+Both were caught by going back through the site photographs after the first draft of the
+layout, and both change the drawing.
+
+- **The machines are on both walls, not one.** Photo `IMG_6719` shows machines facing each
+  other across the walkway in the far half of the room. The layout now reads
+  **M1–M4 on the south wall, M5–M6 on the north wall, M7 the stacked column at the west end.**
+  The first draft put all five large machines in a single south-wall run, which the photographs
+  do not support.
+- **There are no linen trolleys in the room.** The tall wire mesh structures in `IMG_6723` are
+  **high-level mesh cable tray at ceiling height**, not floor-standing linen cages — I read them
+  as cages early on and that was wrong. Linen is currently moved in **sacks and a plastic
+  storage box**, which is what the video shows on the floor.
+
+  That matters twice over. The staging bays on the drawing are sized for *whatever container
+  you adopt*, not for trolleys you already own. And **concept render 3 shows wire trolleys you
+  do not have** — treat it as the target condition, not a picture of your kit. If you want
+  trolleys they are a real cost, and are deliberately not buried in any tier below; if you keep
+  using what you have, the bays still work, they just hold sacks.
+
+---
+
 ## 2. The flow the layout sets
 
 One direction, west to east, with the walkway down the centre:
@@ -32,8 +55,8 @@ One direction, west to east, with the walkway down the centre:
 | Zone | Where | What happens |
 |---|---|---|
 | **Soiled receiving** | West end, red | Soiled linen enters by the west door into two marked bays. It goes no further east than the machine line. |
-| **Wash / dry line** | South wall, M1–M5 | Loading faces the walkway. Lint bins wall-mounted in the gaps between machines. |
-| **Clean staging** | East end, green | Three marked trolley bays plus the existing shelving. Clean linen leaves by the east door. |
+| **Wash / dry line** | M1–M4 south wall, M5–M6 north wall | Loading faces the walkway from both sides. Lint bins wall-mounted in the gaps between the south-wall machines. |
+| **Clean staging** | East end, green | Two marked staging bays on the north wall plus the existing shelving on the south. Clean linen leaves by the east door. |
 | **Walkway** | Centre, yellow | 0.95 m clear, unbroken end to end. It is also the escape route, so it stays clear permanently. |
 | **Store** | Alcove | Shadow board, PPE, chemical shelf, daily-checks board — everything that currently clutters the main room. |
 
@@ -42,13 +65,12 @@ direction, and it costs paint.
 
 ### The one compromise the fixed positions force
 
-**M6 and M7 sit at the soiled end of the room.** With those two staying where they are, they
-cannot serve the clean end of a west-to-east flow without linen doubling back across the
-soiled zone.
+**M7, the stacked column, sits at the soiled end of the room.** Staying where it is, it cannot
+serve the clean end of a west-to-east flow without linen doubling back across the soiled zone.
 
-The realistic answer is not to move them — it is to **designate them**: staff uniforms,
-rewash, or small batches, kept off the main linen flow and labelled as such. That is a
-sign and a rule, not a cost. It is marked on the drawing.
+The realistic answer is not to move it — it is to **designate it**: staff uniforms, rewash, or
+small batches, kept off the main linen flow and labelled as such. That is a sign and a rule,
+not a cost. It is marked on the drawing.
 
 ---
 
@@ -70,7 +92,7 @@ off the high-level steelwork, identify the overhead tank.
 | Washable wall paint | Upper walls only, above the existing tiled dado. | 1 × 18L + primer | 400 |
 | Wall tile grout restoration | The dado is already there. Clean and re-colour it. | — | 250 |
 | Lidded lint bins | Wall-mounted in the gaps between machines, replacing the open floor trays. | 4 | 600 |
-| Printed signage | **Seven machine ID plates** (M1–M7), zone and segregation signs, keep-clear and fire-exit signs, lint-trap reminders. | ~24 | 700 |
+| Printed signage | **Seven machine ID plates** (M1–M7), zone and segregation signs, keep-clear and fire-exit signs, lint-trap reminders, and a sign designating M7 for staff/rewash. | ~24 | 700 |
 | Cable P-clips and mini-trunking | Get the draped cable off the floor. | — | 80 |
 
 **Subtotal ≈ AED 3,310.**
@@ -116,6 +138,11 @@ Three numbers make it exact:
 With those, bay counts, walkway clearance and the batten spacing become real rather than
 indicative. A tape measure and five minutes covers it.
 
-One more thing worth confirming: **which of the seven are washers and which are dryers.** It
-does not change the layout, because nothing moves — but it determines which machines need the
-rigid duct runs in Tier 2, and that is the most expensive line in the plan.
+Two more things worth confirming:
+
+- **Which of the seven are washers and which are dryers.** It does not change the layout,
+  because nothing moves — but it determines which machines need the rigid duct runs in Tier 2,
+  and that is the most expensive line in the plan.
+- **Whether you want linen trolleys at all.** You have none today. The plan works without them
+  — the bays simply hold what you already use — but if you want the room to look like render 3,
+  trolleys are roughly AED 400–900 each and are deliberately not buried in any tier above.
