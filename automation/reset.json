@@ -78,6 +78,11 @@
         "from": "EQT91HgOH78",
         "to": "ebIU6OHJ-jg",
         "note": "Part 12 Takaful — old (probably deleted) id -> live id"
+      },
+      {
+        "from": "x2hdNP6fzAo",
+        "to": "RpFWP1a7Huk",
+        "note": "Credit card Part 2 — duplicate upload being deleted 2026-08-08 -> the surviving id. Added BEFORE the delete deliberately: fix_links runs ahead of delete_videos in main(), so any description referencing the duplicate is repointed at the survivor while the id still resolves. Deleting first is exactly how Part 12 left a dead link in live descriptions."
       }
     ]
   },

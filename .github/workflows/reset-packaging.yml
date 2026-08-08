@@ -15,6 +15,10 @@ on:
         description: "Read-only: list every owned video, flag unmanaged private/scheduled ones"
         type: boolean
         default: false
+      confirm_delete:
+        description: "IRREVERSIBLE: delete the confirmed duplicates in reset.json. Leave off unless you mean it."
+        type: boolean
+        default: false
 
 jobs:
   reset:
@@ -30,7 +34,8 @@ jobs:
           python automation/reset_packaging.py \
             ${{ inputs.inventory && '--inventory' || '' }} \
             ${{ inputs.dry_run && '--dry-run' || '' }} \
-            ${{ inputs.scheduled_only && '--scheduled' || '' }}
+            ${{ inputs.scheduled_only && '--scheduled' || '' }} \
+            ${{ inputs.confirm_delete && '--confirm-delete' || '' }}
         env:
           YT_CLIENT_ID: ${{ secrets.new1 }}
           YT_CLIENT_SECRET: ${{ secrets.new2 }}

@@ -528,6 +528,95 @@ def sync_playlists(yt, dry_run):
     return written
 
 
+def delete_videos(yt, dry_run):
+    """Delete confirmed duplicate uploads. Irreversible — five guards before any call.
+
+    This never runs on an ordinary pass. It needs --confirm-delete, which no
+    scheduled or routine invocation passes, because a delete cannot be undone and
+    does not return the video id: a mistake here is permanent and unrecoverable.
+
+    The guards, in order:
+      1. --confirm-delete was passed explicitly.
+      2. The id is not in `protected`.
+      3. The id resolves to a video this channel actually owns.
+      4. Its LIVE title still matches the title recorded in reset.json. A stale or
+         mistyped id would otherwise delete an unrelated video, and the id alone
+         gives no signal that it is wrong.
+      5. Its `duplicate_of` survivor exists, is public, and is a different id — so
+         a duplicate is never removed unless its replacement is confirmed live.
+
+    Any guard failing skips that video and records an error, so a partial run shows
+    red rather than a green success that quietly deleted nothing.
+    """
+    entries = CFG.get("duplicates", {}).get("candidates", [])
+    if not entries:
+        return 0
+
+    owned = set(owned_video_ids(yt))
+    deleted = 0
+
+    for ent in entries:
+        vid = ent["video_id"]
+        keeper = ent.get("duplicate_of", "")
+        want_title = ent.get("title", "")
+        print(f"  {vid} — recorded duplicate of {keeper}")
+
+        if vid in PROTECTED:
+            print("      REFUSED: protected winner.")
+            ERRORS.append(f"{vid}: delete refused, id is protected")
+            continue
+        if vid not in owned:
+            print("      skip: not an owned video (already deleted?).")
+            continue
+        if not keeper or keeper == vid:
+            print("      REFUSED: no distinct survivor recorded.")
+            ERRORS.append(f"{vid}: delete refused, no distinct duplicate_of")
+            continue
+
+        items = yt.videos().list(part="snippet,status",
+                                 id=f"{vid},{keeper}").execute().get("items", [])
+        found = {i["id"]: i for i in items}
+
+        live = found.get(vid)
+        if not live:
+            print("      REFUSED: could not read the video.")
+            ERRORS.append(f"{vid}: delete refused, video unreadable")
+            continue
+        live_title = live["snippet"]["title"]
+        if want_title and live_title.strip() != want_title.strip():
+            print(f"      REFUSED: title mismatch.\n"
+                  f"        config: {want_title}\n"
+                  f"        live:   {live_title}")
+            ERRORS.append(f"{vid}: delete refused, title mismatch")
+            continue
+
+        surv = found.get(keeper)
+        if not surv:
+            print(f"      REFUSED: survivor {keeper} not found.")
+            ERRORS.append(f"{vid}: delete refused, survivor {keeper} missing")
+            continue
+        if surv.get("status", {}).get("privacyStatus") != "public":
+            print(f"      REFUSED: survivor {keeper} is not public.")
+            ERRORS.append(f"{vid}: delete refused, survivor not public")
+            continue
+
+        print(f"      guards passed — survivor is live: {surv['snippet']['title'][:58]}")
+        print(f"      DELETING: {live_title}")
+        if dry_run:
+            print("      [dry-run] not deleted")
+            continue
+        try:
+            yt.videos().delete(id=vid).execute()
+        except HttpError as e:
+            print(f"      ERROR deleting: {e}")
+            ERRORS.append(f"{vid}: delete failed: {e}")
+            continue
+        print("      deleted")
+        deleted += 1
+
+    return deleted
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true", help="show changes without writing")
@@ -535,6 +624,9 @@ def main():
                     help="only fix the unpublished Short")
     ap.add_argument("--inventory", action="store_true",
                     help="list every owned video and flag unmanaged private/scheduled ones")
+    ap.add_argument("--confirm-delete", action="store_true",
+                    help="IRREVERSIBLE: delete the confirmed duplicates in reset.json. "
+                         "Never set by a routine pass; requires a deliberate human choice.")
     args = ap.parse_args()
 
     yt = yt_client()
@@ -570,6 +662,18 @@ def main():
 
         print("\n== Channel metadata ==")
         written += fix_channel_meta(yt, args.dry_run)
+
+        # Last, and only when asked for by name. Link fixes above run first so any
+        # description pointing at a duplicate is repointed at the survivor BEFORE
+        # the id stops resolving — deleting first is how Part 12 left a dead link
+        # sitting in live descriptions.
+        if args.confirm_delete:
+            print("\n== Duplicate removal (IRREVERSIBLE) ==")
+            written += delete_videos(yt, args.dry_run)
+        elif CFG.get("duplicates", {}).get("candidates"):
+            n = len(CFG["duplicates"]["candidates"])
+            print(f"\n== Duplicate removal ==\n  {n} candidate(s) recorded; "
+                  f"--confirm-delete not passed, so nothing was deleted.")
 
     print(f"\n{written} video(s) updated.")
     if args.dry_run:
