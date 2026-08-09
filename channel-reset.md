@@ -885,3 +885,289 @@ rediscovering the need:
 subscribers gained — all exact — and `engagement()` reproduces the length/like-rate split from
 public data alone. What the three queries above would add is precision on *where* in a video
 cold viewers leave, which sharpens the next script rather than the current diagnosis.
+
+---
+
+# Seventh pass — 2026-08-09, 19:30 UTC (12:30 PT)
+
+2.1 hours after the sixth pass. The vidiq connector came back, so **the three queries the sixth
+pass left blocked have all been run**, plus the two retention curves nobody had ever pulled. The
+sixth pass's headline finding survives. Its explanation of *why* does not, and the correction
+matters because it changes what the next script has to do.
+
+Nexlev was also pulled for the first time as a competitive check rather than an owner-analytics
+route. It is still on the free plan and every `get_my_*` tool still returns `ACCESS DENIED` —
+but its public faceless-outlier database answers a question owner analytics cannot, and it
+answers it in the channel's favour. Section 5.
+
+## The one-paragraph version
+
+The sixth pass said: nothing under 120 seconds. That rule is right and the new data strengthens
+it, but the reason given was wrong. Length is not what the feed reads — **hold time is**, and
+length is only its proxy. The proof is that the channel's two most recent 120s+ Shorts have the
+**best hold time it has ever recorded** — 90.0 and 84.9 seconds per view against the July
+winner's 69.5 — and they were given 20- and 41-view tests. Meanwhile the subscribed/unsubscribed
+split, finally pulled with its July control, shows the channel's existing audience behaving
+**identically to July** (69.5 s → 73.2 s per view) while the cold feed audience collapsed from
+45.1 s to 12.6 s. Nothing is wrong with the channel's audience, its subjects, or its titles. The
+cold feed is bouncing in the first fifteen seconds, and the reason it is being handed so few
+chances to bounce is that **65% of August's distribution was spent on three clips that returned
+three to seven seconds each**.
+
+---
+
+## 1. The subscribed/unsubscribed split — the query the sixth pass could not cite
+
+It was listed as **blocked**: the August pull returned figures that did not reconcile, and the
+sixth pass correctly refused to use it without the July control. Both windows are now pulled, and
+computed from `estimatedMinutesWatched` — exact — rather than the `averageViewDuration` column
+that is unreliable for Shorts. They reconcile cleanly.
+
+| | Jul 11–22 | Aug 1–9 | Change |
+|---|---|---|---|
+| **UNSUBSCRIBED** views | 7,378 | 509 | −93% |
+| UNSUBSCRIBED seconds/view | **45.1 s** | **12.6 s** | **−3.6x** |
+| UNSUBSCRIBED like rate | 4.23% | 0.98% | −4.3x |
+| **SUBSCRIBED** views | 449 | 77 | −83% |
+| SUBSCRIBED seconds/view | **69.5 s** | **73.2 s** | **+5%** |
+
+**The subscribed line is the finding.** The people who already know this channel hold for slightly
+*longer* now than they did during the best run in its history. Whatever changed in August did not
+change them.
+
+Everything that collapsed, collapsed on the cold side. An unsubscribed viewer in July stayed 45
+seconds; in August, 12.6. That is not a topic problem — a viewer who dislikes the subject leaves
+at three seconds, not forty-five — and it is not a title problem, because the title's work is
+already done by the time the clip is playing.
+
+*Caveat kept explicit:* the August SUBSCRIBED cell is 77 views and 3 likes. The hold time (94
+minutes over 77 views) is robust; the 3.90% like rate is three likes and should not be read as a
+trend.
+
+## 2. Per-video hold time, on the metric that can be trusted — and it inverts the ranking again
+
+The sixth pass flagged that the per-video pull had used `averageViewDuration`, which is unreliable
+for Shorts, and asked for a re-pull on `estimatedMinutesWatched`. Done. Seconds watched per view,
+every Short, Jul 1 – Aug 9:
+
+| Video | Length | Views | s/view | Likes | Subs |
+|---|---|---|---|---|---|
+| `ebPfkBjTbSA` You've Already Paid Klarna | ~150s | 20 | **90.0** | 2 | 0 |
+| `JB6Q_7IE9Jo` Is Paper Gold Halal? | 141s | 41 | **84.9** | 0 | 1 |
+| `ElD5gg-Q1wY` Ijara | — | 715 | 70.4 | 30 | 13 |
+| `riQ7dLSnogo` Halal Mortgage | 179s | 1,231 | **69.5** | 64 | **36** |
+| `J0TCD2u177k` Sukuk | 144s | 1,049 | 54.6 | 62 | 23 |
+| `ebIU6OHJ-jg` Takaful | — | 125 | 47.5 | 8 | 3 |
+| `a7xkXgTfCXs` Inflation | 133s | 1,042 | 46.8 | 58 | 17 |
+| `V8HYpTHy2aU` Savings | — | 113 | 46.7 | 11 | 3 |
+| `OXIP3EJROQk` Savings trap | 140s | 970 | 41.4 | 40 | 22 |
+| `zY664YZPI6U` Sound money | — | 930 | 39.5 | 40 | 19 |
+| `P3DxNgGFah0` Everyone asks at once | 65s | 39 | 40.0 | 0 | 0 |
+| `RpFWP1a7Huk` Debt-Free | 58s | 37 | 19.5 | 1 | 0 |
+| `BllkNdhDu-k` 3 Questions | 59s | 19 | 12.6 | 1 | 0 |
+| `UpCMyfIOftA` Born Into Debt | 46s | **1,209** | **10.5** | 11 | 2 |
+| `4gRoTTZNnFE` Fake mortgage | 28s | 24 | **7.5** | 0 | 0 |
+| `sbor6eyJQKc` 10 years of payments | 25s | 36 | **5.0** | 0 | 0 |
+| `kOkfpCHeURw` £1,461 a month | 17s | 257 | **3.3** | 0 | 0 |
+
+**The two most recent long Shorts sit first and second on the channel.** `ebPfkBjTbSA` and
+`JB6Q_7IE9Jo` hold 90.0 and 84.9 seconds per view — better than `riQ7dLSnogo`, the 1,231-view
+video that carried the entire July run. They were tested on 20 and 41 views.
+
+This is the single most important correction in this pass. The sixth pass read those two as
+failures ("resolved at zero", "0 likes on 41 views") because it was reading views and likes. On
+the metric the Shorts feed actually optimises, they are the best work the channel has ever
+published. **The 120s rule did not fail. It was applied twice and it worked twice, and nobody
+could see it because the tests were too small to produce a like.**
+
+## 3. Why the tests were that small: the allocation was already spent
+
+Of the **484 views** August's own uploads received, split by length band:
+
+| Band | Videos | Views | Share of views | Minutes watched | Share of watch time |
+|---|---|---|---|---|---|
+| under 35 s | 3 | **317** | **65.5%** | 20 | 13.5% |
+| 35–120 s | 3 | 106 | 21.9% | 40 | 27.0% |
+| **120 s +** | 2 | 61 | 12.6% | **88** | **59.5%** |
+
+Two-thirds of everything the feed handed this channel in August went to three clips that returned
+three to seven seconds each. The two videos that returned 85–90 seconds per view got an eighth of
+the distribution between them.
+
+The feed sizes the next test from what the last one returned. August opened with a 17-second clip
+that took 257 views and gave back fourteen minutes, and the channel spent the rest of the month
+being tested at 20–40 views a video. **The sub-35s clips did not just fail their own tests — they
+set the allocation the good videos were then judged inside.**
+
+*Stated as the correlation it is:* these are lifetime per-video figures for videos published
+Aug 2–7, read against an Aug 1–9 window, so they are near-identical but not strictly the same
+quantity. And "the feed sizes the next test from the last" is the standard account of Shorts
+ranking, not something this dataset proves on its own. What the dataset does show is the
+sequence, and the sequence is unambiguous.
+
+## 4. The retention curves — the mechanism, and the correction to rule 0
+
+Never pulled before. Two videos, both of which the feed gave ~1,200 views, and which returned
+36 subscribers and 2 subscribers respectively.
+
+| Elapsed | `riQ7dLSnogo` 179s | `UpCMyfIOftA` 46s |
+|---|---|---|
+| 1% | 1.495 | 1.271 |
+| 10% | 0.971 | **1.145** |
+| 20% | 0.829 | 0.747 |
+| 40% | **0.740** | 0.580 |
+| 60% | 0.700 | 0.445 |
+| 80% | 0.619 | 0.357 |
+| 100% | **0.495** | **0.282** |
+| **peak relative retention** | **0.932** (42%) | **0.499** (50%) |
+
+`relativeRetentionPerformance` is YouTube's own normalisation against comparable videos.
+`riQ7dLSnogo` sits at the **93rd percentile**. `UpCMyfIOftA` sits at the **50th** — dead average,
+on a video this document called the best on the channel for three weeks.
+
+**Both hooked.** Both open above 1.0; `UpCMyfIOftA` is actually *still* above 1.0 at 10% where the
+winner has already dipped below. The hook was never the problem, and every pass that speculated
+about frame one and line one was chasing the wrong three seconds.
+
+What separates them is what happens next. The winner **plateaus** — 0.83 → 0.74 → 0.70 across the
+whole middle of the video, a 40-percentage-point stretch where it barely sheds anyone — and
+finishes with half the audience still there. The loser falls off a cliff at 11% and never
+recovers, finishing at 0.28.
+
+So rule 0 needs restating. **Length is the proxy. The plateau is the thing.** A 46-second clip
+that front-loads its payoff has nothing to hold with after second five, which is why the sub-35s
+band returns literal zeroes — not because 35 seconds is a magic number, but because no format that
+short on this channel has ever had a middle. The rule stays *nothing under 120 seconds*, because
+runtime is the precondition for having a middle at all. But a 200-second video that front-loads
+its payoff will fail exactly the same way, and the slate can no longer treat length as sufficient.
+
+## 5. What nexlev adds that owner analytics cannot: the short lane is structurally closed
+
+Two searches, both public-tier:
+
+- **vidiq outliers** — `islamic finance halal money`, Shorts, last three months, under 200K subs.
+  Returns devotional and reminder content (`Halal vs Haram | Islamic Reminder`, 9 s;
+  `Yes last one is halal!!`, 41 s) at title-relevance scores of **0.04–0.05**. There are no
+  breakout Islamic-finance *mechanism* Shorts in the window.
+- **nexlev faceless outliers** — semantic query on Islamic finance / halal investing / riba,
+  Shorts, outlier score ≥ 2. Average similarity 0.57, and the actual results are soccer
+  highlights, Reddit stories, House of the Dragon lore and 4chan explainers. **The curated
+  faceless-outlier database contains no halal-money Shorts at all.**
+
+That reconfirms `next-slate.md` finding 3 — the faceless × halal-money intersection is unoccupied
+— three weeks later and from a different query. But the more useful result is what the 24
+outliers look like sorted by length:
+
+| Length | What wins there |
+|---|---|
+| 8–33 s | Soccer goals, a litchi timelapse, underwater welding footage, a fruit-sugar comparison |
+| 100–172 s | Reddit stories, GoT lore, cooking-history skits, Dave Ramsey podcast clips |
+
+**Every sub-35-second outlier is visual spectacle. Every 100s+ outlier is narrative.** Finance %
+Decoded is flat-vector explainer animation — it has no spectacle to sell, and its only retention
+mechanism is narrative tension, which needs runtime to exist.
+
+This is the first independent confirmation of rule 0 from data that has nothing to do with this
+channel. The sub-35s lane is not underperforming for Finance % Decoded; it is **structurally
+closed to it**, and the three zero-like clips were competing in a format the channel cannot make.
+
+### The size comparison worth keeping, and the one worth not over-reading
+
+**ClipJar** (`@ClipJars`) is the closest natural comparison available: **190 subscribers, 23
+Shorts** — against this channel's 193 and 23 — in personal finance. Its lifetime views are
+**1.56M against 8,816**, and its best Short is **1M views at 129 seconds**.
+
+What that establishes is narrow but real: **a 190-subscriber, 23-video personal-finance Shorts
+channel can take 1M views on one upload.** The ceiling is not the subscriber count, and it is not
+three weeks of catalogue.
+
+What it does **not** establish is a title change, and the temptation is worth naming because this
+document has fallen for it before. ClipJar's titles are all human stakes and a number — *MAN MAKES
+200K BUT CANT AFFORD BILLS*, *HIS BOSS HASNT PAID HIM IN OVER 20 WEEKS* — against this channel's
+mechanism-and-parenthetical house style. But it clips someone else's podcast, so its raw material
+is conflict between real people, which this channel does not have and should not fake. And this
+channel's own numbers contradict the inference directly: the mechanism-and-parenthetical titles
+are on its **best-converting** videos — `riQ7dLSnogo` 2.92% subscribers, `V8HYpTHy2aU` 2.65%,
+`ebIU6OHJ-jg` 2.40%, `OXIP3EJROQk` 2.27%. The title formula is not the defect. Leave it alone.
+
+## 6. Where the August traffic actually came from
+
+`insightTrafficSourceType`, Aug 1–9:
+
+| Source | Views | Seconds/view |
+|---|---|---|
+| SHORTS feed | 394 | 19.0 |
+| YT_SEARCH | **45** | 18.7 |
+| YT_CHANNEL | 28 | 32.1 |
+| EXT_URL | 17 | 28.2 |
+| YT_OTHER_PAGE | 17 | 3.5 |
+| RELATED_VIDEO | 4 | 90.0 |
+| SUBSCRIBER feed | **3** | — |
+| NOTIFICATION | 3 | 60.0 |
+
+Two things worth noting. **Search is 8.8% of August traffic** — 45 views the channel did not have
+to be served to get, on a catalogue of 23 Shorts, which is a small but genuine standing asset and
+the only surface that does not decay after 72 hours. And the **SUBSCRIBER feed delivered 3 views
+against 193 subscribers**, which looks alarming until it is read against §1: subscribers took 77
+views in the window, they just took them *through the Shorts feed* rather than the subscriptions
+tab. The subscriber base is not dead. It is simply not a distribution channel.
+
+*(Traffic-source rows total 511 against the 586 in the subscribedStatus pull — the two queries ran
+minutes apart against a window that is still reporting. Treat both as accurate to ±15% at the
+window edge, and neither conclusion depends on the difference.)*
+
+## 7. Corrections to the sixth pass
+
+| Claim | Status |
+|---|---|
+| "Nothing under 120 seconds" — length is the variable | **Refined, not retired.** Length is the proxy; the plateau is the causal thing. The rule stands as a floor because runtime is the precondition for a middle, but it is now insufficient on its own — see rule 0 in `next-slate.md`. |
+| `JB6Q_7IE9Jo` "resolved at zero", the format test failed | **Wrong.** It holds 84.9 s/view, second-best on the channel. It was read on views and likes at a 41-view test, where the channel's ~5% like rate predicts two likes and zero is inside the noise — as the sixth pass itself noted, then concluded against anyway. |
+| The Aug 1–9 subscribedStatus pull "does not reconcile" | **Resolved.** It reconciles on `estimatedMinutesWatched`; the July control confirms it. The unreliable columns were `averageViewDuration`/`averageViewPercentage`, exactly as suspected. |
+| "The feed has cooled on the channel generally" (fourth/fifth pass, carried into the sixth) | **Retired.** The subscribed cohort's hold time is unchanged. What cooled is the size of the cold test, and §3 shows what spent it. |
+
+## 8. The unshipped asset, audited against the winner's curve
+
+`pension-scene-pack.txt` is written, unrendered, and was slated for **Aug 9 03:00 PT — this
+morning**. It did not ship. The channel's last upload was Aug 7 18:00Z, **2.1 days ago**, and
+`--inventory` reports nothing queued.
+
+Two things the new retention data says about it, which could not have been said before today:
+
+1. **It runs 3:16 (196 s), not the ~165 s recorded in `next-slate.md`.** Well inside the 120s+
+   band and longer than `riQ7dLSnogo`; the discrepancy is in the slate note, not the pack.
+2. **Its strongest moment is in the wrong place.** The slate names the glide-path reveal
+   (scene 34) as "the strongest asset in the pack". It sits at **2:10–2:16 — 66% through**. On
+   `riQ7dLSnogo`'s curve, 66% is where audience retention has fallen to 0.68 and relative
+   retention has been declining for twenty-four percentage points; the winner's relative
+   retention **peaks at 42%**. The pension pack's 42% mark is scene 17–18 (1:00–1:10), currently
+   a thumbnail candidate and a restatement.
+
+   The recommendation is to **seed the glide path at ~1:20 and pay it off at 2:10**, rather than
+   introducing it at 2:10 — the reveal keeps its weight, but the audience is given the reason to
+   still be there at the point where the winner's curve says they are deciding.
+
+   This is one positive-control curve and should be held that lightly. It is also the only
+   positive control the channel has, and the structural point stands without it: do not put the
+   best thing in the video two-thirds of the way in.
+
+## What to watch, and what to do
+
+**Do:** render and ship the pension pack. It is the only produced asset, it is in the right length
+band, and the channel is dark. Everything in §2 says the last two long Shorts were the best work
+here on the metric that matters — the thing they lacked was a test large enough to register.
+
+**Watch — and change what you watch it on.** Views and likes both failed this pass: views ranked a
+3.3 s/view clip first, and likes called an 84.9 s/view video a zero at a 41-view test. At the test
+sizes this channel is currently getting, neither is readable.
+
+- **Read `estimatedMinutesWatched ÷ views` at 72 hours.** Above ~45 s/view is winner territory
+  (`riQ7dLSnogo`, 69.5). Under ~15 s/view is a failed test regardless of view count.
+- **Read `relativeRetentionPerformance` at 40%.** Above ~0.85 is the plateau the winner has.
+  Under ~0.55 is the cliff `UpCMyfIOftA` has, and no title will fix it.
+- Both require the vidiq connector, which is owner-level and free. `engagement()` remains the
+  public-data fallback and still works, but it cannot see either of these.
+
+**The five-upload decision rule from the first pass is now spent and should be closed out.** It
+said: five new-subject uploads under ~50 v/day → buy private analytics. The uploads happened, the
+rule fired, the analytics were bought — and they were free. It has done its job and there is no
+version of it left to run. What replaces it is the two thresholds above.

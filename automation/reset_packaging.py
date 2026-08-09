@@ -211,6 +211,7 @@ def inventory(yt):
     cadence(shorts)
     length_vs_views()
     engagement()
+    allocation()
     return unmanaged
 
 
@@ -259,6 +260,62 @@ def engagement():
         for secs, views, likes, when, vid, title in sorted(cold, key=lambda r: -r[1]):
             print(f"    {vid}  {secs:>4}s  {views:5d} views  {likes:3d} likes  "
                   f"{100 * likes / views:5.2f}%  {title[:44]}")
+
+
+def allocation(days=None):
+    """What share of the feed's recent distribution went to videos below the length floor.
+
+    The seventh pass (2026-08-09) found the mechanism behind the August collapse, and it is
+    not per-video: of the 484 views the channel's own August uploads received, **three
+    sub-35-second clips took 317 of them (65.5%) and returned 13.5% of the watch time**. The
+    feed sizes the next test from what the last one gave back, so those clips did not merely
+    fail their own tests — they set the allocation every later upload was judged inside. The
+    two 120s+ uploads that followed hold 90.0 and 84.9 seconds per view, the best on the
+    channel, and were tested on 20 and 41 views.
+
+    That is a channel-level failure and no per-video check can see it. This one can, from
+    public data: if most of a fortnight's views landed on sub-floor uploads, the next test
+    is already shrinking whatever ships next.
+
+    Honest limit: views are public, watch time is not. The share below is of *views*, which
+    understates the damage — the sub-floor band takes a far larger share of views than of
+    the watch time that actually drives the next allocation. Pull
+    `estimatedMinutesWatched` by video from vidiq for the real split.
+    """
+    if not ENGAGEMENT:
+        return
+    days = ALLOCATION_WINDOW_DAYS if days is None else days
+    now = datetime.now(timezone.utc)
+    recent = [(s, v) for s, v, _, w, _, _ in ENGAGEMENT
+              if (now - parse_ts(w)).total_seconds() / 86400 <= days]
+    total = sum(v for _, v in recent)
+    if not recent or not total:
+        return
+
+    below = [(s, v) for s, v in recent if s < MIN_SHORT_SECONDS]
+    below_views = sum(v for _, v in below)
+    share = below_views / total
+
+    # Three bands, matching the seventh-pass table in channel-reset.md §3. The
+    # sub-35s band is called out separately because it is the one that has never
+    # returned a like or a subscriber on this channel.
+    bands = [("<35s", lambda s: s < 35),
+             (f"35-{MIN_SHORT_SECONDS}s", lambda s: 35 <= s < MIN_SHORT_SECONDS),
+             (f">={MIN_SHORT_SECONDS}s", lambda s: s >= MIN_SHORT_SECONDS)]
+    print(f"\n== Distribution share, last {days} days ({len(recent)} public Short(s)) ==")
+    for name, pred in bands:
+        rows = [(s, v) for s, v in recent if pred(s)]
+        views = sum(v for _, v in rows)
+        print(f"  {name:<9} n={len(rows):<3} {views:5d} views  "
+              f"{100 * views / total:5.1f}% of recent distribution")
+
+    if share > ALLOCATION_ALERT:
+        print(f"\n  ! {100 * share:.0f}% of the last {days} days of distribution went to "
+              f"uploads under the {MIN_SHORT_SECONDS}s floor.")
+        print("  This is the August failure repeating: sub-floor clips absorb the feed's")
+        print("  test budget, return almost no watch time, and shrink the test the next")
+        print("  upload gets. Ship nothing under the floor until this is back under "
+              f"{100 * ALLOCATION_ALERT:.0f}%.")
 
 
 def length_vs_views():
@@ -326,6 +383,12 @@ UNREVIEWED_WINDOW_DAYS = 7
 # Shorts-feed distribution fell 17x the following day and has not recovered.
 MIN_LIKE_RATE = 0.02
 MIN_SHORT_SECONDS = 120
+
+# allocation() window, and the share of recent views landing on sub-floor uploads
+# that trips the alert. August 2026 ran at 65.5% and the two good uploads either
+# side of it were tested on 20 and 41 views; half is already well into the failure.
+ALLOCATION_WINDOW_DAYS = 14
+ALLOCATION_ALERT = 0.50
 
 
 def cadence(shorts):

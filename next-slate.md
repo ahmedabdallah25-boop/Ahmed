@@ -89,7 +89,9 @@ the next entry, and the formula-perfect third inflation video did 43 views.
 > upload metadata are written. Final title:
 > **`Is Your Pension Halal? (You Never Picked What It Buys)`** — same shape as Part 15's
 > `Is Paper Gold Halal? (Most People Own a Promise)`, so the only variable moving is the
-> subject. Target publish **2026-08-09, 03:00 PT**. ~165s, inside the 133–180s band.
+> subject. Target publish **2026-08-09, 03:00 PT**. **Runtime is 3:16 (196 s)** — the "~165s"
+> recorded here previously was wrong; the pack's own scene list ends at 3:16. Still well inside
+> the 120s+ band and longer than `riQ7dLSnogo` (179 s), which is fine.
 >
 > **The UK-shaped problem in rule 0.5 is resolved, not ignored.** The pack is built around
 > the **default fund**, not around auto-enrolment. The enrolment mechanism genuinely differs
@@ -105,6 +107,18 @@ the next entry, and the formula-perfect third inflation video did 43 views.
 > best video (`Why is FOREX considered HARAM?`, 221K). It is staged as **Bilal walking down
 > the glide path toward the faceless grey clerk** — the argument carried by the picture
 > rather than the voiceover.
+>
+> ⚠️ **Re-cut before rendering: the reveal is in the wrong place.** Scene 34 sits at
+> **2:10–2:16, 66% through**. Rule 0a says the strongest reveal belongs at ~40% of runtime,
+> because that is where `riQ7dLSnogo`'s relative retention peaks (0.932) — by 66% the winner
+> is already down to 0.68 and declining. The pension pack's 40% mark is scene 17–18
+> (1:00–1:10), currently a thumbnail candidate and a restatement.
+>
+> **Seed the glide path at ~1:20 and pay it off at 2:10.** The reveal keeps its full weight;
+> the audience is given a reason to still be present at the point the curve says they are
+> deciding. This is one positive-control curve and should be held that lightly — but the
+> structural point survives without it: do not put the best thing in the video two-thirds of
+> the way in.
 >
 > **Rewritten 2026-08-08 for the flat-vector house cast** (Kareem, Adam, Sami, Bilal, and the
 > Institution device set). The pack was first drafted for 3D faceless low-poly and its
@@ -224,6 +238,47 @@ Mortgages" disambiguates it.
    audience did with it, and sizes the next test accordingly. A 16-second clip that ends by
    pointing at another video gives it nothing to read. **Views measure what YouTube gave you;
    likes and subscribers measure what you did with it.** Package for the second.
+
+   **⚠️ Refined 2026-08-09 (seventh pass) — length is the proxy, not the cause.** Rule 0 is
+   still right and the floor still holds, but the reason above is incomplete and acting on it
+   alone will produce a 200-second video that fails identically. What the feed reads is
+   **hold time**, and runtime only buys you the *chance* to earn it:
+
+   - The channel's two most recent 120s+ Shorts hold **90.0 and 84.9 seconds per view** —
+     better than `riQ7dLSnogo`'s 69.5, the best video it has ever published. They were tested
+     on 20 and 41 views, which is why they looked like failures on views and likes.
+   - The sub-35s clips hold **3.3, 5.0 and 7.5 seconds per view**. That is what a zero like
+     rate looks like from the inside.
+   - Nexlev's faceless-outlier database says the same thing from outside this channel: every
+     sub-35s outlier in it is *visual spectacle* (soccer goals, timelapses, welding footage);
+     every 100s+ outlier is *narrative*. This channel has no spectacle to sell, so the short
+     lane is structurally closed to it — not merely unprofitable.
+
+0a. **Every Short must have a plateau, and the reveal goes at ~40%.**
+   From the two retention curves in `channel-reset.md` §4 — the first ever pulled for this
+   channel. Both videos hooked; only one held.
+
+   | Elapsed | `riQ7dLSnogo` (1,231 views, **36 subs**) | `UpCMyfIOftA` (1,209 views, **2 subs**) |
+   |---|---|---|
+   | 1% | 1.495 | 1.271 |
+   | 10% | 0.971 | 1.145 |
+   | 40% | **0.740** | 0.580 |
+   | 60% | 0.700 | 0.445 |
+   | 100% | **0.495** | 0.282 |
+   | peak relative retention | **0.932** (93rd pct) | 0.499 (50th pct) |
+
+   `UpCMyfIOftA` was *still above 1.0 at 10%* — its hook beat the winner's. It then fell off a
+   cliff at 11% and never recovered. **Stop optimising frame one and line one; they already
+   work.** What the winner has is a 40-percentage-point stretch across the middle where it
+   sheds almost nobody, and it finishes with half the audience still watching.
+
+   Concretely, for every pack from here:
+   - **Target ≥0.70 audience watch ratio from 20% to 60%.** That is the plateau. If the
+     script has nothing to say across that stretch, it does not have a video yet.
+   - **Put the strongest reveal at ~40% of runtime**, where the winner's relative retention
+     peaks — not at the end. Seed it earlier and pay it off later; do not *introduce* it late.
+   - **Never front-load the payoff.** A clip that gives everything away by second five has
+     nothing left to hold with, which is the whole of what went wrong with `UpCMyfIOftA`.
 
 0.1 **~~Never let the Shorts gap exceed ~1 day.~~ Falsified — do not plan around it.**
    The claim was that every 700+ view Short sits inside a run of sub-1.5-day gaps. The two
