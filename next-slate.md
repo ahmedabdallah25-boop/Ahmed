@@ -205,16 +205,38 @@ Mortgages" disambiguates it.
 
 ## Production rules for this slate
 
-0. **Never let the Shorts gap exceed ~1 day, and never publish two inside 12 hours.**
-   This outranks every other rule here, including which subject you pick. Sorted by type
-   rather than by date, every 700+ view Short on this channel sits inside a run of
-   sub-1.5-day gaps. Then Shorts went dark for **9.7 days** while the three long-form
-   videos were made, and the first Short back did **39**. Cadence resumed two days later
-   and the next did **227** — a 5.8x recovery with no change of subject. Four hours after
-   that one, a second Short went out the same day and took **43**, splitting one audience
-   test in half. Long-form did not merely waste effort on 7 views; it took the upload slot
-   with it, and that is the expensive part. `--inventory` now reports blackouts, same-day
-   doubles, and how many days of runway are left in the queue.
+0. **Nothing under 120 seconds. Ever.**
+   This outranks every other rule here, including which subject you pick. Measured
+   2026-08-09 against owner analytics — exact like and subscriber counts, not estimates:
+
+   | Length | n | Views | Like rate | Sub rate |
+   |---|---|---|---|---|
+   | under 35 s | 3 | 315 | **0.00%** | **0.00%** |
+   | 35–60 s | 1 | 1,209 | 0.91% | 0.17% |
+   | 60–120 s | 8 | 1,093 | 5.12% | 0.91% |
+   | **120 s +** | 9 | 6,112 | **4.96%** | **2.19%** |
+
+   The three sub-35-second clips took 315 views between them and returned **zero likes and
+   zero subscribers**. `kOkfpCHeURw` alone took **257 views and returned 0 and 0** — and was
+   called the best recent performer for six days because it was sorted by view count.
+
+   The mechanism, from `channel-reset.md` §4: the feed hands out a test, reads what the
+   audience did with it, and sizes the next test accordingly. A 16-second clip that ends by
+   pointing at another video gives it nothing to read. **Views measure what YouTube gave you;
+   likes and subscribers measure what you did with it.** Package for the second.
+
+0.1 **~~Never let the Shorts gap exceed ~1 day.~~ Falsified — do not plan around it.**
+   The claim was that every 700+ view Short sits inside a run of sub-1.5-day gaps. The two
+   biggest do not: `riQ7dLSnogo` (1,230 views) followed a **3.26-day** gap, and
+   `UpCMyfIOftA` (1,209) followed a **3.36-day** gap and had a 9.7-day gap after it — it is
+   the most isolated upload in the catalogue. Grouped by the gap that preceded them, Shorts
+   published inside the old window median **9.8 v/day**; Shorts published after a >1.5-day
+   gap median **20.5 v/day**.
+
+   Ship often because an unshipped video cannot be tested, not because the gap itself is
+   read. And **never publish two inside 12 hours** — that one survives, weakly: the second of
+   the Aug 2 pair took 43 against the first's 227. `--inventory` still reports blackouts,
+   same-day doubles, and queue runway.
 0.5 **Pick one currency per Short, and default to $.** The audience is UK *and* US; the
    channel is currently split between them mid-catalogue — `£1,461 a month` on one Short,
    `$359,000` on another — and this slate is £-heavy in frame one (`£22.50`, `£42,000`,
@@ -250,4 +272,12 @@ Mortgages" disambiguates it.
    four sits inside the July 11–14 daily-cadence streak. **Length is noise; cadence is the
    signal.** That is rule 0, and it is the only production rule here with real evidence
    behind it.
+
+   **⚠️ Superseded 2026-08-09.** Both halves of that conclusion were wrong, and both were
+   wrong for the same reason: views/day was the only metric available, and on this channel
+   views/day does not measure what the feed responds to. Against exact like and subscriber
+   counts, **length discriminates sharply** — the sub-35s band returns literal zeroes — and
+   **cadence does not discriminate at all** (rule 0.1). Read rule 0 and `channel-reset.md`
+   §3–5 instead. The `>90s` bucket looked noisy here only because it pooled 133–180 s
+   winners with 16–27 s funnel clips that this table's buckets could not separate.
 6. **Do not judge an upload before 72 hours.** A Short at 8 views on its first morning has not been tested yet. Treating it as a failure is how a working channel gets torn up mid-flight.

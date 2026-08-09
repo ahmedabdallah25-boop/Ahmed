@@ -660,3 +660,174 @@ longer competes with itself on the same query, and that the failure is now recor
 rediscovered. The upstream cause is unchanged and is stated in section 6 above: uploads are
 reaching the feed without any pre-publish review, which is the only packaging lever on this
 channel with a measured non-zero return.
+
+---
+
+# Sixth pass — 2026-08-09, 17:23 UTC (10:23 PT)
+
+1.42 days after the fifth pass. **This pass is different from the five before it: the private
+analytics arrived.** The channel is connected to a vidiq account
+(`ahmed.buyenga@gmail.com`), which authenticates as the channel owner and returns the
+YouTube Analytics reports this document has been asking for since 2026-08-03 — traffic
+sources, per-video watch time, subscribers gained per video, and the subscribed/unsubscribed
+split. Nexlev remains on the free plan and still returns `ACCESS DENIED` for every `get_my_*`
+tool; that is unchanged and is not the route.
+
+**Three conclusions in this file are now wrong and are corrected below.** They were the best
+available reading of public view counts. They did not survive contact with the real numbers.
+
+## The one-paragraph version
+
+The channel does not have a topic problem, a title problem, or a cadence problem. It has one
+event. Between **July 11 and July 21** the Shorts feed handed this channel **6,881 views**;
+between **August 1 and August 9** it handed it **394**. That is the whole story, and the
+reason it happened is visible in the exact like and subscriber counts: the videos that earned
+that run were **130–180 seconds** and returned **~5% likes and ~2.2% subscribers per view**,
+and the channel then spent its next four upload slots on **44-, 16-, 24- and 27-second clips
+that returned 0.9%, 0.0%, 0.0% and 0.0%**. The feed tested the short clips, got nothing back,
+and stopped testing. Craft was never the problem and is not the fix. Length and payoff are.
+
+---
+
+## 1. The distribution collapse, measured
+
+`insightTrafficSourceType`, owner analytics, same report both windows:
+
+| Window | Shorts-feed views | Minutes watched | Seconds watched **per view** |
+|---|---|---|---|
+| Jul 11 – Jul 22 | **6,881** | 5,263 | **45.9 s** |
+| Aug 1 – Aug 9 | **394** | 125 | **19.0 s** |
+
+**17.5x fewer views, and each one held for 2.4x less time.**
+
+A caution that matters for anyone re-reading these reports: for Shorts, the API's
+`averageViewDuration` and `averageViewPercentage` columns **do not reconcile** with
+`estimatedMinutesWatched` — the Shorts feed measures view duration on a different basis, and
+taking those columns at face value produces figures above 100% and a flatly wrong conclusion
+that retention improved. Only `views`, `estimatedMinutesWatched`, `likes` and
+`subscribersGained` are exact. Every number in this pass uses those four.
+
+## 2. The channel's entire audience is one ten-day event
+
+Daily views, owner analytics:
+
+```
+Jul 3-10    18   20  120   52  116    4    2          <- baseline before the run
+Jul 11-14  171 1199 1935 1951                         <- the run
+Jul 15-21  121  304   53  477  370   42 1179
+Jul 22-31   25   20    2    4    8    5    4   5  16  13   <- baseline again
+Aug 1-6     35  249  102   40   58   32
+```
+
+The run is bounded on both sides by the same 2–120 views/day band. **July 11–21 was an
+anomaly, not a plateau that was subsequently lost.** Roughly 8,000 of the channel's 8,816
+lifetime views come from those eleven days.
+
+This retires the framing of the first five passes. There was no "cooling". There was one
+breakout — `riQ7dLSnogo` on Jul 11 — that pulled the catalogue behind it for ten days.
+
+## 3. What actually separates a winner from a loser here
+
+Exact counts, all public Shorts, Jul 1 – Aug 9. Length derived from the owner-analytics
+duration/percentage ratio, which is internally consistent and matches the durations already
+recorded in this repo.
+
+| Length band | n | Views | Likes | Like rate | Subs | Sub rate |
+|---|---|---|---|---|---|---|
+| under 35 s | 3 | 315 | **0** | **0.00%** | **0** | **0.00%** |
+| 35–60 s | 1 | 1,209 | 11 | 0.91% | 2 | 0.17% |
+| 60–120 s | 8 | 1,093 | 56 | 5.12% | 10 | 0.91% |
+| **120 s +** | 9 | 6,112 | 303 | **4.96%** | 134 | **2.19%** |
+
+**The three sub-35-second clips took 315 views between them and produced zero likes and zero
+subscribers.** Not a low rate — zero, across all three. `kOkfpCHeURw` alone took **257 views
+and returned 0 likes and 0 subscribers**, and four passes of this document called it the best
+recent performer because it was sorted by view count.
+
+Meanwhile `V8HYpTHy2aU` took 112 views and returned 11 likes and 3 subscribers.
+
+**Views measure what YouTube gave you. Likes and subscribers measure what the audience did
+with it, and that is what decides the size of the next test.** This document has been reading
+the first and inferring the second.
+
+## 4. `UpCMyfIOftA` is the hinge, and it was misread as the best video on the channel
+
+| | `riQ7dLSnogo` | `UpCMyfIOftA` |
+|---|---|---|
+| Published | Jul 11 | **Jul 21** |
+| Length | 179 s | **44 s** |
+| Views | 1,230 | 1,209 |
+| Likes | 64 — **5.20%** | 11 — **0.91%** |
+| Subscribers | **36 — 2.93%** | **2 — 0.17%** |
+
+The feed gave these two videos the same size of audience. One returned 36 subscribers, the
+other returned 2.
+
+`UpCMyfIOftA` published **Jul 21 19:00Z**. Daily views ran **1,179 on Jul 21 and 25 on Jul
+22**, and the channel has not had a comparable allocation in the nineteen days since.
+
+Stated honestly: this is one event and the causal direction cannot be proven from it. But it
+is the only video in the catalogue whose conversion is wildly out of line with its
+distribution, the collapse is same-day, and the length band it belongs to has since returned
+literal zeroes three more times. It is the best-supported account available, and unlike
+topic exhaustion it makes a prediction that can be tested with the next upload.
+
+`length_vs_views()` has been ranking this video **first on the channel** at 63.9 views/day
+across every pass. On the metric that governs distribution it is the worst video the channel
+has ever published.
+
+## 5. Corrections to earlier passes
+
+| Claim | Where | Status |
+|---|---|---|
+| "Topic exhaustion is the best-supported explanation left" | first pass | **Retired.** Inflation ran 1K → 925 → 43 because entries two and three sat on either side of the collapse. `JB6Q_7IE9Jo` — a never-covered subject in the niche's proven format — finished at 40 views and **0 likes**. Subject is not the variable. |
+| "Cadence is the signal" — rule 0, `next-slate.md` | first pass, restated in all five | **Falsified on this channel's own data.** The supporting claim was that "every 700+ view Short sits inside a run of sub-1.5-day gaps". The two biggest videos do not: `riQ7dLSnogo` (1,230) followed a **3.26-day** gap and `UpCMyfIOftA` (1,209) followed a **3.36-day** gap with a 9.7-day gap after it. Grouped by the gap that preceded them, Shorts published inside rule 0's window median **9.8 v/day**; Shorts published after a >1.5-day gap median **20.5 v/day**. |
+| "The format test won its head-to-head" | fifth pass | **Resolved at zero.** `JB6Q_7IE9Jo` took **+0 views in the 34 hours** to this pass and holds 0 likes on 41 views. The ~2.2x margin over `4gRoTTZNnFE` was two low numbers next to each other. |
+| "Buy one month of private analytics — the highest-value action available" | fourth and fifth passes | **Done, and it was right.** Every finding in this pass required data no public tool exposes. It cost nothing in the end: the vidiq connection already existed. |
+
+Long-form is also now settled rather than argued: `WJ_UhugwA9U` has **10 views at 7.22%
+average view percentage**, `bvZ3NdPKsus` has **1 view**. The pause stands.
+
+## 6. What was changed this pass
+
+| # | Change | Where |
+|---|---|---|
+| 1 | **`inventory()` now flags public uploads that never passed through the config.** The old check looked at non-public videos only — and a Studio upload is public the moment it exists, so the four unreviewed Shorts of Aug 5–7 were invisible to it and had to be found by hand. This is the detector for the upstream cause the fifth pass named. | `reset_packaging.py` |
+| 2 | **`engagement()` added** — like rate bucketed by length, plus a named list of every public Short under a 2% like rate. Like counts are public and exact, so the metric that actually governs distribution is now readable on every pass without a paid plan. | `reset_packaging.py` |
+| 3 | `hold` cleared of `JB6Q_7IE9Jo` and `ebPfkBjTbSA`, both past 72 h and both dead; `RpFWP1a7Huk` and `BllkNdhDu-k` still held to Aug 10 | `reset.json` |
+| 4 | Rule 0 rewritten around the measured finding; the 120-second floor added as rule 0 | `next-slate.md` |
+
+**No packaging was written to any live video, and none should be.** The lever this document
+has spent five passes refining — retitling published Shorts — has now been measured at zero
+three separate times, and this pass explains why: the feed is not re-reading titles, it is
+reading what the audience did.
+
+## 7. The open risk, unchanged and now worse
+
+**The channel is dark and the queue is empty.** Last upload `BllkNdhDu-k`, Aug 7 18:00Z —
+**2.0 days ago**. `--inventory` reports `NOTHING QUEUED`, 26 owned videos, nothing private or
+scheduled behind the feed. The channel description promises *"A new mechanism decoded every
+day."*
+
+`Is Your Pension Halal? (You Never Picked What It Buys)` was slated in `next-slate.md` for
+**Aug 9 03:00 PT — this morning** — and did not ship. The script, 46 scenes, image prompts and
+upload metadata are written in `pension-scene-pack.txt`; no video has been rendered against
+them. At ~165 seconds it sits in the 120s+ band, which is the correct band.
+
+Cadence is no longer the headline — section 5 retires that — but shipping nothing is still
+shipping nothing, and there is a produced-and-packaged asset one render away.
+
+## How to read the next five uploads
+
+Stop reading views. Read **likes per 100 views**, and read it at 72 hours.
+
+- **Above ~4%** — the upload converted like the July winners did. That is the input the feed
+  escalates on, and it is the only number that has ever preceded a run on this channel.
+- **Under ~2%** — the test failed regardless of how many views it collected. Do not retitle
+  it; that is measured at zero. Ship the next one longer and with a harder payoff.
+- **Zero likes at 20+ views** — the format is wrong, not the subject. Every sub-35-second clip
+  this channel has published sits here.
+
+**The single change with evidence behind it: nothing under 120 seconds.** Nine videos over
+120 s returned 134 subscribers. Twelve videos under 120 s returned 12, and the four shortest
+returned none at all.

@@ -148,10 +148,12 @@ def inventory(yt):
     """
     managed = {t["video_id"] for t in CFG["scheduled"]}
     managed |= {t["video_id"] for t in CFG["repackage"]}
+    managed |= {t["video_id"] for t in CFG.get("_published_scheduled_archive", [])}
     managed |= PROTECTED | HELD
 
+    now = datetime.now(timezone.utc)
     ids = owned_video_ids(yt)
-    rows, unmanaged, shorts = [], [], []
+    rows, unmanaged, unreviewed, shorts = [], [], [], []
     for start in range(0, len(ids), 50):
         batch = ids[start:start + 50]
         items = yt.videos().list(
@@ -163,14 +165,27 @@ def inventory(yt):
             # publishAt is only set on a private video with a scheduled release.
             when = status.get("publishAt") or item["snippet"].get("publishedAt", "")
             secs = iso8601_seconds(item["contentDetails"].get("duration", ""))
-            views = int(item.get("statistics", {}).get("viewCount", 0) or 0)
+            stats = item.get("statistics", {})
+            views = int(stats.get("viewCount", 0) or 0)
+            likes = int(stats.get("likeCount", 0) or 0)
             rows.append((when, privacy, item["id"], item["snippet"].get("title", "")))
             if secs <= 180:
                 shorts.append((when, item["id"]))
                 if privacy == "public":
                     LENGTHS.append((secs, views, when, item["id"]))
+                    ENGAGEMENT.append((secs, views, likes, when, item["id"],
+                                       item["snippet"].get("title", "")))
             if privacy != "public" and item["id"] not in managed:
                 unmanaged.append((when, privacy, item["id"], item["snippet"].get("title", "")))
+            elif privacy == "public" and item["id"] not in managed and when:
+                # Published without ever passing through this config. The pre-publish
+                # review is the ONLY packaging lever measured to have a non-zero
+                # return on this channel, and on 2026-08-05..07 four Shorts reached
+                # the feed without it — a gap no previous pass could see, because
+                # this check used to look at non-public videos only and a Studio
+                # upload is public the moment it exists.
+                if (now - parse_ts(when)).total_seconds() / 86400 <= UNREVIEWED_WINDOW_DAYS:
+                    unreviewed.append((when, item["id"], item["snippet"].get("title", "")))
 
     print(f"  {len(rows)} owned videos\n")
     for when, privacy, vid, title in sorted(rows, reverse=True):
@@ -185,13 +200,65 @@ def inventory(yt):
     else:
         print("\n  Every non-public video is covered by reset.json.")
 
+    if unreviewed:
+        print(f"\n  ! {len(unreviewed)} PUBLISHED IN THE LAST {UNREVIEWED_WINDOW_DAYS} DAYS "
+              f"WITHOUT PRE-PUBLISH REVIEW:")
+        for when, vid, title in sorted(unreviewed, reverse=True):
+            print(f"    {vid} ({when}) {title[:60]}")
+        print("  These reached the feed with no packaging pass. Their tests cannot be")
+        print("  re-run — record them in reset.json so the next upload is caught earlier.")
+
     cadence(shorts)
     length_vs_views()
+    engagement()
     return unmanaged
 
 
 # Filled by inventory(); (seconds, views, published_at, video_id) per public Short.
 LENGTHS = []
+
+# Filled by inventory(); (seconds, views, likes, published_at, video_id, title).
+ENGAGEMENT = []
+
+
+def engagement():
+    """Like rate per view, bucketed by length — the public proxy for feed conversion.
+
+    Views measure what YouTube gave you. Likes measure what the audience did with
+    it, and that is what decides whether the next video gets a bigger test. On
+    2026-08-09 this channel's owner analytics showed the two are almost unrelated
+    here: `kOkfpCHeURw` took 257 views and returned 0 likes and 0 subscribers,
+    while `V8HYpTHy2aU` took 112 views and returned 11 likes and 3 subscribers.
+    Sorting by views alone had called the first a success for six days.
+    """
+    if not ENGAGEMENT:
+        return
+    now = datetime.now(timezone.utc)
+    rated = [(s, v, l, w, i, t) for s, v, l, w, i, t in ENGAGEMENT
+             if v >= 20 and (now - parse_ts(w)).total_seconds() / 86400 >= 3]
+    if not rated:
+        return
+
+    print("\n== Like rate by length (public, past 72h, >=20 views) ==")
+    buckets = {f"<{MIN_SHORT_SECONDS}s": [], f">={MIN_SHORT_SECONDS}s": []}
+    for secs, views, likes, _, _, _ in rated:
+        buckets[f"<{MIN_SHORT_SECONDS}s" if secs < MIN_SHORT_SECONDS
+                else f">={MIN_SHORT_SECONDS}s"].append((views, likes))
+    for name, vals in buckets.items():
+        if not vals:
+            continue
+        v = sum(x[0] for x in vals)
+        l = sum(x[1] for x in vals)
+        print(f"  {name:<8} n={len(vals):<3} {v:5d} views  {l:4d} likes  "
+              f"{100 * l / v:5.2f}% like rate")
+
+    cold = [r for r in rated if r[1] and r[2] / r[1] < MIN_LIKE_RATE]
+    if cold:
+        print(f"\n  ! {len(cold)} public Short(s) under a {100 * MIN_LIKE_RATE:.0f}% like rate — "
+              f"these are what the feed reads as a failed test:")
+        for secs, views, likes, when, vid, title in sorted(cold, key=lambda r: -r[1]):
+            print(f"    {vid}  {secs:>4}s  {views:5d} views  {likes:3d} likes  "
+                  f"{100 * likes / views:5.2f}%  {title[:44]}")
 
 
 def length_vs_views():
@@ -246,6 +313,19 @@ def iso8601_seconds(dur: str) -> int:
 MAX_GAP_DAYS = 1.5
 MIN_GAP_HOURS = 12
 MIN_QUEUE_DAYS = 3
+
+# How far back inventory() looks for uploads that never passed through reset.json.
+UNREVIEWED_WINDOW_DAYS = 7
+
+# Like rate is the one feed-conversion signal that is public, exact, and needs no
+# paid plan. Measured on this channel 2026-08-09 against owner analytics: every
+# video over 120 s returns ~5% likes and ~2.2% subscribers per view, while the
+# three sub-30 s clips took 315 views between them and returned ZERO likes and
+# ZERO subscribers. The 44 s `UpCMyfIOftA` is the bridge case — it was handed a
+# 1,209-view feed test, returned 0.91% likes and 2 subscribers, and the channel's
+# Shorts-feed distribution fell 17x the following day and has not recovered.
+MIN_LIKE_RATE = 0.02
+MIN_SHORT_SECONDS = 120
 
 
 def cadence(shorts):

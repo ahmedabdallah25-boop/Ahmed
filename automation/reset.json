@@ -47,10 +47,8 @@
     }
   ],
   "hold": {
-    "_why": "Inside their 72-hour feed test. Changing packaging mid-test destroys the only clean read available. Updated fifth pass, 2026-08-08 07:18Z. CLEARED and removed this pass — all three resolved dead, and per the measured rule none may be retitled: kOkfpCHeURw 261 (+4 in 3.2d, ~1.3/day), sbor6eyJQKc 35 (+3, ~0.9/day), 4gRoTTZNnFE 24 (+13, ~4/day). NOW HELD: JB6Q_7IE9Jo clears 2026-08-08 10:00Z (40 views at 2.9d, ~13.8/day — the channel's first Is [X] Halal? format test). ebPfkBjTbSA clears 2026-08-08 20:08Z (18 views at 2.5d, ~7.3/day). x2hdNP6fzAo clears 2026-08-10 00:20Z (6 views — but see duplicates, this one should probably not exist). RpFWP1a7Huk clears 2026-08-10 09:29Z (37 views at 0.9d, ~41/day — best first-day rate since kOkfpCHeURw). BllkNdhDu-k clears 2026-08-10 18:00Z (19 views at 0.6d — far too new to read).",
+    "_why": "Inside their 72-hour feed test. Changing packaging mid-test destroys the only clean read available. Updated sixth pass, 2026-08-09 17:23Z. CLEARED and removed this pass, both dead, neither to be retitled per the measured rule: JB6Q_7IE9Jo 40 views (+0 in the 34h since the fifth pass — the Is [X] Halal? format test is now resolved at zero marginal), ebPfkBjTbSA 24 (+6, ~4.2/day). STILL HELD: RpFWP1a7Huk clears 2026-08-10 09:29Z (39 views at 2.3d — its 40.7/day first day has already decayed to ~1.4/day marginal, so the read is effectively in). BllkNdhDu-k clears 2026-08-10 18:00Z (27 views at 2.0d, ~5.6/day marginal). NOTE: the sixth pass established from owner analytics that retitling is not the lever for any of these — see channel-reset.md. Hold now exists to keep the ledger honest, not to protect a packaging opportunity.",
     "video_ids": [
-      "JB6Q_7IE9Jo",
-      "ebPfkBjTbSA",
       "RpFWP1a7Huk",
       "BllkNdhDu-k"
     ]
