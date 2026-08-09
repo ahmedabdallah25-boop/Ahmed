@@ -9,7 +9,7 @@ also page 3 of the zone report.
 | | |
 |---|---|
 | Room | **8.96 m × 4.28 m** — 38.3 m² |
-| Machines | **4 washer-extractors** (south wall, plumbed) + **3 tumble dryers** (north wall, ducted) |
+| Machines | **4 washer-extractors** — north wall, **RIGHT as you enter** (plumbed)<br>**3 tumble dryers** — south wall, **LEFT as you enter** (ducted) |
 | Washer | **1.05 m wide × 1.02 m deep × ~1.45 m high** |
 | Dryer | **1.05 m wide × ~1.15 m deep × ~1.85 m high** — depth to be confirmed |
 | **Walkway** | **2.11 m clear between machine fronts** |
@@ -27,16 +27,18 @@ with margin:
 | Machines across the room | 1.02 (washer) + 1.15 (dryer) = **2.17 m** |
 | Room width | **4.28 m** |
 | **Clear walkway** | **2.11 m** — nearly half the room's width is circulation |
-| Washer run | 4 × 1.05 = 4.20 m → **4.76 m of south wall free** |
-| Dryer run | 3 × 1.05 = 3.15 m → **5.81 m of north wall free** |
+| Washer run | 4 × 1.05 = 4.20 m → **4.76 m of north wall free** |
+| Dryer run | 3 × 1.05 = 3.15 m → **5.81 m of south wall free** |
+| Tank rack | **0.75 m** footprint, north-east corner (measured) |
 
 A circulation route that doubles as an escape route needs **1.20 m**. You have 2.11 m. The
 two-lane scheme — soiled up one side, clean back the other — is not a squeeze; it fits with
 almost a metre to spare.
 
-And the free wall is where the zones go: 4.76 m on the washer side takes the clean staging and
-folding, 5.81 m on the dryer side takes soiled receiving. **No zone has to encroach on the
-walkway**, which is the thing that would have killed the plan.
+And the free wall is where the zones go: the north-east takes soiled receiving (feeding the
+washers directly), the south-east takes clean staging and folding (coming straight off the
+dryers). **No zone has to encroach on the walkway**, which is the thing that would have killed
+the plan.
 
 > **One caveat on the tape photos.** One image was sent twice — it appears as both the washer
 > width and the dryer width — so one dryer dimension is missing. I have read 1.51 m off one
@@ -78,23 +80,24 @@ drives the whole layout:
 
 | Stage | Where | Note |
 |---|---|---|
-| **Soiled in** | North-east, immediately inside the door | Two marked bays, out of the door swing |
-| **Wash** | W1–W4, south wall | Loaded across the walkway from the receiving bays |
+| **Soiled in** | North-east, right as you enter | Two marked bays, clear of the 0.75 m tank rack |
+| **Wash** | W1–W4, **north wall** | Fed directly from the receiving bays — no crossing |
 | **Transfer** | West along the **north lane** of the walkway | Washed linen only — wet but clean |
-| **Dry** | D1–D3, north wall, west half | Lint bin at each dryer, since dryers are the lint source |
-| **Clean out** | East along the **south lane**, to staging and folding | Exits by the same door, opposite side |
+| **Dry** | D1–D3, **south wall**, west end | Lint bin at each dryer, since dryers are the lint source |
+| **Clean out** | East along the **south lane**, to staging and folding | Straight off the dryers — no crossing |
 
 **Two lanes in one walkway.** Soiled and in-progress runs the north lane; clean returns down
 the south. It is a rule and a painted line, not a wall.
 
-### Be clear about the compromise
+### The sides matter more than I first realised
 
-A single-door room cannot achieve true one-directional segregation. What this layout achieves
-is **consistent side separation with one controlled crossing** — soiled crosses to the washers
-once, at the receiving point. Anyone claiming a perfect linear flow in a room with one opening
-is selling you something. If segregation to hotel standard is a hard requirement, the real
-answer is a second opening at the west end, and that is building work this plan deliberately
-does not include.
+Getting the sides right — **dryers left, washers right as you enter** — removes a crossing.
+Soiled arrives on the right and feeds the washers on the right. Clean comes off the dryers on
+the left and leaves on the left. The two flows touch **once**, at the far end, and that single
+crossing is *washed* linen, not soiled.
+
+That is as clean as a single-door room can be. Full one-directional segregation would need a
+second opening at the west end — building work this plan deliberately excludes.
 
 ---
 
@@ -155,8 +158,8 @@ most of the visual one.
 
 ## 4. Still open
 
-- **Where the alcove store sits.** It is outside the 8.96 × 4.28 envelope and is not on the
-  drawing. One dimension and I will place it.
+- **Where the alcove store sits.** Outside the 8.96 × 4.28 envelope, so not on the drawing.
+  One dimension and I will place it.
 - **Machine positions along each wall** are scaled from the top-view photograph and may be out
   by a few hundred millimetres. Machine *sizes* are now measured; their *positions* are not.
   Mark the floor from the machines themselves, not from the drawing.

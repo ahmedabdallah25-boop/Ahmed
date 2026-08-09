@@ -24,19 +24,20 @@ OX, OY = 116, 196  # plan origin
 # ---- measured geometry, metres ----------------------------------------
 RW, RD = 8.96, 4.28
 
-# 4 washer-extractors, south wall (the plumbed wall)
-WASHERS = [("W4", 2.70, 0.00, 1.05, 1.02), ("W3", 3.85, 0.00, 1.05, 1.02),
-           ("W2", 5.00, 0.00, 1.05, 1.02), ("W1", 6.15, 0.00, 1.05, 1.02)]
-# 3 tumble dryers, north wall (the ducted wall)
-DRYERS  = [("D1", 0.55, 3.13, 1.05, 1.15), ("D2", 1.70, 3.13, 1.05, 1.15),
-           ("D3", 2.85, 3.13, 1.05, 1.15)]
+# 4 washer-extractors — NORTH wall (right as you enter). Plumbed side.
+WD = 1.02
+WASHERS = [("W4", 1.00, RD-WD, 1.05, WD), ("W3", 2.15, RD-WD, 1.05, WD),
+           ("W2", 3.30, RD-WD, 1.05, WD), ("W1", 4.45, RD-WD, 1.05, WD)]
+# 3 tumble dryers — SOUTH wall (left as you enter). Ducted side.
+DRYERS  = [("D3", 0.70, 0.00, 1.05, 1.15), ("D2", 1.85, 0.00, 1.05, 1.15),
+           ("D1", 3.00, 0.00, 1.05, 1.15)]
 
-SOIL_BAYS  = [(4.45, 3.20, 1.05, 1.00), (5.70, 3.20, 1.05, 1.00)]
-CLEAN_BAYS = [(7.55, 0.10, 1.15, 1.00)]
+SOIL_BAYS  = [(5.80, 3.22, 1.05, 0.95), (6.92, 3.22, 1.05, 0.95)]
+CLEAN_BAYS = [(7.45, 0.14, 1.15, 0.95)]
 
-DOOR = (RW, 1.60, 0.12, 1.20)          # single entrance, east wall
-WALKWAY = (0.25, 1.12, 8.45, 1.94)     # walkway rectangle (2.11 m true clear)
-TANK = (7.30, 3.25, 1.40, 0.95)        # bulk tank, overhead
+DOOR = (RW, 1.55, 0.12, 1.25)          # single entrance, east wall
+WALKWAY = (0.25, 1.15, 8.45, 2.11)     # 2.11 m true clear between machine fronts
+TANK = (8.05, 3.25, 0.75, 0.98)        # tank rack, 0.75 m measured, NE corner
 
 
 def m2p(x, y):
@@ -106,21 +107,20 @@ def draw_layout(c, PW, PH, M, footer, label, wrap, para, page_bg, pageno, total)
 
     label(c, "Proposed layout — measured", M, PH - 52)
     c.setFillColor(INK); c.setFont(SERIF_B, 21)
-    c.drawString(M, PH - 78, "8.96 × 4.28 m · washers 1.05 × 1.02 · dryers 1.05 wide · nothing moves")
+    c.drawString(M, PH - 78, "Dryers left, washers right · 2.11 m walkway · nothing moves")
     c.setStrokeColor(INK); c.setLineWidth(1.4); c.line(M, PH - 88, PW - M, PH - 88)
     c.setFillColor(INK_SOFT); c.setFont(SERIF, 9.4)
     c.drawString(M, PH - 103,
-                 "Drawn to the dimensions supplied. Everything in colour is paint, signage or a bin — no machine, pipe or duct is relocated.")
+                 "8.96 × 4.28 m. Washers 1.05 × 1.02, dryers 1.05 wide. Everything in colour is paint, signage or a bin — no machine, pipe or duct is relocated.")
 
     # ---- floor + zones
     rect_m(c, 0, 0, RW, RD, fill=SURFACE)
-    rect_m(c, 4.25, 3.05, 4.55, 1.18, fill=tint(SOILED, 0.16))      # soiled receiving, NE
-    rect_m(c, 7.40, 0.06, 1.45, 1.10, fill=tint(CLEAN, 0.18))       # clean staging, SE
-    rect_m(c, 0.16, 0.06, 2.40, 1.10, fill=tint(CLEAN, 0.18))       # clean folding, SW
+    rect_m(c, 5.70, 3.10, 3.10, 1.13, fill=tint(SOILED, 0.16))      # soiled receiving, NE
+    rect_m(c, 4.30, 0.06, 4.50, 1.12, fill=tint(CLEAN, 0.18))       # clean staging + folding, SE
     rect_m(c, *WALKWAY, fill=tint(WALK, 0.26))
 
-    hatch_m(c, 8.20, 1.22, 0.55, 1.72, ALERT)                       # keep clear inside door
-    hatch_m(c, 0.20, 2.00, 0.55, 0.95, ALERT)                       # keep clear at board
+    hatch_m(c, 8.20, 1.25, 0.55, 1.90, ALERT)                       # keep clear inside door
+    hatch_m(c, 0.22, 2.45, 0.80, 0.80, ALERT)                       # keep clear at board
 
     # ---- walls
     c.setStrokeColor(INK); c.setLineWidth(2.4)
@@ -139,29 +139,28 @@ def draw_layout(c, PW, PH, M, footer, label, wrap, para, page_bg, pageno, total)
     c.drawCentredString(0, 0, "ENTRANCE / FIRE EXIT"); c.restoreState()
 
     # ---- machines
-    for mid, x, y, w, h in WASHERS:
+    for mid, x, y, w, h in WASHERS:                       # north wall, doors face south
         rect_m(c, x, y, w, h, fill=WASH, stroke=WASH_D, lw=1.0)
         txt_m(c, mid, x + w / 2, y + h / 2, font=MONO_B, size=10, color=WHITE, dy=-3)
-        p = m2p(x + w / 2, y + h + 0.05)
+        p = m2p(x + w / 2, y - 0.05)
         c.setStrokeColor(WASH_D); c.setLineWidth(0.6); c.setDash(1.5, 1.5)
         c.circle(p[0], p[1], 0.17 * S, stroke=1, fill=0); c.setDash()
-    for mid, x, y, w, h in DRYERS:
+    for mid, x, y, w, h in DRYERS:                        # south wall, doors face north
         rect_m(c, x, y, w, h, fill=DRY, stroke=DRY_D, lw=1.0)
         txt_m(c, mid, x + w / 2, y + h / 2, font=MONO_B, size=10, color=WHITE, dy=-3)
-        p = m2p(x + w / 2, y - 0.05)
+        p = m2p(x + w / 2, y + h + 0.05)
         c.setStrokeColor(DRY_D); c.setLineWidth(0.6); c.setDash(1.5, 1.5)
         c.circle(p[0], p[1], 0.17 * S, stroke=1, fill=0); c.setDash()
-        # duct drop symbol
-        pd = m2p(x + w / 2, y + h - 0.02)
+        pd = m2p(x + w / 2, y + 0.02)                     # duct drop, at the south wall
         c.setStrokeColor(ACCENT); c.setLineWidth(2.0)
-        c.line(pd[0], pd[1], pd[0], pd[1] + 6)
-    txt_m(c, "existing rigid header duct above — only the 3 flexible drops change", 2.35, RD,
-          font=SERIF_I, size=6.4, color=ACCENT, dy=9)
+        c.line(pd[0], pd[1], pd[0], pd[1] - 6)
+    txt_m(c, "existing rigid header duct — only the 3 flexible drops change", 2.40, 0.0,
+          font=SERIF_I, size=6.4, color=ACCENT, dy=-16)
 
     # ---- lint bins between the dryers (dryers are the lint source)
-    for gx in (1.63, 2.78, 3.93):
-        rect_m(c, gx, 3.30, 0.14, 0.38, fill=INK)
-    txt_m(c, "3 lidded lint bins — one per dryer", 0.40, 2.82, font=SERIF_I, size=6.6,
+    for gx in (1.78, 2.93, 4.08):
+        rect_m(c, gx, 0.20, 0.14, 0.38, fill=INK)
+    txt_m(c, "3 lidded lint bins — one per dryer", 1.95, 1.24, font=SERIF_I, size=6.6,
           color=INK_FAINT, anchor="l")
 
     # ---- bays
@@ -173,33 +172,35 @@ def draw_layout(c, PW, PH, M, footer, label, wrap, para, page_bg, pageno, total)
         rect_m(c, x, y, w, h, fill=SURFACE)
         rect_m(c, x, y, w, h, stroke=CLEAN, lw=1.5, dash=(2.5, 2))
         txt_m(c, "CLEAN", x + w / 2, y + h / 2, font=MONO_B, size=6, color=CLEAN, dy=-2.5)
-    rect_m(c, 0.22, 0.14, 2.28, 0.55, fill=SUNK, stroke=RULE_STRONG, lw=0.9)
-    txt_m(c, "clean linen shelving / folding", 1.36, 0.36, font=SERIF, size=6.6, color=INK_SOFT)
+    rect_m(c, 4.45, 0.14, 2.70, 0.55, fill=SUNK, stroke=RULE_STRONG, lw=0.9)
+    txt_m(c, "clean linen shelving / folding", 5.80, 0.36, font=SERIF, size=6.6, color=INK_SOFT)
 
     # ---- overhead tank
     rect_m(c, *TANK, stroke=INK_FAINT, lw=1.0, dash=(3, 2.5))
-    txt_m(c, "BULK TANK OVER", 8.00, 3.80, font=MONO_B, size=6, color=INK_FAINT)
-    txt_m(c, "verify contents + containment", 8.00, 3.80, font=SERIF_I, size=6.2,
-          color=INK_FAINT, dy=-9)
+    txt_m(c, "TANK", 8.42, 3.80, font=MONO_B, size=5.8, color=INK_FAINT)
+    txt_m(c, "0.75 m", 8.42, 3.80, font=MONO_B, size=5.8, color=INK_FAINT, dy=-8)
+    txt_m(c, "tank rack 0.75 m — verify contents and containment", 8.80, RD,
+          font=SERIF_I, size=6.2, color=INK_FAINT, anchor="r", dy=9)
 
     # ---- board
-    rect_m(c, -0.10, 2.00, 0.14, 0.95, fill=ALERT)
-    c.saveState(); p = m2p(-0.28, 2.48); c.translate(p[0], p[1]); c.rotate(90)
-    c.setFillColor(ALERT); c.setFont(MONO_B, 6.4); c.drawCentredString(0, 0, "BOARD"); c.restoreState()
+    rect_m(c, -0.10, 2.45, 0.14, 0.80, fill=ALERT)
+    c.saveState(); p = m2p(-0.30, 2.85); c.translate(p[0], p[1]); c.rotate(90)
+    c.setFillColor(ALERT); c.setFont(MONO_B, 6.2); c.drawCentredString(0, 0, "BOARD"); c.restoreState()
 
     # ---- flow: anticlockwise U
     # north lane = soiled / in-progress ; south lane = clean returning
-    arrow(c, 8.40, 3.72, 7.05, 3.72, SOILED)              # in at the door, into receiving
-    arrow(c, 6.30, 2.62, 6.30, 1.32, SOILED)              # down across to the washers
-    arrow(c, 5.60, 2.62, 2.10, 2.62, INK)                 # transfer west
-    arrow(c, 1.25, 2.62, 1.25, 3.06, INK)                 # up into the dryers
-    arrow(c, 1.90, 1.52, 7.10, 1.52, CLEAN)               # clean back east, south lane
-    arrow(c, 7.90, 1.35, 7.90, 1.20, CLEAN)               # down into clean staging
-    txt_m(c, "SOILED IN", 7.05, 3.72, font=MONO_B, size=7, color=SOILED, dy=11, anchor="r")
-    txt_m(c, "WASH", 6.30, 2.00, font=MONO_B, size=6.4, color=SOILED, anchor="l", dy=0)
-    txt_m(c, "TRANSFER", 3.85, 2.62, font=MONO_B, size=6.6, color=INK, dy=8)
-    txt_m(c, "DRY", 1.40, 2.98, font=MONO_B, size=6.4, color=INK, anchor="l")
-    txt_m(c, "CLEAN OUT", 4.50, 1.52, font=MONO_B, size=7, color=CLEAN, dy=8)
+    # north lane = soiled in and wet transfer ; south lane = clean returning
+    arrow(c, 8.35, 2.92, 6.35, 2.92, SOILED)              # in at the door, along the north lane
+    arrow(c, 5.10, 2.98, 5.10, 3.22, SOILED)              # up into the washers
+    arrow(c, 4.20, 2.52, 1.75, 2.52, INK)                 # transfer west
+    arrow(c, 1.30, 2.20, 1.30, 1.26, INK)                 # down into the dryers
+    arrow(c, 2.30, 1.62, 6.95, 1.62, CLEAN)               # clean back east, south lane
+    arrow(c, 7.75, 1.46, 7.75, 1.20, CLEAN)               # down into clean staging
+    txt_m(c, "SOILED IN", 7.45, 2.92, font=MONO_B, size=7, color=SOILED, dy=10)
+    txt_m(c, "WASH", 5.30, 3.02, font=MONO_B, size=6.4, color=SOILED, anchor="l")
+    txt_m(c, "TRANSFER", 2.95, 2.52, font=MONO_B, size=6.6, color=INK, dy=9)
+    txt_m(c, "DRY", 1.52, 1.62, font=MONO_B, size=6.4, color=INK, anchor="l")
+    txt_m(c, "CLEAN OUT", 4.55, 1.62, font=MONO_B, size=7, color=CLEAN, dy=9)
 
     # ---- lighting: 2 rows of 5
     c.saveState(); c.setStrokeColor(INK_FAINT); c.setLineWidth(1.6)
@@ -216,40 +217,42 @@ def draw_layout(c, PW, PH, M, footer, label, wrap, para, page_bg, pageno, total)
     c.drawCentredString((m2p(0, 0)[0] + m2p(RW, 0)[0]) / 2, m2p(0, 0)[1] - 19, "8.96 m")
     c.saveState(); c.translate(m2p(0, 0)[0] - 26, (m2p(0, 0)[1] + m2p(0, RD)[1]) / 2)
     c.rotate(90); c.drawCentredString(0, 0, "4.28 m"); c.restoreState()
-    txt_m(c, "2.11 m clear — soiled runs the north lane, clean returns the south", 3.40, 2.10, font=SERIF_I, size=6.4, color=INK_FAINT, dy=-3)
+    txt_m(c, "2.11 m clear between machine fronts", 6.55, 2.20, font=SERIF_I, size=6.4, color=INK_FAINT)
 
     # ---- legend
     ly = 150
     c.setStrokeColor(RULE_STRONG); c.setLineWidth(0.7); c.line(M, ly + 18, PW - M, ly + 18)
     label(c, "Legend — everything below is paint, signage or a bin", M, ly + 4, size=6.6)
-    swatch(c, M, ly - 18, tint(SOILED, 0.16), "Soiled side", "receiving north-east, by the door", alpha=1.0)
-    swatch(c, M, ly - 42, tint(CLEAN, 0.18), "Clean side", "staging south-east + folding south-west", alpha=1.0)
+    swatch(c, M, ly - 18, tint(SOILED, 0.16), "Soiled side", "receiving north-east, feeds the washers", alpha=1.0)
+    swatch(c, M, ly - 42, tint(CLEAN, 0.18), "Clean side", "staging + folding south-east, off the dryers", alpha=1.0)
     swatch(c, M + 205, ly - 18, tint(WALK, 0.26), "Walkway", "2.11 m clear, also the escape route", alpha=1.0)
     swatch(c, M + 205, ly - 42, tint(ALERT, 0.22), "Keep clear", "board and inside the door", alpha=1.0)
-    swatch(c, M + 410, ly - 18, WASH, "Washer W1–W4", "south wall, plumbed", alpha=1.0)
-    swatch(c, M + 410, ly - 42, DRY, "Dryer D1–D3", "north wall, ducted", alpha=1.0)
+    swatch(c, M + 410, ly - 18, WASH, "Washer W1–W4", "north wall — RIGHT as you enter", alpha=1.0)
+    swatch(c, M + 410, ly - 42, DRY, "Dryer D1–D3", "south wall — LEFT as you enter", alpha=1.0)
     c.setStrokeColor(INK_FAINT); c.setLineWidth(1.6); c.setDash(4, 3)
     c.line(M + 410, ly - 60, M + 423, ly - 60); c.setDash()
     c.setFillColor(INK); c.setFont(SERIF, 8.2); c.drawString(M + 430, ly - 63, "LED batten")
     c.setFillColor(INK_FAINT); c.setFont(SERIF, 7.4); c.drawString(M + 430, ly - 72, "10 fittings, two rows of five")
 
     c.setFillColor(INK); c.setFont(SERIF_B, 8.6)
-    c.drawString(M + 610, ly - 10, "One door")
+    c.drawString(M + 610, ly - 10, "One door, and it works")
     c.setFillColor(INK_SOFT); c.setFont(SERIF, 7.8)
-    c.drawString(M + 610, ly - 23, "Soiled in and clean out share it,")
-    c.drawString(M + 610, ly - 34, "separated by side, not by direction.")
+    c.drawString(M + 610, ly - 23, "Washers right, dryers left puts soiled and")
+    c.drawString(M + 610, ly - 34, "clean on opposite sides with no crossing")
+    c.drawString(M + 610, ly - 45, "except the wash-to-dry transfer at the far end.")
     c.setFillColor(ALERT); c.setFont(SERIF_I, 7.6)
-    c.drawString(M + 610, ly - 47, "So the doorway must never be blocked.")
+    c.drawString(M + 610, ly - 58, "The doorway must never be blocked.")
 
     # ---- caveat
     c.setFillColor(SUNK); c.rect(M, 44, PW - 2 * M, 42, stroke=0, fill=1)
     c.setFillColor(ACCENT); c.rect(M, 44, 2.4, 42, stroke=0, fill=1)
     c.setFillColor(INK); c.setFont(SERIF_B, 8.4)
-    c.drawString(M + 12, 72, "Machine sizes are from your tape photos; positions along each wall are still read from the top view.")
-    para(c, "Machines occupy 2.17 m of the 4.28 m width, leaving 2.11 m clear — comfortably above the 1.20 m a "
-            "circulation and escape route needs. Free wall: 4.76 m on the washer side, 5.81 m on the dryer side, which is "
-            "where the soiled and clean zones go. One tape photo was sent twice, so one dryer dimension is still missing; "
-            "if the dryer depth is 1.51 m rather than the 1.15 m drawn, the walkway becomes 1.75 m and still works.",
+    c.drawString(M + 12, 72, "Sides corrected: dryers on the left as you enter, washers on the right — which removes a crossing.")
+    para(c, "With the washers on the right and the dryers on the left, soiled feeds straight into the washers and clean "
+            "comes straight off the dryers — the two never cross except once, at the far end, and that crossing is washed "
+            "linen. Machines occupy 2.17 m of the 4.28 m width, leaving 2.11 m clear against the 1.20 m an escape route "
+            "needs. Machine sizes are measured; positions along each wall are scaled from the top view, so mark the floor "
+            "from the machines. One tape photo was duplicated, so one dryer dimension is still outstanding.",
          M + 12, 61, PW - 2 * M - 24, size=7.9, lead=9.6)
 
     footer(c, pageno, total, "Proposed layout — measured")
