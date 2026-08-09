@@ -21,6 +21,7 @@ Refuses to touch any id in reset.json's `protected` list.
 Needs the same OAuth env vars as apply_fix.py (see SETUP.md).
 """
 import argparse
+import difflib
 import json
 import re
 import sys
@@ -472,11 +473,20 @@ def assert_channel(yt, read_only):
 
 
 def fix_channel_meta(yt, dry_run):
-    """Set channel-level keywords. Fetch-then-mutate so other branding survives."""
+    """Set channel-level keywords, country and description. Fetch-then-mutate so
+    other branding survives.
+
+    The description is the channel's most durable indexed surface — unlike a
+    Short, it does not go dark after 72 hours, and search was 8.8% of Aug 1-9
+    traffic (45 views) against a Shorts feed that had already collapsed. It is
+    also the one live-channel text surface where a rewrite is not measured at
+    zero, because it was never subject to a feed test in the first place.
+    """
     cfg = CFG.get("channel")
     if not cfg:
         return 0
     want = " ".join(f'"{k}"' if " " in k else k for k in cfg.get("keywords", []))
+    want_desc = cfg.get("description")
 
     items = yt.channels().list(part="brandingSettings", mine=True).execute().get("items", [])
     if not items:
@@ -485,6 +495,7 @@ def fix_channel_meta(yt, dry_run):
     branding = items[0]["brandingSettings"]
     have = branding.get("channel", {}).get("keywords", "")
     have_country = branding.get("channel", {}).get("country", "")
+    have_desc = branding.get("channel", {}).get("description", "")
     want_country = cfg.get("country", have_country)
 
     changes = []
@@ -492,6 +503,16 @@ def fix_channel_meta(yt, dry_run):
         changes.append(f"keywords: {len(have)} chars -> {len(want)} chars")
     if want_country != have_country:
         changes.append(f"country: {have_country or '(unset)'} -> {want_country}")
+    if want_desc and want_desc != have_desc:
+        # 1000 chars is the hard API limit; over it the whole update is rejected.
+        if len(want_desc) > 1000:
+            ERRORS.append(f"channel description: {len(want_desc)} chars exceeds the "
+                          f"1000-char limit — the whole branding update would fail")
+            return 0
+        changes.append(f"description: {len(have_desc)} chars -> {len(want_desc)} chars")
+        for line in difflib.unified_diff(have_desc.splitlines(), want_desc.splitlines(),
+                                         "live", "reset.json", lineterm="", n=1):
+            print(f"      {line}")
     if not changes:
         print("  = channel metadata already up to date.")
         return 0
@@ -504,6 +525,8 @@ def fix_channel_meta(yt, dry_run):
     if want:
         branding.setdefault("channel", {})["keywords"] = want
     branding.setdefault("channel", {})["country"] = want_country
+    if want_desc:
+        branding.setdefault("channel", {})["description"] = want_desc
     try:
         yt.channels().update(part="brandingSettings",
                              body={"id": items[0]["id"], "brandingSettings": branding}).execute()
