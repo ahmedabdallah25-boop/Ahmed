@@ -37,3 +37,28 @@ Three defects:
 
 Minor: silhouettes are drawn as outlines rather than solid black — solid reads better at a
 glance when a tool is missing. Chemical containers show coloured caps but no legible labels.
+
+---
+
+## Batch audit — 9 Aug, five images returned
+
+Root cause of the mismatch: **room proportion.** The room is a narrow corridor, 8.96 x 4.28 m
+with only **2.11 m between machine fronts**. Three renders drew a wide open hall with floor
+area that does not exist. The two close-ups escaped the problem and are correct.
+
+| Image | Verdict | Detail |
+|---|---|---|
+| Washer line W1–W4 | **CORRECT — keep** | Four washers, correct plates, stainless tops, red e-stops, tiled dado, yellow floor line. Accurate. |
+| Dryer line D1–D3 | **CORRECT — keep** | Three dryers, correct plates, and the ducting is right: rigid rectangular header with short rigid drops into each machine. Only fault: two lint bins for three dryers — should be three. |
+| Hero room view | **WRONG** | Room far too wide. **Five washers drawn, not four.** Drops read as flexible spiral and connect to no visible header. |
+| Soiled receiving | **WRONG proportion, good content** | Tank, two red bays, fire exit and hazard hatching all correct, but the space reads as a wide hall. Tank mounted at mid-height rather than high in the corner. Some floor text mirrored. |
+| Clean staging | **WRONG** | Room far too wide and open. Shows a **second doorway** — there is only one. |
+
+## Regenerated 9 Aug 08:01
+
+Four replacements with the corridor geometry stated as a hard constraint: walls 4.3 m apart,
+machine fronts 2.1 m apart, machines filling both frame edges, no open floor beyond the
+walkway. Washer and dryer close-ups were **not** regenerated — they were already correct.
+
+Still unverified: the image host is blocked from this session, so the replacements were
+specified but not inspected.
