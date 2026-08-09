@@ -1171,3 +1171,62 @@ sizes this channel is currently getting, neither is readable.
 said: five new-subject uploads under ~50 v/day → buy private analytics. The uploads happened, the
 rule fired, the analytics were bought — and they were free. It has done its job and there is no
 version of it left to run. What replaces it is the two thresholds above.
+
+## Addendum — what was written to the live channel, 2026-08-09 19:52 UTC
+
+A full read-only pass ran first (`31332561423`, `--inventory --dry-run`). It found the live
+channel **clean on every surface a packaging pass owns**:
+
+```
+Every non-public video is covered by reset.json.
+PLKLKzR1QgFHE  25 in playlist, 23 eligible, 0 missing — already complete
+PLFvKaPuEiceY   3 in playlist,  3 eligible, 0 missing — already complete
+Stale link hygiene: scanning 26 owned videos — no replacements pending
+P3DxNgGFah0 (public) already up to date
+0 video(s) updated
+```
+
+It also reproduced the seventh pass's central finding from public data alone, on the live
+channel, via the new detector:
+
+```
+== Distribution share, last 14 days (9 public Short(s)) ==
+  <35s      n=3     316 views   59.0% of recent distribution
+  35-120s   n=4     156 views   29.1%
+  >=120s    n=2      64 views   11.9%
+  ! 88% of the last 14 days of distribution went to uploads under the 120s floor.
+```
+
+**One write was made: the channel description** (`31332772951`, `1 video(s) updated`,
+`conclusion: success`, verified against `youtube_channel_about` the same minute).
+
+- Removed *"A new mechanism decoded every day."* — false when written (dark 2.1 days, never
+  sustained daily) and it restated the cadence rule that rule 0.1 retired.
+- Added *"Every video takes one mechanism and follows it all the way through. Not a clip, not
+  a hot take."* — the 120s floor stated to the viewer instead of held as an internal rule.
+- 624 → 781 chars. Identity line, mechanism paragraph, both links and the hashtag block
+  untouched.
+
+### What was deliberately not touched, and why
+
+**No live Short's title, description or tags were changed.** Retitling a published Short is
+measured at **zero on this channel three separate times** (`P3DxNgGFah0`: 39 views at the
+retitle, 39 at +6 h, 39 at +21.7 h), and §4 of this pass explains the mechanism — the feed is
+not re-reading titles, it is reading hold time. Six Shorts currently sit under a 2% like rate
+and every one of them is either past its test and dead, or inside a test that must not be
+disturbed. There is no packaging write available on any of them with a non-zero expected
+return.
+
+**The three sub-35s clips were left in `PLKLKzR1QgFHE`.** They hold 3.3, 5.0 and 7.5 s/view
+and returned zero likes and zero subscribers on 317 views, so there is a real argument for
+pulling them out of the curated series playlist. It was not done, for two reasons:
+`sync_playlists()` was deliberately built additive-only — *never removes or reorders* — and
+that safety property is worth more than the change; and `RELATED_VIDEO` delivered **4 views in
+nine days**, so the measurable gain is indistinguishable from zero. Recorded as an option, not
+an oversight.
+
+**Nothing was deleted.** `--confirm-delete` was not passed; the one recorded duplicate
+candidate is the already-deleted `x2hdNP6fzAo` entry.
+
+The queue is still empty and the channel is still dark. That remains the only thing on this
+channel that a pass cannot fix.
