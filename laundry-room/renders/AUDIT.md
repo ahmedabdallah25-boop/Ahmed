@@ -18,3 +18,22 @@ inspected.
 - Item 4: regenerate with the lint bin between dryers, or crop the bin out and keep the rest.
 - The 9 Aug batch (3 dryers left, 4 washers right, rigid duct, no trolleys) is still
   **unaudited** — the image host is blocked from this session, so it has not been inspected.
+
+---
+
+## Wall service station render — audited 9 Aug
+
+Overall the strongest image in any batch: one aligned run, correct floor and skirting, batten
+lighting, yellow hazard hatching on the floor at the extinguisher, framed DAILY CHECKS board,
+PPE station and a bunded chemical shelf signed NO DECANTING. Usable as a fit-out reference.
+
+Three defects:
+
+| Defect | Severity | Action |
+|---|---|---|
+| **Shadow board labels do not match the silhouettes.** BROOM appears twice, LINT BRUSH appears twice, and there are two dustpan outlines but one DUSTPAN label. A shadow board's entire function is one tool, one outline, one label — duplicated labels defeat it. | **Fix before printing** | Retype the board artwork: broom, dustpan, rubber squeegee, lint brush — one each. |
+| **Extinguisher looks like water or foam** (plain red body, no black CO₂ band). The room has two distribution boards and this station sits near them. | **Spec error** | Specify **CO₂** for electrical risk. Confirm against the site's fire assessment. |
+| **No eyewash station.** The plan calls for eyewash within reach of the chemical store; the render omits it. | Omission | Add to the run when specifying. |
+
+Minor: silhouettes are drawn as outlines rather than solid black — solid reads better at a
+glance when a tool is missing. Chemical containers show coloured caps but no legible labels.
