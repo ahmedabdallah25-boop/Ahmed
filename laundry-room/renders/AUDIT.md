@@ -62,3 +62,24 @@ walkway. Washer and dryer close-ups were **not** regenerated — they were alrea
 
 Still unverified: the image host is blocked from this session, so the replacements were
 specified but not inspected.
+
+---
+
+## Corridor batch audit — 9 Aug 08:01, four returned
+
+Compared directly against the site top-view photograph.
+
+| Image | Verdict | Detail |
+|---|---|---|
+| Hero from the doorway | **PASS on geometry, one miss** | Corridor proportion finally correct — machines crowd both frame edges, narrow floor strip between. 3 dryers left, 4 washers right, yellow lines, dado and ceiling all right. **But the dryers have no ducting at all** — no header, no drops. |
+| Reverse view toward the door | **BEST OF THE SET** | Correct corridor. Rigid ducting rising to a header on the dryer side, white bulk tank on the wall, grey door with green FIRE EXIT sign, red/white hatching on the floor. Closely matches the real room's far end. Machine count on the right reads as five or six rather than three. |
+| Wide machine view | **FAIL** | Reverted to the wide-hall error — blank distant far wall, floor opening out. Discard. |
+| Clean staging | **FAIL** | Still too wide, and it invented a **second doorway** again. Discard. |
+
+## Regenerated 9 Aug 08:08 — matched to the site photograph
+
+Three images, the hero now shot from the **same elevated viewpoint as the site top-view photo**
+so it pairs directly with it as a before/after. Clean staging and soiled receiving regenerated
+with the single-door constraint stated explicitly.
+
+Not inspected — image host blocked from this session.
