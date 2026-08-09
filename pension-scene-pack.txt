@@ -189,10 +189,10 @@ CONSISTENCY WORKFLOW — do this before generating anything
 VOICEOVER — full script, ElevenLabs v3 tags, copy as one block
 ================================================================================
 
-[serious] Your pension owns things you would never buy.
-[whispers] And nobody asked you.
-Not once.
-[serious] You were opted in. Including into this.
+[matter-of-fact] Your pension owns things you would never buy.
+[quietly] And nobody asked you.
+[flat] Not once.
+[firm] You were opted in. Including into this.
 Pension. Four-oh-one-k. Workplace plan.
 Same machine.
 When you joined, you chose a number.
@@ -200,47 +200,93 @@ How much goes in.
 [emphatic] You almost certainly never chose where it goes.
 That is the default fund.
 Most people never move.
-[serious] So what is actually in it?
+[curious] So what is actually in it?
 An index. A basket of the largest listed companies.
 Bought automatically. By size. No judgement.
 [emphatic] Nobody screens it. That is the entire point of it.
 So look at what the basket holds.
 Banks and insurers. One of the biggest slices in it.
-Alcohol. Gambling. Tobacco. Weapons.
-[serious] Not by accident. By construction.
+[slowly] Alcohol. Gambling. Tobacco. Weapons.
+[firm] Not by accident. By construction.
 And the banks are the sharp part.
 A bank's product is not a service.
-[serious] It is interest.
+[quietly] It is interest.
 Own the bank, own the income.
 That is not a technicality. That is the whole business.
-[serious] But here is the part almost nobody knows.
+[quietly] But here is the part almost nobody knows.
 Your fund is built to change as you age.
-They call it lifestyling. Or a glide path.
+[flat] They call it lifestyling. Or a glide path.
 It sounds like safety.
-The closer you get to retiring...
+[slowly] The closer you get to retiring...
 ...the more it sells shares...
 [emphatic] ...and buys bonds.
-[serious] And a bond is a loan.
+[firm] And a bond is a loan.
 You are lending money. At interest.
 [emphatic] The machine moves you deeper into it as you get older.
-Automatically. Quietly. As a feature you were never shown.
-[calm] So. Two minutes. Three steps.
+[flat] Automatically. Quietly. As a feature you were never shown.
+[brighter] So. Two minutes. Three steps.
 One. Log in. Find the name of your fund.
 If it says default, balanced, or a retirement year — that is the basket.
 Two. Search that fund's largest holdings.
-[serious] You will recognise the banks immediately.
-Three. Open the full fund list. Look for a sharia or Islamic option.
+[matter-of-fact] You will recognise the banks immediately.
+[slowly] Three. Open the full fund list. Look for a sharia or Islamic option.
 Most workplace schemes have one now. Switching is usually free.
 [calm] Same contributions. Same employer match. Different basket.
-[serious] You were opted in by default.
+[firm] You were opted in by default.
 [warmly] Default is still a choice. Somebody else just made it for you.
 Two minutes. Go and make it yourself.
 
-TAG NOTES: keep tags sparse, they are strongest at emotional turns. Ellipses
-create natural breath pauses. Do not stack two tags on one line. This script is
-~350 words and needs ~165 seconds, so the pauses are doing real work. The
-glide-path section (scenes 26-35) is the reveal — slow down there, do not rush
-into the checklist.
+TAG NOTES — retagged 2026-08-09. Not one word of the script changed; only the
+tags moved. See pension-script-audit.md for the reasoning behind each one.
+
+WHAT WAS WRONG. The first pass used 13 tags, EIGHT of them [serious]. A tag
+repeated eight times stops being direction and becomes the baseline, so v3 had
+one register for 315 words. That flat-serious texture is the "AI narrator" sound
+that gets swiped. Three of the script's four biggest lines carried no tag at all.
+
+THE REGISTER SYSTEM. Four registers, deliberately reused so the delivery reads as
+a system rather than as random colour. This mirrors the pack's own visual grammar
+(house-style.md): named people have faces and colour, the institution has neither.
+
+  MACHINE   [flat] [matter-of-fact]  — used when the voice describes what the
+            system does. The voice goes featureless where the clerk does.
+  CONFIDING [quietly]                — used when speaking to the viewer as a
+            person. This is the register that buys attention, not volume.
+  WEIGHT    [emphatic] [firm]        — the load-bearing claims ONLY. [emphatic]
+            appears exactly 4 times; if a 5th gets added, none of them land.
+  ACCENT    [curious] [slowly]
+            [brighter] [calm] [warmly] — one-off turns.
+
+DENSITY FOLLOWS THE RETENTION CHECKPOINTS. 23 tags, but they are not evenly
+spread: 4 tags across the 4 hook lines, 8 across the glide-path reveal
+(scenes 25-36), and long untagged runs through the setup and the checklist.
+Bare lines are what make the tagged ones audible.
+
+THE FOUR THAT MATTER MOST, and why:
+  L02 [quietly] replaces [whispers]. A v3 whisper drops below the mix and Shorts
+      play through phone speakers in public at low volume. If line 2 is inaudible
+      the hook does not connect. Same intimacy, no dropout risk.
+  L18 [slowly] on "Alcohol. Gambling. Tobacco. Weapons." — the most loaded line
+      in the script had NO tag. One word per beat is the whole moment.
+  L36 [brighter] replaces [calm] on "So. Two minutes. Three steps." [calm] after
+      a heavy reveal reads as deflation. This is the gear change that converts
+      dread into a save.
+  L41 [slowly] on the sharia line — previously untagged, and it is the ONLY line
+      in the video that pays the title's promise. Retention checkpoint 4 says it
+      "must be understood, not just heard"; slowing it is the literal fix.
+
+MECHANICS. One tag per line, never two. Tags at line start only. Ellipses still
+carry the breath pauses — do not add [pause], v3 handles the ellipsis better.
+
+FALLBACK. If v3 speaks a tag aloud instead of performing it, swap and re-render
+that line only: [matter-of-fact]→[calm], [flat]→[serious], [quietly]→[softly],
+[firm]→[serious], [brighter]→[warmly], [slowly]→ellipses between the words.
+Test-render lines 1-4 and 29-36 before committing the full 315 words.
+
+PACE. 315 words. At the delivery this pack was written for it lands near 165s
+(~115 wpm) — slow for the platform. Target 130-140 wpm, land near 145s, and
+spend the recovered time entirely on the glide-path reveal (scenes 25-36) rather
+than spreading it evenly. Do not cut words to get there.
 
 
 ================================================================================
@@ -250,7 +296,7 @@ THE 46 SCENES
 --------------------------------------------------------------------------------
 SCENE 01 | 0:00-0:05 | THE HOOK — object, no character
 --------------------------------------------------------------------------------
-VO: [serious] Your pension owns things you would never buy.
+VO: [matter-of-fact] Your pension owns things you would never buy.
 CAPTION 1: Your pension owns things
 CAPTION 2: you would never buy
 
@@ -267,7 +313,7 @@ offset down-right beneath the paper and cards. Calm, uncluttered, no other props
 --------------------------------------------------------------------------------
 SCENE 02 | 0:05-0:08 | ** GENERATE FIRST — STYLE TEST — attach KAREEM sheet **
 --------------------------------------------------------------------------------
-VO: [whispers] And nobody asked you.
+VO: [quietly] And nobody asked you.
 CAPTION 1: And nobody asked you
 CAPTION 2: not once
 
@@ -285,7 +331,7 @@ two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 03 | 0:08-0:10
 --------------------------------------------------------------------------------
-VO: Not once.
+VO: [flat] Not once.
 CAPTION 1: Not once
 CAPTION 2: not in twenty years
 
@@ -301,7 +347,7 @@ vertical composition, stack in the lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 04 | 0:10-0:14
 --------------------------------------------------------------------------------
-VO: [serious] You were opted in. Including into this.
+VO: [firm] You were opted in. Including into this.
 CAPTION 1: You were opted in
 CAPTION 2: including into this
 
@@ -440,7 +486,7 @@ SAMI in teal #2F6B72 and charcoal #5A5A5A, BILAL in sand #D9C08D and espresso
 --------------------------------------------------------------------------------
 SCENE 12 | 0:38-0:42 | attach ADAM sheet
 --------------------------------------------------------------------------------
-VO: [serious] So what is actually in it?
+VO: [curious] So what is actually in it?
 CAPTION 1: So what's actually in it?
 CAPTION 2: nobody ever shows you this
 
@@ -544,7 +590,7 @@ pie in the lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 18 | 1:05-1:10
 --------------------------------------------------------------------------------
-VO: Alcohol. Gambling. Tobacco. Weapons.
+VO: [slowly] Alcohol. Gambling. Tobacco. Weapons.
 CAPTION 1: Alcohol. Gambling. Tobacco.
 CAPTION 2: and weapons
 
@@ -561,7 +607,7 @@ vertical composition, objects in the lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 19 | 1:10-1:14
 --------------------------------------------------------------------------------
-VO: [serious] Not by accident. By construction.
+VO: [firm] Not by accident. By construction.
 CAPTION 1: Not by accident
 CAPTION 2: by construction
 
@@ -611,7 +657,7 @@ two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 22 | 1:22-1:25
 --------------------------------------------------------------------------------
-VO: [serious] It is interest.
+VO: [quietly] It is interest.
 CAPTION 1: It's interest
 CAPTION 2: that's the actual product
 
@@ -662,7 +708,7 @@ composition, counters in the lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 25 | 1:35-1:40 | attach KAREEM 3/4 sheet
 --------------------------------------------------------------------------------
-VO: [serious] But here is the part almost nobody knows.
+VO: [quietly] But here is the part almost nobody knows.
 CAPTION 1: But here's the part
 CAPTION 2: almost nobody knows
 
@@ -696,7 +742,7 @@ hourglass in the lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 27 | 1:44-1:48
 --------------------------------------------------------------------------------
-VO: They call it lifestyling. Or a glide path.
+VO: [flat] They call it lifestyling. Or a glide path.
 CAPTION 1: They call it "lifestyling"
 CAPTION 2: or a "glide path"
 
@@ -728,7 +774,7 @@ two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 29 | 1:51-1:55 | ** BILAL ANCHOR — attach BILAL sheet **
 --------------------------------------------------------------------------------
-VO: The closer you get to retiring...
+VO: [slowly] The closer you get to retiring...
 CAPTION 1: The closer you get
 CAPTION 2: to actually retiring
 
@@ -778,7 +824,7 @@ across it. No text or seals anywhere. Simple flat drop shadow beneath the basket
 --------------------------------------------------------------------------------
 SCENE 32 | 2:02-2:06
 --------------------------------------------------------------------------------
-VO: [serious] And a bond is a loan.
+VO: [firm] And a bond is a loan.
 CAPTION 1: And a bond is a loan
 CAPTION 2: that's all a bond is
 
@@ -831,7 +877,7 @@ two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 35 | 2:16-2:21
 --------------------------------------------------------------------------------
-VO: Automatically. Quietly. As a feature you were never shown.
+VO: [flat] Automatically. Quietly. As a feature you were never shown.
 CAPTION 1: Automatically. Quietly.
 CAPTION 2: as a feature, not a fault
 
@@ -847,7 +893,7 @@ vertical composition, subject in the lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 36 | 2:21-2:25 | THE TURN — attach KAREEM sheet
 --------------------------------------------------------------------------------
-VO: [calm] So. Two minutes. Three steps.
+VO: [brighter] So. Two minutes. Three steps.
 CAPTION 1: Two minutes. Three steps.
 CAPTION 2: do it today
 
@@ -915,7 +961,7 @@ headroom above.
 --------------------------------------------------------------------------------
 SCENE 40 | 2:40-2:44 | THUMBNAIL CANDIDATE
 --------------------------------------------------------------------------------
-VO: [serious] You will recognise the banks immediately.
+VO: [matter-of-fact] You will recognise the banks immediately.
 CAPTION 1: You'll recognise the banks
 CAPTION 2: immediately
 
@@ -931,7 +977,7 @@ composition, sheet in the lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 41 | 2:44-2:50 | THE ACTIONABLE TURN — HOLD
 --------------------------------------------------------------------------------
-VO: Three. Open the full fund list. Look for a sharia or Islamic option.
+VO: [slowly] Three. Open the full fund list. Look for a sharia or Islamic option.
 CAPTION 1: 3. Open the full fund list
 CAPTION 2: look for the sharia option
 
@@ -982,7 +1028,7 @@ headroom above.
 --------------------------------------------------------------------------------
 SCENE 44 | 3:00-3:04 | attach ADAM sheet — RESOLVED
 --------------------------------------------------------------------------------
-VO: [serious] You were opted in by default.
+VO: [firm] You were opted in by default.
 CAPTION 1: You were opted in
 CAPTION 2: by default
 
