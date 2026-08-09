@@ -831,3 +831,33 @@ Stop reading views. Read **likes per 100 views**, and read it at 72 hours.
 **The single change with evidence behind it: nothing under 120 seconds.** Nine videos over
 120 s returned 134 subscribers. Twelve videos under 120 s returned 12, and the four shortest
 returned none at all.
+
+## Verified on the platform, 18:53 UTC
+
+Run `31330168702` on `615d1c2`, read-only, `conclusion: success`. Both new detectors ran
+against the live channel and reproduce the finding **from public data alone**:
+
+```
+== Like rate by length (public, past 72h, >=20 views) ==
+  <120s    n=12   2619 views    67 likes   2.56% like rate
+  >=120s   n=9    6127 views   305 likes   4.98% like rate
+
+  ! 6 public Short(s) under a 2% like rate:
+    UpCMyfIOftA    46s   1209 views   11 likes   0.91%
+    kOkfpCHeURw    17s    257 views    0 likes   0.00%
+    JB6Q_7IE9Jo   141s     40 views    0 likes   0.00%
+    P3DxNgGFah0    65s     39 views    0 likes   0.00%
+    sbor6eyJQKc    25s     35 views    0 likes   0.00%
+    4gRoTTZNnFE    28s     24 views    0 likes   0.00%
+```
+
+**One honest qualification, visible in that list.** `JB6Q_7IE9Jo` is **141 seconds** and also
+took zero likes, so length is not sufficient on its own. The difference is sample size, and it
+matters: at the channel's normal ~5% rate, 315 views should have produced about **15 likes**,
+and the sub-35s clips produced **none** — that is a real signal. 40 views should have produced
+about **2**, so `JB6Q_7IE9Jo`'s zero is inside the noise and cannot carry weight on its own.
+
+So the rule is *nothing under 120 seconds*, held as a floor rather than a guarantee. Going
+long is what the winners did and what the zeroes did not; it is not a promise that a long
+video converts. The next five uploads are the test, and the metric is likes per 100 views at
+72 hours — not views.
