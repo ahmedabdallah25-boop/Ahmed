@@ -1,66 +1,46 @@
 # Concept renders
 
-Generated 2026-08-08 with Google Nano Banana 2 (via Higgsfield), 2K.
+## Current set — measured layout (9 Aug 2026)
 
-**The images are now in this repo**, in [`img/`](img/) — supplied by hand after the session's
-egress policy blocked the CDN. Use those files; the CDN links below are kept only as provenance
-and will expire.
-
-| File | Render |
-|---|---|
-| `img/render1-hero.webp` | 1 — Hero, whole room |
-| `img/render2-machine-line.webp` | 2 — Machine line detail |
-| `img/render3-trolley-bays.webp` | 3 — Trolley bays and linen staging |
-| `img/render4-store-alcove.webp` | 4 — The lit store alcove |
-| `img/render5-signage-kit.webp` | 5 — Signage and standards kit |
-| `img/render-supporting-wall-station.webp` | Supporting — wall station close detail |
-
-All six are 640px on the long edge: fine on screen, soft if printed large.
-
-## Current set — corrected room facts
-
-Regenerated after the photos were righted and the walkthrough video reviewed. These assume the
-real materials (grey epoxy resin floor, white tiled dado, ~4 m ceiling) and carry the video
-findings: cleaned high-level trays, twelve light fittings, lidded lint bins, a clear fire exit,
-and the service station relocated into the newly-lit store alcove.
+Regenerated against the measured room and the corrected machine sides. **Supersedes both earlier
+sets.** CDN links expire; the images also sit in the Higgsfield generation history.
 
 | # | Subject | Ratio | Link |
 |---|---|---|---|
-| 1 | Hero — whole room, upgraded | 16:9 | [png](https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260808_160100_1543a39e-4b78-460a-9cc0-f8fab6f64674.png) |
-| 2 | Machine line detail — coved trim, lint bin, machine IDs | 3:2 | [png](https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260808_160100_a9f95453-1fc6-4897-88ee-55b5fdfa4892.png) |
-| 3 | Trolley bays and linen staging | 16:9 | [png](https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260808_160100_b831b395-bb37-4260-861c-f3609fc75236.png) |
-| 4 | The lit store alcove — shadow board, PPE, chemicals | 3:2 | [png](https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260808_160100_354a8998-70b7-4b24-b76c-12d1ea341dc1.png) |
-| 5 | Signage and standards kit (flat lay) | 3:2 | [png](https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260808_160100_5e948227-7d15-4316-a300-7c1b59b06905.png) |
+| 1 | Hero — from the doorway: 3 dryers left, 4 washers right, 2.11 m walkway | 16:9 | [png](https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260809_075154_ef872db7-aa2b-4ee2-b75c-85ea3d668aab.png) |
+| 2 | Washer line — W1–W4, stainless tops, coved trim, yellow walkway line | 3:2 | [png](https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260809_075154_b53f856f-21d0-4aac-9f5f-3a6cbd429169.png) |
+| 3 | Dryer line — D1–D3, rigid header + 3 rigid drops, lint bin per dryer | 3:2 | [png](https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260809_075154_22aa0494-6e31-4b31-a229-8ed844e65740.png) |
+| 4 | Soiled receiving — 2 red bays, tank rack over, clear fire exit | 3:2 | [png](https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260809_075154_76275ec4-0b06-4300-bf54-581e153b1535.png) |
+| 5 | Clean staging — folding bench, green bay, painted green route | 3:2 | [png](https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260809_075154_3967884d-5ed6-432b-b9ed-45bf0c8d39db.png) |
 
-Prompts that produced each one are in [`../ai-visual-prompts.md`](../ai-visual-prompts.md),
-section "Route 2" — kept verbatim in sync with this set.
+### What these fix versus the earlier sets
 
-These are **text-to-image concepts** — an idealised target, not your room. For a true
-before/after of the actual space, use the Route 1 image-to-image prompts with the upright
-photos.
+| Earlier renders showed | Corrected to |
+|---|---|
+| Machines massed on one wall | 3 dryers left, 4 washers right, as you enter |
+| Wire linen trolleys that do not exist | Covered containers in painted bays |
+| Whole extract system replaced | Existing rigid header retained, only the 3 drops rigid |
+| Generic bins | One lidded lint bin per dryer |
+| No tank, no single-door constraint | Tank rack over the receiving corner, one clear fire exit |
 
-## Superseded set — do not use
+**Not audited visually.** The image host is blocked by this session's network policy, so the
+prompts were checked against the measured layout but the rendered output was not inspected.
+Check items 1 and 3 first — machine counts and the duct.
 
-Generated before the photo orientation was corrected. They show a tiled floor and a stainless
-splashback the room does not have, and they predate the escape-route, distribution-board and
-store-alcove findings. Listed only so they are not mistaken for current.
+---
 
-| # | Subject | Link |
-|---|---|---|
-| 1 | Hero | [png](https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260808_150254_451900ec-3e48-44a1-b2e5-3e267c9f7a35.png) |
-| 2 | Machine line | [png](https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260808_150254_077401c3-c578-4bab-bdd2-edc8c6e048fd.png) |
-| 3 | Trolley bays | [png](https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260808_150254_c3e8a72b-e325-40cd-8026-337f4fa96095.png) |
-| 4 | Wall service station | [png](https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260808_150254_72fe2d08-57a5-4c2e-a4cc-106c37c206cd.png) |
-| 5 | Signage kit | [png](https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260808_150254_8cdfc795-e3db-49c6-b8ea-390426f86182.png) |
+## Superseded sets — do not use
+
+Two earlier sets exist (15:02 and 16:01 on 8 Aug). Both predate the measurements and show the
+machines on the wrong walls. Retained in the Higgsfield history only.
 
 ---
 
 ## Evidence frames from the walkthrough video
 
-Stills pulled from `IMG_6722.mov`, kept because they document the two findings that carry the
-most weight. These are real photographs of the room, not renders.
+Real photographs of the room, not renders.
 
 | File | Shows |
 |---|---|
-| `evidence-db-and-paper-wall.jpg` | The electrical distribution board with the taped paper wall directly beside it, and lint trays, a sack and a storage box on the floor beneath. No keep-clear zone. |
-| `evidence-dark-store-alcove.jpg` | The unlit store alcove — mop, squeegee, bucket and floor gully already there, no light fitting. One LED batten turns this into the cleaning and PPE store. |
+| `evidence-db-and-paper-wall.jpg` | Distribution board with the taped paper wall beside it, lint trays and a sack on the floor beneath. |
+| `evidence-dark-store-alcove.jpg` | The unlit store alcove — mop, bucket and floor gully, no light fitting. |
