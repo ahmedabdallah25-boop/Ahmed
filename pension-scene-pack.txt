@@ -192,7 +192,7 @@ VOICEOVER — full script, ElevenLabs v3 tags, copy as one block
 [matter-of-fact] Your pension owns things you would never buy.
 [quietly] And nobody asked you.
 [flat] Not once.
-[firm] You were opted in. Including into this.
+[firm] You were opted in.
 Pension. Four-oh-one-k. Workplace plan.
 Same machine.
 When you joined, you chose a number.
@@ -241,7 +241,7 @@ tags moved. See pension-script-audit.md for the reasoning behind each one.
 
 WHAT WAS WRONG. The first pass used 13 tags, EIGHT of them [serious]. A tag
 repeated eight times stops being direction and becomes the baseline, so v3 had
-one register for 315 words. That flat-serious texture is the "AI narrator" sound
+one register for the whole script. That flat-serious texture is the "AI narrator" sound
 that gets swiped. Three of the script's four biggest lines carried no tag at all.
 
 THE REGISTER SYSTEM. Four registers, deliberately reused so the delivery reads as
@@ -281,10 +281,12 @@ carry the breath pauses — do not add [pause], v3 handles the ellipsis better.
 FALLBACK. If v3 speaks a tag aloud instead of performing it, swap and re-render
 that line only: [matter-of-fact]→[calm], [flat]→[serious], [quietly]→[softly],
 [firm]→[serious], [brighter]→[warmly], [slowly]→ellipses between the words.
-Test-render lines 1-4 and 29-36 before committing the full 315 words.
+Test-render lines 1-4 and 29-36 before committing the full script.
 
-PACE. 315 words. At the delivery this pack was written for it lands near 165s
-(~115 wpm) — slow for the platform. Target 130-140 wpm, land near 145s, and
+PACE. 312 words (315 before the scene-04 copy fix). At the delivery this pack
+was written for it lands near 165s (~113 wpm) — slow for the platform. The hook
+is now 18 words; run it at ~135 wpm, roughly 8s for the four lines, not 14.
+Target 130-140 wpm overall, land near 145s, and
 spend the recovered time entirely on the glide-path reveal (scenes 25-36) rather
 than spreading it evenly. Do not cut words to get there.
 
@@ -294,21 +296,27 @@ THE 46 SCENES
 ================================================================================
 
 --------------------------------------------------------------------------------
-SCENE 01 | 0:00-0:05 | THE HOOK — object, no character
+SCENE 01 | 0:00-0:05 | THE HOOK — object, no character | ** FRAME ONE **
 --------------------------------------------------------------------------------
+SWAPPED 2026-08-09 — this scene and scene 04 exchanged IMAGE PROMPTS. VO,
+captions and timecodes did not move. The tick is the only saturated colour in
+the opening and it says "someone already decided this" with no words; the blank
+document it replaced was the lowest-information frame in the pack and was being
+held for five seconds at the swipe decision. Do not hold this longer than ~3.5s.
+
 VO: [matter-of-fact] Your pension owns things you would never buy.
 CAPTION 1: Your pension owns things
 CAPTION 2: you would never buy
 
 IMAGE PROMPT:
 Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
-colour fills with soft minimal shading, warm cream #F7EFDD background. Top-down
-view of a single blank cream document lying on a plain surface, one large empty
-rounded rectangle printed near its top where a figure would sit, no text
-anywhere. Beneath it a neat fan of five small blank cards spreads out like a
-dealt hand, each card plain cream with a dark outline. Simple flat drop shadows
-offset down-right beneath the paper and cards. Calm, uncluttered, no other props.
-9:16 vertical composition, subject in the lower two-thirds, clean headroom above.
+colour fills with soft minimal shading, warm cream #F7EFDD background. Large
+close-up of a single square checkbox on a blank cream form, already filled with a
+bold rust red #B5603F tick that is clearly printed rather than handwritten —
+crisp, geometric, machine-made. Two blank ruled lines sit beneath it. Simple flat
+drop shadow offset down-right beneath the form. The tick is the only saturated
+colour in the frame. 9:16 vertical composition, subject in the lower two-thirds,
+clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 02 | 0:05-0:08 | ** GENERATE FIRST — STYLE TEST — attach KAREEM sheet **
@@ -347,19 +355,24 @@ vertical composition, stack in the lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 04 | 0:10-0:14
 --------------------------------------------------------------------------------
-VO: [firm] You were opted in. Including into this.
+COPY FIX 2026-08-09 — "Including into this." was cut. "This" had no referent
+yet, so it landed as a stumble at second 10. The shorter line is a hard
+declarative that scene 44 calls straight back to, and it takes the hook from 21
+words to 18. IMAGE PROMPT swapped with scene 01, see the note there.
+
+VO: [firm] You were opted in.
 CAPTION 1: You were opted in
-CAPTION 2: including into this
+CAPTION 2: (none)
 
 IMAGE PROMPT:
 Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
-colour fills with soft minimal shading, warm cream #F7EFDD background. Large
-close-up of a single square checkbox on a blank cream form, already filled with a
-bold rust red #B5603F tick that is clearly printed rather than handwritten —
-crisp, geometric, machine-made. Two blank ruled lines sit beneath it. Simple flat
-drop shadow offset down-right beneath the form. The tick is the only saturated
-colour in the frame. 9:16 vertical composition, subject in the lower two-thirds,
-clean headroom above.
+colour fills with soft minimal shading, warm cream #F7EFDD background. Top-down
+view of a single blank cream document lying on a plain surface, one large empty
+rounded rectangle printed near its top where a figure would sit, no text
+anywhere. Beneath it a neat fan of five small blank cards spreads out like a
+dealt hand, each card plain cream with a dark outline. Simple flat drop shadows
+offset down-right beneath the paper and cards. Calm, uncluttered, no other props.
+9:16 vertical composition, subject in the lower two-thirds, clean headroom above.
 
 --------------------------------------------------------------------------------
 SCENE 05 | 0:14-0:18 | attach ADAM, SAMI and BILAL sheets
@@ -1036,7 +1049,7 @@ IMAGE PROMPT:
 Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
 colour fills with soft minimal shading, warm cream #F7EFDD background. ADAM seen
 from the waist up, three-quarter view, looking down at the blank cream form from
-scene 04, RESOLVED expression — level brows, firm small mouth, calm and settled.
+scene 01, RESOLVED expression — level brows, firm small mouth, calm and settled.
 He holds a simple pen and is placing his own handwritten tick — loose and
 slightly uneven, clearly hand-drawn, in olive #7C8A5F — into a SECOND empty
 checkbox beside the original printed rust red #B5603F one. The contrast between

@@ -4,9 +4,12 @@
 [`pension-scene-pack.txt`](pension-scene-pack.txt), *"Is Your Pension Halal? (You Never Picked
 What It Buys)"*, target publish 2026-08-09 03:00 PT.
 
-**Scope of the change made:** emotion tags only. **Not one word of the script was altered,
-added or removed.** Every recommendation that would touch copy is listed in §7 and left
-unapplied.
+**Scope, first pass (2026-08-09):** emotion tags only, not one word touched.
+
+**Scope, second pass (2026-08-09, on the user's instruction):** two of the §7 recommendations
+were applied — the **scene 01/04 image swap** (#1) and the **line 4 copy fix** (#4). Line 4
+*"You were opted in. Including into this."* is now *"You were opted in."* The script is
+**312 words**; every other word is unchanged. See §9 for what shipped and what it moved.
 
 ---
 
@@ -98,15 +101,15 @@ v3's whisper drops well below the rest of the mix. If line 2 is inaudible, lines
 connect and the hook has no second beat. Changed to `[quietly]`: same intimacy, no dropout.
 Nudge that line +3 dB in the mix regardless.
 
-### 2.4 "Including into this" is the hook's weak link — **flagged, not changed**
+### 2.4 "Including into this" is the hook's weak link — **fixed in the second pass, see §9.1**
 
 "This" has no referent yet. Nothing has been shown, named or described. It lands as a
 grammatical stumble at second 10, and stumbles in a hook cost more than anywhere else in a
 video. The clean versions are *"Including into this basket"* (which also plants the word the
 whole middle section runs on) or simply stopping at *"You were opted in."*
 
-Not changed, per instruction. Worth one minute of the user's time before the VO is recorded,
-because it is cheap now and impossible later.
+**Resolved:** cut to *"You were opted in."* — §9.1. Sections 2 and 3 below are preserved as the
+audit of the script as it stood; §9 records what moved.
 
 ### 2.5 The structural point about the noun
 
@@ -284,16 +287,16 @@ TAG NOTES. The one tag genuinely worth A/B-ing is line 1 — `[matter-of-fact]` 
 
 Everything here needs either a copy change or a decision that is the user's to make.
 
-| # | Recommendation | Type | Value |
-|---|---|---|---|
-| 1 | Open on scene 04's image (the pre-printed rust tick), move scene 01 to 0:10 | scene order | **highest** |
-| 2 | 1.5s silent cold-open flash of scene 34 (glide path) before the hook | edit | high |
-| 3 | Deliver at 130–140 wpm → ~145s; give the recovered time to scenes 25–36 | pacing | high |
-| 4 | Fix *"Including into this"* → *"Including into this basket"*, or cut the second sentence | **copy** | high, cheap now |
-| 5 | Put the comment question in the pinned comment and description, not the VO | metadata | medium |
-| 6 | Correct the pack header and `next-slate.md`: 196s storyboarded, not ~165s | docs | medium |
-| 7 | Add the presence-vs-weight note to ACCURACY NOTES for line 18 | docs | medium |
-| 8 | +3 dB on line 2 in the mix | audio | low, free |
+| # | Recommendation | Type | Value | Status |
+|---|---|---|---|---|
+| 1 | Open on scene 04's image (the pre-printed rust tick), move scene 01 to 0:10 | scene order | **highest** | ✅ applied |
+| 2 | 1.5s silent cold-open flash of scene 34 (glide path) before the hook | edit | high | open |
+| 3 | Deliver at 130–140 wpm → ~145s; give the recovered time to scenes 25–36 | pacing | high | open |
+| 4 | Fix *"Including into this"* → *"Including into this basket"*, or cut the second sentence | **copy** | high, cheap now | ✅ applied — cut |
+| 5 | Put the comment question in the pinned comment and description, not the VO | metadata | medium | open |
+| 6 | Correct the pack header and `next-slate.md`: 196s storyboarded, not ~165s | docs | medium | open |
+| 7 | Add the presence-vs-weight note to ACCURACY NOTES for line 18 | docs | medium | open |
+| 8 | +3 dB on line 2 in the mix | audio | low, free | open |
 
 **Not recommended:** cutting the script to 60s. That rule was tested against this channel's own
 numbers and found backwards — four of the five best videos run 133–180s. Do not cut words to
@@ -313,3 +316,58 @@ Publish per the pack. Then, per `channel-reset.md`:
   system. If it over- or under-performs, it cannot be attributed to the subject. Say so.
 - **If it lands in the 6–22 v/day band like the last five**, the script was never the
   constraint, and the answer is the paid analytics month, not another rewrite.
+
+---
+
+## 9 · Second pass — what was applied, 2026-08-09
+
+Applied on instruction, before VO recording. Both were §7 items; nothing else in §7 moved.
+
+### 9.1 Line 4 copy fix (§7 #4)
+
+```
+was:  [firm] You were opted in. Including into this.        CAPTION 2: including into this
+now:  [firm] You were opted in.                             CAPTION 2: (none)
+```
+
+Three words out. Three consequences, all in the right direction:
+
+- **The stumble is gone.** "This" had no referent at second 10 — nothing had been shown, named
+  or described.
+- **The hook is 18 words, down from 21.** Against §2.2's finding of 90 wpm, the same 14-second
+  slot now needs even less filling. Run the four lines at ~135 wpm — roughly **8 seconds**, not
+  14 — and hand the recovered ~6s to the glide-path reveal.
+- **The bookend tightened.** Line 4 is now a bare declarative, and line 44 is *"You were opted
+  in by default."* The callback is word-for-word plus two, which is a much cleaner rhyme than
+  the original's trailing clause gave it.
+
+Script is now **312 words**. `[firm]` is unchanged and is still correct on the shorter line —
+arguably more so, since a four-word declarative is what that register is for.
+
+### 9.2 Scene 01 / 04 image swap (§7 #1)
+
+**IMAGE PROMPTS exchanged. VO, captions and timecodes did not move.**
+
+- **Scene 01 (0:00–0:05)** now opens on the large close-up of the machine-printed rust red tick
+  in a checkbox — *"the only saturated colour in the frame."* Frame one now says *someone
+  already decided this for you* before a word is spoken, which is the entire proposition of the
+  video.
+- **Scene 04 (0:10–0:14)** now holds the blank cream document with the fanned blank cards.
+
+**Hold scene 01 to ~3.5s, not 5.** The swap fixes *what* is on frame one; it does not fix
+holding any single frame through the whole swipe window. Both notes are written into the pack.
+
+**One cross-reference had to move with it.** Scene 44's prompt read *"looking down at the blank
+cream form from scene 04"* — that is the checkbox form, which now lives in scene 01. Updated to
+`scene 01`. Left unfixed, the payoff shot would have referenced the wrong image and the
+machine-tick / human-tick contrast — which the prompt itself calls "the point" — would have
+been generated against a blank document.
+
+**Unplanned gain:** the swap put the tick at 0:00 and Adam's handwritten tick at 3:00, so the
+video's first and last images are now the same object, machine-marked then human-marked. That
+is a stronger visual bookend than the script's verbal one, and it cost nothing.
+
+### 9.3 What this does not change
+
+The verdict in §1 stands. These are margin improvements to the two beats that decide whether
+anyone watches past second three — worth making, and not a reason to expect a different band.
