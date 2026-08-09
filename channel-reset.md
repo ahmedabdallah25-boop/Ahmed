@@ -861,3 +861,27 @@ So the rule is *nothing under 120 seconds*, held as a floor rather than a guaran
 long is what the winners did and what the zeroes did not; it is not a promise that a long
 video converts. The next five uploads are the test, and the metric is likes per 100 views at
 72 hours — not views.
+
+## Where the private analytics come from, and what is still unpulled
+
+**The route is vidiq, not Nexlev.** Nexlev is on the free plan and every `get_my_*` tool
+returns `ACCESS DENIED` — re-confirmed 2026-08-09 on `get_my_subscriber_status` for both
+windows. The vidiq connector authenticates as `ahmed.buyenga@gmail.com`, `vidiq_user_channels`
+returns `UCVOoFJkRiOdJsWnewt8HJkw`, and that is owner-level YouTube Analytics access. Every
+number in this pass came from it. **It costs nothing extra — the connection already existed
+while four passes of this document were recommending buying a paid plan.**
+
+The connector dropped mid-session on 2026-08-09 and did not re-register, so three queries
+remain unpulled. They are listed here so the next pass runs them first rather than
+rediscovering the need:
+
+| Query | Why | Status |
+|---|---|---|
+| `dimensions=["subscribedStatus"]`, both windows | **The one unverified number in this pass.** The Aug 1–9 pull returned SUBSCRIBED 64 views / 253% and UNSUBSCRIBED 447 / 27.98%, which does not reconcile: 447 × 34 s implies 253 minutes against 172 logged channel-wide. Do not cite it until the July control is pulled alongside it. | **blocked** |
+| `dimensions=["day"]` for Aug 7–9 | Missing from the Aug 1–6 pull to reporting lag. Closes out `RpFWP1a7Huk` and `BllkNdhDu-k`, which clear 72 h on Aug 10 at 09:29Z and 18:00Z. | **blocked** |
+| `dimensions=["video"]` with `estimatedMinutesWatched` | The per-video pull used `averageViewDuration`/`averageViewPercentage`, which are unreliable for Shorts (see §1). Re-pull on minutes watched to get per-video hold time that can actually be trusted. | **blocked** |
+
+**Reading these does not change the decision.** The finding rests on views, likes and
+subscribers gained — all exact — and `engagement()` reproduces the length/like-rate split from
+public data alone. What the three queries above would add is precision on *where* in a video
+cold viewers leave, which sharpens the next script rather than the current diagnosis.
