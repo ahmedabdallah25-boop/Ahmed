@@ -40,10 +40,12 @@ const out = scenes.map((s, i) => {
     cap2: clean(s.cap2),
     vo: clean(s.n === 46 ? script[i] : s.vo),
     tag,
-    // Bottom of the caption band: clear of the subject, floored so that a still
-    // with almost no headroom gets small type rather than unreadable type.
+    // Bottom of the caption band: 40px clear of where the subject actually
+    // starts. The floor is only a backstop against a still with no headroom at
+    // all — it must stay BELOW the tightest real measurement (330px), or it
+    // overrides the very thing it is meant to protect and puts type on the art.
     capBottom: Math.round(
-      Math.min(980, Math.max(360, (headroom[String(stillFor(s.n)).padStart(2, '0') + '.jpeg']?.canvasY ?? 640) - 40)),
+      Math.min(980, Math.max(240, (headroom[String(stillFor(s.n)).padStart(2, '0') + '.jpeg']?.canvasY ?? 640) - 40)),
     ),
     step: step ? {One: 1, Two: 2, Three: 3}[step] : 0,
     estimated: a.estimated === true,

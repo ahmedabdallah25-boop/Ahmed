@@ -98,7 +98,7 @@ export const SCENES: Scene[] = [
     "cap2": "you chose one number",
     "vo": "When you joined, you chose a number.",
     "tag": "",
-    "capBottom": 360,
+    "capBottom": 290,
     "step": 0,
     "estimated": false
   },
@@ -384,7 +384,7 @@ export const SCENES: Scene[] = [
     "cap2": "to actually retiring",
     "vo": "The closer you get to retiring...",
     "tag": "",
-    "capBottom": 360,
+    "capBottom": 302,
     "step": 0,
     "estimated": false
   },
