@@ -1,0 +1,44 @@
+{
+  "file": "media/student-loan-crossover.mp4",
+  "title": "Is Your Student Loan Halal? (You Never Touched What You Owe) #studentloans #islamicfinance",
+  "title_alternatives": {
+    "chosen": "Is Your Student Loan Halal? (You Never Touched What You Owe) #studentloans #islamicfinance",
+    "_why_chosen": "The title registered in student-loan-scene-pack.txt (UPLOAD METADATA). It is the `Is Your [X] Halal? (compressed claim)` shape held identical to Part 16, built as a grammatical twin of `You Never Picked What It Buys` - same person, same negation, same object-clause, same length - so that SUBJECT is the only packaging variable moving between Part 16 and Part 17. That is the entire point of this upload: Part 16 moved two variables (subject AND render style) and its result is therefore unattributable. This one moves one.",
+    "scored_but_rejected": {
+      "Is Your Student Loan Halal? (You Paid 6 Years And Owe More)": 53,
+      "Is Your Student Loan Halal? (You Owe More Than You Borrowed)": 55
+    },
+    "_scoring_note": "vidIQ scored the shipped Part 16 title 81 against 53 and 55 for the two looser student-loan phrasings tested on 2026-08-10. The gap was the SHAPE, not the subject, so the shape is what got copied. The chosen string itself was NOT scored - vidIQ credits ran out mid-session. Score it before publishing if credits are available, but do not swap the shape on the strength of a score: Part 16's own config records three titles tied at 81, which is the instrument failing to separate them. Acting on a tie is noise."
+  },
+  "description": "You have paid it every month for six years. You have never touched it.\n\nHere is the mechanism nobody explains. You agreed to repay a slice of what you\nearn above a threshold — capped, predictable, and it does sound fair. But\ninterest is charged every day on the WHOLE outstanding balance, and that charge\nis uncapped, because it grows with the balance itself.\n\nSo there are two flows, not one. Money leaving you, capped. Money joining the\ndebt, uncapped.\n\nSomewhere between them is a crossover — an income where the two are exactly\nequal. Above it, your payment eats the interest and starts on the balance, and\nthe debt falls. Below it, the balance does not fall slowly. It does not fall at\nall. It rises, while you pay it, faithfully, for a decade.\n\nThat is not what happens when you default. It is what happens when you comply.\n\nAnd it cuts the wrong way. The graduate who earns well crosses over, clears the\ndebt and stops paying. The graduate who earns less pays for thirty years and\nclears nothing. Same debt — the one with less money pays longer, and pays more.\nThen it is written off, which sounds like mercy. It isn't. The lender's own\nforecasts already assume most of that money is never coming back. The write-off\nisn't the escape hatch at the end of the machine; it is a line inside the\nmachine's budget.\n\nPlan Two. Income-driven. Deferment. Same machine.\n\nTHE TWO-MINUTE CHECK:\n\n1. Find two published numbers — your interest rate and your repayment threshold.\n   Both are on your statement or your servicer's site.\n2. Work out a single month. Interest added, against payment taken. If the\n   interest is bigger, you are renting the debt, not repaying it.\n3. Only then decide about overpaying. Above the crossover it genuinely shortens\n   the debt. Far below it, with a write-off coming anyway, it is money burned.\n   Same arithmetic, run honestly, in both directions.\n\nRiba is not a tax on borrowing. It is a price charged for time — a number that\ngrows because the clock moved, not because anything was built, sold or risked.\nA debt you service faithfully and cannot reduce is the purest form of it there\nis.\n\nYou didn't fail to pay it off. You were never paying it off.\n\nThe Money Machine, Decoded.\n\nMORE IN THE SERIES:\nIs Your Pension Halal? https://youtube.com/shorts/S61o4xbsn20\nIs Paper Gold Halal? https://youtube.com/shorts/JB6Q_7IE9Jo\nHow banks quietly trap your savings: https://youtu.be/OXIP3EJROQk\nPassive income without interest (Sukuk): https://youtu.be/J0TCD2u177k\n▶ Full series in order: https://www.youtube.com/playlist?list=PLKLKzR1QgFHE\nNo jargon. Just mechanisms.\n\nI deliberately name no lender, servicer or repayment plan. Interest rates,\nthresholds and write-off periods differ by country and change every year — check\nyour own current terms. Scholars differ on borrowing under necessity where no\nalternative route to education exists. This is financial education, not\nfinancial advice.\n\n#StudentLoans #StudentDebt #IslamicFinance #HalalMoney #Riba #MuslimMoney\n#StudentLoanForgiveness #FinanceDecoded",
+  "tags": [
+    "are student loans halal",
+    "is my student loan halal",
+    "student loan halal or haram",
+    "halal student loan",
+    "student loans islam",
+    "student loan interest explained",
+    "negative amortization student loan",
+    "why does my student loan go up",
+    "student loan balance increasing",
+    "income driven repayment explained",
+    "student loan forgiveness explained",
+    "islamic finance explained",
+    "riba explained",
+    "halal alternatives to loans",
+    "qard hasan"
+  ],
+  "_tags_note": "Ordered by value so fit_tags()'s 450-character cap trims from the end. The first five are the literal queries behind the 194K/40K/29K-view Shorts measured on 2026-08-10, all of them talking-head verdicts. The next four are the mechanism queries - 'why does my student loan go up', 'student loan balance increasing' - which is demand for the thing this video actually is and which the fatwa videos do not answer. 'riba explained' is a TAG only and never appears in the title: the English SERP for riba is contested by the Royal Institute of British Architects.",
+  "engagement_comment": "Two minutes: find your interest rate and your repayment threshold, then work out ONE month — interest added vs payment taken. If the interest is bigger, you're renting the debt, not repaying it. Which way did yours come out? 👇",
+  "decision_rule": {
+    "decision_hours": 72,
+    "pass_views": 150,
+    "dead_views": 50
+  },
+  "caption_file": "media/student-loan-crossover.srt",
+  "caption_language": "en",
+  "publish_at": "2026-08-11T10:00:00Z",
+  "privacy": "private",
+  "_publish_note": "03:00 PT, the same slot as part15 and part16. Held constant deliberately - channel-reset.md ruled the publish window OUT as a cause, so time is not a lever here, it is the control. Part 16 went out 2026-08-09 03:00 PT, so this clears the 12-hour same-day rule with room. Neither video is judged before its 72 hours: Part 16's are not up until 2026-08-12 03:00 PT.",
+  "_variable_note": "THIS UPLOAD MOVES ONE VARIABLE: the subject (education debt, a family the channel has never entered). Title shape, render style, cast, palette, publish slot, runtime, scene count and caption spec are all held identical to Part 16. That makes it the first readable A/B the channel has run. Do not 'improve' anything else on it."
+}
