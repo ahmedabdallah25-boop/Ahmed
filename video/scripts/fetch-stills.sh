@@ -9,9 +9,13 @@
 #
 #   ./scripts/fetch-stills.sh ~/student-loan-stills
 #
-# Names are IMG_0001.png .. IMG_0046.png because ingest-scenes.mjs orders by
+# Names are IMG_0001.jpeg .. IMG_0046.jpeg because ingest-scenes.mjs orders by
 # the IMG_#### number and renumbers from scratch — so the scene order survives
 # even though the ingest never sees this manifest.
+#
+# Converted to JPEG q92 to match the pension pack's format. The sources are
+# 1-2MB PNGs; 46 of them add ~90MB for no visible gain at 1080x1920. Needs
+# ImageMagick's `convert` (or swap in `ffmpeg -i in.png -q:v 2 out.jpeg`).
 set -euo pipefail
 
 OUT="${1:-}"
@@ -36,18 +40,20 @@ for n in $(seq 1 46); do
     continue
   fi
 
-  dest=$(printf '%s/IMG_%04d.png' "$OUT" "$n")
+  dest=$(printf '%s/IMG_%04d.jpeg' "$OUT" "$n")
   if [ -s "$dest" ]; then
     echo "scene $n: already have $(basename "$dest")"
     continue
   fi
 
   echo "scene $n -> $(basename "$dest")"
-  curl -fsS --retry 3 --retry-delay 2 -o "$dest" "$url"
+  curl -fsS --retry 3 --retry-delay 2 -o "$dest.png" "$url"
+  convert "$dest.png" -quality 92 "$dest"
+  rm -f "$dest.png"
 done
 
 echo
-echo "$(find "$OUT" -name 'IMG_*.png' -size +0 | wc -l | tr -d ' ') of 46 stills in $OUT"
+echo "$(find "$OUT" -name 'IMG_*.jpeg' -size +0 | wc -l | tr -d ' ') of 46 stills in $OUT"
 if [ "$missing" -gt 0 ]; then
   echo "$missing scene(s) missing from the manifest — regenerate those before ingesting." >&2
   exit 1
@@ -59,4 +65,7 @@ Next:
   cd video
   npm run ingest:studentloan -- "$OUT" studentloan
   npm run headroom:studentloan
+  npm run timeline:studentloan
+  npm run srt:studentloan
+  npm run render:studentloan
 EOF

@@ -13,7 +13,7 @@ export const TOTAL_FRAMES = 6808;
 export const SCENES: Scene[] = [
   {
     "n": 1,
-    "still": "01.png",
+    "still": "01.jpeg",
     "from": 0,
     "durationInFrames": 128,
     "cap1": "Six years of payments",
@@ -27,7 +27,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 2,
-    "still": "02.png",
+    "still": "02.jpeg",
     "from": 128,
     "durationInFrames": 71,
     "cap1": "You have never",
@@ -41,7 +41,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 3,
-    "still": "03.png",
+    "still": "03.jpeg",
     "from": 199,
     "durationInFrames": 101,
     "cap1": "The number is BIGGER",
@@ -55,7 +55,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 4,
-    "still": "04.png",
+    "still": "04.jpeg",
     "from": 300,
     "durationInFrames": 108,
     "cap1": "So look at what",
@@ -69,7 +69,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 5,
-    "still": "05.png",
+    "still": "05.jpeg",
     "from": 408,
     "durationInFrames": 59,
     "cap1": "They handed you",
@@ -83,7 +83,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 6,
-    "still": "06.png",
+    "still": "06.jpeg",
     "from": 467,
     "durationInFrames": 92,
     "cap1": "You hand back a slice",
@@ -97,7 +97,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 7,
-    "still": "07.png",
+    "still": "07.jpeg",
     "from": 559,
     "durationInFrames": 86,
     "cap1": "but only the part",
@@ -111,7 +111,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 8,
-    "still": "08.png",
+    "still": "08.jpeg",
     "from": 645,
     "durationInFrames": 84,
     "cap1": "Under the line?",
@@ -125,7 +125,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 9,
-    "still": "09.png",
+    "still": "09.jpeg",
     "from": 729,
     "durationInFrames": 87,
     "cap1": "Over it?",
@@ -139,7 +139,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 10,
-    "still": "10.png",
+    "still": "10.jpeg",
     "from": 816,
     "durationInFrames": 133,
     "cap1": "Plan Two. Income-driven.",
@@ -153,7 +153,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 11,
-    "still": "11.png",
+    "still": "11.jpeg",
     "from": 949,
     "durationInFrames": 55,
     "cap1": "Same",
@@ -167,7 +167,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 12,
-    "still": "12.png",
+    "still": "12.jpeg",
     "from": 1004,
     "durationInFrames": 147,
     "cap1": "Most people stop",
@@ -181,7 +181,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 13,
-    "still": "13.png",
+    "still": "13.jpeg",
     "from": 1151,
     "durationInFrames": 118,
     "cap1": "It would be —",
@@ -195,7 +195,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 14,
-    "still": "14.png",
+    "still": "14.jpeg",
     "from": 1269,
     "durationInFrames": 33,
     "cap1": "It",
@@ -209,7 +209,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 15,
-    "still": "15.png",
+    "still": "15.jpeg",
     "from": 1302,
     "durationInFrames": 70,
     "cap1": "Every single day",
@@ -223,7 +223,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 16,
-    "still": "16.png",
+    "still": "16.jpeg",
     "from": 1372,
     "durationInFrames": 148,
     "cap1": "not to part of it —",
@@ -237,7 +237,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 17,
-    "still": "17.png",
+    "still": "17.jpeg",
     "from": 1520,
     "durationInFrames": 96,
     "cap1": "There are TWO flows",
@@ -251,7 +251,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 18,
-    "still": "18.png",
+    "still": "18.jpeg",
     "from": 1616,
     "durationInFrames": 164,
     "cap1": "FLOW ONE: out of you",
@@ -265,7 +265,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 19,
-    "still": "19.png",
+    "still": "19.jpeg",
     "from": 1780,
     "durationInFrames": 231,
     "cap1": "FLOW TWO: onto the debt",
@@ -279,7 +279,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 20,
-    "still": "20.png",
+    "still": "20.jpeg",
     "from": 2011,
     "durationInFrames": 94,
     "cap1": "Hold them",
@@ -293,7 +293,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 21,
-    "still": "21.png",
+    "still": "21.jpeg",
     "from": 2105,
     "durationInFrames": 178,
     "cap1": "One income where",
@@ -307,7 +307,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 22,
-    "still": "22.png",
+    "still": "22.jpeg",
     "from": 2283,
     "durationInFrames": 179,
     "cap1": "ABOVE it: the debt falls",
@@ -321,7 +321,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 23,
-    "still": "23.png",
+    "still": "23.jpeg",
     "from": 2462,
     "durationInFrames": 272,
     "cap1": "BELOW it: it doesn't fall",
@@ -335,7 +335,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 24,
-    "still": "24.png",
+    "still": "24.jpeg",
     "from": 2734,
     "durationInFrames": 192,
     "cap1": "10 years. Never missed.",
@@ -349,7 +349,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 25,
-    "still": "25.png",
+    "still": "25.jpeg",
     "from": 2926,
     "durationInFrames": 185,
     "cap1": "That's not what happens",
@@ -363,7 +363,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 26,
-    "still": "26.png",
+    "still": "26.jpeg",
     "from": 3111,
     "durationInFrames": 82,
     "cap1": "It's what happens",
@@ -377,7 +377,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 27,
-    "still": "27.png",
+    "still": "27.jpeg",
     "from": 3193,
     "durationInFrames": 154,
     "cap1": "Earns more?",
@@ -391,7 +391,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 28,
-    "still": "28.png",
+    "still": "28.jpeg",
     "from": 3347,
     "durationInFrames": 208,
     "cap1": "Earns less?",
@@ -405,7 +405,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 29,
-    "still": "29.png",
+    "still": "29.jpeg",
     "from": 3555,
     "durationInFrames": 172,
     "cap1": "Same debt.",
@@ -419,7 +419,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 30,
-    "still": "30.png",
+    "still": "30.jpeg",
     "from": 3727,
     "durationInFrames": 114,
     "cap1": "Then, decades in",
@@ -433,7 +433,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 31,
-    "still": "31.png",
+    "still": "31.jpeg",
     "from": 3841,
     "durationInFrames": 178,
     "cap1": "Sounds like mercy.",
@@ -447,7 +447,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 32,
-    "still": "32.png",
+    "still": "32.jpeg",
     "from": 4019,
     "durationInFrames": 185,
     "cap1": "Their own forecasts",
@@ -461,7 +461,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 33,
-    "still": "33.png",
+    "still": "33.jpeg",
     "from": 4204,
     "durationInFrames": 226,
     "cap1": "Not an escape hatch —",
@@ -475,7 +475,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 34,
-    "still": "34.png",
+    "still": "34.jpeg",
     "from": 4430,
     "durationInFrames": 128,
     "cap1": "This is what the",
@@ -489,7 +489,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 35,
-    "still": "35.png",
+    "still": "35.jpeg",
     "from": 4558,
     "durationInFrames": 146,
     "cap1": "Not a tax on borrowing",
@@ -503,7 +503,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 36,
-    "still": "36.png",
+    "still": "36.jpeg",
     "from": 4704,
     "durationInFrames": 267,
     "cap1": "It grows because",
@@ -517,7 +517,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 37,
-    "still": "37.png",
+    "still": "37.jpeg",
     "from": 4971,
     "durationInFrames": 171,
     "cap1": "Serviced faithfully.",
@@ -531,7 +531,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 38,
-    "still": "38.png",
+    "still": "38.jpeg",
     "from": 5142,
     "durationInFrames": 89,
     "cap1": "So here's the",
@@ -545,7 +545,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 39,
-    "still": "39.png",
+    "still": "39.jpeg",
     "from": 5231,
     "durationInFrames": 188,
     "cap1": "1. Find two numbers",
@@ -559,7 +559,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 40,
-    "still": "40.png",
+    "still": "40.jpeg",
     "from": 5419,
     "durationInFrames": 175,
     "cap1": "2. Work out ONE month",
@@ -573,7 +573,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 41,
-    "still": "41.png",
+    "still": "41.jpeg",
     "from": 5594,
     "durationInFrames": 163,
     "cap1": "Interest bigger?",
@@ -587,7 +587,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 42,
-    "still": "42.png",
+    "still": "42.jpeg",
     "from": 5757,
     "durationInFrames": 113,
     "cap1": "3. THEN decide",
@@ -601,7 +601,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 43,
-    "still": "43.png",
+    "still": "43.jpeg",
     "from": 5870,
     "durationInFrames": 321,
     "cap1": "Above? It shortens it.",
@@ -615,7 +615,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 44,
-    "still": "44.png",
+    "still": "44.jpeg",
     "from": 6191,
     "durationInFrames": 410,
     "cap1": "Qard hasan. Employer schemes.",
@@ -629,7 +629,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 45,
-    "still": "45.png",
+    "still": "45.jpeg",
     "from": 6601,
     "durationInFrames": 163,
     "cap1": "You didn't fail to pay it.",
@@ -643,7 +643,7 @@ export const SCENES: Scene[] = [
   },
   {
     "n": 46,
-    "still": "46.png",
+    "still": "46.jpeg",
     "from": 6764,
     "durationInFrames": 44,
     "cap1": "The Money Machine,",

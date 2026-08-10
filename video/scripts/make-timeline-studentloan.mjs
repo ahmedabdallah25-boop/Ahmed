@@ -32,7 +32,7 @@ const STEP = {One: 1, Two: 2, Three: 3};
 
 const out = scenes.map((s, i) => {
   const a = aligned[i];
-  const still = String(s.n).padStart(2, '0') + '.png';
+  const still = String(s.n).padStart(2, '0') + '.jpeg';
   const measured = headroom?.[still]?.canvasY;
   // The two-minute check's numbered steps. Matched after the performance tag
   // is stripped — scene 39 reads "[calm] One. Find two published numbers".

@@ -38,7 +38,7 @@ jobs:
           mkdir -p video/public/studentloan
           missing=0
           for n in $(seq 1 46); do
-            dest=$(printf 'video/public/studentloan/%02d.png' "$n")
+            dest=$(printf 'video/public/studentloan/%02d.jpeg' "$n")
             if [ -s "$dest" ]; then
               echo "$dest already present"
               continue
@@ -50,7 +50,11 @@ jobs:
               continue
             fi
             echo "scene $n -> $dest"
-            curl -fsS --retry 4 --retry-delay 3 -o "$dest" "$url"
+            curl -fsS --retry 4 --retry-delay 3 -o /tmp/still.png "$url"
+            # JPEG q92, matching the pension pack's format. The PNGs are 1-2MB
+            # each; 46 of them would add ~90MB to a repo whose .git is already
+            # 775MB, for no visible gain at 1080x1920.
+            convert /tmp/still.png -quality 92 "$dest"
           done
           [ "$missing" -eq 0 ] || exit 1
 
@@ -58,12 +62,12 @@ jobs:
         run: |
           set -euo pipefail
           for n in $(seq 1 46); do
-            f=$(printf 'video/public/studentloan/%02d.png' "$n")
+            f=$(printf 'video/public/studentloan/%02d.jpeg' "$n")
             [ -s "$f" ] || { echo "::error::$f missing or empty"; exit 1; }
-            file "$f" | grep -q 'PNG image data' || { echo "::error::$f is not a PNG"; exit 1; }
+            file "$f" | grep -q 'JPEG image data' || { echo "::error::$f is not a JPEG"; exit 1; }
           done
           echo "46/46 present"
-          identify -format '%f %wx%h\n' video/public/studentloan/*.png || true
+          identify -format '%f %wx%h\n' video/public/studentloan/*.jpeg || true
 
       - name: Commit
         run: |
