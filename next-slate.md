@@ -138,7 +138,7 @@ the next entry, and the formula-perfect third inflation video did 43 views.
 - **Payoff** — how to check your own fund in two minutes, and what switching actually changes.
 - **The gap** — only ~3,220 results exist for the whole query. The top performer is a **nine-year-old** clip; the two IFG entries are **five years old**. Auto-enrolment means every working viewer has one.
 
-### 3 · Is a Credit Card Halal?
+### 3 · Is a Credit Card Halal?  ✅ SHIPPED as `3 Questions Decide If Your Credit Card Is Halal` (BllkNdhDu-k, 30 views @ 2026-08-10)
 
 - **Frame one** — a card, and a statement line reading `Interest this month: £0.00`.
 - **Line one** — *"You pay it off every month. You've never paid a penny of interest. So is it halal?"*
@@ -154,7 +154,40 @@ the next entry, and the formula-perfect third inflation video did 43 views.
 - **Payoff** — a walkthrough of exactly what to switch off to use it cleanly.
 - **The gap** — the "Is X Halal?" library in this niche stops at ~2023 products. Nothing covers Revolut, Monzo, Cash App, crypto ETFs or prediction markets. **This title is a template you can re-run indefinitely on new nouns** — it is the single most repeatable item on the slate.
 
-### 5 · Is Your Student Loan Halal?
+### 5 · Is Your Student Loan Halal?  ✅ PRODUCED 2026-08-10 → [`student-loan-scene-pack.txt`](student-loan-scene-pack.txt)
+
+> Full VO script, 46 scenes with image prompts, caption spec, accuracy notes and
+> upload metadata are written. Final title:
+> **`Is Your Student Loan Halal? (You Never Touched What You Owe)`** — the
+> parenthetical is a deliberate grammatical twin of Part 16's `(You Never Picked
+> What It Buys)`. Target publish **2026-08-11, 03:00 PT**. Runtime **3:16 (196s),
+> 46 scenes — identical to Part 16**, so the subject is the only variable moving.
+>
+> **This is the first genuinely readable A/B this channel has ever run.** Part 16
+> moved two variables (subject *and* render style) and its result cannot be
+> attributed to either. Part 17 holds style, cast, palette, runtime, scene count,
+> caption treatment and publish slot constant, and moves the subject alone.
+>
+> **Demand is the largest verified on the slate.** Pulled live 2026-08-10:
+> `Are Student Loans Allowed In Islam?` 194K · `Are Student Loans HALAL?` 40K ·
+> `Student Loan?` 29K · `How to Avoid Riba-based Student Loans` 21K. Every one is
+> a talking-head verdict. **None shows the mechanism** — which is the only thing
+> this channel makes.
+>
+> **The UK-shaped problem in rule 0.5 is resolved, not ignored**, by the same
+> move the pension pack used. Repayment *rules* differ between markets; the
+> *defect* does not. Interest accrues on the whole balance while the required
+> payment is a capped slice of income above a threshold, so in both markets there
+> is an income below which the balance mathematically cannot fall. One line —
+> *"Plan Two. Income-driven. Deferment. Same machine."* — makes it universal
+> without splitting the video. Currency is `$` per rule 0.5.
+>
+> **The reveal is at 40% by construction, not by correction.** The crossover runs
+> scenes 19–23 (1:13–1:38) with the 40% mark landing on the 19/20 cut. The
+> pension pack's reveal sat at 66% and had to be re-cut before render; this one
+> was built against the timecodes and audited against them.
+
+
 
 - **Frame one** — `BORROWED £42,000` / `PAID 6 YEARS` / `STILL OWE £51,300`.
 - **Line one** — *"Six years of payments. You owe nine thousand more than you borrowed."*
@@ -170,7 +203,7 @@ the next entry, and the formula-perfect third inflation video did 43 views.
 - **Payoff** — the viewer can do it themselves before the video ends.
 - **Why it's here** — the only *actionable* item on the slate, and actionable Shorts get saved and forwarded, the two strongest signals a small channel can earn. PIF's `Screen for Halal Stocks in 1 Minute!` proves the format travels.
 
-### 7 · Why Having No Debt Destroys Your Credit Score
+### 7 · Why Having No Debt Destroys Your Credit Score  ✅ SHIPPED as `The Bank Doesn't Want You Debt-Free` (RpFWP1a7Huk, 39 views @ 2026-08-10)
 
 - **Frame one** — a credit-score dial pinned at the bottom, `£0 BORROWED` stamped beside it.
 - **Line one** — *"You've never borrowed a penny in your life. That's exactly why the bank says no."*

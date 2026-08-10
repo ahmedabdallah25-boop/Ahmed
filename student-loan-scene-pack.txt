@@ -1,0 +1,1321 @@
+================================================================================
+FINANCE % DECODED — SCENE PACK
+"IS YOUR STUDENT LOAN HALAL?" (THE CROSSOVER)
+Render style: FLAT 2D VECTOR — house cast | 9:16 1080x1920 | 3:16 (196s) | 46 scenes
+Target publish: 2026-08-11, 03:00 PT
+================================================================================
+
+WHY THIS ONE, AND WHY NOW
+
+- DEMAND IS PROVEN AND LARGE. Pulled live 2026-08-10, YouTube Shorts, the exact
+  question: `Are Student Loans Allowed In Islam?` 194,000 · `Are Student Loans
+  HALAL?` 40,000 · `Student Loan? #LetTheSunnahGoForth` 29,000 · `How to Avoid
+  Riba-based Student Loans` 21,000 · `Are Student Loans Haram?` 9,600. This is
+  the largest verified demand of any remaining subject on the slate. By
+  comparison the pension query had ~3,220 total results and a nine-year-old
+  top performer.
+
+- SUPPLY IS ENTIRELY THE WRONG SHAPE. Every one of those is a talking-head
+  scholar answering "is it allowed?". Not one shows the MECHANISM — why the
+  balance behaves the way it does. That is the only thing this channel makes,
+  and it is the gap: the audience arriving on this question is being handed a
+  verdict and no machine.
+
+- IT REUSES THE ONLY PACKAGING VARIABLE EVER MEASURED AS WORKING HERE. The
+  `Is Your [X] Halal? (compressed claim)` shape. vidIQ scored the shipped
+  pension title 81 against 53-55 for grammatically looser student-loan variants
+  I tested on 2026-08-10 — the difference was the SHAPE, not the subject, so
+  the shape is held exactly.
+
+- EARLY SIGNAL FROM PART 16 IS THE BEST THE CHANNEL HAS RUN IN WEEKS.
+  S61o4xbsn20 (pension) read 133 views at ~1 day old on 2026-08-10, against a
+  recent run of 24, 24, 30, 35, 39, 40 and 50 lifetime. READ THIS CAREFULLY:
+  rule 6 says nothing is judged before 72 hours, and this is ~24 hours. It is
+  a reason to hold the format steady, NOT a proven win. Do not rewrite anything
+  else on the strength of it.
+
+- THE FAMILY IS UNENTERED. Education debt has never been a subject on this
+  channel. Every family it HAS entered — inflation, banks, insurance, mortgage,
+  credit cards — collapsed by entry three or four. Credit cards took three
+  entries in 42 hours on Aug 6-7 for 6, 37 and 19 views.
+
+- 196s sits in the 120s+ band, which returns a 4.96% like rate and a 2.19% sub
+  rate against literal zeroes below 35s. DO NOT CUT IT. See next-slate.md rule 0.
+
+WHAT MOVES, AND WHAT IS HELD CONSTANT
+
+  MOVES : the subject ONLY (education debt — never covered).
+  HELD  : title shape, render style, cast, palette, 03:00 PT publish slot,
+          runtime (196s), scene count (46), caption spec.
+
+  This is deliberate and it matters. Part 16 moved TWO variables — subject AND
+  render style — so its result cannot be attributed to either alone. Part 17
+  moves one. Held to the same runtime and scene count as Part 16, this is the
+  first genuinely readable A/B the channel has ever produced: same machine,
+  same length, different subject. Do not spend that by "improving" anything
+  below.
+
+THE UK/US PROBLEM IS SOLVED THE WAY THE PENSION PACK SOLVED IT
+
+  next-slate.md rule 0.5 flags student loans as UK-shaped. The REPAYMENT RULES
+  genuinely differ between markets. THE DEFECT DOES NOT. In both, interest is
+  charged on the whole outstanding balance while the required payment is a
+  slice of income above a threshold — so in both there is an income below which
+  the payment cannot cover the interest and the balance rises while you pay it.
+  One line makes it universal without splitting the video:
+
+      "Plan Two. Income-driven. Deferment. Same machine."
+
+  Currency is `$` throughout, per rule 0.5. `are student loans halal` and the
+  US-market phrasings are both carried in the tags.
+
+THE REVEAL IS AT 40%, BY CONSTRUCTION
+
+  Rule 0a: the strongest reveal belongs at ~40% of runtime, where riQ7dLSnogo's
+  relative retention peaks at 0.932. 40% of 196s is 1:18.4. THE CROSSOVER runs
+  scenes 19-23 (1:13-1:38), and the 40% mark falls exactly on the 19/20 cut —
+  the tipped scale resolving into the level one. Scene 19 is the thumbnail
+  frame. The mechanism is seeded at scene 13 (0:48) and paid off at scene 31
+  (2:13).
+
+  Stated precisely because the pension pack's equivalent claim was wrong: its
+  reveal sat at 66% and had to be re-cut. Here it is built in from the first
+  draft and checked against the timecodes rather than asserted.
+
+HOW TO USE THIS FILE
+- Every IMAGE PROMPT below is complete and self-contained. Copy, paste, generate.
+- The NEGATIVE PROMPT is identical for all scenes. Paste it once and leave it.
+- ALWAYS attach the relevant character sheet as an image reference. Prompt text
+  alone drifts within about five generations; the beard shape goes first.
+- NO TEXT IN ANY IMAGE. Every number lives in the burned-in caption, never in
+  the render. The negative prompt excludes lettering for this reason.
+- VO lines use ElevenLabs v3 audio tags. Paste exactly as written, brackets in.
+
+
+================================================================================
+NEGATIVE PROMPT — paste into the negative field, applies to ALL 46 scenes
+================================================================================
+
+3D render, 3D model, photorealistic, photograph, realistic skin texture, clay
+render, low-poly, depth of field, bokeh, blurred background, gradient mesh,
+airbrushed shading, painterly brush strokes, watercolour, sketchy lines, variable
+line weight, hatching, film grain, gritty texture, harsh dramatic lighting, deep
+cast shadows, text, lettering, watermark, logo, signature, brand marks, extra
+fingers, distorted hands, extra limbs, cluttered background, busy detail, neon
+colours, oversaturated, blurry, low resolution
+
+
+================================================================================
+STYLE LOCK — the grammar every prompt below is written in
+================================================================================
+
+- Flat 2D vector illustration. Clean, EVEN-WEIGHT dark brown outlines on every
+  shape — the line never thickens or tapers.
+- Flat colour fills with only soft, minimal shading. No gradients, no glow.
+- Warm cream background, approximately #F7EFDD, kept plain and uncluttered.
+- Figures sit on a soft pale elliptical ground shadow. Nothing else beneath them.
+- Faces are simple: solid dot eyes, fine curved eyebrows, a small simple mouth,
+  a minimal nose line. Beards are flat shapes, not rendered hair.
+- Rounded, friendly proportions. Characters read at roughly 6 to 7 heads tall.
+- Props and environments are drawn in the SAME flat vector language as the
+  characters — never photographic, never 3D.
+- 9:16 vertical composition. Subject in the lower two-thirds, clean headroom
+  above for burned-in captions.
+- NO FILM GRAIN. On flat colour it reads as a compression artefact.
+
+PALETTE (taken from the sheets)
+  cream background #F7EFDD · outline dark brown #3D2B23 · sage green #7C8A5F
+  · rust red #B5603F · teal #2F6B72 · sand #D9C08D · camel #B8823C
+  · charcoal grey #5A5A5A · espresso #4A342A · institution grey #8A8A8A
+
+
+================================================================================
+CAST — the house characters, as drawn on the sheets
+================================================================================
+
+KAREEM — THE HOST
+  Dark near-black tousled hair, full dark beard with grey speckling, fair skin.
+  Sage green henley with a three-button placket, sleeves rolled. Charcoal
+  trousers, dark brown shoes.
+  Sheet: FRONT / 3-4 / SIDE + NEUTRAL, WARM, SERIOUS, QUESTIONING.
+  ROLE HERE: direct address only — the hook, the reveal setup, the turn, the
+  close. He never stands inside a mechanism scene. That is what makes him read
+  as the person explaining it rather than a character caught in it.
+
+ADAM — THE EVERYMAN  (sheet titles him "THE CARDHOLDER")
+  Short brown side-parted hair, clean-shaven, fair skin. Rust red t-shirt, camel
+  trousers, dark brown shoes.
+  Sheet: FRONT / 3-4 / SIDE + NEUTRAL, PLEASED, WORRIED, RESOLVED.
+  ROLE HERE: the borrower. It is HIS balance. He signs at the start, watches the
+  crossover, and runs the check at the end. His four expressions map onto the
+  arc exactly: NEUTRAL at the counter, PLEASED at "that sounds fair", WORRIED
+  through the crossover, RESOLVED at the fix.
+
+SAMI — THE COLLEAGUE
+  Short dark hair, dark beard with grey speckling, medium-tan skin. Teal t-shirt,
+  charcoal trousers.
+  ROLE HERE: the comparison case only — the graduate who earns above the
+  crossover and clears it. Mid-shot and wider, never close. No expression sheet.
+
+BILAL — THE OLDER COLLEAGUE
+  Dark brown hair, full dark brown beard (fullest of the four), medium-tan skin.
+  Sand button-up with rolled sleeves, espresso trousers.
+  ROLE HERE: the one still paying decades in. He carries the write-off beat,
+  scenes 29-33. Age is the entire argument of those scenes, which is why it is
+  him and not Adam.
+
+  >>> BILAL HAS NO EXPRESSION SHEET. Same gap the pension pack hit. Scenes 29-33
+      are therefore written FROM BEHIND or in wide profile, with the posture
+      carrying the emotion and never the face. Do not shoot him in close-up.
+      Fixing this properly means generating a 4-expression sheet (NEUTRAL /
+      WARM / SERIOUS / RESIGNED) matching Kareem's layout — worth doing before
+      the next pack that needs him.
+
+THE INSTITUTION — device set
+  THE CLERK — plain mid-grey #8A8A8A featureless humanoid silhouette. No face,
+  no clothing detail, no colour. THE COUNTER — teller window, dark vertical
+  bars, rust red ledge, olive lower panel. THE PAPER — blank cards and blank
+  open documents, flat, from above.
+  ROLE HERE: the lender is never given a face and never given a name. Named
+  people have faces and colour; the institution has neither. On this subject
+  that grammar is doing the whole argument — a machine nobody meets, deciding
+  the shape of twenty years of someone's income.
+
+
+================================================================================
+FULL VO SCRIPT — one block, ElevenLabs v3 tags included
+================================================================================
+
+[serious] You have paid this every month for six years.
+
+[serious] You have never touched it.
+
+The number is bigger now than the day you walked out.
+
+[thoughtful] So look at what you actually signed.
+
+They handed you a sum. You agreed to hand back a slice of what you earn — but
+only the part above a line.
+
+Earn under the line, you pay nothing. Over it, a percentage.
+
+[thoughtful] Plan Two. Income-driven. Deferment. Same machine.
+
+[warm] And most people stop reading right there. Because that does sound fair.
+
+[thoughtful] It would be. If the number sat still while you paid it.
+
+It doesn't.
+
+Every single day, interest is added — not to the part you haven't paid yet, but
+to the whole outstanding balance.
+
+[serious] Which means there are two flows here, not one.
+
+Money leaving you every month. A slice of your salary, capped by law.
+
+[serious] And money being added every month. A percentage of everything you owe,
+uncapped, growing with the balance itself.
+
+[thoughtful] Now hold those two side by side.
+
+Somewhere there is an income where they are exactly equal. Call it the
+crossover.
+
+[serious] Earn above it, and your payment eats the interest and starts on the
+balance. The debt falls.
+
+[serious] Earn below it, and the balance does not fall slowly. It does not fall
+at all. It rises. While you pay it.
+
+[serious] Ten years of payments, never missed, and you owe more than the day you
+started. That is not what happens when you default.
+
+[serious] That is what happens when you comply.
+
+[thoughtful] And notice which way it cuts.
+
+The graduate who earns well crosses over, clears it, and stops paying.
+
+[serious] The graduate who earns less pays every month for thirty years and
+never clears anything.
+
+Same debt. The one with less money pays longer, and pays more.
+
+[thoughtful] Then, decades in, the balance is written off.
+
+[warm] Which sounds like mercy.
+
+[serious] It isn't. It's the pricing.
+
+The lender's own forecasts already assume a large share of borrowers will never
+clear the balance. The write-off isn't the escape hatch at the end of the
+machine. It is a line in the machine's own budget.
+
+[thoughtful] And this is exactly what the prohibition is pointing at.
+
+Riba isn't a tax on borrowing. It is a price charged for time.
+
+A number that grows because the clock moved — not because anything was built,
+sold, or risked.
+
+[serious] A debt you service faithfully and cannot reduce is the purest version
+of that there is.
+
+[warm] So here is the two-minute check.
+
+One. Find two published numbers: your interest rate, and your repayment
+threshold. Both are on your statement or your loan servicer's site.
+
+Two. Work out one month. Interest added, against payment taken. If the interest
+is bigger, you are renting the debt, not repaying it.
+
+Three. Only then decide about overpaying. If you sit above the crossover,
+overpaying genuinely shortens it. If you sit far below and it will be written
+off anyway, overpaying is money burned — that is the same arithmetic, run
+honestly, in both directions.
+
+[thoughtful] And for the ones coming behind you: qard hasan funds, employer
+tuition schemes, and paying as you study all exist. They are smaller, slower,
+and less convenient.
+
+[warm] They are also not this.
+
+[serious] You didn't fail to pay it off.
+
+[serious] You were never paying it off.
+
+[warm] The Money Machine, Decoded.
+
+
+================================================================================
+SCENES
+================================================================================
+
+--------------------------------------------------------------------------------
+SCENE 1 | 0:00-0:04 | HOOK
+--------------------------------------------------------------------------------
+VO: You have paid this every month for six years.
+CAPTION 1: Six years of payments
+CAPTION 2: every single month
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A neat
+vertical stack of six identical small blank payment slips, plain rectangles with
+no text or markings, stacked slightly offset so each one is visible, resting on a
+simple flat surface. Simple flat drop shadow offset down-right. Bold, simple,
+readable at small size. 9:16 vertical composition, stack in the lower two-thirds,
+clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 2 | 0:04-0:08
+--------------------------------------------------------------------------------
+VO: You have never touched it.
+CAPTION 1: You have never
+CAPTION 2: touched it
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A single
+tall solid charcoal grey #5A5A5A rectangular block standing upright on a simple
+ground line, completely smooth and unmarked, with a small pale hand shape
+reaching toward it from the right but stopping short with a clear visible gap
+between fingertips and block. Simple flat drop shadow beneath the block. 9:16
+vertical composition, block in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 3 | 0:08-0:12
+--------------------------------------------------------------------------------
+VO: The number is bigger now than the day you walked out.
+CAPTION 1: The number is BIGGER
+CAPTION 2: than the day you left
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. Two solid
+rectangular blocks standing side by side on a simple ground line. The left block
+is medium height and sand #D9C08D. The right block is clearly taller and charcoal
+grey #5A5A5A. A thin dashed horizontal guide line runs from the top of the left
+block across to show the right block rising above it. No text or numbers anywhere.
+Simple flat drop shadows offset down-right. 9:16 vertical composition, blocks in
+the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 4 | 0:12-0:16
+--------------------------------------------------------------------------------
+VO: [thoughtful] So look at what you actually signed.
+CAPTION 1: So look at what
+CAPTION 2: you actually signed
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. KAREEM,
+a man with dark near-black tousled hair and a full dark beard with grey
+speckling, fair skin, wearing a sage green #7C8A5F henley shirt with a
+three-button placket and sleeves rolled to the forearm, charcoal grey trousers
+and dark brown shoes. Waist-up, facing the viewer directly, one hand open and
+turned slightly upward in a presenting gesture, QUESTIONING expression with one
+eyebrow slightly raised. Soft pale elliptical ground shadow beneath him. Plain
+uncluttered background. 9:16 vertical composition, figure in the lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 5 | 0:16-0:20
+--------------------------------------------------------------------------------
+VO: They handed you a sum.
+CAPTION 1: They handed you
+CAPTION 2: a sum
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. THE
+COUNTER: a teller window with dark vertical bars, a rust red #B5603F ledge and an
+olive lower panel. Behind it stands THE CLERK, a plain mid-grey #8A8A8A
+featureless humanoid silhouette with no face, no clothing detail and no colour,
+sliding a single blank flat rectangular card across the ledge. On the near side,
+ADAM, a young man with short brown side-parted hair, clean-shaven, fair skin,
+wearing a rust red #B5603F t-shirt, camel #B8823C trousers and dark brown shoes,
+seen from behind and slightly to one side, reaching for the card. Simple flat
+drop shadow beneath the card. 9:16 vertical composition, counter in the lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 6 | 0:20-0:24
+--------------------------------------------------------------------------------
+VO: You agreed to hand back a slice of what you earn —
+CAPTION 1: You hand back a slice
+CAPTION 2: of what you earn
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A single
+wide horizontal bar lying flat, filled in sand #D9C08D, with one narrow segment
+at its right end filled in rust red #B5603F and separated from the rest by a
+clean vertical dividing line. No text or numbers. Simple flat drop shadow offset
+down-right. Bold and readable at small size. 9:16 vertical composition, bar in
+the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 7 | 0:24-0:28
+--------------------------------------------------------------------------------
+VO: but only the part above a line.
+CAPTION 1: but only the part
+CAPTION 2: ABOVE a line
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A tall
+vertical bar standing on a simple ground line, filled sand #D9C08D in its lower
+portion and rust red #B5603F in its upper portion, with one bold horizontal dark
+brown #3D2B23 line drawn straight across the bar exactly where the two colours
+meet, extending a little way out to either side of the bar. No text or numbers.
+Simple flat drop shadow. 9:16 vertical composition, bar in the lower two-thirds,
+clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 8 | 0:28-0:32
+--------------------------------------------------------------------------------
+VO: Earn under the line, you pay nothing.
+CAPTION 1: Under the line?
+CAPTION 2: You pay nothing
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A short
+vertical bar filled entirely in sand #D9C08D standing on a simple ground line,
+with a bold horizontal dark brown #3D2B23 line drawn across the scene clearly
+ABOVE the top of the bar, not touching it, with visible empty cream space between
+the bar top and the line. No text or numbers. Simple flat drop shadow. 9:16
+vertical composition, bar in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 9 | 0:32-0:36
+--------------------------------------------------------------------------------
+VO: Over it, a percentage.
+CAPTION 1: Over it?
+CAPTION 2: A percentage. Automatically.
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A tall
+vertical bar standing on a simple ground line with a bold horizontal dark brown
+#3D2B23 line crossing it partway up; the portion of the bar above the line is
+filled rust red #B5603F and is shown lifting clear of the bar with a small
+visible gap, floating slightly up and to the right, while the portion below stays
+sand #D9C08D and in place. No text or numbers. Simple flat drop shadows. 9:16
+vertical composition, bar in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 10 | 0:36-0:40 | THE UNIVERSAL LINE
+--------------------------------------------------------------------------------
+VO: [thoughtful] Plan Two. Income-driven. Deferment.
+CAPTION 1: Plan Two. Income-driven.
+CAPTION 2: Deferment.
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. Three
+identical plain blank rectangular documents lying flat side by side in a row,
+seen from directly above, each completely blank with no text or markings, each
+with a simple flat drop shadow offset down-right. The three are drawn exactly the
+same size and shape as each other in pale cream and sand #D9C08D. Plain
+uncluttered background. 9:16 vertical composition, documents in the lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 11 | 0:40-0:44
+--------------------------------------------------------------------------------
+VO: Same machine.
+CAPTION 1: Same
+CAPTION 2: machine.
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. The three
+plain blank documents from the previous scene now converging with simple straight
+arrow lines into one single plain mid-grey #8A8A8A rectangular box with rounded
+corners, featureless, no dials, no text, no markings of any kind. The box sits
+lower centre and is clearly larger than the documents. Simple flat drop shadow
+offset down-right beneath the box. 9:16 vertical composition, box in the lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 12 | 0:44-0:48
+--------------------------------------------------------------------------------
+VO: [warm] And most people stop reading right there. Because that does sound fair.
+CAPTION 1: Most people stop
+CAPTION 2: reading right there
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. ADAM, a
+young man with short brown side-parted hair, clean-shaven, fair skin, wearing a
+rust red #B5603F t-shirt, camel #B8823C trousers and dark brown shoes. Waist-up,
+three-quarter view, holding a single blank flat document loosely at his side and
+already looking away from it, PLEASED expression with a small relaxed smile and
+relaxed eyebrows. Soft pale elliptical ground shadow beneath him. Plain
+uncluttered background. 9:16 vertical composition, figure in the lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 13 | 0:48-0:52 | SEED — pays off at scene 19
+--------------------------------------------------------------------------------
+VO: [thoughtful] It would be. If the number sat still while you paid it.
+CAPTION 1: It would be —
+CAPTION 2: if the number sat still
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A single
+solid charcoal grey #5A5A5A rectangular block standing upright and perfectly
+still on a simple ground line, with a thin dashed dark brown #3D2B23 horizontal
+guide line drawn level with its top edge and extending out to both sides of the
+frame. Nothing else in the scene. Simple flat drop shadow offset down-right.
+9:16 vertical composition, block in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 14 | 0:52-0:56
+--------------------------------------------------------------------------------
+VO: It doesn't.
+CAPTION 1: It
+CAPTION 2: doesn't.
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. The same
+solid charcoal grey #5A5A5A rectangular block on a simple ground line, now
+clearly taller and risen well above the thin dashed dark brown #3D2B23 guide line
+which stays where it was, with a small simple upward-pointing arrow beside the
+block. No text or numbers. Simple flat drop shadow. 9:16 vertical composition,
+block in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 15 | 0:56-1:00
+--------------------------------------------------------------------------------
+VO: Every single day, interest is added —
+CAPTION 1: Every single day
+CAPTION 2: interest is added
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A tall
+charcoal grey #5A5A5A rectangular block standing on a simple ground line with a
+neat vertical column of small identical rust red #B5603F squares stacking up on
+top of it, each square the same size, arranged in a clean single-file stack rising
+from the block's top edge. No text or numbers. Simple flat drop shadow offset
+down-right. 9:16 vertical composition, block in the lower two-thirds, clean
+headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 16 | 1:00-1:04
+--------------------------------------------------------------------------------
+VO: not to the part you haven't paid yet, but to the whole outstanding balance.
+CAPTION 1: not to part of it —
+CAPTION 2: to the WHOLE balance
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. One tall
+rectangular block standing on a simple ground line, drawn with a thin internal
+dividing line near its base separating a small lower segment from a much larger
+upper segment; the ENTIRE block, both segments, is filled solid charcoal grey
+#5A5A5A and enclosed by one bold continuous dark brown #3D2B23 outline that runs
+all the way around the outside. A single rust red #B5603F arrow points at the
+whole outline from the right. No text or numbers. Simple flat drop shadow. 9:16
+vertical composition, block in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 17 | 1:04-1:08 | REVEAL SETUP
+--------------------------------------------------------------------------------
+VO: [serious] Which means there are two flows here, not one.
+CAPTION 1: There are TWO flows
+CAPTION 2: not one
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. KAREEM,
+a man with dark near-black tousled hair and a full dark beard with grey
+speckling, fair skin, wearing a sage green #7C8A5F henley with a three-button
+placket and sleeves rolled, charcoal grey trousers, dark brown shoes. Waist-up,
+facing the viewer directly, SERIOUS expression, both hands raised in front of him
+holding two fingers up on one hand. Soft pale elliptical ground shadow beneath
+him. Plain uncluttered background. 9:16 vertical composition, figure in the lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 18 | 1:08-1:13
+--------------------------------------------------------------------------------
+VO: Money leaving you every month. A slice of your salary, capped by law.
+CAPTION 1: FLOW ONE: out of you
+CAPTION 2: a capped slice
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A row of
+five identical small rust red #B5603F coin discs travelling left to right along a
+simple curved arrow line, with a narrow dark brown #3D2B23 bracket shape drawn
+across the line partway along, visibly constricting it to a fixed width. All five
+coins are exactly the same size. No text or numbers. Simple flat drop shadows.
+9:16 vertical composition, arrow and coins in the lower two-thirds, clean
+headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 19 | 1:13-1:18 | THE CROSSOVER — 40% MARK — THUMBNAIL CANDIDATE
+--------------------------------------------------------------------------------
+VO: [serious] And money being added every month. A percentage of everything you
+    owe, uncapped, growing with the balance itself.
+CAPTION 1: FLOW TWO: onto the debt
+CAPTION 2: uncapped. It grows itself.
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A large
+simple two-pan balance scale standing centred on a simple ground line, drawn bold
+and clean. On the left pan sits a small neat stack of rust red #B5603F coin discs
+of fixed size. On the right pan sits a single solid charcoal grey #5A5A5A block
+that is clearly larger and heavier, with three small charcoal squares falling
+onto it from above. The beam tips down decisively to the right. Bold, simple,
+high contrast, readable when shrunk to a small phone tile. No text or numbers.
+Simple flat drop shadow offset down-right. 9:16 vertical composition, scale in
+the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 20 | 1:18-1:23
+--------------------------------------------------------------------------------
+VO: [thoughtful] Now hold those two side by side.
+CAPTION 1: Hold them
+CAPTION 2: side by side
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. The same
+two-pan balance scale, now perfectly level, its beam exactly horizontal, with the
+small stack of rust red #B5603F coins on the left pan and the charcoal grey
+#5A5A5A block on the right pan sitting at identical heights. A thin dashed dark
+brown #3D2B23 horizontal line runs through both pans to emphasise the level. No
+text or numbers. Simple flat drop shadow. 9:16 vertical composition, scale in the
+lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 21 | 1:23-1:28
+--------------------------------------------------------------------------------
+VO: Somewhere there is an income where they are exactly equal. Call it the
+    crossover.
+CAPTION 1: One income where
+CAPTION 2: they're exactly equal
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A simple
+line chart on a plain cream field with two bold straight lines crossing at a
+single clear point roughly in the centre: one line rust red #B5603F rising from
+lower left to upper right, one line charcoal grey #5A5A5A falling from upper left
+to lower right. A single small solid dark brown #3D2B23 dot marks the exact
+crossing point. No axis labels, no text, no numbers. Simple clean composition.
+9:16 vertical composition, chart in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 22 | 1:28-1:33
+--------------------------------------------------------------------------------
+VO: [serious] Earn above it, and your payment eats the interest and starts on the
+    balance. The debt falls.
+CAPTION 1: ABOVE it: the debt falls
+CAPTION 2: your payment reaches it
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A
+descending staircase of four charcoal grey #5A5A5A rectangular blocks arranged
+left to right, each one shorter than the last, standing on a simple ground line,
+with a bold rust red #B5603F arrow curving downward above them following the
+decline. No text or numbers. Simple flat drop shadows offset down-right. 9:16
+vertical composition, blocks in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 23 | 1:33-1:38 | THE PAYOFF OF THE SEED
+--------------------------------------------------------------------------------
+VO: [serious] Earn below it, and the balance does not fall slowly. It does not
+    fall at all. It rises. While you pay it.
+CAPTION 1: BELOW it: it doesn't fall
+CAPTION 2: It RISES. While you pay.
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. An
+ascending staircase of four charcoal grey #5A5A5A rectangular blocks arranged
+left to right, each one taller than the last, standing on a simple ground line,
+with a bold rust red #B5603F arrow curving upward above them, and a small row of
+identical rust red coin discs travelling away from the blocks along the ground
+line beneath, moving in the opposite direction. No text or numbers. Simple flat
+drop shadows. 9:16 vertical composition, blocks in the lower two-thirds, clean
+headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 24 | 1:38-1:43
+--------------------------------------------------------------------------------
+VO: [serious] Ten years of payments, never missed, and you owe more than the day
+    you started.
+CAPTION 1: 10 years. Never missed.
+CAPTION 2: You owe MORE.
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. ADAM, a
+young man with short brown side-parted hair, clean-shaven, fair skin, in a rust
+red #B5603F t-shirt, camel #B8823C trousers and dark brown shoes, standing in
+three-quarter view at the left of frame with a WORRIED expression, eyebrows drawn
+up in the middle and a small downturned mouth, looking up at a tall solid
+charcoal grey #5A5A5A block standing to his right that rises well above his head.
+Soft pale elliptical ground shadow beneath him, simple flat drop shadow beneath
+the block. 9:16 vertical composition, both in the lower two-thirds, clean
+headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 25 | 1:43-1:48
+--------------------------------------------------------------------------------
+VO: That is not what happens when you default. [serious] That is what happens
+    when you comply.
+CAPTION 1: That's not what happens
+CAPTION 2: when you DEFAULT.
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. KAREEM,
+dark near-black tousled hair, full dark beard with grey speckling, fair skin,
+sage green #7C8A5F henley with three-button placket and rolled sleeves, charcoal
+trousers, dark brown shoes. Chest-up, facing the viewer directly, SERIOUS
+expression, level gaze, hands lowered and still. Soft pale elliptical ground
+shadow. Plain uncluttered background. 9:16 vertical composition, figure in the
+lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 26 | 1:48-1:53
+--------------------------------------------------------------------------------
+VO: [thoughtful] And notice which way it cuts.
+CAPTION 1: It's what happens
+CAPTION 2: when you COMPLY.
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A single
+simple path drawn on the ground splitting into two diverging routes, one branch
+curving up to the left and one curving down to the right, drawn as clean bold
+dark brown #3D2B23 lines on plain cream. A small solid dark brown dot marks the
+fork. Nothing else in the scene, no figures, no text. 9:16 vertical composition,
+path in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 27 | 1:53-1:58
+--------------------------------------------------------------------------------
+VO: The graduate who earns well crosses over, clears it, and stops paying.
+CAPTION 1: Earns more?
+CAPTION 2: Clears it. Stops paying.
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. SAMI, a
+man with short dark hair and a dark beard with grey speckling, medium-tan skin,
+wearing a teal #2F6B72 t-shirt, charcoal grey trousers and dark shoes. Full body,
+mid-shot, walking away to the right along a simple ground line with a relaxed
+open posture, and behind him on the left an empty flat pale outline where a block
+used to stand, drawn as a thin dashed dark brown #3D2B23 rectangle with nothing
+inside it. Soft pale elliptical ground shadow beneath him. 9:16 vertical
+composition, figure in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 28 | 1:58-2:03
+--------------------------------------------------------------------------------
+VO: [serious] The graduate who earns less pays every month for thirty years and
+    never clears anything.
+CAPTION 1: Earns less?
+CAPTION 2: 30 years. Never clears it.
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. ADAM,
+short brown side-parted hair, clean-shaven, fair skin, rust red #B5603F t-shirt,
+camel #B8823C trousers, dark brown shoes. Full body, mid-shot, standing still on
+a simple ground line facing right with a WORRIED expression, and directly beside
+him a tall solid charcoal grey #5A5A5A block at full height, unchanged and
+undiminished, with a long row of identical small rust red coin discs trailing
+away from him along the ground to the right. Soft pale elliptical ground shadow.
+9:16 vertical composition, figure and block in the lower two-thirds, clean
+headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 29 | 2:03-2:08
+--------------------------------------------------------------------------------
+VO: Same debt. The one with less money pays longer, and pays more.
+CAPTION 1: Same debt.
+CAPTION 2: Less money = pays MORE.
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. Two
+identical charcoal grey #5A5A5A blocks of exactly the same size standing side by
+side on a simple ground line. Beneath the left block runs a short row of three
+rust red #B5603F coin discs; beneath the right block runs a much longer row of
+twelve identical rust red coin discs extending to the edge of the frame. No text
+or numbers. Simple flat drop shadows offset down-right. 9:16 vertical
+composition, blocks in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 30 | 2:08-2:13 | BILAL — FROM BEHIND, no expression sheet exists
+--------------------------------------------------------------------------------
+VO: [thoughtful] Then, decades in, the balance is written off.
+CAPTION 1: Then, decades in
+CAPTION 2: it's written off
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. BILAL, an
+older man with dark brown hair and a full dark brown beard, medium-tan skin,
+wearing a sand #D9C08D button-up shirt with rolled sleeves, espresso #4A342A
+trousers and dark shoes, seen entirely FROM BEHIND, shoulders slightly rounded,
+standing at the near end of a long simple path that recedes toward the top of the
+frame, with a tall charcoal grey #5A5A5A block standing at the far end of the
+path. His face is not visible. Soft pale elliptical ground shadow beneath him.
+9:16 vertical composition, figure in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 31 | 2:13-2:18 | SEED PAYOFF — the crossover cashes out here
+--------------------------------------------------------------------------------
+VO: [warm] Which sounds like mercy. [serious] It isn't. It's the pricing.
+CAPTION 1: Sounds like mercy.
+CAPTION 2: It's the PRICING.
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A plain
+blank open ledger seen from directly above, lying flat, its pages completely
+empty of text, with one single bold dark brown #3D2B23 horizontal line already
+struck cleanly through the middle of the right-hand page. Beside the ledger
+stands THE CLERK, a plain mid-grey #8A8A8A featureless humanoid silhouette with
+no face and no clothing detail, standing perfectly upright and still. Simple flat
+drop shadow offset down-right beneath the ledger. 9:16 vertical composition,
+ledger in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 32 | 2:18-2:23
+--------------------------------------------------------------------------------
+VO: The lender's own forecasts already assume a large share of borrowers will
+    never clear the balance.
+CAPTION 1: Their own forecasts
+CAPTION 2: already assume it
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A simple
+flat rectangular chart panel on a plain cream field showing a row of six vertical
+bars in institution grey #8A8A8A, four of which are drawn with a bold dark brown
+#3D2B23 line already struck through them and two of which are left clean and
+solid. No axis labels, no text, no numbers anywhere. Simple flat drop shadow
+offset down-right beneath the panel. 9:16 vertical composition, panel in the
+lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 33 | 2:23-2:28
+--------------------------------------------------------------------------------
+VO: The write-off isn't the escape hatch at the end of the machine. It is a line
+    in the machine's own budget.
+CAPTION 1: Not an escape hatch —
+CAPTION 2: a line in their budget
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. The plain
+mid-grey #8A8A8A featureless machine box with rounded corners from earlier,
+drawn larger and centred, with a small blank ledger page tucked visibly inside an
+opening in its side, drawn as part of the machine rather than beyond it. No
+dials, no text, no markings. Simple flat drop shadow offset down-right. 9:16
+vertical composition, box in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 34 | 2:28-2:33 | THE TURN
+--------------------------------------------------------------------------------
+VO: [thoughtful] And this is exactly what the prohibition is pointing at.
+CAPTION 1: This is what the
+CAPTION 2: prohibition points at
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. KAREEM,
+dark near-black tousled hair, full dark beard with grey speckling, fair skin,
+sage green #7C8A5F henley with three-button placket and rolled sleeves, charcoal
+trousers, dark brown shoes. Waist-up, three-quarter view turning toward the
+viewer, WARM expression with a gentle steady gaze, one hand open at chest height.
+Soft pale elliptical ground shadow. Plain uncluttered background. 9:16 vertical
+composition, figure in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 35 | 2:33-2:38
+--------------------------------------------------------------------------------
+VO: Riba isn't a tax on borrowing. It is a price charged for time.
+CAPTION 1: Not a tax on borrowing
+CAPTION 2: a price charged for TIME
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A plain
+simple round clock face with no numbers and no brand marks, just two bold dark
+brown #3D2B23 hands, positioned centre frame, with a single rust red #B5603F coin
+disc balanced on the tip of the longer hand. Simple flat drop shadow offset
+down-right beneath the clock. Plain uncluttered background. 9:16 vertical
+composition, clock in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 36 | 2:38-2:43
+--------------------------------------------------------------------------------
+VO: A number that grows because the clock moved — not because anything was
+    built, sold, or risked.
+CAPTION 1: It grows because
+CAPTION 2: the clock moved
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A plain
+empty workbench drawn as a simple flat table on a ground line with absolutely
+nothing on its surface, and above it a charcoal grey #5A5A5A rectangular block
+floating and visibly growing taller, with a small upward arrow beside it. The
+bench stays empty. No text or numbers. Simple flat drop shadows offset
+down-right. 9:16 vertical composition, bench in the lower two-thirds, clean
+headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 37 | 2:43-2:47
+--------------------------------------------------------------------------------
+VO: [serious] A debt you service faithfully and cannot reduce is the purest
+    version of that there is.
+CAPTION 1: Serviced faithfully.
+CAPTION 2: Cannot be reduced.
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A tall
+solid charcoal grey #5A5A5A rectangular block standing on a simple ground line
+with a continuous circular loop of rust red #B5603F coin discs orbiting around it
+in a simple flat ring, drawn as an unbroken circle with small arrowheads showing
+the direction of travel. The block is untouched and full height. No text or
+numbers. Simple flat drop shadow. 9:16 vertical composition, block in the lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 38 | 2:47-2:51 | THE FIX
+--------------------------------------------------------------------------------
+VO: [warm] So here is the two-minute check.
+CAPTION 1: So here's the
+CAPTION 2: two-minute check
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. ADAM,
+short brown side-parted hair, clean-shaven, fair skin, rust red #B5603F t-shirt,
+camel #B8823C trousers, dark brown shoes. Waist-up, facing the viewer, RESOLVED
+expression with a level steady gaze and a small firm closed mouth, sleeves
+pushed up, holding a plain blank document in both hands and looking directly at
+it. Soft pale elliptical ground shadow. Plain uncluttered background. 9:16
+vertical composition, figure in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 39 | 2:51-2:55
+--------------------------------------------------------------------------------
+VO: One. Find two published numbers: your interest rate, and your repayment
+    threshold.
+CAPTION 1: 1. Find two numbers
+CAPTION 2: your rate + your threshold
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. Two plain
+blank flat cards lying side by side on a simple surface seen from above, each
+completely empty of text, each outlined in bold dark brown #3D2B23, one filled
+pale sand #D9C08D and one filled pale teal #2F6B72, with a single small solid
+dark brown checkmark shape resting beside each. Simple flat drop shadows offset
+down-right. 9:16 vertical composition, cards in the lower two-thirds, clean
+headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 40 | 2:55-2:59
+--------------------------------------------------------------------------------
+VO: Two. Work out one month. Interest added, against payment taken.
+CAPTION 1: 2. Work out ONE month
+CAPTION 2: interest vs payment
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. The
+familiar simple two-pan balance scale, drawn small and clean and centred, with a
+single rust red #B5603F coin disc on the left pan and a single charcoal grey
+#5A5A5A square on the right pan, the beam very slightly tipped. Bold and readable
+at small size. No text or numbers. Simple flat drop shadow. 9:16 vertical
+composition, scale in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 41 | 2:59-3:03
+--------------------------------------------------------------------------------
+VO: If the interest is bigger, you are renting the debt, not repaying it.
+CAPTION 1: Interest bigger?
+CAPTION 2: You're RENTING the debt.
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. Two plain
+objects side by side on a simple surface: on the left a simple flat key shape in
+camel #B8823C, on the right a plain blank folded document in pale cream with a
+bold dark brown #3D2B23 outline. A thin dashed dark brown line separates them.
+Both drawn as clean flat silhouettes with no text or markings. Simple flat drop
+shadows offset down-right. 9:16 vertical composition, objects in the lower
+two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 42 | 3:03-3:06
+--------------------------------------------------------------------------------
+VO: Three. Only then decide about overpaying.
+CAPTION 1: 3. THEN decide
+CAPTION 2: about overpaying
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. A charcoal
+grey #5A5A5A rectangular block on a simple ground line with a single larger rust
+red #B5603F coin disc striking its top edge and a visible notch taken out of the
+block at the point of contact. No text or numbers. Simple flat drop shadow offset
+down-right. 9:16 vertical composition, block in the lower two-thirds, clean
+headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 43 | 3:06-3:09
+--------------------------------------------------------------------------------
+VO: Above the crossover it genuinely shortens it. Far below, and written off
+    anyway, it is money burned. Same arithmetic, both directions.
+CAPTION 1: Above? It shortens it.
+CAPTION 2: Far below? Money burned.
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. The simple
+two-branch forking path from earlier, drawn again as bold dark brown #3D2B23
+lines, with a small charcoal grey #5A5A5A block sitting part-way along the upper
+left branch drawn visibly smaller, and an identical full-size block sitting on
+the lower right branch unchanged. A small solid dark brown dot marks the fork. No
+text or numbers. 9:16 vertical composition, path in the lower two-thirds, clean
+headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 44 | 3:09-3:12
+--------------------------------------------------------------------------------
+VO: [thoughtful] And for the ones coming behind you: qard hasan funds, employer
+    tuition schemes, paying as you study. Smaller, slower, less convenient.
+    [warm] Also not this.
+CAPTION 1: Qard hasan. Employer schemes.
+CAPTION 2: Smaller. Slower. Not this.
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. Three
+small plain doorway shapes standing in a row on a simple ground line, each drawn
+as a clean flat arch outlined in bold dark brown #3D2B23, filled in sage green
+#7C8A5F, sand #D9C08D and teal #2F6B72 respectively, each noticeably smaller than
+a fourth large mid-grey #8A8A8A doorway standing apart from them at the right of
+frame. No text or markings. Simple flat drop shadows offset down-right. 9:16
+vertical composition, doorways in the lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 45 | 3:12-3:14 | THE CLOSE
+--------------------------------------------------------------------------------
+VO: [serious] You didn't fail to pay it off. You were never paying it off.
+CAPTION 1: You didn't fail to pay it.
+CAPTION 2: You were never paying it.
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. KAREEM,
+dark near-black tousled hair, full dark beard with grey speckling, fair skin,
+sage green #7C8A5F henley with three-button placket and rolled sleeves, charcoal
+trousers, dark brown shoes. Chest-up, facing the viewer directly, SERIOUS
+expression, level steady gaze, still and composed. Soft pale elliptical ground
+shadow. Plain uncluttered background. 9:16 vertical composition, figure in the
+lower two-thirds, clean headroom above.
+
+--------------------------------------------------------------------------------
+SCENE 46 | 3:14-3:16 | SIGN-OFF
+--------------------------------------------------------------------------------
+VO: [warm] The Money Machine, Decoded.
+CAPTION 1: The Money Machine,
+CAPTION 2: Decoded.
+
+IMAGE PROMPT:
+Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat
+colour fills with soft minimal shading, warm cream #F7EFDD background. The plain
+mid-grey #8A8A8A featureless machine box with rounded corners, centred and drawn
+small and clean on a plain cream field, with a soft pale elliptical shadow
+beneath it and nothing else in the frame. No dials, no text, no markings. 9:16
+vertical composition, box centred in the lower two-thirds, clean headroom above.
+
+
+================================================================================
+CHARACTER APPEARANCE MAP
+================================================================================
+
+KAREEM  : 4, 17, 25, 34, 45          (direct address only — never in a mechanism)
+ADAM    : 5, 12, 24, 28, 38          (NEUTRAL → PLEASED → WORRIED → RESOLVED)
+SAMI    : 27                          (comparison case, mid-shot only)
+BILAL   : 30                          (FROM BEHIND — no expression sheet exists)
+CLERK   : 5, 31                       (never given a face, never given a name)
+COUNTER : 5
+LEDGER  : 31, 33
+MACHINE : 11, 33, 46                  (opens the setup, closes the video)
+
+  Scene 46 deliberately returns to the object from scene 11. The video opens by
+  building the machine and ends by leaving the viewer alone with it.
+
+
+================================================================================
+CAPTION BURN-IN SPEC
+================================================================================
+
+- Two lines maximum, always. CAPTION 1 above CAPTION 2.
+- Upper third of the frame, inside the headroom every image prompt reserves.
+- Same face, weight, size and safe-area as Parts 15 and 16. Do not restyle
+  captions on this upload — caption treatment is a held variable, not a free one.
+- ALL CAPS words in the caption text above are intentional emphasis. Keep them.
+- The caption band floor is already set in the render config; do not raise it.
+- Numbers appear ONLY in captions, never in the rendered images. Every image
+  prompt excludes lettering for exactly this reason.
+
+
+================================================================================
+EDIT AND ASSEMBLY NOTES
+================================================================================
+
+- 46 scenes, 196 seconds, matching Part 16 exactly. Do not trim to length. The
+  120s+ band returns a 4.96% like rate and 2.19% sub rate; below 35s the channel
+  has returned literal zeroes across three uploads.
+- RETENTION CHECKPOINTS, against rule 0a's target of ≥0.70 watch ratio from 20%
+  to 60% of runtime:
+    · 20% = 0:39 — scene 10, the universal line. New information, not a restate.
+    · 30% = 0:59 — scene 15, interest arriving daily. The seed is already live.
+    · 40% = 1:18 — the scene 19/20 cut, THE CROSSOVER. Strongest beat in the
+      pack, and scene 19 is the thumbnail frame.
+    · 50% = 1:38 — scene 24, Adam under the block. The emotional cash-out.
+    · 60% = 1:58 — scene 28, the regressive comparison. Fresh turn, not a recap.
+  There is no stretch in the middle third that merely restates. That was the
+  defect in UpCMyfIOftA, which beat riQ7dLSnogo's hook and then fell off a cliff
+  at 11%.
+- Cut on the beat, never mid-clause. Scenes 22 and 23 are a matched pair — the
+  descending and ascending staircases must use identical framing, block width
+  and camera distance so the only thing that changes between them is direction.
+  If those two don't rhyme visually, the reveal doesn't land.
+- Scene 19 is the thumbnail. Big flat shapes, high contrast, no text — it
+  survives being shrunk to a phone tile, which is the whole advantage of flat
+  vector over the old 3D look.
+- Attach the character sheet on every scene listed in the appearance map. Prompt
+  text alone drifts inside about five generations; beard shape and eye spacing
+  go first.
+
+
+================================================================================
+ACCURACY NOTES — every claim that must hold
+================================================================================
+
+MUST HOLD:
+1. Interest accrues on the whole outstanding balance, not on an unpaid portion.
+   True of UK Plan 2/Plan 5 and of US federal unsubsidised loans.
+2. Required repayment is a percentage of income above a threshold, with nothing
+   owed below it. True of UK income-contingent repayment and of US
+   income-driven repayment plans.
+3. Negative amortisation — balance rising while payments are made — follows
+   arithmetically from 1 and 2 whenever accrued interest exceeds the required
+   payment. This is the video's central claim and it is a matter of arithmetic,
+   not of jurisdiction.
+4. Balances are written off/forgiven after a set period. UK Plan 2 is 30 years
+   from entering repayment; Plan 5 is 40. US income-driven forgiveness is
+   typically 20-25 years.
+5. Government forecasting assumes a substantial share of borrowers never repay
+   in full. The UK models this explicitly as a resource-accounting cost.
+
+DELIBERATELY WEAKENED, AND WHY:
+- NO interest rate, threshold figure, or repayment percentage is stated. All
+  three change annually and differ by market; naming them dates the video
+  within a year and breaks the "name no product" rule. The script says "a
+  slice" and "a percentage" and sends the viewer to their own two published
+  numbers instead. This is also what makes the pack a reusable template.
+- "Ten years" and "thirty years" are illustrative of the shape, not a claim
+  about any specific borrower's schedule.
+- US plans are referred to generically as "income-driven". Individual plan names
+  are omitted: the plan landscape has been unusually unstable and any named plan
+  risks being wrong by the time this is watched.
+- Forgiven balances can be taxable in some US cases. Not mentioned — it is a
+  real complication but a jurisdictional one, and including it would fracture
+  the universal frame the whole pack is built on. Flagged here so the omission
+  is a decision on the record rather than an oversight.
+- Scholars differ on borrowing under necessity (darura) where no alternative
+  route to education exists. The script does not issue a verdict on the
+  individual — it explains the mechanism and hands over the check. That is the
+  channel's position and it should stay that way.
+
+BRAND SAFETY:
+- No lender, servicer, university, government department or product is named or
+  depicted. The Institution device set carries all of it.
+- No text, logos or brand marks in any render — enforced by the negative prompt.
+
+
+================================================================================
+UPLOAD METADATA — ready to paste into automation/part17.json
+================================================================================
+
+TITLE
+Is Your Student Loan Halal? (You Never Touched What You Owe) #studentloans #islamicfinance
+
+  WHY THIS TITLE, AND WHY NOT A HIGHER-SCORING ONE:
+  It is the `Is Your [X] Halal? (compressed claim)` shape, held identical to
+  Part 16, so SUBJECT is the only packaging variable moving. The parenthetical
+  is deliberately built as a grammatical twin of Part 16's "You Never Picked
+  What It Buys" — same person, same negation, same object-clause, same length.
+  vidIQ scored the Part 16 title 81; looser student-loan phrasings I tested on
+  2026-08-10 ("You Paid 6 Years And Owe More", "You Owe More Than You Borrowed")
+  scored 53 and 55. The gap was the SHAPE, so the shape is what got copied.
+  This exact string was NOT scored — vidIQ credits ran out mid-session. Score it
+  before publishing if credits are available, but do not swap the shape on the
+  strength of a score: Part 16's own config records three titles tied at 81,
+  which is the instrument failing to separate them. Acting on a tie is noise.
+
+DESCRIPTION
+You have paid it every month for six years. You have never touched it.
+
+Here is the mechanism nobody explains. You agreed to repay a slice of what you
+earn above a threshold — capped, predictable, and it does sound fair. But
+interest is charged every day on the WHOLE outstanding balance, and that charge
+is uncapped, because it grows with the balance itself.
+
+So there are two flows, not one. Money leaving you, capped. Money joining the
+debt, uncapped.
+
+Somewhere between them is a crossover — an income where the two are exactly
+equal. Above it, your payment eats the interest and starts on the balance, and
+the debt falls. Below it, the balance does not fall slowly. It does not fall at
+all. It rises, while you pay it, faithfully, for a decade.
+
+That is not what happens when you default. It is what happens when you comply.
+
+And it cuts the wrong way. The graduate who earns well crosses over, clears the
+debt and stops paying. The graduate who earns less pays for thirty years and
+clears nothing. Same debt — the one with less money pays longer, and pays more.
+Then it is written off, which sounds like mercy. It isn't. The lender's own
+forecasts already assume most of that money is never coming back. The write-off
+isn't the escape hatch at the end of the machine; it is a line inside the
+machine's budget.
+
+Plan Two. Income-driven. Deferment. Same machine.
+
+THE TWO-MINUTE CHECK:
+
+1. Find two published numbers — your interest rate and your repayment threshold.
+   Both are on your statement or your servicer's site.
+2. Work out a single month. Interest added, against payment taken. If the
+   interest is bigger, you are renting the debt, not repaying it.
+3. Only then decide about overpaying. Above the crossover it genuinely shortens
+   the debt. Far below it, with a write-off coming anyway, it is money burned.
+   Same arithmetic, run honestly, in both directions.
+
+Riba is not a tax on borrowing. It is a price charged for time — a number that
+grows because the clock moved, not because anything was built, sold or risked.
+A debt you service faithfully and cannot reduce is the purest form of it there
+is.
+
+You didn't fail to pay it off. You were never paying it off.
+
+The Money Machine, Decoded.
+
+MORE IN THE SERIES:
+Is Your Pension Halal? https://youtube.com/shorts/S61o4xbsn20
+Is Paper Gold Halal? https://youtube.com/shorts/JB6Q_7IE9Jo
+How banks quietly trap your savings: https://youtu.be/OXIP3EJROQk
+Passive income without interest (Sukuk): https://youtu.be/J0TCD2u177k
+{PLAYLIST_LINE}
+No jargon. Just mechanisms.
+
+I deliberately name no lender, servicer or repayment plan. Interest rates,
+thresholds and write-off periods differ by country and change every year — check
+your own current terms. Scholars differ on borrowing under necessity where no
+alternative route to education exists. This is financial education, not
+financial advice.
+
+#StudentLoans #StudentDebt #IslamicFinance #HalalMoney #Riba #MuslimMoney
+#StudentLoanForgiveness #FinanceDecoded
+
+TAGS
+  are student loans halal
+  is my student loan halal
+  student loan halal or haram
+  halal student loan
+  student loans islam
+  student loan interest explained
+  negative amortization student loan
+  why does my student loan go up
+  student loan balance increasing
+  income driven repayment explained
+  student loan forgiveness explained
+  islamic finance explained
+  riba explained
+  halal alternatives to loans
+  qard hasan
+
+  Character budget: fit_tags() caps the field at 450 to stay under YouTube's
+  500-character hard limit, which silently rejects the WHOLE update if exceeded.
+  The list is ordered by value so anything trimmed is trimmed from the end.
+
+WHY THESE TAGS: the first five are the literal queries behind the 194K/40K/29K
+Shorts measured on 2026-08-10, all of which are talking-head verdicts. The next
+four are the mechanism queries — "why does my student loan go up",
+"student loan balance increasing" — which is demand for the thing this video
+actually is and which the fatwa videos do not answer at all. Per the keyword
+warning in next-slate.md, "riba explained" is a TAG only and never appears in
+the title, because the English SERP for riba is contested by the Royal Institute
+of British Architects.
+
+PUBLISH
+  2026-08-11, 03:00 PT — the held window. Part 16 went out 2026-08-09 03:00 PT,
+  so this clears the 12-hour same-day rule with room. Do not judge either video
+  before its 72 hours are up: Part 16's is not up until 2026-08-12 03:00 PT.
