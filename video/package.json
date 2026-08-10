@@ -14,7 +14,11 @@
     "ingest:pension": "node scripts/ingest-scenes.mjs",
     "align:pension": "python3 scripts/force-align.py",
     "timeline:pension": "node scripts/parse-pack.mjs && node scripts/make-timeline.mjs",
-    "render:pension": "remotion render src/index.ts Pension-DefaultFund ../media/pension-default-fund.mp4"
+    "render:pension": "remotion render src/index.ts Pension-DefaultFund ../media/pension-default-fund.mp4",
+    "srt:pension": "node scripts/make-srt.mjs",
+    "audit:pension": "python3 scripts/audit-captions.py out/audit scripts/audit-frames.json",
+    "metrics:pension": "python3 scripts/font-metrics.py",
+    "headroom:pension": "python3 scripts/measure-headroom.py public/scenes scripts/headroom.json"
   },
   "keywords": [],
   "author": "",
