@@ -9,6 +9,63 @@ port of the vertical Short.
 | `Ep2-HalalMortgage` | 1920×1080 · 30fps · 10:17 | `../storyboard-ep2-halal-mortgage.md` + `public/vo-ep2.mp3` | `../media/ep2-halal-mortgage.mp4` |
 | `Ep2-Thumbnail` | 1280×720 still | same storyboard | `../media/ep2-thumbnail.png` |
 | `Part14-RaiseTrap` | 1080×1920 · 30fps · 36s | kinetic-typography Short | `../media/part14-kinetic.mp4` |
+| `Pension-DefaultFund` | 1080×1920 · 30fps · 2:15 | 46 supplied stills + `public/vo-pension.mp3` + `../pension-scene-pack.txt` | `../media/pension-default-fund.mp4` |
+
+## Pension short — how it's built
+
+The picture is 46 supplied flat-vector stills, one per scene, cut to the
+recorded voiceover. Build it in three steps:
+
+```bash
+npm run ingest:pension -- <uploads-dir>   # stills -> public/scenes/01..47.jpeg
+npm run align:pension -- vo.wav lines.json scripts/aligned.json
+npm run timeline:pension                  # pack + alignment -> src/pension/timeline.ts
+npm run render:pension
+```
+
+### The pack's timings are not usable, and silence detection cannot replace them
+
+`../pension-scene-pack.txt` gives every scene a designed range (`SCENE 03 |
+0:08-0:10`), but those ranges total **196s against a 135.4s recording**. Using
+them would run the picture 60s past the end of the voice.
+
+Silence detection is not the fix either. The pauses *inside* a line ("Pension.
+Four-oh-one-k. Workplace plan.") are the same length as the pauses *between*
+lines, so no threshold splits this read into exactly 46 pieces — the sweep in
+`scripts/align-vo.mjs` gets 47 at best and 43 at the next step down.
+
+- **`scripts/force-align.py`** is what actually times the video. The script is
+  known exactly, so it is aligned acoustically with pocketsphinx rather than
+  guessed at. Two things make it work: aligning all 135s as one grammar
+  overruns the search, so it walks a short window of a few lines at a time; and
+  forced alignment must consume its whole window, so the **last** word in a
+  window absorbs any trailing audio and its end time is worthless. Only interior
+  word *starts* are trusted — each line's boundary is read off the start of the
+  **next** line's first word, then the window re-anchors, so drift cannot
+  accumulate. 43 of 46 lines land acoustically; the rest are shared out between
+  their acoustic neighbours by character count.
+- **Verification**: all 45 boundaries fall within 150ms of a silence found by
+  the independent envelope detector. Two unrelated methods agreeing is the
+  check — not the deviation figure from either one alone.
+- **`public/scenes/15.jpeg` belongs to no scene.** It is a second take of scene
+  13's basket, carrying a herringbone weave where the prompt asks for
+  cross-hatch. `scripts/make-timeline.mjs` skips it, so scenes 15-46 read one
+  file later than their scene number.
+
+### Type owns the top band
+
+Every one of the 45 picture prompts places its subject "in the lower two-thirds"
+with "clean headroom above", so captions sit in the top third on all of them.
+That is a property of the supplied art, not a per-scene judgement, which is why
+this composition needs no equivalent of `inflation/placement.ts`.
+
+Captions are the pack's own `CAPTION 1` / `CAPTION 2`: line one lands with the
+cut, line two with the second half of the spoken phrase. Accent colour is driven
+by the ElevenLabs tag on the line — rust for `[emphatic]`, teal for `[calm]` and
+`[warmly]` — and the draw-on rule is reserved for those turns, following the
+pack's own note that tags are strongest at emotional turns. The three-step
+checklist track is driven by the script numbering the steps out loud ("One." /
+"Two." / "Three."), not by a hand-picked frame range.
 
 ## Inflation short — how it's built
 
