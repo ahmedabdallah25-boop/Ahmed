@@ -52,12 +52,14 @@ lines, so no threshold splits this read into exactly 46 pieces — the sweep in
   cross-hatch. `scripts/make-timeline.mjs` skips it, so scenes 15-46 read one
   file later than their scene number.
 
-### Type owns the top band
+### Type sits above the subject, and the art decides where that is
 
 Every one of the 45 picture prompts places its subject "in the lower two-thirds"
-with "clean headroom above", so captions sit in the top third on all of them.
-That is a property of the supplied art, not a per-scene judgement, which is why
-this composition needs no equivalent of `inflation/placement.ts`.
+with "clean headroom above", so captions go above the subject on all of them.
+The prompts do not settle *how far* above, though — the delivered stills vary
+too much for one fixed band, which is why this composition still needs a
+measured equivalent of `inflation/placement.ts`. Here it is derived rather than
+hand-authored: see `scripts/measure-headroom.py` below.
 
 Captions are the pack's own `CAPTION 1` / `CAPTION 2`, styled after a reference
 Short the channel wanted matched: one phrase on screen at a time, set very large
