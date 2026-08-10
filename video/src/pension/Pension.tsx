@@ -8,7 +8,7 @@ import {
   staticFile,
   useCurrentFrame,
 } from 'remotion';
-import {EndCard, PhraseBlock, ProgressRule, StepTrack} from './graphics';
+import {EndCard, PhraseBlock, ProgressRule} from './graphics';
 import {FONT, P, SAFE_X} from './palette';
 import {Scene, SCENES} from './timeline';
 
@@ -51,7 +51,10 @@ const Captions: React.FC<{scene: Scene}> = ({scene}) => {
   // One phrase at a time. CAPTION 1 holds the first part of the spoken line and
   // CAPTION 2 takes over for the second, so a block changes roughly every 1.5s
   // on the average scene — the cadence the reference cuts at.
-  const swap = scene.cap2 ? Math.round(dur * 0.46) : dur;
+  // Two blocks need room to be read. Below ~1s the second would flash by in a
+  // third of a second, so the scene keeps CAPTION 1 for its whole length.
+  const twoBlocks = Boolean(scene.cap2) && dur >= 30;
+  const swap = twoBlocks ? Math.round(dur * 0.46) : dur;
 
   // The band is this scene's own: it stops short of where the subject actually
   // begins in this still, measured by scripts/measure-headroom.py.
@@ -79,7 +82,7 @@ const Captions: React.FC<{scene: Scene}> = ({scene}) => {
         }}
       >
         <PhraseBlock text={scene.cap1} start={0} end={swap} color={P.ink} budgetH={budgetH} />
-        {scene.cap2 ? (
+        {twoBlocks ? (
           <PhraseBlock text={scene.cap2} start={swap} end={dur} color={P.ink} budgetH={budgetH} />
         ) : null}
       </div>
@@ -87,26 +90,32 @@ const Captions: React.FC<{scene: Scene}> = ({scene}) => {
   );
 };
 
-const Shot: React.FC<{scene: Scene}> = ({scene}) => (
+const Shot: React.FC<{scene: Scene; audit: boolean}> = ({scene, audit}) => (
   <AbsoluteFill>
-    <Still scene={scene} />
+    {audit ? null : <Still scene={scene} />}
     {/* The reference sets its type naked over the picture, and on this cream
         ground that mostly works already. This is only insurance: a gradient of
         the background colour itself, invisible where the art is empty, enough
         to hold the ink legible if a pushed-in still creeps up under a phrase.
         It is not a caption box — there is no edge to see. */}
-    <AbsoluteFill
-      style={{
-        background: `linear-gradient(to bottom, ${P.cream}CC 0%, ${P.cream}66 22%, ${P.cream}00 38%)`,
-      }}
-    />
+    {audit ? null : (
+      <AbsoluteFill
+        style={{
+          background: `linear-gradient(to bottom, ${P.cream}CC 0%, ${P.cream}66 22%, ${P.cream}00 38%)`,
+        }}
+      />
+    )}
     {scene.cap1 ? <Captions scene={scene} /> : <EndCard line={scene.vo} />}
   </AbsoluteFill>
 );
 
-export const Pension: React.FC = () => (
+// audit=true strips the picture and the chrome, leaving only the type on a flat
+// ground. scripts/audit-captions.py renders that and measures the real ink box
+// of every phrase, because the line-count used for sizing is an estimate of the
+// browser's wrapping, not the browser's actual answer.
+export const Pension: React.FC<{audit?: boolean}> = ({audit = false}) => (
   <AbsoluteFill style={{backgroundColor: P.cream, fontFamily: FONT}}>
-    <Audio src={staticFile('vo-pension.mp3')} />
+    {audit ? null : <Audio src={staticFile('vo-pension.mp3')} />}
     {SCENES.map((scene) => (
       <Sequence
         key={scene.n}
@@ -114,10 +123,9 @@ export const Pension: React.FC = () => (
         durationInFrames={scene.durationInFrames}
         name={`S${String(scene.n).padStart(2, '0')} ${scene.cap1 || 'outro'}`}
       >
-        <Shot scene={scene} />
+        <Shot scene={scene} audit={audit} />
       </Sequence>
     ))}
-    <StepTrack />
-    <ProgressRule />
+    {audit ? null : <ProgressRule />}
   </AbsoluteFill>
 );

@@ -1,0 +1,625 @@
+[
+ {
+  "n": 1,
+  "which": 1,
+  "text": "Your pension owns things",
+  "capBottom": 516,
+  "frame": 25
+ },
+ {
+  "n": 1,
+  "which": 2,
+  "text": "you would never buy",
+  "capBottom": 516,
+  "frame": 70
+ },
+ {
+  "n": 2,
+  "which": 1,
+  "text": "And nobody asked you",
+  "capBottom": 385,
+  "frame": 111
+ },
+ {
+  "n": 2,
+  "which": 2,
+  "text": "not once",
+  "capBottom": 385,
+  "frame": 131
+ },
+ {
+  "n": 3,
+  "which": 1,
+  "text": "Not once",
+  "capBottom": 433,
+  "frame": 155
+ },
+ {
+  "n": 4,
+  "which": 1,
+  "text": "You were opted in",
+  "capBottom": 504,
+  "frame": 185
+ },
+ {
+  "n": 4,
+  "which": 2,
+  "text": "including into this",
+  "capBottom": 504,
+  "frame": 224
+ },
+ {
+  "n": 5,
+  "which": 1,
+  "text": "Pension. 401(k). Workplace plan.",
+  "capBottom": 551,
+  "frame": 275
+ },
+ {
+  "n": 5,
+  "which": 2,
+  "text": "same machine",
+  "capBottom": 551,
+  "frame": 322
+ },
+ {
+  "n": 6,
+  "which": 1,
+  "text": "Same machine",
+  "capBottom": 528,
+  "frame": 362
+ },
+ {
+  "n": 6,
+  "which": 2,
+  "text": "different name on the front",
+  "capBottom": 528,
+  "frame": 379
+ },
+ {
+  "n": 7,
+  "which": 1,
+  "text": "When you joined",
+  "capBottom": 360,
+  "frame": 405
+ },
+ {
+  "n": 7,
+  "which": 2,
+  "text": "you chose one number",
+  "capBottom": 360,
+  "frame": 431
+ },
+ {
+  "n": 8,
+  "which": 1,
+  "text": "How much goes in",
+  "capBottom": 718,
+  "frame": 457
+ },
+ {
+  "n": 8,
+  "which": 2,
+  "text": "that was the whole decision",
+  "capBottom": 718,
+  "frame": 476
+ },
+ {
+  "n": 9,
+  "which": 1,
+  "text": "You never chose",
+  "capBottom": 611,
+  "frame": 511
+ },
+ {
+  "n": 9,
+  "which": 2,
+  "text": "where it actually goes",
+  "capBottom": 611,
+  "frame": 551
+ },
+ {
+  "n": 10,
+  "which": 1,
+  "text": "That's the default fund",
+  "capBottom": 599,
+  "frame": 591
+ },
+ {
+  "n": 10,
+  "which": 2,
+  "text": "the one you were put in",
+  "capBottom": 599,
+  "frame": 617
+ },
+ {
+  "n": 11,
+  "which": 1,
+  "text": "Most people never move",
+  "capBottom": 528,
+  "frame": 647
+ },
+ {
+  "n": 11,
+  "which": 2,
+  "text": "they stay there for decades",
+  "capBottom": 528,
+  "frame": 673
+ },
+ {
+  "n": 12,
+  "which": 1,
+  "text": "So what's actually in it?",
+  "capBottom": 373,
+  "frame": 710
+ },
+ {
+  "n": 12,
+  "which": 2,
+  "text": "nobody ever shows you this",
+  "capBottom": 373,
+  "frame": 747
+ },
+ {
+  "n": 13,
+  "which": 1,
+  "text": "An index",
+  "capBottom": 658,
+  "frame": 797
+ },
+ {
+  "n": 13,
+  "which": 2,
+  "text": "a basket of the biggest companies",
+  "capBottom": 658,
+  "frame": 843
+ },
+ {
+  "n": 14,
+  "which": 1,
+  "text": "Bought automatically",
+  "capBottom": 468,
+  "frame": 904
+ },
+ {
+  "n": 14,
+  "which": 2,
+  "text": "by size — no judgement",
+  "capBottom": 468,
+  "frame": 960
+ },
+ {
+  "n": 15,
+  "which": 1,
+  "text": "Nobody screens it",
+  "capBottom": 516,
+  "frame": 1020
+ },
+ {
+  "n": 15,
+  "which": 2,
+  "text": "that IS the point of it",
+  "capBottom": 516,
+  "frame": 1062
+ },
+ {
+  "n": 16,
+  "which": 1,
+  "text": "So look at what it holds",
+  "capBottom": 504,
+  "frame": 1107
+ },
+ {
+  "n": 16,
+  "which": 2,
+  "text": "actually look",
+  "capBottom": 504,
+  "frame": 1136
+ },
+ {
+  "n": 17,
+  "which": 1,
+  "text": "Banks and insurers",
+  "capBottom": 433,
+  "frame": 1186
+ },
+ {
+  "n": 17,
+  "which": 2,
+  "text": "one of the biggest slices",
+  "capBottom": 433,
+  "frame": 1238
+ },
+ {
+  "n": 18,
+  "which": 1,
+  "text": "Alcohol. Gambling. Tobacco.",
+  "capBottom": 647,
+  "frame": 1305
+ },
+ {
+  "n": 18,
+  "which": 2,
+  "text": "and weapons",
+  "capBottom": 647,
+  "frame": 1363
+ },
+ {
+  "n": 19,
+  "which": 1,
+  "text": "Not by accident",
+  "capBottom": 528,
+  "frame": 1422
+ },
+ {
+  "n": 19,
+  "which": 2,
+  "text": "by construction",
+  "capBottom": 528,
+  "frame": 1459
+ },
+ {
+  "n": 20,
+  "which": 1,
+  "text": "And the banks",
+  "capBottom": 551,
+  "frame": 1500
+ },
+ {
+  "n": 20,
+  "which": 2,
+  "text": "are the sharp part",
+  "capBottom": 551,
+  "frame": 1528
+ },
+ {
+  "n": 21,
+  "which": 1,
+  "text": "A bank's product",
+  "capBottom": 421,
+  "frame": 1563
+ },
+ {
+  "n": 21,
+  "which": 2,
+  "text": "is not a service",
+  "capBottom": 421,
+  "frame": 1592
+ },
+ {
+  "n": 22,
+  "which": 1,
+  "text": "It's interest",
+  "capBottom": 623,
+  "frame": 1620
+ },
+ {
+  "n": 22,
+  "which": 2,
+  "text": "that's the actual product",
+  "capBottom": 623,
+  "frame": 1637
+ },
+ {
+  "n": 23,
+  "which": 1,
+  "text": "Own the bank",
+  "capBottom": 492,
+  "frame": 1666
+ },
+ {
+  "n": 23,
+  "which": 2,
+  "text": "you own the income",
+  "capBottom": 492,
+  "frame": 1697
+ },
+ {
+  "n": 24,
+  "which": 1,
+  "text": "Not a technicality",
+  "capBottom": 504,
+  "frame": 1744
+ },
+ {
+  "n": 24,
+  "which": 2,
+  "text": "it's the whole business",
+  "capBottom": 504,
+  "frame": 1792
+ },
+ {
+  "n": 25,
+  "which": 1,
+  "text": "But here's the part",
+  "capBottom": 433,
+  "frame": 1847
+ },
+ {
+  "n": 25,
+  "which": 2,
+  "text": "almost nobody knows",
+  "capBottom": 433,
+  "frame": 1888
+ },
+ {
+  "n": 26,
+  "which": 1,
+  "text": "Your fund changes",
+  "capBottom": 551,
+  "frame": 1939
+ },
+ {
+  "n": 26,
+  "which": 2,
+  "text": "as you get older",
+  "capBottom": 551,
+  "frame": 1982
+ },
+ {
+  "n": 27,
+  "which": 1,
+  "text": "They call it \"lifestyling\"",
+  "capBottom": 563,
+  "frame": 2039
+ },
+ {
+  "n": 27,
+  "which": 2,
+  "text": "or a \"glide path\"",
+  "capBottom": 563,
+  "frame": 2091
+ },
+ {
+  "n": 28,
+  "which": 1,
+  "text": "It sounds like safety",
+  "capBottom": 468,
+  "frame": 2139
+ },
+ {
+  "n": 28,
+  "which": 2,
+  "text": "it's worth reading twice",
+  "capBottom": 468,
+  "frame": 2163
+ },
+ {
+  "n": 29,
+  "which": 1,
+  "text": "The closer you get",
+  "capBottom": 360,
+  "frame": 2195
+ },
+ {
+  "n": 29,
+  "which": 2,
+  "text": "to actually retiring",
+  "capBottom": 360,
+  "frame": 2224
+ },
+ {
+  "n": 30,
+  "which": 1,
+  "text": "the more it sells shares",
+  "capBottom": 563,
+  "frame": 2260
+ },
+ {
+  "n": 30,
+  "which": 2,
+  "text": "quietly, on a schedule",
+  "capBottom": 563,
+  "frame": 2289
+ },
+ {
+  "n": 31,
+  "which": 1,
+  "text": "and buys bonds",
+  "capBottom": 599,
+  "frame": 2324
+ },
+ {
+  "n": 31,
+  "which": 2,
+  "text": "more of them every year",
+  "capBottom": 599,
+  "frame": 2351
+ },
+ {
+  "n": 32,
+  "which": 1,
+  "text": "And a bond is a loan",
+  "capBottom": 551,
+  "frame": 2384
+ },
+ {
+  "n": 32,
+  "which": 2,
+  "text": "that's all a bond is",
+  "capBottom": 551,
+  "frame": 2410
+ },
+ {
+  "n": 33,
+  "which": 1,
+  "text": "You are lending money",
+  "capBottom": 635,
+  "frame": 2451
+ },
+ {
+  "n": 33,
+  "which": 2,
+  "text": "at interest",
+  "capBottom": 635,
+  "frame": 2493
+ },
+ {
+  "n": 34,
+  "which": 1,
+  "text": "It moves you deeper in",
+  "capBottom": 456,
+  "frame": 2547
+ },
+ {
+  "n": 34,
+  "which": 2,
+  "text": "the older you get",
+  "capBottom": 456,
+  "frame": 2593
+ },
+ {
+  "n": 35,
+  "which": 1,
+  "text": "Automatically. Quietly.",
+  "capBottom": 540,
+  "frame": 2663
+ },
+ {
+  "n": 35,
+  "which": 2,
+  "text": "as a feature, not a fault",
+  "capBottom": 540,
+  "frame": 2735
+ },
+ {
+  "n": 36,
+  "which": 1,
+  "text": "Two minutes. Three steps.",
+  "capBottom": 492,
+  "frame": 2805
+ },
+ {
+  "n": 36,
+  "which": 2,
+  "text": "do it today",
+  "capBottom": 492,
+  "frame": 2847
+ },
+ {
+  "n": 37,
+  "which": 1,
+  "text": "1. Log in",
+  "capBottom": 444,
+  "frame": 2902
+ },
+ {
+  "n": 37,
+  "which": 2,
+  "text": "find your fund's name",
+  "capBottom": 444,
+  "frame": 2950
+ },
+ {
+  "n": 38,
+  "which": 1,
+  "text": "\"Default\" · \"Balanced\" · a year",
+  "capBottom": 456,
+  "frame": 3026
+ },
+ {
+  "n": 38,
+  "which": 2,
+  "text": "that's the basket",
+  "capBottom": 456,
+  "frame": 3104
+ },
+ {
+  "n": 39,
+  "which": 1,
+  "text": "2. Search its top holdings",
+  "capBottom": 492,
+  "frame": 3182
+ },
+ {
+  "n": 39,
+  "which": 2,
+  "text": "they're published",
+  "capBottom": 492,
+  "frame": 3228
+ },
+ {
+  "n": 40,
+  "which": 1,
+  "text": "You'll recognise the banks",
+  "capBottom": 397,
+  "frame": 3280
+ },
+ {
+  "n": 40,
+  "which": 2,
+  "text": "immediately",
+  "capBottom": 397,
+  "frame": 3319
+ },
+ {
+  "n": 41,
+  "which": 1,
+  "text": "3. Open the full fund list",
+  "capBottom": 433,
+  "frame": 3391
+ },
+ {
+  "n": 41,
+  "which": 2,
+  "text": "look for the sharia option",
+  "capBottom": 433,
+  "frame": 3474
+ },
+ {
+  "n": 42,
+  "which": 1,
+  "text": "Most schemes have one now",
+  "capBottom": 504,
+  "frame": 3558
+ },
+ {
+  "n": 42,
+  "which": 2,
+  "text": "switching is usually free",
+  "capBottom": 504,
+  "frame": 3612
+ },
+ {
+  "n": 43,
+  "which": 1,
+  "text": "Same contributions. Same match.",
+  "capBottom": 635,
+  "frame": 3681
+ },
+ {
+  "n": 43,
+  "which": 2,
+  "text": "different basket",
+  "capBottom": 635,
+  "frame": 3740
+ },
+ {
+  "n": 44,
+  "which": 1,
+  "text": "You were opted in",
+  "capBottom": 504,
+  "frame": 3797
+ },
+ {
+  "n": 44,
+  "which": 2,
+  "text": "by default",
+  "capBottom": 504,
+  "frame": 3826
+ },
+ {
+  "n": 45,
+  "which": 1,
+  "text": "Default is still a choice",
+  "capBottom": 361,
+  "frame": 3883
+ },
+ {
+  "n": 45,
+  "which": 2,
+  "text": "somebody else just made it",
+  "capBottom": 361,
+  "frame": 3950
+ }
+]

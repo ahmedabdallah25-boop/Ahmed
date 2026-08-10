@@ -50,6 +50,16 @@ export const RemotionRoot: React.FC = () => (
       width={W}
       height={H}
     />
+    {/* Type only, on a flat ground — what scripts/audit-captions.py measures. */}
+    <Composition
+      id="Pension-CaptionAudit"
+      component={Pension}
+      durationInFrames={PENSION_FRAMES}
+      fps={FPS}
+      width={W}
+      height={H}
+      defaultProps={{audit: true}}
+    />
     {/* Episode 2 — long-form, cut to the recorded VO. */}
     <Composition
       id="Ep2-HalalMortgage"

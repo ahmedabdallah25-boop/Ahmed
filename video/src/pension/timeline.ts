@@ -14,8 +14,8 @@ export const SCENES: Scene[] = [
   {
     "n": 1,
     "still": "01.jpeg",
-    "from": 4,
-    "durationInFrames": 95,
+    "from": 0,
+    "durationInFrames": 99,
     "cap1": "Your pension owns things",
     "cap2": "you would never buy",
     "vo": "[serious] Your pension owns things you would never buy.",

@@ -1,7 +1,8 @@
 import React from 'react';
 import {Easing, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {ADVANCE, CONTENT_EM} from './metrics';
 import {FONT, P, TEXT_WIDTH} from './palette';
-import {SCENES, TOTAL_FRAMES} from './timeline';
+import {TOTAL_FRAMES} from './timeline';
 
 // ---------------------------------------------------------------------------
 // Captions — phrase blocks
@@ -31,19 +32,57 @@ const CAPTION_WEIGHT = 900;
 // a tall block from reaching the subject: the art gives roughly the top third
 // as headroom, and type has to live inside it.
 const MAX_SIZE = 230;
-const CHAR_W = 0.58; // Inter 900 average advance, in ems
+const MIN_SIZE = 64;
+export const LINE_H = 0.98;
+
+// How the phrase actually breaks, using the font's real advances. An earlier
+// version divided the character count evenly across N lines, which is not how
+// wrapping works — a line cannot hold part of a word. "you would never buy"
+// then fell to four lines where two were predicted, and the block overran its
+// band by 200px. This walks the same greedy break the browser does.
+const advance = (ch: string): number => ADVANCE[ch] ?? 0.6;
+const wordEm = (word: string): number =>
+  Array.from(word).reduce((sum, ch) => sum + advance(ch), 0);
+
+export const wrapPhrase = (
+  text: string,
+  size: number,
+): {lines: number; widest: number} => {
+  const words = text.toLowerCase().split(/\s+/).filter(Boolean);
+  const spaceW = advance(' ') * size;
+  let lines = 1;
+  let cur = 0;
+  let widest = 0;
+  for (const word of words) {
+    const w = wordEm(word) * size;
+    if (cur === 0) cur = w;
+    else if (cur + spaceW + w <= TEXT_WIDTH) cur += spaceW + w;
+    else {
+      lines += 1;
+      cur = w;
+    }
+    widest = Math.max(widest, cur);
+  }
+  return {lines, widest};
+};
+
+// The largest size at which the phrase both fits the safe width and stays
+// inside this scene's height budget.
+// Ink, not the box. line-height 0.98 is tighter than the font's own line box,
+// so ink spills roughly 0.115em past each edge — measured, not guessed, from
+// the font's ascent and descent. Budgeting for the box alone put phrases up to
+// 20px lower than intended.
+const INK_SPILL = CONTENT_EM - LINE_H;
+
+export const blockInkHeight = (lines: number, size: number): number =>
+  lines * LINE_H * size + INK_SPILL * size;
 
 export const sizeForPhrase = (text: string, budgetH: number): number => {
-  const chars = text.replace(/\s/g, '').length;
-  const longest = Math.max(...text.split(' ').map((w) => w.length), 1);
-  let best = 0;
-  for (let lines = 1; lines <= 4; lines++) {
-    const byWidth = TEXT_WIDTH / (Math.ceil(chars / lines) * CHAR_W);
-    const byWord = TEXT_WIDTH / (longest * CHAR_W);
-    const byHeight = budgetH / (lines * 0.98);
-    best = Math.max(best, Math.min(byWidth, byWord, byHeight, MAX_SIZE));
+  for (let size = MAX_SIZE; size > MIN_SIZE; size -= 1) {
+    const {lines, widest} = wrapPhrase(text, size);
+    if (widest <= TEXT_WIDTH && blockInkHeight(lines, size) <= budgetH) return size;
   }
-  return Math.round(Math.max(64, best));
+  return MIN_SIZE;
 };
 
 export const PhraseBlock: React.FC<{
@@ -83,7 +122,7 @@ export const PhraseBlock: React.FC<{
         fontFamily: FONT,
         fontSize: size,
         fontWeight: CAPTION_WEIGHT,
-        lineHeight: 0.98,
+        lineHeight: LINE_H,
         letterSpacing: '-0.035em',
         textTransform: 'lowercase',
         color,
@@ -123,67 +162,6 @@ export const ProgressRule: React.FC = () => {
   );
 };
 
-// The three-step checklist. The pack's script numbers the steps out loud
-// ("One." / "Two." / "Three."), so the track is driven by those lines rather
-// than by a hand-picked frame range.
-const STEP_SCENES = SCENES.filter((s) => s.step > 0);
-const STEPS_FROM = STEP_SCENES[0]?.from ?? 0;
-const STEPS_UNTIL = SCENES.find((s) => s.n === 45)?.from ?? TOTAL_FRAMES;
-
-export const StepTrack: React.FC = () => {
-  const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
-  if (frame < STEPS_FROM || frame >= STEPS_UNTIL) return null;
-
-  const reached = STEP_SCENES.filter((s) => s.from <= frame);
-  const active = reached.length ? reached[reached.length - 1].step : 0;
-  const appear = spring({frame: frame - STEPS_FROM, fps, config: {damping: 200}});
-
-  return (
-    <div
-      style={{
-        position: 'absolute',
-        left: 0,
-        right: 0,
-        bottom: 132,
-        display: 'flex',
-        justifyContent: 'center',
-        gap: 22,
-        opacity: appear,
-        transform: `translateY(${(1 - appear) * 26}px)`,
-      }}
-    >
-      {[1, 2, 3].map((n) => {
-        const on = n <= active;
-        const isCurrent = n === active;
-        return (
-          <div
-            key={n}
-            style={{
-              width: 74,
-              height: 74,
-              borderRadius: 999,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontFamily: FONT,
-              fontSize: 34,
-              fontWeight: 800,
-              color: on ? P.cream : P.ink,
-              backgroundColor: on ? P.teal : 'transparent',
-              border: `3px solid ${on ? P.teal : P.ink}`,
-              opacity: on ? 1 : 0.34,
-              transform: `scale(${isCurrent ? 1 + 0.06 * Math.sin((frame - STEPS_FROM) / 6) : 1})`,
-            }}
-          >
-            {n}
-          </div>
-        );
-      })}
-    </div>
-  );
-};
-
 // ---------------------------------------------------------------------------
 // Outro. The pack specifies scene 46 as a plain plate "with a clean centre
 // reserved for a logo overlay to be added in post" — this is that overlay.
@@ -212,7 +190,7 @@ export const EndCard: React.FC<{line: string}> = ({line}) => {
           fontSize: 96,
           fontWeight: CAPTION_WEIGHT,
           letterSpacing: '-0.035em',
-          lineHeight: 0.98,
+          lineHeight: LINE_H,
           textTransform: 'lowercase',
           color: P.ink,
           textAlign: 'center',

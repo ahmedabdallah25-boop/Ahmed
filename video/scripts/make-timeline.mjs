@@ -50,6 +50,13 @@ const out = scenes.map((s, i) => {
   };
 });
 
+// The voice starts a beat after the file does, but the picture should not:
+// hold scene 1 from frame 0 so the video never opens on blank ground.
+if (out[0].from > 0) {
+  out[0].durationInFrames += out[0].from;
+  out[0].from = 0;
+}
+
 // Contiguity is what keeps a still on screen for exactly its line.
 for (let i = 1; i < out.length; i++) {
   const prevEnd = out[i - 1].from + out[i - 1].durationInFrames;
