@@ -61,7 +61,27 @@ const note = carry.length
     `em-dash and carry straight into the next line — read them through, no pause.\n`
   : '';
 
-const block = note + '\n' + scenes.map((s) => wrap(s.vo)).join('\n\n') + '\n\n\n';
+// TAG NOTES, counted off the lines themselves rather than written by hand, so
+// the pack cannot claim a distribution it does not have. The house set is the
+// one pension, klarna and inflation use; scripts/tag-vo.mjs rejects anything
+// outside it.
+const tagsOf = (s) => s.vo.match(/\[(\w+)\]/g) || [];
+const counts = {};
+for (const s of scenes) for (const t of tagsOf(s)) counts[t] = (counts[t] || 0) + 1;
+const tagged = scenes.filter((s) => tagsOf(s).length).length;
+const stacked = scenes.filter((s) => tagsOf(s).length > 1).map((s) => s.n);
+
+const tagNotes =
+  `\nTAG NOTES: ${tagged} of ${scenes.length} lines carry a tag — ` +
+  Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([t, c]) => `${t.slice(1, -1)} ${c}`).join(', ') +
+  `.\nTags are sparse on purpose: on a ${scenes.length}-line read, a tag on every line\n` +
+  `flattens into no tags at all. They sit on the turns — the crossover at the\n` +
+  `19/20 cut, Adam under the block at 24, the comply/default flip at 25, the\n` +
+  `write-off payoff at 31, and the close at 45. Never two tags on one line` +
+  (stacked.length ? ` (VIOLATED at ${stacked.join(', ')})` : '') +
+  `.\nEllipses carry the breath pauses; do not add tags to make pauses.\n`;
+
+const block = note + tagNotes + '\n' + scenes.map((s) => wrap(s.vo)).join('\n\n') + '\n\n\n';
 
 writeFileSync(PACK, src.slice(0, bodyAt) + block + tail);
 

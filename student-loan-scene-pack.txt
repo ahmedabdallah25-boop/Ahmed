@@ -189,13 +189,20 @@ FULL VO SCRIPT — one block, ElevenLabs v3 tags included
 One paragraph per scene, in scene order. Lines 6 and 15 end on an
 em-dash and carry straight into the next line — read them through, no pause.
 
+TAG NOTES: 25 of 46 lines carry a tag — serious 7, emphatic 7, calm 6, warmly 3, sad 1, whispers 1.
+Tags are sparse on purpose: on a 46-line read, a tag on every line
+flattens into no tags at all. They sit on the turns — the crossover at the
+19/20 cut, Adam under the block at 24, the comply/default flip at 25, the
+write-off payoff at 31, and the close at 45. Never two tags on one line.
+Ellipses carry the breath pauses; do not add tags to make pauses.
+
 [serious] You have paid this every month for six years.
 
-[serious] You have never touched it.
+[emphatic] You have never touched it.
 
 The number is bigger now than the day you walked out.
 
-[thoughtful] So look at what you actually signed.
+[calm] So look at what you actually signed.
 
 They handed you a sum.
 
@@ -207,15 +214,15 @@ Earn under the line, you pay nothing.
 
 Over it, a percentage.
 
-[thoughtful] Plan Two. Income-driven. Deferment.
+[serious] Plan Two. Income-driven. Deferment.
 
-Same machine.
+[emphatic] Same machine.
 
-[warm] And most people stop reading right there. Because that does sound fair.
+[warmly] And most people stop reading right there. Because that does sound fair.
 
-[thoughtful] It would be. If the number sat still while you paid it.
+[calm] It would be. If the number sat still while you paid it.
 
-It doesn't.
+[emphatic] It doesn't.
 
 Every single day, interest is added —
 
@@ -225,10 +232,10 @@ not to the part you haven't paid yet, but to the whole outstanding balance.
 
 Money leaving you every month. A slice of your salary, capped by law.
 
-[serious] And money being added every month. A percentage of everything you owe,
-uncapped, growing with the balance itself.
+[emphatic] And money being added every month. A percentage of everything you
+owe, uncapped, growing with the balance itself.
 
-[thoughtful] Now hold those two side by side.
+[calm] Now hold those two side by side.
 
 Somewhere there is an income where they are exactly equal. Call it the
 crossover.
@@ -236,16 +243,16 @@ crossover.
 [serious] Earn above it, and your payment eats the interest and starts on the
 balance. The debt falls.
 
-[serious] Earn below it, and the balance does not fall slowly. It does not fall
+[emphatic] Earn below it, and the balance does not fall slowly. It does not fall
 at all. It rises. While you pay it.
 
-[serious] Ten years of payments, never missed, and you owe more than the day you
+[sad] Ten years of payments, never missed, and you owe more than the day you
 started.
 
-That is not what happens when you default. [serious] That is what happens when
+That is not what happens when you default. [emphatic] That is what happens when
 you comply.
 
-[thoughtful] And notice which way it cuts.
+And notice which way it cuts.
 
 The graduate who earns well crosses over, clears it, and stops paying.
 
@@ -254,9 +261,9 @@ never clears anything.
 
 Same debt. The one with less money pays longer, and pays more.
 
-[thoughtful] Then, decades in, the balance is written off.
+Then, decades in, the balance is written off.
 
-[warm] Which sounds like mercy. [serious] It isn't. It's the pricing.
+[emphatic] Which sounds like mercy. It isn't. It's the pricing.
 
 The lender's own forecasts already assume a large share of borrowers will never
 clear the balance.
@@ -264,7 +271,7 @@ clear the balance.
 The write-off isn't the escape hatch at the end of the machine. It is a line in
 the machine's own budget.
 
-[thoughtful] And this is exactly what the prohibition is pointing at.
+[calm] And this is exactly what the prohibition is pointing at.
 
 Riba isn't a tax on borrowing. It is a price charged for time.
 
@@ -274,27 +281,26 @@ sold, or risked.
 [serious] A debt you service faithfully and cannot reduce is the purest version
 of that there is.
 
-[warm] So here is the two-minute check.
+[warmly] So here is the two-minute check.
 
-One. Find two published numbers: your interest rate, and your repayment
+[calm] One. Find two published numbers: your interest rate, and your repayment
 threshold.
 
 Two. Work out one month. Interest added, against payment taken.
 
-If the interest is bigger, you are renting the debt, not repaying it.
+[serious] If the interest is bigger, you are renting the debt, not repaying it.
 
 Three. Only then decide about overpaying.
 
 Above the crossover it genuinely shortens it. Far below, and written off anyway,
 it is money burned. Same arithmetic, both directions.
 
-[thoughtful] And for the ones coming behind you: qard hasan funds, employer
-tuition schemes, paying as you study. Smaller, slower, less convenient. [warm]
-Also not this.
+[calm] And for the ones coming behind you: qard hasan funds, employer tuition
+schemes, paying as you study. Smaller, slower, less convenient. Also not this.
 
-[serious] You didn't fail to pay it off. You were never paying it off.
+[whispers] You didn't fail to pay it off. You were never paying it off.
 
-[warm] The Money Machine, Decoded.
+[warmly] The Money Machine, Decoded.
 
 
 ================================================================================
@@ -320,7 +326,7 @@ clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 2 | 0:04-0:08
 --------------------------------------------------------------------------------
-VO: [serious] You have never touched it.
+VO: [emphatic] You have never touched it.
 CAPTION 1: You have never
 CAPTION 2: touched it
 
@@ -353,7 +359,7 @@ the lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 4 | 0:12-0:16
 --------------------------------------------------------------------------------
-VO: [thoughtful] So look at what you actually signed.
+VO: [calm] So look at what you actually signed.
 CAPTION 1: So look at what
 CAPTION 2: you actually signed
 
@@ -458,7 +464,7 @@ vertical composition, bar in the lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 10 | 0:36-0:40 | THE UNIVERSAL LINE
 --------------------------------------------------------------------------------
-VO: [thoughtful] Plan Two. Income-driven. Deferment.
+VO: [serious] Plan Two. Income-driven. Deferment.
 CAPTION 1: Plan Two. Income-driven.
 CAPTION 2: Deferment.
 
@@ -475,7 +481,7 @@ two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 11 | 0:40-0:44
 --------------------------------------------------------------------------------
-VO: Same machine.
+VO: [emphatic] Same machine.
 CAPTION 1: Same
 CAPTION 2: machine.
 
@@ -492,7 +498,8 @@ two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 12 | 0:44-0:48
 --------------------------------------------------------------------------------
-VO: [warm] And most people stop reading right there. Because that does sound fair.
+VO: [warmly] And most people stop reading right there. Because that does sound
+fair.
 CAPTION 1: Most people stop
 CAPTION 2: reading right there
 
@@ -510,7 +517,7 @@ two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 13 | 0:48-0:52 | SEED — pays off at scene 19
 --------------------------------------------------------------------------------
-VO: [thoughtful] It would be. If the number sat still while you paid it.
+VO: [calm] It would be. If the number sat still while you paid it.
 CAPTION 1: It would be —
 CAPTION 2: if the number sat still
 
@@ -526,7 +533,7 @@ frame. Nothing else in the scene. Simple flat drop shadow offset down-right.
 --------------------------------------------------------------------------------
 SCENE 14 | 0:52-0:56
 --------------------------------------------------------------------------------
-VO: It doesn't.
+VO: [emphatic] It doesn't.
 CAPTION 1: It
 CAPTION 2: doesn't.
 
@@ -612,8 +619,8 @@ headroom above.
 --------------------------------------------------------------------------------
 SCENE 19 | 1:13-1:18 | THE CROSSOVER — 40% MARK — THUMBNAIL CANDIDATE
 --------------------------------------------------------------------------------
-VO: [serious] And money being added every month. A percentage of everything you
-    owe, uncapped, growing with the balance itself.
+VO: [emphatic] And money being added every month. A percentage of everything you
+owe, uncapped, growing with the balance itself.
 CAPTION 1: FLOW TWO: onto the debt
 CAPTION 2: uncapped. It grows itself.
 
@@ -632,7 +639,7 @@ the lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 20 | 1:18-1:23
 --------------------------------------------------------------------------------
-VO: [thoughtful] Now hold those two side by side.
+VO: [calm] Now hold those two side by side.
 CAPTION 1: Hold them
 CAPTION 2: side by side
 
@@ -650,7 +657,7 @@ lower two-thirds, clean headroom above.
 SCENE 21 | 1:23-1:28
 --------------------------------------------------------------------------------
 VO: Somewhere there is an income where they are exactly equal. Call it the
-    crossover.
+crossover.
 CAPTION 1: One income where
 CAPTION 2: they're exactly equal
 
@@ -667,8 +674,8 @@ crossing point. No axis labels, no text, no numbers. Simple clean composition.
 --------------------------------------------------------------------------------
 SCENE 22 | 1:28-1:33
 --------------------------------------------------------------------------------
-VO: [serious] Earn above it, and your payment eats the interest and starts on the
-    balance. The debt falls.
+VO: [serious] Earn above it, and your payment eats the interest and starts on
+the balance. The debt falls.
 CAPTION 1: ABOVE it: the debt falls
 CAPTION 2: your payment reaches it
 
@@ -684,8 +691,8 @@ vertical composition, blocks in the lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 23 | 1:33-1:38 | THE PAYOFF OF THE SEED
 --------------------------------------------------------------------------------
-VO: [serious] Earn below it, and the balance does not fall slowly. It does not
-    fall at all. It rises. While you pay it.
+VO: [emphatic] Earn below it, and the balance does not fall slowly. It does not
+fall at all. It rises. While you pay it.
 CAPTION 1: BELOW it: it doesn't fall
 CAPTION 2: It RISES. While you pay.
 
@@ -703,8 +710,8 @@ headroom above.
 --------------------------------------------------------------------------------
 SCENE 24 | 1:38-1:43
 --------------------------------------------------------------------------------
-VO: [serious] Ten years of payments, never missed, and you owe more than the day
-    you started.
+VO: [sad] Ten years of payments, never missed, and you owe more than the day you
+started.
 CAPTION 1: 10 years. Never missed.
 CAPTION 2: You owe MORE.
 
@@ -723,8 +730,8 @@ headroom above.
 --------------------------------------------------------------------------------
 SCENE 25 | 1:43-1:48
 --------------------------------------------------------------------------------
-VO: That is not what happens when you default. [serious] That is what happens
-    when you comply.
+VO: That is not what happens when you default. [emphatic] That is what happens
+when you comply.
 CAPTION 1: That's not what happens
 CAPTION 2: when you DEFAULT.
 
@@ -741,7 +748,7 @@ lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 26 | 1:48-1:53
 --------------------------------------------------------------------------------
-VO: [thoughtful] And notice which way it cuts.
+VO: And notice which way it cuts.
 CAPTION 1: It's what happens
 CAPTION 2: when you COMPLY.
 
@@ -776,7 +783,7 @@ composition, figure in the lower two-thirds, clean headroom above.
 SCENE 28 | 1:58-2:03
 --------------------------------------------------------------------------------
 VO: [serious] The graduate who earns less pays every month for thirty years and
-    never clears anything.
+never clears anything.
 CAPTION 1: Earns less?
 CAPTION 2: 30 years. Never clears it.
 
@@ -812,7 +819,7 @@ composition, blocks in the lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 30 | 2:08-2:13 | BILAL — FROM BEHIND, no expression sheet exists
 --------------------------------------------------------------------------------
-VO: [thoughtful] Then, decades in, the balance is written off.
+VO: Then, decades in, the balance is written off.
 CAPTION 1: Then, decades in
 CAPTION 2: it's written off
 
@@ -830,7 +837,7 @@ path. His face is not visible. Soft pale elliptical ground shadow beneath him.
 --------------------------------------------------------------------------------
 SCENE 31 | 2:13-2:18 | SEED PAYOFF — the crossover cashes out here
 --------------------------------------------------------------------------------
-VO: [warm] Which sounds like mercy. [serious] It isn't. It's the pricing.
+VO: [emphatic] Which sounds like mercy. It isn't. It's the pricing.
 CAPTION 1: Sounds like mercy.
 CAPTION 2: It's the PRICING.
 
@@ -849,7 +856,7 @@ ledger in the lower two-thirds, clean headroom above.
 SCENE 32 | 2:18-2:23
 --------------------------------------------------------------------------------
 VO: The lender's own forecasts already assume a large share of borrowers will
-    never clear the balance.
+never clear the balance.
 CAPTION 1: Their own forecasts
 CAPTION 2: already assume it
 
@@ -867,7 +874,7 @@ lower two-thirds, clean headroom above.
 SCENE 33 | 2:23-2:28
 --------------------------------------------------------------------------------
 VO: The write-off isn't the escape hatch at the end of the machine. It is a line
-    in the machine's own budget.
+in the machine's own budget.
 CAPTION 1: Not an escape hatch —
 CAPTION 2: a line in their budget
 
@@ -883,7 +890,7 @@ vertical composition, box in the lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 34 | 2:28-2:33 | THE TURN
 --------------------------------------------------------------------------------
-VO: [thoughtful] And this is exactly what the prohibition is pointing at.
+VO: [calm] And this is exactly what the prohibition is pointing at.
 CAPTION 1: This is what the
 CAPTION 2: prohibition points at
 
@@ -917,7 +924,7 @@ composition, clock in the lower two-thirds, clean headroom above.
 SCENE 36 | 2:38-2:43
 --------------------------------------------------------------------------------
 VO: A number that grows because the clock moved — not because anything was
-    built, sold, or risked.
+built, sold, or risked.
 CAPTION 1: It grows because
 CAPTION 2: the clock moved
 
@@ -935,7 +942,7 @@ headroom above.
 SCENE 37 | 2:43-2:47
 --------------------------------------------------------------------------------
 VO: [serious] A debt you service faithfully and cannot reduce is the purest
-    version of that there is.
+version of that there is.
 CAPTION 1: Serviced faithfully.
 CAPTION 2: Cannot be reduced.
 
@@ -952,7 +959,7 @@ two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 38 | 2:47-2:51 | THE FIX
 --------------------------------------------------------------------------------
-VO: [warm] So here is the two-minute check.
+VO: [warmly] So here is the two-minute check.
 CAPTION 1: So here's the
 CAPTION 2: two-minute check
 
@@ -969,8 +976,8 @@ vertical composition, figure in the lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 39 | 2:51-2:55
 --------------------------------------------------------------------------------
-VO: One. Find two published numbers: your interest rate, and your repayment
-    threshold.
+VO: [calm] One. Find two published numbers: your interest rate, and your
+repayment threshold.
 CAPTION 1: 1. Find two numbers
 CAPTION 2: your rate + your threshold
 
@@ -1003,7 +1010,8 @@ composition, scale in the lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 41 | 2:59-3:03
 --------------------------------------------------------------------------------
-VO: If the interest is bigger, you are renting the debt, not repaying it.
+VO: [serious] If the interest is bigger, you are renting the debt, not repaying
+it.
 CAPTION 1: Interest bigger?
 CAPTION 2: You're RENTING the debt.
 
@@ -1037,7 +1045,7 @@ headroom above.
 SCENE 43 | 3:06-3:09
 --------------------------------------------------------------------------------
 VO: Above the crossover it genuinely shortens it. Far below, and written off
-    anyway, it is money burned. Same arithmetic, both directions.
+anyway, it is money burned. Same arithmetic, both directions.
 CAPTION 1: Above? It shortens it.
 CAPTION 2: Far below? Money burned.
 
@@ -1054,9 +1062,9 @@ headroom above.
 --------------------------------------------------------------------------------
 SCENE 44 | 3:09-3:12
 --------------------------------------------------------------------------------
-VO: [thoughtful] And for the ones coming behind you: qard hasan funds, employer
-    tuition schemes, paying as you study. Smaller, slower, less convenient.
-    [warm] Also not this.
+VO: [calm] And for the ones coming behind you: qard hasan funds, employer
+tuition schemes, paying as you study. Smaller, slower, less convenient. Also not
+this.
 CAPTION 1: Qard hasan. Employer schemes.
 CAPTION 2: Smaller. Slower. Not this.
 
@@ -1073,7 +1081,7 @@ vertical composition, doorways in the lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 45 | 3:12-3:14 | THE CLOSE
 --------------------------------------------------------------------------------
-VO: [serious] You didn't fail to pay it off. You were never paying it off.
+VO: [whispers] You didn't fail to pay it off. You were never paying it off.
 CAPTION 1: You didn't fail to pay it.
 CAPTION 2: You were never paying it.
 
@@ -1090,7 +1098,7 @@ lower two-thirds, clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 46 | 3:14-3:16 | SIGN-OFF
 --------------------------------------------------------------------------------
-VO: [warm] The Money Machine, Decoded.
+VO: [warmly] The Money Machine, Decoded.
 CAPTION 1: The Money Machine,
 CAPTION 2: Decoded.
 
