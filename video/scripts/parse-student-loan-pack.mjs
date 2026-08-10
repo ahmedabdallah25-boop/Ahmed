@@ -20,13 +20,24 @@ for (let i = 0; i < blocks.length; i++) {
   if (!m) continue;
 
   // The header sits in its own block; the content follows in the next one.
-  const rest = (blocks[i + 1] || '').trim();
+  // The last scene has no trailing dashed rule to close it — the next thing in
+  // the pack is a `====` section header — so the final block would otherwise
+  // run to the end of the file and swallow the appearance map into scene 46's
+  // image prompt.
+  const rest = (blocks[i + 1] || '').split(/\n={40,}/)[0].trim();
 
   // No `m` flag on purpose: IMAGE PROMPT's value starts on the line after its
   // label, so a multiline `$` would terminate the capture before it began.
   // Here `$` means end-of-block and the label is anchored with an explicit \n.
+  //
+  // The terminator lists the four real labels rather than matching any
+  // capitalised word before a colon. The prompts name the pack's device set
+  // inline — "THE COUNTER: a teller window", "THE CLERK" — and a general
+  // pattern cut scene 5's prompt off after six words.
+  const LABELS = ['VO', 'CAPTION 1', 'CAPTION 2', 'IMAGE PROMPT'];
   const field = (label) => {
-    const re = new RegExp(`(?:^|\\n)${label}:[ \\t]*([\\s\\S]*?)(?=\\n[A-Z][A-Z0-9 ]*:|$)`);
+    const stop = LABELS.filter((l) => l !== label).join('|');
+    const re = new RegExp(`(?:^|\\n)${label}:[ \\t]*([\\s\\S]*?)(?=\\n(?:${stop}):|$)`);
     const hit = rest.match(re);
     return hit ? hit[1].trim().replace(/\s*\n\s*/g, ' ') : '';
   };
