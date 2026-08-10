@@ -1,0 +1,324 @@
+[
+  {
+    "n": 1,
+    "start": 0.0,
+    "end": 4.27,
+    "words": 9,
+    "estimated": false
+  },
+  {
+    "n": 2,
+    "start": 4.27,
+    "end": 6.63,
+    "words": 5,
+    "estimated": false
+  },
+  {
+    "n": 3,
+    "start": 6.63,
+    "end": 9.99,
+    "words": 11,
+    "estimated": false
+  },
+  {
+    "n": 4,
+    "start": 9.99,
+    "end": 13.6,
+    "words": 7,
+    "estimated": false
+  },
+  {
+    "n": 5,
+    "start": 13.6,
+    "end": 15.58,
+    "words": 5,
+    "estimated": false
+  },
+  {
+    "n": 6,
+    "start": 15.58,
+    "end": 18.64,
+    "words": 11,
+    "estimated": false
+  },
+  {
+    "n": 7,
+    "start": 18.64,
+    "end": 21.5,
+    "words": 7,
+    "estimated": false
+  },
+  {
+    "n": 8,
+    "start": 21.5,
+    "end": 24.29,
+    "words": 7,
+    "estimated": false
+  },
+  {
+    "n": 9,
+    "start": 24.29,
+    "end": 27.19,
+    "words": 4,
+    "estimated": false
+  },
+  {
+    "n": 10,
+    "start": 27.19,
+    "end": 31.64,
+    "words": 5,
+    "estimated": false
+  },
+  {
+    "n": 11,
+    "start": 31.64,
+    "end": 33.48,
+    "words": 2,
+    "estimated": false
+  },
+  {
+    "n": 12,
+    "start": 33.48,
+    "end": 38.36,
+    "words": 12,
+    "estimated": false
+  },
+  {
+    "n": 13,
+    "start": 38.36,
+    "end": 42.3,
+    "words": 12,
+    "estimated": false
+  },
+  {
+    "n": 14,
+    "start": 42.3,
+    "end": 43.4,
+    "words": 2,
+    "estimated": false
+  },
+  {
+    "n": 15,
+    "start": 43.4,
+    "end": 45.72,
+    "words": 6,
+    "estimated": false
+  },
+  {
+    "n": 16,
+    "start": 45.72,
+    "end": 50.66,
+    "words": 14,
+    "estimated": false
+  },
+  {
+    "n": 17,
+    "start": 50.66,
+    "end": 53.88,
+    "words": 9,
+    "estimated": false
+  },
+  {
+    "n": 18,
+    "start": 53.88,
+    "end": 59.34,
+    "words": 13,
+    "estimated": false
+  },
+  {
+    "n": 19,
+    "start": 59.34,
+    "end": 67.03,
+    "words": 18,
+    "estimated": false
+  },
+  {
+    "n": 20,
+    "start": 67.03,
+    "end": 70.18,
+    "words": 7,
+    "estimated": false
+  },
+  {
+    "n": 21,
+    "start": 70.18,
+    "end": 76.1,
+    "words": 14,
+    "estimated": false
+  },
+  {
+    "n": 22,
+    "start": 76.1,
+    "end": 82.05,
+    "words": 17,
+    "estimated": false
+  },
+  {
+    "n": 23,
+    "start": 82.05,
+    "end": 91.12,
+    "words": 22,
+    "estimated": false
+  },
+  {
+    "n": 24,
+    "start": 91.12,
+    "end": 97.53,
+    "words": 15,
+    "estimated": false
+  },
+  {
+    "n": 25,
+    "start": 97.53,
+    "end": 103.69,
+    "words": 15,
+    "estimated": false
+  },
+  {
+    "n": 26,
+    "start": 103.69,
+    "end": 106.44,
+    "words": 6,
+    "estimated": false
+  },
+  {
+    "n": 27,
+    "start": 106.44,
+    "end": 111.56,
+    "words": 12,
+    "estimated": false
+  },
+  {
+    "n": 28,
+    "start": 111.56,
+    "end": 118.49,
+    "words": 15,
+    "estimated": false
+  },
+  {
+    "n": 29,
+    "start": 118.49,
+    "end": 124.22,
+    "words": 12,
+    "estimated": false
+  },
+  {
+    "n": 30,
+    "start": 124.22,
+    "end": 128.03,
+    "words": 8,
+    "estimated": false
+  },
+  {
+    "n": 31,
+    "start": 128.03,
+    "end": 133.97,
+    "words": 9,
+    "estimated": false
+  },
+  {
+    "n": 32,
+    "start": 133.97,
+    "end": 140.13,
+    "words": 16,
+    "estimated": false
+  },
+  {
+    "n": 33,
+    "start": 140.13,
+    "end": 147.68,
+    "words": 22,
+    "estimated": false
+  },
+  {
+    "n": 34,
+    "start": 147.68,
+    "end": 151.93,
+    "words": 10,
+    "estimated": false
+  },
+  {
+    "n": 35,
+    "start": 151.93,
+    "end": 156.79,
+    "words": 13,
+    "estimated": false
+  },
+  {
+    "n": 36,
+    "start": 156.79,
+    "end": 165.69,
+    "words": 16,
+    "estimated": false
+  },
+  {
+    "n": 37,
+    "start": 165.69,
+    "end": 171.4,
+    "words": 16,
+    "estimated": false
+  },
+  {
+    "n": 38,
+    "start": 171.4,
+    "end": 174.36,
+    "words": 7,
+    "estimated": false
+  },
+  {
+    "n": 39,
+    "start": 174.36,
+    "end": 180.62,
+    "words": 12,
+    "estimated": false
+  },
+  {
+    "n": 40,
+    "start": 180.62,
+    "end": 186.47,
+    "words": 10,
+    "estimated": false
+  },
+  {
+    "n": 41,
+    "start": 186.47,
+    "end": 191.9,
+    "words": 13,
+    "estimated": false
+  },
+  {
+    "n": 42,
+    "start": 191.9,
+    "end": 195.66,
+    "words": 6,
+    "estimated": false
+  },
+  {
+    "n": 43,
+    "start": 195.66,
+    "end": 206.35,
+    "words": 21,
+    "estimated": false
+  },
+  {
+    "n": 44,
+    "start": 206.35,
+    "end": 220.03,
+    "words": 24,
+    "estimated": false
+  },
+  {
+    "n": 45,
+    "start": 220.03,
+    "end": 225.45,
+    "words": 13,
+    "estimated": false
+  },
+  {
+    "n": 46,
+    "start": 225.45,
+    "end": 226.938,
+    "words": 4,
+    "estimated": false
+  }
+]

@@ -6,6 +6,8 @@ import {INFLATION_THUMBS, THUMB_H, THUMB_W} from './inflation/Thumbnail';
 import {Longform} from './longform/Longform';
 import {Pension} from './pension/Pension';
 import {TOTAL_FRAMES as PENSION_FRAMES} from './pension/timeline';
+import {StudentLoan} from './studentloan/StudentLoan';
+import {TOTAL_FRAMES as STUDENTLOAN_FRAMES} from './studentloan/timeline';
 import {VO_DURATION} from './longform/timing';
 import {Short} from './Short';
 import {SHORTS} from './ShortsCuts';
@@ -55,6 +57,33 @@ export const RemotionRoot: React.FC = () => (
       id="Pension-CaptionAudit"
       component={Pension}
       durationInFrames={PENSION_FRAMES}
+      fps={FPS}
+      width={W}
+      height={H}
+      defaultProps={{audit: true}}
+    />
+    {/* "Is your student loan halal?" — Part 17, the same machine as the pension
+        Short with one variable moved: the subject. Same component, same caption
+        treatment, its own 46 stills and its own read.
+
+        The length is the voiceover's own, as with the pension Short. Note it is
+        NOT part16's length: this reads 226.9s against part16's 135.5s, because
+        the pack wrote a considerably longer script (2,867 spoken characters
+        against roughly 1,700) at an identical 12.6 chars/sec. The pack claims
+        runtime as a held variable. It is not one. See src/studentloan/timeline.ts. */}
+    <Composition
+      id="StudentLoan-Crossover"
+      component={StudentLoan}
+      durationInFrames={STUDENTLOAN_FRAMES}
+      fps={FPS}
+      width={W}
+      height={H}
+    />
+    {/* Type only, on a flat ground — what scripts/audit-captions.py measures. */}
+    <Composition
+      id="StudentLoan-CaptionAudit"
+      component={StudentLoan}
+      durationInFrames={STUDENTLOAN_FRAMES}
       fps={FPS}
       width={W}
       height={H}

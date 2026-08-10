@@ -28,7 +28,17 @@ cfg = Config(hmm=os.path.join(mp, 'en-us', 'en-us'),
              dict=os.path.join(mp, 'en-us', 'cmudict-en-us.dict'))
 cfg.set_string('-logfn', os.devnull)
 dec = Decoder(cfg)
-dec.add_word('lifestyling', 'L AY F S T AY L IH NG', True)
+# Words the packs use that cmudict does not carry. Alignment fails outright on
+# an unknown word — "Failed to set up alignment of ..." — rather than skipping
+# it, so every one has to be declared before the first window is decoded.
+# Additive across packs: declaring a word an audio file never says costs
+# nothing.
+for _word, _phones in (
+    ('lifestyling', 'L AY F S T AY L IH NG'),   # pension
+    ('uncapped', 'AH N K AE P T'),              # student loan
+    ('qard', 'K AA R D'),                       # student loan — qard hasan
+):
+    dec.add_word(_word, _phones, True)
 
 with wave.open(WAV, 'rb') as w:
     RATE = w.getframerate()

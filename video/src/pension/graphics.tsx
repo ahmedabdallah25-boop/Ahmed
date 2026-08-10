@@ -2,7 +2,7 @@ import React from 'react';
 import {Easing, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {ADVANCE, CONTENT_EM} from './metrics';
 import {FONT, P, TEXT_WIDTH} from './palette';
-import {TOTAL_FRAMES} from './timeline';
+
 
 // ---------------------------------------------------------------------------
 // Captions — phrase blocks
@@ -142,9 +142,13 @@ export const PhraseBlock: React.FC<{
 // ---------------------------------------------------------------------------
 
 // Progress hairline. Sand on cream: present, but never competing with the art.
+// durationInFrames rather than the pension timeline's TOTAL_FRAMES: the same
+// rule now runs over two videos of different lengths, and the composition
+// already knows which one it is in.
 export const ProgressRule: React.FC = () => {
   const frame = useCurrentFrame();
-  const done = Math.min(frame / TOTAL_FRAMES, 1);
+  const {durationInFrames} = useVideoConfig();
+  const done = Math.min(frame / durationInFrames, 1);
   return (
     <div style={{position: 'absolute', top: 0, left: 0, right: 0, height: 8}}>
       <div style={{position: 'absolute', inset: 0, backgroundColor: P.sand, opacity: 0.32}} />

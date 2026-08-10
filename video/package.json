@@ -21,7 +21,13 @@
     "headroom:pension": "python3 scripts/measure-headroom.py public/scenes scripts/headroom.json",
     "ingest:studentloan": "node scripts/ingest-scenes.mjs",
     "pack:studentloan": "node scripts/parse-student-loan-pack.mjs && node scripts/sync-vo-block.mjs",
-    "headroom:studentloan": "python3 scripts/measure-headroom.py public/studentloan scripts/headroom-studentloan.json"
+    "tag:studentloan": "node scripts/tag-vo.mjs && npm run pack:studentloan",
+    "align:studentloan": "ffmpeg -y -v error -i public/vo-student-loan.mp3 -ar 16000 -ac 1 scripts/vo-student-loan-16k.wav && python3 scripts/force-align.py scripts/vo-student-loan-16k.wav scripts/student-loan-lines.json scripts/aligned-studentloan.json",
+    "headroom:studentloan": "python3 scripts/measure-headroom.py public/studentloan scripts/headroom-studentloan.json",
+    "timeline:studentloan": "node scripts/make-timeline-studentloan.mjs",
+    "srt:studentloan": "node scripts/make-srt-studentloan.mjs",
+    "render:studentloan": "remotion render src/index.ts StudentLoan-Crossover ../media/student-loan-crossover.mp4",
+    "audit:studentloan": "python3 scripts/audit-captions.py out/audit-studentloan scripts/audit-frames.json"
   },
   "keywords": [],
   "author": "",

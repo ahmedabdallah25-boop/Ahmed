@@ -12,7 +12,7 @@ import {EndCard, PhraseBlock, ProgressRule} from './graphics';
 import {FONT, P, SAFE_X} from './palette';
 import {Scene, SCENES} from './timeline';
 
-const Still: React.FC<{scene: Scene}> = ({scene}) => {
+const Still: React.FC<{scene: Scene; scenesDir: string}> = ({scene, scenesDir}) => {
   const frame = useCurrentFrame();
   const dur = scene.durationInFrames;
 
@@ -33,7 +33,7 @@ const Still: React.FC<{scene: Scene}> = ({scene}) => {
   return (
     <AbsoluteFill style={{backgroundColor: P.cream, opacity: fade}}>
       <Img
-        src={staticFile(`scenes/${scene.still}`)}
+        src={staticFile(`${scenesDir}/${scene.still}`)}
         style={{
           width: '100%',
           height: '100%',
@@ -90,9 +90,9 @@ const Captions: React.FC<{scene: Scene}> = ({scene}) => {
   );
 };
 
-const Shot: React.FC<{scene: Scene; audit: boolean}> = ({scene, audit}) => (
+const Shot: React.FC<{scene: Scene; audit: boolean; scenesDir: string}> = ({scene, audit, scenesDir}) => (
   <AbsoluteFill>
-    {audit ? null : <Still scene={scene} />}
+    {audit ? null : <Still scene={scene} scenesDir={scenesDir} />}
     {/* The reference sets its type naked over the picture, and on this cream
         ground that mostly works already. This is only insurance: a gradient of
         the background colour itself, invisible where the art is empty, enough
@@ -113,19 +113,32 @@ const Shot: React.FC<{scene: Scene; audit: boolean}> = ({scene, audit}) => (
 // ground. scripts/audit-captions.py renders that and measures the real ink box
 // of every phrase, because the line-count used for sizing is an estimate of the
 // browser's wrapping, not the browser's actual answer.
-export const Pension: React.FC<{audit?: boolean}> = ({audit = false}) => (
+export const ScenePack: React.FC<{
+  scenes: Scene[];
+  vo: string;
+  scenesDir: string;
+  audit?: boolean;
+}> = ({scenes: pack, vo, scenesDir, audit = false}) => (
   <AbsoluteFill style={{backgroundColor: P.cream, fontFamily: FONT}}>
-    {audit ? null : <Audio src={staticFile('vo-pension.mp3')} />}
-    {SCENES.map((scene) => (
+    {audit ? null : <Audio src={staticFile(vo)} />}
+    {pack.map((scene) => (
       <Sequence
         key={scene.n}
         from={scene.from}
         durationInFrames={scene.durationInFrames}
         name={`S${String(scene.n).padStart(2, '0')} ${scene.cap1 || 'outro'}`}
       >
-        <Shot scene={scene} audit={audit} />
+        <Shot scene={scene} audit={audit} scenesDir={scenesDir} />
       </Sequence>
     ))}
     {audit ? null : <ProgressRule />}
   </AbsoluteFill>
+);
+
+// The pension Short is this component bound to its own three inputs. The
+// student-loan Short is the same component bound to different ones — which is
+// what makes "caption treatment is a held variable" true in the code rather
+// than only in the pack.
+export const Pension: React.FC<{audit?: boolean}> = ({audit = false}) => (
+  <ScenePack scenes={SCENES} vo="vo-pension.mp3" scenesDir="scenes" audit={audit} />
 );

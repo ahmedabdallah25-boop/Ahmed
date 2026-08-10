@@ -2,3 +2,4 @@ node_modules/
 out/
 .bin/
 hyperframes/snapshots/
+scripts/*-16k.wav
