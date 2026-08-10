@@ -1,0 +1,80 @@
+name: Fetch student-loan stills
+
+# The session that generated the 46 stills could not download them: the agent
+# container's network policy answers 403 to CONNECT for the Higgsfield CDN, so
+# only their URLs made it into the repo. An Actions runner has open egress, so
+# it fetches them and commits them where the render expects them.
+#
+# Triggered on push rather than workflow_dispatch on purpose. A dispatchable
+# workflow has to exist on the default branch; this one needs to run from the
+# feature branch that carries the manifest, and a push trigger runs the
+# workflow from the pushed ref.
+
+on:
+  push:
+    paths:
+      - 'video/scripts/student-loan-stills.json'
+      - '.github/workflows/fetch-student-loan-stills.yml'
+  workflow_dispatch:
+
+# Never let two runs push to the same branch at once.
+concurrency:
+  group: fetch-stills-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Download the 46 stills
+        run: |
+          set -euo pipefail
+          mkdir -p video/public/studentloan
+          missing=0
+          for n in $(seq 1 46); do
+            dest=$(printf 'video/public/studentloan/%02d.png' "$n")
+            if [ -s "$dest" ]; then
+              echo "$dest already present"
+              continue
+            fi
+            url=$(jq -r --arg n "$n" '.[$n] // ""' video/scripts/student-loan-stills.json)
+            if [ -z "$url" ]; then
+              echo "::error::scene $n missing from manifest"
+              missing=$((missing+1))
+              continue
+            fi
+            echo "scene $n -> $dest"
+            curl -fsS --retry 4 --retry-delay 3 -o "$dest" "$url"
+          done
+          [ "$missing" -eq 0 ] || exit 1
+
+      - name: Check every scene arrived and is a real image
+        run: |
+          set -euo pipefail
+          for n in $(seq 1 46); do
+            f=$(printf 'video/public/studentloan/%02d.png' "$n")
+            [ -s "$f" ] || { echo "::error::$f missing or empty"; exit 1; }
+            file "$f" | grep -q 'PNG image data' || { echo "::error::$f is not a PNG"; exit 1; }
+          done
+          echo "46/46 present"
+          identify -format '%f %wx%h\n' video/public/studentloan/*.png || true
+
+      - name: Commit
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add video/public/studentloan
+          if git diff --cached --quiet; then
+            echo "nothing to commit — stills already in the tree"
+            exit 0
+          fi
+          # [skip ci] so committing the stills cannot retrigger this workflow.
+          git commit -m "Add the 46 student-loan stills fetched from the manifest [skip ci]"
+          git push origin HEAD:${{ github.ref_name }}

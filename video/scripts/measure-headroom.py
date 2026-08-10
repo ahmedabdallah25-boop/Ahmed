@@ -13,16 +13,28 @@ from PIL import Image
 SCENES = Path(sys.argv[1])
 OUT = Path(sys.argv[2])
 
-# The canvas covers a 768x1376 still onto 1080x1920, and the Ken Burns push
-# reaches 1.057. Worst case (most cropped) is what the caption must clear.
-COVER = max(1080 / 768, 1920 / 1376)
+# The canvas covers the still onto 1080x1920, and the Ken Burns push reaches
+# 1.057. Worst case (most cropped) is what the caption must clear.
+#
+# The source size is read per image rather than assumed. The pension stills are
+# all 768x1376, which is what this used to hardcode; the student-loan set is
+# mixed — 768x1376 from the sheet-referenced renders, 1152x2048 from the rest —
+# and a hardcoded divisor puts the band in the wrong place for every still that
+# is not the assumed size.
 MAX_PUSH = 1.057
-RENDER_H = 1376 * COVER * MAX_PUSH
-OFFSET_Y = (1920 - RENDER_H) / 2
+
+
+def canvas_geometry(w, h):
+    cover = max(1080 / w, 1920 / h)
+    render_h = h * cover * MAX_PUSH
+    return render_h, (1920 - render_h) / 2
+
 
 rows = {}
-for f in sorted(SCENES.glob('*.jpeg')):
-    im = Image.open(f).convert('L').resize((96, 172))
+for f in sorted(list(SCENES.glob('*.jpeg')) + list(SCENES.glob('*.png'))):
+    src = Image.open(f)
+    RENDER_H, OFFSET_Y = canvas_geometry(*src.size)
+    im = src.convert('L').resize((96, 172))
     px = im.load()
     w, h = im.size
     # Background is the paper: overwhelmingly the most common tone.
