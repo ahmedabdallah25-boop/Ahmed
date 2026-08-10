@@ -4,7 +4,7 @@
     "beat": "HOOK",
     "start": 0,
     "end": 4,
-    "vo": "You have paid this every month for six years.",
+    "vo": "[serious] You have paid this every month for six years.",
     "caption1": "Six years of payments",
     "caption2": "every single month",
     "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A neat vertical stack of six identical small blank payment slips, plain rectangles with no text or markings, stacked slightly offset so each one is visible, resting on a simple flat surface. Simple flat drop shadow offset down-right. Bold, simple, readable at small size. 9:16 vertical composition, stack in the lower two-thirds, clean headroom above."
@@ -14,7 +14,7 @@
     "beat": "",
     "start": 4,
     "end": 8,
-    "vo": "You have never touched it.",
+    "vo": "[serious] You have never touched it.",
     "caption1": "You have never",
     "caption2": "touched it",
     "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A single tall solid charcoal grey #5A5A5A rectangular block standing upright on a simple ground line, completely smooth and unmarked, with a small pale hand shape reaching toward it from the right but stopping short with a clear visible gap between fingertips and block. Simple flat drop shadow beneath the block. 9:16 vertical composition, block in the lower two-thirds, clean headroom above."

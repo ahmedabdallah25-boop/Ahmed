@@ -186,6 +186,9 @@ THE INSTITUTION — device set
 FULL VO SCRIPT — one block, ElevenLabs v3 tags included
 ================================================================================
 
+One paragraph per scene, in scene order. Lines 6 and 15 end on an
+em-dash and carry straight into the next line — read them through, no pause.
+
 [serious] You have paid this every month for six years.
 
 [serious] You have never touched it.
@@ -194,12 +197,19 @@ The number is bigger now than the day you walked out.
 
 [thoughtful] So look at what you actually signed.
 
-They handed you a sum. You agreed to hand back a slice of what you earn — but
-only the part above a line.
+They handed you a sum.
 
-Earn under the line, you pay nothing. Over it, a percentage.
+You agreed to hand back a slice of what you earn —
 
-[thoughtful] Plan Two. Income-driven. Deferment. Same machine.
+but only the part above a line.
+
+Earn under the line, you pay nothing.
+
+Over it, a percentage.
+
+[thoughtful] Plan Two. Income-driven. Deferment.
+
+Same machine.
 
 [warm] And most people stop reading right there. Because that does sound fair.
 
@@ -207,8 +217,9 @@ Earn under the line, you pay nothing. Over it, a percentage.
 
 It doesn't.
 
-Every single day, interest is added — not to the part you haven't paid yet, but
-to the whole outstanding balance.
+Every single day, interest is added —
+
+not to the part you haven't paid yet, but to the whole outstanding balance.
 
 [serious] Which means there are two flows here, not one.
 
@@ -229,9 +240,10 @@ balance. The debt falls.
 at all. It rises. While you pay it.
 
 [serious] Ten years of payments, never missed, and you owe more than the day you
-started. That is not what happens when you default.
+started.
 
-[serious] That is what happens when you comply.
+That is not what happens when you default. [serious] That is what happens when
+you comply.
 
 [thoughtful] And notice which way it cuts.
 
@@ -244,13 +256,13 @@ Same debt. The one with less money pays longer, and pays more.
 
 [thoughtful] Then, decades in, the balance is written off.
 
-[warm] Which sounds like mercy.
-
-[serious] It isn't. It's the pricing.
+[warm] Which sounds like mercy. [serious] It isn't. It's the pricing.
 
 The lender's own forecasts already assume a large share of borrowers will never
-clear the balance. The write-off isn't the escape hatch at the end of the
-machine. It is a line in the machine's own budget.
+clear the balance.
+
+The write-off isn't the escape hatch at the end of the machine. It is a line in
+the machine's own budget.
 
 [thoughtful] And this is exactly what the prohibition is pointing at.
 
@@ -265,25 +277,22 @@ of that there is.
 [warm] So here is the two-minute check.
 
 One. Find two published numbers: your interest rate, and your repayment
-threshold. Both are on your statement or your loan servicer's site.
+threshold.
 
-Two. Work out one month. Interest added, against payment taken. If the interest
-is bigger, you are renting the debt, not repaying it.
+Two. Work out one month. Interest added, against payment taken.
 
-Three. Only then decide about overpaying. If you sit above the crossover,
-overpaying genuinely shortens it. If you sit far below and it will be written
-off anyway, overpaying is money burned — that is the same arithmetic, run
-honestly, in both directions.
+If the interest is bigger, you are renting the debt, not repaying it.
+
+Three. Only then decide about overpaying.
+
+Above the crossover it genuinely shortens it. Far below, and written off anyway,
+it is money burned. Same arithmetic, both directions.
 
 [thoughtful] And for the ones coming behind you: qard hasan funds, employer
-tuition schemes, and paying as you study all exist. They are smaller, slower,
-and less convenient.
+tuition schemes, paying as you study. Smaller, slower, less convenient. [warm]
+Also not this.
 
-[warm] They are also not this.
-
-[serious] You didn't fail to pay it off.
-
-[serious] You were never paying it off.
+[serious] You didn't fail to pay it off. You were never paying it off.
 
 [warm] The Money Machine, Decoded.
 
@@ -295,7 +304,7 @@ SCENES
 --------------------------------------------------------------------------------
 SCENE 1 | 0:00-0:04 | HOOK
 --------------------------------------------------------------------------------
-VO: You have paid this every month for six years.
+VO: [serious] You have paid this every month for six years.
 CAPTION 1: Six years of payments
 CAPTION 2: every single month
 
@@ -311,7 +320,7 @@ clean headroom above.
 --------------------------------------------------------------------------------
 SCENE 2 | 0:04-0:08
 --------------------------------------------------------------------------------
-VO: You have never touched it.
+VO: [serious] You have never touched it.
 CAPTION 1: You have never
 CAPTION 2: touched it
 
