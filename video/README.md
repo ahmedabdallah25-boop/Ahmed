@@ -59,13 +59,35 @@ with "clean headroom above", so captions sit in the top third on all of them.
 That is a property of the supplied art, not a per-scene judgement, which is why
 this composition needs no equivalent of `inflation/placement.ts`.
 
-Captions are the pack's own `CAPTION 1` / `CAPTION 2`: line one lands with the
-cut, line two with the second half of the spoken phrase. Accent colour is driven
-by the ElevenLabs tag on the line — rust for `[emphatic]`, teal for `[calm]` and
-`[warmly]` — and the draw-on rule is reserved for those turns, following the
-pack's own note that tags are strongest at emotional turns. The three-step
-checklist track is driven by the script numbering the steps out loud ("One." /
-"Two." / "Three."), not by a hand-picked frame range.
+Captions are the pack's own `CAPTION 1` / `CAPTION 2`, styled after a reference
+Short the channel wanted matched: one phrase on screen at a time, set very large
+and all-lowercase in the heaviest weight available, naked over the picture with
+no stroke, shadow or pill, easing in on opacity and leaving by blurring out.
+`CAPTION 1` holds the first half of the spoken line and `CAPTION 2` takes over
+for the second, so a block changes roughly every 1.5s — the reference's cadence.
+
+Two things in that reference could not be copied, and were not faked:
+
+- Its type is **white in an Overlay blend** over dark footage. On this video's
+  cream ground that is invisible, so the fill is the ink the artwork already
+  draws its own outlines in.
+- Its type sits at the **vertical centre**, which works because it is masked
+  behind the subject. No segmentation model is reachable from this environment
+  (the same constraint `inflation/placement.ts` records), so type stays above
+  the subject instead.
+
+Staying above the subject is not a fixed band. The prompts all claim clean
+headroom, but the stills do not deliver it equally — `scripts/measure-headroom.py`
+finds the real top of the subject in every image and the answers run from 330px
+to 1424px. That measurement sets each scene's caption band and its type-size
+budget, which is why the same phrase is set large on an empty still and smaller
+on a full-body figure. The font is Inter 900; the reference uses a geometric
+(Poppins/Montserrat class) and Inter is a grotesque, but Google's font CDN is
+not reachable at render time and `src/fonts.ts` records why nothing here may
+depend on a network fetch mid-render.
+
+The three-step checklist track is driven by the script numbering the steps out
+loud ("One." / "Two." / "Three."), not by a hand-picked frame range.
 
 ## Inflation short — how it's built
 

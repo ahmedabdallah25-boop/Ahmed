@@ -1,92 +1,99 @@
 import React from 'react';
-import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
-import {FONT, P} from './palette';
+import {Easing, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {FONT, P, TEXT_WIDTH} from './palette';
 import {SCENES, TOTAL_FRAMES} from './timeline';
 
 // ---------------------------------------------------------------------------
-// Kinetic typography
+// Captions — phrase blocks
 //
-// Each word rises out of its own clipping box rather than fading in place: the
-// mask is what makes it read as typography rather than as a caption track. The
-// stagger is per-word, so a line assembles at roughly the speed it is spoken.
+// Styled after the reference Short: one phrase on screen at a time, set very
+// large and all-lowercase in the heaviest weight available, naked against the
+// picture with no stroke, shadow or pill behind it. It eases in on opacity and
+// leaves by blurring out as it fades, and blocks change on the voice's own
+// pauses rather than word by word.
+//
+// Two things in that reference cannot carry over and are deliberately not
+// imitated. Its type is white in an Overlay blend over dark footage — on this
+// video's cream ground that is invisible, so the fill is the ink the artwork
+// already draws its outlines in. And its type sits at the vertical centre
+// because it is masked behind the subject; there is no segmentation model
+// reachable here, so type stays above the subject line instead.
 // ---------------------------------------------------------------------------
-export const KineticLine: React.FC<{
-  text: string;
-  start: number;
-  size: number;
-  color: string;
-  weight?: number;
-  stagger?: number;
-}> = ({text, start, size, color, weight = 800, stagger = 2}) => {
-  const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
-  const words = text.split(' ');
 
-  return (
-    <div
-      style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
-        columnGap: size * 0.26,
-      }}
-    >
-      {words.map((word, i) => {
-        const local = frame - start - i * stagger;
-        const rise = spring({frame: local, fps, config: {damping: 200, mass: 0.55}});
-        return (
-          <span
-            key={`${word}-${i}`}
-            style={{
-              display: 'block',
-              overflow: 'hidden',
-              paddingBottom: size * 0.14,
-              marginBottom: -size * 0.14,
-            }}
-          >
-            <span
-              style={{
-                display: 'block',
-                fontFamily: FONT,
-                fontSize: size,
-                fontWeight: weight,
-                lineHeight: 1.06,
-                letterSpacing: '-0.022em',
-                color,
-                transform: `translateY(${(1 - rise) * size * 1.15}px)`,
-                opacity: local < 0 ? 0 : 1,
-              }}
-            >
-              {word}
-            </span>
-          </span>
-        );
-      })}
-    </div>
-  );
+// Inter 900. The reference uses a geometric (Poppins/Montserrat class); Inter
+// is a grotesque, and it is what this project has. Google's font CDN is not
+// reachable at render time and src/fonts.ts documents why nothing here may
+// depend on a network fetch mid-render.
+const CAPTION_WEIGHT = 900;
+
+// Size is set per phrase — short phrases go big, long ones break to more lines
+// — which is how the reference's type behaves. The height budget is what keeps
+// a tall block from reaching the subject: the art gives roughly the top third
+// as headroom, and type has to live inside it.
+const MAX_SIZE = 230;
+const CHAR_W = 0.58; // Inter 900 average advance, in ems
+
+export const sizeForPhrase = (text: string, budgetH: number): number => {
+  const chars = text.replace(/\s/g, '').length;
+  const longest = Math.max(...text.split(' ').map((w) => w.length), 1);
+  let best = 0;
+  for (let lines = 1; lines <= 4; lines++) {
+    const byWidth = TEXT_WIDTH / (Math.ceil(chars / lines) * CHAR_W);
+    const byWord = TEXT_WIDTH / (longest * CHAR_W);
+    const byHeight = budgetH / (lines * 0.98);
+    best = Math.max(best, Math.min(byWidth, byWord, byHeight, MAX_SIZE));
+  }
+  return Math.round(Math.max(64, best));
 };
 
-// A rule that draws itself under the payoff line. Anchored to the text block's
-// width so it never runs wider than the words it belongs to.
-export const DrawRule: React.FC<{start: number; color: string; width: number}> = ({
-  start,
-  color,
-  width,
-}) => {
+export const PhraseBlock: React.FC<{
+  text: string;
+  start: number;
+  end: number;
+  color: string;
+  budgetH: number;
+}> = ({text, start, end, color, budgetH}) => {
   const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
-  const grow = spring({frame: frame - start, fps, config: {damping: 200, mass: 0.9}});
+  const local = frame - start;
+  const life = Math.max(end - start, 1);
+  if (local < 0 || local >= life) return null;
+
+  // Short scenes cannot afford the full in/out, so both are scaled to fit.
+  const IN = Math.max(3, Math.min(9, Math.floor(life * 0.42)));
+  const OUT = Math.max(3, Math.min(8, Math.floor(life * 0.34)));
+
+  const appear = interpolate(local, [0, IN], [0, 1], {
+    extrapolateRight: 'clamp',
+    easing: Easing.out(Easing.cubic),
+  });
+  const leave = interpolate(local, [life - OUT, life], [0, 1], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+    easing: Easing.in(Easing.cubic),
+  });
+
+  const blur = leave * 18;
+  const size = sizeForPhrase(text, budgetH);
+
   return (
     <div
       style={{
-        width: width * grow,
-        height: 7,
-        borderRadius: 4,
-        backgroundColor: color,
-        marginTop: 20,
-        opacity: frame < start ? 0 : 1,
+        maxWidth: TEXT_WIDTH,
+        textAlign: 'center',
+        fontFamily: FONT,
+        fontSize: size,
+        fontWeight: CAPTION_WEIGHT,
+        lineHeight: 0.98,
+        letterSpacing: '-0.035em',
+        textTransform: 'lowercase',
+        color,
+        opacity: appear * (1 - leave),
+        transform: `scale(${interpolate(appear, [0, 1], [1.045, 1])})`,
+        filter: blur > 0.05 ? `blur(${blur}px)` : undefined,
       }}
-    />
+    >
+      {text}
+    </div>
   );
 };
 
@@ -202,11 +209,14 @@ export const EndCard: React.FC<{line: string}> = ({line}) => {
       <div
         style={{
           fontFamily: FONT,
-          fontSize: 62,
-          fontWeight: 800,
-          letterSpacing: '-0.02em',
+          fontSize: 96,
+          fontWeight: CAPTION_WEIGHT,
+          letterSpacing: '-0.035em',
+          lineHeight: 0.98,
+          textTransform: 'lowercase',
           color: P.ink,
           textAlign: 'center',
+          maxWidth: TEXT_WIDTH,
           opacity: inn,
           transform: `translateY(${(1 - inn) * 30}px)`,
         }}

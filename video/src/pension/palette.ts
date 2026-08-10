@@ -20,21 +20,6 @@ export const FONT = 'Inter, "Liberation Sans", Arial, sans-serif';
 // Every picture prompt in the pack puts its subject in the lower two-thirds
 // with "clean headroom above", so type owns the top band on all 45 picture
 // scenes. This is a property of the art, not a guess.
-export const CAPTION_TOP = 168;
-export const SAFE_X = 76;
+export const SAFE_X = 56;
+export const TEXT_WIDTH = 1080 - SAFE_X * 2;
 
-// The voice's emotional tag decides the accent. Sparse by design: the pack's
-// own note is that tags are strongest at emotional turns.
-export const accentFor = (tag: string): string => {
-  switch (tag) {
-    case 'emphatic':
-      return P.rust;
-    case 'warmly':
-    case 'calm':
-      return P.teal;
-    case 'whispers':
-      return P.grey;
-    default:
-      return P.ink;
-  }
-};

@@ -4,7 +4,8 @@
 // timings, which total 196s against a 135.4s recording.
 export type Scene = {
   n: number; still: string; from: number; durationInFrames: number;
-  cap1: string; cap2: string; vo: string; tag: string; step: number; estimated: boolean;
+  cap1: string; cap2: string; vo: string; tag: string; capBottom: number;
+  step: number; estimated: boolean;
 };
 
 export const FPS = 30;
@@ -19,6 +20,7 @@ export const SCENES: Scene[] = [
     "cap2": "you would never buy",
     "vo": "[serious] Your pension owns things you would never buy.",
     "tag": "serious",
+    "capBottom": 516,
     "step": 0,
     "estimated": false
   },
@@ -31,6 +33,7 @@ export const SCENES: Scene[] = [
     "cap2": "not once",
     "vo": "[whispers] And nobody asked you.",
     "tag": "whispers",
+    "capBottom": 385,
     "step": 0,
     "estimated": true
   },
@@ -43,6 +46,7 @@ export const SCENES: Scene[] = [
     "cap2": "not in twenty years",
     "vo": "Not once.",
     "tag": "",
+    "capBottom": 433,
     "step": 0,
     "estimated": true
   },
@@ -55,6 +59,7 @@ export const SCENES: Scene[] = [
     "cap2": "including into this",
     "vo": "[serious] You were opted in. Including into this.",
     "tag": "serious",
+    "capBottom": 504,
     "step": 0,
     "estimated": true
   },
@@ -67,6 +72,7 @@ export const SCENES: Scene[] = [
     "cap2": "same machine",
     "vo": "Pension. Four-oh-one-k. Workplace plan.",
     "tag": "",
+    "capBottom": 551,
     "step": 0,
     "estimated": false
   },
@@ -79,6 +85,7 @@ export const SCENES: Scene[] = [
     "cap2": "different name on the front",
     "vo": "Same machine.",
     "tag": "",
+    "capBottom": 528,
     "step": 0,
     "estimated": false
   },
@@ -91,6 +98,7 @@ export const SCENES: Scene[] = [
     "cap2": "you chose one number",
     "vo": "When you joined, you chose a number.",
     "tag": "",
+    "capBottom": 360,
     "step": 0,
     "estimated": false
   },
@@ -103,6 +111,7 @@ export const SCENES: Scene[] = [
     "cap2": "that was the whole decision",
     "vo": "How much goes in.",
     "tag": "",
+    "capBottom": 718,
     "step": 0,
     "estimated": false
   },
@@ -115,6 +124,7 @@ export const SCENES: Scene[] = [
     "cap2": "where it actually goes",
     "vo": "[emphatic] You almost certainly never chose where it goes.",
     "tag": "emphatic",
+    "capBottom": 611,
     "step": 0,
     "estimated": false
   },
@@ -127,6 +137,7 @@ export const SCENES: Scene[] = [
     "cap2": "the one you were put in",
     "vo": "That is the default fund.",
     "tag": "",
+    "capBottom": 599,
     "step": 0,
     "estimated": false
   },
@@ -139,6 +150,7 @@ export const SCENES: Scene[] = [
     "cap2": "they stay there for decades",
     "vo": "Most people never move.",
     "tag": "",
+    "capBottom": 528,
     "step": 0,
     "estimated": false
   },
@@ -151,6 +163,7 @@ export const SCENES: Scene[] = [
     "cap2": "nobody ever shows you this",
     "vo": "[serious] So what is actually in it?",
     "tag": "serious",
+    "capBottom": 373,
     "step": 0,
     "estimated": false
   },
@@ -163,6 +176,7 @@ export const SCENES: Scene[] = [
     "cap2": "a basket of the biggest companies",
     "vo": "An index. A basket of the largest listed companies.",
     "tag": "",
+    "capBottom": 658,
     "step": 0,
     "estimated": false
   },
@@ -175,6 +189,7 @@ export const SCENES: Scene[] = [
     "cap2": "by size — no judgement",
     "vo": "Bought automatically. By size. No judgement.",
     "tag": "",
+    "capBottom": 468,
     "step": 0,
     "estimated": false
   },
@@ -187,6 +202,7 @@ export const SCENES: Scene[] = [
     "cap2": "that IS the point of it",
     "vo": "[emphatic] Nobody screens it. That is the entire point of it.",
     "tag": "emphatic",
+    "capBottom": 516,
     "step": 0,
     "estimated": false
   },
@@ -199,6 +215,7 @@ export const SCENES: Scene[] = [
     "cap2": "actually look",
     "vo": "So look at what the basket holds.",
     "tag": "",
+    "capBottom": 504,
     "step": 0,
     "estimated": false
   },
@@ -211,6 +228,7 @@ export const SCENES: Scene[] = [
     "cap2": "one of the biggest slices",
     "vo": "Banks and insurers. One of the biggest slices in it.",
     "tag": "",
+    "capBottom": 433,
     "step": 0,
     "estimated": false
   },
@@ -223,6 +241,7 @@ export const SCENES: Scene[] = [
     "cap2": "and weapons",
     "vo": "Alcohol. Gambling. Tobacco. Weapons.",
     "tag": "",
+    "capBottom": 647,
     "step": 0,
     "estimated": false
   },
@@ -235,6 +254,7 @@ export const SCENES: Scene[] = [
     "cap2": "by construction",
     "vo": "[serious] Not by accident. By construction.",
     "tag": "serious",
+    "capBottom": 528,
     "step": 0,
     "estimated": false
   },
@@ -247,6 +267,7 @@ export const SCENES: Scene[] = [
     "cap2": "are the sharp part",
     "vo": "And the banks are the sharp part.",
     "tag": "",
+    "capBottom": 551,
     "step": 0,
     "estimated": false
   },
@@ -259,6 +280,7 @@ export const SCENES: Scene[] = [
     "cap2": "is not a service",
     "vo": "A bank's product is not a service.",
     "tag": "",
+    "capBottom": 421,
     "step": 0,
     "estimated": false
   },
@@ -271,6 +293,7 @@ export const SCENES: Scene[] = [
     "cap2": "that's the actual product",
     "vo": "[serious] It is interest.",
     "tag": "serious",
+    "capBottom": 623,
     "step": 0,
     "estimated": false
   },
@@ -283,6 +306,7 @@ export const SCENES: Scene[] = [
     "cap2": "you own the income",
     "vo": "Own the bank, own the income.",
     "tag": "",
+    "capBottom": 492,
     "step": 0,
     "estimated": false
   },
@@ -295,6 +319,7 @@ export const SCENES: Scene[] = [
     "cap2": "it's the whole business",
     "vo": "That is not a technicality. That is the whole business.",
     "tag": "",
+    "capBottom": 504,
     "step": 0,
     "estimated": false
   },
@@ -307,6 +332,7 @@ export const SCENES: Scene[] = [
     "cap2": "almost nobody knows",
     "vo": "[serious] But here is the part almost nobody knows.",
     "tag": "serious",
+    "capBottom": 433,
     "step": 0,
     "estimated": false
   },
@@ -319,6 +345,7 @@ export const SCENES: Scene[] = [
     "cap2": "as you get older",
     "vo": "Your fund is built to change as you age.",
     "tag": "",
+    "capBottom": 551,
     "step": 0,
     "estimated": false
   },
@@ -331,6 +358,7 @@ export const SCENES: Scene[] = [
     "cap2": "or a \"glide path\"",
     "vo": "They call it lifestyling. Or a glide path.",
     "tag": "",
+    "capBottom": 563,
     "step": 0,
     "estimated": false
   },
@@ -343,6 +371,7 @@ export const SCENES: Scene[] = [
     "cap2": "it's worth reading twice",
     "vo": "It sounds like safety.",
     "tag": "",
+    "capBottom": 468,
     "step": 0,
     "estimated": false
   },
@@ -355,6 +384,7 @@ export const SCENES: Scene[] = [
     "cap2": "to actually retiring",
     "vo": "The closer you get to retiring...",
     "tag": "",
+    "capBottom": 360,
     "step": 0,
     "estimated": false
   },
@@ -367,6 +397,7 @@ export const SCENES: Scene[] = [
     "cap2": "quietly, on a schedule",
     "vo": "...the more it sells shares...",
     "tag": "",
+    "capBottom": 563,
     "step": 0,
     "estimated": false
   },
@@ -379,6 +410,7 @@ export const SCENES: Scene[] = [
     "cap2": "more of them every year",
     "vo": "[emphatic] ...and buys bonds.",
     "tag": "emphatic",
+    "capBottom": 599,
     "step": 0,
     "estimated": false
   },
@@ -391,6 +423,7 @@ export const SCENES: Scene[] = [
     "cap2": "that's all a bond is",
     "vo": "[serious] And a bond is a loan.",
     "tag": "serious",
+    "capBottom": 551,
     "step": 0,
     "estimated": false
   },
@@ -403,6 +436,7 @@ export const SCENES: Scene[] = [
     "cap2": "at interest",
     "vo": "You are lending money. At interest.",
     "tag": "",
+    "capBottom": 635,
     "step": 0,
     "estimated": false
   },
@@ -415,6 +449,7 @@ export const SCENES: Scene[] = [
     "cap2": "the older you get",
     "vo": "[emphatic] The machine moves you deeper into it as you get older.",
     "tag": "emphatic",
+    "capBottom": 456,
     "step": 0,
     "estimated": false
   },
@@ -427,6 +462,7 @@ export const SCENES: Scene[] = [
     "cap2": "as a feature, not a fault",
     "vo": "Automatically. Quietly. As a feature you were never shown.",
     "tag": "",
+    "capBottom": 540,
     "step": 0,
     "estimated": false
   },
@@ -439,6 +475,7 @@ export const SCENES: Scene[] = [
     "cap2": "do it today",
     "vo": "[calm] So. Two minutes. Three steps.",
     "tag": "calm",
+    "capBottom": 492,
     "step": 0,
     "estimated": false
   },
@@ -451,6 +488,7 @@ export const SCENES: Scene[] = [
     "cap2": "find your fund's name",
     "vo": "One. Log in. Find the name of your fund.",
     "tag": "",
+    "capBottom": 444,
     "step": 1,
     "estimated": false
   },
@@ -463,6 +501,7 @@ export const SCENES: Scene[] = [
     "cap2": "that's the basket",
     "vo": "If it says default, balanced, or a retirement year — that is the basket.",
     "tag": "",
+    "capBottom": 456,
     "step": 0,
     "estimated": false
   },
@@ -475,6 +514,7 @@ export const SCENES: Scene[] = [
     "cap2": "they're published",
     "vo": "Two. Search that fund's largest holdings.",
     "tag": "",
+    "capBottom": 492,
     "step": 2,
     "estimated": false
   },
@@ -487,6 +527,7 @@ export const SCENES: Scene[] = [
     "cap2": "immediately",
     "vo": "[serious] You will recognise the banks immediately.",
     "tag": "serious",
+    "capBottom": 397,
     "step": 0,
     "estimated": false
   },
@@ -499,6 +540,7 @@ export const SCENES: Scene[] = [
     "cap2": "look for the sharia option",
     "vo": "Three. Open the full fund list. Look for a sharia or Islamic option.",
     "tag": "",
+    "capBottom": 433,
     "step": 3,
     "estimated": false
   },
@@ -511,6 +553,7 @@ export const SCENES: Scene[] = [
     "cap2": "switching is usually free",
     "vo": "Most workplace schemes have one now. Switching is usually free.",
     "tag": "",
+    "capBottom": 504,
     "step": 0,
     "estimated": false
   },
@@ -523,6 +566,7 @@ export const SCENES: Scene[] = [
     "cap2": "different basket",
     "vo": "[calm] Same contributions. Same employer match. Different basket.",
     "tag": "calm",
+    "capBottom": 635,
     "step": 0,
     "estimated": false
   },
@@ -535,6 +579,7 @@ export const SCENES: Scene[] = [
     "cap2": "by default",
     "vo": "[serious] You were opted in by default.",
     "tag": "serious",
+    "capBottom": 504,
     "step": 0,
     "estimated": false
   },
@@ -547,6 +592,7 @@ export const SCENES: Scene[] = [
     "cap2": "somebody else just made it",
     "vo": "[warmly] Default is still a choice. Somebody else just made it for you.",
     "tag": "warmly",
+    "capBottom": 361,
     "step": 0,
     "estimated": false
   },
@@ -559,6 +605,7 @@ export const SCENES: Scene[] = [
     "cap2": "",
     "vo": "Two minutes. Go and make it yourself.",
     "tag": "",
+    "capBottom": 980,
     "step": 0,
     "estimated": false
   }

@@ -7,20 +7,10 @@ import {
   Sequence,
   staticFile,
   useCurrentFrame,
-  useVideoConfig,
 } from 'remotion';
-import {DrawRule, EndCard, KineticLine, ProgressRule, StepTrack} from './graphics';
-import {accentFor, CAPTION_TOP, FONT, P, SAFE_X} from './palette';
+import {EndCard, PhraseBlock, ProgressRule, StepTrack} from './graphics';
+import {FONT, P, SAFE_X} from './palette';
 import {Scene, SCENES} from './timeline';
-
-const TEXT_WIDTH = 1080 - SAFE_X * 2;
-
-// One size per scene, chosen from whichever of its two caption lines is longer,
-// so the pair reads as one block instead of two unrelated sizes.
-const sizeFor = (scene: Scene): number => {
-  const longest = Math.max(scene.cap1.length, scene.cap2.length, 1);
-  return Math.round(Math.max(46, Math.min(80, TEXT_WIDTH / longest / 0.55)));
-};
 
 const Still: React.FC<{scene: Scene}> = ({scene}) => {
   const frame = useCurrentFrame();
@@ -56,58 +46,41 @@ const Still: React.FC<{scene: Scene}> = ({scene}) => {
 };
 
 const Captions: React.FC<{scene: Scene}> = ({scene}) => {
-  const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
   const dur = scene.durationInFrames;
-  const size = sizeFor(scene);
-  const accent = accentFor(scene.tag);
 
-  // Line one lands with the cut; line two lands with the second half of the
-  // spoken phrase, which is what the pack's CAPTION 2 always is.
-  const cap1Start = 2;
-  const words1 = scene.cap1.split(' ').length;
-  const cap2Start = Math.max(Math.round(dur * 0.42), cap1Start + words1 * 2 + 4);
-  const stagger = dur < 40 ? 1 : 2;
+  // One phrase at a time. CAPTION 1 holds the first part of the spoken line and
+  // CAPTION 2 takes over for the second, so a block changes roughly every 1.5s
+  // on the average scene — the cadence the reference cuts at.
+  const swap = scene.cap2 ? Math.round(dur * 0.46) : dur;
 
-  // The rule is reserved for the turns the voice actually marks.
-  const ruled = scene.tag === 'emphatic' || scene.tag === 'warmly';
-  const ruleWidth = Math.min(TEXT_WIDTH * 0.5, scene.cap2.length * size * 0.42);
-
-  const exit = interpolate(frame, [dur - 4, dur], [1, 0.92], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
+  // The band is this scene's own: it stops short of where the subject actually
+  // begins in this still, measured by scripts/measure-headroom.py.
+  const TOP_MARGIN = 64;
+  const band = scene.capBottom;
+  const budgetH = Math.max(180, band - TOP_MARGIN);
 
   return (
     <AbsoluteFill
       style={{
         alignItems: 'center',
-        paddingTop: CAPTION_TOP,
+        justifyContent: 'flex-start',
         paddingLeft: SAFE_X,
         paddingRight: SAFE_X,
       }}
     >
-      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', opacity: exit}}>
-        <KineticLine
-          text={scene.cap1}
-          start={cap1Start}
-          size={size}
-          color={P.ink}
-          stagger={stagger}
-        />
+      <div
+        style={{
+          height: band,
+          paddingTop: TOP_MARGIN,
+          width: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <PhraseBlock text={scene.cap1} start={0} end={swap} color={P.ink} budgetH={budgetH} />
         {scene.cap2 ? (
-          <div style={{marginTop: size * 0.16, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-            <KineticLine
-              text={scene.cap2}
-              start={cap2Start}
-              size={size}
-              color={accent}
-              stagger={stagger}
-            />
-            {ruled ? (
-              <DrawRule start={cap2Start + 4} color={accent} width={ruleWidth} />
-            ) : null}
-          </div>
+          <PhraseBlock text={scene.cap2} start={swap} end={dur} color={P.ink} budgetH={budgetH} />
         ) : null}
       </div>
     </AbsoluteFill>
@@ -117,11 +90,14 @@ const Captions: React.FC<{scene: Scene}> = ({scene}) => {
 const Shot: React.FC<{scene: Scene}> = ({scene}) => (
   <AbsoluteFill>
     <Still scene={scene} />
-    {/* A whisper of a scrim. The art already leaves the top clear, so this is
-        insurance for the few frames a pushed-in still creeps upward. */}
+    {/* The reference sets its type naked over the picture, and on this cream
+        ground that mostly works already. This is only insurance: a gradient of
+        the background colour itself, invisible where the art is empty, enough
+        to hold the ink legible if a pushed-in still creeps up under a phrase.
+        It is not a caption box — there is no edge to see. */}
     <AbsoluteFill
       style={{
-        background: `linear-gradient(to bottom, ${P.cream}E6 0%, ${P.cream}B0 26%, ${P.cream}00 48%)`,
+        background: `linear-gradient(to bottom, ${P.cream}CC 0%, ${P.cream}66 22%, ${P.cream}00 38%)`,
       }}
     />
     {scene.cap1 ? <Captions scene={scene} /> : <EndCard line={scene.vo} />}

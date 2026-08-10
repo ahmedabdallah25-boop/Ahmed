@@ -6,6 +6,12 @@ const here = (p) => new URL(p, import.meta.url);
 const scenes = JSON.parse(readFileSync(here('./scenes.json'), 'utf8'));
 const aligned = JSON.parse(readFileSync(here('./aligned.json'), 'utf8'));
 const pack = readFileSync(here('../../pension-scene-pack.txt'), 'utf8');
+// Measured by scripts/measure-headroom.py — where the art's subject actually
+// starts in each still, in canvas pixels. The prompts all claim clean headroom
+// above, but they do not deliver it equally (330px on the tightest still,
+// 1424px on the loosest), so the caption band is set per scene from the image
+// rather than assumed once for all of them.
+const headroom = JSON.parse(readFileSync(here('./headroom.json'), 'utf8'));
 
 const script = pack.split(/VOICEOVER — full script[^\n]*\n/)[1].split(/\nTAG NOTES:/)[0]
   .split('\n').filter((l) => l.trim() && !/^=+$/.test(l.trim()));
@@ -34,6 +40,11 @@ const out = scenes.map((s, i) => {
     cap2: clean(s.cap2),
     vo: clean(s.n === 46 ? script[i] : s.vo),
     tag,
+    // Bottom of the caption band: clear of the subject, floored so that a still
+    // with almost no headroom gets small type rather than unreadable type.
+    capBottom: Math.round(
+      Math.min(980, Math.max(360, (headroom[String(stillFor(s.n)).padStart(2, '0') + '.jpeg']?.canvasY ?? 640) - 40)),
+    ),
     step: step ? {One: 1, Two: 2, Three: 3}[step] : 0,
     estimated: a.estimated === true,
   };
@@ -54,7 +65,8 @@ writeFileSync(here('../src/pension/timeline.ts'),
 // timings, which total 196s against a 135.4s recording.
 export type Scene = {
   n: number; still: string; from: number; durationInFrames: number;
-  cap1: string; cap2: string; vo: string; tag: string; step: number; estimated: boolean;
+  cap1: string; cap2: string; vo: string; tag: string; capBottom: number;
+  step: number; estimated: boolean;
 };
 
 export const FPS = ${FPS};
@@ -66,3 +78,5 @@ console.log(`${out.length} scenes, ${totalFrames} frames (${(totalFrames / FPS).
 console.log(`stills used: ${out[0].still} .. ${out.at(-1).still}, spare = ${String(SPARE).padStart(2, '0')}.jpeg`);
 console.log(`steps tagged: ${out.filter((s) => s.step).map((s) => `S${s.n}=${s.step}`).join(' ')}`);
 console.log(`shortest ${Math.min(...out.map((s) => s.durationInFrames)) / FPS}s  longest ${Math.max(...out.map((s) => s.durationInFrames)) / FPS}s`);
+const bands = out.map((s) => s.capBottom).sort((a, b) => a - b);
+console.log(`caption band bottom: min ${bands[0]}px  median ${bands[Math.floor(bands.length / 2)]}px  max ${bands[bands.length - 1]}px`);
