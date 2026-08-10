@@ -1,0 +1,594 @@
+================================================================================
+FINANCE % DECODED — SCENE PACK
+"THE SAME CAR. SIX WAYS TO PAY."
+Render style: photoreal cinematic, faceless by framing | 9:16 1080x1920
+Runtime: ~66s | 22 generated clips + 3 editor-built title cards
+Engine: Seedance 2.5 via Higgsfield, text-to-video
+Format source: teardown of Crazy Kennar 8KALkISFxDs (12.19M views) —
+see currency-ladder-teardown.md
+================================================================================
+
+
+WHY THIS ONE, AND WHY NOW
+--------------------------------------------------------------------------------
+- The source format is a SILENT ESCALATION LADDER: one transaction repeated six
+  times, exactly one variable changing, no dialogue, on-screen text used as
+  labels only. It did 12,189,544 views and a 2.0% like rate with zero narration.
+- It is a genuinely new lane for this channel. channel-reset.md records that
+  every subject family here collapses by entry 3 or 4 and the formula-perfect
+  third inflation video did 43 views. The failure was never the explaining —
+  it was that every video was the same video. This one has no VO, no host,
+  no diagram.
+- The source's engine is an INVERSION: as the money gets bigger, the thing you
+  buy gets smaller. This pack keeps the inversion but moves the variable off
+  nationality (which reads as punching down from a UK channel) and onto the
+  payment method — where it becomes the channel's actual subject.
+- The ladder does not end in absurdity like the source. It escalates to absurdity
+  and then RESETS. That final panel is the only reason this is this channel's
+  video and not a generic money meme.
+
+
+WHAT MOVES, AND WHAT IS HELD CONSTANT
+--------------------------------------------------------------------------------
+HELD CONSTANT across all six panels:
+  - the car (same model, same colour, same forecourt, same framing)
+  - the buyer (same shirt, same hands, face never visible)
+  - the camera grammar and the three-shot rhythm
+  - the price on the windscreen
+
+THE SINGLE VARIABLE UNDER TEST:
+  - the payment method, and the physical volume of money it costs
+
+If the forecourt or the car visibly changes between panels, the argument
+collapses on screen. See PRODUCTION ORDER, step 3.
+
+
+HOW TO USE THIS FILE
+--------------------------------------------------------------------------------
+- Every PROMPT block below is complete and self-contained. The style lock is
+  already inlined in each one. Copy the whole block, paste, generate.
+- The NEGATIVE PROMPT is identical for all 22 clips. Paste it once into
+  Higgsfield's negative field and leave it there.
+- There is NO voiceover script in this pack. That is deliberate and it is not
+  negotiable — see AUDIO.
+- TXT lines are what you burn in. See CAPTION BURN-IN SPEC.
+- Title cards are built in your editor, never generated. See TITLE CARD SPEC.
+
+
+================================================================================
+NEGATIVE PROMPT — paste once, applies to ALL 22 clips
+================================================================================
+
+visible face, eyes, mouth, portrait, head in frame, celebrity likeness, text,
+lettering, captions, subtitles, watermark, logo, brand marks, car badges, bank
+names, real identifiable banknotes, national currency markings, extra fingers,
+warped hands, morphing objects, flickering, ghosting, slow motion, dreamy haze,
+lens flare, oversaturated, cartoon, 3D render, illustration
+
+
+================================================================================
+BRAND-SAFETY NOTE — read before generating
+================================================================================
+
+Cars are UNBADGED. No grille logo, no wordmark, no recognisable silhouette of a
+current production model. If a badge appears, regenerate — do not paint it out.
+
+Money is GENERIC UNBRANDED PAPER. Plain rectangles, abstract guilloche pattern,
+no numerals large enough to read, no national symbols, no portraits. Real
+banknote lookalikes are both a legal problem and the single biggest AI-artefact
+magnet in this pack.
+
+No real lender, dealer, card network or retailer is named in any prompt, caption,
+title, description or tag. The subject is the ARITHMETIC, which is fair comment.
+The moment it is a named company it is a legal exposure and a slate that dates
+within a month.
+
+The title cards in the source video use a copyrighted third-party design and
+narrator voice. This pack replaces them with an original card. Do not substitute
+the original back in.
+
+
+================================================================================
+TITLE CARD SPEC — build in the editor, never in Seedance
+================================================================================
+
+Full-screen hold, 0.7s, hard cut in and hard cut out. No animation, no fade.
+  Ground:  flat cream #F7EFDD, no texture, no border, no flourish
+  Type:    heavy condensed sans, dark brown #3D2B23, centred, ALL CAPS,
+           approx 14% of frame height
+  Audio:   one soft marimba or woodblock ding, then nothing
+
+The music stops dead under every card and restarts on the cut back. Silence is
+what sells the card. Never put a voiceover on it.
+
+
+================================================================================
+SHOT LIST — 22 clips
+================================================================================
+Timecodes are cumulative targets. TXT = burned-in on-screen text.
+Target ASL 1.8–3.0s. Cut on the action. No settle frames anywhere.
+
+
+--------------------------------------------------------------------------------
+HOOK — 0:00–0:04
+--------------------------------------------------------------------------------
+
+S01 | 0:00–0:02 | TXT: (none)
+
+    Extreme close-up on a man's hands laying one single crisp banknote flat onto
+    a car dealership counter, fingertips pressing it down and sliding it forward.
+    The note is small and alone on a wide empty counter. Sharp focus on the note,
+    background dealership softly out of focus. Camera pushes in slightly.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, natural overcast
+    daylight, warm neutral colour grade, subtle handheld camera movement, 9:16
+    vertical framing. The person's face is never visible: frame cuts at the chin,
+    or shoot from behind, over the shoulder, or on the hands only. Same man
+    throughout: light blue dress shirt, sleeves rolled to the forearm, dark
+    trousers, plain dark tie.
+
+
+S02 | 0:02–0:04 | TXT: THE SAME CAR. SIX WAYS TO PAY.
+
+    Low wide shot from behind a plain unbadged dark grey saloon car on a
+    dealership forecourt, a man in a light blue shirt walking away from camera
+    toward it, keys spinning once on his finger. Overcast daylight, wet tarmac
+    reflecting. Camera slowly rises.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, natural overcast
+    daylight, warm neutral colour grade, subtle handheld camera movement, 9:16
+    vertical framing. The person's face is never visible: frame cuts at the chin,
+    or shoot from behind, over the shoulder, or on the hands only. Same man
+    throughout: light blue dress shirt, sleeves rolled to the forearm, dark
+    trousers, plain dark tie.
+
+
+--------------------------------------------------------------------------------
+PANEL 1 — CASH — 0:04–0:11
+TXT: "CASH" on first frame, "£20,000" on S05
+--------------------------------------------------------------------------------
+EDIT NOTE: this panel must feel fast and boring. It is the control. Do not add
+a beat, a reaction, or a flourish. Everything after it is measured against it.
+
+S03 | 0:04–0:06
+
+    Over-the-shoulder shot of a man in a light blue shirt sliding a thin white
+    envelope across a glass dealership desk toward a seated salesperson's hands.
+    One clean movement. Static camera, shallow focus on the envelope.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, natural overcast
+    daylight, warm neutral colour grade, subtle handheld camera movement, 9:16
+    vertical framing. The person's face is never visible: frame cuts at the chin,
+    or shoot from behind, over the shoulder, or on the hands only. Same man
+    throughout: light blue dress shirt, sleeves rolled to the forearm, dark
+    trousers, plain dark tie.
+
+
+S04 | 0:06–0:08
+
+    Close-up on a white envelope opening, a modest flat stack of plain unmarked
+    paper notes fanning once under a thumb, then set down. Static macro shot.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, natural overcast
+    daylight, warm neutral colour grade, subtle handheld camera movement, 9:16
+    vertical framing. The person's face is never visible: frame cuts at the chin,
+    or shoot from behind, over the shoulder, or on the hands only. Same man
+    throughout: light blue dress shirt, sleeves rolled to the forearm, dark
+    trousers, plain dark tie.
+
+
+S05 | 0:08–0:11 | TXT: £20,000
+
+    Wide static shot of a plain unbadged dark grey saloon car pulling smoothly
+    out of a dealership forecourt and off frame right in one unhurried movement.
+    Overcast daylight. The forecourt is empty behind it.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, natural overcast
+    daylight, warm neutral colour grade, subtle handheld camera movement, 9:16
+    vertical framing. The person's face is never visible: frame cuts at the chin,
+    or shoot from behind, over the shoulder, or on the hands only. Same man
+    throughout: light blue dress shirt, sleeves rolled to the forearm, dark
+    trousers, plain dark tie.
+
+
+--------------------------------------------------------------------------------
+PANEL 2 — BANK LOAN — 0:11–0:19
+TXT: "BANK LOAN · 7% APR" on first frame, "£23,800" on S08
+--------------------------------------------------------------------------------
+RETENTION NOTE: this panel must land before 0:12 or the pattern never
+establishes and the rest of the video has nothing to escalate against.
+
+S06 | 0:11–0:14
+
+    Over-the-shoulder shot of a man in a light blue shirt signing the bottom of a
+    printed document on a desk with a ballpoint pen, then turning the page to
+    reveal a second page waiting. Office daylight through a window. Slight
+    handheld drift.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, natural overcast
+    daylight, warm neutral colour grade, subtle handheld camera movement, 9:16
+    vertical framing. The person's face is never visible: frame cuts at the chin,
+    or shoot from behind, over the shoulder, or on the hands only. Same man
+    throughout: light blue dress shirt, sleeves rolled to the forearm, dark
+    trousers, plain dark tie.
+
+
+S07 | 0:14–0:17
+
+    Close-up on hands placing a noticeably thicker bundle of plain unmarked paper
+    notes on a desk beside a thin white envelope, the two stacks side by side for
+    comparison. Static macro, shallow depth of field.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, natural overcast
+    daylight, warm neutral colour grade, subtle handheld camera movement, 9:16
+    vertical framing. The person's face is never visible: frame cuts at the chin,
+    or shoot from behind, over the shoulder, or on the hands only. Same man
+    throughout: light blue dress shirt, sleeves rolled to the forearm, dark
+    trousers, plain dark tie.
+
+
+S08 | 0:17–0:19 | TXT: £23,800
+
+    Wide static shot of a plain unbadged dark grey saloon car pulling out of a
+    dealership forecourt and off frame right, moving slightly more slowly than an
+    unhurried pace. Overcast daylight. The forecourt is empty behind it.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, natural overcast
+    daylight, warm neutral colour grade, subtle handheld camera movement, 9:16
+    vertical framing. The person's face is never visible: frame cuts at the chin,
+    or shoot from behind, over the shoulder, or on the hands only. Same man
+    throughout: light blue dress shirt, sleeves rolled to the forearm, dark
+    trousers, plain dark tie.
+
+
+--------------------------------------------------------------------------------
+PANEL 3 — DEALER FINANCE — 0:19–0:28
+TXT: "DEALER FINANCE · 10.9% APR" on first frame, "£26,400" on S11
+--------------------------------------------------------------------------------
+
+S09 | 0:19–0:22
+
+    Over-the-shoulder shot of a man in a light blue shirt signing page after page
+    of a thick printed contract, a hand sliding each signed page away and a new
+    one in, four pages in quick succession. Office daylight. Static camera,
+    slight handheld drift.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, natural overcast
+    daylight, warm neutral colour grade, subtle handheld camera movement, 9:16
+    vertical framing. The person's face is never visible: frame cuts at the chin,
+    or shoot from behind, over the shoulder, or on the hands only. Same man
+    throughout: light blue dress shirt, sleeves rolled to the forearm, dark
+    trousers, plain dark tie.
+
+
+S10 | 0:22–0:25
+
+    A cardboard shoebox is set down heavily on a dealership desk and its lid
+    lifted off to reveal it packed tight with plain unmarked paper notes. Hands
+    lift the lid in one movement. Static shot, shallow focus on the box.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, natural overcast
+    daylight, warm neutral colour grade, subtle handheld camera movement, 9:16
+    vertical framing. The person's face is never visible: frame cuts at the chin,
+    or shoot from behind, over the shoulder, or on the hands only. Same man
+    throughout: light blue dress shirt, sleeves rolled to the forearm, dark
+    trousers, plain dark tie.
+
+
+S11 | 0:25–0:28 | TXT: £26,400
+
+    Wide static shot of a plain unbadged dark grey saloon car on a dealership
+    forecourt creeping forward slowly and stopping half out of frame right.
+    Overcast daylight. The forecourt is empty behind it.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, natural overcast
+    daylight, warm neutral colour grade, subtle handheld camera movement, 9:16
+    vertical framing. The person's face is never visible: frame cuts at the chin,
+    or shoot from behind, over the shoulder, or on the hands only. Same man
+    throughout: light blue dress shirt, sleeves rolled to the forearm, dark
+    trousers, plain dark tie.
+
+
+--------------------------------------------------------------------------------
+PANEL 4 — WEEKLY PAYMENT LOT — 0:28–0:37
+TXT: "WEEKLY PAYMENTS" on first frame, "£38,000" on S14
+--------------------------------------------------------------------------------
+The location changes here for the first time — cracked tarmac, portacabin, strip
+lighting. That downgrade is doing argumentative work. Keep the car and the shirt
+identical anyway.
+
+S12 | 0:28–0:31
+
+    Wide shot of a man in a light blue shirt carrying a heavy canvas holdall with
+    both hands across a cracked tarmac car lot, the bag visibly dragging his
+    shoulders down, walking away from camera toward a small portacabin office.
+    Handheld tracking shot from behind.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, natural overcast
+    daylight, warm neutral colour grade, subtle handheld camera movement, 9:16
+    vertical framing. The person's face is never visible: frame cuts at the chin,
+    or shoot from behind, over the shoulder, or on the hands only. Same man
+    throughout: light blue dress shirt, sleeves rolled to the forearm, dark
+    trousers, plain dark tie.
+
+
+S13 | 0:31–0:34
+
+    A bulging canvas holdall is heaved up onto a scuffed counter and unzipped in
+    one motion, plain unmarked paper notes bursting up out of the opening and
+    spilling over the sides onto the counter. Handheld, camera jolts slightly
+    with the impact.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, natural overcast
+    daylight, warm neutral colour grade, subtle handheld camera movement, 9:16
+    vertical framing. The person's face is never visible: frame cuts at the chin,
+    or shoot from behind, over the shoulder, or on the hands only. Same man
+    throughout: light blue dress shirt, sleeves rolled to the forearm, dark
+    trousers, plain dark tie.
+
+
+S14 | 0:34–0:37 | TXT: £38,000
+
+    Close-up on a hand tearing a small paper receipt off a pad and slapping it
+    down on a scuffed counter next to an overflowing canvas bag of plain unmarked
+    paper notes. Static macro shot, harsh practical strip lighting overhead.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, warm neutral
+    colour grade, subtle handheld camera movement, 9:16 vertical framing. The
+    person's face is never visible: frame cuts at the chin, or shoot from behind,
+    over the shoulder, or on the hands only. Same man throughout: light blue
+    dress shirt, sleeves rolled to the forearm, dark trousers, plain dark tie.
+
+
+--------------------------------------------------------------------------------
+PANEL 5 — CREDIT CARD, MINIMUM PAYMENTS — 0:37–0:53
+TXT: "CREDIT CARD · MINIMUM PAYMENT" on first frame, "£46,000" on S19
+--------------------------------------------------------------------------------
+THIS IS THE PEAK. It gets the most screen time and all three title cards. In the
+source video the equivalent beat sits at panel 4 of 6, not at the end — the edit
+stops advancing and just twists, then escalates once more. Keep that placement.
+
+S15 | 0:37–0:40
+
+    Close-up of a plain unbranded grey plastic card being tapped once on a card
+    reader on a dealership desk, held for a beat, the reader screen blank. Static
+    macro shot, shallow focus.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, natural overcast
+    daylight, warm neutral colour grade, subtle handheld camera movement, 9:16
+    vertical framing. The person's face is never visible: frame cuts at the chin,
+    or shoot from behind, over the shoulder, or on the hands only. Same man
+    throughout: light blue dress shirt, sleeves rolled to the forearm, dark
+    trousers, plain dark tie.
+
+
+S16 | 0:40–0:43
+
+    Two men sit at a dining table at home in warm evening lamplight, both counting
+    through large untidy piles of plain unmarked paper notes with both hands,
+    notes stacked all across the table. High angle looking down, faces out of
+    frame above the top edge. Static shot.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, warm neutral
+    colour grade, subtle handheld camera movement, 9:16 vertical framing. Faces
+    are never visible: the frame cuts at the chin or above. One man wears a light
+    blue dress shirt with sleeves rolled to the forearm and a plain dark tie.
+
+
+    >>> TITLE CARD A | 0:43–0:44 | "TWO HOURS LATER"
+
+
+S17 | 0:44–0:46
+
+    A dining table at home in warm evening lamplight, two men still counting the
+    same large untidy piles of plain unmarked paper notes, sleeves pushed up, one
+    hand rubbing the back of a neck. High angle looking down, faces out of frame
+    above the top edge. Static shot.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, warm neutral
+    colour grade, subtle handheld camera movement, 9:16 vertical framing. Faces
+    are never visible: the frame cuts at the chin or above. One man wears a light
+    blue dress shirt with sleeves rolled to the forearm and a plain dark tie.
+
+
+    >>> TITLE CARD B | 0:46–0:47 | "SIX HOURS LATER"
+
+
+S18 | 0:47–0:49
+
+    A dining table at home lit by one lamp, the room around it dark. One man
+    slumped forward on his forearms among large piles of plain unmarked paper
+    notes, the other still slowly counting. High angle looking down, faces out of
+    frame above the top edge. Static shot.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, warm neutral
+    colour grade, subtle handheld camera movement, 9:16 vertical framing. Faces
+    are never visible: the frame cuts at the chin or above. One man wears a light
+    blue dress shirt with sleeves rolled to the forearm and a plain dark tie.
+
+
+    >>> TITLE CARD C | 0:49–0:50 | "TWENTY-SIX YEARS LATER"
+
+
+S19 | 0:50–0:53 | TXT: £46,000
+
+    Wide static shot of a dining table at night lit by a single dim lamp, large
+    piles of plain unmarked paper notes untouched and just as big as before, two
+    pairs of hands still slowly counting. Dust visible in the lamplight. Very slow
+    push in. Faces out of frame above the top edge.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, warm neutral
+    colour grade, 9:16 vertical framing. Faces are never visible: the frame cuts
+    at the chin or above. One man wears a light blue dress shirt with sleeves
+    rolled to the forearm and a plain dark tie.
+
+
+    EDIT NOTE: Card C is the whole video. "Two hours" and "six hours" are setup;
+    the jump to twenty-six YEARS is the joke, and it happens to be roughly true
+    of a £20,000 balance serviced at the minimum payment. Hold S19 a full beat
+    longer than any other shot in the pack. It is the only place the edit is
+    allowed to breathe.
+
+
+--------------------------------------------------------------------------------
+PANEL 6 — THE RESET — 0:53–1:06
+TXT: "£20,000" on S20, "SAME CAR. SAME PRICE." on S21, "NO INTEREST." on S22
+--------------------------------------------------------------------------------
+
+S20 | 0:53–0:57 | TXT: £20,000
+
+    Extreme close-up on a man's hands laying one thin white envelope flat onto a
+    glass dealership counter and sliding it forward. Sharp focus on the envelope,
+    background dealership softly out of focus. Camera pushes in slightly.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, natural overcast
+    daylight, warm neutral colour grade, subtle handheld camera movement, 9:16
+    vertical framing. The person's face is never visible: frame cuts at the chin,
+    or shoot from behind, over the shoulder, or on the hands only. Same man
+    throughout: light blue dress shirt, sleeves rolled to the forearm, dark
+    trousers, plain dark tie.
+
+    Match S01 exactly. Same framing, same movement, same lens. If it does not
+    rhyme with the opening shot, the reset does not read.
+
+
+S21 | 0:57–1:01 | TXT: SAME CAR. SAME PRICE.
+
+    Static wide shot of a dealership desk from above. On the left, one thin white
+    envelope. On the right, an enormous sprawling heap of plain unmarked paper
+    notes covering the whole desk and spilling onto the floor. Both in the same
+    frame, sharp, evenly lit. The camera does not move.
+    Photoreal cinematic, shot on 35mm, natural overcast daylight, warm neutral
+    colour grade, 9:16 vertical framing. No people in frame.
+
+    This is the most screenshottable frame in the pack and the single frame most
+    likely to be reposted. Make it clean. Regenerate until both objects are sharp.
+
+
+S22 | 1:01–1:06 | TXT: NO INTEREST.
+
+    Wide static shot of a plain unbadged dark grey saloon car pulling smoothly out
+    of a dealership forecourt and off frame right in one unhurried movement.
+    Overcast daylight, wet tarmac reflecting. The forecourt is empty behind it.
+    Photoreal cinematic, shot on 35mm, shallow depth of field, natural overcast
+    daylight, warm neutral colour grade, subtle handheld camera movement, 9:16
+    vertical framing.
+
+    LOOP NOTE: framed to match S02. Cut the last frame hard to black for 2 frames
+    and the Short loops back into its own hook cleanly.
+
+
+================================================================================
+CAPTION BURN-IN SPEC
+================================================================================
+
+Position:  centred, lower third, approx 22% up from the bottom edge.
+           Never over a hand or a note.
+Type:      heavy condensed sans, WHITE with a 6px hard black outline, ALL CAPS,
+           approx 7% of frame height.
+Timing:    the money figure appears ON THE CUT, not animated in, and holds until
+           the panel ends.
+Order:     the panel LABEL appears on the panel's first frame. The FIGURE appears
+           on the panel's last shot. Label first, number last — the number is the
+           payoff of each panel, so make the viewer wait about two seconds for it.
+Cards:     title cards are a separate full-screen graphic and never overlap
+           footage or captions.
+
+
+================================================================================
+AUDIO
+================================================================================
+
+NO VOICEOVER. This is not negotiable. The source did 12.19M views with zero
+dialogue precisely because it carries across every language on the platform with
+no reading load. The moment there is a narrator this becomes another explainer
+and loses the entire reason it travels.
+
+Bed:     one dry upbeat percussion loop, 100–110 bpm, no melody.
+Foley:   on every money moment — paper riffle, envelope, zip, the thud of the
+         holdall, the shoebox lid, the receipt tear.
+Silence: under all three title cards. Music stops dead, restarts on the cut back.
+Drop:    music out entirely for S21 (the side-by-side), back in for S22.
+
+
+================================================================================
+RETENTION CHECKPOINTS
+================================================================================
+
+0:00–0:03  One note, one car. If S01 is soft or the note reads as fake currency,
+           regenerate before doing anything else.
+0:11       Panel 2 must land here or the pattern never establishes.
+0:43       First title card. This is where a viewer decides to finish.
+0:57       The side-by-side. Most screenshottable frame in the video.
+
+
+================================================================================
+ACCURACY NOTES
+================================================================================
+
+Every figure is ILLUSTRATIVE, on a £20,000 balance, and is captioned as a TOTAL
+REPAID figure, not a headline rate. They are defensible at the order of magnitude,
+which is the only thing the video claims.
+
+  £23,800   7% APR over 5 years is a mainstream personal-loan rate; total lands
+            near £23.8k.
+  £26,400   ~10.9% APR dealer finance over 5 years lands near £26k.
+  £38,000   weekly-payment / buy-here-pay-here lots routinely total 1.8–2x the
+            sticker price.
+  £46,000   a £20,000 balance at roughly 24.9% APR serviced at a 1%-plus-interest
+            minimum runs roughly a quarter-century and roughly £46k repaid.
+            >>> CHECK THIS ONE against a current minimum-payment calculator
+            before publishing. It is the headline number and the only
+            load-bearing claim in the pack.
+  26 years  same source as above. Verify both together.
+
+PANEL 6 claims ONLY that the price does not change and that no interest is
+charged. It does NOT claim the arrangement is free, faster, cheaper in fees, or
+universally available. Do not let the caption imply any of those.
+
+No product is named anywhere. Per house-style.md: terms and availability change,
+and a video that names one is out of date the month it does.
+
+
+================================================================================
+UPLOAD METADATA
+================================================================================
+
+TITLE — pick one. All three deliberately break the "Is [named thing] Halal?"
+formula, because this upload is testing FORMAT. Do not change format and title
+in the same test.
+
+  1. THE SAME CAR. SIX WAYS TO PAY. 💀
+  2. Paying For The Same Car 6 Different Ways
+  3. £20,000 Car. Six Ways To Pay. Guess The Worst One.
+
+DESCRIPTION
+
+Same car. Same price on the windscreen. Six different ways to pay for it — and
+six very different totals.
+
+The figures are illustrative on a £20,000 balance: a 7% personal loan, 10.9%
+dealer finance, a weekly-payment lot, and a credit card serviced at the minimum
+payment. The last one is the riba-free version — the price you agree is the price
+you pay, and it does not grow.
+
+Which one did you guess?
+
+TAGS
+car finance, apr explained, credit card minimum payment, cost of borrowing, riba,
+islamic finance, halal finance, interest free, money explained, personal finance uk
+
+PINNED COMMENT
+Which panel was your car?
+
+(The format extracts comments on its own — six labelled panels means anyone whose
+situation is a seventh has to say so. Pinning roughly doubles the rate. Do not
+ask for the comment on screen.)
+
+THUMBNAIL
+Use the S21 frame — envelope left, cash mountain right. Big flat contrast, reads
+at phone-tile size. Per house-style.md, custom thumbnail on every upload.
+
+
+================================================================================
+PRODUCTION ORDER
+================================================================================
+
+1. Generate S01, S02, S20, S21, S22 FIRST. These are the hook and the reset. If
+   they do not work, kill the video before making the middle — that is the
+   next-slate.md packaging gate applied at shot level.
+
+2. Then S16–S19, the peak panel. Generate all four dining-table shots in one
+   session so the room, lamp and table match. Seedance drifts on interiors
+   noticeably faster than on exteriors.
+
+3. Exteriors last. REUSE THE SAME SEED for S05, S08, S11 and S22 — they must be
+   the same forecourt and the same car. If they drift, the "held constant"
+   argument collapses on screen and the whole ladder stops meaning anything.
+
+4. Build the three title cards in the editor. Never generate text in Seedance.
+
+5. Assemble, then watch it once on a phone with the sound off. If the escalation
+   still reads with no audio, it is finished.
+
+================================================================================
