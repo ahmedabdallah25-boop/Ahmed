@@ -104,3 +104,18 @@ const at = (pct) => {
 };
 console.log(`retention checkpoints: ` +
   [20, 30, 40, 50, 60].map((p) => `${p}%=S${at(p).n}`).join('  '));
+
+// The timeline is written either way — the file has to exist for the project to
+// typecheck — but an unmeasured band is not something to render on by accident.
+// On the pension pack the real headroom ran from 330px to 1424px, so a flat
+// fallback puts type on the art in some scenes and wastes half the frame in
+// others. Fail loudly instead, and make the override deliberate.
+if (!headroom) {
+  console.error(
+    '\nERROR: caption bands are NOT measured.\n' +
+    '  Ingest the stills into public/studentloan, then:\n' +
+    '    npm run headroom:studentloan && npm run timeline:studentloan\n' +
+    '  To build anyway (previews, typechecking): ALLOW_UNMEASURED_BANDS=1',
+  );
+  if (process.env.ALLOW_UNMEASURED_BANDS !== '1') process.exit(1);
+}

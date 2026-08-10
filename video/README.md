@@ -244,3 +244,39 @@ one difference worth stating: the footage there is not ours to re-cut, so the
 ledger governs the **graphics layer only**. The picture cuts hard on its own 36
 cuts; the overlay flows left across them, and the reserved Z vector is spent
 once, on the cut to the gold coins where the film turns from problem to fix.
+
+## Part 17 — "Is your student loan halal?" (the crossover)
+
+Runs through the same component as the pension Short. `src/pension/Pension.tsx`
+exports `ScenePack`; both Shorts are bindings of it with their own scenes,
+voiceover and stills directory. Caption treatment is a held variable on part 17,
+so it is held in code rather than asserted.
+
+Pipeline, in order:
+
+    npm run pack:studentloan        # parse the pack, regenerate its VO block
+    npm run tag:studentloan         # re-apply the house v3 tag set (rarely needed)
+    npm run align:studentloan       # forced-align public/vo-student-loan.mp3
+    npm run ingest:studentloan -- <uploads-dir> studentloan
+    npm run headroom:studentloan    # REQUIRED — measures the caption band per still
+    npm run timeline:studentloan
+    npm run srt:studentloan
+    npm run render:studentloan
+
+`timeline:studentloan` **exits 1 if headroom has not been measured**. The band
+falls back to a flat 600px, and on the pension pack the real range was 330px to
+1424px — a flat band puts type on the art in some scenes and wastes half the
+frame in others. `ALLOW_UNMEASURED_BANDS=1` overrides it for previews.
+
+Rendering here needs a browser flag, because Remotion's Chromium download host
+is not in this environment's egress allowlist and one is already installed:
+
+    --browser-executable=/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell
+
+### The stills
+
+Generated but not downloadable from the agent container — the network policy
+answers 403 to CONNECT for the Higgsfield CDN. `scripts/student-loan-stills.json`
+holds scene → URL; `scripts/fetch-stills.sh <dir>` pulls them on a machine that
+can reach it. `.github/workflows/fetch-student-loan-stills.yml` does the same on
+a runner, but see its header: it needs to be dispatchable to be useful.
