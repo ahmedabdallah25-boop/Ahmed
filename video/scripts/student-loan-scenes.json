@@ -1,0 +1,462 @@
+[
+  {
+    "n": 1,
+    "beat": "HOOK",
+    "start": 0,
+    "end": 4,
+    "vo": "You have paid this every month for six years.",
+    "caption1": "Six years of payments",
+    "caption2": "every single month",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A neat vertical stack of six identical small blank payment slips, plain rectangles with no text or markings, stacked slightly offset so each one is visible, resting on a simple flat surface. Simple flat drop shadow offset down-right. Bold, simple, readable at small size. 9:16 vertical composition, stack in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 2,
+    "beat": "",
+    "start": 4,
+    "end": 8,
+    "vo": "You have never touched it.",
+    "caption1": "You have never",
+    "caption2": "touched it",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A single tall solid charcoal grey #5A5A5A rectangular block standing upright on a simple ground line, completely smooth and unmarked, with a small pale hand shape reaching toward it from the right but stopping short with a clear visible gap between fingertips and block. Simple flat drop shadow beneath the block. 9:16 vertical composition, block in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 3,
+    "beat": "",
+    "start": 8,
+    "end": 12,
+    "vo": "The number is bigger now than the day you walked out.",
+    "caption1": "The number is BIGGER",
+    "caption2": "than the day you left",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. Two solid rectangular blocks standing side by side on a simple ground line. The left block is medium height and sand #D9C08D. The right block is clearly taller and charcoal grey #5A5A5A. A thin dashed horizontal guide line runs from the top of the left block across to show the right block rising above it. No text or numbers anywhere. Simple flat drop shadows offset down-right. 9:16 vertical composition, blocks in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 4,
+    "beat": "",
+    "start": 12,
+    "end": 16,
+    "vo": "[thoughtful] So look at what you actually signed.",
+    "caption1": "So look at what",
+    "caption2": "you actually signed",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. KAREEM, a man with dark near-black tousled hair and a full dark beard with grey speckling, fair skin, wearing a sage green #7C8A5F henley shirt with a three-button placket and sleeves rolled to the forearm, charcoal grey trousers and dark brown shoes. Waist-up, facing the viewer directly, one hand open and turned slightly upward in a presenting gesture, QUESTIONING expression with one eyebrow slightly raised. Soft pale elliptical ground shadow beneath him. Plain uncluttered background. 9:16 vertical composition, figure in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 5,
+    "beat": "",
+    "start": 16,
+    "end": 20,
+    "vo": "They handed you a sum.",
+    "caption1": "They handed you",
+    "caption2": "a sum",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. THE"
+  },
+  {
+    "n": 6,
+    "beat": "",
+    "start": 20,
+    "end": 24,
+    "vo": "You agreed to hand back a slice of what you earn —",
+    "caption1": "You hand back a slice",
+    "caption2": "of what you earn",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A single wide horizontal bar lying flat, filled in sand #D9C08D, with one narrow segment at its right end filled in rust red #B5603F and separated from the rest by a clean vertical dividing line. No text or numbers. Simple flat drop shadow offset down-right. Bold and readable at small size. 9:16 vertical composition, bar in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 7,
+    "beat": "",
+    "start": 24,
+    "end": 28,
+    "vo": "but only the part above a line.",
+    "caption1": "but only the part",
+    "caption2": "ABOVE a line",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A tall vertical bar standing on a simple ground line, filled sand #D9C08D in its lower portion and rust red #B5603F in its upper portion, with one bold horizontal dark brown #3D2B23 line drawn straight across the bar exactly where the two colours meet, extending a little way out to either side of the bar. No text or numbers. Simple flat drop shadow. 9:16 vertical composition, bar in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 8,
+    "beat": "",
+    "start": 28,
+    "end": 32,
+    "vo": "Earn under the line, you pay nothing.",
+    "caption1": "Under the line?",
+    "caption2": "You pay nothing",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A short vertical bar filled entirely in sand #D9C08D standing on a simple ground line, with a bold horizontal dark brown #3D2B23 line drawn across the scene clearly ABOVE the top of the bar, not touching it, with visible empty cream space between the bar top and the line. No text or numbers. Simple flat drop shadow. 9:16 vertical composition, bar in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 9,
+    "beat": "",
+    "start": 32,
+    "end": 36,
+    "vo": "Over it, a percentage.",
+    "caption1": "Over it?",
+    "caption2": "A percentage. Automatically.",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A tall vertical bar standing on a simple ground line with a bold horizontal dark brown #3D2B23 line crossing it partway up; the portion of the bar above the line is filled rust red #B5603F and is shown lifting clear of the bar with a small visible gap, floating slightly up and to the right, while the portion below stays sand #D9C08D and in place. No text or numbers. Simple flat drop shadows. 9:16 vertical composition, bar in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 10,
+    "beat": "THE UNIVERSAL LINE",
+    "start": 36,
+    "end": 40,
+    "vo": "[thoughtful] Plan Two. Income-driven. Deferment.",
+    "caption1": "Plan Two. Income-driven.",
+    "caption2": "Deferment.",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. Three identical plain blank rectangular documents lying flat side by side in a row, seen from directly above, each completely blank with no text or markings, each with a simple flat drop shadow offset down-right. The three are drawn exactly the same size and shape as each other in pale cream and sand #D9C08D. Plain uncluttered background. 9:16 vertical composition, documents in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 11,
+    "beat": "",
+    "start": 40,
+    "end": 44,
+    "vo": "Same machine.",
+    "caption1": "Same",
+    "caption2": "machine.",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. The three plain blank documents from the previous scene now converging with simple straight arrow lines into one single plain mid-grey #8A8A8A rectangular box with rounded corners, featureless, no dials, no text, no markings of any kind. The box sits lower centre and is clearly larger than the documents. Simple flat drop shadow offset down-right beneath the box. 9:16 vertical composition, box in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 12,
+    "beat": "",
+    "start": 44,
+    "end": 48,
+    "vo": "[warm] And most people stop reading right there. Because that does sound fair.",
+    "caption1": "Most people stop",
+    "caption2": "reading right there",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. ADAM, a young man with short brown side-parted hair, clean-shaven, fair skin, wearing a rust red #B5603F t-shirt, camel #B8823C trousers and dark brown shoes. Waist-up, three-quarter view, holding a single blank flat document loosely at his side and already looking away from it, PLEASED expression with a small relaxed smile and relaxed eyebrows. Soft pale elliptical ground shadow beneath him. Plain uncluttered background. 9:16 vertical composition, figure in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 13,
+    "beat": "SEED — pays off at scene 19",
+    "start": 48,
+    "end": 52,
+    "vo": "[thoughtful] It would be. If the number sat still while you paid it.",
+    "caption1": "It would be —",
+    "caption2": "if the number sat still",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A single solid charcoal grey #5A5A5A rectangular block standing upright and perfectly still on a simple ground line, with a thin dashed dark brown #3D2B23 horizontal guide line drawn level with its top edge and extending out to both sides of the frame. Nothing else in the scene. Simple flat drop shadow offset down-right. 9:16 vertical composition, block in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 14,
+    "beat": "",
+    "start": 52,
+    "end": 56,
+    "vo": "It doesn't.",
+    "caption1": "It",
+    "caption2": "doesn't.",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. The same solid charcoal grey #5A5A5A rectangular block on a simple ground line, now clearly taller and risen well above the thin dashed dark brown #3D2B23 guide line which stays where it was, with a small simple upward-pointing arrow beside the block. No text or numbers. Simple flat drop shadow. 9:16 vertical composition, block in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 15,
+    "beat": "",
+    "start": 56,
+    "end": 60,
+    "vo": "Every single day, interest is added —",
+    "caption1": "Every single day",
+    "caption2": "interest is added",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A tall charcoal grey #5A5A5A rectangular block standing on a simple ground line with a neat vertical column of small identical rust red #B5603F squares stacking up on top of it, each square the same size, arranged in a clean single-file stack rising from the block's top edge. No text or numbers. Simple flat drop shadow offset down-right. 9:16 vertical composition, block in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 16,
+    "beat": "",
+    "start": 60,
+    "end": 64,
+    "vo": "not to the part you haven't paid yet, but to the whole outstanding balance.",
+    "caption1": "not to part of it —",
+    "caption2": "to the WHOLE balance",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. One tall rectangular block standing on a simple ground line, drawn with a thin internal dividing line near its base separating a small lower segment from a much larger upper segment; the ENTIRE block, both segments, is filled solid charcoal grey #5A5A5A and enclosed by one bold continuous dark brown #3D2B23 outline that runs all the way around the outside. A single rust red #B5603F arrow points at the whole outline from the right. No text or numbers. Simple flat drop shadow. 9:16 vertical composition, block in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 17,
+    "beat": "REVEAL SETUP",
+    "start": 64,
+    "end": 68,
+    "vo": "[serious] Which means there are two flows here, not one.",
+    "caption1": "There are TWO flows",
+    "caption2": "not one",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. KAREEM, a man with dark near-black tousled hair and a full dark beard with grey speckling, fair skin, wearing a sage green #7C8A5F henley with a three-button placket and sleeves rolled, charcoal grey trousers, dark brown shoes. Waist-up, facing the viewer directly, SERIOUS expression, both hands raised in front of him holding two fingers up on one hand. Soft pale elliptical ground shadow beneath him. Plain uncluttered background. 9:16 vertical composition, figure in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 18,
+    "beat": "",
+    "start": 68,
+    "end": 73,
+    "vo": "Money leaving you every month. A slice of your salary, capped by law.",
+    "caption1": "FLOW ONE: out of you",
+    "caption2": "a capped slice",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A row of five identical small rust red #B5603F coin discs travelling left to right along a simple curved arrow line, with a narrow dark brown #3D2B23 bracket shape drawn across the line partway along, visibly constricting it to a fixed width. All five coins are exactly the same size. No text or numbers. Simple flat drop shadows. 9:16 vertical composition, arrow and coins in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 19,
+    "beat": "THE CROSSOVER — 40% MARK — THUMBNAIL CANDIDATE",
+    "start": 73,
+    "end": 78,
+    "vo": "[serious] And money being added every month. A percentage of everything you owe, uncapped, growing with the balance itself.",
+    "caption1": "FLOW TWO: onto the debt",
+    "caption2": "uncapped. It grows itself.",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A large simple two-pan balance scale standing centred on a simple ground line, drawn bold and clean. On the left pan sits a small neat stack of rust red #B5603F coin discs of fixed size. On the right pan sits a single solid charcoal grey #5A5A5A block that is clearly larger and heavier, with three small charcoal squares falling onto it from above. The beam tips down decisively to the right. Bold, simple, high contrast, readable when shrunk to a small phone tile. No text or numbers. Simple flat drop shadow offset down-right. 9:16 vertical composition, scale in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 20,
+    "beat": "",
+    "start": 78,
+    "end": 83,
+    "vo": "[thoughtful] Now hold those two side by side.",
+    "caption1": "Hold them",
+    "caption2": "side by side",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. The same two-pan balance scale, now perfectly level, its beam exactly horizontal, with the small stack of rust red #B5603F coins on the left pan and the charcoal grey #5A5A5A block on the right pan sitting at identical heights. A thin dashed dark brown #3D2B23 horizontal line runs through both pans to emphasise the level. No text or numbers. Simple flat drop shadow. 9:16 vertical composition, scale in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 21,
+    "beat": "",
+    "start": 83,
+    "end": 88,
+    "vo": "Somewhere there is an income where they are exactly equal. Call it the crossover.",
+    "caption1": "One income where",
+    "caption2": "they're exactly equal",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A simple line chart on a plain cream field with two bold straight lines crossing at a single clear point roughly in the centre: one line rust red #B5603F rising from lower left to upper right, one line charcoal grey #5A5A5A falling from upper left to lower right. A single small solid dark brown #3D2B23 dot marks the exact crossing point. No axis labels, no text, no numbers. Simple clean composition. 9:16 vertical composition, chart in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 22,
+    "beat": "",
+    "start": 88,
+    "end": 93,
+    "vo": "[serious] Earn above it, and your payment eats the interest and starts on the balance. The debt falls.",
+    "caption1": "ABOVE it: the debt falls",
+    "caption2": "your payment reaches it",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A descending staircase of four charcoal grey #5A5A5A rectangular blocks arranged left to right, each one shorter than the last, standing on a simple ground line, with a bold rust red #B5603F arrow curving downward above them following the decline. No text or numbers. Simple flat drop shadows offset down-right. 9:16 vertical composition, blocks in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 23,
+    "beat": "THE PAYOFF OF THE SEED",
+    "start": 93,
+    "end": 98,
+    "vo": "[serious] Earn below it, and the balance does not fall slowly. It does not fall at all. It rises. While you pay it.",
+    "caption1": "BELOW it: it doesn't fall",
+    "caption2": "It RISES. While you pay.",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. An ascending staircase of four charcoal grey #5A5A5A rectangular blocks arranged left to right, each one taller than the last, standing on a simple ground line, with a bold rust red #B5603F arrow curving upward above them, and a small row of identical rust red coin discs travelling away from the blocks along the ground line beneath, moving in the opposite direction. No text or numbers. Simple flat drop shadows. 9:16 vertical composition, blocks in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 24,
+    "beat": "",
+    "start": 98,
+    "end": 103,
+    "vo": "[serious] Ten years of payments, never missed, and you owe more than the day you started.",
+    "caption1": "10 years. Never missed.",
+    "caption2": "You owe MORE.",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. ADAM, a young man with short brown side-parted hair, clean-shaven, fair skin, in a rust red #B5603F t-shirt, camel #B8823C trousers and dark brown shoes, standing in three-quarter view at the left of frame with a WORRIED expression, eyebrows drawn up in the middle and a small downturned mouth, looking up at a tall solid charcoal grey #5A5A5A block standing to his right that rises well above his head. Soft pale elliptical ground shadow beneath him, simple flat drop shadow beneath the block. 9:16 vertical composition, both in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 25,
+    "beat": "",
+    "start": 103,
+    "end": 108,
+    "vo": "That is not what happens when you default. [serious] That is what happens when you comply.",
+    "caption1": "That's not what happens",
+    "caption2": "when you DEFAULT.",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. KAREEM, dark near-black tousled hair, full dark beard with grey speckling, fair skin, sage green #7C8A5F henley with three-button placket and rolled sleeves, charcoal trousers, dark brown shoes. Chest-up, facing the viewer directly, SERIOUS expression, level gaze, hands lowered and still. Soft pale elliptical ground shadow. Plain uncluttered background. 9:16 vertical composition, figure in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 26,
+    "beat": "",
+    "start": 108,
+    "end": 113,
+    "vo": "[thoughtful] And notice which way it cuts.",
+    "caption1": "It's what happens",
+    "caption2": "when you COMPLY.",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A single simple path drawn on the ground splitting into two diverging routes, one branch curving up to the left and one curving down to the right, drawn as clean bold dark brown #3D2B23 lines on plain cream. A small solid dark brown dot marks the fork. Nothing else in the scene, no figures, no text. 9:16 vertical composition, path in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 27,
+    "beat": "",
+    "start": 113,
+    "end": 118,
+    "vo": "The graduate who earns well crosses over, clears it, and stops paying.",
+    "caption1": "Earns more?",
+    "caption2": "Clears it. Stops paying.",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. SAMI, a man with short dark hair and a dark beard with grey speckling, medium-tan skin, wearing a teal #2F6B72 t-shirt, charcoal grey trousers and dark shoes. Full body, mid-shot, walking away to the right along a simple ground line with a relaxed open posture, and behind him on the left an empty flat pale outline where a block used to stand, drawn as a thin dashed dark brown #3D2B23 rectangle with nothing inside it. Soft pale elliptical ground shadow beneath him. 9:16 vertical composition, figure in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 28,
+    "beat": "",
+    "start": 118,
+    "end": 123,
+    "vo": "[serious] The graduate who earns less pays every month for thirty years and never clears anything.",
+    "caption1": "Earns less?",
+    "caption2": "30 years. Never clears it.",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. ADAM, short brown side-parted hair, clean-shaven, fair skin, rust red #B5603F t-shirt, camel #B8823C trousers, dark brown shoes. Full body, mid-shot, standing still on a simple ground line facing right with a WORRIED expression, and directly beside him a tall solid charcoal grey #5A5A5A block at full height, unchanged and undiminished, with a long row of identical small rust red coin discs trailing away from him along the ground to the right. Soft pale elliptical ground shadow. 9:16 vertical composition, figure and block in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 29,
+    "beat": "",
+    "start": 123,
+    "end": 128,
+    "vo": "Same debt. The one with less money pays longer, and pays more.",
+    "caption1": "Same debt.",
+    "caption2": "Less money = pays MORE.",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. Two identical charcoal grey #5A5A5A blocks of exactly the same size standing side by side on a simple ground line. Beneath the left block runs a short row of three rust red #B5603F coin discs; beneath the right block runs a much longer row of twelve identical rust red coin discs extending to the edge of the frame. No text or numbers. Simple flat drop shadows offset down-right. 9:16 vertical composition, blocks in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 30,
+    "beat": "BILAL — FROM BEHIND, no expression sheet exists",
+    "start": 128,
+    "end": 133,
+    "vo": "[thoughtful] Then, decades in, the balance is written off.",
+    "caption1": "Then, decades in",
+    "caption2": "it's written off",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. BILAL, an older man with dark brown hair and a full dark brown beard, medium-tan skin, wearing a sand #D9C08D button-up shirt with rolled sleeves, espresso #4A342A trousers and dark shoes, seen entirely FROM BEHIND, shoulders slightly rounded, standing at the near end of a long simple path that recedes toward the top of the frame, with a tall charcoal grey #5A5A5A block standing at the far end of the path. His face is not visible. Soft pale elliptical ground shadow beneath him. 9:16 vertical composition, figure in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 31,
+    "beat": "SEED PAYOFF — the crossover cashes out here",
+    "start": 133,
+    "end": 138,
+    "vo": "[warm] Which sounds like mercy. [serious] It isn't. It's the pricing.",
+    "caption1": "Sounds like mercy.",
+    "caption2": "It's the PRICING.",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A plain blank open ledger seen from directly above, lying flat, its pages completely empty of text, with one single bold dark brown #3D2B23 horizontal line already struck cleanly through the middle of the right-hand page. Beside the ledger stands THE CLERK, a plain mid-grey #8A8A8A featureless humanoid silhouette with no face and no clothing detail, standing perfectly upright and still. Simple flat drop shadow offset down-right beneath the ledger. 9:16 vertical composition, ledger in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 32,
+    "beat": "",
+    "start": 138,
+    "end": 143,
+    "vo": "The lender's own forecasts already assume a large share of borrowers will never clear the balance.",
+    "caption1": "Their own forecasts",
+    "caption2": "already assume it",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A simple flat rectangular chart panel on a plain cream field showing a row of six vertical bars in institution grey #8A8A8A, four of which are drawn with a bold dark brown #3D2B23 line already struck through them and two of which are left clean and solid. No axis labels, no text, no numbers anywhere. Simple flat drop shadow offset down-right beneath the panel. 9:16 vertical composition, panel in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 33,
+    "beat": "",
+    "start": 143,
+    "end": 148,
+    "vo": "The write-off isn't the escape hatch at the end of the machine. It is a line in the machine's own budget.",
+    "caption1": "Not an escape hatch —",
+    "caption2": "a line in their budget",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. The plain mid-grey #8A8A8A featureless machine box with rounded corners from earlier, drawn larger and centred, with a small blank ledger page tucked visibly inside an opening in its side, drawn as part of the machine rather than beyond it. No dials, no text, no markings. Simple flat drop shadow offset down-right. 9:16 vertical composition, box in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 34,
+    "beat": "THE TURN",
+    "start": 148,
+    "end": 153,
+    "vo": "[thoughtful] And this is exactly what the prohibition is pointing at.",
+    "caption1": "This is what the",
+    "caption2": "prohibition points at",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. KAREEM, dark near-black tousled hair, full dark beard with grey speckling, fair skin, sage green #7C8A5F henley with three-button placket and rolled sleeves, charcoal trousers, dark brown shoes. Waist-up, three-quarter view turning toward the viewer, WARM expression with a gentle steady gaze, one hand open at chest height. Soft pale elliptical ground shadow. Plain uncluttered background. 9:16 vertical composition, figure in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 35,
+    "beat": "",
+    "start": 153,
+    "end": 158,
+    "vo": "Riba isn't a tax on borrowing. It is a price charged for time.",
+    "caption1": "Not a tax on borrowing",
+    "caption2": "a price charged for TIME",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A plain simple round clock face with no numbers and no brand marks, just two bold dark brown #3D2B23 hands, positioned centre frame, with a single rust red #B5603F coin disc balanced on the tip of the longer hand. Simple flat drop shadow offset down-right beneath the clock. Plain uncluttered background. 9:16 vertical composition, clock in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 36,
+    "beat": "",
+    "start": 158,
+    "end": 163,
+    "vo": "A number that grows because the clock moved — not because anything was built, sold, or risked.",
+    "caption1": "It grows because",
+    "caption2": "the clock moved",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A plain empty workbench drawn as a simple flat table on a ground line with absolutely nothing on its surface, and above it a charcoal grey #5A5A5A rectangular block floating and visibly growing taller, with a small upward arrow beside it. The bench stays empty. No text or numbers. Simple flat drop shadows offset down-right. 9:16 vertical composition, bench in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 37,
+    "beat": "",
+    "start": 163,
+    "end": 167,
+    "vo": "[serious] A debt you service faithfully and cannot reduce is the purest version of that there is.",
+    "caption1": "Serviced faithfully.",
+    "caption2": "Cannot be reduced.",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A tall solid charcoal grey #5A5A5A rectangular block standing on a simple ground line with a continuous circular loop of rust red #B5603F coin discs orbiting around it in a simple flat ring, drawn as an unbroken circle with small arrowheads showing the direction of travel. The block is untouched and full height. No text or numbers. Simple flat drop shadow. 9:16 vertical composition, block in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 38,
+    "beat": "THE FIX",
+    "start": 167,
+    "end": 171,
+    "vo": "[warm] So here is the two-minute check.",
+    "caption1": "So here's the",
+    "caption2": "two-minute check",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. ADAM, short brown side-parted hair, clean-shaven, fair skin, rust red #B5603F t-shirt, camel #B8823C trousers, dark brown shoes. Waist-up, facing the viewer, RESOLVED expression with a level steady gaze and a small firm closed mouth, sleeves pushed up, holding a plain blank document in both hands and looking directly at it. Soft pale elliptical ground shadow. Plain uncluttered background. 9:16 vertical composition, figure in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 39,
+    "beat": "",
+    "start": 171,
+    "end": 175,
+    "vo": "One. Find two published numbers: your interest rate, and your repayment threshold.",
+    "caption1": "1. Find two numbers",
+    "caption2": "your rate + your threshold",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. Two plain blank flat cards lying side by side on a simple surface seen from above, each completely empty of text, each outlined in bold dark brown #3D2B23, one filled pale sand #D9C08D and one filled pale teal #2F6B72, with a single small solid dark brown checkmark shape resting beside each. Simple flat drop shadows offset down-right. 9:16 vertical composition, cards in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 40,
+    "beat": "",
+    "start": 175,
+    "end": 179,
+    "vo": "Two. Work out one month. Interest added, against payment taken.",
+    "caption1": "2. Work out ONE month",
+    "caption2": "interest vs payment",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. The familiar simple two-pan balance scale, drawn small and clean and centred, with a single rust red #B5603F coin disc on the left pan and a single charcoal grey #5A5A5A square on the right pan, the beam very slightly tipped. Bold and readable at small size. No text or numbers. Simple flat drop shadow. 9:16 vertical composition, scale in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 41,
+    "beat": "",
+    "start": 179,
+    "end": 183,
+    "vo": "If the interest is bigger, you are renting the debt, not repaying it.",
+    "caption1": "Interest bigger?",
+    "caption2": "You're RENTING the debt.",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. Two plain objects side by side on a simple surface: on the left a simple flat key shape in camel #B8823C, on the right a plain blank folded document in pale cream with a bold dark brown #3D2B23 outline. A thin dashed dark brown line separates them. Both drawn as clean flat silhouettes with no text or markings. Simple flat drop shadows offset down-right. 9:16 vertical composition, objects in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 42,
+    "beat": "",
+    "start": 183,
+    "end": 186,
+    "vo": "Three. Only then decide about overpaying.",
+    "caption1": "3. THEN decide",
+    "caption2": "about overpaying",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. A charcoal grey #5A5A5A rectangular block on a simple ground line with a single larger rust red #B5603F coin disc striking its top edge and a visible notch taken out of the block at the point of contact. No text or numbers. Simple flat drop shadow offset down-right. 9:16 vertical composition, block in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 43,
+    "beat": "",
+    "start": 186,
+    "end": 189,
+    "vo": "Above the crossover it genuinely shortens it. Far below, and written off anyway, it is money burned. Same arithmetic, both directions.",
+    "caption1": "Above? It shortens it.",
+    "caption2": "Far below? Money burned.",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. The simple two-branch forking path from earlier, drawn again as bold dark brown #3D2B23 lines, with a small charcoal grey #5A5A5A block sitting part-way along the upper left branch drawn visibly smaller, and an identical full-size block sitting on the lower right branch unchanged. A small solid dark brown dot marks the fork. No text or numbers. 9:16 vertical composition, path in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 44,
+    "beat": "",
+    "start": 189,
+    "end": 192,
+    "vo": "[thoughtful] And for the ones coming behind you: qard hasan funds, employer tuition schemes, paying as you study. Smaller, slower, less convenient. [warm] Also not this.",
+    "caption1": "Qard hasan. Employer schemes.",
+    "caption2": "Smaller. Slower. Not this.",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. Three small plain doorway shapes standing in a row on a simple ground line, each drawn as a clean flat arch outlined in bold dark brown #3D2B23, filled in sage green #7C8A5F, sand #D9C08D and teal #2F6B72 respectively, each noticeably smaller than a fourth large mid-grey #8A8A8A doorway standing apart from them at the right of frame. No text or markings. Simple flat drop shadows offset down-right. 9:16 vertical composition, doorways in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 45,
+    "beat": "THE CLOSE",
+    "start": 192,
+    "end": 194,
+    "vo": "[serious] You didn't fail to pay it off. You were never paying it off.",
+    "caption1": "You didn't fail to pay it.",
+    "caption2": "You were never paying it.",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. KAREEM, dark near-black tousled hair, full dark beard with grey speckling, fair skin, sage green #7C8A5F henley with three-button placket and rolled sleeves, charcoal trousers, dark brown shoes. Chest-up, facing the viewer directly, SERIOUS expression, level steady gaze, still and composed. Soft pale elliptical ground shadow. Plain uncluttered background. 9:16 vertical composition, figure in the lower two-thirds, clean headroom above."
+  },
+  {
+    "n": 46,
+    "beat": "SIGN-OFF",
+    "start": 194,
+    "end": 196,
+    "vo": "[warm] The Money Machine, Decoded.",
+    "caption1": "The Money Machine,",
+    "caption2": "Decoded.",
+    "prompt": "Flat 2D vector illustration, clean even-weight dark brown #3D2B23 outlines, flat colour fills with soft minimal shading, warm cream #F7EFDD background. The plain mid-grey #8A8A8A featureless machine box with rounded corners, centred and drawn small and clean on a plain cream field, with a soft pale elliptical shadow beneath it and nothing else in the frame. No dials, no text, no markings. 9:16 vertical composition, box centred in the lower two-thirds, clean headroom above. ================================================================================ CHARACTER APPEARANCE MAP ================================================================================"
+  }
+]
