@@ -10,7 +10,11 @@
     "cuts:inflation": "node scripts/detect-cuts.mjs --write",
     "captions:inflation": "node scripts/make-inflation-captions.mjs",
     "render:inflation": "remotion render src/index.ts Inflation-Short ../media/inflation-edited.mp4",
-    "still": "remotion still src/index.ts Part14-RaiseTrap out/frame.png"
+    "still": "remotion still src/index.ts Part14-RaiseTrap out/frame.png",
+    "ingest:pension": "node scripts/ingest-scenes.mjs",
+    "align:pension": "python3 scripts/force-align.py",
+    "timeline:pension": "node scripts/parse-pack.mjs && node scripts/make-timeline.mjs",
+    "render:pension": "remotion render src/index.ts Pension-DefaultFund ../media/pension-default-fund.mp4"
   },
   "keywords": [],
   "author": "",

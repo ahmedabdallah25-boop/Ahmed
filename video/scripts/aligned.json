@@ -1,0 +1,321 @@
+[
+  {
+    "n": 1,
+    "start": 0.13,
+    "end": 3.29,
+    "words": 8,
+    "estimated": false
+  },
+  {
+    "n": 2,
+    "start": 3.29,
+    "end": 4.843,
+    "estimated": true
+  },
+  {
+    "n": 3,
+    "start": 4.843,
+    "end": 5.483,
+    "estimated": true
+  },
+  {
+    "n": 4,
+    "start": 5.483,
+    "end": 8.315,
+    "estimated": true
+  },
+  {
+    "n": 5,
+    "start": 8.315,
+    "end": 11.765,
+    "words": 7,
+    "estimated": false
+  },
+  {
+    "n": 6,
+    "start": 11.765,
+    "end": 13.025,
+    "words": 2,
+    "estimated": false
+  },
+  {
+    "n": 7,
+    "start": 13.025,
+    "end": 14.915,
+    "words": 7,
+    "estimated": false
+  },
+  {
+    "n": 8,
+    "start": 14.915,
+    "end": 16.265,
+    "words": 4,
+    "estimated": false
+  },
+  {
+    "n": 9,
+    "start": 16.265,
+    "end": 19.245,
+    "words": 8,
+    "estimated": false
+  },
+  {
+    "n": 10,
+    "start": 19.245,
+    "end": 21.115,
+    "words": 5,
+    "estimated": false
+  },
+  {
+    "n": 11,
+    "start": 21.115,
+    "end": 22.955,
+    "words": 4,
+    "estimated": false
+  },
+  {
+    "n": 12,
+    "start": 22.955,
+    "end": 25.725,
+    "words": 6,
+    "estimated": false
+  },
+  {
+    "n": 13,
+    "start": 25.725,
+    "end": 29.105,
+    "words": 9,
+    "estimated": false
+  },
+  {
+    "n": 14,
+    "start": 29.105,
+    "end": 33.215,
+    "words": 6,
+    "estimated": false
+  },
+  {
+    "n": 15,
+    "start": 33.215,
+    "end": 36.345,
+    "words": 10,
+    "estimated": false
+  },
+  {
+    "n": 16,
+    "start": 36.345,
+    "end": 38.525,
+    "words": 7,
+    "estimated": false
+  },
+  {
+    "n": 17,
+    "start": 38.525,
+    "end": 42.445,
+    "words": 10,
+    "estimated": false
+  },
+  {
+    "n": 18,
+    "start": 42.445,
+    "end": 46.715,
+    "words": 4,
+    "estimated": false
+  },
+  {
+    "n": 19,
+    "start": 46.715,
+    "end": 49.455,
+    "words": 5,
+    "estimated": false
+  },
+  {
+    "n": 20,
+    "start": 49.455,
+    "end": 51.545,
+    "words": 7,
+    "estimated": false
+  },
+  {
+    "n": 21,
+    "start": 51.545,
+    "end": 53.695,
+    "words": 7,
+    "estimated": false
+  },
+  {
+    "n": 22,
+    "start": 53.695,
+    "end": 54.955,
+    "words": 3,
+    "estimated": false
+  },
+  {
+    "n": 23,
+    "start": 54.955,
+    "end": 57.245,
+    "words": 6,
+    "estimated": false
+  },
+  {
+    "n": 24,
+    "start": 57.245,
+    "end": 60.815,
+    "words": 10,
+    "estimated": false
+  },
+  {
+    "n": 25,
+    "start": 60.815,
+    "end": 63.825,
+    "words": 8,
+    "estimated": false
+  },
+  {
+    "n": 26,
+    "start": 63.825,
+    "end": 66.985,
+    "words": 9,
+    "estimated": false
+  },
+  {
+    "n": 27,
+    "start": 66.985,
+    "end": 70.865,
+    "words": 8,
+    "estimated": false
+  },
+  {
+    "n": 28,
+    "start": 70.865,
+    "end": 72.625,
+    "words": 4,
+    "estimated": false
+  },
+  {
+    "n": 29,
+    "start": 72.625,
+    "end": 74.755,
+    "words": 6,
+    "estimated": false
+  },
+  {
+    "n": 30,
+    "start": 74.755,
+    "end": 76.965,
+    "words": 5,
+    "estimated": false
+  },
+  {
+    "n": 31,
+    "start": 76.965,
+    "end": 78.965,
+    "words": 3,
+    "estimated": false
+  },
+  {
+    "n": 32,
+    "start": 78.965,
+    "end": 80.915,
+    "words": 6,
+    "estimated": false
+  },
+  {
+    "n": 33,
+    "start": 80.915,
+    "end": 84.025,
+    "words": 6,
+    "estimated": false
+  },
+  {
+    "n": 34,
+    "start": 84.025,
+    "end": 87.435,
+    "words": 11,
+    "estimated": false
+  },
+  {
+    "n": 35,
+    "start": 87.435,
+    "end": 92.725,
+    "words": 9,
+    "estimated": false
+  },
+  {
+    "n": 36,
+    "start": 92.725,
+    "end": 95.785,
+    "words": 5,
+    "estimated": false
+  },
+  {
+    "n": 37,
+    "start": 95.785,
+    "end": 99.405,
+    "words": 9,
+    "estimated": false
+  },
+  {
+    "n": 38,
+    "start": 99.405,
+    "end": 105.195,
+    "words": 13,
+    "estimated": false
+  },
+  {
+    "n": 39,
+    "start": 105.195,
+    "end": 108.625,
+    "words": 6,
+    "estimated": false
+  },
+  {
+    "n": 40,
+    "start": 108.625,
+    "end": 111.455,
+    "words": 6,
+    "estimated": false
+  },
+  {
+    "n": 41,
+    "start": 111.455,
+    "end": 117.585,
+    "words": 13,
+    "estimated": false
+  },
+  {
+    "n": 42,
+    "start": 117.585,
+    "end": 121.575,
+    "words": 10,
+    "estimated": false
+  },
+  {
+    "n": 43,
+    "start": 121.575,
+    "end": 126.015,
+    "words": 7,
+    "estimated": false
+  },
+  {
+    "n": 44,
+    "start": 126.015,
+    "end": 128.195,
+    "words": 6,
+    "estimated": false
+  },
+  {
+    "n": 45,
+    "start": 128.195,
+    "end": 133.085,
+    "words": 12,
+    "estimated": false
+  },
+  {
+    "n": 46,
+    "start": 133.085,
+    "end": 135.44,
+    "words": 7,
+    "estimated": false
+  }
+]

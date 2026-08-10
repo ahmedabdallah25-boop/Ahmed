@@ -4,6 +4,8 @@ import './fonts';
 import {INFLATION_DURATION, Inflation} from './inflation/Inflation';
 import {INFLATION_THUMBS, THUMB_H, THUMB_W} from './inflation/Thumbnail';
 import {Longform} from './longform/Longform';
+import {Pension} from './pension/Pension';
+import {TOTAL_FRAMES as PENSION_FRAMES} from './pension/timeline';
 import {VO_DURATION} from './longform/timing';
 import {Short} from './Short';
 import {SHORTS} from './ShortsCuts';
@@ -35,6 +37,19 @@ export const RemotionRoot: React.FC = () => (
         height={THUMB_H}
       />
     ))}
+    {/* "Is your pension halal?" — 46 supplied stills cut to the recorded VO.
+        The length is the voiceover's own: every scene boundary comes from
+        forced alignment of the script against public/vo-pension.mp3, not from
+        the scene pack's designed timings, which total 196s against a 135.4s
+        read. See src/pension/timeline.ts. */}
+    <Composition
+      id="Pension-DefaultFund"
+      component={Pension}
+      durationInFrames={PENSION_FRAMES}
+      fps={FPS}
+      width={W}
+      height={H}
+    />
     {/* Episode 2 — long-form, cut to the recorded VO. */}
     <Composition
       id="Ep2-HalalMortgage"
