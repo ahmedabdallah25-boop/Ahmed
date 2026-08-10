@@ -18,7 +18,10 @@
     "srt:pension": "node scripts/make-srt.mjs",
     "audit:pension": "python3 scripts/audit-captions.py out/audit scripts/audit-frames.json",
     "metrics:pension": "python3 scripts/font-metrics.py",
-    "headroom:pension": "python3 scripts/measure-headroom.py public/scenes scripts/headroom.json"
+    "headroom:pension": "python3 scripts/measure-headroom.py public/scenes scripts/headroom.json",
+    "ingest:studentloan": "node scripts/ingest-scenes.mjs",
+    "pack:studentloan": "node scripts/parse-student-loan-pack.mjs && node scripts/sync-vo-block.mjs",
+    "headroom:studentloan": "python3 scripts/measure-headroom.py public/studentloan scripts/headroom-studentloan.json"
   },
   "keywords": [],
   "author": "",
