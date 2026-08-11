@@ -14,6 +14,7 @@ on:
   push:
     paths:
       - 'video/scripts/student-loan-stills.json'
+      - 'video/scripts/student-loan-stills-v2.json'
       - '.github/workflows/fetch-student-loan-stills.yml'
   workflow_dispatch:
 
@@ -74,6 +75,25 @@ jobs:
           done
           [ "$missing" -eq 0 ] || exit 1
 
+      # Candidates for scenes whose art left no room for the caption. They land
+      # in their own directory rather than overwriting: the point is to measure
+      # both and keep whichever actually clears the band, and a regenerated
+      # still is not automatically the better one.
+      - name: Download the candidate re-generations
+        run: |
+          set -euo pipefail
+          man=video/scripts/student-loan-stills-v2.json
+          [ -f "$man" ] || { echo "no candidate manifest — nothing to do"; exit 0; }
+          mkdir -p video/public/studentloan-v2
+          for n in $(jq -r 'keys[]' "$man"); do
+            dest=$(printf 'video/public/studentloan-v2/%02d.jpeg' "$n")
+            [ -s "$dest" ] && { echo "$dest already present"; continue; }
+            url=$(jq -r --arg n "$n" '.[$n]' "$man")
+            echo "candidate $n -> $dest"
+            curl -fsS --retry 4 --retry-delay 3 -o /tmp/cand.png "$url"
+            "$IM" /tmp/cand.png -quality 92 "$dest"
+          done
+
       - name: Check every scene arrived and is a real image
         run: |
           set -euo pipefail
@@ -90,7 +110,7 @@ jobs:
           set -euo pipefail
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add video/public/studentloan
+          git add video/public/studentloan video/public/studentloan-v2
           if git diff --cached --quiet; then
             echo "nothing to commit — stills already in the tree"
             exit 0
