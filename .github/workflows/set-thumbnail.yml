@@ -1,0 +1,71 @@
+name: Set a thumbnail
+
+# Sets a custom 16:9 thumbnail on a video that is already on the channel.
+#
+# Every upload over 180s needs one (see the mandatory rule in CLAUDE.md): past
+# the Shorts cap a vertical video publishes as long-form and its tile is
+# rendered in 16:9 slots, where a 9:16 plate is pillarboxed into a dead strip.
+# The Shorts habit is to ship no thumbnail at all, so this is the repair path.
+#
+# Takes a URL as well as a repo path because the plate usually comes from an
+# image host the generating session cannot reach — sandbox network policy
+# blocks most CDNs. The runner has open outbound, so it fetches.
+#
+# Resizing to 1280x720 and the sub-2MB encode both happen in set_thumbnail.py.
+
+on:
+  workflow_dispatch:
+    inputs:
+      video_id:
+        description: "Video ID (e.g. j2E4OLNZDJk)"
+        required: true
+        type: string
+      url:
+        description: "URL of the plate. Leave blank to use `file` instead."
+        required: false
+        default: ""
+        type: string
+      file:
+        description: "Repo path (e.g. media/student-loan-thumb.jpg). Ignored if `url` is set."
+        required: false
+        default: ""
+        type: string
+      dry_run:
+        description: "Normalise and report without touching YouTube"
+        type: boolean
+        default: false
+
+jobs:
+  set:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r automation/requirements.txt Pillow
+
+      - name: Set the thumbnail
+        run: |
+          if [ -n "${{ inputs.url }}" ]; then
+            SRC=(--url "${{ inputs.url }}")
+          elif [ -n "${{ inputs.file }}" ]; then
+            SRC=(--file "${{ inputs.file }}")
+          else
+            echo "Give either url or file." >&2
+            exit 1
+          fi
+          python automation/set_thumbnail.py "${{ inputs.video_id }}" \
+            "${SRC[@]}" ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          YT_CLIENT_ID: ${{ secrets.new1 }}
+          YT_CLIENT_SECRET: ${{ secrets.new2 }}
+          YT_REFRESH_TOKEN: ${{ secrets.new3 }}
+
+      # Keeps a dry run inspectable — otherwise there is nothing to look at.
+      - name: Upload the normalised preview
+        if: ${{ inputs.dry_run }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: thumbnail-preview
+          path: thumbnail-preview.jpg

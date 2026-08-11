@@ -254,6 +254,40 @@ beats.
 
 All at `https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/`.
 
+### Which of the two, and why
+
+**Variant 5 (`ad711907`) ships.** Both rendered the wording cleanly — `PAID`,
+`6 YEARS` and the `↗ IT GREW` badge are all correctly spelled and correctly
+placed, badge clipped over the card's top-right corner as specified — but they
+are not equal:
+
+| | 5 `ad711907` | 6 `1d4dd58b` |
+|---|---|---|
+| Hair | **brown, side-parted — Adam** | black — not Adam |
+| Grain | none | visible noise over the flat colour |
+| Face crop | hard against the left edge | inset, dead cream down the left |
+| Face scale | larger, brow reads at tile size | smaller |
+
+The hair decides it on its own. `house-style.md` gives Adam *short brown
+side-parted hair*; variant 6 rendered him black-haired, which is Sami's and
+Kareem's colouring and breaks the cast on a channel whose whole visual grammar
+is that named people are consistent. The grain is the second disqualifier — the
+style guide bans it outright ("on flat colour it reads as compression
+artefact"), and variant 6 has it.
+
+**What is imperfect in the shipping plate, and worth fixing on the next pass:**
+
+- The outlines vary in weight in places; the house rule is even-weight
+  throughout.
+- The background carries a soft vignette rather than flat `#F7EFDD`.
+- There is idle cream between Adam's shoulder and the card. vidIQ leaves no such
+  gap — either the face or the card should grow into it.
+- `PAID` will disappear at browse size. Acceptable, since `6 YEARS` and the rust
+  badge are the payload and both hold, but it means the label is decoration.
+
+None of these are worth a reroll against a scheduled publish. They are the note
+for the next thumbnail.
+
 **One deliberate departure from vidIQ:** they run the face template on a *dark
 blurred* background so the white card and the lit face pop. This channel's ground
 is cream `#F7EFDD` and that is brand furniture worth more than the extra pop, so
