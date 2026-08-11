@@ -36,21 +36,35 @@ plus vidIQ's own published catalogue.
 
 ### The vidIQ channel's format (`UCZLFu8bHbwtnIgWLg5UtINw`)
 
-Their top long-form is remarkably uniform, and it is a **four-slot** layout:
+Read off three of their thumbnails directly (screenshots, 2026-08-11). They run
+**two distinct templates**, not one.
 
-1. **A face, cut out, huge** — one unambiguous emotion, occupying a third to a
-   half of the frame, pushed to one side and bleeding off the bottom edge.
-2. **Two to four words** in the opposite third. Heavy sans, all caps, two colours
-   — white for the setup, one saturated accent for the payload word.
-3. **One graphic device.** A red arrow, a ring, a strike-through, or a single
-   big number. Never two.
-4. **A flat saturated background** so the cutout separates cleanly.
+**Template 1 — face + card.** The one to copy.
 
-The text never overlaps the face, and it never repeats the title — it carries the
-half of the promise the title left out. Their highest-breakout uploads all put a
-**specific number** in one slot or the other: *The 9-Minute Algorithm Hack*
-(20.84), *How to Create a NEW YouTube Channel in 2026* (34.07), *First 100
-Subscribers* (26.18). The number is the hook; the face supplies the stakes.
+1. **The face is always LEFT**, hard-cropped at the left edge, occupying ~40%,
+   lit, looking into frame. Same person, same hand-on-chin quizzical pose every
+   time — it is brand furniture, not an expression choice.
+2. **A white rounded card with a soft drop shadow floats on the right**, holding
+   *all* of the text. It is styled as a real interface object — a stats panel, a
+   verified tweet. **This is the signature device.** It is what makes the claim
+   read as evidence. Text loose on the background does not do this.
+3. **Inside the card: a small label above a huge number.** "Views" small, "499K"
+   enormous — the number is the single biggest object in the picture.
+4. **One pill badge clipped to the card's edge**, saturated: a green "27x", a red
+   STOP octagon. Small, and never more than two.
+5. **The background is dark and blurred**, so the white card and the lit face
+   both pop off it.
+
+**Template 2 — no face.** A full-width condensed black caps headline across the
+top (*YOUR VIDEO ISN'T DEAD*, four words), one wrecked hero object dead centre (a
+shattered YouTube play button, debris falling), and faint pale bar charts behind
+labelled "-48h" and "Now". The payload word carries a hand-drawn red double
+underline and a hand-drawn black arrow. Near-white background.
+
+Their highest-breakout uploads all put a **specific number** somewhere: *The
+9-Minute Algorithm Hack* (20.84 breakout), *NEW Channel in 2026* (34.07), *First
+100 Subscribers* (26.18). The number is the hook; the face supplies the stakes;
+the card supplies the proof.
 
 ### The student-loan long-form set
 
@@ -218,7 +232,34 @@ arrows lower-right / type upper-right**.
 | 3 | `48c402de-9d06-4d16-aa87-f97abdc0d278` | clean plate, no text | `hf_20260811_071126_48c402de-…png` |
 | 4 | `b8190c2d-af0b-4d6a-9383-10d90325357c` | clean plate, no text | `hf_20260811_071126_b8190c2d-…png` |
 
-All four at `https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/`.
+### Second pass — the card layout *(this is the one to ship)*
+
+The first four were designed against an **inferred** reading of vidIQ's format,
+before their thumbnails had actually been looked at. Seeing them corrected three
+things: the text belongs **inside a white card**, not loose on the background;
+the **number is the hero object**, not a word inside a headline; and the face
+belongs on the **left**, looking into the card.
+
+Regenerated to match. Adam left 40%, hard-cropped, worried, looking right into a
+large white statement card with a `#3D2B23` outline and a flat drop shadow. Inside
+the card: the label **PAID** small in charcoal, the number **6 YEARS** enormous,
+and a rust `#B5603F` pill badge reading **↑ IT GREW** clipped to the top-right
+corner. Reading order is *paid / six years / it grew* — the whole video in three
+beats.
+
+| # | Job ID | URL |
+|---|---|---|
+| 5 | `ad711907-da3a-4002-b4e4-d28c3e0f756c` | `hf_20260811_071907_ad711907-…png` |
+| 6 | `1d4dd58b-aecd-4557-a91b-52fae2669119` | `hf_20260811_071907_1d4dd58b-…png` |
+
+All at `https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/`.
+
+**One deliberate departure from vidIQ:** they run the face template on a *dark
+blurred* background so the white card and the lit face pop. This channel's ground
+is cream `#F7EFDD` and that is brand furniture worth more than the extra pop, so
+separation is carried by the card's brown outline and flat drop shadow instead.
+If the card turns out to disappear into the cream at browse size, darkening the
+background behind the card is the first thing to try.
 
 **Two constraints hit while generating, both environmental, both worth knowing
 before the next run:**

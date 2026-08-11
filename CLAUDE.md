@@ -48,12 +48,14 @@ So for **every upload with runtime > 180s**, all of these are required, no excep
 2. The `thumbnail` key set in the upload config (`automation/part*.json`). `upload_ep2.py`
    and `preflight.py` both read it. Add the key only once the file exists — preflight fails
    on a key pointing at a missing file.
-3. The **four-slot layout**, audited off vidIQ's own channel and the student-loan long-form
-   winners: one face at close-up scale bleeding off an edge; two-to-four words in the
-   opposite third, white plus one accent; one graphic device; clean separation. One of the
-   slots carries a **specific number**.
+3. The **card layout**, audited off vidIQ's own thumbnails (screenshots reviewed
+   2026-08-11): a face at close-up scale, hard-cropped on the **left**, looking into frame;
+   a **white card with an outline and a drop shadow** on the right holding all the text; a
+   small **label** above a **huge number** that is the biggest object in the picture; one
+   **pill badge** clipped to the card's edge. The card is what makes it read as evidence
+   rather than a claim — text loose on the background does not.
 4. Thumbnail text **must not repeat the title** — it carries the half of the promise the
-   title left out.
+   title left out. Keep it to a label, a number, and a badge.
 5. This channel's face slot is **Adam WORRIED** from his character sheet, at a close-up
    scale the in-video framing never uses. Faceless does not mean no face.
 
