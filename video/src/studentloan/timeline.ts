@@ -20,7 +20,7 @@ export const SCENES: Scene[] = [
     "cap2": "every single month",
     "vo": "[serious] You have paid this every month for six years.",
     "tag": "serious",
-    "capBottom": 240,
+    "capBottom": 637,
     "capMeasured": true,
     "step": 0,
     "estimated": false
@@ -48,7 +48,7 @@ export const SCENES: Scene[] = [
     "cap2": "than the day you left",
     "vo": "The number is bigger now than the day you walked out.",
     "tag": "",
-    "capBottom": 240,
+    "capBottom": 342,
     "capMeasured": true,
     "step": 0,
     "estimated": false
@@ -104,7 +104,7 @@ export const SCENES: Scene[] = [
     "cap2": "ABOVE a line",
     "vo": "but only the part above a line.",
     "tag": "",
-    "capBottom": 240,
+    "capBottom": 413,
     "capMeasured": true,
     "step": 0,
     "estimated": false
@@ -132,7 +132,7 @@ export const SCENES: Scene[] = [
     "cap2": "A percentage. Automatically.",
     "vo": "Over it, a percentage.",
     "tag": "",
-    "capBottom": 240,
+    "capBottom": 590,
     "capMeasured": true,
     "step": 0,
     "estimated": false
@@ -160,7 +160,7 @@ export const SCENES: Scene[] = [
     "cap2": "machine.",
     "vo": "[emphatic] Same machine.",
     "tag": "emphatic",
-    "capBottom": 240,
+    "capBottom": 519,
     "capMeasured": true,
     "step": 0,
     "estimated": false
@@ -216,7 +216,7 @@ export const SCENES: Scene[] = [
     "cap2": "interest is added",
     "vo": "Every single day, interest is added —",
     "tag": "",
-    "capBottom": 240,
+    "capBottom": 660,
     "capMeasured": true,
     "step": 0,
     "estimated": false
@@ -230,7 +230,7 @@ export const SCENES: Scene[] = [
     "cap2": "to the WHOLE balance",
     "vo": "not to the part you haven't paid yet, but to the whole outstanding balance.",
     "tag": "",
-    "capBottom": 240,
+    "capBottom": 719,
     "capMeasured": true,
     "step": 0,
     "estimated": false
@@ -328,7 +328,7 @@ export const SCENES: Scene[] = [
     "cap2": "It RISES. While you pay.",
     "vo": "[emphatic] Earn below it, and the balance does not fall slowly. It does not fall at all. It rises. While you pay it.",
     "tag": "emphatic",
-    "capBottom": 240,
+    "capBottom": 696,
     "capMeasured": true,
     "step": 0,
     "estimated": false
@@ -552,7 +552,7 @@ export const SCENES: Scene[] = [
     "cap2": "your rate + your threshold",
     "vo": "[calm] One. Find two published numbers: your interest rate, and your repayment threshold.",
     "tag": "calm",
-    "capBottom": 240,
+    "capBottom": 755,
     "capMeasured": true,
     "step": 1,
     "estimated": false
@@ -594,7 +594,7 @@ export const SCENES: Scene[] = [
     "cap2": "about overpaying",
     "vo": "Three. Only then decide about overpaying.",
     "tag": "",
-    "capBottom": 240,
+    "capBottom": 755,
     "capMeasured": true,
     "step": 3,
     "estimated": false
