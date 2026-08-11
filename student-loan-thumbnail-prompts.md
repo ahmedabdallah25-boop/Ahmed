@@ -98,15 +98,20 @@ outlines survive downscaling in a way soft renders don't.
 
 ### Text overlay options
 
-| Option | Line 1 (white `#F7EFDD`) | Line 2 (accent) | Accent |
-|---|---|---|---|
-| 1 | 6 YEARS PAID | BALANCE UP | rust `#B5603F` |
-| 2 | HE PAID EVERY MONTH | IT GREW | rust `#B5603F` |
-| 3 | THE DEBT | GREW ANYWAY | rust `#B5603F` |
+**The background is cream `#F7EFDD`, so white type is invisible.** Line 1 is dark
+brown; the payload line is knocked out of a solid rust block, which is what
+survives being shrunk to a browse tile.
+
+| Option | Line 1 (dark brown `#3D2B23`) | Line 2 (cream on rust `#B5603F` block) |
+|---|---|---|
+| 1 | PAID 6 YEARS | IT GREW |
+| 2 | 6 YEARS PAID | BALANCE UP |
+| 3 | THE DEBT | GREW ANYWAY |
 
 Inter / Montserrat Bold 800, uppercase, ~150px on a 1080-tall frame, tight
-leading, heavy soft drop shadow, sitting in the third opposite the subject.
-Option 1 is the pick — it is the only one carrying a number.
+leading, sitting in the third opposite the subject. Option 1 is the pick — it
+carries the number, it is the shortest, and "IT GREW" points at the rising arrow
+so the type and the picture say the same thing.
 
 ---
 
@@ -195,6 +200,51 @@ offset down-right. Clean cream space along the top edge for a text overlay.
 ```
 
 ---
+
+---
+
+## GENERATED — 2026-08-11, Higgsfield `nano_banana_pro`
+
+Option A, rendered 16:9 at 2752×1536. Two passes: a clean plate with the text
+zone left empty, and a finished version with the overlay set by the model. The
+composition was corrected from the draft above — the draft put the arrows *and*
+the text both on the right, which collides. Shipped split is **face left half /
+arrows lower-right / type upper-right**.
+
+| # | Job ID | Text | URL |
+|---|---|---|---|
+| 1 | `033130d8-ccd6-42a6-a423-5a299d4c31ff` | PAID 6 YEARS / IT GREW | `hf_20260811_071306_033130d8-…png` |
+| 2 | `223539c5-bef4-4526-94f3-ea16adaba357` | PAID 6 YEARS / IT GREW | second variant |
+| 3 | `48c402de-9d06-4d16-aa87-f97abdc0d278` | clean plate, no text | `hf_20260811_071126_48c402de-…png` |
+| 4 | `b8190c2d-af0b-4d6a-9383-10d90325357c` | clean plate, no text | `hf_20260811_071126_b8190c2d-…png` |
+
+All four at `https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/`.
+
+**Two constraints hit while generating, both environmental, both worth knowing
+before the next run:**
+
+- **Adam's character sheet could not be attached.** `media/character-sheets/adam.png`
+  had to be described in prompt text instead — this session's network policy
+  blocks `upload.higgsfield.ai`, so the reference upload 403s at the proxy.
+  Identity therefore comes from the written description (short brown side-parted
+  hair, clean-shaven, rust red `#B5603F` t-shirt, dot eyes, brows drawn together
+  and raised). Check the render against the sheet before shipping. For a single
+  frame this is acceptable; for a multi-scene pack it is not.
+- **The results could not be pulled back into the repo.** The Higgsfield CDN is
+  blocked by the same policy, which is also why the text had to be baked in by
+  the model rather than composited locally with exact typography.
+
+### To ship it
+
+1. Download the chosen variant from the Higgsfield gallery.
+2. **Downscale to 1280×720** and save under 2MB. The render is 2752×1536 (1.79:1,
+   marginally wide of 16:9) — resize to 1280×720 rather than letterboxing, the
+   ~1% crop is invisible.
+3. Save as `media/student-loan-thumb.jpg`.
+4. Add `"thumbnail": "media/student-loan-thumb.jpg"` to `automation/part17.json`
+   — **only after the file exists**, or preflight fails on the dangling path.
+5. Part 17 is already uploaded and scheduled, so set it on the live video with
+   `monitor_ep2.py`'s `thumbnails().set` rather than re-uploading.
 
 ## If you only make one
 
