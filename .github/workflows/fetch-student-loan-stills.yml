@@ -32,6 +32,22 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
 
+      # ubuntu-latest ships no ImageMagick at all any more — the first run of
+      # this workflow died on `convert: command not found` after downloading
+      # scene 1. Install it, and record which binary landed: ImageMagick 7 is
+      # `magick`, 6 is `convert`, and the runner image decides which one apt
+      # gives us.
+      - name: Install ImageMagick
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends imagemagick
+          if command -v magick >/dev/null 2>&1; then
+            echo "IM=magick" >> "$GITHUB_ENV"
+          else
+            echo "IM=convert" >> "$GITHUB_ENV"
+          fi
+
       - name: Download the 46 stills
         run: |
           set -euo pipefail
@@ -54,7 +70,7 @@ jobs:
             # JPEG q92, matching the pension pack's format. The PNGs are 1-2MB
             # each; 46 of them would add ~90MB to a repo whose .git is already
             # 775MB, for no visible gain at 1080x1920.
-            convert /tmp/still.png -quality 92 "$dest"
+            "$IM" /tmp/still.png -quality 92 "$dest"
           done
           [ "$missing" -eq 0 ] || exit 1
 

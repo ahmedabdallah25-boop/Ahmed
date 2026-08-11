@@ -15,8 +15,18 @@
 #
 # Converted to JPEG q92 to match the pension pack's format. The sources are
 # 1-2MB PNGs; 46 of them add ~90MB for no visible gain at 1080x1920. Needs
-# ImageMagick's `convert` (or swap in `ffmpeg -i in.png -q:v 2 out.jpeg`).
+# ImageMagick — 7 calls it `magick`, 6 calls it `convert`, and this picks
+# whichever is on the box (or swap in `ffmpeg -i in.png -q:v 2 out.jpeg`).
 set -euo pipefail
+
+if command -v magick >/dev/null 2>&1; then
+  IM=magick
+elif command -v convert >/dev/null 2>&1; then
+  IM=convert
+else
+  echo "no ImageMagick on this machine: install it, or convert the PNGs yourself" >&2
+  exit 1
+fi
 
 OUT="${1:-}"
 if [ -z "$OUT" ]; then
@@ -48,7 +58,7 @@ for n in $(seq 1 46); do
 
   echo "scene $n -> $(basename "$dest")"
   curl -fsS --retry 3 --retry-delay 2 -o "$dest.png" "$url"
-  convert "$dest.png" -quality 92 "$dest"
+  "$IM" "$dest.png" -quality 92 "$dest"
   rm -f "$dest.png"
 done
 
