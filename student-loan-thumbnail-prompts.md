@@ -309,17 +309,31 @@ before the next run:**
   blocked by the same policy, which is also why the text had to be baked in by
   the model rather than composited locally with exact typography.
 
-### To ship it
+### Shipping it
 
-1. Download the chosen variant from the Higgsfield gallery.
-2. **Downscale to 1280×720** and save under 2MB. The render is 2752×1536 (1.79:1,
-   marginally wide of 16:9) — resize to 1280×720 rather than letterboxing, the
-   ~1% crop is invisible.
-3. Save as `media/student-loan-thumb.jpg`.
-4. Add `"thumbnail": "media/student-loan-thumb.jpg"` to `automation/part17.json`
-   — **only after the file exists**, or preflight fails on the dangling path.
-5. Part 17 is already uploaded and scheduled, so set it on the live video with
-   `monitor_ep2.py`'s `thumbnails().set` rather than re-uploading.
+`automation/set_thumbnail.py` and `.github/workflows/set-thumbnail.yml` do this
+now. Nothing in the repo could set a thumbnail on a video that was *already*
+uploaded — `upload_ep2.py` only does it as step 2 of an upload — which is exactly
+the situation any >180s repair lands in.
+
+```
+set-thumbnail.yml
+  video_id = j2E4OLNZDJk
+  url      = <the plate on the generator's CDN>
+  dry_run  = false
+```
+
+It takes a URL because the generating session usually cannot reach the image
+host; the runner can. Resizing to exactly 1280×720 (centre-crop, never
+letterbox) and the sub-2MB JPEG encode both happen inside the script.
+
+Set on Part 17 (`j2E4OLNZDJk`) on 2026-08-11, run `31469923684`.
+
+Still worth doing when convenient: save the shipped plate into the repo as
+`media/student-loan-thumb.jpg` and add `"thumbnail": "media/student-loan-thumb.jpg"`
+to `automation/part17.json`, so the asset is version-controlled rather than
+living only on a CDN. Add the key **only once the file exists** — preflight fails
+on a dangling path.
 
 ## If you only make one
 
