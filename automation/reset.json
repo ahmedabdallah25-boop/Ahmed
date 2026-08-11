@@ -71,10 +71,9 @@
     }
   ],
   "hold": {
-    "_why": "Inside their 72-hour feed test. Changing packaging mid-test destroys the only clean read available. Updated sixth pass, 2026-08-09 17:23Z. CLEARED and removed this pass, both dead, neither to be retitled per the measured rule: JB6Q_7IE9Jo 40 views (+0 in the 34h since the fifth pass — the Is [X] Halal? format test is now resolved at zero marginal), ebPfkBjTbSA 24 (+6, ~4.2/day). STILL HELD: RpFWP1a7Huk clears 2026-08-10 09:29Z (39 views at 2.3d — its 40.7/day first day has already decayed to ~1.4/day marginal, so the read is effectively in). BllkNdhDu-k clears 2026-08-10 18:00Z (27 views at 2.0d, ~5.6/day marginal). NOTE: the sixth pass established from owner analytics that retitling is not the lever for any of these — see channel-reset.md. Hold now exists to keep the ledger honest, not to protect a packaging opportunity.",
+    "_why": "Inside their 72-hour feed test. Changing packaging mid-test destroys the only clean read available. Updated seventh pass, 2026-08-11 01:34Z. CLEARED and removed this pass, both now past 72h and both dead at the margin: RpFWP1a7Huk 39 views at 3.67d (+0 across the 1.37d since the sixth pass — zero marginal), BllkNdhDu-k 30 at 3.32d (+3, ~2.3/day). NOW HELD: S61o4xbsn20, Part 16, the pension Short — published 2026-08-10 10:00Z, clears 2026-08-13 10:00Z. It was uploaded and published by the sixth-pass session but never added here, which left the one upload actually worth protecting exposed to repackage. It is at 196 views at 0.65d (~301/day) — an order of magnitude above every other August upload — so a mid-test retitle would destroy the only strong read this channel has produced since the reset. Do not touch its packaging before 2026-08-13 10:00Z. NOTE: the sixth pass established from owner analytics that retitling is not the lever for the cleared videos — see channel-reset.md.",
     "video_ids": [
-      "RpFWP1a7Huk",
-      "BllkNdhDu-k"
+      "S61o4xbsn20"
     ]
   },
   "repackage": [
