@@ -48,7 +48,16 @@ jobs:
       - run: pip install -r automation/requirements.txt
 
       # Fail before touching YouTube rather than halfway through an upload.
+      #
+      # Upload mode only. preflight.py is an *upload* preflight — it checks the
+      # asset paths, the tag budget and, fatally, that publish_at is still in
+      # the future. In comment mode the video is already published, so a
+      # publish_at in the past is the normal state rather than an error, and
+      # running preflight there makes it impossible to ever post the engagement
+      # comment: the config that uploaded the video always fails preflight once
+      # that video is live.
       - name: Preflight the config
+        if: ${{ inputs.mode == 'upload' }}
         run: python automation/preflight.py "${{ inputs.config }}"
 
       - name: Upload video (scheduled publish)

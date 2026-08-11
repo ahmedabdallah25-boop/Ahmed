@@ -495,21 +495,43 @@ duplicate upload and an unattended playlist. Both are new failure modes for this
 
 ## The ledger
 
+> **Seventh pass, 2026-08-11 01:34Z.** One line in this table is unlike anything the reset has
+> produced. `S61o4xbsn20` — Part 16, the pension Short — is at **196 views in 15.6 hours**.
+> Everything else shipped in August is between 4 and 11 views/day lifetime; this is ~301. The
+> honest caveats, both already on the record before it went up: it is **0.65 d old and the
+> 72-hour rule is not waived** (it clears 2026-08-13 10:00Z), and **two variables moved on it**,
+> subject *and* the new render style, so the result cannot yet be assigned to either. It is held
+> in `reset.json` until the window closes. What it does establish is that the channel's ceiling
+> was never the problem — the last six uploads were not failing for want of a better title.
+
 | Video | Published (PT) | Age | Views | Lifetime v/day | Marginal v/day |
 |---|---|---|---|---|---|
-| `BllkNdhDu-k` 3 Questions / credit card | Aug 7, 11:00 | 0.55 d | 19 | 34.3 | *far too new* |
-| `RpFWP1a7Huk` Bank Doesn't Want You Debt-Free | Aug 7, 02:29 | 0.91 d | 37 | **40.7** | *in test* |
-| `x2hdNP6fzAo` Deadbeat — **DUPLICATE** | Aug 6, 17:20 | 1.29 d | 6 | 4.7 | *in test* |
-| `ebPfkBjTbSA` You've Already Paid Klarna | Aug 5, 13:08 | 2.46 d | 18 | 7.3 | *in test* |
-| `JB6Q_7IE9Jo` Is Paper Gold Halal? | Aug 5, 03:00 | 2.89 d | 40 | **13.9** | *clears 10:00Z today* |
-| `4gRoTTZNnFE` Fake Islamic mortgage | Aug 4, 03:00 | 3.89 d | 24 | 6.2 | 4.1 |
-| `sbor6eyJQKc` 10 years of payments | Aug 3, 03:00 | 4.89 d | 35 | 7.2 | 0.9 — dead |
-| `OHVnm5R0o5E` Banks take your money | Aug 2, 07:02 | 5.72 d | 53 | 9.3 | 0.9 — dead |
-| `kOkfpCHeURw` £1,461 a month | Aug 2, 03:00 | 5.89 d | 261 | 44.3 | 1.3 — dead |
-| `P3DxNgGFah0` Everyone asks at once | Jul 31, 04:00 | 7.85 d | 39 | 5.0 | **0 — fourth zero** |
+| `S61o4xbsn20` **Is Your Pension Halal?** | Aug 10, 03:00 | 0.65 d | **196** | **301** | *in test, held* |
+| `BllkNdhDu-k` 3 Questions / credit card | Aug 7, 11:00 | 3.32 d | 30 | 9.0 | 2.3 — dead |
+| `RpFWP1a7Huk` Bank Doesn't Want You Debt-Free | Aug 7, 02:29 | 3.67 d | 39 | 10.6 | **0 — dead** |
+| `ebPfkBjTbSA` You've Already Paid Klarna | Aug 5, 13:08 | 5.52 d | 24 | 4.3 | 2.0 — dead |
+| `JB6Q_7IE9Jo` Is Paper Gold Halal? | Aug 5, 03:00 | 5.65 d | 40 | 7.1 | **0 — dead** |
+| `4gRoTTZNnFE` Fake Islamic mortgage | Aug 4, 03:00 | 6.65 d | 24 | 3.6 | **0 — dead** |
+| `sbor6eyJQKc` 10 years of payments | Aug 3, 03:00 | 7.65 d | 35 | 4.6 | **0 — dead** |
+| `OHVnm5R0o5E` Banks take your money | Aug 2, 07:02 | 8.48 d | ~50 | 5.9 | ~0 — dead |
+| `kOkfpCHeURw` £1,461 a month | Aug 2, 03:00 | 8.65 d | ~257 | 29.7 | ~0 — dead |
+| `P3DxNgGFah0` Everyone asks at once | Jul 31, 04:00 | 10.62 d | 39 | 3.7 | **0 — fifth zero** |
 
-Subscribers 191 → **193**. Channel lifetime 8,614 → **8,748**. Long-form **13 → 13: +0 views
-across all three videos in 3.17 days.** The long-form programme is not decaying, it is inert.
+Subscribers 193 → **195**. `x2hdNP6fzAo`, the Deadbeat duplicate, no longer appears in the Shorts
+listing and has dropped out of the table.
+
+⚠️ **Source note on the tail.** This pass was measured from the public Shorts listing, not owner
+analytics — the free Nexlev plan blocks every `get_my_*` tool. The public listing rounds: it
+reports 50 and 257 where the sixth pass recorded 53 and 261 from owner data. Views do not fall,
+so read those two rows as flat, not declining, and treat the `~` figures as approximate. It does
+not affect the conclusion — every video below the top line has stopped accumulating.
+
+Long-form was not re-measured this pass; the sixth pass left it at **13 → 13, +0 views across all
+three videos in 3.17 days** — inert rather than decaying, and nothing here changes that read.
+
+**Every one of the nine rows below the pension Short is at or near zero marginal.** That is the
+context that makes the top line worth something: the same channel, the same week, the same
+publishing slot, and one upload doing 30x the daily rate of the ones around it.
 
 ## 1. The format test resolved. It won its head-to-head and it did not matter.
 

@@ -83,7 +83,27 @@ the next entry, and the formula-perfect third inflation video did 43 views.
 - **Payoff** — a sale has one price, fixed at the moment of sale. Murabaha does exactly that and is not a loan. Klarna is the same shape done wrong.
 - **The gap** — mainstream BNPL explainers pull **5,716,409** views. The best Islamic-framed video on it is **8,111 views and two years old**, and YouTube estimates only ~828 results for the whole query. Enormous demand, no supply. **This is the biggest opening found.**
 
-### 2 · Is Your Pension Halal?  ✅ PRODUCED 2026-08-08 → [`pension-scene-pack.txt`](pension-scene-pack.txt)
+### 2 · Is Your Pension Halal?  ✅ PUBLISHED 2026-08-10 10:00Z → [`S61o4xbsn20`](https://youtube.com/shorts/S61o4xbsn20)
+
+> **Live result, read at 2026-08-11 01:34Z — 0.65 d old: 196 views, ~301 views/day.**
+> Every other August upload sits between 4 and 11 views/day lifetime; the nearest thing to
+> it on the whole channel is `kOkfpCHeURw` at 44.3/day on its first day. It has already
+> cleared the config's 150-view pass bar at a third of the way through the window.
+>
+> **This is not a verdict.** The 72-hour rule holds — it clears **2026-08-13 10:00Z**, and
+> the number below that line is what counts. `S61o4xbsn20` is in `reset.json` `hold` until
+> then; do not touch its packaging. And the attribution warning further down this section
+> is now the live question rather than a hypothetical: **two variables moved**, subject and
+> render style, so a strong result here cannot be assigned to either one alone. The next
+> upload is what separates them — hold the new render style constant and move only the
+> subject.
+>
+> Engagement comment posted 2026-08-10 15:29Z (`upload.yml` run 3). `upload_video.py
+> --comment` has no dedup check — it is already posted, do not run comment mode again.
+
+<details>
+<summary>Production notes, written before the render</summary>
+
 
 > Full VO script, 46 scenes with image prompts, caption spec, accuracy notes and
 > upload metadata are written. Final title:
@@ -137,6 +157,8 @@ the next entry, and the formula-perfect third inflation video did 43 views.
 - **Why they stay** — the default fund is an index tracker; the index holds conventional banks, alcohol, gambling and arms. Nobody asked you. You were opted in.
 - **Payoff** — how to check your own fund in two minutes, and what switching actually changes.
 - **The gap** — only ~3,220 results exist for the whole query. The top performer is a **nine-year-old** clip; the two IFG entries are **five years old**. Auto-enrolment means every working viewer has one.
+
+</details>
 
 ### 3 · Is a Credit Card Halal?  ✅ SHIPPED as `3 Questions Decide If Your Credit Card Is Halal` (BllkNdhDu-k, 30 views @ 2026-08-10)
 
