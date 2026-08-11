@@ -176,6 +176,32 @@ the next entry, and the formula-perfect third inflation video did 43 views.
 - **Payoff** — a walkthrough of exactly what to switch off to use it cleanly.
 - **The gap** — the "Is X Halal?" library in this niche stops at ~2023 products. Nothing covers Revolut, Monzo, Cash App, crypto ETFs or prediction markets. **This title is a template you can re-run indefinitely on new nouns** — it is the single most repeatable item on the slate.
 
+### 5 · Is Your Student Loan Halal?  ✅ UPLOADED 2026-08-11 02:22Z → [`j2E4OLNZDJk`](https://youtube.com/shorts/j2E4OLNZDJk), publishing 10:00Z
+
+> Private with a scheduled publish, so title, thumbnail and publish time stay editable
+> until it goes live. Captions uploaded with it. No thumbnail set — the same as Part 16,
+> because packaging is a held variable here.
+>
+> **The engagement comment is NOT posted yet.** It cannot go up until the video is public,
+> and `upload_video.py --comment` has no dedup check, so it must be run exactly once,
+> after 10:00Z:
+> `upload.yml` → `config=part17.json`, `mode=comment`, `video_id=j2E4OLNZDJk`.
+> Then pin it in Studio — the API can post a comment but cannot pin one.
+>
+> Runtime is **226.94s (3:47)**, not the 196s designed below: the pack simply wrote a
+> longer script than Part 16's, and delivery matches the pension read almost exactly.
+> So this upload moves **subject and runtime**, not subject alone. Read the comparison
+> that way; `automation/part17.json` records it in `_runtime_note`.
+>
+> Ten of the 46 stills were regenerated before the render because their artwork left no
+> room for the caption band — the tightest began 28px from the top, against a block that
+> occupies y=64-244 — which put type on the art, including on the hook frame. All ten
+> regenerations cleared it and were adopted; the tightest still is now 246px. Caption
+> treatment itself was never touched, so it stays held against Part 16.
+
+<details>
+<summary>Production notes, written before the upload</summary>
+
 ### 5 · Is Your Student Loan Halal?  ✅ PRODUCED 2026-08-10 → [`student-loan-scene-pack.txt`](student-loan-scene-pack.txt)
 
 > Full VO script, 46 scenes with image prompts, caption spec, accuracy notes and
@@ -216,6 +242,8 @@ the next entry, and the formula-perfect third inflation video did 43 views.
 - **Why they stay** — interest accrues on the whole balance while repayments are capped at a share of income above a threshold. Below the crossover the balance mathematically cannot fall.
 - **Payoff** — a debt that grows while you service it is what the prohibition is actually about; then qard hasan funds and income-share alternatives.
 - **The gap** — top results are 5 to 10 years old. IFG's is **five years old** and UK Plan 5 rules have changed since. Nothing current exists.
+
+</details>
 
 ### 6 · How To Check If A Stock Is Halal In 60 Seconds
 
