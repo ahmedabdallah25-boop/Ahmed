@@ -91,8 +91,15 @@ The order that involves the least work:
 4. **Actions → "HELD BY FAITH - 2. Fix packaging"** with *dry run* ticked (the default) to preview
    every change, then again with it unticked to apply.
 
-"HELD BY FAITH - monitor" needs none of that — it runs on the shared `YT_API_KEY` and works
-today.
+"HELD BY FAITH - monitor" needs none of that. It reads public data only, and takes the first
+credential it finds: `YT_API_KEY`, then channel 2's trio, then channel 1's — so it works today,
+before channel 2 has any secrets of its own.
+
+> **Checked 2026-08-16 by running step 1:** `HBF_CLIENT_ID`, `HBF_CLIENT_SECRET` and
+> `HBF_REFRESH_TOKEN` all read as empty in Actions, and so does `YT_API_KEY`. If you added the
+> client ID and secret under different names, a workflow cannot see them — it can only read the
+> exact names above. Re-add them under these names, and make sure they are **repository**
+> secrets, not Environment or Dependabot secrets.
 
 ## Step 6 — Fire it
 

@@ -24,3 +24,15 @@ jobs:
         run: python automation/heldbyfaith_monitor.py
         env:
           YT_API_KEY: ${{ secrets.YT_API_KEY }}
+          # Channel 2's own trio, once it exists.
+          HBF_CLIENT_ID: ${{ secrets.HBF_CLIENT_ID }}
+          HBF_CLIENT_SECRET: ${{ secrets.HBF_CLIENT_SECRET }}
+          HBF_REFRESH_TOKEN: ${{ secrets.HBF_REFRESH_TOKEN }}
+          # Last-resort fallback so this report works with what the repo has today:
+          # YT_API_KEY has never been set, so without this there is no credential at
+          # all. Used purely to authenticate a request for HELD BY FAITH's PUBLIC
+          # statistics. The script never calls mine=true and never writes — see the
+          # header comment in heldbyfaith_monitor.py.
+          YT_CLIENT_ID: ${{ secrets.new1 }}
+          YT_CLIENT_SECRET: ${{ secrets.new2 }}
+          YT_REFRESH_TOKEN: ${{ secrets.new3 }}

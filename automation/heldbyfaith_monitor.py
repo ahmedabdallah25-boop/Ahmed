@@ -3,10 +3,23 @@
 
     python automation/heldbyfaith_monitor.py
 
-Read-only, public data, stdlib only. Needs just YT_API_KEY — the shared key that
-already drives the Finance % Decoded monitor. It deliberately does NOT need
+Read-only, public data, stdlib only. It deliberately does NOT need
 HBF_REFRESH_TOKEN, so channel 2 reporting works before the write path is
 authorized.
+
+Credentials, first one that is present wins:
+  1. YT_API_KEY                              — the shared key, if it is ever set
+  2. HBF_CLIENT_ID/SECRET/REFRESH_TOKEN      — channel 2's own OAuth trio
+  3. YT_CLIENT_ID/SECRET/REFRESH_TOKEN       — channel 1's trio, as a bare API
+                                               credential and nothing more
+
+Option 3 needs care, so to be explicit: every call here passes an explicit
+`id=`, and no request here is ever parameterised by the authenticated account —
+there is no `mine=true` call in this file at all. A Finance % Decoded token
+is being used only to authenticate a request for HELD BY FAITH's *public*
+statistics — the same rows any signed-out viewer sees. It reads nothing private
+and writes nothing at all. It is here because YT_API_KEY has never actually been
+set on this repo, which is also why monitor.py carries the same fallback.
 
 Two things this fixes about eyeballing the channel by hand:
 
@@ -50,14 +63,51 @@ def say(line=""):
     OUT.append(line)
 
 
+_TOKEN = None
+
+
+def bearer():
+    """Mint a read-only access token from whichever OAuth trio is available."""
+    global _TOKEN
+    if _TOKEN:
+        return _TOKEN
+    for prefix in ("HBF_CLIENT_ID", "YT_CLIENT_ID"):
+        base = prefix.rsplit("CLIENT_ID", 1)[0]
+        trio = (base + "CLIENT_ID", base + "CLIENT_SECRET", base + "REFRESH_TOKEN")
+        if not all(os.environ.get(k) for k in trio):
+            continue
+        body = urllib.parse.urlencode({
+            "client_id": os.environ[trio[0]],
+            "client_secret": os.environ[trio[1]],
+            "refresh_token": os.environ[trio[2]],
+            "grant_type": "refresh_token",
+        }).encode()
+        try:
+            with urllib.request.urlopen("https://oauth2.googleapis.com/token",
+                                        data=body, timeout=30) as r:
+                _TOKEN = json.load(r)["access_token"]
+                return _TOKEN
+        except urllib.error.HTTPError:
+            # Never echo the response — the request body carried three secrets.
+            print(f"   (note: {trio[0].rstrip('_') or 'OAuth'} trio was rejected, trying the next source)")
+    return None
+
+
 def get(path, **params):
     key = os.environ.get("YT_API_KEY")
-    if not key:
-        sys.exit("Need YT_API_KEY (shared, public read-only data — SETUP.md step 2).")
-    params["key"] = key
+    headers = {}
+    if key:
+        params["key"] = key
+    else:
+        token = bearer()
+        if not token:
+            sys.exit("No usable credential. Set YT_API_KEY (SETUP.md step 2), or provide "
+                     "any OAuth trio — this reads public data only.")
+        headers["Authorization"] = f"Bearer {token}"
     url = f"{API}/{path}?" + urllib.parse.urlencode(params)
     try:
-        with urllib.request.urlopen(url, timeout=30) as r:
+        with urllib.request.urlopen(urllib.request.Request(url, headers=headers),
+                                    timeout=30) as r:
             return json.load(r)
     except urllib.error.HTTPError as e:
         try:

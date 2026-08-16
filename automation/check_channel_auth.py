@@ -113,13 +113,35 @@ def main():
     for k in ch["secrets"]:
         say(f"   [{'x' if values[k] else ' '}] {k:<18} {'set' if values[k] else 'MISSING'}")
     say(f"   [{'x' if os.environ.get('YT_API_KEY') else ' '}] {'YT_API_KEY':<18} "
-        f"{'set' if os.environ.get('YT_API_KEY') else 'missing (shared; only the monitor needs it)'}")
+        f"{'set' if os.environ.get('YT_API_KEY') else 'not set (optional — the monitor falls back to OAuth)'}")
     say()
 
     missing = [k for k in ch["secrets"] if not values[k]]
     if missing:
         say(f"   NOT READY — {len(missing)} secret(s) missing: {', '.join(missing)}")
         say()
+        if len(missing) == 3:
+            # The likeliest cause, given an OAuth client was created for this channel
+            # on 2026-08-04: the values exist in Google Cloud but were never stored as
+            # repository secrets, or were stored under names of someone's own choosing.
+            # A workflow can only read the exact names below, so a secret called
+            # anything else is invisible to it.
+            say("   Nothing is set under these names. Two things this usually means:")
+            say()
+            say("     a) The client ID and secret exist in Google Cloud Console but were")
+            say("        never added to GitHub. Repo -> Settings -> Secrets and variables")
+            say("        -> Actions -> New repository secret.")
+            say()
+            say("     b) They WERE added, under different names. Check the list on that")
+            say(f"        page. A workflow only sees the exact names {id_key},")
+            say(f"        {secret_key} and {token_key} — anything else is")
+            say("        invisible to it. Re-add them under these names (you cannot read")
+            say("        an existing secret's value back, so copy it from Google Cloud).")
+            say()
+            say("   Make sure they are REPOSITORY secrets, not Environment or")
+            say("   Dependabot secrets — those are not exposed to these workflows.")
+            summarize()
+            return 1
         if missing == [token_key]:
             say("   The client ID and secret are in place, so only the refresh token is left.")
             say("   That one needs a human browser sign-in — Google will not issue it any")
