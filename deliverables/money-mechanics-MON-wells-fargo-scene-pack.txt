@@ -1,0 +1,171 @@
+==============================================================================
+MONEY MECHANICS - WEEK 1 - SCENE PACK
+==============================================================================
+
+DAY        Monday  (Script 6)
+TITLE      Wells Fargo took your biggest payment first, on purpose
+ANCHOR     Wells Fargo
+CONCEPT    High-to-low reordering
+RUNTIME    ~33s   |   9 shots   |   98 VO words
+VO PACE    3.0 words/sec  (measured rate of the 9.8M 'Survivorship Bias' short)
+
+Lead the week with this one: a named subject, a court document, and two hard
+numbers.
+
+==============================================================================
+SHOT LIST
+==============================================================================
+
+[01]  0.0s - 3.0s     (3.0s)   HOOK
+------------------------------------------------------------------------------
+  VO
+      Wells Fargo took your biggest payment first. On purpose.
+  ON SCREEN
+      WELLS FARGO
+  VISUAL
+      Bank logo-style card slams in, then four pending transactions stack up.
+  NOTE
+      Motion graphic. No real logo - use a generic navy bank mark to stay
+      clear of trademark use.
+
+[02]  3.0s - 8.3s     (5.3s)   SETUP
+------------------------------------------------------------------------------
+  VO
+      Say you have a hundred dollars and four transactions - three small ones,
+      and your rent.
+  ON SCREEN
+      BALANCE: $100
+  VISUAL
+      Four labelled tiles: $4 coffee, $6 lunch, $9 petrol, $95 rent.
+  NOTE
+      Simple flat icons. Keep the rent tile visually heavier than the other
+      three.
+
+[03]  8.3s - 11.3s    (3.0s)   SETUP
+------------------------------------------------------------------------------
+  VO
+      In the order they actually happened, you overdraft once.
+  ON SCREEN
+      1 overdraft = $35
+  VISUAL
+      Tiles animate left to right in time order; one red flag appears at the
+      end.
+  NOTE
+      Red flag = single overdraft fee stamp.
+
+[04]  11.3s - 17.3s   (6.0s)   TURN
+------------------------------------------------------------------------------
+  VO
+      Wells Fargo reordered them highest-first, so rent drained the account
+      and all three small purchases bounced behind it.
+  ON SCREEN
+      REORDERED: HIGH -> LOW
+  VISUAL
+      Rent tile jumps to the front; three red flags cascade behind it.
+  NOTE
+      The reorder animation is the whole video - give it the most motion.
+
+[05]  17.3s - 19.6s   (2.3s)   MECHANISM
+------------------------------------------------------------------------------
+  VO
+      One overdraft became four. Thirty-five dollars each.
+  ON SCREEN
+      $35 -> $140
+  VISUAL
+      Four red flags in a row; running total counts up to $140.
+  NOTE
+      Counter animation, fast ease-out.
+
+[06]  19.6s - 25.3s   (5.7s)   MECHANISM
+------------------------------------------------------------------------------
+  VO
+      A judge found an internal memo predicting the change would earn them
+      forty million dollars a year.
+  ON SCREEN
+      INTERNAL MEMO: +$40M / YEAR
+  VISUAL
+      Redacted document, one line highlighted in yellow.
+  NOTE
+      Generic redacted-doc graphic. Do not fabricate a document that looks
+      like a real exhibit.
+
+[07]  25.3s - 28.3s   (3.0s)   MECHANISM
+------------------------------------------------------------------------------
+  VO
+      The court ordered two hundred and three million returned.
+  ON SCREEN
+      $203,000,000 RETURNED
+  VISUAL
+      Gavel hit; figure stamps on screen.
+  NOTE
+      Gutierrez v. Wells Fargo, Judge Alsup 2010. Final on appeal April 2016.
+
+[08]  28.3s - 30.0s   (1.7s)   NAME IT
+------------------------------------------------------------------------------
+  VO
+      They called it high-to-low reordering.
+  ON SCREEN
+      HIGH-TO-LOW REORDERING
+  VISUAL
+      Term lands centre-frame, everything else clears.
+  NOTE
+      Hold one full beat of silence after this line.
+
+[09]  30.0s - 32.7s   (2.7s)   LOOP
+------------------------------------------------------------------------------
+  VO
+      It wasn't a glitch. It was the product.
+  ON SCREEN
+      NOT A GLITCH - THE PRODUCT
+  VISUAL
+      Hard cut to black on the last word.
+  NOTE
+      Loop line: re-frames 'on purpose' in the opening.
+
+==============================================================================
+FULL VOICEOVER  (continuous read)
+==============================================================================
+
+   Wells Fargo took your biggest payment first. On purpose.
+
+   Say you have a hundred dollars and four transactions - three small ones,
+   and your rent.
+
+   In the order they actually happened, you overdraft once.
+
+   Wells Fargo reordered them highest-first, so rent drained the account and
+   all three small purchases bounced behind it.
+
+   One overdraft became four. Thirty-five dollars each.
+
+   A judge found an internal memo predicting the change would earn them forty
+   million dollars a year.
+
+   The court ordered two hundred and three million returned.
+
+>> They called it high-to-low reordering.
+
+   It wasn't a glitch. It was the product.
+
+==============================================================================
+VERIFIED
+==============================================================================
+
+  Gutierrez v. Wells Fargo Bank, N.A. - Judge William Alsup, N.D. Cal., August 2010.
+  Wells Fargo posted debit transactions highest-first rather than chronologically,
+  which drew balances down faster and multiplied overdraft occurrences.
+  The opinion cites an internal memo predicting roughly +$40M a year in extra fees.
+  $203M ordered returned in restitution. Judgment final after appeals, 4 April 2016.
+
+==============================================================================
+PRODUCTION RULES
+==============================================================================
+
+  - Cold open. No greeting, no channel name, no 'in this video'.
+  - No call to action and no outro. End on the loop line and cut to black.
+  - Hold one full beat of silence after the NAME IT line.
+  - Use a generic navy bank mark, not the real logo. Do not fabricate a document
+      that could be mistaken for a real court exhibit.
+  - Runtime is well under the 180s Shorts cap, so no 16:9 thumbnail is required.
+  - Do not judge performance before 72 hours; convert to views/day with age attached.
+
