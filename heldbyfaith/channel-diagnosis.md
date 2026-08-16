@@ -8,6 +8,14 @@ its diagnosis, and needs its own file. Public data only — the Nexlev account i
 so CTR, retention and traffic sources are unavailable. Everything below is a view count, a
 timestamp, or a metadata field.
 
+> **Automation, added 2026-08-16.** The fix below is no longer copy-paste-only.
+> `packaging-fix.json` is now machine-readable and applied by
+> `automation/heldbyfaith_packaging.py` through three workflows: **HELD BY FAITH - 1. Check
+> setup** (read-only, says what is missing), **2. Fix packaging** (dry-run by default), and
+> **monitor** (needs no OAuth — runs on the shared `YT_API_KEY` and re-derives the table below
+> live). The write path needs `HBF_REFRESH_TOKEN`, minted via `automation/authorize.html`.
+> Descriptions and tags stay untouched, per `do_not_touch`.
+
 ---
 
 ## The one-paragraph version

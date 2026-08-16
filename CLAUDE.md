@@ -14,9 +14,17 @@ pancreatic cancer diagnosis and what came after, told through faith. First-perso
 Shorts. Everything for it lives in [`heldbyfaith/`](heldbyfaith/); start at
 `heldbyfaith/channel-diagnosis.md`.
 
-**There are no credentials for channel 2 in this session.** Secrets `new1`/`new2`/`new3` are an
-OAuth refresh token scoped to Finance % Decoded — they will not write to HELD BY FAITH. Every
-fix for channel 2 is copy-paste until it has its own token.
+**Channel 2 has its own automation and its own secrets** — `HBF_CLIENT_ID`, `HBF_CLIENT_SECRET`,
+`HBF_REFRESH_TOKEN`, read by the three `heldbyfaith-*.yml` workflows. Never reuse
+`new1`/`new2`/`new3`: those are scoped to Finance % Decoded and will not write to HELD BY FAITH.
+Both write paths check the authenticated channel against `expect_channel_id` and abort on a
+mismatch, so a token minted against the wrong channel fails loudly instead of silently
+repackaging the other channel.
+
+Channel 2's write path is live only once `HBF_REFRESH_TOKEN` exists. Run **"HELD BY FAITH -
+1. Check setup"** to see where it stands; the token is minted by hand via `automation/authorize.html`
+because Google requires a browser sign-in and **this repo is public, so no workflow may ever print
+a refresh token.** The monitor needs no token and works regardless.
 
 Do not port channel 1's conclusions onto channel 2. The finance channel's problem is topic
 exhaustion on a channel with 8K+ lifetime views; HELD BY FAITH has 33 lifetime views and a
@@ -68,8 +76,11 @@ Worked example for a >3min upload: `student-loan-thumbnail-prompts.md`.
 - **Nexlev is on the FREE plan.** Every `get_my_*` analytics tool (CTR, retention, traffic
   sources) returns `ACCESS DENIED`. `youtube_video_details` is capped at 10 calls/24h.
   Public channel/shorts/video listing tools work fine.
-- **There are no YouTube credentials in the session.** All writes go through GitHub Actions
-  using secrets `new1`/`new2`/`new3`.
+- **There are no YouTube credentials in the session.** All writes go through GitHub Actions —
+  `new1`/`new2`/`new3` for channel 1, `HBF_*` for channel 2.
+- **The repo is public.** Actions logs and artifacts are world-readable, so nothing may ever
+  print a refresh token, client secret or API key into a workflow. Print *whether* a secret is
+  set, never its value.
 - **Workflows only dispatch from the default branch**,
   `claude/channel-finance-video-performance-zba5rb`. A workflow living only on a feature
   branch 404s on dispatch.

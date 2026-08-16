@@ -1,0 +1,27 @@
+name: HELD BY FAITH - 1. Check setup
+
+# Start here. One click says whether channel 2 is wired up, and if not, exactly
+# what is missing and what to do about it.
+#
+# Read-only and safe on a public repo: it prints whether each secret is SET, never
+# a value, and the channel identity it prints is public information.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # Stdlib only — no pip install, so this finishes in seconds.
+      - name: Check HELD BY FAITH credentials
+        run: python automation/check_channel_auth.py --channel heldbyfaith
+        env:
+          HBF_CLIENT_ID: ${{ secrets.HBF_CLIENT_ID }}
+          HBF_CLIENT_SECRET: ${{ secrets.HBF_CLIENT_SECRET }}
+          HBF_REFRESH_TOKEN: ${{ secrets.HBF_REFRESH_TOKEN }}
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}

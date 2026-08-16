@@ -21,29 +21,40 @@ every fix and every monitor run is automatic.
 2. **Credentials → Create credentials → OAuth client ID → Desktop app.** Copy the client ID
    and client secret.
 
-## Step 4 — Mint your refresh token (2 min, on your own computer)
+## Step 4 — Mint your refresh token (2 min, in your browser)
 
-**This step cannot be done from a Claude Code session** — it needs a browser, and the OAuth
-redirect goes to `localhost` on whatever machine runs the script. Run it on your own computer.
+**No install, no terminal.** Open **[`automation/authorize.html`](authorize.html)** in any browser
+— double-click the file, or open it from the repo on your machine — and follow the three steps on
+the page. Paste in the client ID and secret from Step 3, click through Google's sign-in, paste
+back the address you land on, and it hands you the finished secrets with copy buttons.
+
+**If Google shows a channel chooser, pick the channel you actually mean.** The token is bound to
+that choice and cannot be repointed afterwards.
+
+The page asks YouTube which channel you just authorised and shows it before anything else. If it
+does not recognise the channel it refuses to display the token at all.
+
+> **Why this is not a button in GitHub Actions.** It is the one step that cannot be automated:
+> Google issues a refresh token only after a human signs in through a browser. And this repo is
+> **public**, which makes Actions logs world-readable — a workflow that printed a refresh token
+> would publish channel edit access to anyone who looked. So the token is minted on your machine
+> and pasted straight into a secret; it never passes through CI.
+
+Everything runs locally and nothing is transmitted anywhere except Google. Close the tab when
+you are done — the page saves nothing.
+
+<details>
+<summary>Terminal fallback, if your browser blocks the cross-origin call</summary>
 
 ```bash
 pip install google-auth-oauthlib
-python automation/get_refresh_token.py
+python automation/get_refresh_token.py            # opens a browser on this machine
+python automation/get_refresh_token.py --manual   # no browser here: prints a URL, paste back
 ```
 
-A browser opens → sign in → approve. **If Google shows a channel chooser, pick the channel you
-actually mean.** The token is bound to that choice and cannot be repointed afterwards.
-
-If the machine you are on has no browser (SSH, a server), use the manual flow instead — it prints
-a URL you can open anywhere, and you paste back the address bar you land on:
-
-```bash
-python automation/get_refresh_token.py --manual
-```
-
-The script then asks YouTube which channel you just authorised, prints it, and only then prints
-the secrets — naming the right ones for that channel. If it does not recognise the channel it
-refuses to print the token.
+Identical behaviour, including the channel check and the refusal to print an unrecognised
+channel's token.
+</details>
 
 ## Step 5 — Add the GitHub secrets (1 min)
 
@@ -59,11 +70,29 @@ overwriting one channel's set silently repoints every workflow that channel owns
 
 The `new1`/`new2`/`new3` names are historical and deliberately left alone — every workflow in
 `.github/workflows/` already reads them, and Part 15 and the daily upload path depend on them.
-`get_refresh_token.py` prints whichever set matches the channel you authorised.
+`authorize.html` shows whichever set matches the channel you authorised.
 
 > **A refresh token is bound to two things**: the channel picked at consent, *and* the OAuth
 > client that issued it. A new client ID paired with an old refresh token fails with
 > `invalid_grant`. One Google account owning both channels still needs two separate tokens.
+
+## Channel 2 — HELD BY FAITH
+
+Same three steps, one extra convenience: **Actions → "HELD BY FAITH - 1. Check setup" → Run
+workflow** tells you exactly where you stand. It reports whether each secret is set (never a
+value), and if all three are, which channel they actually own. Green means channel 2 is live.
+
+The order that involves the least work:
+
+1. **Actions → "HELD BY FAITH - 1. Check setup"** — one click. It names what is missing.
+2. If it asks for `HBF_REFRESH_TOKEN`, open `automation/authorize.html`, authorise, and paste the
+   value into the secret of that name.
+3. Run the check again. It should now print `READY` and the channel title.
+4. **Actions → "HELD BY FAITH - 2. Fix packaging"** with *dry run* ticked (the default) to preview
+   every change, then again with it unticked to apply.
+
+"HELD BY FAITH - monitor" needs none of that — it runs on the shared `YT_API_KEY` and works
+today.
 
 ## Step 6 — Fire it
 

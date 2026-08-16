@@ -1,0 +1,26 @@
+name: HELD BY FAITH - monitor
+
+# Read-only channel report: every upload with its real age, views/day, runtime,
+# and the vertical-vs-landscape split that is this channel's live problem.
+#
+# Needs only the shared YT_API_KEY, so it works before channel 2 has a refresh
+# token. Runs daily; this channel publishes weekly at best, and the 72-hour rule
+# means a shorter interval would only produce verdicts it has to withhold.
+
+on:
+  schedule:
+    - cron: "15 7 * * *"
+  workflow_dispatch:
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Report channel state
+        run: python automation/heldbyfaith_monitor.py
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}

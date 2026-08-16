@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Authorize a YouTube channel</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #ffffff; --ink: #16181d; --muted: #5c6270;
+    --line: #dfe3e8; --accent: #1a56db; --ok: #0f7b3f; --bad: #b3261e;
+    --code-bg: #f0f2f5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a; --card: #1c1f25; --ink: #e8eaed; --muted: #a2a9b5;
+      --line: #2f343d; --accent: #7aa2f7; --ok: #4ade80; --bad: #f87171;
+      --code-bg: #24282f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 24px 16px 64px; background: var(--bg); color: var(--ink);
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 24px; }
+  section {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 20px; margin-bottom: 16px;
+  }
+  h2 { font-size: 16px; margin: 0 0 12px; display: flex; align-items: center; gap: 10px; }
+  .num {
+    background: var(--accent); color: #fff; width: 24px; height: 24px; flex: none;
+    border-radius: 50%; display: grid; place-items: center; font-size: 13px;
+  }
+  label { display: block; font-size: 13px; color: var(--muted); margin: 12px 0 4px; }
+  input[type=text] {
+    width: 100%; padding: 10px 12px; font-size: 14px; font-family: ui-monospace, Menlo, monospace;
+    border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink);
+  }
+  button {
+    margin-top: 14px; padding: 10px 18px; font-size: 15px; font-weight: 600;
+    background: var(--accent); color: #fff; border: 0; border-radius: 8px; cursor: pointer;
+  }
+  button:disabled { opacity: .5; cursor: default; }
+  button.ghost { background: transparent; color: var(--accent); border: 1px solid var(--line); }
+  p.note { color: var(--muted); font-size: 13px; margin: 10px 0 0; }
+  code, .mono { font-family: ui-monospace, Menlo, monospace; font-size: 13px; }
+  .box {
+    background: var(--code-bg); border-radius: 8px; padding: 12px; margin-top: 12px;
+    word-break: break-all; font-family: ui-monospace, Menlo, monospace; font-size: 13px;
+  }
+  .hidden { display: none; }
+  .ok { color: var(--ok); font-weight: 600; }
+  .bad { color: var(--bad); font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+  td { padding: 8px 6px; border-top: 1px solid var(--line); vertical-align: top; font-size: 13px; }
+  td:first-child { color: var(--muted); white-space: nowrap; width: 1%; padding-right: 14px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Authorize a YouTube channel</h1>
+  <p class="sub">Mints the refresh token that lets this repo's automation edit one channel.
+  Everything happens in this browser — nothing is uploaded, logged, or sent anywhere except Google.</p>
+
+  <section>
+    <h2><span class="num">1</span> Your OAuth client</h2>
+    <p class="note">Google Cloud Console → APIs &amp; Services → Credentials → your OAuth client.
+    These identify the <em>app</em>, not a channel — they are the same values already stored as
+    repository secrets.</p>
+    <label for="cid">Client ID</label>
+    <input id="cid" type="text" autocomplete="off" spellcheck="false"
+           placeholder="1234567890-xxxxxxxx.apps.googleusercontent.com">
+    <label for="csec">Client secret</label>
+    <input id="csec" type="text" autocomplete="off" spellcheck="false" placeholder="GOCSPX-...">
+    <button id="go">Open Google sign-in</button>
+    <p class="note"><strong>Sign in with the account that owns the channel you want, and if Google
+    shows a channel chooser, pick that channel.</strong> The token is bound to that choice and
+    cannot be repointed afterwards.</p>
+  </section>
+
+  <section id="s2" class="hidden">
+    <h2><span class="num">2</span> Paste the address you land on</h2>
+    <p class="note">After you approve, the browser lands on a <code>localhost</code> page that
+    <strong>fails to load</strong>. That is expected — the one-time code is in the address bar.
+    Copy the whole address and paste it here.</p>
+    <label for="paste">The full localhost URL</label>
+    <input id="paste" type="text" autocomplete="off" spellcheck="false"
+           placeholder="http://localhost:8765/?code=4/0Ab...&amp;scope=...">
+    <button id="exchange">Get the refresh token</button>
+    <p class="note">Didn't open? <a id="manuallink" href="#" target="_blank" rel="noopener">Use this
+    link instead</a>.</p>
+  </section>
+
+  <section id="s3" class="hidden">
+    <h2><span class="num">3</span> Result</h2>
+    <div id="result"></div>
+  </section>
+</main>
+
+<script>
+// Channels this repo manages. A refresh token is bound to whichever channel is picked at
+// Google's chooser, so a perfectly valid token can still drive the wrong channel — this page
+// asks YouTube "who am I?" before showing anything, and refuses to display a token for a
+// channel it does not recognise. Same policy as automation/get_refresh_token.py.
+const CHANNELS = {
+  "UCVOoFJkRiOdJsWnewt8HJkw": {
+    name: "Finance % Decoded (@Financeundoubtlydecoded)",
+    secrets: ["new1", "new2", "new3"],
+  },
+  "UCh0tKIGR5Ns3Wvoai__txdg": {
+    name: "HELD BY FAITH (@HeldByFaithJourney)",
+    secrets: ["HBF_CLIENT_ID", "HBF_CLIENT_SECRET", "HBF_REFRESH_TOKEN"],
+  },
+};
+const SECRETS_URL = "https://github.com/ahmedabdallah25-boop/Ahmed/settings/secrets/actions/new";
+const REDIRECT = "http://localhost:8765/";
+const SCOPE = "https://www.googleapis.com/auth/youtube.force-ssl";
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) =>
+  ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function authUrl(clientId) {
+  const q = new URLSearchParams({
+    client_id: clientId,
+    redirect_uri: REDIRECT,
+    response_type: "code",
+    scope: SCOPE,
+    access_type: "offline",   // without this Google returns no refresh token at all
+    prompt: "consent",        // forces a refresh token even on a repeat authorization
+    include_granted_scopes: "true",
+  });
+  return "https://accounts.google.com/o/oauth2/v2/auth?" + q.toString();
+}
+
+$("go").onclick = () => {
+  const cid = $("cid").value.trim();
+  if (!cid || !$("csec").value.trim()) {
+    alert("Paste both the client ID and the client secret first.");
+    return;
+  }
+  const url = authUrl(cid);
+  $("manuallink").href = url;
+  $("s2").classList.remove("hidden");
+  window.open(url, "_blank", "noopener");
+  $("paste").focus();
+};
+
+// Copy-to-clipboard that also works from file:// in browsers that gate the async
+// clipboard API on a secure context.
+function copyText(text, btn) {
+  const done = () => { const t = btn.textContent; btn.textContent = "Copied"; setTimeout(() => btn.textContent = t, 1400); };
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).then(done, () => fallback());
+  } else { fallback(); }
+  function fallback() {
+    const ta = document.createElement("textarea");
+    ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand("copy"); done(); } catch (e) { alert("Copy failed — select the value and copy manually."); }
+    document.body.removeChild(ta);
+  }
+}
+
+function show(html) {
+  $("s3").classList.remove("hidden");
+  $("result").innerHTML = html;
+  $("s3").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function fail(title, detail) {
+  show(`<p class="bad">${esc(title)}</p><p class="note">${detail}</p>`);
+}
+
+async function whoami(accessToken) {
+  // Header first. Some environments preflight this; the access_token query form is a
+  // "simple request" and is the fallback when the preflight is what failed.
+  const base = "https://www.googleapis.com/youtube/v3/channels?part=snippet&mine=true";
+  try {
+    const r = await fetch(base, { headers: { Authorization: "Bearer " + accessToken } });
+    if (r.ok) return r.json();
+  } catch (e) { /* fall through */ }
+  const r2 = await fetch(base + "&access_token=" + encodeURIComponent(accessToken));
+  if (!r2.ok) throw new Error("channel lookup failed (HTTP " + r2.status + ")");
+  return r2.json();
+}
+
+$("exchange").onclick = async () => {
+  const clientId = $("cid").value.trim();
+  const clientSecret = $("csec").value.trim();
+  const pasted = $("paste").value.trim();
+  if (!pasted) { alert("Paste the localhost URL you landed on."); return; }
+
+  let code = null;
+  try {
+    // Accept a full URL, or just the bare code if they copied only that.
+    const u = new URL(pasted, "http://localhost:8765/");
+    code = u.searchParams.get("code");
+    const denied = u.searchParams.get("error");
+    if (denied) { fail("Google returned: " + denied, "Run step 1 again and approve the request."); return; }
+  } catch (e) { /* not a URL */ }
+  if (!code) code = pasted.startsWith("4/") ? pasted : null;
+  if (!code) {
+    fail("No authorization code in that text.",
+         "Paste the <em>whole</em> address bar from the page that failed to load — it looks like " +
+         "<code>http://localhost:8765/?code=4/0Ab...&amp;scope=...</code>");
+    return;
+  }
+
+  $("exchange").disabled = true;
+  $("exchange").textContent = "Working…";
+  try {
+    const res = await fetch("https://oauth2.googleapis.com/token", {
+      method: "POST",
+      body: new URLSearchParams({
+        code, client_id: clientId, client_secret: clientSecret,
+        redirect_uri: REDIRECT, grant_type: "authorization_code",
+      }),
+    });
+    const tok = await res.json();
+    if (tok.error) {
+      const hints = {
+        invalid_grant: "This code was already used or has expired — they are single-use and last " +
+                       "a few minutes. Run step 1 again for a fresh one.",
+        redirect_uri_mismatch: "Your OAuth client is probably a <strong>Web application</strong> " +
+                       "type. Either add <code>http://localhost:8765/</code> to its Authorized " +
+                       "redirect URIs, or create a <strong>Desktop app</strong> client, which " +
+                       "accepts any localhost port with no registration.",
+        invalid_client: "The client ID and secret do not match. Re-copy both from the same OAuth " +
+                       "client in Google Cloud Console.",
+      };
+      fail("Google rejected the exchange: " + tok.error,
+           hints[tok.error] || esc(tok.error_description || ""));
+      return;
+    }
+    if (!tok.refresh_token) {
+      fail("Google returned no refresh token.",
+           "That happens when the account has already consented. Revoke this app at " +
+           "<a href='https://myaccount.google.com/permissions' target='_blank' rel='noopener'>" +
+           "myaccount.google.com/permissions</a> and run step 1 again.");
+      return;
+    }
+
+    const me = await whoami(tok.access_token);
+    const items = (me && me.items) || [];
+    if (!items.length) {
+      fail("Authorized, but this Google account owns no YouTube channel.",
+           "Sign out and repeat step 1 with the account that owns the channel.");
+      return;
+    }
+    const id = items[0].id;
+    const title = items[0].snippet.title || "?";
+    const known = CHANNELS[id];
+
+    if (!known) {
+      const list = Object.entries(CHANNELS)
+        .map(([cid, c]) => `<tr><td class="mono">${esc(cid)}</td><td>${esc(c.name)}</td></tr>`).join("");
+      show(
+        `<p class="bad">Authorized as ${esc(title)} — not a channel this repo manages.</p>` +
+        `<p class="note">Not showing the token. Expected one of:</p><table>${list}</table>` +
+        `<p class="note">Run step 1 again and pick the right channel at Google's chooser.</p>`);
+      return;
+    }
+
+    const [idKey, secKey, tokKey] = known.secrets;
+    const rows = [[idKey, clientId], [secKey, clientSecret], [tokKey, tok.refresh_token]]
+      .map(([k, v], i) =>
+        `<tr><td class="mono">${esc(k)}</td><td><div class="box" id="v${i}">${esc(v)}</div>` +
+        `<button class="ghost" data-copy="${i}">Copy value</button></td></tr>`).join("");
+
+    show(
+      `<p class="ok">Authorized: ${esc(title)}</p>` +
+      `<p class="note mono">${esc(id)}</p>` +
+      `<p>This token controls <strong>${esc(known.name)}</strong>.</p>` +
+      `<p class="note">Add these three repository secrets with <strong>exactly</strong> these names —
+        the other channel uses different ones, and overwriting them silently repoints every workflow
+        that channel owns.</p>` +
+      `<table>${rows}</table>` +
+      `<p style="margin-top:16px"><a href="${SECRETS_URL}" target="_blank" rel="noopener">
+        Open the "New repository secret" page →</a></p>` +
+      `<p class="note">Treat all three as passwords. Do not paste them into chat, issues or commits —
+        the refresh token grants edit access to the channel. Revoke any time at
+        <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">
+        myaccount.google.com/permissions</a>. Close this page when you are done; nothing is saved.</p>`);
+
+    $("result").querySelectorAll("[data-copy]").forEach((b) => {
+      b.onclick = () => copyText($("v" + b.dataset.copy).textContent, b);
+    });
+  } catch (e) {
+    fail("The request could not be completed: " + (e.message || e),
+         "If this says <em>Failed to fetch</em>, your browser blocked the cross-origin call. " +
+         "Use the terminal fallback instead — it does exactly the same thing:<br>" +
+         "<code>pip install google-auth-oauthlib</code><br>" +
+         "<code>python automation/get_refresh_token.py --manual</code>");
+  } finally {
+    $("exchange").disabled = false;
+    $("exchange").textContent = "Get the refresh token";
+  }
+};
+</script>
+</body>
+</html>

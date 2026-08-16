@@ -1,0 +1,35 @@
+name: HELD BY FAITH - 2. Fix packaging
+
+# Applies heldbyfaith/packaging-fix.json: the series-numbering repair, the
+# channel-level keywords, and (once Ch. 6 is live) the orphan-cut unlist.
+#
+# Dry run is ON by default — the first click always previews. Untick it to write.
+#
+# Channel 2 only. It authenticates with the HBF_* secrets and aborts before any
+# write unless the token owns UCh0tKIGR5Ns3Wvoai__txdg, so a mis-minted token
+# cannot land these titles on Finance % Decoded.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview every change without writing anything"
+        type: boolean
+        default: true
+
+jobs:
+  packaging:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Apply HELD BY FAITH packaging fix
+        run: |
+          python automation/heldbyfaith_packaging.py \
+            ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          HBF_CLIENT_ID: ${{ secrets.HBF_CLIENT_ID }}
+          HBF_CLIENT_SECRET: ${{ secrets.HBF_CLIENT_SECRET }}
+          HBF_REFRESH_TOKEN: ${{ secrets.HBF_REFRESH_TOKEN }}
