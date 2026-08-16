@@ -269,31 +269,36 @@ This is the one to lead the week with if you only test one.
 
 ---
 
-### Day 7 — Paying your mortgage off early can make you poorer
+### Day 7 — Toys R Us was profitable when it died
 
-**~32s**
+**~35s**
 
-> Paying your house off early can be the most expensive safe thing you ever do.
+> Toys R Us was profitable when it died.
 >
-> That mortgage is the cheapest money you will ever be lent — a rate locked for decades
-> while inflation quietly shrinks what you owe.
+> In 2005, three investment firms bought it for six point six billion. They put in one
+> point three of their own. The rest was borrowed — and the debt went onto Toys R Us, not
+> them.
 >
-> Every extra dollar you throw at it earns you exactly that rate. Then it's gone. Not
-> invested. Not reachable.
+> So the company owed four hundred million a year in interest alone. Money it couldn't
+> spend on stores, staff, or fighting Amazon.
 >
-> Because equity isn't money. You can't eat a paid-down house. Lose your income and you'll
-> be asking that same bank to lend it back — worse rate, worst possible moment.
+> It filed for bankruptcy in 2017. Thirty-three thousand jobs gone. The firms had already
+> taken four hundred and sixty-four million in fees.
 >
-> **You're not buying freedom.**
+> **That's a leveraged buyout.**
 >
-> You're buying a feeling. Just check the price tag first.
+> They didn't buy it with their money. They bought it with its money.
 
-`ON-SCREEN` `cheap · fixed · shrinking` · `but LOCKED` · `equity ≠ money`
-`NOTE` **The weakest of the seven and I'd say so plainly** — it's the only one with no brand
-to anchor the hook, which per §1.3 is exactly what holds the floor up. Keep it for the
-debate value, but if you want a seventh with a real anchor, swap in **"Toys R Us was killed
-by its own buyout"** — same money mechanics, famous brand, and the leveraged-buyout
-mechanism is genuinely under-told.
+`ON-SCREEN` `$6.6B price / $1.3B of their own` · `$400M a year in interest` · `33,000 jobs` · `$464M in fees`
+`VERIFIED` Acquisition closed 21 July 2005 (KKR, Bain Capital, Vornado) at $6.6B, with
+$5.3B+ debt-financed; ~$400M/year debt service disclosed at the 2017 Chapter 11 filing;
+~33,000 jobs lost; $464M collected in fees and interest by the three firms.
+`FAIRNESS NOTE` There is a serious counter-argument — a Columbia Law analysis argues the
+cause was retail disruption rather than debt. The script's claim is narrower and holds:
+the debt consumed ~$400M a year that could not be spent competing. If you want the
+bulletproof version, "it couldn't afford to fight Amazon" is defensible; "debt alone
+killed it" is not.
+`NOTE` Replaces the v3 mortgage script, which was the only one with no brand anchor.
 
 ---
 
@@ -307,7 +312,7 @@ mechanism is genuinely under-told.
 | Thu | **2 — Deadbeat** | Personal; everyone watching owns a card. |
 | Fri | **4 — Deferred interest** | Rolls into weekend retail mindset. |
 | Sat | **5 — Buffett float** | Named person carries a quieter concept. |
-| Sun | **7 — Mortgage** | The debate, lowest-traffic slot, weakest anchor. |
+| Sun | **7 — Toys R Us** | Strongest emotional close of the week. |
 
 ## 6. Standing notes
 
