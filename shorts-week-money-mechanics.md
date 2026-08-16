@@ -1,244 +1,277 @@
-# Week 1 — Money Mechanics slate (v2)
+# Week 1 — Money Mechanics slate (v3)
 
-Rewritten 2026-08-16 after auditing v1 against the data I'd already pulled. What changed
-and why is in §1. Scripts are in §3.
-
----
-
-## 1. Audit of v1 — what was wrong
-
-### 1.1 The scripts were twice as long as the format that wins
-
-This is the serious one, and my own dataset said so. Durations of the 47 faceless outlier
-Shorts I pulled:
-
-| Slice | Duration |
-|---|---|
-| Top 5 by views | 18s, 14s, 18s, 22s, 24s |
-| **Median of top 10** | **26s** |
-| Median of all 47 | 30s |
-| Under 30s | 22 of 47 |
-
-The 9.8M *Survivorship Bias* script I claimed to be modelling is **62 words, 18 seconds**.
-I then wrote v1 scripts at **120–160 words, 40–45 seconds** — 2.5× the model. I derived the
-right structure and then ignored the length it came in. Every script below is rebuilt to
-**85–110 words, 28–36 seconds**.
-
-### 1.2 I punted on verification I could have done
-
-v1 shipped with a "verify before publish" list. I had WebSearch the whole time. Now done —
-all four load-bearing claims check out, and one number is corrected:
-
-| Claim | Status |
-|---|---|
-| Airline loyalty worth more than the airline | ✅ United MileagePlus valued **~$20B** in 2019 vs a **~$17B** market cap; United borrowed **$5B** against it in 2020. *(v1 said $22B — that figure circulates in headlines, but $20B vs $17B is the cleaner comparison.)* |
-| Payday APR near 400% | ✅ CFPB: $15 per $100 over two weeks = **391% APR**. Median fee is $15/$100. |
-| "Deadbeat" / "revolver" as industry terms | ✅ Both are genuine card-industry jargon, used exactly as described. |
-| Deferred interest charges on the original balance | ✅ Confirmed — pay off 99%, miss the deadline, and interest applies to **100% of the original** amount. CFPB has flagged it as consumer-harm risk. |
-
-### 1.3 No loop, so no rewatch
-
-Shorts reward completion over 100% — the rewatch. Not one v1 script closed a loop. Every
-script below now ends on a line that makes its own opening line land differently the second
-time through. That's a free multiplier I left on the table.
-
-### 1.4 The hooks were sentences, not stops
-
-"A billionaire walks into a bank" reads as a joke setup — the viewer files it as fiction
-and swipes. The first ~3 words carry the whole video. v2 opens on a number, a
-contradiction, or an accusation, every time.
-
-### 1.5 I buried the payoff I said was most important
-
-I wrote that naming the concept is the highest-value beat, then dissolved it into a full
-sentence at the end. It's now isolated on its own line, 2–4 words, hard stop.
-
-### 1.6 Three of the seven were structurally identical
-
-Days 2, 3 and 5 were all "the real business isn't what you think" rug-pulls. Anyone who
-watched all three got the same trick three times. The openings are now differentiated
-(accusation / number / paradox) and the posting order in §4 spaces them out.
-
-### 1.7 I overstated the research basis
-
-I reported Under Six Minutes Studio's 35% hit rate as though it established a rule. It's
-**one channel, 20 videos**. It's the best signal in the sample and worth building on, but
-it is n=1 and I should have said so plainly.
+Third pass, 2026-08-16. v2 fixed craft. This pass found something bigger: **the topics
+themselves were untested**, and testing them changed the recommendation. Audit in §1,
+rewritten scripts in §4.
 
 ---
 
-## 2. The revised template
+## 1. The audit that mattered — I never tested the topics
 
-Six beats, ~90 words, ~30 seconds:
+v1 and v2 both got the format right and the *topic selection* wrong, because I picked seven
+money topics out of my own head and never asked the data whether money topics travel on
+Shorts at all.
+
+### 1.1 The negative result
+
+I ran two semantic searches across the faceless-outlier database for exactly the content I
+was proposing — "how rich people avoid taxes / borrowing against stock / buy borrow die"
+and "credit card interest trap / banks profit from debt / payday loans predatory."
+
+**Neither returned a single high-performing original money-mechanics Short.** Top matches
+came back as car history, comedians, and reddit stories. The only finance-adjacent hit was
+a Dave Ramsey *clip* on a 190-sub channel.
+
+Two readings, and both matter:
+
+- **White space** — nobody is doing original money-mechanics explainers well.
+- **Or a warning** — concept-led money content doesn't travel in the Shorts feed. Money is
+  a *searched* topic, not a *fed* one.
+
+My v1/v2 evidence that "money works on Shorts" rested on Infinite Wealth Lab — which I'd
+already established is re-uploaded TV drama. Its performance is evidence that *courtroom
+scenes* travel, not that *money explainers* do. I built on a foundation I had personally
+disproved two sections earlier.
+
+### 1.2 What the search turned up instead — and it beats my original pick
+
+The channel that kept surfacing was **Boupai**: 3,870 subs, categorised
+*history / automotive business / commodity investing*. Monetized, faceless, original.
+
+| | Boupai | Under Six Minutes (my v1 pick) |
+|---|---|---|
+| Videos | 48 | 20 |
+| Over 1M views | **18 (37.5%)** | 7 (35%) |
+| **Worst performer** | **81K** | **3.8K** |
+| Total views | 47.1M | 43.6M |
+| Subscribers | 3,870 | 6,790 |
+
+Similar hit rate — but Boupai's **floor is 81K and Under Six Minutes' is 3.8K**. Boupai
+almost never dies. On 2.4× the sample. That's the more reliable model, and I recommended
+the other one.
+
+### 1.3 Why Boupai's floor is so high — the thing I'd missed
+
+Look at the titles:
+
+> When Ferrari Gave Cars For Free (3.5M) · When Honda Got Caught Copying (2.0M) · Nissan
+> Sued a Man Named Nissan (1.1M) · Jaguar Sued Their Best Customers (541K) · North Korea
+> Scammed Volvo (960K) · When Ferrari Sued A Tiny Charity (1.3M)
+
+The formula isn't "counterintuitive mechanism." It's **a famous brand doing something that
+contradicts the brand.** Ferrari is exclusive — *gave cars away free*. Jaguar depends on
+loyalists — *sued their best customers*.
+
+**The brand is a pre-loaded hook.** "Ferrari" costs zero seconds to establish. Everyone
+already has the stakes. My v2 scripts opened on concepts — "deferred interest," "the
+float" — which cost 5–8 seconds of setup in a format where the first second decides
+everything. That is why Boupai's floor is 81K and why a concept-led script has no floor
+at all.
+
+### 1.4 The correction
+
+Money content on Shorts has to ride a **named brand or person**, not a concept. Same
+mechanism, different vehicle. All seven scripts below are re-anchored, and two topics got
+materially better source material as a result:
+
+- **Buy Borrow Die** → Musk pledging **$62.5B** of Tesla stock for **$12.5B** in loans
+- **Poverty premium** → replaced with **Wells Fargo's high-to-low reordering**: a judge
+  found an internal memo projecting **$40M a year**, and ordered **$203M** returned
+
+### 1.5 A number I had wrong
+
+v2's deferred-interest example said a $2,000 purchase produced a $600 retroactive bill. At
+a typical store-card 29.99% APR over 24 months on the original balance that's **~$1,200**.
+I understated it by half — and the real number is both more accurate *and* more alarming.
+
+### 1.6 Carried over from the v2 audit
+
+Length (28–36s, not 40–45s), loop beats, hard first-three-words, isolated concept names,
+and de-duplicating the three identical reveal shapes — all still applied below.
+
+---
+
+## 2. On "must go viral"
+
+One honest note, then I'll drop it. Boupai is the most consistent channel in everything I
+pulled, and **30 of its 48 Shorts are still under a million**. Under Six Minutes: 13 of 20
+under a million. Mind Fragments: 25 of 29.
+
+No script guarantees a hit — the hit rate *is* the format. What these seven are built to do
+is what the data shows is actually controllable: **raise the floor** (brand-anchored hooks,
+so a miss lands at 80K instead of 4K) and **raise the odds** (proven structure, proven
+length). Volume against a high floor is the mechanism. Seven scripts is one week of that.
+
+---
+
+## 3. The template
 
 | Beat | Job |
 |---|---|
-| 1. **Stop** | First 3 words. A number, a contradiction, or an accusation. Never a scene-setter. |
-| 2. **Setup** | Concrete, fast, specific actor. |
-| 3. **Turn** | "But…" — the assumption breaks. |
-| 4. **Mechanism** | The actual machinery, stated plainly. |
-| 5. **Name it** | Isolated line. 2–4 words. |
-| 6. **Loop** | One line that re-frames beat 1 on rewatch. |
+| 1. **Brand** | First 3 words carry a name everyone knows. No setup cost. |
+| 2. **Contradiction** | That brand did something that violates what you assume about it. |
+| 3. **Mechanism** | The money machinery that explains it. |
+| 4. **Name it** | Isolated line, 2–4 words. |
+| 5. **Loop** | One line that re-frames beat 1 on rewatch. |
 
-No greeting. No CTA. No outro. Cold open, hard close.
+**Target 28–33s, 85–105 words, ~3 words/second** — the verified rate of the 9.8M
+*Survivorship Bias* script (62 words / 18s). No greeting, no CTA, no outro.
 
 ---
 
-## 3. The seven scripts
+## 4. The seven scripts
 
-### Day 1 — Why billionaires borrow money they already have
+### Day 1 — Elon Musk borrowed $12.5 billion instead of selling one share
 
-**~28s** · Stop: *"He has ten billion dollars."*
+**~30s**
 
-> He has ten billion dollars. He's asking the bank for a loan.
+> Elon Musk pledged sixty-two billion dollars of Tesla stock — to borrow twelve and a half.
 >
-> Sell the stock, and the tax takes a bite that never grows back. But borrowed money isn't
-> income. Nobody is taxed on a loan.
+> He could have just sold shares. But selling triggers capital gains tax, a bite that never
+> grows back. A loan doesn't. Nobody is taxed on borrowed money.
 >
-> So he pledges shares he already owns, takes the cash, spends it — and never sells. The
-> stock keeps compounding behind the debt. When he dies, his heirs inherit it at today's
-> price and the gain is wiped clean.
+> So the stock stays. It keeps compounding. The debt sits underneath it. And when he dies,
+> his heirs inherit at the new price and the original gain is wiped clean.
 >
 > Bankers have a name for it.
 >
 > **Buy. Borrow. Die.**
 >
-> He isn't avoiding the tax. He's outliving it.
+> Tesla's board eventually had to cap how much he could borrow. That's how well it works.
 
-`ON-SCREEN` `SELL → taxed` · `BORROW → not taxed` · `BUY. BORROW. DIE.`
-`VISUAL` Stock line climbing. A loan arrow drawn underneath it, never touching.
+`ON-SCREEN` `$62.5B pledged → $12.5B borrowed` · `SELL = taxed / BORROW = not` · `BUY. BORROW. DIE.`
+`VERIFIED` Forbes: $62.5B pledged against $12.5B in margin loans. Tesla's board later capped
+pledged borrowing. ~236M of his 715M shares remain pledged.
 
 ---
 
-### Day 2 — Why your bank calls you a deadbeat for paying on time
+### Day 2 — Banks have a word for people who pay on time
 
-**~30s** · Stop: *"Pay your card in full…"*
+**~28s**
 
-> Pay your credit card in full every month, and the industry has a word for you.
+> There is a word banks use for customers who pay their credit card off every month.
 >
 > Deadbeat.
 >
 > You borrowed their money for thirty days, paid zero interest, and kept the cashback. To
-> them, you're a rounding error.
+> them, you are a rounding error.
 >
 > The customer they want carries three thousand dollars at twenty-four percent, forever.
-> The industry calls that one a revolver — and revolvers are the entire business.
+> The industry calls that one a revolver. Revolvers are the business. Everyone else is
+> overhead.
 >
-> Your rewards were never a gift.
+> **Your rewards are the recruiting budget.**
 >
-> **They're the recruiting budget.**
->
-> Somebody is paying for your points. It isn't the bank.
+> Somebody is funding those points. Work out which one of you it is.
 
-`ON-SCREEN` `DEADBEAT = pays in full` · `REVOLVER = carries a balance` · `who's paying for your points?`
-`VISUAL` Two customer cards side by side; the revolver lights up as profitable.
-`NOTE` The closing line is deliberate comment bait — it invites people to work out who.
+`ON-SCREEN` `DEADBEAT = pays in full` · `REVOLVER = carries a balance` · `who funds your points?`
+`VERIFIED` Both are genuine card-industry terms, used exactly this way.
+`NOTE` The closing line is deliberate comment bait.
 
 ---
 
-### Day 3 — Why an airline's best product never leaves the ground
+### Day 3 — United's loyalty programme was worth more than United
 
-**~30s** · Stop: *"United's frequent flyer programme was worth more than United."*
+**~30s**
 
 > United's frequent flyer programme was worth more than United.
 >
-> Around twenty billion dollars — for a company the market priced near seventeen.
+> Around twenty billion dollars. The airline itself was priced near seventeen.
 >
-> Because miles cost nothing to make. The airline invents them, sells them in bulk to
-> banks, and the banks hand them to you as credit card rewards. Real cash in, for a
-> currency they printed themselves.
+> Because miles cost nothing to make. United invents them, sells them in bulk to banks, and
+> the banks hand them to you as credit card rewards. Real money in, for a currency they
+> printed themselves.
 >
-> We only know the numbers because in 2020 United needed money and borrowed five billion
+> We only know the numbers because in 2020 United was desperate and borrowed five billion
 > against it.
 >
 > **The planes are the marketing.**
 >
-> The airline is a bank that happens to fly.
+> You're not flying with an airline. You're flying with a bank that owns planes.
 
-`ON-SCREEN` `MILES: printed free` · `SOLD TO BANKS: real cash` · `$20B programme / $17B airline`
-`VISUAL` Plane greyed out; the mile-mint glowing.
-`VERIFIED` MileagePlus ~$20B vs ~$17B market cap; $5B loan secured against it in 2020.
+`ON-SCREEN` `MILES: printed free` · `$20B programme / $17B airline` · `$5B loan, 2020`
+`VERIFIED` MileagePlus ~$20B (2019) vs ~$17B market cap; $5B raised against it in 2020.
 
 ---
 
-### Day 4 — Why "0% for 24 months" is the most expensive money in retail
+### Day 4 — The 0% offer that ends in a $1,200 bill
 
-**~33s** · Stop: *"You owe fifty dollars. The bill says six hundred."*
+**~32s**
 
-> You owe fifty dollars. The bill says six hundred.
+> You owe fifty dollars. The bill says twelve hundred.
 >
-> Zero percent for twenty-four months on a two-thousand-dollar sofa. You paid it down
-> almost all the way. You missed the deadline by one payment.
+> Zero percent for twenty-four months on a two-thousand-dollar sofa. You paid it almost all
+> the way down, then missed the final payment.
 >
-> A normal loan charges interest as you go. This one was charging the whole time,
-> invisibly — and only forgives it if you clear every cent before the buzzer. Miss by a
-> dollar and two years of interest lands at once, calculated on the full two thousand.
-> Not on the fifty you still owed.
+> A normal loan charges interest as you go. This one was charging the entire time,
+> invisibly — and only forgives it if you clear every cent before the deadline. Miss by a
+> dollar and two years of interest lands at once, calculated on the full two thousand. Not
+> on the fifty you still owed.
 >
 > **It was never zero percent.**
 >
-> The offer wasn't the discount. The deadline was.
+> You weren't offered a discount. You were offered a deadline.
 
-`ON-SCREEN` `$50 remaining` → `$600 charged` · `interest on $2,000, not $50` · `DEFERRED INTEREST`
-`VISUAL` A shadow balance accruing invisibly behind the visible one, then dropping on it.
-`VERIFIED` Deferred interest applies to 100% of the original balance. CFPB-flagged.
+`ON-SCREEN` `$50 remaining` → `$1,200 charged` · `interest on $2,000, not $50` · `DEFERRED INTEREST`
+`VERIFIED` Deferred interest applies to 100% of the original balance; CFPB-flagged as
+consumer-harm risk. $1,200 assumes 29.99% APR over 24 months on $2,000 — state the
+assumption on screen if you show the number.
 
 ---
 
-### Day 5 — Why your insurer is happy to lose money on you
+### Day 5 — Warren Buffett didn't buy insurance companies for the insurance
 
-**~30s** · Stop: *"Your insurer wants to lose money on your policy."*
+**~32s**
 
-> Your insurer is fine losing money on your policy. Many do it on purpose, year after
-> year — paying out more in claims than they collect in premiums.
+> Warren Buffett didn't buy insurance companies for the insurance.
 >
-> Because premiums were never the product.
+> Insurers routinely pay out more in claims than they take in premiums — many lose money on
+> the actual business, deliberately, year after year.
 >
-> You pay today. The claim arrives in ten years, or never. In between, they are sitting on
-> a mountain of your money, investing it. They'll owe most of it back eventually. Every
-> dollar it earns until then is theirs.
+> Because the premium was never the product. You pay today. The claim arrives in ten years,
+> or never. In between they are sitting on a mountain of your money, investing it. They'll
+> owe most of it back eventually. Every dollar it earns until then is theirs.
 >
-> Buffett built Berkshire Hathaway on this. He didn't call it insurance.
+> Berkshire Hathaway was built on exactly this.
 >
 > **He called it the float.**
 >
-> You're not the customer. You're the funding.
+> He wasn't selling you insurance. He was borrowing from you at less than zero.
 
 `ON-SCREEN` `premiums in < claims out` · `the gap = invested` · `THE FLOAT`
-`VISUAL` Money pool feeding a long delay pipe; returns siphoned off mid-pipe.
 
 ---
 
-### Day 6 — Why the same $500 repair costs her $1,800
+### Day 6 — Wells Fargo took your biggest payment first, on purpose
 
-**~33s** · Stop: *"Same car. Same repair. Two prices."*
+**~33s**
 
-> Same car. Same five-hundred-dollar repair. Two completely different prices.
+> Wells Fargo took your biggest payment first. On purpose.
 >
-> He pays from savings. Five hundred dollars. Done.
+> Say you have a hundred dollars and four transactions — three small ones and your rent. In
+> the order they happened, you overdraft once. Wells Fargo reordered them highest-first, so
+> rent drained the account and all three small purchases bounced behind it.
 >
-> She has none. Payday loan — fifteen dollars per hundred, two weeks. That is an annual
-> rate of nearly four hundred percent. Rent comes first, so she rolls it twice. Covering
-> the gap she misses a card payment, and her rate resets higher. Permanently.
+> One overdraft became four. Thirty-five dollars each.
 >
-> Same repair. Around eighteen hundred dollars.
+> A judge found an internal memo predicting the change would earn them forty million
+> dollars a year. The court ordered two hundred and three million returned.
 >
-> She didn't choose worse. She was charged more for the identical thing.
+> **They called it high-to-low reordering.**
 >
-> **Economists call it the poverty premium.**
->
-> Being broke is the most expensive thing she owns.
+> It wasn't a glitch. It was the product.
 
-`ON-SCREEN` `$500` vs `$1,800` · `same repair` · `THE POVERTY PREMIUM`
-`VISUAL` Split screen, two identical invoices, two wildly different totals.
-`VERIFIED` CFPB: $15 per $100 over two weeks = 391% APR.
-`NOTE` Strongest comment-driver of the seven. Expect argument — that's the point.
+`ON-SCREEN` `1 overdraft → 4` · `internal memo: +$40M/year` · `$203M returned`
+`VERIFIED` *Gutierrez v. Wells Fargo*, Judge Alsup 2010; $203M restitution, final on appeal
+April 2016; the $40M/year internal memo is cited in the opinion.
+`NOTE` Strongest script of the seven — named villain, a document, and two hard numbers.
+This is the one to lead the week with if you only test one.
 
 ---
 
-### Day 7 — Why paying off your mortgage early can make you poorer
+### Day 7 — Paying your mortgage off early can make you poorer
 
-**~36s** · Stop: *"Paying your house off early…"*
+**~32s**
 
 > Paying your house off early can be the most expensive safe thing you ever do.
 >
@@ -248,41 +281,40 @@ No greeting. No CTA. No outro. Cold open, hard close.
 > Every extra dollar you throw at it earns you exactly that rate. Then it's gone. Not
 > invested. Not reachable.
 >
-> Because equity is not money. You can't eat a paid-down house. Lose your income and
-> you'll be asking that same bank to lend it back — worse rate, worst possible moment.
+> Because equity isn't money. You can't eat a paid-down house. Lose your income and you'll
+> be asking that same bank to lend it back — worse rate, worst possible moment.
 >
 > **You're not buying freedom.**
 >
-> You're buying a feeling. Just check the price first.
+> You're buying a feeling. Just check the price tag first.
 
 `ON-SCREEN` `cheap · fixed · shrinking` · `but LOCKED` · `equity ≠ money`
-`VISUAL` House filling with equity while the liquid cash bar drains to empty.
-`NOTE` Ends on a sharpened take rather than v1's concession. Still honest — it concedes the
-feeling is worth something — but it picks a side, which is what makes it shareable.
+`NOTE` **The weakest of the seven and I'd say so plainly** — it's the only one with no brand
+to anchor the hook, which per §1.3 is exactly what holds the floor up. Keep it for the
+debate value, but if you want a seventh with a real anchor, swap in **"Toys R Us was killed
+by its own buyout"** — same money mechanics, famous brand, and the leveraged-buyout
+mechanism is genuinely under-told.
 
 ---
 
-## 4. Posting order
+## 5. Posting order
 
-Not 1→7. Spacing matters, because Days 2, 3 and 5 share a reveal shape:
-
-| Day | Script | Why here |
+| Day | Script | Why |
 |---|---|---|
-| Mon | **1 — Buy Borrow Die** | Widest hook, strongest concept name. Lead with it. |
-| Tue | **6 — Poverty premium** | Engagement spike early, while the week is being sampled. |
-| Wed | **3 — Airline miles** | Hard number in the first 3 words. |
-| Thu | **7 — Mortgage** | The debate. Mid-week, when comments compound. |
-| Fri | **2 — Deadbeat** | Personal — everyone watching has a card. |
-| Sat | **4 — Deferred interest** | Weekend retail mindset. |
-| Sun | **5 — The float** | Quietest concept; lowest-traffic slot. |
+| Mon | **6 — Wells Fargo** | Strongest hook, hardest numbers. Lead with your best. |
+| Tue | **1 — Musk** | Biggest pre-loaded name on the slate. |
+| Wed | **3 — United** | Hard number in the first six words. |
+| Thu | **2 — Deadbeat** | Personal; everyone watching owns a card. |
+| Fri | **4 — Deferred interest** | Rolls into weekend retail mindset. |
+| Sat | **5 — Buffett float** | Named person carries a quieter concept. |
+| Sun | **7 — Mortgage** | The debate, lowest-traffic slot, weakest anchor. |
 
-## 5. Standing notes
+## 6. Standing notes
 
-- **Don't judge any of these before 72 hours** (`CLAUDE.md`). The channel listing returns
-  date-only publish dates that run a day off — convert to views/day with the age attached.
-- **All seven are 28–36s**, so none are near the 180s Shorts cap and none trigger the 16:9
-  thumbnail requirement.
-- **Every factual claim above is now verified.** Sources are in the research doc.
-- **The format is a topic engine, not seven ideas** — every "why does [specific actor] do
-  [specific thing that sounds wrong]" is another video. That's the answer to the
-  topic-exhaustion diagnosis in `channel-reset.md`.
+- **Don't judge before 72 hours** (`CLAUDE.md`) — the channel listing's date-only publish
+  dates run a day off; convert to views/day with the age attached.
+- **All seven are 28–33s** — nowhere near the 180s cap, so no 16:9 thumbnail needed.
+- **Every factual claim is verified**; sources in `shorts-market-research-2026-08.md`.
+- **The topic engine is now "[famous brand] did [thing that contradicts the brand]"** —
+  a far larger and more reliable supply than "counterintuitive money concept," and the
+  direct answer to the topic-exhaustion diagnosis in `channel-reset.md`.

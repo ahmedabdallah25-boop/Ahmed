@@ -82,6 +82,55 @@ Its content model is not.
 
 ---
 
+## 2b. CORRECTION (third pass) — the better model, and a negative result
+
+Two searches run after the fact changed the recommendation below. Keeping §3 as written for
+the record, with this correction sitting in front of it.
+
+### The negative result
+
+I searched the faceless-outlier database for exactly the content §3 proposes — "how rich
+people avoid taxes / buy borrow die" and "credit card interest trap / banks profit from
+debt." **Neither returned a single high-performing original money-mechanics Short.** Top
+matches were car history, comedians and reddit stories; the one finance-adjacent hit was a
+Dave Ramsey clip on a 190-sub channel.
+
+So the §3 claim that money topics travel on Shorts rested on Infinite Wealth Lab — which
+§2 already establishes is re-uploaded TV drama. That's evidence courtroom scenes travel,
+not that money explainers do. I built on a foundation I'd disproved a section earlier.
+
+### The better model: Boupai
+
+| | Boupai | Under Six Minutes (§2's pick) |
+|---|---|---|
+| Subscribers | 3,870 | 6,790 |
+| Videos | 48 | 20 |
+| Over 1M views | **18 (37.5%)** | 7 (35%) |
+| **Worst performer** | **81K** | **3.8K** |
+| Total views | 47.1M | 43.6M |
+
+Comparable hit rate, but Boupai's **floor is 81K against 3.8K**, on 2.4× the sample.
+Monetized, faceless, original. Categorised *history / automotive business / commodity
+investing* — business storytelling.
+
+### Why its floor holds
+
+> When Ferrari Gave Cars For Free (3.5M) · When Honda Got Caught Copying (2.0M) · Nissan
+> Sued a Man Named Nissan (1.1M) · Jaguar Sued Their Best Customers (541K) · North Korea
+> Scammed Volvo (960K)
+
+The engine is **a famous brand doing something that contradicts the brand** — not
+"counterintuitive mechanism." The brand is a *pre-loaded hook*: "Ferrari" costs zero seconds
+to establish, and the viewer already has the stakes. A concept-led open ("deferred
+interest," "the float") burns 5–8 seconds building stakes in a format where the first second
+decides everything. That is the whole difference between an 81K floor and no floor.
+
+**Corrected recommendation: keep the mechanism-explainer format and the money topics, but
+anchor every hook on a named brand or person.** The slate in
+`shorts-week-money-mechanics.md` is rebuilt on that basis.
+
+---
+
 ## 3. The niche I'd pick: **Money Mechanics**
 
 Counterintuitive explainers about the hidden machinery of money — the Under Six Minutes
@@ -205,8 +254,14 @@ All load-bearing factual claims in the slate were checked rather than left to th
 | Payday APR | CFPB: $15 per $100 over two weeks = **391% APR**; $15/$100 is the median fee |
 | "Deadbeat" / "revolver" | Both genuine credit-card industry jargon, used as described |
 | Deferred interest | Retroactive on **100% of the original balance**; CFPB-flagged consumer-harm risk |
+| Musk margin loans | Forbes: **$62.5B** of Tesla stock pledged against **$12.5B** in loans; Tesla's board later capped pledged borrowing; ~236M of 715M shares still pledged |
+| Wells Fargo high-to-low reordering | *Gutierrez v. Wells Fargo*, Judge Alsup 2010 — reordered transactions highest-first to multiply overdraft fees; internal memo projected **+$40M/year**; **$203M** ordered returned, final on appeal April 2016 |
 
-Sources: [Skift on MileagePlus](https://skift.com/2020/06/15/how-is-united-airlines-loyalty-program-worth-22-billion/) · [CFPB payday factsheet](https://files.consumerfinance.gov/f/201304_cfpb_payday-factsheet.pdf) · [CFPB on APR](https://www.consumerfinance.gov/ask-cfpb/what-is-an-annual-percentage-rate-apr-and-why-is-it-higher-than-the-interest-rate-for-my-payday-loan-en-1625/) · [CNBC on deadbeats](https://www.cnbc.com/select/credit-card-deadbeat/) · [CFPB on promotional financing](https://www.consumerfinance.gov/about-us/blog/how-understand-special-promotional-financing-offers-credit-cards/) · [NCLC on deferred interest](https://www.nclc.org/resources/deceptive-bargain-the-hidden-time-bomb-of-deferred-interest-credit-cards/)
+**Corrected number:** the deferred-interest worked example is **~$1,200** on a $2,000
+purchase (29.99% APR × 24 months on the original balance), not the $600 written in v1/v2 —
+understated by half.
+
+Sources: [Skift on MileagePlus](https://skift.com/2020/06/15/how-is-united-airlines-loyalty-program-worth-22-billion/) · [CFPB payday factsheet](https://files.consumerfinance.gov/f/201304_cfpb_payday-factsheet.pdf) · [CFPB on APR](https://www.consumerfinance.gov/ask-cfpb/what-is-an-annual-percentage-rate-apr-and-why-is-it-higher-than-the-interest-rate-for-my-payday-loan-en-1625/) · [CNBC on deadbeats](https://www.cnbc.com/select/credit-card-deadbeat/) · [CFPB on promotional financing](https://www.consumerfinance.gov/about-us/blog/how-understand-special-promotional-financing-offers-credit-cards/) · [NCLC on deferred interest](https://www.nclc.org/resources/deceptive-bargain-the-hidden-time-bomb-of-deferred-interest-credit-cards/) · [Forbes on Musk's borrowing](https://www.forbes.com/sites/eriksherman/2025/06/05/does-elon-musks-borrowing-show-a-super-low-tesla-stock-valuation/) · [IFR on pledged shares](https://www.ifre.com/people-and-markets/2311443/a-third-of-musks-tesla-shares-still-tied-up-in-margin-loans) · [NBC on the $203M ruling](https://www.nbcnews.com/business/wells-fargo-ordered-again-pay-203-million-overdraft-case-1C9939781) · [Gutierrez v. Wells Fargo (9th Cir.)](https://law.justia.com/cases/federal/appellate-courts/ca9/10-16959/10-16959-2012-12-26.html)
 
 ### Method caveats
 
