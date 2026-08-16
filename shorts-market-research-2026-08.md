@@ -158,12 +158,57 @@ Beat 4 is the one everyone skips and it's the most important. Naming the concept
 makes the viewer feel they *learned* something rather than watched something, and it's
 what drives the comment section. Never end on a CTA — end on the name.
 
-**Target: 30–45 seconds, 90–130 words.** All well under the 180s Shorts cap, so none of
-these trigger the 16:9 thumbnail requirement in `CLAUDE.md`.
+### Duration — the number I originally got wrong
+
+I first wrote "target 30–45 seconds" without checking the durations sitting in my own
+dataset. They say something sharper. Across the 47 faceless outlier Shorts pulled:
+
+| Slice | Duration |
+|---|---|
+| Top 5 by views | 18s, 14s, 18s, 22s, 24s |
+| **Median of top 10** | **26s** |
+| Median of all 47 | 30s |
+| Under 30s / 30–60s / over 60s | 22 / 15 / 10 |
+
+The 9.8M *Survivorship Bias* short is 62 words in 18 seconds. The 15.8M top performer is
+18s; the 10.9M is 14s; an 8-second clip pulled 1.1M on a 5.6K-sub channel.
+
+**Corrected target: 28–36 seconds, 85–110 words.** Anything past 45s is fighting the
+format. All still far under the 180s Shorts cap, so none trigger the 16:9 thumbnail
+requirement in `CLAUDE.md`.
+
+### Two mechanics worth engineering deliberately
+
+- **The loop.** Shorts reward completion over 100% — the rewatch. End on a line that
+  re-frames the opening line, so the second pass lands differently.
+- **The unanswered question.** Engagement in the sample ranged 0.2%–7%. The high end
+  belonged to videos that left something for the viewer to finish. Close on a question
+  the comments can answer, not on a summary.
 
 ---
 
 ## 6. Honest caveats
+
+- **The format recommendation rests on n=1.** Under Six Minutes Studio is one channel and
+  20 videos. Its 35% hit rate is the best signal in the sample and I'd still build on it,
+  but it is not an established rule and I shouldn't have written it as one.
+- **Days 2, 3 and 5 of the slate share a reveal shape** ("the real business isn't what you
+  think"). Fine individually, repetitive in sequence — hence the spaced posting order.
+
+### Claims verified 2026-08-16
+
+All load-bearing factual claims in the slate were checked rather than left to the reader:
+
+| Claim | Finding |
+|---|---|
+| Airline loyalty worth more than the airline | United MileagePlus valued ~$20B (2019) against a ~$17B market cap; United borrowed $5B against it in 2020 |
+| Payday APR | CFPB: $15 per $100 over two weeks = **391% APR**; $15/$100 is the median fee |
+| "Deadbeat" / "revolver" | Both genuine credit-card industry jargon, used as described |
+| Deferred interest | Retroactive on **100% of the original balance**; CFPB-flagged consumer-harm risk |
+
+Sources: [Skift on MileagePlus](https://skift.com/2020/06/15/how-is-united-airlines-loyalty-program-worth-22-billion/) · [CFPB payday factsheet](https://files.consumerfinance.gov/f/201304_cfpb_payday-factsheet.pdf) · [CFPB on APR](https://www.consumerfinance.gov/ask-cfpb/what-is-an-annual-percentage-rate-apr-and-why-is-it-higher-than-the-interest-rate-for-my-payday-loan-en-1625/) · [CNBC on deadbeats](https://www.cnbc.com/select/credit-card-deadbeat/) · [CFPB on promotional financing](https://www.consumerfinance.gov/about-us/blog/how-understand-special-promotional-financing-offers-credit-cards/) · [NCLC on deferred interest](https://www.nclc.org/resources/deceptive-bargain-the-hidden-time-bomb-of-deferred-interest-credit-cards/)
+
+### Method caveats
 
 - **RPM coverage was 4/30.** The monetization flags are solid; the earnings picture is not.
 - **Nexlev revenue estimates are AdSense guesses** and looked inflated wherever I could
