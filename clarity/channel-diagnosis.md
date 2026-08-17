@@ -17,16 +17,15 @@ count, a timestamp, or a metadata field that can be read without them.
 
 ## The one-paragraph version
 
-**The channel already fixed itself — once — and nobody has seen it yet.** The 11 long-form videos
-published in May carry the marks of templated AI generation, including *Christian* phrasing left
-sitting in a Quran channel's descriptions, and **zero tags on any of them**. A viewer publicly
-flagged the best-performing video with a comment reading "AI BE AWARE". Then on 16 August a new
-video went up that is a different channel in everything but the name: 28 researched tags, a
-chaptered description, verse-by-verse sourcing, and a production note stating the Arabic is set
-from a verified mushaf and the illustration is hand-drawn. **The problem is not ability.** It is
-that 2,473 lifetime views are attached to a body of work the channel has already outgrown, and a
-publishing pattern — a 10-video burst, then a two-month blackout — that gave YouTube no reason to
-keep testing it.
+**The channel already fixed itself — once — and nobody has seen it yet.** **Eleven of sixteen
+uploads carry no tags at all**, including the 846-view best performer, whose description also
+contains *Christian* phrasing left in a Quran channel's copy — and a viewer publicly flagged that
+video with a comment reading "AI BE AWARE". Then on 16 August a new video went up that is a
+different channel in everything but the name: 28 researched tags, a chaptered description,
+verse-by-verse sourcing, and a production note stating the Arabic is set from a verified mushaf
+and the illustration is hand-drawn. **The problem is not ability.** It is that 2,473 lifetime
+views are attached to a body of work the channel has already outgrown, and a publishing pattern —
+a ten-video burst, then a two-month blackout — that gave YouTube no reason to keep testing it.
 
 ---
 
@@ -36,16 +35,16 @@ keep testing it.
 
 | Window | What shipped | Views |
 |---|---|---|
-| **May 7–14** (8 days) | **10 long-form videos** | 1,791 |
-| May 21 | 1 long-form | 14 |
+| **May 6–14** (9 days) | **10 long-form videos** | 1,792 |
+| May 20 | 1 long-form | 14 |
 | Jun 8 | 1 Short | 476 |
 | Jun 13 | 1 Short | 158 |
-| Jun 17 | 2 long-form | 44 |
-| **Jun 17 → Aug 9** | **nothing — 53-day blackout** | — |
+| Jun 15 | 1 long-form | 30 |
+| **Jun 15 → Aug 9** | **nothing — 55-day blackout** | — |
 | Aug 9 | 1 Short, titled `9 August 2026` | 3 |
 | Aug 16 | 1 long-form (the new standard) | 17 (12h old) |
 
-Ten videos in eight days is not a launch, it is a dump. YouTube tests each new upload against a
+Ten videos in nine days is not a launch, it is a dump. YouTube tests each new upload against a
 small audience; ten at once on a 41-subscriber channel splits that test ten ways and exhausts the
 only audience available. Then the channel went quiet for the eight weeks when the initial signal
 was worth compounding.
@@ -54,7 +53,7 @@ was worth compounding.
 
 | Published | Video | Length | Views |
 |---|---|---|---|
-| May 7 | Money in the Quran | 7:46 | **225** |
+| May 6 | Money in the Quran | 7:46 | **225** |
 | May 8 | Every Minor Prophet Explained | 9:17 | **192** |
 | May 9 | **What the Quran Actually Says About Anger** | 6:17 | **846** |
 | May 9 | Every Plague of Egypt Explained | 4:33 | **189** |
@@ -64,7 +63,7 @@ was worth compounding.
 | May 13 | The Kind of woman the Quran Warns Men about | 6:17 | 55 |
 | May 14 | What the Quran Really Says About Masturbation | 6:30 | 64 |
 | May 14 | Allah Already Told You How to Be Rich | 6:54 | 39 |
-| May 21 | I Did Everything Right… So Why Does It Still Feel Like Allah Hates Me? | 7:14 | 14 |
+| May 20 | I Did Everything Right… So Why Does It Still Feel Like Allah Hates Me? | 7:14 | 14 |
 
 **First five uploads: 1,577 views. Next six: 229.** A 7x collapse inside eleven days, on the same
 channel, same format, same length band, same title formula. Topic does not explain it — "Anger"
@@ -80,11 +79,11 @@ correctable fact on this channel.
 |---|---|---|---|
 | Jun 8 | Short — "This 1 Secret Verse Will Change Your Life Forever" | 476 | **6.8** |
 | Jun 13 | Short — "The Harsh Truth About Greatness" | 158 | **2.4** |
-| Jun 17 | Long-form — "What Did the Prophet ﷺ Actually Eat Every Day?" | 30 | 0.5 |
-| Jun 17 | Long-form — "I Did Everything Right…" | 14 | 0.2 |
+| Jun 15 | Long-form — "What Did the Prophet ﷺ Actually Eat Every Day?" | 30 | 0.5 |
+| May 20 | Long-form — "I Did Everything Right…" | 14 | 0.2 |
 
-Same fortnight, same channel. The Shorts took **roughly 14x the daily rate** of the long-form
-published beside them. This does *not* mean abandon long-form — the channel's single best video
+One week apart for the June three, same channel. The Shorts took **roughly 14x the daily rate**
+of the long-form published beside them. This does *not* mean abandon long-form — the channel's single best video
 is 6:17 of long-form, and long-form is where the subject actually lives. It means Shorts are the
 working distribution surface right now and are not being used.
 
@@ -94,8 +93,13 @@ working distribution surface right now and are not being used.
 
 ### 1. AI template leakage — the credibility problem, and it is public
 
-The May descriptions contain phrasing that does not belong on a Quran channel. From the
-description of `cjtKWsFZbcg`, the channel's **best video**:
+**Scope, measured across all 16 descriptions on 2026-08-17: exactly one is affected.** An earlier
+draft of this file implied the May batch generally; that was based on a two-video sample and was
+wrong. The leak is confined to `cjtKWsFZbcg` — which happens to be the video a third of the
+channel's lifetime audience watched, so the narrower scope makes it *more* fixable, not less
+serious.
+
+From that description:
 
 > ▸ The cross is not the answer here — the mercy of Allah and the example of the Prophet ﷺ is
 
@@ -115,14 +119,45 @@ This is the one finding that is not about reach. Reach problems cost views; this
 a channel whose entire proposition is that it explains the Quran honestly. It sits on the video
 that 846 people — a third of the channel's lifetime audience — actually watched.
 
-### 2. Zero tags across the entire May batch
+### 2. Eleven of sixteen uploads have zero tags
 
-`cjtKWsFZbcg` returns `keywords: []`. No tags at all, on the best-performing video, while its
-description runs to 3,000 characters and ends with a hand-written "RELATED SEARCHES" paragraph
-listing 25 search phrases — the exact terms that should have *been* the tags.
+Audited across all 16 uploads with the channel's own credentials on 2026-08-17 — this replaces an
+earlier two-video sample, and it narrows the claim: it is **not** the whole May batch.
 
-The newest upload has **28 well-chosen tags**. So this is already understood; it just was not
-applied retroactively.
+| Published | Tags | Desc chars | Views | Video |
+|---|---:|---:|---:|---|
+| May 6 | **1** | 3,965 | 225 | Money in the Quran |
+| May 8 | 0 | 3,376 | 192 | Every Minor Prophet Explained |
+| May 9 | 0 | 3,526 | **846** | What the Quran Actually Says About Anger |
+| May 9 | 0 | 3,757 | 189 | Every Plague of Egypt Explained |
+| May 10 | 0 | 4,649 | 125 | The Quran Verse That Stops Anxiety |
+| May 11 | 0 | 4,241 | 42 | …About Depression |
+| May 12 | 0 | 3,137 | 15 | Allah's Promises |
+| May 13 | 0 | 3,912 | 55 | The Kind of Woman… |
+| May 14 | 0 | 2,811 | 39 | How to Be Rich |
+| May 14 | **18** | 2,152 | 64 | …About Masturbation |
+| May 20 | 0 | 1,820 | 14 | …Allah Hates Me |
+| Jun 8 | 0 | **0** | **476** | Short — This 1 Secret Verse |
+| Jun 13 | 0 | **48** | 158 | Short — The Harsh Truth About Greatness |
+| Jun 15 | **20** | 2,253 | 30 | What Did the Prophet ﷺ Eat |
+| Aug 9 | **12** | 1,108 | 3 | `9 August 2026` |
+| Aug 16 | **28** | 1,660 | 17 | The Jinn Couldn't See a Dead King |
+
+**11 of 16 carry no tags at all**, including the 846-view best performer — whose description runs
+3,526 characters and ends with a hand-written "RELATED SEARCHES" paragraph listing 25 search
+phrases. Those are the tags. They were written, then left in prose.
+
+Two May videos *do* have tags (1 and 18), so tagging was never fully absent — it was applied
+erratically, then properly from mid-June onward. The newest upload has 28.
+
+### 2b. The best Short has no description at all
+
+`4N-MXuYjDUA` — **476 views, the channel's second-best video by any measure and its best per-day
+rate — has a description of exactly zero characters.** The Jun 13 Short has 48. Both outperformed
+every long-form video published near them, on no metadata whatsoever.
+
+That is the cheapest unclaimed win on the channel: the format that is demonstrably working is the
+one carrying no indexable text.
 
 ### 3. Channel-level surfaces are empty
 
@@ -166,19 +201,20 @@ accessibility, not a claim that captions will restore reach.
 
 In priority order, highest value first.
 
-1. **Repair the AI-template leakage in the May descriptions.** Strip the Christian register and
-   the "God bless" pinned comments. This is a credibility fix, not a growth tactic — it is first
-   because it is the only item that is actively costing the channel something on the video most
-   people see.
-2. **Add tags to all 11 May videos.** The "RELATED SEARCHES" paragraph already sitting in each
-   description is the tag list; it just needs moving into the tags field. Free, and the newest
-   video shows the standard.
-3. **Re-title `luA2lpVzvsI`** from `9 August 2026` to something that describes the Short.
-4. **Set channel keywords and add a banner.** One-time, zero risk.
-5. **Fix the cadence — this is the actual growth lever.** One long-form per week at the 16 August
+1. **Repair the one leaking description** (`cjtKWsFZbcg`) and the "God bless" pinned comment. A
+   single edit. It is first because it is the only item actively costing the channel something,
+   on the video most people see.
+2. **Write a description for `4N-MXuYjDUA`** — 476 views, zero characters. The best
+   effort-to-return item on the channel.
+3. **Add tags to the 11 untagged uploads.** The "RELATED SEARCHES" paragraph already sitting in
+   each long-form description is the tag list; it needs moving into the tags field. Free, and the
+   newest video shows the standard.
+4. **Re-title `luA2lpVzvsI`** from `9 August 2026` to something that describes the Short.
+5. **Set channel keywords and add a banner.** One-time, zero risk.
+6. **Fix the cadence — this is the actual growth lever.** One long-form per week at the 16 August
    standard, plus Shorts in between, beats another ten-video dump by a wide margin. The burst is
    what broke distribution; consistency is what rebuilds it.
-6. **Do not repackage the winners' titles.** `cjtKWsFZbcg` (846), `GjztcxZGQTI` (225),
+7. **Do not repackage the winners' titles.** `cjtKWsFZbcg` (846), `GjztcxZGQTI` (225),
    `_stswAi-79k` (192), `r-9UaBtOy98` (189) are the channel's only proven titles. Their
    descriptions need the leak repair; their titles must not move. Retitling a settled video was
    measured at **+0 views over 21.7 hours** on channel 1 — that finding *does* transfer, because
