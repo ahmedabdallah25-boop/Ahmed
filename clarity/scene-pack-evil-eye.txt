@@ -1,7 +1,8 @@
 ================================================================================
 CLARITY IN THE QURAN — SCRIPT & SCENE PACK
 "The Evil Eye Is Real. The Quran Never Tells You Who Did It."
-Style: minimalist ink & watercolor sketch on parchment, storybook | 16:9 1920x1080 | 6:54 | 30 scenes, ~70 visual events
+Style: minimalist ink & watercolor sketch on parchment, storybook | 16:9 1920x1080 | 6:54
+30 scenes = 28 renders + 2 typeset frames | ~68 visual events
 Playlist on publish: Questions Muslims Actually Ask  (+ cross-link to the jinn video)
 Drafted 2026-08-17
 ================================================================================
@@ -45,9 +46,10 @@ WHY THIS TOPIC, AND WHY NOW
 - **It has a real turn.** Most content on this subject either dismisses 'ayn or
   sells protection from it. This does neither, and the payoff at Scene 27 —
   that the Quran addresses the *envier* far more than the envied — is the thing
-  nobody watching expects. That is what makes it worth 9 minutes.
-- **Length.** 9:00 sits between your best performer (6:17) and your new standard
-  (10:14). Do not pad it to cross 10 minutes. Nothing in your data rewards that.
+  nobody watching expects. That is what makes it worth its 6:54.
+- **Length.** 6:54, measured from the word count — see RUNTIME AND VISUAL DENSITY
+  below. That sits right beside your best performer (6:17). Do not pad it toward
+  the 10:14 of the newest upload; nothing in your data rewards length on its own.
 
 
 THE ARGUMENT IN ONE LINE
@@ -351,7 +353,9 @@ SCENE 06 · 1:05–1:14 · THE WORD
 VO: The word is ḥasad. Three letters — ḥā, sīn, dāl. And it does not mean wanting
     what someone has.
 ON SCREEN: ح س د  ·  ḤASAD
-IMAGE: three ink letterforms suggested as abstract brush marks, not legible script
+IMAGE: [NO RENDER — typeset frame] the three letters alone, very large, centred on
+    parchment, slow push-in. This is a text beat; an illustration would compete with
+    the word itself, and it breaks the run of abstract frames at 04-05-06.
 🎵 mood: Floating · energy 2 · search: "contemplative sparse piano single notes"
 
 SCENE 07 · 1:14–1:33
@@ -377,6 +381,9 @@ ON SCREEN: Al-Qalam 68:51  ·  *classical commentators read this as 'ayn — the
     does not use the word*
 IMAGE: a stone at the very edge of a ledge, about to go
 🎵 mood: Suspense · energy 4 · one swell, then drop
+   IF YOU CUT THIS SCENE: move this swell onto Scene 08's last line ("a state someone
+   is in"). Act I has no other peak, and without one the first two minutes run flat
+   into the Al-Falaq section.
 
 --------------------------------------------------------------------------------
 ACT II — WHAT THE TEXT ACTUALLY DOES  (Scenes 10–22 · 2:40–6:30)
@@ -398,7 +405,7 @@ SCENE 12 · 2:43–2:56 · MUSIC: OUT
 VO: Four things named. Four refuges. And the last of them: wa min sharri ḥāsidin
     idhā ḥasad — from the evil of an envier, when he envies.
 ON SCREEN: وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ  ·  Al-Falaq 113:5
-IMAGE: four faint marks on paper, the fourth darker than the others
+IMAGE: four stones set into a low wall, the fourth freshly placed and darker
 🎵 Still out. BED B returns under Scene 13, quietly.
 
 SCENE 13 · 2:56–3:12 · THE HINGE
@@ -470,7 +477,8 @@ SCENE 22 · 4:41–4:51
 VO: That is the Quran's posture in one line. Cover the blessing. Take the
     precaution. Ask Allah. Accuse no one.
 ON SCREEN: COVER · PROTECT · ASK · ACCUSE NO ONE
-IMAGE: four small ink marks in a row, evenly spaced, calm
+IMAGE: four small objects in a row — a folded cloth, a small arch, an open palm, and
+    an empty space where a fourth should be
 🎵 BED B resolves and hands over to BED C on the last word
 
 --------------------------------------------------------------------------------
@@ -481,7 +489,7 @@ SCENE 23 · 4:51–4:59 · BED C BEGINS
 VO: Now hold that against what happens when somebody tells you they can see who
     did it.
 ON SCREEN: —
-IMAGE: a single curtained doorway, curtain drawn, alone on the page
+IMAGE: a single oversized keyhole, alone on the page, nothing visible through it
 🎵 BED C · mood: Dark + Suspense · energy 4 · the darkness returns, but harder-edged
 
 SCENE 24 · 4:59–5:23 · CROSS-REFERENCE
@@ -491,7 +499,7 @@ VO: If you watched the last video on this channel, you already know the shape of
     and for the same reason.
 ON SCREEN: *see: "The Jinn Couldn't See a Dead King"*  (link in description)
 IMAGE: two identical doors side by side
-    (continuity: reuse the Scene 23 door design — same seed)
+    (continuity: reuse the Scene 20 doorway design — same seed)
 🎵 mood: Restless · energy 5
 
 SCENE 25 · 5:23–5:37 · MUSIC: OUT
@@ -505,7 +513,7 @@ SCENE 26 · 5:37–5:44
 VO: Al-Falaq and An-Nas. Eleven verses between them. No intermediary, no
     appointment, no fee.
 ON SCREEN: Al-Falaq 113  ·  An-Nas 114   [VERIFY the verse count you state]
-IMAGE: two short columns of ink marks, side by side, small and unadorned
+IMAGE: two facing pages of a small open book, both pages short
 🎵 BED C · mood: Hopeful + Peaceful · energy 4 · the resolve begins
 
 SCENE 27 · 5:44–6:11 · THE TURN — LAND THIS ONE
