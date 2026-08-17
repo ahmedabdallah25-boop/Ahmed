@@ -1,0 +1,42 @@
+{
+  "_comment": "Clarity in the Quran playlist structure, 2026-08-17. The channel had ZERO playlists against 13 long-form videos. Created by automation/clarity_playlists.py.",
+
+  "_why_playlists": "This is a long-form channel by the owner's explicit direction (2026-08-17: 'No need shorts, I need this to remain a long form channel'), and playlists are the single largest structural lever long-form has that Shorts does not. Three effects: autoplay carries a viewer from one video into the next, so session time compounds instead of ending at one video; a playlist is its own indexed entity that ranks in search separately from the videos in it; and grouping related uploads gives YouTube a topic-cluster signal a flat upload feed never provides.",
+
+  "_ordering": "Each list opens with its strongest performer. A playlist's first video is what carries the rest — YouTube surfaces the playlist through it, and a viewer who arrives on a proven video is the one most likely to continue. Order after that is descending views, so the drop-off is gradual rather than a cliff.",
+
+  "_naming": "Titles are written for search intent rather than for internal tidiness, because the playlist title is itself indexed. 'What the Quran Says About Your Emotions' is a phrase people type; 'Emotions Series' is not.",
+
+  "expect_channel_id": "UC0eBu0ZXcF20pTAG3lUnPXA",
+
+  "playlists": [
+    {
+      "title": "What the Quran Says About Your Emotions",
+      "description": "Anger, anxiety, depression, and the feeling that Allah has turned away — what the Quran actually says about each, verse by verse, in plain language.\n\nNo jargon. No rulings. Just the text and what it means.",
+      "_why": "The channel's strongest cluster by a wide margin: 1,027 of 2,473 lifetime views sit in these four. Anger alone carries 846 and leads the list, so the playlist has a real entry point rather than a cold start.",
+      "video_ids": ["cjtKWsFZbcg", "StCW3ERkWwc", "QOwWWwiRn_Q", "IEgctgKEjEU"]
+    },
+    {
+      "title": "Stories of the Prophets in the Quran",
+      "description": "The prophets, the nations before us, and the patterns the Quran repeats on purpose — explained verse by verse.\n\nEvery episode traces the story back to the Arabic and the ayat it comes from.",
+      "_why": "Two 190-view videos plus the newest upload, which covers Sulayman and the jinn and belongs here on subject. Gives the 16 August video — the best-packaged on the channel — a route to viewers who arrive on the older two.",
+      "video_ids": ["_stswAi-79k", "r-9UaBtOy98", "sbFXFoL1-5A"]
+    },
+    {
+      "title": "Money and Provision in the Quran",
+      "description": "Wealth, rizq, riba and barakah — what the Quran says about money, and the Arabic that changes how the verses read.\n\nFor anyone who has wondered whether it is allowed to want more.",
+      "_why": "225-view opener. A tight, high-intent pair: people searching Islamic money questions are a distinct audience from people searching emotional ones, and mixing them would weaken both lists.",
+      "video_ids": ["GjztcxZGQTI", "NOg4pWbPSCc"]
+    },
+    {
+      "title": "Questions Muslims Actually Ask",
+      "description": "The questions people search for privately and rarely ask out loud — answered from the Quran, without judgement and without a ruling.\n\nWhat the text says, and what it does not.",
+      "_why": "The remaining four, which share an intent rather than a topic: each is a private question someone types into a search bar. Naming that honestly is what makes the list findable.",
+      "video_ids": ["cROgb0utEKs", "QNlRJcyY4LU", "3vUgLKyo-0g", "_KqQIpiuBsg"]
+    }
+  ],
+
+  "_coverage": "All 13 long-form uploads appear in exactly one playlist. The three Shorts are deliberately excluded — the owner has set a long-form direction, and mixing Shorts into these lists would break the autoplay run that is the whole point.",
+
+  "_privacy": "Playlists are created PUBLIC. A private playlist is invisible to search and to autoplay, which would defeat every reason for making them."
+}
