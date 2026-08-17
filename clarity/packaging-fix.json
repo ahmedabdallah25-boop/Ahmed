@@ -1,110 +1,230 @@
 {
   "_comment": "Clarity in the Quran (@ClarityInTheQuran, UC0eBu0ZXcF20pTAG3lUnPXA) packaging fix, 2026-08-17. Built from clarity/channel-diagnosis.md. Applied by automation/clarity_packaging.py.",
-
   "expect_channel_id": "UC0eBu0ZXcF20pTAG3lUnPXA",
   "_expect_channel_id": "Enforced before any write: the script resolves the authenticated channel with mine=true and aborts unless it equals this. Three channels share this repo and one wrong token silently repackages the wrong one.",
-
   "channel_id": "UC0eBu0ZXcF20pTAG3lUnPXA",
   "handle": "@ClarityInTheQuran",
-
   "_tags_provenance": "IMPORTANT — these tags were WRITTEN, not harvested. The diagnosis first claimed the 'RELATED SEARCHES' paragraph in each description could simply be moved into the tags field. Testing that on the real descriptions disproved it: those paragraphs are flowing prose, so a mechanical extract yields fragments like 'this video was made for you', 'this study goes deep into all of it' and 'or is it allowed to be rich in Islam', and QNlRJcyY4LU yields nothing at all. Bad tags are worse than none — they spend the 500-char field on noise. Each list below is hand-written from the video's actual subject, using the harvested phrases only as raw material.",
-
   "_tag_budget": "YouTube caps the entire tags field at 500 characters and rejects the whole update with `invalidTags` past it. A tag containing a space is sent quoted, costing two extra characters. clarity_packaging.py budgets 460 and drops overflow rather than failing the write.",
-
   "set_tags": [
     {
       "video_id": "GjztcxZGQTI",
       "_why": "225 views, the channel's 3rd best. Currently ONE tag.",
-      "tags": ["riba in the quran", "what does the quran say about money", "is it haram to be rich",
-               "barakah in wealth", "qarun story", "zakat explained", "halal wealth in islam",
-               "quran on wealth", "khalifah meaning", "goodly loan to allah", "quran money verses",
-               "muslim money mindset", "tafsir", "quran explained"]
+      "tags": [
+        "riba in the quran",
+        "what does the quran say about money",
+        "is it haram to be rich",
+        "barakah in wealth",
+        "qarun story",
+        "zakat explained",
+        "halal wealth in islam",
+        "quran on wealth",
+        "khalifah meaning",
+        "goodly loan to allah",
+        "quran money verses",
+        "muslim money mindset",
+        "tafsir",
+        "quran explained"
+      ]
     },
     {
       "video_id": "_stswAi-79k",
       "_why": "192 views. Zero tags.",
-      "tags": ["prophets in the quran", "stories of the prophets", "minor prophets in islam",
-               "nuh hud salih", "musa and firawn", "yunus and the whale",
-               "why the quran repeats stories", "surah yusuf 111", "previous nations quran",
-               "quranic history", "tafsir", "islamic stories", "quran explained"]
+      "tags": [
+        "prophets in the quran",
+        "stories of the prophets",
+        "minor prophets in islam",
+        "nuh hud salih",
+        "musa and firawn",
+        "yunus and the whale",
+        "why the quran repeats stories",
+        "surah yusuf 111",
+        "previous nations quran",
+        "quranic history",
+        "tafsir",
+        "islamic stories",
+        "quran explained"
+      ]
     },
     {
       "video_id": "cjtKWsFZbcg",
       "_why": "846 views — the channel's best. PROTECTED: title and description body must not move. Tags are additive and change no existing text, and the description edit below is a defect repair, not repackaging.",
-      "tags": ["what does the quran say about anger", "controlling anger in islam",
-               "surah aal e imran 134", "hadith about anger", "is anger a sin in islam",
-               "al haleem meaning", "hilm in islam", "ghadab meaning", "kazimin al ghayz",
-               "prophet muhammad on anger", "quran on emotions", "tafsir", "quran explained"]
+      "tags": [
+        "what does the quran say about anger",
+        "controlling anger in islam",
+        "surah aal e imran 134",
+        "hadith about anger",
+        "is anger a sin in islam",
+        "al haleem meaning",
+        "hilm in islam",
+        "ghadab meaning",
+        "kazimin al ghayz",
+        "prophet muhammad on anger",
+        "quran on emotions",
+        "tafsir",
+        "quran explained"
+      ]
     },
     {
       "video_id": "r-9UaBtOy98",
       "_why": "189 views. Zero tags.",
-      "tags": ["plagues of egypt in islam", "musa and firaun", "pharaoh in the quran",
-               "egyptian gods quran", "tawhid lessons", "story of musa",
-               "why allah hardened pharaohs heart", "islamic history egypt", "tafsir",
-               "quran explained", "quranic stories"]
+      "tags": [
+        "plagues of egypt in islam",
+        "musa and firaun",
+        "pharaoh in the quran",
+        "egyptian gods quran",
+        "tawhid lessons",
+        "story of musa",
+        "why allah hardened pharaohs heart",
+        "islamic history egypt",
+        "tafsir",
+        "quran explained",
+        "quranic stories"
+      ]
     },
     {
       "video_id": "StCW3ERkWwc",
       "_why": "125 views. Zero tags, and no RELATED SEARCHES block to draw on.",
-      "tags": ["quran verse for anxiety", "anxiety in islam", "islamic remedy for anxiety",
-               "quran for peace of mind", "dua for anxiety", "surah for anxiety",
-               "mental health in islam", "tawakkul", "worry in islam", "quran comfort",
-               "islamic reminder", "tafsir"]
+      "tags": [
+        "quran verse for anxiety",
+        "anxiety in islam",
+        "islamic remedy for anxiety",
+        "quran for peace of mind",
+        "dua for anxiety",
+        "surah for anxiety",
+        "mental health in islam",
+        "tawakkul",
+        "worry in islam",
+        "quran comfort",
+        "islamic reminder",
+        "tafsir"
+      ]
     },
     {
       "video_id": "QOwWWwiRn_Q",
       "_why": "42 views. Zero tags, no RELATED SEARCHES block.",
-      "tags": ["depression in islam", "quran on depression", "is depression a sin in islam",
-               "mental health islam", "sadness in the quran", "prophet yaqub grief",
-               "islamic view of depression", "dua for sadness", "hopelessness in islam",
-               "quran comfort", "tafsir"]
+      "tags": [
+        "depression in islam",
+        "quran on depression",
+        "is depression a sin in islam",
+        "mental health islam",
+        "sadness in the quran",
+        "prophet yaqub grief",
+        "islamic view of depression",
+        "dua for sadness",
+        "hopelessness in islam",
+        "quran comfort",
+        "tafsir"
+      ]
     },
     {
       "video_id": "_KqQIpiuBsg",
       "_why": "15 views. Zero tags.",
-      "tags": ["promises of allah in the quran", "rope of allah meaning", "al hafiz meaning",
-               "ayat al kursi explained", "tawakkul", "grief in islam",
-               "how allah protects believers", "quranic comfort", "trust in allah",
-               "islamic word study", "tafsir"]
+      "tags": [
+        "promises of allah in the quran",
+        "rope of allah meaning",
+        "al hafiz meaning",
+        "ayat al kursi explained",
+        "tawakkul",
+        "grief in islam",
+        "how allah protects believers",
+        "quranic comfort",
+        "trust in allah",
+        "islamic word study",
+        "tafsir"
+      ]
     },
     {
       "video_id": "QNlRJcyY4LU",
       "_why": "55 views. Zero tags. Its RELATED SEARCHES block yields nothing extractable — these are written from the subject.",
-      "tags": ["marriage in islam", "choosing a spouse in islam", "quran on marriage",
-               "islamic marriage advice", "what the quran says about women",
-               "muslim marriage guidance", "surah an nisa", "character in islam",
-               "islamic relationship advice", "tafsir", "quran explained"]
+      "tags": [
+        "marriage in islam",
+        "choosing a spouse in islam",
+        "quran on marriage",
+        "islamic marriage advice",
+        "what the quran says about women",
+        "muslim marriage guidance",
+        "surah an nisa",
+        "character in islam",
+        "islamic relationship advice",
+        "tafsir",
+        "quran explained"
+      ]
     },
     {
       "video_id": "NOg4pWbPSCc",
       "_why": "39 views. Zero tags, no RELATED SEARCHES block.",
-      "tags": ["how to be rich in islam", "wealth in the quran", "barakah in rizq", "halal income",
-               "provision from allah", "rizq increase", "islamic wealth principles",
-               "quran on provision", "dua for wealth", "muslim money", "tafsir"]
+      "tags": [
+        "how to be rich in islam",
+        "wealth in the quran",
+        "barakah in rizq",
+        "halal income",
+        "provision from allah",
+        "rizq increase",
+        "islamic wealth principles",
+        "quran on provision",
+        "dua for wealth",
+        "muslim money",
+        "tafsir"
+      ]
     },
     {
       "video_id": "IEgctgKEjEU",
       "_why": "14 views. Zero tags, no RELATED SEARCHES block.",
-      "tags": ["does allah hate me", "feeling abandoned by allah", "why do i feel far from allah",
-               "trials in islam", "sabr", "hardship in the quran",
-               "allah tests those he loves", "spiritual struggle islam", "quran on suffering",
-               "islamic reminder", "tafsir"]
+      "tags": [
+        "does allah hate me",
+        "feeling abandoned by allah",
+        "why do i feel far from allah",
+        "trials in islam",
+        "sabr",
+        "hardship in the quran",
+        "allah tests those he loves",
+        "spiritual struggle islam",
+        "quran on suffering",
+        "islamic reminder",
+        "tafsir"
+      ]
     },
     {
       "video_id": "4N-MXuYjDUA",
       "_why": "476 views — the channel's best views/day of anything, and its best Short. Zero tags AND a zero-character description. Highest effort-to-return item here.",
-      "tags": ["quran verse", "islamic reminder", "quran shorts", "life changing verse", "tafsir",
-               "deen", "muslim shorts", "quran explained", "islamic motivation"]
+      "tags": [
+        "quran verse",
+        "islamic reminder",
+        "quran shorts",
+        "life changing verse",
+        "tafsir",
+        "deen",
+        "muslim shorts",
+        "quran explained",
+        "islamic motivation"
+      ]
     },
     {
       "video_id": "-WidIRhzTLI",
       "_why": "158 views. Zero tags.",
-      "tags": ["greatness in islam", "islamic motivation", "quran on ambition", "muslim mindset",
-               "islamic reminder", "deen", "quran shorts", "tafsir"]
+      "tags": [
+        "greatness in islam",
+        "islamic motivation",
+        "quran on ambition",
+        "muslim mindset",
+        "islamic reminder",
+        "deen",
+        "quran shorts",
+        "tafsir"
+      ]
+    },
+    {
+      "video_id": "sbFXFoL1-5A",
+      "_why": "The 2026-08-16 upload, already the best-packaged video on the channel with 28 tags at 416/500 chars. These four spend the remaining budget on search intent the existing 28 miss, and each is supported by content actually in the video — so no mismatched traffic. Tags are additive and do not touch the title/thumbnail pair YouTube is testing, which is why this is safe to do 14h into a live feed test when a retitle would not be.",
+      "tags": [
+        "can jinn see you",
+        "how to protect from jinn",
+        "surah an nas",
+        "iblis in the quran"
+      ]
     }
   ],
-
   "description_edits": [
     {
       "video_id": "cjtKWsFZbcg",
@@ -112,21 +232,36 @@
       "remove_line": "▸ The cross is not the answer here — the mercy of Allah and the example of the Prophet ﷺ is  "
     }
   ],
-
   "channel": {
     "_why": "youtube_channel_about returned keywords: [] — the channel has no channel-level keywords at all. Weak signal alone, but it is one of the few inputs YouTube uses to place a channel in a topic cluster, and empty gives it nothing. Costs nothing, cannibalises nothing. Same free win taken on channel 2.",
-    "keywords": ["quran explained", "tafsir", "quran study", "islamic lessons", "surah explained",
-                 "quranic wisdom", "verse by verse quran", "islam for beginners", "quran breakdown",
-                 "muslim education", "deen", "islamic reminders", "tafsir in english",
-                 "learn the quran", "quran for beginners"],
+    "keywords": [
+      "quran explained",
+      "tafsir",
+      "quran study",
+      "islamic lessons",
+      "surah explained",
+      "quranic wisdom",
+      "verse by verse quran",
+      "islam for beginners",
+      "quran breakdown",
+      "muslim education",
+      "deen",
+      "islamic reminders",
+      "tafsir in english",
+      "learn the quran",
+      "quran for beginners"
+    ],
     "country": "AE"
   },
-
   "protected": {
     "_why": "Never repackage a proven winner. These four carry 1,452 of the channel's 2,473 lifetime views. Their TITLES and DESCRIPTION BODIES must not move — retitling a settled video measured +0 views over 21.7 hours on channel 1, and that finding is about how YouTube treats settled videos rather than about any channel's subject. Adding tags to them is safe and additive; the one description edit above is a defect repair on a specific line, not a rewrite.",
-    "video_ids": ["cjtKWsFZbcg", "GjztcxZGQTI", "_stswAi-79k", "r-9UaBtOy98"]
+    "video_ids": [
+      "cjtKWsFZbcg",
+      "GjztcxZGQTI",
+      "_stswAi-79k",
+      "r-9UaBtOy98"
+    ]
   },
-
   "deferred": {
     "_why": "Named here so they are not silently dropped. Each needs a human decision or content this repo does not have.",
     "items": [

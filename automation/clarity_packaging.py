@@ -30,6 +30,13 @@ Told You How to Be Rich — You Just Didn't Follow the Steps ' each lost a trail
 space they already carried. Both are identical after .strip(). A verification
 pass should compare stripped titles, or it will report a diff that is server-side
 normalisation rather than an edit.
+
+Second caveat, same class: **videos.list is read-after-write eventually
+consistent.** Reading a video back immediately after a successful update returns
+the PRE-write snippet — measured at roughly 10 seconds' lag on 2026-08-17, where
+an instant read showed 28 tags and a re-read moments later showed the written 30.
+A verification step must poll until the change appears rather than read once, or
+it will report a successful write as a silent failure.
 """
 import argparse
 import json
