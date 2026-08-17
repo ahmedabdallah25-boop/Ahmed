@@ -76,6 +76,26 @@ The `new1`/`new2`/`new3` names are historical and deliberately left alone — ev
 > client that issued it. A new client ID paired with an old refresh token fails with
 > `invalid_grant`. One Google account owning both channels still needs two separate tokens.
 
+## Publish the app, or your tokens die every 7 days
+
+**Do this once per Google Cloud project, before minting any token.** OAuth consent screen →
+publishing status → **PUBLISH APP**.
+
+An app left in **Testing** does two things that look like unrelated bugs months apart:
+
+| Symptom | Where you see it | Cause |
+|---|---|---|
+| `Access blocked: <app> has not completed the Google verification process` · `Error 403: access_denied` | at the consent screen | the signing-in account is not on the **Test users** list |
+| `invalid_grant` on every workflow, about a week after everything worked | Actions logs | **refresh tokens issued by a Testing app expire after 7 days** |
+
+The second is the dangerous one, because the automation runs green for a week first. Adding a test
+user fixes the first symptom and leaves the second in place — publish instead.
+
+Publishing does **not** require Google verification. Verification governs apps distributed to
+strangers; an unverified production app works normally, capped at 100 users, and shows a *"Google
+hasn't verified this app"* interstitial — click **Advanced → Go to (app name)** and continue. That
+warning is expected for a personal automation and is not an error.
+
 ## Channel 2 — HELD BY FAITH
 
 Same three steps, one extra convenience: **Actions → "HELD BY FAITH - 1. Check setup" → Run
