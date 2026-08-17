@@ -21,6 +21,15 @@ either other channel needed:
 Titles are never touched. Retitling a settled video measured +0 views over 21.7
 hours on channel 1, and that finding is about how YouTube treats settled videos
 rather than about any channel's subject, so it carries over.
+
+One caveat that looks alarming and is not: **YouTube strips leading and trailing
+whitespace from the title on any snippet update**, even when this script never
+assigns to it. On the 2026-08-17 run two titles came back changed for exactly
+that reason — 'The Kind of woman the Quran Warns Men about ' and 'Allah Already
+Told You How to Be Rich — You Just Didn't Follow the Steps ' each lost a trailing
+space they already carried. Both are identical after .strip(). A verification
+pass should compare stripped titles, or it will report a diff that is server-side
+normalisation rather than an edit.
 """
 import argparse
 import json

@@ -232,6 +232,25 @@ May. The daily monitor will report it.
 
 - **`CLARITY IN THE QURAN - monitor`** — live, runs daily, needs no credentials.
 - **`CLARITY IN THE QURAN - check setup`** — live, reports which `CIQ_*` secrets are set.
-- **No write path exists.** `packaging_config` is `null` in `automation/channels.json`, so nothing
-  automated can touch this channel. The fixes above need `CIQ_REFRESH_TOKEN` and a
-  `clarity/packaging-fix.json` built from this diagnosis before any of them can be applied.
+- **Write path live.** `clarity/packaging-fix.json` + `automation/clarity_packaging.py`.
+
+### Applied 2026-08-17
+
+14 writes, verified against the live channel afterwards rather than trusted from the write log:
+
+- **12 videos tagged.** Zero-tag uploads went from 16 to 1 (`luA2lpVzvsI`, the placeholder Short,
+  deliberately left for its retitle). Tags were additive — the live snippet was fetched and
+  mutated, so no description or categoryId moved.
+- **The leaking line removed** from `cjtKWsFZbcg`: 3,526 → 3,432 chars, and the string
+  "The cross is not the answer" no longer appears. Nothing else in that description changed.
+- **Channel keywords set** — 0 → 258 chars across 15 terms, country AE.
+
+**One thing to know before the next verification pass.** YouTube strips leading/trailing
+whitespace from a title on *any* snippet update, even when nothing assigns to the title. Two
+titles came back "changed" for that reason alone — `QNlRJcyY4LU` and `NOg4pWbPSCc` each lost a
+trailing space they already had, and both are identical after `.strip()`. Compare stripped titles
+or the check reports normalisation as an edit.
+
+Still outstanding, and not automatable — see `deferred` in the fix file: a real description for
+the 476-view Short, a real title for `9 August 2026`, the channel banner, captions, and the
+weekly cadence.
