@@ -251,6 +251,41 @@ titles came back "changed" for that reason alone — `QNlRJcyY4LU` and `NOg4pWbP
 trailing space they already had, and both are identical after `.strip()`. Compare stripped titles
 or the check reports normalisation as an edit.
 
+### Structure, applied 2026-08-17 (long-form direction)
+
+The owner confirmed the channel stays long-form ("No need shorts, I need this to remain a long
+form channel"), which changed what was worth doing next. A back-catalogue audit then found three
+structural gaps that Shorts advice would never have surfaced:
+
+| | Before | After |
+|---|---|---|
+| Playlists | **0** | **4**, holding all 13 long-form uploads |
+| Videos cross-linking to another video | **0 of 13** | **13 of 13** |
+| Videos with chapters | 3 of 13 | 3 of 13 — *still open* |
+
+**Playlists** (`clarity/playlists.json`, `automation/clarity_playlists.py`) are the largest lever
+long-form has and Shorts does not: autoplay carries a viewer from one video to the next so session
+time compounds, each list is separately indexed and ranks in search on its own, and grouping gives
+YouTube a topic cluster where a flat upload feed gives it nothing. Each list opens with its
+strongest performer so it has a real entry point:
+
+- *What the Quran Says About Your Emotions* — 4 videos, 1,027 views, led by Anger (846)
+- *Questions Muslims Actually Ask* — 4 videos
+- *Stories of the Prophets in the Quran* — 3 videos, and the route that gives the newest upload
+  access to viewers arriving on the two 190-view videos
+- *Money and Provision in the Quran* — 2 videos, led by 225 views
+
+**Cross-links** (`automation/clarity_crosslinks.py`) cover the viewer playlists miss: the one who
+arrives from search, watches, and would otherwise leave. Each description now ends with a WATCH
+NEXT block listing its playlist siblings and the playlist itself. Appended, never prepended — the
+opening lines are the search snippet and these descriptions start with real hooks. Replaceable
+rather than accumulating, via a marker sentinel. And capped: `StCW3ERkWwc` sat at 4,649 of
+YouTube's 5,000-character limit and took two links instead of three, which the run reported rather
+than dropping silently.
+
 Still outstanding, and not automatable — see `deferred` in the fix file: a real description for
 the 476-view Short, a real title for `9 August 2026`, the channel banner, captions, and the
-weekly cadence.
+weekly cadence. **Chapters are the largest of these**: only 3 of 13 have timestamps and none of
+the four top performers do. Chapters generate "key moments" in search — extra indexed surface —
+and they cannot be generated here, because they need real timestamps from someone who has watched
+each video.
