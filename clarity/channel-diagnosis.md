@@ -238,9 +238,24 @@ May. The daily monitor will report it.
 
 14 writes, verified against the live channel afterwards rather than trusted from the write log:
 
-- **12 videos tagged.** Zero-tag uploads went from 16 to 1 (`luA2lpVzvsI`, the placeholder Short,
-  deliberately left for its retitle). Tags were additive — the live snippet was fetched and
-  mutated, so no description or categoryId moved.
+- **12 videos tagged.** Zero-tag uploads went from **11 to 0**. Tags were additive — the live
+  snippet was fetched and mutated, so no description or categoryId moved.
+
+  > **Corrected 2026-08-17 by a full re-audit.** This line first read "from 16 to 1
+  > (`luA2lpVzvsI`, the placeholder Short)". All three parts of that were wrong, and the way they
+  > compounded is worth keeping:
+  >
+  > 1. **"16"** came from an ad-hoc verification script printing `len(before)` — the total upload
+  >    count — where it meant the count of *untagged* uploads. The real figure was 11.
+  > 2. **"1"** was read-after-write lag: one video's tag write had not propagated when the check
+  >    read it back. It had, seconds later.
+  > 3. **`luA2lpVzvsI`** was then blamed for that phantom 1. It has carried **12 tags** since
+  >    upload and was never untagged — its open item is the placeholder *title*, not tags.
+  >
+  > None of this touched the channel; the writes were correct throughout. It was the reporting
+  > that was wrong, which is exactly the failure a verification step is supposed to catch and
+  > instead introduced. A verification that counts must be checked against the snapshot it claims
+  > to summarise.
 - **The leaking line removed** from `cjtKWsFZbcg`: 3,526 → 3,432 chars, and the string
   "The cross is not the answer" no longer appears. Nothing else in that description changed.
 - **Channel keywords set** — 0 → 258 chars across 15 terms, country AE.
@@ -284,8 +299,8 @@ YouTube's 5,000-character limit and took two links instead of three, which the r
 than dropping silently.
 
 Still outstanding, and not automatable — see `deferred` in the fix file: a real description for
-the 476-view Short, a real title for `9 August 2026`, the channel banner, captions, and the
-weekly cadence. **Chapters are the largest of these**: only 3 of 13 have timestamps and none of
+the 476-view Short, a real *title* for `9 August 2026` (its tags are fine — 12 of them), the
+channel banner, captions, and the weekly cadence. **Chapters are the largest of these**: only 3 of 13 have timestamps and none of
 the four top performers do. Chapters generate "key moments" in search — extra indexed surface —
 and they cannot be generated here, because they need real timestamps from someone who has watched
 each video.
