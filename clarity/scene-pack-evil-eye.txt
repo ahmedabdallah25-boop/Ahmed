@@ -1,0 +1,493 @@
+================================================================================
+CLARITY IN THE QURAN — SCRIPT & SCENE PACK
+"The Evil Eye Is Real. The Quran Never Tells You Who Did It."
+Style: hand-drawn ink & watercolour | 16:9 1920x1080 | ~9:00 | 30 scenes
+Playlist on publish: Questions Muslims Actually Ask  (+ cross-link to the jinn video)
+Drafted 2026-08-17
+================================================================================
+
+
+READ THIS FIRST — THE ONE RULE THIS CHANNEL CANNOT BREAK
+================================================================================
+
+**Every verse, every reference, every Arabic word below must be checked against a
+mushaf and a tafsir before you record a syllable of it.** I have written this from
+knowledge, not from an open Quran, and on this channel that distinction is the
+whole ballgame.
+
+You already know why. `cjtKWsFZbcg` — your best video, 846 views — carried a line
+reading "The cross is not the answer here" in its description, and the top comment
+under it says **"AI BE AWARE"**. That is a viewer telling you nobody who knew the
+subject checked the page. Your 16 August upload fixed that standard in one move: it
+states on the page that *"Arabic on screen is set from a verified mushaf"*.
+
+So this pack gives you the craft — the argument, the structure, the beat map, the
+imagery, the audio arc. **It does not give you authority.** The verse manifest below
+is a checklist, not a citation. Anything you cannot verify, cut. A weaker video that
+is right beats a stronger one that a viewer catches out, because you only get caught
+once on a channel whose entire proposition is honesty about the text.
+
+Where I am uncertain, I have marked it `[VERIFY]` rather than writing around it.
+
+
+WHY THIS TOPIC, AND WHY NOW
+================================================================================
+
+- **It rides the video you just published.** `sbFXFoL1-5A` (jinn / ruqyah scams)
+  went out 16 Aug and is your best-packaged upload. Same territory: what people
+  believe about the unseen versus what the text actually says. Publish this next
+  and the two feed each other — I have written a direct cross-reference into the
+  script at Scene 24.
+- **It is the proven shape.** Your 846-view winner is a universal human emotion
+  explained from the text. Envy is exactly that. So is the search demand: "evil
+  eye in islam", "how to protect from evil eye", "hasad", "is the evil eye real"
+  are all high-intent, high-volume queries you currently rank for on nothing.
+- **It has a real turn.** Most content on this subject either dismisses 'ayn or
+  sells protection from it. This does neither, and the payoff at Scene 27 —
+  that the Quran addresses the *envier* far more than the envied — is the thing
+  nobody watching expects. That is what makes it worth 9 minutes.
+- **Length.** 9:00 sits between your best performer (6:17) and your new standard
+  (10:14). Do not pad it to cross 10 minutes. Nothing in your data rewards that.
+
+
+THE ARGUMENT IN ONE LINE
+================================================================================
+
+The Quran affirms the envier and prescribes refuge — it never once tells you to
+identify him, and the entire economy of "who did this to you" is built in a silence
+the text left on purpose.
+
+
+VERSE MANIFEST — CHECK EVERY ONE BEFORE RECORDING
+================================================================================
+
+  Al-Falaq 113:1–5   the whole surah; 113:5 is the spine of this video
+                     "wa min sharri ḥāsidin idhā ḥasad"
+                     — note `idhā ḥasad`, "WHEN he envies". The condition is the
+                       point. Confirm the exact wording and the grammar claim.   [VERIFY]
+  Yusuf 12:67        Yaqub instructs his sons to enter by separate gates, then
+                     "the decision is only for Allah; upon Him I rely"
+                     — the tafsir link to 'ayn is CLASSICAL, not stated in the
+                       verse itself. Say so on screen. Ibn Kathir / al-Qurtubi.  [VERIFY]
+  Yusuf 12:5         Yaqub tells Yusuf not to relate his dream to his brothers   [VERIFY]
+  An-Nisa 4:54       "Or do they envy people for what Allah has given them...?"  [VERIFY]
+  Al-Baqarah 2:109   hasad named among the People of the Scripture               [VERIFY]
+  Al-Qalam 68:51     "would almost make you slip with their eyes"
+                     — commonly cited for 'ayn; the linkage is INTERPRETIVE.
+                       If you cannot source it comfortably, cut Scene 09.        [VERIFY]
+  An-Nas 114         the companion surah; refuge from the whisperer              [VERIFY]
+
+  Hadith: "al-'aynu ḥaqq" — the evil eye is real. Bukhari / Muslim.              [VERIFY]
+          Get the exact numbering from a primary collection, not from memory
+          and not from a listicle.
+
+  DO NOT claim a hadith grading you have not checked. If a narration is disputed,
+  either say it is disputed on screen or leave it out. This channel cannot afford
+  a confident wrong number.
+
+
+PACKAGING — write these into Studio at upload
+================================================================================
+
+TITLE (58 chars, no channel-name suffix — that wastes title real estate)
+  The Evil Eye Is Real. The Quran Never Tells You Who Did It.
+
+  Alternates if you want to test:
+  · Yaqub Feared the Evil Eye. He Accused Nobody.
+  · The Quran Names the Envier. It Never Names a Suspect.
+
+DESCRIPTION — first two lines are your search snippet. Keep the hook there.
+  Somebody told you it was a look. A cousin at a wedding, an aunt who admired the
+  baby. Then somebody offered, for a price, to tell you which one.
+
+  The Quran mentions the envier. It never once tells you to find him.
+
+  [then chapters — see CHAPTER BLOCK at the bottom of this file]
+  [then the verse list, the sourcing note, and the WATCH NEXT block, which
+   automation/clarity_crosslinks.py will append and refresh for you]
+
+TAGS (13 — measured at 240/500 chars, so there is real headroom)
+  evil eye in islam, is the evil eye real, hasad, hasad in the quran,
+  surah al falaq explained, how to protect from the evil eye, ayn in islam,
+  envy in islam, yaqub and the gates, quran on envy, ruqyah scam, tafsir,
+  quran explained
+
+  260 characters spare. Add from these once you have cut the video and know what
+  it actually covers — tag what is IN the video, never what you wish were:
+  nazar in islam, dua for protection from evil eye, surah an nas explained,
+  ghibta meaning, yusuf 12 67, can the evil eye kill, islamic view of jealousy,
+  quran on jealousy, protection from hasad
+
+  (The first draft of this pack said "402/500". It was 240. Measured, corrected —
+   the same class of error that put a wrong tag count in the diagnosis on 17 Aug.
+   Run the count, never estimate it.)
+
+THUMBNAIL — 1280x720, and it is mandatory: this runs past 180s, so it renders
+in 16:9 slots (home, search, suggested). Ink-and-watercolour, matching the video.
+  · LEFT  — an eye, drawn in ink, but rendered as an ordinary human eye, not a
+            talisman, not a nazar amulet. Close crop. Looking slightly off-frame.
+  · RIGHT — white card, thin outline, soft drop shadow.
+            label:  THE QURAN SAYS
+            number: ONE VERSE
+            badge (clipped to card edge): NOT WHO
+  · Text must NOT repeat the title. The title says "never tells you who"; the
+    card says what it DOES give you. Two halves of one promise.
+
+
+EPIDEMIC SOUND — HOW TO USE THE AUDIO TAGS
+================================================================================
+
+Every scene below carries a line like:
+
+  🎵 mood: Dark + Suspense · genre: Cinematic / Drone · energy 2 · 60–70 BPM
+     search: "sparse cinematic drone tension unresolved"
+
+`mood:` values are taken from **Epidemic Sound's own mood vocabulary** so you can
+type them straight into the mood filter rather than translating: Angry, Dark,
+Dreamy, Elegant, Epic, Euphoric, Floating, Happy, Heavy & Ponderous, Hopeful,
+Laid Back, Mysterious, Peaceful, Restless, Running, Sad, Scary, Sentimental,
+Smooth, Sneaking, Suspense, Weird.
+
+`energy` is 1–10 on their energy slider. `search:` is a phrase to paste into the
+prompt box if you are generating rather than browsing.
+
+**The arc matters more than any single cue.** Do not score this scene by scene with
+twelve different tracks — that is the single most common way an explainer starts
+feeling like a trailer. Pick **three beds** and let them run:
+
+  BED A · Scenes 01–09    Dark, Mysterious, Suspense · energy 2–3 · unresolved
+  BED B · Scenes 10–22    Sentimental, Hopeful, Floating · energy 3–5 · warming
+  BED C · Scenes 23–30    Hopeful, Peaceful, Epic (restrained) · energy 4–6 · resolves
+
+The per-scene tags then tell you **where inside each bed to sit** — where to drop
+to nothing, where to let it build, where the one hit lands (Scene 27).
+
+ONE HARD RULE ON MUSIC: cut it entirely under every recitation and under every
+Arabic word study. Scenes 04, 11, 12, 19, 25 are marked `MUSIC: OUT`. A bed under
+recitation is the fastest way to lose the exact viewer this channel is for.
+
+IF YOU USE NO INSTRUMENTS: some creators in this niche don't. Every cue below works
+as sound design instead — Epidemic's ambience and drone libraries cover it. Swap
+`genre: Cinematic` for `genre: Ambience / Drone` and search the same mood words;
+the arc is unchanged. Room tone, paper, a distant call, wind. Your call, not mine.
+
+
+NEGATIVE PROMPT — paste once, applies to ALL 30 scenes
+================================================================================
+
+photorealistic, 3d render, cgi, glossy, digital airbrush, stock photo, text,
+lettering, arabic calligraphy generated by the model, watermark, signature,
+faces of prophets, depiction of any prophet, depiction of Allah, idol, statue,
+nazar amulet, hamsa, talisman, occult symbol, pentagram, zodiac, crystal ball,
+neon, lens flare, oversaturated, hdr, cluttered composition, busy background,
+modern logos, brand marks
+
+  Two of those are non-negotiable and not stylistic: **no depiction of any prophet**,
+  and **no talisman imagery** — a nazar bead or hamsa on screen while you argue
+  against buying protection would undercut the entire video in one frame.
+
+  All Arabic on screen is **typeset from a verified mushaf in your editor**, never
+  generated by an image model. Generated Arabic is reliably malformed and your
+  audience reads it.
+
+
+STYLE BLOCK — prepend to every image prompt
+================================================================================
+
+hand-drawn ink and watercolour illustration, loose confident linework, muted
+earth palette of indigo, ochre, sand and deep teal, generous negative space,
+visible paper grain, soft bleeding edges where washes meet, single subject,
+editorial illustration, 16:9
+
+
+================================================================================
+THE SCRIPT — 30 SCENES
+================================================================================
+
+--------------------------------------------------------------------------------
+ACT I — THE THING YOU WERE TOLD  (Scenes 01–09 · 0:00–2:40)
+--------------------------------------------------------------------------------
+
+SCENE 01 · 0:00–0:14 · HOOK
+VO: Somebody told you it was a look. A cousin at a wedding. An aunt who leaned
+    over the pram and said what a beautiful baby. And then everything went wrong
+    at once.
+ON SCREEN: (nothing — let the image carry it)
+IMAGE: a single wedding chair, empty, in a wide bright hall, watercolour bleeding
+    at the edges of the frame as though the room is dissolving at its border
+🎵 mood: Dark + Mysterious · genre: Cinematic · energy 2 · 60–70 BPM
+   search: "sparse unresolved cinematic opening single sustained note"
+
+SCENE 02 · 0:14–0:28
+VO: And then somebody offered — for a price — to tell you which one of them it was.
+ON SCREEN: —
+IMAGE: an open palm, upturned, ink linework, a small folded banknote resting in it,
+    the hand deliberately ordinary
+🎵 mood: Suspense + Sneaking · energy 3 · search: "low tension pulse quiet menace"
+
+SCENE 03 · 0:28–0:42 · THESIS
+VO: The Quran mentions the envier. Once, plainly, by the act itself. And it never
+    once tells you to find him.
+ON SCREEN: —
+IMAGE: a closed book on a plain surface, single shaft of light, nothing else in frame
+🎵 mood: Dark · energy 2 · MUSIC DROPS to almost nothing on "never once"
+
+SCENE 04 · 0:42–1:05 · MUSIC: OUT
+VO: This is not a video that tells you the evil eye is not real. It is real. The
+    Prophet ﷺ said so, and the words are as short as words get: al-'aynu ḥaqq.
+    The eye is true.
+ON SCREEN: al-'aynu ḥaqq — العين حق  [VERIFY collection + number before typesetting]
+IMAGE: bare paper, a single ink stroke drying, nothing figurative
+🎵 MUSIC OUT ENTIRELY. Room tone only. Bring BED A back under Scene 05.
+
+SCENE 05 · 1:05–1:22
+VO: So we are not arguing about whether. We are going to look at what the Quran
+    does with it — and, more usefully, at what it refuses to do.
+ON SCREEN: —
+IMAGE: two paths in ink diverging across otherwise empty paper, one fading out
+🎵 BED A returns · mood: Mysterious · energy 3
+
+SCENE 06 · 1:22–1:40 · THE WORD
+VO: The word is ḥasad. Three letters — ḥā, sīn, dāl. And it does not mean wanting
+    what someone has.
+ON SCREEN: ح س د  ·  ḤASAD
+IMAGE: three ink letterforms suggested as abstract brush marks, not legible script
+🎵 mood: Floating · energy 2 · search: "contemplative sparse piano single notes"
+
+SCENE 07 · 1:40–2:05
+VO: Wanting the like of it is a different word — ghibṭa — and it is not blamed.
+    Ḥasad is wanting it *gone from them*. Not up for you. Down for them. That is
+    the whole distinction, and almost nobody makes it.
+ON SCREEN: GHIBṬA — wanting the like of it   /   ḤASAD — wanting it gone   [VERIFY]
+IMAGE: two vessels in watercolour, one filling, one draining, side by side
+🎵 mood: Floating + Mysterious · energy 2
+
+SCENE 08 · 2:05–2:22
+VO: Which means ḥasad is a condition of a heart. Not a beam. Not a transaction.
+    A state someone is in.
+ON SCREEN: —
+IMAGE: a single closed fist, ink, held close to the chest
+🎵 mood: Heavy & Ponderous · energy 3
+
+SCENE 09 · 2:22–2:40   [CUT THIS SCENE if 68:51 does not check out — see manifest]
+VO: The Quran does describe a look that lands. In Al-Qalam, of those who
+    disbelieved — that they would almost make you slip with their eyes.
+    [VERIFY — and say on screen that reading this as 'ayn is interpretation.]
+ON SCREEN: Al-Qalam 68:51  ·  *classical commentators read this as 'ayn — the verse
+    does not use the word*
+IMAGE: a stone at the very edge of a ledge, ink, about to go
+🎵 mood: Suspense · energy 4 · one swell, then drop
+
+--------------------------------------------------------------------------------
+ACT II — WHAT THE TEXT ACTUALLY DOES  (Scenes 10–22 · 2:40–6:30)
+--------------------------------------------------------------------------------
+
+SCENE 10 · 2:40–2:58 · BED B BEGINS
+VO: So here is where the Quran hands you something. And notice what shape it is.
+ON SCREEN: —
+IMAGE: a hand opening rather than closing, palm up, empty, ink and wash
+🎵 BED B · mood: Sentimental + Hopeful · energy 3 · warming, first colour in the score
+
+SCENE 11 · 2:58–3:30 · MUSIC: OUT · RECITATION
+VO: [recite Al-Falaq 113:1–5]
+ON SCREEN: full surah, Arabic typeset from mushaf + translation, verse by verse
+IMAGE: dawn light across plain paper, the barest suggestion of a horizon
+🎵 MUSIC OUT. Recitation carries it. Let two full seconds of silence sit after.
+
+SCENE 12 · 3:30–3:52 · MUSIC: OUT
+VO: Four things named. Four refuges. And the last of them: wa min sharri ḥāsidin
+    idhā ḥasad — from the evil of an envier, when he envies.
+ON SCREEN: وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ  ·  Al-Falaq 113:5
+IMAGE: four faint marks on paper, the fourth darker than the others
+🎵 Still out. BED B returns under Scene 13, quietly.
+
+SCENE 13 · 3:52–4:15 · THE HINGE
+VO: *When* he envies. Idhā ḥasad. The Quran does not say "from the envier." It
+    says from the evil of an envier *at the moment he is envying*. It is naming a
+    condition. Not a person.
+ON SCREEN: إِذَا حَسَدَ  ·  "when he envies"   [VERIFY the grammatical claim]
+IMAGE: a candle flame, ink, caught mid-flicker — the same candle, not a new one
+🎵 mood: Hopeful · energy 3 · lift very slightly on "not a person"
+
+SCENE 14 · 4:15–4:32
+VO: You cannot build a suspect list out of a condition. And the Quran does not
+    hand you one.
+ON SCREEN: —
+IMAGE: a list on paper with every line left blank, ink ruling only
+🎵 mood: Floating · energy 3
+
+SCENE 15 · 4:32–4:55 · YAQUB
+VO: There is a man in the Quran who feared this exact thing for his sons. And what
+    he did about it is the most useful passage on the subject in the whole Book.
+ON SCREEN: —
+IMAGE: a city gate arch in ink, seen from outside, no figures at all
+🎵 mood: Sentimental · energy 4 · gentle build begins here and runs to Scene 22
+
+SCENE 16 · 4:55–5:20
+VO: Yaqub — peace be upon him — tells his sons not to enter by a single gate, but
+    to enter by separate ones.
+ON SCREEN: Yusuf 12:67  ·  Arabic + translation
+    *note on screen: the link to 'ayn is classical tafsir, not stated in the verse*
+IMAGE: several arches spaced across the frame, watercolour, none occupied
+🎵 mood: Sentimental · energy 4
+
+SCENE 17 · 5:20–5:38
+VO: So he took a precaution. Real, practical, physical. He did not pretend the
+    danger was nothing.
+ON SCREEN: —
+IMAGE: a cloak drawn over a basket, ink, protective and ordinary
+🎵 energy 4, steady
+
+SCENE 18 · 5:38–6:02 · THE POINT OF THE WHOLE VIDEO
+VO: And then — in the same breath, in the same verse — he says the decision belongs
+    to Allah alone, and that upon Him he relies. He takes the precaution. He hands
+    the outcome straight back.
+ON SCREEN: Yusuf 12:67 (second half) — Arabic + translation
+IMAGE: hands releasing a small bird upward, ink, the bird already clear of them
+🎵 mood: Hopeful + Sentimental · energy 5 · this is the emotional peak of BED B
+
+SCENE 19 · 6:02–6:20 · MUSIC: OUT
+VO: Read the passage again and look for the part where he names who he is afraid of.
+ON SCREEN: Yusuf 12:67 in full, held on screen, silent
+IMAGE: the verse alone on paper — no illustration, deliberately
+🎵 MUSIC OUT. Three seconds of nothing. Let them read it.
+
+SCENE 20 · 6:20–6:38
+VO: It is not there. No neighbour. No cousin. No aunt at the pram. Not one name.
+ON SCREEN: —
+IMAGE: an empty doorway, ink, light coming through it
+🎵 BED B returns · mood: Floating · energy 3
+
+SCENE 21 · 6:38–6:56
+VO: Earlier in the same surah he had told Yusuf not to relate his dream to his
+    brothers. Concealment. Not confrontation.
+ON SCREEN: Yusuf 12:5  ·  Arabic + translation
+IMAGE: a folded piece of paper, ink, held closed
+🎵 mood: Mysterious · energy 3
+
+SCENE 22 · 6:56–7:14
+VO: That is the Quran's posture in one line. Cover the blessing. Take the
+    precaution. Ask Allah. Accuse no one.
+ON SCREEN: COVER · PROTECT · ASK · ACCUSE NO ONE
+IMAGE: four small ink marks in a row, evenly spaced, calm
+🎵 BED B resolves and hands over to BED C on the last word
+
+--------------------------------------------------------------------------------
+ACT III — THE SILENCE SOMEBODY IS SELLING  (Scenes 23–30 · 7:14–9:00)
+--------------------------------------------------------------------------------
+
+SCENE 23 · 7:14–7:36 · BED C BEGINS
+VO: Now hold that against what happens when somebody tells you they can see who
+    did it.
+ON SCREEN: —
+IMAGE: a curtained doorway, ink, a single lamp behind it
+🎵 BED C · mood: Dark + Suspense · energy 4 · the darkness returns, but harder-edged
+
+SCENE 24 · 7:36–8:00 · CROSS-REFERENCE
+VO: If you watched the last video on this channel, you already know the shape of
+    this. A man who says he can perceive what you cannot — and then names a price.
+    The Quran took that apart for the jinn. It takes it apart here the same way,
+    and for the same reason.
+ON SCREEN: *see: "The Jinn Couldn't See a Dead King"*  (link in description)
+IMAGE: two doors side by side in ink, identical, one already shown in the last video
+🎵 mood: Restless · energy 5
+
+SCENE 25 · 8:00–8:18 · MUSIC: OUT
+VO: Because the naming is the product. Not the protection — the protection is free
+    and it is already in your hands. The *name* is what costs money.
+ON SCREEN: —
+IMAGE: a receipt, ink, blank where the item should be written
+🎵 MUSIC OUT on "the name is what costs money". Silence is the punctuation.
+
+SCENE 26 · 8:18–8:34
+VO: Al-Falaq and An-Nas. Eleven verses between them. No intermediary, no
+    appointment, no fee.
+ON SCREEN: Al-Falaq 113  ·  An-Nas 114   [VERIFY the verse count you state]
+IMAGE: two short columns of ink marks, side by side, small and unadorned
+🎵 BED C · mood: Hopeful + Peaceful · energy 4 · the resolve begins
+
+SCENE 27 · 8:34–8:52 · THE TURN — LAND THIS ONE
+VO: And there is one more thing, and it is the part nobody expects. Go through the
+    Quran counting. It speaks to the envied far less than it speaks *about the
+    envier*. The question it keeps putting is not "who did this to you."
+    It is — do *they* envy people for what Allah gave them?
+ON SCREEN: An-Nisa 4:54  ·  Arabic + translation   [VERIFY]
+IMAGE: a mirror shape in ink, empty, reflecting nothing yet
+🎵 THE ONE HIT OF THE VIDEO. mood: Epic (restrained) + Sentimental · energy 6
+   search: "single restrained cinematic swell strings no percussion resolve"
+   One swell. Do not repeat it. Everything before this was saving room for it.
+
+SCENE 28 · 8:52–9:06
+VO: Which means the verse you were reaching for as a shield has a second edge, and
+    it is pointed the other way.
+ON SCREEN: —
+IMAGE: the same mirror, now with a single ink mark appearing in it
+🎵 decay from the swell, energy 4
+
+SCENE 29 · 9:06–9:20
+VO: The eye is real. The envier is real. And the Quran left the name out on purpose,
+    because the moment you have a name, you have somewhere to put this that is not
+    your own hands.
+ON SCREEN: —
+IMAGE: an open hand again — the same hand from Scene 10, now with nothing in it
+🎵 mood: Peaceful · energy 3 · settling
+
+SCENE 30 · 9:20–9:35 · CLOSE + CTA
+VO: Say the surah. Cover what you love. Ask Him. And if the question "who did this"
+    will not leave you alone — that question is worth asking about yourself first.
+ON SCREEN: —
+IMAGE: dawn again — the Scene 11 horizon, returned, slightly further along
+🎵 mood: Peaceful + Hopeful · energy 2 · resolves fully, do not fade out mid-phrase
+
+PINNED COMMENT (post it yourself at upload — and read it before you post):
+  "Which part of this were you taught differently? No judgement, I was taught the
+   same way."
+  — a real question, in your own register. **Do not** use a template sign-off. The
+  last one on this channel ended "God bless!", which is not your tradition's phrase
+  and a viewer noticed.
+
+
+================================================================================
+CHAPTER BLOCK — paste into the description
+================================================================================
+
+You have chapters on only 3 of 13 long-form videos and on none of your four best.
+Chapters generate "key moments" in search results — extra indexed surface you are
+currently giving away. Adjust these timestamps to the final cut; the first MUST be
+00:00 or YouTube ignores the whole block.
+
+  00:00  The look, and the man who offers to name it
+  00:42  The eye is real — this is not a debunk
+  01:22  Ḥasad: the word, and what it is not
+  02:40  What the Quran actually hands you
+  02:58  Al-Falaq, recited in full
+  03:52  "When he envies" — a condition, not a person
+  04:32  Yaqub and the separate gates
+  05:38  The precaution, and the handing back
+  06:20  The name that is not in the verse
+  07:14  The silence somebody is selling
+  08:34  The question pointed the other way
+
+
+================================================================================
+ON-SCREEN TEXT SPEC
+================================================================================
+
+ARABIC   typeset in your editor from a verified mushaf. Never model-generated.
+         Uthmani script, 64–80px at 1080p, centred, held minimum 4 seconds.
+TRANSLATION  beneath, 40–48px, sentence case, a translation you can name.
+CITATION     bottom-right, 28px, muted — Surah name + number:verse, always visible
+             whenever Arabic is on screen. This is the credibility signal. It costs
+             nothing and it is the difference between study and content.
+CAVEATS      where a reading is interpretive (Scenes 09, 16), put that on screen in
+             italics. Saying "commentators read this as" out loud is good. Putting
+             it on screen is what makes it undeniable that you did the work.
+
+FINAL CHECK BEFORE UPLOAD
+  □ every [VERIFY] resolved or the scene cut
+  □ every Arabic frame typeset from mushaf, not generated
+  □ no prophet depicted, no talisman on screen at any point
+  □ 1280x720 thumbnail exists and its text does not repeat the title
+  □ chapters pasted, first one 00:00
+  □ added to "Questions Muslims Actually Ask"
+  □ run automation/clarity_crosslinks.py to refresh the WATCH NEXT blocks
