@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Report channel state
-        run: python automation/heldbyfaith_monitor.py
+        run: python automation/channel_monitor.py --channel heldbyfaith
         env:
           YT_API_KEY: ${{ secrets.YT_API_KEY }}
           # Channel 2's own trio, once it exists.

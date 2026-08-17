@@ -106,6 +106,10 @@
 // Google's chooser, so a perfectly valid token can still drive the wrong channel — this page
 // asks YouTube "who am I?" before showing anything, and refuses to display a token for a
 // channel it does not recognise. Same policy as automation/get_refresh_token.py.
+//
+// MIRROR OF automation/channels.json. This page runs from file://, where fetching a sibling
+// JSON is blocked, so it must inline the map. automation/test_channels_sync.py fails if this
+// copy and the registry ever disagree — do not edit one without the other.
 const CHANNELS = {
   "UCVOoFJkRiOdJsWnewt8HJkw": {
     name: "Finance % Decoded (@Financeundoubtlydecoded)",
@@ -114,6 +118,10 @@ const CHANNELS = {
   "UCh0tKIGR5Ns3Wvoai__txdg": {
     name: "HELD BY FAITH (@HeldByFaithJourney)",
     secrets: ["HBF_CLIENT_ID", "HBF_CLIENT_SECRET", "HBF_REFRESH_TOKEN"],
+  },
+  "UC0eBu0ZXcF20pTAG3lUnPXA": {
+    name: "Clarity in the Quran (@ClarityInTheQuran)",
+    secrets: ["CIQ_CLIENT_ID", "CIQ_CLIENT_SECRET", "CIQ_REFRESH_TOKEN"],
   },
 };
 const SECRETS_URL = "https://github.com/ahmedabdallah25-boop/Ahmed/settings/secrets/actions/new";

@@ -25,21 +25,10 @@ import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+from pathlib import Path
 
-CHANNELS = {
-    "finance": {
-        "name": "Finance % Decoded",
-        "handle": "@Financeundoubtlydecoded",
-        "channel_id": "UCVOoFJkRiOdJsWnewt8HJkw",
-        "secrets": ("new1", "new2", "new3"),
-    },
-    "heldbyfaith": {
-        "name": "HELD BY FAITH",
-        "handle": "@HeldByFaithJourney",
-        "channel_id": "UCh0tKIGR5Ns3Wvoai__txdg",
-        "secrets": ("HBF_CLIENT_ID", "HBF_CLIENT_SECRET", "HBF_REFRESH_TOKEN"),
-    },
-}
+CHANNELS = json.loads(
+    (Path(__file__).resolve().parent / "channels.json").read_text())["channels"]
 BY_ID = {c["channel_id"]: c for c in CHANNELS.values()}
 
 OUT = []

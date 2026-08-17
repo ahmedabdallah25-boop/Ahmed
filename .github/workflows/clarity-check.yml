@@ -1,0 +1,24 @@
+name: CLARITY IN THE QURAN - check setup
+
+# Read-only: says which CIQ_* secrets are set and, if all three are, which
+# channel they actually own. Prints whether a secret is SET, never its value —
+# this repo is public and Actions logs are world-readable.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check CLARITY IN THE QURAN credentials
+        run: python automation/check_channel_auth.py --channel clarity
+        env:
+          CIQ_CLIENT_ID: ${{ secrets.CIQ_CLIENT_ID }}
+          CIQ_CLIENT_SECRET: ${{ secrets.CIQ_CLIENT_SECRET }}
+          CIQ_REFRESH_TOKEN: ${{ secrets.CIQ_REFRESH_TOKEN }}
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}

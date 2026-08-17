@@ -1,0 +1,38 @@
+name: CLARITY IN THE QURAN - monitor
+
+# Read-only channel report for channel 3: every upload with its real age,
+# views/day and runtime, and which ones publish as long-form.
+#
+# This channel has NO write path and no packaging config — no diagnosis exists
+# for it yet, and a write path before a diagnosis is how you break something that
+# was working. Read-only is the whole surface for now, deliberately.
+#
+# Needs no credentials of its own: it reads public data, and falls back to
+# another channel's OAuth trio purely as an API credential (explicit id= on every
+# call, no mine=true anywhere, no writes). So it works today.
+
+on:
+  schedule:
+    - cron: "45 7 * * *"
+  workflow_dispatch:
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Report channel state
+        run: python automation/channel_monitor.py --channel clarity
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+          # Channel 3's own trio, once it exists.
+          CIQ_CLIENT_ID: ${{ secrets.CIQ_CLIENT_ID }}
+          CIQ_CLIENT_SECRET: ${{ secrets.CIQ_CLIENT_SECRET }}
+          CIQ_REFRESH_TOKEN: ${{ secrets.CIQ_REFRESH_TOKEN }}
+          # Fallback so the report works before channel 3 has any secrets.
+          YT_CLIENT_ID: ${{ secrets.new1 }}
+          YT_CLIENT_SECRET: ${{ secrets.new2 }}
+          YT_REFRESH_TOKEN: ${{ secrets.new3 }}

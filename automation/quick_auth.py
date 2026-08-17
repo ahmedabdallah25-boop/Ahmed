@@ -40,6 +40,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from pathlib import Path
 
 DEVICE_URL = "https://oauth2.googleapis.com/device/code"
 TOKEN_URL = "https://oauth2.googleapis.com/token"
@@ -47,12 +48,10 @@ AUTH_URL = "https://accounts.google.com/o/oauth2/v2/auth"
 REDIRECT = "http://localhost:8765/"
 SCOPE = "https://www.googleapis.com/auth/youtube.force-ssl"
 
-CHANNELS = {
-    "UCVOoFJkRiOdJsWnewt8HJkw": ("Finance % Decoded (@Financeundoubtlydecoded)",
-                                 ("new1", "new2", "new3")),
-    "UCh0tKIGR5Ns3Wvoai__txdg": ("HELD BY FAITH (@HeldByFaithJourney)",
-                                 ("HBF_CLIENT_ID", "HBF_CLIENT_SECRET", "HBF_REFRESH_TOKEN")),
-}
+_REG = json.loads(
+    (Path(__file__).resolve().parent / "channels.json").read_text())["channels"]
+CHANNELS = {c["channel_id"]: (f"{c['name']} ({c['handle']})", tuple(c["secrets"]))
+            for c in _REG.values()}
 
 
 def post(url: str, data: dict) -> dict:

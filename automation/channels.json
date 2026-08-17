@@ -1,0 +1,36 @@
+{
+  "_comment": "The single source of truth for which channels this repo manages. Added 2026-08-17, when a third channel turned up and four separate scripts each carried their own copy of a two-channel map — a drift risk that would show up as a token being refused, or worse, accepted for the wrong channel.",
+
+  "_secrets": "Each channel gets its own OAuth secret triple, and they must never collide: overwriting one channel's set silently repoints every workflow that channel owns. An OAuth client ID and secret identify the APPLICATION, not a channel — the same client can mint tokens for all three. What binds a token to a channel is the choice made at Google's consent screen, which is why every write path re-checks the authenticated channel at runtime.",
+
+  "_authorize_html": "automation/authorize.html carries its own copy of this map, inline. It has to: it runs from file:// where fetching a sibling JSON is blocked. test_channels_sync.py fails if the two ever disagree.",
+
+  "channels": {
+    "finance": {
+      "name": "Finance % Decoded",
+      "handle": "@Financeundoubtlydecoded",
+      "channel_id": "UCVOoFJkRiOdJsWnewt8HJkw",
+      "secrets": ["new1", "new2", "new3"],
+      "_secrets_note": "Historical names, deliberately left alone — every workflow in .github/workflows/ already reads them and the daily upload path depends on them.",
+      "packaging_config": "automation/reset.json",
+      "notes": "Channel 1. Islamic finance through universal money problems. Faceless, Shorts-first. Root of the repo; diagnosis in channel-reset.md."
+    },
+    "heldbyfaith": {
+      "name": "HELD BY FAITH",
+      "handle": "@HeldByFaithJourney",
+      "channel_id": "UCh0tKIGR5Ns3Wvoai__txdg",
+      "secrets": ["HBF_CLIENT_ID", "HBF_CLIENT_SECRET", "HBF_REFRESH_TOKEN"],
+      "packaging_config": "heldbyfaith/packaging-fix.json",
+      "landscape_video_ids": ["GFKRpV_mhWg", "xmCDlKXU694", "14mGEhEieZY"],
+      "notes": "Channel 2. A pancreatic cancer diagnosis told through faith. First-person, vertical Shorts. Diagnosis in heldbyfaith/channel-diagnosis.md. Format is the live problem."
+    },
+    "clarity": {
+      "name": "Clarity in the Quran",
+      "handle": "@ClarityInTheQuran",
+      "channel_id": "UC0eBu0ZXcF20pTAG3lUnPXA",
+      "secrets": ["CIQ_CLIENT_ID", "CIQ_CLIENT_SECRET", "CIQ_REFRESH_TOKEN"],
+      "packaging_config": null,
+      "notes": "Channel 3, registered 2026-08-17. Quran/Tafsir explainers, weekly. 41 subs, 16 videos, 2,473 lifetime views, joined Jan 2024, country AE. Channel-level keywords are empty. NO DIAGNOSIS EXISTS YET, so packaging_config is null and no write path is wired — the monitor is read-only and safe. Do not port either other channel's conclusions onto it: channel 1's problem is topic exhaustion at 8K+ views, channel 2's is format at 33 views, and this one has neither profile."
+    }
+  }
+}

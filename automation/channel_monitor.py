@@ -1,39 +1,42 @@
 #!/usr/bin/env python3
-"""Report the live state of HELD BY FAITH (@HeldByFaithJourney).
+"""Report the live state of any channel in automation/channels.json.
 
-    python automation/heldbyfaith_monitor.py
+    python automation/channel_monitor.py --channel heldbyfaith
+    python automation/channel_monitor.py --channel clarity
 
-Read-only, public data, stdlib only. It deliberately does NOT need
-HBF_REFRESH_TOKEN, so channel 2 reporting works before the write path is
-authorized.
+Read-only, public data, stdlib only. It needs no refresh token for the channel
+being reported on, so a channel's reporting works long before its write path is
+authorized — which is the whole point for one that has no secrets yet.
 
-Credentials, first one that is present wins:
-  1. YT_API_KEY                              — the shared key, if it is ever set
-  2. HBF_CLIENT_ID/SECRET/REFRESH_TOKEN      — channel 2's own OAuth trio
-  3. YT_CLIENT_ID/SECRET/REFRESH_TOKEN       — channel 1's trio, as a bare API
-                                               credential and nothing more
+Credentials, first one present wins:
+  1. YT_API_KEY                          — the shared key, if it is ever set
+  2. the channel's own OAuth trio        — from its `secrets` in channels.json
+  3. YT_CLIENT_ID/SECRET/REFRESH_TOKEN   — any other channel's trio, as a bare
+                                           API credential and nothing more
 
 Option 3 needs care, so to be explicit: every call here passes an explicit
-`id=`, and no request here is ever parameterised by the authenticated account —
-there is no `mine=true` call in this file at all. A Finance % Decoded token
-is being used only to authenticate a request for HELD BY FAITH's *public*
-statistics — the same rows any signed-out viewer sees. It reads nothing private
-and writes nothing at all. It is here because YT_API_KEY has never actually been
-set on this repo, which is also why monitor.py carries the same fallback.
+`id=`, and no request is ever parameterised by the authenticated account —
+there is no `mine=true` call in this file at all. Another channel's token is
+used only to authenticate a request for THIS channel's *public* statistics, the
+same rows any signed-out viewer sees. It reads nothing private and writes
+nothing at all. It is here because YT_API_KEY has never actually been set on
+this repo, which is also why monitor.py carries the same fallback.
 
-Two things this fixes about eyeballing the channel by hand:
+Two things this fixes about eyeballing a channel by hand:
 
   - It uses videos.list publishedAt, a full RFC-3339 timestamp. The channel
     listing tools return date-only publish dates that run a day off, which is how
     a four-hour-old upload ends up looking like a dead video. Age is printed in
     hours until 72h, and views/day always carries the age.
-  - It never renders a verdict inside 72 hours. On a channel this size a single
-    view is noise; the 72-hour rule is not optional here.
+  - It never renders a verdict inside 72 hours. On a small channel a single view
+    is noise; the 72-hour rule is not optional.
 
-Format is the channel's live problem, so the report splits vertical from
-landscape: three 16:9 uploads carry 4 views between them against 29 for six
-vertical Shorts. See heldbyfaith/channel-diagnosis.md.
+Where a channel declares `landscape_video_ids`, the report also splits vertical
+from landscape, because on HELD BY FAITH that split IS the diagnosis: three 16:9
+uploads carry 4 views between them against 29 for six vertical Shorts. See
+heldbyfaith/channel-diagnosis.md.
 """
+import argparse
 import json
 import os
 import re
@@ -44,10 +47,13 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-CFG = json.loads((Path(__file__).resolve().parent.parent
-                  / "heldbyfaith" / "packaging-fix.json").read_text())
-CHANNEL_ID = CFG["channel_id"]
-LANDSCAPE = set(CFG.get("landscape_video_ids", []))
+HERE = Path(__file__).resolve().parent
+REGISTRY = json.loads((HERE / "channels.json").read_text())["channels"]
+
+# Populated by main() once --channel is known.
+CH = {}
+CHANNEL_ID = ""
+LANDSCAPE = set()
 API = "https://www.googleapis.com/youtube/v3"
 
 # YouTube's Shorts cap. Over this an upload is long-form no matter its aspect
@@ -67,13 +73,18 @@ _TOKEN = None
 
 
 def bearer():
-    """Mint a read-only access token from whichever OAuth trio is available."""
+    """Mint a read-only access token from whichever OAuth trio is available.
+
+    The channel's own trio is tried first so a report normally authenticates as
+    the channel it is about; YT_* is the generic fallback for a channel that has
+    no secrets yet. Either way this only ever fetches public statistics.
+    """
     global _TOKEN
     if _TOKEN:
         return _TOKEN
-    for prefix in ("HBF_CLIENT_ID", "YT_CLIENT_ID"):
-        base = prefix.rsplit("CLIENT_ID", 1)[0]
-        trio = (base + "CLIENT_ID", base + "CLIENT_SECRET", base + "REFRESH_TOKEN")
+    candidates = [tuple(CH["secrets"])] if CH.get("secrets") else []
+    candidates.append(("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN"))
+    for trio in candidates:
         if not all(os.environ.get(k) for k in trio):
             continue
         body = urllib.parse.urlencode({
@@ -89,7 +100,7 @@ def bearer():
                 return _TOKEN
         except urllib.error.HTTPError:
             # Never echo the response — the request body carried three secrets.
-            print(f"   (note: {trio[0].rstrip('_') or 'OAuth'} trio was rejected, trying the next source)")
+            print(f"   (note: the {trio[0]} trio was rejected, trying the next source)")
     return None
 
 
@@ -130,6 +141,14 @@ def clock(seconds: int) -> str:
 
 
 def main():
+    global CH, CHANNEL_ID, LANDSCAPE
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--channel", choices=sorted(REGISTRY), required=True)
+    args = ap.parse_args()
+    CH = REGISTRY[args.channel]
+    CHANNEL_ID = CH["channel_id"]
+    LANDSCAPE = set(CH.get("landscape_video_ids", []))
+
     chans = get("channels", part="snippet,statistics,contentDetails", id=CHANNEL_ID)
     items = chans.get("items", [])
     if not items:
@@ -138,7 +157,7 @@ def main():
     stats = ch["statistics"]
     uploads = ch["contentDetails"]["relatedPlaylists"]["uploads"]
 
-    say(f"== HELD BY FAITH ({CFG['handle']}) ==")
+    say(f"== {CH['name']} ({CH['handle']}) ==")
     say(f"   {stats.get('subscriberCount', '?')} subscribers · "
         f"{stats.get('videoCount', '?')} videos · "
         f"{stats.get('viewCount', '?')} lifetime views")
@@ -227,7 +246,12 @@ def main():
         rate = best["likes"] / best["views"] * 100
         say(f"   Best performer: {best['id']} — {best['views']} views, {best['likes']} likes "
             f"({rate:.0f}% like rate).")
-        say("   Protected in packaging-fix.json: nothing repackages it but its series suffix.")
+        if CH.get("packaging_config"):
+            say(f"   Guard rails live in {CH['packaging_config']} — check its `protected` "
+                f"list before repackaging this one.")
+        else:
+            say("   No packaging config exists for this channel yet, so nothing automated")
+            say("   will touch it. A diagnosis has to come before a write path.")
 
     path = os.environ.get("GITHUB_STEP_SUMMARY")
     if path:
