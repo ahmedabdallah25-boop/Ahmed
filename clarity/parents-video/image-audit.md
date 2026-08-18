@@ -314,3 +314,68 @@ pot with its escaping steam, and S42, the two figures at dusk — are the two sh
 about withdrawal, which is right. But the chapter as a whole is meant to tighten
 and close in, and the run currently opens dark, brightens to 0.88 twice, and never
 settles. Worth a grade pass across the chapter before the edit locks.
+
+---
+
+# Image audit — batch 7 (35 files, staged as `B7_*`) — 32 filed, 3 held
+
+The big one. Chapters 05 through 10 largely land in this batch, and chapter 10 is
+now complete. **64 of 101 stills are done; 37 pending.**
+
+Filed: S54 S55 S56 S57 S59 S60 S61 S62 S63 S65 S67 S68 S72 S73 S74 S76 S77 S78 S80
+S82 S83 S84 S86 S88 S89 S90 S103 S105 S106 S107 S108 S109.
+
+Standouts: S77 (the cell reduced to scattered blocks with the mat half-buried under
+stone), S78 (dust in the shaft over the rubble), S88 (the lamp in the room that is
+not abandoned), S105 (the wing curved down over the nest), S108 (the covered form,
+no head or limb showing — exactly as written).
+
+## Held
+
+- **B7_188e6d54 — S79, the peg rail.** Every peg occupied, one garment on the floor:
+  the idea is right. The garments are a **denim jacket, a tote bag and a bobble
+  hat**. "Modern clothing in ancient scenes" is in the negative prompt. Regenerate.
+- **B7_9aac66d2 — S66, the two manuscript pages.** Both pages carry **drawn
+  illustrations** (a tree, a walled town) and rows of pseudo-script. The manuscript
+  shots are written as ink strokes only, never legible, nothing else on the paper.
+  It is also shot as a photograph of paper on a table with a blurred background.
+- **B7_14613e9c — a lit doorway interior.** Handsome, but it is not S71: that shot
+  needs the long shadow of a standing figure cast across the threshold with the
+  figure outside frame. The shadows here are cast by the door leaves.
+
+## Filed with notes
+
+- **S56** shows the back of the head; the prompt crops at the neck with no head in
+  frame. No face is visible, so the rule holds, but it is not the written framing.
+- **S63** is a **thatched English cottage with a coach lamp**. Together with S40's
+  panelled door and brass knob, S46's handled cup and shade lamp, and S95's panelled
+  door, the film has a recurring drift into a Victorian-European domestic register.
+  These read fine alone and wrong next to S62's camel at the gate.
+- **S82** arrives **matted and framed**, with a white mount border around the plate.
+  Crop to the artwork before use.
+- **S57, S60, S89** continue the **photograph-of-paper** treatment — artwork bleeding
+  off the sheet, blurred table behind. Five plates now use it against fifty-odd flat
+  ones. Pick one convention.
+- **S89** has a hand setting the cup down; the prompt has no hand in frame.
+
+## The aggregate is now the finding: the film is drifting bright
+
+Across all 61 filed stills:
+
+    navy share   mean 28.2%   ·  30 of 61 under 25%
+    value        mean 0.63    ·  16 of 61 over 0.70
+    brightest    S57 0.93 · S38 0.88 · S44 0.86 · S39 0.86 · S80 0.85
+    darkest      S109 0.38 · S98 0.41 · S65 0.42 · S02 0.42 · S01 0.46
+
+Section 01 says one warm source, deep navy everywhere it does not reach. **Half the
+film is not doing that.** Individually each bright plate is defensible — cream ground
+is in several prompts. Together they change what the film feels like: it reads as
+daylight illustration rather than a lamp in a dark room, and the plates that do hold
+the navy (S01, S02, S98, S109) will look like a different film cut against them.
+
+This is a grade, not a regenerate. One pass that lifts navy density and pulls value
+down on the 30 low-navy plates would bring the film back to its own stated look, and
+it costs nothing but an afternoon in the edit.
+
+Off-palette above 4%: S06 4.7 · S40 4.0 · S41 4.9 · S42 6.9 · S61 4.1 · S65 6.5 ·
+S90 4.1. All gradeable, none worth regenerating.
