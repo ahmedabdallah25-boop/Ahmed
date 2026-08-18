@@ -116,3 +116,55 @@ The Higgsfield plates (S48, S69, S92 and the S01 control) are 2560×1440, which 
 why the model choice was made on resolution per credit. Reserving those generations
 for re-frame parents, and using the delivered 1376px stills for shots that are never
 pushed into, costs nothing and solves most of this.
+
+---
+
+# Image audit — batch 3 (5 files, staged as `B3_*`)
+
+## Filed
+
+| Shot | File | Note |
+|---|---|---|
+| S04 | B3_af42d234 | **Upgrade over IMG_7501.** Dark interior, empty arched doorway, light falling in a long rectangle across the floor — the prompt exactly. IMG_7501 put trees and a landscape outside the door, which the shot does not ask for. |
+
+## Not filed
+
+- **B3_59c92eae** — the olive trees again, denser ink, sunset band behind. IMG_7500
+  keeps S03: it has the low sun sitting in the join and a pale cream sky, which is
+  what the prompt asks for.
+- **B3_06a4039c** — the ribboned book again, three-quarter view. S02 says *seen from
+  above*; IMG_7499 is the one that answers it.
+- **B3_e5443cf5** — open book on a stand, lamp left, with **a painted vignette of a
+  tree and a house on the page**. A picture inside the picture. The manuscript shots
+  want ink strokes suggested and never legible, and nothing else on the paper; this
+  reads as a storybook rather than a manuscript, and it would fight the Arabic cards.
+- **B3_b203e278** — the lintel, rendered as **a photograph of a sheet of watercolour
+  paper**: angled on a dark table, a second sheet visible at the top left, real paper
+  grain, artwork bleeding off the edge. Every other still in the film is a flat plate
+  seen straight on. Beautiful object, wrong convention — and an off-axis crop cannot
+  be squared to 16:9 without losing the lintel. Straight-on or regenerate.
+
+## Coverage is the finding, not the individual files
+
+Three batches in, and thirty-five delivered images:
+
+    CH.01   9/10   #########.     the wax seal, S07, is the only gap
+    CH.02   0/8    ........
+    CH.03   0/12   ............
+    CH.04   0/14   ..............  ← the keystone. The uff sequence.
+    CH.05   1/8    #.......
+    CH.06   0/8    ........
+    CH.07   1/10   #.........
+    CH.08   0/9    .........
+    CH.09   1/8    #.......
+    CH.10   0/6    ......
+    CH.11   1/8    #.......
+
+Chapter 01 has now been generated four times over — four S02s, two S03s, three S05s,
+two S04s — while chapter 04, which the pack calls the retention spine and says to
+spend the budget on first, has nothing at all. The four singles outside chapter 01
+are the Higgsfield style lock (S48, S69, S92) and S116.
+
+The pack's generation order exists for this reason: style lock, then chapter 04,
+then chapter 09, then S111, then everything else. Chapter 01 is the part of the film
+the audience is least likely to leave during.
