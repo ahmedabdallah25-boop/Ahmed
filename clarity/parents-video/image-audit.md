@@ -602,3 +602,31 @@ version nails it — and the settings as flatbread, dates and a cup.
 
 Nine images from a finished set, and five of them are re-dos of shots that arrived
 with one specific thing wrong rather than shots that were never attempted.
+
+---
+
+# Image audit — batch 13 (6 files, staged as `BD_*`) — nothing new
+
+Six files arrived with new checksums. Measured against what is already filed:
+
+    variant            navy  val        filed equivalent   navy  val
+    BD_974a204a        24.2  0.66       S46                24.3  0.66
+    BD_751bf4e8        39.6  0.55       S94                39.5  0.55
+    BD_16afa4e0        27.6  0.62       S95                27.6  0.62
+    BD_3159aaee        19.3  0.72       S45                19.3  0.72
+    BD_0b0d1c23         4.1  0.86       S44                 4.2  0.86
+    BD_424e34c7        13.0  0.74       S47                12.9  0.74
+
+Every pair agrees to within a tenth of a percent on hue distribution and to two
+decimals on value. These are the same six images re-encoded — different bytes, same
+picture. Four more files in the same drop were byte-identical to filed shots and the
+ingest skipped them outright.
+
+**Nothing was filed and the count does not move: 92/101.** The ingest's content check
+did its job — no shot was overwritten with a copy of itself under a new name.
+
+The nine outstanding shots are unaffected by this batch:
+
+    regenerate  S07 (pentagram) · S33 (flame cropped) · S66 (illustrated pages)
+                S79 (modern clothing) · S118 (chopsticks)
+    unstarted   S19 · S71 · S85 · S101
