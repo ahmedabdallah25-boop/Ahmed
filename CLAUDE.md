@@ -91,6 +91,35 @@ Worked example for a >3min upload: `student-loan-thumbnail-prompts.md`.
   title formula — each tested against the channel's own 1.2K winners. Don't re-chase them.
   See `channel-reset.md`.
 
+## Session budget — spend tokens on the read, not on re-reading
+
+Everything here is already summarised above. The way a session wastes credit on this repo is
+not thinking too hard, it is re-loading context it was already given.
+
+- **`channel-reset.md` is an append-only pass log — only the last pass is current state.**
+  It is 1,200+ lines and growing; the last pass is ~340 of them. Read it with
+  `automation/latest-pass.sh` (`automation/latest-pass.sh 2` for the previous pass too, when
+  you need a delta). Same for `heldbyfaith/channel-diagnosis.md`. Only read the whole file
+  when you are genuinely chasing history — say so when you do.
+- **Grep before you cat.** `next-slate.md` (421), the thumbnail-prompt files (~300 each) and
+  the storyboards (436) are all lookup tables. Pull the one row you need with
+  `grep -n` + `sed -n 'A,Bp'`, not the file.
+- **Don't re-derive the ruled-out four.** Captions, tags, publish window, title formula —
+  dead, tested against the channel's own winners. Reading the evidence again costs tokens
+  and changes nothing.
+- **Batch independent calls.** The three Step 1 nexlev pulls, `wc`/`grep`/`ls` probes, and
+  any independent MCP reads go out in one block, not one per turn.
+- **Never call `get_my_*`** (free plan → `ACCESS DENIED`), and spend the ten daily
+  `youtube_video_details` calls only on videos whose exact timestamp changes a decision.
+- **No subagents for channel work.** A subagent starts cold and re-reads everything this
+  file already told you. Work inline.
+- **One verification pass, at the end.** Don't re-read a file you just wrote — the edit
+  tools fail loudly. Verify workflow *logs* (that is a real check), not your own edits.
+
+Quality is not the thing to trim. The full `yala` pass still runs end to end, the dry run
+still comes before the write, and the job logs still get read. Cut the redundant reads, not
+the steps.
+
 ## Development
 
 Work on `claude/youtube-channel-management-6q394e`. Push there first, then fast-forward the

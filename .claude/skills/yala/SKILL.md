@@ -25,7 +25,10 @@ mcp__nexlev__youtube_channel_videos  channel_id="UCVOoFJkRiOdJsWnewt8HJkw" sort_
 ```
 
 Compare against the last recorded state in `channel-reset.md` and note the deltas: subs,
-video count, total views, and anything new since.
+video count, total views, and anything new since. That file is an append-only pass log and
+only the last pass is current — read it with `automation/latest-pass.sh` (add `2` for a
+delta against the pass before). Reading all 1,200+ lines buys nothing the last pass
+doesn't already say.
 
 ## Step 2 — Build the ledger with ages attached
 
@@ -158,3 +161,4 @@ goes through Actions.
 | `next-slate.md` | The ten queued uploads, pitched title-first, with the competitive data |
 | `automation/reset.json` | Packaging targets, `protected` and `hold` lists |
 | `automation/reset_packaging.py` | Applies it; idempotent; exits non-zero on any failure |
+| `automation/latest-pass.sh` | Prints just the last pass of a pass log — use it instead of reading the whole file |
