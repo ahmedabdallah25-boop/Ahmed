@@ -462,3 +462,53 @@ Chapter 02 is the one that has had nothing from the start. It is also the chapte
 that establishes who the verse is watching — the empty chair, the cooling tea, the
 walking stick, the still hands — so it carries the film's quietest and most
 object-led run. Every one of its eight shots is still life; none is hard.
+
+---
+
+# Image audit — batch 10 (5 files, staged as `BA_*`) — 84/101
+
+Filed: S14 S15 S16 S17 S18. Chapter 02 opens at 5/8, missing only S12, S13 and S19.
+
+**S15 is the best hands plate in the film.** Palms up and open in a lap of undyed
+cloth, fingers slightly curled, entirely still — the papery dry-brush skin is doing
+the work the prompt asked for and nothing else is in the frame competing with it.
+S16's two mats, one rolled and tied and one still lived-in, reads instantly.
+
+## Notes
+
+- **S18 has the head in frame.** The prompt crops at the neck with no head in shot;
+  here the crown is cut by the top edge instead. No face is visible — the rule holds
+  — but it is not the written framing, and the whole point of that crop is that the
+  viewer supplies the person.
+- **S14's cup has a handle** and the courtyard beyond has potted plants on cobbles.
+  The shot is "a single clay cup of tea".
+- **S17 is an Italian courtyard** — tiled roofs, arched windows, rendered facades.
+
+## The register split is now the film's largest open question
+
+Counting what has been filed, the film is running two settings at once:
+
+    Ancient Near East, unambiguous     S23 S25 S26 S27 S54 S62 S68 S72 S73 S74
+                                       S77 S78 S80 S82 S84 S86 S90 and the
+                                       Higgsfield plates S48 S69 S92
+    European / Victorian domestic      S14 S17 S18 S24 S28 S32 S39 S40 S46 S63 S95
+    Neutral objects, reads either way  most of the rest
+
+That is roughly eleven plates against twenty. The neutral majority is why it has not
+broken yet — but S62's loaded camel at a gate and S63's thatched cottage with a coach
+lamp are four minutes apart, and S24's cobbled lane sits in the same chapter as S25's
+date palm.
+
+The script is deliberately universal — it argues the verse through domestic objects
+any viewer recognises — so a timeless-Mediterranean register is a legitimate choice.
+What is not legitimate is running both. Two ways to settle it:
+
+1. **Commit to the Near East.** Regenerate the eleven. Costs eleven images and makes
+   the film consistent with its subject and with the strongest plates already made.
+2. **Commit to timeless-domestic.** Keep the eleven, regenerate the camel and the
+   date palm to something less locating, and accept that the film looks like a
+   European folk tale about a Quranic verse.
+
+Option 1 is the one the pack implies and the one that protects the film's authority
+with the audience most likely to share it. Either way it needs deciding before the
+edit, because it is invisible shot by shot and obvious in a cut.
