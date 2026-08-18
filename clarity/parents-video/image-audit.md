@@ -423,3 +423,42 @@ that ask for abundance and open earth. Whatever changed between the two runs, ke
 
 Chapter 02 and chapter 11 are the two blocks left. S111 is the one with no acceptable
 second version: a road, a mound, a horizon, and no person of any kind.
+
+---
+
+# Image audit — batch 9 (5 files, staged as `B9_*`) — chapter 03 complete, 79/101
+
+Filed: S21 S22 S23 S24 S25. Chapter 03 is now whole.
+
+**S23 is the pick.** The concentric read — mat, swept ring, courtyard wall, track
+leaving for open country — is exactly the widening circle the chapter argues for,
+and it is legible in one second from directly above. **S25** (the old palm and the
+shoot from the same ground) is the other one that needs no defence.
+
+## Notes
+
+- **S21's pages carry cursive script.** The prompt says a single line of ink
+  suggested near the top edge, strokes only, never legible. What arrived reads as
+  handwriting — one page appears to end in a question mark. It is Latin-ish scribble
+  rather than Arabic, so it is not the error section 03 warns about, but it is the
+  same species of it: a model writing something that looks like words. At Shorts
+  scale nobody reads it; at 1080p on a 30-minute film, someone will try. Also
+  off-palette 5.9%, and the light above the pages is a modern fitting.
+- **S22's chain reads as more than five links.** The shot is built on the count —
+  one larger link and four that follow, for the five verses. Worth counting on the
+  full-size file before it is locked; if it is six or seven, the image is making a
+  different point from the narration.
+- **S24 is a European cobbled lane** with a panelled door and a buckled rucksack.
+  Fifth plate in that register, after S40, S46, S63 and S32.
+- **S22 is the sixth photograph-of-paper plate** — torn sheet on a dark ground.
+
+## What is left — 22 shots, two blocks and seven singles
+
+    CH.02  S12 S13 S14 S15 S16 S17 S18 S19    the whole chapter, 8 shots
+    CH.11  S111 S113 S114 S115 S118 S119 S120 the closing run, 7 shots
+    singles  S07 · S33 · S66 · S71 · S79 · S85 · S101
+
+Chapter 02 is the one that has had nothing from the start. It is also the chapter
+that establishes who the verse is watching — the empty chair, the cooling tea, the
+walking stick, the still hands — so it carries the film's quietest and most
+object-led run. Every one of its eight shots is still life; none is hard.
