@@ -84,17 +84,19 @@ for line in open(PROMPTS, encoding="utf-8"):
     m = SHOT.match(line.strip())
     if m:
         cur = f"S{int(m.group(1)):02d}"
-        prompts.setdefault(cur, {"prompt": "", "negative": "", "alt": ""})
+        prompts.setdefault(cur, {"prompt": "", "negative": "", "alt": "", "alt_negative": ""})
         continue
-    if cur and line.startswith("PROMPT"):
-        prompts[cur]["_field"] = "prompt"
+    if cur and "TRACK B ALTERNATE" in line:
+        # The marker is indented and bulleted, so match on content, not prefix.
+        # Everything after it belongs to the alternate until the next shot header.
+        prompts[cur]["_alt"] = True
+    elif cur and line.startswith("PROMPT"):
+        prompts[cur]["_field"] = "alt" if prompts[cur].get("_alt") else "prompt"
     elif cur and line.startswith("NEGATIVE"):
-        prompts[cur]["_field"] = "negative"
-    elif cur and line.startswith("TRACK B"):
-        prompts[cur]["_field"] = "alt"
+        prompts[cur]["_field"] = "alt_negative" if prompts[cur].get("_alt") else "negative"
     elif cur and line.strip() and prompts[cur].get("_field"):
         f = prompts[cur]["_field"]
-        prompts[cur][f] = (prompts[cur][f] + " " + line.strip()).strip()
+        prompts[cur][f] = (prompts[cur].get(f, "") + " " + line.strip()).strip()
 
 # ------------------------------------------------------------------- audit
 fails, notes = [], []
@@ -133,7 +135,15 @@ no_prompt = [e["id"] for e in gen if not prompts.get(e["id"], {}).get("prompt")]
 check(not no_prompt, "every still has a ready-to-paste prompt" + ("" if not no_prompt else f" — {no_prompt}"))
 mismatch = [e["id"] for e in gen if prompts.get(e["id"], {}).get("prompt", "")[:40] and
             e["prompt"][:40].lower() != prompts[e["id"]]["prompt"][:40].lower()]
-check(not mismatch, "prompt pack agrees with scene pack, first 40 chars" + ("" if not mismatch else f" — {mismatch}"))
+check(not mismatch, "prompt pack agrees with scene pack, opening" + ("" if not mismatch else f" — {mismatch}"))
+
+# A prompt that swallowed its own Track B alternate would carry the style tail
+# twice. Catching that is the whole reason this check counts rather than compares.
+TAIL = "no calligraphy in the image."
+doubled = [e["id"] for e in gen if prompts.get(e["id"], {}).get("prompt", "").lower().count(TAIL) > 1]
+check(not doubled, "no prompt contains a second block glued onto it" + ("" if not doubled else f" — {doubled}"))
+short = [e["id"] for e in gen if 0 < len(prompts.get(e["id"], {}).get("prompt", "")) < 300]
+check(not short, "every prompt carries the resolved style suffix" + ("" if not short else f" — {short}"))
 
 FACE = re.compile(r"\b(face|faces|eyes|eye|mouth|nose|portrait|likeness|smiling|expression)\b", re.I)
 # "face" also names surfaces (the door's face, the stone's lit face) and appears

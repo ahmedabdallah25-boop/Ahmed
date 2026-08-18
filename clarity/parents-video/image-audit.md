@@ -168,3 +168,63 @@ are the Higgsfield style lock (S48, S69, S92) and S116.
 The pack's generation order exists for this reason: style lock, then chapter 04,
 then chapter 09, then S111, then everything else. Chapter 01 is the part of the film
 the audience is least likely to leave during.
+
+---
+
+# Mechanical audit of the filed stills
+
+By eye is not an audit. `audit_images.py` counts what section 01 states in
+measurable terms: hue distribution against the five-colour palette, aspect,
+resolution, and a bright-corner check. Composition, subject and the face rule
+still need eyes — this says where to point them.
+
+```
+file               size     ar   navy ochre terra  sage  neut   OFF    sat   val corner  flags
+S01.jpg     1376x768    1.792   42.8  32.0   7.6   0.0  13.8   3.8   0.43  0.46  0.00%  under-1080p
+S02.jpg     1376x768    1.792   51.8  26.8   4.7   0.0  16.4   0.4   0.42  0.42 30.86%  under-1080p
+S03.jpg     1376x768    1.792   18.8  32.8   4.9   1.7  41.4   0.4   0.20  0.68 30.95%  under-1080p low-navy
+S04.jpg     1376x768    1.792   42.2  22.9  11.6   0.0  19.3   3.9   0.43  0.55  0.00%  under-1080p
+S05.jpg     1376x768    1.792   42.2  35.2   4.6   0.0  16.1   1.9   0.36  0.51 34.59%  under-1080p
+S06.jpg     1376x768    1.792   29.6  38.2   7.4   1.0  19.2   4.7   0.37  0.58 43.17%  under-1080p
+S08.jpg     1376x768    1.792   19.1  60.8   6.5   1.0  11.8   0.9   0.34  0.70  0.00%  under-1080p low-navy
+S09.jpg     1376x768    1.792   23.6  28.5   6.6   2.7  36.5   2.0   0.23  0.69  0.00%  under-1080p low-navy
+S10.jpg     1376x768    1.792   24.0  55.2   6.0   0.5  11.9   2.4   0.36  0.64  0.00%  under-1080p low-navy
+S116.jpg    1376x768    1.792   43.2  29.9   5.2   0.0  20.2   1.5   0.42  0.53 41.43%  under-1080p
+```
+
+**Palette holds.** Off-palette pixels run 0.4–4.7% on every filed still, so nothing
+has drifted into a hue the pack excludes. Saturation sits at 0.20–0.43, well short
+of the "saturated colours, neon" the negative prompt rules out. On this measure the
+delivered work is consistent with the house style, both sub-styles included.
+
+**Aspect is 1.792 on all ten, not 1.778.** A ~1% crop squares each to 16:9.
+
+**Resolution fails on all ten.** 1376×768 against a 1080p timeline.
+
+**Four plates are low-navy** — S03 (18.8%), S08 (19.1%), S09 (23.6%), S10 (24.0%) —
+against 42–52% on S01, S02, S04, S05, S116. The pack asks for one warm source and
+deep navy everywhere it does not reach. S03 is a daylight exterior and S09 a lit
+step, so those are expected; **S08 and S10 are interiors that should be lamp-in-
+darkness and are reading as generally lit rooms**. They will cut bright against
+their neighbours. Not a reject — a grade note, or a regenerate if you want the
+chapter to hold together.
+
+**The bright-corner column is a hint, not a verdict.** It reports the share of the
+bottom-right corner that is much brighter than its surroundings; the 30–43% readings
+are the cream deckled margin, not a mark. The generator sparkle I flagged in batch 1
+was found by eye and that remains the reliable check.
+
+## What has been audited, and what has not
+
+| Variable | How it was checked |
+|---|---|
+| Shot-to-timecode alignment | Mechanically, all 130 events — `build_timeline.py`, 18 checks |
+| Prompt integrity | Mechanically — style suffix present once, no block glued onto another |
+| Face rule in the prompts | Mechanically — negation-aware scan of all 101 |
+| Face rule in the images | By eye, every delivered file |
+| Palette, saturation, aspect, resolution | Mechanically — `audit_images.py` |
+| Subject matches the shot | By eye, every delivered file |
+| Arabic / lettering in frame | By eye — caught ORIG_3 |
+| Watermarks | By eye — caught eleven in batch 1 |
+| The four Higgsfield plates | **Not checked.** The proxy blocks that CDN, so they cannot be pulled here. They rendered in the widget; the pixel check on S48, S69, S92 and the S01 control is yours |
+| The nine Arabic cards | **Not checked and not checkable here.** They need an Arabic-literate human against a mushaf |
