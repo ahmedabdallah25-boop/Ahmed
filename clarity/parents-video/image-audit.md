@@ -512,3 +512,49 @@ What is not legitimate is running both. Two ways to settle it:
 Option 1 is the one the pack implies and the one that protects the film's authority
 with the audience most likely to share it. Either way it needs deciding before the
 edit, because it is invisible shot by shot and obvious in a cut.
+
+---
+
+# Image audit — batch 11 (5 files, staged as `BB_*`) — 88/101, one hard hold
+
+Filed: S12 S13 S119 S120. Chapter 02 is complete but for S19.
+
+**S12 is the plate chapter 02 was waiting for.** The elderly figure from behind under
+a bone-white shawl, back of the covered head to camera, one shaft from a high window
+across an otherwise black room — 52.9% navy, value 0.46, and the face rule satisfied
+by the framing the prompt actually asked for rather than by a crop. **S13**, the stick
+propped by the doorway with the handle darkened by decades of hands, is nearly as good
+and sits squarely in the film's Near-Eastern register.
+
+## HOLD — BB_14b442f3, the S07 seal: it carries a pentagram
+
+The bronze seal is pressed into the wax exactly as written, and its face is engraved
+with a clear **five-pointed star**. The prompt says the seal's face is "a plain
+geometric device with no letters" — a pentagram is technically a geometric device and
+is the single worst one available here. On a channel called Clarity in the Quran, a
+five-pointed star inside a circle reads as occult to a meaningful part of the audience,
+and it will be screenshotted before it is explained.
+
+This is the same class of error as the generated Arabic in ORIG_3: not a craft fault,
+a credibility fault, and one that no grade fixes. Regenerate with a plain device — a
+circle within a circle, a simple radial fan, a plain boss with no star and no letters.
+It also measures 6.2% off-palette, the joint-highest in the film.
+
+## Notes on what was filed
+
+- **S120 does not deliver its idea.** The prompt is a lamp still burning at dawn with
+  its flame *gone pale and thin* against growing daylight — the point being that the
+  lamp is being outshone. What arrived is a bright modern hurricane lantern dominating
+  a lit room, flame strong. It is a good picture of the wrong beat, and it is the
+  film's second-to-last image. Worth regenerating when there is budget.
+- **S119 sits on an open book page** — seventh plate in the photograph-of-paper
+  convention, after S22, S57, S60, S66, S82, S89.
+- **S13 is low-navy at 22.0%** but the shot is a lit doorway wall, so it reads.
+
+## 13 left
+
+    S07  S19  S33  S66  S71  S79  S85  S101  S111  S113  S114  S115  S118
+
+Four of those are holds needing a regenerate rather than a first attempt — S07 (the
+pentagram), S33 (the flame, cropped), S66 (illustrated pages), S79 (modern clothing).
+The genuinely unstarted ones are S19, S71, S85, S101, S111, S113, S114, S115, S118.

@@ -1,6 +1,6 @@
 ==============================================================================
 CLARITY IN THE QURAN — "THE ONE SOUND THE QURAN FORBIDS YOU TO MAKE"
-PENDING PROMPTS — 17 shots still to generate · Track A
+PENDING PROMPTS — 13 shots still to generate · Track A
 ==============================================================================
 
 Generated from timeline.csv. Anything already filed in images/ is not here.
@@ -15,7 +15,7 @@ SETTINGS
   · Check the bottom-right corner for a generator watermark before filing.
 
 ORDER — the pack's own: keystone first, then the shared chapter, then S111.
-  CH.04(1) CH.09(1) CH.11(7) CH.01(1) CH.02(3) CH.06(1) CH.07(2) CH.08(1)
+  CH.04(1) CH.09(1) CH.11(5) CH.01(1) CH.02(1) CH.06(1) CH.07(2) CH.08(1)
 
 
 ==============================================================================
@@ -98,24 +98,6 @@ A low table set for a meal with three places laid and one place left empty, the 
 NEGATIVE
 faces, facial features, eyes, mouth, nose, eyebrows, portrait, likeness, photorealistic, 3D render, CGI, digital painting gloss, airbrush, anime, manga, cel shading, flat vector, clip art, cartoon mascot, text, lettering, calligraphy, arabic script, latin script, numbers, watermark, signature, logo, crucifix, cross, church, icon, statue, idol, saturated colours, neon, teal and orange grade, lens flare, bokeh balls, extra fingers, extra limbs, distorted hands, modern clothing in ancient scenes, wristwatch
 
-------------------------------------------------------------------------------
-S119 · 28:57–29:12 · 15s
-------------------------------------------------------------------------------
-PROMPT
-Two open hands raised in supplication, cropped at the forearms, warm ochre light from above, deep navy behind. Held plainly, without drama. Ink and watercolour illustration, visible pen linework in deep indigo-navy, loose translucent washes bleeding past the contour lines, dry-brush texture, warm cream parchment paper showing through. Restricted palette: deep indigo-navy, warm ochre, muted terracotta, olive-sage, bone white. One warm light source, deep navy shadow everywhere else. Hand-painted storybook plate, torn deckled paper edge. 16:9. No text, no lettering, no calligraphy in the image.
-
-NEGATIVE
-faces, facial features, eyes, mouth, nose, eyebrows, portrait, likeness, photorealistic, 3D render, CGI, digital painting gloss, airbrush, anime, manga, cel shading, flat vector, clip art, cartoon mascot, text, lettering, calligraphy, arabic script, latin script, numbers, watermark, signature, logo, crucifix, cross, church, icon, statue, idol, saturated colours, neon, teal and orange grade, lens flare, bokeh balls, extra fingers, extra limbs, distorted hands, modern clothing in ancient scenes, wristwatch
-
-------------------------------------------------------------------------------
-S120 · 29:12–29:28 · 16s
-------------------------------------------------------------------------------
-PROMPT
-A lamp still burning at dawn, its flame gone pale and thin against the growing cream daylight coming through a window behind it. Deep navy retreating from the room. Ink and watercolour illustration, visible pen linework in deep indigo-navy, loose translucent washes bleeding past the contour lines, dry-brush texture, warm cream parchment paper showing through. Restricted palette: deep indigo-navy, warm ochre, muted terracotta, olive-sage, bone white. One warm light source, deep navy shadow everywhere else. Hand-painted storybook plate, torn deckled paper edge. 16:9. No text, no lettering, no calligraphy in the image.
-
-NEGATIVE
-faces, facial features, eyes, mouth, nose, eyebrows, portrait, likeness, photorealistic, 3D render, CGI, digital painting gloss, airbrush, anime, manga, cel shading, flat vector, clip art, cartoon mascot, text, lettering, calligraphy, arabic script, latin script, numbers, watermark, signature, logo, crucifix, cross, church, icon, statue, idol, saturated colours, neon, teal and orange grade, lens flare, bokeh balls, extra fingers, extra limbs, distorted hands, modern clothing in ancient scenes, wristwatch
-
 
 ==============================================================================
 CH.01
@@ -134,24 +116,6 @@ faces, facial features, eyes, mouth, nose, eyebrows, portrait, likeness, photore
 ==============================================================================
 CH.02
 ==============================================================================
-
-------------------------------------------------------------------------------
-S12 · 2:35–2:50 · 15s
-------------------------------------------------------------------------------
-PROMPT
-An elderly figure seen from behind, seated low on a floor cushion in the corner of a plain room, shoulders rounded under a bone-white shawl, the back of the covered head toward camera. No face is visible or implied. Warm ochre light from a high small window falls across the shawl. Deep navy room. Ink and watercolour illustration, visible pen linework in deep indigo-navy, loose translucent washes bleeding past the contour lines, dry-brush texture, warm cream parchment paper showing through. Restricted palette: deep indigo-navy, warm ochre, muted terracotta, olive-sage, bone white. One warm light source, deep navy shadow everywhere else. Hand-painted storybook plate, torn deckled paper edge. 16:9. No text, no lettering, no calligraphy in the image.
-
-NEGATIVE
-faces, facial features, eyes, mouth, nose, eyebrows, portrait, likeness, photorealistic, 3D render, CGI, digital painting gloss, airbrush, anime, manga, cel shading, flat vector, clip art, cartoon mascot, text, lettering, calligraphy, arabic script, latin script, numbers, watermark, signature, logo, crucifix, cross, church, icon, statue, idol, saturated colours, neon, teal and orange grade, lens flare, bokeh balls, extra fingers, extra limbs, distorted hands, modern clothing in ancient scenes, wristwatch
-
-------------------------------------------------------------------------------
-S13 · 2:50–3:05 · 15s
-------------------------------------------------------------------------------
-PROMPT
-A worn wooden walking stick propped against a mudbrick wall beside a low doorway, its handle darkened and polished by decades of hands. Warm ochre light from the doorway; the wall above falls into deep navy. Fine cracks in the plaster. Ink and watercolour illustration, visible pen linework in deep indigo-navy, loose translucent washes bleeding past the contour lines, dry-brush texture, warm cream parchment paper showing through. Restricted palette: deep indigo-navy, warm ochre, muted terracotta, olive-sage, bone white. One warm light source, deep navy shadow everywhere else. Hand-painted storybook plate, torn deckled paper edge. 16:9. No text, no lettering, no calligraphy in the image.
-
-NEGATIVE
-faces, facial features, eyes, mouth, nose, eyebrows, portrait, likeness, photorealistic, 3D render, CGI, digital painting gloss, airbrush, anime, manga, cel shading, flat vector, clip art, cartoon mascot, text, lettering, calligraphy, arabic script, latin script, numbers, watermark, signature, logo, crucifix, cross, church, icon, statue, idol, saturated colours, neon, teal and orange grade, lens flare, bokeh balls, extra fingers, extra limbs, distorted hands, modern clothing in ancient scenes, wristwatch
 
 ------------------------------------------------------------------------------
 S19 · 4:20–4:35 · 15s
