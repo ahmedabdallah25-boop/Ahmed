@@ -1,6 +1,6 @@
 ==============================================================================
 CLARITY IN THE QURAN — "THE ONE SOUND THE QURAN FORBIDS YOU TO MAKE"
-PENDING PROMPTS — 37 shots still to generate · Track A
+PENDING PROMPTS — 27 shots still to generate · Track A
 ==============================================================================
 
 Generated from timeline.csv. Anything already filed in images/ is not here.
@@ -15,7 +15,7 @@ SETTINGS
   · Check the bottom-right corner for a generator watermark before filing.
 
 ORDER — the pack's own: keystone first, then the shared chapter, then S111.
-  CH.04(1) CH.09(1) CH.11(7) CH.01(1) CH.02(8) CH.03(12) CH.05(3) CH.06(1) CH.07(2) CH.08(1)
+  CH.04(1) CH.09(1) CH.11(7) CH.01(1) CH.02(8) CH.03(5) CH.06(1) CH.07(2) CH.08(1)
 
 
 ==============================================================================
@@ -254,102 +254,6 @@ S25 · 5:48–6:01 · 13s
 ------------------------------------------------------------------------------
 PROMPT
 An old date palm and a very young palm shoot growing from the same patch of ground, seen against a pale cream sky. The old trunk is scarred and fibrous, the shoot bright and soft. Low warm sun from the right. Ink and watercolour illustration, visible pen linework in deep indigo-navy, loose translucent washes bleeding past the contour lines, dry-brush texture, warm cream parchment paper showing through. Restricted palette: deep indigo-navy, warm ochre, muted terracotta, olive-sage, bone white. One warm light source, deep navy shadow everywhere else. Hand-painted storybook plate, torn deckled paper edge. 16:9. No text, no lettering, no calligraphy in the image.
-
-NEGATIVE
-faces, facial features, eyes, mouth, nose, eyebrows, portrait, likeness, photorealistic, 3D render, CGI, digital painting gloss, airbrush, anime, manga, cel shading, flat vector, clip art, cartoon mascot, text, lettering, calligraphy, arabic script, latin script, numbers, watermark, signature, logo, crucifix, cross, church, icon, statue, idol, saturated colours, neon, teal and orange grade, lens flare, bokeh balls, extra fingers, extra limbs, distorted hands, modern clothing in ancient scenes, wristwatch
-
-------------------------------------------------------------------------------
-S26 · 6:01–6:14 · 13s
-------------------------------------------------------------------------------
-PROMPT
-A stone hand-mill on a floor, its upper stone worn into a shallow bowl by years of turning, a scatter of grain around its base. Warm ochre light from one side, deep navy floor. Ink and watercolour illustration, visible pen linework in deep indigo-navy, loose translucent washes bleeding past the contour lines, dry-brush texture, warm cream parchment paper showing through. Restricted palette: deep indigo-navy, warm ochre, muted terracotta, olive-sage, bone white. One warm light source, deep navy shadow everywhere else. Hand-painted storybook plate, torn deckled paper edge. 16:9. No text, no lettering, no calligraphy in the image.
-
-NEGATIVE
-faces, facial features, eyes, mouth, nose, eyebrows, portrait, likeness, photorealistic, 3D render, CGI, digital painting gloss, airbrush, anime, manga, cel shading, flat vector, clip art, cartoon mascot, text, lettering, calligraphy, arabic script, latin script, numbers, watermark, signature, logo, crucifix, cross, church, icon, statue, idol, saturated colours, neon, teal and orange grade, lens flare, bokeh balls, extra fingers, extra limbs, distorted hands, modern clothing in ancient scenes, wristwatch
-
-------------------------------------------------------------------------------
-S27 · 6:14–6:27 · 13s
-------------------------------------------------------------------------------
-PROMPT
-A figure seen from behind and at distance, carrying a heavy bundle on the back while climbing a stony path, the body bent forward under the load. Small in frame, no detail resolvable. Pale cream sky, navy rock, one warm ochre patch of sunlight on the path ahead. Ink and watercolour illustration, visible pen linework in deep indigo-navy, loose translucent washes bleeding past the contour lines, dry-brush texture, warm cream parchment paper showing through. Restricted palette: deep indigo-navy, warm ochre, muted terracotta, olive-sage, bone white. One warm light source, deep navy shadow everywhere else. Hand-painted storybook plate, torn deckled paper edge. 16:9. No text, no lettering, no calligraphy in the image.
-
-NEGATIVE
-faces, facial features, eyes, mouth, nose, eyebrows, portrait, likeness, photorealistic, 3D render, CGI, digital painting gloss, airbrush, anime, manga, cel shading, flat vector, clip art, cartoon mascot, text, lettering, calligraphy, arabic script, latin script, numbers, watermark, signature, logo, crucifix, cross, church, icon, statue, idol, saturated colours, neon, teal and orange grade, lens flare, bokeh balls, extra fingers, extra limbs, distorted hands, modern clothing in ancient scenes, wristwatch
-
-------------------------------------------------------------------------------
-S28 · 6:27–6:35 · 8s
-------------------------------------------------------------------------------
-PROMPT
-A set of brass scales at rest, both pans empty and perfectly level, on a dark surface. Warm ochre rim light along the beam, deep navy behind. Ink and watercolour illustration, visible pen linework in deep indigo-navy, loose translucent washes bleeding past the contour lines, dry-brush texture, warm cream parchment paper showing through. Restricted palette: deep indigo-navy, warm ochre, muted terracotta, olive-sage, bone white. One warm light source, deep navy shadow everywhere else. Hand-painted storybook plate, torn deckled paper edge. 16:9. No text, no lettering, no calligraphy in the image.
-
-NEGATIVE
-faces, facial features, eyes, mouth, nose, eyebrows, portrait, likeness, photorealistic, 3D render, CGI, digital painting gloss, airbrush, anime, manga, cel shading, flat vector, clip art, cartoon mascot, text, lettering, calligraphy, arabic script, latin script, numbers, watermark, signature, logo, crucifix, cross, church, icon, statue, idol, saturated colours, neon, teal and orange grade, lens flare, bokeh balls, extra fingers, extra limbs, distorted hands, modern clothing in ancient scenes, wristwatch
-
-------------------------------------------------------------------------------
-S29 · 6:39–6:52 · 13s
-------------------------------------------------------------------------------
-PROMPT
-A thin cotton thread stretched taut between two fixed points, with many small weights hung along its length, the thread bowing deeply in the middle under the accumulated load. Plain cream ground, one warm light from the left, navy shadows. Ink and watercolour illustration, visible pen linework in deep indigo-navy, loose translucent washes bleeding past the contour lines, dry-brush texture, warm cream parchment paper showing through. Restricted palette: deep indigo-navy, warm ochre, muted terracotta, olive-sage, bone white. One warm light source, deep navy shadow everywhere else. Hand-painted storybook plate, torn deckled paper edge. 16:9. No text, no lettering, no calligraphy in the image.
-
-NEGATIVE
-faces, facial features, eyes, mouth, nose, eyebrows, portrait, likeness, photorealistic, 3D render, CGI, digital painting gloss, airbrush, anime, manga, cel shading, flat vector, clip art, cartoon mascot, text, lettering, calligraphy, arabic script, latin script, numbers, watermark, signature, logo, crucifix, cross, church, icon, statue, idol, saturated colours, neon, teal and orange grade, lens flare, bokeh balls, extra fingers, extra limbs, distorted hands, modern clothing in ancient scenes, wristwatch
-
-------------------------------------------------------------------------------
-S30 · 6:52–7:05 · 13s
-------------------------------------------------------------------------------
-PROMPT
-A woven cradle of palm fibre suspended by two ropes from a dark ceiling beam, empty, still swinging very slightly. Warm ochre light catches one side of the weave. Deep navy above and behind. Ink and watercolour illustration, visible pen linework in deep indigo-navy, loose translucent washes bleeding past the contour lines, dry-brush texture, warm cream parchment paper showing through. Restricted palette: deep indigo-navy, warm ochre, muted terracotta, olive-sage, bone white. One warm light source, deep navy shadow everywhere else. Hand-painted storybook plate, torn deckled paper edge. 16:9. No text, no lettering, no calligraphy in the image.
-
-NEGATIVE
-faces, facial features, eyes, mouth, nose, eyebrows, portrait, likeness, photorealistic, 3D render, CGI, digital painting gloss, airbrush, anime, manga, cel shading, flat vector, clip art, cartoon mascot, text, lettering, calligraphy, arabic script, latin script, numbers, watermark, signature, logo, crucifix, cross, church, icon, statue, idol, saturated colours, neon, teal and orange grade, lens flare, bokeh balls, extra fingers, extra limbs, distorted hands, modern clothing in ancient scenes, wristwatch
-
-------------------------------------------------------------------------------
-S31 · 7:09–7:24 · 15s
-------------------------------------------------------------------------------
-PROMPT
-Two clay bowls on a table, one large and one small, the small one set inside the large one. Warm ochre light from above, the rims catching the light, the interiors falling to deep navy. Ink and watercolour illustration, visible pen linework in deep indigo-navy, loose translucent washes bleeding past the contour lines, dry-brush texture, warm cream parchment paper showing through. Restricted palette: deep indigo-navy, warm ochre, muted terracotta, olive-sage, bone white. One warm light source, deep navy shadow everywhere else. Hand-painted storybook plate, torn deckled paper edge. 16:9. No text, no lettering, no calligraphy in the image.
-
-NEGATIVE
-faces, facial features, eyes, mouth, nose, eyebrows, portrait, likeness, photorealistic, 3D render, CGI, digital painting gloss, airbrush, anime, manga, cel shading, flat vector, clip art, cartoon mascot, text, lettering, calligraphy, arabic script, latin script, numbers, watermark, signature, logo, crucifix, cross, church, icon, statue, idol, saturated colours, neon, teal and orange grade, lens flare, bokeh balls, extra fingers, extra limbs, distorted hands, modern clothing in ancient scenes, wristwatch
-
-------------------------------------------------------------------------------
-S32 · 7:24–7:40 · 16s
-------------------------------------------------------------------------------
-PROMPT
-A closed manuscript on a stand in a darkening room, the lamp beside it burning low, the flame small. Most of the frame is deep navy. The last warm light sits on the book's fore-edge. Ink and watercolour illustration, visible pen linework in deep indigo-navy, loose translucent washes bleeding past the contour lines, dry-brush texture, warm cream parchment paper showing through. Restricted palette: deep indigo-navy, warm ochre, muted terracotta, olive-sage, bone white. One warm light source, deep navy shadow everywhere else. Hand-painted storybook plate, torn deckled paper edge. 16:9. No text, no lettering, no calligraphy in the image.
-
-NEGATIVE
-faces, facial features, eyes, mouth, nose, eyebrows, portrait, likeness, photorealistic, 3D render, CGI, digital painting gloss, airbrush, anime, manga, cel shading, flat vector, clip art, cartoon mascot, text, lettering, calligraphy, arabic script, latin script, numbers, watermark, signature, logo, crucifix, cross, church, icon, statue, idol, saturated colours, neon, teal and orange grade, lens flare, bokeh balls, extra fingers, extra limbs, distorted hands, modern clothing in ancient scenes, wristwatch
-
-
-==============================================================================
-CH.05
-==============================================================================
-
-------------------------------------------------------------------------------
-S50 · 11:49–12:04 · 15s
-------------------------------------------------------------------------------
-PROMPT
-A wide shallow bowl being filled with grain from above, the grain overflowing the rim and spilling down the sides onto the table in a widening heap. Warm ochre light from the left, deep navy behind. Abundance past the point of containment. Ink and watercolour illustration, visible pen linework in deep indigo-navy, loose translucent washes bleeding past the contour lines, dry-brush texture, warm cream parchment paper showing through. Restricted palette: deep indigo-navy, warm ochre, muted terracotta, olive-sage, bone white. One warm light source, deep navy shadow everywhere else. Hand-painted storybook plate, torn deckled paper edge. 16:9. No text, no lettering, no calligraphy in the image.
-
-NEGATIVE
-faces, facial features, eyes, mouth, nose, eyebrows, portrait, likeness, photorealistic, 3D render, CGI, digital painting gloss, airbrush, anime, manga, cel shading, flat vector, clip art, cartoon mascot, text, lettering, calligraphy, arabic script, latin script, numbers, watermark, signature, logo, crucifix, cross, church, icon, statue, idol, saturated colours, neon, teal and orange grade, lens flare, bokeh balls, extra fingers, extra limbs, distorted hands, modern clothing in ancient scenes, wristwatch
-
-------------------------------------------------------------------------------
-S51 · 12:04–12:19 · 15s
-------------------------------------------------------------------------------
-PROMPT
-A root system exposed in a cutaway of dry earth, spreading wide and fine and far beyond the width of the small tree above it. Warm ochre in the upper soil, deep navy in the depths. Ink and watercolour illustration, visible pen linework in deep indigo-navy, loose translucent washes bleeding past the contour lines, dry-brush texture, warm cream parchment paper showing through. Restricted palette: deep indigo-navy, warm ochre, muted terracotta, olive-sage, bone white. One warm light source, deep navy shadow everywhere else. Hand-painted storybook plate, torn deckled paper edge. 16:9. No text, no lettering, no calligraphy in the image.
-
-NEGATIVE
-faces, facial features, eyes, mouth, nose, eyebrows, portrait, likeness, photorealistic, 3D render, CGI, digital painting gloss, airbrush, anime, manga, cel shading, flat vector, clip art, cartoon mascot, text, lettering, calligraphy, arabic script, latin script, numbers, watermark, signature, logo, crucifix, cross, church, icon, statue, idol, saturated colours, neon, teal and orange grade, lens flare, bokeh balls, extra fingers, extra limbs, distorted hands, modern clothing in ancient scenes, wristwatch
-
-------------------------------------------------------------------------------
-S52 · 12:19–12:34 · 15s
-  ** RE-FRAME PARENT — generate large. Pushed into by: S53 (12:34-12:49)
-------------------------------------------------------------------------------
-PROMPT
-A thick rope of woven fibre lying on a dark surface, cleanly severed at the centre of frame, the two cut ends splayed and fraying, a hand's width of empty dark ground between them. Hard ochre raking light across the fibres. Ink and watercolour illustration, visible pen linework in deep indigo-navy, loose translucent washes bleeding past the contour lines, dry-brush texture, warm cream parchment paper showing through. Restricted palette: deep indigo-navy, warm ochre, muted terracotta, olive-sage, bone white. One warm light source, deep navy shadow everywhere else. Hand-painted storybook plate, torn deckled paper edge. 16:9. No text, no lettering, no calligraphy in the image.
 
 NEGATIVE
 faces, facial features, eyes, mouth, nose, eyebrows, portrait, likeness, photorealistic, 3D render, CGI, digital painting gloss, airbrush, anime, manga, cel shading, flat vector, clip art, cartoon mascot, text, lettering, calligraphy, arabic script, latin script, numbers, watermark, signature, logo, crucifix, cross, church, icon, statue, idol, saturated colours, neon, teal and orange grade, lens flare, bokeh balls, extra fingers, extra limbs, distorted hands, modern clothing in ancient scenes, wristwatch

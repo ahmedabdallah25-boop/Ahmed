@@ -379,3 +379,47 @@ it costs nothing but an afternoon in the edit.
 
 Off-palette above 4%: S06 4.7 · S40 4.0 · S41 4.9 · S42 6.9 · S61 4.1 · S65 6.5 ·
 S90 4.1. All gradeable, none worth regenerating.
+
+---
+
+# Image audit — batch 8 (10 new, 5 duplicates skipped) — 74/101
+
+Chapters 05 and 10 are complete; chapter 03 opens at 7/12. Five files in this drop
+were byte-identical repeats of S54, S55, S56, S57 and S59 and were skipped by the
+ingest, not re-filed.
+
+Filed: S26 S27 S28 S29 S30 S31 S32 S50 S51 S52. All ten match their prompts. The
+severed rope (S52) and the loaded thread (S29) are the two strongest images in the
+film so far — S29 in particular is doing something the prompt only implied, letting
+the sag carry the whole weight of *wahnan 'ala wahn*.
+
+## The brightness drift has reversed
+
+    batch 8 alone   navy mean 37.7%   value mean 0.56
+    whole film      navy mean 29.5%   value mean 0.62
+
+Batch 7 pulled the film's average toward daylight; this batch pulls it back. S29 is
+71.9% navy, S30 54.0%, S32 44.6%, S27 41.7% — the four darkest plates outside the
+supplication shots. Only S50 and S51 came in under 25% navy, and both are prompts
+that ask for abundance and open earth. Whatever changed between the two runs, keep it.
+
+## Two small notes
+
+- **S32's lamp is burning bright** where the prompt says it is burning low with the
+  flame small and the last warm light on the book's fore-edge. It is also a glass-
+  chimney lamp — the fourth plate in that Victorian register, with S40, S46 and S63.
+- **S28's scales are a European balance**, the same object as S39's. That is at least
+  internally consistent between the two scales shots, which matters more than the
+  period, since the pair is a deliberate rhyme.
+
+## What is left — 27 shots
+
+    CH.01  S07
+    CH.02  S12 S13 S14 S15 S16 S17 S18 S19     ← the whole chapter
+    CH.03  S21 S22 S23 S24 S25
+    CH.04  S33                                  ← the flame, still needed flat and large
+    CH.06  S66     CH.07  S71     CH.08  S79 S85     CH.09  S101
+    CH.11  S111 S113 S114 S115 S118 S119 S120    ← the whole closing chapter bar one
+
+Chapter 02 and chapter 11 are the two blocks left. S111 is the one with no acceptable
+second version: a road, a mound, a horizon, and no person of any kind.
