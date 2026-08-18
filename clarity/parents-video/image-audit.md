@@ -558,3 +558,47 @@ It also measures 6.2% off-palette, the joint-highest in the film.
 Four of those are holds needing a regenerate rather than a first attempt — S07 (the
 pentagram), S33 (the flame, cropped), S66 (illustrated pages), S79 (modern clothing).
 The genuinely unstarted ones are S19, S71, S85, S101, S111, S113, S114, S115, S118.
+
+---
+
+# Image audit — batch 12 (5 files, staged as `BC_*`) — 92/101
+
+Filed: S111 S113 S114 S115. Chapter 11 is 7/8.
+
+## S111 passes the one rule that had no second version
+
+Checked deliberately and slowly, because the pack says this is the shot to discard
+and regenerate if anything at all appears in it. The frame contains **an empty stony
+road, a low unmarked mound of earth and stones at its verge, dry tussocks, two low
+hills and a wide cream horizon.** No person. No figure. No animal. No structure. No
+shadow that could be read as someone standing outside frame. No light-from-the-sky
+device. It is a road and a horizon, exactly as written.
+
+It is also 6.4% navy and value 0.81 — the second brightest plate in the film. That is
+what its prompt asks for (pale cream sky, warm ochre low light along the ground) and
+it is the right instinct for the beat, but it is worth knowing that the film's most
+carefully constrained shot is also one of its most open and bright.
+
+**S115** is the counterweight: 45% navy, value 0.48, the lit window carrying the only
+warm light in a black wall. Chapter 11 alternates between them well.
+
+## HOLD — BC_2fd64692, the S118 table: chopsticks
+
+Structurally it is exactly right — four settings, three laid with food, one kept clean
+and empty, which is precisely what the shot asks for and it reads instantly. But the
+settings are laid with **chopsticks on woven mats under a pendant lamp**. The film has
+a loaded camel at a gate in chapter 06. This is not a near-miss of period like the
+brass doorknob; it relocates the scene to a different continent, and it is the last
+domestic image before the closing prayer.
+
+Regenerate with the same composition — the empty place is the whole idea and this
+version nails it — and the settings as flatbread, dates and a cup.
+
+## 9 left
+
+    regenerate  S07 (pentagram) · S33 (flame cropped) · S66 (illustrated pages)
+                S79 (modern clothing) · S118 (chopsticks)
+    unstarted   S19 · S71 · S85 · S101
+
+Nine images from a finished set, and five of them are re-dos of shots that arrived
+with one specific thing wrong rather than shots that were never attempted.
