@@ -228,3 +228,46 @@ was found by eye and that remains the reliable check.
 | Watermarks | By eye — caught eleven in batch 1 |
 | The four Higgsfield plates | **Not checked.** The proxy blocks that CDN, so they cannot be pulled here. They rendered in the widget; the pixel check on S48, S69, S92 and the S01 control is yours |
 | The nine Arabic cards | **Not checked and not checkable here.** They need an Arabic-literate human against a mushaf |
+
+---
+
+# Image audit — batch 4 (5 files, staged as `B4_*`) — the keystone starts
+
+## Filed
+
+| Shot | File | Note |
+|---|---|---|
+| S35 | B4_2ce71f54 | Exact. Chaff turning in a shaft of warm light across a dark room. |
+| S36 | B4_6ceef6d5 | Exact. Concentric ripples crossing water in a clay bowl, ochre reflection broken by them. |
+| S37 | B4_e49518ba | Exact. Threshold stone worn into a dip at its centre, low and close. |
+| S38 | B4_a6b2470f | Exact. Stack of flat stones, a pebble at the summit, one long navy shadow. |
+
+## Held — B4_5f34f71d, the S33 flame
+
+The subject is right: a flame leaning as though a breath had just crossed it. Two
+things stop it being S33.
+
+1. **It is cropped at the right edge.** Roughly half the frame is black ground and
+   a corner of paper; the flame runs off the side. S33 is a re-frame parent — S34
+   (7:56–8:10) holds on this same flame as it returns to vertical. You cannot hold
+   on a flame that is half out of frame, and there is no crop that recovers it.
+2. **It is the third plate rendered as a photograph of paper** rather than a flat
+   plate, after the lintel in batch 3. It also measures **saturation 0.70**, the
+   only still in the film past the 0.45 line — the photographic treatment pushes
+   the ochres well beyond the palette's range.
+
+This is the film's most important single image. Regenerate it flat, straight on,
+flame centred with room above it, and at 2560×1440 so S34's hold has pixels.
+
+## Chapter 04 measured
+
+    S35   navy 39.9  val 0.52
+    S36   navy 25.2  val 0.58
+    S37   navy 22.7  val 0.70   low-navy
+    S38   navy  7.8  val 0.88   low-navy
+
+S38 is the brightest plate in the film so far, and its prompt does ask for a plain
+cream ground, so this is not a fault in the generation. It is a sequencing problem:
+the uff run is meant to tighten and darken, and as filed it opens at 0.52 and ends
+at 0.88 — it gets lighter as it goes. Either grade S38 down in the edit, or place it
+where a bright beat helps rather than fighting the sequence.
