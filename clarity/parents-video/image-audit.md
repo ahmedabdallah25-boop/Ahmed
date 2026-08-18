@@ -271,3 +271,46 @@ cream ground, so this is not a fault in the generation. It is a sequencing probl
 the uff run is meant to tighten and darken, and as filed it opens at 0.52 and ends
 at 0.88 — it gets lighter as it goes. Either grade S38 down in the edit, or place it
 where a bright beat helps rather than fighting the sequence.
+
+---
+
+# Image audit — batch 5 (7 files, staged as `B5_*`) — chapter 04 to 11/14
+
+All seven filed: S39, S40, S41, S42, S43, S44, S45. Subjects are right in every
+case and the face rule holds — S42's two courtyard figures are small, hooded and
+featureless, S40 and S45 are hands only. Three notes, one of which is a real miss.
+
+| Shot | File | Note |
+|---|---|---|
+| S39 | B5_3ef56578 | Scales, one grain, that pan sunk all the way down. Subject exact. **Ground is wrong** — see below. |
+| S40 | B5_afd38c20 | Hand stopped flat on a closed door. Two deviations, below. |
+| S41 | B5_d2e3fcc6 | Exact. Lid ajar, one thin line of steam, embers under. The escape is the subject. |
+| S42 | B5_43bfdfcf | Exact staging — seated figure lit in the alcove, the other angled toward the door. Off-palette 6.9%, the highest in the film. |
+| S43 | B5_b5e82601 | Exact. Hairline crack reading as a thin navy line across an unbroken vessel. |
+| S44 | B5_c6547ed4 | Exact. One thread standing proud of the weave, disturbing the pattern around it. |
+| S45 | B5_23c5e1a7 | Exact. Bone-white cloth offered on two open palms, cropped at the wrist. |
+
+**S39's ground contradicts its prompt.** The shot asks for "warm ochre rim light,
+deep navy ground". What arrived is a pale cream ground — navy 11.7%, value 0.86,
+62.6% of the frame effectively neutral paper. That is S28's treatment, the level
+scales in chapter 03, and having both scales shots on cream removes the contrast
+between them. This is the one filed image whose lighting is not what was asked for.
+
+**S40 shows the whole forearm** where the prompt crops at the wrist, and the door
+is a panelled one with a round brass knob. The film's other door, S92, is a heavy
+plank door with a drawn bolt. Neither is fatal on its own; together they place this
+frame a few centuries and one continent from its neighbours.
+
+**S42 is 6.9% off-palette**, the highest reading in the film — the courtyard wash
+runs blue-green rather than the olive-sage the palette allows. Gradeable.
+
+## Chapter 04 is getting brighter as it goes
+
+    S35 0.52 · S36 0.58 · S37 0.70 · S38 0.88 · S39 0.86 · S40 0.65
+    S41 0.56 · S42 0.53 · S43 0.66 · S44 0.86 · S45 0.72
+
+Seven of the eleven filed plates sit at or above 0.65. The two darkest — S41, the
+pot with its escaping steam, and S42, the two figures at dusk — are the two shots
+about withdrawal, which is right. But the chapter as a whole is meant to tighten
+and close in, and the run currently opens dark, brightens to 0.88 twice, and never
+settles. Worth a grade pass across the chapter before the edit locks.
