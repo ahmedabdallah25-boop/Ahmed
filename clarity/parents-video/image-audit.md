@@ -630,3 +630,29 @@ The nine outstanding shots are unaffected by this batch:
     regenerate  S07 (pentagram) · S33 (flame cropped) · S66 (illustrated pages)
                 S79 (modern clothing) · S118 (chopsticks)
     unstarted   S19 · S71 · S85 · S101
+
+---
+
+# Generated the last nine — 101/101
+
+Batches 14 and 15 added nothing: every file was byte-identical to a shot already
+filed or already held. With the queue looping, the outstanding nine were generated
+here on `seedream_v4_5` at 2560x1440, 1 credit each, 9 of the 9.4 remaining.
+
+Five were re-dos and each prompt names the specific fault it had to fix:
+
+    S07   plain device of two concentric circles - no star, no pentagram
+    S33   flame centred with space above it, nothing cropped by the frame edge
+    S66   strokes only, illegible, and no drawings of any kind on the pages
+    S79   ancient robes, cloaks and leather satchels - no modern clothing
+    S118  eaten by hand, no cutlery and no chopsticks, one place clean and empty
+
+Four were first attempts: S19 the jug and bowl, S71 the shadow across the threshold
+with the figure outside frame, S85 the intact rope bridge, S101 the two lamps across
+a dark span.
+
+**These nine are not pixel-checked.** The proxy blocks Higgsfield's CDN from this
+session, so they rendered but cannot be pulled here to look at. URLs and job ids are
+in `generations.csv`. Check S07 for a star and S71 for a visible figure before the
+edit locks - those are the two where the prompt could still have been disobeyed in a
+way that matters.
