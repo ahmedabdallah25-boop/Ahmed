@@ -10,7 +10,7 @@ import {
 } from 'remotion';
 import './fonts';
 import {FONT, NASKH, P} from './palette';
-import {Event, EVENTS, FPS, VO} from './timeline';
+import {Event, EVENTS, FPS, STILLS_DIR, VO} from './timeline';
 
 // A shot: one still, one move. Nothing in this film moves faster than about 4%
 // of frame width per second (pack, section 06), and every move here is a fixed
@@ -30,7 +30,7 @@ const Shot: React.FC<{event: Event}> = ({event}) => {
   return (
     <AbsoluteFill style={{backgroundColor: P.cream, overflow: 'hidden'}}>
       <Img
-        src={staticFile(`parents/${event.asset}`)}
+        src={staticFile(`${STILLS_DIR}/${event.asset}`)}
         style={{
           width: '100%',
           height: '100%',

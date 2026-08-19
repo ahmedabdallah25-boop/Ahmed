@@ -9,6 +9,10 @@ export type Event = {
   arabic: string; translit: string; meaning: string; split: boolean; note: string;
 };
 
+// The stills directory the picture draws on. scripts/upscale-stills.mjs writes
+// a Lanczos-upscaled copy for the 1080p timeline; when it has been run, the
+// render uses that instead of making the browser enlarge every frame itself.
+export const STILLS_DIR = 'parents-2x';
 export const FPS = 30;
 export const TOTAL_FRAMES = 56637;
 export const VO = 'vo-parents.mp3';

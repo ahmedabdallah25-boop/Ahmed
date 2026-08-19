@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 video/out/
 video/node_modules/
+video/public/parents-2x/
