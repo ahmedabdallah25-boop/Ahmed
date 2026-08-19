@@ -4,6 +4,9 @@ import './fonts';
 import {INFLATION_DURATION, Inflation} from './inflation/Inflation';
 import {INFLATION_THUMBS, THUMB_H, THUMB_W} from './inflation/Thumbnail';
 import {Longform} from './longform/Longform';
+import {Parents} from './parents/Parents';
+import {TOTAL_FRAMES as PARENTS_FRAMES} from './parents/timeline';
+import {H as PARENTS_H, W as PARENTS_W} from './parents/palette';
 import {Pension} from './pension/Pension';
 import {TOTAL_FRAMES as PENSION_FRAMES} from './pension/timeline';
 import {StudentLoan} from './studentloan/StudentLoan';
@@ -88,6 +91,27 @@ export const RemotionRoot: React.FC = () => (
       width={W}
       height={H}
       defaultProps={{audit: true}}
+    />
+    {/* Clarity in the Quran — "The one sound the Quran forbids you to make".
+        16:9 long-form, 29:45, built from 101 illustrated stills with 20
+        re-frames off them and 9 typeset Quranic cards.
+
+        This one is NOT cut to a voiceover: the read has not been recorded, so
+        the timeline is the pack's own designed timecodes, which — unlike the
+        Shorts packs — are continuous and resolve exactly to the stated runtime.
+        parse-parents-pack.mjs proves that on every build. Re-time against the
+        recording with force-align.py when it lands.
+
+        12 of the 101 stills are not generated yet and 7 re-frames hang off
+        them; those 19 events render as a labelled slate rather than being cut,
+        so the runtime and every later timecode stay true. */}
+    <Composition
+      id="Parents-OneSound"
+      component={Parents}
+      durationInFrames={PARENTS_FRAMES}
+      fps={FPS}
+      width={PARENTS_W}
+      height={PARENTS_H}
     />
     {/* Episode 2 — long-form, cut to the recorded VO. */}
     <Composition

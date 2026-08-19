@@ -27,7 +27,10 @@
     "timeline:studentloan": "node scripts/make-timeline-studentloan.mjs",
     "srt:studentloan": "node scripts/make-srt-studentloan.mjs",
     "render:studentloan": "remotion render src/index.ts StudentLoan-Crossover ../media/student-loan-crossover.mp4",
-    "audit:studentloan": "python3 scripts/audit-captions.py out/audit-studentloan scripts/audit-frames.json"
+    "audit:studentloan": "python3 scripts/audit-captions.py out/audit-studentloan scripts/audit-frames.json",
+    "pack:parents": "node scripts/parse-parents-pack.mjs",
+    "timeline:parents": "node scripts/parse-parents-pack.mjs && node scripts/make-timeline-parents.mjs",
+    "render:parents": "remotion render src/index.ts Parents-OneSound ../media/parents-one-sound.mp4"
   },
   "keywords": [],
   "author": "",
