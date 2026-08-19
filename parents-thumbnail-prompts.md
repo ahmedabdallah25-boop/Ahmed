@@ -1,217 +1,281 @@
 # Reverse-Engineering "What 'Honor Your Parents' Actually Means in Hebrew"
 
 Source: `youtu.be/uXGWlAQ16r4` — **Deep Made Simple** (`UCiVywgvam7BPUwJ-zwxuRGg`).
-Pulled 2026-08-19.
+Analysis pulled 2026-08-19. **Revised the same day once the actual thumbnail was
+supplied by hand** — the first version of this file was written blind and got
+the design badly wrong. See "Correction" below.
 
 ---
 
-## Audit — read this before you use anything below
+## Correction — what the blind pass got wrong
 
-**Three things I could measure, one thing I could not.**
+The session proxy hard-blocks image hosts (`i.ytimg.com`, `img.youtube.com`,
+`i9.ytimg.com` all 403 on curl; WebFetch returns `EGRESS_BLOCKED`), so the first
+pass reconstructed the thumbnail from vidIQ's numeric feature vector alone. The
+user then supplied the image directly. Four things were wrong, and one of them
+would have actively damaged the rebuild:
 
-### What I could not do
+1. **I assumed the thumbnail carried the Hebrew word as its hero object.** It
+   carries **no Hebrew at all.** The title promises the word study; the image
+   delivers pure emotion. That inverts the entire concept set the first pass
+   produced — all three concepts made Arabic script the hero, which is exactly
+   what the winner refuses to do.
+2. **I assumed an overlay or side card.** It is a **full-width flat banner
+   letterboxed across the top ~28%**, with a hard edge. The photograph is not
+   behind the text anywhere.
+3. **I told you the thumbnail was weak and to fix its four measured faults.**
+   That advice was wrong and is retracted in full — see the next section.
+4. **I said thumbnail text must not repeat the title.** It repeats the title's
+   first three words verbatim. The house rule survives, but for a subtler
+   reason than I gave. See "The one house rule that needs restating."
 
-**I never saw the thumbnail pixels.** The session proxy hard-blocks image hosts —
-`i.ytimg.com`, `img.youtube.com` and `i9.ytimg.com` all failed on `curl`
-(`CONNECT tunnel failed, 403`), and WebFetch returned `EGRESS_BLOCKED`. Same
-failure documented in `student-loan-thumbnail-prompts.md` on 2026-08-11, so this
-is the environment, not a transient fault.
+---
 
-So: **nothing below is a description of what that thumbnail looks like.** Any
-file that claims otherwise is guessing. What I have instead is vidIQ's *measured
-feature vector* for it, which is a different and in some ways more useful thing.
+## What the thumbnail actually is
 
-### What I could measure
+**Top ~28%** — a flat cream/parchment banner, edge to edge, hard-cropped, two
+lines of heavy condensed all-caps:
 
-**1. The video (vidIQ metadata, exact):**
+- Line 1, **deep navy**, largest: the familiar phrase, filling the full width.
+- Line 2, **gold/ochre**, ~80% of line 1's size: the destabiliser — *it's not
+  what you think*.
+
+**Bottom ~72%** — a warm, painterly, photoreal ancient Near-Eastern interior.
+Mud-brick and stone walls, a hanging oil lamp, a long rough-hewn table.
+
+- **Dead centre**: an elderly woman in a pale linen head covering, deeply lined
+  face, **looking straight down the lens.** She is the only person in the frame
+  making eye contact.
+- **Flanking her**: six seated younger adults, three per side, symmetrical.
+  **Every one of them has their eyes down.** Not one is looking at her.
+- **Foreground anchor**: her two hands laid flat on the table, a clay cup, a
+  loaf of bread, a bowl of olives.
+- Palette: browns, ochre, amber, cream. The navy in the banner is the only cool
+  note in the entire image.
+- Composition is **symmetrical and centred** — the rule of thirds is deliberately
+  ignored. It reads as an altarpiece, not a photograph.
+
+### The mechanic
+
+**The image is a picture of the problem, not the answer.** An old woman at a
+full table, surrounded by her own family, and nobody is looking at her. She is
+looking at *you*. The video's whole thesis — that honour is not table manners
+but weight, dignity and material care — is rendered as one frame, and the viewer
+feels the guilt before they have finished reading the second line.
+
+The two-line banner splits hook duty cleanly:
+
+| | Job |
+|---|---|
+| **Line 1**, navy, biggest | **Recognition.** Names the topic in the viewer's own words. |
+| **Line 2**, gold, smaller | **Destabilisation.** Tells them they are wrong about it. |
+
+And the letterbox is not laziness — it is the smartest decision in the design.
+**At 160px wide in a feed the photograph turns to mush, but flat text on a flat
+cream field stays legible.** Overlaying the text on the image would have cost
+them that. They gave up 28% of the picture to keep the words readable at every
+size. Copy this.
+
+---
+
+## Retracted: "fix the four measured faults"
+
+vidIQ's CTR model scored this thumbnail **36/100**. The first pass treated that
+as a defect list. It is not. The model is miscalibrated for this niche, and
+three of its four penalties are false negatives:
+
+| Model penalty | What is actually there |
+|---|---|
+| Negative space 0.292 → −10 | **That 0.29 *is* the banner.** The model is penalising the single best feature in the design. |
+| No directional cue 0.533 → −17 | There is a very strong cue — **her direct eye contact** plus perfect bilateral symmetry funnelling to her face. The model was looking for an arrow and found none. |
+| Over-saturated → −10 | The warm amber grade **is** the emotional payload. Desaturating it kills the candlelit-tableau read. |
+| Entropy 7.198 → −21 | Fair, but load-bearing: the six bowed heads are the story. Simplify them away and you have a portrait of a stranger. |
+
+**Had you followed my first pass you would have stripped the banner, cooled the
+grade and cut the family — and destroyed the thumbnail.** Do not run this plate
+through `vidiq_score_thumbnail` and chase the number. A 36 that did 278,903
+views in 9 days is the model's problem, not the designer's.
+
+**Revised conclusion:** the thumbnail is not a passenger. It is doing real work,
+and it is doing it through *staging* — who is looking at whom — rather than
+through any of the mechanical levers (arrows, hard-cropped face, huge number)
+that the vidIQ card layout is built from.
+
+---
+
+## The one house rule that needs restating
+
+`CLAUDE.md` says thumbnail text **must not repeat the title**. This thumbnail
+repeats the title's first three words exactly. The rule is still right; the
+phrasing needs sharpening:
+
+- Title adds: **"…Actually Means in Hebrew"** → the *mechanism*.
+- Thumbnail adds: **"It's not what you think"** → the *stakes*.
+- The shared phrase is the **recognition anchor** — the words the viewer already
+  knows, which is what earns the half-second of attention in the first place.
+
+So the rule is not "no shared words." It is **"each surface must carry a promise
+the other one doesn't."** Overlap on the anchor, diverge on the payload.
+
+## The other house rule this breaks
+
+The vidIQ card layout mandated in `CLAUDE.md` for >180s uploads — hard-cropped
+face on the left, white card with outline and drop shadow on the right, huge
+number, pill badge — **appears nowhere in a 278K-view winner in this niche.** No
+number, no badge, no card, no hard crop, no arrow. That layout was audited off
+vidIQ's own thumbnails, which sell *evidence* to creators. Scripture study sells
+*a reframe*, and the format is different. Flagging, not overriding — the call is
+yours.
+
+---
+
+## Source video, for reference
 
 | | |
 |---|---|
-| Runtime | 27:51 — long-form, not a Short |
+| Runtime | 27:51 — long-form |
 | Published | 2026-08-09 (9 days old at pull) |
 | Views | 278,903 → **~31,000/day** |
-| Likes / comments | 11,112 / 1,218 — **3.98% like rate**, very high |
+| Likes / comments | 11,112 / 1,218 — **3.98% like rate** |
 | Channel | 253K subs, **30 videos**, top video 1.1M |
 
-**2. The thumbnail's CTR feature scores (vidIQ model, exact):**
-
-| Feature | Value | Model verdict |
-|---|---|---|
-| Overall | **36 / 100** | weak |
-| Sharpness | +26 pts | the only strength |
-| Visual entropy | 7.198 | −21 pts — **too busy** |
-| Directional cue | 0.533 | −17 pts — no arrow/eyeline pointing anywhere |
-| Negative space | **0.292** | −10 pts — only 29% clean space, cluttered |
-| Colour pop | 0.063 | −10 pts — **over-saturated** |
-
-**3. The channel's title formula (30 videos, sorted by views):**
-
-Four repeating shapes, all long-form 19–51 min:
+**Channel title formula, from all 30 videos:**
 
 - **Enumerate + hidden pattern** — "Every Letter Paul Wrote, Explained in Order"
   (1.1M) · "Every Time 40 Appears in the Bible: The Pattern Most People Miss" (394K)
 - **Original-language word reveal** — the seed video (279K) · "The Hebrew Word for
   'Glory' Has Nothing to Do with Light" (152K) · "What 'The Word' Really Means in
   John 1:1" (202K)
-- **Correction / negation** — "Forgiveness Is NOT Reconciliation" (199K) · "The
-  Parable of the Talents: It Was Never About Your Gifts" (154K)
-- **The detail nobody told you** — "Why Jesus Cursed the Fig Tree, The Detail in
-  Mark 11 That Changes the Whole Story" (209K)
+- **Correction / negation** — "Forgiveness Is NOT Reconciliation" (199K)
+- **The detail nobody told you** — "Why Jesus Cursed the Fig Tree…" (209K)
 
-### The finding that actually matters
-
-**A 36/100 thumbnail did 279K views in 9 days.** The thumbnail is not the engine
-here. The engine is the title mechanic — *a word you think you understand, in a
-language you don't* — riding a 253K-sub channel that YouTube is already feeding
-hard (30 videos, 5 months, 1.1M ceiling).
-
-Two consequences for us:
-
-1. **Don't clone the thumbnail.** Cloning a 36 buys you a 36 without the
-   253K-sub tailwind behind it. Clone the *title mechanic*, and build a
-   thumbnail that fixes all four of its measured faults.
-2. **This is not a search play.** vidIQ keyword research on the English cluster:
-   `honoring parents in islam` → volume **0**, est. monthly search **0**.
-   `honoring parents` → **0**. `respecting parents in islam` → **0**. The demand
-   is real but nobody types it. It lives in browse/suggested. So the title has
-   to work as a **feed headline**, not a search string — which is exactly what
-   the source title does.
-
-### One honest tension with the house rules
-
-`CLAUDE.md` mandates the **vidIQ card layout** (Adam WORRIED hard-cropped left,
-white card right, label + huge number + pill badge) for every upload >180s. That
-rule was audited off vidIQ's own thumbnails — a creator-tools niche selling
-*evidence*. This is a scripture word-study video, where the winning packaging
-across the whole niche sells *a word*, not a number.
-
-I have not overridden the house rule. Concept **A** below obeys it exactly.
-Concepts **B** and **C** are niche-native and break it. My recommendation is
-**B**, and the reason is that the card layout's core object is "a huge number
-that is the biggest thing in the picture" — and this video has no number. Forcing
-one produces a fake statistic. Your call; the rule is yours to relax.
+**Search demand is zero.** vidIQ: `honoring parents in islam` → volume 0, est.
+monthly search 0. `honoring parents` → 0. `respecting parents in islam` → 0.
+This is a browse/suggested play, so the title must work as a **feed headline**,
+not a search string.
 
 ---
 
-## Format requirements (non-negotiable, from CLAUDE.md)
+## Format requirements (from CLAUDE.md)
 
-The Islamic version mirrors a 27:51 source, so it will land **well over 180s**.
-Therefore:
+The Islamic version mirrors a 27:51 source, so it lands well over 180s:
 
-- **1280×720, 16:9, under 2MB.** Generate at **1920×1080** and downscale.
+- **1280×720, 16:9, under 2MB.** Generate the scene at **1920×1080**, composite
+  the banner, then downscale.
 - Add the `thumbnail` key to `automation/part*.json` **only once the file
   exists** — `preflight.py` fails on a key pointing at a missing file.
-- Shorts-grid advice in `inflation-thumbnail-prompts.md` ("design for 160px")
-  **does not apply**.
+- Shorts-grid advice in `inflation-thumbnail-prompts.md` does not apply.
 
-### Arabic type warning — read before you generate
+### The banner spec (shared by all three concepts)
 
-**Image generators mangle Arabic script.** They break the cursive joins, reverse
-the letter order, and invent glyphs. Every prompt below is written to generate
-the plate **with the text areas left empty**, then you set the Arabic type in an
-editor. Do not ask the generator to render `بِرّ`. It will produce something that
-looks like Arabic to a non-reader and like nonsense to your actual audience —
-which is the worst possible failure mode for this channel.
+Build this in the editor, not the generator. Generators cannot set type.
 
-Set Arabic in **Kufi or a heavy Naskh** (Noto Kufi Arabic Black, Cairo Black).
-Latin text in a heavy grotesque (Anton, Archivo Black, Montserrat ExtraBold).
+- Band occupies the **top 28%** of the frame (202px of 720; 302px of 1080).
+- Fill `#EDE7DA` (warm parchment cream), very subtle paper grain, no gradient.
+- **Hard bottom edge.** No feather, no shadow, no rounded corners.
+- Line 1: heavy condensed sans, all caps, `#16264A` deep navy. **Edge to edge**
+  — roughly 2% side padding, no more. Tracking slightly tight.
+- Line 2: same face, ~80% of line 1's cap height, `#C8891B` gold.
+- Faces: Anton, Archivo Black, or League Gothic Bold. Condensed matters — it is
+  what lets a long phrase fill the full width at maximum cap height.
+- **No Arabic script in the banner.** The word study belongs to the title and
+  the video. Putting `بِرّ` in the plate costs you every non-Arabic-reading
+  viewer in the feed and buys nothing the title isn't already carrying.
 
----
+### Scene composition rule
 
-## Concept A — House card layout (CLAUDE.md-compliant)
-
-Use this one if the house rule stays hard.
-
-> Cinematic 16:9 thumbnail plate, 1920x1080. Left third: extreme close-up
-> portrait of a worried middle-aged man, head hard-cropped by the left edge so
-> only two-thirds of his face is in frame, eyes looking right into the empty
-> space, brow furrowed, mouth closed and tight. Warm key light from the right at
-> 45 degrees, deep soft shadow on the left of his face. Right two-thirds:
-> completely empty, clean, gently blurred dark teal-to-charcoal gradient
-> background with a soft vignette, no objects, no texture, no pattern — flat
-> negative space reserved for a graphic overlay. Muted desaturated colour grade,
-> low contrast in the background, high contrast on the face. Photographic, sharp,
-> shallow depth of field. No text, no letters, no writing, no logos, no borders.
-
-**Then composite in the editor:**
-- White card, right side, ~48% of frame width, 12px rounded corners, 3px charcoal
-  outline, drop shadow at 40% opacity, offset 8px down.
-- Small label, top of card, letter-spaced caps: `THE WORD ALLAH USED`
-- Huge object, centre of card, biggest thing in the picture: **بِرّ**
-- Pill badge clipped to the card's bottom-left edge, gold fill, dark text:
-  `NOT OBEDIENCE`
-- Adam's eyeline already points at the card — that is your directional cue,
-  which is the −17 pt fault the source thumbnail failed on.
-
-**Why it beats the 36:** negative space ~0.55 (source: 0.29), entropy well under
-6 (source: 7.2), desaturated background (source: over-saturated), eyeline cue
-(source: none).
+Generate the scene at full 1920×1080 but **compose the subject's head so it sits
+below the top third** — the banner will cover everything above it. Ask for a
+plain dark wall in the upper third so nothing of value is lost.
 
 ---
 
-## Concept B — "The forbidden syllable" ★ recommended
+## Concept 1 — The direct mirror ★ recommended
 
-The single strongest idea available, because it is a *visual* of a prohibition
-and it needs no number.
+Lowest risk. Same staging, same emotional trigger, Islamic setting.
 
-> Cinematic 16:9 thumbnail plate, 1920x1080. Extreme close-up of the weathered,
-> deeply lined hands of a very old person resting in their lap, palms up and
-> open, positioned in the lower-left third of the frame. Soft warm window light
-> falling from the upper left, everything else falling into deep shadow. The
-> entire right half of the frame is empty, unlit, near-black charcoal with a
-> subtle warm gradient — clean flat negative space with no objects and no
-> texture. Rembrandt lighting, muted earth tones, warm amber highlights against
-> cool near-black, restrained desaturated colour grade. Photographic realism,
-> sharp focus on the skin texture of the hands, shallow depth of field.
-> No text, no letters, no writing, no faces, no logos, no borders.
+> Cinematic photoreal painterly thumbnail scene, 1920x1080, warm candlelit
+> interior of an old Levantine or Arabian home — mud-brick and lime-plaster
+> walls, a carved wooden lattice window, a hanging brass oil lamp casting warm
+> amber light, worn kilim rugs on a stone floor. A large family sits on floor
+> cushions around a low round wooden table spread with a shared meal: flatbread,
+> dates, olives, a brass teapot, clay bowls. Dead centre, facing the camera, an
+> elderly woman in her seventies wearing a simple pale linen headscarf, deeply
+> lined weathered face, tired dignified expression, **looking directly into the
+> camera lens**. Her two hands rest flat on the table in the foreground. Three
+> younger adults seated on her left and three on her right, perfectly
+> symmetrical, all with their heads bowed and eyes cast down toward their food —
+> **not one of them is looking at her**. Rich warm colour grade, browns, ochre,
+> amber and cream, deep shadow in the corners, strong chiaroscuro. The upper
+> third of the frame is plain dark wall with nothing in it. Sharp focus on the
+> woman's face, soft falloff at the edges. Photorealistic, highly detailed,
+> historical, reverent. No text, no letters, no writing, no logos, no borders,
+> no modern objects.
 
-**Then composite:**
-- Right half: the single Arabic word **أُفٍّ** set very large in white, with a
-  thick red diagonal strike-through across it.
-- Above it, small letter-spaced caps in warm grey: `THE SMALLEST WORD IN THE QURAN`
-- Pill badge, bottom right, clipped to the frame edge, deep green fill:
-  `17:23`
-- Directional cue: the open palms angle up-right toward the struck word.
+**Banner text:**
+- Line 1, navy: `HONOR YOUR PARENTS`
+- Line 2, gold: `IT'S NOT OBEDIENCE`
 
-**Why it works:** one object, one word, one strike. Entropy collapses to ~4.5.
-Negative space ~0.5. The red strike is the only saturated element in an otherwise
-muted plate, so colour pop reads as *high* while global saturation reads as
-*low* — which is precisely the split the vidIQ model rewards and the source
-thumbnail got backwards.
+Short line 2 is deliberate — fewer characters means bigger caps means it survives
+the 160px feed. It also lands the exact reframe the video is built on.
 
-**Text does not repeat the title.** The title says "honour"; the thumbnail says
-"the smallest word" and shows a prohibition. Half the promise each.
+**Variant to A/B:** swap the navy for deep green `#0E4A3C`. Green signals the
+niche harder; navy reads more premium. Test, don't assume.
 
 ---
 
-## Concept C — The two-word split test
+## Concept 2 — The empty cushion
 
-Mirrors the channel's own "X Is NOT Y" formula (199K, 154K).
+Riskier, colder, and potentially the higher ceiling. This is the challenger.
 
-> Cinematic 16:9 thumbnail plate, 1920x1080. Perfectly symmetrical split
-> composition divided by a thin vertical seam of light down the exact centre.
-> Left half: a cold, dim, blue-grey empty stone wall, flat and featureless,
-> harsh top-down light, clinical and severe. Right half: a warm, softly lit
-> empty plaster wall in amber and sand tones, golden hour light raking across it
-> from the right, inviting. Both halves completely bare — no objects, no
-> ornament, no pattern, no furniture. Shallow vignette on all four corners.
-> Restrained, desaturated, cinematic colour grade with a strong warm/cool
-> contrast between the halves. Photographic, sharp, high dynamic range.
-> No text, no letters, no writing, no people, no logos, no borders.
+> Cinematic photoreal painterly thumbnail scene, 1920x1080, warm candlelit
+> interior of an old Arabian home, mud-brick walls, hanging brass oil lamp, worn
+> rugs. A family of six adults sits on floor cushions around a low round table
+> laden with a shared meal — flatbread, dates, olives, a brass teapot — all of
+> them eating and talking to each other, animated, heads turned inward toward one
+> another. In the immediate foreground, dead centre and closest to camera, one
+> **empty floor cushion** with a worn wooden walking stick laid across it and a
+> string of prayer beads resting beside it, its place at the table untouched, its
+> clay plate clean and empty. Nobody is looking at the empty place. Warm amber
+> light everywhere else, but the empty cushion sits in cooler shadow. Rich warm
+> colour grade, browns, ochre, amber, deep corner shadow, strong chiaroscuro. The
+> upper third of the frame is plain dark wall with nothing in it. Sharp focus on
+> the walking stick and empty cushion. Photorealistic, highly detailed, reverent,
+> melancholy. No text, no letters, no writing, no people in the foreground, no
+> logos, no borders, no modern objects.
 
-**Then composite:**
-- Left half, centred, white heavy type: **طَاعَة** — with `OBEDIENCE` in small
-  caps beneath.
-- Right half, centred, larger, gold type: **بِرّ** — with `?` beneath in the same
-  small caps.
-- A white arrow at the seam pointing left→right — the explicit directional cue
-  the model scored the source down 17 points for missing.
-- No badge. The asymmetry of size (right word ~1.4× the left) carries the claim.
+**Banner text:**
+- Line 1, navy: `HONOR YOUR PARENTS`
+- Line 2, gold: `BEFORE THE SEAT IS EMPTY`
 
-**Why it works:** the lowest entropy of the three (~3.8), the highest negative
-space (~0.7), and the warm/cool split does the colour work without saturation.
-Riskiest of the three — two Arabic words is a lot of foreign script for a cold
-feed — so treat C as the A/B challenger, not the launch plate.
+Why it might beat Concept 1: it removes the face entirely and replaces it with
+absence, which is a harder, quieter hook. Why it might not: no eye contact means
+no direct address, and eye contact is doing a lot of work in the original.
+
+---
+
+## Concept 3 — Two hands
+
+Simplest to produce, most portable, weakest story.
+
+> Cinematic photoreal thumbnail scene, 1920x1080. Extreme close-up of the
+> weathered, deeply lined hands of a very old person resting open in their lap on
+> worn brown fabric, positioned in the lower centre-left of the frame. A younger
+> adult's hand reaches in from the right edge but stops short, hovering just
+> above without touching. Warm amber light from a single oil lamp off frame to
+> the left, everything falling into deep warm shadow. Rich brown, ochre and amber
+> palette, strong chiaroscuro, Rembrandt lighting. The upper third of the frame
+> is plain dark shadow with nothing in it. Photorealistic, extremely detailed
+> skin texture, shallow depth of field, sharp focus on the old hands, reverent
+> and tender. No text, no letters, no writing, no faces, no logos, no borders.
+
+**Banner text:**
+- Line 1, navy: `HONOR YOUR PARENTS`
+- Line 2, gold: `THE QURAN MEANS SOMETHING ELSE`
+
+Use this as the third slot in a rotation test, not as the launch plate. The gap
+between the two hands is the whole idea and it is subtle — it may not read at
+feed size, which is the one thing Concepts 1 and 2 both survive.
 
 ---
 
@@ -219,40 +283,37 @@ feed — so treat C as the A/B challenger, not the launch plate.
 
 ### Title
 
-**Primary — use this one:**
+**Primary:**
 
 ```
 What "Honor Your Parents" Actually Means in Arabic
 ```
 
-**vidIQ title score: 88/100.** This is the only candidate I got a score for —
-the free-plan credits ran out immediately after. The three alternates below are
-**unscored**; treat them as untested.
+**vidIQ title score: 88/100.** This is the only candidate that got scored — free
+plan credits ran out immediately after. The alternates below are **unscored**;
+treat them as untested.
 
-It is a near-exact structural mirror of the source, and that is deliberate. The
-mechanic — *a word you were taught as a child, in a language you don't read* — is
-what did 279K in 9 days, and it transfers to Arabic without losing anything.
+Near-exact structural mirror of the source, deliberately. The mechanic — *a word
+you were taught as a child, in a language you don't read* — is what did 279K in
+9 days, and it transfers to Arabic intact.
 
 **Unscored alternates:**
 
 ```
 The Arabic Word for Honoring Parents Has Nothing to Do With Obedience
 ```
-Mirrors the channel's own 152K "Glory Has Nothing to Do with Light". Strong
-negation hook, longer.
+Mirrors the channel's own 152K "Glory Has Nothing to Do with Light".
 
 ```
 The Quran Puts Your Parents One Verse After God. Here's Why.
 ```
-Leads with the structural fact (17:23) rather than the word. Better for
-non-Muslim reach, weaker for the word-study promise.
+Leads with the structure rather than the word. Broader reach, weaker promise.
 
 ```
 What "Birr al-Walidayn" Actually Means (It's Not What You Were Taught)
 ```
-Only use if you're targeting an already-Muslim audience — the transliteration
-costs you every viewer who can't read it in a feed. Keyword data says the
-English term has zero search volume anyway, so it buys nothing.
+Only for an already-Muslim audience — the transliteration costs you everyone who
+can't read it in a feed, and keyword data says it has no search volume anyway.
 
 ### Description
 
@@ -326,18 +387,17 @@ Quran study for adults, deep Quran tafsir English
 
 ### Hashtags
 
-Three in the description, matching the source's discipline (it used exactly
-three). Do not put more — YouTube ignores past 3 and it reads as spam.
+Three, matching the source's discipline — it used exactly three. Do not add more;
+YouTube ignores past 3 and it reads as spam.
 
 ```
 #QuranStudy #BirrAlWalidayn #HonorYourParents
 ```
 
-Alternates if you want broader reach over topical precision:
-`#Quran` `#IslamicReminder` `#Tafsir` — note vidIQ shows `islamic reminder` at
-66,734 est. monthly searches and `islamic motivation` at 120,680, both with low
-competition (28–40), so these are the two highest-value tags available in the
-whole cluster.
+Broader-reach alternates: `#Quran` `#IslamicReminder` `#Tafsir`. vidIQ shows
+`islamic reminder` at 66,734 est. monthly searches and `islamic motivation` at
+120,680, both at low competition (28–40) — the two highest-value terms in the
+entire cluster.
 
 ### Tags
 
@@ -369,13 +429,12 @@ mother three times hadith
 
 ## What I'd do next
 
-1. Build **Concept B** first. It is one object, one struck word, one badge — the
-   fastest of the three to produce and the one that fixes all four measured
-   faults at once.
-2. Run it through `vidiq_score_thumbnail` **once credits reset**, against the
-   primary title, and check it clears 36. If it doesn't clear 60, the plate is
-   wrong, not the concept.
-3. Keep **A** on file. If the house card rule stays hard, A ships and B becomes
-   the swap test at day 7.
-4. Do not judge it before 72 hours — and convert to views/day with the age
-   attached, per `CLAUDE.md`.
+1. Build **Concept 1**. It is the direct mirror of a proven 279K plate, and the
+   only thing being swapped is the cultural setting.
+2. **Do not score it in vidIQ and chase the number.** The model gave the original
+   a 36. Judge it the way the feed will: shrink it to 160px wide, look at it for
+   half a second, and check that both banner lines are still readable and the
+   staging still reads.
+3. Hold **Concept 2** as the day-7 swap test.
+4. Do not judge performance before 72 hours, and convert to views/day with the
+   age attached, per `CLAUDE.md`.
