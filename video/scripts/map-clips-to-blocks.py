@@ -1,4 +1,4 @@
-"""Pins each recorded clip to the script block it actually reads.
+"""Pins each recorded clip to the script block it reads, and puts them in order.
 
 The clips arrive named only by export timestamp. Timestamp order turned out to
 be script order here, but that is a fact to check rather than assume: this read
@@ -33,9 +33,11 @@ def bigrams(ws):
 
 units = json.load(open(UNITS, encoding='utf-8'))
 blocks = {}
-for u in units:
-    blocks.setdefault(u['block'], []).append(u['text'])
-block_bg = {b: bigrams(words(' '.join(t))) for b, t in blocks.items()}
+for i, u in enumerate(units):
+    blocks.setdefault(u['block'], []).append((i, u['text']))
+block_bg = {b: bigrams(words(' '.join(t for _, t in v))) for b, v in blocks.items()}
+block_order = list(blocks)          # script order — dicts keep insertion order
+unit_bg = [bigrams(words(u['text'])) for u in units]
 
 mp = get_model_path()
 cfg = Config(hmm=os.path.join(mp, 'en-us', 'en-us'),
@@ -61,14 +63,29 @@ for name in sorted(os.listdir(CLIPS)):
     scores = {b: (len(bg & heard) / max(len(heard), 1)) for b, bg in block_bg.items()}
     best = max(scores, key=scores.get)
     ranked = sorted(scores.items(), key=lambda kv: -kv[1])[:2]
+    # The earliest sentence of that block this clip reaches. Two clips of one
+    # block are a long take and a short tail, and this is what tells them apart
+    # without reference to when either was exported.
+    hits = [i for i, _ in blocks[best]
+            if unit_bg[i] and len(unit_bg[i] & heard) / len(unit_bg[i]) >= 0.15]
     out.append({'file': name, 'seconds': round(dur, 2), 'block': best,
+                'first_unit': (min(hits) + 1) if hits else None,
                 'score': round(ranked[0][1], 3), 'runner_up': ranked[1][0],
                 'runner_up_score': round(ranked[1][1], 3),
                 'heard': dec.hyp().hypstr})
     print(f'  {dur:7.2f}s  {name[:44]:44} -> BLOCK {best} '
           f'({ranked[0][1]:.2f}, next {ranked[1][0]} {ranked[1][1]:.2f})', flush=True)
 
+# Reading order: block by block down the script, and within a block by the first
+# sentence each clip reaches. Everything downstream — the alignment offsets and
+# the assembled audio — consumes this file in exactly this order.
+out.sort(key=lambda c: (block_order.index(c['block']),
+                        c['first_unit'] if c['first_unit'] is not None else 10 ** 6))
 json.dump({'clips': out}, open(OUT, 'w'), indent=1, ensure_ascii=False)
+
+print('\nreading order:')
+for c in out:
+    print(f'  {c["block"]:4} from unit {str(c["first_unit"]):>4}  {c["seconds"]:7.2f}s  {c["file"][:44]}')
 
 order = [c['block'] for c in out]
 print(f'\n{len(out)} clips -> {OUT}')

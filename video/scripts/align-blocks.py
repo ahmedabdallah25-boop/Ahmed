@@ -71,9 +71,10 @@ for line in open(LEXICON, encoding='utf-8'):
         w, ph = line.split(None, 1)
         dec.add_word(w, ph, True)
 
-# Clips play in export order; that was checked against the block map, and the
-# assembled read is concatenated in exactly this order.
-clips.sort(key=lambda c: c['file'].split('Benjamin')[1])
+# The clip map is already in reading order — block by block down the script,
+# and within a block by the first sentence each clip reaches — and the assembled
+# read is concatenated in exactly that order. Do not re-sort it here: filenames
+# carry no reliable order (one clip arrived as plain "Al_Isra_.mp3").
 
 def decode_free(pcm):
     loose.start_utt(); loose.process_raw(pcm, full_utt=True); loose.end_utt()
@@ -89,9 +90,10 @@ def decode_wav(clip):
         return w.readframes(w.getnframes()), w.getframerate()
 
 
-# Clips play in export order; that was checked against the block map, and the
-# assembled read is concatenated in exactly this order.
-clips.sort(key=lambda c: c['file'].split('Benjamin')[1])
+# The clip map is already in reading order — block by block down the script,
+# and within a block by the first sentence each clip reaches — and the assembled
+# read is concatenated in exactly that order. Do not re-sort it here: filenames
+# carry no reliable order (one clip arrived as plain "Al_Isra_.mp3").
 
 # One audio stream per block, plus the offset at which that stream begins in the
 # assembled read.
@@ -124,7 +126,19 @@ for st in streams:
     # past recognition was still spoken. Anything outside the run was not — that
     # is how a block whose recording is missing its first two thirds is caught
     # instead of being crushed into the audio that does exist.
-    idx = list(range(min(matched), max(matched) + 1))
+    lo, hi = min(matched), max(matched)
+    # A block is read from its first sentence to its last, so a sentence or two
+    # unmatched at either end is the free decode missing a short line where it
+    # is least reliable — at a clip's very edge — not a line that went unread.
+    # "Surah al-Baqarah, verse 83." opens block 03 and vanishes from the decode
+    # entirely. Two is the limit: a longer unmatched stretch is a recording that
+    # does not exist, and chapter 10 arrived missing its first nineteen.
+    EDGE_MAX = 2
+    if lo - candidates[0] <= EDGE_MAX:
+        lo = candidates[0]
+    if candidates[-1] - hi <= EDGE_MAX:
+        hi = candidates[-1]
+    idx = list(range(lo, hi + 1))
     per_line = [words_of(units[i]['text']) for i in idx]
 
     def align(a, b, ws):

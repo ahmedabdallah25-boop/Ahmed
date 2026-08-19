@@ -20,8 +20,10 @@ if (!CLIPS) {
   process.exit(1);
 }
 
-const map = JSON.parse(readFileSync(here('./parents-clip-map.json'), 'utf8')).clips
-  .sort((a, b) => a.file.split('Benjamin')[1].localeCompare(b.file.split('Benjamin')[1]));
+// Already in reading order — see map-clips-to-blocks.py. The alignment used
+// this same order to work out where each clip sits in the read, so re-sorting
+// here would silently put the picture against the wrong audio.
+const map = JSON.parse(readFileSync(here('./parents-clip-map.json'), 'utf8')).clips;
 const plan = JSON.parse(readFileSync(here('./parents-timeline-vo.json'), 'utf8'));
 const cuts = plan.cards.map((c) => c.cutAt).sort((a, b) => a - b);
 

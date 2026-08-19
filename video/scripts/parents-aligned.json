@@ -552,10 +552,13 @@
  {
   "n": 56,
   "block": "03",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "c94fa168-ES_Voice_Benjamin20260819T025123Z.mp3",
+   "496853ff-ES_Voice_Benjamin20260819T025321Z.mp3"
+  ],
+  "start": 252.32,
+  "end": 253.86,
+  "estimated": false
  },
  {
   "n": 57,
@@ -564,7 +567,7 @@
    "c94fa168-ES_Voice_Benjamin20260819T025123Z.mp3",
    "496853ff-ES_Voice_Benjamin20260819T025321Z.mp3"
   ],
-  "start": 252.16,
+  "start": 253.86,
   "end": 266.18,
   "estimated": false
  },
@@ -3273,262 +3276,331 @@
  {
   "n": 309,
   "block": "10",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
+   "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
+  ],
+  "start": 1551.767,
+  "end": 1559.877,
+  "estimated": false
  },
  {
   "n": 310,
   "block": "10",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
+   "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
+  ],
+  "start": 1559.877,
+  "end": 1564.927,
+  "estimated": false
  },
  {
   "n": 311,
   "block": "10",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
+   "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
+  ],
+  "start": 1564.927,
+  "end": 1566.457,
+  "estimated": false
  },
  {
   "n": 312,
   "block": "10",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
+   "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
+  ],
+  "start": 1566.457,
+  "end": 1569.157,
+  "estimated": false
  },
  {
   "n": 313,
   "block": "10",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
+   "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
+  ],
+  "start": 1569.157,
+  "end": 1574.207,
+  "estimated": false
  },
  {
   "n": 314,
   "block": "10",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
+   "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
+  ],
+  "start": 1574.207,
+  "end": 1584.417,
+  "estimated": false
  },
  {
   "n": 315,
   "block": "10",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
+   "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
+  ],
+  "start": 1584.417,
+  "end": 1589.167,
+  "estimated": false
  },
  {
   "n": 316,
   "block": "10",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
+   "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
+  ],
+  "start": 1589.167,
+  "end": 1591.887,
+  "estimated": false
  },
  {
   "n": 317,
   "block": "10",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
+   "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
+  ],
+  "start": 1591.887,
+  "end": 1602.607,
+  "estimated": false
  },
  {
   "n": 318,
   "block": "10",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
+   "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
+  ],
+  "start": 1602.607,
+  "end": 1604.157,
+  "estimated": false
  },
  {
   "n": 319,
   "block": "10",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
+   "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
+  ],
+  "start": 1604.157,
+  "end": 1607.967,
+  "estimated": false
  },
  {
   "n": 320,
   "block": "10",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
+   "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
+  ],
+  "start": 1607.967,
+  "end": 1612.027,
+  "estimated": false
  },
  {
   "n": 321,
   "block": "10",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
+   "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
+  ],
+  "start": 1612.027,
+  "end": 1620.977,
+  "estimated": false
  },
  {
   "n": 322,
   "block": "10",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
+   "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
+  ],
+  "start": 1620.977,
+  "end": 1626.047,
+  "estimated": false
  },
  {
   "n": 323,
   "block": "10",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
+   "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
+  ],
+  "start": 1626.047,
+  "end": 1635.447,
+  "estimated": false
  },
  {
   "n": 324,
   "block": "10",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
+   "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
+  ],
+  "start": 1635.447,
+  "end": 1637.727,
+  "estimated": false
  },
  {
   "n": 325,
   "block": "10",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
+   "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
+  ],
+  "start": 1637.727,
+  "end": 1641.997,
+  "estimated": false
  },
  {
   "n": 326,
   "block": "10",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
+   "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
+  ],
+  "start": 1641.997,
+  "end": 1648.817,
+  "estimated": false
  },
  {
   "n": 327,
   "block": "10",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
+   "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
+  ],
+  "start": 1648.817,
+  "end": 1652.607,
+  "estimated": false
  },
  {
   "n": 328,
   "block": "10",
   "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
    "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
   ],
-  "start": 1551.887,
-  "end": 1555.277,
+  "start": 1652.607,
+  "end": 1655.107,
   "estimated": false
  },
  {
   "n": 329,
   "block": "10",
   "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
    "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
   ],
-  "start": 1555.277,
-  "end": 1561.727,
+  "start": 1655.107,
+  "end": 1661.477,
   "estimated": false
  },
  {
   "n": 330,
   "block": "10",
   "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
    "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
   ],
-  "start": 1561.727,
-  "end": 1566.557,
+  "start": 1661.477,
+  "end": 1664.887,
   "estimated": false
  },
  {
   "n": 331,
   "block": "10",
   "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
    "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
   ],
-  "start": 1566.557,
-  "end": 1569.907,
+  "start": 1664.887,
+  "end": 1669.937,
   "estimated": false
  },
  {
   "n": 332,
   "block": "10",
   "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
    "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
   ],
-  "start": 1569.907,
-  "end": 1576.667,
+  "start": 1669.937,
+  "end": 1675.937,
   "estimated": false
  },
  {
   "n": 333,
   "block": "10",
   "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
    "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
   ],
-  "start": 1576.667,
-  "end": 1584.59,
-  "estimated": true
+  "start": 1675.937,
+  "end": 1685.097,
+  "estimated": false
  },
  {
   "n": 334,
   "block": "10",
   "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
    "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
   ],
-  "start": 1584.59,
-  "end": 1585.8,
+  "start": 1685.097,
+  "end": 1687.677,
   "estimated": false
  },
  {
   "n": 335,
   "block": "10",
   "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
    "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
   ],
-  "start": 1585.8,
-  "end": 1588.569,
-  "estimated": true
+  "start": 1687.677,
+  "end": 1692.107,
+  "estimated": false
  },
  {
   "n": 336,
   "block": "10",
   "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
    "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
   ],
-  "start": 1588.569,
-  "end": 1592.877,
-  "estimated": true
+  "start": 1692.107,
+  "end": 1696.947,
+  "estimated": false
  },
  {
   "n": 337,
   "block": "10",
   "clips": [
+   "5c7d0a38-Al_Isra_.mp3",
    "a9bb8f75-ES_Voice_Benjamin20260819T031852Z.mp3"
   ],
-  "start": 1592.877,
-  "end": 1593.286,
+  "start": 1696.947,
+  "end": 1702.922,
   "estimated": false
  },
  {
   "n": 338,
   "block": "11",
-  "clip": null,
-  "start": null,
-  "end": null,
-  "estimated": true
+  "clips": [
+   "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
+  ],
+  "start": 1702.922,
+  "end": 1707.692,
+  "estimated": false
  },
  {
   "n": 339,
@@ -3536,8 +3608,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1593.657,
-  "end": 1596.137,
+  "start": 1707.692,
+  "end": 1709.902,
   "estimated": false
  },
  {
@@ -3546,8 +3618,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1596.137,
-  "end": 1600.817,
+  "start": 1709.902,
+  "end": 1714.162,
   "estimated": false
  },
  {
@@ -3556,8 +3628,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1600.817,
-  "end": 1606.207,
+  "start": 1714.162,
+  "end": 1720.572,
   "estimated": false
  },
  {
@@ -3566,8 +3638,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1606.207,
-  "end": 1615.067,
+  "start": 1720.572,
+  "end": 1727.352,
   "estimated": false
  },
  {
@@ -3576,8 +3648,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1615.067,
-  "end": 1622.937,
+  "start": 1727.352,
+  "end": 1732.572,
   "estimated": false
  },
  {
@@ -3586,8 +3658,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1622.937,
-  "end": 1626.457,
+  "start": 1732.572,
+  "end": 1736.092,
   "estimated": false
  },
  {
@@ -3596,8 +3668,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1626.457,
-  "end": 1628.087,
+  "start": 1736.092,
+  "end": 1737.722,
   "estimated": false
  },
  {
@@ -3606,8 +3678,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1628.087,
-  "end": 1630.107,
+  "start": 1737.722,
+  "end": 1739.742,
   "estimated": false
  },
  {
@@ -3616,8 +3688,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1630.107,
-  "end": 1632.087,
+  "start": 1739.742,
+  "end": 1741.722,
   "estimated": false
  },
  {
@@ -3626,8 +3698,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1632.087,
-  "end": 1634.757,
+  "start": 1741.722,
+  "end": 1744.392,
   "estimated": false
  },
  {
@@ -3636,8 +3708,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1634.757,
-  "end": 1636.927,
+  "start": 1744.392,
+  "end": 1746.562,
   "estimated": false
  },
  {
@@ -3646,8 +3718,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1636.927,
-  "end": 1643.047,
+  "start": 1746.562,
+  "end": 1752.682,
   "estimated": false
  },
  {
@@ -3656,8 +3728,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1643.047,
-  "end": 1646.917,
+  "start": 1752.682,
+  "end": 1756.553,
   "estimated": false
  },
  {
@@ -3666,8 +3738,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1646.917,
-  "end": 1648.657,
+  "start": 1756.553,
+  "end": 1758.292,
   "estimated": false
  },
  {
@@ -3676,8 +3748,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1648.657,
-  "end": 1650.407,
+  "start": 1758.292,
+  "end": 1760.042,
   "estimated": false
  },
  {
@@ -3686,8 +3758,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1650.407,
-  "end": 1652.887,
+  "start": 1760.042,
+  "end": 1762.522,
   "estimated": false
  },
  {
@@ -3696,8 +3768,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1652.887,
-  "end": 1655.457,
+  "start": 1762.522,
+  "end": 1765.092,
   "estimated": false
  },
  {
@@ -3706,8 +3778,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1655.457,
-  "end": 1657.247,
+  "start": 1765.092,
+  "end": 1766.882,
   "estimated": false
  },
  {
@@ -3716,8 +3788,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1657.247,
-  "end": 1660.937,
+  "start": 1766.882,
+  "end": 1770.572,
   "estimated": false
  },
  {
@@ -3726,8 +3798,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1660.937,
-  "end": 1667.387,
+  "start": 1770.572,
+  "end": 1777.022,
   "estimated": false
  },
  {
@@ -3736,8 +3808,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1667.387,
-  "end": 1671.797,
+  "start": 1777.022,
+  "end": 1781.432,
   "estimated": false
  },
  {
@@ -3746,8 +3818,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1671.797,
-  "end": 1684.643,
+  "start": 1781.432,
+  "end": 1794.278,
   "estimated": true
  },
  {
@@ -3756,8 +3828,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1684.643,
-  "end": 1693.643,
+  "start": 1794.278,
+  "end": 1803.278,
   "estimated": true
  },
  {
@@ -3766,8 +3838,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1693.643,
-  "end": 1697.336,
+  "start": 1803.278,
+  "end": 1806.971,
   "estimated": true
  },
  {
@@ -3776,8 +3848,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1697.336,
-  "end": 1707.874,
+  "start": 1806.971,
+  "end": 1817.509,
   "estimated": true
  },
  {
@@ -3786,8 +3858,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1707.874,
-  "end": 1711.314,
+  "start": 1817.509,
+  "end": 1820.949,
   "estimated": false
  },
  {
@@ -3796,8 +3868,8 @@
   "clips": [
    "a32506bb-ES_Voice_Benjamin20260819T034041Z.mp3"
   ],
-  "start": 1711.314,
-  "end": 1715.279,
+  "start": 1820.949,
+  "end": 1824.914,
   "estimated": false
  }
 ]

@@ -1,6 +1,6 @@
 {
- "read": 1715.279,
- "total": 1778.279,
+ "read": 1824.914,
+ "total": 1887.914,
  "fps": 30,
  "cards": [
   {
@@ -11,17 +11,17 @@
   {
    "id": "C2",
    "cutAt": 271.84,
-   "designedWanted": 268.145
+   "designedWanted": 268.291
   },
   {
    "id": "C3",
    "cutAt": 369.66,
-   "designedWanted": 364.059
+   "designedWanted": 364.12
   },
   {
    "id": "C4",
    "cutAt": 399.36,
-   "designedWanted": 396.03
+   "designedWanted": 396.062
   },
   {
    "id": "C5",
@@ -45,8 +45,8 @@
   },
   {
    "id": "C9",
-   "cutAt": 1584.59,
-   "designedWanted": 1581.474
+   "cutAt": 1661.477,
+   "designedWanted": 1658.835
   }
  ],
  "gap": 7,
@@ -164,7 +164,7 @@
    "kind": "still",
    "chapter": "CH.02",
    "from": 151.039,
-   "dur": 12.013,
+   "dur": 12.031,
    "asset": "S12.jpg",
    "rfParent": null
   },
@@ -172,8 +172,8 @@
    "id": "S13",
    "kind": "still",
    "chapter": "CH.02",
-   "from": 163.052,
-   "dur": 12.013,
+   "from": 163.07,
+   "dur": 12.031,
    "asset": "S13.jpg",
    "rfParent": null
   },
@@ -181,8 +181,8 @@
    "id": "S14",
    "kind": "still",
    "chapter": "CH.02",
-   "from": 175.066,
-   "dur": 12.013,
+   "from": 175.101,
+   "dur": 12.031,
    "asset": "S14.jpg",
    "rfParent": null
   },
@@ -190,8 +190,8 @@
    "id": "S15",
    "kind": "still",
    "chapter": "CH.02",
-   "from": 187.079,
-   "dur": 12.013,
+   "from": 187.133,
+   "dur": 12.031,
    "asset": "S15.jpg",
    "rfParent": null
   },
@@ -199,8 +199,8 @@
    "id": "S16",
    "kind": "still",
    "chapter": "CH.02",
-   "from": 199.093,
-   "dur": 12.013,
+   "from": 199.164,
+   "dur": 12.031,
    "asset": "S16.jpg",
    "rfParent": null
   },
@@ -208,8 +208,8 @@
    "id": "S17",
    "kind": "still",
    "chapter": "CH.02",
-   "from": 211.106,
-   "dur": 12.013,
+   "from": 211.195,
+   "dur": 12.031,
    "asset": "S17.jpg",
    "rfParent": null
   },
@@ -217,8 +217,8 @@
    "id": "S18",
    "kind": "still",
    "chapter": "CH.02",
-   "from": 223.12,
-   "dur": 12.013,
+   "from": 223.226,
+   "dur": 12.031,
    "asset": "S18.jpg",
    "rfParent": null
   },
@@ -226,8 +226,8 @@
    "id": "S19",
    "kind": "still",
    "chapter": "CH.02",
-   "from": 235.133,
-   "dur": 12.013,
+   "from": 235.258,
+   "dur": 12.031,
    "asset": "https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260819_015313_e26005d0-34cd-4b4d-98a6-c2f0bc4ffadc.png",
    "rfParent": null
   },
@@ -235,8 +235,8 @@
    "id": "S20",
    "kind": "reframe",
    "chapter": "CH.02",
-   "from": 247.147,
-   "dur": 12.013,
+   "from": 247.289,
+   "dur": 12.031,
    "asset": null,
    "rfParent": "S19"
   },
@@ -244,8 +244,8 @@
    "id": "S21",
    "kind": "still",
    "chapter": "CH.03",
-   "from": 259.16,
-   "dur": 21.18,
+   "from": 259.32,
+   "dur": 21.02,
    "asset": "S21.jpg",
    "rfParent": null
   },
@@ -263,7 +263,7 @@
    "kind": "still",
    "chapter": "CH.03",
    "from": 284.34,
-   "dur": 13.926,
+   "dur": 14.058,
    "asset": "S22.jpg",
    "rfParent": null
   },
@@ -271,8 +271,8 @@
    "id": "S23",
    "kind": "still",
    "chapter": "CH.03",
-   "from": 298.266,
-   "dur": 14.906,
+   "from": 298.398,
+   "dur": 14.893,
    "asset": "S23.jpg",
    "rfParent": null
   },
@@ -280,8 +280,8 @@
    "id": "S24",
    "kind": "still",
    "chapter": "CH.03",
-   "from": 313.172,
-   "dur": 14.906,
+   "from": 313.291,
+   "dur": 14.893,
    "asset": "S24.jpg",
    "rfParent": null
   },
@@ -289,8 +289,8 @@
    "id": "S25",
    "kind": "still",
    "chapter": "CH.03",
-   "from": 328.079,
-   "dur": 14.906,
+   "from": 328.184,
+   "dur": 14.893,
    "asset": "S25.jpg",
    "rfParent": null
   },
@@ -298,8 +298,8 @@
    "id": "S26",
    "kind": "still",
    "chapter": "CH.03",
-   "from": 342.985,
-   "dur": 14.906,
+   "from": 343.077,
+   "dur": 14.893,
    "asset": "S26.jpg",
    "rfParent": null
   },
@@ -307,8 +307,8 @@
    "id": "S27",
    "kind": "still",
    "chapter": "CH.03",
-   "from": 357.891,
-   "dur": 14.906,
+   "from": 357.97,
+   "dur": 14.893,
    "asset": "S27.jpg",
    "rfParent": null
   },
@@ -316,8 +316,8 @@
    "id": "S28",
    "kind": "still",
    "chapter": "CH.03",
-   "from": 372.797,
-   "dur": 12.363,
+   "from": 372.863,
+   "dur": 12.297,
    "asset": "S28.jpg",
    "rfParent": null
   },
@@ -335,7 +335,7 @@
    "kind": "still",
    "chapter": "CH.03",
    "from": 389.16,
-   "dur": 14.717,
+   "dur": 14.761,
    "asset": "S29.jpg",
    "rfParent": null
   },
@@ -343,8 +343,8 @@
    "id": "S30",
    "kind": "still",
    "chapter": "CH.03",
-   "from": 403.877,
-   "dur": 17.983,
+   "from": 403.921,
+   "dur": 17.939,
    "asset": "S30.jpg",
    "rfParent": null
   },
@@ -362,7 +362,7 @@
    "kind": "still",
    "chapter": "CH.03",
    "from": 425.86,
-   "dur": 17.123,
+   "dur": 17.139,
    "asset": "S31.jpg",
    "rfParent": null
   },
@@ -370,8 +370,8 @@
    "id": "S32",
    "kind": "still",
    "chapter": "CH.03",
-   "from": 442.983,
-   "dur": 18.346,
+   "from": 442.999,
+   "dur": 18.33,
    "asset": "S32.jpg",
    "rfParent": null
   },
@@ -947,7 +947,7 @@
    "kind": "still",
    "chapter": "CH.09",
    "from": 1406.635,
-   "dur": 18.941,
+   "dur": 18.93,
    "asset": "https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260818_063848_97a444bb-ab27-4c1d-9472-2defa1029c18.png",
    "rfParent": null
   },
@@ -955,8 +955,8 @@
    "id": "S93",
    "kind": "reframe",
    "chapter": "CH.09",
-   "from": 1425.576,
-   "dur": 18.941,
+   "from": 1425.565,
+   "dur": 18.93,
    "asset": null,
    "rfParent": "S92"
   },
@@ -964,8 +964,8 @@
    "id": "S94",
    "kind": "still",
    "chapter": "CH.09",
-   "from": 1444.518,
-   "dur": 18.941,
+   "from": 1444.495,
+   "dur": 18.93,
    "asset": "S94.jpg",
    "rfParent": null
   },
@@ -973,8 +973,8 @@
    "id": "S95",
    "kind": "still",
    "chapter": "CH.09",
-   "from": 1463.459,
-   "dur": 17.758,
+   "from": 1463.425,
+   "dur": 17.747,
    "asset": "S95.jpg",
    "rfParent": null
   },
@@ -982,8 +982,8 @@
    "id": "S96",
    "kind": "still",
    "chapter": "CH.09",
-   "from": 1481.217,
-   "dur": 17.758,
+   "from": 1481.172,
+   "dur": 17.747,
    "asset": "S96.jpg",
    "rfParent": null
   },
@@ -991,8 +991,8 @@
    "id": "S97",
    "kind": "reframe",
    "chapter": "CH.09",
-   "from": 1498.974,
-   "dur": 17.758,
+   "from": 1498.919,
+   "dur": 17.747,
    "asset": "S96.jpg",
    "rfParent": "S96"
   },
@@ -1000,8 +1000,8 @@
    "id": "S98",
    "kind": "still",
    "chapter": "CH.09",
-   "from": 1516.732,
-   "dur": 17.758,
+   "from": 1516.666,
+   "dur": 17.747,
    "asset": "S98.jpg",
    "rfParent": null
   },
@@ -1009,8 +1009,8 @@
    "id": "S99",
    "kind": "still",
    "chapter": "CH.09",
-   "from": 1534.489,
-   "dur": 17.758,
+   "from": 1534.413,
+   "dur": 17.747,
    "asset": "S99.jpg",
    "rfParent": null
   },
@@ -1018,8 +1018,8 @@
    "id": "S100",
    "kind": "still",
    "chapter": "CH.09",
-   "from": 1552.247,
-   "dur": 17.758,
+   "from": 1552.16,
+   "dur": 17.747,
    "asset": "S100.jpg",
    "rfParent": null
   },
@@ -1027,8 +1027,8 @@
    "id": "S101",
    "kind": "still",
    "chapter": "CH.09",
-   "from": 1570.004,
-   "dur": 18.941,
+   "from": 1569.907,
+   "dur": 18.93,
    "asset": "https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260819_015313_8c6edda0-586d-499d-abae-bc90d792288e.png",
    "rfParent": null
   },
@@ -1036,8 +1036,8 @@
    "id": "S102",
    "kind": "reframe",
    "chapter": "CH.09",
-   "from": 1588.946,
-   "dur": 18.941,
+   "from": 1588.837,
+   "dur": 18.93,
    "asset": null,
    "rfParent": "S101"
   },
@@ -1045,8 +1045,8 @@
    "id": "S103",
    "kind": "still",
    "chapter": "CH.10",
-   "from": 1607.887,
-   "dur": 5.401,
+   "from": 1607.767,
+   "dur": 19.546,
    "asset": "S103.jpg",
    "rfParent": null
   },
@@ -1054,8 +1054,8 @@
    "id": "S104",
    "kind": "reframe",
    "chapter": "CH.10",
-   "from": 1613.288,
-   "dur": 5.401,
+   "from": 1627.313,
+   "dur": 19.546,
    "asset": "S103.jpg",
    "rfParent": "S103"
   },
@@ -1063,8 +1063,8 @@
    "id": "S105",
    "kind": "still",
    "chapter": "CH.10",
-   "from": 1618.69,
-   "dur": 5.401,
+   "from": 1646.859,
+   "dur": 19.546,
    "asset": "S105.jpg",
    "rfParent": null
   },
@@ -1072,8 +1072,8 @@
    "id": "S106",
    "kind": "still",
    "chapter": "CH.10",
-   "from": 1624.091,
-   "dur": 5.401,
+   "from": 1666.405,
+   "dur": 19.546,
    "asset": "S106.jpg",
    "rfParent": null
   },
@@ -1081,8 +1081,8 @@
    "id": "S107",
    "kind": "still",
    "chapter": "CH.10",
-   "from": 1629.492,
-   "dur": 5.401,
+   "from": 1685.951,
+   "dur": 19.546,
    "asset": "S107.jpg",
    "rfParent": null
   },
@@ -1090,8 +1090,8 @@
    "id": "S108",
    "kind": "still",
    "chapter": "CH.10",
-   "from": 1634.893,
-   "dur": 7.197,
+   "from": 1705.497,
+   "dur": 13.48,
    "asset": "S108.jpg",
    "rfParent": null
   },
@@ -1099,7 +1099,7 @@
    "id": "C9",
    "kind": "card",
    "chapter": "CH.10",
-   "from": 1642.09,
+   "from": 1718.977,
    "dur": 4,
    "asset": null,
    "rfParent": null
@@ -1108,8 +1108,8 @@
    "id": "S109",
    "kind": "still",
    "chapter": "CH.10",
-   "from": 1646.09,
-   "dur": 5.166,
+   "from": 1722.977,
+   "dur": 23.399,
    "asset": "S109.jpg",
    "rfParent": null
   },
@@ -1117,8 +1117,8 @@
    "id": "S110",
    "kind": "reframe",
    "chapter": "CH.10",
-   "from": 1651.256,
-   "dur": 5.401,
+   "from": 1746.376,
+   "dur": 19.546,
    "asset": "S109.jpg",
    "rfParent": "S109"
   },
@@ -1126,8 +1126,8 @@
    "id": "S111",
    "kind": "still",
    "chapter": "CH.11",
-   "from": 1656.657,
-   "dur": 12.162,
+   "from": 1765.922,
+   "dur": 12.199,
    "asset": "S111.jpg",
    "rfParent": null
   },
@@ -1135,8 +1135,8 @@
    "id": "S112",
    "kind": "reframe",
    "chapter": "CH.11",
-   "from": 1668.819,
-   "dur": 10.731,
+   "from": 1778.121,
+   "dur": 10.764,
    "asset": "S111.jpg",
    "rfParent": "S111"
   },
@@ -1144,8 +1144,8 @@
    "id": "S113",
    "kind": "still",
    "chapter": "CH.11",
-   "from": 1679.551,
-   "dur": 10.731,
+   "from": 1788.885,
+   "dur": 10.764,
    "asset": "S113.jpg",
    "rfParent": null
   },
@@ -1153,8 +1153,8 @@
    "id": "S114",
    "kind": "still",
    "chapter": "CH.11",
-   "from": 1690.282,
-   "dur": 10.731,
+   "from": 1799.649,
+   "dur": 10.764,
    "asset": "S114.jpg",
    "rfParent": null
   },
@@ -1162,8 +1162,8 @@
    "id": "S115",
    "kind": "still",
    "chapter": "CH.11",
-   "from": 1701.013,
-   "dur": 10.731,
+   "from": 1810.413,
+   "dur": 10.764,
    "asset": "S115.jpg",
    "rfParent": null
   },
@@ -1171,8 +1171,8 @@
    "id": "S116",
    "kind": "still",
    "chapter": "CH.11",
-   "from": 1711.745,
-   "dur": 10.731,
+   "from": 1821.177,
+   "dur": 10.764,
    "asset": "S116.jpg",
    "rfParent": null
   },
@@ -1180,8 +1180,8 @@
    "id": "S117",
    "kind": "reframe",
    "chapter": "CH.11",
-   "from": 1722.476,
-   "dur": 10.731,
+   "from": 1831.941,
+   "dur": 10.764,
    "asset": "S116.jpg",
    "rfParent": "S116"
   },
@@ -1189,8 +1189,8 @@
    "id": "S118",
    "kind": "still",
    "chapter": "CH.11",
-   "from": 1733.207,
-   "dur": 10.731,
+   "from": 1842.705,
+   "dur": 10.764,
    "asset": "https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260819_015313_85668da4-2e49-47e4-b3b2-8e7c41436376.png",
    "rfParent": null
   },
@@ -1198,8 +1198,8 @@
    "id": "S119",
    "kind": "still",
    "chapter": "CH.11",
-   "from": 1743.939,
-   "dur": 10.731,
+   "from": 1853.469,
+   "dur": 10.764,
    "asset": "S119.jpg",
    "rfParent": null
   },
@@ -1207,8 +1207,8 @@
    "id": "S120",
    "kind": "still",
    "chapter": "CH.11",
-   "from": 1754.67,
-   "dur": 11.447,
+   "from": 1864.233,
+   "dur": 11.482,
    "asset": "S120.jpg",
    "rfParent": null
   },
@@ -1216,8 +1216,8 @@
    "id": "S121",
    "kind": "reframe",
    "chapter": "CH.11",
-   "from": 1766.117,
-   "dur": 12.162,
+   "from": 1875.715,
+   "dur": 12.199,
    "asset": null,
    "rfParent": "S48"
   }
