@@ -1,0 +1,32 @@
+{
+  "_comment": "Upload config for 'The One Sound the Quran Forbids You to Make'. Read by automation/clarity_upload.py, which refuses to write unless the authenticated channel is expect_channel_id — a token minted against the wrong channel fails loudly instead of quietly publishing to it.",
+  "expect_channel_id": "UC0eBu0ZXcF20pTAG3lUnPXA",
+  "file": "media/parents-one-sound.mp4",
+  "captions": "media/parents-one-sound.srt",
+  "thumbnail": "media/thumbs/parents-one-sound.jpg",
+  "title": "The One Sound the Quran Forbids You to Make",
+  "publish_at": "2026-08-21T12:00:00Z",
+  "_publish_at_note": "Friday 21 August, 16:00 Gulf / 13:00 UK / 08:00 US Eastern. Friday is the natural high-intent day for a Quran study channel, and this hour is the only one that is evening in AE — the channel's own country — while still being daytime in the UK and morning in the US. This is a judgement call, not a measurement: vidIQ is out of credits and Nexlev is on the free plan, so the channel has no CTR, retention or traffic-source data to time against. Change it freely.",
+  "privacy": "private",
+  "_privacy_note": "Uploaded private with a publishAt, which is how a scheduled publish works. YouTube flips it public at the time above. If the Google Cloud project is unverified, YouTube can hold an API upload private past publishAt — check Studio once the time passes.",
+  "category_id": "27",
+  "playlist": "Questions Muslims Actually Ask",
+  "tags": [
+    "honour your parents islam",
+    "birr al walidayn",
+    "uff quran",
+    "al isra 23",
+    "quran on parents",
+    "obedience to parents in islam",
+    "uquq al walidayn",
+    "surah luqman 14",
+    "paradise beneath mothers feet",
+    "jurayj story",
+    "abusive parents islam",
+    "quran explained",
+    "tafsir",
+    "islamic reminders",
+    "lower the wing of humility"
+  ],
+  "description": "The Quran does not tell you to obey your parents. It tells you something far more demanding — and it starts by forbidding a sound.\n\nFive times the command to worship God alone appears bolted to a second command in the same sentence: and to parents, good treatment. Nothing else in the book gets that position. Not prayer, not fasting, not charity. And when the fifth of those verses arrives, in Surah al-Isra, it does not hand you a list of duties. It prohibits one syllable: uff — the breath that escapes a person who has decided to be patient and is not.\n\nThis is a study of what that verse actually legislates, who it is watching, where its limit is, and what survives that limit when a parent was the danger rather than the blessing.\n\nCHAPTERS\n0:00 The command that never travels alone\n2:31 Who the verse is actually watching\n4:19 Five verses, five additions\n7:41 The threshold: what \"uff\" actually is\n11:42 Birr and its opposite: expanse and the cut\n14:53 The hadith everybody quotes wrong\n17:34 Jurayj: when worship becomes the excuse\n20:25 The limit — and what survives it\n23:26 When the parent was the danger\n26:47 Lower the wing\n29:25 It doesn't end at the grave\n\nVERSES AND NARRATIONS REFERENCED\nal-Isra 17:23-24 · Luqman 31:14-15 · al-Baqarah 2:83 · an-Nisa 4:36 · al-An'am 6:151\nThe hadith of Mu'awiya ibn Jahima (Paradise at her feet) — graded authentic by al-Hakim and adh-Dhahabi, considered mudtarib in its chains by Ibn Hajar; the same ruling survives in narrations nobody contests, in Bukhari and Muslim. The story of Jurayj — Bukhari and Muslim. Sa'd ibn Abi Waqqas and his mother — the occasion of Luqman 31:15. Asma bint Abi Bakr and her mother.\n\nArabic on screen is typeset from a verified mushaf, never generated. Illustration is hand-drawn in ink and watercolour. No prophet, companion or human face is depicted anywhere in this video — that is deliberate.\n\nIf you are caring for a parent right now, or carrying an old injury from one, chapter 09 at 23:26 is why this video exists.\n\nClarity in the Quran — what the text actually says."
+}

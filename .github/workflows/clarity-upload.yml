@@ -1,0 +1,63 @@
+name: CLARITY IN THE QURAN - upload the parents film
+
+# Renders the film and publishes it. The render happens here rather than being
+# committed because a 31-minute 1080p master is gigabytes — past what GitHub
+# accepts in a single file — while every input it is built from is tracked, so
+# the runner can rebuild it byte for byte.
+#
+# Needs CIQ_CLIENT_ID, CIQ_CLIENT_SECRET and CIQ_REFRESH_TOKEN. Run
+# "CLARITY IN THE QURAN - check setup" first if you are unsure they are set;
+# this job's dry-run step will also say so before anything is rendered.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Check the token, the channel and the inputs, then stop"
+        type: boolean
+        default: true
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Python deps
+        run: pip install -r automation/requirements.txt
+
+      # Checked BEFORE the render, so a missing secret costs seconds rather than
+      # an hour of runner time.
+      - name: Check credentials and inputs
+        run: python automation/clarity_upload.py --dry-run
+        env:
+          CIQ_CLIENT_ID: ${{ secrets.CIQ_CLIENT_ID }}
+          CIQ_CLIENT_SECRET: ${{ secrets.CIQ_CLIENT_SECRET }}
+          CIQ_REFRESH_TOKEN: ${{ secrets.CIQ_REFRESH_TOKEN }}
+
+      - name: Install render deps
+        if: ${{ inputs.dry_run == false }}
+        working-directory: video
+        run: npm ci
+
+      - name: Render
+        if: ${{ inputs.dry_run == false }}
+        working-directory: video
+        run: |
+          npm run upscale:parents
+          npm run render:parents
+
+      - name: Upload to YouTube
+        if: ${{ inputs.dry_run == false }}
+        run: python automation/clarity_upload.py
+        env:
+          CIQ_CLIENT_ID: ${{ secrets.CIQ_CLIENT_ID }}
+          CIQ_CLIENT_SECRET: ${{ secrets.CIQ_CLIENT_SECRET }}
+          CIQ_REFRESH_TOKEN: ${{ secrets.CIQ_REFRESH_TOKEN }}

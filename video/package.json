@@ -34,7 +34,8 @@
     "map:parents": "python3 scripts/map-clips-to-blocks.py",
     "align:parents": "python3 scripts/align-blocks.py",
     "vo:parents": "node scripts/build-vo-parents.mjs",
-    "srt:parents": "node scripts/make-srt-parents.mjs"
+    "srt:parents": "node scripts/make-srt-parents.mjs",
+    "upscale:parents": "node scripts/upscale-stills.mjs"
   },
   "keywords": [],
   "author": "",
