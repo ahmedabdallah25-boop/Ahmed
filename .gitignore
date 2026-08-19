@@ -3,3 +3,8 @@ __pycache__/
 video/out/
 video/node_modules/
 video/public/parents-2x/
+
+# The film masters. A 31-minute 1080p render is gigabytes — past what GitHub
+# accepts in a single file, let alone what belongs in a public repo. Rebuild
+# with `npm run render:parents`; everything it needs is tracked.
+media/parents-one-sound*.mp4
