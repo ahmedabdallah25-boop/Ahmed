@@ -1,0 +1,1763 @@
+================================================================================
+SCENE PACK — "WITH" (NOT AFTER)
+What *Inna maʿa al-ʿusri yusrā* Actually Says in Arabic
+Render style: HAND-PAINTED WATERCOLOUR + INK | 16:9 1920x1080 | 24:39 | 76 plates
+Reverse-engineered from: youtu.be/KykVGTsqeEI — "Deep Made Simple", 26:58
+Script lives separately in: ash-sharh-script.md
+================================================================================
+
+READ THIS FIRST — THIS IS A NEW LANE, NOT EITHER EXISTING CHANNEL
+
+  This does not match Finance % Decoded and it does not match HELD BY FAITH.
+  Saying so plainly, because house-style.md exists precisely to stop a pack being
+  written for the wrong render style twice in a row:
+
+    - Finance % Decoded is FLAT 2D VECTOR, 9:16, Shorts-first, Islamic finance.
+      house-style.md says flat vector wins over any scene pack that disagrees.
+      This pack disagrees on purpose — you asked for the SOURCE video's image
+      type, and the source is watercolour. That instruction outranks the style
+      file, but only for this pack. Do not let this leak into a finance Short.
+
+    - HELD BY FAITH is first-person, vertical, and about one specific diagnosis.
+      This is third-person teaching in 16:9. Not that channel either.
+
+  So: this is a third format. Before producing it, decide whether it is a new
+  channel, a long-form lane on an existing one, or a one-off. That decision
+  changes the metadata block at the bottom and nothing else in this file.
+
+⚠ MANDATORY — 24:39 IS FAR OVER THE 180s SHORTS CAP
+  This publishes as long-form. Its thumbnail renders in 16:9 slots. Per CLAUDE.md
+  a custom 1280x720 thumbnail is required, no exceptions. Spec is at the bottom
+  of this file under THUMBNAIL. Do not skip it.
+
+
+================================================================================
+WHY THIS ONE, AND WHY NOW
+================================================================================
+
+- THE SOURCE IS A PROVEN SHAPE, NOT A GUESS. KykVGTsqeEI: 18,154 views and 1,010
+  likes = a 5.6% like rate on a 27-minute video about Greek grammar. That is an
+  extraordinary ratio for the length. People do not sit through 27 minutes of
+  word study unless the emotional frame is carrying them, and the frame is what
+  is being borrowed here.
+
+- THE ISLAMIC TWIN IS UNUSUALLY EXACT. Most reverse-engineering forces the
+  analogy. This one does not have to:
+
+    Romans 8:28                        →  Ash-Sharḥ 94:5-6
+    the most-quoted, most-misused verse →  the most-quoted, most-misused āyah
+    Greek `synergeo`                    →  Arabic `maʿa` — WITH, not after
+    "all things" ≠ each thing is good   →  definite al-ʿusr / indefinite yusran
+    v29 defines "good", one verse on    →  94:7-8 define the ease, one āyah on
+    Paul wrote it from prison           →  revealed in the fatrah, the worst season
+    the Roman arch                      →  the pointed arch of a masjid arcade
+    Joseph in the pit                   →  Yūsuf ؑ in the well, Mūsā's mother
+
+  Every one of those is a structural match, not a decorative one. The source's
+  spine survives the transplant intact, which is the whole reason this subject
+  was chosen over any other āyah.
+
+- THE DEMAND IS THE SAME DEMAND. "Indeed with hardship comes ease" is the single
+  most-forwarded line in any Muslim group chat after a death. Everyone receiving
+  this video has already been handed the āyah at a bad moment. The video's job is
+  to give them back the half they were not sent.
+
+- THE SUPPLY IS THE WRONG SHAPE — the same gap the finance channel exploits.
+  The existing content on this āyah is almost entirely short reminders and
+  recitation-over-nasheed edits. Almost none of it does the ARABIC. That is the
+  gap, and it is exactly the gap "Deep Made Simple" found in English Bible study.
+
+WHAT MOVES, AND WHAT IS HELD CONSTANT
+
+  HELD from the source : structure, chapter cadence, second-person hook device,
+                         image medium (watercolour + ink), Ken Burns motion,
+                         hold lengths, scripture-card and word-banner grammar,
+                         the architectural metaphor at ~74%, the pastoral close.
+  MOVES               : subject, language, tradition, evidence, every image,
+                         and the face rule (see STYLE LOCK — this is the one
+                         place the source cannot be copied).
+
+  Structural positions, measured rather than asserted — the pension pack was
+  re-cut because its reveal position was claimed and not checked:
+
+    maʿa — the title word         6:56 of 24:39  = 28.1%   (source: 19.1%)
+    one hardship, two eases       9:20 of 24:39  = 37.8%   (source: 26.8%)
+    āyāt 7-8 define the ease     15:23 of 24:39  = 62.4%   (source: 48.8%)
+    THE ARCH                     18:03 of 24:39  = 73.3%   (source: 74.8%)
+
+  The arch is within 1.5 points of the source. "Two eases" lands at 37.8%, which
+  is effectively the 40% reveal position next-slate.md rule 0a asks for.
+
+  ONE HONEST DEVIATION: the āyāt 7-8 turn sits at 62.4% where the source's
+  equivalent sits at 48.8% — 13.6 points late. Closing that gap needs ~200 words
+  cut from chapters 3 and 8, which would remove the sīrah context that makes the
+  turn land at all. The trade was taken deliberately. If retention shows a drop
+  between 50% and 60%, that is the first thing to cut, and chapter 3 is where.
+
+
+================================================================================
+NEGATIVE PROMPT — paste into the negative field, applies to ALL 76 plates
+================================================================================
+
+3D render, CGI, photorealistic, photograph, vector art, flat vector, hard clean
+outlines, cel shading, cartoon, anime, comic book, digital airbrush, oil paint,
+impasto, heavy texture, neon colours, oversaturated, high contrast, harsh
+lighting, deep black shadows, lens flare, HDR, text, lettering, calligraphy,
+Arabic script, Kufic script, handwriting, inscriptions, numerals, watermark,
+signature, logo, brand marks, human face, facial features, eyes, mouth, nose,
+portrait, close-up of a face, depictions of prophets, religious figures,
+idols, statues, crucifix, church, human figure in a mosque prayer hall,
+extra fingers, distorted hands, extra limbs, blurry, low resolution
+
+
+================================================================================
+STYLE LOCK — the grammar every prompt below is written in
+================================================================================
+
+MEDIUM. Hand-painted watercolour with fine ink linework, on cold-press paper with
+visible tooth and grain. Soft wet-edge blooms where colours meet. Pigment pools
+slightly at the edges of washes. The ink line is loose and slightly broken — it
+does not trace every shape, and it never has an even machine weight. Areas of
+bare paper are left unpainted and are part of the composition.
+
+LIGHT. Soft, diffused, directionless daylight. Low contrast throughout. No harsh
+shadow, no dramatic rim light, no glow. Shadows are a cool grey-violet wash, not
+black.
+
+DEPTH. Shallow. Foreground subject rendered with more line detail; backgrounds
+dissolve into loose wash with almost no line. Nothing is sharp edge-to-edge.
+
+FRAME. 16:9 landscape, 1920x1080. Compose with generous negative space in the
+UPPER THIRD or one side — that space is where the typeset Arabic and translation
+land in the edit. Never fill the frame.
+
+PALETTE — six colours, nothing else.
+
+  | Role                       | Hex       |
+  |----------------------------|-----------|
+  | Lapis blue (primary)       | #1F3A93   |
+  | Burnt sienna (earth, skin) | #C1663F   |
+  | Saffron ochre (light, gold)| #C68A1E   |
+  | Verdigris sage (life)      | #6E8B74   |
+  | Limestone cream (paper/bg) | #EFE4CE   |
+  | Slate ink (line, shadow)   | #3A3F4B   |
+
+  Lapis carries grief, night, water and the unknown. Saffron ochre carries
+  revelation, lamp-light and Fajr. Those two are the argument in colour: the
+  video ends by putting ochre INSIDE a lapis frame rather than after it.
+
+--------------------------------------------------------------------------------
+TWO HARD RULES. Both are non-negotiable and both differ from the source video.
+--------------------------------------------------------------------------------
+
+RULE 1 — NO FACE IS EVER RESOLVED. NO PROPHET IS EVER DEPICTED.
+
+  The source video shows a recurring woman's face, and shows Paul, Joseph and a
+  crucifix. None of that transfers.
+
+  - No prophet — not Muḥammad ﷺ, not Yūsuf, not Mūsā — is depicted in any form,
+    including from behind, in silhouette, or as a shape. Their scenes are carried
+    by THE PLACE and THE OBJECT: the well without anyone in it, the empty
+    riverbank, the basket, the reed. This is why chapters 3 and 11 are shot the
+    way they are below.
+  - The recurring modern character is always: from behind, over the shoulder,
+    cropped above the mouth, turned away, or reflected out of focus. Never a
+    resolved face.
+
+  Read this as a design decision, not a restriction. A face you never see is why
+  the viewer keeps occupying the frame themselves — which is the whole point of
+  a second-person script. The source had to work to get that effect. This gets it
+  for free.
+
+RULE 2 — NO IMAGE MODEL EVER RENDERS ARABIC. NOT ONCE.
+
+  Every image generator produces broken, meaningless Arabic — wrong letterforms,
+  unjoined glyphs, invented characters. On a video whose entire argument is that
+  the exact Arabic wording matters, one malformed āyah on screen destroys the
+  channel's credibility permanently, and the comments will be about nothing else.
+
+  So: every prompt below that needs Arabic asks the model for an EMPTY cartouche,
+  banner, panel or plaque — a blank illuminated shape. The Arabic is typeset in
+  the editor, on top, in a real font.
+
+    Arabic       : KFGQPC Uthmanic Script HAFS, or Amiri Quran
+    Translation  : EB Garamond, or Cormorant Garamond
+    Transliteration: EB Garamond Italic
+
+  This applies to English lettering too. Nothing in this pack is rendered as text
+  by the model. Everything legible is typeset.
+
+--------------------------------------------------------------------------------
+MOTION
+--------------------------------------------------------------------------------
+Ken Burns on every plate — slow push in, or slow drift left/right. 4-6% of frame
+over the hold. Parallax (foreground separated onto its own layer) on plates
+marked [PARALLAX]. Never zoom out except on the two plates marked [PULL BACK] —
+those are reveals and the move is the reveal.
+
+Hold length: 19.5s average across the 76 plates, range 11-36s. Stated as measured,
+not as intended — the source holds 14.1s on average, so THIS PACK RUNS 38% SLOWER
+per image. See PLATE DENSITY below before you decide that is acceptable.
+
+--------------------------------------------------------------------------------
+PLATE DENSITY — the one place this pack is measurably thinner than the source
+--------------------------------------------------------------------------------
+Measured, not asserted — because an earlier draft of this file claimed ~112
+on-screen changes and that was simply wrong:
+
+    THIS PACK    76 plates over 1,479s  =  19.5s average hold
+    THE SOURCE  ~115 images over 1,618s =  14.1s average hold
+
+  To match the source's cutting rhythm you would need ~105 plates, not 76.
+  26 of the 76 plates here hold longer than 20s.
+
+  That is a real deviation, and you should decide about it now rather than
+  discover it in the edit. Two defensible positions:
+
+  KEEP 76. The frames here are calmer and the VO is denser than the source's.
+  The long holds on scenes 19, 43, 63 and 65 are doing deliberate work, and
+  cutting them would hurt. 19.5s is slow, but not sleepy when the Ken Burns move
+  is live underneath it.
+
+  GO TO ~105. If test viewers report drift, split the longest holds. In priority
+  order: scenes 30 (36s), 37 (29s), 29 (28s), 19 (27s), 36 (26s), 74 (25s),
+  16 (24s), 18 (24s), 55 (24s), 23 (22s). Each splits naturally at a VO sentence
+  break into two plates of the SAME subject at different scale — a wide and a
+  detail. That is exactly how the source reaches its density without inventing
+  new subjects, and it costs you no new ideas.
+
+  DO NOT split scenes 19, 43, 63 or 65 whatever else you do. Those four holds
+  are the video.
+
+REUSE. 11 of the 76 plates are recolours or re-crops of a plate already
+generated — marked "Use the SCENE n" or "Reuse SCENE n" in their prompt field.
+They return with a DIFFERENT Ken Burns move (a push where it was a drift, the
+opposite corner, a tighter crop) so they read as deliberate callbacks rather
+than padding.
+
+  Distinct on-screen images: 76.   Paintings to commission: 65.
+
+
+================================================================================
+THE RECURRING CAST — three devices, no faces
+================================================================================
+
+THE ONE GRIEVING — the viewer's stand-in, in every chapter
+  A woman in her thirties. Soft grey-blue hijab, loosely wrapped, a little
+  undone. Long charcoal wool coat, sleeves slightly too long. Always shot from
+  BEHIND, over the shoulder, from the side cropped above the mouth, or as an
+  out-of-focus reflection. Her hands are the expressive part — generate them
+  carefully, they carry every emotional beat her face cannot.
+  She is the direct equivalent of the source's recurring modern woman, and she
+  also closes the gap house-style.md flags: "No female characters in the cast."
+
+THE LAMP — the recurring object
+  A small clay oil lamp with a single flame, sometimes in a wall niche. It
+  appears in eleven plates. It is never explained on screen. It starts in
+  darkness (ch.1), is nearly out (ch.3), and is still burning at Fajr (ch.13).
+  Do not draw attention to it; let it accumulate.
+
+THE ARCH — the structural motif
+  A pointed masonry arch. Appears as a fragment early (plates 12, 34), unbuilt
+  in ch.10, and complete at the close. This is the source's Roman arch, rebuilt.
+
+RECURRING SETTING VOCABULARY
+  Limestone walls, date palms, still water, reed matting, folded cloth, a plain
+  prayer mat, sand, empty doorways, the horizon.
+
+
+================================================================================
+SCENES
+================================================================================
+Each block: timecode | VO cue | ON-SCREEN (typeset in the editor, never rendered
+by the model) | IMAGE PROMPT (complete, self-contained, copy-paste).
+
+
+--------------------------------------------------------------------------------
+CHAPTER 1 — THE CAR PARK | 0:00 – 1:24 | 5 plates
+--------------------------------------------------------------------------------
+
+SCENE 1 | 0:00-0:14 | COLD OPEN — no title, no logo, no music sting
+VO: "You are sitting in a car you have not started yet."
+ON-SCREEN: nothing. Let the image be alone for the full hold.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. Interior of a parked car at dusk, seen from
+the rear seat: the back of a woman's head and shoulders in a soft grey-blue
+hijab and charcoal coat, motionless in the driver's seat, face entirely unseen.
+Beyond the windscreen, a near-empty concrete car park washed in lapis. Cold
+condensation blooming at the edges of the glass. Bare paper left in the fogged
+areas. No face, no text. 16:9, generous empty space in the upper third.
+MOTION: very slow push in. [PARALLAX] separate the windscreen wash from the
+figure. [REUSE — returns at 22:48]
+
+SCENE 2 | 0:14-0:30
+VO: "The janāzah finished forty minutes ago. Everyone has gone."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. An emptied gravel courtyard outside a plain
+limestone building at dusk, seen from a low wide angle. Loose rows of scuffed
+footprints in the gravel and nobody in the frame at all. A single pair of shoes
+left by a step. Long soft grey-violet shadows, no black. Bare unpainted paper in
+the sky. No people, no face, no text. 16:9, horizon low, empty sky above.
+MOTION: slow drift right.
+
+SCENE 3 | 0:30-0:47
+VO: "…still holding the keys in your hand, like you are waiting for someone to
+come and tell you what to do with them."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. Extreme close study of two open hands resting
+palm-up in a lap, a small set of car keys lying loose across one palm, fingers
+not gripping. Charcoal coat sleeves slightly too long over the wrists. Rendered
+with careful ink linework on the hands, everything beyond them dissolving into
+loose lapis wash. No face in frame, no text. 16:9, hands low-left, empty wash
+upper-right.
+MOTION: extremely slow push. [REUSE — returns at 23:20]
+
+SCENE 4 | 0:47-1:05
+VO: "And there is a phone in your pocket with eleven messages on it. Nine of them
+say the same thing." / "Indeed, with hardship comes ease."
+ON-SCREEN: **āyah card** — typeset 94:5 Arabic + English. Fades up over the
+plate, does not replace it.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A phone lying face-up on a car seat in the
+dark, its screen a soft blank rectangle of pale saffron ochre light with NO text
+or symbols on it — completely empty glowing glass. The light spills onto the
+seat fabric and the edge of a coat sleeve. Everything else sunk in deep lapis
+wash. No face, no lettering anywhere. 16:9, phone lower-left, empty dark space
+across the top for a caption.
+MOTION: hold still, no move. The only static plate in the video — it marks the
+āyah's first appearance. [REUSE — returns at 11:51]
+
+SCENE 5 | 1:05-1:24
+VO: "That feeling was not weak īmān… something had been handed to you with half
+of it missing." → "So we are going to read the whole thing."
+ON-SCREEN: **TITLE CARD**, typeset: "WITH" (large) / "not after" (small).
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A single sheet of aged cream paper lying on a
+dark wooden surface, TORN cleanly in half across the middle, with only the left
+half present and the right half missing entirely — bare dark wood where it
+should be. The paper is completely blank, unmarked, no writing of any kind. One
+small clay oil lamp with a single flame at the far edge of the table, barely
+lighting it. No face, no text, no script. 16:9, torn paper centre-left, empty
+dark space right.
+MOTION: slow push toward the torn edge.
+
+
+--------------------------------------------------------------------------------
+CHAPTER 2 — THE ĀYAH EVERYONE HANDS YOU | 1:24 – 3:14 | 6 plates
+--------------------------------------------------------------------------------
+
+SCENE 6 | 1:24-1:38
+VO: "Sūrah ash-Sharḥ. The ninety-fourth sūrah. Eight āyāt…"
+ON-SCREEN: lower-third, typeset: "Sūrah ash-Sharḥ · 94 · Makkan · 8 āyāt"
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. An open hand-bound manuscript resting on a low
+wooden stand, seen from above at a slight angle. The two visible pages are
+COMPLETELY BLANK cream paper with a delicate empty illuminated border of lapis
+and saffron ochre geometric interlace running around the margins — the text area
+inside the border is entirely empty and unmarked. No writing, no script, no
+letters anywhere. Soft daylight from the left. 16:9, book lower two-thirds,
+empty space above.
+MOTION: slow drift down the page. [REUSE — returns at 13:48 and 15:23]
+
+SCENE 7 | 1:38-1:52 | THE ĀYAH, FIRST FULL STATEMENT
+VO: [ARABIC DROP-IN 94:5-6] "Fa-inna maʿa al-ʿusri yusrā…"
+ON-SCREEN: **full āyah card**, typeset Arabic centred, English beneath.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A large EMPTY rectangular illuminated cartouche
+centred on cream paper — a blank panel framed by a fine lapis rule and a band of
+saffron ochre geometric interlace with small verdigris florets at the corners.
+The interior of the panel is bare, unpainted cream paper with nothing in it at
+all. Subtle paper texture and a soft deckled edge. No writing, no calligraphy, no
+script, no marks inside the frame. 16:9, panel centred with wide cream margins.
+MOTION: none for 3s, then a barely perceptible push. [REUSE — returns 5x: this
+is the pack's master āyah plate]
+
+SCENE 8 | 1:52-2:08
+VO: "You have seen it on a wall frame. On a mug. Under a photo of a mountain at
+sunrise, in a font chosen by someone who has never climbed one."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A tidy modern living-room wall, painted pale,
+with three decorative objects arranged on a floating shelf: a framed picture
+whose surface is entirely BLANK cream, a plain ceramic mug, and a small
+unmarked print of a generic mountain at sunrise. Everything slightly too neat,
+slightly too styled, lit flatly. No writing, no lettering, no script on any
+object. No people, no face. 16:9, shelf across the lower third.
+MOTION: slow drift left. Deliberately the flattest, least beautiful plate in the
+video — it should feel like an advert dropped into a painting.
+
+SCENE 9 | 2:08-2:24
+VO: "It is not misquoted. The words are usually right. It is mis-shaped. Bent
+into a promise it never made."
+ON-SCREEN: typeset, upper third: "mis-shaped"
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A single wedge-shaped limestone block resting
+on a workbench, correctly and cleanly cut on three faces but visibly WARPED and
+wrongly angled on the fourth, so it would not seat against its neighbour. A thin
+slate-ink measuring line drawn across it showing the deviation. Wood shavings and
+stone dust on the bench. No writing, no numerals, no face. 16:9, block centre-
+left, empty bench surface to the right.
+MOTION: slow push onto the warped face. SEED — pays off at 18:03 (the arch).
+
+SCENE 10 | 2:24-2:42
+VO: "Hold on. It gets better. The bad part ends, and then the good part starts."
+ON-SCREEN: typeset, as a false promise — set it in the styled "mug" font from
+scene 8, deliberately: "the bad part ends → then the good part starts"
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A simple hand-drawn horizontal timeline across
+a cream page: a long unbroken band of deep lapis wash on the left ending at a
+hard vertical edge, and a band of warm saffron ochre wash beginning exactly
+there and running to the right. A clean sharp boundary between them, no blending
+at all. Nothing else on the page. No writing, no numerals, no labels, no arrows.
+16:9, band across the middle, wide cream space above and below.
+MOTION: slow drift left to right along the band, arriving at the hard boundary.
+[REUSE — returns at 7:40, where the boundary DISSOLVES. Generate that variant now
+while the plate is in hand.]
+
+SCENE 11 | 2:42-2:58
+VO: "…you can watch someone hold on, and hold on, and die still holding on."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A hospital bedside table at night, seen close
+and low: a folded prayer mat, a glass of water gone still, a small clay oil lamp
+with its flame very low. Behind them, out of focus and dissolving into lapis
+wash, the suggestion of a bed with a plain sheet — no person visible in it, no
+body, no face. Deeply quiet. No writing, no text. 16:9, objects lower-right,
+empty lapis wash upper-left.
+MOTION: extremely slow push. Hold the full 16s.
+
+SCENE 12 | 2:58-3:14
+VO: "It is not the promise. And the word that proves it is three letters long."
+ON-SCREEN: nothing yet — the word arrives in scene 18. Do not pre-empt it.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A fragment of a broken pointed stone arch
+standing alone against an empty pale sky — only three voussoir stones remaining
+at the springing point, the rest of the arch gone. Weathered limestone, warm
+sienna and cream, ink linework on the joints. Bare unpainted paper for the sky.
+No writing, no face, no people. 16:9, fragment right of centre, vast empty sky
+left.
+MOTION: slow push. SEED — the arch completes at 18:03.
+
+
+--------------------------------------------------------------------------------
+CHAPTER 3 — WHO IT WAS FIRST SAID TO | 3:14 – 5:37 | 7 plates
+--------------------------------------------------------------------------------
+NOTE ON THIS CHAPTER. The source video shows Paul. This chapter shows NOBODY.
+Every beat here is carried by a place or an object. That is Rule 1 and it is not
+negotiable. It also happens to be the better filmmaking: an empty doorway where a
+voice used to be says "silence" more sharply than any figure could.
+
+SCENE 13 | 3:14-3:30
+VO: "…this was not revealed into a calm room. It was revealed to a specific man,
+on a specific bad day."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A wide, arid rocky valley between bare sienna
+hills at first light, seen from high on a ridge. A scatter of low flat-roofed
+stone dwellings far below, very small in the frame. Utterly still, nobody in
+sight. Loose dry-brush texture on the hillsides, bare paper for the sky. No
+people, no face, no writing. 16:9, horizon on the lower third, immense empty sky.
+MOTION: very slow push. [REUSE — returns at 5:10]
+
+SCENE 14 | 3:30-3:44 | THE SILENCE
+VO: "Revelation had stopped."
+ON-SCREEN: nothing. Consider dropping the score out entirely here.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A rough-cut stone doorway in a bare limestone
+wall, seen straight on, with nothing beyond it but flat unbroken deep lapis
+darkness — no room, no depth, no detail at all inside the opening. The wall
+around it is warm and textured; the opening is void. Nobody present. No writing,
+no face. 16:9, doorway centred, wide bare wall either side.
+MOTION: none. Hold completely still for the full 14s. The only other static plate
+besides scene 4. [REUSE — returns at 4:26 with the doorway lit]
+
+SCENE 15 | 3:44-4:02
+VO: "For a period… nothing came. No Jibrīl. No āyāt. Just silence, where the
+voice used to be."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A small clay oil lamp sitting in a shallow
+limestone wall niche, its flame reduced to the smallest possible point of saffron
+ochre, barely alive, with a thin thread of smoke rising. The niche and the wall
+around it sunk in cool lapis shadow. Nothing else in the frame. No people, no
+face, no writing. 16:9, niche right of centre, deep empty shadow to the left.
+MOTION: slow push toward the flame.
+
+SCENE 16 | 4:02-4:26
+VO: "Al-Bukhārī preserves it, from Jundub: the taunt went around that his Lord
+had left him."
+ON-SCREEN: lower-third citation, typeset: "Ṣaḥīḥ al-Bukhārī — Jundub ibn ʿAbdillāh"
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A narrow sunlit market lane between limestone
+walls, seen from a distance down its length. Several robed figures stand in
+loose groups far away at the far end, rendered as soft indistinct washes with no
+facial features, no detail, turned away from the viewer. Cloth awnings overhead
+throw soft sienna shade. Deliberately too far to read anyone. No faces, no
+writing. 16:9, lane receding centre, walls filling both sides.
+MOTION: slow push down the lane — approaching but never arriving.
+
+SCENE 17 | 4:26-4:46 | AḌ-ḌUḤĀ ARRIVES
+VO: "Then Sūrah aḍ-Ḍuḥā came. Your Lord has not forsaken you, nor is He
+displeased."
+ON-SCREEN: **āyah card** — typeset 93:3.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. The same rough-cut stone doorway in a bare
+limestone wall, seen straight on — but now the opening is filled with warm
+saffron ochre morning light pouring through it and spilling in a soft wedge
+across the floor toward the viewer. The wall is the same warm limestone. Nobody
+standing in the doorway. No writing, no face, no figure. 16:9, doorway centred,
+light wedge reaching the lower edge of frame.
+MOTION: extremely slow push. Cut to this HARD from scene 16 — no dissolve. This
+is the chapter's only hard cut.
+
+SCENE 18 | 4:46-5:10
+VO: "It was said into the ear of a man in the worst season of his life, during
+the exact silence he feared most."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A dry narrow ravine between high sienna cliff
+walls, blocked at its mouth by a crude barrier of piled thorn branches and rope.
+Hard shadow inside the ravine, hot pale sky above. Nothing living in the frame,
+no people, no animals. Loose dry-brush on the rock, bare paper for sky. No
+writing, no face. 16:9, ravine mouth centre-left, cliff mass filling the right.
+MOTION: slow drift right into the shadow. (This is the boycott in the shiʿb.)
+
+SCENE 19 | 5:10-5:37 | HOLD THE LONGEST BEAT IN THE CHAPTER
+VO: "He buried six of his seven children. He buried Khadījah… Every one of those
+came after this promise."
+ON-SCREEN: nothing. Say it with the picture.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A quiet stretch of stony desert ground at
+dusk, with several simple unmarked grave mounds outlined by plain small stones,
+laid in a loose row. Some of the mounds are noticeably short. A single date palm
+at the edge of frame. No headstones, no inscriptions, no writing of any kind, no
+people, no face. Restrained and dignified, very soft light. 16:9, graves across
+the lower third, wide dim sky above.
+MOTION: extremely slow drift along the row. Hold 27s — the longest single hold
+in the video. Do not cut this short.
+
+
+--------------------------------------------------------------------------------
+CHAPTER 4 — INNA | 5:37 – 6:56 | 4 plates
+--------------------------------------------------------------------------------
+
+SCENE 20 | 5:37-5:53 | WORD 1 OF 4
+VO: [ARABIC DROP-IN] "Inna."
+ON-SCREEN: **word banner** — typeset إِنَّ large, "inna" beneath in italic.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A long horizontal EMPTY illuminated banner
+across cream paper: a blank ribbon of deep lapis wash edged top and bottom with a
+fine saffron ochre rule and small verdigris palmette finials at each end. The
+interior of the banner is completely bare — flat lapis with nothing on it, no
+marks, no script, no calligraphy. 16:9, banner across the middle third, wide
+cream space above and below.
+MOTION: slow push. [REUSE — this is the master WORD BANNER plate. It returns for
+maʿa, baʿda, al-ʿusr, yusrā and fanṣab. Recolour the ribbon per word: lapis for
+inna and maʿa, slate for baʿda, sienna for al-ʿusr, ochre for yusrā.]
+
+SCENE 21 | 5:53-6:14
+VO: "*inna* is not a decoration… it takes a sentence and fixes it in place."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A close low study of desert ground where two
+tent guy-ropes meet it: the left rope lies slack and curling loose on the sand
+with its wooden peg lying on its side, unused; the right rope runs taut and
+straight from the upper edge of frame down to a peg driven hard and deep into the
+ground. Sharp ink linework on the rope fibres and the peg. No people, no face, no
+writing. 16:9, both ropes lower half, empty pale sky above.
+MOTION: slow push toward the driven peg.
+
+SCENE 22 | 6:14-6:34
+VO: "It is not a hope. It is not encouragement. It is a statement of fact about
+how reality is built."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A heavy forged iron ring set deep into a
+weathered limestone block, with a thick rope passed through it running taut out
+of frame. Rust bleeding faint sienna into the pale stone. Rendered with firm ink
+line on the ironwork, the stone in loose wash. No people, no face, no writing.
+16:9, ring and block left of centre, empty stone surface right.
+MOTION: slow drift right along the taut rope.
+
+SCENE 23 | 6:34-6:56 | SEED FOR CHAPTER 8
+VO: "…āyah five opens with *fa-inna.* That little *fa-* means so, or therefore…
+this promise is not floating. It is bolted to something."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. Four squared limestone blocks laid as a solid
+low course on bare ground, and a fifth block resting across the top of them,
+clearly supported by all four. Cleanly cut stone, warm cream and sienna, joints
+picked out in fine ink line. Simple, diagrammatic, nothing else in the frame. No
+people, no face, no writing, no numerals. 16:9, blocks lower-centre, empty pale
+ground and sky around them.
+MOTION: slow push, ending framed on the joint between the top block and the
+course. [REUSE — returns at 13:48 as the payoff.]
+
+
+--------------------------------------------------------------------------------
+CHAPTER 5 — MAʿA | 6:56 – 9:20 | 7 plates | ★ TITLE REVEAL — 28.1% of runtime
+--------------------------------------------------------------------------------
+
+SCENE 24 | 6:56-7:12 | ★ THE WORD THE VIDEO IS NAMED FOR
+VO: [ARABIC DROP-IN] "Maʿa."
+ON-SCREEN: **word banner** — typeset مَعَ large, "maʿa" beneath, and under that,
+small: "with".
+IMAGE PROMPT:
+Use the SCENE 20 master word-banner plate, ribbon in lapis #1F3A93. Regenerate
+rather than reuse if the ochre finials read too small at 1080p.
+MOTION: slow push, slightly faster than scene 20. Let the music lift here — this
+is the title card of the argument.
+
+SCENE 25 | 7:12-7:26
+VO: "*Maʿa* means with. Alongside. In the company of. It is the word you use for
+two things that are together."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. Two parallel lines of footprints pressed into
+smooth desert sand, side by side and level with each other, running away from the
+viewer toward a soft empty horizon. The two tracks stay together for their whole
+length. Low raking light, long soft shadows in the prints. No people in frame, no
+face, no writing. 16:9, tracks receding from the lower edge, wide sky above.
+MOTION: slow push forward along the tracks.
+
+SCENE 26 | 7:26-7:40
+VO: [ARABIC DROP-IN] "Baʿda." / "Arabic has a perfectly good word for after."
+ON-SCREEN: **word banner** — typeset بَعْدَ, "baʿda" beneath, small: "after".
+IMAGE PROMPT:
+Use the SCENE 20 master word-banner plate, ribbon in flat slate ink #3A3F4B
+instead of lapis, with the ochre rule desaturated. It should read as the
+duller, wrong-answer twin of scene 24.
+MOTION: slow drift, no push. Deliberately less alive than scene 24.
+
+SCENE 27 | 7:40-7:56
+VO: "It was available. It is short. It would have scanned. It was not used."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. Two lines of footprints in smooth desert sand
+arranged one behind the other along a single path: the first set stops dead, then
+a long stretch of completely undisturbed empty sand, then a second set begins and
+continues to the horizon. The gap between them is wide and obvious. Low raking
+light. No people, no face, no writing. 16:9, path receding centre, wide sky.
+MOTION: slow drift along the path, pausing on the empty gap.
+
+SCENE 28 | 7:56-8:16 | ★ THE VISUAL PAYOFF OF SCENE 10
+VO: "The āyah does not say after hardship, ease. It says with hardship, ease."
+ON-SCREEN: nothing — the image is the argument.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A long horizontal band across a cream page in
+which deep lapis wash and warm saffron ochre wash are BLED INTO EACH OTHER wet-
+in-wet along the entire length — no boundary anywhere, the two pigments feathered
+and interpenetrating so that ochre is present inside the darkest lapis and lapis
+inside the brightest ochre. Soft granulation where they meet. Nothing else on the
+page. No writing, no numerals, no labels. 16:9, band across the middle, wide
+cream space above and below.
+MOTION: slow drift left to right — the same move as scene 10, so the eye
+recognises it. This plate and scene 10 are a matched pair; cut them the same
+length. [PULL BACK optional at the end of the hold.]
+
+SCENE 29 | 8:16-8:44
+VO: "…the mufassirūn do not all read maʿa as strict simultaneity… But even at its
+most conservative reading, look at what maʿa rules out. It rules out the queue."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A single-file line of robed figures waiting in
+front of a closed wooden door in a limestone wall, seen from behind at the back
+of the queue. All figures are rendered as soft indistinct washes, all turned away
+from the viewer, none with any facial features or detail. The door is firmly
+shut. Flat even light, no drama. No faces, no writing. 16:9, queue receding
+toward the door on the right, bare wall filling the left.
+MOTION: slow push toward the closed door — never reaching it.
+
+SCENE 30 | 8:44-9:20 | THE QUESTION THE CHAPTER LEAVES OPEN
+VO: "You have been in that room. And you did not see it… What is this ease that
+is sitting right next to you, that you cannot feel?"
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A dim domestic room at night seen from behind:
+a woman in a soft grey-blue hijab and charcoal coat sits on the floor facing away
+from the viewer toward a blank wall, her face entirely unseen. Behind her and to
+her right, unnoticed, a small clay oil lamp burns with a clear warm saffron ochre
+flame, casting light she is turned away from. Deep lapis wash through the rest of
+the room. No face, no writing. 16:9, figure lower-left, lamp mid-right.
+MOTION: [PARALLAX] slow push, with the lamp layer drifting slightly faster than
+the figure so the light seems to approach her. [REUSE — returns inverted at
+18:03 and at the close.]
+
+
+--------------------------------------------------------------------------------
+CHAPTER 6 — ONE HARDSHIP, TWO EASES | 9:20 – 11:51 | 7 plates | 37.8% of runtime
+--------------------------------------------------------------------------------
+
+SCENE 31 | 9:20-9:36
+VO: "Āyah five. Āyah six. The same sentence, back to back, almost word for word."
+ON-SCREEN: **two āyah cards stacked**, typeset 94:5 above 94:6, identical.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. Two identical EMPTY rectangular illuminated
+cartouches stacked one above the other on a single sheet of cream paper, each
+framed by a fine lapis rule and a band of saffron ochre interlace. Both panel
+interiors are completely bare cream paper with nothing inside them. The two
+frames match each other exactly. No writing, no calligraphy, no script. 16:9,
+both panels centred, wide cream margins.
+MOTION: slow push, centred between the two panels.
+
+SCENE 32 | 9:36-9:56
+VO: "Al-ʿusr. The hardship. With the alif-lām — the definite article."
+ON-SCREEN: **word banner** — typeset الْعُسْرِ, "al-ʿusr" beneath, small: "THE
+hardship".
+IMAGE PROMPT:
+Use the SCENE 20 master word-banner plate, ribbon in burnt sienna #C1663F with
+the saffron ochre rule kept. Regenerate at full size if reused three times or
+more — the ochre finials degrade first.
+MOTION: slow push.
+
+SCENE 33 | 9:56-10:14
+VO: "Yusrā. Ease. No article. Indefinite. An ease."
+ON-SCREEN: **word banner** — typeset يُسْرًا, "yusrā" beneath, small: "AN ease".
+IMAGE PROMPT:
+Use the SCENE 20 master word-banner plate, ribbon in saffron ochre #C68A1E with
+a lapis rule. This is the brightest banner in the pack — it should be visibly
+warmer than every other word plate.
+MOTION: slow push.
+
+SCENE 34 | 10:14-10:36
+VO: "Repeat a definite noun and you are normally pointing at the same thing. Say
+the man twice, it is the same man."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A single large dark sienna boulder sitting on
+pale ground, with TWO separate ropes tied around it, each rope running away in a
+different direction toward opposite edges of the frame. Both ropes clearly
+terminate on the same one rock. Firm ink line on the rope fibres, loose wash on
+the stone. No people, no face, no writing. 16:9, boulder centred, ropes leaving
+frame left and right.
+MOTION: slow push onto the boulder.
+
+SCENE 35 | 10:36-10:56
+VO: "Repeat an indefinite noun, and you have normally introduced a second one."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A long limestone wall containing TWO separate
+shallow niches set well apart from each other, each holding its own small clay
+oil lamp with its own lit saffron ochre flame. Two distinct pools of warm light
+on the cool wall. Nothing between them. No people, no face, no writing. 16:9,
+both niches in the middle band, bare wall filling the rest.
+MOTION: slow drift from the left niche to the right one — the move does the
+counting.
+
+SCENE 36 | 10:56-11:22 | ★ THE CHAPTER'S PAYOFF IMAGE
+VO: "One hardship. Two eases. One hardship will never overcome two eases."
+ON-SCREEN: typeset, upper third: "one ʿusr · two yusr"
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A simple two-pan balance scale of dark iron
+standing on a stone surface: one pan holds a single large rough sienna stone, the
+other holds two smaller smooth ochre stones, and the ochre side has clearly sunk
+lower, tipping the beam. Fine ink linework on the chains and beam, soft wash on
+the stones. No people, no face, no writing, no numerals. 16:9, scale centred,
+empty pale ground either side.
+MOTION: slow push onto the lowered ochre pan. Hold 26s. [REUSE — returns at
+21:03 with the pans empty.]
+
+SCENE 37 | 11:22-11:51 | THE ISNĀD CAVEAT — DO NOT CUT THIS SCENE
+VO: "You will hear it quoted as a ḥadīth… from al-Ḥasan al-Baṣrī as a report
+going back to the Prophet ﷺ with a broken chain."
+ON-SCREEN: lower-third, typeset: "al-Ṭabarī · Ibn Kathīr — from Ibn ʿAbbās;
+mursal via al-Ḥasan al-Baṣrī"
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A length of fine metal chain lying across an
+open blank cream manuscript page, running from the lower-left toward the upper-
+right — but with ONE link near the middle broken open, so the chain lies in two
+separate pieces with a visible gap between them. The page beneath is completely
+blank, unmarked, no writing of any kind. Soft shadow under the links. No people,
+no face, no script. 16:9, chain diagonal across the page, wide cream margin.
+MOTION: slow push onto the broken link.
+EDIT NOTE: this plate exists so the caveat is impossible to trim in the edit
+without leaving a visual hole. That is deliberate. The credibility of the entire
+channel rests on not overselling this line.
+
+
+--------------------------------------------------------------------------------
+CHAPTER 7 — WHAT IT DOES NOT SAY | 11:51 – 13:48 | 6 plates
+--------------------------------------------------------------------------------
+
+SCENE 38 | 11:51-12:06
+VO: "…this āyah gets used to say three things it does not say, and all three do
+damage."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Reuse SCENE 4 (the blank glowing phone on the car seat), cropped tighter and with
+the Ken Burns move reversed — drift right to left instead of static. The callback
+to the eleven messages should be felt, not explained.
+MOTION: slow drift right to left.
+
+SCENE 39 | 12:06-12:28
+VO: "It is called ʿusr. Hardship. The Qurʾān names it honestly and does not
+soften it."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A plain clay water jar standing on a stone
+ledge with a long crack running down its side — the crack left completely
+undisguised and unrepaired, no gold, no filler, no decorative mending of any
+kind. Just a broken jar, honestly broken, still standing. Flat even daylight, no
+drama. No people, no face, no writing. 16:9, jar right of centre, bare ledge left.
+MOTION: slow push onto the crack.
+NOTE: resist every instinct to make this kintsugi. The point of the line is that
+the Qurʾān does not decorate the damage.
+
+SCENE 40 | 12:28-12:44
+VO: "Ṣabr is not pretending it does not hurt. It is not pretending."
+ON-SCREEN: typeset, upper third: "ṣabr ≠ pretending"
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A close study of two hands gripping each other
+tightly in a lap, knuckles pale with the pressure, the charcoal coat sleeves
+pulled down over the wrists. Careful ink linework on the tendons and knuckles,
+everything beyond dissolving to loose wash. No face in frame, no writing. 16:9,
+hands centre-low, empty wash above.
+MOTION: extremely slow push.
+
+SCENE 41 | 12:44-13:06
+VO: "Some things are simply the consequence of living in a world with decay built
+into it. A drunk driver is not a curriculum."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A wet empty road at night after rain, seen low
+and close: dark lapis tarmac with soft ochre streetlight reflections pooling on
+it, and a scatter of small broken glass fragments catching the light near the
+kerb. No vehicles, no people, no wreckage, no blood — only the road and the
+glass. Restrained, quiet, not sensational. No face, no writing. 16:9, road
+filling the lower two-thirds.
+MOTION: slow drift left.
+
+SCENE 42 | 13:06-13:26
+VO: "It does not say your grief has a deadline. Nowhere in this sūrah is there a
+clock."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A plain interior wall in soft daylight with a
+pale unfaded circular patch where a wall clock used to hang, and a small empty
+nail still in the plaster. No clock present anywhere in the frame. The rest of
+the wall very slightly darkened with age. Nothing else. No people, no face, no
+numerals, no writing. 16:9, patch and nail right of centre, bare wall left.
+MOTION: extremely slow push onto the empty patch.
+
+SCENE 43 | 13:26-13:48
+VO: "The Prophet ﷺ wept when his son Ibrāhīm died… the eye sheds tears, the heart
+grieves, and we say only what pleases our Lord."
+ON-SCREEN: **hadith card** — typeset, attributed "Ṣaḥīḥ al-Bukhārī".
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A very small square of folded white cloth
+resting alone on a low wooden surface in soft window light, with one adult hand
+laid flat beside it, not touching it. Extremely restrained and quiet. Nothing
+else in the frame. No people beyond the single hand, no face, no writing. 16:9,
+cloth and hand centred low, empty surface and soft light above.
+MOTION: none. Hold completely still. Let the VO carry it alone.
+
+
+--------------------------------------------------------------------------------
+CHAPTER 8 — WHAT IT IS BOLTED TO | 13:48 – 15:23 | 5 plates
+--------------------------------------------------------------------------------
+
+SCENE 44 | 13:48-14:04
+VO: "Remember the fa- — the therefore. The promise is a conclusion."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Reuse SCENE 23 (four blocks supporting a fifth), but framed WIDER so all five
+blocks and the ground are visible at once. Regenerate at the wider crop rather
+than zooming out of the original — the paper grain will not survive the scale.
+MOTION: [PULL BACK] — the only true pull-back in the first half. The move is the
+point: you are being shown what the promise is standing on.
+
+SCENE 45 | 14:04-14:26
+VO: [ARABIC DROP-IN 94:1-4] "Did We not expand your chest for you…"
+ON-SCREEN: **āyah card** — typeset 94:1-4, all four āyāt.
+IMAGE PROMPT:
+Use the SCENE 7 master empty-cartouche plate, but taller — a portrait-proportioned
+blank illuminated panel centred in the 16:9 frame with cream space either side,
+sized to hold four lines. Interior completely bare, no marks of any kind.
+MOTION: extremely slow push.
+
+SCENE 46 | 14:26-14:46
+VO: "They are all past tense. Every one. Not one of them is a forecast."
+ON-SCREEN: typeset, small, upper third: "all four — already done"
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. Four squared limestone blocks already set in a
+finished wall course, the mortar between them long dry and weathered, moss in
+verdigris sage in one joint. Clearly old, clearly finished work. Beside them, a
+mason's trowel lying idle and clean on the top of the wall. No people, no face,
+no writing. 16:9, wall course across the lower half, pale sky above.
+MOTION: slow drift along the four joints — one per beat of the VO.
+
+SCENE 47 | 14:46-15:06 | THE BURDEN
+VO: "We lifted from you the burden that broke your back. The burden was not
+prevented. It was on him."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A heavy wooden carrying-yoke and pack frame
+lying on the ground where it was set down, its leather straps worn thin and dark
+with use. In the dust beneath it, a clearly pressed hollow where it rested under
+load for a long time. Nobody present. Soft raking light picking out the wear on
+the straps. No people, no face, no writing. 16:9, yoke lower-centre, empty dust
+around it.
+MOTION: slow push onto the pressed hollow in the ground.
+
+SCENE 48 | 15:06-15:23
+VO: "The rescue is not that the weight never came. The rescue is what happened to
+him while it was on him."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A massive timber lintel spanning a stone
+doorway, visibly bowed downward in the middle from decades of load — but
+unbroken, still carrying the wall above it. Deep grain in the timber picked out
+in ink line, warm sienna and slate. Soft light from beyond the doorway. No
+people, no face, no writing. 16:9, lintel across the upper third, doorway below.
+MOTION: slow push onto the bow in the timber.
+
+
+--------------------------------------------------------------------------------
+CHAPTER 9 — ĀYĀT SEVEN AND EIGHT | 15:23 – 18:03 | 8 plates | ★ THE DEFINITION
+--------------------------------------------------------------------------------
+This is the structural twin of the source's "verse 29 defines what good means."
+Everything before it has been setup. Do not let the edit rush it.
+
+SCENE 49 | 15:23-15:40
+VO: "It gets sent as the last line. It is not the last line. There are two more."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. An open hand-bound manuscript on a wooden
+stand, with a single page caught mid-turn, lifted and translucent, revealing
+another blank page beneath it. Every visible page is completely blank cream paper
+inside a fine empty lapis and ochre illuminated border — no writing anywhere. One
+hand at the page edge, cropped at the wrist. Soft daylight. No face, no script.
+16:9, book lower two-thirds, empty space above.
+MOTION: [PARALLAX] slow push with the turning page on its own layer.
+
+SCENE 50 | 15:40-15:58
+VO: [ARABIC DROP-IN 94:7-8] "Fa-idhā faraghta fanṣab. Wa ilā rabbika farghab."
+ON-SCREEN: **āyah card** — typeset 94:7-8, English beneath.
+IMAGE PROMPT:
+Use the SCENE 7 master empty-cartouche plate, ribbon border recoloured with the
+ochre band dominant and the lapis rule fine. This is the pack's warmest card —
+it should feel like the answer, not the problem.
+MOTION: none for 4s, then slow push.
+
+SCENE 51 | 15:58-16:16
+VO: "You have just been told, twice, that ease is with your hardship. And the
+very next instruction is: get up and work until you are tired."
+ON-SCREEN: **word banner** — typeset فَانصَبْ, "fanṣab" beneath, small: "toil".
+IMAGE PROMPT:
+Use the SCENE 20 master word-banner plate, ribbon in verdigris sage #6E8B74 with
+an ochre rule — the only sage banner in the pack, marking that this word is the
+turn.
+MOTION: slow push.
+
+SCENE 52 | 16:16-16:38
+VO: "Fanṣab comes from naṣab. It does not mean relax. It means toil — exert
+yourself to the point of weariness."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. Close study of the stone rim of an old well,
+with several deep smooth grooves worn into the limestone by a hauling rope over
+many years. A frayed rope still lies in one of the grooves. Warm side light
+raking across the worn stone to show the depth of the wear. No people, no face,
+no writing. 16:9, rim across the lower half, dark well mouth below.
+MOTION: slow drift along the grooves. SEED — the well returns at 21:03.
+
+SCENE 53 | 16:38-17:00 | ★ THE DEFINITION LANDS HERE
+VO: "The sūrah opened with did We not expand your chest. Not did We not remove
+your problem. The ease is capacity."
+ON-SCREEN: typeset, large, upper third: "the ease is capacity"
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. Two clay water vessels side by side on a stone
+surface, holding the SAME quantity of water: the left vessel is small and the
+water is at its very brim, spilling over and running down its side; the right
+vessel is large and the same amount of water sits calmly well below its rim. The
+spill on the left is wet and obvious; the right is completely still. Warm even
+light. No people, no face, no writing, no numerals. 16:9, both vessels centred,
+bare surface either side.
+MOTION: slow drift from the overflowing vessel to the calm one. Hold 22s.
+This plate is the thesis of the video. If only one image gets extra render time
+and hand-correction, make it this one.
+
+SCENE 54 | 17:00-17:20
+VO: "It is what happens to the container, not what happens to the contents. The
+weight did not get lighter. The one carrying it got wider."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A leather waterskin hanging from a wooden peg,
+filled full and taut, its old creases and fold-lines still faintly visible across
+the stretched surface. Warm sienna leather against a pale limestone wall. Fine
+ink linework tracing the old creases. No people, no face, no writing. 16:9,
+waterskin right of centre, bare wall left.
+MOTION: slow push. The old creases are the point — do not let the render smooth
+them out.
+
+SCENE 55 | 17:20-17:44
+VO: "…to your Lord, turn your longing. The ease is nearness."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A plain empty prayer niche of carved limestone
+in a bare wall, seen straight on, filled with soft warm saffron ochre light. In
+the near foreground, out of focus and seen from behind, the shoulders and grey-
+blue hijab of a woman facing it, cropped so no face is visible at all and she
+occupies only the lower corner of the frame. The niche is empty — no
+inscriptions, no ornament, no writing. 16:9, niche centred and lit, figure lower-
+left in soft focus.
+MOTION: [PARALLAX] slow push toward the niche past the foreground shoulder.
+
+SCENE 56 | 17:44-18:03
+VO: "That is why the first man to receive this promise could bury six children
+and it still be true… a promise that a grave cannot falsify."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Reuse SCENE 19 (the row of unmarked grave mounds) — but relight it at DAWN, with
+the sky in warm saffron ochre instead of dim lapis and the long shadows falling
+the opposite way. Same ground, same stones, same date palm, same composition.
+Regenerate rather than colour-grade; the paper grain must match the original.
+MOTION: slow drift along the row — the same move as scene 19, so the eye knows
+it has been here before.
+
+
+--------------------------------------------------------------------------------
+CHAPTER 10 — THE ARCH | 18:03 – 21:03 | 9 plates | ★ 73.3% — SIGNATURE SEQUENCE
+--------------------------------------------------------------------------------
+The direct rebuild of the source's Roman-arch sequence at 74.8%. Nine plates in a
+strict build order. Shoot them as ONE set from ONE viewpoint so the sequence reads
+as a single construction filmed over time — same camera, same light, same ground.
+Generate all nine in a single session and re-roll the whole set if any drift.
+
+SCENE 57 | 18:03-18:20
+VO: "Go and stand in the arcade of an old masjid… Look up at an arch."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A long arcade of pointed masonry arches
+receding into the distance, seen from ground level looking down its length,
+alternating bands of pale limestone and warm sienna brick in the voussoirs.
+Shafts of soft ochre light falling across the stone floor between the piers.
+Completely empty of people. No writing, no inscriptions, no ornament with
+lettering, no face. 16:9, arcade receding centre, deep soft shadow at the sides.
+MOTION: slow push down the arcade. [REUSE — the close returns here.]
+
+SCENE 58 | 18:20-18:40 | ★ THE PAYOFF OF SCENE 9
+VO: "It is made of wedge-shaped stones. Voussoirs. On its own, it is useless."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A single wedge-shaped limestone voussoir block
+lying alone on bare dusty ground, correctly cut on every face, casting one soft
+grey-violet shadow. Nothing else anywhere in the frame — no wall, no structure,
+no tools. It looks like an object with no purpose. No people, no face, no
+writing. 16:9, block lower-centre, wide empty ground and pale sky.
+MOTION: slow push. Cut this against scene 9 in the edit if you want the callback
+explicit — but the shape alone should do it.
+
+SCENE 59 | 18:40-19:02 | THE CENTERING
+VO: "First the builders raise a wooden frame — the centering… Nobody prays under
+the centering."
+ON-SCREEN: typeset, small, lower third: "the centering"
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A temporary timber centering frame standing
+between two stone piers: a rough wooden arch-shaped skeleton of planks and
+bracing struts, clearly provisional, with no masonry on it at all yet. Warm
+sienna timber, visible saw marks and nail heads in ink line. Pale empty sky
+behind and through it. No people, no face, no writing. 16:9, frame centred
+between the piers, sky visible through the gaps.
+MOTION: slow push.
+
+SCENE 60 | 19:02-19:24
+VO: "Then the stones go up over it, one at a time, resting on the wood. Every one
+of them is being carried."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. The same timber centering frame between the
+same two stone piers, now with wedge-shaped limestone voussoirs laid over it
+rising from both springing points — but stopping short at the top, leaving a
+single empty wedge-shaped gap at the apex. The stones are visibly resting on the
+timber beneath them. Same camera position and light as before. No people, no
+face, no writing. 16:9, arch centred, the gap at the apex clearly visible.
+MOTION: slow push toward the empty gap at the apex.
+
+SCENE 61 | 19:24-19:42 | THE KEYSTONE
+VO: "Then the last stone drops into the top. The keystone."
+ON-SCREEN: typeset, small, lower third: "the keystone"
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. The same arch from the same viewpoint, now
+complete — the final wedge-shaped keystone seated in the apex, flush with its
+neighbours, slightly warmer sienna than the surrounding limestone so it reads as
+the last piece. The timber centering still stands underneath. No people, no face,
+no writing. 16:9, arch centred, keystone at the apex.
+MOTION: slow push onto the keystone.
+
+SCENE 62 | 19:42-20:04 | THE MOMENT THAT LOOKS INSANE
+VO: "And now the builders do the thing that looks insane. They take the wood
+away."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. The same completed stone arch from the same
+viewpoint, with the timber centering PARTLY dismantled — several planks and
+struts pulled away and lying on the ground beneath, the remaining frame loose and
+clearly no longer supporting anything. Dust hanging in the light. No people, no
+face, no writing. 16:9, arch centred, dismantled timber scattered below.
+MOTION: slow push.
+
+SCENE 63 | 20:04-20:26 | ★ IT STANDS
+VO: "And it stands."
+ON-SCREEN: nothing. No caption. Let it be silent for two full seconds after the
+line before the next VO.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. The same completed pointed stone arch from the
+same viewpoint, now entirely alone — no timber, no scaffolding, no props of any
+kind, nothing beneath it but clean swept ground. Warm saffron ochre morning light
+passing straight through the opening. Bare unpainted paper for the sky. No
+people, no face, no writing. 16:9, arch centred, open sky through and around it.
+MOTION: [PULL BACK] — slow, steady, the second and last pull-back in the video.
+This is the emotional peak of the whole piece.
+
+SCENE 64 | 20:26-20:44 | THE ARGUMENT
+VO: "The load is not the enemy of the arch. The load is what holds the arch
+together."
+ON-SCREEN: typeset, upper third: "the load is what holds it together"
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A tight close study of the joints between three
+voussoir stones at the haunch of an arch, where the wedge faces press hard
+against each other with almost no mortar visible between them. Fine ink linework
+following the compressed joints; the stone faces warm and dense. The pressure
+between them should be legible in the drawing. No people, no face, no writing, no
+arrows, no diagram marks. 16:9, joints filling the centre, soft falloff at the
+edges.
+MOTION: extremely slow push into the joint.
+
+SCENE 65 | 20:44-21:03 | THE MUQARNAS
+VO: "…the muqarnas. Hundreds of small cells, none of which carries anything by
+itself… Nobody could see that from one cell."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. Looking straight up into a muqarnas vault: tier
+upon tier of small honeycomb niche cells stepping inward and upward, carrying the
+transition from a square chamber to a round dome above. Pale limestone with soft
+ochre light catching the upper tiers and cool lapis shadow pooling in the lower
+ones. Geometric but hand-painted, never mechanical. No inscriptions, no writing,
+no lettering anywhere in the ornament. No people, no face. 16:9, vault filling
+the frame, centred.
+MOTION: extremely slow push straight up into the vault, rotating a fraction of a
+degree. Hold the full 19s.
+
+
+--------------------------------------------------------------------------------
+CHAPTER 11 — THE WELL AND THE RIVER | 21:03 – 22:48 | 5 plates
+--------------------------------------------------------------------------------
+RULE 1 APPLIES HARDEST HERE. The source video shows Joseph in the pit and a cross
+on a hill. Neither Yūsuf ؑ nor Mūsā ؑ nor his mother appears in any of these five
+plates, in any form. The place carries it. That is not a compromise — an empty
+well is more frightening than an occupied one, and an empty riverbank is the
+whole emotional content of the second story.
+
+SCENE 66 | 21:03-21:22
+VO: "A boy is thrown down a well by his own brothers. Dark, no way out, betrayed
+by family."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. The mouth of an old stone desert well seen from
+directly above, its opening a deep circle of unbroken lapis darkness with no
+bottom visible. Dry scrub and stones around the rim, a coiled rope lying to one
+side, unused. Nobody present anywhere in the frame. Harsh flat noon light on the
+ground, total dark in the shaft. No people, no face, no writing. 16:9, well mouth
+centred, dusty ground filling the rest.
+MOTION: extremely slow push into the dark.
+
+SCENE 67 | 21:22-21:44 | THE PROMISE REACHED HIM AT THE BOTTOM
+VO: "…in the middle of that — in it, not after it — he is told he will one day
+tell them about this very day."
+ON-SCREEN: **āyah card**, small and low so the image stays dominant — typeset
+12:15.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. Looking straight up from the bottom of a deep
+stone well: rough wet shaft walls in cool lapis shadow rising on all sides to a
+small bright disc of saffron ochre sky far above. Faint warm light catching the
+damp stone near the top. Nobody in the frame, no figure, no hands. No face, no
+writing. 16:9, shaft filling the frame, the disc of light small and high.
+MOTION: extremely slow push toward the light. The move is the promise.
+This is the chapter's key plate — the direct rhyme with scene 30, where the light
+was beside her and unnoticed. Same idea, opposite geometry.
+
+SCENE 68 | 21:44-22:04
+VO: "…my Lord was gracious to me. Not the well was good. The well was a crime,
+and the Qurʾān never calls it anything else."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. The same stone well rim seen from beside it in
+low warm evening light, with a full wooden water bucket now set on the stones and
+the rope neatly coiled beside it, water beaded on the wood. The well mouth is
+still dark. Nobody present. No people, no face, no writing. 16:9, bucket and rim
+lower-right, long soft shadow reaching left.
+MOTION: slow drift left along the shadow.
+
+SCENE 69 | 22:04-22:26 | CAST HIM INTO THE RIVER
+VO: "Cast him into the river. Put him in the water. The water you are afraid of."
+ON-SCREEN: **āyah card**, low — typeset 28:7.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A small woven reed basket with a closed lid
+resting on the surface of a wide, still, slow river among tall verdigris sage
+reeds, seen from the bank at water level. The water is broad and calm, rendered
+in soft lapis washes with pale reflected sky. Nobody present, no hands, no
+figure. Nothing visible inside or around the basket. No face, no writing. 16:9,
+basket lower-left, open water stretching right.
+MOTION: extremely slow drift right, following the current.
+
+SCENE 70 | 22:26-22:48 | THE RIVERBANK
+VO: "The thing that looked exactly like losing him was the mechanism for keeping
+him… She could not see that from the riverbank."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A muddy riverbank seen close and low, with a
+single pair of bare footprints pressed into the mud at the very edge of the
+water, facing out toward the river and stopping there. The water beyond is wide,
+still and empty — no basket anywhere in sight. Reeds at the frame edges. Nobody
+present. No people, no face, no writing. 16:9, footprints lower-centre, empty
+water filling the upper half.
+MOTION: extremely slow push out over the water. Hold 22s.
+
+
+--------------------------------------------------------------------------------
+CHAPTER 12 — WHEN SOMEBODY IS GRIEVING | 22:48 – 24:11 | 4 plates
+--------------------------------------------------------------------------------
+
+SCENE 71 | 22:48-23:04
+VO: "Someone you love is in the car with the keys in their hand. Do not send them
+āyah five."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Reuse SCENE 1 (the car interior from the rear seat) at the SAME framing and the
+same light. Nothing has changed in the picture. That is the point — 23 minutes of
+argument have passed and she is still sitting there.
+MOTION: very slow push, identical to scene 1.
+
+SCENE 72 | 23:04-23:26
+VO: "Go. Sit down. Bring food — that is what was done for the family of Jaʿfar
+when the news came."
+ON-SCREEN: lower-third, typeset: "Abū Dāwūd · al-Tirmidhī"
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A covered earthenware dish with a cloth over it
+set down on a doorstep outside a plain wooden door, still steaming faintly in
+cool morning air. Two pairs of shoes beside it. The door is closed. Nobody
+present. Warm sienna dish against cool limestone step. No people, no face, no
+writing. 16:9, dish and shoes lower-centre, door filling the upper half.
+MOTION: slow push toward the closed door.
+
+SCENE 73 | 23:26-23:46
+VO: "Say less than you want to say. And do not explain the ḥikmah. You do not
+know it."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. Two people sitting side by side on a low stone
+step, seen entirely from behind — one in a soft grey-blue hijab and charcoal
+coat, the other in a plain sienna robe. Their shoulders are close but not
+touching. One hand rests on the step between them, palm up, open. Neither face is
+visible in any way. Soft even morning light. No writing. 16:9, both figures
+lower-centre, empty courtyard and pale wall above.
+MOTION: extremely slow push. Do not move the camera around them; stay behind.
+
+SCENE 74 | 23:46-24:11
+VO: "Not it gets better. He is with you in it. And He is making you into someone
+who can carry this."
+ON-SCREEN: typeset, upper third: "He is with you in it"
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. The same dim room as before, seen from behind:
+a woman in a soft grey-blue hijab and charcoal coat sitting on the floor, face
+entirely unseen — but now she has TURNED toward the small clay oil lamp burning
+beside her, and the warm saffron ochre light falls across her shoulder and the
+side of her covered head. The rest of the room still deep lapis. No face, no
+writing. 16:9, figure lower-left, lamp mid-right.
+MOTION: [PARALLAX] extremely slow push. This is the inverse of scene 30 — same
+room, same lamp, she has simply turned. Do not add anything else to the frame.
+
+
+--------------------------------------------------------------------------------
+CHAPTER 13 — FAJR | 24:11 – 24:39 | 2 plates
+--------------------------------------------------------------------------------
+
+SCENE 75 | 24:11-24:28
+VO: "The light of Fajr does not arrive when the darkness leaves. It is already
+travelling through the dark, the whole time."
+ON-SCREEN: nothing.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. A wide desert horizon before dawn: a deep lapis
+sky filling most of the frame, with the faintest possible thread of pale saffron
+ochre light lying along the horizon line — barely there, more suggestion than
+colour. A single date palm silhouetted at the far right. Bare paper showing
+through the wash. Nobody present. No face, no writing. 16:9, horizon on the lower
+third, immense dark sky above.
+MOTION: extremely slow push toward the horizon.
+
+SCENE 76 | 24:28-24:39 | END PLATE
+VO: "Fa-inna maʿa al-ʿusri yusrā. With. Not after. Not after."
+ON-SCREEN: **āyah card** 94:5, then it fades and only two typeset words remain:
+"with · not after". Then black.
+IMAGE PROMPT:
+Watercolour and ink on cold-press paper, visible grain, wet-edge blooms, low
+contrast, soft diffused light, shallow depth of field. Palette: lapis #1F3A93,
+burnt sienna #C1663F, saffron ochre #C68A1E, verdigris sage #6E8B74, limestone
+cream #EFE4CE, slate ink #3A3F4B. The completed pointed stone arch standing alone
+on clean swept ground, seen straight on, with warm saffron ochre dawn light
+pouring through the opening toward the viewer. On the ground just inside the arch
+sits a small clay oil lamp, still burning, its flame small and steady against the
+much larger light beyond. Bare paper for the sky. Nobody present. No face, no
+writing. 16:9, arch centred, light through the opening.
+MOTION: extremely slow push through the arch. Fade to black on the last 2s.
+This plate closes three threads at once: the arch (from scene 12), the lamp (from
+scene 5), and the ochre-inside-lapis colour argument. Do not add a subscribe
+animation over it. Put the end screen after the fade, on black.
+
+
+================================================================================
+PLATE MAP — what to commission
+================================================================================
+  76 numbered scenes.
+  65 original paintings to commission.
+  11 are reuses or recolours of a plate already generated — scenes 24, 26, 32, 33, 38, 44, 45, 50, 51, 56, 71.
+  Distinct on-screen images: 76, against the source's ~115. See PLATE DENSITY
+  above — this pack is deliberately 38% slower per image, and the ten holds to
+  split first are named there if you want the tighter cut.
+
+  THE THREE MASTER PLATES — generate these first, at the highest quality you can
+  afford, because everything else is built from them:
+    · SCENE 7  — the empty illuminated cartouche (āyah cards) — used 8 times
+    · SCENE 20 — the empty word banner (Arabic words) — used 6 times
+    · SCENE 57 — the arcade / the arch set — used 4 times
+
+  THE ONE PLATE TO OVER-INVEST IN: SCENE 53, the two water vessels. It is the
+  thesis of the video in a single frame.
+
+
+================================================================================
+TYPESETTING SPEC — everything legible is added in the editor
+================================================================================
+Nothing in the list below is ever rendered by the image model. See STYLE LOCK
+Rule 2.
+
+ĀYAH CARD
+  Arabic     KFGQPC Uthmanic Script HAFS (or Amiri Quran), 64-80px, centred,
+             slate ink #3A3F4B on the cream panel. Line height 1.9 — Uthmani
+             diacritics clip at anything tighter.
+  English    EB Garamond Regular, 34px, centred, #3A3F4B at 85% opacity.
+  Reference  EB Garamond Italic, 24px, bottom-right of the panel, ochre #C68A1E.
+  Animation  Fade up over 500ms. Never slide, never typewriter, never karaoke-
+             highlight the Arabic.
+
+WORD BANNER
+  Arabic     Uthmanic/Amiri, 110px, centred on the ribbon, cream #EFE4CE.
+  Roman      EB Garamond Italic, 40px, directly beneath the ribbon.
+  Gloss      EB Garamond Small Caps, 26px, beneath that, ochre.
+
+LOWER-THIRD CITATION
+  EB Garamond, 22px, bottom-left, 48px inset, #3A3F4B at 70%.
+
+PULL QUOTE (the six typeset lines in the ON-SCREEN fields above)
+  EB Garamond Medium, 46px, upper third, ranged left at the 1/3 gridline.
+  Never centre these — centring makes them read as decoration rather than
+  argument.
+
+BURNED-IN SUBTITLES
+  Do NOT burn subtitles on this video. It is long-form 16:9 watched with sound;
+  burned captions fight the paintings and cover the negative space the whole
+  frame system is built around. Upload a proper .srt instead — which also fixes
+  the source video's one real weakness: KykVGTsqeEI has `hasCaption: false`, so
+  it is invisible to caption-based search. Do not repeat that mistake.
+
+ARABIC PROOFING — MANDATORY
+  Have a native reader check every Arabic frame before render. Specifically:
+  hamza placement, the shadda on إِنَّ, and the tanwīn on يُسْرًا. The tanwīn is
+  the entire argument of chapter 6; if it is set wrong the video refutes itself.
+
+
+================================================================================
+EDIT AND ASSEMBLY NOTES
+================================================================================
+- CUTS ARE DISSOLVES. 400ms cross-dissolve between plates throughout, EXCEPT the
+  hard cut at scene 16→17 (aḍ-Ḍuḥā arriving). One hard cut in 24 minutes makes
+  that one land.
+- FOUR STATIC PLATES, no Ken Burns at all: scenes 4, 14, 43, and the first 3s of
+  7 and 50. Stillness is a device here; spend it deliberately.
+- MUSIC. Sparse, and vocal-free. No instrumental oud melody under the āyāt — let
+  the recitation sit in silence. Music out entirely for scenes 14, 19, 43 and 63.
+- BREATHING ROOM. Two full seconds of silence after "And it stands" (scene 63)
+  and after "Not after" (scene 76). Both are in the runtime already.
+- NO SUBSCRIBE ANIMATION mid-video. The source has none, and its 5.6% like rate
+  is the argument for leaving it out.
+- CHAPTERS. Ship YouTube chapters using the 13 chapter boundaries above. The
+  source does this and its chapter titles are doing real search work.
+
+RETENTION CHECKPOINTS — where to look when the analytics come in
+  0:00-0:30  The car park. If this drops, the hook is the problem, nothing else.
+  5:37       INNA. First linguistic content. Expect the first real dip — this is
+             where "I thought this was about grief" viewers leave.
+  6:56       MAʿA (28.1%). Should ARREST the dip. If it doesn't, the word study
+             is not being sold hard enough in chapters 1-2.
+  15:23      Āyāt 7-8 (62.4%). The known-weak position — 13.6 points later than
+             the source's equivalent. WATCH THIS ONE. If there is a slide between
+             50% and 60%, cut ~200 words from chapter 3 and re-cut.
+  20:04      "And it stands." Expect the highest relative retention of the video.
+  24:11      Fajr. Anything above 35% absolute retention here is a strong result
+             for a 24-minute video on Arabic grammar.
+
+
+================================================================================
+THUMBNAIL — MANDATORY, 16:9, AND THE HOUSE TEMPLATE DOES NOT TRANSFER INTACT
+================================================================================
+
+Runtime is 24:39. That is 8x the 180s Shorts cap, so this publishes as long-form
+and the thumbnail renders in 16:9 slots. CLAUDE.md requires a custom thumbnail —
+that part is not in question and is honoured below.
+
+WHAT CARRIES OVER FROM THE HOUSE RULE, UNCHANGED:
+  1. Custom 1280x720, under 2MB. Generate at 1920x1080, downscale.
+  2. The `thumbnail` key set in the upload config, added only once the file
+     exists — preflight.py fails on a key pointing at a missing file.
+  3. Thumbnail text must NOT repeat the title. It carries the other half.
+  4. One object is the biggest thing in the picture and reads at phone size.
+  5. A card with an outline and a drop shadow, so it reads as evidence.
+
+WHAT DOES NOT TRANSFER, AND WHY — YOUR CALL, NOT MINE:
+  · "A face at close-up scale, hard-cropped left, looking into frame." This pack's
+    Rule 1 is that no face is ever resolved. The two rules are in direct conflict.
+    I have held Rule 1, because a channel that teaches reverence for the text and
+    then leads with a rendered face has contradicted itself in the first
+    impression. If you want the face slot back, that is a legitimate decision —
+    but it changes the whole pack, not just the thumbnail.
+  · "Adam WORRIED from his character sheet." Adam is a flat-vector character from
+    Finance % Decoded. He cannot appear on a watercolour Islamic scripture video.
+    There is no equivalent asset for this lane yet.
+  · "A small label above a huge number." There is no honest number here. The
+    nearest thing is the āyah reference, and a reference is not a claim. The huge
+    object slot is filled by the Arabic word instead.
+
+THE THUMBNAIL, AS SPECIFIED:
+
+  LEFT 45%  — watercolour plate, generated: a tight crop of the completed pointed
+              stone arch (scene 63) with warm ochre dawn light through the
+              opening, hard-cropped at the frame edge, the opening pointing INTO
+              the frame the way the face would have.
+  RIGHT 55% — a cream #EFE4CE card with a 3px slate #3A3F4B outline and a soft
+              drop shadow, clipped so its left edge overlaps the arch.
+              On the card, typeset — never rendered by the model:
+                LABEL (small, ochre, small caps)  : THE WORD EVERYONE MISREADS
+                HUGE (dominant, slate, Uthmani)   : مَعَ
+                UNDER IT (medium, Garamond)       : "with" — not "after"
+  BADGE     — a lapis #1F3A93 pill clipped to the card's bottom-left edge,
+              cream text: 94:5
+
+  The word مَعَ is the biggest object in the picture and survives to 160px. The
+  Latin line under it is what a non-Arabic-reading viewer scans, and it delivers
+  the whole promise of the video in four words.
+
+  TEXT-VS-TITLE CHECK: title is "What 'With Hardship Comes Ease' Actually Says in
+  Arabic". Thumbnail says "the word everyone misreads / maʿa / with, not after."
+  No word is repeated. Passes.
+
+  NOT VERIFIED: I could not inspect the source video's own thumbnail — the proxy
+  blocks i.ytimg.com. So this design is built from CLAUDE.md's audited card rules
+  and this pack's imagery, not from a copy of the source's packaging. If you want
+  the source's thumbnail matched, pull maxresdefault.jpg yourself and say so.
+
+
+================================================================================
+ACCURACY NOTES — every claim, and how hard it holds
+================================================================================
+The full table is in ash-sharh-script.md. The four that decide whether this video
+survives contact with a knowledgeable audience:
+
+1. "ONE HARDSHIP WILL NEVER OVERCOME TWO EASES" IS NOT PRESENTED AS A ḤADĪTH.
+   It is reported from Ibn ʿAbbās, and from al-Ḥasan al-Baṣrī as a marfūʿ report
+   with a broken chain. The script says exactly that, on camera, and scene 37
+   exists to make the caveat un-cuttable. This is the single highest-risk claim
+   in the video and it is the one most often overstated by other content on this
+   āyah. Do not "tighten" it.
+
+2. THE DEFINITE/INDEFINITE READING IS GIVEN AS THE MAJORITY TAFSĪR READING, NOT
+   THE ONLY ONE. Chapter 6 names the competing reading (repetition as pure
+   taʾkīd) before using the grammarians' one. Keep that.
+
+3. MAʿA IS NOT CLAIMED AS STRICT SIMULTANEITY. Chapter 5 concedes openly that
+   many mufassirūn read it as nearness rather than same-instant, then shows that
+   even the conservative reading rules out the queue. The concession is what makes
+   the argument credible rather than clever. Keep that too.
+
+4. NO PROPHET IS DEPICTED, AND ﷺ FOLLOWS EVERY MENTION. Both in the script and in
+   all 76 plates. Check the final render frame by frame for this before publish;
+   an image model asked for "a well" will sometimes add a figure unprompted.
+
+DELIBERATELY NOT SAID:
+  · That suffering is sent in order to teach you. Chapter 7 explicitly refuses it.
+  · That grief should end by any particular time.
+  · Any timeline promise of any kind. "It gets better" appears nowhere.
+
+
+================================================================================
+UPLOAD METADATA
+================================================================================
+Fill the channel target once the lane question at the top of this file is decided.
+Do NOT paste this into automation/reset.json without that decision — reset.json is
+scoped to Finance % Decoded and its expect_channel_id guard will abort anyway.
+
+TITLE (68 chars)
+  What "With Hardship Comes Ease" Actually Says in Arabic
+
+  Built on the source's proven title shape: What "[familiar quoted phrase]"
+  Actually Means in [original language]. That shape is doing three things at
+  once — it names the thing the viewer already knows, it asserts they have it
+  wrong, and it promises the authority of the original language. Hold the shape.
+  Alternates, same shape: "…Actually Means in Arabic" / What "Inna Maʿa
+  Al-ʿUsri Yusra" Actually Means.
+
+DESCRIPTION
+  Everyone sends you this āyah. Almost nobody sends you the two lines that say
+  what it means.
+
+  "With hardship comes ease" is one of the most quoted lines in the Qurʾān, and
+  one of the most misread. This study goes word by word through Sūrah ash-Sharḥ —
+  what maʿa actually means, why it is not baʿda, why the sentence is said twice,
+  and why the definition of the "ease" is sitting one āyah past where most people
+  stop reading.
+
+  The sūrah was revealed to a man in the worst season of his life, during a
+  silence he was being taunted for. He was not spared afterwards. If the āyah
+  promised comfortable circumstances, the first man to receive it would disprove
+  it. What it actually promises is deeper, and it is the reason it survives a
+  graveside.
+
+  📖 KEY ĀYĀT
+  "For indeed, with hardship [will be] ease. Indeed, with hardship [will be]
+  ease." — Ash-Sharḥ 94:5-6
+  "So when you have finished, labour on. And to your Lord direct your longing."
+  — Ash-Sharḥ 94:7-8
+
+  IN THIS VIDEO
+  0:00 The Car Park
+  1:24 The Āyah Everyone Hands You
+  3:14 Who It Was First Said To
+  5:37 Inna — The Particle of Certainty
+  6:56 Maʿa — With, Not After
+  9:20 One Hardship, Two Eases
+  11:51 Three Things It Does Not Say
+  13:48 What the Promise Is Bolted To
+  15:23 Āyāt 7 and 8 Define the Ease
+  18:03 The Arch
+  21:03 The Well and the River
+  22:48 When Somebody Is Grieving
+  24:11 Fajr
+
+  A note on sources: the well-known line "one hardship will never overcome two
+  eases" is reported in the tafsīr literature from Ibn ʿAbbās and al-Ḥasan
+  al-Baṣrī; as a report going back to the Prophet ﷺ its chain is broken. It is
+  presented in this video as the reading of the early scholars, not as a ḥadīth.
+
+  #Quran #SurahAshSharh #InnaMaAlUsriYusra
+
+TAGS
+  inna ma al usri yusra, with hardship comes ease, surah ash sharh, surah
+  inshirah, ash sharh 94, quran 94 5, maa vs bada, what does ma mean in arabic,
+  arabic word study quran, quran grammar explained, hardship and ease quran,
+  verily with hardship comes ease meaning, surah sharh tafsir, quran for grief,
+  islamic grief, sabr meaning, patience in islam, quran misquoted, quran out of
+  context, fa idha faraghta fansab, surah duha, fatrah revelation, tafsir ibn
+  kathir, deep quran study, quran word by word
+
+PUBLISH
+  Long-form does not want the Shorts slot. Do not inherit the 03:00 PT time from
+  the finance channel — that window was chosen for a Shorts feed. Pick a slot
+  from this lane's own analytics once it has any, and until then default to
+  Thursday or Friday, early evening in the largest audience timezone.
+
+END SCREEN
+  On black, after the fade. Not over scene 76.
