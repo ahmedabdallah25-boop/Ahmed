@@ -1,0 +1,47 @@
+GOOGLE FLOW SETTINGS: aspect ratio 16:9, highest quality, 4 variants each.
+Compose so the subject sits BELOW the top third - your text banner covers it.
+
+===========================================================
+CONCEPT 1 - THE DIRECT MIRROR (recommended)
+===========================================================
+
+Cinematic photorealistic painterly scene, warm candlelit interior of an old Levantine home with mud-brick and lime-plaster walls, a carved wooden lattice window, a hanging brass oil lamp casting warm amber light, worn kilim rugs over a stone floor. A large family sits on floor cushions around a low round wooden table spread with a shared meal of flatbread, dates, olives, a brass teapot and clay bowls. At the exact centre of the frame, facing the camera, an elderly woman in her seventies wearing a simple pale linen headscarf, a deeply lined weathered face, tired and dignified, looking directly into the camera lens. Her two hands rest flat on the table in the foreground. Three younger adults are seated on her left and three on her right in perfect symmetry, and every one of them has their head bowed and their eyes cast down toward the food, none of them looking at her. Rich warm colour grade of brown, ochre, amber and cream, deep shadow in the corners, strong chiaroscuro lighting. The upper third of the frame is plain dark empty wall. Sharp focus on the woman's face with soft falloff toward the edges. Highly detailed, historical, reverent. The image is completely free of any text, lettering, writing, captions, watermarks or logos.
+
+BANNER: line 1 navy HONOR YOUR PARENTS / line 2 gold IT'S NOT OBEDIENCE
+
+===========================================================
+CONCEPT 2 - THE EMPTY CUSHION (challenger)
+===========================================================
+
+Cinematic photorealistic painterly scene, warm candlelit interior of an old Arabian home with mud-brick walls, a hanging brass oil lamp and worn rugs on a stone floor. A family of six adults sits on floor cushions around a low round table laden with a shared meal of flatbread, dates, olives and a brass teapot, all of them eating and talking to one another, animated, their heads turned inward toward each other. In the immediate foreground at the exact centre of the frame, closest to camera, sits one empty floor cushion with a worn wooden walking stick laid across it and a string of prayer beads resting beside it, its place at the table untouched and its clay plate clean and empty. Nobody is looking at the empty place. Warm amber light fills the room but the empty cushion sits in cooler shadow. Rich warm colour grade of brown, ochre and amber, deep corner shadow, strong chiaroscuro. The upper third of the frame is plain dark empty wall. Sharp focus on the walking stick and the empty cushion. Highly detailed, reverent, melancholy. The image is completely free of any text, lettering, writing, captions, watermarks or logos.
+
+BANNER: line 1 navy HONOR YOUR PARENTS / line 2 gold BEFORE THE SEAT IS EMPTY
+
+===========================================================
+CONCEPT 3 - TWO HANDS (rotation slot)
+===========================================================
+
+Cinematic photorealistic extreme close-up of the weathered, deeply lined hands of a very old person resting open in their lap on worn brown fabric, positioned in the lower centre-left of the frame. A younger adult's hand reaches in from the right edge but stops short, hovering just above without touching. Warm amber light from a single oil lamp off frame to the left, everything else falling into deep warm shadow. Rich brown, ochre and amber palette, strong chiaroscuro, Rembrandt lighting. The upper third of the frame is plain dark empty shadow. Extremely detailed skin texture, shallow depth of field, sharp focus on the old hands, tender and reverent. The image is completely free of any text, lettering, writing, captions, watermarks or logos.
+
+BANNER: line 1 navy HONOR YOUR PARENTS / line 2 gold THE QURAN MEANS SOMETHING ELSE
+
+===========================================================
+FIXES
+===========================================================
+
+If Flow renders text anyway, append:
+Plain unmarked surfaces throughout.
+
+If the family look AT her in Concept 1, swap that sentence for:
+every one of them is looking down at their own plate, absorbed, their faces angled away from her toward the table surface
+
+===========================================================
+BANNER BUILD (in your editor, after generating)
+===========================================================
+
+Band: top 28% of frame, hard bottom edge, no feather, no shadow
+Fill:  #EDE7DA  warm parchment cream
+Line 1: #16264A  deep navy, all caps, edge to edge, ~2% side padding
+Line 2: #C8891B  gold, same face, ~80% of line 1 cap height
+Font:  Anton / Archivo Black / League Gothic Bold (condensed matters)
+Export: 1280x720, under 2MB
