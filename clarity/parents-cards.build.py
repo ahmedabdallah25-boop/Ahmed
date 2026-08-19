@@ -92,13 +92,13 @@ def listcard(anchor, title, items, dur=11.0):
 # ---------------------------------------------------------------- the card track
 verse("Worship none but Him", "APPEARS 5 TIMES IN THE QURAN",
       "وَبِٱلْوَٰلِدَيْنِ إِحْسَـٰنًا",
-      "\\\"...and to parents, good treatment.\\\"",
+      "“...and to parents, good treatment.”",
       "THE ONLY OBLIGATION GOD BOLTS TO HIS OWN NAME", dur=9.5)
 term("Your Lord has decreed", "قَضَىٰ", "QADA", "decreed  ·  not suggested, not encouraged")
 verse("if one of them, or both of them", "AL-ISRA 17:23",
       "إِمَّا يَبْلُغَنَّ عِندَكَ ٱلْكِبَرَ أَحَدُهُمَآ أَوْ كِلَاهُمَا",
-      "\\\"If one of them, or both of them, reach old age with you...\\\"",
-      "INDAKA — WITH YOU. YOUR ROOF, YOUR WATCH. THE VERSE IS WATCHING AN ADULT.", dur=10.0)
+      "“If one of them, or both of them, reach old age with you...”",
+      "INDAKA — YOUR ROOF, YOUR WATCH. THE VERSE MEANS AN ADULT.", dur=10.0)
 hadith("Surah al-Baqarah, verse 83", "AL-BAQARAH 2:83  ·  ADDITION: ORDER",
        "Parents named first — then orphans, then the poor.\\NThe duty to the weak starts at home.", dur=6.5)
 hadith("Surah an-Nisa, verse 36", "AN-NISA 4:36  ·  ADDITION: RANGE",
@@ -107,14 +107,14 @@ hadith("Surah al-An'am, verse 151", "AL-AN'AM 6:151  ·  ADDITION: CONTEXT",
        "Do not discard the old. Do not discard the young.\\NOne verse. Both directions.", dur=6.5)
 verse("Be grateful to Me, and to your parents", "LUQMAN 31:14",
       "أَنِ ٱشْكُرْ لِى وَلِوَٰلِدَيْكَ",
-      "\\\"Be grateful to Me — and to your parents.\\\"",
+      "“Be grateful to Me — and to your parents.”",
       "GRATITUDE TO GOD AND TO THEM: ONE SENTENCE, ONE LETTER APART", dur=10.0)
 term("Wahnan ala wahn.", "وَهْنًا عَلَىٰ وَهْنٍ", "WAHNAN ALA WAHN",
      "weakness upon weakness  ·  it compounded as you grew", dur=6.2)
 verse("Do not say to them:", "AL-ISRA 17:23",
       "فَلَا تَقُل لَّهُمَآ أُفٍّ",
-      "\\\"Do not say to them: uff.\\\"",
-      "THE SMALLEST SOUND OF IRRITATION A HUMAN CAN MAKE — FORBIDDEN BY NAME", dur=10.0)
+      "“Do not say to them: uff.”",
+      "THE SMALLEST SOUND OF IRRITATION — FORBIDDEN BY NAME", dur=10.0)
 hook("It is a noise.", "UFF IS NOT A WORD.\\N{\\c" + GOLD + "}IT IS A NOISE.", dur=5.0)
 hook("had there been a lesser thing than uff",
      "IF ANYTHING SMALLER THAN {\\c" + GOLD + "}UFF{\\c" + WHITE + "} EXISTED,\\N"
@@ -131,11 +131,11 @@ hadith("and he sat up to say it", "BUKHARI & MUSLIM  ·  THE GRAVEST SINS, IN OR
        "1.  Shirk — associating partners with God\\N"
        "2.  {\\c" + GOLD + "}Uquq al-walidayn — cutting off your parents{\\c" + CREAM + "}\\N"
        "     ...before killing. Before theft.", dur=9.0)
-hadith("Paradise lies beneath the feet", "GRADED AUTHENTIC BY AL-HAKIM; CHAINS DISPUTED BY IBN HAJAR",
-       "\\\"Stay with her — Paradise is at her feet.\\\"\\N"
+hadith("Paradise lies beneath the feet", "AL-HAKIM: AUTHENTIC  ·  IBN HAJAR: CHAINS DISPUTED",
+       "“Stay with her — Paradise is at her feet.”\\N"
        "Said to one man who wanted to leave and fight.", dur=8.0)
 hadith("Let your struggle be with them.", "BUKHARI & MUSLIM  ·  UNDISPUTED",
-       "\\\"Go back to them, and let your struggle be with them.\\\"", dur=7.0)
+       "“Go back to them, and let your struggle be with them.”", dur=7.0)
 hook("And God answered his mother's prayer.",
      "HE WAS PRAYING.\\NTHE TRADITION STILL SAYS HE WAS {\\c" + GOLD + "}WRONG{\\c" + WHITE + "}.", dur=5.6)
 hook("It looks like a schedule.",
@@ -143,7 +143,7 @@ hook("It looks like a schedule.",
      "YOU ALSO CANNOT NEGLECT THEM BECAUSE YOU'RE {\\c" + GOLD + "}BUSY WITH GOD{\\c" + WHITE + "}.", dur=6.4)
 verse("do not obey them.", "LUQMAN 31:15",
       "فَلَا تُطِعْهُمَا وَصَاحِبْهُمَا فِى ٱلدُّنْيَا مَعْرُوفًا",
-      "\\\"Do not obey them — and keep company with them\\Nin this world with what is good.\\\"",
+      "“Do not obey them — and keep company with them\\Nin this world with what is good.”",
       "REFUSE THEM. AND STAY.", dur=10.0)
 hook("She ate.", "HE DIDN'T YIELD AN INCH.\\NHE {\\c" + GOLD + "}REMAINED HER SON{\\c" + WHITE + "}.", dur=5.0)
 hook("Birr is left.",
@@ -151,11 +151,11 @@ hook("Birr is left.",
      "IT CAN BE SENT FROM A SAFE DISTANCE.", dur=6.4)
 verse("Lower to them the wing", "AL-ISRA 17:24",
       "وَٱخْفِضْ لَهُمَا جَنَاحَ ٱلذُّلِّ مِنَ ٱلرَّحْمَةِ",
-      "\\\"Lower to them the wing of humility, out of mercy.\\\"",
+      "“Lower to them the wing of humility, out of mercy.”",
       "A BIRD LOWERS ITS WING TO SHELTER SOMETHING. THE CARE REVERSES.", dur=10.0)
 verse("My Lord, have mercy on them, as they raised me when I was", "AL-ISRA 17:24  ·  THE DU'A HE HANDED YOU",
       "رَّبِّ ٱرْحَمْهُمَا كَمَا رَبَّيَانِى صَغِيرًا",
-      "Rabbi irhamhuma kama rabbayani saghira\\N\\\"My Lord, have mercy on them, as they raised me when I was small.\\\"",
+      "Rabbi irhamhuma kama rabbayani saghira\\N“My Lord, have mercy on them, as they raised me when I was small.”",
       None, dur=11.0)
 listcard("You pray for them.", "IT DOESN'T END AT THE GRAVE  ·  5 THINGS STILL OPEN TO YOU",
          "1.  Pray for them\\N2.  Ask forgiveness for them\\N3.  Fulfil what they promised\\N"
@@ -163,8 +163,8 @@ listcard("You pray for them.", "IT DOESN'T END AT THE GRAVE  ·  5 THINGS STILL 
 verse("My Lord, have mercy on them, as they raised me when I was small. If",
       "SAY IT BEFORE YOU SLEEP TONIGHT",
       "رَّبِّ ٱرْحَمْهُمَا كَمَا رَبَّيَانِى صَغِيرًا",
-      "\\\"My Lord, have mercy on them, as they raised me when I was small.\\\"",
-      "ELEVEN WORDS GOD PUT IN THE QURAN BECAUSE HE KNEW YOU'D NEED THEM HANDED TO YOU", dur=12.0)
+      "“My Lord, have mercy on them, as they raised me when I was small.”",
+      "ELEVEN WORDS. HE KNEW YOU'D NEED THEM HANDED TO YOU.", dur=12.0)
 
 # ---------------------------------------------------------------- emit
 timed = []
@@ -178,17 +178,19 @@ for i, (st, c) in enumerate(timed):
     if i + 1 < len(timed): end = min(end, timed[i + 1][0] - 0.4)
     y = HERO_Y if hero else BAND_Y
     if kind == "verse":
-        h = 300 if hk else 250
-        ev.append(panel(960, y, 1360, h, st, end))
-        ev.append(line("Kicker", 960, y - h // 2 + 46, st, end, a))
-        ev.append(line("Arabic", 960, y - h // 2 + 122, st + 0.12, end, b, fs=76))
-        ev.append(rule(960, y - h // 2 + 176, 900, st + 0.2, end))
-        ev.append(line("Trans", 960, y - h // 2 + (214 if hk else 216), st + 0.2, end, d))
-        if hk: ev.append(line("Hook", 960, y + h // 2 - 34, st + 0.45, end, hk, fs=36))
+        multi = "\\N" in d
+        h = (370 if hk else 300) + (44 if multi else 0)
+        top = y - h // 2
+        ev.append(panel(960, y, 1520, h, st, end))
+        ev.append(line("Kicker", 960, top + 50, st, end, a))
+        ev.append(line("Arabic", 960, top + 148, st + 0.12, end, b, fs=88))
+        ev.append(rule(960, top + 214, 1000, st + 0.2, end))
+        ev.append(line("Trans", 960, top + (274 if multi else 264), st + 0.2, end, d))
+        if hk: ev.append(line("Hook", 960, y + h // 2 - 46, st + 0.45, end, hk, fs=34))
     elif kind == "term":
         h = 210
-        ev.append(panel(960, BAND_Y, 1120, h, st, end))
-        ev.append(line("Arabic", 960, BAND_Y - 52, st + 0.1, end, a, fs=72))
+        ev.append(panel(960, BAND_Y, 1200, h, st, end))
+        ev.append(line("Arabic", 960, BAND_Y - 50, st + 0.1, end, a, fs=76))
         ev.append(line("Kicker", 960, BAND_Y + 12, st + 0.2, end, b))
         ev.append(line("Trans", 960, BAND_Y + 66, st + 0.25, end, d, fs=38))
     elif kind == "hadith":
@@ -198,8 +200,8 @@ for i, (st, c) in enumerate(timed):
         ev.append(rule(960, BAND_Y - 42, 860, st + 0.15, end))
         ev.append(line("Trans", 960, BAND_Y + 20, st + 0.2, end, b, fs=42))
     elif kind == "hook":
-        ev.append(panel(960, BAND_Y, 1180, 168, st, end))
-        ev.append(line("Hook", 960, BAND_Y, st + 0.1, end, a, fs=54))
+        ev.append(panel(960, BAND_Y, 1300, 176, st, end))
+        ev.append(line("Hook", 960, BAND_Y, st + 0.1, end, a, fs=48))
     elif kind == "list":
         h = 330
         ev.append(panel(960, HERO_Y, 1240, h, st, end))

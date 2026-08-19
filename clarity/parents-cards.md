@@ -72,9 +72,21 @@ letters come out disconnected.
 ffmpeg -i master.mp4 -vf "ass=clarity/parents-cards.ass" -c:a copy out.mp4
 ```
 
-Your ffmpeg must be built with libass **and harfbuzz** for Arabic shaping and bidi.
-Check one frame at 6:51 (the uff card) before committing to a full render — that
-frame proves shaping, RTL order and the font all at once.
+Your ffmpeg must be built with libass. Check one frame at 6:51 (the uff card) before
+committing to a full render — it proves shaping, RTL order and the font at once:
 
-> Not verified here: this session's ffmpeg has no libass and no Arabic font, so the
-> cards have never been rendered. Layout numbers are geometry, not a screenshot.
+```
+ffmpeg -ss 415 -copyts -i master.mp4 -vf "ass=clarity/parents-cards.ass" -frames:v 1 uff.png
+```
+
+**`-copyts` matters.** Without it, seeking with `-ss` before `-i` resets output
+timestamps to zero and the ass filter draws whatever card sits at 0:00 — which looks
+exactly like "the cards aren't rendering."
+
+## Verified
+
+Rendered and checked in-session against the 640×360 preview master, upscaled to 1080p:
+Arabic shapes and joins correctly, runs right-to-left, and the slabs sit clear of the
+paper border in the artwork. `clarity/parents-cards-preview.mp4` is that burn-in.
+It is built from the **preview** file, so it is for checking timing and layout only —
+re-render from the full-resolution master for publish.
