@@ -28,9 +28,13 @@
     "srt:studentloan": "node scripts/make-srt-studentloan.mjs",
     "render:studentloan": "remotion render src/index.ts StudentLoan-Crossover ../media/student-loan-crossover.mp4",
     "audit:studentloan": "python3 scripts/audit-captions.py out/audit-studentloan scripts/audit-frames.json",
+    "timeline:parents": "node scripts/parse-parents-pack.mjs && node scripts/make-timeline-parents-vo.mjs && node scripts/write-parents-timeline.mjs",
+    "render:parents": "remotion render src/index.ts Parents-OneSound ../media/parents-one-sound.mp4",
     "pack:parents": "node scripts/parse-parents-pack.mjs",
-    "timeline:parents": "node scripts/parse-parents-pack.mjs && node scripts/make-timeline-parents.mjs",
-    "render:parents": "remotion render src/index.ts Parents-OneSound ../media/parents-one-sound.mp4"
+    "map:parents": "python3 scripts/map-clips-to-blocks.py",
+    "align:parents": "python3 scripts/align-blocks.py",
+    "vo:parents": "node scripts/build-vo-parents.mjs",
+    "srt:parents": "node scripts/make-srt-parents.mjs"
   },
   "keywords": [],
   "author": "",

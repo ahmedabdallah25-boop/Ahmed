@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   AbsoluteFill,
+  Audio,
   Img,
   interpolate,
   Sequence,
@@ -9,7 +10,7 @@ import {
 } from 'remotion';
 import './fonts';
 import {FONT, NASKH, P} from './palette';
-import {Event, EVENTS, FPS} from './timeline';
+import {Event, EVENTS, FPS, VO} from './timeline';
 
 // A shot: one still, one move. Nothing in this film moves faster than about 4%
 // of frame width per second (pack, section 06), and every move here is a fixed
@@ -139,6 +140,10 @@ const Card: React.FC<{event: Event}> = ({event}) => {
 
 export const Parents: React.FC = () => (
   <AbsoluteFill style={{backgroundColor: P.cream}}>
+    {/* The assembled read, with the silence for the Quranic cards already cut
+        into it by scripts/build-vo-parents.mjs. The picture is timed against
+        this exact file — rebuild both together or they drift apart. */}
+    <Audio src={staticFile(VO)} />
     {EVENTS.map((event) => (
       <Sequence
         key={event.id}

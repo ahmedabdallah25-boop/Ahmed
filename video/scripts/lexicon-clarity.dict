@@ -1,0 +1,58 @@
+# Words the Clarity scripts use that cmudict-en-us does not carry.
+# Alignment fails outright on an unknown word rather than skipping it, so every
+# one has to be declared before the first window is decoded. Additive across
+# scripts: declaring a word an audio file never says costs nothing.
+# Pronunciations are the reading an English-language documentary voice gives
+# them, not a transliteration standard — this file exists to let the acoustic
+# search match the recording, nothing else.
+abi AA B IY
+adh AA D
+ageing EY JH IH NG
+an'am AA N AA M
+ansar AA N S AA R
+asma AA S M AA
+bakr B AE K ER
+baqarah B AA K AA R AH
+bukhari B UW K AA R IY
+dhahabi DH AA HH AA B IY
+du'a D UW AA
+dutifulness D UW T IH F AH L N AH S
+hadith HH AH D IY TH
+hajar HH AA JH AA R
+halaqa HH AA L AA K AH
+indaka IH N D AA K AH
+isra IH S R AA
+jahima JH AA HH IY M AH
+jurayj JH UH R AY JH
+jurayj's JH UH R AY JH IH Z
+ka'ba K AA B AH
+karima K AA R IY M AH
+luqman L UH K M AA N
+luqman's L UH K M AA N Z
+ma'ruf M AA R UW F
+memorised M EH M ER AY Z D
+mu'awiya M UW AA W IY AH
+mudtarib M UH D T AA R IH B
+narrations N EH R EY SH AH N Z
+nisa N IH S AA
+prophet's P R AA F AH T S
+qada K AA D AA
+qawlan K AW L AA N
+quran K UH R AA N
+sa'd S AA D
+supplication S AH P L AH K EY SH AH N
+surah S UH R AA
+surahs S UH R AA Z
+tch CH
+tradition's T R AH D IH SH AH N Z
+uff AH F
+umar UW M AA R
+undersells AH N D ER S EH L Z
+undoes AH N D AH Z
+unsee AH N S IY
+uquq UH K UW K
+wahn W AA N
+wahnan W AA N AA N
+walidayn W AA L IH D AY N
+waqqas W AA K AA S
+worshipper W ER SH IH P ER

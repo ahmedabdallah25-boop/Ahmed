@@ -1,0 +1,1225 @@
+{
+ "read": 1715.279,
+ "total": 1778.279,
+ "fps": 30,
+ "cards": [
+  {
+   "id": "C1",
+   "cutAt": 95.14,
+   "designedWanted": 91.07
+  },
+  {
+   "id": "C2",
+   "cutAt": 271.84,
+   "designedWanted": 268.145
+  },
+  {
+   "id": "C3",
+   "cutAt": 369.66,
+   "designedWanted": 364.059
+  },
+  {
+   "id": "C4",
+   "cutAt": 399.36,
+   "designedWanted": 396.03
+  },
+  {
+   "id": "C5",
+   "cutAt": 447.289,
+   "designedWanted": 445.74
+  },
+  {
+   "id": "C6",
+   "cutAt": 613.518,
+   "designedWanted": 609.158
+  },
+  {
+   "id": "C7",
+   "cutAt": 672.932,
+   "designedWanted": 671.994
+  },
+  {
+   "id": "C8",
+   "cutAt": 1259.558,
+   "designedWanted": 1261.115
+  },
+  {
+   "id": "C9",
+   "cutAt": 1584.59,
+   "designedWanted": 1581.474
+  }
+ ],
+ "gap": 7,
+ "events": [
+  {
+   "id": "S01",
+   "kind": "still",
+   "chapter": "CH.01",
+   "from": 0,
+   "dur": 15.262,
+   "asset": "S01.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S02",
+   "kind": "still",
+   "chapter": "CH.01",
+   "from": 15.262,
+   "dur": 13.355,
+   "asset": "S02.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S03",
+   "kind": "still",
+   "chapter": "CH.01",
+   "from": 28.617,
+   "dur": 13.355,
+   "asset": "S03.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S04",
+   "kind": "still",
+   "chapter": "CH.01",
+   "from": 41.972,
+   "dur": 13.355,
+   "asset": "S04.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S05",
+   "kind": "still",
+   "chapter": "CH.01",
+   "from": 55.326,
+   "dur": 13.355,
+   "asset": "S05.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S06",
+   "kind": "still",
+   "chapter": "CH.01",
+   "from": 68.681,
+   "dur": 13.355,
+   "asset": "S06.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S07",
+   "kind": "still",
+   "chapter": "CH.01",
+   "from": 82.035,
+   "dur": 14.605,
+   "asset": "https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260819_015313_426acd61-ff62-464b-be47-ee9848ccfc94.png",
+   "rfParent": null
+  },
+  {
+   "id": "C1",
+   "kind": "card",
+   "chapter": "CH.01",
+   "from": 96.64,
+   "dur": 4,
+   "asset": null,
+   "rfParent": null
+  },
+  {
+   "id": "S08",
+   "kind": "still",
+   "chapter": "CH.01",
+   "from": 100.64,
+   "dur": 13.197,
+   "asset": "S08.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S09",
+   "kind": "still",
+   "chapter": "CH.01",
+   "from": 113.837,
+   "dur": 13.355,
+   "asset": "S09.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S10",
+   "kind": "still",
+   "chapter": "CH.01",
+   "from": 127.191,
+   "dur": 13.355,
+   "asset": "S10.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S11",
+   "kind": "reframe",
+   "chapter": "CH.01",
+   "from": 140.546,
+   "dur": 10.493,
+   "asset": "S10.jpg",
+   "rfParent": "S10"
+  },
+  {
+   "id": "S12",
+   "kind": "still",
+   "chapter": "CH.02",
+   "from": 151.039,
+   "dur": 12.013,
+   "asset": "S12.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S13",
+   "kind": "still",
+   "chapter": "CH.02",
+   "from": 163.052,
+   "dur": 12.013,
+   "asset": "S13.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S14",
+   "kind": "still",
+   "chapter": "CH.02",
+   "from": 175.066,
+   "dur": 12.013,
+   "asset": "S14.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S15",
+   "kind": "still",
+   "chapter": "CH.02",
+   "from": 187.079,
+   "dur": 12.013,
+   "asset": "S15.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S16",
+   "kind": "still",
+   "chapter": "CH.02",
+   "from": 199.093,
+   "dur": 12.013,
+   "asset": "S16.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S17",
+   "kind": "still",
+   "chapter": "CH.02",
+   "from": 211.106,
+   "dur": 12.013,
+   "asset": "S17.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S18",
+   "kind": "still",
+   "chapter": "CH.02",
+   "from": 223.12,
+   "dur": 12.013,
+   "asset": "S18.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S19",
+   "kind": "still",
+   "chapter": "CH.02",
+   "from": 235.133,
+   "dur": 12.013,
+   "asset": "https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260819_015313_e26005d0-34cd-4b4d-98a6-c2f0bc4ffadc.png",
+   "rfParent": null
+  },
+  {
+   "id": "S20",
+   "kind": "reframe",
+   "chapter": "CH.02",
+   "from": 247.147,
+   "dur": 12.013,
+   "asset": null,
+   "rfParent": "S19"
+  },
+  {
+   "id": "S21",
+   "kind": "still",
+   "chapter": "CH.03",
+   "from": 259.16,
+   "dur": 21.18,
+   "asset": "S21.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "C2",
+   "kind": "card",
+   "chapter": "CH.03",
+   "from": 280.34,
+   "dur": 4,
+   "asset": null,
+   "rfParent": null
+  },
+  {
+   "id": "S22",
+   "kind": "still",
+   "chapter": "CH.03",
+   "from": 284.34,
+   "dur": 13.926,
+   "asset": "S22.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S23",
+   "kind": "still",
+   "chapter": "CH.03",
+   "from": 298.266,
+   "dur": 14.906,
+   "asset": "S23.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S24",
+   "kind": "still",
+   "chapter": "CH.03",
+   "from": 313.172,
+   "dur": 14.906,
+   "asset": "S24.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S25",
+   "kind": "still",
+   "chapter": "CH.03",
+   "from": 328.079,
+   "dur": 14.906,
+   "asset": "S25.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S26",
+   "kind": "still",
+   "chapter": "CH.03",
+   "from": 342.985,
+   "dur": 14.906,
+   "asset": "S26.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S27",
+   "kind": "still",
+   "chapter": "CH.03",
+   "from": 357.891,
+   "dur": 14.906,
+   "asset": "S27.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S28",
+   "kind": "still",
+   "chapter": "CH.03",
+   "from": 372.797,
+   "dur": 12.363,
+   "asset": "S28.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "C3",
+   "kind": "card",
+   "chapter": "CH.03",
+   "from": 385.16,
+   "dur": 4,
+   "asset": null,
+   "rfParent": null
+  },
+  {
+   "id": "S29",
+   "kind": "still",
+   "chapter": "CH.03",
+   "from": 389.16,
+   "dur": 14.717,
+   "asset": "S29.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S30",
+   "kind": "still",
+   "chapter": "CH.03",
+   "from": 403.877,
+   "dur": 17.983,
+   "asset": "S30.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "C4",
+   "kind": "card",
+   "chapter": "CH.03",
+   "from": 421.86,
+   "dur": 4,
+   "asset": null,
+   "rfParent": null
+  },
+  {
+   "id": "S31",
+   "kind": "still",
+   "chapter": "CH.03",
+   "from": 425.86,
+   "dur": 17.123,
+   "asset": "S31.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S32",
+   "kind": "still",
+   "chapter": "CH.03",
+   "from": 442.983,
+   "dur": 18.346,
+   "asset": "S32.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S33",
+   "kind": "still",
+   "chapter": "CH.04",
+   "from": 461.329,
+   "dur": 15.46,
+   "asset": "https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260819_015313_b95027da-1940-48aa-8151-61b372813adc.png",
+   "rfParent": null
+  },
+  {
+   "id": "C5",
+   "kind": "card",
+   "chapter": "CH.04",
+   "from": 476.789,
+   "dur": 4,
+   "asset": null,
+   "rfParent": null
+  },
+  {
+   "id": "S34",
+   "kind": "reframe",
+   "chapter": "CH.04",
+   "from": 480.789,
+   "dur": 15.446,
+   "asset": null,
+   "rfParent": "S33"
+  },
+  {
+   "id": "S35",
+   "kind": "still",
+   "chapter": "CH.04",
+   "from": 496.235,
+   "dur": 15.026,
+   "asset": "S35.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S36",
+   "kind": "still",
+   "chapter": "CH.04",
+   "from": 511.262,
+   "dur": 15.026,
+   "asset": "S36.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S37",
+   "kind": "still",
+   "chapter": "CH.04",
+   "from": 526.288,
+   "dur": 15.026,
+   "asset": "S37.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S38",
+   "kind": "still",
+   "chapter": "CH.04",
+   "from": 541.314,
+   "dur": 15.026,
+   "asset": "S38.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S39",
+   "kind": "still",
+   "chapter": "CH.04",
+   "from": 556.341,
+   "dur": 15.026,
+   "asset": "S39.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S40",
+   "kind": "still",
+   "chapter": "CH.04",
+   "from": 571.367,
+   "dur": 15.026,
+   "asset": "S40.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S41",
+   "kind": "still",
+   "chapter": "CH.04",
+   "from": 586.394,
+   "dur": 15.026,
+   "asset": "S41.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S42",
+   "kind": "still",
+   "chapter": "CH.04",
+   "from": 601.42,
+   "dur": 15.026,
+   "asset": "S42.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S43",
+   "kind": "still",
+   "chapter": "CH.04",
+   "from": 616.447,
+   "dur": 15.026,
+   "asset": "S43.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S44",
+   "kind": "still",
+   "chapter": "CH.04",
+   "from": 631.473,
+   "dur": 18.545,
+   "asset": "S44.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "C6",
+   "kind": "card",
+   "chapter": "CH.04",
+   "from": 650.018,
+   "dur": 4,
+   "asset": null,
+   "rfParent": null
+  },
+  {
+   "id": "S45",
+   "kind": "still",
+   "chapter": "CH.04",
+   "from": 654.018,
+   "dur": 16.655,
+   "asset": "S45.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S46",
+   "kind": "still",
+   "chapter": "CH.04",
+   "from": 670.673,
+   "dur": 16.1,
+   "asset": "S46.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S47",
+   "kind": "still",
+   "chapter": "CH.04",
+   "from": 686.772,
+   "dur": 16.1,
+   "asset": "S47.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S48",
+   "kind": "still",
+   "chapter": "CH.05",
+   "from": 702.872,
+   "dur": 13.56,
+   "asset": "https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260818_063848_3eee8515-8814-4753-bdf8-49a8efca1afe.png",
+   "rfParent": null
+  },
+  {
+   "id": "C7",
+   "kind": "card",
+   "chapter": "CH.05",
+   "from": 716.432,
+   "dur": 4,
+   "asset": null,
+   "rfParent": null
+  },
+  {
+   "id": "S49",
+   "kind": "reframe",
+   "chapter": "CH.05",
+   "from": 720.432,
+   "dur": 17.935,
+   "asset": null,
+   "rfParent": "S48"
+  },
+  {
+   "id": "S50",
+   "kind": "still",
+   "chapter": "CH.05",
+   "from": 738.367,
+   "dur": 17.097,
+   "asset": "S50.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S51",
+   "kind": "still",
+   "chapter": "CH.05",
+   "from": 755.465,
+   "dur": 17.097,
+   "asset": "S51.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S52",
+   "kind": "still",
+   "chapter": "CH.05",
+   "from": 772.562,
+   "dur": 17.097,
+   "asset": "S52.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S53",
+   "kind": "reframe",
+   "chapter": "CH.05",
+   "from": 789.659,
+   "dur": 17.097,
+   "asset": "S52.jpg",
+   "rfParent": "S52"
+  },
+  {
+   "id": "S54",
+   "kind": "still",
+   "chapter": "CH.05",
+   "from": 806.756,
+   "dur": 17.097,
+   "asset": "S54.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S55",
+   "kind": "still",
+   "chapter": "CH.05",
+   "from": 823.853,
+   "dur": 17.097,
+   "asset": "S55.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S56",
+   "kind": "still",
+   "chapter": "CH.05",
+   "from": 840.951,
+   "dur": 17.097,
+   "asset": "S56.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S57",
+   "kind": "still",
+   "chapter": "CH.05",
+   "from": 858.048,
+   "dur": 17.097,
+   "asset": "S57.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S58",
+   "kind": "reframe",
+   "chapter": "CH.05",
+   "from": 875.145,
+   "dur": 18.237,
+   "asset": "S57.jpg",
+   "rfParent": "S57"
+  },
+  {
+   "id": "S59",
+   "kind": "still",
+   "chapter": "CH.06",
+   "from": 893.382,
+   "dur": 28.73,
+   "asset": "S59.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S60",
+   "kind": "still",
+   "chapter": "CH.06",
+   "from": 922.112,
+   "dur": 16.089,
+   "asset": "S60.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S61",
+   "kind": "still",
+   "chapter": "CH.06",
+   "from": 938.201,
+   "dur": 16.089,
+   "asset": "S61.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S62",
+   "kind": "still",
+   "chapter": "CH.06",
+   "from": 954.29,
+   "dur": 16.089,
+   "asset": "S62.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S63",
+   "kind": "still",
+   "chapter": "CH.06",
+   "from": 970.378,
+   "dur": 16.089,
+   "asset": "S63.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S64",
+   "kind": "reframe",
+   "chapter": "CH.06",
+   "from": 986.467,
+   "dur": 16.089,
+   "asset": "S63.jpg",
+   "rfParent": "S63"
+  },
+  {
+   "id": "S65",
+   "kind": "still",
+   "chapter": "CH.06",
+   "from": 1002.556,
+   "dur": 16.089,
+   "asset": "S65.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S66",
+   "kind": "still",
+   "chapter": "CH.06",
+   "from": 1018.645,
+   "dur": 16.089,
+   "asset": "https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260819_015313_2b6bc243-d32b-4dcd-88e6-b039d3ef3566.png",
+   "rfParent": null
+  },
+  {
+   "id": "S67",
+   "kind": "still",
+   "chapter": "CH.06",
+   "from": 1034.734,
+   "dur": 19.536,
+   "asset": "S67.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S68",
+   "kind": "still",
+   "chapter": "CH.07",
+   "from": 1054.27,
+   "dur": 14.534,
+   "asset": "S68.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S69",
+   "kind": "still",
+   "chapter": "CH.07",
+   "from": 1068.804,
+   "dur": 14.534,
+   "asset": "https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260818_063848_a6082402-7cd9-43b3-81fb-42ab0606fd55.png",
+   "rfParent": null
+  },
+  {
+   "id": "S70",
+   "kind": "reframe",
+   "chapter": "CH.07",
+   "from": 1083.339,
+   "dur": 14.534,
+   "asset": null,
+   "rfParent": "S69"
+  },
+  {
+   "id": "S71",
+   "kind": "still",
+   "chapter": "CH.07",
+   "from": 1097.873,
+   "dur": 14.534,
+   "asset": "https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260819_015313_463cc4ff-4b48-487e-9d12-fa619cf711fa.png",
+   "rfParent": null
+  },
+  {
+   "id": "S72",
+   "kind": "still",
+   "chapter": "CH.07",
+   "from": 1112.408,
+   "dur": 14.534,
+   "asset": "S72.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S73",
+   "kind": "still",
+   "chapter": "CH.07",
+   "from": 1126.942,
+   "dur": 14.534,
+   "asset": "S73.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S74",
+   "kind": "still",
+   "chapter": "CH.07",
+   "from": 1141.476,
+   "dur": 14.534,
+   "asset": "S74.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S75",
+   "kind": "reframe",
+   "chapter": "CH.07",
+   "from": 1156.011,
+   "dur": 14.534,
+   "asset": "S74.jpg",
+   "rfParent": "S74"
+  },
+  {
+   "id": "S76",
+   "kind": "still",
+   "chapter": "CH.07",
+   "from": 1170.545,
+   "dur": 14.534,
+   "asset": "S76.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S77",
+   "kind": "still",
+   "chapter": "CH.07",
+   "from": 1185.079,
+   "dur": 14.534,
+   "asset": "S77.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S78",
+   "kind": "still",
+   "chapter": "CH.07",
+   "from": 1199.614,
+   "dur": 13.496,
+   "asset": "S78.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S79",
+   "kind": "still",
+   "chapter": "CH.07",
+   "from": 1213.11,
+   "dur": 12.458,
+   "asset": "https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260819_015313_5d264220-c1d8-4437-9d2b-d89c88d9914f.png",
+   "rfParent": null
+  },
+  {
+   "id": "S80",
+   "kind": "still",
+   "chapter": "CH.08",
+   "from": 1225.568,
+   "dur": 14.251,
+   "asset": "S80.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S81",
+   "kind": "reframe",
+   "chapter": "CH.08",
+   "from": 1239.819,
+   "dur": 14.251,
+   "asset": "S80.jpg",
+   "rfParent": "S80"
+  },
+  {
+   "id": "S82",
+   "kind": "still",
+   "chapter": "CH.08",
+   "from": 1254.07,
+   "dur": 14.251,
+   "asset": "S82.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S83",
+   "kind": "still",
+   "chapter": "CH.08",
+   "from": 1268.321,
+   "dur": 14.251,
+   "asset": "S83.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S84",
+   "kind": "still",
+   "chapter": "CH.08",
+   "from": 1282.572,
+   "dur": 14.251,
+   "asset": "S84.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S85",
+   "kind": "still",
+   "chapter": "CH.08",
+   "from": 1296.823,
+   "dur": 13.235,
+   "asset": "https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260819_015313_57fd3f93-4fef-470a-8f18-335cd350f3cc.png",
+   "rfParent": null
+  },
+  {
+   "id": "C8",
+   "kind": "card",
+   "chapter": "CH.08",
+   "from": 1310.058,
+   "dur": 4,
+   "asset": null,
+   "rfParent": null
+  },
+  {
+   "id": "S86",
+   "kind": "still",
+   "chapter": "CH.08",
+   "from": 1314.058,
+   "dur": 19.286,
+   "asset": "S86.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S87",
+   "kind": "reframe",
+   "chapter": "CH.08",
+   "from": 1333.344,
+   "dur": 14.251,
+   "asset": "S86.jpg",
+   "rfParent": "S86"
+  },
+  {
+   "id": "S88",
+   "kind": "still",
+   "chapter": "CH.08",
+   "from": 1347.595,
+   "dur": 14.251,
+   "asset": "S88.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S89",
+   "kind": "still",
+   "chapter": "CH.08",
+   "from": 1361.846,
+   "dur": 14.251,
+   "asset": "S89.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S90",
+   "kind": "still",
+   "chapter": "CH.08",
+   "from": 1376.097,
+   "dur": 14.251,
+   "asset": "S90.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S91",
+   "kind": "reframe",
+   "chapter": "CH.08",
+   "from": 1390.348,
+   "dur": 16.287,
+   "asset": "S90.jpg",
+   "rfParent": "S90"
+  },
+  {
+   "id": "S92",
+   "kind": "still",
+   "chapter": "CH.09",
+   "from": 1406.635,
+   "dur": 18.941,
+   "asset": "https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260818_063848_97a444bb-ab27-4c1d-9472-2defa1029c18.png",
+   "rfParent": null
+  },
+  {
+   "id": "S93",
+   "kind": "reframe",
+   "chapter": "CH.09",
+   "from": 1425.576,
+   "dur": 18.941,
+   "asset": null,
+   "rfParent": "S92"
+  },
+  {
+   "id": "S94",
+   "kind": "still",
+   "chapter": "CH.09",
+   "from": 1444.518,
+   "dur": 18.941,
+   "asset": "S94.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S95",
+   "kind": "still",
+   "chapter": "CH.09",
+   "from": 1463.459,
+   "dur": 17.758,
+   "asset": "S95.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S96",
+   "kind": "still",
+   "chapter": "CH.09",
+   "from": 1481.217,
+   "dur": 17.758,
+   "asset": "S96.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S97",
+   "kind": "reframe",
+   "chapter": "CH.09",
+   "from": 1498.974,
+   "dur": 17.758,
+   "asset": "S96.jpg",
+   "rfParent": "S96"
+  },
+  {
+   "id": "S98",
+   "kind": "still",
+   "chapter": "CH.09",
+   "from": 1516.732,
+   "dur": 17.758,
+   "asset": "S98.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S99",
+   "kind": "still",
+   "chapter": "CH.09",
+   "from": 1534.489,
+   "dur": 17.758,
+   "asset": "S99.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S100",
+   "kind": "still",
+   "chapter": "CH.09",
+   "from": 1552.247,
+   "dur": 17.758,
+   "asset": "S100.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S101",
+   "kind": "still",
+   "chapter": "CH.09",
+   "from": 1570.004,
+   "dur": 18.941,
+   "asset": "https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260819_015313_8c6edda0-586d-499d-abae-bc90d792288e.png",
+   "rfParent": null
+  },
+  {
+   "id": "S102",
+   "kind": "reframe",
+   "chapter": "CH.09",
+   "from": 1588.946,
+   "dur": 18.941,
+   "asset": null,
+   "rfParent": "S101"
+  },
+  {
+   "id": "S103",
+   "kind": "still",
+   "chapter": "CH.10",
+   "from": 1607.887,
+   "dur": 5.401,
+   "asset": "S103.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S104",
+   "kind": "reframe",
+   "chapter": "CH.10",
+   "from": 1613.288,
+   "dur": 5.401,
+   "asset": "S103.jpg",
+   "rfParent": "S103"
+  },
+  {
+   "id": "S105",
+   "kind": "still",
+   "chapter": "CH.10",
+   "from": 1618.69,
+   "dur": 5.401,
+   "asset": "S105.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S106",
+   "kind": "still",
+   "chapter": "CH.10",
+   "from": 1624.091,
+   "dur": 5.401,
+   "asset": "S106.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S107",
+   "kind": "still",
+   "chapter": "CH.10",
+   "from": 1629.492,
+   "dur": 5.401,
+   "asset": "S107.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S108",
+   "kind": "still",
+   "chapter": "CH.10",
+   "from": 1634.893,
+   "dur": 7.197,
+   "asset": "S108.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "C9",
+   "kind": "card",
+   "chapter": "CH.10",
+   "from": 1642.09,
+   "dur": 4,
+   "asset": null,
+   "rfParent": null
+  },
+  {
+   "id": "S109",
+   "kind": "still",
+   "chapter": "CH.10",
+   "from": 1646.09,
+   "dur": 5.166,
+   "asset": "S109.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S110",
+   "kind": "reframe",
+   "chapter": "CH.10",
+   "from": 1651.256,
+   "dur": 5.401,
+   "asset": "S109.jpg",
+   "rfParent": "S109"
+  },
+  {
+   "id": "S111",
+   "kind": "still",
+   "chapter": "CH.11",
+   "from": 1656.657,
+   "dur": 12.162,
+   "asset": "S111.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S112",
+   "kind": "reframe",
+   "chapter": "CH.11",
+   "from": 1668.819,
+   "dur": 10.731,
+   "asset": "S111.jpg",
+   "rfParent": "S111"
+  },
+  {
+   "id": "S113",
+   "kind": "still",
+   "chapter": "CH.11",
+   "from": 1679.551,
+   "dur": 10.731,
+   "asset": "S113.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S114",
+   "kind": "still",
+   "chapter": "CH.11",
+   "from": 1690.282,
+   "dur": 10.731,
+   "asset": "S114.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S115",
+   "kind": "still",
+   "chapter": "CH.11",
+   "from": 1701.013,
+   "dur": 10.731,
+   "asset": "S115.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S116",
+   "kind": "still",
+   "chapter": "CH.11",
+   "from": 1711.745,
+   "dur": 10.731,
+   "asset": "S116.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S117",
+   "kind": "reframe",
+   "chapter": "CH.11",
+   "from": 1722.476,
+   "dur": 10.731,
+   "asset": "S116.jpg",
+   "rfParent": "S116"
+  },
+  {
+   "id": "S118",
+   "kind": "still",
+   "chapter": "CH.11",
+   "from": 1733.207,
+   "dur": 10.731,
+   "asset": "https://d8j0ntlcm91z4.cloudfront.net/user_3DIdxOyZbIza4RXcOmzEG5FQVOT/hf_20260819_015313_85668da4-2e49-47e4-b3b2-8e7c41436376.png",
+   "rfParent": null
+  },
+  {
+   "id": "S119",
+   "kind": "still",
+   "chapter": "CH.11",
+   "from": 1743.939,
+   "dur": 10.731,
+   "asset": "S119.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S120",
+   "kind": "still",
+   "chapter": "CH.11",
+   "from": 1754.67,
+   "dur": 11.447,
+   "asset": "S120.jpg",
+   "rfParent": null
+  },
+  {
+   "id": "S121",
+   "kind": "reframe",
+   "chapter": "CH.11",
+   "from": 1766.117,
+   "dur": 12.162,
+   "asset": null,
+   "rfParent": "S48"
+  }
+ ]
+}
