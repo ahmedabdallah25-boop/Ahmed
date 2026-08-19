@@ -32,29 +32,34 @@ Four card types, all on the same slab so they read as one system:
 
 ## Timing
 
-No ASR was available, so cards are aligned by proportional distribution: the read
-follows the script verbatim, so script words are spread across the master's **speech**
-intervals (silences from `ffmpeg silencedetect`, dumped to `parents-silence.txt`) in
-proportion to duration, then each card start is snapped to the nearest real pause
-within 2.5s. Measured drift on ten probe phrases before snapping: within ±2.1s.
+`parents-align.py` aligns the verbatim script to the audio without ASR (every model
+host — huggingface.co, openaipublic, download.pytorch.org, alphacephei — is blocked by
+this environment's egress policy, so Whisper/Vosk/torchaudio aligners are unavailable).
 
-**Do one scrub pass before rendering.** Anything late by a beat, change the anchor
+The method is a Viterbi alignment over sentence boundaries: each sentence end should
+land in one of the master's 418 detected silences, and a sentence's spoken duration
+should track its word count. The DP picks the monotone assignment minimising total
+|actual speech time − expected time|, letting one span carry several sentences where
+the reader ran them together. Result: 367 sentences → ~290 spans, median span 4.2s,
+median fit residual 0.39s (p90 1.55s). Card entries are then nudged up to 1.2s onto a
+real pause.
+
+**Accuracy, honestly.** There is no ground truth available in this environment, so the
+residual above measures fit, not error. Two independent checks against the artwork do
+hold: at 26:56 the frame is a wing ("lower to them the wing") and at 29:29 it is a
+desert road with a grave mound ("she died, on a road, far from home"). Both land where
+the alignment says they should.
+
+> An earlier version of this track timed cards by spreading words evenly across the
+> whole 31 minutes. That drifted up to ~40s (it put the wing card at 26:18, where the
+> artwork is still oil lamps). If you have a copy of that build, discard it.
+
+**Still do one scrub pass before rendering.** Anything late by a beat, change the anchor
 phrase in the build script rather than the timestamp — a rebuild keeps it.
 
 ## Verse manifest — VERIFY EVERY LINE
 
-| At | Ref | Arabic on card |
-|---|---|---|
-| 0:18 | 5 places | `وَبِٱلْوَٰلِدَيْنِ إِحْسَـٰنًا` |
-| 1:18 | 17:23 | `قَضَىٰ` (term card) |
-| 2:22 | 17:23 | `إِمَّا يَبْلُغَنَّ عِندَكَ ٱلْكِبَرَ أَحَدُهُمَآ أَوْ كِلَاهُمَا` |
-| 5:39 | 31:14 | `أَنِ ٱشْكُرْ لِى وَلِوَٰلِدَيْكَ` |
-| 6:33 | 31:14 | `وَهْنًا عَلَىٰ وَهْنٍ` |
-| 6:51 | 17:23 | `فَلَا تَقُل لَّهُمَآ أُفٍّ` |
-| 10:13 | 17:23 | `قَوْلًا كَرِيمًا` |
-| 20:06 | 31:15 | `فَلَا تُطِعْهُمَا وَصَاحِبْهُمَا فِى ٱلدُّنْيَا مَعْرُوفًا` |
-| 26:18 | 17:24 | `وَٱخْفِضْ لَهُمَا جَنَاحَ ٱلذُّلِّ مِنَ ٱلرَّحْمَةِ` |
-| 27:50, 30:50 | 17:24 | `رَّبِّ ٱرْحَمْهُمَا كَمَا رَبَّيَانِى صَغِيرًا` |
+Timecodes are in `parents-cards.ass`; regenerate rather than transcribing them here.
 
 Term cards (`بِرّ`, `عُقُوق`, `عِندَكَ` folded into the 17:23 card) are single words —
 check the vowelling. The two hadith attribution badges also need checking: the

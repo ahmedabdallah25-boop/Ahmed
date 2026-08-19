@@ -1,57 +1,32 @@
 #!/usr/bin/env python3
 """Build the overlay-card track for "The One Sound the Quran Forbids You to Make".
 
-Alignment method (no ASR available): the read follows the script verbatim, so
-words are distributed across the *speech* intervals of the master audio in
-proportion to their duration. Silences come from
-    ffmpeg -i master.mp4 -af silencedetect=noise=-38dB:d=0.30 -f null -
-dumped as "start<TAB>end" per line into parents-silence.txt.
-Every card start is then snapped to the nearest silence boundary within 2.5s,
-so cards enter on the narrator's own pauses. Measured drift on 10 probe
-phrases: within +-2.1s before snapping.
+Timing comes from parents-align.py (Viterbi alignment of the verbatim script to
+the master's silence structure). Card entries are then nudged up to 1.2s onto a
+real pause so they land in a gap rather than mid-word.
 
 Usage:  python3 clarity/parents-cards.build.py > clarity/parents-cards.ass
 """
-import re, sys, os
+import re, sys, os, importlib.util
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DUR = 1887.96
-SCRIPT = os.environ.get("PARENTS_SCRIPT", os.path.join(HERE, "parents-script.txt"))
-
-sil = [tuple(map(float, l.split())) for l in open(os.path.join(HERE, "parents-silence.txt"))]
-speech, prev = [], 0.0
-for a, b in sil:
-    if a > prev: speech.append((prev, a))
-    prev = b
-if prev < DUR: speech.append((prev, DUR))
-spd = [e - s for s, e in speech]; TOT = sum(spd)
-
-txt = open(SCRIPT).read()
-body = txt[txt.index("=\n", txt.index("=====", txt.index("THE COMMAND THAT NEVER TRAVELS ALONE"))): txt.index("[END]")]
-body = "\n".join(l for l in body.split("\n")
-                 if not (l.startswith("====") or l.strip().startswith(("BLOCK ", "NOTE")) or l.startswith("  ")))
-words = [w for w in re.split(r"\s+", re.sub(r"\[[a-z]+\]", " ", body)) if w]
-N = len(words)
-norm = lambda w: re.sub(r"[^a-z0-9]", "", w.lower())
-nw = [norm(w) for w in words]
-
-def t_at(i):
-    target, acc = i / N * TOT, 0.0
-    for (s, e), d in zip(speech, spd):
-        if acc + d >= target: return s + (target - acc)
-        acc += d
-    return DUR
+_spec = importlib.util.spec_from_file_location("parents_align", os.path.join(HERE, "parents-align.py"))
+pa = importlib.util.module_from_spec(_spec); _spec.loader.exec_module(pa)
+sil, words = pa.sil, pa.words
+nw = [re.sub(r"[^a-z0-9]", "", w.lower()) for w in words]
 
 def cue(phrase):
-    tgt = [norm(w) for w in phrase.split()]
-    for i in range(N - len(tgt)):
-        if nw[i:i + len(tgt)] == tgt: return t_at(i)
+    tgt = [re.sub(r"[^a-z0-9]", "", w.lower()) for w in phrase.split()]
+    for i in range(len(nw) - len(tgt)):
+        if nw[i:i + len(tgt)] == tgt: return pa.align(i)
     sys.exit("anchor not found: " + phrase)
 
 def snap(t):
+    """Nudge a card entry onto a real pause, but only a short one — the
+    alignment is already anchored, so a wide snap would move it off-cue."""
     edges = [e for _, e in sil] + [s for s, _ in sil]
     best = min(edges, key=lambda x: abs(x - t))
-    return best if abs(best - t) <= 2.5 else t
+    return best if abs(best - t) <= 1.2 else t
 
 def ts(t):
     t = max(t, 0); h, r = divmod(t, 3600); m, s = divmod(r, 60)
