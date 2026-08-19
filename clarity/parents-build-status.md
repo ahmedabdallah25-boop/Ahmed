@@ -10,7 +10,7 @@ listed below and both are visible in the cut rather than papered over.
 | Timing | forced alignment of the read; pack timecodes are no longer used |
 | Narration | 19 clips, 28:35, assembled + card gaps → `video/public/vo-parents.mp3` |
 | Captions | `media/parents-one-sound.srt` — 344 cues |
-| Stills | 89 of 101 in `video/public/parents/` |
+| Stills | **101 of 101** in `video/public/parents/` |
 | Re-frames | 20, camera moves on their parent still — no generation |
 | Arabic cards | 9, typeset in Amiri (naskh), never generated |
 
@@ -60,6 +60,7 @@ block 11 was regenerated 22 minutes after the rest of the session.
 
 ## What is missing
 
+
 **Chapter 10's narration, from "Go back to al-Isra" to "It does not leave you to
 find the words"** — 19 sentences, the whole first two-thirds of the "lower the
 wing" chapter. Only its closing 42 seconds were recorded (block 10's clip is
@@ -68,13 +69,18 @@ wing" chapter. Only its closing 42 seconds were recorded (block 10's clip is
 between this cut and a finished film: record block 10 from the top, drop the
 clip in with the others, and re-run the four commands above.
 
-**12 stills are not generated**, and 7 re-frames hang off them — 19 of the 130
-events: S07, S19, S20, S33, S34, S48, S49, S66, S69, S70, S71, S79, S85, S92,
-S93, S101, S102, S118, S121. They render as a labelled slate for their full
-duration, so the cut stays whole and every later timecode stays true. Prompts
-for exactly those twelve are in `parents-prompts-outstanding.txt`. Four are the
-pack's keystones: S33 is the uff flame, S48 is the plain that also closes the
-film as S121, S69 opens the Jurayj chapter, S92 opens chapter 09.
+**No artwork is outstanding.** The last twelve stills — S07, S19, S33, S48, S66,
+S69, S71, S79, S85, S92, S101, S118 — arrived on 2026-08-19, which also unblocked
+the seven re-frames hanging off them (S20, S34, S49, S70, S93, S102, S121). All
+130 events now draw on a real plate; the slate path in `Parents.tsx` stays for
+the next pack rather than for this one.
+
+Two of the twelve are shot differently from the other ninety-nine. S33 (the uff
+flame) and S66 (the two manuscript pages) are photographs of paper on a surface —
+a sheet at an angle against black, and two sheets on a lit table — where every
+other frame is a flat plate on cream. They read as a different kind of object in
+sequence, and S33 is the film's centrepiece. Worth a regeneration before publish,
+which costs two images and no rebuild beyond dropping the files in.
 
 Two sentences the decode never found — "Surah al-Baqarah, verse 83." at the head
 of block 03, and "The Prophet, peace be upon him, visited his mother's grave."
@@ -97,9 +103,11 @@ generations.
 
 ## Two things worth knowing about the artwork
 
-**The stills are 1376×768**, under a 1080p timeline, so every shot is upscaled
-~40% before its push starts. Generate the remaining twelve at 1920×1080 or
-larger, and 2560×1440 for anything a re-frame pushes into.
+**Every still is 1376×768**, the last twelve included, under a 1080p timeline —
+so every shot is upscaled ~40% before its push even starts, and the detail
+pushes are visibly soft. Nothing in the build can recover that. If any of these
+are regenerated, generate at 1920×1080 or larger, and 2560×1440 for a re-frame
+parent (S19, S33, S48, S69, S92, S101 among the new ones).
 
 **Runtime is 29:38, so the thumbnail rule applies**: past the 180s Shorts cap, so
 this publishes as long-form and needs a 1280×720 16:9 thumbnail with the

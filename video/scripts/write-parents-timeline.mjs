@@ -40,10 +40,22 @@ const move = (shot) => {
   return {kind: 'push', from: 1.06, to: 1.4};
 };
 
+// The still each event draws on, as a file under public/parents/. The CSV's
+// asset column is a plain filename for the batches that were delivered as files
+// and a generator URL for the ones that came later, so neither can be used
+// directly: the local name is the shot's own id. A re-frame has no still of its
+// own and takes its parent's.
+const localAsset = (id) => {
+  const shot = byId.get(id);
+  if (!shot) return null;
+  if (shot.kind === 'reframe') return shot.rfParent ? localAsset(shot.rfParent) : null;
+  return `${id}.jpg`;
+};
+
 const events = plan.events.map((e) => {
   const shot = byId.get(e.id);
   const m = e.kind === 'card' ? {kind: 'hold', from: 1, to: 1.03} : move(shot);
-  const asset = e.asset;
+  const asset = e.kind === 'card' ? null : localAsset(e.id);
   return {
     id: e.id,
     kind: e.kind,
