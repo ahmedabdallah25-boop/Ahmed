@@ -707,11 +707,42 @@ nothing else can help. Six videos, Arabic and Urdu, dry run then live then read-
 
 | | Before | After |
 |---|---|---|
-| Videos with any localization | 0 | **6** |
-| Lifetime views covered | — | **2,059 of 2,561 (80%)** |
-| Languages | en only | en, ar, ur |
+| Videos with any localization | 0 | **18 of 18** |
+| Lifetime views covered | — | **all 2,561** |
+| Languages | en only | en, **ar**, **ur**, **bn** |
 
-Read-back confirms all six: `already localized for ar, ur`.
+Two tranches. Six videos in Arabic and Urdu first; then Bengali added and all eighteen uploads
+covered, at the owner's explicit direction after the Bengali-quality caveat was raised and
+overruled. That is their call to make; the caveat stays recorded in `clarity/localizations.json`
+rather than quietly dropped. Read-back confirms all eighteen: `already localized for ar, ur, bn`.
+
+### The citation that was wrong, and the rule that came out of it
+
+Tranche 1 gave `StCW3ERkWwc` — *"The Quran Verse That Actually Stops Anxiety"* — a localized
+description citing **Surah Ar-Ra'd 13:28**, in Arabic and Urdu, live. That citation was **inferred
+from the English title, which names no verse, and it was wrong.** The transcript builds the video
+on **Al-Imran 3:173** — *hasbunallahu wa ni'mal wakeel*, spoken at Uhud — plus Al-Baqarah 2:38 and
+the *khauf*/*huzn* distinction. 13:28 belongs to a different upload, `5Fb1iERyIhs`.
+
+It was live for about twenty minutes before a transcript check caught it. On a channel whose whole
+proposition is explaining the Quran honestly — and which already carries a public "AI BE AWARE"
+comment — a fabricated citation in a language the owner cannot read is the worst failure available.
+It was the same reflex as the Christian-register leak: filling a gap with something plausible
+instead of checking.
+
+`clarity/localizations.json` now carries a **`_CITATION_RULE`**: a verse number appears only where
+the transcript has been read and the citation confirmed. Five entries are verified and cite verses
+(`StCW3ERkWwc`, `PUPdFpvEA04`, `4N-MXuYjDUA`, `5Fb1iERyIhs`, `cjtKWsFZbcg`). The other thirteen are
+deliberately citation-free — faithful to the title, carrying no number nobody checked.
+
+### Two translation calls worth keeping
+
+- **`QNlRJcyY4LU`** — *"The Kind of woman the Quran Warns Men about"* is rendered as the
+  **characteristics** cautioned about in choosing a spouse, not as a category of person. Translated
+  literally it reads as a slur in all three languages and would not survive contact with the
+  audience it is aimed at.
+- **`cROgb0utEKs`** uses the clinical term in each language. Euphemism reads as evasive; anything
+  coarser does not belong here.
 
 **The gotcha this could have died on.** YouTube ignores localizations unless
 `snippet.defaultLanguage` is set, and it was unset on every upload here. Written without it, the
@@ -731,10 +762,10 @@ nothing at all if the cadence stays broken.
 
 ## Still open
 
-- **Bengali** — the single largest opportunity in the data at 47.7% of all `surah` searches, and
-  deliberately not attempted. It is the language least checkable here, and worth getting right
-  rather than fast. Same for Indonesian and Hindi.
-- **The other 12 uploads** — the mechanism handles them; they wait on a native check of these six.
+- **A native reader for the Bengali** — now live on all 18 and unverified by anyone who speaks it.
+  This is the one open item with a credibility cost attached rather than an opportunity cost.
+- **Indonesian, Hindi, Turkish** — the next languages the data supports. Add only after the
+  Bengali above has been read by someone who can judge it.
 - **Thumbnails** — still never examined. The gateway blocks `i.ytimg.com`, so the channel's single
   biggest CTR surface has not been looked at once across four passes. Largest remaining unknown.
 - **Featured video for returning subscribers** — the one genuinely Studio-only piece of the
