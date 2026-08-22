@@ -1,0 +1,45 @@
+name: CLARITY IN THE QURAN - 5. Set thumbnails
+
+# Uploads the committed thumbnails in media/clarity/ to their videos.
+#
+# It does NOT render them. automation/clarity_thumbnails.js runs locally and its
+# output is committed, for two reasons: installing Chromium on a runner to redraw
+# a file that has not changed is a bad trade, and a rendered-in-CI thumbnail
+# could change without ever showing up in a diff. What ships is what was
+# reviewed.
+#
+# Dry run is ON by default — it validates dimensions, aspect and file size
+# without uploading, which is worth a click on its own.
+#
+# The four proven winners (cjtKWsFZbcg, GjztcxZGQTI, _stswAi-79k, r-9UaBtOy98)
+# are refused by the script outright. Their thumbnails have never been reviewed
+# and their results are the only ones this channel has.
+#
+# Channel 3 only, CIQ_* secrets, same expect_channel_id guard as every other
+# Clarity write.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Validate the files without uploading"
+        type: boolean
+        default: true
+
+jobs:
+  thumbnails:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set CLARITY IN THE QURAN thumbnails
+        run: |
+          python automation/clarity_thumbnail.py \
+            ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          CIQ_CLIENT_ID: ${{ secrets.CIQ_CLIENT_ID }}
+          CIQ_CLIENT_SECRET: ${{ secrets.CIQ_CLIENT_SECRET }}
+          CIQ_REFRESH_TOKEN: ${{ secrets.CIQ_REFRESH_TOKEN }}
