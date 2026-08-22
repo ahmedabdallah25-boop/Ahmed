@@ -169,6 +169,14 @@ S016 · 2:58 · ILLUS · "By the nineties they are under twenty"
   visibly thinner and fewer, light coming through them.
 
 S017 · 3:08 · GRAPHIC · ★ THE LENGTH GRAPH — the single most important frame ★
+  [VERIFY] TWO DATA ARRAYS. The verse counts must be checked against a printed
+  mushaf index. The revelation numbering is CONTESTED — Act 1 spends 90 seconds
+  establishing that the classical narrations, the Cairo edition and Nöldeke
+  disagree — so take the Cairo edition's numbering, cite it on screen, and say
+  which you used. The frame's ARGUMENT survives either check (any defensible
+  chronology is uncorrelated with length, so the lower plot is noise whichever
+  list you pick); the individual bars are not evidence until verified.
+  Rendered by automation/clarity_frames.js.
   Navy, holds 12s, no VO competition — let it breathe.
   TOP PLOT: x = mushaf position 1→114, y = verse count. A clean descending
   sawtooth. Label in cream: "ARRANGED BY LENGTH".
