@@ -1,0 +1,48 @@
+name: CLARITY IN THE QURAN - 4. Localize back catalogue
+
+# Adds localized titles and descriptions from clarity/localizations.json.
+#
+# This is the only lever that reaches the ENTIRE back catalogue retroactively:
+# YouTube serves a localized title and description to viewers whose app language
+# matches, so one write per video opens that video to a new language market for
+# as long as it exists. It is a documented Data API feature, not a trick.
+#
+# Why it matters here specifically — vidIQ, 2026-08-22:
+#   "quran explained in english"    5,268 searches/month
+#   "quran"                     1,398,036 searches/month, US only 6.5%
+#   "surah"                       283,511 searches/month, Bangladesh 47.7%
+# The channel copied a US-English channel's format into a niche whose demand is
+# overwhelmingly not US and not English-first.
+#
+# Dry run is ON by default. Untick to write.
+#
+# STRICTLY ADDITIVE. English titles, English descriptions, tags and the WATCH
+# NEXT cross-link block are never touched — an English viewer sees no change.
+#
+# Channel 3 only, CIQ_* secrets, same expect_channel_id guard.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview every change without writing anything"
+        type: boolean
+        default: true
+
+jobs:
+  localize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Localize CLARITY IN THE QURAN back catalogue
+        run: |
+          python automation/clarity_localize.py \
+            ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          CIQ_CLIENT_ID: ${{ secrets.CIQ_CLIENT_ID }}
+          CIQ_CLIENT_SECRET: ${{ secrets.CIQ_CLIENT_SECRET }}
+          CIQ_REFRESH_TOKEN: ${{ secrets.CIQ_REFRESH_TOKEN }}

@@ -1,0 +1,104 @@
+{
+  "_comment": "Clarity in the Quran (@ClarityInTheQuran, UC0eBu0ZXcF20pTAG3lUnPXA) localized metadata, 2026-08-22. YouTube serves a video's localized title and description to viewers whose app language matches, so ONE write per video reaches a new language audience on the ENTIRE back catalogue, retroactively. This is a first-class Data API feature (videos.update, part=snippet,localizations) — nothing here bends a rule.",
+
+  "expect_channel_id": "UC0eBu0ZXcF20pTAG3lUnPXA",
+
+  "_why_this_exists": "vidIQ keyword research, 2026-08-22. 'quran explained in english' = 5,268 searches/month. Bare 'quran' = 1,398,036/month, of which the US is 6.5%. 'surah' = 283,511/month, of which Bangladesh alone is 47.7% and Pakistan 28.4%. 'islamic video' = 662,172/month, 90% Bangladesh + Pakistan combined. The reference channel this one is modelled on, @deepmadesimple, is US-English Bible study — its audience and its language are the same thing. Clarity copied the format into a niche where they are not. English is not the language of this channel's market; it is the language of its template.",
+
+  "_default_language": "YouTube ignores localizations unless the video's snippet.defaultLanguage is set. It is unset on every upload here, so the script sets it to 'en' in the SAME write that adds the localizations. Miss this and the write succeeds and does nothing — the worst kind of failure.",
+
+  "_single_write": "Title, defaultLanguage and localizations land in one fetch-mutate-write per video, for the reason set_packaging already documents: videos.list is read-after-write eventually consistent, so a second write can read back a pre-write snippet and undo the first.",
+
+  "_translation_provenance": "Written, not machine-piped. Surah names use their standard Arabic forms; the Urdu keeps Quranic terms in their Arabic spelling as Urdu religious register actually does rather than transliterating them phonetically. THIS CHANNEL ALREADY CARRIES A PUBLIC 'AI BE AWARE' COMMENT — a clumsy translation in a language the owner does not read would be that same wound, reopened, in a market that matters more. Six videos first, deliberately: they carry ~80% of lifetime views, and they are a small enough tranche for a native speaker to check before the remaining twelve follow.",
+
+  "_scope": "Six videos = 2,059 of 2,561 lifetime views. Arabic and Urdu only. Bengali is the single largest opportunity in the data (47.7% of 'surah') and is deliberately NOT here: it is the language I can least vouch for unreviewed, and it deserves a native pass rather than a confident guess.",
+
+  "languages": ["ar", "ur"],
+
+  "videos": [
+    {
+      "id": "cjtKWsFZbcg",
+      "_en": "What the Quran Actually Says About Anger | Clarity In The Quran",
+      "_views": 849,
+      "_note": "The channel's best video and a third of its lifetime audience. Protected: its English title never moves. A localization does not touch it.",
+      "ar": {
+        "title": "ما يقوله القرآن حقًّا عن الغضب",
+        "description": "الغضب في القرآن: الفرق بين الغَضَب والحِلْم، ومعنى ﴿وَالْكَاظِمِينَ الْغَيْظَ﴾ في سورة آل عمران ٣:١٣٤.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
+      },
+      "ur": {
+        "title": "قرآن غصے کے بارے میں اصل میں کیا کہتا ہے",
+        "description": "قرآن میں غصہ: غَضَب اور حِلْم کا فرق، اور سورہ آل عمران ٣:١٣٤ میں ﴿وَالْكَاظِمِينَ الْغَيْظَ﴾ کا مطلب۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      }
+    },
+    {
+      "id": "GjztcxZGQTI",
+      "_en": "Money in the Quran: The Arabic Word That Changes Everything",
+      "_views": 226,
+      "ar": {
+        "title": "المال في القرآن: الكلمة العربية التي تغيّر كل شيء",
+        "description": "معنى الرزق والمال في القرآن، والفرق بين ما تملكه وما استُخلفت فيه.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
+      },
+      "ur": {
+        "title": "قرآن میں مال: وہ عربی لفظ جو سب کچھ بدل دیتا ہے",
+        "description": "قرآن میں رزق اور مال کا مفہوم، اور اس فرق کی وضاحت کہ آپ کیا مالک ہیں اور کس چیز میں آپ کو خلیفہ بنایا گیا ہے۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      }
+    },
+    {
+      "id": "_stswAi-79k",
+      "_en": "Every Minor Prophet Explained: The Part of the Quran Everyone Skips",
+      "_views": 193,
+      "ar": {
+        "title": "الأنبياء الذين لا يُذكرون كثيرًا في القرآن: الجزء الذي يتخطّاه الجميع",
+        "description": "الأنبياء الذين ورد ذكرهم في القرآن دون تفصيل، وما الذي تشترك فيه قصصهم.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
+      },
+      "ur": {
+        "title": "قرآن کے وہ انبیاء جن کا ذکر کم آیا: وہ حصہ جسے سب چھوڑ دیتے ہیں",
+        "description": "وہ انبیاء جن کا قرآن میں ذکر تو ہے مگر تفصیل کم ہے، اور ان کے قصوں میں مشترک بات کیا ہے۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      }
+    },
+    {
+      "id": "r-9UaBtOy98",
+      "_en": "Every Plague of Egypt Explained: The Exact Pattern Pharaoh Missed",
+      "_views": 189,
+      "_note": "Rendered in Quranic terms — these are the nine signs given to Musa, not the Biblical plague list. Translating the English title literally would have imported the Bible's framing into Arabic, which is the exact template-leakage this channel was already caught by.",
+      "ar": {
+        "title": "آيات موسى التسع: النمط الذي لم يفهمه فرعون",
+        "description": "الآيات التسع التي أُرسل بها موسى عليه السلام إلى فرعون، وترتيبها كما ورد في القرآن.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
+      },
+      "ur": {
+        "title": "موسیٰ علیہ السلام کی نو نشانیاں: وہ ترتیب جو فرعون نہ سمجھ سکا",
+        "description": "وہ نو نشانیاں جو موسیٰ علیہ السلام کو فرعون کی طرف دے کر بھیجی گئیں، اور قرآن میں ان کی ترتیب۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      }
+    },
+    {
+      "id": "StCW3ERkWwc",
+      "_en": "🛑The Quran Verse That Actually Stops Anxiety",
+      "_views": 126,
+      "_note": "Description is at 4,900 of YouTube's 5,000-character cap in English. Localized descriptions are a SEPARATE field with their own cap, so this one is not constrained — but do not let the English one grow.",
+      "ar": {
+        "title": "الآية التي توقف القلق فعلًا",
+        "description": "﴿أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ﴾ — سورة الرعد ١٣:٢٨، ومعنى الطمأنينة في القرآن.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
+      },
+      "ur": {
+        "title": "وہ قرآنی آیت جو واقعی بےچینی کو روکتی ہے",
+        "description": "﴿أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ﴾ — سورہ الرعد ١٣:٢٨، اور قرآن میں اطمینانِ قلب کا مفہوم۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      }
+    },
+    {
+      "id": "4N-MXuYjDUA",
+      "_en": "This 1 Secret Verse Will Change Your Life Forever",
+      "_views": 476,
+      "_note": "The channel's best views/day of anything. Its English title earned that and is deliberately untouched; the localization is additive.",
+      "ar": {
+        "title": "﴿إِنَّ مَعَ الْعُسْرِ يُسْرًا﴾ — نصف الآية الذي يغفل عنه الجميع",
+        "description": "سورة الشرح ٩٤:٥-٦ تقول «مع» العسر، لا «بعد» العسر. الفرق كله في حرف واحد.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
+      },
+      "ur": {
+        "title": "﴿إِنَّ مَعَ الْعُسْرِ يُسْرًا﴾ — آیت کا وہ نصف جو سب چھوڑ دیتے ہیں",
+        "description": "سورہ الشرح ٩٤:٥-٦ میں «مع» ہے، «بعد» نہیں۔ سارا فرق ایک لفظ کا ہے۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      }
+    }
+  ],
+
+  "_next_tranche": "The remaining 9 long-form and 2 Shorts, plus Bengali (bn) and Indonesian (id), once a native speaker has checked these six. Bengali is the largest single opportunity in the keyword data and the one most worth getting right rather than fast."
+}
