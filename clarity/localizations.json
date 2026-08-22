@@ -1,26 +1,25 @@
 {
-  "_comment": "Clarity in the Quran (@ClarityInTheQuran, UC0eBu0ZXcF20pTAG3lUnPXA) localized metadata, 2026-08-22. YouTube serves a video's localized title and description to viewers whose app language matches, so ONE write per video reaches a new language audience on the ENTIRE back catalogue, retroactively. This is a first-class Data API feature (videos.update, part=snippet,localizations) — nothing here bends a rule.",
+  "_comment": "Clarity in the Quran (@ClarityInTheQuran, UC0eBu0ZXcF20pTAG3lUnPXA) localized metadata. Tranche 1 (ar, ur on 6 videos) applied 2026-08-22. Tranche 2 — Bengali added, and all 18 uploads covered — applied 2026-08-22 at the owner's explicit direction after the Bengali quality caveat was raised and overruled.",
 
   "expect_channel_id": "UC0eBu0ZXcF20pTAG3lUnPXA",
 
-  "_why_this_exists": "vidIQ keyword research, 2026-08-22. 'quran explained in english' = 5,268 searches/month. Bare 'quran' = 1,398,036/month, of which the US is 6.5%. 'surah' = 283,511/month, of which Bangladesh alone is 47.7% and Pakistan 28.4%. 'islamic video' = 662,172/month, 90% Bangladesh + Pakistan combined. The reference channel this one is modelled on, @deepmadesimple, is US-English Bible study — its audience and its language are the same thing. Clarity copied the format into a niche where they are not. English is not the language of this channel's market; it is the language of its template.",
+  "_why_this_exists": "vidIQ keyword research, 2026-08-22. 'quran explained in english' = 5,268 searches/month. Bare 'quran' = 1,398,036/month, of which the US is 6.5%. 'surah' = 283,511/month, of which Bangladesh alone is 47.7% and Pakistan 28.4%. 'islamic video' = 662,172/month, 90% Bangladesh + Pakistan. The reference channel, @deepmadesimple, is US-English Bible study — its audience and its language are the same thing. Clarity copied the format into a niche where they are not. English is not the language of this channel's market; it is the language of its template.",
 
-  "_default_language": "YouTube ignores localizations unless the video's snippet.defaultLanguage is set. It is unset on every upload here, so the script sets it to 'en' in the SAME write that adds the localizations. Miss this and the write succeeds and does nothing — the worst kind of failure.",
+  "_default_language": "YouTube ignores localizations unless the video's snippet.defaultLanguage is set. Unset on every upload here, so the script sets it to 'en' in the SAME write. Miss this and the write succeeds and does nothing — the worst kind of failure.",
 
-  "_single_write": "Title, defaultLanguage and localizations land in one fetch-mutate-write per video, for the reason set_packaging already documents: videos.list is read-after-write eventually consistent, so a second write can read back a pre-write snippet and undo the first.",
+  "_CITATION_RULE": "READ THIS BEFORE ADDING A VIDEO. A verse citation appears in a localized description ONLY when the video's own transcript has been read and the citation confirmed. In tranche 1 the anxiety video (StCW3ERkWwc) was given 'Surah Ar-Ra'd 13:28' from inference — its English title says only 'the verse that stops anxiety' — and that was WRONG. The transcript builds on Al-Imran 3:173 (hasbunallahu wa ni'mal wakeel, at Uhud) and Al-Baqarah 2:38; 13:28 belongs to a different upload, 5Fb1iERyIhs. It was live in Arabic and Urdu for roughly twenty minutes before a transcript check caught it. On a channel whose entire proposition is explaining the Quran honestly — and which already carries a public 'AI BE AWARE' comment — a fabricated citation in a language the owner cannot read is the worst failure available. Videos whose transcripts have NOT been read carry a faithful description with NO verse number.",
 
-  "_translation_provenance": "Written, not machine-piped. Surah names use their standard Arabic forms; the Urdu keeps Quranic terms in their Arabic spelling as Urdu religious register actually does rather than transliterating them phonetically. THIS CHANNEL ALREADY CARRIES A PUBLIC 'AI BE AWARE' COMMENT — a clumsy translation in a language the owner does not read would be that same wound, reopened, in a market that matters more. Six videos first, deliberately: they carry ~80% of lifetime views, and they are a small enough tranche for a native speaker to check before the remaining twelve follow.",
+  "_verified": "Transcript-confirmed citations: StCW3ERkWwc (Al-Imran 3:173, Al-Baqarah 2:38), PUPdFpvEA04 (Al-Isra 17:23, the verb qada), 4N-MXuYjDUA (Ash-Sharh 94:5-6, ma'a), 5Fb1iERyIhs (Ar-Ra'd 13:28), cjtKWsFZbcg (Al-Imran 3:134, kazimin al-ghayz). Every other entry is deliberately citation-free.",
 
-  "_scope": "Six videos = 2,059 of 2,561 lifetime views. Arabic and Urdu only. Bengali is the single largest opportunity in the data (47.7% of 'surah') and is deliberately NOT here: it is the language I can least vouch for unreviewed, and it deserves a native pass rather than a confident guess.",
+  "_bengali": "Added at the owner's explicit instruction. The caveat stands and is recorded rather than silently dropped: Bengali is the language least checkable from here, and it is also the single largest opportunity in the data at 47.7% of all 'surah' searches. Register follows Bengali Islamic usage — Arabic loanwords in their established Bengali forms (কুরআন, সূরা, আয়াত, আল্লাহ, ঈমান) rather than Sanskritised equivalents. Have a native reader check these before the next tranche of languages.",
 
-  "languages": ["ar", "ur"],
+  "languages": ["ar", "ur", "bn"],
 
   "videos": [
     {
       "id": "cjtKWsFZbcg",
       "_en": "What the Quran Actually Says About Anger | Clarity In The Quran",
       "_views": 849,
-      "_note": "The channel's best video and a third of its lifetime audience. Protected: its English title never moves. A localization does not touch it.",
       "ar": {
         "title": "ما يقوله القرآن حقًّا عن الغضب",
         "description": "الغضب في القرآن: الفرق بين الغَضَب والحِلْم، ومعنى ﴿وَالْكَاظِمِينَ الْغَيْظَ﴾ في سورة آل عمران ٣:١٣٤.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
@@ -28,6 +27,28 @@
       "ur": {
         "title": "قرآن غصے کے بارے میں اصل میں کیا کہتا ہے",
         "description": "قرآن میں غصہ: غَضَب اور حِلْم کا فرق، اور سورہ آل عمران ٣:١٣٤ میں ﴿وَالْكَاظِمِينَ الْغَيْظَ﴾ کا مطلب۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      },
+      "bn": {
+        "title": "কুরআন রাগ সম্পর্কে আসলে কী বলে",
+        "description": "কুরআনে রাগ: গাযাব ও হিলম-এর পার্থক্য, এবং সূরা আলে ইমরান ৩:১৩৪-এ ﴿وَالْكَاظِمِينَ الْغَيْظَ﴾ -এর অর্থ।\n\nপর্দায় দেখানো আরবি পাঠ একটি নির্ভরযোগ্য মুসহাফ থেকে নেওয়া। এই ভিডিওটি ব্যাখ্যা ও অনুধাবনের জন্য, কোনো ফতোয়া নয়।"
+      }
+    },
+    {
+      "id": "StCW3ERkWwc",
+      "_en": "🛑The Quran Verse That Actually Stops Anxiety",
+      "_views": 126,
+      "_note": "CORRECTED. Tranche 1 cited Ar-Ra'd 13:28 here from inference and that was wrong. Transcript: the video is built on Al-Imran 3:173 — hasbunallahu wa ni'mal wakeel, spoken at Uhud — plus Al-Baqarah 2:38 and the khauf/huzn distinction.",
+      "ar": {
+        "title": "الآية التي توقف القلق فعلًا",
+        "description": "﴿حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ﴾ — سورة آل عمران ٣:١٧٣، وما قيل يوم أُحد. والفرق بين الخوف والحزن، و﴿لَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ﴾ سورة البقرة ٢:٣٨.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
+      },
+      "ur": {
+        "title": "وہ قرآنی آیت جو واقعی بےچینی کو روکتی ہے",
+        "description": "﴿حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ﴾ — سورہ آل عمران ٣:١٧٣، اور غزوۂ اُحد کا موقع۔ خوف اور حزن کا فرق، اور ﴿لَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ﴾ سورہ البقرہ ٢:٣٨۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      },
+      "bn": {
+        "title": "যে আয়াত সত্যিই দুশ্চিন্তা থামিয়ে দেয়",
+        "description": "﴿حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ﴾ — সূরা আলে ইমরান ৩:১৭৩, উহুদের দিনে যা বলা হয়েছিল। খাউফ ও হুযন-এর পার্থক্য, এবং ﴿لَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ﴾ সূরা আল-বাকারা ২:৩৮।\n\nপর্দায় দেখানো আরবি পাঠ একটি নির্ভরযোগ্য মুসহাফ থেকে নেওয়া। এই ভিডিওটি ব্যাখ্যা ও অনুধাবনের জন্য, কোনো ফতোয়া নয়।"
       }
     },
     {
@@ -40,7 +61,11 @@
       },
       "ur": {
         "title": "قرآن میں مال: وہ عربی لفظ جو سب کچھ بدل دیتا ہے",
-        "description": "قرآن میں رزق اور مال کا مفہوم، اور اس فرق کی وضاحت کہ آپ کیا مالک ہیں اور کس چیز میں آپ کو خلیفہ بنایا گیا ہے۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+        "description": "قرآن میں رزق اور مال کا مفہوم، اور اس فرق کی وضاحت کہ آپ کس چیز کے مالک ہیں اور کس میں خلیفہ۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      },
+      "bn": {
+        "title": "কুরআনে সম্পদ: যে আরবি শব্দটি সবকিছু বদলে দেয়",
+        "description": "কুরআনে রিযিক ও সম্পদের অর্থ, এবং আপনি কিসের মালিক আর কিসের তত্ত্বাবধায়ক — এই পার্থক্য।\n\nপর্দায় দেখানো আরবি পাঠ একটি নির্ভরযোগ্য মুসহাফ থেকে নেওয়া। এই ভিডিওটি ব্যাখ্যা ও অনুধাবনের জন্য, কোনো ফতোয়া নয়।"
       }
     },
     {
@@ -53,42 +78,209 @@
       },
       "ur": {
         "title": "قرآن کے وہ انبیاء جن کا ذکر کم آیا: وہ حصہ جسے سب چھوڑ دیتے ہیں",
-        "description": "وہ انبیاء جن کا قرآن میں ذکر تو ہے مگر تفصیل کم ہے، اور ان کے قصوں میں مشترک بات کیا ہے۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+        "description": "وہ انبیاء جن کا قرآن میں ذکر تو ہے مگر تفصیل کم، اور ان کے قصوں میں مشترک بات کیا ہے۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      },
+      "bn": {
+        "title": "কুরআনের যে নবীদের কথা কম আলোচিত: যে অংশটি সবাই এড়িয়ে যায়",
+        "description": "যেসব নবীর কথা কুরআনে এসেছে কিন্তু বিস্তারিত নয়, এবং তাঁদের ঘটনাগুলোর মধ্যে অভিন্ন সূত্র কী।\n\nপর্দায় দেখানো আরবি পাঠ একটি নির্ভরযোগ্য মুসহাফ থেকে নেওয়া। এই ভিডিওটি ব্যাখ্যা ও অনুধাবনের জন্য, কোনো ফতোয়া নয়।"
       }
     },
     {
       "id": "r-9UaBtOy98",
       "_en": "Every Plague of Egypt Explained: The Exact Pattern Pharaoh Missed",
       "_views": 189,
-      "_note": "Rendered in Quranic terms — these are the nine signs given to Musa, not the Biblical plague list. Translating the English title literally would have imported the Bible's framing into Arabic, which is the exact template-leakage this channel was already caught by.",
+      "_note": "Rendered in Quranic terms as the signs given to Musa, NOT as a literal translation of the Biblical plague list. A literal translation would import the Bible's framing — the exact template leakage this channel was already caught by.",
       "ar": {
-        "title": "آيات موسى التسع: النمط الذي لم يفهمه فرعون",
-        "description": "الآيات التسع التي أُرسل بها موسى عليه السلام إلى فرعون، وترتيبها كما ورد في القرآن.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
+        "title": "آيات موسى عليه السلام: النمط الذي لم يفهمه فرعون",
+        "description": "الآيات التي أُرسل بها موسى عليه السلام إلى فرعون، وترتيبها كما ورد في القرآن.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
       },
       "ur": {
-        "title": "موسیٰ علیہ السلام کی نو نشانیاں: وہ ترتیب جو فرعون نہ سمجھ سکا",
-        "description": "وہ نو نشانیاں جو موسیٰ علیہ السلام کو فرعون کی طرف دے کر بھیجی گئیں، اور قرآن میں ان کی ترتیب۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+        "title": "موسیٰ علیہ السلام کی نشانیاں: وہ ترتیب جو فرعون نہ سمجھ سکا",
+        "description": "وہ نشانیاں جو موسیٰ علیہ السلام کو فرعون کی طرف دے کر بھیجی گئیں، اور قرآن میں ان کی ترتیب۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      },
+      "bn": {
+        "title": "মূসা (আ.)-এর নিদর্শনসমূহ: যে ধারা ফিরআউন ধরতে পারেনি",
+        "description": "মূসা (আ.)-কে ফিরআউনের কাছে যে নিদর্শনগুলো দিয়ে পাঠানো হয়েছিল, এবং কুরআনে তার ক্রম।\n\nপর্দায় দেখানো আরবি পাঠ একটি নির্ভরযোগ্য মুসহাফ থেকে নেওয়া। এই ভিডিওটি ব্যাখ্যা ও অনুধাবনের জন্য, কোনো ফতোয়া নয়।"
       }
     },
     {
-      "id": "StCW3ERkWwc",
-      "_en": "🛑The Quran Verse That Actually Stops Anxiety",
-      "_views": 126,
-      "_note": "Description is at 4,900 of YouTube's 5,000-character cap in English. Localized descriptions are a SEPARATE field with their own cap, so this one is not constrained — but do not let the English one grow.",
+      "id": "QOwWWwiRn_Q",
+      "_en": "What the Quran ACTUALLY Says About Depression (it's Not a Faith Failure)",
+      "_views": 43,
       "ar": {
-        "title": "الآية التي توقف القلق فعلًا",
-        "description": "﴿أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ﴾ — سورة الرعد ١٣:٢٨، ومعنى الطمأنينة في القرآن.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
+        "title": "ما يقوله القرآن حقًّا عن الاكتئاب — وليس ضعفًا في الإيمان",
+        "description": "الحزن في القرآن، ولماذا لا يُقرأ ضيق الصدر على أنه نقص في الإيمان.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى ولا بديلًا عن استشارة مختص."
       },
       "ur": {
-        "title": "وہ قرآنی آیت جو واقعی بےچینی کو روکتی ہے",
-        "description": "﴿أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ﴾ — سورہ الرعد ١٣:٢٨، اور قرآن میں اطمینانِ قلب کا مفہوم۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+        "title": "قرآن ڈپریشن کے بارے میں اصل میں کیا کہتا ہے — یہ ایمان کی کمزوری نہیں",
+        "description": "قرآن میں حزن کا ذکر، اور دل کی تنگی کو ایمان کی کمی سمجھنا کیوں درست نہیں۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے — نہ فتویٰ، نہ کسی ماہر کے مشورے کا بدل۔"
+      },
+      "bn": {
+        "title": "কুরআন বিষণ্ণতা সম্পর্কে আসলে কী বলে — এটি ঈমানের দুর্বলতা নয়",
+        "description": "কুরআনে হুযন বা বিষণ্ণতার আলোচনা, এবং মনের সংকীর্ণতাকে ঈমানের ঘাটতি ভাবা কেন ঠিক নয়।\n\nপর্দায় দেখানো আরবি পাঠ একটি নির্ভরযোগ্য মুসহাফ থেকে নেওয়া। এই ভিডিওটি ব্যাখ্যা ও অনুধাবনের জন্য — কোনো ফতোয়া নয়, বিশেষজ্ঞের পরামর্শের বিকল্পও নয়।"
+      }
+    },
+    {
+      "id": "_KqQIpiuBsg",
+      "_en": "Allah's Promises: What the Quran Actually Reveals",
+      "_views": 16,
+      "ar": {
+        "title": "وعود الله في القرآن: ما الذي يكشفه النص حقًّا",
+        "description": "الوعد في القرآن: بمَ وعد الله عباده، وبأي شرط ورد الوعد.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
+      },
+      "ur": {
+        "title": "اللہ کے وعدے: قرآن اصل میں کیا ظاہر کرتا ہے",
+        "description": "قرآن میں وعدہ: اللہ نے اپنے بندوں سے کیا وعدہ کیا، اور کن شرائط کے ساتھ۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      },
+      "bn": {
+        "title": "আল্লাহর প্রতিশ্রুতি: কুরআন আসলে কী প্রকাশ করে",
+        "description": "কুরআনে ওয়াদা: আল্লাহ তাঁর বান্দাদের কী প্রতিশ্রুতি দিয়েছেন, এবং কোন শর্তে।\n\nপর্দায় দেখানো আরবি পাঠ একটি নির্ভরযোগ্য মুসহাফ থেকে নেওয়া। এই ভিডিওটি ব্যাখ্যা ও অনুধাবনের জন্য, কোনো ফতোয়া নয়।"
+      }
+    },
+    {
+      "id": "QNlRJcyY4LU",
+      "_en": "The Kind of woman the Quran Warns Men about",
+      "_views": 57,
+      "_note": "Deliberately rendered as the CHARACTERISTICS the Quran cautions about in choosing a spouse, not as a category of person. A literal rendering reads as a slur in all three languages and would not survive contact with the audience it is aimed at.",
+      "ar": {
+        "title": "الصفات التي حذّر القرآن منها عند اختيار الزوجة",
+        "description": "ما الذي نبّه إليه القرآن في أمر النكاح من صفات، وكيف وردت في سياقها.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
+      },
+      "ur": {
+        "title": "وہ خصلتیں جن سے قرآن نے رشتہ چنتے وقت خبردار کیا",
+        "description": "نکاح کے معاملے میں قرآن نے جن صفات کی طرف متوجہ کیا، اور وہ اپنے سیاق میں کیسے آئی ہیں۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      },
+      "bn": {
+        "title": "জীবনসঙ্গী বাছাইয়ে কুরআন যেসব বৈশিষ্ট্য থেকে সতর্ক করেছে",
+        "description": "বিবাহের প্রসঙ্গে কুরআন যেসব বৈশিষ্ট্যের দিকে দৃষ্টি আকর্ষণ করেছে, এবং সেগুলো কোন প্রেক্ষাপটে এসেছে।\n\nপর্দায় দেখানো আরবি পাঠ একটি নির্ভরযোগ্য মুসহাফ থেকে নেওয়া। এই ভিডিওটি ব্যাখ্যা ও অনুধাবনের জন্য, কোনো ফতোয়া নয়।"
+      }
+    },
+    {
+      "id": "NOg4pWbPSCc",
+      "_en": "Allah Already Told You How to Be Rich — You Just Didn't Follow the Steps",
+      "_views": 40,
+      "ar": {
+        "title": "القرآن بيّن طريق السعة — والخطوات التي تُغفَل",
+        "description": "ما ربطه القرآن بالرزق والبركة، والترتيب الذي كثيرًا ما يُقرأ منقوصًا.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
+      },
+      "ur": {
+        "title": "اللہ نے کشادگی کا راستہ بتا دیا — وہ قدم جو چھوٹ جاتے ہیں",
+        "description": "قرآن نے رزق اور برکت کو کن چیزوں سے جوڑا، اور وہ ترتیب جو اکثر ادھوری پڑھی جاتی ہے۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      },
+      "bn": {
+        "title": "আল্লাহ প্রাচুর্যের পথ বলে দিয়েছেন — যে ধাপগুলো বাদ পড়ে যায়",
+        "description": "কুরআন রিযিক ও বরকতকে কিসের সঙ্গে যুক্ত করেছে, এবং যে ক্রমটি প্রায়ই অসম্পূর্ণ পড়া হয়।\n\nপর্দায় দেখানো আরবি পাঠ একটি নির্ভরযোগ্য মুসহাফ থেকে নেওয়া। এই ভিডিওটি ব্যাখ্যা ও অনুধাবনের জন্য, কোনো ফতোয়া নয়।"
+      }
+    },
+    {
+      "id": "cROgb0utEKs",
+      "_en": "What the Quran Really Says About Masturbation",
+      "_views": 64,
+      "_note": "Clinical register in all three languages. The standard terms are الاستمناء / استمنا / হস্তমৈথুন; anything euphemistic reads as evasive and anything coarse would not survive on a Quran channel.",
+      "ar": {
+        "title": "ما يقوله القرآن حقًّا عن الاستمناء",
+        "description": "ما ورد في القرآن حول حفظ الفرج، وأين يقف النص وأين يبدأ كلام الفقهاء.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى — والمسائل العملية تُسأل عنها أهل العلم."
+      },
+      "ur": {
+        "title": "قرآن استمنا کے بارے میں اصل میں کیا کہتا ہے",
+        "description": "حفظِ فرج سے متعلق قرآن میں کیا آیا، اور نص کہاں تک ہے اور فقہاء کی بات کہاں سے شروع ہوتی ہے۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں — عملی مسائل اہلِ علم سے پوچھیں۔"
+      },
+      "bn": {
+        "title": "কুরআন হস্তমৈথুন সম্পর্কে আসলে কী বলে",
+        "description": "লজ্জাস্থানের হেফাজত সম্পর্কে কুরআনে কী এসেছে, এবং কুরআনের বক্তব্য কোথায় শেষ ও ফুকাহাদের আলোচনা কোথায় শুরু।\n\nপর্দায় দেখানো আরবি পাঠ একটি নির্ভরযোগ্য মুসহাফ থেকে নেওয়া। এই ভিডিওটি ব্যাখ্যা ও অনুধাবনের জন্য, কোনো ফতোয়া নয় — বাস্তব মাসআলা আলিমদের কাছে জিজ্ঞাসা করুন।"
+      }
+    },
+    {
+      "id": "IEgctgKEjEU",
+      "_en": "I Did Everything Right… So Why Does It Still Feel Like Allah Hates Me?",
+      "_views": 15,
+      "ar": {
+        "title": "فعلتُ كل شيء كما ينبغي… فلماذا أشعر أن الله لا يريدني؟",
+        "description": "حين تستقيم ولا يستقيم حالك: ما يقوله القرآن عن الابتلاء بعد الطاعة.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
+      },
+      "ur": {
+        "title": "میں نے سب کچھ ٹھیک کیا… پھر کیوں لگتا ہے اللہ مجھ سے راضی نہیں؟",
+        "description": "جب آپ سیدھے راستے پر ہوں مگر حالات نہ سنبھلیں: اطاعت کے بعد آزمائش پر قرآن کیا کہتا ہے۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      },
+      "bn": {
+        "title": "সব ঠিকঠাক করলাম… তবু কেন মনে হয় আল্লাহ আমার ওপর সন্তুষ্ট নন?",
+        "description": "সঠিক পথে থেকেও যখন অবস্থা বদলায় না: আনুগত্যের পরের পরীক্ষা নিয়ে কুরআন কী বলে।\n\nপর্দায় দেখানো আরবি পাঠ একটি নির্ভরযোগ্য মুসহাফ থেকে নেওয়া। এই ভিডিওটি ব্যাখ্যা ও অনুধাবনের জন্য, কোনো ফতোয়া নয়।"
+      }
+    },
+    {
+      "id": "3vUgLKyo-0g",
+      "_en": "What Did the Prophet ﷺ Actually Eat Every Day? (Science Finally Explains)",
+      "_views": 30,
+      "ar": {
+        "title": "ماذا كان يأكل النبي ﷺ كل يوم؟ وما يقوله العلم اليوم",
+        "description": "طعام النبي ﷺ كما ورد في السنة، وما يوافقه من نظر الطب الحديث.\n\nهذا الفيديو شرحٌ وتدبُّر، وليس فتوى ولا نصيحة طبية."
+      },
+      "ur": {
+        "title": "نبی ﷺ روزانہ کیا کھاتے تھے؟ اور سائنس آج کیا کہتی ہے",
+        "description": "سنت میں مذکور نبی ﷺ کی غذا، اور جدید طب کی نظر سے اس کی مطابقت۔\n\nیہ ویڈیو تشریح اور تدبر کے لیے ہے — نہ فتویٰ، نہ طبی مشورہ۔"
+      },
+      "bn": {
+        "title": "নবী ﷺ প্রতিদিন কী খেতেন? আর বিজ্ঞান আজ কী বলে",
+        "description": "সুন্নাহয় বর্ণিত নবী ﷺ-এর খাদ্যাভ্যাস, এবং আধুনিক চিকিৎসাবিজ্ঞানের দৃষ্টিতে তার সঙ্গতি।\n\nএই ভিডিওটি ব্যাখ্যা ও অনুধাবনের জন্য — কোনো ফতোয়া নয়, চিকিৎসা পরামর্শও নয়।"
+      }
+    },
+    {
+      "id": "sbFXFoL1-5A",
+      "_en": "The Jinn Couldn't See a Dead King. So How Did He See Yours?",
+      "_views": 54,
+      "ar": {
+        "title": "الجنّ لم يعلموا بموت سليمان — فكيف يعلمون غيبك؟",
+        "description": "ما تكشفه قصة سليمان عليه السلام عن حدود علم الجنّ، وما يُبنى على ذلك من دعاوى.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
+      },
+      "ur": {
+        "title": "جنّات سلیمان علیہ السلام کی موت نہ جان سکے — تو آپ کا غیب کیسے جانیں گے؟",
+        "description": "سلیمان علیہ السلام کے واقعے سے جنّات کے علم کی حد کیا معلوم ہوتی ہے، اور اس پر کھڑے کیے جانے والے دعوے۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      },
+      "bn": {
+        "title": "জিনেরা সুলাইমান (আ.)-এর মৃত্যু জানতে পারেনি — তবে আপনার গায়েব কীভাবে জানবে?",
+        "description": "সুলাইমান (আ.)-এর ঘটনা থেকে জিনদের জ্ঞানের সীমা সম্পর্কে যা জানা যায়, এবং তার ওপর দাঁড় করানো দাবিগুলো।\n\nপর্দায় দেখানো আরবি পাঠ একটি নির্ভরযোগ্য মুসহাফ থেকে নেওয়া। এই ভিডিওটি ব্যাখ্যা ও অনুধাবনের জন্য, কোনো ফতোয়া নয়।"
+      }
+    },
+    {
+      "id": "PUPdFpvEA04",
+      "_en": "What \"Honor Your Parents\" Actually Means in Arabic",
+      "_views": 21,
+      "_note": "Transcript-verified: the video is built on the five places the command is bolted to tawhid, and on the verb qada in Surah Al-Isra 17:23.",
+      "ar": {
+        "title": "ما معنى ﴿وَبِالْوَالِدَيْنِ إِحْسَانًا﴾ في العربية حقًّا",
+        "description": "الأمر الذي لا يرد وحده: خمسة مواضع يُقرن فيها برّ الوالدين بالتوحيد، والفعل ﴿قَضَىٰ﴾ في سورة الإسراء ١٧:٢٣.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
+      },
+      "ur": {
+        "title": "﴿وَبِالْوَالِدَيْنِ إِحْسَانًا﴾ کا عربی میں اصل مطلب کیا ہے",
+        "description": "وہ حکم جو کبھی تنہا نہیں آتا: پانچ مقامات جہاں والدین کے ساتھ احسان توحید کے ساتھ جوڑا گیا، اور سورہ الإسراء ١٧:٢٣ کا فعل ﴿قَضَىٰ﴾۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      },
+      "bn": {
+        "title": "﴿وَبِالْوَالِدَيْنِ إِحْسَانًا﴾ আরবিতে আসলে কী অর্থ বহন করে",
+        "description": "যে আদেশ কখনো একা আসে না: পাঁচটি স্থানে পিতামাতার সঙ্গে সদাচরণ তাওহিদের সঙ্গে যুক্ত, এবং সূরা আল-ইসরা ১৭:২৩-এর ক্রিয়াপদ ﴿قَضَىٰ﴾।\n\nপর্দায় দেখানো আরবি পাঠ একটি নির্ভরযোগ্য মুসহাফ থেকে নেওয়া। এই ভিডিওটি ব্যাখ্যা ও অনুধাবনের জন্য, কোনো ফতোয়া নয়।"
+      }
+    },
+    {
+      "id": "5Fb1iERyIhs",
+      "_en": "\"Hearts Find Rest\": The Half of Surah Ar-Ra'd 28 Nobody Quotes",
+      "_views": 8,
+      "ar": {
+        "title": "﴿تَطْمَئِنُّ الْقُلُوبُ﴾ — نصف آية الرعد ٢٨ الذي لا يُقتبس",
+        "description": "﴿أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ﴾ — سورة الرعد ١٣:٢٨، والنصف الأول من الآية الذي يُترك عادةً.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
+      },
+      "ur": {
+        "title": "﴿تَطْمَئِنُّ الْقُلُوبُ﴾ — سورہ الرعد ٢٨ کا وہ نصف جو کوئی نقل نہیں کرتا",
+        "description": "﴿أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ﴾ — سورہ الرعد ١٣:٢٨، اور آیت کا وہ پہلا حصہ جو عموماً چھوڑ دیا جاتا ہے۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      },
+      "bn": {
+        "title": "﴿تَطْمَئِنُّ الْقُلُوبُ﴾ — সূরা আর-রা'দ ২৮-এর যে অর্ধেক কেউ উদ্ধৃত করে না",
+        "description": "﴿أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ﴾ — সূরা আর-রা'দ ১৩:২৮, এবং আয়াতের যে প্রথম অংশটি সাধারণত বাদ পড়ে যায়।\n\nপর্দায় দেখানো আরবি পাঠ একটি নির্ভরযোগ্য মুসহাফ থেকে নেওয়া। এই ভিডিওটি ব্যাখ্যা ও অনুধাবনের জন্য, কোনো ফতোয়া নয়।"
       }
     },
     {
       "id": "4N-MXuYjDUA",
       "_en": "This 1 Secret Verse Will Change Your Life Forever",
       "_views": 476,
-      "_note": "The channel's best views/day of anything. Its English title earned that and is deliberately untouched; the localization is additive.",
+      "_note": "The channel's best views/day. Its English title earned that and is untouched; the localization is additive.",
       "ar": {
         "title": "﴿إِنَّ مَعَ الْعُسْرِ يُسْرًا﴾ — نصف الآية الذي يغفل عنه الجميع",
         "description": "سورة الشرح ٩٤:٥-٦ تقول «مع» العسر، لا «بعد» العسر. الفرق كله في حرف واحد.\n\nالنص العربي على الشاشة منقول من مصحف موثَّق. هذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
@@ -96,9 +288,49 @@
       "ur": {
         "title": "﴿إِنَّ مَعَ الْعُسْرِ يُسْرًا﴾ — آیت کا وہ نصف جو سب چھوڑ دیتے ہیں",
         "description": "سورہ الشرح ٩٤:٥-٦ میں «مع» ہے، «بعد» نہیں۔ سارا فرق ایک لفظ کا ہے۔\n\nاسکرین پر عربی متن ایک مستند مصحف سے لیا گیا ہے۔ یہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      },
+      "bn": {
+        "title": "﴿إِنَّ مَعَ الْعُسْرِ يُسْرًا﴾ — আয়াতের যে অর্ধেক সবাই বাদ দেয়",
+        "description": "সূরা আশ-শারহ ৯৪:৫-৬ বলে «মা'আ» — কষ্টের সঙ্গে, কষ্টের পরে নয়। পুরো পার্থক্যটা একটি শব্দে।\n\nপর্দায় দেখানো আরবি পাঠ একটি নির্ভরযোগ্য মুসহাফ থেকে নেওয়া। এই ভিডিওটি ব্যাখ্যা ও অনুধাবনের জন্য, কোনো ফতোয়া নয়।"
+      }
+    },
+    {
+      "id": "-WidIRhzTLI",
+      "_en": "The Harsh Truth About Greatness",
+      "_views": 158,
+      "ar": {
+        "title": "الحقيقة القاسية عن العظمة",
+        "description": "ما يُدفع ثمنًا لما يسمّيه الناس عظمة، وما يقوله الدين في موضعها الصحيح.\n\nهذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
+      },
+      "ur": {
+        "title": "عظمت کے بارے میں تلخ حقیقت",
+        "description": "جسے لوگ عظمت کہتے ہیں اس کی قیمت کیا ہے، اور دین اسے کہاں رکھتا ہے۔\n\nیہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      },
+      "bn": {
+        "title": "মহত্ত্ব নিয়ে কঠিন সত্যটি",
+        "description": "মানুষ যাকে মহত্ত্ব বলে তার মূল্য কী, এবং দ্বীন তাকে কোথায় স্থান দেয়।\n\nএই ভিডিওটি ব্যাখ্যা ও অনুধাবনের জন্য, কোনো ফতোয়া নয়।"
+      }
+    },
+    {
+      "id": "luA2lpVzvsI",
+      "_en": "You Don't Rise to Your Talent. You Sink to Your Room.",
+      "_views": 3,
+      "_note": "The Short retitled on 2026-08-22 from the placeholder '9 August 2026'. Its argument is the football-loan analogy closing on Ibn al-Qayyim on the gathering that costs you your time and your heart.",
+      "ar": {
+        "title": "لا ترتفع إلى موهبتك — بل تهبط إلى مجلسك",
+        "description": "أثر الصحبة والمجلس على الهمّة، وكلمة ابن القيّم في المجلس الذي يكلّفك وقتك وقلبك.\n\nهذا الفيديو شرحٌ وتدبُّر، وليس فتوى."
+      },
+      "ur": {
+        "title": "آپ اپنی صلاحیت تک نہیں چڑھتے — اپنی صحبت تک گرتے ہیں",
+        "description": "صحبت اور مجلس کا ہمت پر اثر، اور ابن القیّم کی وہ بات اُس مجلس کے بارے میں جو آپ کا وقت اور دل لے لیتی ہے۔\n\nیہ ویڈیو تشریح اور تدبر کے لیے ہے، کوئی فتویٰ نہیں۔"
+      },
+      "bn": {
+        "title": "আপনি প্রতিভার স্তরে ওঠেন না — সঙ্গের স্তরে নামেন",
+        "description": "সঙ্গ ও মজলিসের প্রভাব, এবং ইবনুল কাইয়িমের সেই কথা — যে মজলিস আপনার সময় ও হৃদয় কেড়ে নেয়।\n\nএই ভিডিওটি ব্যাখ্যা ও অনুধাবনের জন্য, কোনো ফতোয়া নয়।"
       }
     }
   ],
 
-  "_next_tranche": "The remaining 9 long-form and 2 Shorts, plus Bengali (bn) and Indonesian (id), once a native speaker has checked these six. Bengali is the largest single opportunity in the keyword data and the one most worth getting right rather than fast."
+  "_coverage": "18 of 18 uploads. 15 long-form + 3 Shorts. All 2,561 lifetime views.",
+  "_next": "Indonesian (id), Hindi (hi) and Turkish (tr) are the next languages the keyword data supports — ID and TR both surface in the related-term markets, IN carries 5.3% of 'quran' and 10.8% of 'islamic'. Add them only after a native reader has checked the Bengali already live."
 }
