@@ -12,7 +12,7 @@
 | Spoken words | **5,861** |
 | Speech at 140 wpm | **41:52** |
 | Recitation inserts (7, real reciter) | +86s |
-| TTS batches | **28**, longest **1529 chars** |
+| TTS batches | **28**, longest **1,533 chars** |
 | `[VERIFY]` tags | **21** |
 | **Finished runtime** | **≈43:18** |
 
@@ -50,6 +50,13 @@ A synthetic voice reciting Quran is the single fastest way to earn the "AI BE AW
 
 **`[VERIFY]`** marks a claim to check against a printed source before recording. Same convention as
 `scene-pack-evil-eye.txt`. Nothing marked `[VERIFY]` gets spoken until it is checked.
+
+**To record from, use the export, not this file.** `python automation/clarity_export.py` writes
+`media/clarity/export/clarity-voiceover-script.txt` plus one file per batch. It strips the
+blockquote markers, the `[VERIFY]` tags and the markdown emphasis — the last of those matters,
+because a TTS engine reads `*order*` as a literal asterisk or mis-stresses the word around it. The
+17 verification notes are reprinted in the export's header against their batch numbers, so nothing
+that needs checking is lost by leaving the recording text.
 
 ---
 
