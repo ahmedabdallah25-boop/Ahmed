@@ -450,3 +450,190 @@ else still and let one of them run clean.
 - **Channel banner** — `banner: []`. An image asset, not a metadata write.
 - **Captions** — `hasCaption: false` on every upload, including all three newest.
 - **Cadence** — still the actual growth lever, and still not something a script can do.
+
+---
+
+# Third pass — 2026-08-22, later the same day
+
+Reverse-engineered against the channel this one is modelled on. Two things changed since the
+second pass was written a few hours earlier: the credentials arrived, and the reference channel
+was identified. The second changes more than the first.
+
+## Correction: the credentials finding above is superseded
+
+The second pass recorded `CIQ_*` as MISSING and concluded "nothing in this pass has been applied."
+**Both statements were true when written and are false now.** The owner added the three secrets at
+roughly 15:16–15:19 UTC today; `check setup` has passed from run 6 onward and reports:
+
+```
+authenticated as: Clarity in the Quran (UC0eBu0ZXcF20pTAG3lUnPXA)
+READY — this trio drives Clarity in the Quran and nothing else.
+```
+
+Two live packaging runs followed at 15:20 and 15:22, both successful, **4 changes written**:
+`5Fb1iERyIhs` (title+description+tags), `PUPdFpvEA04` (tags 12→18), `4N-MXuYjDUA`
+(description 0→654, tags 0→17), `luA2lpVzvsI` (title+description+tags). All twelve `set_tags`
+entries reported "already up to date"; channel metadata likewise. Verified independently against
+the live channel: `5Fb1iERyIhs` now reads *"Hearts Find Rest": The Half of Surah Ar-Ra'd 28 Nobody
+Quotes* in the public listing.
+
+One detail the log surfaced that the config did not predict: `5Fb1iERyIhs` took **22 tags at
+455/460 characters with 2 dropped** under YouTube's 500-character cap. Nothing failed — the script
+reported the drop rather than letting the whole update be rejected — but the tag list for that
+video is at its ceiling, so anything added there displaces something.
+
+### And the switch that was still off
+
+Both live runs skipped steps 5 and 6. `playlists` defaults to **false**, and it gates *both* the
+playlist sync and the cross-link rebuild. So the packaging landed and the structure did not:
+the two newest uploads were tagged correctly and left orphaned — exactly the class of miss that
+created this pass's predecessor, one layer further in. **The button existed; one of its two
+switches was off.**
+
+That is now the second time a Clarity fix has been correct, committed, and not applied because of
+a dispatch detail. It is worth naming as a pattern rather than an incident: on this channel the
+failures are not analytical, they are in the last inch of delivery.
+
+## What this channel actually is: a transposition of @deepmadesimple
+
+`@deepmadesimple` · `UCiVywgvam7BPUwJ-zwxuRGg` — **256,000 subscribers, 13,874,493 lifetime views,
+193 uploads, joined 28 February 2026.** That is roughly 1.1 uploads per day for 175 days, and an
+average of ~71,900 views per video.
+
+Clarity's channel description is that channel's description with the nouns swapped:
+
+> **Deep Made Simple:** "The Bible is deep. It doesn't have to be complicated. Deep Made Simple
+> breaks down Sabbath School lessons, Bible studies, and Scripture into clear, honest, and
+> thoughtful explanations anyone can understand… No jargon. No fluff. Just the Word, made
+> accessible."
+
+> **Clarity in the Quran:** "The Quran is deep. It doesn't have to be complicated. Clarity in the
+> Quran breaks down Quranic verses, Tafsir, and Islamic lessons into clear, honest, and thoughtful
+> explanations anyone can understand… No jargon. No fluff. Just the Word of Allah, made
+> accessible."
+
+**This retroactively explains finding #1 of the first pass.** "The cross is not the answer here",
+"if this blessed you", "God bless" were never generic AI sludge — they are residue of a specific
+Christian channel's copy being run through a substitution. That matters going forward: the leak
+is not a one-off that has been cleaned, it is a *category* of defect that will recur on every
+asset derived the same way. Every future description, pinned comment and end screen needs reading
+for it, and the audit should search for the register, not for the one line already removed.
+
+## The finding: runtime, and the phrase "proven band" was wrong
+
+Four of Clarity's titles are near-exact transpositions of Deep Made Simple videos. Same promise,
+same construction — and roughly a third of the runtime:
+
+| Deep Made Simple | Views | Runtime | Clarity in the Quran | Views | Runtime |
+|---|---:|---:|---|---:|---:|
+| Every Minor Prophet Explained: The Part of the **Bible** Everyone Skips | 151,000 | **30:59** | Every Minor Prophet Explained: The Part of the **Quran** Everyone Skips | 193 | **9:18** |
+| 🔴The **Bible** Verse That ACTUALLY Stops Anxiety | 214,000 | **21:57** | 🛑The **Quran** Verse That Actually Stops Anxiety | 126 | **9:15** |
+| The Promises of God: What the Original **Hebrew** Actually Reveals | 216,000 | **25:37** | Allah's Promises: What the **Quran** Actually Reveals | 16 | **6:54** |
+| What "Honor Your Parents" Actually Means in **Hebrew** | 312,000 | **27:51** | What "Honor Your Parents" Actually Means in **Arabic** | 21 | **31:29** |
+
+Across the reference channel's top 30 videos: **runtime 19:09 to 60:37, median 27:40, mean 28:45,
+and zero — 0 of 30 — under 19 minutes.** Median views on that sample: 209,500.
+
+Clarity's back catalogue runs 4:33 to 11:07.
+
+The second pass called 4:33–11:07 the channel's "entire proven record" and flagged the two long
+uploads as a variable changed without a test. **The word "proven" was doing work it had not
+earned.** That band is not proven; it is the only thing this channel has ever tried, and what it
+produced across eleven uploads is a 846-view ceiling and 2,561 lifetime views. A band that has
+only ever been tested against itself is untested.
+
+So the framing inverts. The 19 and 21 August uploads are not deviations from a working format —
+they are **the first two uploads that actually match the format being copied.** Everything before
+them took the reference channel's titles and delivered them at a third of the length. "Every Minor
+Prophet Explained" in 9:18 gives each minor prophet about forty-six seconds; the title promises an
+explainer and the runtime delivers a list. That gap between promise and delivery is a retention
+problem by construction, and retention is the one thing that decides whether YouTube keeps showing
+a video.
+
+**What this does not license.** This is correlation on a channel with 256K subscribers and an
+established audience; a 45-subscriber channel does not inherit that. Retention data is paywalled
+here, so the mechanism above is reasoning, not measurement. Long does not mean good — a padded
+28 minutes is worse than a tight 9. The claim is narrower than "make everything 27 minutes": it is
+that **the short runtime was never a validated choice, and the evidence that it is wrong is
+stronger than the evidence that it is right.**
+
+**The clean test already exists and is running.** `PUPdFpvEA04` — 31:29, published 19 August — had
+its title and description deliberately left untouched today; only tags moved. It is the closest
+thing to a controlled runtime test this channel has. `5Fb1iERyIhs` (18:08) is *not* clean: it was
+retitled roughly fourteen hours after publication. Read the 31:29 one, at 72 hours and again at
+seven days, before drawing anything.
+
+## What the reference channel says NOT to do
+
+Reverse-engineering is as useful for what it rules out.
+
+- **The banner is not a growth lever.** `@deepmadesimple` has `banner: []` — no channel banner at
+  all — at 256K subscribers and 13.9M views. It has been sitting on Clarity's "still open" list
+  since 17 August as though it were pending work. It should be demoted to cosmetic. Do it if it is
+  free; do not count it as progress.
+- **Shorts are not required.** The reference channel's tabs are `Home, Videos, Playlists, Posts`
+  — **no Shorts tab, no Shorts at all.** The owner's 17 August instruction to stay long-form is
+  not a constraint to work around; it is the model, confirmed.
+- **A country of AE is fine.** The reference is US, Clarity is AE. Nothing in the data suggests
+  this is load-bearing, and changing it to chase RPM would be dishonest packaging for a channel
+  whose entire proposition is honesty.
+
+## Two setup gaps the comparison exposes
+
+1. **No Home tab.** Reference tabs: `Home, Videos, Playlists, Posts`. Clarity's:
+   `Videos, Shorts, Playlists, Posts`. The missing **Home** means no channel layout is configured
+   — no featured video, no channel trailer for new visitors, no sections. Every visitor lands on a
+   flat reverse-chronological grid whose top item is currently an 8-view video, rather than on the
+   846-view one that actually converts. This is free, one-time, and cannot be done from here:
+   channel sections have no public API, so it is a YouTube Studio task
+   (*Customisation → Layout*). Set the trailer for non-subscribers and the featured video for
+   returning ones, then add sections for the four playlists.
+2. **Channel keywords are half-length.** Reference carries roughly 70 keyword tokens; Clarity
+   carries 33 (258 characters). The field is nowhere near YouTube's 500-character limit. Cheap to
+   extend, low ceiling on the return — worth doing on the next packaging pass, not worth a run of
+   its own.
+
+**One deliberate divergence, left alone.** The reference channel runs a *single* 71-video playlist
+("The Bible EXPLAINED") as one binge spine; Clarity runs four thematic lists. With 15 long-form
+uploads, four themed lists give four separately-indexed search surfaces and four coherent autoplay
+chains, and a 15-video undifferentiated list would give one weak one. Revisit this past ~40
+uploads, not before.
+
+## Applied this pass
+
+Run with `playlists` ticked, after a dry run that previewed every change:
+
+| | Before | After |
+|---|---|---|
+| Long-form uploads in a playlist | 13 of 15 | **15 of 15** |
+| `5Fb1iERyIhs` | orphaned | slot 2, *What the Quran Says About Your Emotions* |
+| `PUPdFpvEA04` | orphaned | appended, *Questions Muslims Actually Ask* |
+| Descriptions carrying a current WATCH NEXT block | 13 | **15** |
+
+**10 descriptions written** — 2 appends on the newly-added videos, 8 refreshes on their siblings
+to pull the new entry into an existing link block. No playlists were created and no titles moved.
+The two lists that gained nothing, *Stories* and *Money*, correctly reported all five of their
+descriptions "already current".
+
+`StCW3ERkWwc` is the known edge case: at 4,900 characters it is close to YouTube's 5,000-character
+description limit, so it takes **1 link instead of 4**, and the run named the three it dropped
+(`IEgctgKEjEU`, `QOwWWwiRn_Q`, `5Fb1iERyIhs`) rather than truncating silently.
+
+**Verified against the live channel afterwards, not trusted from the write log** — the failure
+mode the 17 August pass documented. `playlists.list` now returns *Questions Muslims Actually Ask*
+at 5 and *What the Quran Says About Your Emotions* at 5, against 4 and 4 before the run, with
+*Money* still 2 and *Stories* still 3. Both lists still open on the same leader they opened on
+before (`cjtKWsFZbcg`, `cROgb0utEKs`), so the ordering rule held and the append did not displace
+an entry point.
+
+## Still open
+
+- **Channel layout / Home tab** — Studio only, see above. Now the largest free item on the list.
+- **Captions** — `hasCaption: false` on every upload.
+- **Cadence** — the reference channel publishes ~1.1×/day. Clarity has managed 10-in-9-days, then
+  55 days of silence, then three uploads in five days. The target is not the reference's volume;
+  it is any rate that does not stop.
+- **Runtime** — read `PUPdFpvEA04` at 72 hours and 7 days before committing to the longer format.
+- **Template residue** — audit every derived asset for Christian register, not just the one line
+  already removed.
+- **Banner** — demoted to cosmetic.

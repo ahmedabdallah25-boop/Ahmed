@@ -1,6 +1,6 @@
 # YouTube channel operations
 
-This repo runs **two** YouTube channels. They share nothing — not the audience, not the
+This repo runs **three** YouTube channels. They share nothing — not the audience, not the
 format, not the diagnosis. Check which one is meant before touching anything.
 
 ### Channel 1 — Finance % Decoded
@@ -26,9 +26,39 @@ Channel 2's write path is live only once `HBF_REFRESH_TOKEN` exists. Run **"HELD
 because Google requires a browser sign-in and **this repo is public, so no workflow may ever print
 a refresh token.** The monitor needs no token and works regardless.
 
-Do not port channel 1's conclusions onto channel 2. The finance channel's problem is topic
-exhaustion on a channel with 8K+ lifetime views; HELD BY FAITH has 33 lifetime views and a
-format problem. Different failures, different fixes.
+### Channel 3 — Clarity in the Quran
+`@ClarityInTheQuran`, channel ID `UC0eBu0ZXcF20pTAG3lUnPXA` — the Quran explained verse by verse
+for people who find tafsir intimidating. **Long-form only, by the owner's explicit direction**
+(2026-08-17: "No need shorts, I need this to remain a long form channel"). Three Shorts exist
+from before that decision; they are maintained, not extended. Everything for it lives in
+[`clarity/`](clarity/); start at `clarity/channel-diagnosis.md`.
+
+**Channel 3 has its own secrets** — `CIQ_CLIENT_ID`, `CIQ_CLIENT_SECRET`, `CIQ_REFRESH_TOKEN`,
+read by the three `clarity-*.yml` workflows and confirmed live on 2026-08-22 as **Repository**
+secrets owning `UC0eBu0ZXcF20pTAG3lUnPXA`. Never reuse `new1`/`new2`/`new3` or the `HBF_*` trio.
+The same `expect_channel_id` guard applies, so a mis-minted token aborts instead of repackaging
+another channel.
+
+Its write path is **"CLARITY IN THE QURAN - 2. Fix packaging"**, and that workflow has two
+switches that matter. `dry_run` is **on by default** — the first click always previews. And
+`playlists` is **off by default**: leaving it off silently skips both the playlist sync and the
+WATCH NEXT cross-link rebuild, so a new upload lands correctly tagged but orphaned from the
+structure. That exact miss happened on 22 August. **If a run touched a new upload, run it again
+with `playlists` ticked.**
+
+**Channel 3 is modelled on [@deepmadesimple](https://www.youtube.com/@deepmadesimple)**
+(`UCiVywgvam7BPUwJ-zwxuRGg`) — 256K subs and 13.9M views in six months. Clarity's channel
+description is a word-for-word transposition of it and several titles are direct swaps
+(Bible→Quran, Hebrew→Arabic). Two consequences before you touch this channel: the
+Christian-register phrasing that leaked into Clarity's own copy came from that template and may
+recur; and **the reference channel runs 19–52 minutes, median 27:40, with 0 of its top 30 videos
+under 19 minutes**, against Clarity's back catalogue of 4:33–11:07. See
+`clarity/channel-diagnosis.md` for what that does and does not license.
+
+Do not port channel 1's conclusions onto channel 2 or channel 3. The finance channel's problem is
+topic exhaustion on a channel with 8K+ lifetime views; HELD BY FAITH has 33 lifetime views and a
+format problem; Clarity in the Quran has 2,561 lifetime views, a format that already works, and a
+cadence-and-runtime problem. Different failures, different fixes.
 
 ## "yala"
 
@@ -37,8 +67,8 @@ channel-management pass: pull live state, diagnose, fix packaging on anything no
 feed-tested, verify, then counsel.
 
 **`yala` means channel 1, Finance % Decoded** — the skill hardcodes that channel ID and its
-write path. It does not cover HELD BY FAITH. For channel 2, work from
-`heldbyfaith/channel-diagnosis.md` instead.
+write path. It covers neither HELD BY FAITH nor Clarity in the Quran. For channel 2, work from
+`heldbyfaith/channel-diagnosis.md`; for channel 3, from `clarity/channel-diagnosis.md`.
 
 Invoke the **`yala`** skill and follow it. Run it end to end without checking in
 mid-way — the guard rails in `automation/reset.json` are what make that safe.
