@@ -1,0 +1,71 @@
+name: CLARITY IN THE QURAN - 2. Fix packaging
+
+# Applies clarity/packaging-fix.json to @ClarityInTheQuran: tags, the strict
+# description repairs, the freshly-published title/description rewrites, and the
+# channel-level keywords.
+#
+# This workflow did not exist before 2026-08-22. The scripts and the config had
+# been on the default branch since 17 August, but nothing could dispatch them —
+# channel 2 had heldbyfaith-packaging.yml and channel 3 had no equivalent, so the
+# only way to run a Clarity write was by hand. That is why the 21 August upload
+# shipped with zero tags five days after a pass took the channel from 11 untagged
+# uploads to 0: the fix was reachable, the button was not.
+#
+# Dry run is ON by default — the first click always previews. Untick it to write.
+#
+# Channel 3 only. It authenticates with the CIQ_* secrets and aborts before any
+# write unless the token owns UC0eBu0ZXcF20pTAG3lUnPXA, so a mis-minted token
+# cannot land these titles on Finance % Decoded or HELD BY FAITH.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview every change without writing anything"
+        type: boolean
+        default: true
+      playlists:
+        description: "Also sync playlists and the WATCH NEXT cross-links"
+        type: boolean
+        default: false
+
+jobs:
+  packaging:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Apply CLARITY IN THE QURAN packaging fix
+        run: |
+          python automation/clarity_packaging.py \
+            ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          CIQ_CLIENT_ID: ${{ secrets.CIQ_CLIENT_ID }}
+          CIQ_CLIENT_SECRET: ${{ secrets.CIQ_CLIENT_SECRET }}
+          CIQ_REFRESH_TOKEN: ${{ secrets.CIQ_REFRESH_TOKEN }}
+
+      # Playlists must run before cross-links: the cross-link block links to the
+      # playlist the video sits in, so a video added to a list in the same run
+      # has to be a member before its siblings' blocks are rebuilt.
+      - name: Sync playlists
+        if: ${{ inputs.playlists }}
+        run: |
+          python automation/clarity_playlists.py \
+            ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          CIQ_CLIENT_ID: ${{ secrets.CIQ_CLIENT_ID }}
+          CIQ_CLIENT_SECRET: ${{ secrets.CIQ_CLIENT_SECRET }}
+          CIQ_REFRESH_TOKEN: ${{ secrets.CIQ_REFRESH_TOKEN }}
+
+      - name: Rebuild WATCH NEXT cross-links
+        if: ${{ inputs.playlists }}
+        run: |
+          python automation/clarity_crosslinks.py \
+            ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          CIQ_CLIENT_ID: ${{ secrets.CIQ_CLIENT_ID }}
+          CIQ_CLIENT_SECRET: ${{ secrets.CIQ_CLIENT_SECRET }}
+          CIQ_REFRESH_TOKEN: ${{ secrets.CIQ_REFRESH_TOKEN }}

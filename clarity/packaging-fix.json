@@ -6,6 +6,67 @@
   "handle": "@ClarityInTheQuran",
   "_tags_provenance": "IMPORTANT — these tags were WRITTEN, not harvested. The diagnosis first claimed the 'RELATED SEARCHES' paragraph in each description could simply be moved into the tags field. Testing that on the real descriptions disproved it: those paragraphs are flowing prose, so a mechanical extract yields fragments like 'this video was made for you', 'this study goes deep into all of it' and 'or is it allowed to be rich in Islam', and QNlRJcyY4LU yields nothing at all. Bad tags are worse than none — they spend the 500-char field on noise. Each list below is hand-written from the video's actual subject, using the harvested phrases only as raw material.",
   "_tag_budget": "YouTube caps the entire tags field at 500 characters and rejects the whole update with `invalidTags` past it. A tag containing a space is sent quoted, costing two extra characters. clarity_packaging.py budgets 460 and drops overflow rather than failing the write.",
+  "_set_packaging": "Freshly published uploads only. Title+description+tags land in ONE write per video because videos.list is read-after-write eventually consistent. Every id in `protected` is refused. Added 2026-08-22.",
+  "set_packaging": [
+    {
+      "video_id": "5Fb1iERyIhs",
+      "_why": "The 21 Aug upload — 7h old, 3 views, ZERO tags. Not settled: nothing to disturb.",
+      "_changes": [
+        "TAGS 0 -> 22. This is the regression. A pass on 17 Aug took the channel from 11 untagged uploads to 0; the very next upload shipped untagged again, because no workflow existed to run the fix. clarity-packaging.yml now exists.",
+        "TITLE. The old one carried 'Ayah' with a macron (U+0100) — a token nobody types, so the only distinctive word in the title was unsearchable — and named no surah, no verse and no subject. YouTube had no entity to classify it against. The new title front-loads the exact English phrase people search ('hearts find rest'), names Surah Ar-Ra'd 28, and keeps the 'you have only seen half' hook. 62 chars, so nothing truncates.",
+        "TITLE SHAPE matches the channel's own proven construction — '[Entity]: [the specific thing you are missing]' — which is 3 of its 4 best videos (Money in the Quran 225, Every Minor Prophet 192, Every Plague of Egypt 189).",
+        "DESCRIPTION opening rewritten. The first two lines are the search snippet and carried zero ASCII-searchable terms ('The ayah people put on their wall lives inside a surah named after the loudest thing in the sky'). They now lead with the full quoted verse, 'Surah Ar-Ra'd 28' and 'Quran 13:28'. The author's diacritics are kept in the body — they are the channel's credibility signal after the 'AI BE AWARE' comment — but every surah name now also appears in plain ASCII with its numeric citation.",
+        "HASHTAGS 20 -> 5. The same 10-hashtag block was pasted twice. YouTube ignores ALL hashtags on a video once there are more than 15, so the video was running with zero working hashtags.",
+        "SOURCING NOTE restored. The 16 Aug upload set the channel's standard with 'Arabic on screen is set from a verified mushaf' plus a no-ruling disclaimer; this upload dropped both. Re-added."
+      ],
+      "expect_current_title": "You’ve Read This Āyah 100 Times. You’ve Never Seen Half Of It.",
+      "expect_description_contains": "named after the loudest",
+      "title": "\"Hearts Find Rest\": The Half of Surah Ar-Ra'd 28 Nobody Quotes",
+      "description": "\"Verily, in the remembrance of Allah do hearts find rest.\" Surah Ar-Ra'd 28 — Quran 13:28 — is the ayah people put on their wall. Almost nobody reads the sentence standing in front of it.\n\nAnd the Arabic underneath \"hearts find rest\" is doing something far more physical than the English lets on. Ṭumaʾnīnah — tumaninah — does not mean peace, and it does not mean calm. Its root sense is to settle: to sink down and come to rest, the way silt drops out of stirred water, the way ground finishes moving. It is the same word the Prophet ﷺ used to correct a man's prayer — bow until you are settled. A prayer without it is not a prayer.\n\nThis is a slow walk through Surah Ar-Ra'd (13), \"The Thunder\", verses 27-28: where the line sits, what the sentence before it does to it, why the second half is the half that matters, and where the same root turns up at the very end of the Quran as something other than a verb.\n\nCHAPTERS\n0:00 The surah named after thunder\n1:03 Tumaninah — what the word pictures\n2:14 It is a requirement inside the prayer\n3:16 What we are walking toward\n4:07 The sentence nobody quotes\n5:56 The same word, said of the wrong thing\n6:43 Who the ayah is describing\n7:49 Sakinah — it is sent down\n9:00 Dhikr has a tongue in it\n9:54 Settled is not numb\n11:41 The silt\n13:12 The cave\n14:29 On an ordinary bad day\n16:48 O settled soul\n\nVERSES REFERENCED\nSurah Ar-Ra'd 12, 13, 27, 28 (13:12-13, 13:27-28) · Surah Yunus 7 (10:7) · Surah Al-Fath 4 (48:4) · Surah Al-Hijr 9 (15:9) · Surah Yusuf 86 (12:86) · Surah Al-Qasas 10 (28:10) · Surah At-Tawbah 40 (9:40) · Surah Al-Fajr 27 (89:27) · and the hadith of the man who prayed badly (Bukhari and Muslim).\n\nON THE DISAGREEMENT AT 6:43\nThe mufassirūn are not of one mind on whether ayah 28 continues the sentence before it or stands on its own. Both readings are presented, because both land in the same place.\n\nHOW THIS VIDEO IS MADE\nThe Arabic on screen is set from a verified mushaf. This is a study of language and tafsir — it issues no ruling.\n\nIf this gave you something, subscribe — and tell me in the comments what your heart is currently trying to settle onto. Even one word.\n\n#Quran #Tafsir #ArRad #Tumaninah #QuranicArabic",
+      "tags": [
+        "surah ar rad 28",
+        "hearts find rest",
+        "tumaninah meaning",
+        "quran 13 28",
+        "ar rad 28 tafsir",
+        "remembrance of allah hearts find rest",
+        "surah ar rad tafsir",
+        "what does tumaninah mean",
+        "sakinah meaning",
+        "dhikr meaning",
+        "surah ar rad",
+        "quranic arabic",
+        "tumaninah in prayer",
+        "nafs al mutmainnah",
+        "surah al fajr 27",
+        "quran verse for peace of heart",
+        "quran verse for anxiety",
+        "arabic word study quran",
+        "o reassured soul",
+        "tafsir",
+        "quran explained",
+        "islamic reminder",
+        "quran linguistic miracle",
+        "surah ar rad 27"
+      ]
+    },
+    {
+      "video_id": "PUPdFpvEA04",
+      "_why": "The 19 Aug upload. Title and description are already good — only the tags are thin (12).",
+      "_changes": [
+        "TAGS 12 -> 18, additive. Title and description deliberately NOT touched: 'What \"Honor Your Parents\" Actually Means in Arabic' is already on the channel's winning formula and its description already carries chapters.",
+        "Added the citation and plain-language tags the existing 12 miss — 'surah al isra 23', 'quran 17 23' — which is how this verse is actually searched."
+      ],
+      "tags": [
+        "surah al isra 23",
+        "quran 17 23",
+        "birr al walidayn meaning",
+        "parents in the quran",
+        "lower the wing of humility",
+        "obeying parents in islam"
+      ]
+    }
+  ],
   "set_tags": [
     {
       "video_id": "GjztcxZGQTI",
