@@ -671,11 +671,76 @@ this is either page-cache lag or YouTube's own rule about when it surfaces a Hom
 the tab list before concluding anything from its absence, and do not re-run the layout on account
 of it — a re-run will correctly report everything already set and change nothing.
 
+## Fourth pass — the market did not transpose with the format
+
+Every pass before this one compared Clarity to the reference channel and asked what was different
+about the videos. The largest difference is not in the videos.
+
+vidIQ keyword research, 2026-08-22:
+
+| Term | Searches/month | Where |
+|---|---:|---|
+| `quran explained in english` | **5,268** | — |
+| `quran` | **1,398,036** | PK 22.7%, BD 9.0%, **US 6.5%**, MA 5.6%, IN 5.3% |
+| `surah` | **283,511** | **BD 47.7%**, PK 28.4%, IN 3.7% |
+| `islamic video` | **662,172** | BD 45.7% + PK 44.2% = 90% |
+| `islamic` | **325,264** | PK 38.5%, BD 28.5%, IN 10.8% |
+| `hadith` | **55,887** | PK 41.2%, BD 29.4%, US 11.8% |
+
+@deepmadesimple is US-English Bible study: its audience and its language are the same thing, and
+English-language Bible search is an enormous market. **Clarity copied that format into a niche
+where they are not the same thing.** The English slice it competes in is about 5,000 searches a
+month. The term itself is 1.4 million, and 93.5% of that is not the US.
+
+English is not the language of this channel's market. It is the language of its template.
+
+A second confirmation from the same search: `Religious Story TV` has **665,744 views** on a single
+faceless animated tafsir video at **53:44**. The format does transpose into this niche. It is
+being run at a length and in languages Clarity is not.
+
+### Applied: localized metadata, 2026-08-22
+
+`videos.update` with `part=snippet,localizations` — a documented API feature. YouTube serves the
+localized title and description to viewers whose app language matches, so **one write per video
+opens that video to a new language market for as long as it exists**, including May uploads that
+nothing else can help. Six videos, Arabic and Urdu, dry run then live then read-back:
+
+| | Before | After |
+|---|---|---|
+| Videos with any localization | 0 | **6** |
+| Lifetime views covered | — | **2,059 of 2,561 (80%)** |
+| Languages | en only | en, ar, ur |
+
+Read-back confirms all six: `already localized for ar, ur`.
+
+**The gotcha this could have died on.** YouTube ignores localizations unless
+`snippet.defaultLanguage` is set, and it was unset on every upload here. Written without it, the
+API returns 200, the field reads back populated, and nothing is ever served to anyone — a silent
+success, which is worse than an error. `defaultLanguage` goes in the same write.
+
+`r-9UaBtOy98` is rendered in Quranic terms as the nine signs given to Musa, **not** as a literal
+translation of "Every Plague of Egypt". Translating the English literally would have imported the
+Bible's framing into Arabic — the exact template leakage this channel was already caught by. Watch
+for this on every future localization: the English titles came from a Christian channel.
+
+### What this is not
+
+It is not an instant-virality switch; no such thing exists. Localized metadata widens who *can*
+find these videos. It does not make them found. Expect it to compound over weeks, and expect
+nothing at all if the cadence stays broken.
+
 ## Still open
 
+- **Bengali** — the single largest opportunity in the data at 47.7% of all `surah` searches, and
+  deliberately not attempted. It is the language least checkable here, and worth getting right
+  rather than fast. Same for Indonesian and Hindi.
+- **The other 12 uploads** — the mechanism handles them; they wait on a native check of these six.
+- **Thumbnails** — still never examined. The gateway blocks `i.ytimg.com`, so the channel's single
+  biggest CTR surface has not been looked at once across four passes. Largest remaining unknown.
 - **Featured video for returning subscribers** — the one genuinely Studio-only piece of the
   layout. *Customisation → Layout → Featured sections*.
-- **Captions** — `hasCaption: false` on every upload.
+- **Captions** — `hasCaption: false` on every upload. Now more valuable than before: a caption
+  track is what YouTube auto-translates for a non-English viewer.
 - **Cadence** — the reference channel publishes ~1.1×/day. Clarity has managed 10-in-9-days, then
   55 days of silence, then three uploads in five days. The target is not the reference's volume;
   it is any rate that does not stop.
