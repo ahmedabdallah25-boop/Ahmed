@@ -3,9 +3,10 @@ name: CLARITY IN THE QURAN - monitor
 # Read-only channel report for channel 3: every upload with its real age,
 # views/day and runtime, and which ones publish as long-form.
 #
-# This channel has NO write path and no packaging config — no diagnosis exists
-# for it yet, and a write path before a diagnosis is how you break something that
-# was working. Read-only is the whole surface for now, deliberately.
+# This workflow is read-only by design. The write path now exists separately —
+# clarity/packaging-fix.json applied by "CLARITY IN THE QURAN - 2. Fix packaging" —
+# and the diagnosis it rests on is clarity/channel-diagnosis.md. Keep the two
+# apart: a monitor that can write is a monitor you hesitate to run.
 #
 # Needs no credentials of its own: it reads public data, and falls back to
 # another channel's OAuth trio purely as an API credential (explicit id= on every

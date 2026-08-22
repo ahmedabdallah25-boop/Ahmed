@@ -29,6 +29,7 @@ Data pulled 2026-07-17 from public YouTube data via Nexlev.
 | [`last-video-fix.md`](last-video-fix.md) | Copy-paste fix pack for the latest Short (Part 12 — Takaful): new title, description, tags, pinned comment, re-cut hook script, and a 72-hour decision rule |
 | [`automation/`](automation/) | **The pipeline that applies all of it automatically** — scripts + GitHub Actions. One-time key setup in [`automation/SETUP.md`](automation/SETUP.md) (~10 min), then: metadata fix, comment posting, playlist-link repair across all 12 videos, and a 6-hourly monitor that applies the 72-hour decision rule |
 | [`heldbyfaith/`](heldbyfaith/) | **The second channel** — HELD BY FAITH (@HeldByFaithJourney), a personal cancer-diagnosis story told through faith. Separate audience, separate format, separate diagnosis: start at [`heldbyfaith/channel-diagnosis.md`](heldbyfaith/channel-diagnosis.md). Its own automation runs under the three `HELD BY FAITH - *` workflows and its own `HBF_*` secrets |
+| [`clarity/`](clarity/) | **The third channel** — Clarity in the Quran (@ClarityInTheQuran), Quran/Tafsir explainers where long-form is what works — the opposite of this channel. Start at [`clarity/channel-diagnosis.md`](clarity/channel-diagnosis.md). Its own automation runs under the three `CLARITY IN THE QURAN - *` workflows and its own `CIQ_*` secrets |
 
 ## TL;DR
 

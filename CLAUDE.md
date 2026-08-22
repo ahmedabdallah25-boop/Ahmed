@@ -1,6 +1,6 @@
 # YouTube channel operations
 
-This repo runs **two** YouTube channels. They share nothing — not the audience, not the
+This repo runs **three** YouTube channels. They share nothing — not the audience, not the
 format, not the diagnosis. Check which one is meant before touching anything.
 
 ### Channel 1 — Finance % Decoded
@@ -30,6 +30,27 @@ Do not port channel 1's conclusions onto channel 2. The finance channel's proble
 exhaustion on a channel with 8K+ lifetime views; HELD BY FAITH has 33 lifetime views and a
 format problem. Different failures, different fixes.
 
+### Channel 3 — Clarity in the Quran
+`@ClarityInTheQuran`, channel ID `UC0eBu0ZXcF20pTAG3lUnPXA` — Quran/Tafsir explainers, weekly.
+Registered 2026-08-17. Everything for it lives in [`clarity/`](clarity/); start at
+`clarity/channel-diagnosis.md`.
+
+**Channel 3 has its own automation and its own secrets** — `CIQ_CLIENT_ID`, `CIQ_CLIENT_SECRET`,
+`CIQ_REFRESH_TOKEN`, read by the three `clarity-*.yml` workflows. The same rule as channel 2
+applies: never reuse another channel's trio, and `clarity_packaging.py` aborts before any write
+unless the token owns `UC0eBu0ZXcF20pTAG3lUnPXA`.
+
+**As of 2026-08-22 all three `CIQ_*` secrets read as MISSING**, so the write path is built but
+cannot run — run **"CLARITY IN THE QURAN - 1. Check setup"** for the current state, and see
+[`automation/SETUP.md`](automation/SETUP.md) for the click-through that restores them. They
+existed on 17 August (that pass's writes are live on the channel), so they were either deleted
+or added as Environment rather than Repository secrets; a secret's value can never be read back,
+so which one cannot be determined from here. The monitor needs no token and works regardless.
+
+**Long-form is what WORKS on channel 3** — the opposite of channel 1. Do not port channel 1's
+Shorts-first conclusions onto it. Three different failures: channel 1 is topic exhaustion at 8K+
+lifetime views, channel 2 is format at 33, channel 3's lever is cadence.
+
 ## "yala"
 
 When the user says **yala** (also *yalla*, *يلا*), that is the trigger to run the full
@@ -37,8 +58,8 @@ channel-management pass: pull live state, diagnose, fix packaging on anything no
 feed-tested, verify, then counsel.
 
 **`yala` means channel 1, Finance % Decoded** — the skill hardcodes that channel ID and its
-write path. It does not cover HELD BY FAITH. For channel 2, work from
-`heldbyfaith/channel-diagnosis.md` instead.
+write path. It covers neither HELD BY FAITH nor Clarity in the Quran. For channel 2, work from
+`heldbyfaith/channel-diagnosis.md`; for channel 3, from `clarity/channel-diagnosis.md`.
 
 Invoke the **`yala`** skill and follow it. Run it end to end without checking in
 mid-way — the guard rails in `automation/reset.json` are what make that safe.

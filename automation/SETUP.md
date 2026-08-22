@@ -67,6 +67,7 @@ overwriting one channel's set silently repoints every workflow that channel owns
 |---|---|---|---|
 | Finance % Decoded | `new1` | `new2` | `new3` |
 | HELD BY FAITH | `HBF_CLIENT_ID` | `HBF_CLIENT_SECRET` | `HBF_REFRESH_TOKEN` |
+| Clarity in the Quran | `CIQ_CLIENT_ID` | `CIQ_CLIENT_SECRET` | `CIQ_REFRESH_TOKEN` |
 
 The `new1`/`new2`/`new3` names are historical and deliberately left alone — every workflow in
 `.github/workflows/` already reads them, and Part 15 and the daily upload path depend on them.
@@ -74,7 +75,7 @@ The `new1`/`new2`/`new3` names are historical and deliberately left alone — ev
 
 > **A refresh token is bound to two things**: the channel picked at consent, *and* the OAuth
 > client that issued it. A new client ID paired with an old refresh token fails with
-> `invalid_grant`. One Google account owning both channels still needs two separate tokens.
+> `invalid_grant`. One Google account owning all three channels still needs three separate tokens.
 
 ## Publish the app, or your tokens die every 7 days
 
@@ -120,6 +121,38 @@ before channel 2 has any secrets of its own.
 > client ID and secret under different names, a workflow cannot see them — it can only read the
 > exact names above. Re-add them under these names, and make sure they are **repository**
 > secrets, not Environment or Dependabot secrets.
+
+## Channel 3 — Clarity in the Quran
+
+Identical shape to channel 2, with its own three secrets. **One Google Cloud project and one
+OAuth client can serve all three channels** — the client identifies the *application*, not the
+channel. What binds a token to a channel is the account/channel you pick at Google's consent
+screen, so you only need to repeat Steps 1–3 if you do not already have a client to hand.
+
+Least-work order:
+
+1. **Actions → ["CLARITY IN THE QURAN - 1. Check setup"](https://github.com/ahmedabdallah25-boop/Ahmed/actions/workflows/clarity-check.yml)
+   → Run workflow.** One click; it names exactly what is missing and never prints a value.
+2. Open `automation/authorize.html`, paste your client ID and secret, and **at Google's account
+   chooser pick the account that owns Clarity in the Quran.** The page verifies the channel it
+   actually got and refuses to show you a token for a channel it does not recognise — so if it
+   names Finance % Decoded or HELD BY FAITH, you picked the wrong one; start it again.
+3. Paste the three values into **repository** secrets named `CIQ_CLIENT_ID`,
+   `CIQ_CLIENT_SECRET`, `CIQ_REFRESH_TOKEN`
+   ([new secret](https://github.com/ahmedabdallah25-boop/Ahmed/settings/secrets/actions/new)).
+4. Run the check again — it should print `READY` and `Clarity in the Quran`.
+5. **Actions → ["CLARITY IN THE QURAN - 2. Fix packaging"](https://github.com/ahmedabdallah25-boop/Ahmed/actions/workflows/clarity-packaging.yml)**
+   with *dry run* ticked (the default) to preview every change, then again unticked to apply.
+   Tick *playlists* as well to sync the playlists and rebuild the WATCH NEXT cross-links.
+
+"CLARITY IN THE QURAN - monitor" needs none of this — it reads public data and already runs daily.
+
+> **Checked 2026-08-22 by running step 1:** `CIQ_CLIENT_ID`, `CIQ_CLIENT_SECRET` and
+> `CIQ_REFRESH_TOKEN` all read as **MISSING**. They demonstrably worked on 17 August — that
+> pass's writes are live on the channel — so they were either deleted or added as **Environment**
+> or **Dependabot** secrets, which these workflows cannot read. A secret's value can never be read
+> back, so which one it was cannot be determined from here. Re-add them as **Repository** secrets
+> under the exact names above.
 
 ## Step 6 — Fire it
 
