@@ -80,8 +80,12 @@ def main():
         subject = re.sub(r"\(No legible glyphs[^)]*\)", "", subject)
         subject = re.sub(r"Reuse the seed\.?", "", subject)
         subject = " ".join(subject.split())
-        base = f"{subject} {style_txt}"
-        for suffix, extra in (("line", ", line art only, no colour, no wash"),
+        # the subject is a finished sentence; the pass clause has to be one too,
+        # or the joined prompt reads "No figure., line art only" — a comma after
+        # a full stop, and the style block running straight on from "no wash".
+        if not subject.endswith((".", "!", "?")):
+            subject += "."
+        for suffix, extra in (("line", " Line art only, no colour, no wash."),
                               ("wash", "")):
             plates.append({
                 "id": f"S{sid}-{suffix}",
@@ -91,7 +95,7 @@ def main():
                 "vo_cue": cue.strip('"'),
                 "pass": suffix,
                 "seed_group": f"S{sid}",
-                "prompt": (subject + extra + " " + style_txt).strip(),
+                "prompt": " ".join((subject + extra + " " + style_txt).split()),
                 "negative": neg_txt.replace("NEGATIVE:", "").strip(),
                 "aspect_ratio": "16:9",
                 "out": f"media/clarity/plates/S{sid}-{suffix}.png",

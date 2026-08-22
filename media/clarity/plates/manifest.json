@@ -17,7 +17,7 @@
       "vo_cue": "Hira. A cave on a mountain outside Mecca",
       "pass": "line",
       "seed_group": "S002",
-      "prompt": "A dark cave mouth in a bare rock face seen from inside, looking out at a blinding pale sky. The opening is a hard-edged shape of light. No figure., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A dark cave mouth in a bare rock face seen from inside, looking out at a blinding pale sky. The opening is a hard-edged shape of light. No figure. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S002-line.png"
@@ -43,7 +43,7 @@
       "vo_cue": "a man of forty who cannot read",
       "pass": "line",
       "seed_group": "S003",
-      "prompt": "An empty stone ledge inside the cave, worn smooth. A folded woollen cloak resting on it, still holding the shape of a body that has gone., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "An empty stone ledge inside the cave, worn smooth. A folded woollen cloak resting on it, still holding the shape of a body that has gone. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S003-line.png"
@@ -69,7 +69,7 @@
       "vo_cue": "He has no pen, no scroll",
       "pass": "line",
       "seed_group": "S004",
-      "prompt": "Three objects laid on parchment with wide space between them: a cut reed pen, a rolled blank scroll, a clay inkwell — all pushed to the frame's far edge, emphatically unused, the centre of the frame empty., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "Three objects laid on parchment with wide space between them: a cut reed pen, a rolled blank scroll, a clay inkwell — all pushed to the frame's far edge, emphatically unused, the centre of the frame empty. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S004-line.png"
@@ -95,7 +95,7 @@
       "vo_cue": "One hundred and fourteen surahs. Twenty-three years.",
       "pass": "line",
       "seed_group": "S006",
-      "prompt": "A tall stack of loose parchment leaves seen edge-on, uneven, the topmost lifted slightly by air. Warm light raking across the edges., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A tall stack of loose parchment leaves seen edge-on, uneven, the topmost lifted slightly by air. Warm light raking across the edges. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S006-line.png"
@@ -121,7 +121,7 @@
       "vo_cue": "Your mushaf runs from the longest surah to the shortest",
       "pass": "line",
       "seed_group": "S008",
-      "prompt": "A closed book seen from the fore-edge, the block of pages fanned so the thickness reads as mass. Warm parchment, indigo binding thread visible., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A closed book seen from the fore-edge, the block of pages fanned so the thickness reads as mass. Warm parchment, indigo binding thread visible. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S008-line.png"
@@ -147,7 +147,7 @@
       "vo_cue": "It is like arranging someone's letters by how long each one is",
       "pass": "line",
       "seed_group": "S010",
-      "prompt": "Loose written leaves — blank, no text — sorted into descending stacks by physical size on a wooden table, tallest left, smallest right. Deliberately bureaucratic. The one visual joke in the film; play it straight., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "Loose written leaves — blank, no text — sorted into descending stacks by physical size on a wooden table, tallest left, smallest right. Deliberately bureaucratic. The one visual joke in the film; play it straight. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S010-line.png"
@@ -173,7 +173,7 @@
       "vo_cue": "people being beaten in the streets of Mecca",
       "pass": "line",
       "seed_group": "S011",
-      "prompt": "A narrow sunlit alley between mud-brick walls, empty. A dropped sandal and a dark stain on the packed earth. Long shadow from a wall. Nobody in frame., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A narrow sunlit alley between mud-brick walls, empty. A dropped sandal and a dark stain on the packed earth. Long shadow from a wall. Nobody in frame. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S011-line.png"
@@ -199,7 +199,7 @@
       "vo_cue": "a plain called Arafat, with a hundred thousand people",
       "pass": "line",
       "seed_group": "S012",
-      "prompt": "A vast open plain under a white sky seen from high above, the crowd rendered only as a fine speckled texture of ink dots covering the ground to the horizon. A single low hill. No individual discernible., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A vast open plain under a white sky seen from high above, the crowd rendered only as a fine speckled texture of ink dots covering the ground to the horizon. A single low hill. No individual discernible. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S012-line.png"
@@ -225,7 +225,7 @@
       "vo_cue": "one thing at the end that you will be able to use",
       "pass": "line",
       "seed_group": "S013",
-      "prompt": "A single parchment leaf held open by two hands at the very bottom edge of frame — hands only, cropped at the wrist, warm skin in wash, no faces., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A single parchment leaf held open by two hands at the very bottom edge of frame — hands only, cropped at the wrist, warm skin in wash, no faces. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S013-line.png"
@@ -251,7 +251,7 @@
       "vo_cue": "Open a mushaf",
       "pass": "line",
       "seed_group": "S014",
-      "prompt": "An open book on a low wooden rihal stand, both pages blank parchment, warm side-light, deep shadow behind. Shot square-on., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "An open book on a low wooden rihal stand, both pages blank parchment, warm side-light, deep shadow behind. Shot square-on. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S014-line.png"
@@ -277,7 +277,7 @@
       "vo_cue": "By the nineties they are under twenty",
       "pass": "line",
       "seed_group": "S016",
-      "prompt": "The same fanned page-block as S008 but from the opposite end, the last leaves visibly thinner and fewer, light coming through them., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "The same fanned page-block as S008 but from the opposite end, the last leaves visibly thinner and fewer, light coming through them. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S016-line.png"
@@ -303,7 +303,7 @@
       "vo_cue": "preserved in memory and in writing",
       "pass": "line",
       "seed_group": "S018",
-      "prompt": "Four objects arranged as a specimen row on parchment: a thin flat stone, a dried palm stalk, a wide flat bone, a scrap of vellum. Museum-plate stillness., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "Four objects arranged as a specimen row on parchment: a thin flat stone, a dried palm stalk, a wide flat bone, a scrap of vellum. Museum-plate stillness. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S018-line.png"
@@ -329,7 +329,7 @@
       "vo_cue": "a battle at Yamama",
       "pass": "line",
       "seed_group": "S019",
-      "prompt": "A field of dry stubble after the fact. Broken arrow shafts standing at angles. Low sun, long shadows. No bodies, no figures, no blood., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A field of dry stubble after the fact. Broken arrow shafts standing at angles. Low sun, long shadows. No bodies, no figures, no blood. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S019-line.png"
@@ -355,7 +355,7 @@
       "vo_cue": "collected into one written volume",
       "pass": "line",
       "seed_group": "S020",
-      "prompt": "Loose leaves being squared into a single neat block by two hands at the frame's bottom edge — hands only, cropped at the wrist., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "Loose leaves being squared into a single neat block by two hands at the frame's bottom edge — hands only, cropped at the wrist. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S020-line.png"
@@ -381,7 +381,7 @@
       "vo_cue": "copies were sent out to the major centres",
       "pass": "line",
       "seed_group": "S021",
-      "prompt": "A map-like aerial of dry country with four faint routes radiating from a central point toward the frame edges, each ending at a small walled shape. Drawn as a hand-inked chart, not a satellite view., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A map-like aerial of dry country with four faint routes radiating from a central point toward the frame edges, each ending at a small walled shape. Drawn as a hand-inked chart, not a satellite view. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S021-line.png"
@@ -407,7 +407,7 @@
       "vo_cue": "Reading it in the order revealed is not a correction",
       "pass": "line",
       "seed_group": "S023",
-      "prompt": "One book, closed, centred, lit warmly and squarely — steady, unfussy, whole. This frame's job is reassurance; keep it calm and symmetrical., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "One book, closed, centred, lit warmly and squarely — steady, unfussy, whole. This frame's job is reassurance; keep it calm and symmetrical. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S023-line.png"
@@ -433,7 +433,7 @@
       "vo_cue": "asbab al-nuzul, the occasions of revelation",
       "pass": "line",
       "seed_group": "S025",
-      "prompt": "A margin of a parchment page densely filled with fine handwritten annotation reduced to abstract ink strokes — the shape of scholarship, not readable text., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A margin of a parchment page densely filled with fine handwritten annotation reduced to abstract ink strokes — the shape of scholarship, not readable text. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S025-line.png"
@@ -459,7 +459,7 @@
       "vo_cue": "al-Suyuti records more than one such list",
       "pass": "line",
       "seed_group": "S027",
-      "prompt": "Two open manuscript volumes side by side on a table, both with columned pages of abstract ink marks, the columns visibly not aligning with each other., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "Two open manuscript volumes side by side on a table, both with columned pages of abstract ink marks, the columns visibly not aligning with each other. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S027-line.png"
@@ -485,7 +485,7 @@
       "vo_cue": "The Cairo edition of nineteen twenty-four",
       "pass": "line",
       "seed_group": "S028",
-      "prompt": "A single printed page corner, the heading area empty (text typeset in edit), crisp early-20th-century print texture on cream stock. Slight foxing at edge., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A single printed page corner, the heading area empty (text typeset in edit), crisp early-20th-century print texture on cream stock. Slight foxing at edge. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S028-line.png"
@@ -511,7 +511,7 @@
       "vo_cue": "Nöldeke divided the Meccan period into three phases",
       "pass": "line",
       "seed_group": "S029",
-      "prompt": "Three parchment strips of increasing length pinned in a row, ends ragged, a fine indigo line ruled beneath them., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "Three parchment strips of increasing length pinned in a row, ends ragged, a fine indigo line ruled beneath them. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S029-line.png"
@@ -537,7 +537,7 @@
       "vo_cue": "Many surahs are mixed",
       "pass": "line",
       "seed_group": "S032",
-      "prompt": "A single parchment leaf where two distinct ink tones meet mid-page — one warmer and older, one cooler and fresher — with no hard boundary between them., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A single parchment leaf where two distinct ink tones meet mid-page — one warmer and older, one cooler and fresher — with no hard boundary between them. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S032-line.png"
@@ -563,7 +563,7 @@
       "vo_cue": "Hold it loosely",
       "pass": "line",
       "seed_group": "S033",
-      "prompt": "An open hand, palm up, at the bottom of frame holding nothing. Cropped at the wrist. Warm wash, soft edge., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "An open hand, palm up, at the bottom of frame holding nothing. Cropped at the wrist. Warm wash, soft edge. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S033-line.png"
@@ -589,7 +589,7 @@
       "vo_cue": "Back to the cave",
       "pass": "line",
       "seed_group": "S034",
-      "prompt": "Return to S002's composition, closer now, the light from the cave mouth stronger and warmer. for continuity., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "Return to S002's composition, closer now, the light from the cave mouth stronger and warmer. for continuity. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S034-line.png"
@@ -615,7 +615,7 @@
       "vo_cue": "Created man from a clinging clot",
       "pass": "line",
       "seed_group": "S036",
-      "prompt": "Abstract: a single dark red-brown wash blot on wet parchment, bleeding at its edge, magnified to fill the frame. Biological without being anatomical., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "Abstract: a single dark red-brown wash blot on wet parchment, bleeding at its edge, magnified to fill the frame. Biological without being anatomical. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S036-line.png"
@@ -641,7 +641,7 @@
       "vo_cue": "Who taught by the pen",
       "pass": "line",
       "seed_group": "S037",
-      "prompt": "A cut reed pen lying alone on parchment, its nib freshly wet, one small drop of ink beside it. Centred, still, reverent. Hold long., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A cut reed pen lying alone on parchment, its nib freshly wet, one small drop of ink beside it. Centred, still, reverent. Hold long. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S037-line.png"
@@ -667,7 +667,7 @@
       "vo_cue": "the rest of Al-Alaq is generally taken to be later",
       "pass": "line",
       "seed_group": "S039",
-      "prompt": "One parchment leaf, the upper third in warm aged ink, the lower two thirds in a visibly cooler fresher ink, a faint horizontal join between them., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "One parchment leaf, the upper third in warm aged ink, the lower two thirds in a visibly cooler fresher ink, a faint horizontal join between them. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S039-line.png"
@@ -693,7 +693,7 @@
       "vo_cue": "Then, according to most accounts, nothing.",
       "pass": "line",
       "seed_group": "S040",
-      "prompt": "An empty sky. Nothing else in frame but a wash gradient from pale at the horizon to deeper above, and a single tiny bird high up. Hold 8s. Let it be uncomfortable., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "An empty sky. Nothing else in frame but a wash gradient from pale at the horizon to deeper above, and a single tiny bird high up. Hold 8s. Let it be uncomfortable. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S040-line.png"
@@ -719,7 +719,7 @@
       "vo_cue": "he came down the mountain shaking and asked to be covered",
       "pass": "line",
       "seed_group": "S041",
-      "prompt": "A heavy woollen blanket bunched on a floor, still shaped by a body, seen from above. Dim interior light. No figure., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A heavy woollen blanket bunched on a floor, still shaped by a body, seen from above. Dim interior light. No figure. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S041-line.png"
@@ -745,7 +745,7 @@
       "vo_cue": "arise, and warn",
       "pass": "line",
       "seed_group": "S043",
-      "prompt": "An empty doorway from inside a dark room, opening onto hard white daylight. The threshold is the brightest thing in frame., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "An empty doorway from inside a dark room, opening onto hard white daylight. The threshold is the brightest thing in frame. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S043-line.png"
@@ -771,7 +771,7 @@
       "vo_cue": "stand at night, but not all night",
       "pass": "line",
       "seed_group": "S044",
-      "prompt": "A small oil lamp on a floor, one flame, the room around it going to deep indigo. A prayer mat edge just catching the light., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A small oil lamp on a floor, one flame, the room around it going to deep indigo. A prayer mat edge just catching the light. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S044-line.png"
@@ -797,7 +797,7 @@
       "vo_cue": "verses of three, four, six words",
       "pass": "line",
       "seed_group": "S047",
-      "prompt": "Six short ink strokes in a vertical column on parchment, each shorter than a thumb, evenly spaced. Rhythm as image. No letterforms., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "Six short ink strokes in a vertical column on parchment, each shorter than a thumb, evenly spaced. Rhythm as image. No letterforms. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S047-line.png"
@@ -823,7 +823,7 @@
       "vo_cue": "carried by memory through a city that does not want to hear it",
       "pass": "line",
       "seed_group": "S048",
-      "prompt": "A night street of mud-brick, one shuttered window with a thin line of lamplight escaping under it. Everything else dark indigo., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A night street of mud-brick, one shuttered window with a thin line of lamplight escaping under it. Everything else dark indigo. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S048-line.png"
@@ -849,7 +849,7 @@
       "vo_cue": "when the sun is folded up",
       "pass": "line",
       "seed_group": "S049",
-      "prompt": "A sun low and swollen on the horizon, the sky around it rendered as a wash being physically pulled or rolled at one corner. Surreal, restrained., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A sun low and swollen on the horizon, the sky around it rendered as a wash being physically pulled or rolled at one corner. Surreal, restrained. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S049-line.png"
@@ -875,7 +875,7 @@
       "vo_cue": "a man who spent his life counting his wealth",
       "pass": "line",
       "seed_group": "S050",
-      "prompt": "A heap of small coins on a table, and beside it a set of scales with one empty pan hanging lower than the full one. No hands., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A heap of small coins on a table, and beside it a set of scales with one empty pan hanging lower than the full one. No hands. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S050-line.png"
@@ -901,7 +901,7 @@
       "vo_cue": "The orphan you pushed away",
       "pass": "line",
       "seed_group": "S051",
-      "prompt": "A child's small worn sandal alone on a doorstep, and the door shut. Warm dust. No child in frame., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A child's small worn sandal alone on a doorstep, and the door shut. Warm dust. No child in frame. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S051-line.png"
@@ -927,7 +927,7 @@
       "vo_cue": "two roads and a steep one",
       "pass": "line",
       "seed_group": "S052",
-      "prompt": "A dry valley where a path forks: one broad and level running out of frame right, one narrow and climbing steeply left into rock. Drawn from above., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A dry valley where a path forks: one broad and level running out of frame right, one narrow and climbing steeply left into rock. Drawn from above. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S052-line.png"
@@ -953,7 +953,7 @@
       "vo_cue": "Al-Masad. It is about one specific man.",
       "pass": "line",
       "seed_group": "S053",
-      "prompt": "A single dead branch, bark stripped, lying on pale ground. Harsh directional light, hard shadow., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A single dead branch, bark stripped, lying on pale ground. Harsh directional light, hard shadow. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S053-line.png"
@@ -979,7 +979,7 @@
       "vo_cue": "his sons had died in infancy",
       "pass": "line",
       "seed_group": "S054",
-      "prompt": "Two very small mounds of earth side by side on open ground, unmarked, with a third space beside them. Distant, low horizon, no figure., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "Two very small mounds of earth side by side on open ground, unmarked, with a third space beside them. Distant, low horizon, no figure. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S054-line.png"
@@ -1005,7 +1005,7 @@
       "vo_cue": "the hot stones of the valley floor",
       "pass": "line",
       "seed_group": "S057",
-      "prompt": "Cracked sun-bleached stones filling the frame, heat shimmer suggested by a broken wash at the top edge. One large flat rock at centre. Nothing else., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "Cracked sun-bleached stones filling the frame, heat shimmer suggested by a broken wash at the top edge. One large flat rock at centre. Nothing else. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S057-line.png"
@@ -1031,7 +1031,7 @@
       "vo_cue": "the first person to die for this",
       "pass": "line",
       "seed_group": "S058",
-      "prompt": "A single small stone set upright in bare ground, and a long shadow. Wide empty frame. Restraint is the whole instruction here — no violence depicted., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A single small stone set upright in bare ground, and a long shadow. Wide empty frame. Restraint is the whole instruction here — no violence depicted. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S058-line.png"
@@ -1057,7 +1057,7 @@
       "vo_cue": "the mountains will be like carded wool",
       "pass": "line",
       "seed_group": "S059",
-      "prompt": "A mountain ridge whose upper half dissolves into loose floating fibres of wool-white wash, drifting off the peak., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A mountain ridge whose upper half dissolves into loose floating fibres of wool-white wash, drifting off the peak. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S059-line.png"
@@ -1083,7 +1083,7 @@
       "vo_cue": "sustained narrative. Stories, with scenes.",
       "pass": "line",
       "seed_group": "S062",
-      "prompt": "A long unrolled scroll running from the bottom-left corner to the top-right, blank, its length the subject. Warm raking light along its curl., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A long unrolled scroll running from the bottom-left corner to the top-right, blank, its length the subject. Warm raking light along its curl. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S062-line.png"
@@ -1109,7 +1109,7 @@
       "vo_cue": "Musa in front of Pharaoh",
       "pass": "line",
       "seed_group": "S064",
-      "prompt": "A vast hypostyle hall of painted columns receding into darkness, floor empty. Scale as intimidation. No figures at all., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A vast hypostyle hall of painted columns receding into darkness, floor empty. Scale as intimidation. No figures at all. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S064-line.png"
@@ -1135,7 +1135,7 @@
       "vo_cue": "Ibrahim asking his father why he is worshipping something he carved",
       "pass": "line",
       "seed_group": "S065",
-      "prompt": "A workshop floor: wood shavings, a mallet, a chisel, and an unfinished carved block whose form is deliberately unresolved — no face, no idol readable as a deity. Just worked wood., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A workshop floor: wood shavings, a mallet, a chisel, and an unfinished carved block whose form is deliberately unresolved — no face, no idol readable as a deity. Just worked wood. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S065-line.png"
@@ -1161,7 +1161,7 @@
       "vo_cue": "Nuh building in the middle of nowhere",
       "pass": "line",
       "seed_group": "S066",
-      "prompt": "A partial wooden hull frame standing in dry cracked earth, far from any water, ribs open to the sky. Small in a very wide frame., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A partial wooden hull frame standing in dry cracked earth, far from any water, ribs open to the sky. Small in a very wide frame. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S066-line.png"
@@ -1187,7 +1187,7 @@
       "vo_cue": "the best of narrations",
       "pass": "line",
       "seed_group": "S067",
-      "prompt": "A well seen from directly above — a perfect dark circle in pale stone, a rope going down into it. (Yusuf, without depicting him.), line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A well seen from directly above — a perfect dark circle in pale stone, a rope going down into it. (Yusuf, without depicting him.). Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S067-line.png"
@@ -1200,7 +1200,7 @@
       "vo_cue": "the best of narrations",
       "pass": "wash",
       "seed_group": "S067",
-      "prompt": "A well seen from directly above — a perfect dark circle in pale stone, a rope going down into it. (Yusuf, without depicting him.) STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A well seen from directly above — a perfect dark circle in pale stone, a rope going down into it. (Yusuf, without depicting him.). STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S067-wash.png"
@@ -1213,7 +1213,7 @@
       "vo_cue": "cross the Red Sea to seek refuge",
       "pass": "line",
       "seed_group": "S069",
-      "prompt": "A small wooden boat on open water seen from a great height, wake behind it, land as a thin band at the top edge. The boat is tiny., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A small wooden boat on open water seen from a great height, wake behind it, land as a thin band at the top edge. The boat is tiny. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S069-line.png"
@@ -1239,7 +1239,7 @@
       "vo_cue": "the case is argued in front of the throne",
       "pass": "line",
       "seed_group": "S070",
-      "prompt": "An empty carved wooden chair on a raised stone dais in a tall bare hall, seen slightly off-axis. Ethiopian highland light — cooler, greener than Mecca., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "An empty carved wooden chair on a raised stone dais in a tall bare hall, seen slightly off-axis. Ethiopian highland light — cooler, greener than Mecca. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S070-line.png"
@@ -1265,7 +1265,7 @@
       "vo_cue": "four hundred miles away, in the one week it is needed",
       "pass": "line",
       "seed_group": "S071",
-      "prompt": "A hand-inked chart of the Red Sea with two points marked, a thin gold line between them. Chart, not map — visible ruling and compass rose., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A hand-inked chart of the Red Sea with two points marked, a thin gold line between them. Chart, not map — visible ruling and compass rose. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S071-line.png"
@@ -1291,7 +1291,7 @@
       "vo_cue": "on his way to kill the Prophet",
       "pass": "line",
       "seed_group": "S072",
-      "prompt": "A sword in its scabbard leaning against a mud-brick wall beside a closed door. Nobody holding it. Hard midday shadow., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A sword in its scabbard leaning against a mud-brick wall beside a closed door. Nobody holding it. Hard midday shadow. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S072-line.png"
@@ -1317,7 +1317,7 @@
       "vo_cue": "finds her reciting",
       "pass": "line",
       "seed_group": "S073",
-      "prompt": "A doorway ajar with warm light spilling through the gap onto a dark floor, and a single parchment leaf on the ground just inside. No figures., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A doorway ajar with warm light spilling through the gap onto a dark floor, and a single parchment leaf on the ground just inside. No figures. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S073-line.png"
@@ -1343,7 +1343,7 @@
       "vo_cue": "a slow squeeze",
       "pass": "line",
       "seed_group": "S074",
-      "prompt": "A narrow rocky defile between two cliff walls, the passage at the bottom almost closed. Deep shadow, one strip of sky., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A narrow rocky defile between two cliff walls, the passage at the bottom almost closed. Deep shadow, one strip of sky. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S074-line.png"
@@ -1369,7 +1369,7 @@
       "vo_cue": "The reports describe people eating leaves",
       "pass": "line",
       "seed_group": "S075",
-      "prompt": "A shallow clay bowl on bare ground containing a few dry leaves. Overhead light. Nothing else in frame. Hold., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A shallow clay bowl on bare ground containing a few dry leaves. Overhead light. Nothing else in frame. Hold. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S075-line.png"
@@ -1395,7 +1395,7 @@
       "vo_cue": "Khadija dies",
       "pass": "line",
       "seed_group": "S076",
-      "prompt": "An interior: two cushions on a floor beside a low table, one indented from long use, one smooth. A cold lamp. Nobody., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "An interior: two cushions on a floor beside a low table, one indented from long use, one smooth. A cold lamp. Nobody. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S076-line.png"
@@ -1421,7 +1421,7 @@
       "vo_cue": "Abu Talib's protection stood in the way, and now it does not",
       "pass": "line",
       "seed_group": "S077",
-      "prompt": "A high mud-brick wall with a gap newly broken in it, rubble at the base, the landscape beyond visible through the breach., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A high mud-brick wall with a gap newly broken in it, rubble at the base, the landscape beyond visible through the breach. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S077-line.png"
@@ -1447,7 +1447,7 @@
       "vo_cue": "driven out of it by a crowd throwing stones",
       "pass": "line",
       "seed_group": "S079",
-      "prompt": "A dirt road leading away from a walled town, scattered stones on it, and a single set of footprints going out. Dusk. No figure., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A dirt road leading away from a walled town, scattered stones on it, and a single set of footprints going out. Dusk. No figure. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S079-line.png"
@@ -1473,7 +1473,7 @@
       "vo_cue": "a journey by night",
       "pass": "line",
       "seed_group": "S080",
-      "prompt": "A night sky of deep indigo over a dark landscape, one pale road of light running from the lower edge toward the horizon. Abstract, not literal. Depict no ascent, no figure, no Buraq., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A night sky of deep indigo over a dark landscape, one pale road of light running from the lower edge toward the horizon. Abstract, not literal. Depict no ascent, no figure, no Buraq. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S080-line.png"
@@ -1499,7 +1499,7 @@
       "vo_cue": "the five daily prayers",
       "pass": "line",
       "seed_group": "S082",
-      "prompt": "Five prayer mats laid in a row on a stone floor, evenly spaced, empty, warm light crossing them at an angle., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "Five prayer mats laid in a row on a stone floor, evenly spaced, empty, warm light crossing them at an angle. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S082-line.png"
@@ -1525,7 +1525,7 @@
       "vo_cue": "a dated, checkable, falsifiable prediction",
       "pass": "line",
       "seed_group": "S085",
-      "prompt": "A pair of brass scales, and beside them a stack of coins wagered on a flat stone. Chart-like ruling in the background., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A pair of brass scales, and beside them a stack of coins wagered on a flat stone. Chart-like ruling in the background. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S085-line.png"
@@ -1551,7 +1551,7 @@
       "vo_cue": "delegations from Yathrib meet him at Aqaba",
       "pass": "line",
       "seed_group": "S086",
-      "prompt": "A narrow mountain pass at night, two small lamps set on the ground facing each other with an empty space between them., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A narrow mountain pass at night, two small lamps set on the ground facing each other with an empty space between them. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S086-line.png"
@@ -1577,7 +1577,7 @@
       "vo_cue": "Six hundred and twenty-two. The Hijra.",
       "pass": "line",
       "seed_group": "S088",
-      "prompt": "A road running north out of dry hill country, seen from behind and above, empty, going toward a green horizon. The only warm-to-cool transition in the film — Mecca's ochre giving way to Medina's greener palette. Establish it here., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A road running north out of dry hill country, seen from behind and above, empty, going toward a green horizon. The only warm-to-cool transition in the film — Mecca's ochre giving way to Medina's greener palette. Establish it here. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S088-line.png"
@@ -1603,7 +1603,7 @@
       "vo_cue": "verses that ran four words now run forty",
       "pass": "line",
       "seed_group": "S091",
-      "prompt": "Two parchment leaves side by side: the left with six short ink strokes, the right with dense continuous ruled lines of abstract marks filling the page., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "Two parchment leaves side by side: the left with six short ink strokes, the right with dense continuous ruled lines of abstract marks filling the page. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S091-line.png"
@@ -1629,7 +1629,7 @@
       "vo_cue": "turn your face toward the Sacred Mosque",
       "pass": "line",
       "seed_group": "S092",
-      "prompt": "A stone floor with a shallow arched niche in a bare wall — a mihrab, empty, lit from one side. Nobody praying., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A stone floor with a shallow arched niche in a bare wall — a mihrab, empty, lit from one side. Nobody praying. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S092-line.png"
@@ -1655,7 +1655,7 @@
       "vo_cue": "Fasting in Ramadan is prescribed",
       "pass": "line",
       "seed_group": "S093",
-      "prompt": "A thin crescent moon over a flat rooftop skyline, and on a ledge in the foreground a bowl of dates and a cup of water, untouched., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A thin crescent moon over a flat rooftop skyline, and on a ledge in the foreground a bowl of dates and a cup of water, untouched. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S093-line.png"
@@ -1681,7 +1681,7 @@
       "vo_cue": "A prohibition of riba",
       "pass": "line",
       "seed_group": "S094",
-      "prompt": "A set of scales with a small stone secretly added to one pan, tipping it. The extra stone is the subject; light it., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A set of scales with a small stone secretly added to one pan, tipping it. The extra stone is the subject; light it. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S094-line.png"
@@ -1707,7 +1707,7 @@
       "vo_cue": "It is about writing down a loan",
       "pass": "line",
       "seed_group": "S095",
-      "prompt": "A table from above: a sheet of parchment, a reed pen, an inkwell, and two hands — cropped at the wrist, no faces — one writing, one resting flat as a witness. The most mundane composition in the film. That is deliberate., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A table from above: a sheet of parchment, a reed pen, an inkwell, and two hands — cropped at the wrist, no faces — one writing, one resting flat as a witness. The most mundane composition in the film. That is deliberate. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S095-line.png"
@@ -1733,7 +1733,7 @@
       "vo_cue": "the folding of the sun and the scattering of the stars",
       "pass": "line",
       "seed_group": "S097",
-      "prompt": "Split composition: upper half cosmic — a dark sky with stars visibly drifting out of formation; lower half a plain wooden market table. One frame, two registers, hard horizon between them., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "Split composition: upper half cosmic — a dark sky with stars visibly drifting out of formation; lower half a plain wooden market table. One frame, two registers, hard horizon between them. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S097-line.png"
@@ -1759,7 +1759,7 @@
       "vo_cue": "Badr. Roughly three hundred against a thousand.",
       "pass": "line",
       "seed_group": "S098",
-      "prompt": "A dry valley floor from high above at dawn, two unequal scatterings of small dark marks facing each other across open ground. Marks, not men., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A dry valley floor from high above at dawn, two unequal scatterings of small dark marks facing each other across open ground. Marks, not men. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S098-line.png"
@@ -1785,7 +1785,7 @@
       "vo_cue": "a group of archers leave a position they were told to hold",
       "pass": "line",
       "seed_group": "S099",
-      "prompt": "A bare hillcrest with a low stone position on it, arrows left standing in the ground, and nobody there. The empty position is the subject., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A bare hillcrest with a low stone position on it, arrows left standing in the ground, and nobody there. The empty position is the subject. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S099-line.png"
@@ -1811,7 +1811,7 @@
       "vo_cue": "inheritance shares given as fractions",
       "pass": "line",
       "seed_group": "S101",
-      "prompt": "A single estate — a house, a field, a few animals — drawn small and then divided by fine gold rule lines into unequal labelled sectors. Labels typeset in edit., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A single estate — a house, a field, a few animals — drawn small and then divided by fine gold rule lines into unequal labelled sectors. Labels typeset in edit. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S101-line.png"
@@ -1837,7 +1837,7 @@
       "vo_cue": "The defenders dig a trench",
       "pass": "line",
       "seed_group": "S103",
-      "prompt": "A long raw trench cut across open ground, seen along its length, spoil heaped on the near side. Tools left lying. Nobody in it., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A long raw trench cut across open ground, seen along its length, spoil heaped on the near side. Tools left lying. Nobody in it. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S103-line.png"
@@ -1863,7 +1863,7 @@
       "vo_cue": "ten thousand men",
       "pass": "line",
       "seed_group": "S104",
-      "prompt": "A horizon line of countless small tent shapes and cooking smoke, rendered as repeated ink marks thinning into haze. Seen from inside the defences, low., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A horizon line of countless small tent shapes and cooking smoke, rendered as repeated ink marks thinning into haze. Seen from inside the defences, low. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S104-line.png"
@@ -1889,7 +1889,7 @@
       "vo_cue": "hearts reached their throats",
       "pass": "line",
       "seed_group": "S105",
-      "prompt": "A night sky with a cold wind visible in the way a row of tent ropes and a single lamp flame are pulled sideways. Tension through inanimate objects only., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A night sky with a cold wind visible in the way a row of tent ropes and a single lamp flame are pulled sideways. Tension through inanimate objects only. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S105-line.png"
@@ -1915,7 +1915,7 @@
       "vo_cue": "the accusation runs through Medina for roughly a month",
       "pass": "line",
       "seed_group": "S106",
-      "prompt": "A dense warren of flat rooftops at dusk seen from above, with a thin dark line travelling between them from house to house, doubling back on itself., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A dense warren of flat rooftops at dusk seen from above, with a thin dark line travelling between them from house to house, doubling back on itself. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S106-line.png"
@@ -1941,7 +1941,7 @@
       "vo_cue": "They travel toward Mecca, unarmed, and are stopped short",
       "pass": "line",
       "seed_group": "S108",
-      "prompt": "A road blocked by a simple rope line across it, dry hills beyond, a camel's shadow falling across the rope. No riders., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A road blocked by a simple rope line across it, dry hills beyond, a camel's shadow falling across the rope. No riders. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S108-line.png"
@@ -1967,7 +1967,7 @@
       "vo_cue": "the phrase is struck out",
       "pass": "line",
       "seed_group": "S109",
-      "prompt": "A parchment document on a table with one line physically scored through by a wet stroke of ink. The strike is fresh and still glossy., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A parchment document on a table with one line physically scored through by a wet stroke of ink. The strike is fresh and still glossy. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S109-line.png"
@@ -1993,7 +1993,7 @@
       "vo_cue": "The truce ends the state of siege",
       "pass": "line",
       "seed_group": "S111",
-      "prompt": "A once-blocked road now open, the rope coiled and set aside at the verge, dust raised along its length by traffic that has just passed., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A once-blocked road now open, the rope coiled and set aside at the verge, dust raised along its length by traffic that has just passed. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S111-line.png"
@@ -2019,7 +2019,7 @@
       "vo_cue": "Do not let a group mock another group",
       "pass": "line",
       "seed_group": "S112",
-      "prompt": "Two clusters of empty seating mats on a floor, set apart with a clear gap between them, each cluster turned slightly away from the other., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "Two clusters of empty seating mats on a floor, set apart with a clear gap between them, each cluster turned slightly away from the other. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S112-line.png"
@@ -2045,7 +2045,7 @@
       "vo_cue": "would any of you like to eat the flesh of his dead brother?",
       "pass": "line",
       "seed_group": "S113",
-      "prompt": "A covered dish on a low table, the cloth still over it, one hand at the edge of frame withdrawing. No contents shown. Do not illustrate the image literally — the line is the shock; the picture should decline to compete with it., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A covered dish on a low table, the cloth still over it, one hand at the edge of frame withdrawing. No contents shown. Do not illustrate the image literally — the line is the shock; the picture should decline to compete with it. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S113-line.png"
@@ -2071,7 +2071,7 @@
       "vo_cue": "peoples and tribes so that you may know one another",
       "pass": "line",
       "seed_group": "S115",
-      "prompt": "A hand-inked chart of many small settlements across a wide territory, joined by a web of fine gold lines. No borders drawn., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A hand-inked chart of many small settlements across a wide territory, joined by a web of fine gold lines. No borders drawn. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S115-line.png"
@@ -2097,7 +2097,7 @@
       "vo_cue": "the only surah that does not begin with the Bismillah",
       "pass": "line",
       "seed_group": "S117",
-      "prompt": "A parchment page whose top margin is conspicuously, deliberately empty — the text block starting lower than the eye expects. The absence is the image., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A parchment page whose top margin is conspicuously, deliberately empty — the text block starting lower than the eye expects. The absence is the image. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S117-line.png"
@@ -2123,7 +2123,7 @@
       "vo_cue": "on the plain of Arafat",
       "pass": "line",
       "seed_group": "S118",
-      "prompt": "Return to S012's aerial, now in full daylight, the speckled crowd texture denser and running to the horizon., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "Return to S012's aerial, now in full daylight, the speckled crowd texture denser and running to the horizon. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S118-line.png"
@@ -2149,7 +2149,7 @@
       "vo_cue": "nothing is completed except that it begins to decline",
       "pass": "line",
       "seed_group": "S120",
-      "prompt": "A sundial or shadow-line on a stone floor at the exact moment of noon, the shadow at its shortest. Everything about to lengthen., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A sundial or shadow-line on a stone floor at the exact moment of noon, the shadow at its shortest. Everything about to lengthen. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S120-line.png"
@@ -2175,7 +2175,7 @@
       "vo_cue": "abrogation stops looking like contradiction",
       "pass": "line",
       "seed_group": "S124",
-      "prompt": "Two parchment leaves overlapping, the upper one translucent so the lower shows through — the two texts aligning rather than fighting. No legible glyphs., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "Two parchment leaves overlapping, the upper one translucent so the lower shows through — the two texts aligning rather than fighting. No legible glyphs. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S124-line.png"
@@ -2201,7 +2201,7 @@
       "vo_cue": "Al-Fatiha's position is a decision",
       "pass": "line",
       "seed_group": "S127",
-      "prompt": "A book opened at its very first page, the page blank, the binding new and the spine uncracked. Warm frontal light. The threshold, again., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A book opened at its very first page, the page blank, the binding new and the spine uncracked. Warm frontal light. The threshold, again. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S127-line.png"
@@ -2227,7 +2227,7 @@
       "vo_cue": "you will not be able to unsee it",
       "pass": "line",
       "seed_group": "S129",
-      "prompt": "An open book on a stand with one line of a page catching a shaft of light while the rest sits in shade. No legible text., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "An open book on a stand with one line of a page catching a shaft of light while the rest sits in shade. No legible text. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S129-line.png"
@@ -2253,7 +2253,7 @@
       "vo_cue": "it arrived in year sixteen",
       "pass": "line",
       "seed_group": "S131",
-      "prompt": "The 23-year bar from S102 rendered as a physical inked rule on parchment, with a single gold mark struck at year sixteen., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "The 23-year bar from S102 rendered as a physical inked rule on parchment, with a single gold mark struck at year sixteen. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S131-line.png"
@@ -2279,7 +2279,7 @@
       "vo_cue": "the work of people who counted",
       "pass": "line",
       "seed_group": "S132",
-      "prompt": "A desk from above at night: several open volumes, a lamp, a reed pen, and margins dense with abstract annotation. Warm pool of light, dark edges., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "A desk from above at night: several open volumes, a lamp, a reed pen, and margins dense with abstract annotation. Warm pool of light, dark edges. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S132-line.png"
@@ -2305,7 +2305,7 @@
       "vo_cue": "preserved the disagreement instead of quietly deleting it",
       "pass": "line",
       "seed_group": "S133",
-      "prompt": "Two manuscript pages side by side, both annotated, with a fine gold line drawn between two differing entries — connecting them, not resolving them., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "Two manuscript pages side by side, both annotated, with a fine gold line drawn between two differing entries — connecting them, not resolving them. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S133-line.png"
@@ -2331,7 +2331,7 @@
       "vo_cue": "Read, in the name of your Lord who created",
       "pass": "line",
       "seed_group": "S135",
-      "prompt": "Return to S037 — the reed pen alone on parchment — but now the nib is dry and the ink drop beside it has soaked in and spread. Last frame of the film. Hold to black., line art only, no colour, no wash STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+      "prompt": "Return to S037 — the reed pen alone on parchment — but now the nib is dry and the ink drop beside it has soaked in and spread. Last frame of the film. Hold to black. Line art only, no colour, no wash. STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
       "negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David.",
       "aspect_ratio": "16:9",
       "out": "media/clarity/plates/S135-line.png"

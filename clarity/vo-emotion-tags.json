@@ -1,0 +1,60 @@
+{
+  "_comment": "Audio-tag placements for the eleven_v3 variant of the revelation-order VO. Read by automation/clarity_export.py, which emits a tagged script ALONGSIDE the clean one — never instead of it.",
+
+  "_why_a_separate_file": "Audio tags are an eleven_v3 feature. On eleven_multilingual_v2 a bracketed tag is either spoken aloud as literal text or ignored, so a tagged script handed to the wrong model is worse than no tags at all. Keeping the tagged variant separate means the model choice stays a choice.",
+
+  "_the_tradeoff": "v3 is more expressive and LESS deterministic than v2. This script's single largest production risk is 28 separately-generated batches failing to sound like one person — the script's own rules open with 'same voice and identical settings on every batch' for exactly that reason. v3 raises expressiveness and raises drift at the same time. Audition batches 01, 14 and 28 back to back before committing to v3 for the whole thing; if they do not sound like the same reading, use v2 and the clean script.",
+
+  "_vocabulary": "v3 interprets bracketed direction contextually rather than from a fixed enumeration, so these are requests, not switches, and the same tag can read differently in different sentences. Every one below must be auditioned.",
+
+  "_restraint": "31 tags across 5,861 words — one per 189 words, about one per batch. Sparing on purpose. Over-tagging produces a performance that swings between lines, and on this subject a swinging performance reads as insincere. Punctuation and sentence length carry most of the pacing already; the tags only mark the handful of places where the register genuinely turns. Batch 26 carries none: it is a four-item list and the structure does the work.",
+
+  "_placement_rule": "NO TAG MAY OPEN A BATCH. The first draft of this file had 23 of 32 tags sitting at character 0, because it was written by scanning the first sentence of each batch rather than reading for the turn. That is wrong twice over. A tag at position 0 is the model's strongest, most literal reading of it — there is no preceding prose in that generation to moderate it — and it fires at exactly the seam where the previous batch's audio ends, so every join gets an audible restart. Worse, it marks nothing: a tag is supposed to sit where the register turns WITHIN a reading, and at the top of a file there is nothing to turn from. Every anchor below is an interior sentence. The export prints a batch-opening count; it should stay at zero.",
+
+  "_subject_limits": "No [laughs], no [shouting], no [sarcastic], no [excited]. This is a Quran channel and the register is a serious explainer. The permitted set is thoughtful, curious, serious, solemn, quietly, warmly — nothing performative, nothing that would sound like acting over scripture.",
+
+  "_anchor_rule": "Each tag is inserted immediately BEFORE its anchor string. Every anchor must appear EXACTLY ONCE in its batch or the export fails loudly rather than inserting in the wrong place or silently not inserting at all.",
+
+  "allowed_tags": ["thoughtful", "curious", "serious", "solemn", "quietly", "warmly"],
+
+  "placements": [
+    { "batch": "01", "tag": "quietly",   "anchor": "He says, I cannot read." },
+
+    { "batch": "02", "tag": "curious",   "anchor": "Because in the order it actually came, you can watch something happen." },
+    { "batch": "02", "tag": "warmly",    "anchor": "That is what we are going to do" },
+
+    { "batch": "03", "tag": "thoughtful","anchor": "Now hold that against the timeline." },
+    { "batch": "04", "tag": "thoughtful","anchor": "On the order of the surahs in that standard copy" },
+    { "batch": "05", "tag": "serious",   "anchor": "Reading the Quran in the order it was revealed is not a correction." },
+    { "batch": "06", "tag": "serious",   "anchor": "Nobody who tells you the exact order" },
+    { "batch": "07", "tag": "thoughtful","anchor": "One caution before we start walking." },
+    { "batch": "08", "tag": "thoughtful","anchor": "Five verses. Twice a command to read" },
+    { "batch": "09", "tag": "serious",   "anchor": "That is the moment the thing becomes public." },
+    { "batch": "10", "tag": "thoughtful","anchor": "There is almost no law here." },
+    { "batch": "11", "tag": "quietly",   "anchor": "Fourteen hundred years later" },
+    { "batch": "12", "tag": "solemn",    "anchor": "Bilal ibn Rabah is put out on the hot stones" },
+    { "batch": "13", "tag": "thoughtful","anchor": "Ask why they arrive now and not in year one" },
+    { "batch": "14", "tag": "thoughtful","anchor": "Consider the precision of that" },
+
+    { "batch": "15", "tag": "quietly",   "anchor": "Khadija dies." },
+    { "batch": "15", "tag": "solemn",    "anchor": "The tradition calls that year Am al-Huzn." },
+
+    { "batch": "16", "tag": "quietly",   "anchor": "The consolation is not that the pressure stops." },
+    { "batch": "17", "tag": "thoughtful","anchor": "Understand who is hearing this." },
+    { "batch": "18", "tag": "serious",   "anchor": "That is not a stylistic drift." },
+    { "batch": "19", "tag": "thoughtful","anchor": "Think about what kind of text does that." },
+    { "batch": "20", "tag": "thoughtful","anchor": "And here is the thing you can only see chronologically" },
+    { "batch": "21", "tag": "serious",   "anchor": "A confederate army moves on Medina" },
+    { "batch": "22", "tag": "serious",   "anchor": "They travel toward Mecca to perform pilgrimage" },
+    { "batch": "23", "tag": "thoughtful","anchor": "By this point the community has won." },
+
+    { "batch": "24", "tag": "solemn",    "anchor": "He has, though nobody there knows it, about three months to live." },
+    { "batch": "24", "tag": "quietly",   "anchor": "The report goes that Umar wept" },
+
+    { "batch": "25", "tag": "thoughtful","anchor": "But notice the candidates" },
+    { "batch": "27", "tag": "warmly",    "anchor": "That is what the chronology gives you." },
+
+    { "batch": "28", "tag": "warmly",    "anchor": "If you want the next one" },
+    { "batch": "28", "tag": "quietly",   "anchor": "Read, in the name of your Lord who created.\n\nThat was the first thing." }
+  ]
+}
