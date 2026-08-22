@@ -60,6 +60,12 @@ Christian-register phrasing that leaked into Clarity's own copy came from that t
 recur; and **the reference channel runs 19–52 minutes, median 27:40, with 0 of its top 30 videos
 under 19 minutes**, against Clarity's back catalogue of 4:33–11:07.
 
+**Before making any Clarity thumbnail, read [`clarity/thumbnail-system.md`](clarity/thumbnail-system.md).**
+Two rules there are non-negotiable and were both broken before it existed: thumbnail text never
+repeats the title, and **no photoreal AI humans** — on a channel carrying a public "AI BE AWARE"
+comment that is a credibility rule, not a style one. Watercolour on navy `#16203C` with the payload
+in gold `#E8A33D`, four elements, and the 320px legibility test.
+
 **Before writing any Clarity script or scene pack, read [`clarity/video-formula.md`](clarity/video-formula.md).**
 It is the reference channel reverse-engineered to a build spec — runtime band, the
 one-detail-reversal topic archetype behind all six of its outliers, the hook shape, and the finding
