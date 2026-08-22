@@ -6,7 +6,7 @@ Brief:   clarity/flagship-revelation-order.md
 Spec:    clarity/video-formula.md  §5 is the section this pack exists to satisfy
 ================================================================================
 
-READ THE FOUR HARD RULES BEFORE YOU GENERATE ANYTHING
+READ THE FIVE HARD RULES BEFORE YOU GENERATE ANYTHING
 --------------------------------------------------------------------------------
 
 1. NO FACES. NO PROPHETS. NO COMPANIONS. Not stylised, not distant, not in
@@ -31,6 +31,15 @@ READ THE FOUR HARD RULES BEFORE YOU GENERATE ANYTHING
 
 4. THE ARABIC IS SET FROM A VERIFIED MUSHAF. Copy-paste from a checked digital
    text, then have a reader confirm it on screen before render. Never retype it.
+
+5. A FRAME CARRIES ONLY WHAT A VIEWER SHOULD READ. No production notes, no
+   directions to the editor, no commentary about what the frame is doing. The
+   first render of this pack put "PICK OUT قَضَىٰ IN GOLD" and "NEITHER IS MARKED
+   CORRECT HERE" into the picture itself — one an instruction to a human, the
+   other the edit talking about itself — and both would have gone on screen in
+   front of an audience. Directions live HERE, in the pack, where a person reads
+   them. If a line explains the frame rather than the subject, it does not go in
+   the frame.
 
 --------------------------------------------------------------------------------
 THE FIXED STYLE BLOCK — append to EVERY illustration prompt, unchanged
@@ -89,6 +98,12 @@ this video works at 43 minutes instead of collapsing into mood art.
 
 RECITATION marks a place where the TTS stops and a real reciter is heard. Seven
 of them, 86 seconds total. Never synthesise these.
+
+Their frames render to media/clarity/frames/_pending/ — NOT beside the finished
+frames — as the citation over an empty slot, because a dashed placeholder in the
+deliverable folder is one careless drag away from being cut into the video. The
+per-frame directions below (which word to pick out in gold, how many lines) are
+for the editor and must not appear in the rendered picture.
 
 ================================================================================
 ACT 0 — THE HOOK · 0:00–2:27
@@ -207,7 +222,7 @@ S021 · 4:22 · ILLUS · "copies were sent out to the major centres"
 S022 · 4:38 · GRAPHIC · the two positions, side by side
   Navy, two columns. Left, cream: "TAWQIFI — instructed / majority view". Right,
   cream: "IJTIHADI — companion judgement / minority view". Between them a thin
-  gold vertical rule. Nothing marked correct.
+  gold vertical rule. On screen: "THE SCHOLARS DIFFER." Nothing is marked correct.
 
 S023 · 5:05 · ILLUS · "Reading it in the order revealed is not a correction"
   One book, closed, centred, lit warmly and squarely — steady, unfussy, whole.
@@ -473,8 +488,9 @@ S080 · 23:34 · ILLUS · "a journey by night"
   no ascent, no figure, no Buraq.
 
 S081 · 24:00 · GRAPHIC · the sequence, stated
-  Navy. Cream: "THE WORST YEAR OF HIS LIFE". Gold arrow down. Cream: "THEN THIS."
-  Then, small: "AND THEN THE SAME CITY, THE SAME MORNING."
+  Navy. Cream: "619 — KHADIJA DIES. ABU TALIB DIES." / "HE IS DRIVEN OUT OF
+  TA’IF." Gold: "AM AL-HUZN". Small cream: "THE YEAR OF SORROW".
+  (The earlier "THEN THIS" was an edit cue, not copy.)
 
 S082 · 24:18 · ILLUS · "the five daily prayers"
   Five prayer mats laid in a row on a stone floor, evenly spaced, empty, warm
@@ -564,7 +580,8 @@ S099 · 29:58 · ILLUS · "a group of archers leave a position they were told to
 
 S100 · 30:20 · GRAPHIC · the verse that includes the loss
   Navy. Cream: "THEY LOST AT UHUD." Gold beneath: "IT CAME FROM YOURSELVES."
-  Small cream under that: "ĀL ʿIMRĀN". Hold — this is one of the film's arguments.
+  Small cream under that: "ĀL ʿIMRĀN". Hold — this is one of the film's arguments,
+  but the frame states the fact and lets the VO make the point.
 
 S101 · 30:42 · ILLUS · "inheritance shares given as fractions"
   A single estate — a house, a field, a few animals — drawn small and then
@@ -598,8 +615,7 @@ S106 · 32:28 · ILLUS · "the accusation runs through Medina for roughly a mont
   travelling between them from house to house, doubling back on itself.
 
 S107 · 32:52 · GRAPHIC · the surah legislates the mechanism
-  Navy. Cream: "IT COULD HAVE ENDED AT THE ACQUITTAL." Gold: "IT DID NOT."
-  Then three cream lines: "WHY DID YOU NOT THINK WELL OF ONE ANOTHER?" / "WHY DID
+  Navy. Cream header: "SURAH AN-NUR ASKS". Then three cream lines: "WHY DID YOU NOT THINK WELL OF ONE ANOTHER?" / "WHY DID
   YOU NOT DEMAND FOUR WITNESSES?" / "WHY DID YOU SPEAK WITH NO KNOWLEDGE?"
 
 S108 · 33:20 · ILLUS · "They travel toward Mecca, unarmed, and are stopped short"
@@ -664,7 +680,7 @@ S122 · 38:14 · GRAPHIC · the four candidates for the last verse
   Navy. Four cream rows, each with its citation in gold: "2:281 — the Day of
   return" / "5:3 — the religion completed" / "4:176 — inheritance" / "110 —
   ask forgiveness". No row highlighted. Beneath, in cream: "AL-SUYUTI DOES NOT
-  PICK ONE. NEITHER WILL WE."
+  PICK ONE." (The VO says the rest; the frame does not editorialise.)
 
 ================================================================================
 ACT 7 — THE PAYOFF · 38:41–43:18
@@ -708,8 +724,8 @@ S129 · 41:02 · ILLUS · "you will not be able to unsee it"
   the rest sits in shade. No legible text.
 
 S130 · 41:24 · GRAPHIC · the two axes, closing
-  Return of S024's composition. Both arrows now gold and equal. Cream caption:
-  "NOT A DIFFERENT QURAN. THE SAME ONE, WITH A SECOND AXIS."
+  Return of S024's composition. Both arrows now gold and equal. Header "TWO AXES", cream caption:
+  "THE SAME QURAN, READ TWO WAYS."
 
 S131 · 41:46 · ILLUS · "it arrived in year sixteen"
   The 23-year bar from S102 rendered as a physical inked rule on parchment, with

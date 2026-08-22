@@ -14,16 +14,25 @@
  * Chromium, verify the fonts actually loaded before writing a file. Same palette
  * as the thumbnails, so the frames and the packaging read as one channel.
  *
- * ARABIC POLICY, and it is the important part of this file.
+ * WHAT GOES ON A FRAME
  *
- * Single words and the two address formulae are set inline: they are short, they
- * are unambiguous, and they are the same strings already reviewed and published
- * in clarity/localizations.json. MULTI-AYAH BLOCKS ARE NOT. Those render as a
- * visible slot reading PASTE VERIFIED — the layout is finished and the text is
- * deliberately missing, so the frame is production-ready and cannot ship
- * unverified. A wrong citation went live on this channel earlier today from
- * exactly the reflex this guard exists to block: filling a gap with something
- * plausible rather than checking it.
+ * Only what a viewer should read. No production notes, no directions to the
+ * editor, no commentary on what the frame is doing. An earlier pass shipped
+ * "PICK OUT قَضَىٰ IN GOLD" and "NEITHER IS MARKED CORRECT HERE" baked into the
+ * picture — the first is an instruction to a human, the second is the edit
+ * talking about itself. Both would have gone on screen in front of an audience.
+ * If a line explains the frame rather than the subject, it belongs in the scene
+ * pack.
+ *
+ * ARABIC POLICY
+ *
+ * Single words and the two address formulae are set inline: short, unambiguous,
+ * and the same strings already reviewed and published in localizations.json.
+ * MULTI-AYAH BLOCKS ARE NOT. Those render to frames/_pending/ as a citation over
+ * an empty slot — never beside the finished frames, because a dashed placeholder
+ * in the deliverable folder is one careless drag away from being cut into the
+ * video. A wrong citation went live on this channel earlier today from exactly
+ * the reflex this guards: filling a gap with something plausible.
  */
 const { chromium } = require('playwright');
 const fs = require('fs');
@@ -105,11 +114,15 @@ const T = {
     </div>
     ${foot ? `<div class="foot">${foot}</div>` : ''}`,
 
-  ayah: ({ slot, cite, note }) => `
+  // Placeholder only — never a deliverable. It renders the citation the viewer
+  // will see and an empty slot where the ayah goes, and NOTHING ELSE. Directions
+  // to the editor ("pick out X in gold", "three ayat complete") live in the scene
+  // pack, which is where a human reads them. Baking them into the picture puts
+  // production notes on screen in front of an audience.
+  ayah: ({ cite }) => `
     <div style="text-align:center">
-      <div class="slot">${slot}</div>
-      ${cite ? `<div class="lbl gold" style="font-size:44px">${cite}</div>` : ''}
-      ${note ? `<div class="sub">${note}</div>` : ''}
+      <div class="lbl gold" style="font-size:60px">${cite}</div>
+      <div class="slot" style="margin-top:44px">AWAITING VERIFIED MUSHAF TEXT</div>
     </div>`,
 
   arline: ({ ar, gloss, note }) => `
@@ -197,7 +210,7 @@ const T = {
     const byRev = REV.map((r,i)=>({r,v:V[i]})).sort((a,b)=>a.r-b.r).map(o=>o.v);
     return plot(byMushaf, CREAM, 'ARRANGED BY LENGTH — the mushaf')
          + plot(byRev, GOLD, 'ARRANGED BY TIME — the revelation order')
-         + `<div class="foot">SAME 114 SURAHS. SAME VERSE COUNTS. ONE ORDERING IS A SHAPE, THE OTHER IS NOISE.</div>`;
+         + `<div class="foot">SAME 114 SURAHS. SAME VERSE COUNTS.</div>`;
   },
 
   chain: ({ h, nodes, brace }) => `
@@ -221,7 +234,7 @@ const F = [
   ['S007', 'bignum', { n: '23', label: 'YEARS', sub: '610 — 632' }],
   ['S009', 'ticks',  { hi: 96, leftLabel: 'AL-BAQARAH — 2ND IN THE MUSHAF',
                        hiLabel: 'AL-ALAQ — FIRST REVEALED, 96TH' }],
-  ['S015', 'lines',  { h: 'THE COUNT FALLS', rows: [
+  ['S015', 'lines',  { h: 'VERSES PER SURAH, IN MUSHAF ORDER', rows: [
       'AL-FATIHA <span class="gold">7</span>', 'AL-BAQARAH <span class="gold">286</span>',
       'AL-IMRAN <span class="gold">200</span>', 'AN-NISA <span class="gold">176</span>',
       '<span class="dim">…</span>', 'AN-NAS <span class="gold">6</span>'] }],
@@ -229,8 +242,8 @@ const F = [
   ['S022', 'cols',   { h: 'WHY IS IT IN THIS ORDER?',
       left:  { head: 'TAWQIFI', items: ['Instructed, not invented', 'Taught and preserved', 'The majority view'] },
       right: { head: 'IJTIHADI', items: ['Companion judgement, in part', 'A minority view', 'Al-Suyuti records both'] },
-      foot: 'NEITHER IS MARKED CORRECT HERE. THE SCHOLARS DIFFER.' }],
-  ['S024', 'cols',   { h: 'TWO AXES, NOT A REPLACEMENT',
+      foot: 'THE SCHOLARS DIFFER.' }],
+  ['S024', 'cols',   { h: 'TWO AXES',
       left:  { head: 'THE MUSHAF', items: ['WHAT THE BOOK IS', 'How it is recited', 'How it is memorised', 'How it is prayed'] },
       right: { head: 'THE CHRONOLOGY', items: ['HOW IT ARRIVED', 'What each phase answered', 'Why it came when it did', 'asbab al-nuzul'] } }],
   ['S026', 'chain',  { h: 'WHERE A CHRONOLOGY COMES FROM',
@@ -244,7 +257,7 @@ const F = [
       'MIDDLE MECCAN <span class="dim">— the narratives arrive</span>',
       'LATE MECCAN <span class="dim">— longer, consolidating</span>',
       'MEDINAN <span class="dim">— law, community, contracts</span>'],
-      foot: 'AND MANY SURAHS ARE MIXED. HOLD IT LOOSELY.' }],
+      foot: 'AND MANY SURAHS ARE MIXED.' }],
   ['S035', 'bignum', { n: '96', label: 'AL-ALAQ', sub: 'FIRST REVEALED · 96TH IN THE MUSHAF' }],
   ['S038', 'lines',  { h: 'THE ORDER OF FIRSTS', rows: [
       '1 &nbsp; READ', '2 &nbsp; YOUR LORD WHO CREATED', '3 &nbsp; THE PEN',
@@ -265,10 +278,10 @@ const F = [
   ['S068', 'lines',  { h: 'ONE STRUCTURE, TOLD MANY TIMES', rows: [
       'A MAN IS SENT', 'HE IS CALLED A LIAR', 'A FEW BELIEVE', 'THE POWERFUL CLOSE RANKS'],
       pay: 'AND THEN THE OUTCOME.',
-      foot: 'DELIVERED TO PEOPLE BEING BEATEN. THIS HAS HAPPENED BEFORE.' }],
+      foot: 'DELIVERED TO PEOPLE BEING BEATEN.' }],
   ['S078', 'timeline', { marker: 619, hiLabel: 'AM AL-HUZN — THE YEAR OF SORROW' }],
-  ['S081', 'lines',  { rows: ['THE WORST YEAR OF HIS LIFE.'],
-      pay: 'THEN THIS.', foot: 'AND THEN THE SAME CITY, THE SAME MORNING.' }],
+  ['S081', 'lines',  { rows: ['619 — KHADIJA DIES. ABU TALIB DIES.', 'HE IS DRIVEN OUT OF TA’IF.'],
+      pay: 'AM AL-HUZN', foot: 'THE YEAR OF SORROW' }],
   ['S084', 'lines',  { h: 'A CODE, ARRIVING BEFORE THERE IS A STATE', rows: [
       'parents &nbsp;·&nbsp; the relative &nbsp;·&nbsp; the poor &nbsp;·&nbsp; the traveller',
       "the orphan's property &nbsp;·&nbsp; the covenant",
@@ -283,15 +296,15 @@ const F = [
   ['S096', 'bignum', { n: '2:282', label: 'THE LONGEST VERSE IN THE QURAN',
       sub: 'IT IS ABOUT DOCUMENTING A DEBT' }],
   ['S100', 'lines',  { rows: ['THEY LOST AT UHUD.'], pay: 'IT CAME FROM YOURSELVES.',
-      foot: 'ĀL ʿIMRĀN — THE SURAH INCLUDES THE DEFEAT AND NAMES THE MISTAKE' }],
+      foot: 'ĀL ʿIMRĀN' }],
   ['S102', 'cols',   { h: 'CONVICTION, THEN CODE',
       left:  { head: '≈13 YEARS — MECCA', items: ['You will be raised and asked', 'The orphan is the measure', 'Almost no statute'] },
       right: { head: '≈10 YEARS — MEDINA', items: ['Inheritance fractions', 'Debt documentation', 'The rules of war'] },
       foot: 'READ FRONT TO BACK, YOU MEET THE FRACTIONS ON PAGE TWO.' }],
-  ['S107', 'lines',  { h: 'IT COULD HAVE ENDED AT THE ACQUITTAL', rows: [
+  ['S107', 'lines',  { h: 'SURAH AN-NUR ASKS', rows: [
       'WHY DID YOU NOT THINK WELL OF ONE ANOTHER?',
       'WHY DID YOU NOT DEMAND FOUR WITNESSES?',
-      'WHY DID YOU SPEAK WITH NO KNOWLEDGE?'], pay: 'IT DID NOT.' }],
+      'WHY DID YOU SPEAK WITH NO KNOWLEDGE?'] }],
   ['S110', 'timeline', { marker: 628, hiLabel: 'HUDAYBIYYAH — "A CLEAR VICTORY"',
       mark2: 630, hi2Label: 'MECCA ENTERED' }],
   ['S116', 'lines',  { rows: ['THEY HAD WON.', 'TERRITORY. ARMY. MOMENTUM.'],
@@ -301,15 +314,14 @@ const F = [
       '<span class="gold">5:3</span> &nbsp; the religion completed',
       '<span class="gold">4:176</span> &nbsp; inheritance',
       '<span class="gold">110</span> &nbsp; ask forgiveness'],
-      foot: 'AL-SUYUTI DOES NOT PICK ONE. NEITHER WILL WE.' }],
-  ['S123', 'bignum', { n: '4', label: 'THINGS YOU GET FROM THIS',
-      sub: 'THE LAST ONE IS THE ONE TO KEEP' }],
+      foot: 'AL-SUYUTI DOES NOT PICK ONE.' }],
+  ['S123', 'bignum', { n: '4', label: 'THINGS THIS ORDER SHOWS YOU' }],
   ['S125', 'lines',  { h: 'NASKH', rows: ['NOT A DISAGREEMENT.'], pay: 'A SEQUENCE.',
       foot: 'SCOPE AND EXISTENCE ARE BOTH DEBATED AMONG SCHOLARS.' }],
   ['S126', 'cols',   { h: 'A DATING TOOL YOU CAN USE',
       left:  { head: 'PROBABLY MECCA', items: ['Short verses', 'Heavy rhyme', 'Oaths', 'The Hour', 'The orphan'] },
       right: { head: 'PROBABLY MEDINA', items: ['Long verses', 'Conditions', 'Warfare', 'Hypocrites', 'Inheritance'] } }],
-  ['S128', 'cols',   { h: 'THE ONE TO KEEP',
+  ['S128', 'cols',   { h: 'HOW THE VERSE ADDRESSES YOU',
       left:  { head: 'PROBABLY MECCAN', items: [
         '<span class="ar gold" style="font-size:76px">يَا أَيُّهَا النَّاسُ</span>', 'O MANKIND',
         '<span class="dim">Spoken to a city that has not accepted it</span>'] },
@@ -317,27 +329,21 @@ const F = [
         '<span class="ar gold" style="font-size:76px">يَا أَيُّهَا الَّذِينَ آمَنُوا</span>', 'O YOU WHO HAVE BELIEVED',
         '<span class="dim">Spoken to a community that has</span>'] },
       foot: 'PROBABLY. THERE ARE EXCEPTIONS BOTH WAYS, AND SCHOLARS CATALOGUE THEM.' }],
-  ['S130', 'cols',   { h: 'NOT A DIFFERENT QURAN',
+  ['S130', 'cols',   { h: 'TWO AXES',
       left:  { head: 'THE MUSHAF', items: ['WHAT THE BOOK IS'] },
       right: { head: 'THE CHRONOLOGY', items: ['HOW IT ARRIVED'] },
-      foot: 'THE SAME ONE, WITH A SECOND AXIS.' }],
+      foot: 'THE SAME QURAN, READ TWO WAYS.' }],
   ['S134', 'lines',  { rows: [
       'Arabic on screen is set from a verified mushaf.',
       'Dates are as the classical sources give them, disagreements included.',
       'This video issues no ruling.'] }],
   // recitation frames — layout finished, text deliberately absent
-  ['S005', 'ayah',   { slot: 'PASTE VERIFIED — AL-ALAQ 96:1–5', cite: 'AL-ALAQ 96:1–5',
-      note: 'FIVE LINES, ONE PER RECITER PHRASE' }],
-  ['S055', 'ayah',   { slot: 'PASTE VERIFIED — AL-KAWTHAR 108', cite: 'AL-KAWTHAR 108',
-      note: 'THREE AYAT COMPLETE' }],
-  ['S083', 'ayah',   { slot: 'PASTE VERIFIED — AL-ISRA 17:23–24', cite: 'AL-ISRA 17:23–24',
-      note: 'PICK OUT قَضَىٰ IN GOLD' }],
-  ['S114', 'ayah',   { slot: 'PASTE VERIFIED — AL-HUJURAT 49:13', cite: 'AL-HUJURAT 49:13',
-      note: 'PICK OUT لِتَعَارَفُوا IN GOLD' }],
-  ['S119', 'ayah',   { slot: 'PASTE VERIFIED — AL-MAIDA 5:3 (CLAUSE)', cite: 'AL-MAIDA 5:3',
-      note: 'PICK OUT أَكْمَلْتُ IN GOLD' }],
-  ['S121', 'ayah',   { slot: 'PASTE VERIFIED — AN-NASR 110', cite: 'AN-NASR 110',
-      note: 'THREE AYAT COMPLETE' }],
+  ['S005', 'ayah',   { cite: 'AL-ALAQ 96:1–5' }],
+  ['S055', 'ayah',   { cite: 'AL-KAWTHAR 108' }],
+  ['S083', 'ayah',   { cite: 'AL-ISRA 17:23–24' }],
+  ['S114', 'ayah',   { cite: 'AL-HUJURAT 49:13' }],
+  ['S119', 'ayah',   { cite: 'AL-MAIDA 5:3' }],
+  ['S121', 'ayah',   { cite: 'AN-NASR 110' }],
 ];
 
 (async () => {
@@ -347,20 +353,25 @@ const F = [
   let n = 0, slots = 0;
   for (const [id, kind, cfg] of F) {
     const p = await ctx.newPage();
-    await p.setContent(page(T[kind](cfg)), { waitUntil: 'networkidle' });
+    await p.setContent(page(T[kind](cfg)), { waitUntil: 'load' });
     await p.evaluate(() => document.fonts.ready);
-    await p.waitForTimeout(700);
+    await p.waitForTimeout(250);
     const ok = await p.evaluate(() => ({
       amiri: document.fonts.check('76px Amiri'),
       archivo: document.fonts.check('900 300px Archivo'),
     }));
     if (!ok.amiri || !ok.archivo)
       throw new Error(`${id}: font not loaded ${JSON.stringify(ok)} — refusing to ship a fallback face`);
-    await p.screenshot({ path: path.join(OUT, `${id}.jpg`), type: 'jpeg', quality: 92 });
+    // Placeholders never land beside finished frames. A dashed slot in the same
+    // folder as the deliverables is one careless drag away from being cut into
+    // the video.
+    const dir = kind === 'ayah' ? path.join(OUT, '_pending') : OUT;
+    fs.mkdirSync(dir, { recursive: true });
+    await p.screenshot({ path: path.join(dir, `${id}.jpg`), type: 'jpeg', quality: 92 });
     if (kind === 'ayah') slots++;
     n++; await p.close();
   }
   await browser.close();
-  console.log(`${n} frames -> media/clarity/frames/`);
-  console.log(`${slots} carry a PASTE VERIFIED slot and cannot ship until filled from a mushaf.`);
+  console.log(`${n - slots} finished frames -> media/clarity/frames/`);
+  console.log(`${slots} placeholders   -> media/clarity/frames/_pending/  (await verified mushaf text)`);
 })();
