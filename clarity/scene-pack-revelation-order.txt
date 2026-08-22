@@ -6,7 +6,7 @@ Brief:   clarity/flagship-revelation-order.md
 Spec:    clarity/video-formula.md  §5 is the section this pack exists to satisfy
 ================================================================================
 
-READ THE FIVE HARD RULES BEFORE YOU GENERATE ANYTHING
+READ THE SIX HARD RULES BEFORE YOU GENERATE ANYTHING
 --------------------------------------------------------------------------------
 
 1. NO FACES. NO PROPHETS. NO COMPANIONS. Not stylised, not distant, not in
@@ -40,6 +40,16 @@ READ THE FIVE HARD RULES BEFORE YOU GENERATE ANYTHING
    front of an audience. Directions live HERE, in the pack, where a person reads
    them. If a line explains the frame rather than the subject, it does not go in
    the frame.
+
+6. ARABIC SITS ABOVE. On any frame carrying both, the Arabic goes above its
+   citation, and above its gloss or its list — never underneath. The eye should
+   reach the words themselves first and the reference second. This is already
+   how S001, S060 and S128 read, and how the six recitation plates are built
+   (citation beneath an empty ayah area); S089 originally had the formula at the
+   FOOT of each column, under four lines of English, and was rebuilt to match.
+   Citations use SURAH + NUMBER throughout — "AL-KAWTHAR 108", not
+   "AL-KAWTHAR · THREE VERSES", which describes the surah rather than locating
+   it.
 
 --------------------------------------------------------------------------------
 THE FIXED STYLE BLOCK — append to EVERY illustration prompt, unchanged
