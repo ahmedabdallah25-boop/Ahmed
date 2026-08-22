@@ -100,10 +100,11 @@ RECITATION marks a place where the TTS stops and a real reciter is heard. Seven
 of them, 86 seconds total. Never synthesise these.
 
 Their frames render to media/clarity/frames/_pending/ — NOT beside the finished
-frames — as the citation over an empty slot, because a dashed placeholder in the
-deliverable folder is one careless drag away from being cut into the video. The
-per-frame directions below (which word to pick out in gold, how many lines) are
-for the editor and must not appear in the rendered picture.
+frames — as PARTIAL FRAMES: the citation in its final position, and the ayah area
+left empty. No label, no dashed box, no "awaiting" caption. The missing text is
+visible on its own and does not need a note explaining itself; a note explaining
+itself is how production language ends up on screen. The per-frame directions
+below, and in _pending/README.md, are for the editor and never enter the picture.
 
 ================================================================================
 ACT 0 — THE HOOK · 0:00–2:27

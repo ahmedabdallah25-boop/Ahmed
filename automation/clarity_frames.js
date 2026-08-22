@@ -28,11 +28,13 @@
  *
  * Single words and the two address formulae are set inline: short, unambiguous,
  * and the same strings already reviewed and published in localizations.json.
- * MULTI-AYAH BLOCKS ARE NOT. Those render to frames/_pending/ as a citation over
- * an empty slot — never beside the finished frames, because a dashed placeholder
- * in the deliverable folder is one careless drag away from being cut into the
- * video. A wrong citation went live on this channel earlier today from exactly
- * the reflex this guards: filling a gap with something plausible.
+ * MULTI-AYAH BLOCKS ARE NOT. Those render to frames/_pending/ as PARTIAL FRAMES:
+ * the citation in its final position, and the ayah area left empty. No label, no
+ * dashed box, no "awaiting" — the missing text is visible on its own and needs no
+ * caption explaining itself. What each one still needs is in _pending/README.md,
+ * beside the plates, in text. A wrong citation went live on this channel earlier
+ * today from exactly the reflex this guards: filling a gap with something
+ * plausible.
  */
 const { chromium } = require('playwright');
 const fs = require('fs');
@@ -114,15 +116,21 @@ const T = {
     </div>
     ${foot ? `<div class="foot">${foot}</div>` : ''}`,
 
-  // Placeholder only — never a deliverable. It renders the citation the viewer
-  // will see and an empty slot where the ayah goes, and NOTHING ELSE. Directions
-  // to the editor ("pick out X in gold", "three ayat complete") live in the scene
-  // pack, which is where a human reads them. Baking them into the picture puts
-  // production notes on screen in front of an audience.
+  // A PARTIAL FRAME, NOT A PLACEHOLDER WITH A LABEL ON IT.
+  //
+  // Everything here is real on-screen copy: the citation, in its final position
+  // and treatment. The ayah area above it is simply empty, because the text is
+  // not verified yet and will be pasted from a mushaf.
+  //
+  // It previously rendered "AWAITING VERIFIED MUSHAF TEXT" in a dashed box. That
+  // was the same mistake as the editor directions before it, one layer down — a
+  // note to a colleague, printed into a picture. Moving the file to _pending/ did
+  // not fix it, because the pixels still carried the note. What each frame still
+  // needs is written in _pending/README.md, next to the plates, in text.
   ayah: ({ cite }) => `
     <div style="text-align:center">
-      <div class="lbl gold" style="font-size:60px">${cite}</div>
-      <div class="slot" style="margin-top:44px">AWAITING VERIFIED MUSHAF TEXT</div>
+      <div style="height:340px"></div>
+      <div class="lbl gold" style="font-size:52px;letter-spacing:8px">${cite}</div>
     </div>`,
 
   arline: ({ ar, gloss, note }) => `
@@ -347,11 +355,13 @@ const F = [
 ];
 
 (async () => {
+  const only = process.argv.slice(2);
+  const todo = only.length ? F.filter(([id]) => only.includes(id)) : F;
   fs.mkdirSync(OUT, { recursive: true });
   const browser = await chromium.launch();
   const ctx = await browser.newContext({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 });
   let n = 0, slots = 0;
-  for (const [id, kind, cfg] of F) {
+  for (const [id, kind, cfg] of todo) {
     const p = await ctx.newPage();
     await p.setContent(page(T[kind](cfg)), { waitUntil: 'load' });
     await p.evaluate(() => document.fonts.ready);
@@ -372,6 +382,39 @@ const F = [
     n++; await p.close();
   }
   await browser.close();
+
+  // The per-frame directions live here, in text, beside the plates. They used to
+  // be rendered into the images, which is how a note to a colleague ends up on
+  // screen in front of an audience.
+  if (fs.existsSync(path.join(OUT, '_pending'))) {
+    fs.writeFileSync(path.join(OUT, '_pending', 'README.md'),
+`# Recitation plates — awaiting verified mushaf text
+
+Each JPEG here is a PARTIAL FRAME, not a placeholder: everything on it is real
+on-screen copy — the citation, in its final position and treatment. The area
+above it is empty because the ayah is not verified yet.
+
+**Nothing in this folder may be cut into the video as-is.** Not because it
+carries a warning — it deliberately does not — but because the ayah is missing,
+which is visible.
+
+Paste the text from a checked digital mushaf, never retyped, and have a reader
+confirm it on screen before render.
+
+| Frame | Citation | What goes above the citation |
+|---|---|---|
+| S005 | AL-ALAQ 96:1–5 | Five ayat, Amiri, cream, one line appearing per reciter phrase. No translation. |
+| S055 | AL-KAWTHAR 108 | Three ayat complete, one per phrase. |
+| S083 | AL-ISRA 17:23–24 | Both ayat. Set \u0642\u064e\u0636\u064e\u0649\u0670 in gold, the rest cream. |
+| S114 | AL-HUJURAT 49:13 | The ayah. Set \u0644\u0650\u062a\u064e\u0639\u064e\u0627\u0631\u064e\u0641\u064f\u0648\u0627 in gold. |
+| S119 | AL-MAIDA 5:3 | The relevant clause only. Set \u0623\u064e\u0643\u0652\u0645\u064e\u0644\u0652\u062a\u064f in gold. |
+| S121 | AN-NASR 110 | Three ayat complete, one per phrase. |
+
+Regenerate one plate with:
+
+    NODE_PATH=/opt/node22/lib/node_modules node automation/clarity_frames.js S083
+`, 'utf8');
+  }
   console.log(`${n - slots} finished frames -> media/clarity/frames/`);
   console.log(`${slots} placeholders   -> media/clarity/frames/_pending/  (await verified mushaf text)`);
 })();
