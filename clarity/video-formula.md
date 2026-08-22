@@ -214,3 +214,17 @@ For the next Clarity long-form:
 - [ ] **Name two authorities and concede one disagreement.**
 - [ ] **No intro, no logo, no "assalamu alaikum and welcome back".** Frame one is the number.
 - [ ] Verse citations by surah and ayah; verified-mushaf note; no-ruling disclaimer.
+
+---
+
+## The first video built to this spec
+
+[`flagship-revelation-order.md`](flagship-revelation-order.md) — *Every Surah in the Order It Was
+Actually Revealed*, transposed from the reference channel's **all-time top video** (1.1M views,
+51:35, *Every Letter the Apostle Paul Wrote, Explained in Order*).
+
+It is worth reading even if that video never gets made, because it is this spec applied end to end
+with the source's own transcript as the model: the seven-move hook broken down and rewritten, the
+five information graphics named, and the runtime honestly adapted — 114 surahs cannot get four
+minutes each the way Paul's 13 letters did, so it runs the arc in six phases instead of a
+114-entry list.
