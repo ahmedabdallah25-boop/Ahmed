@@ -1,0 +1,760 @@
+================================================================================
+SCENE PACK — EVERY SURAH IN THE ORDER IT WAS ACTUALLY REVEALED
+Clarity in the Quran · UC0eBu0ZXcF20pTAG3lUnPXA
+Script:  clarity/script-revelation-order.md   (28 TTS batches, 43:18)
+Brief:   clarity/flagship-revelation-order.md
+Spec:    clarity/video-formula.md  §5 is the section this pack exists to satisfy
+================================================================================
+
+READ THE FOUR HARD RULES BEFORE YOU GENERATE ANYTHING
+--------------------------------------------------------------------------------
+
+1. NO FACES. NO PROPHETS. NO COMPANIONS. Not stylised, not distant, not in
+   silhouette-with-features, not "just the outline". Nothing in this pack depicts
+   the Prophet ﷺ, any prophet, or any named Companion, and no prompt below asks
+   for a human face of any kind. Where a person is unavoidable the pack uses
+   hands, feet, a shadow on a wall, a figure at a distance so small it is a mark,
+   or the space a person has just left. This is not a stylistic preference and it
+   is not negotiable — on this subject it is the difference between a video that
+   circulates and one that gets torn apart in its own comments.
+
+2. NO PHOTOREAL ANYTHING. Ink and watercolour throughout. thumbnail-system.md §3
+   already established why: this channel carries a public "AI BE AWARE" comment,
+   and photoreal AI is the signature that comment is pointing at. A painting
+   reads as somebody made this.
+
+3. NO GENERATED TEXT INSIDE A GENERATED IMAGE. Image models produce nonsense
+   Arabic and misspelt English, and on a Quran channel a garbled ayah on screen
+   is unrecoverable. Every glyph the viewer sees — Arabic, English, numerals,
+   labels — is TYPESET IN THE EDIT over a plate that was generated empty. Every
+   prompt below therefore ends with the negative block, which forbids text.
+
+4. THE ARABIC IS SET FROM A VERIFIED MUSHAF. Copy-paste from a checked digital
+   text, then have a reader confirm it on screen before render. Never retype it.
+
+--------------------------------------------------------------------------------
+THE FIXED STYLE BLOCK — append to EVERY illustration prompt, unchanged
+--------------------------------------------------------------------------------
+
+  STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet
+  bleeding washes with visible grain and hard edges where the water dried.
+  Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a
+  single warm gold accent. Muted, aged, hand-made. Generous empty parchment.
+  Cinematic 16:9, 1920x1080.
+
+  NEGATIVE: no text, no letters, no writing, no numerals, no calligraphy, no
+  signature, no watermark, no human face, no facial features, no portrait, no
+  photoreal skin, no 3D render, no digital gloss, no lens flare, no modern
+  objects, no crosses, no church architecture, no menorah, no Star of David.
+
+  (The last four exist because this channel's assets were transposed from a
+  Christian channel once already and the artefacts leaked into public copy. The
+  same leak in an image is worse, because nobody proof-reads a picture.)
+
+--------------------------------------------------------------------------------
+HOW 135 PROMPTS BECOME ~400 VISUAL EVENTS
+--------------------------------------------------------------------------------
+
+video-formula.md measured the reference channel changing frame every 3–5 seconds.
+Over 2,598 seconds that is 433–866 events. Generating 430 images would cost a
+fortune and drift in style across the video, which is the exact failure the fixed
+style block exists to prevent.
+
+So each ILLUS scene yields FOUR events from ONE generation:
+
+  1. LINE     — same prompt + "line art only, no colour, no wash", same seed
+  2. WASH     — the prompt exactly as written
+  3. PUSH     — the wash, slow 4% push-in
+  4. DRIFT    — the wash, slow lateral drift across the grain
+
+  Events 1→2 cross-dissolve over 1.5–2.5s: the ink appears, then the colour
+  blooms into it. You are showing the drawing being made. It is native to this
+  medium rather than imposed on it, and it is a signature the channel can own.
+  Hold LINE while the VO sets the idea up; let the WASH bloom on the word that
+  lands.
+
+     90 ILLUS × 4 events           = 360
+     38 GRAPHIC frames (in-edit)   =  38
+      7 RECITATION frames          =   7
+     ------------------------------------
+     405 events over 2,598s        ≈ 6.4s average
+
+  Tightest cutting in ACT 0 and ACT 7. Longest holds in ACT 3's narrative stretch.
+
+GRAPHIC frames are NOT generated. They are built in the edit from typeset text on
+the navy ground — same palette as the thumbnails: navy #16203C, gold #E8A33D,
+cream #F2ECDC, rust #C0492B. Amiri for Arabic, Archivo for Latin. These are the
+frames that carry the argument, and per video-formula.md §5 they are the reason
+this video works at 43 minutes instead of collapsing into mood art.
+
+RECITATION marks a place where the TTS stops and a real reciter is heard. Seven
+of them, 86 seconds total. Never synthesise these.
+
+================================================================================
+ACT 0 — THE HOOK · 0:00–2:27
+================================================================================
+
+S001 · 0:00 · GRAPHIC · first frame, no fade-in, cold open
+  Full-bleed navy. Gold numeral "١١٤" centre, Amiri, enormous. Under it, cream
+  Archivo: "114". Nothing else. Holds 2s, cuts on the word "Hira".
+
+S002 · 0:02 · ILLUS · "Hira. A cave on a mountain outside Mecca"
+  A dark cave mouth in a bare rock face seen from inside, looking out at a
+  blinding pale sky. The opening is a hard-edged shape of light. No figure.
+
+S003 · 0:11 · ILLUS · "a man of forty who cannot read"
+  An empty stone ledge inside the cave, worn smooth. A folded woollen cloak
+  resting on it, still holding the shape of a body that has gone.
+
+S004 · 0:19 · ILLUS · "He has no pen, no scroll"
+  Three objects laid on parchment with wide space between them: a cut reed pen,
+  a rolled blank scroll, a clay inkwell — all pushed to the frame's far edge,
+  emphatically unused, the centre of the frame empty.
+
+S005 · 0:26 · RECITATION · Al-Alaq 96:1–5 · 22s
+  Reciter enters. On screen: GRAPHIC. Navy. The five ayat set in Amiri, cream,
+  appearing one line at a time on the reciter's phrasing. No translation yet.
+  VERIFIED MUSHAF TEXT ONLY.
+
+S006 · 0:48 · ILLUS · "One hundred and fourteen surahs. Twenty-three years."
+  A tall stack of loose parchment leaves seen edge-on, uneven, the topmost lifted
+  slightly by air. Warm light raking across the edges.
+
+S007 · 0:56 · GRAPHIC · the second big number
+  Navy. Gold "23", enormous. Beneath in cream: "YEARS". Beneath that, small:
+  "610 — 632".
+
+S008 · 1:04 · ILLUS · "Your mushaf runs from the longest surah to the shortest"
+  A closed book seen from the fore-edge, the block of pages fanned so the
+  thickness reads as mass. Warm parchment, indigo binding thread visible.
+
+S009 · 1:14 · GRAPHIC · THE POSITION REVEAL — hold 6s, it is the hook's payload
+  Navy. A horizontal strip of 114 thin cream ticks, left to right. Tick 96 alone
+  in gold, three times the height. Label under tick 1, cream: "AL-BAQARAH".
+  Label under tick 96, gold: "AL-ALAQ — FIRST REVEALED".
+
+S010 · 1:24 · ILLUS · "It is like arranging someone's letters by how long each one is"
+  Loose written leaves — blank, no text — sorted into descending stacks by
+  physical size on a wooden table, tallest left, smallest right. Deliberately
+  bureaucratic. The one visual joke in the film; play it straight.
+
+S011 · 1:36 · ILLUS · "people being beaten in the streets of Mecca"
+  A narrow sunlit alley between mud-brick walls, empty. A dropped sandal and a
+  dark stain on the packed earth. Long shadow from a wall. Nobody in frame.
+
+S012 · 1:50 · ILLUS · "a plain called Arafat, with a hundred thousand people"
+  A vast open plain under a white sky seen from high above, the crowd rendered
+  only as a fine speckled texture of ink dots covering the ground to the horizon.
+  A single low hill. No individual discernible.
+
+S013 · 2:08 · ILLUS · "one thing at the end that you will be able to use"
+  A single parchment leaf held open by two hands at the very bottom edge of
+  frame — hands only, cropped at the wrist, warm skin in wash, no faces.
+
+================================================================================
+ACT 1 — THE ORDERING PROBLEM · 2:27–9:15
+================================================================================
+
+S014 · 2:27 · ILLUS · "Open a mushaf"
+  An open book on a low wooden rihal stand, both pages blank parchment, warm
+  side-light, deep shadow behind. Shot square-on.
+
+S015 · 2:36 · GRAPHIC · the descending count, builds live
+  Navy. Rows appearing one per beat, cream label + gold number, right-aligned:
+  AL-FATIHA 7 · AL-BAQARAH 286 · AL-IMRAN 200 · AN-NISA 176 · … · AN-NAS 6.
+  The numbers falling is the point; let the eye run down the column.
+
+S016 · 2:58 · ILLUS · "By the nineties they are under twenty"
+  The same fanned page-block as S008 but from the opposite end, the last leaves
+  visibly thinner and fewer, light coming through them.
+
+S017 · 3:08 · GRAPHIC · ★ THE LENGTH GRAPH — the single most important frame ★
+  Navy, holds 12s, no VO competition — let it breathe.
+  TOP PLOT: x = mushaf position 1→114, y = verse count. A clean descending
+  sawtooth. Label in cream: "ARRANGED BY LENGTH".
+  BOTTOM PLOT: identical y data, x = revelation order. Formless scatter. Label in
+  gold: "ARRANGED BY TIME".
+  One gold dot tracked across both, joined by a thin gold line, annotated
+  "AL-ALAQ".
+  Build this first. If only one graphic gets made, make this one. A viewer with
+  the sound off understands the entire video from this frame alone.
+
+S018 · 3:26 · ILLUS · "preserved in memory and in writing"
+  Four objects arranged as a specimen row on parchment: a thin flat stone, a
+  dried palm stalk, a wide flat bone, a scrap of vellum. Museum-plate stillness.
+
+S019 · 3:52 · ILLUS · "a battle at Yamama"
+  A field of dry stubble after the fact. Broken arrow shafts standing at angles.
+  Low sun, long shadows. No bodies, no figures, no blood.
+
+S020 · 4:08 · ILLUS · "collected into one written volume"
+  Loose leaves being squared into a single neat block by two hands at the frame's
+  bottom edge — hands only, cropped at the wrist.
+
+S021 · 4:22 · ILLUS · "copies were sent out to the major centres"
+  A map-like aerial of dry country with four faint routes radiating from a
+  central point toward the frame edges, each ending at a small walled shape.
+  Drawn as a hand-inked chart, not a satellite view.
+
+S022 · 4:38 · GRAPHIC · the two positions, side by side
+  Navy, two columns. Left, cream: "TAWQIFI — instructed / majority view". Right,
+  cream: "IJTIHADI — companion judgement / minority view". Between them a thin
+  gold vertical rule. Nothing marked correct.
+
+S023 · 5:05 · ILLUS · "Reading it in the order revealed is not a correction"
+  One book, closed, centred, lit warmly and squarely — steady, unfussy, whole.
+  This frame's job is reassurance; keep it calm and symmetrical.
+
+S024 · 5:26 · GRAPHIC · the two axes
+  Navy. A horizontal gold arrow labelled cream "WHAT THE BOOK IS — the mushaf".
+  A vertical gold arrow labelled cream "HOW IT ARRIVED — the chronology". They
+  cross. Neither is longer.
+
+S025 · 5:44 · ILLUS · "asbab al-nuzul, the occasions of revelation"
+  A margin of a parchment page densely filled with fine handwritten annotation
+  reduced to abstract ink strokes — the shape of scholarship, not readable text.
+  (No legible glyphs: see hard rule 3.)
+
+S026 · 6:16 · GRAPHIC · the three sources, as a chain diagram
+  Navy. Three gold nodes on a horizontal line, cream labels beneath:
+  "CLASSICAL NARRATION — Ibn Abbas, in al-Suyuti" → "THE CAIRO EDITION, 1924" →
+  "NÖLDEKE, 1860". A cream brace under all three: "AGREE ON THE ARC. DISAGREE ON
+  THE DETAIL."
+
+S027 · 6:34 · ILLUS · "al-Suyuti records more than one such list"
+  Two open manuscript volumes side by side on a table, both with columned pages
+  of abstract ink marks, the columns visibly not aligning with each other.
+
+S028 · 6:56 · ILLUS · "The Cairo edition of nineteen twenty-four"
+  A single printed page corner, the heading area empty (text typeset in edit),
+  crisp early-20th-century print texture on cream stock. Slight foxing at edge.
+
+S029 · 7:16 · ILLUS · "Nöldeke divided the Meccan period into three phases"
+  Three parchment strips of increasing length pinned in a row, ends ragged,
+  a fine indigo line ruled beneath them.
+
+S030 · 7:42 · GRAPHIC · ★ THE TIMELINE — recurring spine, first appearance ★
+  Navy. A horizontal gold line across the full width. Ticks with cream dates:
+  610 · 615 · 619 · 622 · 624 · 628 · 630 · 632. The 622 tick is gold and twice
+  the height, labelled "HIJRA". Everything left of it labelled "MECCA",
+  everything right "MEDINA".
+  This frame RETURNS at S045, S063, S078, S090, S110 with a travelling gold
+  marker showing where in the story we are. Build it once as a template.
+
+S031 · 8:02 · GRAPHIC · the four phases
+  Navy. Four stacked bars of increasing length, gold, labelled cream: EARLY
+  MECCAN / MIDDLE MECCAN / LATE MECCAN / MEDINAN. Bar length = typical verse
+  length, so the growth is the visual.
+
+S032 · 8:44 · ILLUS · "Many surahs are mixed"
+  A single parchment leaf where two distinct ink tones meet mid-page — one warmer
+  and older, one cooler and fresher — with no hard boundary between them.
+
+S033 · 9:00 · ILLUS · "Hold it loosely"
+  An open hand, palm up, at the bottom of frame holding nothing. Cropped at the
+  wrist. Warm wash, soft edge.
+
+================================================================================
+ACT 2 — EARLY MECCAN · 9:15–17:43 · c.610–615
+================================================================================
+
+S034 · 9:15 · ILLUS · "Back to the cave"
+  Return to S002's composition, closer now, the light from the cave mouth
+  stronger and warmer. Reuse the seed for continuity.
+
+S035 · 9:26 · GRAPHIC · position callout
+  Navy. Gold "96", huge, with cream beneath: "AL-ALAQ · FIRST REVEALED · 96TH IN
+  THE MUSHAF".
+
+S036 · 9:40 · ILLUS · "Created man from a clinging clot"
+  Abstract: a single dark red-brown wash blot on wet parchment, bleeding at its
+  edge, magnified to fill the frame. Biological without being anatomical.
+
+S037 · 9:56 · ILLUS · "Who taught by the pen"
+  A cut reed pen lying alone on parchment, its nib freshly wet, one small drop of
+  ink beside it. Centred, still, reverent. Hold long.
+
+S038 · 10:18 · GRAPHIC · the ordering of firsts
+  Navy. A numbered cream list appearing one line at a time: "1. READ · 2. YOUR
+  LORD WHO CREATED · 3. THE PEN · 4. TAUGHT WHAT HE DID NOT KNOW". Then, in gold
+  beneath: "NO LAW YET."
+
+S039 · 10:38 · ILLUS · "the rest of Al-Alaq is generally taken to be later"
+  One parchment leaf, the upper third in warm aged ink, the lower two thirds in a
+  visibly cooler fresher ink, a faint horizontal join between them.
+
+S040 · 11:00 · ILLUS · "Then, according to most accounts, nothing."
+  An empty sky. Nothing else in frame but a wash gradient from pale at the
+  horizon to deeper above, and a single tiny bird high up. Hold 8s. Let it be
+  uncomfortable.
+
+S041 · 11:22 · ILLUS · "he came down the mountain shaking and asked to be covered"
+  A heavy woollen blanket bunched on a floor, still shaped by a body, seen from
+  above. Dim interior light. No figure.
+
+S042 · 11:48 · GRAPHIC · the pairing the mushaf hides
+  Navy, split screen. Left, cream: "AL-MUZZAMMIL · 73 · O you who wraps himself".
+  Right, cream: "AL-MUDDATHTHIR · 74 · O you who covers himself". Beneath both,
+  gold: "BOTH BEGIN: GET UP."
+
+S043 · 12:12 · ILLUS · "arise, and warn"
+  An empty doorway from inside a dark room, opening onto hard white daylight. The
+  threshold is the brightest thing in frame.
+
+S044 · 12:34 · ILLUS · "stand at night, but not all night"
+  A small oil lamp on a floor, one flame, the room around it going to deep
+  indigo. A prayer mat edge just catching the light.
+
+S045 · 12:52 · GRAPHIC · TIMELINE RETURN — marker at 610
+  Template from S030. Gold marker sitting on 610. Everything ahead of it dimmed.
+
+S046 · 13:04 · RECITATION · oath-opening montage · 14s
+  Reciter: the opening oaths of Al-Fajr, Ash-Shams, At-Tin, Al-Asr — first ayah
+  of each only. On screen, four ILLUS in rapid succession, ~3.5s each:
+   S046a  dawn breaking over bare hills, first light on stone
+   S046b  the sun at full height, bleaching a dry landscape white
+   S046c  a fig and an olive lying together on parchment, still-life
+   S046d  a sand-filled hourglass in silhouette against a pale sky
+
+S047 · 13:18 · ILLUS · "verses of three, four, six words"
+  Six short ink strokes in a vertical column on parchment, each shorter than a
+  thumb, evenly spaced. Rhythm as image. No letterforms.
+
+S048 · 13:34 · ILLUS · "carried by memory through a city that does not want to hear it"
+  A night street of mud-brick, one shuttered window with a thin line of lamplight
+  escaping under it. Everything else dark indigo.
+
+S049 · 13:56 · ILLUS · "when the sun is folded up"
+  A sun low and swollen on the horizon, the sky around it rendered as a wash
+  being physically pulled or rolled at one corner. Surreal, restrained.
+
+S050 · 14:16 · ILLUS · "a man who spent his life counting his wealth"
+  A heap of small coins on a table, and beside it a set of scales with one empty
+  pan hanging lower than the full one. No hands.
+
+S051 · 14:36 · ILLUS · "The orphan you pushed away"
+  A child's small worn sandal alone on a doorstep, and the door shut. Warm dust.
+  No child in frame.
+
+S052 · 14:52 · ILLUS · "two roads and a steep one"
+  A dry valley where a path forks: one broad and level running out of frame
+  right, one narrow and climbing steeply left into rock. Drawn from above.
+
+S053 · 15:16 · ILLUS · "Al-Masad. It is about one specific man."
+  A single dead branch, bark stripped, lying on pale ground. Harsh directional
+  light, hard shadow.
+
+S054 · 15:38 · ILLUS · "his sons had died in infancy"
+  Two very small mounds of earth side by side on open ground, unmarked, with a
+  third space beside them. Distant, low horizon, no figure.
+
+S055 · 15:56 · RECITATION · Al-Kawthar 108, complete · 12s
+  Reciter. On screen: GRAPHIC — navy, the three ayat in Amiri, cream, one per
+  phrase. VERIFIED MUSHAF TEXT ONLY.
+
+S056 · 16:08 · GRAPHIC · the reversal, plain
+  Navy. Cream, struck through with a rust rule: "HE IS CUT OFF". Beneath, gold:
+  "THE ONE WHO HATES YOU IS." Same struck-line device as the thumbnails.
+
+S057 · 16:26 · ILLUS · "the hot stones of the valley floor"
+  Cracked sun-bleached stones filling the frame, heat shimmer suggested by a
+  broken wash at the top edge. One large flat rock at centre. Nothing else.
+
+S058 · 16:52 · ILLUS · "the first person to die for this"
+  A single small stone set upright in bare ground, and a long shadow. Wide empty
+  frame. Restraint is the whole instruction here — no violence depicted.
+
+S059 · 17:12 · ILLUS · "the mountains will be like carded wool"
+  A mountain ridge whose upper half dissolves into loose floating fibres of
+  wool-white wash, drifting off the peak.
+
+S060 · 17:28 · GRAPHIC · the address marker, first seeding
+  Navy. Amiri, cream, large: ﴿يَا أَيُّهَا النَّاسُ﴾. Beneath in gold:
+  "O MANKIND". Beneath that, small cream: "MECCA. THERE IS NO IN-GROUP YET."
+  This plants the payoff. It returns at S128.
+
+================================================================================
+ACT 3 — MIDDLE MECCAN · 17:43–22:16 · c.615–619
+================================================================================
+
+S061 · 17:43 · GRAPHIC · the register changes, measured
+  Navy. Two horizontal bars: a short gold one labelled cream "EARLY MECCAN", a
+  long gold one labelled "MIDDLE MECCAN", same scale. Caption: "AVERAGE VERSE
+  LENGTH". Let the difference do the talking.
+
+S062 · 17:58 · ILLUS · "sustained narrative. Stories, with scenes."
+  A long unrolled scroll running from the bottom-left corner to the top-right,
+  blank, its length the subject. Warm raking light along its curl.
+
+S063 · 18:12 · GRAPHIC · TIMELINE RETURN — marker sliding 615→619
+  Template from S030, marker animating slowly across the Meccan span.
+
+S064 · 18:26 · ILLUS · "Musa in front of Pharaoh"
+  A vast hypostyle hall of painted columns receding into darkness, floor empty.
+  Scale as intimidation. No figures at all.
+
+S065 · 18:44 · ILLUS · "Ibrahim asking his father why he is worshipping something he carved"
+  A workshop floor: wood shavings, a mallet, a chisel, and an unfinished carved
+  block whose form is deliberately unresolved — no face, no idol readable as a
+  deity. Just worked wood.
+
+S066 · 19:02 · ILLUS · "Nuh building in the middle of nowhere"
+  A partial wooden hull frame standing in dry cracked earth, far from any water,
+  ribs open to the sky. Small in a very wide frame.
+
+S067 · 19:20 · ILLUS · "the best of narrations"
+  A well seen from directly above — a perfect dark circle in pale stone, a rope
+  going down into it. (Yusuf, without depicting him.)
+
+S068 · 19:40 · GRAPHIC · the repeating structure
+  Navy. Five cream lines appearing in sequence: "A MAN IS SENT" / "HE IS CALLED A
+  LIAR" / "A FEW BELIEVE" / "THE POWERFUL CLOSE RANKS" / then gold: "AND THEN THE
+  OUTCOME." A gold loop arrow returning line 5 to line 1.
+
+S069 · 20:02 · ILLUS · "cross the Red Sea to seek refuge"
+  A small wooden boat on open water seen from a great height, wake behind it,
+  land as a thin band at the top edge. The boat is tiny.
+
+S070 · 20:22 · ILLUS · "the case is argued in front of the throne"
+  An empty carved wooden chair on a raised stone dais in a tall bare hall, seen
+  slightly off-axis. Ethiopian highland light — cooler, greener than Mecca.
+
+S071 · 20:44 · ILLUS · "four hundred miles away, in the one week it is needed"
+  A hand-inked chart of the Red Sea with two points marked, a thin gold line
+  between them. Chart, not map — visible ruling and compass rose.
+
+S072 · 21:06 · ILLUS · "on his way to kill the Prophet"
+  A sword in its scabbard leaning against a mud-brick wall beside a closed door.
+  Nobody holding it. Hard midday shadow.
+
+S073 · 21:22 · ILLUS · "finds her reciting"
+  A doorway ajar with warm light spilling through the gap onto a dark floor, and
+  a single parchment leaf on the ground just inside. No figures.
+
+S074 · 21:44 · ILLUS · "a slow squeeze"
+  A narrow rocky defile between two cliff walls, the passage at the bottom almost
+  closed. Deep shadow, one strip of sky.
+
+S075 · 22:02 · ILLUS · "The reports describe people eating leaves"
+  A shallow clay bowl on bare ground containing a few dry leaves. Overhead light.
+  Nothing else in frame. Hold.
+
+================================================================================
+ACT 4 — LATE MECCAN · 22:16–26:11 · c.619–622
+================================================================================
+
+S076 · 22:16 · ILLUS · "Khadija dies"
+  An interior: two cushions on a floor beside a low table, one indented from long
+  use, one smooth. A cold lamp. Nobody.
+
+S077 · 22:40 · ILLUS · "Abu Talib's protection stood in the way, and now it does not"
+  A high mud-brick wall with a gap newly broken in it, rubble at the base, the
+  landscape beyond visible through the breach.
+
+S078 · 22:58 · GRAPHIC · TIMELINE RETURN — 619, marked
+  Template from S030, marker on 619, and the tick labelled in gold: "AM AL-HUZN
+  — THE YEAR OF SORROW".
+
+S079 · 23:12 · ILLUS · "driven out of it by a crowd throwing stones"
+  A dirt road leading away from a walled town, scattered stones on it, and a
+  single set of footprints going out. Dusk. No figure.
+
+S080 · 23:34 · ILLUS · "a journey by night"
+  A night sky of deep indigo over a dark landscape, one pale road of light
+  running from the lower edge toward the horizon. Abstract, not literal. Depict
+  no ascent, no figure, no Buraq.
+
+S081 · 24:00 · GRAPHIC · the sequence, stated
+  Navy. Cream: "THE WORST YEAR OF HIS LIFE". Gold arrow down. Cream: "THEN THIS."
+  Then, small: "AND THEN THE SAME CITY, THE SAME MORNING."
+
+S082 · 24:18 · ILLUS · "the five daily prayers"
+  Five prayer mats laid in a row on a stone floor, evenly spaced, empty, warm
+  light crossing them at an angle.
+
+S083 · 24:40 · RECITATION · Al-Isra 17:23–24 · 12s
+  Reciter. On screen: GRAPHIC — navy, the two ayat in Amiri, cream, with the word
+  ﴿قَضَىٰ﴾ picked out in gold. VERIFIED MUSHAF TEXT ONLY.
+  (Cross-links to PUPdFpvEA04 — put that card on screen here.)
+
+S084 · 24:52 · GRAPHIC · the code arriving before the state
+  Navy. A cream numbered list building fast, one line per beat: parents · the
+  relative · the poor · the traveller · the orphan's property · the covenant ·
+  full measure · an even balance. Then gold beneath: "MECCA. NO STATE YET."
+
+S085 · 25:20 · ILLUS · "a dated, checkable, falsifiable prediction"
+  A pair of brass scales, and beside them a stack of coins wagered on a flat
+  stone. Chart-like ruling in the background.
+
+S086 · 25:42 · ILLUS · "delegations from Yathrib meet him at Aqaba"
+  A narrow mountain pass at night, two small lamps set on the ground facing each
+  other with an empty space between them.
+
+S087 · 26:00 · GRAPHIC · thirteen years, counted
+  Navy. Gold "13", huge. Cream beneath: "YEARS IN MECCA". Then, smaller:
+  "≈90 OF 114 SURAHS. ALMOST NO STATUTE."
+
+================================================================================
+ACT 5 — EARLY MEDINAN · 26:11–31:21 · 622–627
+================================================================================
+
+S088 · 26:11 · ILLUS · "Six hundred and twenty-two. The Hijra."
+  A road running north out of dry hill country, seen from behind and above, empty,
+  going toward a green horizon. The only warm-to-cool transition in the film —
+  Mecca's ochre giving way to Medina's greener palette. Establish it here.
+
+S089 · 26:26 · GRAPHIC · ★ THE REGISTER CHANGE — labelled comparison ★
+  Navy, two columns, holds 10s.
+  LEFT, cream header "MECCA": short verses · heavy rhyme · oaths on dawn, sun,
+  fig · the Hour · the orphan · ﴿يَا أَيُّهَا النَّاسُ﴾
+  RIGHT, cream header "MEDINA": long verses · rhyme thins · conditions and
+  exceptions · inheritance · contracts · ﴿يَا أَيُّهَا الَّذِينَ آمَنُوا﴾
+  Gold vertical rule between. The two Arabic phrases in gold, everything else
+  cream — the eye should land on them.
+
+S090 · 26:48 · GRAPHIC · TIMELINE RETURN — marker crossing 622
+  Template from S030. The marker crosses the tall gold HIJRA tick. The label
+  "MECCA" behind it dims; "MEDINA" ahead brightens.
+
+S091 · 27:04 · ILLUS · "verses that ran four words now run forty"
+  Two parchment leaves side by side: the left with six short ink strokes, the
+  right with dense continuous ruled lines of abstract marks filling the page.
+
+S092 · 27:26 · ILLUS · "turn your face toward the Sacred Mosque"
+  A stone floor with a shallow arched niche in a bare wall — a mihrab, empty,
+  lit from one side. Nobody praying.
+
+S093 · 27:48 · ILLUS · "Fasting in Ramadan is prescribed"
+  A thin crescent moon over a flat rooftop skyline, and on a ledge in the
+  foreground a bowl of dates and a cup of water, untouched.
+
+S094 · 28:08 · ILLUS · "A prohibition of riba"
+  A set of scales with a small stone secretly added to one pan, tipping it. The
+  extra stone is the subject; light it.
+
+S095 · 28:28 · ILLUS · "It is about writing down a loan"
+  A table from above: a sheet of parchment, a reed pen, an inkwell, and two
+  hands — cropped at the wrist, no faces — one writing, one resting flat as a
+  witness. The most mundane composition in the film. That is deliberate.
+
+S096 · 28:52 · GRAPHIC · ★ THE LONGEST VERSE ★ — hold 8s
+  Navy. Gold, enormous: "2:282". Cream beneath: "THE LONGEST VERSE IN THE QURAN".
+  Then, after a beat, in gold: "IT IS ABOUT DOCUMENTING A DEBT."
+
+S097 · 29:14 · ILLUS · "the folding of the sun and the scattering of the stars"
+  Split composition: upper half cosmic — a dark sky with stars visibly drifting
+  out of formation; lower half a plain wooden market table. One frame, two
+  registers, hard horizon between them.
+
+S098 · 29:36 · ILLUS · "Badr. Roughly three hundred against a thousand."
+  A dry valley floor from high above at dawn, two unequal scatterings of small
+  dark marks facing each other across open ground. Marks, not men.
+
+S099 · 29:58 · ILLUS · "a group of archers leave a position they were told to hold"
+  A bare hillcrest with a low stone position on it, arrows left standing in the
+  ground, and nobody there. The empty position is the subject.
+
+S100 · 30:20 · GRAPHIC · the verse that includes the loss
+  Navy. Cream: "THEY LOST AT UHUD." Gold beneath: "IT CAME FROM YOURSELVES."
+  Small cream under that: "ĀL ʿIMRĀN". Hold — this is one of the film's arguments.
+
+S101 · 30:42 · ILLUS · "inheritance shares given as fractions"
+  A single estate — a house, a field, a few animals — drawn small and then
+  divided by fine gold rule lines into unequal labelled sectors. Labels typeset
+  in edit.
+
+S102 · 31:00 · GRAPHIC · ★ CONVICTION, CONDUCT, CODE ★
+  Navy. A horizontal 23-year bar. The first ~13 years gold, labelled cream
+  "CONVICTION — you will be raised and asked". The last ~10 in a second gold
+  tone, labelled "CODE — the fractions". A cream caption beneath: "READ FRONT TO
+  BACK, YOU MEET THE FRACTIONS ON PAGE TWO."
+
+================================================================================
+ACT 6 — LATE MEDINAN · 31:21–38:41 · 627–632
+================================================================================
+
+S103 · 31:21 · ILLUS · "The defenders dig a trench"
+  A long raw trench cut across open ground, seen along its length, spoil heaped
+  on the near side. Tools left lying. Nobody in it.
+
+S104 · 31:44 · ILLUS · "ten thousand men"
+  A horizon line of countless small tent shapes and cooking smoke, rendered as
+  repeated ink marks thinning into haze. Seen from inside the defences, low.
+
+S105 · 32:06 · ILLUS · "hearts reached their throats"
+  A night sky with a cold wind visible in the way a row of tent ropes and a
+  single lamp flame are pulled sideways. Tension through inanimate objects only.
+
+S106 · 32:28 · ILLUS · "the accusation runs through Medina for roughly a month"
+  A dense warren of flat rooftops at dusk seen from above, with a thin dark line
+  travelling between them from house to house, doubling back on itself.
+
+S107 · 32:52 · GRAPHIC · the surah legislates the mechanism
+  Navy. Cream: "IT COULD HAVE ENDED AT THE ACQUITTAL." Gold: "IT DID NOT."
+  Then three cream lines: "WHY DID YOU NOT THINK WELL OF ONE ANOTHER?" / "WHY DID
+  YOU NOT DEMAND FOUR WITNESSES?" / "WHY DID YOU SPEAK WITH NO KNOWLEDGE?"
+
+S108 · 33:20 · ILLUS · "They travel toward Mecca, unarmed, and are stopped short"
+  A road blocked by a simple rope line across it, dry hills beyond, a camel's
+  shadow falling across the rope. No riders.
+
+S109 · 33:44 · ILLUS · "the phrase is struck out"
+  A parchment document on a table with one line physically scored through by a
+  wet stroke of ink. The strike is fresh and still glossy.
+
+S110 · 34:06 · GRAPHIC · TIMELINE RETURN — 628, and a forward jump
+  Template from S030, marker on 628 labelled gold "HUDAYBIYYAH — 'A CLEAR
+  VICTORY'". Then the marker jumps to 630 and a second gold label appears:
+  "MECCA ENTERED. SUBSTANTIALLY WITHOUT A FIGHT."
+
+S111 · 34:28 · ILLUS · "The truce ends the state of siege"
+  A once-blocked road now open, the rope coiled and set aside at the verge, dust
+  raised along its length by traffic that has just passed.
+
+S112 · 34:52 · ILLUS · "Do not let a group mock another group"
+  Two clusters of empty seating mats on a floor, set apart with a clear gap
+  between them, each cluster turned slightly away from the other.
+
+S113 · 35:14 · ILLUS · "would any of you like to eat the flesh of his dead brother?"
+  A covered dish on a low table, the cloth still over it, one hand at the edge of
+  frame withdrawing. No contents shown. Do not illustrate the image literally —
+  the line is the shock; the picture should decline to compete with it.
+
+S114 · 35:36 · RECITATION · Al-Hujurat 49:13 · 6s
+  Reciter. On screen: GRAPHIC — navy, the ayah in Amiri, cream, with
+  ﴿لِتَعَارَفُوا﴾ in gold. VERIFIED MUSHAF TEXT ONLY.
+
+S115 · 35:48 · ILLUS · "peoples and tribes so that you may know one another"
+  A hand-inked chart of many small settlements across a wide territory, joined by
+  a web of fine gold lines. No borders drawn.
+
+S116 · 36:12 · GRAPHIC · what victory produced
+  Navy. Cream: "THEY HAD WON. TERRITORY, ARMY, MOMENTUM." Gold beneath: "WHAT
+  CAME DOWN WAS: STOP MOCKING EACH OTHER."
+
+S117 · 36:34 · ILLUS · "the only surah that does not begin with the Bismillah"
+  A parchment page whose top margin is conspicuously, deliberately empty — the
+  text block starting lower than the eye expects. The absence is the image.
+
+S118 · 36:56 · ILLUS · "on the plain of Arafat"
+  Return to S012's aerial, now in full daylight, the speckled crowd texture
+  denser and running to the horizon. Reuse the seed.
+
+S119 · 37:18 · RECITATION · Al-Maida 5:3, the relevant clause · 10s
+  Reciter. On screen: GRAPHIC — navy, the clause in Amiri, cream, with
+  ﴿أَكْمَلْتُ﴾ in gold. VERIFIED MUSHAF TEXT ONLY.
+
+S120 · 37:40 · ILLUS · "nothing is completed except that it begins to decline"
+  A sundial or shadow-line on a stone floor at the exact moment of noon, the
+  shadow at its shortest. Everything about to lengthen.
+
+S121 · 38:02 · RECITATION · An-Nasr 110, complete · 10s
+  Reciter. On screen: GRAPHIC — navy, three ayat in Amiri, cream, one per phrase.
+  VERIFIED MUSHAF TEXT ONLY.
+
+S122 · 38:14 · GRAPHIC · the four candidates for the last verse
+  Navy. Four cream rows, each with its citation in gold: "2:281 — the Day of
+  return" / "5:3 — the religion completed" / "4:176 — inheritance" / "110 —
+  ask forgiveness". No row highlighted. Beneath, in cream: "AL-SUYUTI DOES NOT
+  PICK ONE. NEITHER WILL WE."
+
+================================================================================
+ACT 7 — THE PAYOFF · 38:41–43:18
+================================================================================
+
+S123 · 38:41 · GRAPHIC · four things, counted in
+  Navy. Gold "4", then cream: "THINGS YOU GET FROM THIS". Small beneath: "THE
+  LAST ONE IS THE ONE TO KEEP."
+
+S124 · 38:54 · ILLUS · "abrogation stops looking like contradiction"
+  Two parchment leaves overlapping, the upper one translucent so the lower shows
+  through — the two texts aligning rather than fighting. No legible glyphs.
+
+S125 · 39:22 · GRAPHIC · naskh as sequence
+  Navy. Two gold points on a timeline with an arrow from the earlier to the
+  later, cream caption: "NOT A DISAGREEMENT. A SEQUENCE." Small below: "SCOPE AND
+  EXISTENCE BOTH DEBATED."
+
+S126 · 39:44 · GRAPHIC · the dating tool, as a two-column key
+  Navy. LEFT gold header "PROBABLY MECCA": short verses · heavy rhyme · oaths ·
+  the Hour · the orphan. RIGHT gold header "PROBABLY MEDINA": long verses ·
+  conditions · warfare · hypocrites · inheritance. Cream body throughout.
+
+S127 · 40:10 · ILLUS · "Al-Fatiha's position is a decision"
+  A book opened at its very first page, the page blank, the binding new and the
+  spine uncracked. Warm frontal light. The threshold, again.
+
+S128 · 40:32 · GRAPHIC · ★ THE ADDRESS MARKER — the give-away ★ hold 14s
+  Navy. The film's most important frame after S017.
+  TOP: ﴿يَا أَيُّهَا النَّاسُ﴾ in Amiri, gold, large. Cream beneath: "O MANKIND
+  → PROBABLY MECCAN".
+  BOTTOM: ﴿يَا أَيُّهَا الَّذِينَ آمَنُوا﴾ in Amiri, gold, large. Cream beneath:
+  "O YOU WHO HAVE BELIEVED → PROBABLY MEDINAN".
+  Then, in small cream at the foot: "PROBABLY. THERE ARE EXCEPTIONS BOTH WAYS."
+  Let it sit in silence for 3s after the VO stops. This is the frame people
+  screenshot, and a screenshot that omits the caveat is a problem — which is why
+  the caveat is inside the frame and not only in the voice.
+
+S129 · 41:02 · ILLUS · "you will not be able to unsee it"
+  An open book on a stand with one line of a page catching a shaft of light while
+  the rest sits in shade. No legible text.
+
+S130 · 41:24 · GRAPHIC · the two axes, closing
+  Return of S024's composition. Both arrows now gold and equal. Cream caption:
+  "NOT A DIFFERENT QURAN. THE SAME ONE, WITH A SECOND AXIS."
+
+S131 · 41:46 · ILLUS · "it arrived in year sixteen"
+  The 23-year bar from S102 rendered as a physical inked rule on parchment, with
+  a single gold mark struck at year sixteen.
+
+S132 · 42:02 · ILLUS · "the work of people who counted"
+  A desk from above at night: several open volumes, a lamp, a reed pen, and
+  margins dense with abstract annotation. Warm pool of light, dark edges.
+
+S133 · 42:28 · ILLUS · "preserved the disagreement instead of quietly deleting it"
+  Two manuscript pages side by side, both annotated, with a fine gold line drawn
+  between two differing entries — connecting them, not resolving them.
+
+S134 · 42:48 · GRAPHIC · the standing notes
+  Navy, cream, small and plain: "Arabic on screen is set from a verified mushaf."
+  / "Dates are as the classical sources give them, disagreements included." /
+  "This video issues no ruling."
+
+S135 · 43:02 · ILLUS · "Read, in the name of your Lord who created"
+  Return to S037 — the reed pen alone on parchment — but now the nib is dry and
+  the ink drop beside it has soaked in and spread. Reuse the seed. Last frame of
+  the film. Hold to black.
+
+================================================================================
+END CARD
+================================================================================
+
+No end screen over the final frame — let S135 hold clean for 3s first, then:
+  Navy. Cream: "NEXT — EVERY PROPHET IN THE QURAN, IN THE ORDER THEY CAME."
+  Standard YouTube end-screen elements over the navy: next video, playlist,
+  subscribe. Per flagship-revelation-order.md the playlist is "How the Quran Came
+  Down" — do not create it until there are three videos for it.
+
+================================================================================
+BUILD ORDER — what to make first if the budget is staged
+================================================================================
+
+1.  S017  THE LENGTH GRAPH.        The whole premise in one frame.
+2.  S128  THE ADDRESS MARKER.      The give-away; the reason it gets shared.
+3.  S030  THE TIMELINE TEMPLATE.   Built once, reused six times.
+4.  S089  THE REGISTER CHANGE.     The Mecca/Medina turn.
+5.  S096  THE LONGEST VERSE.       The film's best single fact.
+6.  S009  THE POSITION REVEAL.     Closes the hook.
+7.  The six RECITATION graphics    — book the reciter before anything else;
+                                     it is the only item with an external
+                                     dependency and a lead time.
+8.  ACT 0 illustrations            — 12 plates. Cut the hook and test it alone
+                                     before committing to the other 78.
+9.  Everything else, in act order.
+
+  90 ILLUS generations (×2 passes = 180 renders, line and wash)
+  38 GRAPHIC frames, built in the edit, generated by nothing
+
+If the ACT 0 cut does not hold on its own at 2:27, stop. Do not spend the other
+78 plates on a hook that does not work — that is exactly the failure this
+channel has already paid for once, in the ten-video burst of May.
