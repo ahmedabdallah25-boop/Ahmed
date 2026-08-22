@@ -584,10 +584,23 @@ Reverse-engineering is as useful for what it rules out.
    `Videos, Shorts, Playlists, Posts`. The missing **Home** means no channel layout is configured
    — no featured video, no channel trailer for new visitors, no sections. Every visitor lands on a
    flat reverse-chronological grid whose top item is currently an 8-view video, rather than on the
-   846-view one that actually converts. This is free, one-time, and cannot be done from here:
-   channel sections have no public API, so it is a YouTube Studio task
-   (*Customisation → Layout*). Set the trailer for non-subscribers and the featured video for
-   returning ones, then add sections for the four playlists.
+   846-view one that actually converts.
+
+   > **Corrected the same day, by trying it.** This paragraph first read "cannot be done from
+   > here: channel sections have no public API, so it is a YouTube Studio task." Two thirds of
+   > that was wrong, and it was asserted from memory rather than measured — the same failure the
+   > 17 August verification note warns about, in a different costume. The layout is three
+   > separate things:
+   >
+   > 1. **Trailer for unsubscribed viewers** — `brandingSettings.channel.unsubscribedTrailer`,
+   >    settable through the exact `channels.update` call `clarity_packaging.py` had been making
+   >    for keywords since 17 August. Reachable the whole time.
+   > 2. **Section shelves** — the `channelSections` resource. `insert` **works**; four were
+   >    created on the first live run. The honest way to settle this was to attempt it and print
+   >    YouTube's own refusal reason if it failed, which is what `clarity_layout.py` does.
+   > 3. **Featured video for returning subscribers** — genuinely has no Data API field. This one
+   >    is Studio-only (*Customisation → Layout → Featured sections*), and is the only part that
+   >    ever was.
 2. **Channel keywords are half-length.** Reference carries roughly 70 keyword tokens; Clarity
    carries 33 (258 characters). The field is nowhere near YouTube's 500-character limit. Cheap to
    extend, low ceiling on the return — worth doing on the next packaging pass, not worth a run of
@@ -626,9 +639,42 @@ at 5 and *What the Quran Says About Your Emotions* at 5, against 4 and 4 before 
 before (`cjtKWsFZbcg`, `cROgb0utEKs`), so the ordering rule held and the append did not displace
 an entry point.
 
+## Layout, applied 2026-08-22
+
+Dry run first, then live, then a second dry run as a read-back — the log is not the verification.
+
+| | Before | After |
+|---|---|---|
+| Channel trailer (unsubscribed) | `(none)` | `cjtKWsFZbcg` — Anger, 849 views |
+| Section shelves | **0** | **4**, one per playlist, positions 0–3 |
+
+The trailer is the 849-view Anger video: a third of lifetime audience watched it, it is 6:17 and
+a complete standalone explainer rather than a fragment, and it already leads the largest playlist.
+A purpose-made trailer would be better and does not exist. Changing it is a one-field edit in
+`clarity/layout.json` plus a re-run.
+
+Shelf order is deliberate and is not the playlists' size order: *Emotions* (holds the 849-view
+leader, and the universal-problem entry point that produced every result this channel has),
+*Stories* (two ~190-view performers), *Questions* (5 videos but its best is 64, and it carries the
+31:29 upload), *Money* (2 videos, led by 226).
+
+Before writing the trailer the script checks the target resolves, is owned by this channel, and is
+public or unlisted. The API accepts a trailer pointing at another channel's video, or a private
+one, and then renders nothing — a silent failure worth one extra read.
+
+**Read-back through the API confirms it:** `= trailer already set to cjtKWsFZbcg` and
+`4 section(s) currently on the channel`, against 0 before the run.
+
+**One thing not yet visible.** The public channel page still reports tabs
+`[Videos, Shorts, Playlists, Posts]` with no **Home**. The writes are confirmed server-side, so
+this is either page-cache lag or YouTube's own rule about when it surfaces a Home tab. Re-check
+the tab list before concluding anything from its absence, and do not re-run the layout on account
+of it — a re-run will correctly report everything already set and change nothing.
+
 ## Still open
 
-- **Channel layout / Home tab** — Studio only, see above. Now the largest free item on the list.
+- **Featured video for returning subscribers** — the one genuinely Studio-only piece of the
+  layout. *Customisation → Layout → Featured sections*.
 - **Captions** — `hasCaption: false` on every upload.
 - **Cadence** — the reference channel publishes ~1.1×/day. Clarity has managed 10-in-9-days, then
   55 days of silence, then three uploads in five days. The target is not the reference's volume;

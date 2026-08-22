@@ -39,8 +39,14 @@ secrets owning `UC0eBu0ZXcF20pTAG3lUnPXA`. Never reuse `new1`/`new2`/`new3` or t
 The same `expect_channel_id` guard applies, so a mis-minted token aborts instead of repackaging
 another channel.
 
-Its write path is **"CLARITY IN THE QURAN - 2. Fix packaging"**, and that workflow has two
-switches that matter. `dry_run` is **on by default** — the first click always previews. And
+Channel-level layout is **"CLARITY IN THE QURAN - 3. Set channel layout"** (`clarity/layout.json`):
+the unsubscribed-viewer trailer and one section shelf per playlist, both applied 2026-08-22. Note
+what that establishes, because it was got wrong once: `brandingSettings.channel.unsubscribedTrailer`
+**is** settable, and `channelSections.insert` **works**. Only the featured video for *returning*
+subscribers has no API and stays a Studio task. Run it approximately never — once per trailer change.
+
+Its per-video write path is **"CLARITY IN THE QURAN - 2. Fix packaging"**, and that workflow has
+two switches that matter. `dry_run` is **on by default** — the first click always previews. And
 `playlists` is **off by default**: leaving it off silently skips both the playlist sync and the
 WATCH NEXT cross-link rebuild, so a new upload lands correctly tagged but orphaned from the
 structure. That exact miss happened on 22 August. **If a run touched a new upload, run it again
