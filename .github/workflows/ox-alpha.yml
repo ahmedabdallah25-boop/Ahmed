@@ -1,0 +1,75 @@
+name: Ox Alpha - run a prompt
+
+# Ox Alpha is API-only: no weights to download, just OpenRouter's `stealth/ox-alpha`.
+# This workflow exists because the model is unreachable from a Claude session — the
+# sandbox's egress allowlist blocks openrouter.ai — while an Actions runner has open
+# network access and can read the key from a repo secret. Same reason the YouTube
+# writes live here.
+#
+# Dispatch with no prompt to run the setup check instead. Nothing here prints the
+# key; it is passed as an env var and only ever read by the script.
+#
+# TWO CAUTIONS, because this repo is public:
+#   - Actions logs and job summaries are world-readable, and the prompt and the
+#     model's answer both land there.
+#   - The preview provider retains prompts and completions.
+# Send it nothing you would not publish.
+#
+# Needs the repo secret OPENROUTER_API_KEY (openrouter.ai/keys). Like every other
+# workflow here, it only dispatches from the default branch.
+
+on:
+  workflow_dispatch:
+    inputs:
+      prompt:
+        description: "Prompt text. Leave empty to just run the setup check."
+        required: false
+        type: string
+      prompt_file:
+        description: "Or a path in this repo to send instead, e.g. next-slate.md"
+        required: false
+        type: string
+      model:
+        description: "OpenRouter model id"
+        required: false
+        default: "stealth/ox-alpha"
+        type: string
+      max_tokens:
+        description: "Completion cap"
+        required: false
+        default: "4096"
+        type: string
+
+jobs:
+  ox-alpha:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Stdlib only — no pip install, so this starts in seconds.
+      - name: Check setup
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python automation/ox_alpha.py --check --model "${{ inputs.model }}"
+
+      - name: Run the prompt
+        if: inputs.prompt != '' || inputs.prompt_file != ''
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          PROMPT: ${{ inputs.prompt }}
+          PROMPT_FILE: ${{ inputs.prompt_file }}
+          MODEL: ${{ inputs.model }}
+          MAX_TOKENS: ${{ inputs.max_tokens }}
+        # The prompt goes in through the environment, not the command line, so a
+        # quote or a backtick in it cannot break out into the shell.
+        run: |
+          if [ -n "$PROMPT_FILE" ]; then
+            python automation/ox_alpha.py --prompt-file "$PROMPT_FILE" \
+              --model "$MODEL" --max-tokens "$MAX_TOKENS"
+          else
+            printf '%s' "$PROMPT" | python automation/ox_alpha.py \
+              --model "$MODEL" --max-tokens "$MAX_TOKENS"
+          fi
