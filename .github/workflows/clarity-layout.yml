@@ -1,0 +1,48 @@
+name: CLARITY IN THE QURAN - 3. Set channel layout
+
+# Sets the channel trailer for unsubscribed viewers, and attempts to create one
+# section shelf per playlist, from clarity/layout.json.
+#
+# Why this is separate from "2. Fix packaging": that workflow writes video
+# metadata and runs on every upload. This one writes channel-level layout and
+# should run approximately never — once now, then only when the trailer changes.
+# Folding it in would mean re-reading branding on every packaging run for a
+# field that almost never moves.
+#
+# Dry run is ON by default — the first click always previews. Untick it to write.
+#
+# The section shelves are an OPEN QUESTION the run answers rather than assumes:
+# the script attempts channelSections.insert and prints YouTube's own refusal
+# reason if it will not. A run that sets the trailer and cannot create shelves
+# has still done the more valuable half.
+#
+# Channel 3 only. Authenticates with the CIQ_* secrets and aborts before any
+# write unless the token owns UC0eBu0ZXcF20pTAG3lUnPXA. The branding write is a
+# fetch-then-mutate, so on the wrong channel it would overwrite that channel's
+# keywords — which is exactly what the guard is there to stop.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview every change without writing anything"
+        type: boolean
+        default: true
+
+jobs:
+  layout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set CLARITY IN THE QURAN channel layout
+        run: |
+          python automation/clarity_layout.py \
+            ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          CIQ_CLIENT_ID: ${{ secrets.CIQ_CLIENT_ID }}
+          CIQ_CLIENT_SECRET: ${{ secrets.CIQ_CLIENT_SECRET }}
+          CIQ_REFRESH_TOKEN: ${{ secrets.CIQ_REFRESH_TOKEN }}
