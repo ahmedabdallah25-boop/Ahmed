@@ -65,6 +65,56 @@
         "lower the wing of humility",
         "obeying parents in islam"
       ]
+    },
+    {
+      "video_id": "4N-MXuYjDUA",
+      "_why": "476 views on a ZERO-character description — the channel's best views/day of anything. The cheapest unclaimed win on the channel, open since 17 August: it was deferred because automation 'will not invent a summary of a video it cannot see'. The transcript resolves that — this description is written from what the Short actually says, not guessed.",
+      "_changes": [
+        "DESCRIPTION 0 -> ~640 chars. The Short is Surah Ash-Sharh 94:5-6 and its whole point is that the verse says ma'a (WITH hardship), not after. None of that was indexable, on the one video the channel has that reliably gets distribution.",
+        "TITLE deliberately NOT touched. 'This 1 Secret Verse Will Change Your Life Forever' earned 476 views and is the best-performing title on the channel per day. Nothing about it needs fixing.",
+        "TAGS 0 -> 17. Moved here from set_tags so title/description/tags land in one write."
+      ],
+      "_no_sentinel": "expect_description_contains is deliberately omitted: the live description is zero characters, so there is no existing text to guard and nothing a write could destroy.",
+      "description": "\"Fa inna ma'al usri yusra.\" For indeed, with hardship, there is ease. Surah Ash-Sharh 94:6 — the surah also called Al-Inshirah or Alam Nashrah, \"The Relief\".\n\nRead it again, because the preposition is the whole verse. Allah did not say ease comes AFTER hardship. He said ma'a — WITH it. The relief is not waiting on the far side of what you are carrying. It is being woven while you carry it.\n\nAnd it is said twice, back to back, in the same surah: 94:5 and 94:6. The same sentence, immediately repeated — once for the ears, once for the heart.\n\nIf you are in the middle of it right now, hold on. The ease is here.\n\n#Quran #SurahAshSharh #IslamicReminder",
+      "tags": [
+        "fa inna ma al usri yusra",
+        "surah ash sharh",
+        "with hardship comes ease",
+        "quran 94 6",
+        "alam nashrah",
+        "surah inshirah",
+        "quran verse for hard times",
+        "verse about ease after hardship",
+        "quran verse",
+        "islamic reminder",
+        "quran shorts",
+        "life changing verse",
+        "tafsir",
+        "deen",
+        "muslim shorts",
+        "quran explained",
+        "islamic motivation"
+      ]
+    },
+    {
+      "video_id": "luA2lpVzvsI",
+      "_why": "Titled '9 August 2026' — a literal date, a placeholder that shipped. 3 views, and it is the only upload in the 55-day blackout. Open since 17 August for the same reason as above; the transcript resolves it.",
+      "_changes": [
+        "TITLE. '9 August 2026' describes nothing and can rank for nothing. The Short's own thesis line is the title: a top-flight player on loan to a Sunday league team sinks to their speed because nobody makes him prove he is better.",
+        "DESCRIPTION 1,108 -> ~900 chars of what the Short actually argues, naming Ibn al-Qayyim — the one searchable entity in it.",
+        "TAGS 12 -> 18, additive. The existing 12 were never the problem; the title was."
+      ],
+      "expect_current_title": "9 August 2026",
+      "title": "You Don't Rise to Your Talent. You Sink to Your Room.",
+      "description": "A Sunday league team signs a top-flight professional on loan, keeping match fit. Everyone assumes the same thing: he will drag the whole team up a level.\n\nTwenty minutes in, he is everywhere, too fast — nobody can reach his passes, so he stops making them. By half time he is playing at their speed. Not because he got worse. Because nobody made him prove he was better.\n\nThat is not football. That is people.\n\nIbn al-Qayyim warned about the gathering that costs you nothing except your time and your heart. Lose the time, you lose the heart, and everything else goes with it.\n\nYour friends are not bad people. They are loyal — they would come at 3am. They are just comfortable, and comfortable is contagious.\n\nSo tonight, one question, and it is not about them. Who do I become in that room?\n\nAnd if someone in your life makes you faster, protect that.\n\n#Quran #IbnAlQayyim #IslamicReminder",
+      "tags": [
+        "companionship in islam",
+        "choosing friends in islam",
+        "bad company in islam",
+        "ibn al qayyim",
+        "who you sit with islam",
+        "good friends in islam"
+      ]
     }
   ],
   "set_tags": [
@@ -247,21 +297,6 @@
       ]
     },
     {
-      "video_id": "4N-MXuYjDUA",
-      "_why": "476 views — the channel's best views/day of anything, and its best Short. Zero tags AND a zero-character description. Highest effort-to-return item here.",
-      "tags": [
-        "quran verse",
-        "islamic reminder",
-        "quran shorts",
-        "life changing verse",
-        "tafsir",
-        "deen",
-        "muslim shorts",
-        "quran explained",
-        "islamic motivation"
-      ]
-    },
-    {
       "video_id": "-WidIRhzTLI",
       "_why": "158 views. Zero tags.",
       "tags": [
@@ -326,8 +361,6 @@
   "deferred": {
     "_why": "Named here so they are not silently dropped. Each needs a human decision or content this repo does not have.",
     "items": [
-      "4N-MXuYjDUA — write a real description. 476 views on zero characters. Needs someone who has watched it; the automation will not invent a summary of a video it cannot see.",
-      "luA2lpVzvsI — retitle from the placeholder '9 August 2026'. Same reason: the title has to describe the actual Short.",
       "channel banner — banner: [] is empty. An image asset, not a metadata write.",
       "captions — hasCaption: false on every upload. A production step, not a packaging one.",
       "cadence — one long-form per week at the 16 August standard. The actual growth lever, and not something a script can do."

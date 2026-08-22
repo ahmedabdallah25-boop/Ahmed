@@ -304,3 +304,149 @@ channel banner, captions, and the weekly cadence. **Chapters are the largest of 
 the four top performers do. Chapters generate "key moments" in search — extra indexed surface —
 and they cannot be generated here, because they need real timestamps from someone who has watched
 each video.
+
+---
+
+# Second pass — 2026-08-22
+
+**State:** 44 subscribers (+3) · 18 uploads (+2) · 2,548 lifetime views (+75) · banner still empty
+
+Two uploads landed since 17 August. Both are packaged worse than the 16 August video that
+set the channel's standard, and the newest shipped with **zero tags** — five days after a
+pass took this channel from eleven untagged uploads to none.
+
+## The finding: the fix was reachable, the button was not
+
+The 17 August pass wrote its conclusions into `clarity/packaging-fix.json` and
+`automation/clarity_packaging.py`, put both on the default branch, and recorded the write
+path as live. It was not. **There was no workflow that could run it.** Channel 2 has
+`heldbyfaith-packaging.yml`; channel 3 had `clarity-check.yml` and `clarity-monitor.yml` and
+no packaging equivalent. So the 21 August upload shipped untagged not because anyone
+disagreed with the fix, but because there was no button attached to it.
+
+`.github/workflows/clarity-packaging.yml` now exists. Dry run on by default, playlists and
+cross-links behind an opt-in flag, the same channel guard the script already enforces.
+
+## And the write path has no credentials at all
+
+Running **"CLARITY IN THE QURAN - check setup"** on 2026-08-22 returns:
+
+```
+[ ] CIQ_CLIENT_ID      MISSING
+[ ] CIQ_CLIENT_SECRET  MISSING
+[ ] CIQ_REFRESH_TOKEN  MISSING
+NOT READY — 3 secret(s) missing
+```
+
+**Nothing is set under those names.** This contradicts the "Write path live" line recorded
+above on 17 August, and it is worth being exact about what is and is not in doubt: the
+17 August writes demonstrably happened — the channel keywords are live at 258 characters and
+the previously-untagged uploads carry their tags. So the credentials existed then and are
+gone now. Whether they were deleted, or added as Environment rather than Repository secrets
+(which are not exposed to these workflows), cannot be determined from here — a secret's value
+can never be read back.
+
+**Consequence: nothing in this pass has been applied to the channel.** The fix below is
+written, validated and committed; it is one credential away from running. It is not live.
+
+## What is queued, and why
+
+Everything lands through the new `set_packaging` operation, which sets title, description and
+tags for one video in a **single** fetch-mutate-write. That is a correctness requirement, not
+housekeeping: `videos.list` is read-after-write eventually consistent, so writing a title and
+then re-fetching to write tags can read back the pre-title snippet and put the old title
+straight over the new one. A video listed in both `set_packaging` and `set_tags` is refused.
+
+### `5Fb1iERyIhs` — the last video (21 Aug, 18:08, 3 views at 8h)
+
+Under the 72-hour rule those 3 views are **not a verdict**. The metadata, however, is a
+defect, and a defect on an eight-hour-old video is worth fixing precisely because nothing has
+settled yet.
+
+| | Before | After |
+|---|---|---|
+| Tags | **0** | 22 |
+| Title | `You've Read This Āyah 100 Times…` | `"Hearts Find Rest": The Half of Surah Ar-Ra'd 28 Nobody Quotes` |
+| Working hashtags | **0** (20 present) | 5 |
+| Searchable term in snippet | **none** | verse + `Surah Ar-Ra'd 28` + `Quran 13:28` |
+
+- **The title named nothing.** No surah, no verse, no subject — and its one distinctive word,
+  `Āyah`, carried a macron (U+0100), a character nobody types into a search bar. YouTube had
+  no entity to classify the video against. The replacement front-loads the exact English
+  phrase people actually search for this verse, names the citation, keeps the "you have only
+  seen half" hook, and uses the `[Entity]: [what you are missing]` shape that **three of the
+  channel's four best videos** use. 62 characters, so nothing truncates.
+- **Twenty hashtags, all of them dead.** The same ten-hashtag block was pasted twice. YouTube
+  ignores *every* hashtag on a video once there are more than fifteen, so the video was
+  running with none.
+- **The opening two lines are the search snippet** and contained no ASCII-searchable term at
+  all. Rewritten to open on the quoted verse and citation. The author's diacritics stay in
+  the body — after the "AI BE AWARE" comment they are this channel's credibility signal — but
+  every surah name now also appears in plain form with its number.
+- **The verified-mushaf and no-ruling notes are back.** The 16 August upload established both
+  as the channel's standard; this one dropped them.
+
+**Why retitling is right here, when the standing rule says do not.** Retitling a *settled*
+video measured +0 views over 21.7 hours on channel 1, and that still holds. It does not cover
+a video published hours ago that has not been shown to anyone: there is no settled state to
+disturb, and a defect shipped in its metadata is pure loss. The four protected winners remain
+untouchable, and `set_packaging` refuses their ids outright.
+
+### The two deferred Shorts are no longer deferred
+
+Both were held on 17 August because "the automation will not invent a summary of a video it
+cannot see." It does not have to — the transcripts resolve both, so these descriptions are
+written from what the Shorts actually say.
+
+- **`4N-MXuYjDUA`** — 476 views, the channel's best rate of anything, on a **zero-character
+  description**. It is Surah Ash-Sharh 94:5–6, and its whole argument is that the verse says
+  *ma'a* — WITH hardship, not after it. None of that was indexable. Description 0 → 654
+  chars, tags 0 → 17. **Its title is deliberately untouched**: it earned those 476 views.
+- **`luA2lpVzvsI`** — still titled `9 August 2026`, still 3 views. The Short is a football
+  analogy — a top-flight player on loan to a Sunday league team sinks to their speed because
+  nobody makes him prove he is better — closing on Ibn al-Qayyim on the gathering that costs
+  you only your time and your heart. Retitled to its own thesis line.
+
+### `PUPdFpvEA04` (19 Aug) — tags only, 12 → 18
+
+Title and description deliberately untouched. `What "Honor Your Parents" Actually Means in
+Arabic` is already on the channel's winning formula and already carries chapters.
+
+### Both new uploads were orphaned from the structure built on 17 August
+
+Neither was in a playlist. `5Fb1iERyIhs` goes in at **slot 2** of *What the Quran Says About
+Your Emotions*, directly behind the 846-view leader — the best autoplay inflow position on the
+channel, and the sequence reads anger → settling → anxiety. `PUPdFpvEA04` is **appended** to
+*Questions Muslims Actually Ask* rather than slotted high: at 31:29 it is the longest thing on
+the channel by thirteen minutes, and autoplaying a cold viewer into it would spend the list's
+retention rather than build it.
+
+## The open question this pass cannot answer: runtime
+
+| Published | Runtime | Views | Views/day |
+|---|---:|---:|---|
+| Aug 17 | 10:14 | 54 | ~10.8 |
+| Aug 19 | **31:29** | 20 | ~7.8 |
+| Aug 21 | **18:08** | 3 | *too new to judge* |
+
+The channel's entire proven record sits between **4:33 and 11:07**, and its best video is
+6:17. The last two uploads are 3x and 1.7x the top of that band.
+
+**This is stated as a question, not a finding.** Three videos is not a sample, 31:29 at
+~7.8/day is not obviously worse than 10:14 at ~10.8/day, and the retention data that would
+settle it is paywalled. What can be said without analytics is narrower and still worth
+saying: the channel changed a variable it has never tested, on consecutive uploads, and the
+21 August one *also* shipped with broken metadata — so **neither result will be readable**.
+That is the "one variable per upload" rule being broken twice in a row.
+
+If longer videos are the intended direction, the way to learn anything is to hold everything
+else still and let one of them run clean.
+
+## Still open
+
+- **Credentials.** `CIQ_*` must be re-added as **Repository** secrets. The refresh token is
+  minted by hand through `automation/authorize.html` because Google requires a browser
+  sign-in, and **this repo is public, so no workflow may ever print one.**
+- **Channel banner** — `banner: []`. An image asset, not a metadata write.
+- **Captions** — `hasCaption: false` on every upload, including all three newest.
+- **Cadence** — still the actual growth lever, and still not something a script can do.
