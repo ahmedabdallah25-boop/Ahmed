@@ -193,6 +193,26 @@ beside it. YouTube rewards the percentage watched as much as the minutes, and a
 tight 6:54 that holds 60% beats a padded 9:30 that holds 35%. If you want a
 longer video later, that is a bigger argument, not more words around this one.
 
+  >> FLAG, 2026-08-22 — read clarity/video-formula.md before building this pack.
+  >>
+  >> The paragraph above is still right about PADDING and wrong about the TARGET.
+  >> "Your best video is 6:17" treats 4:33-11:07 as a proven band. It is not
+  >> proven; it is the only band this channel has tried, and across eleven
+  >> uploads it produced an 846-view ceiling. The channel this one is modelled
+  >> on runs a median of 27:40 with ZERO of its top thirty under 19 minutes,
+  >> including a 30:59 version of Clarity's own "Every Minor Prophet Explained".
+  >>
+  >> So the last sentence above is the operative one: a bigger argument, not more
+  >> words. This pack is a 767-word script. Reaching 19-28 minutes means roughly
+  >> 3,000 words on the SAME single claim taken all the way down — every
+  >> occurrence of the word, its root, the assumption, the reversal, the
+  >> consequence — plus the information graphics in video-formula.md §5.
+  >>
+  >> That is a rewrite of the argument, not a retiming of these 30 scenes, and it
+  >> is deliberately NOT done here. Build this pack at 6:54 as specified, or
+  >> commission the longer version — but do not split the difference by stretching
+  >> these timecodes, which is exactly the padding this paragraph warns against.
+
 VISUAL DENSITY. This is the real answer to "are 30 images enough".
 
   30 images over 6:54  =  13.8 seconds per image

@@ -58,8 +58,15 @@ description is a word-for-word transposition of it and several titles are direct
 (Bible→Quran, Hebrew→Arabic). Two consequences before you touch this channel: the
 Christian-register phrasing that leaked into Clarity's own copy came from that template and may
 recur; and **the reference channel runs 19–52 minutes, median 27:40, with 0 of its top 30 videos
-under 19 minutes**, against Clarity's back catalogue of 4:33–11:07. See
-`clarity/channel-diagnosis.md` for what that does and does not license.
+under 19 minutes**, against Clarity's back catalogue of 4:33–11:07.
+
+**Before writing any Clarity script or scene pack, read [`clarity/video-formula.md`](clarity/video-formula.md).**
+It is the reference channel reverse-engineered to a build spec — runtime band, the
+one-detail-reversal topic archetype behind all six of its outliers, the hook shape, and the finding
+that matters most: its on-screen images are *information graphics* (big number, labelled
+comparison, chain diagram, timeline) that carry the argument, changing every 3–5 seconds, where
+Clarity's are mood illustrations. A lecture with slides versus a poem with pictures. Clarity's
+prose is already as good — do not "fix" the writing.
 
 Do not port channel 1's conclusions onto channel 2 or channel 3. The finance channel's problem is
 topic exhaustion on a channel with 8K+ lifetime views; HELD BY FAITH has 33 lifetime views and a
