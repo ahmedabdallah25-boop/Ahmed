@@ -67,6 +67,19 @@ beat 180 that arrive cheaper tomorrow.
   not. The block is appended to the prompt as prose instead, which is weaker.
   Check plate 61's "no calligraphy" rather than assuming it held.
 
+### Image generation is paid-only — verified 2026-08-23
+
+A free-tier key authenticates fine and runs text models, then returns 429 on
+every image model with `limit: 0`:
+
+    generate_content_free_tier_requests, limit: 0, model: gemini-3-pro-image
+
+That is not congestion and no amount of backoff clears it — the free tier serves
+zero image generations, on `gemini-3-pro-image`, `gemini-2.5-flash-image`,
+`gemini-3.1-flash-image` and `gemini-3.1-flash-lite-image` alike. Enable billing
+on the key's Google Cloud project before a run. The script fast-fails on this
+rather than retrying, and says so.
+
 ### The key never lands in this repo
 
 The repo is public. Export `GEMINI_API_KEY` in a shell, or add it as a

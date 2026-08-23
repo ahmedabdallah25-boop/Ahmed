@@ -129,7 +129,19 @@ def call(model, payload, key, tries=4):
             with urllib.request.urlopen(req, timeout=300) as r:
                 return json.loads(r.read().decode("utf-8"))
         except urllib.error.HTTPError as e:
-            detail = e.read().decode("utf-8", "replace")[:400]
+            body_txt = e.read().decode("utf-8", "replace")
+            detail = body_txt[:400]  # truncated for display only — match on the full body
+            # A 429 saying "limit: 0" is not congestion, it is an account that
+            # has no image quota at all — the free tier serves zero image
+            # generations on every image model. Backing off six times just makes
+            # the same refusal take 16 seconds instead of one.
+            if e.code == 429 and "limit: 0" in body_txt:
+                raise RuntimeError(
+                    "no image quota on this key (free-tier limit is 0 for every "
+                    "image model). Enable billing on the key's Google Cloud "
+                    "project at aistudio.google.com/apikey — image generation is "
+                    "paid-only. The key itself is fine; text models still work."
+                ) from None
             if e.code in (429, 500, 502, 503, 504) and attempt < tries - 1:
                 wait = 2 ** (attempt + 1)
                 say(f"    {e.code}, retrying in {wait}s")
