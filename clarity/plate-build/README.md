@@ -3,8 +3,9 @@
 180 plates (90 scenes x line/wash) for the flagship, from
 `media/clarity/export/clarity-image-prompts.txt`.
 
-**Status: 3 of 180 generated.** The ElevenLabs workspace hit its free-plan
-daily image cap. Everything below is settled and does not need re-deriving.
+**Status: 3 of 180 generated**, then a `free_tier_image_limit_reached` 429.
+Everything below about seeds, negatives and pass order is settled. **The cap is
+not** — see "The cap is an open question" before assuming the run is blocked.
 
 ## The generator
 
@@ -66,6 +67,38 @@ only wash; adding wash over an existing line drawing leaves the line where it is
 **This inversion is reasoned, not yet tested** — the daily cap hit before the
 wash-over-line pilot could run. Run one scene and check registration before
 committing to the other 89.
+
+## The cap is an open question — do not treat it as settled
+
+The run stopped on this, quoted verbatim:
+
+    429 free_tier_image_limit_reached
+    "You have reached the daily image generation limit for the free plan."
+
+What that error does **not** say is whether the quota is counted in images or in
+credits. An earlier version of this note asserted it was a flat per-day image
+count. That was unsupported and has been removed.
+
+Two things were never tested, and both could change the answer:
+
+- **The 429 came from `gemini-3-pro-image` (Nano Banana *Pro*)** — the most
+  expensive tier of that family, and the first call ever made to it. The cheaper
+  siblings were never called at all: `gemini-2.5-flash-image` (Nano Banana),
+  `gemini-3.1-flash-image` (Nano Banana 2), `gemini-3.1-flash-lite-image`
+  (Nano Banana 2 Lite). A single 429 on the Pro tier does not establish that
+  image generation as a whole is capped.
+- **Only premium models were priced.** The three successful plates ran on
+  flux-2-pro (272.7 credits) and flux-1-kontext (242.4 credits), chosen on
+  quality. No Nano Banana variant was ever priced. If the quota is
+  credit-denominated, those three consumed it far faster than cheap models
+  would have.
+
+**Do this first, before concluding anything or upgrading a plan:** call
+`gemini-2.5-flash-image` or `gemini-3.1-flash-image` once with
+`generations_count: 1` and read the price field off the result. If it succeeds,
+the cap is not a blanket daily image count and the full run may be affordable —
+possibly free — on the cheap tier. Re-check style fidelity if you switch, since
+the pilots' look was set by flux-2-pro.
 
 ## Cost
 
