@@ -100,6 +100,27 @@ the cap is not a blanket daily image count and the full run may be affordable �
 possibly free — on the cheap tier. Re-check style fidelity if you switch, since
 the pilots' look was set by flux-2-pro.
 
+## Measured model prices (Higgsfield, free `get_cost` preflights)
+
+Taken 2026-08-23. All three are Higgsfield credits — **not** comparable with
+ElevenLabs credits, which are a different unit. Cross-platform credit
+comparisons are meaningless; only compare within one column.
+
+| Model | Credits / image | 180 plates |
+|---|---|---|
+| `nano_banana` | 1 | 180 |
+| `flux_2` (variant pro) | 1 | 180 |
+| `nano_banana_pro` | 2 | 360 |
+
+**Nano Banana is not cheaper than FLUX on this platform** — both are 1 credit.
+Only the Pro tier costs double. The idea that switching to Nano Banana would
+slash the bill came from comparing ElevenLabs' flux-2-pro figure (272.7) against
+an assumption about Gemini pricing, across two unrelated credit systems. It does
+not hold. What is true is that the whole set is cheap: ~180 credits.
+
+`models_explore(unlim=true)` reports `unlim.available: false` for this account,
+so the free-trial unlimited allowance is not a route here.
+
 ## Cost
 
 At measured pilot rates: 90 line x 272.7 credits + 90 wash x 242.4 credits
