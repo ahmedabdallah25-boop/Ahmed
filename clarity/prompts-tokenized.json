@@ -1,0 +1,1901 @@
+{
+  "meta": {
+    "total_scenes": 90,
+    "total_prompts": 180,
+    "model": "black-forest-labs/flux-pro",
+    "shared_style": "STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet bleeding washes with visible grain and hard edges where the water dried. Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a single warm gold accent. Muted, aged, hand-made. Generous empty parchment. Cinematic 16:9, 1920x1080.",
+    "shared_negative": "no text, no letters, no writing, no numerals, no calligraphy, no signature, no watermark, no human face, no facial features, no portrait, no photoreal skin, no 3D render, no digital gloss, no lens flare, no modern objects, no crosses, no church architecture, no menorah, no Star of David."
+  },
+  "scenes": [
+    {
+      "id": "S002",
+      "order": 1,
+      "seed_group": "S002",
+      "cue": "0:02",
+      "vo": "Hira. A cave on a mountain outside Mecca",
+      "description": "A dark cave mouth in a bare rock face seen from inside, looking out at a blinding pale sky. The opening is a hard-edged shape of light. No figure.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S002-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S002-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S003",
+      "order": 3,
+      "seed_group": "S003",
+      "cue": "0:11",
+      "vo": "a man of forty who cannot read",
+      "description": "An empty stone ledge inside the cave, worn smooth. A folded woollen cloak resting on it, still holding the shape of a body that has gone.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S003-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S003-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S004",
+      "order": 5,
+      "seed_group": "S004",
+      "cue": "0:19",
+      "vo": "He has no pen, no scroll",
+      "description": "Three objects laid on parchment with wide space between them: a cut reed pen, a rolled blank scroll, a clay inkwell \u2014 all pushed to the frame's far edge, emphatically unused, the centre of the frame empty.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S004-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S004-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S006",
+      "order": 7,
+      "seed_group": "S006",
+      "cue": "0:48",
+      "vo": "One hundred and fourteen surahs. Twenty-three years.",
+      "description": "A tall stack of loose parchment leaves seen edge-on, uneven, the topmost lifted slightly by air. Warm light raking across the edges.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S006-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S006-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S008",
+      "order": 9,
+      "seed_group": "S008",
+      "cue": "1:04",
+      "vo": "Your mushaf runs from the longest surah to the shortest",
+      "description": "A closed book seen from the fore-edge, the block of pages fanned so the thickness reads as mass. Warm parchment, indigo binding thread visible.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S008-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S008-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S010",
+      "order": 11,
+      "seed_group": "S010",
+      "cue": "1:24",
+      "vo": "It is like arranging someone's letters by how long each one is",
+      "description": "Loose written leaves \u2014 blank, no text \u2014 sorted into descending stacks by physical size on a wooden table, tallest left, smallest right. Deliberately bureaucratic. The one visual joke in the film; play it straight.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S010-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S010-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S011",
+      "order": 13,
+      "seed_group": "S011",
+      "cue": "1:36",
+      "vo": "people being beaten in the streets of Mecca",
+      "description": "A narrow sunlit alley between mud-brick walls, empty. A dropped sandal and a dark stain on the packed earth. Long shadow from a wall. Nobody in frame.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S011-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S011-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S012",
+      "order": 15,
+      "seed_group": "S012",
+      "cue": "1:50",
+      "vo": "a plain called Arafat, with a hundred thousand people",
+      "description": "A vast open plain under a white sky seen from high above, the crowd rendered only as a fine speckled texture of ink dots covering the ground to the horizon. A single low hill. No individual discernible.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S012-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S012-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S013",
+      "order": 17,
+      "seed_group": "S013",
+      "cue": "2:08",
+      "vo": "one thing at the end that you will be able to use",
+      "description": "A single parchment leaf held open by two hands at the very bottom edge of frame \u2014 hands only, cropped at the wrist, warm skin in wash, no faces.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S013-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S013-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S014",
+      "order": 19,
+      "seed_group": "S014",
+      "cue": "2:27",
+      "vo": "Open a mushaf",
+      "description": "An open book on a low wooden rihal stand, both pages blank parchment, warm side-light, deep shadow behind. Shot square-on.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S014-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S014-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S016",
+      "order": 21,
+      "seed_group": "S016",
+      "cue": "2:58",
+      "vo": "By the nineties they are under twenty",
+      "description": "The same fanned page-block as S008 but from the opposite end, the last leaves visibly thinner and fewer, light coming through them.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S016-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S016-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S018",
+      "order": 23,
+      "seed_group": "S018",
+      "cue": "3:26",
+      "vo": "preserved in memory and in writing",
+      "description": "Four objects arranged as a specimen row on parchment: a thin flat stone, a dried palm stalk, a wide flat bone, a scrap of vellum. Museum-plate stillness.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S018-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S018-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S019",
+      "order": 25,
+      "seed_group": "S019",
+      "cue": "3:52",
+      "vo": "a battle at Yamama",
+      "description": "A field of dry stubble after the fact. Broken arrow shafts standing at angles. Low sun, long shadows. No bodies, no figures, no blood.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S019-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S019-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S020",
+      "order": 27,
+      "seed_group": "S020",
+      "cue": "4:08",
+      "vo": "collected into one written volume",
+      "description": "Loose leaves being squared into a single neat block by two hands at the frame's bottom edge \u2014 hands only, cropped at the wrist.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S020-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S020-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S021",
+      "order": 29,
+      "seed_group": "S021",
+      "cue": "4:22",
+      "vo": "copies were sent out to the major centres",
+      "description": "A map-like aerial of dry country with four faint routes radiating from a central point toward the frame edges, each ending at a small walled shape. Drawn as a hand-inked chart, not a satellite view.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S021-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S021-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S023",
+      "order": 31,
+      "seed_group": "S023",
+      "cue": "5:05",
+      "vo": "Reading it in the order revealed is not a correction",
+      "description": "One book, closed, centred, lit warmly and squarely \u2014 steady, unfussy, whole. This frame's job is reassurance; keep it calm and symmetrical.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S023-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S023-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S025",
+      "order": 33,
+      "seed_group": "S025",
+      "cue": "5:44",
+      "vo": "asbab al-nuzul, the occasions of revelation",
+      "description": "A margin of a parchment page densely filled with fine handwritten annotation reduced to abstract ink strokes \u2014 the shape of scholarship, not readable text.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S025-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S025-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S027",
+      "order": 35,
+      "seed_group": "S027",
+      "cue": "6:34",
+      "vo": "al-Suyuti records more than one such list",
+      "description": "Two open manuscript volumes side by side on a table, both with columned pages of abstract ink marks, the columns visibly not aligning with each other.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S027-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S027-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S028",
+      "order": 37,
+      "seed_group": "S028",
+      "cue": "6:56",
+      "vo": "The Cairo edition of nineteen twenty-four",
+      "description": "A single printed page corner, the heading area empty (text typeset in edit), crisp early-20th-century print texture on cream stock. Slight foxing at edge.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S028-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S028-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S029",
+      "order": 39,
+      "seed_group": "S029",
+      "cue": "7:16",
+      "vo": "N\u00f6ldeke divided the Meccan period into three phases",
+      "description": "Three parchment strips of increasing length pinned in a row, ends ragged, a fine indigo line ruled beneath them.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S029-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S029-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S032",
+      "order": 41,
+      "seed_group": "S032",
+      "cue": "8:44",
+      "vo": "Many surahs are mixed",
+      "description": "A single parchment leaf where two distinct ink tones meet mid-page \u2014 one warmer and older, one cooler and fresher \u2014 with no hard boundary between them.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S032-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S032-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S033",
+      "order": 43,
+      "seed_group": "S033",
+      "cue": "9:00",
+      "vo": "Hold it loosely",
+      "description": "An open hand, palm up, at the bottom of frame holding nothing. Cropped at the wrist. Warm wash, soft edge.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S033-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S033-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S034",
+      "order": 45,
+      "seed_group": "S034",
+      "cue": "9:15",
+      "vo": "Back to the cave",
+      "description": "Return to S002's composition, closer now, the light from the cave mouth stronger and warmer. for continuity.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S034-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S034-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S036",
+      "order": 47,
+      "seed_group": "S036",
+      "cue": "9:40",
+      "vo": "Created man from a clinging clot",
+      "description": "Abstract: a single dark red-brown wash blot on wet parchment, bleeding at its edge, magnified to fill the frame. Biological without being anatomical.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S036-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S036-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S037",
+      "order": 49,
+      "seed_group": "S037",
+      "cue": "9:56",
+      "vo": "Who taught by the pen",
+      "description": "A cut reed pen lying alone on parchment, its nib freshly wet, one small drop of ink beside it. Centred, still, reverent. Hold long.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S037-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S037-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S039",
+      "order": 51,
+      "seed_group": "S039",
+      "cue": "10:38",
+      "vo": "the rest of Al-Alaq is generally taken to be later",
+      "description": "One parchment leaf, the upper third in warm aged ink, the lower two thirds in a visibly cooler fresher ink, a faint horizontal join between them.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S039-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S039-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S040",
+      "order": 53,
+      "seed_group": "S040",
+      "cue": "11:00",
+      "vo": "Then, according to most accounts, nothing.",
+      "description": "An empty sky. Nothing else in frame but a wash gradient from pale at the horizon to deeper above, and a single tiny bird high up. Hold 8s. Let it be uncomfortable.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S040-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S040-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S041",
+      "order": 55,
+      "seed_group": "S041",
+      "cue": "11:22",
+      "vo": "he came down the mountain shaking and asked to be covered",
+      "description": "A heavy woollen blanket bunched on a floor, still shaped by a body, seen from above. Dim interior light. No figure.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S041-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S041-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S043",
+      "order": 57,
+      "seed_group": "S043",
+      "cue": "12:12",
+      "vo": "arise, and warn",
+      "description": "An empty doorway from inside a dark room, opening onto hard white daylight. The threshold is the brightest thing in frame.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S043-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S043-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S044",
+      "order": 59,
+      "seed_group": "S044",
+      "cue": "12:34",
+      "vo": "stand at night, but not all night",
+      "description": "A small oil lamp on a floor, one flame, the room around it going to deep indigo. A prayer mat edge just catching the light.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S044-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S044-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S047",
+      "order": 61,
+      "seed_group": "S047",
+      "cue": "13:18",
+      "vo": "verses of three, four, six words",
+      "description": "Six short ink strokes in a vertical column on parchment, each shorter than a thumb, evenly spaced. Rhythm as image. No letterforms.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S047-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S047-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S048",
+      "order": 63,
+      "seed_group": "S048",
+      "cue": "13:34",
+      "vo": "carried by memory through a city that does not want to hear it",
+      "description": "A night street of mud-brick, one shuttered window with a thin line of lamplight escaping under it. Everything else dark indigo.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S048-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S048-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S049",
+      "order": 65,
+      "seed_group": "S049",
+      "cue": "13:56",
+      "vo": "when the sun is folded up",
+      "description": "A sun low and swollen on the horizon, the sky around it rendered as a wash being physically pulled or rolled at one corner. Surreal, restrained.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S049-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S049-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S050",
+      "order": 67,
+      "seed_group": "S050",
+      "cue": "14:16",
+      "vo": "a man who spent his life counting his wealth",
+      "description": "A heap of small coins on a table, and beside it a set of scales with one empty pan hanging lower than the full one. No hands.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S050-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S050-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S051",
+      "order": 69,
+      "seed_group": "S051",
+      "cue": "14:36",
+      "vo": "The orphan you pushed away",
+      "description": "A child's small worn sandal alone on a doorstep, and the door shut. Warm dust. No child in frame.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S051-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S051-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S052",
+      "order": 71,
+      "seed_group": "S052",
+      "cue": "14:52",
+      "vo": "two roads and a steep one",
+      "description": "A dry valley where a path forks: one broad and level running out of frame right, one narrow and climbing steeply left into rock. Drawn from above.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S052-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S052-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S053",
+      "order": 73,
+      "seed_group": "S053",
+      "cue": "15:16",
+      "vo": "Al-Masad. It is about one specific man.",
+      "description": "A single dead branch, bark stripped, lying on pale ground. Harsh directional light, hard shadow.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S053-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S053-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S054",
+      "order": 75,
+      "seed_group": "S054",
+      "cue": "15:38",
+      "vo": "his sons had died in infancy",
+      "description": "Two very small mounds of earth side by side on open ground, unmarked, with a third space beside them. Distant, low horizon, no figure.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S054-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S054-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S057",
+      "order": 77,
+      "seed_group": "S057",
+      "cue": "16:26",
+      "vo": "the hot stones of the valley floor",
+      "description": "Cracked sun-bleached stones filling the frame, heat shimmer suggested by a broken wash at the top edge. One large flat rock at centre. Nothing else.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S057-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S057-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S058",
+      "order": 79,
+      "seed_group": "S058",
+      "cue": "16:52",
+      "vo": "the first person to die for this",
+      "description": "A single small stone set upright in bare ground, and a long shadow. Wide empty frame. Restraint is the whole instruction here \u2014 no violence depicted.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S058-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S058-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S059",
+      "order": 81,
+      "seed_group": "S059",
+      "cue": "17:12",
+      "vo": "the mountains will be like carded wool",
+      "description": "A mountain ridge whose upper half dissolves into loose floating fibres of wool-white wash, drifting off the peak.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S059-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S059-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S062",
+      "order": 83,
+      "seed_group": "S062",
+      "cue": "17:58",
+      "vo": "sustained narrative. Stories, with scenes.",
+      "description": "A long unrolled scroll running from the bottom-left corner to the top-right, blank, its length the subject. Warm raking light along its curl.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S062-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S062-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S064",
+      "order": 85,
+      "seed_group": "S064",
+      "cue": "18:26",
+      "vo": "Musa in front of Pharaoh",
+      "description": "A vast hypostyle hall of painted columns receding into darkness, floor empty. Scale as intimidation. No figures at all.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S064-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S064-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S065",
+      "order": 87,
+      "seed_group": "S065",
+      "cue": "18:44",
+      "vo": "Ibrahim asking his father why he is worshipping something he carved",
+      "description": "A workshop floor: wood shavings, a mallet, a chisel, and an unfinished carved block whose form is deliberately unresolved \u2014 no face, no idol readable as a deity. Just worked wood.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S065-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S065-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S066",
+      "order": 89,
+      "seed_group": "S066",
+      "cue": "19:02",
+      "vo": "Nuh building in the middle of nowhere",
+      "description": "A partial wooden hull frame standing in dry cracked earth, far from any water, ribs open to the sky. Small in a very wide frame.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S066-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S066-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S067",
+      "order": 91,
+      "seed_group": "S067",
+      "cue": "19:20",
+      "vo": "the best of narrations",
+      "description": "A well seen from directly above \u2014 a perfect dark circle in pale stone, a rope going down into it. (Yusuf, without depicting him.).",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S067-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S067-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S069",
+      "order": 93,
+      "seed_group": "S069",
+      "cue": "20:02",
+      "vo": "cross the Red Sea to seek refuge",
+      "description": "A small wooden boat on open water seen from a great height, wake behind it, land as a thin band at the top edge. The boat is tiny.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S069-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S069-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S070",
+      "order": 95,
+      "seed_group": "S070",
+      "cue": "20:22",
+      "vo": "the case is argued in front of the throne",
+      "description": "An empty carved wooden chair on a raised stone dais in a tall bare hall, seen slightly off-axis. Ethiopian highland light \u2014 cooler, greener than Mecca.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S070-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S070-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S071",
+      "order": 97,
+      "seed_group": "S071",
+      "cue": "20:44",
+      "vo": "four hundred miles away, in the one week it is needed",
+      "description": "A hand-inked chart of the Red Sea with two points marked, a thin gold line between them. Chart, not map \u2014 visible ruling and compass rose.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S071-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S071-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S072",
+      "order": 99,
+      "seed_group": "S072",
+      "cue": "21:06",
+      "vo": "on his way to kill the Prophet",
+      "description": "A sword in its scabbard leaning against a mud-brick wall beside a closed door. Nobody holding it. Hard midday shadow.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S072-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S072-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S073",
+      "order": 101,
+      "seed_group": "S073",
+      "cue": "21:22",
+      "vo": "finds her reciting",
+      "description": "A doorway ajar with warm light spilling through the gap onto a dark floor, and a single parchment leaf on the ground just inside. No figures.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S073-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S073-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S074",
+      "order": 103,
+      "seed_group": "S074",
+      "cue": "21:44",
+      "vo": "a slow squeeze",
+      "description": "A narrow rocky defile between two cliff walls, the passage at the bottom almost closed. Deep shadow, one strip of sky.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S074-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S074-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S075",
+      "order": 105,
+      "seed_group": "S075",
+      "cue": "22:02",
+      "vo": "The reports describe people eating leaves",
+      "description": "A shallow clay bowl on bare ground containing a few dry leaves. Overhead light. Nothing else in frame. Hold.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S075-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S075-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S076",
+      "order": 107,
+      "seed_group": "S076",
+      "cue": "22:16",
+      "vo": "Khadija dies",
+      "description": "An interior: two cushions on a floor beside a low table, one indented from long use, one smooth. A cold lamp. Nobody.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S076-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S076-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S077",
+      "order": 109,
+      "seed_group": "S077",
+      "cue": "22:40",
+      "vo": "Abu Talib's protection stood in the way, and now it does not",
+      "description": "A high mud-brick wall with a gap newly broken in it, rubble at the base, the landscape beyond visible through the breach.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S077-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S077-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S079",
+      "order": 111,
+      "seed_group": "S079",
+      "cue": "23:12",
+      "vo": "driven out of it by a crowd throwing stones",
+      "description": "A dirt road leading away from a walled town, scattered stones on it, and a single set of footprints going out. Dusk. No figure.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S079-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S079-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S080",
+      "order": 113,
+      "seed_group": "S080",
+      "cue": "23:34",
+      "vo": "a journey by night",
+      "description": "A night sky of deep indigo over a dark landscape, one pale road of light running from the lower edge toward the horizon. Abstract, not literal. Depict no ascent, no figure, no Buraq.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S080-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S080-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S082",
+      "order": 115,
+      "seed_group": "S082",
+      "cue": "24:18",
+      "vo": "the five daily prayers",
+      "description": "Five prayer mats laid in a row on a stone floor, evenly spaced, empty, warm light crossing them at an angle.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S082-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S082-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S085",
+      "order": 117,
+      "seed_group": "S085",
+      "cue": "25:20",
+      "vo": "a dated, checkable, falsifiable prediction",
+      "description": "A pair of brass scales, and beside them a stack of coins wagered on a flat stone. Chart-like ruling in the background.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S085-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S085-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S086",
+      "order": 119,
+      "seed_group": "S086",
+      "cue": "25:42",
+      "vo": "delegations from Yathrib meet him at Aqaba",
+      "description": "A narrow mountain pass at night, two small lamps set on the ground facing each other with an empty space between them.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S086-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S086-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S088",
+      "order": 121,
+      "seed_group": "S088",
+      "cue": "26:11",
+      "vo": "Six hundred and twenty-two. The Hijra.",
+      "description": "A road running north out of dry hill country, seen from behind and above, empty, going toward a green horizon. The only warm-to-cool transition in the film \u2014 Mecca's ochre giving way to Medina's greener palette. Establish it here.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S088-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S088-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S091",
+      "order": 123,
+      "seed_group": "S091",
+      "cue": "27:04",
+      "vo": "verses that ran four words now run forty",
+      "description": "Two parchment leaves side by side: the left with six short ink strokes, the right with dense continuous ruled lines of abstract marks filling the page.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S091-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S091-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S092",
+      "order": 125,
+      "seed_group": "S092",
+      "cue": "27:26",
+      "vo": "turn your face toward the Sacred Mosque",
+      "description": "A stone floor with a shallow arched niche in a bare wall \u2014 a mihrab, empty, lit from one side. Nobody praying.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S092-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S092-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S093",
+      "order": 127,
+      "seed_group": "S093",
+      "cue": "27:48",
+      "vo": "Fasting in Ramadan is prescribed",
+      "description": "A thin crescent moon over a flat rooftop skyline, and on a ledge in the foreground a bowl of dates and a cup of water, untouched.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S093-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S093-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S094",
+      "order": 129,
+      "seed_group": "S094",
+      "cue": "28:08",
+      "vo": "A prohibition of riba",
+      "description": "A set of scales with a small stone secretly added to one pan, tipping it. The extra stone is the subject; light it.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S094-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S094-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S095",
+      "order": 131,
+      "seed_group": "S095",
+      "cue": "28:28",
+      "vo": "It is about writing down a loan",
+      "description": "A table from above: a sheet of parchment, a reed pen, an inkwell, and two hands \u2014 cropped at the wrist, no faces \u2014 one writing, one resting flat as a witness. The most mundane composition in the film. That is deliberate.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S095-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S095-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S097",
+      "order": 133,
+      "seed_group": "S097",
+      "cue": "29:14",
+      "vo": "the folding of the sun and the scattering of the stars",
+      "description": "Split composition: upper half cosmic \u2014 a dark sky with stars visibly drifting out of formation; lower half a plain wooden market table. One frame, two registers, hard horizon between them.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S097-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S097-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S098",
+      "order": 135,
+      "seed_group": "S098",
+      "cue": "29:36",
+      "vo": "Badr. Roughly three hundred against a thousand.",
+      "description": "A dry valley floor from high above at dawn, two unequal scatterings of small dark marks facing each other across open ground. Marks, not men.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S098-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S098-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S099",
+      "order": 137,
+      "seed_group": "S099",
+      "cue": "29:58",
+      "vo": "a group of archers leave a position they were told to hold",
+      "description": "A bare hillcrest with a low stone position on it, arrows left standing in the ground, and nobody there. The empty position is the subject.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S099-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S099-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S101",
+      "order": 139,
+      "seed_group": "S101",
+      "cue": "30:42",
+      "vo": "inheritance shares given as fractions",
+      "description": "A single estate \u2014 a house, a field, a few animals \u2014 drawn small and then divided by fine gold rule lines into unequal labelled sectors. Labels typeset in edit.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S101-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S101-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S103",
+      "order": 141,
+      "seed_group": "S103",
+      "cue": "31:21",
+      "vo": "The defenders dig a trench",
+      "description": "A long raw trench cut across open ground, seen along its length, spoil heaped on the near side. Tools left lying. Nobody in it.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S103-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S103-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S104",
+      "order": 143,
+      "seed_group": "S104",
+      "cue": "31:44",
+      "vo": "ten thousand men",
+      "description": "A horizon line of countless small tent shapes and cooking smoke, rendered as repeated ink marks thinning into haze. Seen from inside the defences, low.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S104-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S104-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S105",
+      "order": 145,
+      "seed_group": "S105",
+      "cue": "32:06",
+      "vo": "hearts reached their throats",
+      "description": "A night sky with a cold wind visible in the way a row of tent ropes and a single lamp flame are pulled sideways. Tension through inanimate objects only.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S105-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S105-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S106",
+      "order": 147,
+      "seed_group": "S106",
+      "cue": "32:28",
+      "vo": "the accusation runs through Medina for roughly a month",
+      "description": "A dense warren of flat rooftops at dusk seen from above, with a thin dark line travelling between them from house to house, doubling back on itself.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S106-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S106-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S108",
+      "order": 149,
+      "seed_group": "S108",
+      "cue": "33:20",
+      "vo": "They travel toward Mecca, unarmed, and are stopped short",
+      "description": "A road blocked by a simple rope line across it, dry hills beyond, a camel's shadow falling across the rope. No riders.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S108-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S108-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S109",
+      "order": 151,
+      "seed_group": "S109",
+      "cue": "33:44",
+      "vo": "the phrase is struck out",
+      "description": "A parchment document on a table with one line physically scored through by a wet stroke of ink. The strike is fresh and still glossy.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S109-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S109-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S111",
+      "order": 153,
+      "seed_group": "S111",
+      "cue": "34:28",
+      "vo": "The truce ends the state of siege",
+      "description": "A once-blocked road now open, the rope coiled and set aside at the verge, dust raised along its length by traffic that has just passed.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S111-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S111-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S112",
+      "order": 155,
+      "seed_group": "S112",
+      "cue": "34:52",
+      "vo": "Do not let a group mock another group",
+      "description": "Two clusters of empty seating mats on a floor, set apart with a clear gap between them, each cluster turned slightly away from the other.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S112-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S112-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S113",
+      "order": 157,
+      "seed_group": "S113",
+      "cue": "35:14",
+      "vo": "would any of you like to eat the flesh of his dead brother?",
+      "description": "A covered dish on a low table, the cloth still over it, one hand at the edge of frame withdrawing. No contents shown. Do not illustrate the image literally \u2014 the line is the shock; the picture should decline to compete with it.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S113-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S113-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S115",
+      "order": 159,
+      "seed_group": "S115",
+      "cue": "35:48",
+      "vo": "peoples and tribes so that you may know one another",
+      "description": "A hand-inked chart of many small settlements across a wide territory, joined by a web of fine gold lines. No borders drawn.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S115-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S115-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S117",
+      "order": 161,
+      "seed_group": "S117",
+      "cue": "36:34",
+      "vo": "the only surah that does not begin with the Bismillah",
+      "description": "A parchment page whose top margin is conspicuously, deliberately empty \u2014 the text block starting lower than the eye expects. The absence is the image.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S117-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S117-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S118",
+      "order": 163,
+      "seed_group": "S118",
+      "cue": "36:56",
+      "vo": "on the plain of Arafat",
+      "description": "Return to S012's aerial, now in full daylight, the speckled crowd texture denser and running to the horizon.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S118-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S118-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S120",
+      "order": 165,
+      "seed_group": "S120",
+      "cue": "37:40",
+      "vo": "nothing is completed except that it begins to decline",
+      "description": "A sundial or shadow-line on a stone floor at the exact moment of noon, the shadow at its shortest. Everything about to lengthen.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S120-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S120-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S124",
+      "order": 167,
+      "seed_group": "S124",
+      "cue": "38:54",
+      "vo": "abrogation stops looking like contradiction",
+      "description": "Two parchment leaves overlapping, the upper one translucent so the lower shows through \u2014 the two texts aligning rather than fighting. No legible glyphs.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S124-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S124-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S127",
+      "order": 169,
+      "seed_group": "S127",
+      "cue": "40:10",
+      "vo": "Al-Fatiha's position is a decision",
+      "description": "A book opened at its very first page, the page blank, the binding new and the spine uncracked. Warm frontal light. The threshold, again.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S127-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S127-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S129",
+      "order": 171,
+      "seed_group": "S129",
+      "cue": "41:02",
+      "vo": "you will not be able to unsee it",
+      "description": "An open book on a stand with one line of a page catching a shaft of light while the rest sits in shade. No legible text.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S129-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S129-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S131",
+      "order": 173,
+      "seed_group": "S131",
+      "cue": "41:46",
+      "vo": "it arrived in year sixteen",
+      "description": "The 23-year bar from S102 rendered as a physical inked rule on parchment, with a single gold mark struck at year sixteen.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S131-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S131-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S132",
+      "order": 175,
+      "seed_group": "S132",
+      "cue": "42:02",
+      "vo": "the work of people who counted",
+      "description": "A desk from above at night: several open volumes, a lamp, a reed pen, and margins dense with abstract annotation. Warm pool of light, dark edges.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S132-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S132-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S133",
+      "order": 177,
+      "seed_group": "S133",
+      "cue": "42:28",
+      "vo": "preserved the disagreement instead of quietly deleting it",
+      "description": "Two manuscript pages side by side, both annotated, with a fine gold line drawn between two differing entries \u2014 connecting them, not resolving them.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S133-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S133-wash.png"
+        }
+      ]
+    },
+    {
+      "id": "S135",
+      "order": 179,
+      "seed_group": "S135",
+      "cue": "43:02",
+      "vo": "Read, in the name of your Lord who created",
+      "description": "Return to S037 \u2014 the reed pen alone on parchment \u2014 but now the nib is dry and the ink drop beside it has soaked in and spread. Last frame of the film. Hold to black.",
+      "aspect_ratio": "16:9",
+      "passes": [
+        {
+          "pass": "line",
+          "prefix": "Line art only, no colour, no wash. ",
+          "filename": "S135-line.png"
+        },
+        {
+          "pass": "wash",
+          "prefix": "",
+          "filename": "S135-wash.png"
+        }
+      ]
+    }
+  ]
+}
