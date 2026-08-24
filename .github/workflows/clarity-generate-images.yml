@@ -1,0 +1,80 @@
+name: CLARITY IN THE QURAN - Generate Images with Replicate
+
+# Generate AI images for Clarity video using tokenized prompts.
+# Dispatches to Replicate API to create line and wash passes for each scene.
+# Stores results in clarity/generated-images/ with seed tracking for compositing.
+
+on:
+  workflow_dispatch:
+    inputs:
+      scenes:
+        description: "Scenes to generate (comma-separated, e.g. S002,S003,S006; empty = all 90)"
+        required: false
+        type: string
+      model:
+        description: "Replicate model to use"
+        required: false
+        default: "black-forest-labs/flux-pro"
+        type: string
+      dry_run:
+        description: "Preview batch without generating (list prompts only)"
+        required: false
+        type: boolean
+        default: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Replicate CLI
+        run: |
+          pip install replicate
+
+      - name: Expand prompts to batch
+        run: |
+          python clarity/prompts-expand.py clarity/prompts-tokenized.json \
+            ${{ inputs.scenes && format('--scenes {0}', inputs.scenes) || '' }} \
+            --output batch.json
+          echo "=== BATCH SUMMARY ==="
+          python -c "import json; b=json.load(open('batch.json')); print(f'Total prompts: {b[\"meta\"][\"total_prompts\"]}')"
+
+      - name: Display batch (dry run)
+        if: ${{ inputs.dry_run }}
+        run: |
+          python -c "
+          import json
+          with open('batch.json') as f:
+              data = json.load(f)
+          print(f'Will generate {data[\"meta\"][\"total_prompts\"]} images:')
+          for p in data['prompts'][:3]:
+              print(f'  {p[\"filename\"]}: {p[\"prompt\"][:80]}...')
+          if len(data['prompts']) > 3:
+              print(f'  ... and {len(data[\"prompts\"])-3} more')
+          "
+
+      - name: Generate images with Replicate
+        if: ${{ !inputs.dry_run }}
+        run: |
+          python clarity/generate-replicate.py batch.json
+        env:
+          REPLICATE_API_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}
+
+      - name: Commit generated images
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "Claude Code"
+          git config user.email "claude@anthropic.com"
+          git add clarity/generated-images/ || true
+          git add clarity/seed-log.json || true
+          if git diff --cached --quiet; then
+            echo "No new images generated"
+          else
+            git commit -m "Generate Clarity images: ${{ inputs.scenes || 'all 90 scenes' }} via Replicate"
+            git push
+          fi
