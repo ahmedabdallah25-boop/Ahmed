@@ -16,7 +16,10 @@ either other channel needed:
   2. description_edits — one strict line deletion, the Christian-register line
                          left in the best video's description. Nothing is added
                          or reworded.
-  3. channel           — channel-level keywords and country, both empty today.
+  3. channel           — channel-level keywords, country, and the channel
+                         description. The description is guarded on a fragment
+                         of the text it is replacing, so a Studio edit nobody
+                         recorded here is skipped rather than overwritten.
 
   4. set_packaging     — title, description and tags for ONE video in ONE write.
                          Added 2026-08-22 for freshly published uploads, which
@@ -73,6 +76,8 @@ API = "https://www.googleapis.com/youtube/v3"
 # YouTube rejects the whole update with `invalidTags` past 500 characters, and a
 # tag containing a space is sent quoted. Budget under it and drop the overflow.
 TAG_BUDGET = 460
+# YouTube caps the channel description at 1000 characters.
+CHANNEL_DESC_LIMIT = 1000
 # clarity_crosslinks.py owns everything from this marker to the end of a
 # description. Kept in sync with crosslink_marker in clarity/playlists.json;
 # test_clarity_marker_sync.py fails if the two ever disagree.
@@ -382,7 +387,25 @@ def fix_channel_meta(token, dry_run):
     branding = items[0]["brandingSettings"]
     have_kw = branding.get("channel", {}).get("keywords", "")
     have_country = branding.get("channel", {}).get("country", "")
+    have_desc = branding.get("channel", {}).get("description", "")
     want_country = cfg.get("country", have_country)
+
+    # The channel description is guarded the same way set_packaging guards a
+    # title: it is prose someone may have edited in Studio since this config was
+    # written, and overwriting an edit nobody recorded is the failure mode. The
+    # expected fragment must still be present or the write is skipped.
+    want_desc = cfg.get("description")
+    expect_desc = cfg.get("expect_description_contains")
+    if want_desc and expect_desc and expect_desc not in have_desc:
+        say(f"  ! channel description: expected fragment not found "
+            f"({expect_desc[:48]!r}) — skipped, not overwritten.")
+        ERRORS.append("channel description: guard did not match")
+        want_desc = None
+    if want_desc and len(want_desc) > CHANNEL_DESC_LIMIT:
+        say(f"  ! channel description: {len(want_desc)} chars exceeds YouTube's "
+            f"{CHANNEL_DESC_LIMIT} — skipped.")
+        ERRORS.append("channel description: over length")
+        want_desc = None
 
     changes = []
     if want_kw and have_kw != want_kw:
@@ -390,6 +413,10 @@ def fix_channel_meta(token, dry_run):
                        f"({len(cfg.get('keywords', []))} terms)")
     if want_country and want_country != have_country:
         changes.append(f"country: {have_country or '(unset)'} -> {want_country}")
+    if want_desc and want_desc.strip() != have_desc.strip():
+        changes.append(f"description: {len(have_desc)} chars -> {len(want_desc)} chars")
+    elif want_desc:
+        want_desc = None
     if not changes:
         say("  = channel metadata already up to date.")
         return 0
@@ -402,6 +429,8 @@ def fix_channel_meta(token, dry_run):
         branding.setdefault("channel", {})["keywords"] = want_kw
     if want_country:
         branding.setdefault("channel", {})["country"] = want_country
+    if want_desc:
+        branding.setdefault("channel", {})["description"] = want_desc
     try:
         call(token, "PUT", "channels", {"part": "brandingSettings"},
              {"id": items[0]["id"], "brandingSettings": branding})

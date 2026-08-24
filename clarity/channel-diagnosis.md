@@ -779,3 +779,80 @@ nothing at all if the cadence stays broken.
 - **Template residue** — audit every derived asset for Christian register, not just the one line
   already removed.
 - **Banner** — demoted to cosmetic.
+
+---
+
+# Fifth pass — 2026-08-24: what a top channel does while it is losing
+
+**State:** 44 subscribers · 18 uploads · **2,578 lifetime views** (+17 in two days) · banner still empty.
+
+Full write-up in [`clarity/growth-playbook.md`](growth-playbook.md). Recorded here because two of
+its findings change standing conclusions in this file.
+
+## The reference channel is in a downturn, and that makes it a better model
+
+`@deepmadesimple`'s last thirty uploads (3–24 Aug): median **9,250** views against a lifetime
+average of **71,889**. **Twenty-nine of thirty are below its own average.** Everything the third
+pass read as "what a winning channel does" is more precisely *what a 258K channel does while its
+last month underperforms by 8×* — which is the more useful question and the one actually asked.
+
+Its response, visible in the data: volume held at 30 uploads in 21 days, runtime locked at
+**25:00–28:35 across 26 of 26** non-anchor uploads, the title frame of its one breakout cloned six
+times in fourteen days, and **nothing done to the back catalogue at all.**
+
+## The finding: Friday
+
+vidIQ's daily search series for `surah al kahf`, 27 Jul – 23 Aug: Friday median **301,999**
+searches/hour against a non-Friday median of ~22,500 — **13.4×, four Fridays out of four.**
+Thursday is already 1.9×. The term is 190,340 searches/month; `surah kahf` is 978,793.
+
+This is the same mechanism as the reference channel's `Sabbath School Lesson NN` series, which
+takes a **33,500** median against **8,850** for everything else on that channel in the same three
+weeks. Demand that arrives on a calendar does not depend on the algorithm's mood.
+
+**Caveat kept in front of the plan, not behind it:** most of that Friday volume is *recitation*
+intent, which this channel does not serve. The explainer slice is smaller — but a 21:31 faceless
+Al-Kahf explainer sits at 34,785 views and a 53:57 one at 68,872, against Clarity's 2,578 lifetime.
+
+## Correction to the third pass: "the reference channel says not to run themed playlists"
+
+Unchanged in substance — one 71-video spine there, four themed lists here, revisit past ~40
+uploads. But the Al-Kahf series adds a fifth list, *Surah Al-Kahf, Explained*, and it is the first
+playlist on this channel **whose name is a search term**. That is the argument for it, not theme.
+
+## What this pass does NOT license, against the obvious reading
+
+The question that produced this pass was how to *push* the existing videos. The evidence says
+mostly: **do not.** Changing a title or thumbnail does not itself trigger re-promotion — YouTube
+responds to viewer behaviour on impressions, and the May catalogue runs at 0.2–2.1 views/day, so
+there is no impression stream to convert. That is consistent with the +0-views-over-21.7-hours
+measurement on channel 1, and the four protected winners stay protected.
+
+The legitimate form of the move is **Test & Compare** — Studio-only, up to three thumbnails and
+(since 2026) titles, decided on **watch time per impression rather than raw click-rate** — run on
+new uploads inside their first two weeks. It belongs in the upload checklist, and no automation can
+do it.
+
+## Applied this pass
+
+`clarity/packaging-fix.json` → **"CLARITY IN THE QURAN - 2. Fix packaging"**:
+
+| | Before | After |
+|---|---|---|
+| Channel keywords | 258 chars, no surah names | **473 chars, 26 phrases, 7 surah names** |
+| Channel description | @deepmadesimple's About, nouns swapped | rewritten, 931 chars |
+
+The description is the largest derived asset nobody had re-read since the Christian-register leak
+was traced to that same substitution. It also promised "New videos every week" — untrue since May.
+
+`clarity_packaging.py` gained channel-description support, guarded on
+`expect_description_contains`: if the fragment is gone, someone edited it in Studio and the write is
+skipped rather than overwriting an edit this repo never recorded.
+
+**No video titles moved.** No settled packaging touched.
+
+## Still open — unchanged, plus one
+
+- Chapters (12 of 15 without), captions (0 of 18), back-catalogue thumbnails (`i.ytimg.com`
+  re-tested today, still blocked at this gateway), banner (cosmetic), native Bengali reader.
+- **New:** Test & Compare has no API and is now a required manual step on every upload.

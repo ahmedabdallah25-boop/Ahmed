@@ -74,6 +74,17 @@ comparison, chain diagram, timeline) that carry the argument, changing every 3�
 Clarity's are mood illustrations. A lecture with slides versus a poem with pictures. Clarity's
 prose is already as good — do not "fix" the writing.
 
+**Before trying to "push" or revive anything on Clarity, read
+[`clarity/growth-playbook.md`](clarity/growth-playbook.md).** It reverse-engineers the reference
+channel *while that channel is in a downturn* — 29 of its last 30 uploads sit below its own lifetime
+average — and the two conclusions that will otherwise get re-derived wrong are: **repackaging the
+settled catalogue is not a lever here** (no impressions to convert; +0 views measured on channel 1;
+the legitimate version is Studio's Test & Compare on new uploads, judged on watch time per
+impression), and **the largest unclaimed lever is a calendar-anchored series** — search demand for
+`surah al kahf` runs at **13.4x on Fridays**, four Fridays out of four, the same mechanism as the
+reference channel's weekly Sabbath School series taking a 33.5K median against 8.9K for everything
+else there. Publish that series on Thursdays.
+
 Do not port channel 1's conclusions onto channel 2 or channel 3. The finance channel's problem is
 topic exhaustion on a channel with 8K+ lifetime views; HELD BY FAITH has 33 lifetime views and a
 format problem; Clarity in the Quran has 2,561 lifetime views, a format that already works, and a
