@@ -851,6 +851,25 @@ skipped rather than overwriting an edit this repo never recorded.
 
 **No video titles moved.** No settled packaging touched.
 
+**Run and verified.** Dry run (run 6) previewed exactly two channel-level changes and nothing else —
+every video reported "already up to date", which is itself the check that the config touches no
+settled packaging. Live run (run 7) reported `1 change(s) written`. Both were dispatched against
+`claude/youtube-channel-growth-685ct0`; the workflow file lives on the default branch, so
+`actions/checkout` takes the dispatch ref and a feature-branch config runs without fast-forwarding
+anything.
+
+Read back from the live channel afterwards rather than trusted from the log: the About text is the
+new 931-character version, and `keywords` now returns `surah al kahf`, `surah kahf friday`,
+`surah al mulk`, `surah yaseen`, `ayat al kursi`, `surah al fatiha`, `surah ar rahman`,
+`surah ar rad` and `stories of the prophets` — the first surah names this channel's keywords have
+ever carried.
+
+One detail that will confuse the next verification pass: `channels.list` returns `keywords` already
+**split into single words**, so 26 phrases read back as 70 tokens. That is the API's own
+tokenisation of the space-separated field, not a mangled write — the same artifact that made the
+previous list look like 33 terms when it was 15. Compare the joined string's character count, not
+the token count.
+
 ## Still open — unchanged, plus one
 
 - Chapters (12 of 15 without), captions (0 of 18), back-catalogue thumbnails (`i.ytimg.com`
