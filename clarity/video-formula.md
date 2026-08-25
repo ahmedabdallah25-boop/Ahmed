@@ -101,6 +101,14 @@ Five moves in ninety seconds:
 
 No intro animation, no logo, no "welcome back", no "before we start". The first frame is content.
 
+**Amendment, 2026-08-25.** A second reference video, `WM4ZLHet9bk` (26:14, 5,210 views in its
+first 48 hours), does **not** open on a number. It opens on a *falsifiable absence* — "the verse
+everybody quotes about God's perfect timing doesn't use the word everybody quotes for it." That
+works for the same reason the number works: it is checkable in under a minute, and the viewer
+cannot check it without opening the video. So the rule generalises to **"the first sentence is a
+verifiable fact that contradicts an assumption"**, of which a hard number is one implementation and
+a missing word is another. Full anatomy in [`teardown-kairos-chronos.md`](teardown-kairos-chronos.md).
+
 **Clarity is already good at this and should not change it.** Its own twin, `PUPdFpvEA04`, opens:
 
 > "There is an instruction in the Quran that refuses to appear by itself. Go looking for it and you
@@ -228,3 +236,32 @@ with the source's own transcript as the model: the seven-move hook broken down a
 five information graphics named, and the runtime honestly adapted — 114 surahs cannot get four
 minutes each the way Paul's 13 letters did, so it runs the arc in six phases instead of a
 114-entry list.
+
+---
+
+## The second video built to this spec
+
+[`script-appointed-time.md`](script-appointed-time.md) — *Is Allah Late? What "Ajal" and "Waqt"
+Actually Mean in Arabic*, reverse-engineered from `WM4ZLHet9bk` rather than transposed from it.
+The teardown of the source is [`teardown-kairos-chronos.md`](teardown-kairos-chronos.md); the
+frames are [`scene-pack-appointed-time.txt`](scene-pack-appointed-time.txt).
+
+It differs from the flagship in two ways worth noting before building anything else to this spec.
+
+**It matches the source's runtime deliberately** — 27:36 against 26:14 — so that if it performs
+differently, runtime is not the reason. The flagship runs 43 minutes and cannot make that claim.
+
+**It reverse-engineers the machine and refuses the content.** Kairos and chronos are Greek, and the
+Quran's time vocabulary is richer rather than equivalent — six words where Greek has two, and the
+ordinary modern word for time absent from the text entirely. §4 of the teardown is the list of
+things that must *not* be swapped across, which exists because CLAUDE.md records that
+Christian-register phrasing has already leaked into this channel's copy from exactly this template.
+The one place the material is stronger than the source's is set out in §4 of the teardown: the
+Quran stages "you cannot measure a span from inside it" four times, as a question with a wrong
+answer, where the Bible states it once.
+
+**On §5, which is what this file exists for.** The scene pack carries the finding as an explicit
+build rule — rule 7, *the image must be that sentence, not the mood of the paragraph around it* —
+and 124 of its 130 scenes are headed with the exact line of voiceover they sit under. The other six
+are recitation plates, which anchor to an ayah instead. The test written into the pack is the mute
+test: a viewer who cannot hear a word should still be able to follow the argument off the frames.

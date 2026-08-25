@@ -1,0 +1,1142 @@
+================================================================================
+SCENE PACK — IS ALLAH LATE? WHAT "AJAL" AND "WAQT" ACTUALLY MEAN IN ARABIC
+Clarity in the Quran · UC0eBu0ZXcF20pTAG3lUnPXA
+Script:   clarity/script-appointed-time.md   (17 TTS batches, 27:36)
+Teardown: clarity/teardown-kairos-chronos.md (source video WM4ZLHet9bk)
+Spec:     clarity/video-formula.md  §5 is the section this pack exists to satisfy
+================================================================================
+
+READ THE SEVEN HARD RULES BEFORE YOU GENERATE ANYTHING
+--------------------------------------------------------------------------------
+
+1. NO FACES. NO PROPHETS. NO COMPANIONS. Not stylised, not distant, not in
+   silhouette-with-features, not "just the outline". Nothing in this pack depicts
+   the Prophet ﷺ, any prophet, or any named Companion, and no prompt below asks
+   for a human face of any kind. Where a person is unavoidable the pack uses
+   hands, feet, a shadow on a wall, a figure at a distance so small it is a mark,
+   or the space a person has just left. Yusuf occupies four minutes of this
+   script and appears in none of these frames — the well, the ledger, the cell
+   door and the storehouse do the work instead.
+
+2. NO PHOTOREAL ANYTHING. Ink and watercolour throughout. thumbnail-system.md §3
+   established why: this channel carries a public "AI BE AWARE" comment, and
+   photoreal AI is the signature that comment points at.
+
+3. NO GENERATED TEXT INSIDE A GENERATED IMAGE. Image models produce nonsense
+   Arabic and misspelt English, and on a Quran channel a garbled ayah on screen
+   is unrecoverable. Every glyph the viewer sees — Arabic, English, numerals,
+   labels — is TYPESET IN THE EDIT over a plate generated empty. Every prompt
+   below therefore carries the negative block, which forbids text.
+
+4. THE ARABIC IS SET FROM A VERIFIED MUSHAF. Copy-paste from a checked digital
+   text, then have a reader confirm it on screen before render. Never retype it.
+
+5. A FRAME CARRIES ONLY WHAT A VIEWER SHOULD READ. No production notes, no
+   directions to the editor, no commentary about what the frame is doing.
+   Directions live HERE, where a person reads them.
+
+6. ARABIC SITS ABOVE. On any frame carrying both, the Arabic goes above its
+   citation and above its gloss or list — never underneath. Citations use SURAH
+   + NUMBER: "AL-A'RAF 34", not "AL-A'RAF · THE HEIGHTS".
+
+7. THE RHYME RULE — THE ONE THIS PACK EXISTS FOR.
+   Every scene below is headed with the exact line of voiceover it sits under.
+   The image must be THAT SENTENCE, not the mood of the paragraph around it.
+
+   The test: mute the video. A viewer who cannot hear a word should still be
+   able to follow the argument off the frames alone. If a frame would work
+   equally well under a different sentence in this script, it is decoration and
+   it is wrong — replace it or cut it.
+
+   124 of the 130 scenes below are headed with their line. The remaining six
+   are the recitation plates, which anchor to an ayah citation instead — the
+   reciter is the audio, so there is no narration line for them to rhyme with.
+
+   This is the finding in video-formula.md §5 stated as a build rule. The
+   reference channel's images are information graphics that carry the argument;
+   Clarity's have been mood illustrations that decorate it. The difference is
+   not prettiness. It is whether the picture is making the point.
+
+   Worked example, from this pack. The script says the popular story is that
+   "ajal is death and waqt is prayer times — two neat boxes", and then shows
+   neither word will stay in its box.
+     WRONG:  a mosque at dusk with a crescent moon. Islamic, atmospheric, and
+             it says nothing. It would fit under any sentence in any video.
+     RIGHT:  S070 draws the two boxes neatly and lets them look correct for
+             four seconds. Then S071 drops the four watercolour objects from
+             the previous ninety seconds — the debt tablet, the folded
+             garment, the notched stone, the horizon peg — into the left box
+             one at a time, and they visibly overflow it and break its
+             outline. The box does not resize. It fails.
+   The second one IS the argument. That is the standard for all 130 frames.
+
+--------------------------------------------------------------------------------
+THE FIXED STYLE BLOCK — append to EVERY illustration prompt, unchanged
+--------------------------------------------------------------------------------
+
+  STYLE: ink and watercolour on aged parchment. Loose confident pen line, wet
+  bleeding washes with visible grain and hard edges where the water dried.
+  Palette: raw sienna, burnt umber, ochre, warm grey, with sparing indigo and a
+  single warm gold accent. Muted, aged, hand-made. Generous empty parchment.
+  Cinematic 16:9, 1920x1080.
+
+  NEGATIVE: no text, no letters, no writing, no numerals, no calligraphy, no
+  signature, no watermark, no human face, no facial features, no portrait, no
+  photoreal skin, no 3D render, no digital gloss, no lens flare, no modern
+  objects, no crosses, no church architecture, no menorah, no Star of David.
+
+  (The last four exist because this channel's assets were transposed from a
+  Christian channel once already and the artefacts leaked into public copy. The
+  same leak in an image is worse, because nobody proof-reads a picture.)
+
+--------------------------------------------------------------------------------
+HOW 130 SCENES BECOME 280 VISUAL EVENTS
+--------------------------------------------------------------------------------
+
+Counted, not estimated — the numbers below are produced by walking this file.
+
+     64 GRAPHIC frames, built in the edit             =  64
+     60 ILLUS plates, generated                       = 210
+      6 RECITATION frames                             =   6
+     -------------------------------------------------------
+    130 scenes  →  280 events over 1,656s             = 5.9s average
+
+Each ILLUS scene yields up to FOUR events from ONE generation:
+
+  1. LINE     — same prompt + "line art only, no colour, no wash", same seed
+  2. WASH     — the prompt exactly as written
+  3. PUSH     — the wash, slow 4% push-in
+  4. DRIFT    — the wash, slow lateral drift across the grain
+
+  Events 1→2 cross-dissolve over 1.5–2.5s: the ink appears, then the colour
+  blooms into it. Hold LINE while the VO sets the idea up; let the WASH bloom
+  on the word that lands. In ACT 0 and ACT 7 only LINE→WASH is used — two
+  events, no push, no drift — which is what makes those two stretches feel
+  faster without generating a single extra plate. That is why 60 plates yield
+  210 events rather than 240.
+
+5.9s sits inside the 3–6s band video-formula.md measured on the reference
+channel, and only 60 generations are needed to get there.
+
+GRAPHIC frames are NOT generated. They are built in the edit from typeset text
+on the navy ground — same palette as the thumbnails: navy #16203C, gold #E8A33D,
+cream #F2ECDC, rust #C0492B. Amiri for Arabic, Archivo for Latin. These are the
+frames that carry the argument, and per video-formula.md §5 they are the reason
+this video survives twenty-seven minutes without a face on screen.
+
+**18 of the 64 are information graphics** in the spec's own five categories,
+listed below. That is one every 92 seconds, against the spec's budget of roughly
+one every 90 — met, not exceeded, and not by rounding.
+
+The other 46 are word plates, citation plates and reversal frames: a gold Arabic
+word with its gloss, a struck reading replaced by a right one, an ayah with two
+words lifted out of it. They are cheaper than an information graphic and they do
+less, but on a vocabulary video they are not decoration either — a viewer who
+mutes this video can still read every word the argument turns on.
+
+  The five required graphic types, and where each is discharged:
+    BIG NUMBER          S001 (٤) · S004 (٣٠٩) · S007 (١٠٠) · S095 (٤ again)
+    LABELLED COMPARISON S011 (the four wrong answers) · S023 (ajal / waqt) ·
+                        S054 (309 vs bid') · S105 (kept vs taken) ·
+                        S112 (the two positions) · S114 (solar / lunar)
+    CHAIN DIAGRAM       S026 (أ-ج-ل → four derived forms) ·
+                        S061 (household → prison → kingdom) ·
+                        S091 (أ-ن-ي → yaʾni, ānin, ināʾ)
+    TIMELINE            S041 (the four leases) · S073 (Iblis's reprieve) ·
+                        S129 (the two terms of Al-An'am 2)
+    LABELLED OBJECT     S034 (the debt tablet) · S058 (the storehouse)
+
+  And nine frames exist only to reverse something the video has already put on
+  screen, which is the shape of the whole channel's thesis rendered as an edit:
+    S041 strikes S031 · S071 breaks S070 · S076 corrects S023 ·
+    S094 replaces S090 · S100, S105, S110, S111, S124.
+
+RECITATION marks a place where the TTS stops and a real reciter is heard. Six of
+them, 98 seconds total. Never synthesise these. Their frames render to
+media/clarity/frames/_pending/ as PARTIAL FRAMES: the citation in its final
+position, the ayah area left empty. No label, no dashed box, no "awaiting"
+caption — the missing text is visible on its own and a note explaining itself is
+how production language ends up on screen.
+
+================================================================================
+ACT 0 — THE HOOK · 0:00–2:42
+Fastest cutting in the video. LINE→WASH only, no push, no drift.
+================================================================================
+
+S001 · 0:00 · GRAPHIC · first frame, no fade-in, cold open
+  "Four."
+  Full-bleed navy. Gold Arabic-Indic numeral "٤" centred, Amiri, enormous —
+  filling two-thirds of the frame height. Beneath it, small, cream: "4".
+  Nothing else. No title, no logo, no channel name. Holds 3s.
+
+S002 · 0:03 · ILLUS · 8s
+  "Four times in the Quran, somebody is asked how long they were there.
+   And four times, the answer is wrong."
+  A single brass balance scale on a bare table, one pan hanging noticeably
+  lower than the other, the beam tilted and still. Nothing in either pan.
+
+S003 · 0:11 · ILLUS · 10s
+  "A group of young men wake in a cave and are asked how long they slept.
+   A day, they say. Or part of a day."
+  The mouth of a cave seen from deep inside, looking out. Pale blinding light
+  in the opening. On the floor near the entrance, a scatter of sandals gone
+  stiff and cracked with age, and a dog's paw prints in old dust. No figures.
+
+S004 · 0:21 · GRAPHIC · BIG NUMBER
+  "It was three hundred years, and nine more."
+  Navy. Cream Archivo, small, upper third: "A DAY, OR PART OF A DAY".
+  A rust strike-through animates across it left to right over 0.6s.
+  Then gold Amiri "٣٠٩" slams in beneath at four times the size, with cream
+  "309 YEARS" under it. Citation bottom-left: AL-KAHF 19.
+
+S005 · 0:25 · ILLUS · 10s
+  "A man rides past a town that has fallen in on itself and wonders aloud
+   how Allah could ever bring this back to life."
+  A collapsed mud-brick settlement from a low rise — roof beams down, walls
+  dissolved to stumps, a well head choked with rubble. Wide empty sky.
+
+S006 · 0:35 · ILLUS · 6s
+  "Allah causes him to die for a hundred years, raises him, and asks him
+   how long he stayed."
+  A donkey's bleached skeleton lying intact on the ground beside a basket of
+  figs and a clay jar, the fruit and the jar untouched and fresh. The
+  contradiction between the two is the whole frame — do not tidy it.
+
+S007 · 0:41 · GRAPHIC · BIG NUMBER
+  "A day, he says. Or part of a day."
+  Same construction as S004 so the rhyme is unmistakable. Cream "A DAY, OR
+  PART OF A DAY", rust strike, then gold "١٠٠" and cream "100 YEARS".
+  Citation: AL-BAQARAH 259.
+
+S008 · 0:46 · ILLUS · 14s · this one gets PUSH as well — 3 events
+  "On the Day of Resurrection, people whisper to each other, trying to work
+   out how long it has been."
+  A vast pale plain under a white sky, crowded with hundreds of tiny upright
+  marks, each one no bigger than a grain of rice, receding to the horizon.
+  Utterly featureless — no faces, no clothing, no detail at that scale.
+
+S009 · 1:00 · GRAPHIC
+  "Ten, one of them says. The most accurate among them says: no, one day."
+  Navy. Two lines, cream, one above the other, each struck through in rust as
+  it is spoken: "TEN" then "ONE DAY". Citation: TA-HA 103–104.
+
+S010 · 1:04 · ILLUS · 10s
+  "And then a fourth time, the question is put to everyone at once."
+  A single enormous ledger lying open on a stone floor, both pages blank, the
+  binding cracked with age. Scale exaggerated — the book is the size of a
+  door. Warm light from above, nothing else in frame.
+
+S011 · 1:14 · GRAPHIC · LABELLED COMPARISON · the hook's payload frame
+  "how many years did you remain on the earth?"
+  Held under the recitation that follows. Navy, two columns, cream headers:
+  "WHAT THEY SAID" · "WHAT IT WAS". Four rows build one at a time on the
+  reciter's phrasing, cream left, gold right:
+      A day, or part of a day     ·   309 years      AL-KAHF 19
+      A day, or part of a day     ·   100 years      AL-BAQARAH 259
+      Ten — then, one day         ·   —              TA-HA 103
+      A day, or part of a day     ·   a lifetime     AL-MU'MINUN 113
+  The repetition down the left column is the argument. Do not vary the wording
+  to make it read better; the sameness IS the finding.
+
+S012 · 1:14 · RECITATION · Al-Mu'minun 23:112–114 · 20s
+  Reciter enters. S011 holds beneath for the first 12s, then dissolves to the
+  recitation plate: navy, the three ayat set in Amiri cream, appearing one line
+  at a time on the reciter's phrasing. Citation AL-MU'MINUN 112–114 already in
+  position. No translation on screen. VERIFIED MUSHAF TEXT ONLY.
+
+S013 · 1:34 · GRAPHIC · the line the whole hook is built to deliver
+  "Ask those who keep count."
+  Navy. Gold Amiri, centred, alone: فَاسْأَلِ الْعَادِّينَ
+  Beneath, cream Archivo: "ASK THOSE WHO KEEP COUNT". Citation: AL-MU'MINUN 113.
+  Hold 5s — the longest hold in the act. Let it sit.
+
+S014 · 1:39 · ILLUS · 12s
+  "The answer does not just come back wrong. It comes back handing the
+   counting to somebody else."
+  A hand at the edge of frame setting down a set of counting stones on a
+  table and withdrawing, the stones left in a loose uncounted heap. Only the
+  hand and forearm, no face, palm open and empty as it pulls away.
+
+S015 · 1:51 · GRAPHIC
+  "Four times asked. Four times wrong."
+  Navy. Four gold tally marks stroking on one at a time, evenly spaced across
+  the frame. Under each, small cream: 18:19 · 2:259 · 20:103 · 23:113.
+  Then a rust line strikes through all four in a single stroke.
+
+S016 · 1:58 · ILLUS · 12s
+  "That is not a story about bad memory. Four times is a pattern, and a
+   pattern in this book is an argument."
+  Four identical clay water jars in a row, each cracked in exactly the same
+  place on its shoulder. The repetition of the fault is the subject.
+
+S017 · 2:10 · ILLUS · 14s
+  "You cannot measure a stretch of time from inside it. Not roughly. Not
+   within a century."
+  Interior of a huge clay vessel, looking up from the bottom towards a small
+  circle of daylight at the rim. Water partway up the curved wall. The rim is
+  too far away to read a level against. Claustrophobic, warm, not frightening.
+
+S018 · 2:24 · ILLUS · 18s
+  "So if that is true — and the book says it four times — then what is Allah
+   measuring with? Because He clearly is."
+  A long measuring cord coiled on a stone floor, one end running off frame
+  into darkness, knots tied along its visible length at regular intervals.
+  The knots are the only marks. Gold accent on the nearest knot.
+
+================================================================================
+ACT 1 — SIX WORDS FOR TIME · 2:42–5:44
+The vocabulary act. Highest graphic density in the video.
+================================================================================
+
+S019 · 2:42 · ILLUS · 10s
+  "Open an English translation and you will find the word 'time' scattered
+   across every page."
+  An open printed book, pages seen at a steep angle so the text is illegible
+  blur, with a dozen small gold smudges scattered down both pages like
+  highlighter marks. Deliberately unreadable — the pattern, not the words.
+
+S020 · 2:52 · GRAPHIC · the six, built one at a time on the VO
+  "Open the Arabic underneath it and you find at least six different words."
+  Navy. Six rows build in sequence, each landing exactly on its name in the
+  VO. Arabic gold Amiri on the left, cream Archivo gloss on the right, cream
+  citation in a third narrow column:
+      دَهْر     THE AGE ITSELF                AL-JATHIYAH 24
+      حِين      AN INDEFINITE WHILE           IBRAHIM 25
+      عَصْر     THE PRESSED PORTION           AL-ASR 1
+      سَاعَة    AN HOUR — AND THE HOUR        AL-A'RAF 34
+      وَقْت     AN APPOINTED POINT            AN-NISA 103
+      أَجَل     A TERM WITH A STATED END      AL-A'RAF 34
+  Each row holds ~7s. This single frame is on screen for most of batch 03 and
+  is the most information-dense in the video. It is allowed to be.
+  DO NOT generate this. Typeset it. Confirm all six against a mushaf.
+
+S021 · 3:40 · ILLUS · 12s
+  "And here is the strange part. The word a modern Arabic speaker reaches for
+   first — zaman — does not appear in the Quran at all."
+  A printed concordance open flat, one column of entries running down the
+  page, and a single conspicuous gap in the column where an entry should be —
+  clean parchment, no ruling, the surrounding entries unreadable blur.
+
+S022 · 3:52 · GRAPHIC · the absence, stated
+  "The most obvious word is missing, and six less obvious ones are doing the
+   work in its place."
+  Navy. Gold Amiri, large, centred: زَمَان — then it fades to 15% opacity
+  over 1.2s and a cream Archivo line appears beneath: "0 OCCURRENCES".
+  Hold 4s. Nothing else on the frame.
+  VERIFY BEFORE BUILDING. If the root occurs anywhere, this frame and its
+  paragraph are both cut. See the script's [VERIFY] note.
+
+S023 · 4:03 · GRAPHIC · LABELLED COMPARISON · the spine of the whole video
+  "Ajal asks: how long. Waqt asks: which moment."
+  Navy, split down the middle by a thin cream rule. This layout returns three
+  more times in the video (S056, S070, S087), so build it once as a template.
+      LEFT   gold أَجَل      cream "HOW LONG"    beneath: a gold horizontal
+             bar spanning the column, capped at both ends
+      RIGHT  gold وَقْت      cream "WHICH MOMENT" beneath: a single gold dot,
+             same weight as the bar, no width
+  The bar and the dot are the argument. A span has length; a point does not.
+
+S024 · 4:14 · ILLUS · 12s
+  "Ajal is a span. It has a beginning, a length, and an end that was set
+   before it started."
+  A length of rope stretched taut across the frame between two iron pins
+  driven into stone, a knot at each end. Both pins visible. Nothing slack.
+
+S025 · 4:26 · ILLUS · 8s
+  "Waqt is a point. It does not have a length. It arrives, and either you are
+   standing there or you are not."
+  A single shaft of light falling through a high window onto one flagstone,
+  the marked stone brighter than everything around it. Empty floor.
+
+S026 · 4:34 · GRAPHIC · CHAIN DIAGRAM · the cognate proof
+  "you already own the proof of what ajal means"
+  Navy. At the top, gold Amiri, large, the three letters spaced apart:
+  أ · ج · ل — then four gold lines drop from them to four boxes that build in
+  sequence as the VO names them:
+      تَأْجِيل    POSTPONEMENT
+      مُؤَجَّل    DEFERRED
+      آجِل        THE DEFERRED ONE   (vs عَاجِل, THE IMMEDIATE)
+      أَجَل       A TERM
+  Then, beneath all four, cream Archivo: "NONE OF THEM MEAN TO DIE".
+  That last line lands on the VO's own sentence. It is the payload of the act.
+
+S027 · 5:02 · ILLUS · 10s
+  "Not one of those words means to die. Every one of them means: to defer
+   something to a stated end."
+  A stamped wax seal on a folded document, the cord still wound round it,
+  unopened. Beside it a stylus laid down. The seal is intact — the terms are
+  agreed and the thing has not yet come due.
+
+S028 · 5:12 · GRAPHIC · THE CLAIM
+  "Allah measures out a span, and He appoints a moment at the end of it."
+  Navy. The gold bar from S023 draws left to right across the frame over 2s,
+  and a gold dot lands hard at its right end. Cream Archivo beneath, one line:
+  "A SPAN, AND A MOMENT AT THE END OF IT". Hold 4s.
+
+S029 · 5:24 · ILLUS · 20s · hold long, this is the thesis landing
+  "most of what you are calling a delay is the span, doing its work"
+  A field of unripe green wheat seen close, heads still light and upright, the
+  whole field leaning one way in wind. Nothing is happening in the picture.
+  That is the point — the frame should look like an interval, not an event.
+
+S030 · 5:36 · GRAPHIC
+  "I would rather hand you something true than something tidy."
+  Navy. Cream Archivo, centred, two lines, nothing else:
+  "TRUE" above, "NOT TIDY" below, with the word TRUE in gold.
+  4s. The most important credibility frame in the video — give it silence.
+
+================================================================================
+ACT 2 — AJAL IS A LEASE, NOT A DEATH · 5:44–9:06
+The counter-evidence act. Four objects, four citations, one word.
+================================================================================
+
+S031 · 5:44 · GRAPHIC · the assumption, stated so it can be broken
+  "Ajal is death. His ajal came. Her ajal was written."
+  Navy. Gold Amiri أَجَل top-left in the thumbnail's own position. Beneath it,
+  cream Archivo, large: "= DEATH". Held clean for 4s with no strike — the
+  strike does not come until S041. Letting the wrong reading stand unchallenged
+  for ninety seconds is what makes its removal land.
+
+S032 · 5:56 · ILLUS · 8s
+  "In ordinary Muslim speech the word has become a synonym for the moment
+   your life stops."
+  A vertical gnomon on a stone dial, its shadow lying exactly along the last
+  engraved mark at the plate's edge. Nowhere further for the shadow to go.
+
+S033 · 6:04 · ILLUS · 8s
+  "Surah Al-Baqarah, verse two hundred and eighty-two. The longest verse in
+   the book."
+  A single column of handwritten script running the full height of a tall
+  page, edge to edge, with no paragraph break anywhere in it — rendered as
+  indistinct ink strokes, not legible letters (rule 3). The density is the
+  subject. Around it, three normal short pages for scale.
+
+S034 · 6:12 · GRAPHIC · LABELLED OBJECT
+  "It is not about death, or judgement, or the soul. It is about lending money."
+  Navy. A single watercolour object, centred, generated separately and cut in:
+  a folded debt tablet with a cord and seal. Four cream leader lines label it —
+  THE SUM · THE TERM · THE WITNESSES · THE SCRIBE — with THE TERM in gold and
+  the Arabic إِلَىٰ أَجَلٍ مُّسَمًّى set above the object.
+  Citation: AL-BAQARAH 282.
+
+S035 · 6:20 · ILLUS · 15s
+  "Write it down. Get two witnesses. Do not be too proud to record it,
+   whether the sum is small or large."
+  Two hands entering from opposite edges of the frame, each pressing a thumb
+  onto the same sheet of parchment. Wrists and forearms only. A reed pen and
+  an inkwell to one side. No faces, no bodies.
+
+S036 · 6:35 · GRAPHIC
+  "A loan agreement. A repayment deadline. Same word."
+  Navy. Cream Archivo: "A LOAN." Then, gold, beneath: "SAME WORD."
+  This exact frame construction repeats at S038 and S040. Same position, same
+  size, same timing. The repetition is doing the arguing.
+
+S037 · 6:41 · ILLUS · 16s
+  "Nine verses earlier, the same word again, and this time it is a marriage."
+  A folded garment resting on a low chest beside a closed interior door, a
+  small oil lamp burning low on the chest. Domestic, quiet, waiting. No figure.
+
+S038 · 6:57 · GRAPHIC
+  "A waiting period. Same word."
+  As S036. Cream "A WAITING PERIOD." / gold "SAME WORD."
+  Citation: AL-BAQARAH 231.
+
+S039 · 7:01 · ILLUS · 14s
+  "Musa agrees to work for a man for eight years, with a tenth optional."
+  A shepherd's staff leaning against a stone well-head, and beside it a flat
+  stone with eight short notches cut into its edge, and a ninth and tenth
+  notch begun but not cut through. Two sheep at a distance, small.
+
+S040 · 7:15 · GRAPHIC
+  "An employment contract, with two possible lengths. Same word. Twice, in
+   one sentence."
+  As S036, with a third line. Cream "A LABOUR CONTRACT." / gold "SAME WORD."
+  / small cream "TWICE, IN ONE SENTENCE". Gold Amiri الْأَجَلَيْنِ above.
+  Citation: AL-QASAS 28.
+
+S041 · 7:20 · GRAPHIC · TIMELINE · the act's payload frame
+  "A debt. A waiting period. A labour contract. And then the heavens and the
+   earth themselves — created in truth, and for a stated term."
+  Navy. Four horizontal gold bars, stacked, each capped hard at both ends,
+  each a wildly different length — and every one of them labelled with the
+  same gold Amiri word أَجَل at its left cap:
+      A DEBT                  short bar          AL-BAQARAH 282
+      A WAITING PERIOD        shorter bar        AL-BAQARAH 231
+      A LABOUR CONTRACT       medium bar         AL-QASAS 28
+      THE HEAVENS AND EARTH   runs off both      AL-AHQAF 3
+                              edges of the frame
+  Then S031's "= DEATH" returns small in the corner and is struck through in
+  rust. That is the ninety-second payoff. Time the strike to the VO's word
+  "leases", not before.
+
+S042 · 7:38 · ILLUS · 12s
+  "the heavens and the earth themselves — created in truth, and for a
+   stated term."
+  A night sky over a flat dark horizon, stars fine and sparse, and on the
+  horizon line a single small gold mark like a surveyor's peg. The mark is the
+  only warm thing in the frame and it is very small.
+
+S043 · 7:52 · ILLUS · 14s
+  "You do not have an ajal the way you have an appointment on a Tuesday.
+   You have one the way a lease has a length."
+  A large iron door key hanging on a nail in a plastered wall, on a worn
+  leather cord. Nothing else on the wall. The key is clearly in use.
+
+S044 · 8:06 · ILLUS · 8s
+  "Death is just where one particular lease happens to run out."
+  The same wall, the same nail, the key gone. The cord lying coiled on the
+  floor below. Identical framing and lighting to S043 — this must read as the
+  same picture, later. Generate from the same seed with the key removed.
+
+S045 · 8:14 · GRAPHIC
+  "If ajal means the moment you die, then the only interesting fact about it
+   is the date, and the date is hidden."
+  Navy. Cream "THE DATE" large, then a rust strike, then it fades to 10%.
+  Gold "THE LENGTH" rises into its place at twice the size.
+  Cream beneath: "AND YOU ARE STANDING INSIDE IT". Hold 5s.
+
+S046 · 8:30 · ILLUS · 16s
+  "It is the length. And you are standing inside it right now."
+  A long stone threshold running out of frame in both directions, with a
+  single human shadow falling across it. The shadow only — no legs, no body,
+  no edge of a person anywhere in frame.
+
+S047 · 8:46 · GRAPHIC
+  "Not for every person — for every nation. Communities have leases too."
+  Navy. Three gold bars in ascending length, each capped, each labelled in
+  cream: "A PERSON" · "A COMMUNITY" · "A CIVILISATION". Gold Amiri above:
+  لِكُلِّ أُمَّةٍ أَجَلٌ. Citation: AL-A'RAF 34.
+
+S048 · 9:00 · ILLUS · 6s
+  "The word scales all the way up."
+  A cut bank of earth showing four distinct stratified layers, each holding
+  fragments of a different pottery style. Archaeological, matter-of-fact.
+
+================================================================================
+ACT 3 — THE SPAN IS WHERE THE WORK HAPPENS · 9:06–12:29
+Yusuf occupies this entire act and appears in none of these frames.
+================================================================================
+
+S049 · 9:06 · ILLUS · 18s
+  "Yusuf. Thrown into a well by his brothers as a boy."
+  A well mouth seen from directly overhead — a perfect dark circle in pale
+  stone, rope coiled at its rim, the darkness inside giving nothing back.
+  Framed dead centre. This exact composition returns inverted at S059.
+
+S050 · 9:24 · ILLUS · 8s
+  "Pulled out by a caravan and sold."
+  A small brass balance on a merchant's cloth with a handful of coins in one
+  pan, weights in the other, and a coiled length of rope set down beside it,
+  still wet at one end.
+
+S051 · 9:32 · ILLUS · 10s
+  "Accused of something he did not do, and put in prison for it, with the
+   evidence pointing the other way."
+  A linen garment hanging on a hook, torn — and the tear is clearly at the
+  BACK, not the front. That detail is the whole legal argument of the surah
+  and it must be unambiguous in the drawing.
+
+S052 · 9:42 · GRAPHIC
+  "Fa-labitha fis-sijni bid'a sineen. He remained in prison for several years."
+  Navy. Gold Amiri, large: بِضْعَ سِنِينَ. Beneath, cream: "SEVERAL YEARS".
+  Citation: YUSUF 42.
+
+S053 · 9:52 · GRAPHIC
+  "Bid'. It means somewhere between three and ten, and classical grammarians
+   argue about exactly where it stops."
+  Navy. A gold bar whose two ends dissolve into stipple rather than terminating
+  — deliberately uncapped, the only bar in the video that is. Beneath, cream:
+  "3 — 10?" with the question mark in rust.
+
+S054 · 10:08 · GRAPHIC · LABELLED COMPARISON
+  "The Quran gave you three hundred and nine for the sleepers, to the year.
+   Here, it will not give you a number."
+  Navy, two columns. Left: gold "٣٠٩" and cream "TO THE YEAR", citation
+  AL-KAHF 25. Right: gold بِضْع and cream "NO NUMBER GIVEN", citation
+  YUSUF 42. The asymmetry is the point — do not balance the two sides
+  visually to make the frame prettier.
+
+S055 · 10:18 · ILLUS · 8s
+  "That is a choice. And it is the right one, because the number is not
+   the point."
+  Tally scratches on a rough plaster wall, grouped in fives, low down near
+  the floor where someone sitting would reach. Perhaps sixty of them. Worn.
+
+S056 · 10:26 · ILLUS · 10s
+  "Ask a man in year four of a prison sentence how long he has been there and
+   he can tell you to the day. It does not help him."
+  The same wall from further back. The tallies continue past both edges of the
+  frame. Same seed as S055, wider crop.
+
+S057 · 10:36 · ILLUS · 14s
+  "Look at what Yusuf says the moment the door finally opens."
+  A heavy studded door standing open onto a wash of white light, seen from
+  inside the dark cell. Nobody in the doorway. The floor inside is swept.
+
+S058 · 10:50 · GRAPHIC · LABELLED OBJECT
+  "Set me over the storehouses of the land. I am a guardian, and I know."
+  Navy. Gold Amiri: إِنِّي حَفِيظٌ عَلِيمٌ. Cream beneath: "A GUARDIAN, AND
+  I KNOW". To the right, a watercolour granary jar cut in and labelled with
+  two cream leader lines: "WHAT IS STORED" · "WHO COUNTS IT".
+  Citation: YUSUF 55.
+
+S059 · 11:02 · ILLUS · 8s
+  "A boy at the bottom of a well could not have said that sentence. Not one
+   word of it."
+  S049 inverted: the same well, now seen from the BOTTOM looking up. A small
+  bright circle of sky, unreachable, high above. Same palette, same stone.
+  The rhyme with S049 must be obvious within half a second.
+
+S060 · 11:10 · ILLUS · 20s
+  "Between the well and the throne room, he had run a wealthy man's household."
+  An open household ledger on a low desk, ruled into columns, with a stack of
+  clay tokens beside it and a lamp. Rendered as ink strokes, not readable
+  figures. Everything about the frame is administrative and unglamorous.
+
+S061 · 11:30 · GRAPHIC · CHAIN DIAGRAM
+  "Administration, at one scale. Then administration at another. Then the
+   food of a kingdom, across seven years."
+  Navy. Three gold boxes left to right with gold arrows between them, each
+  larger than the last:
+      A HOUSEHOLD  →  A STATE PRISON  →  A KINGDOM'S GRAIN
+  Beneath, cream Archivo, centred: "THE SAME JOB. THREE SCALES."
+  Beneath that, small gold: "7 YEARS".
+
+S062 · 11:40 · ILLUS · 12s
+  "Nobody thanked him for any of it. Nobody was watching. The cupbearer who
+   promised to mention him forgot for years."
+  A single cup left standing on a stone step outside a doorway, dust settled
+  in it, the doorway dark and empty. Nobody has come back for it.
+
+S063 · 11:52 · GRAPHIC · the act's thesis
+  "The span was not the wait before the work. The span WAS the work."
+  Navy. The gold bar from S023 sits empty, then fills solid with gold from
+  left to right over 3s. Cream beneath, appearing only once the bar is full:
+  "THE SPAN WAS THE WORK". No citation — this is the video talking, not the
+  text, and it should not borrow the authority of one.
+
+S064 · 12:00 · RECITATION · Fatir 35:45 · 16s
+  Reciter enters. Navy plate, the ayah in Amiri cream, appearing in two
+  phrases on the reciter's breath. Citation FATIR 45 already in position.
+  VERIFIED MUSHAF TEXT ONLY.
+
+S065 · 12:16 · ILLUS · 13s
+  "He would not leave a single creature on the face of the earth."
+  One small lizard, alive and still, on a wide sunlit slab of stone. Vast
+  empty rock around it. The creature is tiny in the frame and it is the only
+  living thing in it.
+
+================================================================================
+ACT 4 — THE TIDY VERSION, AND WHY IT FAILS · 12:29–15:30
+The credibility act. Every frame here is a graphic; none of it is mood.
+================================================================================
+
+S066 · 12:29 · GRAPHIC
+  "He defers them — yu'akhkhiruhum — to an ajal musammaa. A named term."
+  Navy. Gold Amiri: أَجَلٍ مُّسَمًّى. Cream beneath: "A NAMED TERM".
+  Citation: FATIR 45.
+
+S067 · 12:42 · ILLUS · 18s
+  "The delay is not Allah being slow. The delay is the reason anything is
+   still standing. Every year the term has not run out is another year the
+   door has not closed."
+  A heavy door held ajar by a single wooden wedge under its edge, warm light
+  in the gap. The wedge is the smallest object in the frame and everything
+  depends on it.
+
+S068 · 13:00 · GRAPHIC
+  "And the same sentence appears again in Surah An-Nahl, almost word for
+   word, in case you missed it the first time."
+  Navy. The two ayat set one above the other in cream Amiri, with the words
+  they share picked out in gold so the near-identity is visible at a glance.
+  Citations right-aligned: FATIR 45 · AN-NAHL 61.
+
+S069 · 13:10 · GRAPHIC
+  "Now I owe you some honesty, because this word has picked up a tidy story
+   that does not survive contact with the text."
+  Navy. Cream Archivo, small, alone on the frame: "THE POPULAR VERSION".
+  Nothing else. 3s. Deliberately plain — this frame is a throat-clear and it
+  should look like one.
+
+S070 · 13:22 · GRAPHIC
+  "The popular version goes: ajal is death, waqt is prayer times. Two neat
+   boxes."
+  Navy. Two cream-outlined boxes side by side, drawn neatly, equal size.
+  Gold Amiri label above each: أَجَل and وَقْت. Cream inside each: "DEATH"
+  and "PRAYER TIMES". It should look tidy and correct. Hold 4s.
+
+S071 · 13:32 · GRAPHIC · the frame rule 7 is built around
+  "It does not hold. You have just watched ajal do a bank loan, a divorce,
+   and a work contract."
+  The same two boxes. Then the four watercolour objects from Act 2 — the debt
+  tablet (S034), the folded garment (S037), the notched stone (S039), and the
+  gold horizon peg (S042) — drop into the left box one at a time on the VO's
+  enumeration and visibly overflow it, breaking the cream outline where they
+  cross it. The box does not resize. It fails.
+
+S072 · 13:42 · ILLUS · 10s
+  "And waqt does not stay in its box either."
+  A long shadow thrown right across an empty courtyard by something outside
+  the frame, reaching the far wall. Late, warm, and much longer than the
+  thing casting it could account for.
+
+S073 · 13:52 · GRAPHIC · TIMELINE
+  "When Iblees asks for a reprieve, he is granted it until yawm al-waqt
+   al-ma'loom. Not until a number of years. Until a moment that has a name."
+  Navy. A single gold line runs the full width of the frame with no scale
+  marks on it at all, terminating in one gold dot at the right edge. Above
+  the dot, gold Amiri: يَوْمِ الْوَقْتِ الْمَعْلُومِ. Cream beneath:
+  "THE DAY OF THE APPOINTED TIME". Small cream, left: "NO NUMBER GIVEN".
+  Citations: AL-HIJR 38 · SAD 81.
+
+S074 · 13:59 · ILLUS · 19s
+  "Ar-Raghib al-Isfahani, in his dictionary of Quranic vocabulary, draws the
+   distinction by span and by point, not by human and divine."
+  A scholar's low desk seen from above: one thick volume open flat, two more
+  closed and stacked, a magnifying lens resting on the open page, a cooling
+  cup. No hands, no chair, no person. Somebody has been working here.
+
+S075 · 14:18 · GRAPHIC
+  "sometimes a word is chosen because of how the verse ends — the rhyme, the
+   faasilah — and no doctrine at all is riding on the choice."
+  Navy. Six short cream horizontal rules stacked like lines of verse, each
+  terminating in an identical small gold mark at the same x-position, so the
+  rhyme is visible as a vertical gold column down the right side.
+  Cream beneath: "THE RHYME CHOOSES THE WORD — SOMETIMES".
+  The hedge is on screen. That is the point of the frame.
+
+S076 · 14:38 · GRAPHIC · the S023 template, corrected
+  "One word leans toward the span. The other leans toward the point."
+  The S023 split-screen returns, but the dividing rule is gone and the gold
+  bar and the gold dot now overlap slightly at the centre. Cream beneath,
+  spanning both halves: "A LEAN. NOT A WALL."
+  This frame is the honest version of S023 and it must reuse S023's exact
+  geometry, or the correction will not read as a correction.
+
+S077 · 14:54 · ILLUS · 11s
+  "And at the Quran's biggest hinges, both of them turn up together."
+  A single iron hinge on an old door, close, the pin and both leaves clearly
+  visible. Two plates, one pin. The image is the argument.
+
+S078 · 15:05 · GRAPHIC · MID-ROLL CTA · 25s · the only branded frame in the video
+  Navy. Cream Archivo, three short lines, generous spacing, no motion:
+  "SUBSCRIBE" / "LEAVE ONE WORD" / "CLARITY IN THE QURAN".
+  No arrows, no animated buttons, no sound effect, no bell. Cut straight back
+  to S079 with no transition and no re-introduction — the source does exactly
+  this and it is why its mid-roll does not cost it the viewer.
+
+================================================================================
+ACT 5 — THE VERSE THAT HOLDS BOTH · 15:30–17:20
+================================================================================
+
+S079 · 15:30 · RECITATION · Al-A'raf 7:34 · 14s
+  Reciter enters cold out of the CTA. Navy plate, the ayah in Amiri cream,
+  appearing in two phrases. Citation AL-A'RAF 34 already in position.
+  VERIFIED MUSHAF TEXT ONLY.
+
+S080 · 15:44 · GRAPHIC · the hinge
+  "Ajal and saa'ah, standing side by side in one sentence."
+  The recitation plate holds, and the two words inside the running Arabic
+  lift from cream to gold, one after the other, on the VO naming them:
+  أَجَل then سَاعَة. Nothing moves, nothing else changes colour. The whole
+  frame is two words changing weight inside a verse already on screen.
+
+S081 · 15:56 · GRAPHIC
+  "The span, and the moment."
+  The S023 template a third time — gold bar left, gold dot right — but now
+  with a single shared citation beneath both halves: AL-A'RAF 34. One verse,
+  both instruments. That shared citation is the frame's entire content.
+
+S082 · 16:08 · GRAPHIC
+  "Laa yasta'khiroon — they cannot push it back. Wa laa yastaqdimoon — and
+   they cannot pull it forward."
+  Navy. A gold vertical line dead centre, floor to ceiling. A cream arrow
+  pushes at it from the left and stops dead; a second pushes from the right
+  and stops dead. Neither arrow deforms the line. Arabic above each arrow,
+  gold: لَا يَسْتَأْخِرُونَ · لَا يَسْتَقْدِمُونَ.
+
+S083 · 16:24 · ILLUS · 12s
+  "Both of the things a human being actually does with time. We stall, and
+   we rush."
+  A bare foot at a stone threshold, lifted, mid-step, neither in nor out.
+  Ankle and foot only, cropped at the shin. The hesitation is the subject.
+
+S084 · 16:36 · GRAPHIC
+  "The same sentence appears again in Surah Yunus. The Quran says it twice."
+  Navy. The two ayat stacked in cream Amiri with their shared text in gold,
+  identical construction to S068 so the viewer recognises the move.
+  Citations: AL-A'RAF 34 · YUNUS 49.
+
+S085 · 16:50 · ILLUS · 14s
+  "There is no calculation here. No code, no numerology, no chart that
+   locates your moment."
+  An abacus-like counting board of stones in a sand tray, and a hand at the
+  frame edge sweeping the stones flat with the side of the palm. Half swept,
+  half still in rows. Hand and forearm only.
+
+S086 · 17:04 · GRAPHIC
+  "its knowledge is with my Lord alone."
+  Navy. Gold Amiri: عِلْمُهَا عِندَ رَبِّي. Cream beneath: "ITS KNOWLEDGE IS
+  WITH MY LORD". Citation: AL-A'RAF 187. Hold 5s in silence at the end of the
+  line before cutting — this is the frame that closes the door on date-hunting
+  and it should feel closed.
+
+S087 · 17:14 · ILLUS · 6s
+  "What is given instead is not information. It is a posture."
+  A small oil lamp set in a wall niche at head height, lit, with the wick
+  trimmed short and burning clean. Night outside the frame. Somebody has
+  prepared this lamp to stay awake by.
+
+================================================================================
+ACT 6 — THE WORD FOR RIPE · 17:20–19:16
+The morphology act. This is where the video earns its title claim.
+================================================================================
+
+S088 · 17:20 · ILLUS · 12s
+  "a verse most people read straight past"
+  A page mid-turn, caught in motion, the paper bowed and blurred with the
+  movement. Ink strokes only, nothing legible. The gesture of not stopping.
+
+S089 · 17:32 · RECITATION · Al-Hadid 57:16 · 13s
+  Reciter enters. Navy plate, the ayah in Amiri cream, one phrase at a time.
+  Citation AL-HADID 16 already in position. VERIFIED MUSHAF TEXT ONLY.
+
+S090 · 17:45 · GRAPHIC
+  "'Has the time not come.' That is a polite phrase in English. It sounds
+   like a gentle nudge."
+  Navy. Cream Archivo, set in a deliberately mild, small, evenly-spaced line:
+  "has the time not come…". Lowercase. It should look weak on the frame.
+  Then a rust strike, on the VO's word "polite".
+
+S091 · 18:08 · GRAPHIC · CHAIN DIAGRAM · the payload of the act
+  "The Arabic is a-lam ya'ni. From the root alif, nun, yaa. That root does not
+   mean the clock has reached a certain number. It means to arrive at
+   readiness."
+  Navy. Top: gold Amiri, letters spaced — أ · ن · ي. Three gold lines drop to
+  three boxes, building as the VO reaches each:
+      أَلَمْ يَأْنِ   HAS IT NOT COME DUE       AL-HADID 16
+      آنٍ            AT ITS FULL HEAT          AR-RAHMAN 44
+      إِنَاء         A VESSEL — HOLDS UNTIL FULL
+  Beneath all three, cream: "NOT 'HOW LONG'. 'IS IT READY.'"
+  This is the frame the title is written from. Give it the longest build in
+  the video — 14s from first letter to final line.
+
+S092 · 18:26 · ILLUS · 18s
+  "In Surah Ar-Rahman there is water described as aanin — water that has
+   reached its full heat."
+  A wide copper vessel over embers at a full rolling boil, steam breaking
+  hard off the surface. Not simmering. The distinction between simmering and
+  rolling is the entire reason this frame exists — make it violent.
+
+S093 · 18:44 · ILLUS · 10s
+  "the same three letters give inaa' — a vessel, the thing that holds
+   something until it is full."
+  A shallow clay bowl filled exactly to the brim, the meniscus standing
+  proud above the rim and holding, seen at eye level from the side. One more
+  drop would break it. Nothing else in frame.
+
+S094 · 18:54 · GRAPHIC
+  "It is asking whether the thing has ripened yet. Has it not come due?"
+  Navy. S090's weak lowercase line returns at 15% opacity, and gold Amiri
+  أَلَمْ يَأْنِ lands over it at four times the size. Cream beneath:
+  "HAS IT NOT RIPENED YET". Citation: AL-HADID 16.
+
+S095 · 19:04 · GRAPHIC · BIG NUMBER · the structural rhyme with S001
+  "there were only four years between our accepting Islam and Allah rebuking
+   us with this verse."
+  Navy. Gold Amiri "٤", enormous, in the exact position, size and weight as
+  the opening frame of the video. Cream beneath: "4 YEARS". Small cream:
+  "REPORTED FROM IBN MAS'UD".
+  The viewer will not consciously register the callback. They will feel it.
+  Do not change the geometry to make it more interesting.
+  VERIFY THE REPORT AND ITS GRADING BEFORE BUILDING THIS FRAME.
+
+================================================================================
+ACT 7 — THE PASSAGE THAT COSTS THE MOST · 19:16–22:33
+Second-fastest cutting in the video. LINE→WASH only.
+================================================================================
+
+S096 · 19:16 · ILLUS · 16s
+  "A thing that can ripen is a thing that can also pass."
+  A stand of wheat past its window: stalks dried pale and bent, and the
+  heads already shattered, grain lying scattered in the dirt beneath them.
+  The loss has already happened. Nobody is in the field.
+
+S097 · 19:32 · RECITATION · Al-Munafiqun 63:10–11 · 18s
+  Reciter enters. Navy plate, both ayat in Amiri cream, appearing phrase by
+  phrase. Citation AL-MUNAFIQUN 10–11 already in position.
+  VERIFIED MUSHAF TEXT ONLY.
+
+S098 · 19:50 · GRAPHIC
+  "my Lord, if only You would defer me for a short term"
+  Navy. Gold Amiri: أَجَلٍ قَرِيبٍ. Cream beneath: "A SHORT TERM".
+  Citation: AL-MUNAFIQUN 10.
+
+S099 · 20:08 · ILLUS · 12s
+  "so that I could give in charity, and be among the righteous"
+  An open hand at the very edge of the frame, palm up, fingers extended,
+  entirely empty. Wrist and forearm only. Reaching into empty parchment
+  that occupies four-fifths of the picture.
+
+S100 · 20:20 · GRAPHIC
+  "He is not asking to be forgiven. He is not asking for the Fire to be
+   lifted. He is asking for more span."
+  Navy. Two cream lines struck through in rust as they are spoken —
+  "TO BE FORGIVEN" and "FOR THE FIRE TO BE LIFTED" — then one gold line
+  lands beneath them, larger: "FOR MORE TIME".
+
+S101 · 20:36 · GRAPHIC
+  "he knows it is a length, and he is asking for a little more of it."
+  Navy. The gold bar returns, full. At its right cap, a short dotted gold
+  extension is drawn beyond the end — the request — and then it fades out
+  and does not stay. Cream beneath: "أَجَلٍ قَرِيبٍ — A LITTLE MORE".
+
+S102 · 20:54 · GRAPHIC · the sharpest frame in the video
+  "The same word, in the request and in the refusal, one verse apart."
+  Navy, two rows. Top row: verse 10 in cream Amiri with أَجَلٍ in gold.
+  Bottom row: verse 11 in cream Amiri with أَجَلُهَا in gold. A thin gold
+  line connects the two gold words vertically. Cream, small, at the foot:
+  "ONE VERSE APART". Citations: AL-MUNAFIQUN 10 · 11.
+  Hold 6s. Say nothing over the last two.
+
+S103 · 21:05 · ILLUS · 15s
+  "I want to handle this without any smugness, because the easy thing here
+   is to make this a story about somebody else."
+  A small hand-mirror lying face down on a low table. Deliberate and quiet.
+  Nothing is reflected because nothing is being looked at.
+
+S104 · 21:20 · ILLUS · 24s
+  "He is not confused about what he should have been doing. He names it,
+   precisely, on the last day he has."
+  A single coin held between a thumb and forefinger over an open collection
+  bowl — not dropped, not withdrawn, held. Fingers only. The bowl is empty.
+  Hold this one long: it is the act's emotional centre and the frame should
+  outlast comfort.
+
+S105 · 21:44 · GRAPHIC
+  "Knowing what to do, and having the span left in which to do it, are two
+   different possessions. And only one of the two is ever taken from you."
+  Navy, two columns, cream headers: "WHAT HE STILL HAD" · "WHAT HE DID NOT".
+  Left, gold: "THE KNOWLEDGE". Right, gold: "THE TIME". Then a rust strike
+  crosses the right column only. The left column is never struck.
+
+S106 · 22:02 · GRAPHIC
+  "he says: my Lord, send me back. And the answer is a single word.
+   Kallaa. No."
+  Navy. Cream Amiri, upper: رَبِّ ارْجِعُونِ. A 2s pause with the frame
+  otherwise empty. Then gold Amiri, alone, centred, very large: كَلَّا.
+  Cream beneath: "NO". Citations: AL-MU'MINUN 99 · 100.
+  The pause is the frame. Do not fill it.
+
+S107 · 22:20 · ILLUS · 13s
+  "something can also be standing open beside you, right now, on terms it
+   will not offer in a year — while you are still checking the calendar."
+  A doorway standing open onto warm light, and on the wall directly beside
+  it a grid of scratched tally marks. The light from the door falls across
+  the tallies. Nobody is in the frame; both things are simply there.
+
+================================================================================
+ACT 8 — TWO INSTRUMENTS, ONE EVENT · 22:33–24:19
+================================================================================
+
+S108 · 22:33 · ILLUS · 9s
+  "Go back to the cave, because there is one more thing in it."
+  The cave from OUTSIDE this time — a dark opening in a pale rock face, seen
+  across a slope of scree. Same rock, same palette as S003, opposite side.
+  The rhyme should be recognisable without being a repeat.
+
+S109 · 22:42 · RECITATION · Al-Kahf 18:25–26 · 17s
+  Reciter enters. Navy plate, both ayat in Amiri cream, phrase by phrase.
+  Citation AL-KAHF 25–26 already in position. VERIFIED MUSHAF TEXT ONLY.
+
+S110 · 22:59 · GRAPHIC
+  "three hundred years, and they added nine. Say: Allah knows best how long
+   they remained."
+  Navy. Gold "٣٠٩" enormous — the S004 geometry returns. Then, beneath it,
+  gold Amiri at a quarter the size: اللَّهُ أَعْلَمُ بِمَا لَبِثُوا.
+  Then the big numeral drops to 25% opacity while the Arabic stays full.
+  The dimming lands on the VO's "Allah knows best". Citation: AL-KAHF 26.
+
+S111 · 23:12 · GRAPHIC
+  "The verse gives you a number, to the year. And then, immediately, in the
+   very next breath, it says: Allah knows best."
+  Navy. Two cream numerals, "25" and "26", as small verse markers with their
+  glosses beside them: "THE COUNT" and "THE CORRECTION". A gold arrow runs
+  from the first to the second. Nothing else.
+
+S112 · 23:30 · GRAPHIC · the conceded disagreement
+  "Commentators have divided over exactly why."
+  Navy, two columns, both in cream — NEITHER in gold, and neither marked
+  correct. Header: "COMMENTATORS DIVIDE".
+      Verse 25 reports the sleepers'    ·   The number is given, and the
+      own reckoning; verse 26           ·   correction is aimed at those
+      corrects it                       ·   arguing about it outside
+  At the foot, small cream: "AT-TABARI RECORDS IT · IBN KATHIR SUMMARISES IT
+  · UNSETTLED". Gold is forbidden on this frame. The channel does not get to
+  pick a side and the frame must not imply that it has.
+
+S113 · 23:52 · ILLUS · 8s
+  "At-Tabari records the disagreement and Ibn Kathir summarises it, and it
+   has never been settled."
+  Two thick volumes lying flat, one on the other, each with a cloth ribbon
+  marking a page, both ribbons emerging at roughly the same depth.
+
+S114 · 24:00 · GRAPHIC · LABELLED COMPARISON
+  "Three hundred solar years is very close to three hundred and nine lunar
+   ones."
+  Navy. Two gold bars, one directly above the other, almost — but visibly
+  not exactly — the same length. Cream labels at their right caps:
+  "300 SOLAR" and "309 LUNAR". Small cream at the foot: "THE SAME SPAN,
+  TWO CALENDARS — SUGGESTED, NOT SETTLED".
+  That last hedge is not optional. See the script's [VERIFY].
+
+S115 · 24:12 · ILLUS · 7s
+  "Two instruments. One event. Both correct."
+  A stone sundial in the foreground with a clean shadow on it, and a thin
+  crescent moon low in the sky behind. Both instruments in one frame,
+  reading the same evening.
+
+================================================================================
+ACT 9 — YOUR OWN WEEK · 24:19–26:14
+The application act. Every callback in the video lands here.
+================================================================================
+
+S116 · 24:19 · ILLUS · 15s
+  "So what do you do with a week of your own?"
+  A rolled prayer mat leaning in a corner and a pair of worn sandals set
+  neatly beside a door. Ordinary, domestic, unremarkable. Morning light.
+
+S117 · 24:34 · ILLUS · 10s
+  "Counting is what human beings do with time, and the Quran does not scold
+   you for it."
+  The knotted cord from S018, now held taut between two hands with a thumb
+  resting on one knot. Hands and forearms only. Somebody is counting, and
+  the frame does not judge them for it.
+
+S118 · 24:44 · GRAPHIC
+  "mataa nasru Allah. When is the help of Allah?"
+  Navy. Gold Amiri: مَتَىٰ نَصْرُ اللَّهِ. Cream beneath: "WHEN IS THE HELP
+  OF ALLAH?" Citation: AL-BAQARAH 214. Hold — this is a question and it
+  should sit unanswered on screen for a full 4s.
+
+S119 · 25:02 · GRAPHIC
+  "the answer comes in the same verse: alaa inna nasra Allahi qareeb."
+  S118 holds and the answer appears directly beneath it in gold Amiri:
+  إِنَّ نَصْرَ اللَّهِ قَرِيبٌ — cream gloss "THE HELP OF ALLAH IS NEAR".
+  The citation does not change. Both are AL-BAQARAH 214, and the fact that
+  it does not change is the argument.
+
+S120 · 25:20 · GRAPHIC
+  "The question is not rebuked. It is quoted, and then answered."
+  Navy. Cream Archivo, three short lines, centred, appearing one at a time:
+  "NOT REBUKED." / "QUOTED." / "THEN ANSWERED." — the last one in gold.
+
+S121 · 25:28 · ILLUS · 14s
+  "You are the one in the cave, saying a day, or part of a day. You cannot
+   see the level rising from inside the vessel."
+  S017 returns — the interior of the great clay vessel, looking up at the
+  small circle of daylight — but the water is now noticeably higher up the
+  curved wall than it was at 2:10. Same seed, same crop, higher level.
+  Nobody watching from inside could tell. The viewer can, because they saw
+  the first frame twenty-three minutes ago.
+
+S122 · 25:52 · ILLUS · 14s
+  "There is a conversation you keep meaning to have. A wrong you keep
+   meaning to put right."
+  A reed pen laid across a half-written sheet, the ink dried hard in the nib,
+  the last line stopping mid-way across the page. Dust on the sheet.
+
+S123 · 26:06 · ILLUS · 8s
+  "Yusuf did not panic in that prison. He also did not waste it. He was doing
+   the work of the term, inside the term."
+  The cell from S055 — same plaster wall, same tallies — but a small clay
+  lamp is now lit on the floor and its light is falling on the wall. Somebody
+  is working in here. Same seed as S055 with the lamp added.
+
+================================================================================
+ACT 10 — CLOSE · 26:14–27:36
+Every frame in this act is a callback. That is the whole design.
+================================================================================
+
+S124 · 26:14 · GRAPHIC
+  "Four times the Quran asks a person how long they were there, and four
+   times the answer is wrong."
+  S015 returns exactly: four gold tally marks with their citations beneath,
+  and the rust strike across all four. Identical build, identical timing.
+
+S125 · 26:30 · GRAPHIC
+  "Ask those who keep count. The counting was never yours."
+  S013 returns exactly: gold Amiri فَاسْأَلِ الْعَادِّينَ, cream gloss,
+  citation AL-MU'MINUN 113. Hold 6s — two seconds longer than the first
+  time. The extra hold is the only difference and it is enough.
+
+S126 · 26:38 · GRAPHIC
+  "What is yours is the term you are standing inside."
+  Navy. The gold bar, full width, capped at both ends. A single small cream
+  mark stands partway along it — not at either end, not at the middle.
+  No label, no citation, no Arabic. The one frame in the video with no text
+  on it at all.
+
+S127 · 26:54 · ILLUS · 14s
+  "He is not late. He is not early. And some of what He is doing is happening
+   inside you, while you wait for it to happen around you."
+  S029 returns — the same field, the same wind, the same lean — but the heads
+  have just begun to turn gold at their tips. Same seed, same composition,
+  later in the season. Nothing else has changed in the field.
+
+S128 · 27:08 · GRAPHIC · the standing disclaimer plate
+  "The Arabic on screen in this video is set from a verified mushaf. Where
+   the classical scholars disagree, this video says so and stops."
+  Navy. Cream Archivo, three lines, small, generous leading:
+  "ARABIC SET FROM A VERIFIED MUSHAF"
+  "WHERE THE SCHOLARS DIFFER, THIS SAYS SO"
+  "AN EXPLANATION. NOT A RULING."
+  Build this once and reuse it on every future Clarity long-form, unchanged.
+
+S129 · 27:22 · GRAPHIC · TIMELINE · the next-video tease
+  "there is a second ajal in Surah Al-An'am, sitting in the same verse as the
+   first, and nobody has ever agreed on what it is."
+  Navy. One gold bar, capped. Then a SECOND gold bar fades up beneath it,
+  uncapped at its right end and running off the frame. Gold Amiri above:
+  ثُمَّ قَضَىٰ أَجَلًا ۖ وَأَجَلٌ مُّسَمًّى عِندَهُ. Cream beneath:
+  "TWO TERMS. ONE VERSE." Citation: AL-AN'AM 2.
+
+S130 · 27:32 · GRAPHIC · last frame
+  "the One who keeps count is not the one who is running behind."
+  Navy. Gold Amiri, centred, alone, nothing else on the frame:
+  فَاسْأَلِ الْعَادِّينَ
+  Fade to black over 2s. No end card, no subscribe animation, no grid of
+  video thumbnails. The source ends on a sentence and so does this.
+
+================================================================================
+BUILD ORDER
+================================================================================
+
+1. Clear all 11 [VERIFY] tags in the script first. Four of them change frames
+   in this pack: the count of four (S001, S011, S015, S124), zaman's absence
+   (S022), the Ibn Mas'ud report (S095), and the solar/lunar reading (S114).
+   Building any of those before checking means rebuilding them.
+
+2. Build the 30 GRAPHIC frames next, not the illustrations. They are the
+   argument, they need no generation budget, and if a graphic cannot be made
+   to say its point cleanly, the script line above it is the thing that is
+   wrong — better to find that out before spending on art.
+
+3. Generate the ILLUS plates in seed groups, because seven of them are pairs
+   that must match:
+      S049 / S059    the well, above and below
+      S043 / S044    the key on the nail, present and gone
+      S055 / S056    the tallies, tight and wide
+      S055 / S123    the cell, unlit and lit
+      S017 / S121    the vessel, water low and water higher
+      S029 / S127    the field, green and turning
+      S003 / S108    the cave, inside and outside
+   Generate each pair from the same seed with the single stated change. If a
+   pair does not read as the same place, the callback in Act 9 and Act 10 does
+   not land, and those callbacks are most of what makes the close work.
+
+4. Typeset every glyph in the edit. Nothing in rule 3 is negotiable.
+
+5. Check the recitation plates render to media/clarity/frames/_pending/ with
+   the ayah area empty, not to the finished frames directory.
