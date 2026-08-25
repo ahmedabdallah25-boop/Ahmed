@@ -1,0 +1,149 @@
+{
+  "_script": "clarity/script-appointed-time.md",
+  "_output": "clarity/script-appointed-time-v3.md",
+  "_generator": "automation/clarity_tag.py",
+
+  "_comment": "Audio-tag placements for the eleven_v3 read of the appointed-time VO. Read by automation/clarity_tag.py, which emits a tagged script ALONGSIDE the clean one — never instead of it.",
+
+  "_why_a_separate_file": "Audio tags are an eleven_v3 feature. On eleven_multilingual_v2 a bracketed tag is either spoken aloud as literal text or ignored, so a tagged script handed to the wrong model is worse than no tags at all. Keeping the tagged variant separate means the model choice stays a choice.",
+
+  "_this_set_is_deliberately_strong": "88 placements across 3,579 words — one per 41 words, against 31 across 5,861 (one per 189) on the revelation-order script. That is roughly four and a half times denser, and it was asked for. The cost is real: v3 is more expressive AND less deterministic than v2, and this script is generated in 17 separate batches that have to sound like one person. Every placement therefore carries a weight: 'core' or 'extra'. Run the generator with --level core for the restrained 48-placement / 82-tag set, and --level strong (the default) for all 88 placements and 126 tags. Audition batches 01, 09 and 17 back to back at strong before committing to it; if they do not sound like the same reading, drop to core, and if core still drifts, use v2 and the clean script.",
+
+  "_vocabulary": "v3 interprets bracketed direction contextually rather than from a fixed enumeration, so these are requests, not switches, and the same tag reads differently in different sentences. Every one must be auditioned.",
+
+  "_subject_limits": "No [laughs], no [shouting], no [sarcastic], no [excited], no [crying]. This is a Quran channel and the register is a serious explainer. Strong here means precise and weighted, not performed. Two further limits are absolute rather than stylistic: NO TAG TOUCHES A RECITATION INSERT — those six places are a real reciter and never TTS at all — and no tag sits on an English rendering of an ayah except [measured], because a narrator emoting through a translation of scripture is the exact thing this channel's 'AI BE AWARE' comment is pointing at.",
+
+  "_pacing_tags_carry_most_of_the_strength": "[pause], [long pause], [slows] and [almost a whisper] are doing more work here than any emotional tag. Breath and rate are what make a twenty-seven minute faceless read hold, and unlike an emotional direction they cannot swing the performance between batches. That is why 41 of the 88 placements carry a pacing tag rather than emotion alone.",
+
+  "_placement_rule": "NO TAG MAY OPEN A BATCH, or open a paste block after a recitation insert. A tag at position 0 is the model's strongest, most literal reading of it — there is no preceding prose in that generation to moderate it — and it fires exactly at the seam where the previous audio ends, so every join gets an audible restart. Worse, it marks nothing: a tag sits where the register turns WITHIN a reading, and at the top of a block there is nothing to turn from. The generator refuses to build if any placement lands at position 0.",
+
+  "_anchor_rule": "Each tag is inserted immediately BEFORE its anchor string, matched against the batch's REFLOWED text (the clean script hard-wraps at 100 characters, so anchors routinely span a line break). Every anchor must appear EXACTLY ONCE in its batch or the generator fails loudly rather than inserting in the wrong place or silently not inserting at all.",
+
+  "_emphasis_rule": "CAPS is v3's emphasis mechanism. Nine single words are raised, listed under 'emphasis'. Seven of them are already **bold** in the clean script — the bold marks where the writer wanted stress, and CAPS is how v3 receives it. Never raise a multi-word Arabic phrase: v3 reads an all-caps transliteration unpredictably, sometimes letter by letter.",
+
+  "allowed_tags": [
+    "pause", "long pause", "slows", "slower", "almost a whisper", "quietly",
+    "flat", "measured", "deliberate", "firm", "with weight", "grave",
+    "serious", "thoughtful", "curious", "warmly", "gently", "sincere",
+    "honest", "wry", "lighter", "building", "expansive"
+  ],
+
+  "placements": [
+    { "batch": "01", "weight": "extra", "tags": ["slower"],                    "anchor": "A group of young men wake in a cave" },
+    { "batch": "01", "weight": "core",  "tags": ["pause", "grave"],            "anchor": "It was three hundred years, and nine more." },
+    { "batch": "01", "weight": "extra", "tags": ["almost a whisper"],          "anchor": "On the Day of Resurrection, people whisper to each other" },
+    { "batch": "01", "weight": "core",  "tags": ["pause", "deliberate"],       "anchor": "And then a fourth time, the question is put to everyone at once." },
+    { "batch": "01", "weight": "extra", "tags": ["curious"],                   "anchor": "And this time the answer comes back with something attached to it" },
+
+    { "batch": "02", "weight": "core",  "tags": ["quietly"],                   "anchor": "Fa-s'ali al-aaddeen." },
+    { "batch": "02", "weight": "extra", "tags": ["firm"],                      "anchor": "Four times asked. Four times wrong." },
+    { "batch": "02", "weight": "extra", "tags": ["serious"],                   "anchor": "That is not a story about bad memory." },
+    { "batch": "02", "weight": "core",  "tags": ["pause", "with weight"],      "anchor": "You cannot measure a stretch of time from inside it." },
+    { "batch": "02", "weight": "extra", "tags": ["curious"],                   "anchor": "So if that is true" },
+
+    { "batch": "03", "weight": "extra", "tags": ["measured"],                  "anchor": "Dahr. Unbounded time" },
+    { "batch": "03", "weight": "core",  "tags": ["pause", "with weight"],      "anchor": "And ajal. A term." },
+    { "batch": "03", "weight": "extra", "tags": ["curious"],                   "anchor": "And here is the strange part." },
+    { "batch": "03", "weight": "core",  "tags": ["pause", "flat"],             "anchor": "does not appear in the Quran at all." },
+    { "batch": "03", "weight": "extra", "tags": ["firm"],                      "anchor": "That is not carelessness. That is precision." },
+
+    { "batch": "04", "weight": "extra", "tags": ["deliberate"],                "anchor": "Ajal asks: how long. Waqt asks: which moment." },
+    { "batch": "04", "weight": "extra", "tags": ["warmly"],                    "anchor": "you already own the proof of what ajal means" },
+    { "batch": "04", "weight": "core",  "tags": ["pause", "firm"],             "anchor": "Not one of those words means to die." },
+    { "batch": "04", "weight": "core",  "tags": ["slows", "serious"],          "anchor": "So here is the claim this whole video rests on." },
+    { "batch": "04", "weight": "core",  "tags": ["quietly", "sincere"],        "anchor": "I would rather hand you something true than something tidy." },
+
+    { "batch": "05", "weight": "extra", "tags": ["flat"],                      "anchor": "Ajal is death. His ajal came." },
+    { "batch": "05", "weight": "core",  "tags": ["curious"],                   "anchor": "Now watch where the Quran actually puts it." },
+    { "batch": "05", "weight": "extra", "tags": ["wry"],                       "anchor": "is about lending money." },
+    { "batch": "05", "weight": "extra", "tags": ["firm"],                      "anchor": "An employment contract, with two possible lengths." },
+
+    { "batch": "06", "weight": "extra", "tags": ["pause", "expansive"],        "anchor": "the heavens and the earth themselves" },
+    { "batch": "06", "weight": "core",  "tags": ["firm"],                      "anchor": "Ajal is not a word about dying." },
+    { "batch": "06", "weight": "extra", "tags": ["quietly"],                   "anchor": "Death is just where one particular lease happens to run out." },
+    { "batch": "06", "weight": "core",  "tags": ["pause", "with weight"],      "anchor": "It is the length. And you are standing inside it right now." },
+    { "batch": "06", "weight": "extra", "tags": ["curious"],                   "anchor": "Because in the same breath, it reaches for the other one." },
+
+    { "batch": "07", "weight": "core",  "tags": ["slower"],                    "anchor": "Yusuf. Thrown into a well by his brothers as a boy." },
+    { "batch": "07", "weight": "core",  "tags": ["pause", "flat"],             "anchor": "He remained in prison for several years." },
+    { "batch": "07", "weight": "extra", "tags": ["pause", "quietly"],          "anchor": "Here, it will not give you a number." },
+    { "batch": "07", "weight": "extra", "tags": ["with weight"],               "anchor": "What is happening to him is not being measured by the count." },
+    { "batch": "07", "weight": "core",  "tags": ["pause", "curious"],          "anchor": "So what was happening?" },
+
+    { "batch": "08", "weight": "extra", "tags": ["firm"],                      "anchor": "Set me over the storehouses of the land." },
+    { "batch": "08", "weight": "core",  "tags": ["pause", "quietly"],          "anchor": "A boy at the bottom of a well could not have said that sentence." },
+    { "batch": "08", "weight": "extra", "tags": ["building"],                  "anchor": "Administration, at one scale." },
+    { "batch": "08", "weight": "extra", "tags": ["quietly"],                   "anchor": "Nobody thanked him for any of it." },
+    { "batch": "08", "weight": "core",  "tags": ["pause", "firm"],             "anchor": "The span was not the wait before the work." },
+
+    { "batch": "09", "weight": "extra", "tags": ["firm"],                      "anchor": "The delay is not Allah being slow." },
+    { "batch": "09", "weight": "core",  "tags": ["pause", "sincere"],          "anchor": "Now I owe you some honesty" },
+    { "batch": "09", "weight": "core",  "tags": ["flat"],                      "anchor": "The popular version goes: ajal is death, waqt is prayer times." },
+    { "batch": "09", "weight": "core",  "tags": ["firm"],                      "anchor": "It does not hold." },
+    { "batch": "09", "weight": "extra", "tags": ["pause", "quietly"],          "anchor": "Two sealed compartments, and neither word will stay inside its own." },
+
+    { "batch": "10", "weight": "extra", "tags": ["thoughtful"],                "anchor": "sometimes a word is chosen because of how the verse ends" },
+    { "batch": "10", "weight": "core",  "tags": ["pause", "honest"],           "anchor": "So what survives is smaller than the graphic" },
+    { "batch": "10", "weight": "core",  "tags": ["warmly"],                    "anchor": "If this is the kind of study you want more of" },
+    { "batch": "10", "weight": "extra", "tags": ["lighter"],                   "anchor": "And if one word of this landed" },
+
+    { "batch": "11", "weight": "core",  "tags": ["pause", "quietly"],          "anchor": "There it is. Ajal and saa'ah" },
+    { "batch": "11", "weight": "extra", "tags": ["deliberate"],                "anchor": "Laa yasta'khiroon — they cannot push it back." },
+    { "batch": "11", "weight": "core",  "tags": ["firm"],                      "anchor": "There is no calculation here." },
+    { "batch": "11", "weight": "core",  "tags": ["pause", "with weight"],      "anchor": "He was asked for the date, directly, and he did not have it." },
+    { "batch": "11", "weight": "core",  "tags": ["slows", "quietly"],          "anchor": "What is given instead is not information. It is a posture." },
+
+    { "batch": "12", "weight": "extra", "tags": ["wry"],                       "anchor": "That is a polite phrase in English." },
+    { "batch": "12", "weight": "core",  "tags": ["pause", "deliberate"],       "anchor": "The Arabic is a-lam ya'ni." },
+    { "batch": "12", "weight": "core",  "tags": ["with weight"],               "anchor": "It means to arrive at readiness." },
+    { "batch": "12", "weight": "core",  "tags": ["pause", "firm"],             "anchor": "It is asking whether the thing has ripened yet." },
+    { "batch": "12", "weight": "extra", "tags": ["pause", "quietly"],          "anchor": "Four years. And already the question was" },
+
+    { "batch": "13", "weight": "extra", "tags": ["grave"],                     "anchor": "That is built into the word" },
+    { "batch": "13", "weight": "extra", "tags": ["quietly"],                   "anchor": "the one that costs the most in this entire study" },
+    { "batch": "13", "weight": "core",  "tags": ["slows", "grave"],            "anchor": "A man, at the end, asks for one thing." },
+    { "batch": "13", "weight": "core",  "tags": ["almost a whisper"],          "anchor": "so that I could give in charity, and be among the righteous" },
+    { "batch": "13", "weight": "core",  "tags": ["pause", "with weight"],      "anchor": "He is asking for" },
+    { "batch": "13", "weight": "core",  "tags": ["long pause", "quietly"],     "anchor": "The same word, in the request and in the refusal, one verse apart." },
+
+    { "batch": "14", "weight": "core",  "tags": ["sincere"],                   "anchor": "because the easy thing here is to make this a" },
+    { "batch": "14", "weight": "extra", "tags": ["quietly"],                   "anchor": "He names it, precisely, on the last day he has." },
+    { "batch": "14", "weight": "core",  "tags": ["pause", "serious"],          "anchor": "That is the sharp part." },
+    { "batch": "14", "weight": "extra", "tags": ["with weight"],               "anchor": "And only one of the two is ever taken from you." },
+    { "batch": "14", "weight": "core",  "tags": ["long pause", "flat"],        "anchor": "And the answer is a single word. Kallaa. No." },
+    { "batch": "14", "weight": "extra", "tags": ["quietly"],                   "anchor": "while you are still checking the calendar for when it was" },
+
+    { "batch": "15", "weight": "extra", "tags": ["deliberate"],                "anchor": "Read that as a pair of sentences, in order." },
+    { "batch": "15", "weight": "core",  "tags": ["pause", "quietly"],          "anchor": "in the very next breath, it says: Allah knows best." },
+    { "batch": "15", "weight": "extra", "tags": ["measured"],                  "anchor": "Commentators have divided over exactly why" },
+    { "batch": "15", "weight": "extra", "tags": ["flat"],                      "anchor": "and it has never been settled." },
+    { "batch": "15", "weight": "core",  "tags": ["pause", "firm"],             "anchor": "Two instruments. One event. Both correct." },
+
+    { "batch": "16", "weight": "core",  "tags": ["slows", "sincere"],          "anchor": "I want to say this carefully." },
+    { "batch": "16", "weight": "core",  "tags": ["warmly"],                    "anchor": "Counting is what human beings do with time" },
+    { "batch": "16", "weight": "core",  "tags": ["pause", "quietly"],          "anchor": "When is the help of Allah?" },
+    { "batch": "16", "weight": "extra", "tags": ["warmly"],                    "anchor": "The help of Allah is near." },
+    { "batch": "16", "weight": "core",  "tags": ["pause", "with weight"],      "anchor": "The question is not rebuked. It is quoted, and then answered." },
+    { "batch": "16", "weight": "core",  "tags": ["pause", "serious"],          "anchor": "And the other direction." },
+    { "batch": "16", "weight": "extra", "tags": ["gently"],                    "anchor": "You do not have to manufacture panic about that." },
+
+    { "batch": "17", "weight": "core",  "tags": ["pause", "quietly"],          "anchor": "The counting was never yours." },
+    { "batch": "17", "weight": "core",  "tags": ["warmly"],                    "anchor": "What is yours is the term you are standing inside." },
+    { "batch": "17", "weight": "core",  "tags": ["pause", "gently"],           "anchor": "He is not late. He is not early." },
+    { "batch": "17", "weight": "extra", "tags": ["quietly"],                   "anchor": "And some of what He is doing is happening inside you" },
+    { "batch": "17", "weight": "core",  "tags": ["measured"],                  "anchor": "The Arabic on screen in this video is set from a verified mushaf." },
+    { "batch": "17", "weight": "core",  "tags": ["long pause", "with weight"], "anchor": "And the One who keeps count is not the one" }
+  ],
+
+  "emphasis": [
+    { "batch": "02", "phrase": "Four times asked. Four times wrong.",                    "word": "wrong" },
+    { "batch": "03", "phrase": "That is not carelessness. That is precision.",           "word": "precision" },
+    { "batch": "04", "phrase": "something true than something tidy",                     "word": "true" },
+    { "batch": "06", "phrase": "It is the length.",                                      "word": "length" },
+    { "batch": "08", "phrase": "The span was the work.",                                 "word": "was" },
+    { "batch": "12", "phrase": "whether the thing has ripened yet",                      "word": "ripened" },
+    { "batch": "13", "phrase": "He is asking for more span.",                            "word": "more" },
+    { "batch": "14", "phrase": "the knowledge was not missing",                          "word": "knowledge" },
+    { "batch": "17", "phrase": "The counting was never yours.",                          "word": "never" }
+  ]
+}

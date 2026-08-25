@@ -572,6 +572,21 @@ keeps the softness and drops the product.
 has chapters on **3 of 15** long-form uploads and the source video has 23; this is free structure
 and YouTube reads it. **Do not announce them in the VO** — the source never does.
 
+**The eleven_v3 tagged read.** [`script-appointed-time-v3.md`](script-appointed-time-v3.md) is
+this script with 126 audio tags and 9 CAPS emphases, generated from
+[`vo-emotion-tags-appointed-time.json`](vo-emotion-tags-appointed-time.json) by
+`automation/clarity_tag.py`. **This file is never overwritten by that one** — audio tags are a v3
+feature, and on `eleven_multilingual_v2` a bracketed tag is either read aloud as literal text or
+ignored, so the tagged variant sits beside the clean one and the model choice stays a choice.
+
+The tagged set is deliberately dense — one placement per 41 words, against one per 189 on the
+revelation-order script — because that was the brief. It is denser than a 27-minute read across 17
+batches usually carries unchanged, so audition batches 01, 09 and 17 back to back before committing
+to it; `--level core` rebuilds at 48 placements if they stop sounding like the same person. The
+generator splits every batch at its recitation inserts into separate paste blocks, so nobody can
+paste `[RECITATION INSERT · …]` into ElevenLabs and have it read aloud, and it refuses to build if
+any tag would land at character 0 of a generation.
+
 **Export.** `automation/clarity_export.py` is currently hardcoded to `script-revelation-order.md`
 (`SCRIPT = ROOT / "clarity" / "script-revelation-order.md"`, line 48) and to that video's
 `vo-emotion-tags.json` and plate manifest. This script uses an identical batch format, so it
