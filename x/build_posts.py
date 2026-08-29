@@ -44,6 +44,19 @@ def bars(d,items,top=380,base=830,x0=150,bw=270,gap=180,fmt=money):
         d.text((x,base-h-70),n,font=fit(d,n,bw+120,54),fill=c)
         d.text((x,base+20),lab,font=fit(d,lab,bw+120,29),fill=OFFW)
     d.line([(x0,base),(1080-x0,base)],fill=DIM,width=3)
+def diverge(d,items,zero=600,scale=160,x0=200,bw=280,gap=200):
+    mx=max(abs(v) for _,v,_ in items)
+    d.line([(90,zero),(990,zero)],fill=DIM,width=3)
+    d.text((90,zero-34),"0",font=F(26),fill=DIM)
+    for i,(lab,v,c) in enumerate(items):
+        x=x0+i*(bw+gap); h=int(scale*abs(v)/mx)
+        top,bot=(zero-h,zero) if v>0 else (zero,zero+h)
+        d.rectangle([x,top,x+bw,bot],fill=c)
+        n=("+" if v>0 else "-")+f"{CUR}{abs(v):,.0f}"
+        d.text((x,top-64 if v>0 else bot+14),n,font=fit(d,n,bw+120,52),fill=c)
+        ly=top-110 if v>0 else bot+72
+        d.text((x,ly),lab,font=fit(d,lab,bw+140,28),fill=OFFW)
+
 def chain(d,steps,top=310):
     n=len(steps); bh=int((860-top-(n-1)*20)/n)
     y=top
@@ -88,7 +101,7 @@ posts=[]
 g,lo,hi=0.05,0.002,0.015
 a,b=ann(250,g-lo,30),ann(250,g-hi,30); pct=(a-b)/a*100
 P,d=card("THE FEE YOU NEVER SEE",f"A 1.5% fee takes {pct:.0f}% of",f"everything you build.")
-bars(d,[("0.2% FEE",a,GOLD),("1.5% FEE",b,MUT)])
+bars(d,[("0.2% FEE",a,MUT),("1.5% FEE",b,GOLD)])
 foot(P,d,f"A {CUR}{a-b:,.0f} difference. Same contributions, same fund, same 30 years.",
  [f"{CUR}250/mo for 30 years, 5% return before fees and after inflation.",
   "Today's money. Illustrative, not a projection of any product."]); posts.append(("02-fee-drag",P))
@@ -96,7 +109,7 @@ foot(P,d,f"A {CUR}{a-b:,.0f} difference. Same contributions, same fund, same 30 
 sal,rise,infl=35000,0.03,0.038
 nom,real=sal*(1+rise),sal*(1+rise)/(1+infl)
 P,d=card("YOUR PAY RISE","You got 3%. Inflation got","more.")
-bars(d,[("BEFORE",sal,MUT),("AFTER, IN REAL TERMS",real,GOLD)],top=560)
+diverge(d,[("ON PAPER",nom-sal,GOLD),("IN REAL TERMS",real-sal,RED)])
 foot(P,d,f"{CUR}{nom-sal:,.0f} more on paper. {CUR}{sal-real:,.0f} less in what it buys.",
  [f"{CUR}{sal:,.0f} salary, 3% rise, inflation at {infl:.1%} — an illustrative rate, not current data.",
   "Check the real figure before you use this on yourself."]); posts.append(("03-real-pay-rise",P))
@@ -127,9 +140,9 @@ rent0,gr=1200*12,0.03
 rent=sum(rent0*(1+gr)**k for k in range(30))
 price,dep,mr=250000,0.10,0.05
 loan=price*(1-dep); tot=mpay(loan,mr,30)*360+price*dep+2500*30
-P,d=card("RENT vs BUY","Thirty years of each.","Neither number is the point.")
+P,d=card("RENT vs BUY","Thirty years of each.",f"{CUR}{rent-tot:,.0f} apart.")
 bars(d,[("RENT",rent,MUT),("BUY",tot,GOLD)])
-foot(P,d,"The gap is small. What you hold at the end isn't.",
+foot(P,d,"And only one of them leaves you owning the house.",
  [f"Rent {CUR}{rent0/12:,.0f}/mo rising {gr:.0%}/yr. Buy {CUR}{price:,.0f}, {dep:.0%} down, {mr:.0%} over 30y, {CUR}2,500/yr upkeep.",
   "One scenario, not a recommendation. Change any input and the answer flips."]); posts.append(("07-rent-vs-buy",P))
 # 08 BNPL
@@ -157,7 +170,7 @@ foot(P,d,"It was in the paperwork. It was never on the payslip.",
 # 11 sticker vs total
 amt,apr,y11=20000,0.099,5
 tot11=mpay(amt,apr,y11)*y11*12
-P,d=card("STICKER vs TOTAL",f"The {CUR}{amt:,.0f} car","costs "+f"{CUR}{tot11:,.0f}.")
+P,d=card("STICKER vs TOTAL",f"The {CUR}{amt:,.0f} car",f"costs {CUR}{tot11-amt:,.0f} more than that.")
 bars(d,[("PRICE",amt,MUT),("WHAT YOU PAY",tot11,GOLD)])
 foot(P,d,f"{CUR}{tot11-amt:,.0f} of it is rent on money.",
  [f"{CUR}{amt:,.0f} borrowed at {apr:.1%} APR over {y11} years. Illustrative rate."]); posts.append(("11-sticker-vs-total",P))
