@@ -105,7 +105,7 @@ out, so it appears twice in fourteen, not weekly-plus.
 
 | # | Format | Caption (the posted text) | What the diagram shows |
 |---|---|---|---|
-| 1 | Comparison | Waiting five years costs more than being wrong for fifteen. | ✅ **built** — two bars, start-at-25 vs start-at-30 |
+| 1 | Comparison | Five years of waiting. £80,852 gone. | ✅ `post-example-01.png` |
 | 2 | Big Number | A 4% fee sounds small. Over 30 years it eats a third of everything. | One huge %-of-pot-lost figure; thin bar showing the slice the fee takes |
 | 3 | Comparison | Your salary went up 3%. Here's what actually happened to it. | Two bars: nominal rise vs real change after inflation, one crossing zero |
 | 4 | Chain | How a rate rise 8 months ago became this week's grocery bill. | 5 boxes, arrows: base rate → lender cost → business borrowing → shelf price → you |
@@ -120,6 +120,16 @@ out, so it appears twice in fourteen, not weekly-plus.
 | 13 | Reframe | Interest is not a fee for borrowing. It's a fee for time — and time doesn't stop. | Wrong model crossed out; right model as an accumulating area |
 | 14 | Big Number | The gap between "I can afford the payment" and "I can afford it". | Two totals, the second dwarfing the first |
 
-**Before building each:** compute the figure, then put the assumption line on the image.
-Posts 2, 3, 5, 7, 9, 10, 11 and 14 all carry numbers that need real maths — say the word
-and I'll compute them and render the set.
+**All 14 are built.** See `assets/contact-sheet.png` for the set at a glance.
+
+Every figure is computed in `build_posts.py` — nothing is typed by hand — and each
+headline is generated *from* the computed value, so the words cannot drift from the
+maths. Change an assumption at the top of the script and the headline changes with it.
+
+Two things to check before you post any of them:
+1. **The scenarios are illustrative, and each says so on the image.** Post 3 assumes an
+   inflation rate rather than quoting a live one; post 7's rent-vs-buy flips on any input
+   you change. That's why the assumption line is mandatory, not decorative.
+2. **Currency and jurisdiction.** Everything is in £ with UK framing (post 10 cites the
+   auto-enrolment charge cap, post 12 assumes fix-then-revert mortgages). Change `CUR` in
+   both build scripts and revisit 10 and 12 if that's wrong.
