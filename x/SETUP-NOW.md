@@ -7,9 +7,10 @@ built and sitting in `assets/`.
 ---
 
 ## Step 1 — Premium, before anything else
-Subscribe and verify **first**. Unverified accounts are reach-throttled, and the
-per-post analytics you need are behind it. Day-one checkmark reads as an account;
-post-200 checkmark reads as a pivot.
+Subscribe and verify **first** — verified accounts get ranking priority, and a day-one
+checkmark reads as an account where a post-200 one reads as a pivot. (An earlier draft
+also said the analytics you need are Premium-only. That was wrong: your own posts'
+impressions and public bookmark counts are visible without it.)
 
 ## Step 2 — Handle
 Settings → Your account → Account information → Username. Take the first free one:
@@ -36,8 +37,9 @@ I explain money problems in one picture.
 Debt, rent, mortgages, inflation — no jargon, no products, nothing to sell.
 ```
 
-**Location** — this is a free-text headline slot, not a city. **Exactly 30 of 30
-characters.** Any emoji or extra word truncates it. Recount if you change the timezone.
+**Location** — this is a free-text headline slot, not a city. **Exactly 30 characters.** I believe the cap is 30 but couldn't verify it (x.com is
+blocked from here) — paste it, check nothing truncates, and recount if you change the
+timezone.
 ```
 New diagram every day, 9am GMT
 ```
@@ -56,8 +58,10 @@ I rendered both candidates at the sizes X actually shows and ran the 32px test
 finance account, which is the opposite of the job. B, the gold step, stays distinctive
 and unambiguous at every size and survives the circular crop.
 
-Both are the mark fallback. **If you'll ever go on camera or run a Space, shoot a real
-photo instead** and use the spec in `x-launch.md` §3 — a face outperforms a mark for
+**Reconciling the two files:** `x-launch.md` recommends a real photo first and the mark
+as fallback; that ordering still stands and this one doesn't override it. B is the best
+*mark*, ready to use today so nothing blocks launch. **If you'll ever go on camera or run
+a Space, shoot a real photo instead** and use the spec in `x-launch.md` §3 — a face outperforms a mark for
 reply-driven growth, which is your main engine. Note this departs from Finance %
 Decoded's faceless rule; make that call knowingly.
 
@@ -65,6 +69,10 @@ Decoded's faceless rule; make that call knowingly.
 `assets/header.png` (1500×500). `assets/header-safezone-guide.png` shows in red what
 the profile picture covers and what mobile crops — check your version against it before
 uploading. Never upload the guide.
+
+## Step 5b — If the handle isn't free
+The handle is baked into the rendered PNGs. Don't edit them by hand — change `HANDLE`
+at the top of `build_assets.py` and re-run it. Same for `CUR` if you're not in £.
 
 ## Step 6 — Post template
 - `assets/post-template-blank.png` — the locked grid.
@@ -83,8 +91,10 @@ someone with a spreadsheet. The footnote is not clutter — it's the credibility
 Buffer is the difference between a system and a hobby. Slate below.
 
 ## Step 8 — Then publish, and ramp
-Week 1: 1 post + 5 replies/day. Week 2: 1 + 10. Week 3: 2 + 15. Week 4+: 2 + 20.
-Opening at full speed on a days-old account gets you rate-limited.
+2 posts + 20 replies/day from day one. An earlier draft laddered this up from 5 replies;
+that throttled the single biggest growth lever to avoid a rate-limit risk I'd overstated.
+The real constraint is quality: 20 substantive replies grow an account, 20 one-liners
+flag it.
 
 ---
 

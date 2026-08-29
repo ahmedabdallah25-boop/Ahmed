@@ -101,10 +101,6 @@ B. I explain money problems in one picture.
 
 C. Money is simple once someone draws it.
    Daily diagrams on debt, rent and the cost of waiting.
-
-   (An earlier draft of C ended "8,000+ people learning here." Cut it. That number is
-   lifetime *views* on YouTube — not people, not X. In a finance bio, a borrowed metric
-   is the one thing that costs you the trust the rest of the bio is buying.)
 ```
 
 Recommend **B**. "Nothing to sell" is the highest-trust line available in the finance
@@ -116,8 +112,9 @@ under your bio. Don't put a city there.
 ```
 New diagram every day, 9am GMT
 ```
-That string is **exactly 30 characters** and X's location cap is 30 — it fits with zero
-room. One emoji or one extra word and it silently truncates. Swap GMT for your real
+That string is **exactly 30 characters**, and I believe X's location cap is 30 — but
+x.com is blocked from here, so I could not confirm it. Paste it and check nothing
+truncates; if it does, drop "every". One emoji or one extra word and it silently truncates. Swap GMT for your real
 timezone and recount.
 
 ### Website
@@ -173,8 +170,8 @@ Do not pin an introduction thread. Nobody reads them.
 
 ### Cadence — first 60 days
 
-- **2 posts/day.** ~9am and ~7pm in your target audience's timezone.
-- **20 replies/day**, in the threads of accounts with 10K-200K followers in adjacent
+- **2 posts/day** from day one. ~9am and ~7pm in your target audience's timezone.
+- **20 replies/day** from day one, in the threads of accounts with 10K-200K followers in adjacent
   niches. Not "great post 🔥" — a reply that stands alone as a thought. This, not
   posting, is what breaks a cold-start account. Budget more time here than on posts.
 - **Stay in your own replies for 30 minutes after posting.** Early engagement density plausibly feeds
@@ -224,21 +221,24 @@ Do not pin an introduction thread. Nobody reads them.
 ## 4b. Two things the first draft of this file missed
 
 ### X Premium is not optional here
-Unverified accounts are reach-throttled, and the per-post analytics you need to run the
-bookmark ratio above sit behind Premium. Budget it as a cost of the channel, not a perk.
+Verified accounts get ranking priority — that's the real reason, and it's enough.
+**Correcting an earlier draft:** I also claimed the analytics you need are behind
+Premium. They're mostly not — impressions on your own posts and public bookmark counts
+are visible without it. Premium buys the full dashboard and convenience, not the two
+numbers you're tracking. Still worth it for reach; just don't buy it for the wrong
+reason.
 Verify **before** the first post — the checkmark on day one reads as an account; arriving
 on post 200 reads as a pivot.
 
-### Ramp the volume — don't open at full speed
-2 posts + 20 replies/day from a days-old account is a good way to get rate-limited or
-spam-flagged in week one. Ladder it:
+### On ramping (a correction to an earlier draft)
+An earlier version of this file added a four-week ladder starting at 5 replies/day.
+**Ignore it.** It contradicted this file's own central claim — that replies are the
+cold-start engine — and 20 replies/day is modest volume, not limit-territory. Throttling
+the one lever that works, to avoid a risk I'd overstated, was the wrong trade.
 
-| | Posts/day | Replies/day |
-|---|---|---|
-| Week 1 | 1 | 5 |
-| Week 2 | 1 | 10 |
-| Week 3 | 2 | 15 |
-| Week 4+ | 2 | 20 |
+Go to full cadence from day one. The only real caution: replies must be substantive.
+Twenty thoughtful replies is growth; twenty "great post 🔥" is what actually gets an
+account flagged.
 
 ---
 
