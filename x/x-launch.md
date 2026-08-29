@@ -21,7 +21,7 @@ runs on assets you already own.
 | Fixed visual grammar | Black ground, white line, one idea. You recognise it in the feed *before you read it*. Every post compounds the last. |
 | The unit of value is a **reframe** | Something the reader already half-believed, drawn so the logic becomes undeniable. That is the exact thing people bookmark and quote-tweet. |
 | Zero marginal production cost | Once the template exists, a post is 20 minutes. Sustainable at 2/day forever. |
-| Optimised for the right metric | X's ranking weights **bookmarks and shares** far above likes. Diagrams over-index on both — a diagram is a thing you save, a joke is a thing you scroll. |
+| Optimised for saves | A diagram is a thing you save; a joke is a thing you scroll. Bookmarks and shares are believed to carry real ranking weight (X's 2023 open-sourced weights put *replies* heaviest and never published a bookmark figure — treat the ordering as practitioner consensus, not documented fact). The behavioural point stands regardless: saved posts get re-opened and re-shared, liked posts don't. |
 
 **Why it's the right template for you specifically:** `CLAUDE.md` already records the
 finding that the reference channel's advantage is *information graphics* — big number,
@@ -66,7 +66,7 @@ at the exact moment you need reach. Open universal, resolve specific.
 `@ahmedabdalmai0` has three problems: the trailing digit is the universal signal of a
 bot or a throwaway, `abdalmai` reads as a typo of a name, and nobody can spell it from
 hearing it. Kill it. Changing a handle costs nothing at zero followers and is
-impossible later.
+costly later.
 
 Take the first of these that's free:
 
@@ -100,7 +100,11 @@ B. I explain money problems in one picture.
    Debt, rent, mortgages, inflation — no jargon, no products, nothing to sell.
 
 C. Money is simple once someone draws it.
-   Daily diagrams on debt, rent and the cost of waiting. 8,000+ people learning here.
+   Daily diagrams on debt, rent and the cost of waiting.
+
+   (An earlier draft of C ended "8,000+ people learning here." Cut it. That number is
+   lifetime *views* on YouTube — not people, not X. In a finance bio, a borrowed metric
+   is the one thing that costs you the trust the rest of the bio is buying.)
 ```
 
 Recommend **B**. "Nothing to sell" is the highest-trust line available in the finance
@@ -112,10 +116,14 @@ under your bio. Don't put a city there.
 ```
 New diagram every day, 9am GMT
 ```
+That string is **exactly 30 characters** and X's location cap is 30 — it fits with zero
+room. One emoji or one extra word and it silently truncates. Swap GMT for your real
+timezone and recount.
 
 ### Website
-Your YouTube channel. Links in *post bodies* get reach-suppressed; the profile link
-field does not. This is the only free link you get — spend it on the asset that
+Your YouTube channel. In-body links are widely held to suppress reach — X has said
+contradictory things and never documented it, so treat it as a cheap precaution rather
+than a law. The profile link field is unaffected either way. This is the only free link you get — spend it on the asset that
 already converts.
 
 ### Profile picture
@@ -169,8 +177,8 @@ Do not pin an introduction thread. Nobody reads them.
 - **20 replies/day**, in the threads of accounts with 10K-200K followers in adjacent
   niches. Not "great post 🔥" — a reply that stands alone as a thought. This, not
   posting, is what breaks a cold-start account. Budget more time here than on posts.
-- **Stay in your own replies for 30 minutes after posting.** Early reply velocity is a
-  direct ranking input.
+- **Stay in your own replies for 30 minutes after posting.** Early engagement density plausibly feeds
+  ranking, and it visibly feeds the thread itself. Practitioner consensus, not published.
 - **One re-share of your own best post per week**, 3+ days after the original.
 
 ### Fifteen hooks, ready to build
@@ -194,8 +202,14 @@ Do not pin an introduction thread. Nobody reads them.
 ```
 
 ### Judging performance
-- **Never judge a post before 48 hours.** X's distribution is slower and lumpier than YouTube's.
-- **Track bookmarks ÷ impressions**, not likes. That ratio is the only number that predicts whether the account compounds. Above ~1% is strong.
+- **Give a post 48 hours before judging it.** Not because X is slow — it's the opposite of
+  YouTube, most impressions land in the first few hours and a post is largely done inside
+  a day. The 48h wait is for the minority of posts that catch a second wind off one large
+  re-share, which is exactly the outcome you're building for.
+- **Track bookmarks ÷ impressions**, not likes. Likes measure agreement; bookmarks measure
+  value, and only one of those compounds. **Set your own baseline over your first 30 posts
+  and beat it** — I don't have a credible industry threshold to give you, and a made-up
+  number is worse than none.
 - Likes measure agreement. Bookmarks measure value. Only one of them grows an account.
 
 ### What kills reach — don't do any of it
@@ -207,11 +221,45 @@ Do not pin an introduction thread. Nobody reads them.
 
 ---
 
+## 4b. Two things the first draft of this file missed
+
+### X Premium is not optional here
+Unverified accounts are reach-throttled, and the per-post analytics you need to run the
+bookmark ratio above sit behind Premium. Budget it as a cost of the channel, not a perk.
+Verify **before** the first post — the checkmark on day one reads as an account; arriving
+on post 200 reads as a pivot.
+
+### Ramp the volume — don't open at full speed
+2 posts + 20 replies/day from a days-old account is a good way to get rate-limited or
+spam-flagged in week one. Ladder it:
+
+| | Posts/day | Replies/day |
+|---|---|---|
+| Week 1 | 1 | 5 |
+| Week 2 | 1 | 10 |
+| Week 3 | 2 | 15 |
+| Week 4+ | 2 | 20 |
+
+---
+
+## 4c. Assumptions in this file that I could not verify
+
+x.com is blocked from the agent's network. These are reasoned positions, not findings —
+check each before spending real time on it.
+
+1. **That the Islamic-finance corner of X is under-served at high visual quality.** Plausible, unchecked. Spend 30 minutes searching the niche before committing.
+2. **That any of the suggested handles are free.** Unchecked. Have all five ready.
+3. **That you're UK-based.** Two hooks use £ and the location line says GMT — inherited from the channel's material, not from anything you told me. Swap for your actual currency and timezone.
+4. **@VisualizeValue's current feed has drifted** from the format described here toward products and launches. Reverse-engineer its **archive**, not this week's posts.
+5. **The face recommendation contradicts your own faceless rule** for Finance % Decoded. That's deliberate — X's growth engine is replies and people don't reply to logos — but it is a departure from a standing decision, so make it knowingly. The mark fallback is fully specced if you'd rather keep the channels consistent.
+
+---
+
 ## 5. Do these six things, in this order
 
-1. Claim the handle (5 min) — free now, impossible later.
+1. Claim the handle (5 min) — free now, costly later.
 2. Set display name, bio B, location line, website (5 min).
-3. Shoot and crop the profile picture (30 min).
+3. Buy Premium and verify (5 min). Then shoot and crop the profile picture (30 min).
 4. Build the post template once — navy `#16203C`, gold `#E8A33D`, locked margins (2 hrs).
 5. Make 14 posts before publishing any of them. Launching with a week of buffer is the difference between a system and a hobby.
 6. Publish, then reply 20×/day for 60 days without missing one.
