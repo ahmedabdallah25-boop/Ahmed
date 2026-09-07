@@ -282,3 +282,103 @@ document.querySelectorAll(".post").forEach(a=>{
 });
 tally();
 </script>
+<style>
+.mx{border-top:1px solid var(--line);padding:12px 14px;background:var(--sunk)}
+.mx .lab{margin-bottom:9px}
+.mrow{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}
+.mrow label{display:flex;flex-direction:column;gap:4px;font:500 9.5px/1.2 "IBM Plex Sans",sans-serif;
+  letter-spacing:.05em;text-transform:uppercase;color:var(--faint)}
+.mrow input{width:100%;font:400 15px/1 "IBM Plex Mono",monospace;color:var(--ink);
+  background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:8px 5px;
+  text-align:center;-moz-appearance:textfield}
+.mrow input::-webkit-outer-spin-button,.mrow input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.mrow input:focus{outline:2px solid var(--gold);outline-offset:-1px}
+.dx{margin:10px 0 0;font:400 13px/1.45 "IBM Plex Sans",sans-serif;color:var(--soft)}
+.dx b{color:var(--ink);font-weight:600}
+.dx.warm{color:var(--accent)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;
+  padding:15px 17px;margin:0 0 26px;box-shadow:var(--shadow)}
+.panel h2{font-size:13px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 10px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:11px}
+.stat{text-align:center}
+.stat .v{font:500 21px/1 "IBM Plex Mono",monospace;color:var(--ink);font-variant-numeric:tabular-nums}
+.stat .k{font:500 10px/1.3 "IBM Plex Sans",sans-serif;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--faint);margin-top:5px}
+.panel p{margin:0;font-size:13.5px;color:var(--soft)}
+</style>
+<script>
+(function(){
+const KEYS=[["imp","Impress"],["bm","Bookmk"],["lk","Likes"],["rp","Replies"],["pv","Profile"]];
+let M={}; try{M=JSON.parse(localStorage.getItem("md_metrics")||"{}");}catch(e){}
+const saveM=()=>{try{localStorage.setItem("md_metrics",JSON.stringify(M));}catch(e){}};
+const num=v=>{const n=parseFloat(v);return isFinite(n)&&n>=0?n:null;};
+const pct=x=>(x*100).toFixed(2)+"%";
+const med=a=>{if(!a.length)return null;const s=[...a].sort((x,y)=>x-y),h=s.length>>1;
+  return s.length%2?s[h]:(s[h-1]+s[h])/2;};
+
+function rates(){
+  const out=[];
+  for(const id in M){const m=M[id];
+    if(m&&m.imp>0&&m.bm!=null) out.push({id,br:m.bm/m.imp,pr:(m.pv||0)/m.imp,imp:m.imp});}
+  return out;
+}
+function diagnose(id){
+  const m=M[id]; if(!m||!(m.imp>0)) return "";
+  const all=rates(), base=all.filter(r=>r.id!==id);
+  const br=(m.bm||0)/m.imp, pr=(m.pv||0)/m.imp;
+  let s='<b>'+pct(br)+'</b> bookmark rate, <b>'+pct(pr)+'</b> profile-click rate. ';
+  if(base.length<3){
+    return s+'Fewer than three other posts logged, so there is no baseline to compare against yet '
+      +'— this is a reading, not a verdict. Keep logging; the comparison starts at four posts.';
+  }
+  const mb=med(base.map(r=>r.br)), mi=med(base.map(r=>r.imp));
+  const lowReach=m.imp<mi*0.6, highSave=br>mb*1.15, lowSave=br<mb*0.7;
+  if(lowReach&&highSave) return s+'Against your own median: <b>saved more, seen less</b>. The post works and '
+    +'distribution did not. That is a replies problem, not a content problem — do not rewrite this one.';
+  if(lowReach) return s+'Reach came in well under your median. Too little distribution to judge the content; '
+    +'the lever is replies, not the diagram.';
+  if(lowSave) return s+'It got normal reach and was <b>saved less than your median</b>. People saw it and '
+    +'moved on — the idea is not landing. Rework the reframe, not the chart.';
+  if(highSave) return s+'<b>Above your median on saves.</b> Build more posts in this shape.';
+  return s+'Sits close to your own median on both. Nothing to act on from this post alone.';
+}
+function paintSummary(){
+  const all=rates(); const el=document.getElementById("sumbody");
+  if(!all.length){el.innerHTML='<p>Enter the numbers from any post below and this fills in. On the X app, '
+    +'open the post and tap the bar-chart icon under it.</p>';return;}
+  const tot=all.reduce((a,r)=>a+r.imp,0), mb=med(all.map(r=>r.br));
+  el.innerHTML='<div class="stats">'
+    +'<div class="stat"><div class="v">'+all.length+'</div><div class="k">logged</div></div>'
+    +'<div class="stat"><div class="v">'+tot.toLocaleString()+'</div><div class="k">impressions</div></div>'
+    +'<div class="stat"><div class="v">'+pct(mb)+'</div><div class="k">median save rate</div></div></div>'
+    +'<p>'+(all.length<4
+      ? 'Your baseline is this median, and it is not meaningful yet. Judge posts against it from the fourth entry on — never against a number from the internet.'
+      : 'This median is your baseline. A post is good or bad relative to it, not to any published benchmark.')+'</p>';
+}
+const bar=document.querySelector(".bar");
+const panel=document.createElement("div");
+panel.className="wrap";
+panel.innerHTML='<div class="panel"><h2>Performance</h2><div id="sumbody"></div></div>';
+bar.after(panel);
+
+document.querySelectorAll(".post").forEach(a=>{
+  const id=a.dataset.id;
+  const box=document.createElement("div"); box.className="mx";
+  box.innerHTML='<span class="lab">Numbers from X</span><div class="mrow">'
+    +KEYS.map(([k,l])=>'<label>'+l+'<input type="number" inputmode="numeric" min="0" data-k="'+k+'" data-p="'+id+'"></label>').join("")
+    +'</div><p class="dx" id="dx'+id+'"></p>';
+  a.appendChild(box);
+  const m=M[id]||{};
+  box.querySelectorAll("input").forEach(i=>{
+    if(m[i.dataset.k]!=null) i.value=m[i.dataset.k];
+    i.addEventListener("input",()=>{
+      M[id]=M[id]||{}; M[id][i.dataset.k]=num(i.value);
+      saveM(); document.getElementById("dx"+id).innerHTML=diagnose(id); paintSummary();
+    });
+  });
+  document.getElementById("dx"+id).innerHTML=diagnose(id);
+});
+paintSummary();
+})();
+</script>
