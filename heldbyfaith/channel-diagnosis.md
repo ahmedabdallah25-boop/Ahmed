@@ -1,5 +1,24 @@
 # HELD BY FAITH — channel diagnosis, 2026-08-04
 
+> # ⚠️ THIS FILE IS STALE — verified 2026-09-09
+>
+> Everything below reflects the channel on **2026-08-04**: 3 subscribers, 9 videos, 33 lifetime
+> views. **Live state is 55 subscribers, 28 videos, 25 Shorts and ~21,000 Shorts views.**
+>
+> Two of its conclusions are now actively wrong and caused a bad first draft of the long-form
+> script before they were caught:
+>
+> - **The origin hook is the channel's weakest.** "I asked Allah for a long life and got cancer
+>   4 days later" is now published as a Short at **343 views**, against a ~1K median.
+> - **Chronological chapters are dead.** The `Part N` uploads sit at **7, 12 and 13 views**.
+>   The untitled single-idea thematic Shorts run **340–1,700**.
+>
+> The format diagnosis below (vertical beats landscape) was correct and has been acted on.
+> The editorial advice has been overtaken. For current direction see
+> [`longform-01-scene-pack.md`](longform-01-scene-pack.md), which is built on live data.
+
+
+
 **Channel:** [@HeldByFaithJourney](https://www.youtube.com/@HeldByFaithJourney) · `UCh0tKIGR5Ns3Wvoai__txdg`
 **State:** 3 subscribers · 9 videos · **33 lifetime views** · country AE · joined 2015, publishing since 2026-07-01
 
@@ -146,9 +165,10 @@ nothing. Free to fix, cannibalises nothing.
 
 ## The decision
 
-**1. Ship Chapter 6 as a vertical Short, this week.** The script and scene pack are written:
-[`ch6-scene-pack.txt`](ch6-scene-pack.txt). Breaking 21 days of silence matters more than any
-other single action available.
+**1. Ship Chapter 6 as a vertical Short, this week.** Breaking 21 days of silence matters more
+than any other single action available. *(Superseded — see the staleness banner at the top of
+this file. The channel resumed daily uploads and `ch6-scene-pack.txt` was deleted on 2026-09-09
+as obsolete: it specified a photographic, faceless style the channel does not use.)*
 
 **2. Every story beat ships vertical from now on.** No more 2–5 minute landscape uploads. If a
 beat genuinely needs 10 minutes, make it 10 minutes and treat it as real long-form — but not at
@@ -285,7 +305,9 @@ titled Ch. 4 and one unnumbered — and the descriptions call the Ch. 3 video "E
 the numbers is worth more than it sounds, because the series links in every description have to
 agree with the titles for a viewer to follow the story at all.
 
-With that renumbering, **the new Short in `ch6-scene-pack.txt` becomes Chapter 6.**
+*(Superseded: chapter numbering was abandoned in favour of a `Part N` scheme, and the
+Part-numbered uploads now underperform the untitled thematic Shorts by ~100x. See the
+staleness banner at the top of this file.)*
 
 ### Series block — use this exact block in every description
 
