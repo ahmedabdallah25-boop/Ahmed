@@ -1,0 +1,408 @@
+HELD BY FAITH - LONG-FORM 01
+"They Told Me The Cancer Was Gone. Nobody Warned Me What Came After."
+FLOWLABS IMAGE PROMPTS - 68 scenes, copy-paste ready
+==============================================================================
+
+HOW TO USE
+------------------------------------------------------------------------------
+1. Paste the NEGATIVE PROMPT below into the negative field ONCE. Leave it for all 68.
+2. Aspect ratio 16:9, output 1920x1080.
+3. Attach the character sheet as an image reference at 45-55% strength on every
+   generation. The character is written out in each prompt too, so they work without
+   it - but the sheet is what stops drift across 68 images.
+4. Copy each prompt whole, including the tail. They are self-contained.
+5. S20 and S40 are marked [CONDITIONAL]. Generate those LAST, after you have written
+   the lines they illustrate, or they will show the wrong thing.
+
+NEGATIVE PROMPT - paste once, applies to all 68
+------------------------------------------------------------------------------
+photorealistic, photograph, 3D render, cel shading, anime, thick uneven outlines, sketchy lines, cross-hatching, painterly, watercolour, gradients, glow, bloom, HDR, oversaturated, neon, blood, wounds, surgical incision, graphic medical imagery, gore, needles in skin, IV lines in arms, distressing imagery, text, letters, numbers, watermark, logo, signature, hospital branding, distorted hands, extra fingers, extra limbs, multiple heads, crowd, beard, glasses, hat, different clothing, different hair colour
+
+BACKGROUND ORDER - do not warm early. This is the film's only visual arc.
+------------------------------------------------------------------------------
+  S01-S12  pale off-white #EFEAE2   the hollow after
+  S13-S37  cool grey-blue #C9D2D4   the body, the ward
+  S38-S52  deep grey-blue #8E9BA3   survivor guilt, 3am
+  S53-S63  warm sand #E8C79A        the turn
+  S64-S68  warm off-white #F5F0E6   ordinary life, lit differently
+
+ACCENT RED #C4553F appears in exactly 5 images - S02, S11, S49, S65, S67 - and only
+ever on the wristband. Every extra use costs the final frame something.
+
+MATCHED PAIRS - frame these identically, same crop, same angle:
+------------------------------------------------------------------------------
+  S02 / S65   the drawer, cold pale light then warm morning light
+  S22 / S28   the chair, braced then settled
+  S38 / S41 / S46   two chairs occupied, one empty, both empty
+  S45 / S57   dua hands, fingers curled then relaxed - the most important pair
+  S04 / S43   the consultation room, alone then beside the empty chair
+
+==============================================================================
+
+S01  |  0:00-0:06  (6s)  |  bg PALE
+VO: There's a drawer in my kitchen I open most mornings.
+CAPTION: there's a drawer
+------------------------------------------------------------------------------
+Flat pale off-white #EFEAE2 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, slightly thinner in the face than usual. The man is standing side-on at a plain kitchen counter, one hand resting on a closed drawer handle, not pulling it, looking down at it. Place him right of centre, wide empty pale space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S02  |  0:06-0:13  (7s)  |  bg PALE
+VO: There's a hospital wristband in it. Cut off, kept.
+------------------------------------------------------------------------------
+Flat pale off-white #EFEAE2 background. Close-up of an open shallow drawer from directly above, empty except for a single thin accent-red #C4553F hospital wristband lying flat, cut through at one end. Drawer occupies the right two-thirds. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S03  |  0:13-0:21  (8s)  |  bg PALE
+VO: I don't look at it for comfort. I look at it to check something.
+------------------------------------------------------------------------------
+Flat pale off-white #EFEAE2 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, slightly thinner in the face than usual. The man is looking down into the open drawer, face calm and neutral, one hand still on the handle. Place him in the left third, empty pale wall right. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S04  |  0:21-0:32  (11s)  |  bg PALE
+VO: Eleven months ago a doctor said the words I had spent a year praying for. He said: we think it's gone.
+CAPTION: "we think it's gone"
+------------------------------------------------------------------------------
+Flat pale off-white #EFEAE2 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is seated in a consultation chair facing a doctor's flat standing figure, both drawn small, an enormous empty pale wall above and around them. The room is far too big for the two of them. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S05  |  0:32-0:42  (10s)  |  bg PALE
+VO: And I want to tell you honestly what that felt like. Because it is not what I expected, and nobody warned me.
+------------------------------------------------------------------------------
+Flat pale off-white #EFEAE2 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. Close-up of his face, front on, completely neutral — dot eyes open, mouth a flat straight line. No smile, no tears. Face right half, empty pale space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S06  |  0:42-0:50  (8s)  |  bg PALE
+VO: I walked out to the car park and I felt nothing at all.
+CAPTION: I felt nothing at all
+------------------------------------------------------------------------------
+Flat pale off-white #EFEAE2 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is standing alone in a wide empty car park, arms at his sides, one car shape far behind him, looking at nothing. He is small, lower right. Vast empty pale sky and tarmac. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S07  |  0:50-0:59  (9s)  |  bg PALE
+VO: I had built a whole year around one sentence, and when it came I couldn't feel it.
+------------------------------------------------------------------------------
+Flat pale off-white #EFEAE2 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is sitting in a stationary car, seen from the side through the window frame, both hands on the wheel, engine not started, staring straight ahead. Car right of centre, empty pale space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S08  |  0:59-1:08  (9s)  |  bg PALE
+VO: This video is about the part after. The part I couldn't find anywhere when I went looking.
+------------------------------------------------------------------------------
+Flat pale off-white #EFEAE2 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is seen from behind, standing at the edge of a long flat empty road that stretches to a vanishing point. Place him small, lower left. Huge empty pale sky. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S09  |  1:08-1:15  (7s)  |  bg PALE
+VO: Everybody around me was celebrating. That was the strangest week of the whole thing.
+------------------------------------------------------------------------------
+Flat pale off-white #EFEAE2 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is standing still in the centre of a small room while three flat silhouette figures around him are mid-celebration, arms raised. He is the only one not moving. Place him centred, silhouettes around, empty space above. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S10  |  1:15-1:27  (12s)  |  bg PALE
+VO: They had waited a year to be happy for me and I could not join in. I performed it. I was good at it by then.
+CAPTION: I performed it
+------------------------------------------------------------------------------
+Flat pale off-white #EFEAE2 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. Close-up of his face wearing a small polite closed-mouth smile, but the dot eyes flat and unmoving. The mismatch between mouth and eyes is the entire image. Face left third, empty pale right. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S11  |  1:27-1:36  (9s)  |  bg PALE
+VO: That night I cut the wristband off and I didn't throw it away.
+------------------------------------------------------------------------------
+Flat pale off-white #EFEAE2 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. Close-up of his two hands, one holding small scissors, cutting through the thin accent-red #C4553F wristband on his own wrist. Hands fill the lower right, empty pale space upper left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S12  |  1:36-1:47  (11s)  |  bg PALE
+VO: I have thought about why for eleven months. I'll tell you at the end, because it took me the whole story to work it out.
+------------------------------------------------------------------------------
+Flat pale off-white #EFEAE2 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The drawer from S02, now closed, the man 's hand just leaving the handle. Drawer and hand right third, empty pale space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S13  |  1:47-2:00  (13s)  |  bg COOL
+VO: Here's the thing nobody says. Being told you're clear doesn't end it. It just takes away the thing you were allowed to be scared of.
+CAPTION: it doesn't end it
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is standing in an empty room, arms at his sides, while a large plain flat shape that had been beside him is drawn as a faint outline only — present, then gone. Place him right, outline shape left, empty cool wall between. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S14  |  2:00-2:12  (12s)  |  bg COOL
+VO: For a year I had a job. Get through it. Then the job ended and I still couldn't eat a plate of rice in under an hour.
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is seated alone at a table looking down at a single plain plate of rice, fork in hand, not eating. Place him and table right of centre, wide empty cool space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S15  |  2:12-2:24  (12s)  |  bg COOL
+VO: The cancer was gone. The body it happened to was still mine.
+CAPTION: the body was still mine
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is standing side-on in front of a plain mirror, looking at his own reflection, one hand flat against his own stomach. No scar shown, no skin detail. Place him and the mirror in the left third, empty cool wall right. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S16  |  2:24-2:40  (16s)  |  bg COOL
+VO: And nobody claps for that part. There's no appointment where they tell you the rest of it is over.
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is standing alone on a pavement outside a plain building, holding a small folded paper, everyone else absent, no one waiting for him. Place him right of centre, wide empty cool street space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S17  |  2:40-2:50  (10s)  |  bg COOL
+VO: Let me be specific, because specific is the only thing that helped me when I was reading other people's.
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is sitting up in bed at night holding a phone close, reading intently, face lit softly from the screen — clearly reading somebody else's words, not writing his own. Place him right of centre, empty cool space left. No readable screen content. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S18  |  2:50-3:01  (11s)  |  bg COOL
+VO: After a Whipple, your body no longer does something it has always done for you without asking.
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is standing side-on, one hand resting flat on his own upper abdomen, looking down calmly. No anatomy, no medical detail. Place him right of centre, empty cool space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S19  |  3:01-3:14  (13s)  |  bg COOL
+VO: So eating stopped being a thing I did and became a thing I managed. An hour, for a plate of rice.
+CAPTION: an hour. for rice.
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. Four small identical panels in a row, each showing the man at the same table with the same plate, barely changed between them. Repetitive and flat. Wide empty cool space above the row. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S20  |  3:14-3:25  (11s)  |  bg COOL  |  [CONDITIONAL]
+VO: [BRIEF LINE — one concrete daily thing your body still won't do. Only what you're comfortable saying.]
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is performing the exact ordinary action your line names, paused mid-motion, looking at it. Place him in the left third, empty cool space right. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S21  |  3:25-3:37  (12s)  |  bg COOL
+VO: But the one that broke me wasn't food. For six weeks I could not stand up to pray.
+CAPTION: 6 weeks
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is sitting on the edge of a bed beside a prayer mat laid out on the floor, looking at the mat, not moving toward it. Place him and bed right, mat lower centre, empty cool space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S22  |  3:37-3:47  (10s)  |  bg COOL
+VO: I prayed sitting down. Which is allowed. Everyone told me it was allowed.
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is sitting upright on a plain chair on the prayer mat, hands open in prayer, facing forward. Place him right of centre, wide empty cool space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S23  |  3:47-4:03  (16s)  |  bg COOL
+VO: Knowing it's allowed and feeling it are different rooms. I knew I wasn't sinning. I still felt like I was watching my own religion from a chair.
+CAPTION: allowed. and still.
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. Wide flat view of the man seated on a chair on the left, and on the right an empty prayer mat on the floor with a faint pale outline of a standing figure on it. Large empty cool space between them. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S24  |  4:03-4:14  (11s)  |  bg COOL
+VO: [YOUR LINE — the lowest thought you had about that. One sentence. If it was anger, say anger.]
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. Close-up of his face in three-quarter view, jaw set, eyes down, no tears — a closed, hard expression. Face right half, empty cool space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S25  |  4:14-4:25  (11s)  |  bg COOL
+VO: Then Ramadan came and I did not fast a single day of it.
+CAPTION: not one day
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is sitting alone at a table with a plain plate of food in front of him in daylight, while through a window behind him the sky is drawn in evening tones. Place him right, window left, empty cool wall between. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S26  |  4:25-4:38  (13s)  |  bg COOL
+VO: Thirty years of my life had a shape and that year it didn't. I ate at noon and felt like a stranger in my own house.
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is standing alone in the middle of his own living room, arms at his sides, everything around him ordinary and unchanged, looking around as if it were somebody else's. Place him centred, generous empty cool space either side. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S27  |  4:38-4:50  (12s)  |  bg COOL
+VO: Here's what I'd say to you if you're there now. Your deen did not get smaller. Your body did.
+CAPTION: your deen didn't get smaller
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Two plain shapes side by side on a flat wall: one large and unchanged, one visibly smaller. Simple, geometric, no faces, no text. Shapes right two-thirds, empty cool space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S28  |  4:50-5:00  (10s)  |  bg COOL
+VO: The chair is not a demotion. It took me six weeks and a lot of arguing with myself to believe that.
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is seated on the chair on the prayer mat, hands open, and this time drawn calm and settled, shoulders down. Place him right of centre, empty cool space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S29  |  5:00-5:10  (10s)  |  bg COOL
+VO: I want to take you into the room, because I think people picture it wrong.
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Wide flat view of a treatment room: a neat semicircle of plain identical chairs, all empty, no equipment, no people. Chairs lower two-thirds, wide empty cool wall above. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S30  |  5:10-5:21  (11s)  |  bg COOL
+VO: Twenty-two chairs. All full. And nobody asks anybody what they've got.
+CAPTION: 22 chairs
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The same room, now every chair occupied by flat silhouette figures with no facial detail, all facing forward, none turned toward each other. the man is the one figure drawn in full colour, right of centre. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S31  |  5:21-5:34  (13s)  |  bg COOL
+VO: You'd think it would be the one place you could. It's the one place you don't. It's the only unspoken rule and everybody keeps it.
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Close-up of two plain chair armrests side by side with a small gap between them, one hand resting on each, not touching. Armrests fill the lower frame, empty cool space above. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S32  |  5:34-5:44  (10s)  |  bg COOL
+VO: You talk about parking. About the weather. About the coffee machine on the second floor.
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is seated beside one silhouette figure, both facing forward, small polite expressions, clearly mid-small-talk. Both right of centre, empty cool space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S33  |  5:44-5:57  (13s)  |  bg COOL
+VO: And then one week a chair is empty and nobody says anything about that either.
+CAPTION: and then a chair is empty
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The same semicircle of chairs, all occupied by silhouettes except one clearly empty chair. Nobody is looking at it. the man in colour, right of centre, facing forward. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S34  |  5:57-6:09  (12s)  |  bg COOL
+VO: The week I was diagnosed I googled things I will not repeat here. You know the ones. Survival, and then a number, and then a year.
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is lying in bed at night, face lit from below by a phone held above him, expression flat. Bed lower right, huge empty dark-cool space upper left. No readable screen content. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S35  |  6:09-6:22  (13s)  |  bg COOL
+VO: Don't. Or do, because you're going to anyway. But know that the number you find is old, and it isn't you.
+CAPTION: the number isn't you
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is holding his phone and looking up from it toward a faint pale outline figure of a stranger standing across the room — the statistic is a description of somebody else. He is the only solid figure. Place him right of centre, outline figure left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S36  |  6:22-6:32  (10s)  |  bg COOL
+VO: And nobody warns you about the paperwork. I spent more hours on forms than in surgery.
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is seated at a table almost hidden behind a tall untidy stack of plain papers, only his head and shoulders visible above it. Place him and stack right of centre, empty cool space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S37  |  6:32-6:42  (10s)  |  bg COOL
+VO: There is something almost funny about that. I laughed at it once and it turned into something else halfway through.
+------------------------------------------------------------------------------
+Flat muted cool grey-blue #C9D2D4 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. Close-up of his face mid-laugh, mouth open, but the eyes wet and unsmiling — the expression caught in the exact moment it changes. Face right half, empty cool space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S38  |  6:42-6:50  (8s)  |  bg DEEP
+VO: There was a man in the chair next to mine. [FIRST NAME OR 'I'll call him H'.]
+CAPTION: the chair next to mine
+------------------------------------------------------------------------------
+Flat deep grey-blue #8E9BA3 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. Two plain chairs side by side, the man in one drawn in full colour, a single silhouette figure in the other. Everything else empty. Both right of centre, deep grey-blue space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S39  |  6:50-6:59  (9s)  |  bg DEEP
+VO: We talked about parking, obviously. For four months.
+------------------------------------------------------------------------------
+Flat deep grey-blue #8E9BA3 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The same two chairs from a low side angle, the man and the silhouette figure both facing forward mid-conversation, neither turned toward the other, entirely at ease. Both right of centre, empty deep space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S40  |  6:59-7:11  (12s)  |  bg DEEP  |  [CONDITIONAL]
+VO: [BRIEF LINE — one small, specific, ordinary thing about him. A habit, a phrase, what he brought with him. One detail is worth a paragraph.]
+------------------------------------------------------------------------------
+Flat deep grey-blue #8E9BA3 background. Close-up of the exact ordinary object your line names, resting on a chair armrest. Object right third, empty deep space left. No people. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S41  |  7:11-7:24  (13s)  |  bg DEEP
+VO: He was doing better than me. Everyone said so. He was doing better than me right up until he wasn't.
+CAPTION: he was doing better than me
+------------------------------------------------------------------------------
+Flat deep grey-blue #8E9BA3 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The two chairs again, but now the second chair is empty and the man is sitting alone, looking straight ahead, not at the empty chair. Place him right of centre, empty deep space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S42  |  7:24-7:34  (10s)  |  bg DEEP
+VO: I found out the way you find out. Somebody didn't say his name.
+------------------------------------------------------------------------------
+Flat deep grey-blue #8E9BA3 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is standing facing a nurse's flat silhouette, whose posture is slightly turned away. Neither is looking directly at the other. Both right, empty deep space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S43  |  7:34-7:44  (10s)  |  bg DEEP
+VO: And then eleven months later a doctor told me mine was gone.
+------------------------------------------------------------------------------
+Flat deep grey-blue #8E9BA3 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. Split composition: on the left the empty chair, on the right the man seated in the consultation room. A thin dark vertical line between. Empty deep space above both. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S44  |  7:44-7:56  (12s)  |  bg DEEP
+VO: Nobody prepares you for what that does. You are not allowed to be unhappy about good news.
+CAPTION: you're not allowed to be unhappy
+------------------------------------------------------------------------------
+Flat deep grey-blue #8E9BA3 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is standing alone, arms at his sides, head slightly lowered, in a very large completely empty deep grey-blue room. He is small, lower centre. Maximum emptiness. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S45  |  7:56-8:08  (12s)  |  bg DEEP
+VO: So you say Alhamdulillah, and you mean it, and underneath it you are asking a question you know you shouldn't ask.
+------------------------------------------------------------------------------
+Flat deep grey-blue #8E9BA3 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. Close-up of his open hands raised in dua, but the fingers slightly tense and curled rather than relaxed — the right gesture, held wrong. Hands lower right, empty deep space upper left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S46  |  8:08-8:20  (12s)  |  bg DEEP
+VO: Why him and not me. There is no good answer to that and I have stopped looking for one.
+CAPTION: why him and not me
+------------------------------------------------------------------------------
+Flat deep grey-blue #8E9BA3 background. Two identical plain chairs facing the viewer, both completely empty, drawn symmetrically. Nothing else. Chairs centred low, huge empty deep space above. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S47  |  8:20-8:32  (12s)  |  bg DEEP
+VO: What I do instead is say his name out loud sometimes. That's all I've got. It turns out that's allowed to be all you've got.
+------------------------------------------------------------------------------
+Flat deep grey-blue #8E9BA3 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is standing alone, mouth slightly open mid-word, eyes open and calm, facing an empty room. Place him right of centre, empty deep space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S48  |  8:32-8:41  (9s)  |  bg DEEP
+VO: Which brings me to a night about four months in. Three in the morning, second night after surgery.
+CAPTION: 3am
+------------------------------------------------------------------------------
+Flat deep grey-blue #8E9BA3 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. Wide flat view of the man lying awake in a hospital bed at night, eyes open, arms at his sides on top of the covers, one small window shape on the wall. Bed lower right, huge empty dark space upper left. No tubes, no equipment. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S49  |  8:41-8:49  (8s)  |  bg DEEP
+VO: I still had the wristband on then.
+------------------------------------------------------------------------------
+Flat deep grey-blue #8E9BA3 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. Close-up of his wrist resting on a pale sheet, the thin accent-red #C4553F wristband around it, intact. Wrist and band lower right, empty deep space upper left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S50  |  8:49-8:59  (10s)  |  bg DEEP
+VO: And I asked Allah, out loud, in an empty room, what the pain was for.
+------------------------------------------------------------------------------
+Flat deep grey-blue #8E9BA3 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is lying in the bed, head turned toward the window, mouth slightly open mid-sentence, speaking to nobody. Bed right of centre, empty deep space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S51  |  8:59-9:10  (11s)  |  bg DEEP
+VO: Not why. What for. There's a difference and I only found it that night.
+CAPTION: not why. what for.
+------------------------------------------------------------------------------
+Flat deep grey-blue #8E9BA3 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is pushing himself upright in the hospital bed and turning his head toward the window — the physical pivot of the film, caught mid-movement. Place him right of centre, window upper left, empty deep space between. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S52  |  9:10-9:20  (10s)  |  bg DEEP
+VO: Why is a complaint dressed as a question. It wants somebody to be at fault.
+------------------------------------------------------------------------------
+Flat deep grey-blue #8E9BA3 background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is seated on the edge of the bed, arms crossed, chin slightly raised, a guarded closed posture. Place him right of centre, empty deep space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S53  |  9:20-9:34  (14s)  |  bg WARM
+VO: What for is a different thing entirely. It assumes there's a use. It's the harder question because it puts some of it back on you.
+------------------------------------------------------------------------------
+Flat warm sand #E8C79A background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is seated on the edge of the bed, arms uncrossed, hands open on his knees, shoulders down. Warm sand wall behind him for the first time. Place him right of centre, wide warm empty space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S54  |  9:34-9:45  (11s)  |  bg WARM
+VO: I didn't get an answer that night. I want to be very clear about that. Nothing happened. No light, no dream, nothing.
+CAPTION: nothing happened
+------------------------------------------------------------------------------
+Flat warm sand #E8C79A background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The same hospital room, same framing, completely unchanged except the warm background. the man still sitting there. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S55  |  9:45-9:58  (13s)  |  bg WARM
+VO: But I stopped asking the first question. And about a month later I noticed I had been getting an answer the whole time, just not in words.
+------------------------------------------------------------------------------
+Flat warm sand #E8C79A background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is standing at a window in warm daylight, side-on, one hand flat on the sill, looking out with a calm expression. Place him and the window in the left third, wide warm empty wall right. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S56  |  9:58-10:09  (11s)  |  bg WARM
+VO: Everyone had told me to have sabr. I had always heard that as: endure this quietly and don't complain.
+------------------------------------------------------------------------------
+Flat warm sand #E8C79A background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is standing very still and upright with his mouth closed in a tight flat line, shoulders rigid, arms pinned at his sides. Stiff and held. Place him right of centre, warm empty space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S57  |  10:09-10:23  (14s)  |  bg WARM
+VO: That isn't what it is. Sabr isn't going quiet. It's staying — staying in the room, staying in the relationship with Allah — while it hurts.
+CAPTION: sabr isn't going quiet
+------------------------------------------------------------------------------
+Flat warm sand #E8C79A background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. Close-up of his open hands raised in dua — the exact same framing and crop as image S45, but the fingers now relaxed and genuinely open rather than tense and curled. Hands lower right, warm empty space upper left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S58  |  10:23-10:35  (12s)  |  bg WARM
+VO: You are allowed to say it hurts. Yaqub said it hurts. He said it out loud and it's in the Quran.
+------------------------------------------------------------------------------
+Flat warm sand #E8C79A background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is seated on the floor with a plain open book resting on his knees, one hand flat on the page, head lowered, reading quietly. Pages blank, no readable text. Place him right of centre, warm empty space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S59  |  10:35-10:50  (15s)  |  bg WARM
+VO: What you're not asked to do is leave. That's the whole thing. Sabr is a location, not a volume.
+CAPTION: sabr is a location, not a volume
+------------------------------------------------------------------------------
+Flat warm sand #E8C79A background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is seated on the prayer mat in the exact centre of a warm room, staying, everything around him open and calm. Centred, generous warm space on all sides. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S60  |  10:50-10:57  (7s)  |  bg WARM
+VO: Two quick things, and then the drawer.
+------------------------------------------------------------------------------
+Flat warm sand #E8C79A background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is standing facing the viewer directly, hands loose, calm open posture, mid-speech. Place him right of centre, wide warm empty space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S61  |  10:57-11:14  (17s)  |  bg WARM
+VO: One. If someone you love is sick, please stop saying 'everything happens for a reason.' Say 'I'm here Thursday.' Give them a day, not a philosophy.
+CAPTION: give them a day, not a philosophy
+------------------------------------------------------------------------------
+Flat warm sand #E8C79A background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. Split composition, both halves concrete: on the LEFT a silhouette figure standing at a distance from the man, one arm raised in a vague sweeping gesture; on the RIGHT the same silhouette figure simply sitting down in the chair beside him, saying nothing. Thin dark line between. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S62  |  11:14-11:27  (13s)  |  bg WARM
+VO: Somebody paid my rent one month and never told me who. That person understood something the rest of us are still working out.
+------------------------------------------------------------------------------
+Flat warm sand #E8C79A background. A plain unmarked envelope resting on a doormat inside a front door, nobody in frame. Envelope and door lower right, warm empty hallway space upper left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S63  |  11:27-11:42  (15s)  |  bg WARM
+VO: Two. People ask what cancer took. It took a year, an organ, and a version of me who thought he had time to waste.
+CAPTION: what it took
+------------------------------------------------------------------------------
+Flat warm sand #E8C79A background. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, noticeably thinner in the face and looser in the shirt. The man is standing in a room facing three faint pale outline figures of himself at different sizes, none of them solid — the year, the organ, and the man who thought he had time. He is the only figure in full colour. Place him right of centre, outlines left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S64  |  11:42-12:00  (18s)  |  bg LIVED
+VO: What it gave back is harder to say out loud without sounding like a poster. So I'll say it as plainly as I can: I am here now. Actually here. I wasn't before.
+CAPTION: I am actually here now
+------------------------------------------------------------------------------
+Flat warm off-white #F5F0E6 background with soft warm morning light. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, slightly thinner in the face than usual. The man is standing in an ordinary kitchen looking directly and attentively at a very ordinary thing — a mug on the counter — really seeing it. Place him in the left third, mug right, empty pale space between. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S65  |  12:00-12:14  (14s)  |  bg LIVED
+VO: So. The drawer. I open it most mornings and I look at a cut wristband, and I'm not being sentimental. I'm checking a date.
+------------------------------------------------------------------------------
+Flat warm off-white #F5F0E6 background with soft warm morning light. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, slightly thinner in the face than usual. The open drawer from directly above, the accent-red #C4553F wristband lying flat inside, his hand at the drawer's edge. Drawer right two-thirds, empty pale space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S66  |  12:14-12:28  (14s)  |  bg LIVED
+VO: Because a year ago I would have told you I wanted more time. I had it. I just wasn't in it.
+CAPTION: I had it. I wasn't in it.
+------------------------------------------------------------------------------
+Flat warm off-white #F5F0E6 background with soft warm morning light. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, slightly thinner in the face than usual. The man is standing at the open drawer, looking down into it, calm and unhurried, warm morning light across the counter. Place him right of centre, generous empty space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S67  |  12:28-12:46  (18s)  |  bg LIVED
+VO: The wristband is how I remember to actually turn up to my own life. Then I close the drawer and go and have breakfast.
+CAPTION: turn up to your own life
+------------------------------------------------------------------------------
+Flat warm off-white #F5F0E6 background with soft warm morning light. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, slightly thinner in the face than usual. Wide flat view: the man seated at his kitchen table having an ordinary breakfast in warm morning light, the drawer closed behind him, one small accent-red #C4553F detail somewhere in the room. Calm, unremarkable, entirely undramatic. Place him right of centre, generous empty space left. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.
+
+S68  |  12:46-13:00  (14s)  |  bg LIVED
+VO: If you're the one who just got the phone call, there are shorter pieces of this on the channel. Start wherever it hurts. I'll see you there.
+------------------------------------------------------------------------------
+Flat warm off-white #F5F0E6 background with soft warm morning light. Character: a soft-built adult man, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, muted slate-blue short-sleeve t-shirt, tan khaki trousers, dark brown slip-on shoes, slightly thinner in the face than usual. The man is standing facing the viewer, calm and still, hands relaxed. Centred, generous empty space either side — deliberately clear for end-screen cards. Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight, flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical ground shadow, calm restrained storybook-explainer aesthetic, generous negative space, 16:9 horizontal composition 1920x1080, subject on the left or right third with clear empty space opposite for text.

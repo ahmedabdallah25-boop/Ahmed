@@ -1,0 +1,158 @@
+HELD BY FAITH — LONG-FORM 01
+"They Told Me The Cancer Was Gone. Nobody Warned Me What Came After."
+VOICEOVER SCRIPT — ELEVENLABS v3, EMOTION-TAGGED
+==============================================================================
+
+HOW TO RUN THIS
+------------------------------------------------------------------------------
+• Generate ONE BATCH AT A TIME, in order. Each batch below is a separate generation.
+  v3 gets unstable over very long inputs and drifts in tone between paragraphs;
+  batching by act keeps the delivery consistent inside each emotional register.
+• Every batch is well over 250 characters, which is what v3 needs to settle. Do not
+  split them smaller.
+• SETTINGS: Stability LOW-to-NATURAL. Low gives v3 room to act the tags; if it starts
+  over-performing the grief, move to Natural. Never High — it flattens the tags out.
+• Speed: slightly below default. This script is ~1,510 words over ~13:00, so roughly
+  40% of the runtime is silence. The tags do some of that; the edit does the rest.
+• The [pause] and [long pause] tags are deliberate and load-bearing. Do not remove
+  them to make the read flow better — the flow is not supposed to be smooth.
+
+THE ONE RULE FOR THIS CHANNEL
+------------------------------------------------------------------------------
+Do not perform the grief. Report it. The channel's like rate is what it is because the
+delivery is flat and honest, not because it is moving. If a take sounds like it is
+trying to make you feel something, it is wrong. Regenerate it.
+
+⚠️ SQUARE BRACKETS ARE AUDIO TAGS IN v3.
+------------------------------------------------------------------------------
+Every [tag] below is intended for the model. The lines only you can write are marked
+with >>>>>> ARROWS <<<<<< instead of brackets, precisely so v3 cannot mistake them for
+tags. Replace those blocks with your own words BEFORE generating. If you generate with
+the arrow blocks still in, v3 will read them aloud.
+
+==============================================================================
+
+BATCH 1 — COLD OPEN — the drawer   [S01–S08]
+------------------------------------------------------------------------------
+
+[softly] There's a drawer in my kitchen I open most mornings.
+There's a hospital wristband in it. Cut off, kept.
+[quietly] I don't look at it for comfort. I look at it to check something.
+Eleven months ago a doctor said the words I had spent a year praying for. He said: we think it's gone.
+[thoughtful] And I want to tell you honestly [pause] what that felt like. Because it is not what I expected, and nobody warned me.
+[flat] I walked out to the car park and I felt nothing at all.
+I had built a whole year around one sentence, and when it came I couldn't feel it.
+[softly] This video is about the part after. The part I couldn't find anywhere when I went looking.
+
+==============================================================================
+
+BATCH 2 — ACT 1 — the anticlimax   [S09–S16]
+------------------------------------------------------------------------------
+
+Everybody around me was celebrating. That was the strangest week of the whole thing.
+[quietly] They had waited a year to be happy for me and I could not join in. I performed it. I was good at it by then.
+That night I cut the wristband off and I didn't throw it away.
+[thoughtful] I have thought about why for eleven months. I'll tell you at the end, because it took me the whole story to work it out.
+[measured] Here's the thing nobody says. Being told you're clear doesn't end it. [pause] It just takes away the thing you were allowed to be scared of.
+For a year I had a job. Get through it. Then the job ended and I still couldn't eat a plate of rice in under an hour.
+The cancer was gone. The body it happened to was still mine.
+[flat] And nobody claps for that part. There's no appointment where they tell you the rest of it is over.
+
+==============================================================================
+
+BATCH 3 — ACT 2 — the body   [S17–S28]
+------------------------------------------------------------------------------
+
+Let me be specific, because specific is the only thing that helped me when I was reading other people's.
+After a Whipple, your body no longer does something it has always done for you without asking.
+[tired] So eating stopped being a thing I did and became a thing I managed. An hour, for a plate of rice.
+
+
+>>>>>> WRITE THIS LINE YOURSELF — do not generate <<<<<<
+>>> BRIEF LINE — one concrete daily thing your body still won't do. Only what you're comfortable saying.
+
+
+[quietly] But the one that broke me wasn't food. For six weeks I could not stand up to pray.
+I prayed sitting down. Which is allowed. Everyone told me it was allowed.
+[hesitant] Knowing it's allowed and feeling it are different rooms. I knew I wasn't sinning. I still felt like I was watching my own religion from a chair.
+
+
+>>>>>> WRITE THIS LINE YOURSELF — do not generate <<<<<<
+>>> YOUR LINE — the lowest thought you had about that. One sentence. If it was anger, say anger.
+
+
+[quietly] Then Ramadan came and I did not fast a single day of it.
+Thirty years of my life had a shape and that year it didn't. I ate at noon and felt like a stranger in my own house.
+[warmly] Here's what I'd say to you if you're there now. Your deen did not get smaller. Your body did.
+[softly] The chair is not a demotion. It took me six weeks and a lot of arguing with myself to believe that.
+
+==============================================================================
+
+BATCH 4 — ACT 3 — the ward   [S29–S37]
+------------------------------------------------------------------------------
+
+I want to take you into the room, because I think people picture it wrong.
+[measured] Twenty-two chairs. All full. And nobody asks anybody what they've got.
+[quietly] You'd think it would be the one place you could. It's the one place you don't. It's the only unspoken rule and everybody keeps it.
+You talk about parking. About the weather. About the coffee machine on the second floor.
+[flat] And then one week a chair is empty and nobody says anything about that either.
+The week I was diagnosed I googled things I will not repeat here. You know the ones. Survival, and then a number, and then a year.
+[firm] Don't. Or do, because you're going to anyway. But know that the number you find is old, and it isn't you.
+And nobody warns you about the paperwork. I spent more hours on forms than in surgery.
+[a small laugh] There is something almost funny about that. I laughed at it once and it turned into something else halfway through.
+
+==============================================================================
+
+BATCH 5 — ACT 4 — the one I still can't hold   [S38–S47]
+------------------------------------------------------------------------------
+
+[softly] There was a man in the chair next to mine. >>> HIS NAME <<<
+We talked about parking, obviously. For four months.
+
+
+>>>>>> WRITE THIS LINE YOURSELF — do not generate <<<<<<
+>>> BRIEF LINE — one small, specific, ordinary thing about him. A habit, a phrase, what he brought with him. One detail is worth a paragraph.
+
+
+[quietly] He was doing better than me. Everyone said so. He was doing better than me right up until he wasn't. [long pause]
+[flat] I found out the way you find out. Somebody didn't say his name.
+And then eleven months later a doctor told me mine was gone.
+[quietly] Nobody prepares you for what that does. You are not allowed to be unhappy about good news.
+[hesitant] So you say Alhamdulillah, and you mean it, and underneath it you are asking a question you know you shouldn't ask.
+[almost a whisper] Why him and not me. [long pause] There is no good answer to that and I have stopped looking for one.
+[softly] What I do instead is say his name out loud sometimes. That's all I've got. It turns out that's allowed to be all you've got.
+
+==============================================================================
+
+BATCH 6 — ACT 5 — 3am, and what sabr means   [S48–S59]
+------------------------------------------------------------------------------
+
+[quietly] Which brings me to a night about four months in. Three in the morning, second night after surgery.
+I still had the wristband on then.
+[whispers] And I asked Allah, out loud, in an empty room, what the pain was for.
+[thoughtful] Not why. [pause] What for. There's a difference and I only found it that night.
+Why is a complaint dressed as a question. It wants somebody to be at fault.
+What for is a different thing entirely. It assumes there's a use. It's the harder question because it puts some of it back on you.
+[plainly] I didn't get an answer that night. I want to be very clear about that. Nothing happened. [pause] No light, no dream, nothing.
+But I stopped asking the first question. And about a month later I noticed I had been getting an answer the whole time, just not in words.
+[measured] Everyone had told me to have sabr. I had always heard that as: endure this quietly and don't complain.
+[warmly] That isn't what it is. Sabr isn't going quiet. It's staying — staying in the room, staying in the relationship with Allah — while it hurts.
+You are allowed to say it hurts. Yaqub said it hurts. He said it out loud and it's in the Quran.
+[warmly] What you're not asked to do is leave. [pause] That's the whole thing. Sabr is a location, not a volume.
+
+==============================================================================
+
+BATCH 7 — ACT 6 — the wristband   [S60–S68]
+------------------------------------------------------------------------------
+
+Two quick things, and then the drawer.
+[firm] One. If someone you love is sick, please stop saying 'everything happens for a reason.' Say 'I'm here Thursday.' Give them a day, not a philosophy.
+[softly] Somebody paid my rent one month and never told me who. That person understood something the rest of us are still working out.
+Two. People ask what cancer took. It took a year, an organ, and [sighs] a version of me who thought he had time to waste.
+[quietly] What it gave back is harder to say out loud without sounding like a poster. So I'll say it as plainly as I can: I am here now. Actually here. I wasn't before.
+So. The drawer. I open it most mornings and I look at a cut wristband, and I'm not being sentimental. I'm checking a date.
+[softly] Because a year ago I would have told you I wanted more time. I had it. [pause] I just wasn't in it.
+[warmly] The wristband is how I remember to actually turn up to my own life. Then I close the drawer and go and have breakfast.
+[warmly] If you're the one who just got the phone call, there are shorter pieces of this on the channel. Start wherever it hurts. I'll see you there.
+
+==============================================================================
