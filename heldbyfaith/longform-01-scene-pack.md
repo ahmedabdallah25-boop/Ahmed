@@ -1,44 +1,91 @@
 # HELD BY FAITH — LONG-FORM 01
-## "I Asked Allah for a Long Life. Four Days Later, They Found Cancer."
+## "They Told Me The Cancer Was Gone. Nobody Warned Me What Came After."
 
-**Format:** 16:9 · 1920×1080 · ~15:40 · 72 scenes · illustrated character
-**Why long-form:** the six vertical chapters have no home. This is the video they point into —
-and the only format on this channel that can earn Suggested, Browse and search. It stays
-findable for years: someone is diagnosed every day and goes looking for exactly this.
-
-> ⚠️ **Runtime is >180s, so a custom 16:9 thumbnail is MANDATORY** (see THUMBNAIL at the bottom).
-> Without one this publishes as long-form with an auto-grab frame and loses every 16:9 slot.
-
-> ⚠️ **This corrects `ch6-scene-pack.txt`**, which specifies "photographic, faceless by framing."
-> That is not what this channel ships. The channel has a **main character** and he has a face.
-> Everything below uses him. Fix the Ch6 pack before reusing it.
+**Format:** 16:9 · 1920×1080 · ~13:20 · 66 scenes · illustrated character
+**Live channel state, verified 2026-09-09:** 55 subs · 28 videos · **25 Shorts, 3 long-form** ·
+~21,000 lifetime Shorts views.
 
 ---
 
-## THE CONTRACT — read before you record
+# WHY THIS VIDEO, AND NOT THE ORIGIN STORY
 
-Anything in `[SQUARE BRACKETS]` is a fact **only you know**. Replace it or delete the line.
-Everything outside the brackets is craft — hook, order, pacing, the turn — built to carry your
-words. **If a line isn't true, the line is wrong. Change it.** I have not invented what the
-results said, what stage it was, or where you are now.
+The channel's own data decides this. Sorted by views:
 
-The channel's like rate is 17%. The writing is not the problem and never was. Do not perform
-grief here; report it. Half the runtime is silence.
+| Short | Views | Type |
+|---|---|---|
+| The wristband in my drawer fixes my worst days | **1.7K** | single idea, object, payoff |
+| They said the cancer was gone. Nobody warned me about this | **1.3K** | single idea, open loop |
+| Please stop saying this to people who are sick | **1.2K** | single idea, service |
+| I survived. He didn't. Nobody prepares you for that | **1.2K** | single idea, guilt |
+| At 3am I asked Allah what the pain was for | **1.2K** | single idea, faith |
+| I couldn't stand up to pray for 6 weeks | **1.1K** | single idea, body |
+| The morning I stood up to pray again | **1.1K** | single idea, payoff |
+| I said I'm fine for a year and people believed me | **1.1K** | single idea, mask |
+| The things I googled the week I was diagnosed | **1.0K** | single idea, list |
+| …14 more in the 340–970 band | | |
+| **I asked Allah for a long life and got cancer 4 days later** | **343** | origin story |
+| **Part 2: Waiting 7 Days for Cancer Results** | **13** | chronological chapter |
+| **Part 5: How I Told My Family I Had Cancer** | **12** | chronological chapter |
+| **Part 4: Why I Felt Nothing When The Doctor Said Cancer** | **7** | chronological chapter |
+
+**Three conclusions, all forced by the numbers:**
+
+1. **Chronological chapters are dead.** 7–13 views against a 1K median. Do not build long-form
+   as a recap of the story in order — that is the exact format the audience has already refused.
+2. **The origin hook is the weakest winner.** "I asked Allah for a long life" is a real Short
+   and it sits at **343** — a third of the channel's median. It is the most *dramatic* beat and
+   the *least* watched. It is not the spine of the breakthrough video.
+3. **What works is one idea, in the present tense, about the aftermath.** The top four are all
+   *after* — remission, the wristband, survivor guilt, what to say to a sick person. The
+   audience arrived for the diagnosis and stayed for what came next.
+
+**So the long-form is the aftermath, assembled from the beats that already earned their views.**
+Every act below is a proven Short, expanded, with its view count noted. This is not a new bet.
+It is the channel's own winners, sequenced, with the open loop from the 1.3K Short as the spine.
+
+> ⚠️ **`ch6-scene-pack.txt` in this repo is obsolete.** It specifies "photographic, faceless by
+> framing" and a chronological Chapter 6. The channel is illustrated, has a **main character
+> with a face**, and has abandoned chapter numbering. Delete or rewrite that file.
+
+> ⚠️ **Runtime > 180s → a custom 16:9 thumbnail is MANDATORY.** See THUMBNAIL below.
+
+---
+
+# THE FUNNEL — this is the point of the video
+
+25 Shorts pulling ~21K views into a channel with 55 subscribers is a **conversion** problem, not
+a reach problem. Roughly 0.26% of Shorts viewers subscribe. The long-form is the fix, and only
+if it is wired in deliberately:
+
+1. **Pin a comment on the six 1K+ Shorts** the day this publishes: *"The full story of what
+   happened after they said it was gone is on the channel now."* Do not link — YouTube
+   suppresses external-looking pins on Shorts; name it and let them tap the avatar.
+2. **End-screen the top three Shorts** from this video's final 20 seconds.
+3. **Playlist:** create **"After the All-Clear"** and put this at the top with the aftermath
+   Shorts beneath it. The existing `PLczfvNC3NVjo` playlist is the dead chapter spine — leave
+   it, don't feed it.
+4. **The cold open must work for someone who has never seen a Short.** No callbacks in the
+   first 45 seconds.
+5. **Re-cut three segments from this video as new Shorts** afterwards (S26–S31, S38–S43,
+   S56–S60 are built to stand alone). Long-form feeding Shorts feeding long-form is the loop.
 
 ---
 
 # CHARACTER LOCK
 
-Every prompt below contains the token `[HIM]`. Before pasting into Flowlabs, do one of these:
+Every prompt contains the token `[HIM]`. Before pasting into Flowlabs, find-and-replace once:
 
-**A — with the sheet (best).** Attach your character sheet as an image reference at **45–55%
-strength**, and find-and-replace `[HIM]` with:
+**A — with the sheet (best).** Attach the character sheet as image reference at **45–55%**, and
+replace `[HIM]` with:
 > `the man from the reference image`
 
-**B — without the sheet.** Find-and-replace `[HIM]` with this full line:
+**B — without the sheet.** Replace `[HIM]` with:
 > `an adult man with a soft rounded build, short cropped dark-brown hair, clean-shaven, rounded face with a soft jaw, small simple dot eyes, warm light skin, wearing a muted slate-blue short-sleeve t-shirt, tan khaki trousers and dark brown slip-on shoes`
 
-Do the replace once in a text editor. Do not retype it per scene — that is where drift starts.
+One replace in a text editor. Never retype per scene — that is where drift starts.
+
+**Post-surgery note:** he is thinner than the sheet after S20. Add `slightly thinner in the face
+and looser in the shirt than the reference` to prompts marked `[THIN]`. Everything else holds.
 
 # STYLE SUFFIX — append to EVERY prompt, unchanged
 
@@ -46,454 +93,410 @@ Do the replace once in a text editor. Do not retype it per scene — that is whe
 Flat 2D vector cartoon illustration, clean uniform dark-brown outline of even weight,
 flat colour fills with soft minimal shading, no gradients, no texture, soft elliptical
 ground shadow, calm restrained storybook-explainer aesthetic, generous negative space,
-16:9 horizontal composition 1920x1080, subject placed on the left or right third with
-clear empty space opposite for text.
+16:9 horizontal composition 1920x1080, subject on the left or right third with clear
+empty space opposite for text.
 ```
 
-# NEGATIVE PROMPT — paste once, applies to all 72
+# NEGATIVE PROMPT — paste once, all 66 scenes
 
 ```
-photorealistic, photograph, 3D render, cel shading, anime, manga, thick uneven outlines,
-sketchy lines, cross-hatching, painterly, watercolour, gradients, glow, bloom, HDR,
-oversaturated, neon, blood, wounds, surgical incision, graphic medical imagery, gore,
-tubes in skin, distressing imagery, text, letters, numbers, watermark, logo, signature,
-hospital branding, distorted hands, extra fingers, extra limbs, mangled anatomy,
-multiple heads, crowd, beard, glasses, hat, different clothing, different hair colour
+photorealistic, photograph, 3D render, cel shading, anime, thick uneven outlines, sketchy
+lines, cross-hatching, painterly, watercolour, gradients, glow, bloom, HDR, oversaturated,
+neon, blood, wounds, surgical incision, graphic medical imagery, gore, needles in skin,
+IV lines in arms, distressing imagery, text, letters, numbers, watermark, logo, signature,
+hospital branding, distorted hands, extra fingers, extra limbs, multiple heads, crowd,
+beard, glasses, hat, different clothing, different hair colour
 ```
 
-# THE BACKGROUND GRADE — this is the story, told in one variable
+# BACKGROUND GRADE — the only variable that moves
 
-The character never changes. **The background does.** Flat illustration can't hold a
-photographic grade, so the wall behind him carries the emotion instead. It reads instantly
-and it is the single most repeatable device on this channel.
+The character never changes. The wall behind him does. Flat illustration cannot hold a
+photographic grade, so the background carries the arc. It reads at thumbnail size and it is
+infinitely reusable across future videos.
 
-| State | Hex | Used in | What it means |
+| State | Hex | Scenes | Meaning |
 |---|---|---|---|
-| `CREAM` | `#F5EFE0` | S01–S12, S66–S72 | ordinary life. Before, and after. |
-| `COOL` | `#C9D2D4` | S13–S40 | the cold. Everything from the scan to the wait. |
-| `DEEP` | `#8E9BA3` | S41–S52 | the seven days and the call. Deepest point. |
-| `WARM` | `#E8C79A` | S53–S65 | the turn. **Do not warm it before S53.** |
-| Accent | `#C4553F` | sparingly | the only saturated colour in the film. Use ≤6 times. |
+| `PALE` | `#EFEAE2` | S01–S12, S64–S66 | the flat, hollow *after*. Not warm — empty. |
+| `COOL` | `#C9D2D4` | S13–S37 | the body, and the ward |
+| `DEEP` | `#8E9BA3` | S38–S49 | survivor guilt and 3am. Lowest point. |
+| `WARM` | `#E8C79A` | S50–S63 | the turn. **Never before S50.** |
+| Accent | `#C4553F` | — | the wristband, and nothing else. Exactly 5 uses. |
 
-Each prompt names its state. **Obey it.** Warming early throws away the only visual arc
-the video has.
+**The accent red is reserved for the wristband.** It is the only saturated colour in 13 minutes,
+it appears in S02, S11, S49, S61 and S66, and that scarcity is what makes the final frame land.
 
 ---
 
 # VOICEOVER + SCENES
 
----
-## COLD OPEN — 0:00–1:12
----
-
-**S01** · 0:00 · **VO:** "In [MONTH], I made a dua for a long life."
-**CAP:** I asked for a long life
-**IMG:** `CREAM #F5EFE0 background.` [HIM] sitting alone on a plain prayer mat in an empty room, hands raised in dua at chest height, palms up, eyes closed, calm expression, seen from a low three-quarter angle. Room almost bare — one window shape, flat pale wall. He sits right of centre, wide empty cream space on the left.
-
-**S02** · 0:06 · **VO:** "Not a good life. Not an easy one. A long one."
-**IMG:** `CREAM.` Extreme close-up of [HIM]'s two open cupped hands raised in dua, filling the lower right of frame, fingers relaxed, warm light skin, flat clean shapes. Nothing else in frame. Large empty cream area upper left.
-
-**S03** · 0:12 · **VO:** "I remember being a little embarrassed by how simple it was."
-**IMG:** `CREAM.` [HIM] standing alone in a doorway of a plain room, one hand rubbing the back of his neck, slight sheepish downward glance, shoulders low. Doorway frame on the right third, empty cream wall filling the left two-thirds.
-
-**S04** · 0:19 · **VO:** "Four days later, a doctor pointed at a screen and used the word cancer."
-**CAP:** 4 days later
-**IMG:** `COOL #C9D2D4 background.` [HIM] seated in a small consultation chair seen from behind and slightly to the side, facing a simple flat wall-mounted screen showing only abstract pale grey shapes, a doctor's arm entering frame from the right pointing at it. He is small in the frame, lower left. Cold flat grey-blue walls. No readable text on the screen.
-
-**S05** · 0:27 · **VO:** "Pancreatic."
-**CAP:** Pancreatic
-**IMG:** `COOL.` Very tight close-up of [HIM]'s face, front on, completely still — small dot eyes open, mouth a flat neutral line, no expression at all. Face fills the right half of frame. Flat cold grey-blue empty space on the left. Absolutely no drama in the drawing.
-
-**S06** · 0:33 · **VO:** "And the first thing I thought — before the fear, before anything — was: I just asked for the opposite of this."
-**IMG:** `COOL.` Split composition: on the left [HIM] small, sitting in dua with hands raised, drawn in pale washed-out flat tones; on the right the same [HIM] sitting upright in a clinic chair in full colour. A thin dark vertical line separating them. Empty space above both.
-
-**S07** · 0:44 · **VO:** "This is the whole story. All of it, in one place, in order."
-**IMG:** `COOL.` Wide flat side-on view of [HIM] walking left to right along a long empty corridor, small in the frame, corridor lines converging to a vanishing point ahead of him. Huge empty ceiling space above. Cold flat palette.
-
-**S08** · 0:52 · **VO:** "I'm not going to tell you it was beautiful. It wasn't."
-**IMG:** `COOL.` [HIM] sitting on the edge of a hospital bed at night, side view, shoulders rounded forward, hands flat on the mattress either side of him, looking at the floor. Bed on the right third. Large flat dark-cool empty area left.
-
-**S09** · 1:01 · **VO:** "But by the end I'll tell you what I think that dua actually did. Because it wasn't ignored. And it wasn't answered the way I asked."
-**CAP:** it wasn't ignored
-**IMG:** `COOL.` [HIM] standing alone facing away from the viewer, looking up at a plain wall on which one small warm amber square of window-light rests — the ONLY warm element in an otherwise entirely cold grey-blue image. He is small, lower left; the light patch upper right.
+Bracketed `[...]` = a fact only you know. Replace or cut. Everything else is craft — if a line
+isn't true, the line is wrong, change it. Every beat below is drawn from a Short you have
+already published, so almost nothing here needs inventing.
 
 ---
-## PART 1 — THE PRAYER · 1:12–2:50
+## COLD OPEN · 0:00–1:05 — *extends "The wristband in my drawer" (1.7K)*
 ---
 
-**S10** · 1:12 · **VO:** "I want you to understand how ordinary that week was."
-**IMG:** `CREAM.` [HIM] at a small kitchen table eating breakfast alone, mid-morning, relaxed posture, one hand on a mug. Table on the left third, wide empty cream wall right.
+**S01** · 0:00 · **VO:** "There's a drawer in my kitchen I open most mornings."
+**CAP:** there's a drawer
+**IMG:** `PALE #EFEAE2.` [HIM] standing side-on at a plain kitchen counter, one hand resting on a closed drawer handle, not pulling it, looking down at it. Him right of centre, wide empty pale space left.
 
-**S11** · 1:19 · **VO:** "I wasn't ill. I want to be very clear about that. I felt completely fine."
-**CAP:** I felt completely fine
-**IMG:** `CREAM.` [HIM] standing in a bathroom in front of a plain mirror, brushing his teeth, ordinary neutral expression, looking at his own reflection. Mirror and figure right of centre, flat empty cream wall left.
+**S02** · 0:06 · **VO:** "There's a hospital wristband in it. Cut off, kept."
+**IMG:** `PALE.` Close-up of an open shallow drawer from directly above, empty except for a single thin accent-red `#C4553F` hospital wristband lying flat, cut through at one end. Drawer occupies the right two-thirds. **First of only 5 uses of the accent colour.**
 
-**S12** · 1:28 · **VO:** "[BRIEF LINE — the one small symptom you dismissed, if there was one. If there wasn't, say so: 'There was nothing. Not one sign.' That is a stronger line.]"
-**IMG:** `CREAM.` [HIM] standing side-on, one flat hand resting casually against his own upper abdomen, glancing down at it without concern, half-turned away as if already moving on. Empty cream space filling the left two-thirds.
+**S03** · 0:13 · **VO:** "I don't look at it for comfort. I look at it to check something."
+**IMG:** `PALE.` [HIM] looking down into the open drawer, face calm and neutral, one hand still on the handle. Him left third, empty pale wall right.
 
-**S13** · 1:38 · **VO:** "And then that night, I prayed for a long life."
-**IMG:** `COOL.` [HIM] on the prayer mat in a dark room, seen from directly behind, hands raised, small in a large empty frame. Only a faint pale rectangle of window light on the wall ahead of him. Deep empty space all around.
+**S04** · 0:21 · **VO:** "Eleven months ago a doctor said the words I had spent a year praying for. He said: we think it's gone."
+**CAP:** "we think it's gone"
+**IMG:** `PALE.` [HIM] `[THIN]` seated in a consultation chair facing a doctor's flat standing figure, both drawn small, an enormous empty pale wall above and around them. The room is far too big for the two of them.
 
-**S14** · 1:45 · **VO:** "People ask me now if I regret it. If I think I brought this on."
-**IMG:** `COOL.` Close-up of [HIM]'s face in three-quarter view, one eyebrow slightly raised, mouth flat, a guarded thinking expression. Face left third, wide empty cold space right.
+**S05** · 0:32 · **VO:** "And I want to tell you honestly what that felt like. Because it is not what I expected, and nobody warned me."
+**IMG:** `PALE.` Close-up of [HIM]'s `[THIN]` face, front on, completely neutral — dot eyes open, mouth a flat straight line. No smile, no tears. Face right half, empty pale space left.
 
-**S15** · 1:53 · **VO:** "I don't. But I did. For about a month, I did."
-**CAP:** for about a month, I did
-**IMG:** `COOL.` [HIM] lying awake flat on his back in bed at night, eyes open, arms straight at his sides on top of the covers, seen from directly above. Bed diagonal across the lower frame, large empty dark-cool area upper right.
+**S06** · 0:42 · **VO:** "I walked out to the car park and I felt nothing at all."
+**CAP:** I felt nothing at all
+**IMG:** `PALE.` `[THIN]` [HIM] standing alone in a wide empty car park, arms at his sides, one car shape far behind him, looking at nothing. He is small, lower right. Vast empty pale sky and tarmac.
 
-**S16** · 2:02 · **VO:** "Because when you ask for one thing and receive its exact opposite four days later, the mind does something cruel. It looks for the mistake."
-**IMG:** `COOL.` [HIM] seated at a table, head down, both hands pressed flat against his own temples, elbows on the table. Seen side-on, right of frame. Wide flat empty cold wall left.
+**S07** · 0:50 · **VO:** "I had built a whole year around one sentence, and when it came I couldn't feel it."
+**IMG:** `PALE.` `[THIN]` [HIM] sitting in a stationary car, seen from the side through the window frame, both hands on the wheel, engine not started, staring straight ahead. Car right of centre, empty pale space left.
 
-**S17** · 2:14 · **VO:** "It asks: did I say it wrong. Did I want it too much."
-**CAP:** did I say it wrong?
-**IMG:** `COOL.` [HIM]'s cupped hands raised in dua again, but drawn very small and low in a very large empty cold grey-blue frame, dwarfed by the space above them. Same hand shapes as S02, radically different scale.
-
-**S18** · 2:22 · **VO:** "I'll come back to that. It took nine months to answer and I'm not going to answer it cheaply here."
-**IMG:** `COOL.` Flat side-on view of [HIM] walking away from the viewer down a long corridor, already small and getting smaller, corridor converging ahead. Vast empty space above him.
-
-**S19** · 2:32 · **VO:** "First I have to take you through the four days. Because that is where most of you are right now."
-**CAP:** the four days
-**IMG:** `COOL.` A plain flat wall calendar, four consecutive date squares marked with simple hand-drawn crosses in accent red `#C4553F`, the fifth square blank. Calendar occupies the right third, deep empty cold wall to the left. Red is the only saturated colour. No readable numbers.
-
-**S20** · 2:42 · **VO:** "Waiting on a scan. Waiting on a call. Told nothing, and told it politely."
-**IMG:** `COOL.` [HIM] sitting alone in a row of empty waiting-room chairs, every other chair vacant, hands folded in his lap, looking straight ahead at nothing. He is small, lower right. Long empty row of chairs and flat wall stretching left.
+**S08** · 0:59 · **VO:** "This video is about the part after. The part I couldn't find anywhere when I went looking."
+**IMG:** `PALE.` `[THIN]` [HIM] seen from behind, standing at the edge of a long flat empty road that stretches to a vanishing point. Him small, lower left. Huge empty pale sky.
 
 ---
-## PART 2 — THE SCAN · 2:50–4:40
+## ACT 1 — THE ANTICLIMAX · 1:05–2:40 — *extends "They said the cancer was gone" (1.3K)*
 ---
 
-**S21** · 2:50 · **VO:** "The scan was booked as routine. That word did a lot of work."
-**CAP:** "routine"
-**IMG:** `COOL.` [HIM] standing at a reception desk, side view, holding a small plain paper slip, a receptionist's flat silhouette behind the counter. He stands right of centre, wide empty cold lobby space to the left.
+**S09** · 1:05 · **VO:** "Everybody around me was celebrating. That was the strangest week of the whole thing."
+**IMG:** `PALE.` `[THIN]` [HIM] standing still in the centre of a small room while three flat silhouette figures around him are mid-celebration, arms raised. He is the only one not moving. Him centred, silhouettes around, empty space above.
 
-**S22** · 2:59 · **VO:** "I went alone. I want to say that plainly, because if you are going alone this week — you're not the only one who did."
-**CAP:** I went alone
-**IMG:** `COOL.` Very wide flat shot of [HIM] alone in the exact centre of an enormous empty waiting room, rows of vacant chairs radiating around him, ceiling high above. He is tiny. Maximum negative space in every direction.
+**S10** · 1:15 · **VO:** "They had waited a year to be happy for me and I could not join in. I performed it. I was good at it by then."
+**CAP:** I performed it
+**IMG:** `PALE.` Close-up of `[THIN]` [HIM]'s face wearing a small polite closed-mouth smile, but the dot eyes flat and unmoving. The mismatch between mouth and eyes is the entire image. Face left third, empty pale right.
 
-**S23** · 3:11 · **VO:** "You lie down. They tell you not to move. And then it's very quiet."
-**IMG:** `COOL.` [HIM] lying flat on his back on a simple scanner bed, arms at his sides, eyes closed, seen from a high wide angle. A plain smooth ring shape around the bed — no equipment detail, no cables, no branding. Cold flat palette, huge empty floor space around.
+**S11** · 1:27 · **VO:** "That night I cut the wristband off and I didn't throw it away."
+**IMG:** `PALE.` Close-up of `[THIN]` [HIM]'s two hands, one holding small scissors, cutting through the thin accent-red `#C4553F` wristband on his own wrist. Hands fill the lower right, empty pale space upper left. **Accent use 2 of 5.**
 
-**S24** · 3:21 · **VO:** "I made dua again in there. Same one. A long life."
-**IMG:** `COOL.` Tight close-up of [HIM]'s face lying down, eyes closed, mouth very slightly moving in silent prayer, head resting flat. Face fills the lower left, empty cold space upper right.
+**S12** · 1:36 · **VO:** "I have thought about why for eleven months. I'll tell you at the end, because it took me the whole story to work it out."
+**IMG:** `PALE.` The drawer from S02, now closed, [HIM] `[THIN]`'s hand just leaving the handle. Drawer and hand right third, empty pale space left.
 
-**S25** · 3:30 · **VO:** "Afterwards the technician was kind to me in a way that told me everything."
-**CAP:** she was too kind
-**IMG:** `COOL.` [HIM] sitting up on the edge of the scanner bed, a technician's flat figure standing beside him with a hand offered gently toward his shoulder, not quite touching. He is looking at her hand, not her face. Both right of centre, empty cold space left.
+**S13** · 1:47 · **VO:** "Here's the thing nobody says. Being told you're clear doesn't end it. It just takes away the thing you were allowed to be scared of."
+**CAP:** it doesn't end it
+**IMG:** `COOL #C9D2D4.` `[THIN]` [HIM] standing in an empty room, arms at his sides, while a large plain flat shape that had been beside him is drawn as a faint outline only — present, then gone. Him right, outline shape left, empty cool wall between.
 
-**S26** · 3:41 · **VO:** "Nobody is that gentle about nothing."
-**IMG:** `COOL.` Extreme close-up of the technician's flat open hand hovering just above [HIM]'s slate-blue shoulder, not touching. Only shoulder and hand in frame, filling the right half. Empty cold space left.
+**S14** · 2:00 · **VO:** "For a year I had a job. Get through it. Then the job ended and I still couldn't eat a plate of rice in under an hour."
+**IMG:** `COOL.` `[THIN]` [HIM] seated alone at a table looking down at a single plain plate of rice, fork in hand, not eating. Him and table right of centre, wide empty cool space left.
 
-**S27** · 3:48 · **VO:** "They brought the appointment forward. That was the second signal."
-**IMG:** `COOL.` The same wall calendar from S19, but a hand is crossing out a later square and drawing an accent-red `#C4553F` circle around a much earlier one. Calendar right third, deep empty cold wall left.
+**S15** · 2:12 · **VO:** "The cancer was gone. The body it happened to was still mine."
+**CAP:** the body was still mine
+**IMG:** `COOL.` `[THIN]` [HIM] standing side-on in front of a plain mirror, looking at his own reflection, one hand flat against his own stomach. No scar shown, no skin detail. Him and mirror left third, empty cool wall right.
 
-**S28** · 3:57 · **VO:** "Four days after I asked for a long life, I sat down in a small room with a doctor who did not sit down."
-**CAP:** he didn't sit down
-**IMG:** `COOL.` Small consultation room. [HIM] seated in a low chair on the left, looking up; a doctor's flat figure standing over him on the right, remaining standing. The height difference is the whole composition. Empty flat wall above them both.
-
-**S29** · 4:08 · **VO:** "He turned the screen toward me. And he used the word."
-**IMG:** `COOL.` A plain flat monitor being rotated on its stand toward the viewer, showing only soft abstract pale grey shapes, no readable detail. The screen fills the right third. [HIM] is a small back-of-head silhouette bottom left.
-
-**S30** · 4:17 · **VO:** "Pancreatic cancer."
-**CAP:** Pancreatic cancer
-**IMG:** `COOL.` Repeat of S05 exactly — very tight close-up of [HIM]'s face, front on, flat neutral, dot eyes, mouth a straight line. Face right half, empty cold space left. Identical framing to S05 on purpose.
-
-**S31** · 4:24 · **VO:** "And here is the part I've already made a whole video about, because it confused me for months. I felt nothing."
-**CAP:** I felt nothing
-**IMG:** `COOL.` [HIM] seated in the consultation chair, completely still, hands flat on his own knees, face blank, while the room around him is drawn slightly tilted off-axis — the room leans, he does not. Him centred, tilted flat walls around.
-
-**S32** · 4:35 · **VO:** "No tears. No panic. I asked a practical question about parking."
-**CAP:** I asked about parking
-**IMG:** `COOL.` [HIM] standing in a car park, side view, holding a small flat parking ticket up and looking at it with an ordinary neutral expression, one car shape behind him. He is right of centre, wide empty cold sky and tarmac left.
+**S16** · 2:24 · **VO:** "And nobody claps for that part. There's no appointment where they tell you the rest of it is over."
+**IMG:** `COOL.` `[THIN]` [HIM] sitting alone in a row of empty waiting-room chairs, no reception desk, no staff, nobody else. He is small, lower right, long empty row stretching left.
 
 ---
-## PART 3 — TELLING THEM · 4:40–6:20
+## ACT 2 — THE BODY · 2:40–5:00 — *extends "an hour to eat rice" · "couldn't stand to pray for 6 weeks" (1.1K) · "the first drive" · "I didn't fast Ramadan"*
 ---
 
-**S33** · 4:45 · **VO:** "The numbness lasted until I had to say it out loud to someone who loved me."
-**IMG:** `COOL.` [HIM] standing alone in a hallway holding a phone down at his side, not raised, looking at a closed door ahead of him. Him left third, door right, empty cold hallway wall between.
+**S17** · 2:40 · **VO:** "Let me be specific, because specific is the only thing that helped me when I was reading other people's."
+**IMG:** `COOL.` A plain flat notebook open on a table, filled with short simple horizontal line-marks standing in for handwriting, no readable letters. Notebook right third, empty cool table left.
 
-**S34** · 4:54 · **VO:** "That is when it arrived. Not in the room with the doctor. In my own hallway, holding a phone."
-**CAP:** it arrived in the hallway
-**IMG:** `COOL.` Tight close-up of [HIM]'s hand gripping a dark phone very tightly at his side, knuckles drawn slightly lighter from pressure. Hand and phone fill the lower right. Large empty cold space upper left.
+**S18** · 2:50 · **VO:** "After a Whipple, your body no longer does something it has always done for you without asking."
+**IMG:** `COOL.` `[THIN]` [HIM] standing side-on, one hand resting flat on his own upper abdomen, looking down calmly. No anatomy, no medical detail. Him right of centre, empty cool space left.
 
-**S35** · 5:05 · **VO:** "[YOUR LINE — who you told first, and why them. One sentence.]"
-**IMG:** `COOL.` [HIM] seen from behind, seated on a sofa beside one other figure drawn as a simple flat silhouette with no facial detail. They are not looking at each other; both face forward. Sofa lower centre, empty flat wall above.
+**S19** · 3:01 · **VO:** "So eating stopped being a thing I did and became a thing I managed. An hour, for a plate of rice."
+**CAP:** an hour. for rice.
+**IMG:** `COOL.` Four small identical panels in a row, each showing `[THIN]` [HIM] at the same table with the same plate, barely changed between them. Repetitive and flat. Wide empty cool space above the row.
 
-**S36** · 5:15 · **VO:** "I had planned the sentence. I had it ready for two hours. And then I said something completely different."
-**IMG:** `COOL.` A plain sheet of paper on a table with several lines of scribbled-out handwriting, all struck through — abstract wavy line marks only, no readable letters. Paper right third, empty cold table surface left.
+**S20** · 3:14 · **VO:** "[BRIEF LINE — one concrete daily thing your body still won't do. Only what you're comfortable saying.]"
+**IMG:** `COOL.` `[THIN]` [HIM] standing in a kitchen holding a plain glass, paused mid-motion, looking at it. Him left third, empty cool space right.
 
-**S37** · 5:27 · **VO:** "Here is the thing nobody warns you about. You are not the one who breaks. You watch someone else break, and you are the one who has to be calm."
-**CAP:** you don't break. you watch.
-**IMG:** `COOL.` [HIM] sitting upright and composed with one hand placed steady on the shoulder of a flat silhouette figure whose head is bowed low beside him. His posture is straight; theirs is collapsed. Both right of centre, empty cold space left.
+**S21** · 3:25 · **VO:** "But the one that broke me wasn't food. For six weeks I could not stand up to pray."
+**CAP:** 6 weeks
+**IMG:** `COOL.` `[THIN]` [HIM] sitting on the edge of a bed beside a prayer mat laid out on the floor, looking at the mat, not moving toward it. Him and bed right, mat lower centre, empty cool space left.
 
-**S38** · 5:42 · **VO:** "So you learn to carry two things at once. The illness, and everyone's fear of it."
-**IMG:** `COOL.` Flat side-on view of [HIM] walking left to right carrying two plain heavy boxes stacked awkwardly in his arms, obscuring his chest but not his face. He walks right of centre, long empty cold floor and wall behind.
+**S22** · 3:37 · **VO:** "I prayed sitting down. Which is allowed. Everyone told me it was allowed."
+**IMG:** `COOL.` `[THIN]` [HIM] sitting upright on a plain chair on the prayer mat, hands open in prayer, facing forward. Him right of centre, wide empty cool space left.
 
-**S39** · 5:53 · **VO:** "I got very good at the phone voice. Steady, warm, slightly upbeat. I hated it."
-**CAP:** the phone voice
-**IMG:** `COOL.` Close-up of [HIM]'s face in profile holding a phone to his ear, mouth drawn in a small polite upward curve, but the eyes flat and unsmiling. The mismatch between mouth and eyes is the whole point. Face right, empty cold space left.
+**S23** · 3:47 · **VO:** "Knowing it's allowed and feeling it are different rooms. I knew I wasn't sinning. I still felt like I was watching my own religion from a chair."
+**CAP:** allowed. and still.
+**IMG:** `COOL.` Wide flat view of `[THIN]` [HIM] seated on a chair on the left, and on the right an empty prayer mat on the floor with a faint pale outline of a standing figure on it. Large empty cool space between them.
 
-**S40** · 6:05 · **VO:** "And then they told me there would be more tests. And a wait."
-**IMG:** `COOL.` [HIM] standing at the end of a very long empty corridor, tiny, facing away. The corridor stretches the full width of the frame. Maximum emptiness. This is the last COOL scene.
+**S24** · 4:03 · **VO:** "[YOUR LINE — the lowest thought you had about that. One sentence. If it was anger, say anger.]"
+**IMG:** `COOL.` Close-up of `[THIN]` [HIM]'s face in three-quarter view, jaw set, eyes down, no tears — a closed, hard expression. Face right half, empty cool space left.
 
----
-## PART 4 — SEVEN DAYS · 6:20–8:10
----
+**S25** · 4:14 · **VO:** "Then Ramadan came and I did not fast a single day of it."
+**CAP:** not one day
+**IMG:** `COOL.` `[THIN]` [HIM] sitting alone at a table with a plain plate of food in front of him in daylight, while through a window behind him the sky is drawn in evening tones. Him right, window left, empty cool wall between.
 
-**S41** · 6:20 · **VO:** "Seven days."
-**CAP:** 7 days
-**IMG:** `DEEP #8E9BA3 background.` The wall calendar again, now with seven consecutive squares crossed out in heavy accent-red `#C4553F`, the strokes uneven and pressed hard, the eighth square blank. Calendar right third, deep grey-blue empty wall left. Noticeably darker than S19.
+**S26** · 4:25 · **VO:** "Thirty years of my life had a shape and that year it didn't. I ate at noon and felt like a stranger in my own house."
+**IMG:** `COOL.` `[THIN]` [HIM] standing alone in the middle of his own living room, arms at his sides, everything around him ordinary and unchanged, looking around as if it were somebody else's. Him centred, generous empty cool space either side.
 
-**S42** · 6:26 · **VO:** "I have made a whole chapter about these seven days too, and I still don't think I got them right."
-**IMG:** `DEEP.` [HIM] sitting on the floor with his back against a wall, knees up, arms resting on them, looking at nothing. He is lower left, huge empty dark wall filling the rest.
+**S27** · 4:38 · **VO:** "Here's what I'd say to you if you're there now. Your deen did not get smaller. Your body did."
+**CAP:** your deen didn't get smaller
+**IMG:** `COOL.` Two plain shapes side by side on a flat wall: one large and unchanged, one visibly smaller. Simple, geometric, no faces, no text. Shapes right two-thirds, empty cool space left.
 
-**S43** · 6:36 · **VO:** "Because nothing happens in them. That is what makes them the worst part."
-**CAP:** nothing happens. that's the worst part.
-**IMG:** `DEEP.` Four small identical panels in a row across the frame, each showing [HIM] in exactly the same seated position on the same sofa, unchanged. Uniform, repetitive, flat. Wide empty dark space above the row.
-
-**S44** · 6:47 · **VO:** "You cannot fight anything. There is nothing to fight yet. You can only wait, and be a person while you wait."
-**IMG:** `DEEP.` [HIM] standing at a window looking out, hands hanging at his sides, seen from behind and to the side. Window right third, vast flat dark interior wall left.
-
-**S45** · 6:59 · **VO:** "I prayed a lot that week. But I noticed something about how I was praying."
-**IMG:** `DEEP.` [HIM] on the prayer mat, hands raised, but drawn from a distant high angle so he is very small in a very large dark room. Mat and figure lower centre, enormous empty space above.
-
-**S46** · 7:09 · **VO:** "I was negotiating. I was making an offer."
-**CAP:** I was negotiating
-**IMG:** `DEEP.` Close-up of [HIM]'s raised hands in dua, but the fingers are tense and slightly curled rather than relaxed and open — the same gesture, held wrong. Hands fill the lower right, empty dark space upper left.
-
-**S47** · 7:18 · **VO:** "I had rehearsed both answers. I said Alhamdulillah out loud, to an empty room, to practise."
-**CAP:** practising Alhamdulillah
-**IMG:** `DEEP.` Wide flat interior of a completely empty room, prayer mat laid out at the centre, nobody in it at all. Just the room and the mat. Enormous empty dark space. First scene in the film with no character.
-
-**S48** · 7:31 · **VO:** "You cannot practise this."
-**CAP:** you can't practise this
-**IMG:** `DEEP.` The same empty room from S47, identical framing, but now [HIM] is standing alone in the middle of it, arms at his sides, facing the viewer, saying nothing. Exact same composition, character added.
-
-**S49** · 7:39 · **VO:** "Day seven, the phone rang."
-**IMG:** `DEEP.` A dark phone lying face-down on a plain pale table, alone, nothing else in frame. Phone lower right third, huge empty dark table surface upper left.
-
-**S50** · 7:46 · **VO:** "I let it ring twice."
-**CAP:** I let it ring twice
-**IMG:** `DEEP.` [HIM]'s open hand resting flat and completely still on the table beside the ringing phone — near it, but not reaching for it. Hand and phone lower right, empty dark space upper left.
-
-**S51** · 7:53 · **VO:** "She said my name. Then she said: are you somewhere you can sit down."
-**CAP:** "are you somewhere you can sit down?"
-**IMG:** `DEEP.` Very tight close-up of [HIM]'s face in profile with the phone at his ear, eyes wide open and fixed, mouth slightly parted. Face fills the right half, empty dark space left.
-
-**S52** · 8:03 · **VO:** "Nobody asks that before good news."
-**IMG:** `DEEP.` [HIM] slowly lowering himself to sit down on the edge of a chair, phone still at his ear, mid-motion, one hand reaching back for the seat. Right of centre, empty dark room left. Darkest image in the film.
+**S28** · 4:50 · **VO:** "The chair is not a demotion. It took me six weeks and a lot of arguing with myself to believe that."
+**IMG:** `COOL.` `[THIN]` [HIM] seated on the chair on the prayer mat, hands open, and this time drawn calm and settled, shoulders down. Him right of centre, empty cool space left. Same composition as S22, different posture.
 
 ---
-## PART 5 — THE TURN · 8:10–10:20
+## ACT 3 — THE WARD · 5:00–6:40 — *extends "22 chairs" (973) · "things I googled" (1K) · "the paperwork" (904)*
 ---
 
-**S53** · 8:12 · **VO:** "[YOUR LINE 1 — what she said. One sentence, as close to how it was actually said as you can bear. Do not soften it and do not dramatise it.]"
-**IMG:** `WARM #E8C79A background — the grade turns here and never goes back.` [HIM] seated, phone at his ear, face completely still, listening. Warm sand-toned wall behind him for the first time in the film. He is right of centre, wide warm empty space left.
+**S29** · 5:00 · **VO:** "I want to take you into the room, because I think people picture it wrong."
+**IMG:** `COOL.` Wide flat view of a treatment room: a neat semicircle of plain identical chairs, all empty, no equipment, no people. Chairs lower two-thirds, wide empty cool wall above.
 
-**S54** · 8:24 · **VO:** "[YOUR LINE 2 — what you said back. If you said nothing, say that. "I said nothing" is stronger than anything that could be written for you.]"
-**IMG:** `WARM.` Tight close-up of [HIM]'s face, mouth closed, eyes open and steady, phone edge just visible at the frame's edge. Warm background. Face left third, empty warm space right.
+**S30** · 5:10 · **VO:** "Twenty-two chairs. All full. And nobody asks anybody what they've got."
+**CAP:** 22 chairs
+**IMG:** `COOL.` The same room, now every chair occupied by flat silhouette figures with no facial detail, all facing forward, none turned toward each other. `[THIN]` [HIM] is the one figure drawn in full colour, right of centre.
 
-**S55** · 8:34 · **VO:** "[YOUR LINE 3 — the first true feeling. Not the tidy one. If it was numbness, or relief you felt guilty about, or anger — that is the line. The channel's third-best video is called 'Why I Felt Nothing.' Honesty is what works here.]"
-**IMG:** `WARM.` [HIM] sitting on the floor with his back against the chair he had been sitting on, phone face-down on the floor beside him, both hands open and loose in his lap, staring straight ahead. Lower right, warm empty space upper left.
+**S31** · 5:21 · **VO:** "You'd think it would be the one place you could. It's the one place you don't. It's the only unspoken rule and everybody keeps it."
+**IMG:** `COOL.` Close-up of two plain chair armrests side by side with a small gap between them, one hand resting on each, not touching. Armrests fill the lower frame, empty cool space above.
 
-**S56** · 8:48 · **VO:** "Then surgery. Ten hours of it."
-**CAP:** 10 hours
-**IMG:** `WARM.` Flat wide view of [HIM] lying on a simple bed being wheeled left to right along a corridor, seen from the side, arms at his sides, eyes closed, calm. No equipment, no tubes, no medical detail at all. Bed lower centre, long warm corridor wall above.
+**S32** · 5:34 · **VO:** "You talk about parking. About the weather. About the coffee machine on the second floor."
+**IMG:** `COOL.` `[THIN]` [HIM] seated beside one silhouette figure, both facing forward, small polite expressions, clearly mid-small-talk. Both right of centre, empty cool space left.
 
-**S57** · 8:56 · **VO:** "I remember one thing from before. Not fear. A very simple thought: this is now completely out of my hands."
-**CAP:** completely out of my hands
-**IMG:** `WARM.` Close-up of [HIM]'s two hands lying open, palms up, completely relaxed and still on a pale sheet either side of him. Same hand shapes as the dua in S02 — but resting, not raised. Hands centred low, warm empty space above.
+**S33** · 5:44 · **VO:** "And then one week a chair is empty and nobody says anything about that either."
+**CAP:** and then a chair is empty
+**IMG:** `COOL.` The same semicircle of chairs, all occupied by silhouettes except one clearly empty chair. Nobody is looking at it. `[THIN]` [HIM] in colour, right of centre, facing forward.
 
-**S58** · 9:09 · **VO:** "Which is where they had always been. I had just never noticed."
-**IMG:** `WARM.` Split composition echoing S06: on the left [HIM] small with hands raised in dua; on the right the same [HIM] lying with hands open and resting. Both drawn in equal warm tones this time — no pale side. Thin dark line between.
+**S34** · 5:57 · **VO:** "The week I was diagnosed I googled things I will not repeat here. You know the ones. Survival, and then a number, and then a year."
+**IMG:** `COOL.` `[THIN]` [HIM] lying in bed at night, face lit from below by a phone held above him, expression flat. Bed lower right, huge empty dark-cool space upper left. No readable screen content.
 
-**S59** · 9:19 · **VO:** "Ten hours later I woke up. And the first word I said was Alhamdulillah."
-**CAP:** Alhamdulillah
-**IMG:** `WARM.` [HIM] lying in a recovery bed, eyes just opening, mouth barely moving, a warm rectangle of window light falling across the bed. No tubes, no medical detail. Bed lower right, warm empty room left.
+**S35** · 6:09 · **VO:** "Don't. Or do, because you're going to anyway. But know that the number you find is old, and it isn't you."
+**CAP:** the number isn't you
+**IMG:** `COOL.` A single plain flat shape on a wall, drawn faint and half-erased at its edges. Simple, geometric, no text or digits. Shape right third, empty cool wall left.
 
-**S60** · 9:31 · **VO:** "Not because I am pious. Because it was the only word I had practised."
-**CAP:** it was the only word I'd practised
-**IMG:** `WARM.` Callback to S47: the same empty room with the prayer mat, same framing, but the whole image now warm-toned instead of dark. Still empty of people. Warm sand walls.
+**S36** · 6:22 · **VO:** "And nobody warns you about the paperwork. I spent more hours on forms than in surgery."
+**IMG:** `COOL.` `[THIN]` [HIM] seated at a table almost hidden behind a tall untidy stack of plain papers, only his head and shoulders visible above it. Him and stack right of centre, empty cool space left.
 
-**S61** · 9:41 · **VO:** "That is what the practising was for. I thought I was rehearsing gratitude for good news. I was building the only sentence I'd be able to reach for with nothing left."
-**IMG:** `WARM.` [HIM] standing, holding a single small warm-toned brick-shaped block, placing it onto a low, simple, already-built wall of identical blocks. Him right of centre, warm empty space left.
-
-**S62** · 9:57 · **VO:** "[BRIEF LINE — where you are now, medically, in one plain sentence. Only what you are comfortable saying publicly. If you would rather not say, say: 'I'm not going to give you a number, because I don't live in the number.']"
-**IMG:** `WARM.` [HIM] standing at a window in warm daylight, side-on, one hand resting flat on the sill, looking out with a calm neutral expression. Window and figure left third, wide warm empty wall right.
-
-**S63** · 10:09 · **VO:** "So. The dua."
-**IMG:** `WARM.` Extreme close-up of [HIM]'s open cupped hands raised in dua — the exact framing of S02, now in warm tones. Hands lower right, warm empty space upper left.
+**S37** · 6:32 · **VO:** "There is something almost funny about that. I laughed at it once and it turned into something else halfway through."
+**IMG:** `COOL.` Close-up of `[THIN]` [HIM]'s face mid-laugh, mouth open, but the eyes wet and unsmiling — the expression caught in the exact moment it changes. Face right half, empty cool space left.
 
 ---
-## PART 6 — WHAT THE PRAYER ACTUALLY DID · 10:20–13:00
+## ACT 4 — THE ONE I STILL CAN'T HOLD · 6:40–8:30 — *extends "I survived. He didn't." (1.2K)*
 ---
 
-**S64** · 10:20 · **VO:** "I asked for a long life. Four days later I was given the exact opposite. For a long time I could only read that one way."
-**IMG:** `WARM.` The S06 split composition returns a third time: praying [HIM] on the left, clinic-chair [HIM] on the right, both warm-toned now, and the thin dividing line between them is drawn broken and incomplete.
+**S38** · 6:40 · **VO:** "There was a man in the chair next to mine. [FIRST NAME OR 'I'll call him H'.]"
+**CAP:** the chair next to mine
+**IMG:** `DEEP #8E9BA3.` Two plain chairs side by side, `[THIN]` [HIM] in one drawn in full colour, a single silhouette figure in the other. Everything else empty. Both right of centre, deep grey-blue space left.
 
-**S65** · 10:34 · **VO:** "Here is what I think now. And I want to be careful, because I am not a scholar and this is not a lesson. It's just what nine months did to me."
-**IMG:** `WARM.` [HIM] seated on a simple chair facing the viewer directly, hands loosely clasped, calm open posture, speaking. Him right of centre, wide warm empty space left. The most direct-address composition in the film.
+**S39** · 6:50 · **VO:** "We talked about parking, obviously. For four months."
+**IMG:** `DEEP.` The same two chairs, four small identical panels in a row showing the pair sitting together unchanged. Repetitive and flat. Empty deep space above.
 
-**S66** · 10:48 · **VO:** "Before [MONTH], I could not tell you what I did in the whole of last year. Not one specific day."
-**CAP:** I couldn't remember a single day
-**IMG:** `CREAM #F5EFE0.` Twelve small identical blank cream squares in a neat grid, all completely empty, no marks on any of them. Grid occupies the right two-thirds, empty cream space left.
+**S40** · 6:59 · **VO:** "[BRIEF LINE — one small, specific, ordinary thing about him. A habit, a phrase, what he brought with him. One detail is worth a paragraph.]"
+**IMG:** `DEEP.` Close-up of a single small ordinary personal object resting on a chair armrest — a plain flask, or a folded newspaper. Object right third, empty deep space left. No people.
 
-**S67** · 11:00 · **VO:** "I had years, and almost none of it was in my hands. It went past me. I was present for maybe a week of it."
-**IMG:** `CREAM.` Flat wide view of [HIM] standing still on the right while a long line of identical faint pale silhouettes of himself stretches away to the left, blurring into flat shapes — days walking past him. He is the only solid figure.
+**S41** · 7:11 · **VO:** "He was doing better than me. Everyone said so. He was doing better than me right up until he wasn't."
+**CAP:** he was doing better than me
+**IMG:** `DEEP.` The two chairs again, but now the second chair is empty and `[THIN]` [HIM] is sitting alone, looking straight ahead, not at the empty chair. Him right of centre, empty deep space left.
 
-**S68** · 11:14 · **VO:** "Since that scan I can tell you about every single day. Every one. Including the bad ones. Especially the bad ones."
-**CAP:** now I remember every day
-**IMG:** `CREAM.` The same twelve-square grid from S66, but every square now carries a small distinct simple hand-drawn mark — a different tiny shape in each. Full, varied, deliberate. Grid right two-thirds, empty cream left.
+**S42** · 7:24 · **VO:** "I found out the way you find out. Somebody didn't say his name."
+**IMG:** `DEEP.` `[THIN]` [HIM] standing facing a nurse's flat silhouette, whose posture is slightly turned away. Neither is looking directly at the other. Both right, empty deep space left.
 
-**S69** · 11:28 · **VO:** "I asked for more time. I think what I actually needed was to be awake for the time I already had."
-**CAP:** I asked for more time.
-**IMG:** `CREAM.` [HIM] standing in an ordinary room, eyes open and clearly focused, looking directly at a very ordinary object — a mug on a table — with real attention. Him left third, mug and table right, empty cream between.
+**S43** · 7:34 · **VO:** "And then eleven months later a doctor told me mine was gone."
+**IMG:** `DEEP.` Split composition: on the left the empty chair, on the right `[THIN]` [HIM] seated in the consultation room. A thin dark vertical line between. Empty deep space above both.
 
-**S70** · 11:42 · **VO:** "I don't think the dua was refused. I think it was answered on day one, in a currency I didn't recognise, and I spent nine months calling it a punishment."
-**CAP:** answered in a currency I didn't recognise
-**IMG:** `WARM.` [HIM] standing holding one small warm amber shape in his open palm, looking down at it properly for the first time, head tilted slightly. Him right of centre, warm empty space left.
+**S44** · 7:44 · **VO:** "Nobody prepares you for what that does. You are not allowed to be unhappy about good news."
+**CAP:** you're not allowed to be unhappy
+**IMG:** `DEEP.` `[THIN]` [HIM] standing alone, arms at his sides, head slightly lowered, in a very large completely empty deep grey-blue room. He is small, lower centre. Maximum emptiness.
 
-**S71** · 12:00 · **VO:** "There is a verse everyone gives you when you're diagnosed. Allah does not burden a soul beyond what it can bear."
-**IMG:** `WARM.` [HIM] seated, holding a plain open book in his lap, looking down at it. No readable text on the pages. Him left third, warm empty wall right.
+**S45** · 7:56 · **VO:** "So you say Alhamdulillah, and you mean it, and underneath it you are asking a question you know you shouldn't ask."
+**IMG:** `DEEP.` Close-up of `[THIN]` [HIM]'s open hands raised in dua, but the fingers slightly tense and curled rather than relaxed — the right gesture, held wrong. Hands lower right, empty deep space upper left.
 
-**S72** · 12:12 · **VO:** "I had read it a hundred times as a comfort. It isn't a comfort. It's a measurement."
-**CAP:** it isn't a comfort. it's a measurement.
-**IMG:** `WARM.` [HIM] standing upright and still beside a tall simple flat measuring-scale marking on a warm wall, the mark level with the top of his head. Plain, geometric, no numbers. Him left, scale beside him, warm empty space right.
+**S46** · 8:08 · **VO:** "Why him and not me. There is no good answer to that and I have stopped looking for one."
+**CAP:** why him and not me
+**IMG:** `DEEP.` Two identical plain chairs facing the viewer, both completely empty, drawn symmetrically. Nothing else. Chairs centred low, huge empty deep space above.
 
-**S73** · 12:26 · **VO:** "It doesn't say the weight is light. It says something was assessed before it was handed to you."
-**IMG:** `WARM.` Close-up of [HIM]'s two open hands from below, palms up, holding a single plain heavy block that is clearly weighty but held steady and level. Hands and block centred, warm empty space around.
-
-**S74** · 12:40 · **VO:** "Someone decided you could carry this. That is a harder thing to be told than that it will be easy. It is also, I think, a much better thing."
-**CAP:** you were measured as able
-**IMG:** `WARM.` Flat wide view of [HIM] walking left to right carrying the same block from S73, upright, steady, unhurried — compare S38 where he was overloaded and awkward. Long warm empty wall behind.
+**S47** · 8:20 · **VO:** "What I do instead is say his name out loud sometimes. That's all I've got. It turns out that's allowed to be all you've got."
+**IMG:** `DEEP.` `[THIN]` [HIM] standing alone, mouth slightly open mid-word, eyes open and calm, facing an empty room. Him right of centre, empty deep space left.
 
 ---
-## OUTRO — 13:00–13:40
+## ACT 5 — 3AM · 8:30–10:20 — *extends "At 3am I asked Allah what the pain was for" (1.2K) · "Sabr doesn't mean what I thought" (914)*
 ---
 
-**S75** · 13:00 · **VO:** "If you are four days from a scan tonight. Or seven days into a wait. Or holding a phone you don't want to answer —"
-**CAP:** if that's you tonight
-**IMG:** `WARM.` A single flat phone lying face-up on a warm table, no hand near it, glowing very softly. Phone lower right, huge warm empty space upper left.
+**S48** · 8:30 · **VO:** "Which brings me to a night about four months in. Three in the morning, second night after surgery."
+**CAP:** 3am
+**IMG:** `DEEP.` Wide flat view of `[THIN]` [HIM] lying awake in a hospital bed at night, eyes open, arms at his sides on top of the covers, one small window shape on the wall. Bed lower right, huge empty dark space upper left. No tubes, no equipment.
 
-**S76** · 13:14 · **VO:** "You will be able to carry it. That is the promise. Not that it will be light."
-**CAP:** not that it will be light
-**IMG:** `WARM.` [HIM] standing facing the viewer directly, calm, steady, hands relaxed at his sides, warm light across him. Centred, generous warm space either side. The most open and still image in the film.
+**S49** · 8:41 · **VO:** "I still had the wristband on then."
+**IMG:** `DEEP.` Close-up of `[THIN]` [HIM]'s wrist resting on a pale sheet, the thin accent-red `#C4553F` wristband around it, intact. Wrist and band lower right, empty deep space upper left. **Accent use 3 of 5.**
 
-**S77** · 13:26 · **VO:** "The chapters of this story are linked below in order, if you want the shorter pieces. Chapter 7 is coming."
-**IMG:** `CREAM.` [HIM] seen from behind sitting on the prayer mat in an ordinary bright room, hands not raised, simply sitting. Small, lower centre. Wide calm empty cream space above. Final frame.
+**S50** · 8:49 · **VO:** "And I asked Allah, out loud, in an empty room, what the pain was for."
+**IMG:** `DEEP.` `[THIN]` [HIM] lying in the bed, head turned toward the window, mouth slightly open mid-sentence, speaking to nobody. Bed right of centre, empty deep space left.
+
+**S51** · 8:59 · **VO:** "Not why. What for. There's a difference and I only found it that night."
+**CAP:** not why. what for.
+**IMG:** `DEEP.` Two plain shapes side by side on a flat wall, similar but clearly not identical. Simple, geometric, no text. Shapes right two-thirds, empty deep space left.
+
+**S52** · 9:10 · **VO:** "Why is a complaint dressed as a question. It wants somebody to be at fault."
+**IMG:** `DEEP.` `[THIN]` [HIM] seated on the edge of the bed, arms crossed, chin slightly raised, a guarded closed posture. Him right of centre, empty deep space left.
+
+**S53** · 9:20 · **VO:** "What for is a different thing entirely. It assumes there's a use. It's the harder question because it puts some of it back on you."
+**IMG:** `WARM #E8C79A — the grade turns here and does not go back.` `[THIN]` [HIM] seated on the edge of the bed, arms uncrossed, hands open on his knees, shoulders down. Warm sand wall behind him for the first time. Him right of centre, wide warm empty space left.
+
+**S54** · 9:34 · **VO:** "I didn't get an answer that night. I want to be very clear about that. Nothing happened. No light, no dream, nothing."
+**CAP:** nothing happened
+**IMG:** `WARM.` The same hospital room, same framing, completely unchanged except the warm background. `[THIN]` [HIM] still sitting there. Deliberately uneventful.
+
+**S55** · 9:45 · **VO:** "But I stopped asking the first question. And about a month later I noticed I had been getting an answer the whole time, just not in words."
+**IMG:** `WARM.` `[THIN]` [HIM] standing at a window in warm daylight, side-on, one hand flat on the sill, looking out with a calm expression. Him and window left third, wide warm empty wall right.
+
+**S56** · 9:58 · **VO:** "Everyone had told me to have sabr. I had always heard that as: endure this quietly and don't complain."
+**IMG:** `WARM.` `[THIN]` [HIM] standing very still and upright with his mouth closed in a tight flat line, shoulders rigid, arms pinned at his sides. Stiff and held. Him right of centre, warm empty space left.
+
+**S57** · 10:09 · **VO:** "That isn't what it is. Sabr isn't going quiet. It's staying — staying in the room, staying in the relationship with Allah — while it hurts."
+**CAP:** sabr isn't going quiet
+**IMG:** `WARM.` `[THIN]` [HIM] seated on the prayer mat, shoulders relaxed, hands open, clearly present and settled rather than braced. Him right of centre, wide warm empty space left.
+
+**S58** · 10:23 · **VO:** "You are allowed to say it hurts. Yaqub said it hurts. He said it out loud and it's in the Quran."
+**IMG:** `WARM.` A plain open book resting on a low table, pages blank, no readable text. Book right third, warm empty space left. No people.
+
+**S59** · 10:35 · **VO:** "What you're not asked to do is leave. That's the whole thing. Sabr is a location, not a volume."
+**CAP:** sabr is a location, not a volume
+**IMG:** `WARM.` `[THIN]` [HIM] seated on the prayer mat in the exact centre of a warm room, staying, everything around him open and calm. Centred, generous warm space on all sides.
+
+---
+## ACT 6 — THE WRISTBAND · 10:20–12:20 — *extends "Please stop saying this" (1.2K) · "what cancer took and gave back" (1.2K) · "the wristband" (1.7K)*
+---
+
+**S60** · 10:50 · **VO:** "Two quick things, and then the drawer."
+**IMG:** `WARM.` `[THIN]` [HIM] standing facing the viewer directly, hands loose, calm open posture, mid-speech. Him right of centre, wide warm empty space left.
+
+**S61** · 10:57 · **VO:** "One. If someone you love is sick, please stop saying 'everything happens for a reason.' Say 'I'm here Thursday.' Give them a day, not a philosophy."
+**CAP:** give them a day, not a philosophy
+**IMG:** `WARM.` Two flat shapes side by side: on the left a large vague cloud-like form, on the right a small solid clearly-defined square. Simple, geometric, no text. Shapes right two-thirds, warm empty space left.
+
+**S62** · 11:14 · **VO:** "Somebody paid my rent one month and never told me who. That person understood something the rest of us are still working out."
+**IMG:** `WARM.` A plain unmarked envelope resting on a doormat inside a front door, nobody in frame. Envelope and door lower right, warm empty hallway space upper left.
+
+**S63** · 11:27 · **VO:** "Two. People ask what cancer took. It took a year, an organ, and a version of me who thought he had time to waste."
+**CAP:** what it took
+**IMG:** `WARM.` Three small plain shapes in a row on a flat wall, each drawn as a faint outline only, clearly absent. Simple, geometric. Shapes right two-thirds, warm empty space left.
+
+**S64** · 11:42 · **VO:** "What it gave back is harder to say out loud without sounding like a poster. So I'll say it as plainly as I can: I am here now. Actually here. I wasn't before."
+**CAP:** I am actually here now
+**IMG:** `PALE #EFEAE2.` `[THIN]` [HIM] standing in an ordinary kitchen looking directly and attentively at a very ordinary thing — a mug on the counter — really seeing it. Him left third, mug right, empty pale space between.
+
+**S65** · 12:00 · **VO:** "So. The drawer. I open it most mornings and I look at a cut wristband, and I'm not being sentimental. I'm checking a date."
+**IMG:** `PALE.` The open drawer from directly above, the accent-red `#C4553F` wristband lying flat inside, `[THIN]` [HIM]'s hand at the drawer's edge. Drawer right two-thirds, empty pale space left. **Accent use 4 of 5.**
+
+**S66** · 12:14 · **VO:** "Because a year ago I would have told you I wanted more time. I had it. I just wasn't in it. The wristband is how I remember to actually turn up to my own life. Then I close the drawer and go and have breakfast."
+**CAP:** turn up to your own life
+**IMG:** `PALE.` Wide flat view: `[THIN]` [HIM] seated at his kitchen table having an ordinary breakfast in ordinary morning light, the drawer closed behind him, one small accent-red `#C4553F` detail somewhere in the room. Calm, unremarkable, warm-neutral. Him right of centre, generous empty pale space left. **Accent use 5 of 5. Final frame.**
+
+**S67** · 12:35 · **VO:** "If you're the one who just got the phone call, there are shorter pieces of this on the channel. Start wherever it hurts. I'll see you there."
+**IMG:** `PALE.` `[THIN]` [HIM] standing facing the viewer, calm and still, hands relaxed. Centred, generous empty pale space either side — deliberately clear for end-screen cards.
 
 ---
 
 # THUMBNAIL — 16:9, MANDATORY (runtime > 180s)
 
-Generate **1920×1080**, downscale to **1280×720**, keep under 2MB, and set the `thumbnail`
-key in the upload config only once the file exists (preflight fails on a key pointing at a
-missing file).
+Generate **1920×1080**, downscale to **1280×720**, under 2MB. Set the `thumbnail` key in the
+upload config only once the file exists — preflight fails on a key pointing at a missing file.
 
-**Do not use the finance channel's vidIQ card layout.** That layout is built for Adam and a
-big number; this is a story channel and the number is not the promise. Rules for this one:
+**Do not use the finance channel's vidIQ card layout.** That sells a number. This sells a
+sentence. Rules for this channel:
 
-1. **The character carries it.** He is the recurring face of the channel — use him at a
-   close-up scale the video itself never uses.
-2. **Two elements only:** his face left, text right. Nothing else.
-3. **Text must not repeat the title.** The title says "four days later, they found cancer."
-   The thumbnail says the half the title leaves out.
-4. **Legibility test at 320px.** If the words aren't readable, cut a word.
+1. **The character carries it**, at a close-up scale the video never uses.
+2. **Two elements only:** his face left, text right.
+3. **Text must not repeat the title.** The title says the cancer was gone. The thumbnail says
+   the half the title leaves out.
+4. **Legibility at 320px.** If it isn't readable, cut a word.
 
 **Prompt:**
-> `COOL #C9D2D4 background.` Close-up portrait of [HIM] from the chest up, hard-cropped on the **left third** of the frame and facing into the frame toward the right, expression stunned and still — eyes open wide, mouth a flat straight line, no tears, no grimace. Larger scale than any other image in the set. The right two-thirds of the frame is completely empty flat cold grey-blue for text. `STYLE SUFFIX` applies.
+> `PALE #EFEAE2 background.` Close-up portrait of [HIM] `[THIN]` from the chest up, hard-cropped on the **left third**, facing into frame toward the right. Expression: a small polite closed-mouth smile with completely flat, unsmiling dot eyes — the mismatch is the whole point. Larger scale than any image in the film. Right two-thirds completely empty flat pale ground for text. `STYLE SUFFIX` applies.
 
-**Text options (pick one, set in a heavy sans, off-white `#F4F4F0`, right two-thirds):**
+**Text (heavy sans, deep charcoal `#2B2B2B`, right two-thirds):**
 
-| Option | Text | Why |
+| | Text | Why |
 |---|---|---|
-| **A** *(lead)* | `I PRAYED FOR` / `THE OPPOSITE` | Pure curiosity gap. Doesn't repeat one word of the title. |
-| B | `4 DAYS` / `LATER` | Strongest at 320px, but overlaps the title. |
-| C | `I FELT` / `NOTHING` | Truest to the channel, weakest cold-open promise. |
+| **A** *(lead)* | `THEY SAID` / `IT WAS GONE.` / `I FELT NOTHING.` | The 1.3K Short's exact promise. Proven hook, three-beat rhythm, contradicts the smile in the picture. |
+| B | `NOBODY WARNS` / `YOU ABOUT` / `THE AFTER` | Broader, less specific, weaker at 320px. |
+| C | `I SURVIVED.` / `HE DIDN'T.` | Strongest emotionally, but it promises Act 4 and the video is wider than that. |
 
-Add one small accent-red `#C4553F` pill badge clipped to the lower text edge reading
-`CHAPTER 1–7` — it signals a complete story, not a fragment, which is the single biggest
-reason to click a long-form on a small channel.
+Add a small accent-red `#C4553F` pill badge clipped to the lower text edge: `11 MONTHS AFTER`.
+The wristband is red, the badge is red — that's the channel's one colour and it should show up
+in the thumbnail so the grid reads as one body of work.
 
 ---
 
 # TITLE
 
-**Lead:** `I Asked Allah for a Long Life. 4 Days Later, They Found Cancer.`
+**Lead:** `They Told Me The Cancer Was Gone. Nobody Warned Me What Came After.`
 
-Alternates, in order:
-- `I Prayed for a Long Life. 4 Days Later I Was Diagnosed With Pancreatic Cancer.`
-- `The Dua I Made 4 Days Before My Cancer Diagnosis`
+Alternates:
+- `The Year After They Said I Was Cancer Free`
+- `What Nobody Tells You About Surviving Pancreatic Cancer`
 
-Do **not** append `| Ch. 1` — this is the full story, not a chapter, and the chapter suffix
-tells the feed it's a fragment. Everything else on the channel takes `Ch. N`; this one doesn't.
+**No `Part N`.** The Part-numbered uploads on this channel sit at 7–13 views. The numbering
+signals "fragment, you've missed some" to a Shorts viewer who has never seen the others — which
+is every viewer this video is for.
 
 ---
 
 # DESCRIPTION
 
 ```
-Four days before I was diagnosed with pancreatic cancer, I made a dua for a long life.
+Eleven months ago a doctor told me they thought the cancer was gone. I walked out to
+the car park and felt nothing at all.
 
-This is the whole story in one place — the four days, the scan, the ten-hour surgery,
-the seven days of waiting, and what I think that prayer actually did. It took nine
-months to be able to say it.
+Nobody warns you about the part after. This is that part — the body that doesn't come
+back the way you left it, the six weeks I couldn't stand up to pray, the chair next to
+mine that was empty one week, and what I actually think sabr means now.
 
-I'm not a scholar and this isn't a lesson. It's just what happened.
+If you were just diagnosed, or you're the one holding their hand, this is the video I
+went looking for and couldn't find.
 
-00:00  The dua
-01:12  The week before
-02:50  The scan
-04:40  Telling them
-06:20  Seven days
-08:10  The phone call
-10:20  What the prayer actually did
-13:00  If that's you tonight
+00:00  The drawer
+01:05  "We think it's gone"
+02:40  What the surgery leaves behind
+05:00  22 chairs
+06:40  The one I still can't hold
+08:30  3am
+10:50  Please stop saying this
+12:00  The wristband
 
-▶ THE STORY IN ORDER:
-Ch. 1 — The diagnosis: https://youtu.be/GFKRpV_mhWg
-Ch. 2 — The surgery: https://youtu.be/xmCDlKXU694
-Ch. 3 — Why I felt nothing: https://youtu.be/9hR1vXH5PVE
-Ch. 4 — Telling my family: https://youtu.be/9CQZ-uS3nuY
-Ch. 5 — The 7-day wait: https://youtu.be/1TGtRIpgwt4
-▶ Full playlist: https://www.youtube.com/playlist?list=PLczfvNC3NVjo
+🔔 A new piece of the story every day: https://www.youtube.com/@HeldByFaithJourney
 
-🔔 New chapter every week: https://www.youtube.com/@HeldByFaithJourney
+For business or to share your own story: heldbyfaithjourney@gmail.com
 
 DISCLAIMER: This is a personal story, not medical advice. Please consult healthcare
 professionals for any medical concerns.
 
-#CancerJourney #MuslimCancerStory #PancreaticCancer #Tawakkul #Sabr #HeldByFaith
-#WhippleSurgery #FaithOverFear #Dua #CancerSupport
+#CancerJourney #MuslimCancerStory #PancreaticCancer #WhippleSurgery #Sabr #Tawakkul
+#CancerSurvivor #Remission #HeldByFaith #CancerSupport
 ```
 
 # TAGS
 
 ```
-pancreatic cancer diagnosis story, muslim cancer story, cancer journey full story,
-whipple surgery, dua for healing, waiting for cancer results, pancreatic cancer symptoms
-diagnosis, faith through cancer, tawakkul, sabr, trust in Allah, quran 2:286,
-cancer diagnosis reaction, told i have cancer, unanswered prayer, held by faith,
-cancer survivor story muslim
+life after cancer, cancer free but not okay, survivor guilt, what nobody tells you about
+remission, whipple surgery recovery, pancreatic cancer survivor, muslim cancer story,
+praying sitting down illness, sabr meaning, cancer ward, being told cancer is gone,
+what to say to someone with cancer, cancer recovery mental health, held by faith,
+scanxiety, life after whipple
 ```
 
-The first three are what people type at 2am. That is why this video keeps earning views
-long after the feed stops serving it — unlike the finance channel, this content gets found
-for years.
+`life after cancer`, `survivor guilt` and `what to say to someone with cancer` are the
+searches that keep this video earning long after the feed drops it. That is the long-form
+advantage the Shorts do not have.
 
 ---
 
 # PRODUCTION NOTES
 
-- **Record the VO first.** The cut follows delivery, not the other way round.
-- **~1,450 words across ~13:40.** That is deliberately slow — roughly 40% of the runtime is
-  silence and breath. Let the pauses sit. Do not fill them with music swells.
-- **Captions:** burned-in on the `CAP` beats only (24 of 77). Long-form is not Shorts —
-  captioning every line makes it look like a stretched Short. Upload a full `.srt` separately;
-  `hasCaption: false` across this channel is worth ending here.
-- **Hold times:** 8–14s per image. The stillness is the register. Slow 3–5% push-in on
-  faces, nothing on objects.
-- **The repeats are load-bearing.** S05→S30 (same face), S02→S63 (same hands), S06→S58→S64
-  (the split), S47→S60 (the empty room), S38→S74 (the carry), S66→S68 (the grid). Frame them
-  identically. Anything less and the payoff doesn't land.
+- **Record the VO first.** The cut follows delivery.
+- **~1,500 words over ~12:40.** Deliberately slow. Roughly 40% is silence. Do not fill the
+  pauses with music.
+- **Captions:** burn in the 22 `CAP` beats only. Long-form captioned line-by-line reads as a
+  stretched Short. Upload a full `.srt` separately — `hasCaption: false` across this channel
+  is worth ending here.
+- **Holds:** 8–14s per image. Slow 3–5% push-in on faces, static on objects.
+- **The repeats are load-bearing.** S02→S65 (the drawer), S22→S28 (the chair, braced then
+  settled), S38→S41→S46 (two chairs, then one, then none), S45's tense dua hands, S10's
+  smile-with-flat-eyes reappearing as the thumbnail. Frame them identically.
 - **Never warm before S53.** It is the only arc the visuals have.
+- **The accent red appears exactly 5 times**: S02, S11, S49, S65, S66. Every extra use costs
+  the final frame something.
