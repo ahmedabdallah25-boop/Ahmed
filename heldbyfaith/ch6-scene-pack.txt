@@ -1,3 +1,24 @@
+=========================================================================
+SUPERSEDED 2026-09-12 — DO NOT BUILD FROM THIS WITHOUT READING THIS NOTE.
+
+This is the scene pack for a vertical "Chapter 6", written 2026-08-04 when
+the channel had 33 lifetime views and had been dark for three weeks. It was
+never produced, and the channel solved that problem a different way: ~3.6
+vertical Shorts a day from mid-August, 24,364 lifetime views by 12 September.
+
+Two things in it are now actively wrong:
+
+  - The Chapter numbering it assumes was replaced. The six legacy uploads
+    are Part 1-6 in true story order, so this is not "Chapter 6".
+  - It was gated to unlisting 14mGEhEieZY, which is now Part 3 of that
+    spine. Do not unlist it.
+
+The writing is still good and the beat it covers — the phone call — is still
+told only in a 1-view landscape cut. If you make it, make it as a standalone
+vertical Short in the voice of the 28 that worked, and read
+heldbyfaith/channel-diagnosis.md first.
+=========================================================================
+
 ================================================================================
 HELD BY FAITH — SCENE PACK
 CHAPTER 6: "THE PHONE CALL"

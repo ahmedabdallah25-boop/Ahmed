@@ -1,97 +1,71 @@
 {
-  "_comment": "HELD BY FAITH (@HeldByFaithJourney, UCh0tKIGR5Ns3Wvoai__txdg) packaging fix, 2026-08-04. Machine-readable as of 2026-08-16 — automation/heldbyfaith_packaging.py applies it. channel-diagnosis.md still carries the copy-paste versions for anyone doing it by hand in Studio.",
-  "_reader": "Read by automation/heldbyfaith_packaging.py, NOT by automation/reset_packaging.py. The earlier note here was right that reset_packaging.py cannot consume this file — (1) it hardcodes reset.json at import with no --config flag; (2) apply_target() reads target['description'] unconditionally and would KeyError on the title-only entries below; (3) 'retitle' and 'unlist' are keys this file invented, against a script that reads 'scheduled'/'repackage' and has no unlist path. The resolution was the one that note asked for: a reader adapted to this file, rather than the change degraded to fit that script. Title-only stays deliberate — this channel's descriptions and tags are good and must not be rewritten.",
+  "_comment": "HELD BY FAITH (@HeldByFaithJourney, UCh0tKIGR5Ns3Wvoai__txdg) packaging config. Rewritten 2026-09-12 against live channel state; the 2026-08-04 version described a channel that no longer exists. Machine-readable — automation/heldbyfaith_packaging.py applies it. Read heldbyfaith/channel-diagnosis.md first.",
+
+  "_what_changed": "The August config existed to fix a 33-view channel that had been dark for three weeks: five retitles collapsing four series names into one, and an unlist gated on a Chapter 6 that was never made. All of it is now either done or moot. The channel is at 24,364 views on 28 vertical Shorts published in eight days, the six legacy uploads were renumbered Part 1-6 in correct story order by hand, and the fix this file now carries is a different one — the channel converts 24K views into 61 subscribers because both of its front doors point at its worst video.",
+
   "expect_channel_id": "UCh0tKIGR5Ns3Wvoai__txdg",
-  "_expect_channel_id": "Enforced before any write: the script resolves the authenticated channel with mine=true and aborts unless it equals this. Stops an HBF_* secret that was minted against the wrong channel from writing these titles onto Finance % Decoded, and stops new1/new2/new3 from ever driving this file.",
-  "_credentials": "Needs HBF_CLIENT_ID / HBF_CLIENT_SECRET / HBF_REFRESH_TOKEN. The client ID and secret were added 2026-08-04, but those identify the application, not a channel — a refresh token is bound to the channel picked at the consent screen. Verified twice that day by read-only inventory runs (30915672935, 30916667377): both returned 23 owned videos, all Finance % Decoded, none from this channel. Mint the token with automation/authorize.html. Do NOT reuse new1/new2/new3; those drive every Finance % Decoded workflow.",
+  "_expect_channel_id": "Enforced before any write: the script resolves the authenticated channel with mine=true and aborts unless it equals this. Stops an HBF_* secret minted against the wrong channel from writing this channel's metadata onto Finance % Decoded, and stops new1/new2/new3 from ever driving this file.",
+
+  "_credentials": "STILL MISSING as of 2026-09-12. HBF_CLIENT_ID, HBF_CLIENT_SECRET and HBF_REFRESH_TOKEN are all unset — verified by 'HELD BY FAITH - 1. Check setup' run 34673924580, which failed with all three reported MISSING. Nothing in this file can be applied by automation until they exist; heldbyfaith/channel-diagnosis.md carries the Studio copy-paste equivalents. Mint the token with automation/authorize.html and pick HELD BY FAITH at Google's chooser. Do NOT reuse new1/new2/new3.",
+
   "channel_id": "UCh0tKIGR5Ns3Wvoai__txdg",
   "handle": "@HeldByFaithJourney",
   "playlist_url": "https://www.youtube.com/playlist?list=PLczfvNC3NVjo",
 
-  "_series_block": "The exact block that must appear in EVERY description once the renumbering below is applied. The current descriptions call the Ch. 3 video 'Episode 3' and the Ch. 4 video 'Episode 4', which contradicts their own titles. Titles and description links have to agree or the viewer cannot follow the story.",
-  "series_block": "▶ THE STORY IN ORDER:\nCh. 1 — The diagnosis: https://youtu.be/GFKRpV_mhWg\nCh. 2 — The surgery: https://youtu.be/xmCDlKXU694\nCh. 3 — Why I felt nothing: https://youtu.be/9hR1vXH5PVE\nCh. 4 — Telling my family: https://youtu.be/9CQZ-uS3nuY\nCh. 5 — The 7-day wait: https://youtu.be/1TGtRIpgwt4\nCh. 6 — The phone call: {CH6_URL}\n▶ Full playlist: https://www.youtube.com/playlist?list=PLczfvNC3NVjo",
-
-  "ch6_video_id": "",
-  "_ch6_video_id": "The vertical Ch. 6 is not published yet (ch6-scene-pack.txt is the script). Two things are gated on this being filled in: the series_block above still contains the {CH6_URL} placeholder and cannot be written to any description until it resolves, and the 14mGEhEieZY unlist below must not happen until Ch. 6 is live. heldbyfaith_packaging.py skips both while this is empty rather than writing a half-finished block, so the retitles can ship on their own.",
-
   "landscape_video_ids": ["GFKRpV_mhWg", "xmCDlKXU694", "14mGEhEieZY"],
-  "_landscape_video_ids": "The three 16:9 uploads, isShortsEligible: false — 4 views between them against 29 for the six vertical Shorts. The monitor flags these so the format split stays visible in every report; see channel-diagnosis.md.",
+  "_landscape_video_ids": "The three 16:9 uploads. 5 views between them at 60-72 days old, against 905 each for the vertical Shorts. The monitor reads this list from automation/channels.json to keep the format split in every report.",
 
-  "retitle": [
-    {
-      "video_id": "GFKRpV_mhWg",
-      "_why": "Series suffix only. 'Pancreatic Cancer Journey Ep. 1' -> 'Ch. 1'. The hook half of the title is strong and is NOT being touched — the Kaaba/four-days line is the best opening on the channel. Only the scheme changes, so the channel finally uses one word for one thing.",
-      "current_title": "I Asked Allah for a Long Life. 4 Days Later, Cancer. | Pancreatic Cancer Journey Ep. 1",
-      "title": "I Asked Allah for a Long Life. 4 Days Later, Cancer. | Ch. 1"
-    },
-    {
-      "video_id": "xmCDlKXU694",
-      "_why": "Series suffix only, same reason.",
-      "current_title": "10 Hours in Surgery, Awake by Allah's Will | Pancreatic Cancer Journey Ep. 2",
-      "title": "10 Hours in Surgery, Awake by Allah's Will | Ch. 2"
-    },
-    {
-      "video_id": "9hR1vXH5PVE",
-      "_why": "Drops the third series name ('Muslim Cancer Story'). Number is already correct.",
-      "current_title": "Why I Felt Nothing When They Said Cancer | Muslim Cancer Story Ch. 3",
-      "title": "Why I Felt Nothing When They Said Cancer | Ch. 3"
-    },
-    {
-      "video_id": "9CQZ-uS3nuY",
-      "_why": "This one is unnumbered entirely, which is why the sequence has a hole in it. It sits between Ch. 3 and the 7-day wait, so it becomes Ch. 4.",
-      "current_title": "How I Told My Family I Have Cancer | Muslim Cancer Journey",
-      "title": "How I Told My Family I Have Cancer | Ch. 4"
-    },
-    {
-      "video_id": "1TGtRIpgwt4",
-      "_why": "Currently labelled Ch. 4, which collides with 9CQZ_uS3nuY once that one is numbered. Moves to Ch. 5. This is the channel's best performer (12 views, 2 likes, ~17% like rate) — the HOOK half of the title is deliberately untouched, only the suffix moves.",
-      "current_title": "7 Days Waiting for Cancer Results | Muslim Cancer Journey Ch. 4",
-      "title": "7 Days Waiting for Cancer Results | Ch. 5"
-    }
-  ],
+  "retitle": [],
+  "_retitle": "Deliberately empty, and that is the fix. The August config held five entries collapsing 'Pancreatic Cancer Journey Ep. 1' / 'Muslim Cancer Story Ch. 3' / one unnumbered title into a single Chapter scheme. Someone did that work by hand and did it better: the six legacy uploads are now Part 1-6 and the order is the true story order — Kaaba dua, the 7-day wait, the phone call, feeling nothing, telling the family, the surgery. Every current_title recorded in the old config is therefore stale, and heldbyfaith_packaging.py would have skipped all five with 'live title drifted' and failed the run. Leaving the entries in would have looked like pending work. There is none.",
 
-  "unlist": [
-    {
-      "video_id": "14mGEhEieZY",
-      "_why": "'The Phone Call That Ended 7 Days of Waiting' — landscape, 2:52, 1 view. Covers the same beat as the new Ch. 6 and is listed in no description, so it is an orphan splitting the story. UNLIST, never delete: it keeps the footage and the original upload date and is fully reversible. Do this only AFTER the vertical Ch. 6 is live.",
-      "action": "unlist",
-      "blocked_until": "Ch. 6 published"
-    }
-  ],
+  "unlist": [],
+  "_unlist": "Also deliberately empty. The August config had 14mGEhEieZY queued for unlisting once Ch. 6 shipped; Ch. 6 never shipped and the channel went somewhere else entirely. Unlisting is still the wrong move for a different reason now: the three landscape videos are Part 1, Part 3 and Part 6 of a six-part spine, so removing them opens holes in the middle of the only ordered account of the diagnosis on the channel. The cost they carry is not that they are listed, it is that they are what the channel description and the playlist point new viewers AT. That is what the channel block below fixes. Re-cutting them vertical is the real repair; do not delete anything on this channel.",
 
   "channel": {
-    "_why": "youtube_channel_about returned keywords: [] — the channel has no channel-level keywords at all. Weak signal next to per-video metadata, but it is one of the few inputs YouTube uses to place a channel in a topic cluster, and empty gives it nothing. Costs nothing, cannibalises nothing.",
+    "_why": "Two channel-level fields, and between them they are the highest-leverage change available. 24,364 lifetime views have produced 61 subscribers — one per 399 views. Reach is solved; the destination is not.",
+
     "keywords": [
-      "cancer journey",
       "muslim cancer story",
-      "pancreatic cancer",
-      "whipple surgery",
-      "faith through cancer",
+      "pancreatic cancer journey",
+      "whipple surgery recovery",
+      "cancer diagnosis story",
+      "faith through illness",
+      "held by faith",
+      "chronic illness muslim",
+      "dua when sick",
+      "cancer support",
+      "islamic reminder",
       "tawakkul",
       "sabr",
-      "trust in Allah",
-      "cancer vlog",
-      "cancer diagnosis story",
-      "islamic motivation",
-      "held by faith",
-      "cancer support",
-      "chemotherapy journey",
-      "muslim health journey",
-      "dua for healing",
-      "cancer survivor story"
+      "cancer survivor story",
+      "life after cancer",
+      "muslim health journey"
     ],
-    "country": "AE"
+    "_keywords": "The live field is BROKEN and this repairs it. YouTube's channel keyword field is space-separated, and a phrase only stays a phrase inside double quotes. The live value was pasted unquoted, so the API returns 30 single words: 'muslim', 'cancer', 'story', 'pancreatic'... 'held', 'by', 'faith'. The channel's own name is not registering as a term, and 'by', 'when' and 'through' are indexed as keywords. heldbyfaith_packaging.py quotes any term containing a space before writing, so applying this list fixes it; pasting this list into Studio by hand does not, unless the quotes go in too. The list keeps every phrase the owner chose and adds 'life after cancer' and 'cancer survivor story', which is what 28 of the 31 Shorts are actually about.",
+
+    "country": "AE",
+
+    "description": "I stood in front of the Kaaba and asked Allah for more time. Four days later I was diagnosed with pancreatic cancer.\n\nThis is the record of what came after. The 10 hour Whipple surgery, the recovery, the doubt, the scar, and the faith that carried me through it. I am not filming this to relive the pain. I am filming it so that the next person who gets that phone call does not have to sit in it alone.\n\nIf you are the one who was just diagnosed, or you are the one holding their hand, start here:\nhttps://youtu.be/X4z5Ij0SQgI\nThe whole journey in order: https://www.youtube.com/playlist?list=PLczfvNC3NVjo\n\nA new piece of the story every single day. Subscribe and walk it with me.\n\nFor business or to share your own story: heldbyfaithjourney@gmail.com",
+    "_description": "ONE line changes. Every sentence of the owner's own account is preserved character for character — this is his cancer diary and the prose is not ours to edit. What moves is the link under 'start here', from https://youtu.be/GFKRpV_mhWg to https://youtu.be/X4z5Ij0SQgI. GFKRpV_mhWg is Part 1: a 1:58 LANDSCAPE video with 4 lifetime views, the single worst-performing upload on the channel. It is the first link a viewer sees after being moved by a Short, and it is also the video the playlist opens on. X4z5Ij0SQgI is 'I survived. He didn't. Nobody prepares you for that' — 1,235 views and 35 likes, a 2.8% like rate and the highest engagement on the channel. Sending a new viewer to the video most likely to move them, instead of to the one least likely to, is the whole of this change.",
+
+    "current_description": "I stood in front of the Kaaba and asked Allah for more time. Four days later I was diagnosed with pancreatic cancer.\n\nThis is the record of what came after. The 10 hour Whipple surgery, the recovery, the doubt, the scar, and the faith that carried me through it. I am not filming this to relive the pain. I am filming it so that the next person who gets that phone call does not have to sit in it alone.\n\nIf you are the one who was just diagnosed, or you are the one holding their hand, start here:\nPart 1, the diagnosis: https://youtu.be/GFKRpV_mhWg\nThe whole journey in order: https://www.youtube.com/playlist?list=PLczfvNC3NVjo\n\nA new piece of the story every single day. Subscribe and walk it with me.\n\nFor business or to share your own story: heldbyfaithjourney@gmail.com",
+    "_current_description": "Drift guard, same contract as current_title on a retitle. Read live 2026-09-12. If the live description is neither this nor the target above, someone edited it in Studio and the script refuses to write rather than silently clobber it — which on a channel-level description containing the owner's own words is the difference between a fix and a loss."
   },
 
   "protected": {
-    "_why": "Guard rail, same principle as the other channel's reset.json: never repackage a proven winner. On a channel this small 'winner' is relative, but 1TGtRIpgwt4 carries 12 of the 33 lifetime views and the only likes on the channel. Its hook, description and tags are the reference — the retitle above touches its series suffix ONLY and nothing else on it may change.",
+    "_why": "Never repackage a proven winner. Refreshed 2026-09-12: the old list protected 1TGtRIpgwt4, which held 12 of the channel's 33 lifetime views in August and now holds 13 of 24,364. It is no longer a winner and protecting it protects nothing. These five are the settled top performers of the wave that actually built the channel, and their hooks, descriptions and tags are the reference for everything written next.",
     "video_ids": [
-      "1TGtRIpgwt4"
-    ]
+      "jnX_MNilJx8",
+      "GbBwlPGlYos",
+      "eX8ODb5N-_w",
+      "3vqTYClJCmY",
+      "X4z5Ij0SQgI"
+    ],
+    "_video_ids": "jnX_MNilJx8 the wristband, 1715 views · GbBwlPGlYos 'they said the cancer was gone', 1359 · eX8ODb5N-_w what cancer took and gave back, 1250 · 3vqTYClJCmY please stop saying this, 1247 · X4z5Ij0SQgI 'I survived. He didn't', 1235 views and 35 likes, the highest like rate on the channel and now the front door in the description above."
   },
 
   "do_not_touch": {
-    "_why": "Tags and descriptions across this channel are genuinely good — 14 to 17 specific tags per video, chaptered and well-written descriptions with a proper medical disclaimer. They are not the problem and rewriting them would burn effort while risking a real asset. Format, cadence and series numbering are the whole fix.",
+    "_why": "Per-video tags and descriptions across this channel are genuinely good — 14 to 17 specific tags each, chaptered, series-linked, with a proper medical disclaimer. They are not the problem and rewriting them would burn effort while risking a real asset. Note the scope: description_body means the description of a VIDEO. The channel-level description in the channel block above is a different field and is in scope, for the single link named there.",
     "fields": [
       "tags",
       "description_body"

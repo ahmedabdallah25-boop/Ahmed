@@ -15,16 +15,27 @@ Shorts. Everything for it lives in [`heldbyfaith/`](heldbyfaith/); start at
 `heldbyfaith/channel-diagnosis.md`.
 
 **Channel 2 has its own automation and its own secrets** — `HBF_CLIENT_ID`, `HBF_CLIENT_SECRET`,
-`HBF_REFRESH_TOKEN`, read by the three `heldbyfaith-*.yml` workflows. Never reuse
+`HBF_REFRESH_TOKEN`, read by the four `heldbyfaith-*.yml` workflows. Never reuse
 `new1`/`new2`/`new3`: those are scoped to Finance % Decoded and will not write to HELD BY FAITH.
 Both write paths check the authenticated channel against `expect_channel_id` and abort on a
 mismatch, so a token minted against the wrong channel fails loudly instead of silently
 repackaging the other channel.
 
-Channel 2's write path is live only once `HBF_REFRESH_TOKEN` exists. Run **"HELD BY FAITH -
-1. Check setup"** to see where it stands; the token is minted by hand via `automation/authorize.html`
-because Google requires a browser sign-in and **this repo is public, so no workflow may ever print
-a refresh token.** The monitor needs no token and works regardless.
+**All three `HBF_*` secrets are still MISSING** — re-confirmed 2026-09-12 by run 34673924580 of
+**"HELD BY FAITH - 1. Check setup"**, which failed with all three reported MISSING. So channel 2
+has *no write path at all*: every fix in `heldbyfaith/packaging-fix.json` is a Studio task until
+a token exists. The token is minted by hand via `automation/authorize.html` because Google
+requires a browser sign-in and **this repo is public, so no workflow may ever print a refresh
+token.** The monitor needs no token and works regardless — it is the only channel-2 workflow that
+currently does anything.
+
+**Channel 2's problem changed on about 15 August and the old diagnosis is superseded.** It went
+from 33 lifetime views to **24,364** on ~3.6 vertical Shorts a day, at a 1.7% like rate. Format
+and reach are solved; do not re-fix them. What is broken now is conversion: 24,364 views have
+produced **61 subscribers**, one per 399 views, and both front doors — the channel description's
+"start here" link and the `PLczfvNC3NVjo` playlist — point at `GFKRpV_mhWg`, a 4-view landscape
+video. The six-part story spine has 40 views across all six. Read
+`heldbyfaith/channel-diagnosis.md` (2026-09-12) before touching anything.
 
 ### Channel 3 — Clarity in the Quran
 `@ClarityInTheQuran`, channel ID `UC0eBu0ZXcF20pTAG3lUnPXA` — the Quran explained verse by verse
@@ -74,10 +85,13 @@ comparison, chain diagram, timeline) that carry the argument, changing every 3�
 Clarity's are mood illustrations. A lecture with slides versus a poem with pictures. Clarity's
 prose is already as good — do not "fix" the writing.
 
-Do not port channel 1's conclusions onto channel 2 or channel 3. The finance channel's problem is
-topic exhaustion on a channel with 8K+ lifetime views; HELD BY FAITH has 33 lifetime views and a
-format problem; Clarity in the Quran has 2,561 lifetime views, a format that already works, and a
-cadence-and-runtime problem. Different failures, different fixes.
+Do not port any channel's conclusions onto another. The finance channel's problem is topic
+exhaustion on a channel with 8K+ lifetime views; HELD BY FAITH has 24,364 lifetime views, solved
+reach, and a **conversion** problem — 61 subscribers and a story spine nobody reaches; Clarity in
+the Quran has 2,561 lifetime views, a format that already works, and a cadence-and-runtime
+problem. Different failures, different fixes. Channel 2 in particular is the reason to re-read a
+diagnosis before acting on it: its August file was correct in August and would send you to fix
+format and silence on a channel that publishes every three hours.
 ## Operating mode
 
 Infer intent and scope from the conversation and bias to action — finish the task rather than
@@ -138,7 +152,8 @@ Worked example for a >3min upload: `student-loan-thumbnail-prompts.md`.
   sources) returns `ACCESS DENIED`. `youtube_video_details` is capped at 10 calls/24h.
   Public channel/shorts/video listing tools work fine.
 - **There are no YouTube credentials in the session.** All writes go through GitHub Actions —
-  `new1`/`new2`/`new3` for channel 1, `HBF_*` for channel 2.
+  `new1`/`new2`/`new3` for channel 1, `CIQ_*` for channel 3. Channel 2's `HBF_*` do not exist
+  yet, so channel 2 has no write path from anywhere: its fixes are Studio tasks.
 - **The repo is public.** Actions logs and artifacts are world-readable, so nothing may ever
   print a refresh token, client secret or API key into a workflow. Print *whether* a secret is
   set, never its value.

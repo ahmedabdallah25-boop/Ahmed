@@ -32,9 +32,28 @@ Two things this fixes about eyeballing a channel by hand:
     is noise; the 72-hour rule is not optional.
 
 Where a channel declares `landscape_video_ids`, the report also splits vertical
-from landscape, because on HELD BY FAITH that split IS the diagnosis: three 16:9
-uploads carry 4 views between them against 29 for six vertical Shorts. See
-heldbyfaith/channel-diagnosis.md.
+from landscape. On HELD BY FAITH that split was the whole diagnosis in August:
+three 16:9 uploads carried 4 views between them against 29 for six verticals.
+
+Four comparative panels were added on 2026-09-12, because that split stopped
+being the story and the report could not tell. The channel went 33 -> 24,364
+lifetime views on daily vertical Shorts and the report still said only "publish
+vertical", which was true, already done, and no longer useful. Each panel
+compares a video to something instead of describing it alone:
+
+  cadence      uploads per day over the trailing week, and the gaps
+  reach trend  newer settled Shorts against older ones, inside a 14-day window
+  cohort       one video against its OWN age peers, not against a lifetime rank
+  conversion   lifetime views -> subscribers, the number that says whether
+               reach is building anything
+
+Two exclusions in there are load-bearing and easy to get wrong by hand. Nothing
+under 72h enters a trend or an outlier check, so a Short that looks dead at 40
+hours cannot be judged. And the trend window drops a dormant back catalogue:
+this channel's three July verticals sit at 9-13 views, and averaging them into
+the "older" half turned a real 18% decline into a fake 14% improvement.
+automation/test_channel_monitor_panels.py pins all of that against the recorded
+2026-09-12 channel state.
 """
 import argparse
 import json
@@ -60,6 +79,18 @@ API = "https://www.googleapis.com/youtube/v3"
 # ratio, and CLAUDE.md then requires a custom 16:9 thumbnail.
 SHORTS_CAP_SECONDS = 180
 DECISION_HOURS = 72
+
+# Thresholds for the comparative panels. All of them exist because a per-video
+# report cannot see a channel-level failure: see the block that uses them.
+CADENCE_WINDOW_HOURS = 168        # trailing week, the window a Shorts audience recycles in
+CADENCE_WARN_PER_DAY = 2.0
+TREND_MIN_PER_HALF = 4            # below this, two halves are noise, not a trend
+TREND_DROP_RATIO = 0.75           # newer half under 75% of older half is a real decline
+TREND_WINDOW_HOURS = 336          # 14 days. A dormant back catalogue is not "older"
+COHORT_HOURS = 36                 # half-width of the "same age" window
+COHORT_MIN_PEERS = 4
+UNDERPERFORM_RATIO = 0.4
+CONVERSION_FLOOR_PCT = 0.5        # views -> subscribers; under this, reach is not the problem
 
 OUT = []
 
@@ -134,6 +165,14 @@ def iso_seconds(dur: str) -> int:
         return 0
     d, h, mi, s = (int(x) if x else 0 for x in m.groups())
     return ((d * 24 + h) * 60 + mi) * 60 + s
+
+
+def median(xs):
+    xs = sorted(xs)
+    if not xs:
+        return 0.0
+    m = len(xs) // 2
+    return float(xs[m]) if len(xs) % 2 else (xs[m - 1] + xs[m]) / 2
 
 
 def clock(seconds: int) -> str:
@@ -232,6 +271,99 @@ def main():
                 f"Publish vertical.")
         say()
 
+    # --- cadence, reach trend, cohort outliers, conversion --------------------
+    # Added 2026-09-12. Everything above this line reports the state of one video
+    # at a time, which is why the report said "publish vertical" for five weeks
+    # while the actual failure moved somewhere else entirely: HELD BY FAITH went
+    # from 33 lifetime views to 24,364 on daily vertical Shorts, and per-Short
+    # reach then halved as the upload rate climbed. Not one line of the old report
+    # could show that, because none of it compares a video to anything.
+
+    shorts = [r for r in rows if r["secs"] <= SHORTS_CAP_SECONDS and not r["landscape"]]
+
+    recent = [r for r in rows if r["hours"] <= CADENCE_WINDOW_HOURS]
+    if len(recent) >= 2:
+        span_days = CADENCE_WINDOW_HOURS / 24
+        gaps = sorted(recent, key=lambda r: r["hours"])
+        deltas = [gaps[i + 1]["hours"] - gaps[i]["hours"] for i in range(len(gaps) - 1)]
+        say(f"   Cadence: {len(recent)} uploads in the last {span_days:.0f} days "
+            f"({len(recent) / span_days:.1f}/day) · "
+            f"tightest gap {min(deltas):.0f}h · widest {max(deltas):.0f}h")
+        if len(recent) / span_days > CADENCE_WARN_PER_DAY:
+            say(f"   ! Above {CADENCE_WARN_PER_DAY}/day. Read the reach trend below before "
+                f"adding more: on one niche audience, extra uploads per day compete "
+                f"with each other for the same viewers.")
+        say()
+
+    # Reach trend. Two rules, both learned the hard way on this channel.
+    #
+    # Settled Shorts only: anything under 72h is still climbing, and comparing a
+    # climbing video against a finished one invents a decline that is not there.
+    # HELD BY FAITH's last three days look like a collapse and are not judgeable.
+    #
+    # And inside a trailing window: this channel has 3 vertical uploads from July
+    # sitting at 9-13 views. Averaged into the "older" half they drag it below the
+    # newer half and turn a real 18% decline into a fake 14% improvement.
+    settled_shorts = sorted([r for r in shorts
+                             if DECISION_HOURS <= r["hours"] <= TREND_WINDOW_HOURS],
+                            key=lambda r: r["hours"])
+    if len(settled_shorts) >= TREND_MIN_PER_HALF * 2:
+        half = len(settled_shorts) // 2
+        newer, older = settled_shorts[:half], settled_shorts[half:]
+        nm = sum(r["views"] for r in newer) / len(newer)
+        om = sum(r["views"] for r in older) / len(older)
+        if om:
+            say(f"   Reach trend (settled Shorts, last {TREND_WINDOW_HOURS // 24}d): "
+                f"newer {len(newer)} average {nm:.0f} views · "
+                f"older {len(older)} average {om:.0f} views ({nm / om - 1:+.0%})")
+            if nm < om * TREND_DROP_RATIO:
+                say(f"   ! Per-Short reach is down {(1 - nm / om) * 100:.0f}% against the "
+                    f"channel's own older Shorts. Cadence and reach moving opposite ways "
+                    f"is the saturation signature — cut the rate before cutting the "
+                    f"format.")
+            elif nm > om / TREND_DROP_RATIO:
+                say(f"   Reach per Short is rising. Whatever changed, keep doing it.")
+            else:
+                say(f"   Inside normal week-to-week variation. Not a trend yet — "
+                    f"re-read it when the videos now under 72h have settled.")
+            say()
+
+    # Cohort outliers: a video against its OWN age peers, which is the only fair
+    # comparison on a channel publishing several times a day. Lifetime views rank
+    # by age; this does not.
+    flagged = []
+    for r in (r for r in rows if r["hours"] >= DECISION_HOURS):
+        peers = [p["views"] for p in rows
+                 if p is not r and p["hours"] >= DECISION_HOURS
+                 and abs(p["hours"] - r["hours"]) <= COHORT_HOURS]
+        if len(peers) < COHORT_MIN_PEERS:
+            continue
+        mid = median(peers)
+        if mid and r["views"] < mid * UNDERPERFORM_RATIO:
+            flagged.append((r, mid))
+    if flagged:
+        say(f"   Underperforming against their own age peers "
+            f"(under {UNDERPERFORM_RATIO:.0%} of the median at the same age):")
+        for r, mid in sorted(flagged, key=lambda f: f[0]["views"] / f[1]):
+            say(f"     - {r['id']} {r['views']:>5} views vs {mid:.0f} median "
+                f"({r['views'] / mid:.0%})  {r['title'][:44]}")
+        say("   Same channel, same day, same audience — so the variable is the video.")
+        say()
+
+    # Conversion. The number that says whether reach is building anything.
+    subs = int(stats.get("subscriberCount", 0) or 0)
+    total_views = int(stats.get("viewCount", 0) or 0)
+    if total_views and subs:
+        pct = subs / total_views * 100
+        say(f"   Conversion: {total_views} lifetime views -> {subs} subscribers "
+            f"({pct:.2f}%, one per {total_views / subs:.0f} views)")
+        if pct < CONVERSION_FLOOR_PCT:
+            say(f"   ! Under {CONVERSION_FLOOR_PCT}%. Reach is not the constraint; what "
+                f"happens after the Short is. Check where the channel sends a viewer "
+                f"who just watched one — the About link, the featured video, the "
+                f"playlist they land in.")
+        say()
+
     long_form = [r for r in rows if r["secs"] > SHORTS_CAP_SECONDS]
     if long_form:
         say(f"   {len(long_form)} upload(s) over {SHORTS_CAP_SECONDS}s publish as long-form, "
@@ -245,7 +377,7 @@ def main():
     if best and best["views"]:
         rate = best["likes"] / best["views"] * 100
         say(f"   Best performer: {best['id']} — {best['views']} views, {best['likes']} likes "
-            f"({rate:.0f}% like rate).")
+            f"({rate:.1f}% like rate).")
         if CH.get("packaging_config"):
             say(f"   Guard rails live in {CH['packaging_config']} — check its `protected` "
                 f"list before repackaging this one.")

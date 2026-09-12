@@ -4,8 +4,13 @@ name: HELD BY FAITH - monitor
 # and the vertical-vs-landscape split that is this channel's live problem.
 #
 # Needs only the shared YT_API_KEY, so it works before channel 2 has a refresh
-# token. Runs daily; this channel publishes weekly at best, and the 72-hour rule
-# means a shorter interval would only produce verdicts it has to withhold.
+# token — which as of 2026-09-12 it still does not, making this the only channel-2
+# workflow that does anything.
+#
+# Daily is still right even though the channel now publishes every few hours: the
+# 72-hour rule means a shorter interval would only produce verdicts it has to
+# withhold, and the comparative panels (cadence, reach trend, cohort outliers,
+# conversion) all read trailing windows measured in days.
 
 on:
   schedule:

@@ -17,15 +17,17 @@ fit that script would have meant rewriting descriptions that are already good.
 
 What it does, all of it idempotent:
 
-  1. retitle  — series-suffix repairs only. The channel currently uses three
-     different names for one series ("Pancreatic Cancer Journey Ep. 1",
-     "Muslim Cancer Story Ch. 3", and one unnumbered), so the numbering has a
-     collision and a hole in it. Hooks are never touched.
-  2. channel  — sets channel-level keywords and country, which are empty today.
-  3. unlist   — gated: only once Ch. 6 is published.
+  1. retitle  — series-suffix repairs only, hooks never touched. The config's
+     list is EMPTY as of 2026-09-12: the renumbering it existed for was done by
+     hand, and correctly, so there is nothing left to move.
+  2. channel  — keywords, country and the description's "start here" link.
+  3. unlist   — also empty. See the config's _unlist note: the three landscape
+     uploads are Part 1, 3 and 6 of the only ordered account of the diagnosis
+     on the channel, and hiding them opens holes in the middle of it.
 
-Every hook stays exactly as written. The only title text that moves is the part
-after the "|".
+Every hook stays exactly as written, and so does every sentence of the channel
+description. The only title text that would ever move is the part after the "|",
+and the only description text that moves is one URL.
 """
 import argparse
 import json
@@ -205,11 +207,21 @@ def retitle(token, target, dry_run):
 # --- channel metadata ------------------------------------------------------
 
 def fix_channel_meta(token, dry_run):
-    """Set channel-level keywords and country, both empty today.
+    """Set channel-level keywords, country and description.
 
-    A weak ranking signal on its own, but it is one of the few inputs YouTube uses
-    to place a channel in a topic cluster, and empty gives it nothing. Costs
-    nothing and cannibalises nothing.
+    Keywords are a weak ranking signal on their own, but one of the few inputs
+    YouTube uses to place a channel in a topic cluster. The live field is also
+    actively broken: YouTube's keyword field is space-separated and only double
+    quotes hold a phrase together, so an unquoted paste turned "held by faith"
+    into three keywords — held, by, faith. The join below quotes every term that
+    contains a space, which is the whole repair.
+
+    The description is here because on this channel it is the highest-leverage
+    field there is: 24,364 lifetime views have produced 61 subscribers, and the
+    "start here" link under the owner's own words points at a 4-view landscape
+    video. Only that link moves. The prose is his account of his own cancer and
+    the config carries it verbatim; current_description is the drift guard that
+    makes sure a Studio edit is never silently clobbered by it.
     """
     cfg = CFG.get("channel")
     if not cfg:
@@ -224,7 +236,10 @@ def fix_channel_meta(token, dry_run):
     branding = items[0]["brandingSettings"]
     have_kw = branding.get("channel", {}).get("keywords", "")
     have_country = branding.get("channel", {}).get("country", "")
+    have_desc = branding.get("channel", {}).get("description", "")
     want_country = cfg.get("country", have_country)
+    want_desc = cfg.get("description")
+    recorded_desc = cfg.get("current_description")
 
     changes = []
     if want_kw and have_kw != want_kw:
@@ -232,11 +247,34 @@ def fix_channel_meta(token, dry_run):
                        f"({len(cfg.get('keywords', []))} terms)")
     if want_country and want_country != have_country:
         changes.append(f"country: {have_country or '(unset)'} -> {want_country}")
+
+    # Description: same contract as current_title on a retitle. If the live text is
+    # neither what the config recorded nor what it is aiming at, someone edited it
+    # in Studio; writing anyway would destroy their words, so stop and report.
+    write_desc = False
+    if want_desc and have_desc != want_desc:
+        if recorded_desc is not None and have_desc != recorded_desc:
+            say("  SKIP channel description: live text matches neither the config's "
+                "record nor its target.")
+            say("      Someone edited it in Studio. Update current_description in "
+                "heldbyfaith/packaging-fix.json, then re-run.")
+            ERRORS.append("channel description: drifted from current_description")
+        else:
+            write_desc = True
+            was = [ln for ln in have_desc.splitlines() if ln not in want_desc.splitlines()]
+            now = [ln for ln in want_desc.splitlines() if ln not in have_desc.splitlines()]
+            changes.append(f"description: {len(was)} line(s) change, "
+                           f"{len(have_desc)} -> {len(want_desc)} chars")
+            for ln in was:
+                changes.append(f"    - {ln}")
+            for ln in now:
+                changes.append(f"    + {ln}")
+
     if not changes:
         say("  = channel metadata already up to date.")
         return 0
     for c in changes:
-        say(f"  channel {c}")
+        say(f"  channel {c}" if not c.startswith("    ") else f"  {c}")
     if dry_run:
         say("      [dry-run] not written")
         return 0
@@ -245,6 +283,8 @@ def fix_channel_meta(token, dry_run):
         branding.setdefault("channel", {})["keywords"] = want_kw
     if want_country:
         branding.setdefault("channel", {})["country"] = want_country
+    if write_desc:
+        branding.setdefault("channel", {})["description"] = want_desc
     try:
         call(token, "PUT", "channels", {"part": "brandingSettings"},
              {"id": items[0]["id"], "brandingSettings": branding})
@@ -259,19 +299,21 @@ def fix_channel_meta(token, dry_run):
 # --- unlist ----------------------------------------------------------------
 
 def unlist(token, dry_run):
-    """Unlist the orphan landscape cut — but only after Ch. 6 is live.
+    """Unlist anything the config lists. Never delete.
 
-    Never delete: unlisting keeps the footage and the original upload date, and is
-    reversible in one click. The gate matters — pulling it before the replacement
-    exists removes a beat from the story instead of replacing it.
+    Unlisting keeps the footage and the original upload date and is reversible in
+    one click; deleting is neither, and on this channel the footage is a record of
+    someone's illness. Nothing here deletes.
+
+    The config's list is empty as of 2026-09-12 and its _unlist note says why: the
+    three landscape uploads are Part 1, Part 3 and Part 6 of the only ordered
+    account of the diagnosis on the channel, so hiding them opens holes in the
+    middle of it. This path stays because the mechanism is still the right one the
+    day a vertical re-cut replaces one of them.
     """
     targets = CFG.get("unlist", [])
     if not targets:
-        return 0
-    if not CFG.get("ch6_video_id"):
-        ids = ", ".join(t["video_id"] for t in targets)
-        say(f"  BLOCKED {ids}: waiting on Ch. 6 to publish.")
-        say("      Fill in ch6_video_id in packaging-fix.json once it is live, then re-run.")
+        say("  = nothing queued to unlist.")
         return 0
 
     written = 0
@@ -327,11 +369,11 @@ def main():
     say(f"\n{written} change(s) written.")
     if args.dry_run:
         say("Dry run — nothing was written. Untick \"dry run\" to apply.")
-    if not CFG.get("ch6_video_id"):
-        say("\nStill outstanding, by design: descriptions keep their current series block.")
-        say("packaging-fix.json's series_block contains a {CH6_URL} placeholder that cannot")
-        say("resolve until Ch. 6 is published, and a half-written block is worse than the")
-        say("current one. Descriptions and tags are otherwise deliberately untouched.")
+    say("\nOut of scope by design: per-video titles, descriptions and tags.")
+    say("The retitle list is empty because that work is done, and description_body")
+    say("and tags are in packaging-fix.json's do_not_touch. This channel's per-video")
+    say("metadata is its strongest asset; the gap is what happens AFTER a Short, which")
+    say("is the channel description and the playlist. See heldbyfaith/channel-diagnosis.md.")
 
     if ERRORS:
         say(f"\n{len(ERRORS)} failure(s) — this run is NOT complete:")
