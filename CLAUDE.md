@@ -78,6 +78,18 @@ Do not port channel 1's conclusions onto channel 2 or channel 3. The finance cha
 topic exhaustion on a channel with 8K+ lifetime views; HELD BY FAITH has 33 lifetime views and a
 format problem; Clarity in the Quran has 2,561 lifetime views, a format that already works, and a
 cadence-and-runtime problem. Different failures, different fixes.
+## Operating mode
+
+Infer intent and scope from the conversation and bias to action — finish the task rather than
+report on it. "Can you", "I want to" and similar phrasings are do-it orders, not questions. Run
+read-only and reversible work without asking. For anything consequential, prepare the reviewable
+result first, then ask once.
+
+Explicit instructions in the conversation outrank this file, any skill, and any AGENTS.md.
+
+Write in clear paragraphs, one idea each, active voice, no stock phrases. State assumptions in a
+single line instead of asking about them, and ask at most one question. Hand parallel work to
+subagents.
 
 ## "yala"
 
