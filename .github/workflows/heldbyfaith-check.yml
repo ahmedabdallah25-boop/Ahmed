@@ -25,3 +25,39 @@ jobs:
           HBF_CLIENT_SECRET: ${{ secrets.HBF_CLIENT_SECRET }}
           HBF_REFRESH_TOKEN: ${{ secrets.HBF_REFRESH_TOKEN }}
           YT_API_KEY: ${{ secrets.YT_API_KEY }}
+
+          # Alias sweep. If the three names above come back empty, the check
+          # reports which of these hold something instead — set/not-set only,
+          # never a value. A workflow cannot enumerate secrets it does not name,
+          # so "MISSING" without this is only ever "missing under those names".
+          # Controls first: these are known-set, and prove the sweep is wired up.
+          new1: ${{ secrets.new1 }}
+          CIQ_CLIENT_ID: ${{ secrets.CIQ_CLIENT_ID }}
+          # Candidates:
+          new4: ${{ secrets.new4 }}
+          new5: ${{ secrets.new5 }}
+          new6: ${{ secrets.new6 }}
+          new7: ${{ secrets.new7 }}
+          new8: ${{ secrets.new8 }}
+          new9: ${{ secrets.new9 }}
+          HBF1: ${{ secrets.HBF1 }}
+          HBF2: ${{ secrets.HBF2 }}
+          HBF3: ${{ secrets.HBF3 }}
+          HBF_ID: ${{ secrets.HBF_ID }}
+          HBF_SECRET: ${{ secrets.HBF_SECRET }}
+          HBF_TOKEN: ${{ secrets.HBF_TOKEN }}
+          HBF_CLIENTID: ${{ secrets.HBF_CLIENTID }}
+          HBF_CLIENTSECRET: ${{ secrets.HBF_CLIENTSECRET }}
+          HBF_REFRESHTOKEN: ${{ secrets.HBF_REFRESHTOKEN }}
+          HELDBYFAITH_CLIENT_ID: ${{ secrets.HELDBYFAITH_CLIENT_ID }}
+          HELDBYFAITH_CLIENT_SECRET: ${{ secrets.HELDBYFAITH_CLIENT_SECRET }}
+          HELDBYFAITH_REFRESH_TOKEN: ${{ secrets.HELDBYFAITH_REFRESH_TOKEN }}
+          HELD_BY_FAITH_CLIENT_ID: ${{ secrets.HELD_BY_FAITH_CLIENT_ID }}
+          HELD_BY_FAITH_CLIENT_SECRET: ${{ secrets.HELD_BY_FAITH_CLIENT_SECRET }}
+          HELD_BY_FAITH_REFRESH_TOKEN: ${{ secrets.HELD_BY_FAITH_REFRESH_TOKEN }}
+          CHANNEL2_CLIENT_ID: ${{ secrets.CHANNEL2_CLIENT_ID }}
+          CHANNEL2_CLIENT_SECRET: ${{ secrets.CHANNEL2_CLIENT_SECRET }}
+          CHANNEL2_REFRESH_TOKEN: ${{ secrets.CHANNEL2_REFRESH_TOKEN }}
+          YT2_CLIENT_ID: ${{ secrets.YT2_CLIENT_ID }}
+          YT2_CLIENT_SECRET: ${{ secrets.YT2_CLIENT_SECRET }}
+          YT2_REFRESH_TOKEN: ${{ secrets.YT2_REFRESH_TOKEN }}

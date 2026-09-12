@@ -31,6 +31,41 @@ CHANNELS = json.loads(
     (Path(__file__).resolve().parent / "channels.json").read_text())["channels"]
 BY_ID = {c["channel_id"]: c for c in CHANNELS.values()}
 
+# Candidate names swept when a channel's three declared secrets all come back
+# empty. A workflow can only read the exact names its `env:` block asks for, so
+# "MISSING" means "missing under those three names" and nothing more — which is
+# not the same claim, and on 2026-09-12 the difference was the whole question.
+# This turns it into an answer. Only ever prints set / not set, never a value.
+#
+# Deliberately NOT done with toJSON(secrets), which would enumerate every name
+# perfectly and is the obvious shortcut. It puts every secret VALUE into the step
+# environment, and this repo is public with world-readable Actions logs. Log
+# masking would almost certainly hold, and CLAUDE.md's rule is that we do not
+# find out. An explicit list cannot find a name nobody guessed; it also cannot
+# leak one.
+ALIAS_PROBE = {
+    "heldbyfaith": [
+        # The repo's own convention for channel 1 is new1/new2/new3, so a second
+        # channel added the same way is the single likeliest miss.
+        "new4", "new5", "new6",
+        "new7", "new8", "new9",
+        "HBF1", "HBF2", "HBF3",
+        "HBF_ID", "HBF_SECRET", "HBF_TOKEN",
+        "HBF_CLIENTID", "HBF_CLIENTSECRET", "HBF_REFRESHTOKEN",
+        "HELDBYFAITH_CLIENT_ID", "HELDBYFAITH_CLIENT_SECRET",
+        "HELDBYFAITH_REFRESH_TOKEN",
+        "HELD_BY_FAITH_CLIENT_ID", "HELD_BY_FAITH_CLIENT_SECRET",
+        "HELD_BY_FAITH_REFRESH_TOKEN",
+        "CHANNEL2_CLIENT_ID", "CHANNEL2_CLIENT_SECRET", "CHANNEL2_REFRESH_TOKEN",
+        "YT2_CLIENT_ID", "YT2_CLIENT_SECRET", "YT2_REFRESH_TOKEN",
+    ],
+}
+
+# Positive controls. These are known to be set, so if the sweep reports them as
+# not set then the workflow is not passing the probe through at all and every
+# other "not set" below is meaningless rather than informative.
+PROBE_CONTROLS = ["new1", "CIQ_CLIENT_ID"]
+
 OUT = []
 
 
@@ -87,6 +122,73 @@ def whoami(token):
     return items[0]["id"], items[0]["snippet"].get("title", "?"), None
 
 
+def probe_aliases(channel):
+    """Report which plausible alternative secret names hold something.
+
+    Answers the one question the three-name check cannot: "they ARE in GitHub" and
+    "the workflow cannot see them" are both true at once if they went in under a
+    different name. Set / not set only — a value is never read into a message.
+    """
+    names = ALIAS_PROBE.get(channel)
+    if not names:
+        return
+    say()
+    say("   -- alias sweep -------------------------------------------------")
+
+    controls = [c for c in PROBE_CONTROLS if os.environ.get(c)]
+    if not controls:
+        say("   INCONCLUSIVE. The known-good control secrets are not reaching this")
+        say(f"   step either ({', '.join(PROBE_CONTROLS)}), so the sweep below cannot")
+        say("   distinguish 'not set' from 'not passed through'. Check that the")
+        say("   workflow's env: block still lists them.")
+        return
+
+    found = [n for n in names if os.environ.get(n)]
+    say(f"   Controls reaching this step: {', '.join(controls)} — so a 'not set'")
+    say("   below is a real answer, not a plumbing failure.")
+    say()
+    if found:
+        say(f"   FOUND {len(found)} secret(s) under other names:")
+        for n in found:
+            say(f"     [x] {n}")
+        say()
+        say("   These hold something, and no workflow reads them. Two ways to fix it,")
+        say("   and the first is better because it leaves one name per channel:")
+        say()
+        say("     1. Re-add the same values as HBF_CLIENT_ID, HBF_CLIENT_SECRET and")
+        say("        HBF_REFRESH_TOKEN, then delete the old names. GitHub will not show")
+        say("        you an existing secret's value, so copy the client ID and secret")
+        say("        from Google Cloud Console and re-mint the token if you no longer")
+        say("        have it.")
+        say()
+        say("     2. Or point the workflows at the names you already have, by editing")
+        say("        the env: block in the four .github/workflows/heldbyfaith-*.yml")
+        say("        files. Cheaper now, one more thing to remember later.")
+        say()
+        say("   Either way, run this check again afterwards. A refresh token that")
+        say("   exists is not the same as one bound to HELD BY FAITH, and the next")
+        say("   run will resolve which channel it actually owns.")
+    else:
+        say(f"   Swept {len(names)} alternative names. None of them hold anything.")
+        say()
+        say("   So the values are genuinely not stored as repository secrets on this")
+        say("   repo, under any name this sweep knows. Worth ruling out before")
+        say("   re-minting, in this order:")
+        say()
+        say("     - Are they ENVIRONMENT secrets? Settings -> Environments -> (an")
+        say("       environment) -> Secrets. Those are invisible unless a job declares")
+        say("       `environment:`, and none of these do.")
+        say("     - Are they ORGANIZATION secrets not granted to this repository?")
+        say("       An org secret has a repository-access list and this repo may not")
+        say("       be on it.")
+        say("     - Are they on a FORK, or on a different repo of the same name?")
+        say("     - Were they added as Variables rather than Secrets? Same page,")
+        say("       different tab. Workflows read those as vars.NAME, not secrets.NAME.")
+        say()
+        say("   If none of those, they were never added here and step 3 of")
+        say("   heldbyfaith/channel-diagnosis.md is the path.")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--channel", choices=sorted(CHANNELS), default="heldbyfaith")
@@ -129,6 +231,7 @@ def main():
             say()
             say("   Make sure they are REPOSITORY secrets, not Environment or")
             say("   Dependabot secrets — those are not exposed to these workflows.")
+            probe_aliases(args.channel)
             summarize()
             return 1
         if missing == [token_key]:
