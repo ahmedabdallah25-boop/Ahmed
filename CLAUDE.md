@@ -15,7 +15,7 @@ Shorts. Everything for it lives in [`heldbyfaith/`](heldbyfaith/); start at
 `heldbyfaith/channel-diagnosis.md`.
 
 **Channel 2 has its own automation and its own secrets** — `HBF_CLIENT_ID`, `HBF_CLIENT_SECRET`,
-`HBF_REFRESH_TOKEN`, read by the four `heldbyfaith-*.yml` workflows. Never reuse
+`HBF_REFRESH_TOKEN`, read by the five `heldbyfaith-*.yml` workflows. Never reuse
 `new1`/`new2`/`new3`: those are scoped to Finance % Decoded and will not write to HELD BY FAITH.
 Both write paths check the authenticated channel against `expect_channel_id` and abort on a
 mismatch, so a token minted against the wrong channel fails loudly instead of silently
@@ -28,6 +28,14 @@ a token exists. The token is minted by hand via `automation/authorize.html` beca
 requires a browser sign-in and **this repo is public, so no workflow may ever print a refresh
 token.** The monitor needs no token and works regardless — it is the only channel-2 workflow that
 currently does anything.
+
+**Channel 2 is armed to fix itself.** `heldbyfaith-autopilot.yml` runs daily at 07:45 UTC, tests
+whether the three secrets exist, and applies `heldbyfaith/packaging-fix.json` in full the moment
+they do — no prompting, no review step. Until then it exits 0 and says it is standing by, rather
+than failing red every morning for a known state. So adding the secrets is now the *only* manual
+step left on this channel; everything downstream of it is automatic. Verified 2026-09-12 that no
+other write path exists: vidIQ is authorized for `UCVOoFJkRiOdJsWnewt8HJkw` (channel 1) only, and
+Nexlev's free plan has no write tools.
 
 **Channel 2's problem changed on about 15 August and the old diagnosis is superseded.** It went
 from 33 lifetime views to **24,364** on ~3.6 vertical Shorts a day, at a 1.7% like rate. Format

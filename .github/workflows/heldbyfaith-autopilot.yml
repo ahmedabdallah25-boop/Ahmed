@@ -1,0 +1,102 @@
+name: HELD BY FAITH - 5. Autopilot
+
+# Applies heldbyfaith/packaging-fix.json by itself, every day, as soon as it can.
+#
+# Why this exists: as of 2026-09-12 channel 2 has no write path at all. The three
+# HBF_* secrets are unset, vidIQ is authorized for Finance % Decoded only, and
+# Nexlev's free plan has no write tools — so the two changes that fix this
+# channel's conversion problem are stuck as manual Studio tasks. Rather than
+# leave a standing instruction for a human to remember, this waits for the
+# credentials and does the work the moment they appear.
+#
+# Until then it exits 0 and says it is waiting. It does NOT fail daily: a red X
+# every morning for a known, expected state trains people to ignore the icon,
+# and the one time it means something they will miss it. "HELD BY FAITH - 1.
+# Check setup" is the workflow that fails loudly, on demand, with the diagnosis.
+#
+# What it will actually write, and nothing else:
+#   - channel keywords, with multi-word phrases quoted (the live field is
+#     corrupted into 30 single words, so "held by faith" is three keywords)
+#   - the channel description's "start here" link, one line, from a 4-view
+#     landscape video to the channel's highest-engagement Short
+#   - country
+#
+# retitle and unlist are both empty in the config, deliberately — see its notes.
+# So there is no per-video write here at all, and running it cannot touch a
+# video's title, description or tags.
+#
+# Three things make unattended writing safe enough to do on a schedule:
+#   1. expect_channel_id — aborts before any write unless the token owns
+#      UCh0tKIGR5Ns3Wvoai__txdg, so a token minted against the wrong channel
+#      cannot land HELD BY FAITH's metadata on Finance % Decoded.
+#   2. current_description — a drift guard. If the description has been edited
+#      in Studio since packaging-fix.json recorded it, the write is refused and
+#      the run fails rather than overwriting someone's words. That is pinned by
+#      automation/test_heldbyfaith_channel_meta.py.
+#   3. It is idempotent. Once applied, every later run reports "already up to
+#      date" and writes nothing.
+
+on:
+  schedule:
+    - cron: "45 7 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview instead of writing (the schedule always writes)"
+        type: boolean
+        default: false
+
+jobs:
+  autopilot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Emptiness test only. `-n "$VAR"` never echoes the value, and the step
+      # prints nothing but ready=true/false — this repo is public.
+      - name: Are the credentials here yet?
+        id: gate
+        env:
+          HBF_CLIENT_ID: ${{ secrets.HBF_CLIENT_ID }}
+          HBF_CLIENT_SECRET: ${{ secrets.HBF_CLIENT_SECRET }}
+          HBF_REFRESH_TOKEN: ${{ secrets.HBF_REFRESH_TOKEN }}
+        run: |
+          if [ -n "$HBF_CLIENT_ID" ] && [ -n "$HBF_CLIENT_SECRET" ] \
+             && [ -n "$HBF_REFRESH_TOKEN" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Waiting for credentials
+        if: steps.gate.outputs.ready != 'true'
+        run: |
+          {
+            echo "### HELD BY FAITH autopilot — standing by"
+            echo
+            echo "The three \`HBF_*\` repository secrets are not set, so there is no"
+            echo "write path to this channel and nothing was attempted."
+            echo
+            echo "This is expected and is not a failure. The moment all three exist,"
+            echo "the next scheduled run applies the whole of"
+            echo "\`heldbyfaith/packaging-fix.json\` without anyone asking it to."
+            echo
+            echo "To unblock it: open \`automation/authorize.html\` on a laptop, sign in,"
+            echo "**pick HELD BY FAITH at Google's chooser**, then add"
+            echo "\`HBF_CLIENT_ID\`, \`HBF_CLIENT_SECRET\` and \`HBF_REFRESH_TOKEN\` as"
+            echo "**repository** secrets. Run *HELD BY FAITH - 1. Check setup* to confirm."
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "Not ready — no HBF_* secrets. Standing by, exiting 0."
+
+      - name: Apply the packaging fix
+        if: steps.gate.outputs.ready == 'true'
+        run: |
+          python automation/heldbyfaith_packaging.py \
+            ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          HBF_CLIENT_ID: ${{ secrets.HBF_CLIENT_ID }}
+          HBF_CLIENT_SECRET: ${{ secrets.HBF_CLIENT_SECRET }}
+          HBF_REFRESH_TOKEN: ${{ secrets.HBF_REFRESH_TOKEN }}
