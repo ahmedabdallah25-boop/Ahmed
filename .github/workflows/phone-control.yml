@@ -1,0 +1,119 @@
+name: PHONE - run a job from an issue comment
+
+# A control surface that works from a phone.
+#
+# Why this exists, 2026-09-15: the owner reported being unable to automate from
+# a phone, with something "claiming no secrets found". Checked the run history —
+# no phone-originated run has ever reached Actions, from any branch or fork. So
+# the message comes from the tool on the phone, not from this repo: an agent
+# session looks for credentials in ITS OWN environment, and there are none
+# there by design. GitHub Actions secrets are write-only in the UI, never
+# readable through the API, and never handed to a session on any device. Only a
+# runner can read them. The fix is therefore not to get secrets onto the phone —
+# that must never happen — but to let the phone ASK A RUNNER to do the work.
+#
+# workflow_dispatch needs the Actions "Run workflow" button, which the GitHub
+# mobile app does not show. Commenting on an issue is something the mobile app
+# does well, so that is the trigger.
+#
+# Guarded: only comments written by the repository owner run anything. This repo
+# is public and anyone can comment, so the gate is the whole security model.
+# Everything it can run is already scheduled and already idempotent; this only
+# changes WHEN, never WHAT.
+#
+# Commands, as a comment on any issue:
+#   /check     credentials for all three channels (read-only)
+#   /clarity   apply the Clarity fix — packaging, playlists, cross-links
+#   /preview   the same, as a dry run that writes nothing
+#   /hbf       apply the HELD BY FAITH fix
+#
+# Output is posted back as a reply, trimmed to the tail. The scripts print
+# whether a secret is set, never its value — same rule as every other workflow
+# here, because this repo is public.
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  run:
+    # The gate. github.repository_owner is the account that owns this repo, so a
+    # comment from anyone else is ignored entirely — no job, no runner, no log.
+    if: >-
+      github.event.comment.user.login == github.repository_owner &&
+      (startsWith(github.event.comment.body, '/check') ||
+       startsWith(github.event.comment.body, '/clarity') ||
+       startsWith(github.event.comment.body, '/preview') ||
+       startsWith(github.event.comment.body, '/hbf'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: React so the phone knows it landed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api --method POST \
+            "repos/${{ github.repository }}/issues/comments/${{ github.event.comment.id }}/reactions" \
+            -f content=eyes || true
+
+      - name: Run it
+        id: run
+        continue-on-error: true
+        env:
+          new1: ${{ secrets.new1 }}
+          new2: ${{ secrets.new2 }}
+          new3: ${{ secrets.new3 }}
+          HBF_CLIENT_ID: ${{ secrets.HBF_CLIENT_ID }}
+          HBF_CLIENT_SECRET: ${{ secrets.HBF_CLIENT_SECRET }}
+          HBF_REFRESH_TOKEN: ${{ secrets.HBF_REFRESH_TOKEN }}
+          CIQ_CLIENT_ID: ${{ secrets.CIQ_CLIENT_ID }}
+          CIQ_CLIENT_SECRET: ${{ secrets.CIQ_CLIENT_SECRET }}
+          CIQ_REFRESH_TOKEN: ${{ secrets.CIQ_REFRESH_TOKEN }}
+          BODY: ${{ github.event.comment.body }}
+        run: |
+          set -o pipefail
+          cmd=$(printf '%s' "$BODY" | head -1 | tr -d '\r' | awk '{print $1}')
+          echo "command: $cmd" | tee -a out.txt
+          case "$cmd" in
+            /check)
+              for ch in finance heldbyfaith clarity; do
+                python automation/check_channel_auth.py --channel "$ch" 2>&1 | tee -a out.txt || true
+              done
+              ;;
+            /preview)
+              python automation/clarity_packaging.py --dry-run 2>&1 | tee -a out.txt
+              python automation/clarity_playlists.py --dry-run 2>&1 | tee -a out.txt
+              python automation/clarity_crosslinks.py --dry-run 2>&1 | tee -a out.txt
+              ;;
+            /clarity)
+              python automation/clarity_packaging.py 2>&1 | tee -a out.txt
+              python automation/clarity_playlists.py 2>&1 | tee -a out.txt
+              python automation/clarity_crosslinks.py 2>&1 | tee -a out.txt
+              ;;
+            /hbf)
+              python automation/heldbyfaith_packaging.py 2>&1 | tee -a out.txt
+              ;;
+          esac
+
+      - name: Reply with what happened
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo "**${{ steps.run.outcome == 'success' && 'Done' || 'Did not complete' }}** — [full log](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
+            echo
+            echo '```'
+            tail -c 3000 out.txt 2>/dev/null || echo "(no output)"
+            echo '```'
+          } > reply.md
+          gh issue comment "${{ github.event.issue.number }}" \
+            --repo "${{ github.repository }}" --body-file reply.md
