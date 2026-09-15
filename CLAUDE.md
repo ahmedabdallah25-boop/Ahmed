@@ -178,6 +178,12 @@ Worked example for a >3min upload: `student-loan-thumbnail-prompts.md`.
 - **Nexlev is on the FREE plan.** Every `get_my_*` analytics tool (CTR, retention, traffic
   sources) returns `ACCESS DENIED`. `youtube_video_details` is capped at 10 calls/24h.
   Public channel/shorts/video listing tools work fine.
+- **Check credentials with "ALL CHANNELS - check credentials"** before assuming a write path
+  works. It is read-only, covers all three channels in one click, and runs Mondays 08:00 UTC.
+  Verified 2026-09-15 01:02 UTC: channel 1 **WORKING**, channel 2 secrets **MISSING**, channel 3
+  secrets all set but the token **rejected** (`invalid_grant`). A signed-in browser on a laptop
+  says nothing about these — a Studio session and a stored OAuth refresh token are independent,
+  and channel 3's token was dead for three weeks while Studio worked fine.
 - **There are no YouTube credentials in the session.** All writes go through GitHub Actions —
   `new1`/`new2`/`new3` for channel 1, `CIQ_*` for channel 3. Channel 2's `HBF_*` do not exist
   yet, so channel 2 has no write path from anywhere: its fixes are Studio tasks.
