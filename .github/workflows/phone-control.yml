@@ -111,8 +111,13 @@ jobs:
           {
             echo "**${{ steps.run.outcome == 'success' && 'Done' || 'Did not complete' }}** — [full log](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
             echo
+            # 25000, not 3000: the first /check reply tailed off the front and
+            # lost channel 1's result entirely — the one line that said a write
+            # path still works. A GitHub comment holds 65536 characters and
+            # these scripts produce a few thousand, so tail only ever bites on a
+            # pathological run.
             echo '```'
-            tail -c 3000 out.txt 2>/dev/null || echo "(no output)"
+            tail -c 25000 out.txt 2>/dev/null || echo "(no output)"
             echo '```'
           } > reply.md
           gh issue comment "${{ github.event.issue.number }}" \
