@@ -134,3 +134,29 @@ the runtime recommendation from the 27:40 figure in `video-formula.md` to the 17
 noted why both numbers are right about different things. Downgraded the long-form and
 format-shape findings from claims to tests, because one hit and one counter-example do not carry
 a causal claim.
+
+## 5. What was applied, and what is blocked
+
+Everything in section 3 that is a metadata change is now committed to
+`clarity/packaging-fix.json`, `clarity/playlists.json` and `clarity/layout.json`: thirteen
+retitles, tags for the two uploads no config had ever covered, the 24 tags the channel's best
+video never received, all 23 long-form uploads in a playlist (was 13), a fifth playlist and home
+shelf for the word studies, and a channel description that no longer advertises four verse-by-verse
+series with no uploads behind them.
+
+**None of it has landed, because channel 3's write path is dead.** Run 34912794506 returned
+`Google rejected CIQ_REFRESH_TOKEN: invalid_grant`. The token was confirmed live on 2026-08-22 and
+wrote successfully on 2026-08-24, so it died in between — a consent screen left in Testing expires
+refresh tokens after seven days, and the gap fits. `clarity-autopilot.yml` now runs daily, tests
+whether the token *works* rather than whether it is present, and applies the entire fix the moment
+it does.
+
+One correction this forced, from `clarity/growth-playbook.md` (24 August, and it was not on the
+default branch until today): **repackaging a settled catalogue is not a growth lever.** A metadata
+edit does not itself trigger re-promotion — measured at +0 views over 21.7 hours on channel 1, and
+the May uploads here run at 0.2–2.1 views/day. So the retitles above are hygiene, not growth: they
+stop three of our own videos bidding on "anger", they put a searchable entity in titles that had
+none, and they stop the channel advertising work it cannot show. The growth lever is the anchored
+series, and that playbook has the number this file did not: search demand for `surah al kahf` runs
+at **13.4x on Fridays**, four Fridays out of four, with Thursday already at 1.9x — so publish it
+on **Thursdays**, not Fridays.

@@ -53,8 +53,16 @@ from before that decision; they are maintained, not extended. Everything for it 
 [`clarity/`](clarity/); start at `clarity/channel-diagnosis.md`.
 
 **Channel 3 has its own secrets** — `CIQ_CLIENT_ID`, `CIQ_CLIENT_SECRET`, `CIQ_REFRESH_TOKEN`,
-read by the three `clarity-*.yml` workflows and confirmed live on 2026-08-22 as **Repository**
-secrets owning `UC0eBu0ZXcF20pTAG3lUnPXA`. Never reuse `new1`/`new2`/`new3` or the `HBF_*` trio.
+read by the `clarity-*.yml` workflows as **Repository** secrets owning `UC0eBu0ZXcF20pTAG3lUnPXA`.
+**`CIQ_REFRESH_TOKEN` is DEAD as of 2026-09-15** — run 34912794506 of "CLARITY IN THE QURAN - 2. Fix
+packaging" came back `Google rejected CIQ_REFRESH_TOKEN: invalid_grant`. It was confirmed live on
+2026-08-22 and wrote successfully on 2026-08-24, so it died in between; a consent screen left in
+**Testing** expires refresh tokens after 7 days, which fits the gap exactly. So channel 3 now has
+**no write path at all** and every fix in `clarity/packaging-fix.json` is a Studio task until the
+token is re-minted through `automation/authorize.html` with the same client id and secret.
+`clarity-autopilot.yml` runs daily at 08:15 UTC, tests whether the token *works* rather than
+whether it exists, and applies the whole fix — packaging, playlists, cross-links — the moment it
+does; until then it exits 0 standing by. Re-minting is the only manual step left on this channel. Never reuse `new1`/`new2`/`new3` or the `HBF_*` trio.
 The same `expect_channel_id` guard applies, so a mis-minted token aborts instead of repackaging
 another channel.
 
@@ -92,6 +100,17 @@ that matters most: its on-screen images are *information graphics* (big number, 
 comparison, chain diagram, timeline) that carry the argument, changing every 3–5 seconds, where
 Clarity's are mood illustrations. A lecture with slides versus a poem with pictures. Clarity's
 prose is already as good — do not "fix" the writing.
+
+**Before trying to "push" or revive anything on Clarity, read
+[`clarity/growth-playbook.md`](clarity/growth-playbook.md).** It reverse-engineers the reference
+channel *while that channel is in a downturn* — 29 of its last 30 uploads sit below its own lifetime
+average — and the two conclusions that will otherwise get re-derived wrong are: **repackaging the
+settled catalogue is not a lever here** (no impressions to convert; +0 views measured on channel 1;
+the legitimate version is Studio's Test & Compare on new uploads, judged on watch time per
+impression), and **the largest unclaimed lever is a calendar-anchored series** — search demand for
+`surah al kahf` runs at **13.4x on Fridays**, four Fridays out of four, the same mechanism as the
+reference channel's weekly Sabbath School series taking a 33.5K median against 8.9K for everything
+else there. Publish that series on Thursdays.
 
 Do not port any channel's conclusions onto another. The finance channel's problem is topic
 exhaustion on a channel with 8K+ lifetime views; HELD BY FAITH has 24,364 lifetime views, solved

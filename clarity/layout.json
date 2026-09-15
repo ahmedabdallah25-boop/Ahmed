@@ -1,20 +1,21 @@
 {
   "_comment": "Clarity in the Quran (@ClarityInTheQuran, UC0eBu0ZXcF20pTAG3lUnPXA) channel layout, 2026-08-22. The channel has no Home tab: tabs are [Videos, Shorts, Playlists, Posts] where the reference channel @deepmadesimple has [Home, Videos, Playlists, Posts]. A missing Home tab means no layout is configured, so every visitor lands on a flat reverse-chronological grid whose top item is currently the newest upload rather than the one that actually converts.",
-
   "expect_channel_id": "UC0eBu0ZXcF20pTAG3lUnPXA",
   "_expect_channel_id": "Enforced before any write, exactly as in clarity_packaging.py: the script resolves the authenticated channel with mine=true and aborts unless it is this id. The branding write is a fetch-then-mutate, so pointed at the wrong channel it would overwrite THAT channel's keywords and country in one silent call.",
-
   "unsubscribed_trailer": {
     "video_id": "cjtKWsFZbcg",
     "_title": "What the Quran Actually Says About Anger | Clarity In The Quran",
     "_why": "849 views — a third of the channel's lifetime audience — and the highest of any upload. It is 6:17, a complete standalone explainer rather than a fragment, and it already leads the largest playlist. A purpose-made trailer would be better and does not exist; featuring the proven performer is the standard fallback. This is a reversible one-field write: change video_id here and re-run to move it.",
     "_caveat": "This sets the trailer shown to UNSUBSCRIBED viewers only. The separate 'featured video for returning subscribers' has no field in the Data API and stays a Studio task."
   },
-
   "sections": [
     {
       "playlist_title": "What the Quran Says About Your Emotions",
       "_why": "First because it is the largest list (5), holds the 849-view leader, and its subject is the universal-problem entry point that brought this channel every result it has."
+    },
+    {
+      "playlist_title": "One Arabic Word at a Time: Quran Word Studies",
+      "_why": "Added 2026-09-15 with the playlist itself. Five uploads were already this series and nothing said so; placed second because the shelf above it is the entry point and this one is what a viewer who liked a word study should hit next. Without a shelf the list exists but never appears on the channel home page."
     },
     {
       "playlist_title": "Stories of the Prophets in the Quran",

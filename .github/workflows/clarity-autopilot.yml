@@ -1,0 +1,112 @@
+name: CLARITY IN THE QURAN - 5. Autopilot
+
+# Applies the whole of clarity/packaging-fix.json — plus playlists and the
+# WATCH NEXT cross-links — the moment channel 3 has a working token again.
+#
+# Why this exists, 2026-09-15: CIQ_REFRESH_TOKEN was confirmed live on
+# 2026-08-22 and ran successfully on 2026-08-24. On 2026-09-15 it came back
+# `invalid_grant`, so the channel has no write path at all — every fix in
+# packaging-fix.json is a Studio task until a token exists. That is the same
+# state channel 2 has been in, and channel 2 solved the waiting with an
+# autopilot rather than a reminder. This is that, for channel 3.
+#
+# The gate is validity, NOT presence. Channel 2's autopilot asks whether the
+# three secrets are set; here all three ARE set and the token is rejected
+# anyway, so a presence check would report ready and then fail red every
+# morning. check_channel_auth.py --channel clarity exits 0 only when the token
+# refreshes AND owns UC0eBu0ZXcF20pTAG3lUnPXA.
+#
+# While the token is dead this exits 0 and says it is standing by, rather than
+# failing red daily for a known state.
+#
+# Channel 3 only. Everything downstream re-checks the channel id before writing,
+# so a token minted against the wrong channel aborts instead of repackaging
+# Finance % Decoded or HELD BY FAITH.
+
+on:
+  schedule:
+    - cron: "15 8 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Preview instead of writing (the schedule always writes)"
+        type: boolean
+        default: false
+
+jobs:
+  autopilot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Does the token work yet?
+        id: gate
+        continue-on-error: true
+        run: python automation/check_channel_auth.py --channel clarity
+        env:
+          CIQ_CLIENT_ID: ${{ secrets.CIQ_CLIENT_ID }}
+          CIQ_CLIENT_SECRET: ${{ secrets.CIQ_CLIENT_SECRET }}
+          CIQ_REFRESH_TOKEN: ${{ secrets.CIQ_REFRESH_TOKEN }}
+
+      - name: Waiting for a working token
+        if: steps.gate.outcome != 'success'
+        run: |
+          {
+            echo "### Clarity autopilot — standing by"
+            echo
+            echo "The CIQ_* secrets are all set, but Google will not exchange"
+            echo "\`CIQ_REFRESH_TOKEN\` for an access token, so nothing was attempted."
+            echo "This is expected and is not a failure."
+            echo
+            echo "The moment the token works, the next scheduled run applies the whole"
+            echo "of \`clarity/packaging-fix.json\`, syncs the five playlists and rebuilds"
+            echo "the WATCH NEXT cross-links, without anyone asking it to."
+            echo
+            echo "To unblock it: open \`automation/authorize.html\` on a laptop, sign in,"
+            echo "**pick Clarity in the Quran at Google's chooser**, and replace"
+            echo "\`CIQ_REFRESH_TOKEN\` with what it gives you. Use the SAME client id and"
+            echo "secret already in \`CIQ_CLIENT_ID\`/\`CIQ_CLIENT_SECRET\` — a refresh token"
+            echo "is bound to the client that issued it."
+            echo
+            echo "If it dies again within a week, the OAuth consent screen is still in"
+            echo "**Testing**, where Google expires every refresh token after 7 days."
+            echo "Publishing the app to **Production** is what stops this recurring."
+            echo
+            echo "Run *CLARITY IN THE QURAN - 1. Check setup* to confirm before trusting it."
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "Token not usable. Standing by, exiting 0."
+
+      - name: Apply the packaging fix
+        if: steps.gate.outcome == 'success'
+        run: |
+          python automation/clarity_packaging.py \
+            ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          CIQ_CLIENT_ID: ${{ secrets.CIQ_CLIENT_ID }}
+          CIQ_CLIENT_SECRET: ${{ secrets.CIQ_CLIENT_SECRET }}
+          CIQ_REFRESH_TOKEN: ${{ secrets.CIQ_REFRESH_TOKEN }}
+
+      # Playlists before cross-links: a cross-link block names the playlist its
+      # video sits in, so membership has to exist before the blocks are rebuilt.
+      - name: Sync playlists
+        if: steps.gate.outcome == 'success'
+        run: |
+          python automation/clarity_playlists.py \
+            ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          CIQ_CLIENT_ID: ${{ secrets.CIQ_CLIENT_ID }}
+          CIQ_CLIENT_SECRET: ${{ secrets.CIQ_CLIENT_SECRET }}
+          CIQ_REFRESH_TOKEN: ${{ secrets.CIQ_REFRESH_TOKEN }}
+
+      - name: Rebuild WATCH NEXT cross-links
+        if: steps.gate.outcome == 'success'
+        run: |
+          python automation/clarity_crosslinks.py \
+            ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          CIQ_CLIENT_ID: ${{ secrets.CIQ_CLIENT_ID }}
+          CIQ_CLIENT_SECRET: ${{ secrets.CIQ_CLIENT_SECRET }}
+          CIQ_REFRESH_TOKEN: ${{ secrets.CIQ_REFRESH_TOKEN }}
