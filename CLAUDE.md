@@ -72,7 +72,7 @@ structure. That exact miss happened on 22 August. **If a run touched a new uploa
 with `playlists` ticked.**
 
 **Channel 3 is modelled on [@deepmadesimple](https://www.youtube.com/@deepmadesimple)**
-(`UCiVywgvam7BPUwJ-zwxuRGg`) — 256K subs and 13.9M views in six months. Clarity's channel
+(`UCiVywgvam7BPUwJ-zwxuRGg`) — 269K subs (2026-09-15) and 13.9M views in six months. Clarity's channel
 description is a word-for-word transposition of it and several titles are direct swaps
 (Bible→Quran, Hebrew→Arabic). Two consequences before you touch this channel: the
 Christian-register phrasing that leaked into Clarity's own copy came from that template and may
@@ -96,7 +96,7 @@ prose is already as good — do not "fix" the writing.
 Do not port any channel's conclusions onto another. The finance channel's problem is topic
 exhaustion on a channel with 8K+ lifetime views; HELD BY FAITH has 24,364 lifetime views, solved
 reach, and a **conversion** problem — 61 subscribers and a story spine nobody reaches; Clarity in
-the Quran has 2,561 lifetime views, a format that already works, and a cadence-and-runtime
+the Quran has 4,805 lifetime views (2026-09-15), a format that already works, and a cadence-and-runtime
 problem. Different failures, different fixes. Channel 2 in particular is the reason to re-read a
 diagnosis before acting on it: its August file was correct in August and would send you to fix
 format and silence on a channel that publishes every three hours.

@@ -228,3 +228,9 @@ with the source's own transcript as the model: the seven-move hook broken down a
 five information graphics named, and the runtime honestly adapted — 114 surahs cannot get four
 minutes each the way Paul's 13 letters did, so it runs the arc in six phases instead of a
 114-entry list.
+
+---
+
+**Correction, 2026-09-15.** The 27:40 median above is the reference channel's **top 30 by views**.
+Its **first 30 by date** run a median of ≈18:55, with 17 of 30 inside 17:00–22:00. For a channel
+starting out, 17–22 minutes is the band to build to. See `clarity/reference-benchmark.md`.
