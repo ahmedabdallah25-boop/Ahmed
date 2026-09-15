@@ -383,6 +383,8 @@ def fix_channel_meta(token, dry_run):
     have_kw = branding.get("channel", {}).get("keywords", "")
     have_country = branding.get("channel", {}).get("country", "")
     want_country = cfg.get("country", have_country)
+    have_desc = branding.get("channel", {}).get("description", "")
+    want_desc = cfg.get("description", "")
 
     changes = []
     if want_kw and have_kw != want_kw:
@@ -390,6 +392,11 @@ def fix_channel_meta(token, dry_run):
                        f"({len(cfg.get('keywords', []))} terms)")
     if want_country and want_country != have_country:
         changes.append(f"country: {have_country or '(unset)'} -> {want_country}")
+    # The channel description is the one piece of copy a visitor reads before
+    # deciding the channel is real. It had been promising four verse-by-verse
+    # series that have no uploads behind them.
+    if want_desc and have_desc.strip() != want_desc.strip():
+        changes.append(f"description: {len(have_desc)} chars -> {len(want_desc)} chars")
     if not changes:
         say("  = channel metadata already up to date.")
         return 0
@@ -402,6 +409,8 @@ def fix_channel_meta(token, dry_run):
         branding.setdefault("channel", {})["keywords"] = want_kw
     if want_country:
         branding.setdefault("channel", {})["country"] = want_country
+    if want_desc:
+        branding.setdefault("channel", {})["description"] = want_desc
     try:
         call(token, "PUT", "channels", {"part": "brandingSettings"},
              {"id": items[0]["id"], "brandingSettings": branding})

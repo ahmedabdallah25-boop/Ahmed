@@ -20,11 +20,14 @@
     {
       "title": "Stories of the Prophets in the Quran",
       "description": "The prophets, the nations before us, and the patterns the Quran repeats on purpose — explained verse by verse.\n\nEvery episode traces the story back to the Arabic and the ayat it comes from.",
-      "_why": "Two 190-view videos plus the newest upload, which covers Sulayman and the jinn and belongs here on subject. Gives the 16 August video — the best-packaged on the channel — a route to viewers who arrive on the older two.",
+      "_why": "Two 190-view videos plus the newest upload, which covers Sulayman and the jinn and belongs here on subject. Gives the 16 August video — the best-packaged on the channel — a route to viewers who arrive on the older two. | 2026-09-15: three September uploads were sitting in no playlist at all — the Al-Qalam garden parable, Shaytan's own words, and Maryam. None is strictly a prophet's story, and on a 23-video channel an orphaned upload costs more than a loose fit.",
       "video_ids": [
         "_stswAi-79k",
         "r-9UaBtOy98",
-        "sbFXFoL1-5A"
+        "sbFXFoL1-5A",
+        "QAKZDwfGHUM",
+        "qRlxSJ99ZVw",
+        "iH5ZzHOSQeo"
       ]
     },
     {
@@ -47,9 +50,21 @@
         "_KqQIpiuBsg",
         "PUPdFpvEA04"
       ]
+    },
+    {
+      "title": "One Arabic Word at a Time: Quran Word Studies",
+      "description": "Sabr, huzn, ajal, ghadab, kazm — one Quranic word per video, taken to its root, with what the English translation loses along the way.\n\nNo Arabic needed to follow. Every verse cited by surah and ayah.",
+      "_why": "Five uploads were already a word-study series and nothing on the channel said so: they carried ' | Word Study 01/02/03' suffixes that no one searches and sat in no playlist. 185, 132, 122, 44 and 25 views apiece, orphaned. Ordered strongest first per _ordering.",
+      "video_ids": [
+        "yHwtIuWMe_g",
+        "do0upX074Is",
+        "Fwvpcy-6zL0",
+        "XMOKUXMdFIo",
+        "PlshkqAOKfk"
+      ]
     }
   ],
-  "_coverage": "All 13 long-form uploads appear in exactly one playlist. The three Shorts are deliberately excluded — the owner has set a long-form direction, and mixing Shorts into these lists would break the autoplay run that is the whole point.",
+  "_coverage": "All 23 long-form uploads appear in exactly one playlist (2026-09-15 — was 13 of 23; the eight September uploads were orphaned). The three Shorts are deliberately excluded — the owner has set a long-form direction, and mixing Shorts into these lists would break the autoplay chain.",
   "_privacy": "Playlists are created PUBLIC. A private playlist is invisible to search and to autoplay, which would defeat every reason for making them.",
   "_link_titles": "Short display names used in the WATCH NEXT block. Full titles are too long to read as a link list — several run past 60 characters — and a wall of long titles is skimmed past. These are lowercase-leaning and descriptive so the block reads as a menu, not a second title card.",
   "link_titles": {
@@ -67,7 +82,15 @@
     "3vUgLKyo-0g": "What the Prophet صلى الله عليه وسلم actually ate every day",
     "_KqQIpiuBsg": "Allah's promises, and what they actually say",
     "5Fb1iERyIhs": "What “hearts find rest” actually means",
-    "PUPdFpvEA04": "What “honor your parents” means in Arabic"
+    "PUPdFpvEA04": "What “honor your parents” means in Arabic",
+    "yHwtIuWMe_g": "ghadab and ghayz — the two words for anger",
+    "do0upX074Is": "ajal and waqt — is Allah late?",
+    "Fwvpcy-6zL0": "sabr is a grip, not a wait",
+    "XMOKUXMdFIo": "kazm — swallowing anger",
+    "PlshkqAOKfk": "huzn — sadness is never called a sin",
+    "QAKZDwfGHUM": "the brothers who lost a garden overnight",
+    "qRlxSJ99ZVw": "Shaytan's exact words in the Quran",
+    "iH5ZzHOSQeo": "the only woman the Quran names"
   },
   "crosslink_marker": "▶ WATCH NEXT",
   "_crosslink_marker": "Sentinel that makes the block replaceable. Everything from this line to the end of the description is the generated block, so a re-run rewrites it instead of appending a second copy. Chosen to be visually distinct and unlikely to occur in hand-written copy.",

@@ -1,62 +1,88 @@
 {
-  "_comment": "Clarity in the Quran (@ClarityInTheQuran, UC0eBu0ZXcF20pTAG3lUnPXA) packaging fix, 2026-08-17. Built from clarity/channel-diagnosis.md. Applied by automation/clarity_packaging.py.",
+  "_comment": "Clarity in the Quran (@ClarityInTheQuran, UC0eBu0ZXcF20pTAG3lUnPXA) packaging fix. Built 2026-08-17 from clarity/channel-diagnosis.md, rewritten 2026-09-15 from clarity/reference-benchmark.md. Applied by automation/clarity_packaging.py.",
   "expect_channel_id": "UC0eBu0ZXcF20pTAG3lUnPXA",
   "_expect_channel_id": "Enforced before any write: the script resolves the authenticated channel with mine=true and aborts unless it equals this. Three channels share this repo and one wrong token silently repackages the wrong one.",
   "channel_id": "UC0eBu0ZXcF20pTAG3lUnPXA",
   "handle": "@ClarityInTheQuran",
   "_tags_provenance": "IMPORTANT — these tags were WRITTEN, not harvested. The diagnosis first claimed the 'RELATED SEARCHES' paragraph in each description could simply be moved into the tags field. Testing that on the real descriptions disproved it: those paragraphs are flowing prose, so a mechanical extract yields fragments like 'this video was made for you', 'this study goes deep into all of it' and 'or is it allowed to be rich in Islam', and QNlRJcyY4LU yields nothing at all. Bad tags are worse than none — they spend the 500-char field on noise. Each list below is hand-written from the video's actual subject, using the harvested phrases only as raw material.",
   "_tag_budget": "YouTube caps the entire tags field at 500 characters and rejects the whole update with `invalidTags` past it. A tag containing a space is sent quoted, costing two extra characters. clarity_packaging.py budgets 460 and drops overflow rather than failing the write.",
-  "_set_packaging": "Freshly published uploads only. Title+description+tags land in ONE write per video because videos.list is read-after-write eventually consistent. Every id in `protected` is refused. Added 2026-08-22.",
+  "_set_packaging": "Title and/or tags for ONE video in ONE write. DESCRIPTIONS ARE NOT TOUCHED by any entry below — every field is optional, and leaving description out means clarity_crosslinks.py stays the only owner of description bodies, so a retitle can never drop a WATCH NEXT block. Every id in `protected` is refused. `expect_current_title` is the live title read on 2026-09-15; if a human has retitled since, the write skips instead of clobbering. Rewritten 2026-09-15 from clarity/reference-benchmark.md.",
   "set_packaging": [
     {
-      "video_id": "5Fb1iERyIhs",
-      "_why": "The 21 Aug upload — 7h old, 3 views, ZERO tags. Not settled: nothing to disturb.",
-      "_changes": [
-        "TAGS 0 -> 22. This is the regression. A pass on 17 Aug took the channel from 11 untagged uploads to 0; the very next upload shipped untagged again, because no workflow existed to run the fix. clarity-packaging.yml now exists.",
-        "TITLE. The old one carried 'Ayah' with a macron (U+0100) — a token nobody types, so the only distinctive word in the title was unsearchable — and named no surah, no verse and no subject. YouTube had no entity to classify it against. The new title front-loads the exact English phrase people search ('hearts find rest'), names Surah Ar-Ra'd 28, and keeps the 'you have only seen half' hook. 62 chars, so nothing truncates.",
-        "TITLE SHAPE matches the channel's own proven construction — '[Entity]: [the specific thing you are missing]' — which is 3 of its 4 best videos (Money in the Quran 225, Every Minor Prophet 192, Every Plague of Egypt 189).",
-        "DESCRIPTION opening rewritten. The first two lines are the search snippet and carried zero ASCII-searchable terms ('The ayah people put on their wall lives inside a surah named after the loudest thing in the sky'). They now lead with the full quoted verse, 'Surah Ar-Ra'd 28' and 'Quran 13:28'. The author's diacritics are kept in the body — they are the channel's credibility signal after the 'AI BE AWARE' comment — but every surah name now also appears in plain ASCII with its numeric citation.",
-        "HASHTAGS 20 -> 5. The same 10-hashtag block was pasted twice. YouTube ignores ALL hashtags on a video once there are more than 15, so the video was running with zero working hashtags.",
-        "SOURCING NOTE restored. The 16 Aug upload set the channel's standard with 'Arabic on screen is set from a verified mushaf' plus a no-ruling disclaimer; this upload dropped both. Re-added."
-      ],
-      "expect_current_title": "You’ve Read This Āyah 100 Times. You’ve Never Seen Half Of It.",
-      "expect_description_contains": "named after the loudest",
-      "title": "\"Hearts Find Rest\": The Half of Surah Ar-Ra'd 28 Nobody Quotes",
-      "description": "\"Verily, in the remembrance of Allah do hearts find rest.\" Surah Ar-Ra'd 28 — Quran 13:28 — is the ayah people put on their wall. Almost nobody reads the sentence standing in front of it.\n\nAnd the Arabic underneath \"hearts find rest\" is doing something far more physical than the English lets on. Ṭumaʾnīnah — tumaninah — does not mean peace, and it does not mean calm. Its root sense is to settle: to sink down and come to rest, the way silt drops out of stirred water, the way ground finishes moving. It is the same word the Prophet ﷺ used to correct a man's prayer — bow until you are settled. A prayer without it is not a prayer.\n\nThis is a slow walk through Surah Ar-Ra'd (13), \"The Thunder\", verses 27-28: where the line sits, what the sentence before it does to it, why the second half is the half that matters, and where the same root turns up at the very end of the Quran as something other than a verb.\n\nCHAPTERS\n0:00 The surah named after thunder\n1:03 Tumaninah — what the word pictures\n2:14 It is a requirement inside the prayer\n3:16 What we are walking toward\n4:07 The sentence nobody quotes\n5:56 The same word, said of the wrong thing\n6:43 Who the ayah is describing\n7:49 Sakinah — it is sent down\n9:00 Dhikr has a tongue in it\n9:54 Settled is not numb\n11:41 The silt\n13:12 The cave\n14:29 On an ordinary bad day\n16:48 O settled soul\n\nVERSES REFERENCED\nSurah Ar-Ra'd 12, 13, 27, 28 (13:12-13, 13:27-28) · Surah Yunus 7 (10:7) · Surah Al-Fath 4 (48:4) · Surah Al-Hijr 9 (15:9) · Surah Yusuf 86 (12:86) · Surah Al-Qasas 10 (28:10) · Surah At-Tawbah 40 (9:40) · Surah Al-Fajr 27 (89:27) · and the hadith of the man who prayed badly (Bukhari and Muslim).\n\nON THE DISAGREEMENT AT 6:43\nThe mufassirūn are not of one mind on whether ayah 28 continues the sentence before it or stands on its own. Both readings are presented, because both land in the same place.\n\nHOW THIS VIDEO IS MADE\nThe Arabic on screen is set from a verified mushaf. This is a study of language and tafsir — it issues no ruling.\n\nIf this gave you something, subscribe — and tell me in the comments what your heart is currently trying to settle onto. Even one word.\n\n#Quran #Tafsir #ArRad #Tumaninah #QuranicArabic",
+      "video_id": "StCW3ERkWwc",
+      "_why": "A word-for-word transposition of the reference channel's Bible title, down to the ALL-CAPS 'ACTUALLY' and a leading 🛑 emoji. The emoji is the first thing in the search snippet and carries no query; the borrowed phrasing borrowed none of the reach (131 views against the original's 223K). Moved onto the frame this channel has actually proven: 'What the Quran Actually Says About Anger' is its 853-view second-best video. Same frame, different subject, so it reads as a series rather than a duplicate.",
+      "expect_current_title": "🛑The Quran Verse That Actually Stops Anxiety",
+      "title": "What the Quran Actually Says About Anxiety",
       "tags": [
-        "surah ar rad 28",
-        "hearts find rest",
-        "tumaninah meaning",
-        "quran 13 28",
-        "ar rad 28 tafsir",
-        "remembrance of allah hearts find rest",
-        "surah ar rad tafsir",
-        "what does tumaninah mean",
-        "sakinah meaning",
-        "dhikr meaning",
-        "surah ar rad",
-        "quranic arabic",
-        "tumaninah in prayer",
-        "nafs al mutmainnah",
-        "surah al fajr 27",
-        "quran verse for peace of heart",
         "quran verse for anxiety",
-        "arabic word study quran",
-        "o reassured soul",
-        "tafsir",
-        "quran explained",
+        "anxiety in islam",
+        "islamic remedy for anxiety",
+        "quran for peace of mind",
+        "dua for anxiety",
+        "surah for anxiety",
+        "mental health in islam",
+        "tawakkul",
+        "worry in islam",
+        "quran comfort",
         "islamic reminder",
-        "quran linguistic miracle",
-        "surah ar rad 27"
+        "tafsir"
+      ]
+    },
+    {
+      "video_id": "QOwWWwiRn_Q",
+      "_why": "Right frame already. Only the shouted ACTUALLY and the lowercase 'it's' are fixed, so the three 'What the Quran Actually Says About X' videos read as one series in a sidebar.",
+      "expect_current_title": "What the Quran ACTUALLY Says About Depression (it's Not a Faith Failure)",
+      "title": "What the Quran Actually Says About Depression (It's Not a Faith Failure)",
+      "tags": [
+        "depression in islam",
+        "quran on depression",
+        "is depression a sin in islam",
+        "mental health islam",
+        "sadness in the quran",
+        "prophet yaqub grief",
+        "islamic view of depression",
+        "dua for sadness",
+        "hopelessness in islam",
+        "quran comfort",
+        "tafsir"
+      ]
+    },
+    {
+      "video_id": "_KqQIpiuBsg",
+      "_why": "19 views. The 'Every X' half promises an exhaustive catalogue — the weakest shape on this channel (five of them, median 62 views) — while the searched term is the phrase itself. Keeps 'Kun Fa-Yakun Explained', replaces the catalogue promise with the translation people actually type.",
+      "expect_current_title": "Kun Fa-Yakun Explained: Every Promise Allah Makes in the Quran",
+      "title": "Kun Fa-Yakun Explained: What \"Be, and It Is\" Actually Means",
+      "tags": [
+        "promises of allah in the quran",
+        "rope of allah meaning",
+        "al hafiz meaning",
+        "ayat al kursi explained",
+        "tawakkul",
+        "grief in islam",
+        "how allah protects believers",
+        "quranic comfort",
+        "trust in allah",
+        "islamic word study",
+        "tafsir"
+      ]
+    },
+    {
+      "video_id": "sbFXFoL1-5A",
+      "_why": "62 views. Same enumeration problem, and the ruqyah hook is the good half. Moved onto the proven 'What the Quran Actually Says About X' frame and the correction kept.",
+      "expect_current_title": "Every Jinn Verse in the Quran Explained (And Why Ruqyah Healers Get It Wrong)",
+      "title": "What the Quran Actually Says About Jinn (And What Ruqyah Healers Get Wrong)",
+      "tags": [
+        "can jinn see you",
+        "how to protect from jinn",
+        "surah an nas",
+        "iblis in the quran"
       ]
     },
     {
       "video_id": "PUPdFpvEA04",
-      "_why": "The 19 Aug upload. Title and description are already good — only the tags are thin (12).",
-      "_changes": [
-        "TAGS 12 -> 18, additive. Title and description deliberately NOT touched: 'What \"Honor Your Parents\" Actually Means in Arabic' is already on the channel's winning formula and its description already carries chapters.",
-        "Added the citation and plain-language tags the existing 12 miss — 'surah al isra 23', 'quran 17 23' — which is how this verse is actually searched."
-      ],
+      "_why": "36 views on a 31:29 upload. The verse is named and the reversal is there; the missing token is 'Explained', which sits in the channel's 2,400-view winner and in the reference channel's own winners (Daniel 2 EXPLAINED, The Parable of the Ten Virgins Explained).",
+      "expect_current_title": "Surah Al-Isra 23: Honoring Parents Is Decreed, Not Requested",
+      "title": "Surah Al-Isra 23 Explained: Honoring Parents Is Decreed, Not Requested",
       "tags": [
         "surah al isra 23",
         "quran 17 23",
@@ -64,6 +90,190 @@
         "parents in the quran",
         "lower the wing of humility",
         "obeying parents in islam"
+      ]
+    },
+    {
+      "video_id": "yHwtIuWMe_g",
+      "_why": "Direct cannibalisation. This competes with cjtKWsFZbcg — the channel's 853-view second-best, same first six words — and took 185. Moved onto the query it uniquely answers: the two Arabic words, named. Stops two of our own videos bidding for one search.",
+      "expect_current_title": "What the Quran Actually Says About Anger: The Two Words Explained",
+      "title": "Ghadab vs Ghayz: The Two Arabic Words for Anger in the Quran",
+      "tags": [
+        "ghadab",
+        "ghayz",
+        "anger in the quran",
+        "arabic word for anger",
+        "quran anger verses",
+        "kazm",
+        "controlling anger islam",
+        "quran word study",
+        "arabic root words quran",
+        "tafsir anger",
+        "islam anger management",
+        "surah al imran 134",
+        "what the quran says about anger",
+        "quranic arabic explained",
+        "anger in islam"
+      ]
+    },
+    {
+      "video_id": "XMOKUXMdFIo",
+      "_why": "44 views, and the third anger video. 'The Quran Word' names nothing searchable — kazm does, and it puts this video in the word-study series instead of a third bid on 'anger'.",
+      "expect_current_title": "The Quran Word for Swallowing Anger That Cost a Prophet His Sight",
+      "title": "Kazm Explained: The Quran's Word for Swallowing Anger",
+      "tags": [
+        "kazm",
+        "swallowing anger",
+        "yaqub",
+        "prophet yaqub grief",
+        "surah al imran 134",
+        "quran word study",
+        "arabic word kazm",
+        "restraining anger islam",
+        "quran arabic explained",
+        "tafsir",
+        "anger in the quran",
+        "islamic lessons",
+        "quranic arabic",
+        "holding back anger",
+        "quran vocabulary"
+      ]
+    },
+    {
+      "video_id": "do0upX074Is",
+      "_why": "The ' | Word Study 01' suffix is internal bookkeeping in the most valuable characters on the page. The reference channel numbers only its Sabbath School series, where the number IS the search term ('Lesson 11'); nobody searches 'word study 01'. Arabic words front-loaded.",
+      "expect_current_title": "Is Allah Late? What \"Ajal\" and \"Waqt\" Actually Mean in Arabic | Word Study 01",
+      "title": "Ajal and Waqt Explained: Why the Quran Never Says Allah Is Late",
+      "tags": [
+        "ajal",
+        "waqt",
+        "time in the quran",
+        "arabic word for time",
+        "is allah late",
+        "quran word study",
+        "appointed term quran",
+        "divine timing islam",
+        "quranic arabic explained",
+        "tafsir",
+        "arabic root words",
+        "quran vocabulary",
+        "waiting on allah",
+        "quran explained",
+        "islamic lessons"
+      ]
+    },
+    {
+      "video_id": "PlshkqAOKfk",
+      "_why": "25 views on the channel's longest upload (36:23). Same suffix removed, and huzn moved to the front where the searched token belongs.",
+      "expect_current_title": "Why the Quran Never Calls Sadness a Sin: Huzn Explained | Word Study 02",
+      "title": "Huzn Explained: The Quran Never Calls Sadness a Sin",
+      "tags": [
+        "huzn",
+        "sadness in the quran",
+        "grief in islam",
+        "is sadness a sin",
+        "quran word study",
+        "arabic word for sadness",
+        "year of sorrow",
+        "quranic arabic explained",
+        "tafsir",
+        "depression islam",
+        "quran vocabulary",
+        "arabic root words",
+        "quran on grief",
+        "islamic lessons",
+        "quran explained"
+      ]
+    },
+    {
+      "video_id": "Fwvpcy-6zL0",
+      "_why": "Suffix removed along with its stray trailing period, sabr front-loaded, and the reversal kept — it is the best line in the set.",
+      "expect_current_title": "What \"Sabr\" Actually Means in Arabic: A Grip, Not a Wait | Word Study 03.",
+      "title": "Sabr Explained: It Means a Grip, Not a Wait",
+      "tags": [
+        "sabr",
+        "patience in the quran",
+        "what does sabr mean",
+        "arabic word sabr",
+        "quran word study",
+        "sabr meaning",
+        "quranic arabic explained",
+        "tafsir",
+        "patience islam",
+        "arabic root words",
+        "quran vocabulary",
+        "perseverance quran",
+        "quran explained",
+        "islamic lessons",
+        "sabr in arabic"
+      ]
+    },
+    {
+      "video_id": "QAKZDwfGHUM",
+      "_why": "23 views. Adds 'Explained' and replaces 'most people read it wrong' — a claim about the reader — with the event itself, which is what makes someone click.",
+      "expect_current_title": "Surah Al-Qalam: The Garden Story Most People Read Wrong",
+      "title": "Surah Al-Qalam Explained: The Brothers Who Lost a Garden Overnight",
+      "tags": [
+        "surah al qalam",
+        "al qalam explained",
+        "garden owners quran",
+        "quran parables",
+        "surah 68",
+        "tafsir surah al qalam",
+        "quran stories",
+        "parable of the garden",
+        "quran explained",
+        "surah explained",
+        "islamic lessons",
+        "quran study",
+        "tafsir in english",
+        "verse by verse quran",
+        "quran for beginners"
+      ]
+    },
+    {
+      "video_id": "qRlxSJ99ZVw",
+      "_why": "48 views. Enumeration shape again. The subject is strong; the promise of a complete list is what reads as homework.",
+      "expect_current_title": "Every Word Shaytan Speaks in the Quran, Explained",
+      "title": "What Shaytan Actually Says in the Quran (His Exact Words)",
+      "tags": [
+        "shaytan in the quran",
+        "what shaytan says",
+        "iblis quran",
+        "satan in islam",
+        "shaytan verses",
+        "quran on shaytan",
+        "whispers waswas",
+        "tafsir",
+        "quran explained",
+        "islamic lessons",
+        "iblis refusal",
+        "shaytan quotes quran",
+        "quran study",
+        "surah explained",
+        "devil in the quran"
+      ]
+    },
+    {
+      "video_id": "iH5ZzHOSQeo",
+      "_why": "10 views, the channel's weakest upload. The reversal was buried behind another 'Every X Explained', and Maryam — the one high-volume entity in the video — appeared nowhere in the title.",
+      "expect_current_title": "Every Woman in the Quran Explained: Why Only One Has a Name",
+      "title": "Maryam Is the Only Woman the Quran Names by Name. Here Is Why.",
+      "tags": [
+        "maryam in the quran",
+        "women in the quran",
+        "surah maryam",
+        "only woman named in quran",
+        "quran on women",
+        "mary in islam",
+        "quran stories",
+        "tafsir",
+        "quran explained",
+        "islamic lessons",
+        "women in islam",
+        "quran study",
+        "asiya",
+        "wife of imran",
+        "quran for beginners"
       ]
     },
     {
@@ -194,58 +404,6 @@
       ]
     },
     {
-      "video_id": "StCW3ERkWwc",
-      "_why": "125 views. Zero tags, and no RELATED SEARCHES block to draw on.",
-      "tags": [
-        "quran verse for anxiety",
-        "anxiety in islam",
-        "islamic remedy for anxiety",
-        "quran for peace of mind",
-        "dua for anxiety",
-        "surah for anxiety",
-        "mental health in islam",
-        "tawakkul",
-        "worry in islam",
-        "quran comfort",
-        "islamic reminder",
-        "tafsir"
-      ]
-    },
-    {
-      "video_id": "QOwWWwiRn_Q",
-      "_why": "42 views. Zero tags, no RELATED SEARCHES block.",
-      "tags": [
-        "depression in islam",
-        "quran on depression",
-        "is depression a sin in islam",
-        "mental health islam",
-        "sadness in the quran",
-        "prophet yaqub grief",
-        "islamic view of depression",
-        "dua for sadness",
-        "hopelessness in islam",
-        "quran comfort",
-        "tafsir"
-      ]
-    },
-    {
-      "video_id": "_KqQIpiuBsg",
-      "_why": "15 views. Zero tags.",
-      "tags": [
-        "promises of allah in the quran",
-        "rope of allah meaning",
-        "al hafiz meaning",
-        "ayat al kursi explained",
-        "tawakkul",
-        "grief in islam",
-        "how allah protects believers",
-        "quranic comfort",
-        "trust in allah",
-        "islamic word study",
-        "tafsir"
-      ]
-    },
-    {
       "video_id": "QNlRJcyY4LU",
       "_why": "55 views. Zero tags. Its RELATED SEARCHES block yields nothing extractable — these are written from the subject.",
       "tags": [
@@ -311,13 +469,75 @@
       ]
     },
     {
-      "video_id": "sbFXFoL1-5A",
-      "_why": "The 2026-08-16 upload, already the best-packaged video on the channel with 28 tags at 416/500 chars. These four spend the remaining budget on search intent the existing 28 miss, and each is supported by content actually in the video — so no mismatched traffic. Tags are additive and do not touch the title/thumbnail pair YouTube is testing, which is why this is safe to do 14h into a live feed test when a retitle would not be.",
+      "video_id": "5Fb1iERyIhs",
+      "_why": "The channel's best video — 2,400 views, 50% of lifetime — and it is untagged. The 17 Aug set_packaging entry carried these 24 tags but aborted on the title-drift guard before reaching them. Tags are additive and move no text, so they are safe on a protected winner.",
       "tags": [
-        "can jinn see you",
-        "how to protect from jinn",
-        "surah an nas",
-        "iblis in the quran"
+        "surah ar rad 28",
+        "hearts find rest",
+        "tumaninah meaning",
+        "quran 13 28",
+        "ar rad 28 tafsir",
+        "remembrance of allah hearts find rest",
+        "surah ar rad tafsir",
+        "what does tumaninah mean",
+        "sakinah meaning",
+        "dhikr meaning",
+        "surah ar rad",
+        "quranic arabic",
+        "tumaninah in prayer",
+        "nafs al mutmainnah",
+        "surah al fajr 27",
+        "quran verse for peace of heart",
+        "quran verse for anxiety",
+        "arabic word study quran",
+        "o reassured soul",
+        "tafsir",
+        "quran explained",
+        "islamic reminder",
+        "quran linguistic miracle",
+        "surah ar rad 27"
+      ]
+    },
+    {
+      "video_id": "cROgb0utEKs",
+      "_why": "97 views and zero tags — it has never appeared in any config. Real search demand on a question people type privately, and nothing telling YouTube what it is about.",
+      "tags": [
+        "masturbation in islam",
+        "what the quran says about masturbation",
+        "zina",
+        "lowering the gaze",
+        "surah al muminun",
+        "self control islam",
+        "quran on desire",
+        "islamic rulings explained",
+        "tafsir",
+        "quran explained",
+        "haram or halal",
+        "youth islam",
+        "quran study",
+        "islamic lessons",
+        "purity in islam"
+      ]
+    },
+    {
+      "video_id": "3vUgLKyo-0g",
+      "_why": "31 views and zero tags — also never covered. The only upload whose subject is sunnah rather than Quran, which makes tags the only signal YouTube has for placing it.",
+      "tags": [
+        "sunnah food",
+        "what the prophet ate",
+        "prophetic diet",
+        "dates honey olive oil",
+        "sunnah diet science",
+        "prophet muhammad food",
+        "islamic nutrition",
+        "barley talbina",
+        "sunnah eating habits",
+        "health in islam",
+        "islamic lessons",
+        "prophetic medicine",
+        "hadith explained",
+        "sunnah lifestyle",
+        "halal diet"
       ]
     }
   ],
@@ -347,15 +567,18 @@
       "learn the quran",
       "quran for beginners"
     ],
-    "country": "AE"
+    "country": "AE",
+    "_why_description": "The description advertises 'verse-by-verse studies — Surah Al-Kahf, Al-Mulk, Ya-Sin, Ar-Ra'd, Al-Fatihah'. Checked against the live catalogue on 2026-09-15: no upload's title contains Al-Kahf, Al-Mulk, Ya-Sin or Al-Fatihah. Four of the five named series do not exist. That is the channel's front door promising work it cannot show, to the exact visitor who came to check whether this channel is real. Rewritten to list what is actually published — the word studies, the three named verse studies, the emotions cluster — and nothing else.",
+    "description": "Every video takes one verse, one Arabic word, or one surah and goes all the way down: what the Arabic actually says, where the mufassirun disagree, and what changes once you know.\n\nLong-form only. No jargon, no highlight reels, no rulings — a study you can follow with no Arabic and no background, and still learn from if you have both.\n\n📖 One Arabic word taken to its root — sabr, huzn, ajal, kazm — and what the English translation loses\n📖 Verse studies: Surah Ar-Ra'd 28, Surah Al-Isra 23, Surah Al-Qalam\n📖 What the Quran says about what people actually struggle with — anger, anxiety, depression, provision\n\nHow these are made: the Arabic on screen is set from a verified mushaf, every verse is cited by surah and ayah, and a scholarly disagreement is named rather than smoothed over. This channel explains; it issues no ruling.\n\nIf you have ever sat through a Quran class and thought “I have no idea what they are talking about” — start anywhere."
   },
   "protected": {
-    "_why": "Never repackage a proven winner. These four carry 1,452 of the channel's 2,473 lifetime views. Their TITLES and DESCRIPTION BODIES must not move — retitling a settled video measured +0 views over 21.7 hours on channel 1, and that finding is about how YouTube treats settled videos rather than about any channel's subject. Adding tags to them is safe and additive; the one description edit above is a defect repair on a specific line, not a rewrite.",
+    "_why": "Never repackage a proven winner. These five carry 4,076 of the channel's 4,805 lifetime views (2026-09-15). Their TITLES and DESCRIPTION BODIES must not move — retitling a settled video measured +0 views over 21.7 hours on channel 1, and that finding is about how YouTube treats settled videos rather than about any channel's subject. Adding tags to them is safe and additive; the one description edit below is a defect repair on a specific line, not a rewrite. 5Fb1iERyIhs was added 2026-09-15: the 17 Aug config had it queued for a retitle when it was a 3-view upload, and it has since become 2,400 views — 50% of the entire channel. Its set_packaging entry is retired to set_tags, which also lands the 24 tags that entry never applied (the title had drifted, so the whole entry aborted before the tag write).",
     "video_ids": [
       "cjtKWsFZbcg",
       "GjztcxZGQTI",
       "_stswAi-79k",
-      "r-9UaBtOy98"
+      "r-9UaBtOy98",
+      "5Fb1iERyIhs"
     ]
   },
   "deferred": {
