@@ -13,7 +13,7 @@ can be days to weeks old. Treat each number as a benchmark, and confirm it at th
 |---|---:|---|---:|
 | iPhone 18 Pro Max | on plan only (pre-order) | 5,499, the Apple list price everywhere; Sharaf DG and Amazon sometimes 100–150 under | ~0–150 |
 | iPhone 18 Pro | on plan (from ~225/month) | 5,099 list everywhere | ~0–150 |
-| iPhone 17 Pro Max | 5,099 | **4,506 at Noon** | **~590** |
+| iPhone 17 Pro Max | 5,099 | **4,699 at iSTYLE** (UAE version) · 4,506 at Noon (International version) | **~400** — see §4 |
 | iPhone 17 Pro | 4,699 | **4,199** during the pre-iPhone 18 clearance | **~500** |
 | iPhone 16 Pro Max | 4,429 | **4,179** during the pre-iPhone 18 clearance | ~250 |
 | iPhone 16 Pro | 4,029 | — | — |
@@ -33,8 +33,9 @@ ask du to match the price.
 
 **For the iPhone Air, du is the cheapest option.** 3,599 is about 700 below launch price.
 
-**The 17 Pro Max at about 4,500 is the value pick against the 18 Pro Max at 5,499.** You save around
-1,000 for a phone that is one year older.
+**The 17 Pro Max at 4,699 is the value pick against the 18 Pro Max at 5,499.** You save 800 for a phone
+that is one year older. The International version at 4,500 saves about 1,000, but it has no Apple UAE
+warranty.
 
 **Apple raised prices on older models on 9 September.** It added US$100 to the iPhone 16, 17, Air and
 17e on its own store. du's older price tags may still be the pre-rise ones, which is a reason to buy
@@ -55,6 +56,38 @@ updated since it was indexed.
 - **Trade in your old phone for credit.** Apple Trade In gives up to about 3,260 for an iPhone 13 or
   newer. Sharaf DG deducts trade-in value at checkout.
 
+## 4. iPhone 17 Pro Max: where to buy it
+
+**Apple discontinued the 17 Pro and 17 Pro Max on 9 September**, when it announced the iPhone 18 Pro.
+Apple's own store no longer sells them. What is left is retailer stock, and colours and storage sizes
+will run out unevenly. Prices may fall a little further as stores clear stock, but the odds of your
+colour selling out rise faster.
+
+| Store | 256 GB price | Version | Notes |
+|---|---:|---|---|
+| **iSTYLE** (Apple Premium Reseller) | **4,699** (down from 5,099) | UAE, model code `…AH/A` | Physical stores. Apple UAE warranty. 0% Tabby or Tamara. **Best in-store buy.** |
+| Amazon.ae | ≈4,699 (12 × 391.58) | Check the listing | Online only. The 512 GB was seen at ≈5,198 (12 × 433.17), against a 5,949 list price. |
+| Noon | 4,506 | **International**, some eSIM-only | Online only. The warranty comes from the seller, not Apple UAE. |
+| du | 5,099 | UAE | Full launch price. Ask them to match 4,699. |
+| Sharaf DG, Jumbo | 5,099 (older index) | UAE | Ask for their current price. They usually match iSTYLE. |
+| Virgin, Carrefour, e& | listed, no price indexed | UAE | e& sells on plan. |
+| Apple Store | discontinued | — | — |
+
+**Walk-away prices.** For 256 GB, pay no more than 4,699 for a UAE version or 4,500 for an
+International one. For 512 GB, anything near 5,200 is a strong deal, since the list price is 5,949. If
+that Amazon price is still live, the extra storage costs only about 500.
+
+**Against the iPhone 18 Pro Max.** The 18 Pro Max costs 5,499, which is 800 more than the 17 Pro Max at
+iSTYLE.
+
+**Checks at the counter:**
+- The box must be sealed and the model number must end in `AH/A`, which is the UAE and Middle East
+  version with FaceTime.
+- After setup, enter the serial number at checkcoverage.apple.com. It should show a full year of
+  warranty starting today. An older start date means the phone has been activated before.
+- The UAE 17 Pro Max is eSIM-only. Ask the store or du to move your line to eSIM before you leave.
+- Decide on AppleCare+ at purchase, and ask for trade-in credit on your old phone.
+
 ## Sources
 
 - du Shop: [16](https://shop.du.ae/en/personal/Mobile-phones/iphone-16-p-COM-HS-APP-851),
@@ -72,3 +105,12 @@ updated since it was indexed.
 - [Khaleej Times: du and Etisalat iPhone 18 Pro plans](https://www.khaleejtimes.com/business/tech/iphone-18-pro-iphone-18-pro-max-etisalat-du-payment-plans-uae) ·
   [sell-out report](https://www.khaleejtimes.com/business/tech/iphone-18-uae-pro-pro-max-sell-out-on-strong-pre-order-demand-retailers-say)
 - [MacRumors: Apple raises iPhone 16/17/Air/17e prices](https://www.macrumors.com/2026/09/09/apple-raises-iphone-17-prices/)
+- [MacRumors: Apple discontinues iPhone 17 Pro and 17 Pro Max](https://www.macrumors.com/2026/09/09/apple-discontinues-iphone-17-pro-max/)
+- [iSTYLE iPhone 17 Pro Max 256 GB Silver](https://istyle.ae/products/iphone-17-pro-max-256gb-silver-mfy84ah-a) ·
+  [iSTYLE 17 Pro collection](https://istyle.ae/collections/iphone-17-pro)
+- [Noon 17 Pro Max International version](https://www.noon.com/uae-en/iphone-17-pro-max-256-gb-esim-only-cosmic-orange-5g-with-facetime-international-version/N70211465V/p/)
+- [Amazon.ae 17 Pro Max 256 GB](https://www.amazon.ae/Apple-iPhone-Pro-Max-256/dp/B0FQG24QM8) ·
+  [512 GB](https://www.amazon.ae/Apple-iPhone-Pro-Max-512/dp/B0FQG9CR3N)
+- [Sharaf DG 17 Pro Max](https://uae.sharafdg.com/product/apple-iphone-17-pro-max-256gb-deep-blue-middle-east-version-with-facetime/) ·
+  [Jumbo](https://www.jumbo.ae/apple-iphone-17-pro-and-iphone-17-pro-max) ·
+  [Virgin Megastore](https://www.virginmegastore.ae/en/electronics-accessories/mobiles-accessories/mobile-phones/smartphones/apple-iphone-17-pro-max-smartphone-256gb-esim-version---silver/p/1049627)
