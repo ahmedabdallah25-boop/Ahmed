@@ -25,7 +25,6 @@ R = {
     "mature":    (106, 420, 229, 498),
     "old":       (522, 505, 628, 583),
     "grave":     (288, 677, 468, 708),
-    "box":       (134, 766, 616, 824),
     "banner":    (166, 846, 596, 877),
 }
 
@@ -129,7 +128,7 @@ b, g, r = np.median(np.concatenate(inks), axis=0)
 ink = (int(r), int(g), int(b))
 print("ink", ink)
 
-layers = {k: render(k, ink) for k in R}
+layers = {k: render(k, ink) for k in R}  # TEXT["box"] unused: box kept in Arabic
 
 for i, fr in enumerate(frames):
     clean = cv2.inpaint(fr, mask, 4, cv2.INPAINT_TELEA)
