@@ -25,7 +25,7 @@ R = {
     "mature":    (106, 420, 229, 498),
     "old":       (522, 505, 628, 583),
     "grave":     (288, 677, 468, 708),
-    "box":       (134, 736, 616, 824),
+    "box":       (134, 766, 616, 824),
     "banner":    (166, 846, 596, 877),
 }
 
@@ -43,18 +43,16 @@ TEXT = {
     "old":       [("Old age:", "Bold", False), ("Life moves on,", "SemiBold", False),
                   ("strength fades.", "SemiBold", False)],
     "grave":     [("The grave: the journey’s end.", "Bold", False)],
-    "box":       [("Do not be deceived by this world, do not delay your repentance, "
-                   "and do not waste your life on what will not benefit you.", "Bold", False),
-                  ("Do all the good you can, forgive, leave a good mark, and prepare to meet "
+    "box":       [("Do all the good you can, forgive, leave a good mark, and prepare to meet "
                    "Allah; for however long life is, it is short, and departure asks no "
                    "one’s permission.", "Medium", False)],
-    "banner":    [("We are all passing through… so make your passage through this world "
-                   "one of obedience and a good legacy.", "SemiBold", False)],
+    "banner":    [("We are all passing through\u2026 so make your passage through this world "
+                   "a life of purpose and a good legacy.", "SemiBold", False)],
 }
 WRAP = {"box", "banner"}  # paragraphs that auto-wrap; others are one line each
 ALIGN = {"hourglass": "left"}
 CAP = {k: 16 for k in ("child_tag","child","youth","mature","old","grave","hourglass")}
-CAP.update(title=27, youth=15, banner=13)
+CAP.update(title=27, youth=15, banner=13, box=15)
 LH = {"banner": 1.0, "title": 1.0}
 SS = 4  # supersample
 
@@ -79,7 +77,7 @@ def layout(key, size):
     bw = (x1 - x0 - 4) * SS
     lines = []
     for i, (txt, wt, it) in enumerate(TEXT[key]):
-        s = size if not (key == "box" and i == 1) else int(size * 0.88)
+        s = size
         f = font(wt, s * SS, it)
         parts = wrap(txt, f, bw) if key in WRAP else [txt]
         for p in parts:
