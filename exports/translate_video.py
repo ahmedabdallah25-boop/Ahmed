@@ -33,14 +33,14 @@ R = {
 TEXT = {
     "title":     [("The Human Journey…", "Bold", False), ("From the Cradle to the Grave", "Bold", False)],
     "hourglass": [("Life slips by like grains of sand…", "SemiBold", False),
-                  ("so make good use of it.", "SemiBold", False)],
+                  ("so make the best use of it.", "SemiBold", False)],
     "child_tag": [("Childhood:", "Bold", False)],
     "child":     [("The story begins.", "SemiBold", False)],
     "youth":     [("Youth:", "Bold", False), ("Dreams and striving.", "SemiBold", False)],
     "mature":    [("Maturity:", "Bold", False),
                   ("Responsibilities and", "SemiBold", False),
-                  ("worldly busyness.", "SemiBold", False)],
-    "old":       [("Old age:", "Bold", False), ("Life passes on,", "SemiBold", False),
+                  ("worldly cares.", "SemiBold", False)],
+    "old":       [("Old age:", "Bold", False), ("Life moves on,", "SemiBold", False),
                   ("strength fades.", "SemiBold", False)],
     "grave":     [("The grave: the journey’s end.", "Bold", False)],
     "box":       [("Do not be deceived by this world, do not delay your repentance, "
