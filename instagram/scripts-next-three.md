@@ -19,7 +19,7 @@ Qur'an 21:87–88 · Tirmidhi 3505 · VO: 80 words
 | 0–3s | "Yunus was inside a whale... and he didn't ask to get out." | **out** | Black water, no light |
 | 3–5s | "Didn't ask? I'd be banging on the walls." | **walls** | Hold on black, a dull thud on the audio |
 | 5–12s | "He said: *There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.*"<br>لَا إِلَٰهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ (21:87) | — | One candle-sized light, held |
-| 12–15s | "From inside a fish... and he owned it." | **owns** | Hold |
+| 12–15s | "From inside a fish... and he owned it." | **owned** | Hold |
 | 15–20s | "Then Allah added a line for us: *And thus do We save the believers.*"<br>وَكَذَٰلِكَ نُنْجِي الْمُؤْمِنِينَ (21:88) | — | Light spreads slowly |
 | 20–24s | "*Kadhalika.* Like that. Means it wasn't just for Yunus." | **kadhalika** | The Arabic word alone |
 | 24–29s | "So whatever your whale is tonight... you know what to say." | **tonight** | Back to black water → loop |
