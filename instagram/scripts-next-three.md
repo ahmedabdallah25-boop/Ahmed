@@ -1,76 +1,128 @@
-# @brother_ahmed_abdullah: three more Reels in the spoken flow (second draft)
+# @brother_ahmed_abdullah: three more Reels in the spoken flow
 
-Drafted 2026-11-25. Each is about 75–80 words, **28–30 seconds**.
+Drafted 2026-11-25, third draft. This builds on the first draft's tables, hooks and ideas, and
+drops the second draft's run-on paragraphs. Same format and rules as `script-first-word.md` and
+`scripts-spoken-flow.pdf`. Each VO is 72–80 words, about **27–30 seconds** with the pauses. Read
+each one aloud and swap any word you wouldn't say to a friend.
 
-## What changed from the first draft
-
-The first draft sounded written, not spoken. The tells were clipped triplets ("Dark night. Dark
-sea. Dark stomach."), punchline flips ("Not Him. You."), and a pause on every line. His
-transcripts run the other way. He talks in long sentences joined with "and" and "so". He drops in
-"subhanallah" and "man" without making a moment of them. He reacts to his own point, as in
-"that's pretty intense", and he pauses maybe twice in a whole clip, not every line.
-
-Each Reel is one block of speech. Read it like you're telling a friend. Don't perform it.
+None of these sources repeats one already used in the PDF's 20 scripts.
 
 ---
 
-## 1. Kadhalika
+## 1. "Kadhalika"
 
-Qur'an 21:87–88 · Tirmidhi 3505
+Qur'an 21:87–88 · Tirmidhi 3505 · VO: 80 words
 
-> So Yunus, alayhis salam, is inside the whale. Ocean, night time. Subhanallah, you can't get any
-> lower than that. And you'd think he'd say, ya Allah, get me out. He doesn't. He says, *"There is
-> no deity except You; exalted are You. Indeed, I have been of the wrongdoers."* He just owns it.
-> And then Allah says, *"And thus do We save the believers."* Thus. *Kadhalika.* Not just Yunus...
-> anybody. So whatever your whale is, you've got the dua.
+| Time | VO | Emphasis | Visual |
+|---|---|---|---|
+| 0–3s | "Yunus is inside a whale... and he doesn't ask to get out." | **out** | Black water, no light |
+| 3–5s | "Doesn't ask? I'd be banging on the walls." | **walls** | Hold on black, a dull thud on the audio |
+| 5–12s | "He says: *There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.*" | — | One candle-sized light, held |
+| 12–15s | "From inside a fish... and he owns it." | **owns** | Hold |
+| 15–20s | "Then Allah adds a line for us: *And thus do We save the believers.*" | — | Light spreads slowly |
+| 20–24s | "*Kadhalika.* Like that. Means it wasn't just for Yunus." | **kadhalika** | The Arabic word alone |
+| 24–29s | "So whatever your whale is tonight... you know what to say." | **tonight** | Back to black water → loop |
 
-**Emphasis words:** lower · owns it · kadhalika · anybody
-**Pictures:** black water → one small light → light spreading → loop to black water
-**Caption:** the dua in Arabic, لَا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ, with 21:87–88 and Tirmidhi 3505
+**Caption:** The dua in Arabic, لَا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ, with 21:87–88. Add
+Tirmidhi 3505: "So indeed, no Muslim man supplicates with it for anything, except Allah responds
+to him."
 
----
+⚠ SCHOLAR CHECK: "He doesn't ask to get out" describes the wording only: the dua asks for nothing
+outright. Scholars still count it as a dua, and Tirmidhi 3505 calls it one. Confirm it reads that
+way. Also check the Tirmidhi line word for word against sunnah.com/tirmidhi:3505.
 
-## 2. I'm empty
-
-Qur'an 28:24–25
-
-> Musa, alayhis salam, has nothing. Running for his life, no money, nowhere to sleep. He helps two
-> women with their sheep, goes and sits in the shade, and says, *"My Lord, indeed I am, for
-> whatever good You would send down to me, in need."* *Faqir.* He doesn't even say what he needs.
-> He's just... I'm empty, ya Rabb. And the very next ayah, one of them is walking back to him.
-> Sometimes that's the whole dua, man.
-
-**Emphasis words:** nothing · faqir · empty · next ayah
-**Pictures:** desert footprints → a patch of shade → open hands, no face → a figure walking in
-from far off, no face → loop
-**Caption:** رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ, 28:24
-
-This version drops the "home, job, wife" line, so the scholar flag from the first draft no longer
-applies. Everything said here is in 28:24–25 as it stands.
+⚠ NEW: "He owns it" is how this draft puts "I have been of the wrongdoers". It is meant as
+respectful, about a prophet admitting fault. Confirm the tone is acceptable.
 
 ---
 
-## 3. As you think
+## 2. "No shopping list"
 
-Bukhari 7405
+Qur'an 28:23–25 · VO: 80 words
 
-> This hadith honestly scares me a bit. Allah says, *"I am just as My slave thinks I am."* As you
-> *think!* So the brother who keeps saying Allah's never going to forgive me, not me, you don't
-> know what I've done... what is he expecting? That's *dhann*, what you expect from Allah. And He
-> told you that, subhanallah, so you'd fix it. So think good of Him. Today. Before the next thing
-> goes wrong.
+| Time | VO | Emphasis | Visual |
+|---|---|---|---|
+| 0–3s | "Musa made a dua with no shopping list." | **list** | Empty desert, heat haze |
+| 3–6s | "No list? He's running for his life with nothing." | **nothing** | Footprints in sand |
+| 6–10s | "He helps two women with their sheep and sits in the shade." | **shade** | A tree, one patch of shade, nobody in it |
+| 10–16s | "*My Lord, indeed I am, for whatever good You would send down to me, in need.*" | — | Shade moving slowly across sand |
+| 16–19s | "*Faqir.* In need. He didn't even say of what." | **faqir** | The Arabic word alone |
+| 19–22s | "Us? We make dua like we're ordering online." | **online** | A phone cart screen, items piling up |
+| 22–25s | "Next ayah? One of them is walking back to him." | **next** | Second set of footprints coming toward the tree |
+| 25–29s | "Sometimes the whole dua is just... *I'm empty.*" | **empty** | Back to the shade → loop |
 
-**Emphasis words:** scares · think · dhann · today
-**Pictures:** someone on stairs, back to camera → text on dark → the Arabic word alone → standing
-up → loop
-**Caption:** "I am just as My slave thinks I am, and I am with him if he remembers Me." Bukhari 7405
+**Caption:** The ayah in Arabic, رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ, with 28:24.
+
+The first draft's "A home. A job. A wife." line is gone, so its flag no longer applies. The VO now
+stops at 28:25, where one of the women comes back to him.
+
+⚠ NEW: "With nothing" reads his state from 28:21 (he fled fearing for his life) and his own word
+*faqir* in 28:24. The Qur'an does not list what he lacked. Confirm the summary is fair.
+
+---
+
+## 3. "As you think"
+
+Bukhari 7405 · VO: 72 words
+
+| Time | VO | Emphasis | Visual |
+|---|---|---|---|
+| 0–3s | "There's a hadith that honestly... scares me a little." | **scares** | Someone sitting on stairs, back to camera |
+| 3–7s | "Allah says: *I am just as My slave thinks I am.*" | — | Text on dark |
+| 7–10s | "As I *think?* So... whatever I'm expecting from Him?" | **think** | Hold |
+| 10–14s | "That's *dhann*. What you assume Allah's going to do with you." | **dhann** | The Arabic word alone |
+| 14–19s | "Think about it. A delivery app says *ten minutes away*, you believe it." | **ten minutes** | Phone on the step: "Arriving in 10 min" |
+| 19–22s | "And Allah? Him, we expect the worst from?" | **worst** | Phone screen goes dark |
+| 22–27s | "Think good of Him. Today, before the next thing goes wrong." | **today** | Stand up off the stairs → loop |
+
+**Caption:** "I am just as My slave thinks I am, and I am with him if he remembers Me." (Bukhari 7405)
+
+The first draft's "you're the one who wrote that ending" line is gone, so its flag no longer
+applies. Nothing in the VO now suggests our thoughts control Allah's decree.
 
 ⚠ SCHOLAR CHECK: Check the quote against sunnah.com/bukhari:7405. Its bracketed gloss is left out.
 
+⚠ NEW: The delivery-app line contrasts how readily we trust an app with how we think of Allah. It
+is a comparison of our attitude, not of Allah to an app. Confirm it doesn't read as irreverent.
+
 ---
 
-## The single biggest fix
+## Order to post them
 
-None of this will sound like him if it's read off a screen, and that goes for any script. Read
-the block twice, put the phone down, and say it in your own words from memory. If a word changes,
-let it. The small stumbles and restarts are what make it sound human.
+Post **Kadhalika** first. It has the strongest double-take and the most familiar story. Post
+**No shopping list** next, and frame the two as "the duas prophets made at their lowest", then
+**As you think** after them. **The first word** stands on its own, so post it whenever suits you.
+
+---
+
+## Review log
+
+Three passes on the first draft, each run as a hostile read for anything that sounds AI-written.
+
+**Round 1: hooks and the double-take.**
+- Kadhalika opened with a question and had no echo. It now states the surprise ("he doesn't ask
+  to get out"), echoes it ("Doesn't ask?"), and reacts with a concrete picture: "I'd be banging
+  on the walls."
+- No shopping list kept its hook and gained the echo it lacked: "No list? He's running for his
+  life with nothing."
+- As you think already had the best hook of the three. "As you *think?*" became "As I *think?*"
+  so the echo sounds like him turning it on himself.
+
+**Round 2: line-by-line voice.**
+- Cut every clipped list and punchline flip: "Dark night. Dark sea. Dark stomach.", "That's it.
+  No list.", "On the run. No money. No home. Didn't know a soul.", "Kadhalika. Thus. Like that.
+  Not just him.", "Not Him. You."
+- Added one everyday comparison per script where it earns its place: banging on the walls
+  (Yunus), making dua like an online order (Musa), the delivery app saying ten minutes (hadith).
+- Swapped poster phrasing for spoken lines, such as "you know what to say" for "same three
+  lines". Kept the pauses to two or three per script, not one per line. No "man", no
+  "subhanallah" filler.
+
+**Round 3: accuracy and timing.**
+- Musa: dropped "A home. A job. A wife." and the "same afternoon" claim. The VO now stops at
+  28:25, which says one woman came back to him. The visual is footprints, not a figure.
+- Yunus: corrected the Tirmidhi 3505 caption to the sunnah.com wording and added a check on it.
+  Removed the hands-on-knees shot in Musa so no prophet is shown, even in part.
+- Hadith: removed "you're the one who wrote that ending", which risked implying our thoughts
+  control decree. Quotes match Sahih International (21:87, 21:88, 28:24) and sunnah.com
+  (Bukhari 7405). Word counts: 80, 80, 72. All three read aloud at 27–29 seconds.
