@@ -18,15 +18,15 @@ Qur'an 21:87–88 · Tirmidhi 3505 · VO: 80 words
 |---|---|---|---|
 | 0–3s | "Yunus was inside a whale... and he didn't ask to get out." | **out** | Black water, no light |
 | 3–5s | "Didn't ask? I'd be banging on the walls." | **walls** | Hold on black, a dull thud on the audio |
-| 5–12s | "He said: *There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.*" | — | One candle-sized light, held |
+| 5–12s | "He said: *There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.*"<br>لَا إِلَٰهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ (21:87) | — | One candle-sized light, held |
 | 12–15s | "From inside a fish... and he owned it." | **owns** | Hold |
-| 15–20s | "Then Allah added a line for us: *And thus do We save the believers.*" | — | Light spreads slowly |
+| 15–20s | "Then Allah added a line for us: *And thus do We save the believers.*"<br>وَكَذَٰلِكَ نُنْجِي الْمُؤْمِنِينَ (21:88) | — | Light spreads slowly |
 | 20–24s | "*Kadhalika.* Like that. Means it wasn't just for Yunus." | **kadhalika** | The Arabic word alone |
 | 24–29s | "So whatever your whale is tonight... you know what to say." | **tonight** | Back to black water → loop |
 
 **Caption:** The dua in Arabic, لَا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ, with 21:87–88. Add
 Tirmidhi 3505: "So indeed, no Muslim man supplicates with it for anything, except Allah responds
-to him."
+to him." / فَإِنَّهُ لَمْ يَدْعُ بِهَا رَجُلٌ مُسْلِمٌ فِي شَيْءٍ قَطُّ إِلَّا اسْتَجَابَ اللَّهُ لَهُ
 
 ⚠ SCHOLAR CHECK: "He didn't ask to get out" describes the wording only: the dua asks for nothing
 outright. Scholars still count it as a dua, and Tirmidhi 3505 calls it one. Confirm it reads that
@@ -46,7 +46,7 @@ Qur'an 28:23–25 · VO: 80 words
 | 0–3s | "Musa made a dua with no shopping list." | **list** | Empty desert, heat haze |
 | 3–6s | "No list? He was running for his life with nothing." | **nothing** | Footprints in sand |
 | 6–10s | "He helped two women with their sheep and sat in the shade." | **shade** | A tree, one patch of shade, nobody in it |
-| 10–16s | "*My Lord, indeed I am, for whatever good You would send down to me, in need.*" | — | Shade moving slowly across sand |
+| 10–16s | "*My Lord, indeed I am, for whatever good You would send down to me, in need.*"<br>رَبِّ إِنِّي لِمَا أَنْزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ (28:24) | — | Shade moving slowly across sand |
 | 16–19s | "*Faqir.* In need. He didn't even say of what." | **faqir** | The Arabic word alone |
 | 19–22s | "Us? We make dua like we're ordering online." | **online** | A phone cart screen, items piling up |
 | 22–25s | "Next ayah? One of them came walking back to him." | **next** | Second set of footprints coming toward the tree |
@@ -69,14 +69,14 @@ Bukhari 7405 · VO: 72 words
 | Time | VO | Emphasis | Visual |
 |---|---|---|---|
 | 0–3s | "There's a hadith that honestly... scares me a little." | **scares** | Someone sitting on stairs, back to camera |
-| 3–7s | "Allah says: *I am just as My slave thinks I am.*" | — | Text on dark |
+| 3–7s | "Allah says: *I am just as My slave thinks I am.*"<br>أَنَا عِنْدَ ظَنِّ عَبْدِي بِي (Bukhari 7405) | — | Text on dark |
 | 7–10s | "As I *think?* So... whatever I'm expecting from Him?" | **think** | Hold |
 | 10–14s | "That's *dhann*. What you assume Allah's going to do with you." | **dhann** | The Arabic word alone |
 | 14–19s | "Think about it. A delivery app says *ten minutes away*, you believe it." | **ten minutes** | Phone on the step: "Arriving in 10 min" |
 | 19–22s | "And Allah? Him, we expect the worst from?" | **worst** | Phone screen goes dark |
 | 22–27s | "Think good of Him. Today, before the next thing goes wrong." | **today** | Stand up off the stairs → loop |
 
-**Caption:** "I am just as My slave thinks I am, and I am with him if he remembers Me." (Bukhari 7405)
+**Caption:** "I am just as My slave thinks I am, and I am with him if He remembers Me." / أَنَا عِنْدَ ظَنِّ عَبْدِي بِي، وَأَنَا مَعَهُ إِذَا ذَكَرَنِي (Bukhari 7405)
 
 The first draft's "you're the one who wrote that ending" line is gone, so its flag no longer
 applies. Nothing in the VO now suggests our thoughts control Allah's decree.
@@ -127,3 +127,27 @@ Three passes on the first draft, each run as a hostile read for anything that so
 - Hadith: removed "you're the one who wrote that ending", which risked implying our thoughts
   control decree. Quotes match Sahih International (21:87, 21:88, 28:24) and sunnah.com
   (Bukhari 7405). Word counts: 80, 80, 72. At 2.5–3 words a second with the pauses, that is 27–30 seconds each; confirm with a stopwatch read.
+
+---
+
+## Accuracy review of the Arabic and quotes (2026-11-25)
+
+Each quote now has its Arabic under the English in the VO cell, so it can go on screen or in the
+caption. The checks below were done against the standard texts as I know them. They still need
+one look at quran.com and sunnah.com before you post.
+
+| Quote | English | Arabic | Note |
+|---|---|---|---|
+| 21:87 | Sahih International ✓ | لَا إِلَٰهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ ✓ | The dua portion of the ayah only |
+| 21:88 | Sahih International ✓ | وَكَذَٰلِكَ نُنْجِي الْمُؤْمِنِينَ ✓ | The mushaf writes this word with one nun, نُـۨجِي, but it is read *nunji*. The two-nun spelling here is the standard one for on-screen text. If you film a page of the mushaf, it will look different. That is expected, not an error. |
+| 28:24 | Sahih International ✓ | رَبِّ إِنِّي لِمَا أَنْزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ ✓ | |
+| Bukhari 7405 | sunnah.com ✓ | أَنَا عِنْدَ ظَنِّ عَبْدِي بِي ✓ | The VO quotes the opening clause only. The caption now uses sunnah.com's capital "He" in "if He remembers Me". |
+| Tirmidhi 3505 | sunnah.com ✓ | فَإِنَّهُ لَمْ يَدْعُ بِهَا رَجُلٌ مُسْلِمٌ فِي شَيْءٍ قَطُّ إِلَّا اسْتَجَابَ اللَّهُ لَهُ ✓ | Caption only |
+
+Two wording points in the story, neither of them a misquote:
+
+- **"Whale".** The Qur'an says *al-hut*, a large fish (37:142, "the fish swallowed him"). "Whale"
+  is the usual English rendering, and the script says "fish" a line later, so it is consistent.
+- **"Sheep".** 28:23 says the two women were holding back their flocks and that he watered *for
+  them*. The animals are not named. "Sheep" comes from the tafsir tradition (*ghanam*). It is
+  fine to say, but "flock" is the literal wording if a scholar prefers it.

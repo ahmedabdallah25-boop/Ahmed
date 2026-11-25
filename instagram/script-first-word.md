@@ -11,7 +11,7 @@ Bukhari 6312 · Qur'an 39:42
 |---|---|---|---|
 | 0–4s | "By the way, the first thing the Prophet ﷺ said every morning... was about death." | **death** | Dark bedroom, alarm about to go |
 | 4–6s | "Death? You just woke up." (beat) | **woke up** | Eyes open, ceiling |
-| 6–13s | "*All the praises are for Allah who has given us life after He has caused us to die, and unto Him is the resurrection.*" | — | Curtain edge, first light |
+| 6–13s | "*All the praises are for Allah who has given us life after He has caused us to die, and unto Him is the resurrection.*"<br>الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ (Bukhari 6312) | — | Curtain edge, first light |
 | 13–16s | "*Amatana.* He caused us to die. That's sleep." | **amatana** | The Arabic word alone, calligraphy |
 | 16–20s | "Last night He took you... and sent you back. [Not everyone came back.]" | **sent you back** | Slow push on an unmade bed |
 | 20–24s | "And your hand went straight to the phone." | **phone** | Hand finding the phone on the pillow |
