@@ -1,35 +1,28 @@
 # @brother_ahmed_abdullah: next Reel, "The first thing my hand reaches for"
 
-Drafted 2026-11-25, second draft. About 60–70 seconds, said to camera the way you'd talk to a
-friend. Read it out loud once before filming and change any word you wouldn't actually say.
+Drafted 2026-11-25, third draft: cut to 30 seconds maximum, about 75 words at his pace. Read it
+out loud once before filming and change any word you wouldn't actually say.
 
 ---
 
-Let me tell you something I caught myself doing. And I'm not proud of it.
+I caught myself doing something every morning. And I'm not proud of it.
 
-Every morning. Every single morning. I open my eyes, and before I even sit up, my hand is
-already on the phone. WhatsApp. Emails. Who messaged. Did the video do numbers.
+I open my eyes, and my hand's already on the phone. WhatsApp. Emails. Did the video do numbers.
 
-And one day it just hit me. Wallahi, it hit me.
+Allah *just* gave me my life back. Sleep is the small death. And the first thing I did with
+it... was check my notifications.
 
-Allah *just* gave me my life back. Literally. Sleep is the small death. Allah says He takes the
-souls when they sleep, and sends back the ones He wants to (39:42). He sent mine back. And the
-first thing I did with it was check my notifications.
+Whatever your hand reaches for first, when nobody's watching? That's what your heart's
+attached to.
 
-You see, my tongue knows tawakkul. My mind knows tawheed. But whatever your hand reaches for
-first, half asleep, when nobody's watching and you're not performing for anyone, *that's* what
-your heart is actually attached to. That's the real answer.
-
-The Prophet ﷺ would wake up, and the first thing out of his mouth was:
-*Alhamdulillahil-ladhi ahyana ba'da ma amatana wa ilayhin-nushur.*
-All praise to Allah, who gave us life after He took it, and to Him is the return.
-
-So here's what I'm doing. Phone goes on the other side of the room. First word is His. Not
-email. Not WhatsApp. His.
-
-Seven days. Try it with me. And watch what it does to the rest of your day.
+So. Seven days. Phone across the room. First word is Alhamdulillah.
 
 Comment "day one" if you're in.
+
+---
+
+**Caption carries what the 30 seconds can't:** the full waking dua,
+*Alhamdulillahil-ladhi ahyana ba'da ma amatana wa ilayhin-nushur* (Bukhari 6312).
 
 ---
 
@@ -59,4 +52,4 @@ this:
 - **Cover text:** `What I do before I say Alhamdulillah`
 - **Caption:** `Be honest. What's the first thing you touch in the morning? 7 days, phone across the room. Who's in?`
 - **Filming:** In bed or on the edge of the bed, phone in hand at the start. Put it down when you
-  get to "Phone goes on the other side of the room." No music.
+  get to "Phone across the room." No music.
