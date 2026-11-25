@@ -1,0 +1,102 @@
+name: TOOLS - Reel intake (download, transcribe, keyframes)
+
+# Pulls a PUBLIC Instagram / TikTok / YouTube short, transcribes its audio with
+# Whisper (Arabic by default), extracts keyframes, and commits the lot to the
+# branch `reel-intake` under reels/<id>/ so a Claude session can read it.
+#
+# Exists because the cloud session's network blocks instagram.com and both
+# paid video readers (Nexlev, vidIQ) are unavailable. Uses no secrets at all.
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "Public reel / short URL"
+        required: true
+      language:
+        description: "Spoken language code for Whisper (ar, en, ...)"
+        default: "ar"
+
+permissions:
+  contents: write
+
+jobs:
+  intake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q -U yt-dlp faster-whisper
+      - name: Download
+        id: dl
+        env:
+          URL: ${{ inputs.url }}
+        run: |
+          ID=$(python -c "import re,os;u=os.environ['URL'];m=re.search(r'/(?:reel|reels|p|shorts|video)/([A-Za-z0-9_-]+)',u);print(m.group(1) if m else 'clip')")
+          echo "id=$ID" >> "$GITHUB_OUTPUT"
+          OUT="reels/$ID"; mkdir -p "$OUT"
+          ok=0
+          for i in 1 2 3; do
+            if yt-dlp --no-progress -f "b[ext=mp4]/b" -o "$OUT/video.%(ext)s" \
+                 --write-info-json --no-write-comments "$URL"; then ok=1; break; fi
+            sleep $((i*15))
+          done
+          if [ "$ok" != 1 ]; then echo "::error::yt-dlp could not fetch $URL"; exit 1; fi
+          ls -la "$OUT"
+      - name: Transcribe and extract frames
+        env:
+          ID: ${{ steps.dl.outputs.id }}
+          LANG_CODE: ${{ inputs.language }}
+        run: |
+          OUT="reels/$ID"
+          V=$(ls "$OUT"/video.* | head -1)
+          ffmpeg -loglevel error -i "$V" -ac 1 -ar 16000 "$OUT/audio.wav"
+          mkdir -p "$OUT/frames"
+          ffmpeg -loglevel error -i "$V" -vf "fps=1,scale=480:-2" "$OUT/frames/t%03d.jpg"
+          python - <<'PY'
+          import json, os
+          from faster_whisper import WhisperModel
+          out = f"reels/{os.environ['ID']}"
+          m = WhisperModel("large-v3", device="cpu", compute_type="int8")
+          segs, info = m.transcribe(f"{out}/audio.wav", language=os.environ["LANG_CODE"] or None,
+                                    beam_size=5, vad_filter=False)
+          rows = [{"start": round(s.start, 2), "end": round(s.end, 2), "text": s.text.strip()} for s in segs]
+          json.dump({"duration": info.duration, "language": info.language, "segments": rows},
+                    open(f"{out}/transcript.json", "w"), ensure_ascii=False, indent=1)
+          with open(f"{out}/transcript.txt", "w") as f:
+              for r in rows:
+                  f.write(f"[{r['start']:6.2f}-{r['end']:6.2f}] {r['text']}\n")
+          print(open(f"{out}/transcript.txt").read())
+          info_path = f"{out}/video.info.json"
+          if os.path.exists(info_path):
+              j = json.load(open(info_path))
+              keep = {k: j.get(k) for k in ("id","title","description","uploader","uploader_id","channel",
+                      "timestamp","upload_date","duration","view_count","like_count","comment_count",
+                      "track","artist","webpage_url")}
+              json.dump(keep, open(f"{out}/meta.json","w"), ensure_ascii=False, indent=1)
+              os.remove(info_path)
+          PY
+          rm -f "$OUT/audio.wav"
+          du -sh "$OUT"
+      - name: Commit to reel-intake branch
+        env:
+          ID: ${{ steps.dl.outputs.id }}
+        run: |
+          mv "reels/$ID" /tmp/payload
+          git config user.name "reel-intake-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if git fetch origin reel-intake 2>/dev/null; then
+            git checkout -B reel-intake FETCH_HEAD
+          else
+            git checkout --orphan reel-intake && git rm -rf -q . && git clean -fdq
+          fi
+          mkdir -p reels && rm -rf "reels/$ID" && mv /tmp/payload "reels/$ID"
+          git add "reels/$ID"
+          git commit -q -m "Reel intake: $ID"
+          git push origin reel-intake
