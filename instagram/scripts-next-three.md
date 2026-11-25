@@ -15,23 +15,23 @@ Qur'an 21:87–88 · Tirmidhi 3505 · VO: 80 words
 
 | Time | VO | Emphasis | Visual |
 |---|---|---|---|
-| 0–3s | "Yunus is inside a whale... and he doesn't ask to get out." | **out** | Black water, no light |
-| 3–5s | "Doesn't ask? I'd be banging on the walls." | **walls** | Hold on black, a dull thud on the audio |
-| 5–12s | "He says: *There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.*" | — | One candle-sized light, held |
-| 12–15s | "From inside a fish... and he owns it." | **owns** | Hold |
-| 15–20s | "Then Allah adds a line for us: *And thus do We save the believers.*" | — | Light spreads slowly |
-| 20–24s | "*Kadhalika.* Like that. Means it wasn't just for Yunus." | **kadhalika** | The Arabic word alone |
-| 24–29s | "So whatever your whale is tonight... you know what to say." | **tonight** | Back to black water → loop |
+| 0–3s | "Yunus was inside a whale... and he didn't ask to get out." | **out** | Black water, no light |
+| 3–5s | "Didn't ask? I'd have been banging on the walls." | **walls** | Hold on black, a dull thud on the audio |
+| 5–12s | "He said: *There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.*" | — | One candle-sized light, held |
+| 12–15s | "From inside a fish... and he owned it." | **owns** | Hold |
+| 15–20s | "Then Allah added a line for us: *And thus do We save the believers.*" | — | Light spreads slowly |
+| 20–24s | "*Kadhalika.* Like that. Meant it wasn't just for Yunus." | **kadhalika** | The Arabic word alone |
+| 24–29s | "So the night my own whale came... I knew what to say." | **knew** | Back to black water → loop |
 
 **Caption:** The dua in Arabic, لَا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ, with 21:87–88. Add
 Tirmidhi 3505: "So indeed, no Muslim man supplicates with it for anything, except Allah responds
 to him."
 
-⚠ SCHOLAR CHECK: "He doesn't ask to get out" describes the wording only: the dua asks for nothing
+⚠ SCHOLAR CHECK: "He didn't ask to get out" describes the wording only: the dua asks for nothing
 outright. Scholars still count it as a dua, and Tirmidhi 3505 calls it one. Confirm it reads that
 way. Also check the Tirmidhi line word for word against sunnah.com/tirmidhi:3505.
 
-⚠ NEW: "He owns it" is how this draft puts "I have been of the wrongdoers". It is meant as
+⚠ NEW: "He owned it" is how this draft puts "I have been of the wrongdoers". It is meant as
 respectful, about a prophet admitting fault. Confirm the tone is acceptable.
 
 ---
@@ -43,13 +43,13 @@ Qur'an 28:23–25 · VO: 80 words
 | Time | VO | Emphasis | Visual |
 |---|---|---|---|
 | 0–3s | "Musa made a dua with no shopping list." | **list** | Empty desert, heat haze |
-| 3–6s | "No list? He's running for his life with nothing." | **nothing** | Footprints in sand |
-| 6–10s | "He helps two women with their sheep and sits in the shade." | **shade** | A tree, one patch of shade, nobody in it |
+| 3–6s | "No list? He was running for his life with nothing." | **nothing** | Footprints in sand |
+| 6–10s | "He helped two women with their sheep and sat in the shade." | **shade** | A tree, one patch of shade, nobody in it |
 | 10–16s | "*My Lord, indeed I am, for whatever good You would send down to me, in need.*" | — | Shade moving slowly across sand |
 | 16–19s | "*Faqir.* In need. He didn't even say of what." | **faqir** | The Arabic word alone |
-| 19–22s | "Us? We make dua like we're ordering online." | **online** | A phone cart screen, items piling up |
-| 22–25s | "Next ayah? One of them is walking back to him." | **next** | Second set of footprints coming toward the tree |
-| 25–29s | "Sometimes the whole dua is just... *I'm empty.*" | **empty** | Back to the shade → loop |
+| 19–22s | "Me? I used to make dua like I was ordering online." | **online** | A phone cart screen, items piling up |
+| 22–25s | "Next ayah? One of them came walking back to him." | **next** | Second set of footprints coming toward the tree |
+| 25–29s | "Sometimes the whole dua was just... *I'm empty.*" | **empty** | Back to the shade → loop |
 
 **Caption:** The ayah in Arabic, رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ, with 28:24.
 
@@ -67,13 +67,13 @@ Bukhari 7405 · VO: 72 words
 
 | Time | VO | Emphasis | Visual |
 |---|---|---|---|
-| 0–3s | "There's a hadith that honestly... scares me a little." | **scares** | Someone sitting on stairs, back to camera |
-| 3–7s | "Allah says: *I am just as My slave thinks I am.*" | — | Text on dark |
-| 7–10s | "As I *think?* So... whatever I'm expecting from Him?" | **think** | Hold |
-| 10–14s | "That's *dhann*. What you assume Allah's going to do with you." | **dhann** | The Arabic word alone |
-| 14–19s | "Think about it. A delivery app says *ten minutes away*, you believe it." | **ten minutes** | Phone on the step: "Arriving in 10 min" |
-| 19–22s | "And Allah? Him, we expect the worst from?" | **worst** | Phone screen goes dark |
-| 22–27s | "Think good of Him. Today, before the next thing goes wrong." | **today** | Stand up off the stairs → loop |
+| 0–3s | "There was a hadith that honestly... scared me a little." | **scares** | Someone sitting on stairs, back to camera |
+| 3–7s | "Allah said: *I am just as My slave thinks I am.*" | — | Text on dark |
+| 7–10s | "As I *think?* So... whatever I was expecting from Him?" | **think** | Hold |
+| 10–14s | "That was *dhann*. What I assumed Allah was going to do with me." | **dhann** | The Arabic word alone |
+| 14–19s | "Think about it. A delivery app said *ten minutes away*, and I believed it." | **ten minutes** | Phone on the step: "Arriving in 10 min" |
+| 19–22s | "And Allah? Him, I expected the worst from?" | **worst** | Phone screen goes dark |
+| 22–27s | "So I started thinking good of Him. That day, before the next thing went wrong." | **that day** | Stand up off the stairs → loop |
 
 **Caption:** "I am just as My slave thinks I am, and I am with him if he remembers Me." (Bukhari 7405)
 
