@@ -2,7 +2,8 @@
 
 Drafted 2026-11-25, third draft. This builds on the first draft's tables, hooks and ideas, and
 drops the second draft's run-on paragraphs. Same format and rules as `script-first-word.md` and
-`scripts-spoken-flow.pdf`. Each VO is 72–80 words, about **27–30 seconds** with the pauses. Read
+`scripts-spoken-flow.pdf`. All narration is in the past tense; the Qur'an and hadith quotes stay
+word for word. Each VO is about 72–84 words, about **27–30 seconds** with the pauses. Read
 each one aloud and swap any word you wouldn't say to a friend.
 
 None of these sources repeats one already used in the PDF's 20 scripts.
