@@ -47,7 +47,49 @@ jobs:
                  --write-info-json --no-write-comments "$URL"; then ok=1; break; fi
             sleep $((i*15))
           done
-          if [ "$ok" != 1 ]; then echo "::error::yt-dlp could not fetch $URL"; exit 1; fi
+          if [ "$ok" != 1 ] && [ "$ID" != clip ]; then
+            # Logged-out fallbacks: Instagram's own embed page, then public
+            # embed-fix mirrors that expose a direct og:video mp4.
+            python - "$ID" "$OUT" <<'PY' && ok=1
+          import re, sys, json, html, urllib.request
+          sid, out = sys.argv[1], sys.argv[2]
+          UA = {"User-Agent": "Mozilla/5.0 (compatible; Discordbot/2.0; +https://discordapp.com)"}
+          def get(u):
+              return urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=30)
+          cands = [f"https://www.instagram.com/reel/{sid}/embed/captioned/",
+                   f"https://www.kkinstagram.com/reel/{sid}/",
+                   f"https://www.ddinstagram.com/reel/{sid}/",
+                   f"https://www.instagramez.com/reel/{sid}/",
+                   f"https://www.vxinstagram.com/reel/{sid}/"]
+          for page in cands:
+              try:
+                  r = get(page); raw = r.read()
+                  ctype = r.headers.get("content-type", "")
+                  body = "" if ctype.startswith("video/") else raw.decode("utf-8", "replace")
+                  if ctype.startswith("video/"):
+                      open(f"{out}/video.mp4", "wb").write(raw)
+                  else:
+                      m = (re.search(r'"video_url"\s*:\s*"([^"]+)"', body)
+                           or re.search(r'<meta[^>]+property="og:video(?::secure_url)?"[^>]+content="([^"]+)"', body))
+                      if not m:
+                          print("no video in", page); continue
+                      src = html.unescape(m.group(1).encode().decode("unicode_escape") if "\\u" in m.group(1) else m.group(1))
+                      if src.startswith("/"):
+                          src = page.split("/reel/")[0] + src
+                      open(f"{out}/video.mp4", "wb").write(get(src).read())
+                  cap = re.search(r'<meta[^>]+(?:property|name)="(?:og:)?description"[^>]+content="([^"]*)"', body)
+                  json.dump({"source": page, "description": html.unescape(cap.group(1)) if cap else None},
+                            open(f"{out}/meta.json", "w"), ensure_ascii=False, indent=1)
+                  import os
+                  if os.path.getsize(f"{out}/video.mp4") > 50000:
+                      print("fetched via", page); sys.exit(0)
+                  print("too small from", page)
+              except Exception as e:
+                  print("failed", page, type(e).__name__, e)
+          sys.exit(1)
+          PY
+          fi
+          if [ "$ok" != 1 ]; then echo "::error::no route could fetch $URL"; exit 1; fi
           ls -la "$OUT"
       - name: Transcribe and extract frames
         env:
