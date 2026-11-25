@@ -21,10 +21,10 @@ Qur'an 21:87–88 · Tirmidhi 3505 · VO: 80 words
 | 5–12s | "He said: *There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.*"<br>لَا إِلَٰهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ (21:87) | — | One candle-sized light, held |
 | 12–15s | "From inside a fish... and he owned it." | **owned** | Hold |
 | 15–20s | "Then Allah added a line for us: *And thus do We save the believers.*"<br>وَكَذَٰلِكَ نُنْجِي الْمُؤْمِنِينَ (21:88) | — | Light spreads slowly |
-| 20–24s | "*Kadhalika.* Like that. Means it wasn't just for Yunus." | **kadhalika** | The Arabic word alone |
+| 20–24s | "*Kadhalika.* Like that. Means it isn't just for Yunus."<br>كَذَٰلِكَ | **kadhalika** | The Arabic word alone |
 | 24–29s | "So whatever your whale is tonight... you know what to say." | **tonight** | Back to black water → loop |
 
-**Caption:** The dua in Arabic, لَا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ, with 21:87–88. Add
+**Caption:** The dua in Arabic, لَا إِلَٰهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ, with 21:87–88. Add
 Tirmidhi 3505: "So indeed, no Muslim man supplicates with it for anything, except Allah responds
 to him." / فَإِنَّهُ لَمْ يَدْعُ بِهَا رَجُلٌ مُسْلِمٌ فِي شَيْءٍ قَطُّ إِلَّا اسْتَجَابَ اللَّهُ لَهُ
 
@@ -44,15 +44,15 @@ Qur'an 28:23–25 · VO: 80 words
 | Time | VO | Emphasis | Visual |
 |---|---|---|---|
 | 0–3s | "Musa made a dua with no shopping list." | **list** | Empty desert, heat haze |
-| 3–6s | "No list? He was running for his life with nothing." | **nothing** | Footprints in sand |
+| 3–6s | "No list? He'd just run for his life. He had nothing." | **nothing** | Footprints in sand |
 | 6–10s | "He helped two women with their sheep and sat in the shade." | **shade** | A tree, one patch of shade, nobody in it |
 | 10–16s | "*My Lord, indeed I am, for whatever good You would send down to me, in need.*"<br>رَبِّ إِنِّي لِمَا أَنْزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ (28:24) | — | Shade moving slowly across sand |
-| 16–19s | "*Faqir.* In need. He didn't even say of what." | **faqir** | The Arabic word alone |
+| 16–19s | "*Faqir.* In need. He didn't name one thing."<br>فَقِيرٌ | **faqir** | The Arabic word alone |
 | 19–22s | "Us? We make dua like we're ordering online." | **online** | A phone cart screen, items piling up |
 | 22–25s | "Next ayah? One of them came walking back to him." | **next** | Second set of footprints coming toward the tree |
 | 25–29s | "Sometimes the whole dua is just... *I'm empty.*" | **empty** | Back to the shade → loop |
 
-**Caption:** The ayah in Arabic, رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ, with 28:24.
+**Caption:** The ayah in Arabic, رَبِّ إِنِّي لِمَا أَنْزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ, with 28:24.
 
 The first draft's "A home. A job. A wife." line is gone, so its flag no longer applies. The VO now
 stops at 28:25, where one of the women comes back to him.
@@ -71,12 +71,12 @@ Bukhari 7405 · VO: 72 words
 | 0–3s | "There's a hadith that honestly... scares me a little." | **scares** | Someone sitting on stairs, back to camera |
 | 3–7s | "Allah says: *I am just as My slave thinks I am.*"<br>أَنَا عِنْدَ ظَنِّ عَبْدِي بِي (Bukhari 7405) | — | Text on dark |
 | 7–10s | "As I *think?* So... whatever I'm expecting from Him?" | **think** | Hold |
-| 10–14s | "That's *dhann*. What you assume Allah's going to do with you." | **dhann** | The Arabic word alone |
+| 10–14s | "That's *dhann*. What you assume Allah's going to do with you."<br>ظَنّ | **dhann** | The Arabic word alone |
 | 14–19s | "Think about it. A delivery app says *ten minutes away*, you believe it." | **ten minutes** | Phone on the step: "Arriving in 10 min" |
 | 19–22s | "And Allah? Him, we expect the worst from?" | **worst** | Phone screen goes dark |
 | 22–27s | "Think good of Him. Today, before the next thing goes wrong." | **today** | Stand up off the stairs → loop |
 
-**Caption:** "I am just as My slave thinks I am, and I am with him if He remembers Me." / أَنَا عِنْدَ ظَنِّ عَبْدِي بِي، وَأَنَا مَعَهُ إِذَا ذَكَرَنِي (Bukhari 7405)
+**Caption:** "I am just as My slave thinks I am, and I am with him if he remembers Me." / أَنَا عِنْدَ ظَنِّ عَبْدِي بِي، وَأَنَا مَعَهُ إِذَا ذَكَرَنِي (Bukhari 7405)
 
 The first draft's "you're the one who wrote that ending" line is gone, so its flag no longer
 applies. Nothing in the VO now suggests our thoughts control Allah's decree.
