@@ -2,8 +2,8 @@
 
 Drafted 2026-11-25, third draft. This builds on the first draft's tables, hooks and ideas, and
 drops the second draft's run-on paragraphs. Same format and rules as `script-first-word.md` and
-`scripts-spoken-flow.pdf`. All narration is in the past tense; the Qur'an and hadith quotes stay
-word for word. Each VO is about 72–84 words, about **27–30 seconds** with the pauses. Read
+`scripts-spoken-flow.pdf`. The story parts are told in the past tense; commentary, lessons and the
+Qur'an and hadith quotes stay as they are. Each VO is about 72–84 words, about **27–30 seconds** with the pauses. Read
 each one aloud and swap any word you wouldn't say to a friend.
 
 None of these sources repeats one already used in the PDF's 20 scripts.
@@ -17,12 +17,12 @@ Qur'an 21:87–88 · Tirmidhi 3505 · VO: 80 words
 | Time | VO | Emphasis | Visual |
 |---|---|---|---|
 | 0–3s | "Yunus was inside a whale... and he didn't ask to get out." | **out** | Black water, no light |
-| 3–5s | "Didn't ask? I'd have been banging on the walls." | **walls** | Hold on black, a dull thud on the audio |
+| 3–5s | "Didn't ask? I'd be banging on the walls." | **walls** | Hold on black, a dull thud on the audio |
 | 5–12s | "He said: *There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.*" | — | One candle-sized light, held |
 | 12–15s | "From inside a fish... and he owned it." | **owns** | Hold |
 | 15–20s | "Then Allah added a line for us: *And thus do We save the believers.*" | — | Light spreads slowly |
-| 20–24s | "*Kadhalika.* Like that. Meant it wasn't just for Yunus." | **kadhalika** | The Arabic word alone |
-| 24–29s | "So the night my own whale came... I knew what to say." | **knew** | Back to black water → loop |
+| 20–24s | "*Kadhalika.* Like that. Means it wasn't just for Yunus." | **kadhalika** | The Arabic word alone |
+| 24–29s | "So whatever your whale is tonight... you know what to say." | **tonight** | Back to black water → loop |
 
 **Caption:** The dua in Arabic, لَا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ, with 21:87–88. Add
 Tirmidhi 3505: "So indeed, no Muslim man supplicates with it for anything, except Allah responds
@@ -48,9 +48,9 @@ Qur'an 28:23–25 · VO: 80 words
 | 6–10s | "He helped two women with their sheep and sat in the shade." | **shade** | A tree, one patch of shade, nobody in it |
 | 10–16s | "*My Lord, indeed I am, for whatever good You would send down to me, in need.*" | — | Shade moving slowly across sand |
 | 16–19s | "*Faqir.* In need. He didn't even say of what." | **faqir** | The Arabic word alone |
-| 19–22s | "Me? I used to make dua like I was ordering online." | **online** | A phone cart screen, items piling up |
+| 19–22s | "Us? We make dua like we're ordering online." | **online** | A phone cart screen, items piling up |
 | 22–25s | "Next ayah? One of them came walking back to him." | **next** | Second set of footprints coming toward the tree |
-| 25–29s | "Sometimes the whole dua was just... *I'm empty.*" | **empty** | Back to the shade → loop |
+| 25–29s | "Sometimes the whole dua is just... *I'm empty.*" | **empty** | Back to the shade → loop |
 
 **Caption:** The ayah in Arabic, رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ, with 28:24.
 
@@ -68,13 +68,13 @@ Bukhari 7405 · VO: 72 words
 
 | Time | VO | Emphasis | Visual |
 |---|---|---|---|
-| 0–3s | "There was a hadith that honestly... scared me a little." | **scares** | Someone sitting on stairs, back to camera |
-| 3–7s | "Allah said: *I am just as My slave thinks I am.*" | — | Text on dark |
-| 7–10s | "As I *think?* So... whatever I was expecting from Him?" | **think** | Hold |
-| 10–14s | "That was *dhann*. What I assumed Allah was going to do with me." | **dhann** | The Arabic word alone |
-| 14–19s | "Think about it. A delivery app said *ten minutes away*, and I believed it." | **ten minutes** | Phone on the step: "Arriving in 10 min" |
-| 19–22s | "And Allah? Him, I expected the worst from?" | **worst** | Phone screen goes dark |
-| 22–27s | "So I started thinking good of Him. That day, before the next thing went wrong." | **that day** | Stand up off the stairs → loop |
+| 0–3s | "There's a hadith that honestly... scares me a little." | **scares** | Someone sitting on stairs, back to camera |
+| 3–7s | "Allah says: *I am just as My slave thinks I am.*" | — | Text on dark |
+| 7–10s | "As I *think?* So... whatever I'm expecting from Him?" | **think** | Hold |
+| 10–14s | "That's *dhann*. What you assume Allah's going to do with you." | **dhann** | The Arabic word alone |
+| 14–19s | "Think about it. A delivery app says *ten minutes away*, you believe it." | **ten minutes** | Phone on the step: "Arriving in 10 min" |
+| 19–22s | "And Allah? Him, we expect the worst from?" | **worst** | Phone screen goes dark |
+| 22–27s | "Think good of Him. Today, before the next thing goes wrong." | **today** | Stand up off the stairs → loop |
 
 **Caption:** "I am just as My slave thinks I am, and I am with him if he remembers Me." (Bukhari 7405)
 
