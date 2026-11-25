@@ -125,4 +125,4 @@ Three passes on the first draft, each run as a hostile read for anything that so
   Removed the hands-on-knees shot in Musa so no prophet is shown, even in part.
 - Hadith: removed "you're the one who wrote that ending", which risked implying our thoughts
   control decree. Quotes match Sahih International (21:87, 21:88, 28:24) and sunnah.com
-  (Bukhari 7405). Word counts: 80, 80, 72. All three read aloud at 27–29 seconds.
+  (Bukhari 7405). Word counts: 80, 80, 72. At 2.5–3 words a second with the pauses, that is 27–30 seconds each; confirm with a stopwatch read.
